@@ -285,7 +285,7 @@ https://e3.endpoint.cdn.sctvonline.vn/hls/vtvcab3/index.m3u8
 https://api.wintv.me/vtvcab3/index.m3u8
 #EXTINF:0,ON sport2
 #EXTGRP:VTV CAB
-http://hoatv001.ddns.net:9981/stream/mux/892b3d1af461c12cfc533d720742365c?
+https://livevlive.vtvcab.vn/THETHAO_HD/m401_index.m3u8
 #EXTINF:0,ON movies
 #EXTGRP:VTV CAB
 https://api.wintv.me/360/181/index.m3u8
@@ -294,10 +294,10 @@ https://api.wintv.me/360/181/index.m3u8
 https://api.wintv.me/360/182/index.m3u8
 #EXTINF:0,ON sport+
 #EXTGRP:VTV CAB
-https://devsy.pw/vtvcab6/index.m3u8
+https://livevlive.vtvcab.vn/HAY_TV/m401_index.m3u8
 #EXTINF:0,ON sport+1
 #EXTGRP:VTV CAB
-https://api.wintv.me/vtvcab6/index.m3u8
+https://e3.endpoint.cdn.sctvonline.vn/hls/vtvcab6/index.m3u8
 #EXTINF:0,ON O2
 #EXTGRP:VTV CAB
 https://e3.endpoint.cdn.sctvonline.vn/hls/vtvcab7/index.m3u8
@@ -324,7 +324,7 @@ https://liveh12.vtvcab.vn/hls/ONFOOTBALL123/04.m3u8
 https://api.wintv.me/vtvcab16/index.m3u8
 #EXTINF:0,ON FOOTBALL-2
 #EXTGRP:VTV CAB
-http://m3u.at/cab16-fhd?index-m3u8
+https://livevlive.vtvcab.vn/BONGDA_HD/m401_index.m3u8
 #EXTINF:0,ON TRENDING
 #EXTGRP:VTV CAB
 https://e3.endpoint.cdn.sctvonline.vn/hls/vtvcab17/index.m3u8
@@ -336,7 +336,7 @@ https://api.wintv.me/vtvcab18/index.m3u8
 https://api.wintv.me/360/170/index.m3u8
 #EXTINF:0,ON SPORTNEWS-2
 #EXTGRP:VTV CAB
-https://s.id/ONFNEWS
+https://livevlive.vtvcab.vn/THETHAO_TINTUC_HD/m401_index.m3u8
 #EXTINF:0,ON VIE DRAMA
 #EXTGRP:VTV CAB
 https://e3.endpoint.cdn.sctvonline.vn/hls/vtvcab19/index.m3u8
@@ -354,7 +354,7 @@ http://m3u.at/cab22-hd?token/playlist.m3u8
 https://tth.vn/vtvcab23
 #EXTINF:0,ON SPORT ACTION
 #EXTGRP:VTV CAB
-https://devsy.pw/tvhd/2380/index.m3u8
+http://live-ali2.tv360.vn/manifest/K_Plus_Sport2_test/playlist_1080p-5M.m3u8
 #EXTINF:0,VTC1
 #EXTGRP:VTC
 https://api.wintv.me/360/16/index.m3u8
@@ -661,3 +661,58 @@ https://tv-trtworld.live.trt.com.tr/master_1080.m3u8
 #EXTINF:0,Animal Planet
 #EXTGRP:Quốc tế
 https://denver1769.pages.dev/Discovery/animal_planet_hd_english.m3u8
+#EXTINF:0,F SPORT1
+#EXTGRP:F SPORT
+https://vips-livecdn.fptplay.net/epzsport/thethao01_vhls.smil/chunklist_b5500000.m3u8
+#EXTINF:0,F SPORT2
+#EXTGRP:F SPORT
+https://vips-livecdn.fptplay.net/epzsport/thethao02_vhls.smil/chunklist_b5500000.m3u8
+#EXTINF:0,F SPORT3
+#EXTGRP:F SPORT
+https://vips-livecdn.fptplay.net/epzsport/thethao03_vhls.smil/chunklist_b5500000.m3u8
+#EXTINF:0,F SPORT4
+#EXTGRP:F SPORT
+https://vips-livecdn.fptplay.net/epzsport/thethao04_vhls.smil/chunklist_b5500000.m3u8
+#EXTINF:0,F SPORT5
+#EXTGRP:F SPORT
+https://vips-livecdn.fptplay.net/epzsport/thethao05_vhls.smil/chunklist_b5500000.m3u8
+#EXTINF:0,F SPORT6
+#EXTGRP:F SPORT
+https://vips-livecdn.fptplay.net/epzsport/thethao06_vhls.smil/chunklist_b5500000.m3u8
+#EXTINF:0,F SPORT7
+#EXTGRP:F SPORT
+https://vips-livecdn.fptplay.net/epzsport/thethao07_vhls.smil/chunklist_b5500000.m3u8
+#EXTINF:0,F EVENT1
+#EXTGRP:F SPORT
+https://livecdn.fptplay.net/schedule/sukien01_vhls.smil/chunklist_b5000000.m3u8
+#EXTINF:0,F EVENT1
+#EXTGRP:F SPORT
+ttps://livecdn.fptplay.net/tvc/sukien02_2000.stream/chunklist.m3u8
+#EXTINF:0,F EVENT1
+#EXTGRP:F SPORT
+https://livecdn.fptplay.net/tvc/sukien03_2000.stream/chunklist.m3u8
+#EXTINF:0,Xiên
+#EXTGRP:Thapcam
+https://fdcdn.livestreameuro.live/live/xienHD.flv
+#EXTINF:0,May1
+#EXTGRP:Thapcam
+https://fdcdn.livestreameuro.live/live/may1HD.flv
+#EXTINF:0,Bao
+#EXTGRP:Thapcam
+https://fdcdn.livestreameuro.live/live/baoHD.flv
+#EXTINF:0,Cuốn
+#EXTGRP:Thapcam
+https://fdcdn.livestreameuro.live/live/cuonHD.flv
+#EXTINF:0,Lông
+#EXTGRP:Thapcam
+https://fdcdn.livestreameuro.live/live/longHD.flv
+#EXTINF:0,Cây
+#EXTGRP:Thapcam
+https://fdcdn.livestreameuro.live/live/Z3HD.flv
+#EXTINF:0,Cáp Tần
+#EXTGRP:Thapcam
+https://fdcdn.livestreameuro.live/live/Z2HD.flv
+#EXTINF:0,Thịt Xiên
+#EXTGRP:Thapcam
+https://fdcdn.livestreameuro.live/live/xienHD.flv
+
