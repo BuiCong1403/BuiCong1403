@@ -304,7 +304,7 @@ https://api.wintv.me/360/181/index.m3u8
 https://api.wintv.me/360/182/index.m3u8
 #EXTINF:0,ON sport+
 #EXTGRP:VTV CAB
-https://livevlive.vtvcab.vn/HAY_TV/m401_index.m3u8
+https://509942876.r.vtvcdn.com/HAY_TV/v2_index.m3u8
 #EXTINF:0,ON sport+1
 #EXTGRP:VTV CAB
 https://e3.endpoint.cdn.sctvonline.vn/hls/vtvcab6/index.m3u8
@@ -589,10 +589,10 @@ https://khanggtivi.xyz/vuminhthanh/vmt2024/hbo/index.m3u8
 https://1.org.vn/hbokb
 #EXTINF:0,BOX MOVIE
 #EXTGRP:Quốc tế
-https://cdn1.skygo.mn/live/disk1/Moviebox/HLS-FTA/Moviebox.m3u8
+https://oipf0znpmnliv.vcdn.cloud/hls/boxmovie1/index.m3u8
 #EXTINF:0,Hollywood Classics
 #EXTGRP:Quốc tế
-https://api.wintv.me/360/160/index.m3u8
+https://thvip.site/360/160/index.m3u8
 #EXTINF:0,Happy Kids
 #EXTGRP:Quốc tế
 https://e4.endpoint.cdn.sctvonline.vn/hls/happykid/index.m3u8?
@@ -704,16 +704,21 @@ https://livecdn.fptplay.net/tvc/sukien03_2000.stream/chunklist.m3u8
 #EXTINF:0,EVENT1
 #EXTGRP:tv360
 http://thvip.site/360/2554/index.m3u8
-http://171.226.225.198:8889/rtp/239.12.251.72:5000
+#EXTINF:0,EVENT1-1
+#EXTGRP:tv360
+http://103.171.91.5/play/u2p_e4wGSh0vafm-3bmTbOALAsMPY5YT2XEQmNZ8ElU/ts
 #EXTINF:0,EVENT2
 #EXTGRP:tv360
 http://thvip.site/360/1/index.m3u8
+#EXTINF:0,EVENT2-1
+#EXTGRP:tv360
+http://103.171.91.5/play/u2p_e4wGSh0vafm-3bmTbNfs6WR5Dtlyn_x8hCLsf7o/ts
 #EXTINF:0,EVENT3-1
 #EXTGRP:tv360
 http://thvip.site/360/148/index.m3u8
 #EXTINF:0,EVENT3-2
 #EXTGRP:tv360
-https://tth.vn/TV360⁺³
+http://103.171.91.5/play/u2p_e4wGSh0vafm-3bmTbAKJUddB5rk31bmauxL4ej4/ts
 #EXTINF:0,EVENT4-2
 #EXTGRP:tv360
 https://tth.vn/TV360⁺⁴
