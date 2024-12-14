@@ -162,10 +162,10 @@ http://p1.cvtv.xyz/tnt5?token=live
 https://e2.endpoint.cdn.sctvonline.vn/hls/vtv1/index.m3u8
 #EXTINF:0,TV360 VTV1
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxch2/vtv1hd_abr.smil/chunklist_b4200000.m3u8
+http://bentre5.hoangai.vn:8086/stream/mtv/210/test/123/playlist.mpegts
 #EXTINF:0,VTV1 50PFS
 #EXTGRP:VTV
-https://api.wintv.me/360/2/index.m3u8
+https://iptv.gaixixon.workers.dev/?channel=vtv2
 #EXTINF:0,SCTV VTV2
 #EXTGRP:VTV
 https://e3.endpoint.cdn.sctvonline.vn/hls/vtv2/index.m3u8
@@ -174,7 +174,7 @@ https://e3.endpoint.cdn.sctvonline.vn/hls/vtv2/index.m3u8
 http://118.107.85.4:1935/live/smil:VTV2.smil/chunklist.m3u8
 #EXTINF:0,VTV2 50PFS
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxch2/vtv2hd_abr.smil/chunklist_b4200000.m3u8
+https://live.fptplay53.net/fnxhd1/vtv2_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:0,SCTV VTV3
 #EXTGRP:VTV
 https://e2.endpoint.cdn.sctvonline.vn/hls/vtv3/index.m3u8
@@ -525,7 +525,7 @@ https://s11.edge.cdn.sctvonline.vn/cdn-cgi/edge/v2/e8.endpoint.cdn.sctvonline.vn
 http://125hvt.ddns.net:21585/hbo/index.m3u8
 #EXTINF:0,HBO HD
 #EXTGRP:Quốc tế
-https://khanggtivi.xyz/vuminhthanh/vmt2024/hbo/index.m3u8
+http://bentre5.hoangai.vn:8086/stream/dotrethap/225.1.1.112/test/123/playlist.mpegts
 #EXTINF:0,BOX MOVIE 1
 #EXTGRP:Quốc tế
 https://e4.endpoint.cdn.sctvonline.vn/hls/boxmovie1/index.m3u8
@@ -537,7 +537,7 @@ https://oipf0znpmnliv.vcdn.cloud/hls/boxmovie1/index.m3u8
 https://thvip.site/360/160/index.m3u8
 #EXTINF:0,Hollywood Classics-1
 #EXTGRP:Quốc tế
-https://e4.endpoint.cdn.sctvonline.vn/hls/hollywood/index.m3u8
+https://e4.endpoint.cdn.sctvonline.vn/hls/hollywood/index.m3u8?%7CReferer=https://sctvonline.vn/
 #EXTINF:0,Happy Kids
 #EXTGRP:Quốc tế
 https://e4.endpoint.cdn.sctvonline.vn/hls/happykid/index.m3u8
@@ -573,10 +573,10 @@ https://e4.endpoint.cdn.sctvonline.vn/hls/drfit/index.m3u8
 https://thvip.site/360/235/index.m3u8
 #EXTINF:0,AXN
 #EXTGRP:Quốc tế
-http://homelab.nguyenvinh.id.vn:4022/udp/225.1.4.9:30120
+http://125hvt.ddns.net:21585/axn/index.m3u8
 #EXTINF:0,AXN HD
 #EXTGRP:Quốc tế
-https://hqth.me/axnkb
+http://bentre5.hoangai.vn:8086/stream/dotrethap/225.1.2.225/test/123/playlist.mpegts
 #EXTINF:0,Warner Bros
 #EXTGRP:Quốc tế
 http://gg.gg/HaNoiIPTV-Warner_TV_HD
@@ -714,7 +714,7 @@ http://185.59.221.131:8081/live/canalsport4/playlist.m3u8
 http://185.59.221.131:8081/live/canalsport5/playlist.m3u8
 #EXTINF:0, K CINE
 #EXTGRP:KPLUS
-http://hodam:66668888@hothanhdam.dsmynas.com:9981/stream/channelid/1946352900?profile=pass
+http://125hvt.ddns.net:21585/kcine/index.m3u8
 #EXTINF:0, K ACTION
 #EXTGRP:KPLUS
 http://hodam:66668888@hothanhdam.dsmynas.com:9981/stream/channelid/916837844?profile=pass
@@ -727,3 +727,93 @@ http://hodam:66668888@hothanhdam.dsmynas.com:9981/stream/channelid/541337809?pro
 #EXTINF:0, K KIDS
 #EXTGRP:KPLUS
 http://14.172.223.172:1024/rtp/232.84.3.43:11794
+#EXTINF:0, May1
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/05iUBH9USZtJJA3phySrtQ/Fv2lucGIbhPi2caWYvF5Lg/1727563342740/live/may1HD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, May2
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/r45Np6fKnTvgKEGZeBPNlA/Fv2lucGIbhPi2caWYvF5Lg/1727649777701/live/may2HD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, May3
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/olF0q3C9tN5w0fxDDXfgSA/Fv2lucGIbhPi2caWYvF5Lg/1727563428068/live/may3HD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, May6
+#EXTGRP:THAPCAM
+https://obevcimanyd179591709.akainu.xyz/4AfmeRVxxzGkkNvPmwiMAw/Fv2lucGIbhPi2caWYvF5Lg/1728721054810/live/may6/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, May10
+#EXTGRP:THAPCAM
+https://obevcimanyd179591709.akainu.xyz/MWlJ04d0kiGEGZvEYuK6kA/Fv2lucGIbhPi2caWYvF5Lg/1731740337929/live/may10/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, Z1
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/k40V9yvSWqY6nM52zsdQvQ/Fv2lucGIbhPi2caWYvF5Lg/1727649343114/live/Z1HD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, Z2
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/ZlS7tnbxIwO4G8xdGvtM2g/Fv2lucGIbhPi2caWYvF5Lg/1733608925371/live/Z2HD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, Z3
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/ocpgNq9HTY8e3ESKLFxc2g/Fv2lucGIbhPi2caWYvF5Lg/1727647750847/live/Z3HD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, SÓI
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/C5s04sD3HWuzQ9TEgOMN1w/Fv2lucGIbhPi2caWYvF5Lg/1727556717268/live/soiHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, MÓM
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/IbmvWPO_mtyORbGAiJxQkg/Fv2lucGIbhPi2caWYvF5Lg/1727647955621/live/momHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, MÈO Ú
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/vfGg7EbAEjEBbQ3KMDTDaA/Fv2lucGIbhPi2caWYvF5Lg/1727563238275/live/meoHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, NGƯỜI GIÀ
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/P3iXSPEE-oFh_Yv8g2DB1Q/Fv2lucGIbhPi2caWYvF5Lg/1727647593632/live/oldHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, NGƯỜI CAST
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/VLsg1n3gJl9ILAgg_06pZA/Fv2lucGIbhPi2caWYvF5Lg/1727647782115/live/catHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, LƠ ĐAO
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/B19_gnw4gkcvm1CQFAQ4JA/Fv2lucGIbhPi2caWYvF5Lg/1727647865357/live/daoHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, LÔNG
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/kJtTC3VMHnbsuwsqN3MlNA/Fv2lucGIbhPi2caWYvF5Lg/1727647914044/live/longHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, ANUI
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/I-zPgyYtykyTq4lQFSYF3g/Fv2lucGIbhPi2caWYvF5Lg/1727647991559/live/nuiHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, THỊT XIÊN
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/su5rROGwhw1mD1eRyKO2FA/Fv2lucGIbhPi2caWYvF5Lg/1727648031152/live/xienHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, BÚN CHẢ
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/24UkN_MeRblILbpPdcNsGg/Fv2lucGIbhPi2caWYvF5Lg/1733815159608/live/chaHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, TRÂU GÁC BẾP
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/FSpm_2y8wCPv_mlH0tx-gQ/Fv2lucGIbhPi2caWYvF5Lg/1727649593795/live/trauHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, TAILUNG
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/deAKlnqwax0W8di2xnfRrw/Fv2lucGIbhPi2caWYvF5Lg/1727653005822/live/lungHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, MỲ TÔM
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/Ztxpsuql2Yju8iZMlIuniw/Fv2lucGIbhPi2caWYvF5Lg/1727653201139/live/myHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, BÁNH CUỐN
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/ZGACcGL4sYUivjQETvKCBw/Fv2lucGIbhPi2caWYvF5Lg/1727732206087/live/cuonHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, PHỞ BÒ
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/YFM2vkNMt9kdYTHaHiLgqQ/Fv2lucGIbhPi2caWYvF5Lg/1727732378026/live/phoHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, NGƯỜI SẮT
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/J9ueTptpA8oKyDvFObHEHg/Fv2lucGIbhPi2caWYvF5Lg/1728765554105/live/satHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, Hawkeye
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/bFC5kMYdK_AZ_0IK7SJRyA/Fv2lucGIbhPi2caWYvF5Lg/1728765661948/live/hawHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, NGƯỜI ĐÁ
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/yBpRt7kkhyeR5SeW5i-9iQ/Fv2lucGIbhPi2caWYvF5Lg/1728939301864/live/daHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, NGƯỜI DƯNG
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/Gc5AlCbCSN1YJWnYHBxcsA/Fv2lucGIbhPi2caWYvF5Lg/1729197636507/live/dungHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, NGƯỜI CÚN
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/TF8ufeqmdy98mYcc6JZYuQ/Fv2lucGIbhPi2caWYvF5Lg/1727909215012/live/cunHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, NGƯỜI BÁO
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/YBhs7G7YXM4i2Qz0uCraJQ/Fv2lucGIbhPi2caWYvF5Lg/1732386342286/live/baoHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
+#EXTINF:0, CÁ MẬP
+#EXTGRP:THAPCAM
+https://obevcimanyd179569584.akainu.xyz/RiwXXiQ8Zrp8FtjuCGyc4A/Fv2lucGIbhPi2caWYvF5Lg/1732386324764/live/mapHD/chunklist.m3u8#|Referer=https://t.fdcdn.xyz
