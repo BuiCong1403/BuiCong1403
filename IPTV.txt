@@ -162,7 +162,7 @@ http://p1.cvtv.xyz/tnt5?token=live
 https://e4.endpoint.cdn.sctvonline.vn/hls/vtv1/index.m3u8?|Referer=http://sctvonline.vn/
 #EXTINF:0,TV360 VTV1
 #EXTGRP:VTV
-http://bentre5.hoangai.vn:8086/stream/mtv/210/test/123/playlist.mpegts
+http://0tt.news/vtv/vtv1.m3u8
 #EXTINF:0,VTV1 50PFS
 #EXTGRP:VTV
 https://iptv.gaixixon.workers.dev/?channel=vtv2
@@ -171,7 +171,7 @@ https://iptv.gaixixon.workers.dev/?channel=vtv2
 https://e8.endpoint.cdn.sctvonline.vn/hls/vtv2/index.m3u8?|Referer=http://sctvonline.vn/
 #EXTINF:0,TV360 VTV2
 #EXTGRP:VTV
-http://118.107.85.4:1935/live/smil:VTV2.smil/chunklist.m3u8
+http://0tt.news/vtv/vtv2.m3u8
 #EXTINF:0,VTV2 50PFS
 #EXTGRP:VTV
 https://live.fptplay53.net/fnxhd1/vtv2_vhls.smil/chunklist_b5000000.m3u8
@@ -180,7 +180,7 @@ https://live.fptplay53.net/fnxhd1/vtv2_vhls.smil/chunklist_b5000000.m3u8
 https://e8.endpoint.cdn.sctvonline.vn/hls/vtv3/index.m3u8?|Referer=http://sctvonline.vn/
 #EXTINF:0,VTV3
 #EXTGRP:VTV
-http://homelab.nguyenvinh.id.vn:4022/udp/225.1.2.247:30120
+http://0tt.news/vtv/vtv3.m3u8
 #EXTINF:0,VTV3 50PFS
 #EXTGRP:VTV
 https://live.fptplay53.net/fnxch2/vtv3hd_abr.smil/chunklist_b4200000.m3u8
@@ -189,10 +189,10 @@ https://live.fptplay53.net/fnxch2/vtv3hd_abr.smil/chunklist_b4200000.m3u8
 https://e3.endpoint.cdn.sctvonline.vn/hls/vtv4/index.m3u8
 #EXTINF:0,TV360 VTV4
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxch2/vtv4hd_abr.smil/chunklist_b4200000.m3u8
+http://0tt.news/vtv/vtv4.m3u8
 #EXTINF:0,VTV5
 #EXTGRP:VTV
-https://liveh12.vtvcab.vn/hls/ONVTV5_CL/04.m3u8
+http://0tt.news/vtv/vtv5.m3u8
 #EXTINF:0,SCTV VTV5
 #EXTGRP:VTV
 https://e8.endpoint.cdn.sctvonline.vn/hls/vtv5/index.m3u8?|Referer=http://sctvonline.vn/
@@ -204,13 +204,13 @@ https://live.fptplay53.net/epzch2/vtv5hd_abr.smil/chunklist_b4200000.m3u8
 https://e8.endpoint.cdn.sctvonline.vn/hls/vtv5_tnb/index.m3u8
 #EXTINF:0,VTV5TNB-1
 #EXTGRP:VTV
-https://api.wintv.me/360/157/index.m3u8
+http://0tt.news/vtv/vtv5tnb.m3u8
 #EXTINF:0,SCTV VTV6
 #EXTGRP:VTV
 https://e8.endpoint.cdn.sctvonline.vn/hls/vtv6/index.m3u8
 #EXTINF:0,VTV6 Cần thơ
 #EXTGRP:VTV
-https://api.wintv.me/360/98/index.m3u8
+http://0tt.news/vtv/vtv6.m3u8
 #EXTINF:0,SCTV VTV7
 #EXTGRP:VTV
 https://e2.endpoint.cdn.sctvonline.vn/hls/vtv7/index.m3u8
@@ -307,63 +307,6 @@ https://tth.vn/vtvcab23
 #EXTINF:0,ON SPORT ACTION
 #EXTGRP:VTV CAB
 http://live-ali2.tv360.vn/manifest/K_Plus_Sport2_test/playlist_1080p-5M.m3u8
-#EXTINF:0,VTC1
-#EXTGRP:VTC
-https://api.wintv.me/360/16/index.m3u8
-#EXTINF:0,VTC1-1
-#EXTGRP:VTC
-http://liveh12.vtvcab.vn/hls/ONVTC1_CL/01.m3u8
-#EXTINF:0,VTC1-2
-#EXTGRP:VTC
-https://vtc301220.cdn.vnns.io/VTC1HD.stream/chunks.m3u8
-#EXTINF:0,VTC2
-#EXTGRP:VTC
-https://api.wintv.me/360/196/index.m3u8
-#EXTINF:0,VTC3
-#EXTGRP:VTC
-https://api.wintv.me/360/197/index.m3u8
-#EXTINF:0,VTC3-1
-#EXTGRP:VTC
-http://api.wintv.me/360/197/index.m3u8
-#EXTINF:0,VTC4
-#EXTGRP:VTC
-https://api.wintv.me/360/198/index.m3u8
-#EXTINF:0,VTC5
-#EXTGRP:VTC
-https://api.wintv.me/360/199/index.m3u8
-#EXTINF:0,VTC6
-#EXTGRP:VTC
-https://api.wintv.me/360/200/index.m3u8
-#EXTINF:0,VTC7
-#EXTGRP:VTC
-https://api.wintv.me/360/201/index.m3u8
-#EXTINF:0,VTC8
-#EXTGRP:VTC
-https://api.wintv.me/360/202/index.m3u8
-#EXTINF:0,VTC9
-#EXTGRP:VTC
-https://api.wintv.me/360/203/index.m3u8
-#EXTINF:0,VTC10
-#EXTGRP:VTC
-https://api.wintv.me/360/204/index.m3u8
-#EXTINF:0,VTC11
-#EXTGRP:VTC
-https://api.wintv.me/360/205/index.m3u8
-#EXTINF:0,VTC14
-#EXTGRP:VTC
-https://api.wintv.me/360/17/index.m3u8
-#EXTINF:0,VTC16
-#EXTGRP:VTC
-https://api.wintv.me/360/18/index.m3u8
-#EXTINF:0,VOV
-#EXTGRP:VTC
-https://live.mediatech.vn/live/285fbc845578c6641d5a4c40534a0d1864b/playlist.m3u8
-#EXTINF:0,QUOC HOI
-#EXTGRP:THIET YEU
-https://cloudvodqh.tek4tv.vn/live/quochoi_abr.m3u8
-#EXTINF:0,QUOC HOI
-#EXTGRP:THIET YEU
-https://liveh12.vtvcab.vn/hls/ONQUOCHOI_CL/index.m3u8
 #EXTINF:0,ANTV
 #EXTGRP:THIET YEU
 https://liveh34.vtvcab.vn/hls/ONANTV_CL/04.m3u8
@@ -379,12 +322,6 @@ https://zjizeoupprliv.vcdn.cloud/live/smil:vnews.smil/playlist.m3u8
 #EXTINF:0,TTXVN
 #EXTGRP:THIET YEU
 https://liveh34.vtvcab.vn/hls/TTXVN_VNEWS/index.m3u8
-#EXTINF:0,NHANDAN
-#EXTGRP:THIET YEU
-https://arpt.tvic.vn/live/nhandan720/chunklist.m3u8
-#EXTINF:0,NHANDAN
-#EXTGRP:THIET YEU
-https://liveh34.vtvcab.vn/hls/ONNHANDAN_CL/03.m3u8
 #EXTINF:0,QPVN
 #EXTGRP:THIET YEU
 https://playlive.qpvn.vn/live/qpvn.m3u8
