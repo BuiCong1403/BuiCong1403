@@ -612,10 +612,13 @@ https://live.fptplay53.net/fnxhd2/france24_hls.smil/chunklist.m3u8
 https://live.fptplay53.net/fnxhd2/nhkworld_vhls.smil/chunklist.m3u8
 #EXTINF:0, K+ CINE
 #EXTGRP:International
-http://125hvt.ddns.net:21585/kcine/index.m3u8
+https://509942876.r.vtvcdn.com/onplus/K_CINE_7777/m20_index.m3u8
 #EXTINF:0, K+ CINE-1
 #EXTGRP:International
 http://e4.endpoint.cdn.sctvonline.vn/hls/KPlusCine/01.m3u8?|Referer=http://sctvonline.vn/
+#EXTINF:0, K+ ACTION-1
+#EXTGRP:International
+https://509942876.r.vtvcdn.com/onplus/K_LIFE_7777/m20_index.m3u8
 #EXTINF:0, K+ ACTION
 #EXTGRP:International
 http://e4.endpoint.cdn.sctvonline.vn/hls/KPlusAction/01.m3u8?|Referer=http://sctvonline.vn/
@@ -623,6 +626,9 @@ http://e4.endpoint.cdn.sctvonline.vn/hls/KPlusAction/01.m3u8?|Referer=http://sct
 #EXTGRP:International
 https://live.fptplay53.net/epzhd2/outdoorfhd_vhls.smil/chunklist.m3u8
 #EXTINF:0, K+ kids
+#EXTGRP:International
+https://z215ymcm4tliv.vcdn.cloud/s4/hls/KPlusKid/index.m3u8
+#EXTINF:0, K+ kids-1
 #EXTGRP:International
 http://e4.endpoint.cdn.sctvonline.vn/hls/KPlusKid/index.m3u8?|Referer=http://sctvonline.vn/
 #EXTINF:0, 360-1
