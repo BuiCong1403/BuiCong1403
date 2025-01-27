@@ -189,7 +189,13 @@ https://e4.endpoint.cdn.sctvonline.vn/hls/vtv1/index.m3u8?|Referer=http://sctvon
 http://thvip.site/vtv1/index.m3u8
 #EXTINF:0,VTV1 50PFS
 #EXTGRP:VTV
-http://p1.cvtv.xyz/vtv1?token=live
+https://ott1.nethubtv.vn/live/vtv1/playlist.m3u8
+#EXTINF:0,VTV1 fpt
+#EXTGRP:VTV
+https://live.fptplay53.net/fnxhd1/vtv1hd_vhls.smil/chunklist_b5000000.m3u8
+#EXTINF:0,VTV1 cvtv
+#EXTGRP:VTV
+http://p2.cvtv.xyz/vtv1?token=live
 #EXTINF:0,SCTV VTV2
 #EXTGRP:VTV
 https://e8.endpoint.cdn.sctvonline.vn/hls/vtv2/index.m3u8?|Referer=http://sctvonline.vn/
@@ -204,10 +210,13 @@ http://thvip.site/vtv2/index.m3u8
 https://e8.endpoint.cdn.sctvonline.vn/hls/vtv3/index.m3u8?|Referer=http://sctvonline.vn/
 #EXTINF:0,VTV3
 #EXTGRP:VTV
-http://p1.cvtv.xyz/vtv3?token=live
+https://live.fptplay53.net/fnxhd1/vtv3hd_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:0,VTV3 50PFS
 #EXTGRP:VTV
 http://thvip.site/vtv3/index.m3u8
+#EXTINF:0,VTV3 50PFS
+#EXTGRP:VTV
+http://p1.cvtv.xyz/vtv3?token=live
 #EXTINF:0,SCTV VTV4
 #EXTGRP:VTV
 https://e3.endpoint.cdn.sctvonline.vn/hls/vtv4/index.m3u8
