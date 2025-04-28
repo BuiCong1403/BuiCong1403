@@ -1,78 +1,7 @@
 #EXTM3U
+url-tvg="http://trada.info/epg.xml; http://lichphatsong.xyz/schedule/epg.xml";
 #PLAYLISTINF:BUICONG="v1" url="http://bom.so/dltivi" list1="http://bit.ly/khichtivi" list2="https://iptv.pro.vn/phimiptv/" https://tth.vn/tv360 http://gg.gg/coocaa  https://tth.vn/vmttv https://hqth.me/vietngatv
 
-#EXTINF:0, CAHEO1
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@caheohd1.flv
-#EXTINF:0, AMEO
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@meohd1.flv
-#EXTINF:0, AHEO
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@heohd1.flv
-#EXTINF:0, SÚN
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@sunhd1.flv
-#EXTINF:0, FANG
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@phanghd1.flv
-#EXTINF:0, THỢ LẶN
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@lanhd1.flv
-#EXTINF:0, THỢ XÂY
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@thoxayhd1.flv
-#EXTINF:0, H+
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@hplushd1.flv
-#EXTINF:0, BỊP
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@biphd1.flv
-#EXTINF:0, CHUDU
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@chuduhd1.flv
-#EXTINF:0, CHUOI
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@cachuoihd1.flv
-#EXTINF:0, XIMANG
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@ximanghd1.flv
-#EXTINF:0, A LỬ
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@luhd1.flv
-#EXTINF:0, A CAY
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@cayhd1.flv
-#EXTINF:0, A Lú
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@luluhd1.flv
-#EXTINF:0, A Lôi
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@loihd1.flv
-#EXTINF:0, A Páo
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@paohd1.flv
-#EXTINF:0, A Phọt
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@phothd1.flv
-#EXTINF:0, A Phò
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@cakhiahd1.flv
-#EXTINF:0, A Phủ
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@phuhd1.flv
-#EXTINF:0, A Khoai
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@khoaihd1.flv
-#EXTINF:0, A Cỏ
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@cohd1.flv
-#EXTINF:0, A Táo
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@taohd1.flv
-#EXTINF:0, A Chất
-#EXTGRP:CAKHIA
-https://liveflv-cakhia.cdnlive.pro/live/stream_1_a86e6@chathd1.flv
 #EXTINF:0, Sky Sport F1
 #EXTGRP:Thể thao Quốc tế
 http://p1.cvtv.xyz/f1?token=live
@@ -214,15 +143,6 @@ http://kstv.us:8080/live/2qt65aetuZ/0527822179/47636.m3u8
 #EXTINF:0,SUPERSPORT EPL
 #EXTGRP:Thể thao Quốc tế
 http://kstv.us:8080/live/2qt65aetuZ/0527822179/47636.m3u8
-#EXTINF:0,SCTV VTV1
-#EXTGRP:VTV
-https://e4.endpoint.cdn.sctvonline.vn/hls/vtv1/index.m3u8?|Referer=http://sctvonline.vn/
-#EXTINF:0,TV360 VTV1
-#EXTGRP:VTV
-http://thvip.site/vtv1/index.m3u8
-#EXTINF:0,VTV1 50PFS
-#EXTGRP:VTV
-https://ott1.nethubtv.vn/live/vtv1/playlist.m3u8
 #EXTINF:0,VTV1 fpt
 #EXTGRP:VTV
 https://live.fptplay53.net/fnxhd1/vtv1hd_vhls.smil/chunklist_b5000000.m3u8
