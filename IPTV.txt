@@ -1,6 +1,7 @@
-#EXTM3U
-url-tvg="http://trada.info/epg.xml; http://lichphatsong.xyz/schedule/epg.xml";
-#PLAYLISTINF:BUICONG="v1" url="http://bom.so/dltivi" list1="http://bit.ly/khichtivi" list2="https://iptv.pro.vn/phimiptv/" https://tth.vn/tv360 http://gg.gg/coocaa  https://tth.vn/vmttv https://hqth.me/vietngatv
+#EXTM3U url-tvg="http://lichphatsong.xyz/schedule/epg.xml.gz"
+#EXTM3U url-tvg="http://cvtv.xyz/xmltv"
+#EXTM3U url-tvg="https://iptvx.one/EPG"interlace=0
+#PLAYLISTINF:BUICONG="v1" url="http://bom.so/dltivi" list2="https://iptv.pro.vn/phimiptv/" https://tth.vn/tv360 http://gg.gg/coocaa  https://tth.vn/vmttv https://hqth.me/vietngatv
 
 #EXTINF:0, Boomerang
 #EXTGRP:Thiếu nhi
