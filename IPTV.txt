@@ -1,60 +1,15 @@
 #EXTM3U url-tvg="http://lichphatsong.xyz/schedule/epg.xml.gz"
 #EXTM3U url-tvg="https://iptvx.one/EPG"interlace=0
 
-#EXTINF:0, Boomerang
-#EXTGRP:Thiếu nhi
-https://fl3.moveonjoy.com/BOOMERANG/index.m3u8
-#EXTINF:0, Cartoon Network
-#EXTGRP:Thiếu nhi
-https://cdn2.skygo.mn/live/disk1/Cartoon_Network/HLS-FTA/Cartoon_Network.m3u8
-#EXTINF:0, Cartoonito
-#EXTGRP:Thiếu nhi
-https://cdn4.skygo.mn/live/disk1/Boomerang/HLS-FTA/Boomerang.m3u8
-#EXTINF:0, Davinci
-#EXTGRP:Thiếu nhi
-https://live.fptplay53.net/fnxhd2/davincihd_vhls.smil/chunklist.m3u8
-#EXTINF:0, NickToons
-#EXTGRP:Thiếu nhi
-https://fl1.moveonjoy.com/NICKTOONS/index.m3u8
-#EXTINF:0, DISNEY JR
-#EXTGRP:Thiếu nhi
-https://fl5.moveonjoy.com/DISNEY_JR/index.m3u8
-#EXTINF:0, DISNEY Chanel
-#EXTGRP:Thiếu nhi
-https://fl5.moveonjoy.com/DISNEY_CHANNEL/index.m3u8
-#EXTINF:0, DISNEY XD
-#EXTGRP:Thiếu nhi
-https://fl5.moveonjoy.com/DISNEY_XD/index.m3u8
-#EXTINF:0, ABC kid
-#EXTGRP:Thiếu nhi
-https://c.mjh.nz/abc-kids.m3u8
-#EXTINF:0, ABC me
-#EXTGRP:Thiếu nhi
-https://c.mjh.nz/abc-me.m3u8
-#EXTINF:0, OnePiece
-#EXTGRP:Thiếu nhi
-https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/5f7790b3ed0c88000720b241/master.m3u8?deviceType=samsung-tvplus&deviceMake=samsung&deviceModel=samsung&deviceVersion=unknown&appVersion=unknown&deviceLat=0&deviceLon=0&deviceDNT={TARGETOPT}&deviceId={PSID}&advertisingId={PSID}&us_privacy=1YNY&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&profileLimit=&profileFloor=&embedPartner=samsung-tvplus
-#EXTINF:0, Zoomoo
-#EXTGRP:Thiếu nhi
-https://zoomoo-samsungau.amagi.tv/playlist1080p.m3u8
-#EXTINF:0, Moonbug 1
-#EXTGRP:Thiếu nhi
-https://moonbug-rokuus.amagi.tv/playlist.m3u8
-#EXTINF:0, Baby Shark 1
-#EXTGRP:Thiếu nhi
-https://newidco-babysharktv-1-eu.rakuten.wurl.tv/playlist.m3u8
-#EXTINF:0, Kid TV
-#EXTGRP:Thiếu nhi
-https://newidco-babysharktv-1-eu.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:0,VTV1
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxhd1/vtv1hd_vhls.smil/chunklist_b5000000.m3u8
+https://live.fptplay53.net/fnxch2/vtv1hd_abr.smil/chunklist_b4200000.m3u8
 #EXTINF:0,VTV2
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxhd1/vtv2_vhls.smil/chunklist_b5000000.m3u8
+https://live.fptplay53.net/fnxch2/vtv2hd_abr.smil/chunklist_b4200000.m3u8
 #EXTINF:0,VTV3
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxhd1/vtv3hd_vhls.smil/chunklist_b5000000.m3u8
+https://live.fptplay53.net/fnxch2/vtv3hd_abr.smil/chunklist_b4200000.m3u8
 #EXTINF:0,QPVN
 #EXTGRP:VTV
 https://live.fptplay53.net/fnxhd2/quocphongvnhd_vhls.smil/chunklist_b5000000.m3u8
@@ -63,118 +18,141 @@ https://live.fptplay53.net/fnxhd2/quocphongvnhd_vhls.smil/chunklist_b5000000.m3u
 https://live.fptplay53.net/fnxhd2/anninhtv_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:0,VTV4
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxch2/vtv4hd_abr.smil/chunklist.m3u8
+https://live.fptplay53.net/fnxch2/vtv4hd_abr.smil/chunklist_b4200000.m3u8
 #EXTINF:0,VTV5
 #EXTGRP:VTV
-https://live.fptplay53.net/epzch2/vtv5hd_abr.smil/chunklist.m3u8
+https://live.fptplay53.net/epzch2/vtv5hd_abr.smil/chunklist_b4200000.m3u8
 #EXTINF:0,VTV5TNB
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxhd1/vtv5tnb_vhls.smil/chunklist.m3u8
+https://live.fptplay53.net/fnxhd1/vtv5tnb_vhls.smil/chunklist_b5000000.m3u8
+#EXTINF:0,VTV5TAYNGUYEN
+#EXTGRP:VTV
+https://live.fptplay53.net/fnxhd1/vtv5taynguyen_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:0,VTV6
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxhd1/vtvcantho_vhls.smil/chunklist.m3u8
+https://live.fptplay53.net/fnxch2/vtvcantho_abr.smil/chunklist_b4200000.m3u8
 #EXTINF:0,VTV7
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxhd1/vtv7hd_vhls.smil/chunklist.m3u8
+https://live.fptplay53.net/fnxhd1/vtv7hd_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:0,VTV8
 #EXTGRP:VTV
-https://live.fptplay53.net/epzhd1/vtv8hd_vhls.smil/chunklist.m3u8
+https://live.fptplay53.net/epzhd1/vtv8hd_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:0,VTV9
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxhd1/vtv9_vhls.smil/chunklist.m3u8
+https://live.fptplay53.net/epzch2/vtv9hd_abr.smil/chunklist_b4200000.m3u8
+#EXTINF:0,VIETNAM TODAY
+#EXTGRP:VTV
+https://live.fptplay53.net/fnxhd1/vntoday_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:0,On Vie Giai trí
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab1hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/180/index.m3u8
 #EXTINF:0,ON Phim Việt
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab2hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/175/index.m3u8
 #EXTINF:0,ON sport
 #EXTGRP:VTV CAB
-https://rg.hoangducanh.site/vtvcab3
+https://xem.hoiquan.click/TichHop/OnLive/LIVE/?user=onsports
 #EXTINF:0,ON movies
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab4hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/181/index.m3u8
 #EXTINF:0,ON E Channel
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab5hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/182/index.m3u8
 #EXTINF:0,ON sport+
 #EXTGRP:VTV CAB
-https://rg.hoangducanh.site/vtvcab6
+https://xem.hoiquan.click/TichHop/OnLive/LIVE/?user=onsportsplus
 #EXTINF:0,ON O2
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab7hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/136/index.m3u8
 #EXTINF:0,ON BIBI
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab8hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/178/index.m3u8
 #EXTINF:0,ON INFO
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab9hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/189/index.m3u8
 #EXTINF:0,ON CINE
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab10hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/176/index.m3u8
 #EXTINF:0,ON STYLE
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab12hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/184/index.m3u8
 #EXTINF:0,ON MUSIC
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab15hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/185/index.m3u8
 #EXTINF:0,ON FOOTBALL
 #EXTGRP:VTV CAB
-https://rg.hoangducanh.site/vtvcab16
+https://xem.hoiquan.click/TichHop/OnLive/LIVE/?user=onfootball
 #EXTINF:0,ON TRENDING
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab17hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/186/index.m3u8
 #EXTINF:0,ON SPORTNEWS
 #EXTGRP:VTV CAB
-https://truyenhinh.click/vtvcab18
+https://xem.hoiquan.click/TichHop/OnLive/LIVE/?user=onsportsnews
 #EXTINF:0,ON VIE DRAMA
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab19hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/177/index.m3u8
 #EXTINF:0,ON VIE FAMILY
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab20hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/187/index.m3u8
 #EXTINF:0,ON KIDS
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab21hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/179/index.m3u8
 #EXTINF:0,ON LIFE 
 #EXTGRP:VTV CAB
-https://xem.TruyenHinh.Click/CoBan/vtvcab22hd/TuyetDoiKhongKinhDoanh.m3u8
+https://nextx.live/360/188/index.m3u8
 #EXTINF:0,ON GOLF
 #EXTGRP:VTV CAB
-https://truyenhinh.click/vtvcab23
-#EXTINF:0,SPORT 1
-#EXTGRP:K+
-https://rg.hoangducanh.site/ksport1hd
-#EXTINF:0,SPORT 2
-#EXTGRP:K+
-https://rg.hoangducanh.site/ksp2hd
-#EXTINF:0,CINE
-#EXTGRP:K+
-https://rg.hoangducanh.site/kcinehd
-#EXTINF:0,Action
-#EXTGRP:K+
-https://rg.hoangducanh.site/kactionhd
-#EXTINF:0,Kid
-#EXTGRP:K+
-https://rg.hoangducanh.site/kkidshd
-#EXTINF:0,ANTV
-#EXTGRP:THIET YEU
-https://liveh34.vtvcab.vn/hls/ONANTV_CL/04.m3u8
-#EXTINF:0,ANTV1
-#EXTGRP:THIET YEU
-https://liveh34.vtvcab.vn/hls/ONANTV_CL/index.m3u8
-#EXTINF:0,ANTV
-#EXTGRP:THIET YEU
-https://live.fptplay53.net/fnxhd2/anninhtv_vhls.smil/chunklist_b5000000.m3u8
-#EXTINF:0,TTXVN
-#EXTGRP:THIET YEU
-https://liveh34.vtvcab.vn/hls/TTXVN_VNEWS/index.m3u8
-#EXTINF:0,QPVN
-#EXTGRP:THIET YEU
-https://playlive.qpvn.vn/live/qpvn.m3u8
-#EXTINF:0,QPVN
-#EXTGRP:THIET YEU
-https://live.fptplay53.net/fnxhd2/quocphongvnhd_vhls.smil/chunklist_b5000000.m3u8
+https://nextx.live/360/169/index.m3u8
+#EXTINF:0 tvg-id="kcinehd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/kcinehd.jpg",K+ Cine
+http://luizkun.duckdns.org:63213/rtp/232.84.1.122:10314
+#EXTINF:0 tvg-id="kaction" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/kaction.jpg",K+ Action
+http://luizkun.duckdns.org:63213/rtp/232.84.1.33:8172
+#EXTINF:0 tvg-id="ksport1hd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/ksport1hd.jpg",K+ Sport 1
+http://luizkun.duckdns.org:63213/rtp/232.84.1.98:8562
+#EXTINF:0 tvg-id="ksport2hd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/ksport2hd.jpg",K+ Sport 2
+http://luizkun.duckdns.org:63213/rtp/232.84.1.34:8178
+#EXTINF:0 tvg-id="kkidshd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/kkidshd.jpg",K+ Kids
+http://luizkun.duckdns.org:63213/rtp/232.84.3.43:11794
+
+#EXTINF:-1 tvg-id="onfootball" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/on-football.jpg",ON Football
+http://luizkun.duckdns.org:63213/rtp/232.84.1.210:9234
+#EXTINF:-1 tvg-id="onsports" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/on-sports.jpg",ON Sports
+http://luizkun.duckdns.org:63213/rtp/232.84.1.207:9216
+#EXTINF:-1 tvg-id="onsportsnews" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/on-sportsnews.jpg",ON Sports News
+http://luizkun.duckdns.org:63213/rtp/232.84.2.193:10942
+#EXTINF:-1 tvg-id="onsportsplus" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/on-sportsplus.jpg",ON Sports+
+http://luizkun.duckdns.org:63213/rtp/232.84.3.75:11602
+
+#EXTINF:-1 tvg-id="hbohd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/hbohd.png",HBO
+http://luizkun.duckdns.org:63213/rtp/232.84.2.138:10648
+#EXTINF:-1 tvg-id="axnhd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/axn.png",AXN Asia
+http://luizkun.duckdns.org:63213/rtp/232.84.2.140:10660
+#EXTINF:0 tvg-id="dreamworks" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/dreamworks.jpg",Dreamworks
+http://luizkun.duckdns.org:63213/rtp/232.84.3.227:11284
+#EXTINF:0 tvg-id="cinemaworldhd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/cinemaworldhd.jpg",Cinema World
+http://luizkun.duckdns.org:63213/rtp/232.84.2.172:10840
+#EXTINF:0 tvg-id="cinemaxhd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/cinemaxhd.png",Cinemax
+http://luizkun.duckdns.org:63213/rtp/232.84.3.117:10654
+
+#EXTINF:-1 tvg-id="warnertvhd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/warnertvhd.jpg",Warner TV
+http://luizkun.duckdns.org:63213/rtp/232.84.2.51:10516
+#EXTINF:-1 tvg-id="discoveryasiahd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/discoveryasiahd.jpg",Discovery Asia
+http://luizkun.duckdns.org:63213/rtp/232.84.3.219:11236
+#EXTINF:-1 tvg-id="discoveryhd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/discoveryhd.jpg",Discovery Channel
+http://luizkun.duckdns.org:63213/rtp/232.84.2.53:10528
+#EXTINF:-1 tvg-id="bbcearth" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/bbcearth.jpg",BBC Earth
+http://luizkun.duckdns.org:63213/rtp/232.84.3.226:11278
+#EXTINF:-1 tvg-id="bbcworldnews" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/bbcnews.png",BBC News
+http://luizkun.duckdns.org:63213/rtp/232.84.3.224:11266
+#EXTINF:0 tvg-id="cbeebies" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/cbeebies.jpg",BBC CbeeBies
+http://luizkun.duckdns.org:63213/rtp/232.84.1.90:10398
+#EXTINF:0 tvg-id="bbclifestyle" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/bbclifestyle.jpg",BBC Lifestyle
+http://luizkun.duckdns.org:63213/rtp/232.84.3.225:11272
+#EXTINF:-1 tvg-id="animalhd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/animalhd.jpg",Animal Planet
+http://luizkun.duckdns.org:63213/rtp/232.84.3.139:10702
+#EXTINF:0 tvg-id="cartoonhd" group-title="MyTV" tvg-logo="https://img.lichphatsong.xyz/logo/cartoonhd.jpg",Cartoon Network
+http://luizkun.duckdns.org:63213/rtp/232.84.2.144:10684
+
 #EXTINF:0,HTV1
 #EXTGRP:HTV
 https://live.fptplay53.net/epzhd1/htv1_hls.smil/chunklist.m3u8
@@ -307,245 +285,115 @@ https://liveh12.seenow.vn/hls/SCTVPHIM/03.m3u8
 #EXTINF:0,SCTV 4K
 #EXTGRP:SCTV
 https://z215ymcm4tliv.vcdn.cloud/s97/hls/sctv4k/index.m3u8
-#EXTINF:0,HBO
+#EXTINF:0,HBO US
 #EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/hbo/index.m3u8
+http://fl5.moveonjoy.com/HBO/index.m3u8
 #EXTINF:0,HBO HD
 #EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/hbo/index.m3u8
-#EXTINF:0,ASIAN FOOD NETWORK
+https://hls.mskycdn.online/tv/hbohd/index.m3u8
+#EXTINF:0,In The Box
 #EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/afchd_vhls.smil/chunklist.m3u8
+https://xem.hoiquan.click/CoBan/in-the-box/TuyetDoiKhongKinhDoanh.m3u8
 #EXTINF:0,BOX MOVIE
 #EXTGRP:Quốc tế
-https://oipf0znpmnliv.vcdn.cloud/hls/boxmovie1/index.m3u8
-#EXTINF:0,OUTDOOR CHANEL
+https://xem.hoiquan.click/CoBan/box-movie-1-hd/TuyetDoiKhongKinhDoanh.m3u8
+#EXTINF:0,Cinemax
 #EXTGRP:Quốc tế
-https://live.fptplay53.net/epzhd2/outdoorfhd_vhls.smil/chunklist.m3u8
+https://hls.mskycdn.online/tv/cinemaxhd/index.m3u8
 #EXTINF:0,Hollywood Classics-1
 #EXTGRP:Quốc tế
-https://xem.TruyenHinh.Click/CoBan/hollywood-classic-hd/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0,Hollywood Classics-2
+https://xem.hoiquan.click/CoBan/hollywood-classic-hd/TuyetDoiKhongKinhDoanh.m3u8
+#EXTINF:0,Cinema World
 #EXTGRP:Quốc tế
-https://sgchill.io.vn/360/160/index.m3u8
+https://hls.mskycdn.online/tv/cinemaworldhd/index.m3u8
 #EXTINF:0,Happy Kids
 #EXTGRP:Quốc tế
 https://xem.TruyenHinh.Click/CoBan/happy-kids-hd/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0,CINEMAX
+#EXTINF:0,Cartoon Network
 #EXTGRP:Quốc tế
-http://123.21.223.9:8081/live/cinemax/index.m3u8
-#EXTINF:0,CINEMAX
+https://hls.mskycdn.online/tv/cartoonhd/index.m3u8
+#EXTINF:0,Dreamworks
 #EXTGRP:Quốc tế
-https://khanggtivi.xyz/vuminhthanh/vmt2024/cinemax/index.m3u8
+https://hls.mskycdn.online/tv/dreamworks/index.m3u8
 #EXTINF:0,AXN
 #EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/axn/index.m3u8
+https://hls.mskycdn.online/tv/axnhd/index.m3u8
 #EXTINF:0,BOX MUSIC
 #EXTGRP:Quốc tế
 https://xem.TruyenHinh.Click/CoBan/music-box/TuyetDoiKhongKinhDoanh.m3u8
 #EXTINF:0,BOX HITS
 #EXTGRP:Quốc tế
-https://xem.TruyenHinh.Click/CoBan/box-hits/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0,Planet Earth
-#EXTGRP:Quốc tế
-https://xem.TruyenHinh.Click/CoBan/planet-earth-hd/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0,WOMAN
-#EXTGRP:Quốc tế
-https://xem.TruyenHinh.Click/CoBan/woman-hd/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0,MAN
-#EXTGRP:Quốc tế
-https://xem.TruyenHinh.Click/CoBan/man/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0,KIX
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/kixhd_vhls.smil/chunklist.m3u8
-#EXTINF:0,DA VINCI
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/davincihd_vhls.smil/chunklist.m3u8
-#EXTINF:0,AXN
-#EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/axn/index.m3u8
-#EXTINF:0,AXN HD
-#EXTGRP:Quốc tế
-http://live247.freem3u.xyz:21585/axn/index.m3u8
-#EXTINF:0,Warner BrosTV
-#EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/wbtv/index.m3u8
-#EXTINF:0,Cartoon Network
-#EXTGRP:Quốc tế
-http://s4.nihontv.net:21585/cartoon/index.m3u8
-#EXTINF:0,Dreamworks
-#EXTGRP:Quốc tế
-http://homelab.nguyenvinh.id.vn:4022/udp/225.1.4.39:30120
-#EXTINF:0,Discovery
-#EXTGRP:Quốc tế
-http://s4.nihontv.net:21585/discovery/index.m3u8
-#EXTINF:0,Ariang
-#EXTGRP:Quốc tế
-http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b2256000_sleng.m3u8
-#EXTINF:0,Love Nature 4K
-#EXTGRP:Quốc tế
-https://d18dyiwu97wm6q.cloudfront.net/playlist2160p.m3u8
-#EXTINF:0,BBC News
-#EXTGRP:Quốc tế
-https://i.mjh.nz/.r/bbc-news.m3u8
-#EXTINF:0,BBC earth
-#EXTGRP:Quốc tế
-http://iptvtree.net:8080/live/friptv/AwWjvV6QuXDY84xR5meJhk/165106.ts
-#EXTINF:0,Bloomberg
-#EXTGRP:Quốc tế
-http://iptvtree.net:8080/live/friptv/AwWjvV6QuXDY84xR5meJhk/306610.ts
-#EXTINF:0,ABC Australia
-#EXTGRP:Quốc tế
-http://49.0.64.96:8007/ABC
-#EXTINF:0,Discovery Asia
-#EXTGRP:Quốc tế
-https://cdn1.skygo.mn/live/disk1/Discovery_Asia/HLS-FTA/Discovery_Asia.m3u8
-#EXTINF:0,Discovery Chanel Asia
-#EXTGRP:Quốc tế
-https://denver1769.pages.dev/Discovery/discovery_hd_english.m3u8
-#EXTINF:0,Sky news
-#EXTGRP:Quốc tế
-https://i.mjh.nz/SamsungTVPlus/USBB52000022Q.m3u8
-#EXTINF:0,TRT World
-#EXTGRP:Quốc tế
-https://tv-trtworld.live.trt.com.tr/master_1080.m3u8
-#EXTINF:0,Animal Planet
-#EXTGRP:Quốc tế
-https://denver1769.pages.dev/Discovery/animal_planet_hd_english.m3u8
-#EXTINF:0, Planet Earth
-#EXTGRP:Quốc tế
-https://e4.endpoint.cdn.sctvonline.vn/hls/planetearth/index.m3u8?|Referer=http://sctvonline.vn/
-#EXTINF:0, Celestial Movies
-#EXTGRP:Quốc tế
-http://tr.redatvgold.com:80/play/live.php?mac=00:1A:79:64:23:34&stream=683142&extension=ts&play_token=36m9d1cA2P
-#EXTINF:0, Fashion TV
-#EXTGRP:Quốc tế
-https://fashiontv-fashiontv-5-nl.samsung.wurl.tv/playlist_1920x1080_4200k.m3u8
-#EXTINF:0, Dr.Fit
-#EXTGRP:Quốc tế
-https://e4.endpoint.cdn.sctvonline.vn/hls/drfit/index.m3u8?|Referer=http://sctvonline.vn/
-#EXTINF:0, Woman
-#EXTGRP:Quốc tế
-https://e4.endpoint.cdn.sctvonline.vn/hls/woman/index.m3u8?|Referer=http://sctvonline.vn/
-#EXTINF:0, Happy Kids
-#EXTGRP:Quốc tế
-https://e4.endpoint.cdn.sctvonline.vn/hls/happykid/index.m3u8?|Referer=http://sctvonline.vn/
-#EXTINF:0, Music Box
-#EXTGRP:Quốc tế
-https://e4.endpoint.cdn.sctvonline.vn/hls/boxmusic/index.m3u8?|Referer=http://sctvonline.vn/
-#EXTINF:0, AXNHD
-#EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/axn/index.m3u8
-#EXTINF:0, HBOHD
-#EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/hbo/index.m3u8
-#EXTINF:0, WBTV
-#EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/wbtv/index.m3u8
-#EXTINF:0, Discovery
-#EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/discovery/index.m3u8
-#EXTINF:0, CNN
-#EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/cnn/index.m3u8
-#EXTINF:0, TLC
-#EXTGRP:Quốc tế
-http://125hvt.ddns.net:21585/tlc/index.m3u8
-#EXTINF:0, Arirang
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/arirang_hls.smil/chunklist.m3u8
-#EXTINF:0, Asian Food Network
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/afchd_vhls.smil/chunklist.m3u8
-#EXTINF:0, CNA
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/newsasia_hls.smil/chunklist.m3u8
-#EXTINF:0, CNBC Asia
-#EXTGRP:Quốc tế
+https://xem.hoiquan.click/CoBan/box-hits/TuyetDoiKhongKinhDoanh.m3u8
+
+# --- International ---
+#EXTINF:-1 tvg-id="planetearthhd" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/planetearthhd.jpg",Planet Earth
+# https://sgchill.io.vn/v1/b521/135/index.m3u8
+https://xem.hoiquan.click/CoBan/planet-earth-hd/TuyetDoiKhongKinhDoanh.m3u8
+#EXTINF:-1 tvg-id="warnertvhd" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/warnertvhd.jpg",Warner TV
+https://hls.mskycdn.online/tv/warnertvhd/index.m3u8
+# http://125hvt.ddns.net:21585/wbtv/index.m3u8
+#EXTINF:-1 tvg-id="discoveryhd" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/discoveryhd.jpg",Discovery Channel
+https://hls.mskycdn.online/tv/discoveryhd/index.m3u8
+# http://125hvt.ddns.net:21585/discovery/index.m3u8
+#EXTINF:-1 tvg-id="discoveryasiahd" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/discoveryasiahd.jpg",Discovery Asia
+https://hls.mskycdn.online/tv/discoveryasiahd/index.m3u8
+#EXTINF:-1 tvg-id="afnhd" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/afnhd.png",Asian Food Network
+https://live.fptplay53.net/fnxhd2/afchd_vhls.smil/chunklist_b5000000.m3u8
+#EXTINF:-1 tvg-id="davinci" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/davinci.png",Da Vinci
+https://live.fptplay53.net/fnxhd2/davincihd_vhls.smil/chunklist_b5000000.m3u8
+#EXTINF:-1 tvg-id="kix" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/kix.png",KIX
+https://live.fptplay53.net/fnxhd2/kixhd_vhls.smil/chunklist_b5000000.m3u8
+#EXTINF:-1 tvg-id="bbcearth" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/bbcearth.jpg",BBC Earth
+https://hls.mskycdn.online/tv/bbcearth/index.m3u8
+# http://iptvtree.net:8080/live/friptv/AwWjvV6QuXDY84xR5meJhk/165106.ts
+#EXTINF:0 tvg-id="bbclifestyle" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/bbclifestyle.jpg",BBC Lifestyle
+https://hls.mskycdn.online/tv/bbclifestyle/index.m3u8
+#EXTINF:-1 tvg-id="animalhd" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/animalhd.jpg",Animal Planet
+https://hls.mskycdn.online/tv/animalhd/index.m3u8
+# http://fl5.moveonjoy.com/Animal_Planet/index.m3u8
+# http://iptvtree.net:8080/live/friptv/AwWjvV6QuXDY84xR5meJhk/83381.ts
+#EXTINF:-1 tvg-id="national" group-title="Quốc Tế" tvg-logo="https://freem3u.xyz/static/images/global/nat_geo.png",National Geographic
+http://fl5.moveonjoy.com/National_Geographic/index.m3u8
+#EXTINF:-1 tvg-id="national" group-title="Quốc Tế" tvg-logo="https://freem3u.xyz/static/images/global/nat_geo_wild.png",National Geographic Wild
+http://fl5.moveonjoy.com/Nat_Geo_Wild/index.m3u8
+#EXTINF:0 tvg-id="outdoorhd" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/outdoorhd.jpg",Outdoor Channel
+https://hls.mskycdn.online/tv/outdoorhd/index.m3u8
+# https://sgchill.io.vn/v1/b521/216/index.m3u8
+# https://xem.hoiquan.click/CoBan/outdoor-hd/TuyetDoiKhongKinhDoanh.m3u8
+#EXTINF:0 tvg-id="hgtv" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/hgtv.jpg",HGTV
+# https://sgchill.io.vn/v1/b521/99/index.m3u8
+https://xem.hoiquan.click/CoBan/hgtv/TuyetDoiKhongKinhDoanh.m3u8
+#EXTINF:0 tvg-id="bloomberg" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/bloomberg.png",Bloomberg
+https://bloomberg.com/media-manifest/streams/asia.m3u8
+#EXTINF:-1 tvg-id="cna" group-title="Quốc Tế" tvg-logo="https://images.fptplay53.net/media/channels/icon_channel_channel-newsasia_165649295091.png",CNA
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
+#EXTINF:0 tvg-id="cnn" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/cnn.png",CNN
+https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
+# https://raw.githubusercontent.com/CODERX24/tv/refs/heads/master/CNN.m3u8
+#EXTINF:0 tvg-id="cnbc" group-title="Quốc Tế" tvg-logo="https://i.imgur.com/H0hAm72.png",CNBC
 https://live.fptplay53.net/fnxsd1/cnbc_hls.smil/chunklist.m3u8
-#EXTINF:0, DW
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/dwenglish_hls.smil/chunklist.m3u8
-#EXTINF:0, Da Vinci
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/davincihd_vhls.smil/chunklist.m3u8
-#EXTINF:0, France 24
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/france24_hls.smil/chunklist.m3u8
-#EXTINF:0, KBS World
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/fnxhd2/nhkworld_vhls.smil/chunklist.m3u8
-#EXTINF:0, Outdoor
-#EXTGRP:Quốc tế
-https://live.fptplay53.net/epzhd2/outdoorfhd_vhls.smil/chunklist.m3u8
-#EXTINF:0, K+ SPORT2
-#EXTGRP:Quốc tế
-http://vuikhoetv.online:80/live/beo123/tr1234/4962.ts
-#EXTINF:0, K+ Action
-#EXTGRP:Quốc tế
-http://vuikhoetv.online:80/live/beo123/tr1234/7137.ts
-#EXTINF:0, K+ Cine
-#EXTGRP:Quốc tế
-http://vuikhoetv.online:80/live/beo123/tr1234/7136.ts
-#EXTINF:0, K+ SPORT1
-#EXTGRP:Quốc tế
-http://vuikhoetv.online:80/live/beo123/tr1234/5247.ts
-#EXTINF:0, BABY SHARK
-#EXTGRP:KID
-https://newidco-babysharktv-2-mx.samsung.wurl.tv/playlist.m3u8
-#EXTINF:0, BABY SHARK-1
-#EXTGRP:KID
-https://newidco-babysharktv-2-mx.samsung.wurl.tv/3000.m3u8
-#EXTINF:0, ANGRY BIRDS
-#EXTGRP:KID
-https://stream.ads.ottera.tv/playlist.m3u8?network_id=547
-#EXTINF:0, KIDOODLE
-#EXTGRP:KID
-https://kidoodletv-kdtv-1-us.samsung.wurl.tv/playlist.m3u8
-#EXTINF:0, MAGIC KIDS
-#EXTGRP:KID
-https://magicstream.ddns.net/magicstream/stream.m3u8?
-#EXTINF:0, MOONBUG FHD
-#EXTGRP:KID
-https://moonbug-rokuus.amagi.tv/playlist1080-p.m3u8
-#EXTINF:0, VTV5-GO
-#EXTGRP:VTV
-https://vtvgolive-ssaimh.vtvdigital.vn/LtrmGnHNkg301iwTAkicNg/1752589101/manifest/vtv5/playlist_480p.m3u8
-#EXTINF:0, VTV7-GO
-#EXTGRP:VTV
-https://vtvgolive-ssaimh.vtvdigital.vn/VNjPUOQAAlIGdZRIg-sHFA/1752589219/manifest/vtv7/playlist_480p.m3u8
-#EXTINF:0, VTV6-GO
-#EXTGRP:VTV
-https://vtvgolive-ssaimh.vtvdigital.vn/90mA1J7YqpklGE6m0qlflw/1752589276/manifest/vtv6/playlist_480p.m3u8
-#EXTINF:0, TV360+1
-#EXTGRP:TV360
-https://xem.TruyenHinh.Click/CoBan2/tv360.sk1/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0, TV360+2
-#EXTGRP:TV360
-https://xem.TruyenHinh.Click/CoBan2/tv360.sk2/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0, TV360+3
-#EXTGRP:TV360
-https://xem.TruyenHinh.Click/CoBan2/tv360.sk3/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0, TV360+4
-#EXTGRP:TV360
-https://xem.TruyenHinh.Click/CoBan2/tv360.sk4/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0, TV360+5
-#EXTGRP:TV360
-https://xem.TruyenHinh.Click/CoBan2/tv360.sk5/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0, TV360+6
-#EXTGRP:TV360
-https://xem.TruyenHinh.Click/CoBan2/tv360.sk6/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0, TV360+7
-#EXTGRP:TV360
-https://xem.TruyenHinh.Click/CoBan2/tv360.sk7/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0, TV360+8
-#EXTGRP:TV360
-https://xem.TruyenHinh.Click/CoBan2/tv360.sk8/TuyetDoiKhongKinhDoanh.m3u8
-#EXTINF:0, TV360+9
-#EXTGRP:TV360
-https://xem.TruyenHinh.Click/CoBan2/tv360.sk9/TuyetDoiKhongKinhDoanh.m3u8
-
-
+#https://tv.iill.top/4gtv/4gtv-live130
+#EXTINF:0 tvg-id="historyhd" group-title="Quốc Tế" tvg-logo="https://img.lichphatsong.xyz/logo/historyhd.jpg",History
+#EXTHTTP:{"User-Agent":"Kodi/21.2 (Macintosh; ARM Mac OS X 13_7_5) App_Bitness/64 Version/21.2-(21.2.0)-Git:20250115-d1a1d48c3c", "accept": "*/*", "accept-encoding": "deflate, gzip"}
+https://tv.iill.top/4gtv/4gtv-live026
+#EXTINF:-1 group-title="TV360" tvg-logo="https://img-zlr1.tv360.vn/image1/2024/09/24/21/1727189720461/dc4ee8910c25_640_360.png", TV360+1
+https://sgchill.io.vn/v1/b521/2554/index.m3u8
+#EXTINF:-1 group-title="TV360" tvg-logo="https://img-zlr1.tv360.vn/image1/2024/09/24/21/1727189794311/c4d18ecff9f7_640_360.png", TV360+2
+https://sgchill.io.vn/v1/b521/1/index.m3u8
+#EXTINF:-1 group-title="TV360" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/f0/TV360%2B3.png", TV360+3
+https://sgchill.io.vn/v1/b521/148/index.m3u8
+#EXTINF:-1 group-title="TV360" tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/5db9e5a7d0fd_640_360.png", TV360+4
+https://sgchill.io.vn/v1/b521/2458/index.m3u8
+#EXTINF:-1 group-title="TV360" tvg-logo="https://img-zlr1.tv360.vn/image1/2024/09/24/21/1727189978632/51f31c767a91_640_360.png", TV360+5
+https://sgchill.io.vn/v1/b521/9867/index.m3u8
+#EXTINF:-1 group-title="TV360" tvg-logo="https://img-zlr1.tv360.vn/image1/2024/09/24/22/1727190010448/7463a4b5c14d_640_360.png", TV360+6
+https://sgchill.io.vn/v1/b521/9868/index.m3u8
+#EXTINF:-1 group-title="TV360" tvg-logo="https://img-zlr1.tv360.vn/image1/2024/09/24/22/1727190077791/4922144877f1_640_360.png", TV360+7
+https://sgchill.io.vn/v1/b521/9869/index.m3u8
+#EXTINF:-1 group-title="TV360" tvg-logo="https://img-zlr1.tv360.vn/image1/2024/09/24/22/172719012995/8df54b2f7576_640_360.png", TV360+8
+https://sgchill.io.vn/v1/b521/9870/index.m3u8
+#EXTINF:-1 group-title="TV360" tvg-logo="https://img-zlr1.tv360.vn/image1/2024/09/30/22/1727709197325/1be646ba55c5_640_360.png", TV360+9
+https://sgchill.io.vn/v1/b521/9887/index.m3u8
 
 #EXTINF:0, Kybangha-tìm trứng
 #EXTGRP:film
@@ -661,3 +509,4 @@ https://hitmefirstcdn.store/hls/fzUsPKzyRLnmMHB6bxyhnStxtbbwmmAvfrKn9FROYhvEFPmH
 #EXTINF:0, Gia Đình Croods: Kỷ Nguyên Mới
 #EXTGRP:film
 https://sundaythekingplays.xyz/hls/eGM-6tcQlZi39+mIneupd89iJiWz7DlCouHKH20uzp1GwDOy6l7ms0l6UOTGHuvhPkFF2evH15NzjgYGMAuucA==/aW5kZXgtZjEtdjEtYTEubTN1OA==.m3u8
+
