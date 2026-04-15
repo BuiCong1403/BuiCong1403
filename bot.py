@@ -2,7 +2,7 @@ import requests
 from datetime import datetime, timedelta
 
 # Cấu hình
-FILENAME = "all_matches.m3u"
+FILENAME = "bongda.m3u"
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
 HEADERS = {"User-Agent": UA}
 
