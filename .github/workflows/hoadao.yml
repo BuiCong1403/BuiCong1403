@@ -1,4 +1,4 @@
-name: Update Hoa Dao TV M3U
+name: Global hoadao.m3u
 
 on:
   schedule:
@@ -8,25 +8,26 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4 # Bản v4 hết lỗi Node.js
-
-      - name: Setup Python
-        uses: actions/setup-python@v5 # Bản v5 hết lỗi Node.js
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
-
-      - name: Install Libs
-        run: pip install requests beautifulsoup4
-
-      - name: Run Script
+          python-version: '3.x'
+      - run: pip install requests
+      - name: Run Bot
         run: python hoadao.py
-
-      - name: Push to Github
+      - name: Commit and push
         run: |
-          git config --local user.email "bot@github.com"
-          git config --local user.name "Auto Bot"
-          # Lệnh này cực kỳ quan trọng để robot được quyền ghi đè
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          # Quan trọng: Phải add đúng tên file hoadao.m3u
           git add hoadao.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto Update $(date)" && git push)
+          if git diff --staged --quiet; then
+            echo "Không có thay đổi."
+          else
+            git commit -m "Auto Update: $(date +'%d/%m %H:%M')"
+            git push
+          fi
+      
