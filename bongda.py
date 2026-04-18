@@ -4,28 +4,52 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
 BASE_URL = "https://hoadaotv.info"
+HEADERS = {"User-Agent": "Mozilla/5.0"}
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0"
-}
+# ================== HTTP ==================
+session = requests.Session()
+session.headers.update(HEADERS)
 
 
-# ================== COMMON ==================
 def fetch_json(url):
     try:
-        res = requests.get(url, headers=HEADERS, timeout=15)
-        if res.status_code == 200:
-            return res.json()
-    except Exception as e:
-        print(f"Lỗi fetch {url}: {e}")
+        r = session.get(url, timeout=15)
+        if r.status_code == 200:
+            return r.json()
+    except:
+        pass
     return {}
 
 
+# ================== STREAM FILTER ==================
+def is_working_m3u8(url):
+    """Test link có chạy được không (quan trọng nhất)"""
+    if ".m3u8" not in url:
+        return False
+
+    try:
+        r = session.get(url, timeout=8, stream=True)
+        if r.status_code == 200:
+            return True
+    except:
+        return False
+
+    return False
+
+
+def is_valid_tv(url):
+    """lọc link không phù hợp OTT"""
+    if ".m3u8" not in url:
+        return False
+    if any(x in url for x in ["udp://", "rtp://"]):
+        return False
+    return True
+
+
+# ================== PICK STREAM ==================
 def pick_stream(streams):
-    """Ưu tiên m3u8 HD → fallback flv"""
     m3u8_hd = None
     m3u8 = None
-    flv = None
 
     for s in streams:
         name = s.get("name", "").upper()
@@ -39,182 +63,172 @@ def pick_stream(streams):
                 m3u8_hd = url
             else:
                 m3u8 = url
-        elif ".flv" in url:
-            flv = url
 
-    return m3u8_hd or m3u8 or flv
+    return m3u8_hd or m3u8
 
 
-# ================== API SOURCES ==================
+# ================== API ==================
 def process_standard(url, group):
-    fixtures = []
+    out = []
     data = fetch_json(url)
 
-    for item in data.get('data', []):
+    for item in data.get("data", []):
         dt = datetime.now()
 
-        if item.get('startTime'):
+        if item.get("startTime"):
             try:
                 dt = datetime.strptime(item['startTime'][:19], '%Y-%m-%dT%H:%M:%S') + timedelta(hours=7)
             except:
                 pass
 
-        for comm_entry in item.get('fixtureCommentators', []):
-            comm = comm_entry.get('commentator', {})
-            nickname = comm.get('nickname', '')
+        for c in item.get("fixtureCommentators", []):
+            comm = c.get("commentator", {})
 
-            stream_url = pick_stream(comm.get('streams', []))
-            if not stream_url:
+            stream = pick_stream(comm.get("streams", []))
+            if not stream:
                 continue
 
-            fixtures.append({
+            out.append({
                 "time": dt,
                 "group": group,
-                "title": f"{dt.strftime('%H:%M')} | {item.get('title')} ({nickname})",
+                "title": f"{dt.strftime('%H:%M')} | {item.get('title')}",
                 "logo": item.get('homeTeam', {}).get('logoUrl', ''),
-                "url": stream_url
+                "url": stream
             })
             break
 
-    return fixtures
+    return out
 
 
 def process_vongcam():
-    fixtures = []
+    out = []
     data = fetch_json("https://sv.bugiotv.xyz/internal/api/matches")
 
-    for item in data.get('data', []):
-        dt = datetime.now()
+    for item in data.get("data", []):
+        url = item.get("commentator", {}).get("streamSourceFhd")
 
-        if item.get('startTime'):
-            try:
-                dt = datetime.strptime(item['startTime'][:19], '%Y-%m-%dT%H:%M:%S')
-            except:
-                pass
-
-        url = item.get('commentator', {}).get('streamSourceFhd')
-        if not url:
+        if not url or ".m3u8" not in url:
             continue
 
-        fixtures.append({
-            "time": dt,
+        out.append({
+            "time": datetime.now(),
             "group": "🔴 ⚽ VÒNG CẤM TV",
-            "title": f"{dt.strftime('%H:%M')} | {item.get('title')}",
-            "logo": item.get('homeClub', {}).get('logoUrl', ''),
+            "title": item.get("title"),
+            "logo": item.get("homeClub", {}).get("logoUrl", ""),
             "url": url
         })
 
-    return fixtures
+    return out
 
 
-# ================== HOADAOTV (FLV ONLY) ==================
-def extract_flv_only(html):
-    flv_links = re.findall(r'https?://[^"\']+\.flv', html)
-    if flv_links:
-        return flv_links[0]
-    return None
-
-
-def process_hoadaotv():
-    matches = []
-
+# ================== HOADAO (bỏ vì flv không dùng cho TV) ==================
+# vẫn giữ trong full.m3u
+def process_hoadao_flv():
+    out = []
     try:
-        res = requests.get(BASE_URL, headers=HEADERS, timeout=15)
-        soup = BeautifulSoup(res.text, 'html.parser')
+        r = session.get(BASE_URL, timeout=15)
+        soup = BeautifulSoup(r.text, "html.parser")
 
-        links = set()
-
-        for a in soup.find_all('a', href=True):
-            href = a['href']
-            if any(x in href for x in ['truc-tiep', 'xem-bong-da', 'live']):
-                url = href if href.startswith('http') else BASE_URL + href
-                links.add(url)
-
-        print(f"Hoadao found: {len(links)}")
-
-        for url in links:
-            try:
-                r = requests.get(url, headers=HEADERS, timeout=10)
-                html = r.text
-
-                stream = extract_flv_only(html)
-                if not stream:
-                    continue
-
-                s = BeautifulSoup(html, 'html.parser')
-
-                title = "HoaDao TV"
-                if s.find('h1'):
-                    title = s.find('h1').get_text(strip=True)
-
-                matches.append({
-                    "time": datetime.now(),
-                    "group": "🔴 ⚽ HOA ĐÀO TV (FLV)",
-                    "title": title,
-                    "logo": BASE_URL + "/favicon.ico",
-                    "url": stream
-                })
-
-            except:
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            if "truc-tiep" not in href:
                 continue
 
-    except Exception as e:
-        print(f"Lỗi hoadaotv: {e}")
+            url = href if href.startswith("http") else BASE_URL + href
 
-    return matches
+            try:
+                html = session.get(url, timeout=10).text
+                flv = re.findall(r'https?://[^"\']+\.flv', html)
+
+                if flv:
+                    out.append({
+                        "time": datetime.now(),
+                        "group": "⚽ HOA ĐÀO (FLV)",
+                        "title": "HoaDao",
+                        "logo": BASE_URL + "/favicon.ico",
+                        "url": flv[0]
+                    })
+            except:
+                continue
+    except:
+        pass
+
+    return out
 
 
-# ================== WRITE FILE ==================
-def write_tv_m3u(data):
-    content = "#EXTM3U\n"
+# ================== EXTERNAL M3U ==================
+def load_external(url):
+    out = []
+    try:
+        r = session.get(url, timeout=15)
+        lines = r.text.splitlines()
+
+        title = ""
+        logo = ""
+
+        for line in lines:
+            if line.startswith("#EXTINF"):
+                title = line.split(",")[-1]
+                m = re.search(r'tvg-logo="([^"]+)"', line)
+                logo = m.group(1) if m else ""
+
+            elif line.startswith("http"):
+                out.append({
+                    "time": datetime.now(),
+                    "group": "📺 VIETANH",
+                    "title": title,
+                    "logo": logo,
+                    "url": line.strip()
+                })
+    except:
+        pass
+
+    return out
+
+
+# ================== WRITE ==================
+def write_files(data):
+    seen = set()
+
+    tv = "#EXTM3U\n"
+    full = "#EXTM3U\n"
 
     for item in data:
-        if ".m3u8" not in item["url"]:
+        url = item["url"]
+
+        if url in seen:
             continue
+        seen.add(url)
 
-        content += f'#EXTINF:-1 group-title="{item["group"]}" tvg-logo="{item["logo"]}",{item["title"]}\n'
-        content += f'{item["url"]}\n\n'
+        # FULL (giữ hết)
+        full += f'#EXTINF:-1 group-title="{item["group"]}",{item["title"]}\n{url}\n\n'
 
-    with open("tv.m3u", "w", encoding="utf-8") as f:
-        f.write(content)
+        # TV (lọc mạnh)
+        if is_valid_tv(url) and is_working_m3u8(url):
+            tv += f'#EXTINF:-1 group-title="{item["group"]}",{item["title"]}\n{url}\n\n'
 
-    print("Created tv.m3u")
+    open("tv.m3u", "w", encoding="utf-8").write(tv)
+    open("full.m3u", "w", encoding="utf-8").write(full)
 
-
-def write_full_m3u(data):
-    content = "#EXTM3U\n"
-
-    for item in data:
-        content += f'#EXTINF:-1 group-title="{item["group"]}" tvg-logo="{item["logo"]}",{item["title"]}\n'
-        content += f'{item["url"]}\n\n'
-
-    with open("full.m3u", "w", encoding="utf-8") as f:
-        f.write(content)
-
-    print("Created full.m3u")
+    print("DONE PRO ✔")
 
 
 # ================== MAIN ==================
 if __name__ == "__main__":
-    hq = process_standard(
+    data = []
+
+    data += process_standard(
         "https://sv.hoiquantv.xyz/api/v1/external/fixtures/unfinished",
-        "🔴 ⚽ HỘI QUÁN TV"
+        "⚽ HỘI QUÁN"
     )
 
-    td = process_standard(
+    data += process_standard(
         "https://sv.thiendinhtv.xyz/api/v1/external/fixtures/unfinished",
-        "🔴 ⚽ THIÊN ĐÌNH TV"
+        "⚽ THIÊN ĐÌNH"
     )
 
-    vc = process_vongcam()
-    hd = process_hoadaotv()
+    data += process_vongcam()
+    data += process_hoadao_flv()
+    data += load_external("https://vietanhtv.id.vn/tv")
 
-    all_data = hq + td + vc + hd
-
-    # ưu tiên m3u8 lên đầu
-    all_data.sort(key=lambda x: (".m3u8" not in x["url"], x["time"]))
-
-    write_tv_m3u(all_data)
-    write_full_m3u(all_data)
-
-    print("Done ALL!")
+    write_files(data)
