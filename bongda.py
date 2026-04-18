@@ -175,7 +175,7 @@ def load_external(url):
             elif line.startswith("http"):
                 out.append({
                     "time": datetime.now(),
-                    "group": "📺 VIETANH",
+                    "group": "📺 HOIQUAN",
                     "title": title,
                     "logo": logo,
                     "url": line.strip()
@@ -229,6 +229,6 @@ if __name__ == "__main__":
 
     data += process_vongcam()
     data += process_hoadao_flv()
-    data += load_external("https://vietanhtv.id.vn/tv")
+    data += load_external("https://raw.githubusercontent.com/hoiquanclick/hoiquan/refs/heads/main/vip.m3u")
 
     write_files(data)
