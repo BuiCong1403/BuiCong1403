@@ -1,9 +1,9 @@
-name: Update M3U Playlist
+name: Update M3U FAST
 
 on:
   schedule:
-    - cron: '*/30 * * * *'   # chạy mỗi 30 phút
-  workflow_dispatch:         # cho phép chạy tay
+    - cron: '0 * * * *'   # chạy mỗi 1 giờ (đủ nhanh + không bị block)
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -11,6 +11,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10   # ⚡ giảm timeout vì code đã tối ưu nhanh
 
     steps:
       - name: Checkout repo
@@ -21,13 +22,22 @@ jobs:
         with:
           python-version: '3.10'
 
+      - name: Cache pip (tăng tốc)
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip
+          restore-keys: |
+            ${{ runner.os }}-pip
+
       - name: Install dependencies
         run: |
+          pip install --upgrade pip
           pip install requests beautifulsoup4
 
       - name: Run script
         run: |
-          python bongda.py   # ⚠️ đổi đúng tên file nếu khác
+          python bongda.py   # ⚠️ đổi nếu tên file khác
 
       - name: Commit & Push if changed
         run: |
@@ -36,6 +46,7 @@ jobs:
 
           git add tv.m3u full.m3u
 
-          git diff --cached --quiet || git commit -m "Auto update m3u"
+          # chỉ commit khi có thay đổi
+          git diff --cached --quiet || git commit -m "update m3u fast"
 
           git push
