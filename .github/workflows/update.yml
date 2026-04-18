@@ -1,32 +1,29 @@
-name: Global Update IPTV
+name: Update M3U
 
 on:
   schedule:
-    - cron: '*/20 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-      - run: pip install requests
-      - name: Run Bot
-        run: python bot.py
-      - name: Commit and push
+          python-version: '3.10'
+
+      - run: pip install requests beautifulsoup4
+
+      - run: python bot.py
+
+      - name: Commit file
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          # Quan trọng: Phải add đúng tên file bongda.m3u
+          git config --global user.name "github-actions"
+          git config --global user.email "actions@github.com"
           git add bongda.m3u
-          if git diff --staged --quiet; then
-            echo "Không có thay đổi."
-          else
-            git commit -m "Auto Update: $(date +'%d/%m %H:%M')"
-            git push
-          fi
+          git commit -m "update m3u" || echo "no change"
+          git push
