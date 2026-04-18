@@ -22,7 +22,7 @@ jobs:
         run: pip install requests beautifulsoup4
 
       - name: Run script
-        run: python your_script.py
+        run: python hoadao1.py
 
       - name: Commit & push M3U
         run: |
