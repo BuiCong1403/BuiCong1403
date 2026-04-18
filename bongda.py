@@ -23,6 +23,7 @@ def fetch_json(url):
 
 
 def pick_stream(streams):
+    """Ưu tiên m3u8 (HD) → fallback flv"""
     m3u8_hd = None
     m3u8 = None
     flv = None
@@ -93,6 +94,7 @@ def process_vongcam():
                 pass
 
         url = item.get('commentator', {}).get('streamSourceFhd')
+
         if not url:
             continue
 
@@ -107,21 +109,12 @@ def process_vongcam():
     return fixtures
 
 
-# ================== HOADAOTV ==================
-def extract_hoadao_stream(html):
-    # ưu tiên m3u8 trước (TV)
-    m3u8 = re.findall(r'"(hd|hls|m3u8)"\s*:\s*"([^"]+)"', html)
-    if m3u8:
-        for key, url in m3u8:
-            if key == "hd":
-                return url.replace('\\/', '/')
-        return m3u8[0][1].replace('\\/', '/')
-
-    # fallback flv
-    flv = re.search(r'"flv"\s*:\s*"([^"]+)"', html)
-    if flv:
-        return flv.group(1).replace('\\/', '/')
-
+# ================== HOADAOTV (FLV ONLY) ==================
+def extract_flv_only(html):
+    # bắt tất cả link .flv
+    flv_links = re.findall(r'https?://[^"\']+\.flv', html)
+    if flv_links:
+        return flv_links[0]
     return None
 
 
@@ -134,18 +127,22 @@ def process_hoadaotv():
 
         links = set()
 
+        # quét rộng (tránh miss)
         for a in soup.find_all('a', href=True):
             href = a['href']
-            if '/truc-tiep/' in href:
+
+            if any(x in href for x in ['truc-tiep', 'xem-bong-da', 'live']):
                 url = href if href.startswith('http') else BASE_URL + href
                 links.add(url)
+
+        print(f"Hoadao found: {len(links)} links")
 
         for url in links:
             try:
                 r = requests.get(url, headers=HEADERS, timeout=10)
                 html = r.text
 
-                stream = extract_hoadao_stream(html)
+                stream = extract_flv_only(html)
                 if not stream:
                     continue
 
@@ -155,17 +152,18 @@ def process_hoadaotv():
                 if s.find('h1'):
                     title = s.find('h1').get_text(strip=True)
 
-                logo = BASE_URL + "/favicon.ico"
-
                 matches.append({
                     "time": datetime.now(),
-                    "group": "🔴 ⚽ HOA ĐÀO TV",
+                    "group": "🔴 ⚽ HOA ĐÀO TV (FLV)",
                     "title": title,
-                    "logo": logo,
+                    "logo": BASE_URL + "/favicon.ico",
                     "url": stream
                 })
 
-            except:
+                print(f"OK FLV: {title}")
+
+            except Exception as e:
+                print(f"Lỗi hoadao item: {e}")
                 continue
 
     except Exception as e:
@@ -185,7 +183,7 @@ def write_m3u(data):
     with open(FILENAME, "w", encoding="utf-8") as f:
         f.write(content)
 
-    print("Done!")
+    print("Done! Created bongda.m3u")
 
 
 # ================== MAIN ==================
@@ -204,10 +202,6 @@ if __name__ == "__main__":
     hd = process_hoadaotv()
 
     all_data = hq + td + vc + hd
-    all_data.sort(key=lambda x: x["time"])
-
-    write_m3u(all_data)
-    all_data = hq + td + vc
     all_data.sort(key=lambda x: x["time"])
 
     write_m3u(all_data)
