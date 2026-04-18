@@ -3,7 +3,6 @@ import re
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
-FILENAME = "bongda.m3u"
 BASE_URL = "https://hoadaotv.info"
 
 HEADERS = {
@@ -23,7 +22,7 @@ def fetch_json(url):
 
 
 def pick_stream(streams):
-    """Ưu tiên m3u8 (HD) → fallback flv"""
+    """Ưu tiên m3u8 HD → fallback flv"""
     m3u8_hd = None
     m3u8 = None
     flv = None
@@ -94,7 +93,6 @@ def process_vongcam():
                 pass
 
         url = item.get('commentator', {}).get('streamSourceFhd')
-
         if not url:
             continue
 
@@ -111,7 +109,6 @@ def process_vongcam():
 
 # ================== HOADAOTV (FLV ONLY) ==================
 def extract_flv_only(html):
-    # bắt tất cả link .flv
     flv_links = re.findall(r'https?://[^"\']+\.flv', html)
     if flv_links:
         return flv_links[0]
@@ -127,15 +124,13 @@ def process_hoadaotv():
 
         links = set()
 
-        # quét rộng (tránh miss)
         for a in soup.find_all('a', href=True):
             href = a['href']
-
             if any(x in href for x in ['truc-tiep', 'xem-bong-da', 'live']):
                 url = href if href.startswith('http') else BASE_URL + href
                 links.add(url)
 
-        print(f"Hoadao found: {len(links)} links")
+        print(f"Hoadao found: {len(links)}")
 
         for url in links:
             try:
@@ -160,10 +155,7 @@ def process_hoadaotv():
                     "url": stream
                 })
 
-                print(f"OK FLV: {title}")
-
-            except Exception as e:
-                print(f"Lỗi hoadao item: {e}")
+            except:
                 continue
 
     except Exception as e:
@@ -172,18 +164,34 @@ def process_hoadaotv():
     return matches
 
 
-# ================== WRITE ==================
-def write_m3u(data):
+# ================== WRITE FILE ==================
+def write_tv_m3u(data):
+    content = "#EXTM3U\n"
+
+    for item in data:
+        if ".m3u8" not in item["url"]:
+            continue
+
+        content += f'#EXTINF:-1 group-title="{item["group"]}" tvg-logo="{item["logo"]}",{item["title"]}\n'
+        content += f'{item["url"]}\n\n'
+
+    with open("tv.m3u", "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print("Created tv.m3u")
+
+
+def write_full_m3u(data):
     content = "#EXTM3U\n"
 
     for item in data:
         content += f'#EXTINF:-1 group-title="{item["group"]}" tvg-logo="{item["logo"]}",{item["title"]}\n'
         content += f'{item["url"]}\n\n'
 
-    with open(FILENAME, "w", encoding="utf-8") as f:
+    with open("full.m3u", "w", encoding="utf-8") as f:
         f.write(content)
 
-    print("Done! Created bongda.m3u")
+    print("Created full.m3u")
 
 
 # ================== MAIN ==================
@@ -202,6 +210,11 @@ if __name__ == "__main__":
     hd = process_hoadaotv()
 
     all_data = hq + td + vc + hd
-    all_data.sort(key=lambda x: x["time"])
 
-    write_m3u(all_data)
+    # ưu tiên m3u8 lên đầu
+    all_data.sort(key=lambda x: (".m3u8" not in x["url"], x["time"]))
+
+    write_tv_m3u(all_data)
+    write_full_m3u(all_data)
+
+    print("Done ALL!")
