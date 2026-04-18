@@ -18,7 +18,7 @@ jobs:
 
       - run: pip install requests beautifulsoup4
 
-      - run: python bot.py
+      - run: python main.py
 
       - name: Commit file
         run: |
