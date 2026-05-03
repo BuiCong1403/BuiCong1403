@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="⚽ HỘI QUÁN",18:00 | Song Lam Nghe An vs Hoang Anh Gia Lai
-https://alive.zlylive.com/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="⚽ HỘI QUÁN",19:00 | Celta Vigo vs Elche
 https://alive.zlylive.com/hqtv_blv_phanhalinh/tracks-v2a1/mono.m3u8
 
@@ -14,11 +11,11 @@ https://alive.zlylive.com/hqtv_blv_phanchanh/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="⚽ HỘI QUÁN",20:00 | Bournemouth vs Crystal Palace
 https://alive.zlylive.com/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
 
+#EXTINF:-1 group-title="⚽ HỘI QUÁN",21:30 | Manchester United vs Liverpool
+https://alive.zlylive.com/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
+
 #EXTINF:-1 group-title="⚽ HỘI QUÁN",23:00 | Juventus vs Hellas Verona
 https://alive.zlylive.com/hqtv_blv_phanto/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="⚽ HỘI QUÁN",18:30 | Trung Quốc vs Thụy Điển (Nam)
-https://alive.zlylive.com/hqtv_blv_nhadai/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="⚽ HỘI QUÁN",18:30 | Trung Quốc vs Hàn Quốc (Nữ)
 https://alive.zlylive.com/hqtv_blv_phanbo/tracks-v2a1/mono.m3u8
@@ -26,17 +23,14 @@ https://alive.zlylive.com/hqtv_blv_phanbo/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="⚽ HỘI QUÁN",21:00 | Lokomotiv vs Qizilqum
 https://alive.zlylive.com/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",17:30 | Bologna vs Cagliari
-https://d6ld1225.edgemaxcdn.org/tdtv_blv_ngochoang/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",18:00 | Song Lam Nghe An vs Hoang Anh Gia Lai
-https://alive.zlylive.com/tdtv_blv_taothienvuong/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",19:00 | Celta Vigo vs Elche
 https://alive.zlylive.com/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",19:15 | Viettel vs Phu Dong
 https://alive.zlylive.com/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",20:00 | Bournemouth vs Crystal Palace
+https://alive.zlylive.com/tdtv_blv_taothienvuong/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",20:00 | Sassuolo vs AC Milan
 https://alive.zlylive.com/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
@@ -44,11 +38,8 @@ https://alive.zlylive.com/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",20:30 | FC St. Pauli vs FSV Mainz 05
 https://alive.zlylive.com/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Bologna vs Cagliari
-https://bglive.zlylive.com/live/bgtv_blv_tieuhac/playlist.m3u8
-
-#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Song Lam Nghe An vs Hoang Anh Gia Lai
-https://bglive.zlylive.com/live/bgtv_blv_aphu/playlist.m3u8
+#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",21:30 | Manchester United vs Liverpool
+https://d6ld1225.edgemaxcdn.org/tdtv_blv_ngochoang/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Viettel vs Phu Dong
 https://bglive.zlylive.com/live/bgtv_blv_trada/playlist.m3u8
@@ -60,7 +51,13 @@ https://bglive.zlylive.com/live/bgtv_blv_tieupao/playlist.m3u8
 https://bglive.zlylive.com/live/bgtv_blv_tieubao/playlist.m3u8
 
 #EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Manchester United vs Liverpool
+https://bglive.zlylive.com/live/bgtv_blv_aphu/playlist.m3u8
+
+#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Manchester United vs Liverpool
 https://bglive.zlylive.com/live/bgtv_blv_delua/playlist.m3u8
+
+#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Real Betis vs Oviedo
+https://bglive.zlylive.com/live/bgtv_blv_tieuhac/playlist.m3u8
 
 #EXTINF:-1 group-title="📺 HOIQUAN",ANTV
 https://toiyeuvietnam.dpdns.org/TuyetDoiKhongKinhDoanh/antv/KenhCoBan.m3u8
