@@ -1,15 +1,15 @@
 #EXTM3U
-#EXTINF:-1 group-title="⚽ HỘI QUÁN",23:00 | Pháp vs Thụy Sĩ (Nữ)
+#EXTINF:-1 group-title="⚽ HỘI QUÁN",01:30 | Đức vs Slovakia (Nam)
 https://alive.zlylive.com/hqtv_blv_phantu/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="⚽ HỘI QUÁN",23:00 | Gnistan vs Inter Turku
-https://alive.zlylive.com/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="⚽ HỘI QUÁN",01:00 | Al Khaleej Saihat vs Al-Hilal Saudi FC
 https://alive.zlylive.com/hqtv_blv_phanhalinh/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="⚽ HỘI QUÁN",02:00 | Arsenal vs Atletico Madrid
 https://alive.zlylive.com/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="⚽ HỘI QUÁN",02:00 | Arsenal vs Atletico Madrid
+https://alive.zlylive.com/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="⚽ HỘI QUÁN",02:00 | Arsenal vs Atletico Madrid
 https://alive.zlylive.com/hqtv_blv_phanto/tracks-v2a1/mono.m3u8
@@ -19,12 +19,6 @@ https://alive.zlylive.com/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="⚽ HỘI QUÁN",21:00 | El Geish vs Ghazl Al Mehalla
 https://alive.zlylive.com/hqtv_blv_phanchanh/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",23:00 | Japan U17 vs Qatar U17
-https://alive.zlylive.com/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",23:30 | Indonesia U17 vs China PR U17
-https://alive.zlylive.com/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",00:30 | Tajikistan U17 vs Thailand U17
 https://alive.zlylive.com/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
@@ -36,13 +30,13 @@ https://alive.zlylive.com/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
 https://d6ld1225.edgemaxcdn.org/tdtv_blv_ngochoang/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",02:00 | Arsenal vs Atletico Madrid
+https://alive.zlylive.com/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",02:00 | Arsenal vs Atletico Madrid
 https://alive.zlylive.com/tdtv_blv_taothienvuong/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Japan U17 vs Qatar U17
-https://bglive.zlylive.com/live/bgtv_blv_trada/playlist.m3u8
-
-#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Waalwijk vs Willem II
-https://bglive.zlylive.com/live/bgtv_blv_tieubao/playlist.m3u8
+#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH",23:00 | Australia U17 vs India U17
+https://alive.zlylive.com/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Tajikistan U17 vs Thailand U17
 https://bglive.zlylive.com/live/bgtv_blv_delua/playlist.m3u8
@@ -53,8 +47,14 @@ https://bglive.zlylive.com/live/bgtv_blv_tieuhac/playlist.m3u8
 #EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Arsenal vs Atletico Madrid
 https://bglive.zlylive.com/live/bgtv_blv_aphu/playlist.m3u8
 
+#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Arsenal vs Atletico Madrid
+https://bglive.zlylive.com/live/bgtv_blv_trada/playlist.m3u8
+
 #EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Kashiwa Reysol vs Urawa
 https://bglive.zlylive.com/live/bgtv_blv_tieupao/playlist.m3u8
+
+#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV",Johor Darul Takzim FC vs Buriram United
+https://bglive.zlylive.com/live/bgtv_blv_tieubao/playlist.m3u8
 
 #EXTINF:-1 group-title="📺 HOIQUAN",ANTV
 https://toiyeuvietnam.dpdns.org/TuyetDoiKhongKinhDoanh/antv/KenhCoBan.m3u8
