@@ -1,6 +1,5 @@
 import requests
 import re
-from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 
 BASE_URL = "https://hoadaotv.info"
@@ -23,22 +22,16 @@ def fetch_json(url):
 
 # ================== STREAM FILTER ==================
 def is_working_m3u8(url):
-    """Test link có chạy được không (quan trọng nhất)"""
     if ".m3u8" not in url:
         return False
-
     try:
         r = session.get(url, timeout=8, stream=True)
-        if r.status_code == 200:
-            return True
+        return r.status_code == 200
     except:
         return False
 
-    return False
-
 
 def is_valid_tv(url):
-    """lọc link không phù hợp OTT"""
     if ".m3u8" not in url:
         return False
     if any(x in url for x in ["udp://", "rtp://"]):
@@ -121,43 +114,8 @@ def process_vongcam():
     return out
 
 
-# ================== HOADAO (bỏ vì flv không dùng cho TV) ==================
-# vẫn giữ trong full.m3u
-def process_hoadao_flv():
-    out = []
-    try:
-        r = session.get(BASE_URL, timeout=15)
-        soup = BeautifulSoup(r.text, "html.parser")
-
-        for a in soup.find_all("a", href=True):
-            href = a["href"]
-            if "truc-tiep" not in href:
-                continue
-
-            url = href if href.startswith("http") else BASE_URL + href
-
-            try:
-                html = session.get(url, timeout=10).text
-                flv = re.findall(r'https?://[^"\']+\.flv', html)
-
-                if flv:
-                    out.append({
-                        "time": datetime.now(),
-                        "group": "⚽ HOA ĐÀO (FLV)",
-                        "title": "HoaDao",
-                        "logo": BASE_URL + "/favicon.ico",
-                        "url": flv[0]
-                    })
-            except:
-                continue
-    except:
-        pass
-
-    return out
-
-
-# ================== EXTERNAL M3U ==================
-def load_external(url):
+# ================== LOAD EXTERNAL (GIỮ NGUYÊN GROUP) ==================
+def load_external_keep_group(url):
     out = []
     try:
         r = session.get(url, timeout=15)
@@ -165,17 +123,22 @@ def load_external(url):
 
         title = ""
         logo = ""
+        group = ""
 
         for line in lines:
             if line.startswith("#EXTINF"):
                 title = line.split(",")[-1]
-                m = re.search(r'tvg-logo="([^"]+)"', line)
-                logo = m.group(1) if m else ""
+
+                m_logo = re.search(r'tvg-logo="([^"]+)"', line)
+                logo = m_logo.group(1) if m_logo else ""
+
+                m_group = re.search(r'group-title="([^"]+)"', line)
+                group = m_group.group(1) if m_group else "📺 OTHER"
 
             elif line.startswith("http"):
                 out.append({
                     "time": datetime.now(),
-                    "group": "📺 HOIQUAN",
+                    "group": group,
                     "title": title,
                     "logo": logo,
                     "url": line.strip()
@@ -200,17 +163,15 @@ def write_files(data):
             continue
         seen.add(url)
 
-        # FULL (giữ hết)
         full += f'#EXTINF:-1 group-title="{item["group"]}",{item["title"]}\n{url}\n\n'
 
-        # TV (lọc mạnh)
         if is_valid_tv(url) and is_working_m3u8(url):
             tv += f'#EXTINF:-1 group-title="{item["group"]}",{item["title"]}\n{url}\n\n'
 
     open("tv.m3u", "w", encoding="utf-8").write(tv)
     open("full.m3u", "w", encoding="utf-8").write(full)
 
-    print("DONE PRO ✔")
+    print("DONE PRO MAX ✔")
 
 
 # ================== MAIN ==================
@@ -228,7 +189,10 @@ if __name__ == "__main__":
     )
 
     data += process_vongcam()
-    data += process_hoadao_flv()
-    data += load_external("https://raw.githubusercontent.com/hoiquanclick/hoiquan/refs/heads/main/vip.m3u")
+
+    # ✅ M3U mới (giữ group gốc)
+    data += load_external_keep_group(
+        "https://raw.githubusercontent.com/hieu-TQS/TV/refs/heads/main/TV.m3u"
+    )
 
     write_files(data)
