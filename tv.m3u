@@ -1,12 +1,21 @@
 #EXTM3U
+#EXTINF:-1 group-title="⚽ HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/2940.png",01:00 | Al Shabab vs Al-Nassr
+https://alive.zlylive.com/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
+
 #EXTINF:-1 group-title="⚽ HỘI QUÁN" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/uyNNelfnFvCEnsLrUL-j2Q_96x96.png",02:00 | Aston Villa vs Nottingham Forest
 https://alive.zlylive.com/hqtv_blv_phanchop/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH" tvg-logo="https://media.api-sports.io/football/teams/10669.png",23:00 | PK-35 vs MP
-https://alive.zlylive.com/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
+#EXTINF:-1 group-title="⚽ HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/VfB_Stuttgart_1893_Logo.svg/960px-VfB_Stuttgart_1893_Logo.svg.png",20:30 | VfB Stuttgart vs Bayer Leverkusen
+https://alive.zlylive.com/hqtv_blv_phantu/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="VTV" tvg-logo="https://img-ali1.tv360.vn/image1/2020_09_23/1600822355845/94d27f7043a6_640_360.png",VTV1
-https://live.fptplay53.net/fnxch2/vtv1hd_abr.smil/chunklist.m3u8
+#EXTINF:-1 group-title="⚽ THIÊN ĐÌNH" tvg-logo="https://media.api-sports.io/football/teams/2940.png",01:00 | Al Shabab vs Al-Nassr
+https://alive.zlylive.com/tdtv_blv_taothienvuong/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/2940.png",Al Shabab vs Al-Nassr
+https://bglive.zlylive.com/live/bgtv_blv_delua/playlist.m3u8
+
+#EXTINF:-1 group-title="🔴 ⚽ VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/95.png",Strasbourg vs Rayo Vallecano
+https://bglive.zlylive.com/live/bgtv_blv_tieubao/playlist.m3u8
 
 #EXTINF:-1 group-title="VTV" tvg-logo="https://img-ali1.tv360.vn/image1/2023/06/15/08/1686794357811/c08ce385651d_640_360.png",VTV5
 https://live-a.fptplay53.net/live/media/VTV5HD/live_hls_avc/index.m3u8
@@ -203,9 +212,6 @@ https://wse.hatinhtv.net/live/httv1/chunklist_w1547680104.m3u8
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/09/16/10/1757993795684/45f17a4f3b90_640_360.png",Đồng Tháp 2 (Miền Tây)
 https://618b88f69e53b.streamlock.net/THDT2/thdttv2/playlist.m3u8
 
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2020_09_23/1600823599924/b1d77a6c01a0_640_360.png",Sơn La
-https://kenhdp-vtvgo.vtvdigital.vn/kenhdp/sonla-720p.m3u8
-
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://i.postimg.cc/DzTFhmJH/kh2.png",Khánh Hòa 1
 https://sgclient.duckdns.org/source/tv360.m3u8?id=76
 
@@ -217,15 +223,6 @@ https://sgclient.duckdns.org/source/tv360.m3u8?id=39
 
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2023/05/16/03/1684183176485/baf863bc2690_640_360.png",Lạng Sơn
 https://stream.langsontv.vn/live/285c78da0c246524c90917842f8de03bd21/playlist.m3u8
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/11/05/16/1762336328954/07ecc9b857a5_640_360.png",Cần Thơ 1
-https://kenhdp-vtvgo.vtvdigital.vn/kenhdp/cantho1-720p.m3u8
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/11/05/16/176233636246/8ded7c5a9010_640_360.png",Cần Thơ 2
-https://kenhdp-vtvgo.vtvdigital.vn/kenhdp/cantho2-720p.m3u8
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/11/05/16/1762336060807/7b1128d4e7c7_640_360.png",Cần Thơ 3
-https://kenhdp-vtvgo.vtvdigital.vn/kenhdp/cantho3-720p.m3u8
 
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2023/05/10/03/1683663305895/0f3f1e5bd284_640_360.png",Tuyên Quang
 https://streaming.tuyenquangtv.vn/channel/tuyenquang/playlist.m3u8
@@ -265,9 +262,6 @@ https://multi-playlist-zmp3.zmdcdn.me/UKk_cQEl314/zhls/playback-realtime/ef512af
 
 #EXTINF:-1 group-title="Radio" tvg-logo="https://admin.vov.gov.vn//UploadFolder/DonVi_Image/a20c56e9-3627-4c6e-94e7-0ab00c748eed.png",VOV1
 https://audio-lss.vov.vn/han/live/vov1/audio/haudio-eng.m3u8
-
-#EXTINF:-1 group-title="Radio" tvg-logo="https://admin.vov.gov.vn//UploadFolder/DonVi_Image/b0bfb983-d686-4273-9420-da084f0ac458.png",VOV2
-https://audio-lss.vov.vn/han/live/vov2/audio/haudio-eng.m3u8
 
 #EXTINF:-1 group-title="Radio" tvg-logo="https://admin.vov.gov.vn//UploadFolder/DonVi_Image/e846baee-2580-42c1-a22d-e58cf82a9808.png",VOV3
 https://audio-lss.vov.vn/han/live/vov3/audio/haudio-eng.m3u8
