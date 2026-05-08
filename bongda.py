@@ -127,7 +127,7 @@ def process_vongcam():
 
         out.append({
             "time": datetime.now(),
-            "group": "🔴 ⚽ VÒNG CẤM TV",
+            "group": "VÒNG CẤM TV",
             "title": item.get("title"),
             "logo": item.get("homeClub", {}).get("logoUrl", ""),
             "url": url
@@ -146,7 +146,7 @@ def load_external_keep_group(url):
 
         title = ""
         logo = ""
-        group = "📺 OTHER"
+        group = "OTHER"
 
         for line in lines:
 
@@ -208,7 +208,7 @@ def load_fpt_sport(url):
 
                 out.append({
                     "time": datetime.now(),
-                    "group": "⚽ FPT SPORT",
+                    "group": "FPT SPORT",
                     "title": title if title else "FPT SPORT",
                     "logo": "",
                     "url": line.strip()
@@ -273,13 +273,13 @@ if __name__ == "__main__":
     # HỘI QUÁN
     data += process_standard(
         "https://sv.hoiquantv.xyz/api/v1/external/fixtures/unfinished",
-        "⚽ HỘI QUÁN"
+        "HỘI QUÁN"
     )
 
     # THIÊN ĐÌNH
     data += process_standard(
         "https://sv.thiendinhtv.xyz/api/v1/external/fixtures/unfinished",
-        "⚽ THIÊN ĐÌNH"
+        "THIÊN ĐÌNH"
     )
 
     # VÒNG CẤM
