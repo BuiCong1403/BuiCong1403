@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1280px-West_Ham_United_FC_logo.svg.png",22:30 | West Ham vs Arsenal
-https://yvm80526.edgemaxcdn.org/live/hqtv_blv_thienloi/playlist.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/40/Logo_Parma_Calcio_1913_%28adozione_2016%29.png",23:00 | Parma vs AS Roma
 https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanhalinh/playlist.m3u8
 
@@ -9,25 +6,13 @@ https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanhalinh/playlist.m3u8
 https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanliem/playlist.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/0E1JciuKLW0EbG48I5cFRQ_96x96.png",01:45 | AC Milan vs Atalanta
-https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phantu/playlist.m3u8
-
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",02:00 | Paris Saint Germain vs Stade Brestois 29
 https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanto/playlist.m3u8
 
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/86/Los_Angeles_Football_Club.svg",08:00 | Los Angeles FC vs Houston Dynamo
-https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phanchop/playlist.m3u8
-
-#EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1280px-West_Ham_United_FC_logo.svg.png",22:30 | West Ham vs Arsenal
-https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taovannghe/playlist.m3u8
-
-#EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1280px-West_Ham_United_FC_logo.svg.png",22:30 | West Ham vs Arsenal
-https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taomeo/playlist.m3u8
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",02:00 | Paris Saint Germain vs Stade Brestois 29
+https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phantu/playlist.m3u8
 
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://media.api-sports.io/football/teams/21447.png",23:00 | Vietnam U17 vs Korea Republic U17
 https://yvm80526.edgemaxcdn.org/live/tdtv_blv_taothienvuong/playlist.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/48.png",West Ham vs Arsenal
-https://bglive.yarncdn.live/live/bgtv_blv_aphu/playlist.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/21447.png",Vietnam U17 vs Korea Republic U17
 https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
@@ -37,9 +22,6 @@ https://bglive.yarncdn.live/live/bgtv_blv_delua/playlist.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/523.png",Parma vs AS Roma
 https://bglive.yarncdn.live/live/bgtv_blv_tieupao/playlist.m3u8
-
-#EXTINF:-1 group-title="VTV" tvg-logo="https://img-ali1.tv360.vn/image1/2020_09_23/1600822355845/94d27f7043a6_640_360.png",VTV1
-https://live.fptplay53.net/fnxch2/vtv1hd_abr.smil/chunklist.m3u8
 
 #EXTINF:-1 group-title="VTV" tvg-logo="https://img-ali1.tv360.vn/image1/2023/06/15/08/1686794357811/c08ce385651d_640_360.png",VTV5
 https://live-a.fptplay53.net/live/media/VTV5HD/live_hls_avc/index.m3u8
@@ -218,6 +200,9 @@ https://live-hq.evgcdn.net/live/28548ca35823d41426d8b3da7ed82bdab13/chunklist.m3
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2024/10/07/16/1728292499129/aeb3499f5824_640_360.png",Cao Bằng
 https://stream.thingnet.vn/live/smil:CRTV.smil/playlist.m3u8
 
+#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/07/01/09/1751337054302/df569bbaeead_640_360.png",Đà Nẵng 1
+https://sgclient.duckdns.org/source/tv360.m3u8?id=49
+
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/07/01/09/175133702497/eded20e0d35c_640_360.png",Đà Nẵng 2
 https://sgclient.duckdns.org/source/tv360.m3u8?id=80
 
@@ -233,14 +218,8 @@ https://618b88f69e53b.streamlock.net/THDT2/thdttv2/playlist.m3u8
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2020_09_23/1600823599924/b1d77a6c01a0_640_360.png",Sơn La
 https://kenhdp-vtvgo.vtvdigital.vn/kenhdp/sonla-720p.m3u8
 
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://i.postimg.cc/5tV1JjYR/kh1.png",Khánh Hòa
-https://live.fptplay53.net/epzsd1/khanhhoa_hls.smil/chunklist.m3u8
-
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://i.postimg.cc/DzTFhmJH/kh2.png",Khánh Hòa 1
 https://sgclient.duckdns.org/source/tv360.m3u8?id=76
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/07/01/17/1751364479653/fdd748c39c4d_640_360.png",Huế
-https://live.fptplay53.net/epzsd1/hue_hls.smil/chunklist.m3u8
 
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://i.postimg.cc/kMTTd5hC/2aa9348c16ec-640-360.png",Hưng Yên
 https://sgclient.duckdns.org/source/tv360.m3u8?id=64
@@ -250,21 +229,6 @@ https://sgclient.duckdns.org/source/tv360.m3u8?id=39
 
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2023/05/16/03/1684183176485/baf863bc2690_640_360.png",Lạng Sơn
 https://stream.langsontv.vn/live/285c78da0c246524c90917842f8de03bd21/playlist.m3u8
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://i.postimg.cc/fR7pxCyK/1206cb944f9e-640-360.png",Tây Ninh
-https://live.fptplay53.net/epzsd1/tayninh01_hls.smil/chunklist.m3u8
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/07/01/07/1751329203146/5c287ccfa91a_640_360.png",Lào Cai
-https://live.fptplay53.net/fnxsd1/laocai_hls.smil/chunklist.m3u8
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2023/05/16/02/168417957456/7016ca1be5fa_640_360.png",Phú Thọ
-https://live.fptplay53.net/fnxsd1/phutho_hls.smil/chunklist.m3u8
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/07/01/09/1751335585476/9d5c42897302_640_360.png",Quảng Trị
-https://live.fptplay53.net/epzsd1/quangtri_hls.smil/chunklist.m3u8
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/07/01/07/1751329966912/3ddadef93c24_640_360.png",Thái Nguyên
-https://live.fptplay53.net/fnxsd1/thainguyen_hls.smil/chunklist.m3u8
 
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/11/05/16/1762336328954/07ecc9b857a5_640_360.png",Cần Thơ 1
 https://kenhdp-vtvgo.vtvdigital.vn/kenhdp/cantho1-720p.m3u8
