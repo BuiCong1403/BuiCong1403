@@ -1,4 +1,7 @@
 #EXTM3U
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Vit%C3%B3ria_Guimar%C3%A3es.svg/250px-Vit%C3%B3ria_Guimar%C3%A3es.svg.png",07:00 | Vitoria vs Flamengo
+https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v1a1/mono.m3u8
+
 #EXTINF:-1 group-title="VTV" tvg-logo="https://img-ali1.tv360.vn/image1/2023/06/15/08/1686794357811/c08ce385651d_640_360.png",VTV5
 https://live-a.fptplay53.net/live/media/VTV5HD/live_hls_avc/index.m3u8
 
@@ -175,4 +178,16 @@ https://str.vov.gov.vn/vovlive/vovGTHN.sdp_aac/chunklist_w601606653.m3u8
 
 #EXTINF:-1 group-title="Radio" tvg-logo="https://admin.vov.gov.vn//UploadFolder/DonVi_Image/68d43961-b50b-4403-b666-4da51296ca61.png",VOV Giao thông Hồ Chí Minh
 https://str.vov.gov.vn/vovlive/vovGTHCM.sdp_aac/chunklist_w1213978008.m3u8
+
+#EXTINF:-1 group-title="Radio" tvg-logo="https://i.postimg.cc/44bWNMP2/voh99-Photoroom.png",VOH FM 99.9Mhz
+https://strm.voh.com.vn/radio/channel3/playlist.m3u8
+
+#EXTINF:-1 group-title="Radio" tvg-logo="https://i.postimg.cc/VsBKLTgg/307303844-621811606041494-6253147328845815929-n-Photoroom.png",VOH FM 95.6Mhz
+https://strm.voh.com.vn/radio/channel1/playlist.m3u8
+
+#EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-fm877-512x512-110237.png",VOH FM 87.7Mhz
+https://strm.voh.com.vn/radio/channel5/playlist.m3u8
+
+#EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-am610-512x512-104316.png",VOH AM 610Khz
+https://strm.voh.com.vn/radio/channel2/playlist.m3u8
 
