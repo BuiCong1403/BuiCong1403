@@ -292,7 +292,7 @@ if __name__ == "__main__":
 
     # FPT SPORT
     data += load_fpt_sport(
-        "https://raw.githubusercontent.com/Cam-Trinh/Cam-Trinh/refs/heads/main/FPT2"
+        "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u"
     )
 
     # WRITE
