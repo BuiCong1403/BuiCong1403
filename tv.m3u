@@ -1,16 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/de/thumb/1/14/GD_Estoril_Praia.svg/500px-GD_Estoril_Praia.svg.png",02:30 | Estoril vs Benfica
-https://alive.yarncdn.live/hqtv_blv_phanto/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/33.png",18:30 | Manchester United vs Nottingham Forest
-https://alive.zlylive.com/hqtv_blv_phanhalinh/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/228.png",Sporting CP vs GIL Vicente
-https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/230.png",Estoril vs Benfica
-https://bglive.yarncdn.live/live/bgtv_blv_tieuhac/playlist.m3u8
-
 #EXTINF:-1 group-title="VTV" tvg-logo="https://img-ali1.tv360.vn/image1/2023/06/15/08/1686794357811/c08ce385651d_640_360.png",VTV5
 https://live-a.fptplay53.net/live/media/VTV5HD/live_hls_avc/index.m3u8
 
@@ -200,111 +188,60 @@ https://strm.voh.com.vn/radio/channel5/playlist.m3u8
 #EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-am610-512x512-104316.png",VOH AM 610Khz
 https://strm.voh.com.vn/radio/channel2/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 FC Famalicao vs Alverca (Lương Sơn) BLV LỮ BỐ m3u
-https://hls.cdnfaster-a.live/live/LUBO/index.m3u8?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 FC Famalicao vs Alverca (Lương Sơn) BLV TÂY MÔN KHÁNH m3u
-https://hls.cdnfaster-a.live/live/TAYMONKHANH/index.m3u8?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 FC Famalicao vs Alverca (Lương Sơn) BLV QUAN VŨ m3u
-https://hls.cdnfaster-a.live/live/QUANVU/index.m3u8?expire=1788427256&sign=056d097a0bbbd810493fd64ccf4831b7
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente (Lương Sơn) BLV MÃ SIÊU m3u
-https://hls.cdnfaster-a.live/live/MASIEU/index.m3u8?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente (Lương Sơn) BLV PHI HỔ m3u
-https://hls.cdnfaster-a.live/live/PHIHO/index.m3u8?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica (Lương Sơn) BLV VƯƠNG LUÂN m3u
-https://hls.cdnfaster-a.live/live/VUONGLUAN/index.m3u8?expire=1788427256&sign=30a15463eec9495979c452130fd9c75f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 17/05 Paris FC (W) vs Paris Saint Germain (W) (Lương Sơn) BLV HÀN TÍN m3u
-https://hls.cdnfaster-a.live/live/HANTIN/index.m3u8?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
-
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h15 ngày 17/05 Juan Pablo II College vs Alianza Atletico Sullana (Lương Sơn) BLV A TỦA m3u
 https://hls.cdnfaster-a.live/live/ATUA/index.m3u8?expire=1830276060&sign=070cf2d17a1720d3e42600ba2dfaed74
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV MIXI] (Socolive) m3u8
-https://pull.niues.live/live/stream-290928_lsd.m3u8?auth_key=1778966634-0-0-dddf85028313bb88896ea56b3e70de6b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h40 ngày 17/05 CF Montreal vs Chicago Fire (Lương Sơn) BLV LEO m3u
+https://hls.cdnfaster-a.live/live/LEO/index.m3u8?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV MIXI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-290928_lhd.m3u8?auth_key=1778966634-0-0-0a7fc31530726e3ed97be82448bc9bd1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Internacional - RS vs Vasco da Gama Saf - RJ [MONEY MAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-605412_lsd.m3u8?auth_key=1778970594-0-0-802ca675861e3be76429bcf73fa5d301
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h30 ngày 17/05 Montreal Impact vs Chicago Fire [BLV A TINH] (Socolive) m3u8
-https://pull.niur.live/live/stream-598119_lsd.m3u8?txSecret=7db9709901cdbfc0058021c25710777c&txTime=6a0926ba
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h30 ngày 17/05 Montreal Impact vs Chicago Fire [BLV A TINH] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=25232201a7884f3ddbfa14979fe3c19d&txTime=6a0926ba
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV COZY] (Socolive) m3u8
-https://pull.niues.live/live/stream-531989_lsd.m3u8?auth_key=1778966634-0-0-b63e89251ede0a198dae04a1d0568c44
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV COZY] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1778966634-0-0-8dc89fbe61e58043d0de30a40b208ada
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente [NGƯỜI CÁ] (Socolive) m3u8
-https://pull.niues.live/live/stream-595335_lsd.m3u8?auth_key=1778966634-0-0-10382faf60cee0da6b0b07329751f34e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente [NGƯỜI CÁ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-595335_lhd.m3u8?auth_key=1778966634-0-0-7d65933b4dac4c1233b9803a86af047c
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV ROBBEN] (Socolive) m3u8
-https://pull.niues.live/live/stream-527383_lsd.m3u8?auth_key=1778966994-0-0-c2a12c454f92212468551f2b54721288
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV ROBBEN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1778966994-0-0-a519e24db1f463984bff49ddcab54602
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente [BLV A WIN] (Socolive) m3u8
-https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1778966994-0-0-b64ce3f53e4aeddacb5cdf9b6fd64d3b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente [BLV A WIN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1778966994-0-0-270e8bdef3faffba5bc2b3aa3be0883b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV LONG] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912050_lsd.m3u8?txSecret=83a51c427b65673dab77603cd105d97c&txTime=6a092822
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV LONG] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912050_lhd.m3u8?txSecret=ee760a4dcae0db01c6b6dbdc8d5c9dd6&txTime=6a092822
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente [BLV VIP] (Socolive) m3u8
-https://pull.niur.live/live/stream-491873_lsd.m3u8?txSecret=a25f804e6e46207f61ba908dcc6e8210&txTime=6a092822
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente [BLV VIP] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=6b49c3257a6d1aef436dfc7e0ca1a81c&txTime=6a092822
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Internacional - RS vs Vasco da Gama Saf - RJ [MONEY MAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-605412_lhd.m3u8?auth_key=1778970594-0-0-d712b62c35684d04c3967927fc534baf
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h30 ngày 17/05 Montreal Impact vs Chicago Fire [Đình Bắc] (Socolive) m3u8
-https://pull.niues.live/live/stream-579144_lsd.m3u8?auth_key=1778967354-0-0-72873aedbd8151055cc4398a371b3b9c
+https://pull.niues.live/live/stream-579144_lsd.m3u8?auth_key=1778970594-0-0-eb8b47f33db8786549559d20d89ad968
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h30 ngày 17/05 Montreal Impact vs Chicago Fire [Đình Bắc] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-579144_lhd.m3u8?auth_key=1778967354-0-0-01c2c72c4ced6a49dba0e24ad45204ce
+https://pull.niues.live/live/stream-579144_lhd.m3u8?auth_key=1778970594-0-0-6f89339cfae328ff050ed06dc359935d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente [ĐỖ TÚ TÀI] (Socolive) m3u8
-https://pull.niues.live/live/stream-607552_lsd.m3u8?auth_key=1778967354-0-0-9680d45a53cacf871e912f046dfe5623
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Atlético Mineiro - MG vs Mirassol - SP [BLV GÔN] (Socolive) m3u8
+https://pull.niues.live/live/stream-445260_lsd.m3u8?auth_key=1778970594-0-0-f33aed0405906653e1388ff2ee40d2ac
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Sporting CP vs Gil Vicente [ĐỖ TÚ TÀI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1778967354-0-0-7749eee2249c037cb62305ea8e8ee652
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Atlético Mineiro - MG vs Mirassol - SP [BLV GÔN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-445260_lhd.m3u8?auth_key=1778970594-0-0-ae7fa9c3463b2f2711809dcd598fc417
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV KEM] (Socolive) m3u8
-https://pull.niues.live/live/stream-513394_lsd.m3u8?auth_key=1778967354-0-0-d87a223d1c9f906c5d025d0dbeb3922a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Internacional - RS vs Vasco da Gama Saf - RJ [BLV ANH TÀI] (Socolive) m3u8
+https://pull.niues.live/live/stream-406865_lsd.m3u8?auth_key=1778970594-0-0-dc06f2bca28715cf0fdd0ae6645a7415
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [BLV KEM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-513394_lhd.m3u8?auth_key=1778967354-0-0-9824e5fcd291a5a17a7e15bd869d034f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Internacional - RS vs Vasco da Gama Saf - RJ [BLV ANH TÀI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1778970594-0-0-247d3db82fc49c07bf1dc3071c2dc228
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [LOKA] (Socolive) m3u8
-https://pull.niues.live/live/stream-589848_lsd.m3u8?auth_key=1778967354-0-0-dee509223835d2f7ac5ada93246d4ffa
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV NẤM] (Socolive) m3u8
+https://pull.niues.live/live/stream-608899_lsd.m3u8?auth_key=1778970954-0-0-484fc990ac7965972c3b4cc214655da0
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 17/05 Estoril vs Benfica [LOKA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1778967354-0-0-3d004b795488dfff3fb5710bdbd87ac2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV NẤM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-608899_lhd.m3u8?auth_key=1778970954-0-0-892737177f5cea3bac0bf732ef69f98d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 17/05 Estoril vs Benfica (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanto/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV CHIVAS] (Socolive) m3u8
+https://pull.niur.live/live/stream-485739_lsd.m3u8?txSecret=b450cd851eda73b40f3ac446bc041505&txTime=6a09379a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 17/05 Estoril vs Benfica (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phanto/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV CHIVAS] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=3423a0c033e89b8d18444aea722d1f81&txTime=6a09379a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 17/05 Sporting CP vs GIL Vicente (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanhalinh/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h30 ngày 17/05 Montreal Impact vs Chicago Fire [BLV A TINH] (Socolive) m3u8
+https://pull.niur.live/live/stream-598119_lsd.m3u8?txSecret=22bbfb82695ea2d46fedf7afa3fd6ec9&txTime=6a09379a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 17/05 Sporting CP vs GIL Vicente (Hội Quán) SD
-https://alive.zlylive.com/hqtv_blv_phanhalinh/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h30 ngày 17/05 Montreal Impact vs Chicago Fire [BLV A TINH] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=78cdb182a4a4b61b1e86ca46544f121d&txTime=6a09379a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Atlético Mineiro - MG vs Mirassol - SP [THẠCH TÚ] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=f30d767937677db8a5dacea57dfe4394&txTime=6a093902
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Atlético Mineiro - MG vs Mirassol - SP [THẠCH TÚ] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=a3878736c096e23d04bc42d128e6b031&txTime=6a093902
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h15 03/05 RC Strasbourg vs Toulouse FC
+https://live5.msrktz.app/live/90725470.m3u8
 
