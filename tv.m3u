@@ -1,4 +1,10 @@
 #EXTM3U
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/134.png",05:30 | Atletico Paranaense vs Flamengo
+https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",02:00 | Arsenal vs Burnley
+https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
+
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/9568.png",Inter Miami vs Portland Timbers
 https://bglive.yarncdn.live/live/bgtv_blv_tieubaxa/playlist.m3u8
 
@@ -62,9 +68,6 @@ https://liveh12.vtvprime.vn/hls/SCTVPHIM/03.m3u8
 #EXTINF:-1 group-title="Quốc tế" tvg-logo="https://i.postimg.cc/597PXnqD/784px-Tvb-logo-svg.png",TVB VietNam
 https://amg01868-amg01868c3-tvbanywhere-us-4491.playouts.now.amagi.tv/playlist1080p.m3u8
 
-#EXTINF:-1 group-title="Quốc tế" tvg-logo="https://img.vtvprime.vn/bx7_O8VnoPiHJ9mA_aTHMuMu9NngsDvN14MIdNzfAdk/rs:fit:836:468/czM6Ly9wcmQtc24taW1hZ2VzL2NoYW5uZWwvZTYwZjk3MmYtYjMzYy00ZWQ2LTllODMtMjU0ODdmNWVlZDA0LnBuZw==.png",History HD
-https://sgclient.duckdns.org/source/tv360.m3u8?id=9856
-
 #EXTINF:-1 group-title="Quốc tế" tvg-logo="https://i.postimg.cc/ryBfGz3R/EBS-KIDS-2000.png",EBS Kids TV
 https://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
 
@@ -115,9 +118,6 @@ https://kenhdp-vtvgo.vtvdigital.vn/kenhdp/sonla-720p.m3u8
 
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2023/05/16/03/1684183176485/baf863bc2690_640_360.png",Lạng Sơn
 https://stream.langsontv.vn/live/285c78da0c246524c90917842f8de03bd21/playlist.m3u8
-
-#EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/11/05/16/1762336328954/07ecc9b857a5_640_360.png",Cần Thơ 1
-https://kenhdp-vtvgo.vtvdigital.vn/kenhdp/cantho1-720p.m3u8
 
 #EXTINF:-1 group-title="Địa phương" tvg-logo="https://img-ali1.tv360.vn/image1/2025/11/05/16/176233636246/8ded7c5a9010_640_360.png",Cần Thơ 2
 https://kenhdp-vtvgo.vtvdigital.vn/kenhdp/cantho2-720p.m3u8
@@ -176,90 +176,111 @@ https://str.vov.gov.vn/vovlive/vovGTHN.sdp_aac/chunklist_w601606653.m3u8
 #EXTINF:-1 group-title="Radio" tvg-logo="https://admin.vov.gov.vn//UploadFolder/DonVi_Image/68d43961-b50b-4403-b666-4da51296ca61.png",VOV Giao thông Hồ Chí Minh
 https://str.vov.gov.vn/vovlive/vovGTHCM.sdp_aac/chunklist_w1213978008.m3u8
 
-#EXTINF:-1 group-title="Radio" tvg-logo="https://i.postimg.cc/44bWNMP2/voh99-Photoroom.png",VOH FM 99.9Mhz
-https://strm.voh.com.vn/radio/channel3/playlist.m3u8
-
-#EXTINF:-1 group-title="Radio" tvg-logo="https://i.postimg.cc/VsBKLTgg/307303844-621811606041494-6253147328845815929-n-Photoroom.png",VOH FM 95.6Mhz
-https://strm.voh.com.vn/radio/channel1/playlist.m3u8
-
-#EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-fm877-512x512-110237.png",VOH FM 87.7Mhz
-https://strm.voh.com.vn/radio/channel5/playlist.m3u8
-
-#EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-am610-512x512-104316.png",VOH AM 610Khz
-https://strm.voh.com.vn/radio/channel2/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h00 ngày 18/05 Argentinos Juniors vs Belgrano (Lương Sơn) BLV FERNANDO m3u
-https://hls.cdnfaster-a.live/live/FERNANDO/index.m3u8?expire=1924930980&sign=bab24fb93b0be5c98af9138659989bcb
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Colo Colo vs Nublense [BLV NẤM] (Socolive) m3u8
-https://pull.niues.live/live/stream-608899_lsd.m3u8?auth_key=1779057355-0-0-5897c7e3c56256ffc338ca31fc646b6e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Colo Colo vs Nublense [BLV NẤM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-608899_lhd.m3u8?auth_key=1779057355-0-0-fadbe8df74aa738036473d7eddbe7c1a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV VITAMIN] (Socolive) m3u8
-https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1779057355-0-0-34674786d2c161e03b58a69fa4e9dc5b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV VITAMIN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1779057355-0-0-fc1d5719968e65bb2c06bcdb7c05cacf
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Red Bull Bragantino vs Vitória - BA [BLV GÔN] (Socolive) m3u8
-https://pull.niues.live/live/stream-445260_lsd.m3u8?auth_key=1779057355-0-0-ee094dff22a4b3b6141e8513bcb5b086
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Red Bull Bragantino vs Vitória - BA [BLV GÔN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-445260_lhd.m3u8?auth_key=1779057355-0-0-53627c6081ee727277e67b081ee3f6aa
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Red Bull Bragantino vs Vitória - BA [BLV THÓC] (Socolive) m3u8
-https://pull.niues.live/live/stream-606448_lsd.m3u8?auth_key=1779057355-0-0-b31859cbcb97502e796bfa15f8fee4a9
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Red Bull Bragantino vs Vitória - BA [BLV THÓC] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-606448_lhd.m3u8?auth_key=1779057355-0-0-7a08f608d3917754ecc8a20fd60221b6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Colo Colo vs Nublense [BLV CHIVAS] (Socolive) m3u8
-https://pull.niur.live/live/stream-485739_lsd.m3u8?txSecret=fa7966e6ac706fbb0a8e2217b13a540b&txTime=6a0a8a83
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Colo Colo vs Nublense [BLV CHIVAS] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=63a8425ea54121a1d52788c0d50267c0&txTime=6a0a8a83
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [MONEY MAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-605412_lsd.m3u8?auth_key=1779057715-0-0-e14d0b466623e4880024e94d71be6ec3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [MONEY MAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-605412_lhd.m3u8?auth_key=1779057715-0-0-1b9cc9035c6ef9c5c97e9a662ae3a45d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Indiana Fever Nữ vs Seattle Storm Nữ (Lương Sơn) BLV YẾN THANH m3u
+https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Chapecoense - SC vs Remo - PA [BLV LUCAS] (Socolive) m3u8
-https://pull.niues.live/live/stream-304148_lsd.m3u8?auth_key=1779057715-0-0-ef2225f09dc3d67926e679a24d14da5b
+https://pull.niues.live/live/stream-304148_lsd.m3u8?auth_key=1779060955-0-0-6c2441db0bd3975618ad512de827d3bd
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Chapecoense - SC vs Remo - PA [BLV LUCAS] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1779057715-0-0-22da8e79e47f3451fc02f139ff1a5cca
+https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1779060955-0-0-e9ead4e1c3b994fc89e88ce5e66a6c1e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV BÉO] (Socolive) m3u8
+https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=fac7dc3ef41d9e476801892fe84ff6d6&txTime=6a0a972b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV BÉO] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=fda1ed29710cf605e7bdc85163ddd18d&txTime=6a0a972b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Colo Colo vs Nublense [BLV CHIVAS] (Socolive) m3u8
+https://pull.niur.live/live/stream-485739_lsd.m3u8?txSecret=4d06d23b085a77d4a0554f3aab0faef2&txTime=6a0a972b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Colo Colo vs Nublense [BLV CHIVAS] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=09768812098c685740ba4c99dd16387e&txTime=6a0a972b
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Chapecoense - SC vs Remo - PA [BLV YONE] (Socolive) m3u8
-https://pull.niues.live/live/stream-372746_lsd.m3u8?auth_key=1779057715-0-0-44f4a7f0370b2e471a4c4c28c75fb83c
+https://pull.niues.live/live/stream-372746_lsd.m3u8?auth_key=1779060955-0-0-367893ee66c1f6b0ca34b4563090830b
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Chapecoense - SC vs Remo - PA [BLV YONE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1779057715-0-0-f4a1a3b76148c702f0ad696800e1ee96
+https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1779060955-0-0-f3cf5a1e2a7d437ec311c36b046ee75a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV CUỘI] (Socolive) m3u8
-https://pull.niues.live/live/stream-256080_lsd.m3u8?auth_key=1779058075-0-0-6e814926e9817fe86f944ebe101cbb90
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [MONEY MAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-605412_lsd.m3u8?auth_key=1779060955-0-0-3bde23321b905cc14671cf1c0e0fd8ee
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV CUỘI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1779058075-0-0-d390159c3ed20157ce9a53984e103d4a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [MONEY MAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-605412_lhd.m3u8?auth_key=1779060955-0-0-05a46d4ab721cbf353ec75fe2431460c
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [LOGAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-552832_lsd.m3u8?auth_key=1779058075-0-0-a14cefd05d5ae7d68af2ea4bea5262e4
+https://pull.niues.live/live/stream-552832_lsd.m3u8?auth_key=1779061315-0-0-73a0f18fbea3221466195a6c8b3f124b
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [LOGAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1779058075-0-0-f4f9b0b4420d8e957ed75e6d44c62d87
+https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1779061315-0-0-08dd4f487d995f839eb19ff68aa796ab
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV CUỘI] (Socolive) m3u8
+https://pull.niues.live/live/stream-256080_lsd.m3u8?auth_key=1779061315-0-0-144cf739a7cdb859ee3fbe1ab6b5a9e4
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV CUỘI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1779061315-0-0-7f424a3d7269ed991d205c7b6c61e88e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h30 ngày 18/05 Athletico Paranaense - PR vs Flamengo - RJ [VỊT BẠC] (Socolive) m3u8
+https://pull.niues.live/live/stream-474421_lsd.m3u8?auth_key=1779061315-0-0-a315c61e1fa8f6e5f183228494267efe
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h30 ngày 18/05 Athletico Paranaense - PR vs Flamengo - RJ [VỊT BẠC] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-474421_lhd.m3u8?auth_key=1779061315-0-0-f5f948739e4134201a96396428fbaae2
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV ROBBEN] (Socolive) m3u8
-https://pull.niues.live/live/stream-527383_lsd.m3u8?auth_key=1779058075-0-0-18c1600d3a815f17cc43e2123861d3b8
+https://pull.niues.live/live/stream-527383_lsd.m3u8?auth_key=1779061315-0-0-7939308ecf39281b3cf1c4b0b343b2da
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV ROBBEN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1779058075-0-0-16ce1a60847ee023b7015a7db5ac4be8
+https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1779061315-0-0-8685a8b2a1c3a529f59988b5c4905b13
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BRA D1:	Athletico Paranaense - PR	Flamengo - RJ [HÀ DUY KIÊN] (Socolive) m3u8
+https://pull.niues.live/live/stream-607400_lsd.m3u8?auth_key=1779061675-0-0-5f0cc7a081870c748863e8a18478f9cc
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BRA D1:	Athletico Paranaense - PR	Flamengo - RJ [HÀ DUY KIÊN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1779061675-0-0-86333c71a15c58ba20a168af611b85e9
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Red Bull Bragantino vs Vitória - BA [BLV THÓC] (Socolive) m3u8
+https://pull.niues.live/live/stream-606448_lsd.m3u8?auth_key=1779061675-0-0-9641afb84fe23d2d7dc9e6d375cc080e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Red Bull Bragantino vs Vitória - BA [BLV THÓC] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-606448_lhd.m3u8?auth_key=1779061675-0-0-0c8cfbe2bfcd84d44a6c9fa0d98c679d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Red Bull Bragantino vs Vitória - BA [BLV GÔN] (Socolive) m3u8
+https://pull.niues.live/live/stream-445260_lsd.m3u8?auth_key=1779061675-0-0-ba0fc4814078d137080cbbbd981819a3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Red Bull Bragantino vs Vitória - BA [BLV GÔN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-445260_lhd.m3u8?auth_key=1779061675-0-0-b56c38d5cfa2f116263d556460dab59c
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV VITAMIN] (Socolive) m3u8
+https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1779061675-0-0-8a4559d1729ed8ccef4460139eac12d1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 18/05 Inter Miami CF vs Portland Timbers [BLV VITAMIN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1779061675-0-0-3c023f472bcaf01474f5eea72ba5e368
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Colo Colo vs Nublense [BLV NẤM] (Socolive) m3u8
+https://pull.niues.live/live/stream-608899_lsd.m3u8?auth_key=1779061675-0-0-e3a0c8124e547a7cb0652dd6e6633566
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 18/05 Colo Colo vs Nublense [BLV NẤM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-608899_lhd.m3u8?auth_key=1779061675-0-0-cbbf062d5fd66bbbfccfa84475a91ce7
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 18/05 Inter Miami vs Portland Timbers (Hội Quán) FHD
 https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 18/05 Bragantino vs Vitoria BA
-https://live5.msrktz.app/live/99121525.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h30 18/05 Atletico Paranaense vs Flamengo (Hội Quán) FHD
+https://hqlive.yarncdn.live/live/hqtv_blv_phananh/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h30 18/05 Atletico Paranaense vs Flamengo (Hội Quán) SD
+https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 18/05 Inter Miami vs Portland Timbers
+https://live5.msrktz.app/live/90725470.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h30 18/05 Athletico-PR vs Flamengo
+https://live5.msrktz.app/live/02456966.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h00 18/05 Los Angeles Sparks vs Toronto Tempo
+https://live5.msrktz.app/live/90865415.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h00 18/05 Minnesota Lynx vs Chicago Sky
+https://live5.msrktz.app/live/82054853.m3u8
 
