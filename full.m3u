@@ -11,11 +11,8 @@ https://alive.yarncdn.live/hqtv_blv_phando/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/4/4e/Genoa_cfc.png",17:00 | Genoa vs AC Milan
 https://hqlive.yarncdn.live/live/hqtv_blv_phanca/playlist.m3u8
 
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/9166.png",18:00 | Pho Hien vs Ha Noi
-https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phantu/playlist.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/3674.png",18:00 | Nam Dinh vs Viettel
-https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
+https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phantu/playlist.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/33.png",18:30 | Manchester United vs Nottingham Forest
 https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
@@ -31,6 +28,9 @@ https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/1166.png",22:00 | Lahti vs VPS
 https://alive.yarncdn.live/hqtv_blv_phanchuot/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/134.png",05:30 | Atletico Paranaense vs Flamengo
+https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/4/4e/Genoa_cfc.png",17:00 | Genoa vs AC Milan
 https://alive.yarncdn.live/tdtv_blv_taothienvuong/tracks-v2a1/mono.m3u8
@@ -770,149 +770,167 @@ https://strm.voh.com.vn/radio/channel5/playlist.m3u8
 #EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-am610-512x512-104316.png",VOH AM 610Khz
 https://strm.voh.com.vn/radio/channel2/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",[AFC Women’s Asian Cup] China Women vs Bangladesh (w) lúc 15:24 ngày 03/03/2026 [MAIN]
-https://live.alilicloud.com/live/610c95018011cb951426df99dbf3005a/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",[AFC Champions League Elite] Melbourne City vs Buriram United lúc 15:24 ngày 03/03/2026 [MAIN]
-https://live.alilicloud.com/live/55ec1a6b695520c6691e17417b0a44df/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse (Lương Sơn) BLV KHỔNG MINH m3u
-https://hls.cdnfaster-a.live/live/KHONGMINH/index.m3u8?expire=1788427256&sign=003a6e74f0efdf441ba4b32785a21d31
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse (Lương Sơn) BLV KHỔNG MINH flv
-https://flv.cdnfaster-a.live/live/KHONGMINH.flv?expire=1788427256&sign=003a6e74f0efdf441ba4b32785a21d31
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers (Lương Sơn) BLV SHIN m3u
-https://hls.cdnfaster-a.live/live/SHIN/index.m3u8?expire=1830276060&sign=2e2271dce625a0d03d328eeed8859587
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers (Lương Sơn) BLV SHIN flv
-https://flv.cdnfaster-a.live/live/SHIN.flv?expire=1830276060&sign=2e2271dce625a0d03d328eeed8859587
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse (Lương Sơn) BLV TIỂU LANG m3u
-https://hls.cdnfaster-a.live/live/AJUN/index.m3u8?expire=2556118740&sign=4cf66df9135854d82fa43d2c5f365419
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse (Lương Sơn) BLV TIỂU LANG flv
-https://flv.cdnfaster-a.live/live/AJUN.flv?expire=2556118740&sign=4cf66df9135854d82fa43d2c5f365419
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Hiroshima Sanfrecce (Lương Sơn) BLV TÂY MÔN KHÁNH m3u
-https://hls.cdnfaster-a.live/live/TAYMONKHANH/index.m3u8?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Hiroshima Sanfrecce (Lương Sơn) BLV TÂY MÔN KHÁNH flv
-https://flv.cdnfaster-a.live/live/TAYMONKHANH.flv?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus (Lương Sơn) BLV PELE m3u
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara Solo FC (Lương Sơn) BLV PELE m3u
 https://hls.cdnfaster-a.live/live/NGUCA/index.m3u8?expire=1788427256&sign=abf9c93edd0de1c833f9ffc14381d526
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus (Lương Sơn) BLV PELE flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara Solo FC (Lương Sơn) BLV PELE flv
 https://flv.cdnfaster-a.live/live/NGUCA.flv?expire=1788427256&sign=abf9c93edd0de1c833f9ffc14381d526
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus (Lương Sơn) BLV LÝ QUỲ m3u
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara Solo FC (Lương Sơn) BLV LÝ QUỲ m3u
 https://hls.cdnfaster-a.live/live/LYQUY/index.m3u8?expire=1891408380&sign=4eb9451ad0178fa8207d583db7d469e3
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus (Lương Sơn) BLV LÝ QUỲ flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara Solo FC (Lương Sơn) BLV LÝ QUỲ flv
 https://flv.cdnfaster-a.live/live/LYQUY.flv?expire=1891408380&sign=4eb9451ad0178fa8207d583db7d469e3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara Solo FC (Lương Sơn) BLV LEO m3u
+https://hls.cdnfaster-a.live/live/LEO/index.m3u8?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara Solo FC (Lương Sơn) BLV LEO flv
+https://flv.cdnfaster-a.live/live/LEO.flv?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC (Lương Sơn) BLV LƯU BỊ m3u
+https://hls.cdnfaster-a.live/live/LUUBI/index.m3u8?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC (Lương Sơn) BLV LƯU BỊ flv
+https://flv.cdnfaster-a.live/live/LUUBI.flv?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC (Lương Sơn) BLV MÃ SIÊU m3u
+https://hls.cdnfaster-a.live/live/MASIEU/index.m3u8?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC (Lương Sơn) BLV MÃ SIÊU flv
+https://flv.cdnfaster-a.live/live/MASIEU.flv?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Hwaseong FC vs Busan I Park (Lương Sơn) BLV TIỂU LANG m3u
+https://hls.cdnfaster-a.live/live/AJUN/index.m3u8?expire=2556118740&sign=4cf66df9135854d82fa43d2c5f365419
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Hwaseong FC vs Busan I Park (Lương Sơn) BLV TIỂU LANG flv
+https://flv.cdnfaster-a.live/live/AJUN.flv?expire=2556118740&sign=4cf66df9135854d82fa43d2c5f365419
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang (Lương Sơn) BLV QUAN VŨ m3u
+https://hls.cdnfaster-a.live/live/QUANVU/index.m3u8?expire=1788427256&sign=056d097a0bbbd810493fd64ccf4831b7
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang (Lương Sơn) BLV QUAN VŨ flv
+https://flv.cdnfaster-a.live/live/QUANVU.flv?expire=1788427256&sign=056d097a0bbbd810493fd64ccf4831b7
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang (Lương Sơn) BLV KEVILL m3u
+https://hls.cdnfaster-a.live/live/KEVILL/index.m3u8?expire=1788427256&sign=189afcf7f800d4c6c8a5aa97649a110799
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang (Lương Sơn) BLV KEVILL flv
+https://flv.cdnfaster-a.live/live/KEVILL.flv?expire=1788427256&sign=189afcf7f800d4c6c8a5aa97649a110799
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang (Lương Sơn) BLV LỮ BỐ m3u
+https://hls.cdnfaster-a.live/live/LUBO/index.m3u8?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang (Lương Sơn) BLV LỮ BỐ flv
+https://flv.cdnfaster-a.live/live/LUBO.flv?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 17/05 Taiwan Power Company FC vs Ming Chuan University (Khán Đài A) source
+https://www3.f2k3.shop/live/48ec0130c6b1508128df84bd89589b2b/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Seongnam FC vs Gyeongnam FC (Khán Đài A) source
+https://www3.f2k3.shop/live/3edaf229ae2ba8edac8fc7d894c16dc3/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h15 ngày 17/05 MFK Karvina B vs Hlucin (Khán Đài A) source
+https://www3.f2k3.shop/live/343a11754c55e203db6f3a936c9fe446/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 17/05 Tatung FC vs Taichung Futuro (Khán Đài A) source
+https://www3.f2k3.shop/live/72a1b58b61d69a642a731d27983894e4/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h45 ngày 17/05 Dangdiao Village vs Pingyong Village (Khán Đài A) source
+https://www3.f2k3.shop/live/6df8192c5d9c6c4b0df303a0af949fa2/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 17/05 Shanghai Women vs Changchun Dazhongzhuoyue Women (Khán Đài A) source
+https://www3.f2k3.shop/live/e998534867a84a09bde74f6b07effd3e/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Hwaseong FC vs Busan I Park (Khán Đài A) source
+https://www3.f2k3.shop/live/45a721c5d3ac86b38ebaac118245f564/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 17/05 Taichung Rock FC vs Sunny Bank Athletic Club Taipei (Khán Đài A) source
+https://www3.f2k3.shop/live/dd6fd3ecd04bc95fac4427f7afa44b5e/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Kyrgyzstan U20 vs Afghanistan U20 (Khán Đài A) source
+https://www3.f2k3.shop/live/bfe40f437ef5562b0c6e7f1605b03554/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 17/05 Wuhai Team vs Ulanqab Team (Khán Đài A) source
+https://www3.f2k3.shop/live/be9ee755b0f6f96078eb71048fe0cf45/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jinan Team vs Yantai Team (Khán Đài A) source
+https://www3.f2k3.shop/live/074dd771fce20880a225e369b15027ea/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Gimhae City vs Daegu Football Club (Khán Đài A) source
+https://www3.f2k3.shop/live/829cb62a3788b4ae7dfcdc804a067a1c/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h15 ngày 17/05 Slovan Liberec II vs Teplice B (Khán Đài A) source
+https://www3.f2k3.shop/live/4b9b43def3638ea24e078c12d29839d1/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang (Khán Đài A) source
+https://www3.f2k3.shop/live/f8f27e1adacd10609bf119425b7cbf0e/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 17/05 FK Uralvs2 vs Pobeda Nizhniy Novgorod (Khán Đài A) source
+https://www3.f2k3.shop/live/43493e9ad0f275919da924e81c0ca798/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Guizhou Xufengtang vs Shijiazhuang Gongfu (Khán Đài A) source
+https://www3.f2k3.shop/live/adb8f9080e1c26879fc5a82c188a39ad/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Hills United (W) vs Gladesville Ravens Women (Khán Đài A) source
+https://www3.f2k3.shop/live/c84178b75ff808af55a8b700f6341749/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h15 ngày 17/05 Jablonec B vs SK Slovan Varnsdorf (Khán Đài A) source
+https://www3.f2k3.shop/live/0eebb4a131fba6f290b277714f08b0de/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Sydney Olympic FC Women vs Mt Druitt Town Rangers FC (W) (Khán Đài A) source
+https://www3.f2k3.shop/live/8451d46cb8b100b7a07d776709039fd4/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 17/05 Beijing Women vs Jiangsu Yinhao Women (Khán Đài A) source
+https://www3.f2k3.shop/live/e40ec8faf11c6f6edd63a12d3e59ae59/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu Football Club (Khán Đài A) source
+https://www3.f2k3.shop/live/73875fc86fc6e4eaf9d6c1c4eb6d236f/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 17/05 Hyundai Skywalkers vs JTEKT (Khán Đài A) sd_1
+https://pull-kda.fastestcdn-global.com/live/3ca6694ad4804267a3c918a3962cf631/index.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h15 ngày 17/05 Brno B vs TJ Start Brno (Khán Đài A) source
+https://www3.f2k3.shop/live/f29b0b09f71281bf1e224b2da48d0730/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 Taizhou Team vs Jiaxing Team (Khán Đài A) source
+https://www3.f2k3.shop/live/00f54fd51d6fade033ddca11a7f63ab7/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 Wuhan Lianzhen vs Guangdong Guangzhou Power (Khán Đài A) source
+https://www3.f2k3.shop/live/de0027c273278b4e6cfc787a6aed4722/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h50 ngày 17/05 Apia L Tigers Women vs Illawarra Stingrays Women (Khán Đài A) source
+https://www3.f2k3.shop/live/a1f83817f09be0d6d54ada270ebccd8e/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 Lee Man vs Tai Po (Khán Đài A) source
+https://www3.f2k3.shop/live/82493ee665647f7693f1486b393642a7/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 Moreton Bay United Reserves vs Brisbane Knights (Khán Đài A) source
+https://www3.f2k3.shop/live/7b794b6bc2fdcf1fb9d2db665a706d31/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 Eastern Suburbs SC Women vs Souths United SC Women (Khán Đài A) source
+https://www3.f2k3.shop/live/2f30857d98f18f86747d6d5e0fbe80f8/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 Adelaide Olympic vs Cumberland United FC (Khán Đài A) source
+https://www3.f2k3.shop/live/3108450a5e093a80af009603b26acae9/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 Gunma Green Wings (Nhật Bản) vs LPBank Ninh Bình (Khán Đài A) sd_1
+https://pull-kda.fastestcdn-global.com/live/f015be05830248da8be7a8f60f17e2f6/index.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 Shanghai Zetian vs Dingnan United (Khán Đài A) source
+https://www3.f2k3.shop/live/c862bddb82e4df47be88fbb8ac169b0f/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h35 ngày 17/05 Suntory Sunbirds vs Panasonic Panthers (Khán Đài A) sd_1
 https://pull-kda.fastestcdn-global.com/live/564e7a40fd104d70911c2b838cda2cd1/index.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h30 ngày 17/05 Shodon Village vs Changba Village (Khán Đài A) source
-https://www3.f2k3.shop/live/55330242611ad242215b20e42abfd682/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 University of Sydney Women vs WS Wanderers B (W) (Khán Đài A) source
+https://www3.f2k3.shop/live/2b9133ddd88f375d72462cdf03e0b544/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 FC Osaka vs Zweigen Kanazawa FC (Khán Đài A) source
-https://www3.f2k3.shop/live/20950a63f17d4f31ca78c1f6866eab3a/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h15 ngày 17/05 Unicov vs Trinec (Khán Đài A) source
+https://www3.f2k3.shop/live/a7c74517ee0935ade87d714fa191c37f/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 RB Omiya Ardija vs AC Nagano Parceiro (Khán Đài A) source
-https://www3.f2k3.shop/live/3233742ffc38221144c851fb2c2330f9/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Gijang United vs Sejong SA (Khán Đài A) source
-https://www3.f2k3.shop/live/57337cfc9127c064390cd69484a514df/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Mokpo City vs Gyeongju KHNP (Khán Đài A) source
-https://www3.f2k3.shop/live/a3553a5dc56f9d11bcc8902fd3374126/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 FC Imabari vs Kamatamare Sanuki (Khán Đài A) source
-https://www3.f2k3.shop/live/5a02a73ef861d250795a400805a3fa7e/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers (Khán Đài A) source
-https://www3.f2k3.shop/live/4baf38a0908119d08fd32d8aff6edc74/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Kochi United vs Ehime FC (Khán Đài A) source
-https://www3.f2k3.shop/live/df3e4e802644f793cb5ae00d0b24c9e0/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h40 ngày 17/05 Bulls Academy Women vs Manly Utd Women (Khán Đài A) source
-https://www3.f2k3.shop/live/67e10f66f92879fea8e14ef406f0f605/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Maitland FC Women vs Lake Macquarie (W) (Khán Đài A) source
-https://www3.f2k3.shop/live/ab1e8b773e9ea3b6c12ae342cd7e509d/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Yokohama FC vs Tochigi SC (Khán Đài A) source
-https://www3.f2k3.shop/live/cd49c59f38ec8f78c6b860bfd16a2d53/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Jincheon HR FC vs Seosan Pioneer FC (Khán Đài A) source
-https://www3.f2k3.shop/live/fc3e89f02b89abc3746ba372b46d82ea/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Viamaterras Miyazaki Women vs Setagaya SfidWomen (Khán Đài A) source
-https://www3.f2k3.shop/live/d7039ef1babe11ae89b4e9e53758b972/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Melbourne Victory FC Youth(W) vs Preston Lions Women (Khán Đài A) source
-https://www3.f2k3.shop/live/e3a3f54766dbec76f2f2f2c46908317a/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Blaublitz Akita vs Thespa Kusatsu Gunma (Khán Đài A) source
-https://www3.f2k3.shop/live/06462159563df0415b3e5ed683ad5afe/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Kagoshima United vs Roasso Kumamoto (Khán Đài A) source
-https://www3.f2k3.shop/live/6584a637ffde0c41cd448f21a102ab14/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h30 ngày 17/05 Canberra Olympic Women vs Tuggeranong Utd Women (Khán Đài A) source
-https://www3.f2k3.shop/live/ea967b55805fe04f1f08b5e39e3e5308/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Kataller Toyama vs Tokushima Vortis (Khán Đài A) source
-https://www3.f2k3.shop/live/798c554d597d7bedc034a7c1793823e7/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Iwaki FC vs Matsumoto Yamaga FC (Khán Đài A) source
-https://www3.f2k3.shop/live/b746fc6373bdd975a1c94fa558da0a07/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Oita Trinita vs Tegevajaro Miyazaki (Khán Đài A) source
-https://www3.f2k3.shop/live/7c012cbea1966d85cea09f1ed72b8f67/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Maca Searle Women vs Northern Tigers FC Women (Khán Đài A) source
-https://www3.f2k3.shop/live/7353a0c56ac6c8a2068e11fee1d27768/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu SvsPulse (Khán Đài A) source
-https://www3.f2k3.shop/live/b727e08a86d378c5edb6c7cc717c307c/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Siheung City vs Gangneung Citizen (Khán Đài A) source
-https://www3.f2k3.shop/live/23c7fd8fe4d3e183b1acf9e30a99c42f/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Newcastle Olympic vs Weston Workers FC (Khán Đài A) source
-https://www3.f2k3.shop/live/6439ca6b40a718e8856441a0fd6d4410/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Canberra White Eagles vs Canberra Juventus (Khán Đài A) source
-https://www3.f2k3.shop/live/89bb1f3c4bc0c16ab8e906fc47e03886/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Chiba vs Kashima (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Chiba vs Kashima (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x2.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-pulse (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-pulse (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x3.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x4/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x4.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x5/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x5.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 FC Ulaanbaatar vs Khangarid FC (Khán Đài A) source
+https://www3.f2k3.shop/live/498abe0deceaf894d82d3d3be95a0c82/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 17/05 Gunma Bank Green Wings W vs LPBank Ninh Bình (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
@@ -938,6 +956,18 @@ https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Motors vs Gimcheon Sangmu FC (Chuối Chiên) HD2
 https://gckc0525.edgemaxcdn.org/live/m5x1.flv
 
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/m5x2.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 17/05 Kawasaki Frontale vs Machida Zelvia (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 17/05 Kawasaki Frontale vs Machida Zelvia (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/m5x3.flv
+
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 17/05 Hoang Anh Gia Lai vs Hồng Lĩnh Hà Tĩnh (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/anhhot/playlist.m3u8
 
@@ -950,6 +980,12 @@ https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 17/05 Hoang Anh Gia Lai vs Hồng Lĩnh Hà Tĩnh (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/anhhothd.flv
 
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Genoa vs AC Milan (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/m5x4/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Genoa vs AC Milan (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/m5x4.flv
+
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Juventus vs Fiorentina (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/anhsoi/playlist.m3u8
 
@@ -961,6 +997,12 @@ https://gckc0525.edgemaxcdn.org/live/anhsoihd/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Juventus vs Fiorentina (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/anhsoihd.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Pisa vs Napoli (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/m5x5/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Pisa vs Napoli (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/m5x5.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",18h00 ngày 17/05 Nam Dinh vs Viettel (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
@@ -1010,309 +1052,222 @@ https://gckc0525.edgemaxcdn.org/live/chuoidonghd/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h15 ngày 17/05 Công An Hà Nội vs Thanh Hóa (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/chuoidonghd.flv
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",18h30 ngày 17/05 Manchester United vs Nottingham Forest (Gà Vàng) sd_1
-https://pull-gv.fastestcdn-global.com/live/376ee1fd5cf5455180029e3db2ef7aa6/index.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu Football Club (Gà Vàng) sd_1
+https://pull-gv.fastestcdn-global.com/live/2fac238563c64615afc0da71fcf6d86a/index.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus (Gà Vàng) source
-https://www3.f2k3.shop/live/546f2c2e14313b080821ca9c40854daa/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [LOGAN] (Socolive) flv
+https://pull06.scstream.net/live/stream-552832_lsd.flv?auth_key=1779010915-0-0-589ce32b17d3da5b15eee6cf2d70ab2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus (Gà Vàng) sd_1
-https://pull-gv.fastestcdn-global.com/live/19de7fa4c97842979a14a695b693460d/index.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [LOGAN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-552832_lhd.flv?auth_key=1779010915-0-0-fb34751421e908d29b866e1302cd20fb
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [TYPN] (Socolive) flv
-https://pull.niur.live/live/stream-9912009_lsd.flv?txSecret=bd5b5c61061d557a9151a48920e59e93&txTime=6a09b08b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [LOGAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-552832_lsd.m3u8?auth_key=1779010915-0-0-bf544ae3769584c9375c4667ac9ae973
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [TYPN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912009_lhd.flv?txSecret=136f8dffe76348b27276662aab665ab6&txTime=6a09b08b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [LOGAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1779010915-0-0-3dc4dd1cc32eb86e9e1b72127109b4aa
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [TYPN] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912009_lsd.m3u8?txSecret=bd5b5c61061d557a9151a48920e59e93&txTime=6a09b08b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV CUỘI] (Socolive) flv
+https://pull06.scstream.net/live/stream-256080_lsd.flv?auth_key=1779010915-0-0-9e30dcecc8a1d73b4c9809c5e11aa5b8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [TYPN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912009_lhd.m3u8?txSecret=136f8dffe76348b27276662aab665ab6&txTime=6a09b08b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV CUỘI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-256080_lhd.flv?auth_key=1779010915-0-0-3655c14cb02739ce13c9138fc5727e9a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [BLV COZY] (Socolive) flv
-https://pull06.scstream.net/live/stream-531989_lsd.flv?auth_key=1779001915-0-0-359f515db6554723af549290e2462776
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV CUỘI] (Socolive) m3u8
+https://pull.niues.live/live/stream-256080_lsd.m3u8?auth_key=1779010915-0-0-358f556070466fbeb1eb8074a147065f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [BLV COZY] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-531989_lhd.flv?auth_key=1779001915-0-0-b641529df6c8e90efc7b8015f4ba0f9b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV CUỘI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1779010915-0-0-09455c33926d52d5b97771855dd8274e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [BLV COZY] (Socolive) m3u8
-https://pull.niues.live/live/stream-531989_lsd.m3u8?auth_key=1779001915-0-0-a96d5a4ac4d070366f33027643a7ca4d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [NGƯỜI CÁ] (Socolive) flv
+https://pull06.scstream.net/live/stream-595335_lsd.flv?auth_key=1779010915-0-0-5e843ab1e50797b5f4cdc487cc52725a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [BLV COZY] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1779001915-0-0-cb87deab157cfd9b7a87570077ee4e40
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [NGƯỜI CÁ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-595335_lhd.flv?auth_key=1779010915-0-0-56c2dfc05639d58ba6767536322d9972
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV RAMBO] (Socolive) flv
-https://pull.niur.live/live/stream-534055_lsd.flv?txSecret=691afbb3f49356cd6a6157b0af4e9589&txTime=6a09b08b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [NGƯỜI CÁ] (Socolive) m3u8
+https://pull.niues.live/live/stream-595335_lsd.m3u8?auth_key=1779010915-0-0-fd982651d341862a061b4f44d7025f1b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV RAMBO] (Socolive) hdFlv
-https://pull.niur.live/live/stream-534055_lhd.flv?txSecret=360364c63eb0557e82dc378ee1e4d2b8&txTime=6a09b08b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [NGƯỜI CÁ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-595335_lhd.m3u8?auth_key=1779010915-0-0-ec5746ea585444519280d147b9e64976
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV RAMBO] (Socolive) m3u8
-https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=691afbb3f49356cd6a6157b0af4e9589&txTime=6a09b08b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [BLV PIRLO] (Socolive) flv
+https://pull06.scstream.net/live/stream-351530_lsd.flv?auth_key=1779010915-0-0-0fa09e96b55bc8d96c6999c99dedfde6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV RAMBO] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=360364c63eb0557e82dc378ee1e4d2b8&txTime=6a09b08b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [BLV PIRLO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-351530_lhd.flv?auth_key=1779010915-0-0-447016b6ef3345475ea2229789d8c300
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [LOKA] (Socolive) flv
-https://pull06.scstream.net/live/stream-589848_lsd.flv?auth_key=1779001915-0-0-fffdc2dacd3e8ed2b95591d910e9801a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [BLV PIRLO] (Socolive) m3u8
+https://pull.niues.live/live/stream-351530_lsd.m3u8?auth_key=1779010915-0-0-e1edbcd7172bc26125a33ec8e6ceec16
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [LOKA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-589848_lhd.flv?auth_key=1779001915-0-0-a760d323d60fe1e90368384dff1287ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [BLV PIRLO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-351530_lhd.m3u8?auth_key=1779010915-0-0-6d031e9db73ab40044e4989dc401d2da
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [LOKA] (Socolive) m3u8
-https://pull.niues.live/live/stream-589848_lsd.m3u8?auth_key=1779001915-0-0-5835da1254cd8ec7330f7bffdb71fe7e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [CR Bưởi] (Socolive) flv
+https://pull06.scstream.net/live/stream-387694_lsd.flv?auth_key=1779010915-0-0-ec067e802c51ef15ecd577f397e5388f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [LOKA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1779001915-0-0-f661b89221fdfacdcbd286a68bca508f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [CR Bưởi] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-387694_lhd.flv?auth_key=1779010915-0-0-8d37afe1303f3a01a4e0a2f4cb23295a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [VỊT BẠC] (Socolive) flv
-https://pull06.scstream.net/live/stream-474421_lsd.flv?auth_key=1779001915-0-0-12f9673887e2491232a63a28cdbbd0f7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [CR Bưởi] (Socolive) m3u8
+https://pull.niues.live/live/stream-387694_lsd.m3u8?auth_key=1779010915-0-0-90a948a97539ff30ce2cee30e30d8aeb
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [VỊT BẠC] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-474421_lhd.flv?auth_key=1779001915-0-0-5715124b28d9a72c374a191c42e6e6fa
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [CR Bưởi] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-387694_lhd.m3u8?auth_key=1779010915-0-0-4e7ffcead2fa3c716a3d1a353dd99621
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [VỊT BẠC] (Socolive) m3u8
-https://pull.niues.live/live/stream-474421_lsd.m3u8?auth_key=1779001915-0-0-ac78a526a84717043993107cd5054a7f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [TẠ BIÊN GIỚI] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912108_lsd.flv?auth_key=1779011275-0-0-1f23926829fa8faacda1b462ad439244
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [VỊT BẠC] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-474421_lhd.m3u8?auth_key=1779001915-0-0-d61b96085fb1fbe612d591cc85a142f3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [TẠ BIÊN GIỚI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912108_lhd.flv?auth_key=1779011275-0-0-b4a16f750111e896b031dedcf6300fea
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV A TÚ] (Socolive) flv
-https://pull06.scstream.net/live/stream-557845_lsd.flv?auth_key=1779001915-0-0-1224cbcf515b15336070db819a0d2233
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [TẠ BIÊN GIỚI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912108_lsd.m3u8?auth_key=1779011275-0-0-52b6bec05498a91eec531cf89b211a27
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV A TÚ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-557845_lhd.flv?auth_key=1779001915-0-0-0670e37de16d020f28ba9cbeade8c7f1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [TẠ BIÊN GIỚI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1779011275-0-0-e0ff92a1561160f7c72a854b382a0656
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV A TÚ] (Socolive) m3u8
-https://pull.niues.live/live/stream-557845_lsd.m3u8?auth_key=1779001915-0-0-e8ae6c67634f1aa614972ebe2ade9ef0
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [BLV TOMIA] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912008_lsd.flv?auth_key=1779011275-0-0-349f6caea2160cb66b05f4f5264ac8a3
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV A TÚ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1779001915-0-0-660fac36766dc3a7bb9640ea22453844
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [BLV TOMIA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912008_lhd.flv?auth_key=1779011275-0-0-b7698c4e8670b7a9e1a1dbe56b13bab0
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV RYO] (Socolive) flv
-https://pull06.scstream.net/live/stream-602019_lsd.flv?auth_key=1779001915-0-0-9dd3f1edd475b9c7176aed6b3c318b15
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [BLV TOMIA] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1779011275-0-0-5831fa9f96dd71a0b74c8ddb77bfd368
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV RYO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-602019_lhd.flv?auth_key=1779001915-0-0-9c7fcfa744b455235f2359801b66675b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 ngày 17/05 Bali United vs Bhayangkara FC [BLV TOMIA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1779011275-0-0-9be051449eb7d66e972790d49b01d698
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV RYO] (Socolive) m3u8
-https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1779001915-0-0-a07ac8f77a28b39ab6c839d9576fde33
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV NẤM] (Socolive) flv
+https://pull06.scstream.net/live/stream-608899_lsd.flv?auth_key=1779011275-0-0-d2feb93e41d47b157ddcf8563a2228d2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV RYO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1779001915-0-0-83b3afa1e64b81a9398bdb6782e743c9
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV NẤM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-608899_lhd.flv?auth_key=1779011275-0-0-a1d4d110bd978f2be93edf8b6441b9ad
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [BRIAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912106_lsd.flv?auth_key=1779001915-0-0-ed97870eefa53be435bde9385bebae6f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV NẤM] (Socolive) m3u8
+https://pull.niues.live/live/stream-608899_lsd.m3u8?auth_key=1779011275-0-0-1f2e0c415391df86a5590e65cc864145
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [BRIAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912106_lhd.flv?auth_key=1779001915-0-0-f4bbaea641409bf49dcc2a8cfca9e5e2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV NẤM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-608899_lhd.m3u8?auth_key=1779011275-0-0-895e157c8c47f58f9cf314f4d0868663
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [BRIAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912106_lsd.m3u8?auth_key=1779001915-0-0-e71d4155affff57f7d7fabf9df65fef5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 17/05 New Taipei Kings vs Taiwan Beer Leopards [CHAN SENA] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912115_lsd.flv?auth_key=1779011275-0-0-42d96732415f21c9452a71d0bb7f0937
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [BRIAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1779001915-0-0-08457e0ce47c936261da001dc60a3e44
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 17/05 New Taipei Kings vs Taiwan Beer Leopards [CHAN SENA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912115_lhd.flv?auth_key=1779011275-0-0-15bc4cae6a9e3f5720215a39cdf06f38
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [CHAN SENA] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912115_lsd.flv?auth_key=1779001915-0-0-489f3018a68841419c86f0ca63758a85
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 17/05 New Taipei Kings vs Taiwan Beer Leopards [CHAN SENA] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1779011275-0-0-5f8145968d9555c94a5abc33ad4ddcd2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [CHAN SENA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912115_lhd.flv?auth_key=1779001915-0-0-85f765e86a28c6778221bcb0f788a8ad
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 17/05 New Taipei Kings vs Taiwan Beer Leopards [CHAN SENA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1779011275-0-0-feb07ed1fc1b550d48138b8b969fe217
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [CHAN SENA] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1779001915-0-0-f3e5bcf6d0fc302c287be2977f516149
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV VOI] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912114_lsd.flv?auth_key=1779011635-0-0-32ff33e000ff42335d42c87b134f0dfe
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [CHAN SENA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1779001915-0-0-70cdbd97ecc1b60424133142f75824ed
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV VOI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912114_lhd.flv?auth_key=1779011635-0-0-208104c70bb6d6ce307e601df1aa8dfd
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
-https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779001915-0-0-1bc539bf6be8314cb8f30f53d4e53486
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV VOI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912114_lsd.m3u8?auth_key=1779011635-0-0-83a6278a663f34804e504252fc6433f4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779001915-0-0-e4b2fc0f7549fe7f354e036924668656
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [BLV VOI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1779011635-0-0-a1e9c68037a6c1532a5533b2723ecb25
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
-https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779001915-0-0-f0d466a2341e908a845cb51689a38080
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [BLV LONG] (Socolive) flv
+https://pull.niur.live/live/stream-9912050_lsd.flv?txSecret=0aa4db4fe0cece432b9ce19bab8d52f7&txTime=6a09d683
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779001915-0-0-28d00e923416746ccc84522aebd7547d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [BLV LONG] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912050_lhd.flv?txSecret=26f2b4ba99ccf617ac21cd2c425bee27&txTime=6a09d683
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV NẤM] (Socolive) flv
-https://pull06.scstream.net/live/stream-608899_lsd.flv?auth_key=1779002275-0-0-81f89fca15350c343cd7550c059e832a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [BLV LONG] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912050_lsd.m3u8?txSecret=0aa4db4fe0cece432b9ce19bab8d52f7&txTime=6a09d683
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV NẤM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-608899_lhd.flv?auth_key=1779002275-0-0-6cbbf1ed8ed88670624896dd946a26f4
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [BLV LONG] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912050_lhd.m3u8?txSecret=26f2b4ba99ccf617ac21cd2c425bee27&txTime=6a09d683
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV NẤM] (Socolive) m3u8
-https://pull.niues.live/live/stream-608899_lsd.m3u8?auth_key=1779002275-0-0-4b4e6a78f43c3621145cd7bea400762d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [A BỆU] (Socolive) flv
+https://pull06.scstream.net/live/stream-484845_lsd.flv?auth_key=1779011635-0-0-5b2e7938c7854d36fc7c7164e2100fb1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV NẤM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-608899_lhd.m3u8?auth_key=1779002275-0-0-17849641255a7c37f0cbdc00b6ca230f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [A BỆU] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-484845_lhd.flv?auth_key=1779011635-0-0-d4dfaac736de475a9a93ed621aa0d414
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV XO] (Socolive) flv
-https://pull06.scstream.net/live/stream-472241_lsd.flv?auth_key=1779002275-0-0-23a6dba037469470896f46d7975a3afa
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [A BỆU] (Socolive) m3u8
+https://pull.niues.live/live/stream-484845_lsd.m3u8?auth_key=1779011635-0-0-c05324dd7ca348b7d942bfee10e046e9
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV XO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-472241_lhd.flv?auth_key=1779002275-0-0-9ea575326b9196c1724e76df8ef5937e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [A BỆU] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1779011635-0-0-f1f4cba275e0ff8d23cd807a7cea5c8c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV XO] (Socolive) m3u8
-https://pull.niues.live/live/stream-472241_lsd.m3u8?auth_key=1779002275-0-0-eac7aa5d89eb531406f2e0410f539dc6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [LÃO LÂM] (Socolive) flv
+https://pull06.scstream.net/live/stream-527384_lsd.flv?auth_key=1779011635-0-0-62731e3f247f3ed465d25c577f0e74cd
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV XO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1779002275-0-0-07825861c486bfe8d431d4ace6de9a44
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [LÃO LÂM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-527384_lhd.flv?auth_key=1779011635-0-0-1bffe955b6905ab30a53d661f14165d0
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV KEM] (Socolive) flv
-https://pull06.scstream.net/live/stream-513394_lsd.flv?auth_key=1779002275-0-0-065da93de8ab9ad73ee23eb89afa2037
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [LÃO LÂM] (Socolive) m3u8
+https://pull.niues.live/live/stream-527384_lsd.m3u8?auth_key=1779011635-0-0-6fb066d2e27c7ebaa8f09a72e607cda2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV KEM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-513394_lhd.flv?auth_key=1779002275-0-0-a1889b3e25b8144e8bda2a13dde83f33
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 ngày 17/05 Jeonbuk Hyundai Motors vs Gimcheon Sangmu FC [LÃO LÂM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1779011635-0-0-bd018c537f6046d3394af6bf03240bea
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV KEM] (Socolive) m3u8
-https://pull.niues.live/live/stream-513394_lsd.m3u8?auth_key=1779002275-0-0-8986c428434ab903caf2d98f94d7e194
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [BLV CÁO] (Socolive) flv
+https://pull06.scstream.net/live/stream-597929_lsd.flv?auth_key=1779011635-0-0-b227e0bd9809f9e80e4a2764bfea88d0
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV KEM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-513394_lhd.m3u8?auth_key=1779002275-0-0-5f02354bcf1beb6d7cf2f4a5336aa8f9
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [BLV CÁO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-597929_lhd.flv?auth_key=1779011635-0-0-10de3189fa2b748f8a8851a58f406a25
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV CÒ] (Socolive) flv
-https://pull06.scstream.net/live/stream-582342_lsd.flv?auth_key=1779002275-0-0-06fab44d0834198c41262bfcfb130465
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [BLV CÁO] (Socolive) m3u8
+https://pull.niues.live/live/stream-597929_lsd.m3u8?auth_key=1779011635-0-0-b05775cc3ffeac647978b593e3fcac53
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV CÒ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-582342_lhd.flv?auth_key=1779002275-0-0-660591f5027941ab00df8ed104901082
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV CÒ] (Socolive) m3u8
-https://pull.niues.live/live/stream-582342_lsd.m3u8?auth_key=1779002275-0-0-03e9fbc69bbb9842f36495b60d2e95e8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV CÒ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1779002275-0-0-f195881f0cecd4ea7daa27bd2987fee5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [KING] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1779002275-0-0-bf3949555f61b916b1ce1d4bba512532
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [KING] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1779002275-0-0-34dc4d260566f228ddd07cb0838ee19c
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [KING] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1779002275-0-0-4b317de3d4b9cf89bcfcf1a6d92b50b7
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [KING] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1779002275-0-0-5226193673fda2a27fdc3a1f41569f03
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 17/05 Jeju SK FC vs FC Anyang [BLV CÁO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1779011635-0-0-45e576a5eed19e636b4d830131a00f9e
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 17/05 FC Arouca vs CD Tondela [BLV SATIVA] (Socolive) flv
-https://pull06.scstream.net/live/stream-321443_lsd.flv?auth_key=1779002275-0-0-5f6a8739fcec367a48c387e5cb80b4b0
+https://pull06.scstream.net/live/stream-321443_lsd.flv?auth_key=1779011635-0-0-94e8791e6bd7930c9a9549a5e2b1d7c2
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 17/05 FC Arouca vs CD Tondela [BLV SATIVA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-321443_lhd.flv?auth_key=1779002275-0-0-8e0bca8b29901c4b1d699fd4e719cef7
+https://pull06.scstream.net/live/stream-321443_lhd.flv?auth_key=1779011635-0-0-daad17c0838fd4484f9a5178e544f5b2
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 17/05 FC Arouca vs CD Tondela [BLV SATIVA] (Socolive) m3u8
-https://pull.niues.live/live/stream-321443_lsd.m3u8?auth_key=1779002275-0-0-84d95204a8fa1aad694fbd925c3cb2be
+https://pull.niues.live/live/stream-321443_lsd.m3u8?auth_key=1779011635-0-0-9e456765cc778074f5ef513311a7c472
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 17/05 FC Arouca vs CD Tondela [BLV SATIVA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-321443_lhd.m3u8?auth_key=1779002275-0-0-75170dd86643eefcd985e3494b123fc6
+https://pull.niues.live/live/stream-321443_lhd.m3u8?auth_key=1779011635-0-0-6672cb9898ef4b6f78df98631184d535
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV PEWPEW] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912015_lsd.flv?auth_key=1779002635-0-0-ced9ea97545c854488f42982084827b5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
+https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779011635-0-0-afd384925fc533bb71ace20ba42a0be6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV PEWPEW] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912015_lhd.flv?auth_key=1779002635-0-0-87d8cd7aa8f2a232dae2e9a2b5a16cb8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779011635-0-0-62ffa96161b17bdbee0e903c35ece68e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV PEWPEW] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912015_lsd.m3u8?auth_key=1779002635-0-0-ad0660dac46fd52d61e7b8fc8eadded8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
+https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779011635-0-0-4dcf94b4a7201e87a466abdc2ba7d285
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 JEF United Ichihara Chiba vs Kashima Antlers [BLV PEWPEW] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1779002635-0-0-87dc4733c2482b61be65eaf21b326167
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779011635-0-0-4c03c47f3ebe3bfe292497a801755946
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [BLV ROBBEN] (Socolive) flv
-https://pull06.scstream.net/live/stream-527383_lsd.flv?auth_key=1779002635-0-0-3a2676380cd3be5bba03ddb31a03391a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 17/05 Jeonbuk Motors vs Gimcheon Sangmu FC (Hội Quán) FHD
+https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [BLV ROBBEN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-527383_lhd.flv?auth_key=1779002635-0-0-2f1364f0ae33b556eb71fb15cb371b3c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h40 17/05 Jeonbuk Motors vs Gimcheon Sangmu FC (Hội Quán) SD
+https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [BLV ROBBEN] (Socolive) m3u8
-https://pull.niues.live/live/stream-527383_lsd.m3u8?auth_key=1779002635-0-0-c8409f3d29bbbc2695a7e230c3aa23bd
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 17/05 TOYOTA Thailand Open 2026 (Hội Quán) FHD
+https://hqlive.yarncdn.live/live/hqtv_blv_phanto/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Kyoto Sanga vs Sanfrecce Hiroshima [BLV ROBBEN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1779002635-0-0-88c233c8153d8fb883e4a349fc234f03
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 17/05 TOYOTA Thailand Open 2026 (Hội Quán) SD
+https://alive.yarncdn.live/hqtv_blv_phanto/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV THÓC] (Socolive) flv
-https://pull06.scstream.net/live/stream-606448_lsd.flv?auth_key=1779002635-0-0-0536942eb44850026d8b2176f29aa224
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV THÓC] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-606448_lhd.flv?auth_key=1779002635-0-0-fc09d9c5595823fa6dfae9e77cc80447
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV THÓC] (Socolive) m3u8
-https://pull.niues.live/live/stream-606448_lsd.m3u8?auth_key=1779002635-0-0-689f044631a5d966d85900893967c2f3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV THÓC] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-606448_lhd.m3u8?auth_key=1779002635-0-0-f3668a5ce386d373f21b1402fe28ef99
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV LION] (Socolive) flv
-https://pull06.scstream.net/live/stream-603255_lsd.flv?auth_key=1779002635-0-0-d79787c1843381ec919518dd5bf65916
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV LION] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-603255_lhd.flv?auth_key=1779002635-0-0-e7b0d11adf2ec4b548c7bbf0422e403f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV LION] (Socolive) m3u8
-https://pull.niues.live/live/stream-603255_lsd.m3u8?auth_key=1779002635-0-0-13dac6574b032313c59a4e63f3b1c7e4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Cerezo Osaka vs Nagoya Grampus [BLV LION] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1779002635-0-0-15954b646aec6ae18ca75ce8d348d339
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV KAN] (Socolive) flv
-https://pull.niur.live/live/stream-283501_lsd.flv?txSecret=2bdec5ecab3799a63125ea51f0ad8200&txTime=6a09b35b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV KAN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-283501_lhd.flv?txSecret=1800de0cb28f0bb0c46f3a600d0cdcb7&txTime=6a09b35b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV KAN] (Socolive) m3u8
-https://pull.niur.live/live/stream-283501_lsd.m3u8?txSecret=2bdec5ecab3799a63125ea51f0ad8200&txTime=6a09b35b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 17/05 Fagiano Okayama vs Shimizu S-Pulse [BLV KAN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=1800de0cb28f0bb0c46f3a600d0cdcb7&txTime=6a09b35b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [A CHÈ] (Socolive) flv
-https://pull06.scstream.net/live/stream-356042_lsd.flv?auth_key=1779002635-0-0-a1d6e4e89ed1cb23edaf3ffb11ddf323
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [A CHÈ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-356042_lhd.flv?auth_key=1779002635-0-0-2f38577767d37c5ea6ac2350b4f5ac8d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [A CHÈ] (Socolive) m3u8
-https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1779002635-0-0-3fd507582d5f9463bf4e04b1e2f41d34
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 17/05 Nelson Giants vs Bay Hawks [A CHÈ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1779002635-0-0-d66f3a0bf7b1872d5d97eb46c0b3c319
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 17/05 Kyoto Sanga vs Sanfrecce Hiroshima (Hội Quán) FHD
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 17/05 Jeju United FC vs FC Anyang (Hội Quán) FHD
 https://hqlive.yarncdn.live/live/hqtv_blv_phando/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 17/05 Kyoto Sanga vs Sanfrecce Hiroshima (Hội Quán) SD
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 17/05 Jeju United FC vs FC Anyang (Hội Quán) SD
 https://alive.yarncdn.live/hqtv_blv_phando/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 17/05 Trường An vs Nam Phạm (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 17/05 Jeju Utd vs FC Anyang
+https://live5.msrktz.app/live/87379114.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 17/05 Trường An vs Nam Phạm (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 03/05 Juventus F.C. vs Hellas Verona F.C.
-https://live5.msrktz.app/live/14830711.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h30 03/05 Real Betis Balompié vs R. Oviedo
-https://live5.msrktz.app/live/43612277.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 03/05 Borussia Mönchengladbach vs Borussia Dortmund
-https://live5.msrktz.app/live/79665343.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h15 03/05 Paris FC vs Stade Brestois 29
-https://live5.msrktz.app/live/18812304.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h15 03/05 AJ Auxerre vs Angers SCO
-https://live5.msrktz.app/live/87547578.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h15 03/05 RC Strasbourg vs Toulouse FC
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h30 17/05 Bali United vs Bhayangkara Solo
 https://live5.msrktz.app/live/90725470.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 03/05 Al-Shabab vs Al-Taawoun
-https://live5.msrktz.app/live/88508431.m3u8
 
