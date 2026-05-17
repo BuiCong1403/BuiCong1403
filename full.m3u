@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/505.png",20:00 | Inter vs Hellas Verona
-https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phantu/playlist.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/thumb/2/2a/Brentford_FC_crest.svg/1280px-Brentford_FC_crest.svg.png",21:00 | Brentford vs Crystal Palace
 https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
 
@@ -10,9 +7,6 @@ https://alive.yarncdn.live/hqtv_blv_phando/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/63.png",21:00 | Leeds vs Brighton
 https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/6/6c/Wolverhampton_Wanderers.png",21:00 | Wolves vs Fulham
-https://alive.zlylive.com/hqtv_blv_phanhalinh/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/34.png",23:30 | Newcastle vs West Ham
 https://alive.yarncdn.live/hqtv_blv_phanchop/tracks-v2a1/mono.m3u8
@@ -26,6 +20,12 @@ https://alive.yarncdn.live/hqtv_blv_phanchuot/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/en/9/98/Club_Athletic_Bilbao_logo.svg",00:00 | Athletic Club vs Celta Vigo
 https://alive.yarncdn.live/hqtv_blv_phanbap/tracks-v2a1/mono.m3u8
 
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/0/03/Yyjbb92.png",00:00 | Rayo Vallecano vs Villarreal
+https://alive.zlylive.com/hqtv_blv_phanhalinh/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeHUNqkPcsEZ49zQsdnGULnXmI89g8SxAEmw&s",01:45 | Udinese vs Cremonese
+https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phantu/playlist.m3u8
+
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/134.png",05:30 | Atletico Paranaense vs Flamengo
 https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
 
@@ -38,14 +38,11 @@ https://alive.yarncdn.live/tdtv_blv_taothienvuong/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://media.api-sports.io/football/teams/63.png",21:00 | Leeds vs Brighton
 https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://media.api-sports.io/football/teams/39.png",21:00 | Wolves vs Fulham
-https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://media.api-sports.io/football/teams/34.png",23:30 | Newcastle vs West Ham
 https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://volleybox.net/media/upload/teams/1740045997QPZs5.png",VTV Bình Điền Long An - BC Thông Tin BĐ19
-https://bglive.yarncdn.live/live/bgtv_blv_delua/playlist.m3u8
+#EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/5/53/Arsenal_FC.svg",02:00 | Arsenal vs Burnley
+https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/55.png",Brentford vs Crystal Palace
 https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
@@ -58,6 +55,9 @@ https://bglive.yarncdn.live/live/bgtv_blv_tieubao/playlist.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/499.png",Atalanta vs Bologna
 https://bglive.yarncdn.live/live/bgtv_blv_tieubaxa/playlist.m3u8
+
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/536.png",Sevilla vs Real Madrid
+https://bglive.yarncdn.live/live/bgtv_blv_delua/playlist.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/42.png",Arsenal vs Burnley
 https://bglive.yarncdn.live/live/bgtv_blv_lenh/playlist.m3u8
@@ -713,29 +713,35 @@ https://strm.voh.com.vn/radio/channel5/playlist.m3u8
 #EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-am610-512x512-104316.png",VOH AM 610Khz
 https://strm.voh.com.vn/radio/channel2/playlist.m3u8
 
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FC Krasnodar vs Gazovik Orenburg (Lương Sơn) BLV PHI HỔ m3u
+https://hls.cdnfaster-a.live/live/PHIHO/index.m3u8?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FC Krasnodar vs Gazovik Orenburg (Lương Sơn) BLV PHI HỔ flv
+https://flv.cdnfaster-a.live/live/PHIHO.flv?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Rostov FK vs Zenit St. Petersburg (Lương Sơn) BLV LÃO HẠC m3u
+https://hls.cdnfaster-a.live/live/LAOHAC/index.m3u8?expire=2556118740&sign=d7e003f1201f61166a559ac474dc7491
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Rostov FK vs Zenit St. Petersburg (Lương Sơn) BLV LÃO HẠC flv
+https://flv.cdnfaster-a.live/live/LAOHAC.flv?expire=2556118740&sign=d7e003f1201f61166a559ac474dc7491
+
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland A.F.C (Lương Sơn) BLV SHIN m3u
 https://hls.cdnfaster-a.live/live/SHIN/index.m3u8?expire=1830276060&sign=2e2271dce625a0d03d328eeed8859587
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland A.F.C (Lương Sơn) BLV SHIN flv
 https://flv.cdnfaster-a.live/live/SHIN.flv?expire=1830276060&sign=2e2271dce625a0d03d328eeed8859587
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Verona (Lương Sơn) BLV LÝ ỨNG m3u
-https://hls.cdnfaster-a.live/live/LYUNG1/index.m3u8?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV LỮ BỐ m3u
+https://hls.cdnfaster-a.live/live/LUBO/index.m3u8?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Verona (Lương Sơn) BLV LÝ ỨNG flv
-https://flv.cdnfaster-a.live/live/LYUNG1.flv?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV LỮ BỐ flv
+https://flv.cdnfaster-a.live/live/LUBO.flv?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Verona (Lương Sơn) BLV VÕ TÒNG m3u
-https://hls.cdnfaster-a.live/live/VOTONG/index.m3u8?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Lương Sơn) BLV DƯƠNG CHÍ m3u
+https://hls.cdnfaster-a.live/live/VANCONAN/index.m3u8?expire=1830276060&sign=53991e2e589a2f7031dd37b82a585e33
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Verona (Lương Sơn) BLV VÕ TÒNG flv
-https://flv.cdnfaster-a.live/live/VOTONG.flv?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland A.F.C (Lương Sơn) BLV KHỔNG MINH m3u
-https://hls.cdnfaster-a.live/live/KHONGMINH/index.m3u8?expire=1788427256&sign=003a6e74f0efdf441ba4b32785a21d31
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland A.F.C (Lương Sơn) BLV KHỔNG MINH flv
-https://flv.cdnfaster-a.live/live/KHONGMINH.flv?expire=1788427256&sign=003a6e74f0efdf441ba4b32785a21d31
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Lương Sơn) BLV DƯƠNG CHÍ flv
+https://flv.cdnfaster-a.live/live/VANCONAN.flv?expire=1830276060&sign=53991e2e589a2f7031dd37b82a585e33
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Lương Sơn) BLV KEVILL m3u
 https://hls.cdnfaster-a.live/live/KEVILL/index.m3u8?expire=1788427256&sign=189afcf7f800d4c6c8a5aa97649a110799
@@ -748,12 +754,6 @@ https://hls.cdnfaster-a.live/live/TONLAP/index.m3u8?expire=1788427256&sign=72cc5
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Lương Sơn) BLV TÔN LẬP flv
 https://flv.cdnfaster-a.live/live/TONLAP.flv?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Lương Sơn) BLV DƯƠNG CHÍ m3u
-https://hls.cdnfaster-a.live/live/VANCONAN/index.m3u8?expire=1830276060&sign=53991e2e589a2f7031dd37b82a585e33
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Lương Sơn) BLV DƯƠNG CHÍ flv
-https://flv.cdnfaster-a.live/live/VANCONAN.flv?expire=1830276060&sign=53991e2e589a2f7031dd37b82a585e33
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Lương Sơn) BLV KAKA m3u
 https://hls.cdnfaster-a.live/live/KAKA/index.m3u8?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
@@ -773,11 +773,11 @@ https://hls.cdnfaster-a.live/live/LUUBI/index.m3u8?expire=1788427256&sign=e15f8b
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland A.F.C (Lương Sơn) BLV LƯU BỊ flv
 https://flv.cdnfaster-a.live/live/LUUBI.flv?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV MAYBACH m3u
-https://hls.cdnfaster-a.live/live/MAYBACH/index.m3u8?expire=1923468720&sign=862d9b5fa441bf644b6c2fbcec08487b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland A.F.C (Lương Sơn) BLV KHỔNG MINH m3u
+https://hls.cdnfaster-a.live/live/KHONGMINH/index.m3u8?expire=1788427256&sign=003a6e74f0efdf441ba4b32785a21d31
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV MAYBACH flv
-https://flv.cdnfaster-a.live/live/MAYBACH.flv?expire=1923468720&sign=862d9b5fa441bf644b6c2fbcec08487b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland A.F.C (Lương Sơn) BLV KHỔNG MINH flv
+https://flv.cdnfaster-a.live/live/KHONGMINH.flv?expire=1788427256&sign=003a6e74f0efdf441ba4b32785a21d31
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV FERNANDO m3u
 https://hls.cdnfaster-a.live/live/FERNANDO/index.m3u8?expire=1924930980&sign=bab24fb93b0be5c98af9138659989bcb
@@ -791,17 +791,11 @@ https://hls.cdnfaster-a.live/live/QUANVU/index.m3u8?expire=1788427256&sign=056d0
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV QUAN VŨ flv
 https://flv.cdnfaster-a.live/live/QUANVU.flv?expire=1788427256&sign=056d097a0bbbd810493fd64ccf4831b7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV LỮ BỐ m3u
-https://hls.cdnfaster-a.live/live/LUBO/index.m3u8?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV MAYBACH m3u
+https://hls.cdnfaster-a.live/live/MAYBACH/index.m3u8?expire=1923468720&sign=862d9b5fa441bf644b6c2fbcec08487b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV LỮ BỐ flv
-https://flv.cdnfaster-a.live/live/LUBO.flv?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Lương Sơn) BLV TÂY MÔN KHÁNH m3u
-https://hls.cdnfaster-a.live/live/TAYMONKHANH/index.m3u8?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Lương Sơn) BLV TÂY MÔN KHÁNH flv
-https://flv.cdnfaster-a.live/live/TAYMONKHANH.flv?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolves vs Fulham (Lương Sơn) BLV MAYBACH flv
+https://flv.cdnfaster-a.live/live/MAYBACH.flv?expire=1923468720&sign=862d9b5fa441bf644b6c2fbcec08487b
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Lương Sơn) BLV YẾN THANH m3u
 https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
@@ -809,140 +803,17 @@ https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a7
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Lương Sơn) BLV YẾN THANH flv
 https://flv.cdnfaster-a.live/live/YENTHANH1.flv?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
 
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Lương Sơn) BLV TÂY MÔN KHÁNH m3u
+https://hls.cdnfaster-a.live/live/TAYMONKHANH/index.m3u8?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Lương Sơn) BLV TÂY MÔN KHÁNH flv
+https://flv.cdnfaster-a.live/live/TAYMONKHANH.flv?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
+
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Lương Sơn) BLV TRIỆU TỬ LONG m3u
 https://hls.cdnfaster-a.live/live/TRIEUTULONG/index.m3u8?expire=1788427256&sign=45e4fdc4bdb8472f513ccc78f57f6070
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Lương Sơn) BLV TRIỆU TỬ LONG flv
 https://flv.cdnfaster-a.live/live/TRIEUTULONG.flv?expire=1788427256&sign=45e4fdc4bdb8472f513ccc78f57f6070
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Kayserispor vs Konyaspor (Lương Sơn) BLV NHỊ KA m3u
-https://hls.cdnfaster-a.live/live/NHIKA1/index.m3u8?expire=1788427256&sign=91d8d858b7cdccb6dd825469190514bd
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Kayserispor vs Konyaspor (Lương Sơn) BLV NHỊ KA flv
-https://flv.cdnfaster-a.live/live/NHIKA1.flv?expire=1788427256&sign=91d8d858b7cdccb6dd825469190514bd
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs Nurnberg (Lương Sơn) BLV NGƯỜI THÉP m3u
-https://hls.cdnfaster-a.live/live/NGUOITHEP/index.m3u8?expire=2556118740&sign=6d80f4e33c3761371f29a8ca0645fee5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs Nurnberg (Lương Sơn) BLV NGƯỜI THÉP flv
-https://flv.cdnfaster-a.live/live/NGUOITHEP.flv?expire=2556118740&sign=6d80f4e33c3761371f29a8ca0645fee5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Darmstadt vs SC Paderborn 07 (Lương Sơn) BLV A TỦA m3u
-https://hls.cdnfaster-a.live/live/ATUA/index.m3u8?expire=1830276060&sign=070cf2d17a1720d3e42600ba2dfaed74
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Darmstadt vs SC Paderborn 07 (Lương Sơn) BLV A TỦA flv
-https://flv.cdnfaster-a.live/live/ATUA.flv?expire=1830276060&sign=070cf2d17a1720d3e42600ba2dfaed74
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Luki Energiya vs Torpedo Vladimir (Khán Đài A) source
-https://www3.f2k3.shop/live/f6d53f51a992d4b0f0271888c15501c0/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Naftan Novopolotsk vs Slavia Mozyr (Khán Đài A) source
-https://www3.f2k3.shop/live/bfcf32b3e925e79cf7a60515e3fa6730/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Ternana W vs AC Milan Women (Khán Đài A) source
-https://www3.f2k3.shop/live/3339e56cf7b5662e7eecd62b0392e9d0/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h45 ngày 17/05 GKS Katowice vs Jagiellonia Bialystok (Khán Đài A) source
-https://www3.f2k3.shop/live/dc4bf83e73c60f96d19c810f3b2975a8/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 FK Aktobe Lento vs FK Atyrau (Khán Đài A) source
-https://www3.f2k3.shop/live/8455485cc8a5ff553dd212dcf3f3660a/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Central Espanol vs Defensor Sporting Montevideo (Khán Đài A) source
-https://www3.f2k3.shop/live/9bb81cd73d78ce78da0ece473614a378/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 NS Mura vs Maribor (Khán Đài A) source
-https://www3.f2k3.shop/live/2bb3194af77c19c197d962c90fe5e66c/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 IFK Norrkoping DFK Women vs Brommapojkarna Women (Khán Đài A) source
-https://www3.f2k3.shop/live/a9577fbdb08b3d42c01ddc649472f6db/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Livingston vs Kilmarnock (Khán Đài A) source
-https://www3.f2k3.shop/live/cc6cc66a4fe8f22c3c7d8ee31534593d/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Eskilstuna United Women vs IK Uppsala Women (Khán Đài A) source
-https://www3.f2k3.shop/live/66bc59492058b67b581eba801029de37/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Gaodong Village vs Bidiaocen Village (Khán Đài A) source
-https://www3.f2k3.shop/live/e6c6cac5ae2e48b76f0880fa5de23821/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 OFI Crete vs Volos NPS (Khán Đài A) source
-https://www3.f2k3.shop/live/b8a0a3cc45e69078b3aa84832f67cbb8/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SpVgg Greuther Fürth vs Fortuna Dusseldorf (Khán Đài A) source
-https://www3.f2k3.shop/live/90cea3a3f58af5aacb4e7a203f97c434/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 (Khán Đài A) source
-https://www3.f2k3.shop/live/3ee50c04ef030ac9832442f6a9080a99/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 FC Kuressaare vs Nomme JK Kalju (Khán Đài A) source
-https://www3.f2k3.shop/live/198b6ce1cd24976af953ef2f7abcd74f/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg (Khán Đài A) source
-https://www3.f2k3.shop/live/2231cf30cca416ab3f34bbc431293d72/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Kayserispor vs Konyaspor (Khán Đài A) source
-https://www3.f2k3.shop/live/3ae1590a15b8fda576bde3bb209df98d/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Kaisar Kyzylorda vs Tobol Kostanai (Khán Đài A) source
-https://www3.f2k3.shop/live/acf37462a2f2e073bc877f199136bf31/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 1. FC Magdeburg vs 1. FC Kaiserslautern (Khán Đài A) source
-https://www3.f2k3.shop/live/ac3a4415afcef16a8e59ab0b1d76b8ad/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Zira FK vs Sumgayit FK (Khán Đài A) source
-https://www3.f2k3.shop/live/0eddecad7c4819b0fe90357987dceb9b/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Karlsruher SC vs VfL Bochum 1848 (Khán Đài A) source
-https://www3.f2k3.shop/live/3b3b18b3472a38755f4b964f83bb9fc7/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Dynamo Dresden vs Holstein Kiel (Khán Đài A) source
-https://www3.f2k3.shop/live/ca600c65b32d7f2298d0c1ec399f2abd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham (Khán Đài A) source
-https://www3.f2k3.shop/live/0cd9e9553f7a081ebef5e68b37816ddc/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Arminia Bielefeld vs Hertha Berlin (Khán Đài A) source
-https://www3.f2k3.shop/live/e0687632e973484022af5ae71aa8cabb/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Cagliari vs Torino (Khán Đài A) source
-https://www3.f2k3.shop/live/ba4505a781fcbc2b7497565b033d5406/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Bank El Ahly vs El Gounah (Khán Đài A) source
-https://www3.f2k3.shop/live/e9cc394031e973397783d67f60d4514e/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Sassuolo vs Lecce (Khán Đài A) source
-https://www3.f2k3.shop/live/3bb4f4332370bbbe2cb8878b986a538d/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Mamelodi Sundowns vs AS FAR Rabat (Khán Đài A) source
-https://www3.f2k3.shop/live/5f18b481dcb9c477cda7873befa4ea5f/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Fenix Mariupol vs Probiy Horodenka (Khán Đài A) source
-https://www3.f2k3.shop/live/91bfdcfa50e40925aed4192f7c32bc12/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona (Khán Đài A) source
-https://www3.f2k3.shop/live/706b80a8e06b095e3cc5a4f7da0c3718/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 AIK Solna Women vs Pitea IF Women (Khán Đài A) source
-https://www3.f2k3.shop/live/4e9c790d70460f38a5aa7a9018a375b2/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Schalke 04 vs Eintracht Braunschweig (Khán Đài A) source
-https://www3.f2k3.shop/live/0221c2def7eb724fb9284c33995ba46e/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Saint Mirren vs Dundee United (Khán Đài A) source
-https://www3.f2k3.shop/live/e5150acca8e92309833e5062f9b7380e/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Napoli Women vs Sassuolo Women (Khán Đài A) source
-https://www3.f2k3.shop/live/f273a076a949d2570d025f3d93ac43df/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Khán Đài A) source
-https://www3.f2k3.shop/live/1ea25273b77cf6cc986bb610c423f115/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Khán Đài A) sd_1
-https://pull-kda.fastestcdn-global.com/live/038f63c56d804c28a076afa9e514bbf3/index.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Aris Thessaloniki vs Levadiakos (Khán Đài A) source
-https://www3.f2k3.shop/live/df80851e7515fce3ec5c6aa7981ccd2d/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Khán Đài A) source
 https://www3.f2k3.shop/live/4da93582725fc3005390b2fdd10c0ccd/playlist.m3u8
@@ -950,23 +821,41 @@ https://www3.f2k3.shop/live/4da93582725fc3005390b2fdd10c0ccd/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Khán Đài A) sd_1
 https://pull-kda.fastestcdn-global.com/live/5c97c32413484a62b7133083b47dd022/index.m3u8
 
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Rubin Kazan vs FC Pari Nizhniy Novgorod (Khán Đài A) source
+https://www3.f2k3.shop/live/7b2fe5087d1f5f01b64a081fea942709/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FC Viktoria Plzen vs Baumit Jablonec (Khán Đài A) source
+https://www3.f2k3.shop/live/d9993c8ab855058cabc0e243946eb198/playlist.m3u8
+
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Lugano vs FC Basel 1893 (Khán Đài A) source
 https://www3.f2k3.shop/live/ef726aa09eba520be3498429f2f91f08/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 VTV Bình Điền Long An vs BC Thông Tin vs BĐ 19 (Khán Đài A) sd_1
-https://pull-kda.fastestcdn-global.com/live/1ed61d3f6c5344e68afbd6b68deadd4b/index.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Käpylän Pallo vs PKvs35 Vantaa (Khán Đài A) source
+https://www3.f2k3.shop/live/00a030f170af4e1507fd3851c23d1fd8/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FC Sochi vs Akhmat Grozny (Khán Đài A) source
+https://www3.f2k3.shop/live/39b38f28be240219e13692e488cfc92c/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Khimik Dzerzhinsk vs Dinamo Barnaul (Khán Đài A) source
+https://www3.f2k3.shop/live/ece1153ecaf65a9866e3786b3bfb997e/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Young Boys vs FC Sion (Khán Đài A) source
 https://www3.f2k3.shop/live/20b4d82296587822371ad60833203634/playlist.m3u8
 
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 BKMA vs AraratvsArmenia FC (Khán Đài A) source
+https://www3.f2k3.shop/live/31f951822c7eefa24e5378fcb633d494/playlist.m3u8
+
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Vasteras SK FK vs AIK (Khán Đài A) source
 https://www3.f2k3.shop/live/d2f02c2cc2b23875a550e1a92c867369/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h10 ngày 17/05 FK Krasnodar vs Gazovik Orenburg (Khán Đài A) source
+https://www3.f2k3.shop/live/822690dafcb650797bcf98f008557262/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Zenit Kazan vs Novosibirsk (Khán Đài A) sd_1
 https://pull-kda.fastestcdn-global.com/live/665e73676f6d4d118fe65b6c1439176f/index.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan  vs Hellas Verona (Khán Đài A) sd_1
-https://pull-kda.fastestcdn-global.com/live/639d2df8df4d4ff6a56ad6acc2fba601/index.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Slovan Liberec vs Sparta Praha (Khán Đài A) source
+https://www3.f2k3.shop/live/d11fb4011ae32e1df51a1bb8d98cceaa/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 St. Gallen vs Thun (Khán Đài A) source
 https://www3.f2k3.shop/live/32ae62c4298523550a3745d615c577c2/playlist.m3u8
@@ -983,38 +872,107 @@ https://www3.f2k3.shop/live/79b168ac6dbf8c36c03c605a6660ab2d/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Parma Women vs Juventus Women (Khán Đài A) source
 https://www3.f2k3.shop/live/767d0164670250fbdb5e51cc46493162/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Ekenas IF Fotboll vs SJK Akatemia (Khán Đài A) source
-https://www3.f2k3.shop/live/6ee4ad1fe03ce80ad936b96430da3227/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Ordabasy vs FC Zhetysu Taldykorgan (Khán Đài A) source
+https://www3.f2k3.shop/live/5a8a00491bd3c0dea5b504d00957cb79/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter vs Verona (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg (Khán Đài A) source
+https://www3.f2k3.shop/live/8ea8a537ca95322bed5b1cf58b68b408/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter vs Verona (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x1.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Uniao Leiria vs Feirense (Khán Đài A) source
+https://www3.f2k3.shop/live/08ccf0c2ba1b7357d14468ca8296006b/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 VTV Bình Điền Long An vs Binh chủng Thông tin (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Borac Cacak vs Dinamo Jug (Khán Đài A) source
+https://www3.f2k3.shop/live/8fd81e5067a49b3908c715abafb5785f/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 VTV Bình Điền Long An vs Binh chủng Thông tin (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x3.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Kabel Novi Sad vs FK Graficar Beograd (Khán Đài A) source
+https://www3.f2k3.shop/live/d24e9f8e7d9e5c67970dfb75f91bb598/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m3x1/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 17/05 Mikkelin Palloilijat vs JIPPO (Khán Đài A) source
+https://www3.f2k3.shop/live/67d9e851d0ec1b24d2f7cddd82467c6e/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m3x1.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Amal Tiznit vs DHJ Difaa Hassani Jadidi (Khán Đài A) source
+https://www3.f2k3.shop/live/56c22157afd6412d7aa6e68c02f2b28b/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preußen Münster (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m3x2/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Baltika Kaliningrad vs Dynamo Moscow (Khán Đài A) source
+https://www3.f2k3.shop/live/2d6d6f90b552d80cacd32b0c7899971a/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preußen Münster (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m3x2.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 CSKA Moscow vs Lokomotiv Moscow (Khán Đài A) source
+https://www3.f2k3.shop/live/e106a47f1f22441b4b3fc7851b589f7c/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m3x3/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FC Torpedo Zhodino vs FK Vitebsk (Khán Đài A) source
+https://www3.f2k3.shop/live/21140d61c2b43328e08465a68175408a/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m3x3.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Tekstilac vs FK Usce Novi Beograd (Khán Đài A) source
+https://www3.f2k3.shop/live/ac5c81b7dde62ab34ef8fff7f47f7f35/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Trajal Krusevac vs FAP (Khán Đài A) source
+https://www3.f2k3.shop/live/811895a5390b84140732b7b9b5905f38/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Dynamo Makhachkala vs Spartak Moscow (Khán Đài A) source
+https://www3.f2k3.shop/live/1139d11c14128d401b69c1a4f66e01bb/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Raja de Beni Mellal vs Wydad Casablanca (Khán Đài A) source
+https://www3.f2k3.shop/live/217c245697c69963557d3944a88f726c/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Projekt Warszawa vs Ziraat Bankasi (Khán Đài A) sd_1
+https://pull-kda.fastestcdn-global.com/live/b8221beed5ad4435a34c6353aac790ab/index.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 17/05 Zenit St. Petersburg vs Din. Moscow (Khán Đài A) sd_1
+https://pull-kda.fastestcdn-global.com/live/5e1099f733a34a85aeaf2cc883e28b87/index.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 17/05 Lechia Gdansk vs Legia Warszawa (Khán Đài A) source
+https://www3.f2k3.shop/live/c3e59ce340503325df9960f110234cfa/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 OFI Crete vs Volos NPS (Khán Đài A) source
+https://www3.f2k3.shop/live/b8a0a3cc45e69078b3aa84832f67cbb8/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 FC Kuressaare vs Nomme JK Kalju (Khán Đài A) source
+https://www3.f2k3.shop/live/198b6ce1cd24976af953ef2f7abcd74f/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Pacos de Ferreira vs Penafiel (Khán Đài A) source
+https://www3.f2k3.shop/live/8c33ce2128a1ddceeb1183e8fe8b72a5/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Kayserispor vs Konyaspor (Khán Đài A) source
+https://www3.f2k3.shop/live/3ae1590a15b8fda576bde3bb209df98d/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h30 ngày 17/05 Newcastle United vs West Ham United (Khán Đài A) source
+https://www3.f2k3.shop/live/f1b66578cbd8030b3229cd6420741d13/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h30 ngày 17/05 Newcastle United vs West Ham United (Khán Đài A) sd_1
+https://pull-kda.fastestcdn-global.com/live/5bf1d608da144117964bdf6ca01c42cf/index.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Kaisar Kyzylorda vs Tobol Kostanai (Khán Đài A) source
+https://www3.f2k3.shop/live/acf37462a2f2e073bc877f199136bf31/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Zira FK vs Sumgayit FK (Khán Đài A) source
+https://www3.f2k3.shop/live/0eddecad7c4819b0fe90357987dceb9b/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Portimonense vs SC Farense (Khán Đài A) source
+https://www3.f2k3.shop/live/841809d82eb69ad7aeb7ac06c0b9272f/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Slaven Belupo vs Dinamo Zagreb (Khán Đài A) source
+https://www3.f2k3.shop/live/0a8611a5cd415123f16e2d1ce9ce91a0/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 AD Tarma vs Comerciantes Unidos (Khán Đài A) source
+https://www3.f2k3.shop/live/095119016a252600dd5082f8ce41df81/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham (Khán Đài A) source
+https://www3.f2k3.shop/live/0cd9e9553f7a081ebef5e68b37816ddc/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Cagliari vs Torino (Khán Đài A) source
+https://www3.f2k3.shop/live/ba4505a781fcbc2b7497565b033d5406/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Bank El Ahly vs El Gounah (Khán Đài A) source
+https://www3.f2k3.shop/live/e9cc394031e973397783d67f60d4514e/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Sassuolo vs Lecce (Khán Đài A) source
+https://www3.f2k3.shop/live/3bb4f4332370bbbe2cb8878b986a538d/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Mamelodi Sundowns vs AS FAR Rabat (Khán Đài A) source
+https://www3.f2k3.shop/live/5f18b481dcb9c477cda7873befa4ea5f/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 FK Čukarički vs Partizan Belgrade (Khán Đài A) source
+https://www3.f2k3.shop/live/29cebc3e72f9bd85a85dcbc796bc8354/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
@@ -1112,8 +1070,29 @@ https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 18/05 Nashville SC vs Los Angeles FC (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/chuoitayhd.flv
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona (Gà Vàng) sd_1
-https://pull-gv.fastestcdn-global.com/live/4b7fddf252064c54a2aafbce2890d9e7/index.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland (Gà Vàng) sd_1
+https://pull-gv.fastestcdn-global.com/live/6f485ba39f8b44f6b4d7477a81c0900b/index.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc vs SP vs Coritiba SAF vs PR (Gà Vàng) source
+https://www3.f2k3.shop/live/022b2fc2444b555391fc77769ef02656/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Gà Vàng) source
+https://www3.f2k3.shop/live/1ea25273b77cf6cc986bb610c423f115/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Gà Vàng) sd_1
+https://pull-gv.fastestcdn-global.com/live/5779a9be4bed4fefbb7245636df314fe/index.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Aris Thessaloniki vs Levadiakos (Gà Vàng) source
+https://www3.f2k3.shop/live/df80851e7515fce3ec5c6aa7981ccd2d/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Sheksna Cherepovets vs Chertanovo Moscow (Gà Vàng) source
+https://www3.f2k3.shop/live/3e30b10401b5eb146dc79fd51003f4c3/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 17/05 Atalanta vs Bologna (Gà Vàng) source
+https://www3.f2k3.shop/live/1cb1eefea02ee927f8174c815344752c/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 17/05 Atalanta vs Bologna (Gà Vàng) sd_1
+https://pull-gv.fastestcdn-global.com/live/0af0c2da4ebe425e894ecfe572973978/index.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion (Gà Vàng) sd_1
 https://pull-gv.fastestcdn-global.com/live/8f9c0e6960fa49c19c2ba536a4bb8393/index.m3u8
@@ -1121,551 +1100,509 @@ https://pull-gv.fastestcdn-global.com/live/8f9c0e6960fa49c19c2ba536a4bb8393/inde
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham (Gà Vàng) sd_1
 https://pull-gv.fastestcdn-global.com/live/63377dba718841158d52837916c4524e/index.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace (Gà Vàng) sd_1
-https://pull-gv.fastestcdn-global.com/live/5779a9be4bed4fefbb7245636df314fe/index.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland (Gà Vàng) sd_1
-https://pull-gv.fastestcdn-global.com/live/6f485ba39f8b44f6b4d7477a81c0900b/index.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV MESSI] (Socolive) flv
-https://pull06.scstream.net/live/stream-494201_lsd.flv?auth_key=1779032155-0-0-68356bb339c7888052478bc57485b461
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV MESSI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-494201_lhd.flv?auth_key=1779032155-0-0-947925beb7d51487ec6a51220741b180
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV MESSI] (Socolive) m3u8
-https://pull.niues.live/live/stream-494201_lsd.m3u8?auth_key=1779032155-0-0-22632a2e025ef5d92bf5b3929438f14b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV MESSI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1779032155-0-0-f404420880600c8d9df50f69b0ac0402
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [RICKHANTER] (Socolive) flv
-https://pull.niur.live/live/stream-9912122_lsd.flv?txSecret=2ba80aa8cd85523c4a14b67d9d3085ed&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [RICKHANTER] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912122_lhd.flv?txSecret=4421991510adfd1f968d8b9f6e13263c&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [RICKHANTER] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912122_lsd.m3u8?txSecret=2ba80aa8cd85523c4a14b67d9d3085ed&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [RICKHANTER] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=4421991510adfd1f968d8b9f6e13263c&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV ĐỐM] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912110_lsd.flv?auth_key=1779032155-0-0-4428c8f525f686f182fe49161559c928
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV ĐỐM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912110_lhd.flv?auth_key=1779032155-0-0-eb9ab652c3cdaa153c61fb1bd9e923e5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV ĐỐM] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912110_lsd.m3u8?auth_key=1779032155-0-0-d36b4e6ae578ba2aa6d16814a49f28bc
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV ĐỐM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1779032155-0-0-758cd72579d14138e671b9d2631d6e96
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [DECO] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912060_lsd.flv?auth_key=1779032155-0-0-818b5aec933826411c472f920978a0ae
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [DECO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912060_lhd.flv?auth_key=1779032155-0-0-5ec583f523b8377fe606dd2f232844fe
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [DECO] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912060_lsd.m3u8?auth_key=1779032155-0-0-012722ef0f513fa9b32e9a0836480050
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [DECO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1779032155-0-0-21948b66542be1c3911273d506fbb182
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV ENZO] (Socolive) flv
-https://pull06.scstream.net/live/stream-380460_lsd.flv?auth_key=1779032155-0-0-61f3c7606be39920f5bf1246ff2e26dd
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV ENZO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-380460_lhd.flv?auth_key=1779032155-0-0-99b05d65d2f6bea4dbbd1b81c9f4b809
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV ENZO] (Socolive) m3u8
-https://pull.niues.live/live/stream-380460_lsd.m3u8?auth_key=1779032155-0-0-4842658ba0d645e22ba8727af645524f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV ENZO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1779032155-0-0-d5a149116a2d936fd51d18b920fc967c
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV TOMIA] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912008_lsd.flv?auth_key=1779032155-0-0-818976ccc843b2125574e59345810e9c
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV TOMIA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912008_lhd.flv?auth_key=1779032155-0-0-6c32bd67a6ef8b9b37fb2ea813d51887
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV TOMIA] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1779032155-0-0-4424f87ce9d790b1584f53a26da37353
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV TOMIA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1779032155-0-0-a22c0de3fa776224121225f4f6493fa7
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [CR Bưởi] (Socolive) flv
-https://pull.niur.live/live/stream-387694_lsd.flv?txSecret=47b03d9ff0e7255db88c810276302a42&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [CR Bưởi] (Socolive) hdFlv
-https://pull.niur.live/live/stream-387694_lhd.flv?txSecret=1e4fd2a79708b029ba04cde6d8602e09&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [CR Bưởi] (Socolive) m3u8
-https://pull.niur.live/live/stream-387694_lsd.m3u8?txSecret=47b03d9ff0e7255db88c810276302a42&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [CR Bưởi] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=1e4fd2a79708b029ba04cde6d8602e09&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TYPN] (Socolive) flv
-https://pull.niur.live/live/stream-9912009_lsd.flv?txSecret=f9595bebc0775fc99562baca4e72a9c6&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TYPN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912009_lhd.flv?txSecret=c7e9635189ef1b3066930a172d8339c9&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TYPN] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912009_lsd.m3u8?txSecret=f9595bebc0775fc99562baca4e72a9c6&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TYPN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912009_lhd.m3u8?txSecret=c7e9635189ef1b3066930a172d8339c9&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg [Đình Bắc] (Socolive) flv
-https://pull06.scstream.net/live/stream-579144_lsd.flv?auth_key=1779032155-0-0-334805240f0868adbbb06bb043b531de
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg [Đình Bắc] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-579144_lhd.flv?auth_key=1779032155-0-0-0268151d50519b0e1fd8a658d8e15b2a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg [Đình Bắc] (Socolive) m3u8
-https://pull.niues.live/live/stream-579144_lsd.m3u8?auth_key=1779032155-0-0-4de4794aa2122c16fdd65033ef56528b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg [Đình Bắc] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-579144_lhd.m3u8?auth_key=1779032155-0-0-e2bc232d99c87429482087dcc89f2103
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [BRIAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912106_lsd.flv?auth_key=1779032155-0-0-aa04b9dc43a5c95cbf61ed9407846793
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [BRIAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912106_lhd.flv?auth_key=1779032155-0-0-994bfb4c20f2a079e341bbc715742839
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [BRIAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912106_lsd.m3u8?auth_key=1779032155-0-0-6afda86456e4a20f38db8a787b6b504f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [BRIAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1779032155-0-0-a97fee6d13340b662160e9ec7ee70ed7
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [PINKMAN] (Socolive) flv
-https://pull.niur.live/live/stream-595715_lsd.flv?txSecret=4ff3c6076563356301532ebf3dcd2fc8&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [PINKMAN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-595715_lhd.flv?txSecret=f5d36ef7f28447367fcf6f3f8dbb35b4&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [PINKMAN] (Socolive) m3u8
-https://pull.niur.live/live/stream-595715_lsd.m3u8?txSecret=4ff3c6076563356301532ebf3dcd2fc8&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [PINKMAN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-595715_lhd.m3u8?txSecret=f5d36ef7f28447367fcf6f3f8dbb35b4&txTime=6a0a26ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
-https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779032155-0-0-75bb9bf1796d31ccee2439c361bc49da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779032155-0-0-dc65c0475fad2adcc27fdcc400c2777a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
-https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779032155-0-0-bcc4d584edf1a59d66913e624164ab8a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779032155-0-0-d2700257ed422005a306230beee579fb
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV PEWPEW] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912015_lsd.flv?auth_key=1779032515-0-0-2a37530634f48d9986298a69bb4c464d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV PEWPEW] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912015_lhd.flv?auth_key=1779032515-0-0-0ef8dd0785d74861bc55f1ab892b65ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV PEWPEW] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912015_lsd.m3u8?auth_key=1779032515-0-0-3959d97d997a33758f937bbb9c98eadc
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV PEWPEW] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1779032515-0-0-5bffc0a07e9aa367d8a352eb56c03a1d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [VƯƠNG ANH] (Socolive) flv
-https://pull.niur.live/live/stream-548860_lsd.flv?txSecret=25152fbfe21b4c82798efc9407435e78&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [VƯƠNG ANH] (Socolive) hdFlv
-https://pull.niur.live/live/stream-548860_lhd.flv?txSecret=f6cecb4bc5ce0146770b21839ff990ec&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [VƯƠNG ANH] (Socolive) m3u8
-https://pull.niur.live/live/stream-548860_lsd.m3u8?txSecret=25152fbfe21b4c82798efc9407435e78&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [VƯƠNG ANH] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-548860_lhd.m3u8?txSecret=f6cecb4bc5ce0146770b21839ff990ec&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV LONG] (Socolive) flv
-https://pull.niur.live/live/stream-9912050_lsd.flv?txSecret=40e2f3685a7e0d894cbb195d47e17b32&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV LONG] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912050_lhd.flv?txSecret=f10c1811c1af5760f896775f02671564&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV LONG] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912050_lsd.m3u8?txSecret=40e2f3685a7e0d894cbb195d47e17b32&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV LONG] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912050_lhd.m3u8?txSecret=f10c1811c1af5760f896775f02671564&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV RÔSI] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912102_lsd.flv?auth_key=1779032515-0-0-5362d0f3d679b2d794a36cff94f0ddaa
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV RÔSI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912102_lhd.flv?auth_key=1779032515-0-0-ce6a887460eaf8069b4294d1d44830d2
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV RÔSI] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912102_lsd.m3u8?auth_key=1779032515-0-0-897b1d65ac10b1f1b1bcd645ff9963a3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV RÔSI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912102_lhd.m3u8?auth_key=1779032515-0-0-b2fd700bd8582c8b0733bbed72bc651b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 [BLV FIREMAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-991140_lsd.flv?auth_key=1779032515-0-0-1fc78c5f92a1e4b1753b16cd8023a4e4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 [BLV FIREMAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-991140_lhd.flv?auth_key=1779032515-0-0-b1e8ae4faa74601eb72a96a2f323a3d9
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 [BLV FIREMAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-991140_lsd.m3u8?auth_key=1779032515-0-0-abb111b8a0f7ec72a329b58c64f26efe
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 [BLV FIREMAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1779032515-0-0-eaaf5d8416315685d79ba3f0930cce88
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV ALEX] (Socolive) flv
-https://pull06.scstream.net/live/stream-532081_lsd.flv?auth_key=1779032515-0-0-538a364dd2f9d50dd041a3711d03390c
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV ALEX] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-532081_lhd.flv?auth_key=1779032515-0-0-80c1ef3c1c6da39ac607990d0b45d916
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV ALEX] (Socolive) m3u8
-https://pull.niues.live/live/stream-532081_lsd.m3u8?auth_key=1779032515-0-0-ea7d5ecbd34291d9bcb8f7c8731a0ebf
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV ALEX] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1779032515-0-0-c9846a2c003618e4ed2e92f929a71543
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [A PÁO] (Socolive) flv
-https://pull06.scstream.net/live/stream-235232_lsd.flv?auth_key=1779032515-0-0-b276e2d0595ff23c83744fc72fc4cb4e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [A PÁO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-235232_lhd.flv?auth_key=1779032515-0-0-5ec6dac3ceca492c642feb560d7345ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [A PÁO] (Socolive) m3u8
-https://pull.niues.live/live/stream-235232_lsd.m3u8?auth_key=1779032515-0-0-b3485bab9d56d3f0e8715a19ad7588ee
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [A PÁO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1779032515-0-0-715bca80e55c7171b73dd0c642f48dbf
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [BLV WUKONG] (Socolive) flv
-https://pull06.scstream.net/live/stream-511367_lsd.flv?auth_key=1779032515-0-0-9b385c9afd3937d4ca31dcba9e78efb3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [BLV WUKONG] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-511367_lhd.flv?auth_key=1779032515-0-0-b4c27f841c14ebaa4526b9ad46b90a35
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [BLV WUKONG] (Socolive) m3u8
-https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1779032515-0-0-6ab93dad009ba9dd3d296f023f19a04e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [BLV WUKONG] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1779032515-0-0-0d1308e9b34d7c796c580e1b4a754986
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preuben Munster [BLV VIP] (Socolive) flv
-https://pull.niur.live/live/stream-491873_lsd.flv?txSecret=06b6882e1c096ed7df2a3a6360c0f202&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preuben Munster [BLV VIP] (Socolive) hdFlv
-https://pull.niur.live/live/stream-491873_lhd.flv?txSecret=8102073a6d27167a303420ee477fa890&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preuben Munster [BLV VIP] (Socolive) m3u8
-https://pull.niur.live/live/stream-491873_lsd.m3u8?txSecret=06b6882e1c096ed7df2a3a6360c0f202&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preuben Munster [BLV VIP] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=8102073a6d27167a303420ee477fa890&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 [BLV GÔN] (Socolive) flv
-https://pull06.scstream.net/live/stream-445260_lsd.flv?auth_key=1779032515-0-0-ef4946aff9ee142069cf0a7a8678b05d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 [BLV GÔN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-445260_lhd.flv?auth_key=1779032515-0-0-4717138001c9cb7632ec91eb5610380c
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 [BLV GÔN] (Socolive) m3u8
-https://pull.niues.live/live/stream-445260_lsd.m3u8?auth_key=1779032515-0-0-b62a186f14c56f60b7a10a3946cd419f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Darmstadt 98 vs SC Paderborn 07 [BLV GÔN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-445260_lhd.m3u8?auth_key=1779032515-0-0-f365e6811eb2946499ccc77f437391be
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [BLV HENRY] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912112_lsd.flv?auth_key=1779032515-0-0-106754f5cf99292543f44afe8ffcd68e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [BLV HENRY] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912112_lhd.flv?auth_key=1779032515-0-0-cebb8f31148c66eeac47f3073d46d3d8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [BLV HENRY] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912112_lsd.m3u8?auth_key=1779032515-0-0-82b6a90d6ffa5484d820d4c982874936
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [BLV HENRY] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1779032515-0-0-b1d04cce3d9fb82d1690c7bb4537d952
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [KING] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1779032515-0-0-fde7c0f7557d8b86d7f79ee1f8df03c3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [KING] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1779032515-0-0-c9181521e6a30feca030910d465aa367
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [KING] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1779032515-0-0-b04866fd12f699f5b405c340a46fb99c
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [KING] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1779032515-0-0-efcb558f1dc38dd9a27dec8866f1bf33
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV A TINH] (Socolive) flv
-https://pull.niur.live/live/stream-598119_lsd.flv?txSecret=c76656872ef63cdbcf4eb6b123b96133&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV A TINH] (Socolive) hdFlv
-https://pull.niur.live/live/stream-598119_lhd.flv?txSecret=a80f3ee8c9170dd5b126a3ff88fbab21&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV A TINH] (Socolive) m3u8
-https://pull.niur.live/live/stream-598119_lsd.m3u8?txSecret=c76656872ef63cdbcf4eb6b123b96133&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV A TINH] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=a80f3ee8c9170dd5b126a3ff88fbab21&txTime=6a0a2813
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [A CHÈ] (Socolive) flv
-https://pull06.scstream.net/live/stream-356042_lsd.flv?auth_key=1779032515-0-0-9f1a06f3a3896b47370bd11b217a26e5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [A CHÈ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-356042_lhd.flv?auth_key=1779032515-0-0-1a723ef054e6e77d3787d949664ddaff
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [A CHÈ] (Socolive) m3u8
-https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1779032515-0-0-5ea0e8f04f79c813b0a9e7508e99f2ab
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [A CHÈ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1779032515-0-0-9f06a7e1fbec70e7217eaee1bc88f611
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV VOI] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912114_lsd.flv?auth_key=1779032515-0-0-50494f1b9f8bac26e11afad72a9db496
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV VOI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912114_lhd.flv?auth_key=1779032515-0-0-6a86aafa162c5ed88fc1ac9697b18fe9
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV VOI] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912114_lsd.m3u8?auth_key=1779032515-0-0-f1108a2fd3551f793ea9caa50e304317
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV VOI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1779032515-0-0-5fa2c38a4b0b1491e58665fa87224987
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [BLV A WIN] (Socolive) flv
-https://pull06.scstream.net/live/stream-536185_lsd.flv?auth_key=1779032515-0-0-eda80267baf631708cb9c89e68429429
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [BLV A WIN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-536185_lhd.flv?auth_key=1779032515-0-0-2c7c5f7c27da817e433e1743119a5fee
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [BLV A WIN] (Socolive) m3u8
-https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1779032515-0-0-2e646bcbd8a19765efce0f33cdc5446d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [BLV A WIN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1779032515-0-0-2230e459cadb0505fd7a56b964689117
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [THẠCH TÚ] (Socolive) flv
-https://pull.niur.live/live/stream-9912116_lsd.flv?txSecret=1374d552cc6eda8f2ba6fcd1264f9b87&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [THẠCH TÚ] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912116_lhd.flv?txSecret=4d18bb9bd823c0d3226b37d72affdc5d&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [THẠCH TÚ] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=1374d552cc6eda8f2ba6fcd1264f9b87&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [THẠCH TÚ] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=4d18bb9bd823c0d3226b37d72affdc5d&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV COCA] (Socolive) flv
-https://pull06.scstream.net/live/stream-327159_lsd.flv?auth_key=1779032875-0-0-ab1109f733e85ee15ecc86ceba3153f4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV COCA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-327159_lhd.flv?auth_key=1779032875-0-0-dd23c7645919c01749d4b2e5887d157b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV COCA] (Socolive) m3u8
-https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1779032875-0-0-dce657563883c767512ecab42e1e7546
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV COCA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1779032875-0-0-8dd6ac3a7fa29d2bc8f2d560bf4ac372
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [SAO LA] (Socolive) flv
-https://pull.niur.live/live/stream-462413_lsd.flv?txSecret=394e781d390ed064f1a6069431f58bc4&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [SAO LA] (Socolive) hdFlv
-https://pull.niur.live/live/stream-462413_lhd.flv?txSecret=bd8d7fe3249257f07030964d9ea06872&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [SAO LA] (Socolive) m3u8
-https://pull.niur.live/live/stream-462413_lsd.m3u8?txSecret=394e781d390ed064f1a6069431f58bc4&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [SAO LA] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-462413_lhd.m3u8?txSecret=bd8d7fe3249257f07030964d9ea06872&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TẠ BIÊN GIỚI] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912108_lsd.flv?auth_key=1779032875-0-0-321e40a0b43970b8af41e0632444d5fe
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TẠ BIÊN GIỚI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912108_lhd.flv?auth_key=1779032875-0-0-16e7c4c3597f00c9205dfd9eb8748046
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TẠ BIÊN GIỚI] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912108_lsd.m3u8?auth_key=1779032875-0-0-6d80dc73de404b8111eb54feda838fe1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TẠ BIÊN GIỚI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1779032875-0-0-3729945b1528f32393b62d500d0e5380
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV 7UP] (Socolive) flv
-https://pull06.scstream.net/live/stream-534219_lsd.flv?auth_key=1779032875-0-0-360007bc38c38f7938ecf1337ebe905d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV 7UP] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-534219_lhd.flv?auth_key=1779032875-0-0-d4e3423c003f702b3b7b6e78c783b749
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV 7UP] (Socolive) m3u8
-https://pull.niues.live/live/stream-534219_lsd.m3u8?auth_key=1779032875-0-0-0aa75f0ba5328fb7dbdc48341167755e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV 7UP] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-534219_lhd.m3u8?auth_key=1779032875-0-0-148f6873e3b0e81d40333bb8b6a8e6f1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TOMMY] (Socolive) flv
-https://pull06.scstream.net/live/stream-414317_lsd.flv?auth_key=1779032875-0-0-c286e5a95f3e97b691cc9541cab94185
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TOMMY] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-414317_lhd.flv?auth_key=1779032875-0-0-f7f543c8f8b44f569e56d70d1275c474
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TOMMY] (Socolive) m3u8
-https://pull.niues.live/live/stream-414317_lsd.m3u8?auth_key=1779032875-0-0-e41d37dd9a273cfdbfcb56c763ab652a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TOMMY] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1779032875-0-0-085d12be00498afa7415d3201b6f7713
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TAP] (Socolive) flv
-https://pull.niur.live/live/stream-9912041_lsd.flv?txSecret=f3e1752187d0b2b3737989f02c3197e8&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TAP] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912041_lhd.flv?txSecret=8d2e8090118d196181545eabff4832c7&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TAP] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912041_lsd.m3u8?txSecret=f3e1752187d0b2b3737989f02c3197e8&txTime=6a0a297b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TAP] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=8d2e8090118d196181545eabff4832c7&txTime=6a0a297b
-
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV Củ Cải] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912091_lsd.flv?auth_key=1779032875-0-0-dbe7910c38c84c39dfd691e8e3178488
+https://pull06.scstream.net/live/stream-9912091_lsd.flv?auth_key=1779036115-0-0-93f47b6f2a637b7cf7876ba7da3cd8c0
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV Củ Cải] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912091_lhd.flv?auth_key=1779032875-0-0-49f92e9b0fb1f6033ddae3eebe51ecbe
+https://pull06.scstream.net/live/stream-9912091_lhd.flv?auth_key=1779036115-0-0-19c031c0a6744af8869a5b71b2455506
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV Củ Cải] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912091_lsd.m3u8?auth_key=1779032875-0-0-d7e08fa8233773ecd520e642442b5c1c
+https://pull.niues.live/live/stream-9912091_lsd.m3u8?auth_key=1779036115-0-0-c8f48d34668cce5bc67db1e0255c6faa
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV Củ Cải] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1779032875-0-0-bf9803748bab254cc3eea6663173adfa
+https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1779036115-0-0-c3eec963821a67a1f058dd5ffed52177
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV ROBBEN] (Socolive) flv
-https://pull06.scstream.net/live/stream-527383_lsd.flv?auth_key=1779032875-0-0-ce47b9363ae0b4f887a80223f5bb4e81
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TAP] (Socolive) flv
+https://pull.niur.live/live/stream-9912041_lsd.flv?txSecret=4d2e324db3659e5e4de7177f48d32f6b&txTime=6a0a3623
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV ROBBEN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-527383_lhd.flv?auth_key=1779032875-0-0-c1e060dbb63d65de73d8cc499a269036
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TAP] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912041_lhd.flv?txSecret=17f55c236dd1f28e41c1daa7f9d394b5&txTime=6a0a3623
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV ROBBEN] (Socolive) m3u8
-https://pull.niues.live/live/stream-527383_lsd.m3u8?auth_key=1779032875-0-0-b0d8c6ead86f03590c12017e2f3e3439
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TAP] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912041_lsd.m3u8?txSecret=4d2e324db3659e5e4de7177f48d32f6b&txTime=6a0a3623
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV ROBBEN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1779032875-0-0-f2a41e9bc76cf6fec3c8b2ba670bb879
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TAP] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=17f55c236dd1f28e41c1daa7f9d394b5&txTime=6a0a3623
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [A BỆU] (Socolive) flv
-https://pull06.scstream.net/live/stream-484845_lsd.flv?auth_key=1779032875-0-0-e75a039cecab41416910b2a01b273af3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [SAO LA] (Socolive) flv
+https://pull.niur.live/live/stream-462413_lsd.flv?txSecret=d0730679763a8c24ba00fabf2530c4a6&txTime=6a0a3623
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [A BỆU] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-484845_lhd.flv?auth_key=1779032875-0-0-29a306ad4f3a61d49f5baccdc0d8c909
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [SAO LA] (Socolive) hdFlv
+https://pull.niur.live/live/stream-462413_lhd.flv?txSecret=b91de42ff9d0789564b02a11ecf471de&txTime=6a0a3623
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [A BỆU] (Socolive) m3u8
-https://pull.niues.live/live/stream-484845_lsd.m3u8?auth_key=1779032875-0-0-259067a4b766f6877c90b84a41995a7b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [SAO LA] (Socolive) m3u8
+https://pull.niur.live/live/stream-462413_lsd.m3u8?txSecret=d0730679763a8c24ba00fabf2530c4a6&txTime=6a0a3623
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [A BỆU] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1779032875-0-0-1134a593f3b7384bf126610c138e4699
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [SAO LA] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-462413_lhd.m3u8?txSecret=b91de42ff9d0789564b02a11ecf471de&txTime=6a0a3623
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [THẠCH TÚ] (Socolive) flv
+https://pull.niur.live/live/stream-9912116_lsd.flv?txSecret=b0808a977b5656d4fa7ac24cadbdcdbe&txTime=6a0a3623
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [THẠCH TÚ] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912116_lhd.flv?txSecret=20d53f9afdd0b85c1da57ea095002ae5&txTime=6a0a3623
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [THẠCH TÚ] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=b0808a977b5656d4fa7ac24cadbdcdbe&txTime=6a0a3623
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [THẠCH TÚ] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=20d53f9afdd0b85c1da57ea095002ae5&txTime=6a0a3623
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TẠ BIÊN GIỚI] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912108_lsd.flv?auth_key=1779036115-0-0-21cd89757155486516d7743d2279b5c8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TẠ BIÊN GIỚI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912108_lhd.flv?auth_key=1779036115-0-0-9a1694aad04e5b66950825632b3f29a8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TẠ BIÊN GIỚI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912108_lsd.m3u8?auth_key=1779036115-0-0-60c1f85394c2ad76504802b824a9ab69
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TẠ BIÊN GIỚI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1779036115-0-0-3f42d2ea6e875a2180190f71f98eac1f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV 7UP] (Socolive) flv
+https://pull06.scstream.net/live/stream-534219_lsd.flv?auth_key=1779036115-0-0-b5d3656db4e5384a8d012b8e83ddc80b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV 7UP] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-534219_lhd.flv?auth_key=1779036115-0-0-6a64be918dbfaaf4b4cc2521331881cc
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV 7UP] (Socolive) m3u8
+https://pull.niues.live/live/stream-534219_lsd.m3u8?auth_key=1779036115-0-0-1153462a7aad178dace462745cc0a0ba
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV 7UP] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-534219_lhd.m3u8?auth_key=1779036115-0-0-d97d92a3549e590cd199890b3924ee6c
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV COCA] (Socolive) flv
+https://pull06.scstream.net/live/stream-327159_lsd.flv?auth_key=1779036115-0-0-1640d6c436334da0d986b40d480bd8e7
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV COCA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-327159_lhd.flv?auth_key=1779036115-0-0-50d1ea84d2ad06a88c2c9a2f62371f4c
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV COCA] (Socolive) m3u8
+https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1779036115-0-0-6ea1be00cf3bcf07450449925fe82f76
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV COCA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1779036115-0-0-645a1afef1f9f111e939068ecdb15e38
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TOMMY] (Socolive) flv
+https://pull06.scstream.net/live/stream-414317_lsd.flv?auth_key=1779036115-0-0-3b9e64b2f7eeed7684a819f0b15933bd
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TOMMY] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-414317_lhd.flv?auth_key=1779036115-0-0-a02722b708c9865090cbb2fdca89591f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TOMMY] (Socolive) m3u8
+https://pull.niues.live/live/stream-414317_lsd.m3u8?auth_key=1779036115-0-0-39a21a7cdffdcb1e950c82d5520fc607
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV TOMMY] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1779036115-0-0-29384e9f5b979cbc2f7dd8780be1f12b
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [LOGAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-552832_lsd.flv?auth_key=1779032875-0-0-81e5c41fa98010761c440417a865e175
+https://pull06.scstream.net/live/stream-552832_lsd.flv?auth_key=1779036115-0-0-71a0cc04b5f6c60ddf12796695618122
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [LOGAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-552832_lhd.flv?auth_key=1779032875-0-0-5e94b9da08c8fb1d70afc8489b8921ca
+https://pull06.scstream.net/live/stream-552832_lhd.flv?auth_key=1779036115-0-0-4fe3d30d42b43b125c70006679d3bfc2
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [LOGAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-552832_lsd.m3u8?auth_key=1779032875-0-0-21e9a35a432e531d2e79a2e986db8e0c
+https://pull.niues.live/live/stream-552832_lsd.m3u8?auth_key=1779036115-0-0-ff3d9ed162a58da9f3ec8a34837634ef
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [LOGAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1779032875-0-0-eb2a9454f7c8e08dfdd3a12d03f93232
+https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1779036115-0-0-60ff0fb3094c1b0a64da530ac37e6716
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [A BỆU] (Socolive) flv
+https://pull06.scstream.net/live/stream-484845_lsd.flv?auth_key=1779036115-0-0-27e2a81c4a11ba6305f428468389785d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [A BỆU] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-484845_lhd.flv?auth_key=1779036115-0-0-0cf76222d88a6cef4d7b1bd6dc87a5a6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [A BỆU] (Socolive) m3u8
+https://pull.niues.live/live/stream-484845_lsd.m3u8?auth_key=1779036115-0-0-89e19abd75dfe14dfda8e67f94784313
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [A BỆU] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1779036115-0-0-06a8c1cbb73515a15b9754eea04dceb8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV PIRLO] (Socolive) flv
-https://pull06.scstream.net/live/stream-351530_lsd.flv?auth_key=1779032875-0-0-1d096e6c0dea342c8c81573c5f3a091d
+https://pull06.scstream.net/live/stream-351530_lsd.flv?auth_key=1779036115-0-0-d4847b1ab24c904d2e6b7d6995d030ff
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV PIRLO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-351530_lhd.flv?auth_key=1779032875-0-0-aa03d22d61855c4f0fb58e3c8cb1ecb2
+https://pull06.scstream.net/live/stream-351530_lhd.flv?auth_key=1779036115-0-0-34e3ec610849ea6a24a0f07ca12cfa30
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV PIRLO] (Socolive) m3u8
-https://pull.niues.live/live/stream-351530_lsd.m3u8?auth_key=1779032875-0-0-6b5c8d4aa4f06966526987097c825c71
+https://pull.niues.live/live/stream-351530_lsd.m3u8?auth_key=1779036115-0-0-d763340017cabb3e13ab2afe30eb761b
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [BLV PIRLO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-351530_lhd.m3u8?auth_key=1779032875-0-0-978463edc600f7e8bd5ea41d2eded5bb
+https://pull.niues.live/live/stream-351530_lhd.m3u8?auth_key=1779036115-0-0-d086cefae47261b4e253508b978107ac
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV ROBBEN] (Socolive) flv
+https://pull06.scstream.net/live/stream-527383_lsd.flv?auth_key=1779036115-0-0-b5d3ca474ab1e0d883ba49775e52da69
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV ROBBEN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-527383_lhd.flv?auth_key=1779036115-0-0-7fd66035d91a4b311be34b5d93fb7e48
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV ROBBEN] (Socolive) m3u8
+https://pull.niues.live/live/stream-527383_lsd.m3u8?auth_key=1779036115-0-0-dcbdf0f90f72061ccf6504e2ba2e5901
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV ROBBEN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1779036115-0-0-66a5242fff36fc52c934b7267484bf9d
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV BÉO] (Socolive) flv
-https://pull.niur.live/live/stream-459401_lsd.flv?txSecret=00beb1b21f8bce7f0bc905ec4e4c2602&txTime=6a0a297b
+https://pull.niur.live/live/stream-459401_lsd.flv?txSecret=4b281aa4e8abb9a77d9724409d0d759c&txTime=6a0a3623
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV BÉO] (Socolive) hdFlv
-https://pull.niur.live/live/stream-459401_lhd.flv?txSecret=214935aea3e62ac823133957ab183bd8&txTime=6a0a297b
+https://pull.niur.live/live/stream-459401_lhd.flv?txSecret=4d1a89f750c1db52e9f7820dd1edfc1d&txTime=6a0a3623
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV BÉO] (Socolive) m3u8
-https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=00beb1b21f8bce7f0bc905ec4e4c2602&txTime=6a0a297b
+https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=4b281aa4e8abb9a77d9724409d0d759c&txTime=6a0a3623
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV BÉO] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=214935aea3e62ac823133957ab183bd8&txTime=6a0a297b
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=4d1a89f750c1db52e9f7820dd1edfc1d&txTime=6a0a3623
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV RAMBO] (Socolive) flv
-https://pull.niur.live/live/stream-534055_lsd.flv?txSecret=6a6c85a5a1f71460454fce6f74941bfb&txTime=6a0a297b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV MIXI] (Socolive) flv
+https://pull06.scstream.net/live/stream-290928_lsd.flv?auth_key=1779036115-0-0-dee6d4b8da53e198536263908526d8b2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV RAMBO] (Socolive) hdFlv
-https://pull.niur.live/live/stream-534055_lhd.flv?txSecret=f58a052b0f387aaf9fe4b225da7de8c5&txTime=6a0a297b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV MIXI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-290928_lhd.flv?auth_key=1779036115-0-0-103b29ce4518a50f5eeb326bd4462f44
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV RAMBO] (Socolive) m3u8
-https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=6a6c85a5a1f71460454fce6f74941bfb&txTime=6a0a297b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV MIXI] (Socolive) m3u8
+https://pull.niues.live/live/stream-290928_lsd.m3u8?auth_key=1779036115-0-0-bcf598a34902aad5e50cd2285032834e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 17/05 Inter Milan vs Hellas Verona [BLV RAMBO] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=f58a052b0f387aaf9fe4b225da7de8c5&txTime=6a0a297b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV MIXI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-290928_lhd.m3u8?auth_key=1779036115-0-0-3d433fc77d0c37d0f68588f2446a5bbe
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [ĐỖ TÚ TÀI] (Socolive) flv
-https://pull06.scstream.net/live/stream-607552_lsd.flv?auth_key=1779032875-0-0-15a3c96afbc97296013adc022bbb1e9f
+https://pull06.scstream.net/live/stream-607552_lsd.flv?auth_key=1779036115-0-0-3bb1bec8665f4583874c811a98f08365
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [ĐỖ TÚ TÀI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-607552_lhd.flv?auth_key=1779032875-0-0-55b2ca13cc3a519966b227cf83e43240
+https://pull06.scstream.net/live/stream-607552_lhd.flv?auth_key=1779036115-0-0-7304b53ea5a7a78ff3bea444d115a2f0
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [ĐỖ TÚ TÀI] (Socolive) m3u8
-https://pull.niues.live/live/stream-607552_lsd.m3u8?auth_key=1779032875-0-0-40787dbbccfa70337b297dbaa58621aa
+https://pull.niues.live/live/stream-607552_lsd.m3u8?auth_key=1779036115-0-0-462e3a628068fbbed9ca20d27128d8fd
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [ĐỖ TÚ TÀI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1779032875-0-0-457b7b04421aa21d6e247f72c459c3d4
+https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1779036115-0-0-31600a2b134302b0c0dd08d0424f09b9
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg [HẢI THANH] (Socolive) flv
-https://pull06.scstream.net/live/stream-599634_lsd.flv?auth_key=1779032875-0-0-5a8f41163c9c35d1503e19e8fd4d8423
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV ALEX] (Socolive) flv
+https://pull06.scstream.net/live/stream-532081_lsd.flv?auth_key=1779036115-0-0-01658f49779f9d33516fad1ecd5fb48b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg [HẢI THANH] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-599634_lhd.flv?auth_key=1779032875-0-0-6c81cfe7ee27c25a28c89e9537bf3016
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV ALEX] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-532081_lhd.flv?auth_key=1779036115-0-0-c284bd9941ab5f96bbd941df2791631c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg [HẢI THANH] (Socolive) m3u8
-https://pull.niues.live/live/stream-599634_lsd.m3u8?auth_key=1779032875-0-0-e7238d31d1170a8e11432ffeef2cd5c5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV ALEX] (Socolive) m3u8
+https://pull.niues.live/live/stream-532081_lsd.m3u8?auth_key=1779036115-0-0-446263a62eaa6fa0d638aef98c207f0a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 Hannover 96 vs 1. FC Nürnberg [HẢI THANH] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-599634_lhd.m3u8?auth_key=1779032875-0-0-0cbdb031724ed6bae5e5e9708e450b41
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV ALEX] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1779036115-0-0-ea49da146c895a37c8f3e3e4bce016d7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preuben Munster [BLV RYO] (Socolive) flv
-https://pull06.scstream.net/live/stream-602019_lsd.flv?auth_key=1779032875-0-0-1a2598e3e8b7367b44719352cadeb934
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ACB: Baskonia vs Granada [HUNTER] (Socolive) flv
+https://pull06.scstream.net/live/stream-558264_lsd.flv?auth_key=1779036115-0-0-f61a0a0efcd5fd5677b113fcc9845d6f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preuben Munster [BLV RYO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-602019_lhd.flv?auth_key=1779032875-0-0-7a25afcefcf5df9b890808c243816850
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ACB: Baskonia vs Granada [HUNTER] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-558264_lhd.flv?auth_key=1779036115-0-0-d7a997ca4d57e0f6553744e5cdfb2351
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preuben Munster [BLV RYO] (Socolive) m3u8
-https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1779032875-0-0-60d3562924121e51b0d2d50cbb675411
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ACB: Baskonia vs Granada [HUNTER] (Socolive) m3u8
+https://pull.niues.live/live/stream-558264_lsd.m3u8?auth_key=1779036115-0-0-5e450f058558141b4f5a6dfe2b7a3c73
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 ngày 17/05 SV Elversberg vs Preuben Munster [BLV RYO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1779032875-0-0-38592fab2810a51feef0d69407ba53b5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ACB: Baskonia vs Granada [HUNTER] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-558264_lhd.m3u8?auth_key=1779036115-0-0-14f0fb5ebb46095a95c53203e0396519
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [DECO] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912060_lsd.flv?auth_key=1779036475-0-0-03c1e6f0b5b1acbfebcf83eef8ac2f0b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [DECO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912060_lhd.flv?auth_key=1779036475-0-0-49bbc7868e876a7f8d71a0c2dc6862ba
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [DECO] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912060_lsd.m3u8?auth_key=1779036475-0-0-a7d9467bf9e63fefdf2fa8d9d76ffe6b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [DECO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1779036475-0-0-cf6fcdc6d2b82bf83f5b5d5096d93c14
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [RICKHANTER] (Socolive) flv
+https://pull.niur.live/live/stream-9912122_lsd.flv?txSecret=df96586127be7449178da90ee2c1de85&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [RICKHANTER] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912122_lhd.flv?txSecret=a61b326f380a66ed957d37c4f5c3f3ee&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [RICKHANTER] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912122_lsd.m3u8?txSecret=df96586127be7449178da90ee2c1de85&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [RICKHANTER] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=a61b326f380a66ed957d37c4f5c3f3ee&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV MESSI] (Socolive) flv
+https://pull06.scstream.net/live/stream-494201_lsd.flv?auth_key=1779036475-0-0-107a350ce28499ef2dc082756734e6a6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV MESSI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-494201_lhd.flv?auth_key=1779036475-0-0-fa3447c235b462fb67c91724b00afb20
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV MESSI] (Socolive) m3u8
+https://pull.niues.live/live/stream-494201_lsd.m3u8?auth_key=1779036475-0-0-1bc8bc585e654fb5a11250e48777fc8e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV MESSI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1779036475-0-0-61f3714a7bcc336ef97ee5e08361b42e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV ĐỐM] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912110_lsd.flv?auth_key=1779036475-0-0-ade7905e720caf7e6d5e80b02630dafb
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV ĐỐM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912110_lhd.flv?auth_key=1779036475-0-0-54c8670ae9227e28b99dd1b3e08db02d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV ĐỐM] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912110_lsd.m3u8?auth_key=1779036475-0-0-14aabae8958d9c8bde4ebc6dc81447a1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Brentford vs Crystal Palace [BLV ĐỐM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1779036475-0-0-97a23f4dd97f7dda7029fa7c3a24a995
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV TOMIA] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912008_lsd.flv?auth_key=1779036475-0-0-c053a6c2d586a740882fcf6ac183e89b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV TOMIA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912008_lhd.flv?auth_key=1779036475-0-0-e79d1c4ec7c9a4bce9ab2c87de3b71b2
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV TOMIA] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1779036475-0-0-d9d20a384b42b519af78bc429c7e5593
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [BLV TOMIA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1779036475-0-0-84ac2d6994c98334a6d6a947d4fc55db
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [CR Bưởi] (Socolive) flv
+https://pull.niur.live/live/stream-387694_lsd.flv?txSecret=c1f3ebc7647f7ad6c901b540045caaa9&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [CR Bưởi] (Socolive) hdFlv
+https://pull.niur.live/live/stream-387694_lhd.flv?txSecret=d8ff8819a5c4e7972afcc698044afb51&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [CR Bưởi] (Socolive) m3u8
+https://pull.niur.live/live/stream-387694_lsd.m3u8?txSecret=c1f3ebc7647f7ad6c901b540045caaa9&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [CR Bưởi] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=d8ff8819a5c4e7972afcc698044afb51&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TYPN] (Socolive) flv
+https://pull.niur.live/live/stream-9912009_lsd.flv?txSecret=bcb79634a408f8d12b2aa5776a02ddf3&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TYPN] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912009_lhd.flv?txSecret=29b71563858f11b8d88bbeb827baad5e&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TYPN] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912009_lsd.m3u8?txSecret=bcb79634a408f8d12b2aa5776a02ddf3&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Everton vs Sunderland [TYPN] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912009_lhd.m3u8?txSecret=29b71563858f11b8d88bbeb827baad5e&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [TAM MAO] (Socolive) flv
+https://pull.niur.live/live/stream-9912100_lsd.flv?txSecret=96639ab84185db054565c6a367cd167c&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [TAM MAO] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912100_lhd.flv?txSecret=f1bf495791a30e34c77edda4cc39b935&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [TAM MAO] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912100_lsd.m3u8?txSecret=96639ab84185db054565c6a367cd167c&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [TAM MAO] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912100_lhd.m3u8?txSecret=f1bf495791a30e34c77edda4cc39b935&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [LOKA] (Socolive) flv
+https://pull06.scstream.net/live/stream-589848_lsd.flv?auth_key=1779036475-0-0-6661506e2ac4c9e53e5378528b1e755f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [LOKA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-589848_lhd.flv?auth_key=1779036475-0-0-6a8d7a2c6c09c35b8b3abb386e77421c
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [LOKA] (Socolive) m3u8
+https://pull.niues.live/live/stream-589848_lsd.m3u8?auth_key=1779036475-0-0-9916b44035e31065b73685b17375ac40
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [LOKA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1779036475-0-0-94bf2ba2a37b3dfddcf345d3d2d0b903
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [PINKMAN] (Socolive) flv
+https://pull.niur.live/live/stream-595715_lsd.flv?txSecret=1860e41c2c5594886489ffe64608c112&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [PINKMAN] (Socolive) hdFlv
+https://pull.niur.live/live/stream-595715_lhd.flv?txSecret=87f58bf8c4404325f6ab9e64ff62baed&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [PINKMAN] (Socolive) m3u8
+https://pull.niur.live/live/stream-595715_lsd.m3u8?txSecret=1860e41c2c5594886489ffe64608c112&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [PINKMAN] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-595715_lhd.m3u8?txSecret=87f58bf8c4404325f6ab9e64ff62baed&txTime=6a0a378b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV VOI] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912114_lsd.flv?auth_key=1779036475-0-0-fee9db0ef32d7a79aaff647768a66d06
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV VOI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912114_lhd.flv?auth_key=1779036475-0-0-a23d6073d75489b5022574b0df6a0373
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV VOI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912114_lsd.m3u8?auth_key=1779036475-0-0-ffee76afde33d50861fdc2f2bbb05c50
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV VOI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1779036475-0-0-aaf594713aa1a3b56b192f4c2df82ae9
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [BRIAN] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912106_lsd.flv?auth_key=1779036475-0-0-97aeddf21efa577b7781665232a6ef9f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [BRIAN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912106_lhd.flv?auth_key=1779036475-0-0-7ecb48d33baecd13952f3d334355e7a8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [BRIAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912106_lsd.m3u8?auth_key=1779036475-0-0-d4925fd91d02dd5d8a7b4016cf15adb9
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [BRIAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1779036475-0-0-0748e26fae4af17edaf3937452cf7b3f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
+https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779036475-0-0-f4584537c6405b92762495a44a60d5e3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779036475-0-0-5f16f6dc8aeba5c7065d55d3d472f620
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
+https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779036475-0-0-234996c4dbce0e0762a3a894d976b5a2
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779036475-0-0-f3997e671a9bf55678da9c06ade5d7b2
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [VƯƠNG ANH] (Socolive) flv
+https://pull.niur.live/live/stream-548860_lsd.flv?txSecret=7ccb49c886900a4f1b04b5f47d3934e2&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [VƯƠNG ANH] (Socolive) hdFlv
+https://pull.niur.live/live/stream-548860_lhd.flv?txSecret=33c6a2a663345ec214baf25af184a46e&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [VƯƠNG ANH] (Socolive) m3u8
+https://pull.niur.live/live/stream-548860_lsd.m3u8?txSecret=7ccb49c886900a4f1b04b5f47d3934e2&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Leeds United vs Brighton Hove Albion [VƯƠNG ANH] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-548860_lhd.m3u8?txSecret=33c6a2a663345ec214baf25af184a46e&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV LONG] (Socolive) flv
+https://pull.niur.live/live/stream-9912050_lsd.flv?txSecret=b0474222855768c37871960456778642&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV LONG] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912050_lhd.flv?txSecret=b557740541cdacae20218ec5dd74d4ed&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV LONG] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912050_lsd.m3u8?txSecret=b0474222855768c37871960456778642&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV LONG] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912050_lhd.m3u8?txSecret=b557740541cdacae20218ec5dd74d4ed&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV RÔSI] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912102_lsd.flv?auth_key=1779036835-0-0-efdc41b29b013c29d6211da0bbc4ce76
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV RÔSI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912102_lhd.flv?auth_key=1779036835-0-0-b042405379da3673615c91a24b7ccbc0
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV RÔSI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912102_lsd.m3u8?auth_key=1779036835-0-0-8d8c94150df01dd1b3e09afc89d7e85a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Wolverhampton Wanderers vs Fulham [BLV RÔSI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912102_lhd.m3u8?auth_key=1779036835-0-0-e80eed375324ef23c9b329c81a994d32
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [CÔNG CHẤT] (Socolive) flv
+https://pull06.scstream.net/live/stream-291277_lsd.flv?auth_key=1779036835-0-0-1f4166c667d6bdf303fb1e6525ee0298
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [CÔNG CHẤT] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-291277_lhd.flv?auth_key=1779036835-0-0-cf593f336d8ee2a6b535651f0e1f1224
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [CÔNG CHẤT] (Socolive) m3u8
+https://pull.niues.live/live/stream-291277_lsd.m3u8?auth_key=1779036835-0-0-b5a800b5f480a3ce1500a4a007cb5038
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [CÔNG CHẤT] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1779036835-0-0-f13a1f356d5072913ebb705998d68bac
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV VITAMIN] (Socolive) flv
+https://pull06.scstream.net/live/stream-400722_lsd.flv?auth_key=1779036835-0-0-02fa83276ec13cdc95b4f2b923859793
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV VITAMIN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-400722_lhd.flv?auth_key=1779036835-0-0-09631fca645a9ae4475f50bae8641a63
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV VITAMIN] (Socolive) m3u8
+https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1779036835-0-0-211d20f1ab82943bc3eb316287c10b97
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",ITA D1: Atalanta vs Bologna [BLV VITAMIN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1779036835-0-0-ade179abbc3c0523ce42ccfdfa923cc1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [BLV WUKONG] (Socolive) flv
+https://pull06.scstream.net/live/stream-511367_lsd.flv?auth_key=1779036835-0-0-647e2b12068e4286d936c2aa70240c9a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [BLV WUKONG] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-511367_lhd.flv?auth_key=1779036835-0-0-966d1523a32217e04565c85b3f250710
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [BLV WUKONG] (Socolive) m3u8
+https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1779036835-0-0-7daa1940305b8b53d602cd86ec1f1cbb
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 17/05 Santos Fc - SP vs Coritiba SAF - PR [BLV WUKONG] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1779036835-0-0-c02e25ff8685feb5e9f575fc454aa7dc
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [BLV HENRY] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912112_lsd.flv?auth_key=1779036835-0-0-0f8645db3426293857882c3fa8cdf731
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [BLV HENRY] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912112_lhd.flv?auth_key=1779036835-0-0-bdc559812996593bba512dcd0d968082
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [BLV HENRY] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912112_lsd.m3u8?auth_key=1779036835-0-0-61f75bac57b3e7c3de976fb6a8e5ac65
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [BLV HENRY] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1779036835-0-0-09c5299ef8664fcb3da16440331b970c
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [KING] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1779036835-0-0-c0b783a3450f95ef7d55931ce09055b2
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [KING] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1779036835-0-0-8b17f671a5d4af9801d1ed209cfcca4f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [KING] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1779036835-0-0-ae5c6ed1393df58fdee3390534732a38
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h30 ngày 17/05 Bayern vs Trier [KING] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1779036835-0-0-76cd9a6a736e85a4a1d8cde28e3bb6f6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV A TINH] (Socolive) flv
+https://pull.niur.live/live/stream-598119_lsd.flv?txSecret=e2b98a86cf1a1a245fbcd338ca26c964&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV A TINH] (Socolive) hdFlv
+https://pull.niur.live/live/stream-598119_lhd.flv?txSecret=e37ae7541874b47f2a57bbfe4a6b4a00&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV A TINH] (Socolive) m3u8
+https://pull.niur.live/live/stream-598119_lsd.m3u8?txSecret=e2b98a86cf1a1a245fbcd338ca26c964&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Krasnodar vs Gazovik Orenburg [BLV A TINH] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=e37ae7541874b47f2a57bbfe4a6b4a00&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [BLV A WIN] (Socolive) flv
+https://pull06.scstream.net/live/stream-536185_lsd.flv?auth_key=1779036835-0-0-743fc4e36e8b90f5eb0306b9eb5d30a7
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [BLV A WIN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-536185_lhd.flv?auth_key=1779036835-0-0-2a226679648ad1806f14be0cfc8674dc
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [BLV A WIN] (Socolive) m3u8
+https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1779036835-0-0-91eacdd16a5eecf6ac5ccc960393bd37
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 FK Rostov vs Zenit St. Petersburg [BLV A WIN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1779036835-0-0-53e7e16c3d92e56b6e919598752b0c96
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Juventus vs Fiorentina [QUỐC KHÁNH] (Socolive) flv
+https://pull.niur.live/live/stream-602153_lsd.flv?txSecret=6ba429d21674cb6f9fb695174ca194ce&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Juventus vs Fiorentina [QUỐC KHÁNH] (Socolive) hdFlv
+https://pull.niur.live/live/stream-602153_lhd.flv?txSecret=6af10e37ffce4033507ac9be81f63fe4&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Juventus vs Fiorentina [QUỐC KHÁNH] (Socolive) m3u8
+https://pull.niur.live/live/stream-602153_lsd.m3u8?txSecret=6ba429d21674cb6f9fb695174ca194ce&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h30 ngày 17/05 Juventus vs Fiorentina [QUỐC KHÁNH] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-602153_lhd.m3u8?txSecret=6af10e37ffce4033507ac9be81f63fe4&txTime=6a0a38f3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [A CHÈ] (Socolive) flv
+https://pull06.scstream.net/live/stream-356042_lsd.flv?auth_key=1779036835-0-0-2560cc68aae72287533bb95785b7dd37
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [A CHÈ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-356042_lhd.flv?auth_key=1779036835-0-0-00cb48237babf0b3d02178fd82f362ca
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [A CHÈ] (Socolive) m3u8
+https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1779036835-0-0-b367eb493c7b89c67d3859d586e5ba88
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 17/05 Valencia vs Bilbao [A CHÈ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1779036835-0-0-f3e51e54fa7727d915f2fe3b0ede0ee5
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 17/05 Brentford vs Crystal Palace (Hội Quán) FHD
 https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
@@ -1704,14 +1641,11 @@ https://live5.msrktz.app/live/24561735.m3u8
 https://live5.msrktz.app/live/33982309.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 17/05 Everton vs Sunderland
-https://live5.msrktz.app/live/87547578.m3u8
+https://live5.msrktz.app/live/90725470.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 17/05 Wolves vs Fulham
 https://live5.msrktz.app/live/90865415.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h30 17/05 PSV Eindhoven vs Twente
-https://live5.msrktz.app/live/14707124.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 17/05 Inter Milan vs Hellas Verona F.C.
-https://live5.msrktz.app/live/02456966.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 17/05 Atalanta B.C. vs Bologna F.C. 1909
+https://live5.msrktz.app/live/75915087.m3u8
 
