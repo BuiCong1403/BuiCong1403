@@ -1,4 +1,7 @@
 #EXTM3U
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/1602.png",06:30 | New York Red Bulls vs New York City FC
+https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
+
 #EXTINF:-1 group-title="VTV" tvg-logo="https://img-ali1.tv360.vn/image1/2023/06/15/08/1686794357811/c08ce385651d_640_360.png",VTV5
 https://live-a.fptplay53.net/live/media/VTV5HD/live_hls_avc/index.m3u8
 
@@ -58,6 +61,9 @@ https://liveh12.vtvprime.vn/hls/SCTVPHIM/03.m3u8
 
 #EXTINF:-1 group-title="Quốc tế" tvg-logo="https://i.postimg.cc/597PXnqD/784px-Tvb-logo-svg.png",TVB VietNam
 https://amg01868-amg01868c3-tvbanywhere-us-4491.playouts.now.amagi.tv/playlist1080p.m3u8
+
+#EXTINF:-1 group-title="Quốc tế" tvg-logo="https://img.vtvprime.vn/bx7_O8VnoPiHJ9mA_aTHMuMu9NngsDvN14MIdNzfAdk/rs:fit:836:468/czM6Ly9wcmQtc24taW1hZ2VzL2NoYW5uZWwvZTYwZjk3MmYtYjMzYy00ZWQ2LTllODMtMjU0ODdmNWVlZDA0LnBuZw==.png",History HD
+https://sgclient.duckdns.org/source/tv360.m3u8?id=9856
 
 #EXTINF:-1 group-title="Quốc tế" tvg-logo="https://i.postimg.cc/ryBfGz3R/EBS-KIDS-2000.png",EBS Kids TV
 https://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
@@ -185,42 +191,111 @@ https://strm.voh.com.vn/radio/channel5/playlist.m3u8
 #EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-am610-512x512-104316.png",VOH AM 610Khz
 https://strm.voh.com.vn/radio/channel2/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Internacional - RS vs Vasco da Gama Saf - RJ [BLV ANH TÀI] (Socolive) m3u8
-https://pull.niues.live/live/stream-406865_lsd.m3u8?auth_key=1778974194-0-0-b8b27360b955a02354fccb791898f975
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 DC United vs St. Louis City (Lương Sơn) BLV VÕ TÒNG m3u
+https://hls.cdnfaster-a.live/live/VOTONG/index.m3u8?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Internacional - RS vs Vasco da Gama Saf - RJ [BLV ANH TÀI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1778974194-0-0-4196035c168459d039b1ba6eb5aee9b1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Charlotte FC vs Toronto FC (Lương Sơn) BLV LÝ QUỲ m3u
+https://hls.cdnfaster-a.live/live/LYQUY/index.m3u8?expire=1891408380&sign=4eb9451ad0178fa8207d583db7d469e3
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Internacional - RS vs Vasco da Gama Saf - RJ [MONEY MAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-605412_lsd.m3u8?auth_key=1778974194-0-0-2784aaf2aa88189fbf77853afa91f608
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 DC United vs St. Louis City SC [BLV YONE] (Socolive) m3u8
+https://pull.niues.live/live/stream-372746_lsd.m3u8?auth_key=1778978154-0-0-d8bc9d23ba2bb74ea4932a21e0a84b4a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Internacional - RS vs Vasco da Gama Saf - RJ [MONEY MAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-605412_lhd.m3u8?auth_key=1778974194-0-0-bb09f29a00ed70707ad87be81c7dee10
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 DC United vs St. Louis City SC [BLV YONE] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1778978154-0-0-7301f36152b1ec335b74b2f0561424ec
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV NẤM] (Socolive) m3u8
-https://pull.niues.live/live/stream-608899_lsd.m3u8?auth_key=1778974194-0-0-5be1a8749fd9dcf4cc366c0246bc1925
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Orlando City vs Atlanta United [BLV A TÚ] (Socolive) m3u8
+https://pull.niues.live/live/stream-557845_lsd.m3u8?auth_key=1778978154-0-0-37c4e532c0af042eb1a45a3cb2d00ca4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV NẤM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-608899_lhd.m3u8?auth_key=1778974194-0-0-22b9aaea27350ad7531cc2e586dd6ce2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Orlando City vs Atlanta United [BLV A TÚ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1778978154-0-0-16960007e93f8d3b848af36ba02de63b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Atlético Mineiro - MG vs Mirassol - SP [BLV GÔN] (Socolive) m3u8
-https://pull.niues.live/live/stream-445260_lsd.m3u8?auth_key=1778974194-0-0-a36d406bbf76d0db0640071987209022
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Charlotte FC vs Toronto FC [BLV WUKONG] (Socolive) m3u8
+https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1778978514-0-0-cbbb5103a68b269fdac24f7d897bbbf8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Atlético Mineiro - MG vs Mirassol - SP [BLV GÔN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-445260_lhd.m3u8?auth_key=1778974194-0-0-d3c3c1ca2b6bb699d95a89f5136850fa
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Charlotte FC vs Toronto FC [BLV WUKONG] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1778978514-0-0-85a21f861d8e3355192d502b8f10b1fb
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Philadelphia Union vs Columbus Crew [BLV BÉO] (Socolive) m3u8
+https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=1016db24afec2f5a552424699a0cd175&txTime=6a095522
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Philadelphia Union vs Columbus Crew [BLV BÉO] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=3026f0bc5068aa137862e25f6aba1a35&txTime=6a095522
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV CHIVAS] (Socolive) m3u8
-https://pull.niur.live/live/stream-485739_lsd.m3u8?txSecret=c515afa29350b2a3e1a7846ec359d869&txTime=6a094442
+https://pull.niur.live/live/stream-485739_lsd.m3u8?txSecret=93c3f2cb5a6a4c78fbc3d0317177c29b&txTime=6a095522
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV CHIVAS] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=8dab75c3a0e09db1d676aeb3837b6141&txTime=6a094442
+https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=e6f835f4ee69bba070a29f4b749c7f06&txTime=6a095522
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Atlético Mineiro - MG vs Mirassol - SP [THẠCH TÚ] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=6aa7d3e59ab5c4df57d7e69f645126e2&txTime=6a0945aa
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Charlotte FC vs Toronto FC [BLV KAN] (Socolive) m3u8
+https://pull.niur.live/live/stream-283501_lsd.m3u8?txSecret=6405c770e1fedbe90446a0811a9bf1c1&txTime=6a095522
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 17/05 Atlético Mineiro - MG vs Mirassol - SP [THẠCH TÚ] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=383e256ba7897a9de444bf096249582a&txTime=6a0945aa
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Charlotte FC vs Toronto FC [BLV KAN] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=9f536f602b37ffbafec0dbcd257fb4ed&txTime=6a095522
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h15 03/05 RC Strasbourg vs Toulouse FC
-https://live5.msrktz.app/live/90725470.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV NẤM] (Socolive) m3u8
+https://pull.niues.live/live/stream-608899_lsd.m3u8?auth_key=1778978514-0-0-e7be755c0e3f80e274b2857a140efa89
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 17/05 Fluminense - RJ vs São Paulo - SP [BLV NẤM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-608899_lhd.m3u8?auth_key=1778978514-0-0-bc717ac9956844794dadb414c4e8cb3d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Philadelphia Union vs Columbus Crew [BLV CÒ] (Socolive) m3u8
+https://pull.niues.live/live/stream-582342_lsd.m3u8?auth_key=1778978514-0-0-e474f7eb575ffbfb37cdf1ebc2bb9205
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Philadelphia Union vs Columbus Crew [BLV CÒ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1778978514-0-0-17fbc4f4184606f8ca579c21a5090656
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Instituto de Cordoba vs Quimsa [KING] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1778978514-0-0-3acf5d3be2da17734ced4d9eaa015074
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Instituto de Cordoba vs Quimsa [KING] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1778978514-0-0-8e15a36601bb9575a11bb7fd5a410925
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 New York Red Bulls vs New York City FC [LOGAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-552832_lsd.m3u8?auth_key=1778978874-0-0-0996ef64f5fe31cc9b42af71dd5a203d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 New York Red Bulls vs New York City FC [LOGAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1778978874-0-0-b326ff0e697073454d4927302ba6bbe6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 17/05 Palmeiras - SP vs Cruzeiro - MG [BLV GÔN] (Socolive) m3u8
+https://pull.niues.live/live/stream-445260_lsd.m3u8?auth_key=1778978874-0-0-09bb9f847f84856bf409c2f3450240ec
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 17/05 Palmeiras - SP vs Cruzeiro - MG [BLV GÔN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-445260_lhd.m3u8?auth_key=1778978874-0-0-09044ca7dc416ba71e98ace7d9a82737
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Orlando City vs Atlanta United [BLV ANH TÀI] (Socolive) m3u8
+https://pull.niues.live/live/stream-406865_lsd.m3u8?auth_key=1778978874-0-0-00706fe15021682d7a81bbb8793435f5
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 Orlando City vs Atlanta United [BLV ANH TÀI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1778978874-0-0-11baab90c7ee6fd1703cc887ebbd3219
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 New York Red Bulls vs New York City FC [VỊT BẠC] (Socolive) m3u8
+https://pull.niues.live/live/stream-474421_lsd.m3u8?auth_key=1778978874-0-0-7d8fa7615490872d0ea0dcfabcd8a327
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 New York Red Bulls vs New York City FC [VỊT BẠC] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-474421_lhd.m3u8?auth_key=1778978874-0-0-50fbe385cdb4f2c371cecdf7ef479ee1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 17/05 Palmeiras - SP vs Cruzeiro - MG [BLV RÔSI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912102_lsd.m3u8?auth_key=1778978874-0-0-48f3bcae19572848fdba6396ed082624
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 17/05 Palmeiras - SP vs Cruzeiro - MG [BLV RÔSI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912102_lhd.m3u8?auth_key=1778978874-0-0-3910d1dad98a6cf0e950f6a0d97a88ff
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 New England Revolution vs Minnesota United FC [HẢI THANH] (Socolive) m3u8
+https://pull.niues.live/live/stream-599634_lsd.m3u8?auth_key=1778978874-0-0-f010fd35f2b67a9dc0ef07275b5aeaec
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 17/05 New England Revolution vs Minnesota United FC [HẢI THANH] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-599634_lhd.m3u8?auth_key=1778978874-0-0-90624737634c0941b21e77084cf1c7ca
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 17/05 New York Red Bulls vs New York City FC (Hội Quán) FHD
+https://hqlive.yarncdn.live/live/hqtv_blv_phananh/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 17/05 New York Red Bulls vs New York City FC (Hội Quán) SD
+https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h30 03/05 Real Betis Balompié vs R. Oviedo
+https://live5.msrktz.app/live/43612277.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h15 03/05 AJ Auxerre vs Angers SCO
+https://live5.msrktz.app/live/87547578.m3u8
 
