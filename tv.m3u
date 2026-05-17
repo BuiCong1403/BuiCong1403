@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeHUNqkPcsEZ49zQsdnGULnXmI89g8SxAEmw&s",01:45 | Udinese vs Cremonese
-https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phantu/playlist.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/114.png",02:00 | Paris FC vs Paris Saint Germain
 https://alive.yarncdn.live/hqtv_blv_phanbap/tracks-v2a1/mono.m3u8
 
@@ -16,6 +13,9 @@ https://alive.yarncdn.live/tdtv_blv_taothienvuong/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/114.png",Paris FC vs Paris Saint Germain
 https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
+
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/80.png",Lyon vs Lens
+https://bglive.yarncdn.live/live/bgtv_blv_lenh/playlist.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/529.png",Barcelona vs Real Betis
 https://bglive.yarncdn.live/live/bgtv_blv_tieubaxa/playlist.m3u8
@@ -206,203 +206,140 @@ https://strm.voh.com.vn/radio/channel5/playlist.m3u8
 #EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-am610-512x512-104316.png",VOH AM 610Khz
 https://strm.voh.com.vn/radio/channel2/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV MESSI] (Socolive) m3u8
-https://pull.niues.live/live/stream-494201_lsd.m3u8?auth_key=1779047635-0-0-389224cc73432c355d615c1e4465e066
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis (Lương Sơn) BLV TRIỆU TỬ LONG m3u
+https://hls.cdnfaster-a.live/live/TRIEUTULONG/index.m3u8?expire=1788427256&sign=45e4fdc4bdb8472f513ccc78f57f6070
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV MESSI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1779047635-0-0-50a4d07167a3d44bc193a7c60a1cb0c4
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis (Lương Sơn) BLV LEO m3u
+https://hls.cdnfaster-a.live/live/LEO/index.m3u8?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis (Lương Sơn) BLV NHỊ KA m3u
+https://hls.cdnfaster-a.live/live/NHIKA1/index.m3u8?expire=1788427256&sign=91d8d858b7cdccb6dd825469190514bd
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis (Lương Sơn) BLV QUAN VŨ m3u
+https://hls.cdnfaster-a.live/live/QUANVU/index.m3u8?expire=1788427256&sign=056d097a0bbbd810493fd64ccf4831b7
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Lyon vs Lens (Lương Sơn) BLV HÀN TÍN m3u
+https://hls.cdnfaster-a.live/live/HANTIN/index.m3u8?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Rennes (Lương Sơn) BLV LÃO HẠC m3u
+https://hls.cdnfaster-a.live/live/LAOHAC/index.m3u8?expire=2556118740&sign=d7e003f1201f61166a559ac474dc7491
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Lorient vs Le Havre (Lương Sơn) BLV MAYBACH m3u
+https://hls.cdnfaster-a.live/live/MAYBACH/index.m3u8?expire=1923468720&sign=862d9b5fa441bf644b6c2fbcec08487b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Strasbourg vs Monaco (Lương Sơn) BLV A TỦA m3u
+https://hls.cdnfaster-a.live/live/ATUA/index.m3u8?expire=1830276060&sign=070cf2d17a1720d3e42600ba2dfaed74
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [BLV MIXI] (Socolive) m3u8
-https://pull.niues.live/live/stream-290928_lsd.m3u8?auth_key=1779047635-0-0-e6cc6e0d5bf7d75009163033c51f4eeb
+https://pull.niues.live/live/stream-290928_lsd.m3u8?auth_key=1779054115-0-0-9972d38360ca13bf8202a4d6580d2b92
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [BLV MIXI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-290928_lhd.m3u8?auth_key=1779047635-0-0-1eb4ff07d9abfadd020a1ded3c085772
+https://pull.niues.live/live/stream-290928_lhd.m3u8?auth_key=1779054115-0-0-6ee83abe4f77a7e415a07f7a16d37aba
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV 7UP] (Socolive) m3u8
-https://pull.niues.live/live/stream-534219_lsd.m3u8?auth_key=1779047635-0-0-3dd68c247256ab3de166b492435f94e0
+https://pull.niues.live/live/stream-534219_lsd.m3u8?auth_key=1779054115-0-0-483056a0b8d2840eeead7b815f6ddb51
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV 7UP] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-534219_lhd.m3u8?auth_key=1779047635-0-0-16c2f00a0577dc0248a320f6fd495a12
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 18/05 Levante vs RCD Mallorca [BLV GÔN] (Socolive) m3u8
-https://pull.niues.live/live/stream-445260_lsd.m3u8?auth_key=1779047635-0-0-d2691a371bd683bcb5437266252cba64
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 18/05 Levante vs RCD Mallorca [BLV GÔN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-445260_lhd.m3u8?auth_key=1779047635-0-0-f8f8418a04ba81bc9efbd5a0b6700aa4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Udinese vs Cremonese [BLV VITAMIN] (Socolive) m3u8
-https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1779047635-0-0-3b8c79dc31f5d98952680edbb911fd48
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Udinese vs Cremonese [BLV VITAMIN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1779047635-0-0-4b47da2e2eb545afc48316458555a842
+https://pull.niues.live/live/stream-534219_lhd.m3u8?auth_key=1779054115-0-0-6ca0964db85ceed1030dbbbf5e4985ac
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [LOKA] (Socolive) m3u8
-https://pull.niues.live/live/stream-589848_lsd.m3u8?auth_key=1779047635-0-0-855b7ade123749a2e4ad35741269ace0
+https://pull.niues.live/live/stream-589848_lsd.m3u8?auth_key=1779054115-0-0-d9376435f161b34d97fcc0cd6892e301
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [LOKA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1779047635-0-0-9c1cca98c665e4cd54518046a97fcf90
+https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1779054115-0-0-8077451d2fbefc40844d63e822416b7e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV MESSI] (Socolive) m3u8
+https://pull.niues.live/live/stream-494201_lsd.m3u8?auth_key=1779054115-0-0-031807ae243559e7588a6aa177d597b7
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV MESSI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1779054115-0-0-7bc5959b970ae2c5773479ae86b5551f
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Sassuolo vs Lecce [BLV ALEX] (Socolive) m3u8
-https://pull.niues.live/live/stream-532081_lsd.m3u8?auth_key=1779047635-0-0-7187bd364123972d1cda866935c78119
+https://pull.niues.live/live/stream-532081_lsd.m3u8?auth_key=1779054115-0-0-a7c6b0a9c17823d0ef841f6de3e8de37
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Sassuolo vs Lecce [BLV ALEX] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1779047635-0-0-fc9377d0d947e691629b7b421f86ad36
+https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1779054115-0-0-d44a169728b6410645abd90f3fae5162
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Cagliari vs Torino [BLV RAMBO] (Socolive) m3u8
-https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=21aed79db3b0a8b2f768ca9dc39138f1&txTime=6a0a6323
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 LOSC Lille vs AJ Auxerre [BLV GÔN] (Socolive) m3u8
+https://pull.niues.live/live/stream-445260_lsd.m3u8?auth_key=1779054115-0-0-fd29e8b16e68b8c79509fcc93ebc8a40
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Cagliari vs Torino [BLV RAMBO] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=20f19b98585fe1e042b4e40531cc3b93&txTime=6a0a6323
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Udinese vs Cremonese [BLV CÁO] (Socolive) m3u8
-https://pull.niues.live/live/stream-597929_lsd.m3u8?auth_key=1779047635-0-0-24f7729cda46cd620d4a93befa9813a4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Udinese vs Cremonese [BLV CÁO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1779047635-0-0-c424654a2b927fd07dd4f1b56e461895
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Sassuolo vs Lecce [TRÀ ĐÁ] (Socolive) m3u8
-https://pull.niues.live/live/stream-603914_lsd.m3u8?auth_key=1779047635-0-0-fb3d1f3cebdd71f2bb380cf30b276e81
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 18/05 Sassuolo vs Lecce [TRÀ ĐÁ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1779047635-0-0-8f4327cc206e3adadef9eb3678b3181e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 LOSC Lille vs AJ Auxerre [BLV RYO] (Socolive) m3u8
-https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1779047635-0-0-5f8b7c044c456b29461af5e335d7e044
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 LOSC Lille vs AJ Auxerre [BLV RYO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1779047635-0-0-2e115ef9b9ec126820e3c25fd17e150b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 LOSC Lille vs AJ Auxerre [BLV GÔN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-445260_lhd.m3u8?auth_key=1779054115-0-0-58a230682a265fd1fd6054fcc8c01d62
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 RC Strasbourg Alsace vs AS Monaco [QUỐC KHÁNH] (Socolive) m3u8
-https://pull.niur.live/live/stream-602153_lsd.m3u8?txSecret=968ffd9abcba53a4c291ef7ccbca3d5c&txTime=6a0a6323
+https://pull.niur.live/live/stream-602153_lsd.m3u8?txSecret=6f8b339878e1728e7eb90c620361d12f&txTime=6a0a7c73
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 RC Strasbourg Alsace vs AS Monaco [QUỐC KHÁNH] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-602153_lhd.m3u8?txSecret=42eba4486ce54b563d09572ecd06881e&txTime=6a0a6323
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Lyon vs RC Lens [BLV VOI] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912114_lsd.m3u8?auth_key=1779047635-0-0-ac428628ab636133776b98f58a33f7ae
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Lyon vs RC Lens [BLV VOI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1779047635-0-0-533a8dbb8e814811fa512824ff45257f
+https://pull.niur.live/live/stream-602153_lhd.m3u8?txSecret=44f45e2b459cffdc5bb7884468baba0c&txTime=6a0a7c73
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [BLV A TINH] (Socolive) m3u8
-https://pull.niur.live/live/stream-598119_lsd.m3u8?txSecret=803bc1c1aaa9d97be547b2630df4c972&txTime=6a0a6323
+https://pull.niur.live/live/stream-598119_lsd.m3u8?txSecret=9bb72522df4d33ead35367fdef0242ab&txTime=6a0a7c73
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [BLV A TINH] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=986b85b10599ca2da043cfb585752ea7&txTime=6a0a6323
+https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=29d93e7694b1d73a9925f57f7ae28cbd&txTime=6a0a7c73
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Lyon vs RC Lens [CHANH MUỐI] (Socolive) m3u8
-https://pull.niues.live/live/stream-598549_lsd.m3u8?auth_key=1779047635-0-0-0b7cd2f1ec28ef6240dfb532912a70ce
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [KÉP] (Socolive) m3u8
+https://pull.niues.live/live/stream-560690_lsd.m3u8?auth_key=1779054115-0-0-609db4f90af16a1bbf1d8e5379f6807b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Lyon vs RC Lens [CHANH MUỐI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-598549_lhd.m3u8?auth_key=1779047635-0-0-17211777f01b53805d54267d1ed35ea3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 LOSC Lille vs AJ Auxerre [PINKMAN] (Socolive) m3u8
-https://pull.niur.live/live/stream-595715_lsd.m3u8?txSecret=77f8c3f002af4cd182e35836d6b392d7&txTime=6a0a6323
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 LOSC Lille vs AJ Auxerre [PINKMAN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-595715_lhd.m3u8?txSecret=00fa8b535dceb9cd004212f0050af9eb&txTime=6a0a6323
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV TOMIA] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1779047995-0-0-35090d43b3a9b2b5557f8acece332207
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV TOMIA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1779047995-0-0-58abaf8c4a2064071ecdbaae442d9846
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV PEWPEW] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912015_lsd.m3u8?auth_key=1779047995-0-0-c3b28bd203b7223819fc409d92c2aca0
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV PEWPEW] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1779047995-0-0-e55709d69a78081d6208839540b38bef
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [CÔNG CHẤT] (Socolive) m3u8
-https://pull.niues.live/live/stream-291277_lsd.m3u8?auth_key=1779047995-0-0-d17091f7d48c74ed19f4c99b9e66f7bd
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [CÔNG CHẤT] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1779047995-0-0-b7f15ea1534bc0938947b63ec4b56910
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [KÉP] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1779054115-0-0-fe3d62ccac1589b0d119e5520fef18ce
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [A BỆU] (Socolive) m3u8
-https://pull.niues.live/live/stream-484845_lsd.m3u8?auth_key=1779047995-0-0-5eedb774d2d9b9d1b4714bb0d73ff701
+https://pull.niues.live/live/stream-484845_lsd.m3u8?auth_key=1779054475-0-0-4b38fa98be4766eefe920dbc437abaed
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [A BỆU] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1779047995-0-0-599a281784e202313c1c0159d05eaa14
+https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1779054475-0-0-59da0e4bcbc6a4e3ea464f7b4f7fb6b6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [THẠCH TÚ] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=95dd784033ddf9eebe7aa14b71786be5&txTime=6a0a645b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [CÔNG CHẤT] (Socolive) m3u8
+https://pull.niues.live/live/stream-291277_lsd.m3u8?auth_key=1779054475-0-0-29f6daebb4c97e7aca26a1b4ddb91f37
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [THẠCH TÚ] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=3ea800a9dd64544884ce9e7233da5330&txTime=6a0a645b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [BLV XO] (Socolive) m3u8
-https://pull.niues.live/live/stream-472241_lsd.m3u8?auth_key=1779047995-0-0-e1ee1a1c84dd6510b26fd47da3f6831b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [BLV XO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1779047995-0-0-0c9572d0df36fdadfab78004d5e570a6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [BLV COZY] (Socolive) m3u8
-https://pull.niues.live/live/stream-531989_lsd.m3u8?auth_key=1779047995-0-0-aba5e75a64d65a4cff6754438804fcc9
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [BLV COZY] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1779047995-0-0-efbebfefd7bee64f740b5861cb65bab7
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [BLV A WIN] (Socolive) m3u8
-https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1779047995-0-0-4fafbbc0031d255a91b24a798915ef93
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [BLV A WIN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1779047995-0-0-eb47cdfad2c68fdb1ff19beead46904c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Paris FC vs Paris Saint Germain [CÔNG CHẤT] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1779054475-0-0-827a2d9a5ab9a6a9a9a09272cbdc884e
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Lyon vs RC Lens [BLV WUKONG] (Socolive) m3u8
-https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1779047995-0-0-003c0cd008530427ec292e2c2dad6f04
+https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1779054475-0-0-6203d4c8d6459ff071dbd895be7e3eb4
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Lyon vs RC Lens [BLV WUKONG] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1779047995-0-0-f825da84cfdbcafdd1777c3c65d05da5
+https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1779054475-0-0-ec5d8ea45b4e139c9e7ab6cf76cae3d4
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV TOMIA] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1779054475-0-0-3576618bf48dfbd047012cf6a470e484
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV TOMIA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1779054475-0-0-bab1b1ef712dbdb9860925bb44198ebc
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [THẠCH TÚ] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=27d816af0be90802b57ff1eb1fc3bf62&txTime=6a0a7ddb
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [THẠCH TÚ] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=84553f48db4aaeebd65a06d9b6ed7e3c&txTime=6a0a7ddb
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV PEWPEW] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912015_lsd.m3u8?auth_key=1779054475-0-0-71e2bc01f4b1ffe22759d8fd983a655a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 ngày 18/05 FC Barcelona vs Real Betis [BLV PEWPEW] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1779054475-0-0-3662a25a5758575d4d3c937f41aa3a18
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 RC Strasbourg Alsace vs AS Monaco [HẢI THANH] (Socolive) m3u8
-https://pull.niues.live/live/stream-599634_lsd.m3u8?auth_key=1779047995-0-0-320ddef079753b53f647299f853ffda7
+https://pull.niues.live/live/stream-599634_lsd.m3u8?auth_key=1779054475-0-0-8f0a17388bcb7714498d73e4363d6ad3
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 RC Strasbourg Alsace vs AS Monaco [HẢI THANH] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-599634_lhd.m3u8?auth_key=1779047995-0-0-68d86ee18bffbbfe71f1b0cd255d4a02
+https://pull.niues.live/live/stream-599634_lhd.m3u8?auth_key=1779054475-0-0-68cc8ca8416f27e7ac783113ed070ff7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 LOSC Lille vs AJ Auxerre [NGƯỜI CÁ] (Socolive) m3u8
-https://pull.niues.live/live/stream-595335_lsd.m3u8?auth_key=1779047995-0-0-3dc4dd724f6c763cff20c757be5bc5f7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [BLV A WIN] (Socolive) m3u8
+https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1779054475-0-0-cfcbe456c645c42ad7444bab96635976
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 LOSC Lille vs AJ Auxerre [NGƯỜI CÁ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-595335_lhd.m3u8?auth_key=1779047995-0-0-4594d40805fd5210fb18ec9001d0058e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 18/05 Atletico Madrid vs Girona (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phando/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 18/05 Athletic Club vs Celta Vigo (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanbap/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 18/05 Athletic Club vs Celta Vigo (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phanbap/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 18/05 Marseille vs Rennes (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanhalinh/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 18/05 Marseille vs Stade Rennais FC [BLV A WIN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1779054475-0-0-bfb09beb831da0a1cf7f98549907742d
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 18/05 Marseille vs Rennes (Hội Quán) SD
 https://alive.zlylive.com/hqtv_blv_phanhalinh/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 18/05 Lyon vs Lens (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 18/05 Lyon vs Lens (Hội Quán) SD
 https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 18/05 Barcelona vs Real Betis (Hội Quán) FHD
 https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 18/05 Udinese Calcio vs U.S. Cremonese
-https://live5.msrktz.app/live/43612277.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 18/05 Paris FC vs Paris Saint-Germain
-https://live5.msrktz.app/live/33982309.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 18/05 Olympique Lyonnais vs RC Lens
-https://live5.msrktz.app/live/07808742.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 18/05 Lille OSC vs AJ Auxerre
-https://live5.msrktz.app/live/68848594.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h15 18/05 FC Barcelona vs Real Betis Balompié
 https://live5.msrktz.app/live/24561735.m3u8
