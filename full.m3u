@@ -2,9 +2,6 @@
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://static.flashscore.com/res/image/data/KbyBL1Xg-8hRiTVXM.png",18:35 | Shenzhen vs Zheijiang Guangsha
 https://alive.yarncdn.live/hqtv_blv_phanbap/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEaNCIKzpPJH83I5J2Exi7EAkD4McMVH54pA&s",09:00 | Junior vs Sporting Cristal
-https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/3466.png",18:30 | Minerva Punjab vs Mumbai City
 https://alive.yarncdn.live/hqtv_blv_phando/tracks-v2a1/mono.m3u8
 
@@ -18,13 +15,16 @@ https://alive.yarncdn.live/hqtv_blv_phanchop/tracks-v2a1/mono.m3u8
 https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/3669.png",18:00 | Da Nang vs Hai Phong
-https://hqlive.yarncdn.live/live/hqtv_blv_phanca/playlist.m3u8
+https://alive.zlylive.com/hqtv_blv_phanca/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://static.flashscore.com/res/image/data/O2nuZwRp-vaAM5VhK.png",09:00 | PERODUA Malaysia Masters 2026
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/2348.png",07:30 | Penarol vs Corinthians
+https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://static.flashscore.com/res/image/data/O2nuZwRp-vaAM5VhK.png",15:30 | đ
 https://alive.yarncdn.live/hqtv_blv_phanchuot/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9rAnTZYoVrPrRYk6v42jOGyuryeGBsKbyFA&s",19:30 | Alexei Popyrin vs Casper Ruud
-https://yvm80526.edgemaxcdn.org/live/hqtv_blv_phantu/playlist.m3u8
+https://alive.yarncdn.live/hqtv_blv_phantu/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/45/Ugyen_Academy_FC.png/250px-Ugyen_Academy_FC.png",17:00 | Ugyen Academy vs Tsirang
 https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
@@ -59,65 +59,59 @@ https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/194.png",Ajax vs Groningen
 https://bglive.yarncdn.live/live/bgtv_blv_tieubaxa/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit (W) vs Pachuca (W) (Lương Sơn) BLV VÕ TÒNG m3u
-https://hls.cdnfaster-a.live/live/VOTONG/index.m3u8?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid Klub vs Tuv Buganuud (Lương Sơn) BLV URA m3u
+https://hls.cdnfaster-a.live/live/URA/index.m3u8?expire=1788427256&sign=b321b6b8b5cd73e24aae2a3a16b7b5d2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit (W) vs Pachuca (W) (Lương Sơn) BLV VÕ TÒNG flv
-https://flv.cdnfaster-a.live/live/VOTONG.flv?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid Klub vs Tuv Buganuud (Lương Sơn) BLV URA flv
+https://flv.cdnfaster-a.live/live/URA.flv?expire=1788427256&sign=b321b6b8b5cd73e24aae2a3a16b7b5d2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit (W) vs Pachuca (W) (Lương Sơn) BLV PELE m3u
-https://hls.cdnfaster-a.live/live/NGUCA/index.m3u8?expire=1788427256&sign=abf9c93edd0de1c833f9ffc14381d526
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints (Lương Sơn) BLV YẾN THANH m3u
+https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit (W) vs Pachuca (W) (Lương Sơn) BLV PELE flv
-https://flv.cdnfaster-a.live/live/NGUCA.flv?expire=1788427256&sign=abf9c93edd0de1c833f9ffc14381d526
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints (Lương Sơn) BLV YẾN THANH flv
+https://flv.cdnfaster-a.live/live/YENTHANH1.flv?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal (Lương Sơn) BLV TỐNG GIANG m3u
-https://hls.cdnfaster-a.live/live/TONGGIANG/index.m3u8?expire=1788427256&sign=ac21cc5b5adee840dbf13de749dc2cca
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid Klub vs Tuv Buganuud (Lương Sơn) BLV TÔN LẬP m3u
+https://hls.cdnfaster-a.live/live/TONLAP/index.m3u8?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin (Lương Sơn) BLV KAKA m3u
-https://hls.cdnfaster-a.live/live/KAKA/index.m3u8?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid Klub vs Tuv Buganuud (Lương Sơn) BLV TÔN LẬP flv
+https://flv.cdnfaster-a.live/live/TONLAP.flv?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin (Lương Sơn) BLV KAKA flv
-https://flv.cdnfaster-a.live/live/KAKA.flv?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Jiangxi Lushan U20 vs Yunnan Yukun U20 (Khán Đài A) source
+https://www3.f2k3.shop/live/c348f172cfbf2d2c8ef2d51b875d8b1f/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Portland Thorns FC Women vs Bay FC (w) (Khán Đài A) source
-https://www3.f2k3.shop/live/ffde3bbfbfb0ae45c9dcbe37d529183a/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Nantong Zhiyun U20 vs Wenzhou Yincai U20 (Khán Đài A) source
+https://www3.f2k3.shop/live/4c34bd1f46b69dca5a69562a9b56dd8a/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal (Khán Đài A) source
-https://www3.f2k3.shop/live/ca5923452d9c2e3fc647265342ec1560/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Wuhan Three Towns U20 vs Liaoning Tieren U20 (Khán Đài A) source
+https://www3.f2k3.shop/live/8d1a0cc7276c07ac2cbd832213d0584b/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h10 ngày 21/05 Montego Bay Utd vs Cavalier FC (Khán Đài A) source
-https://www3.f2k3.shop/live/2b391b7a997f3cfec9973e37934ff29b/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Tianjin Jinmen Tiger U20 vs Shenzhen Peng City U20 (Khán Đài A) source
+https://www3.f2k3.shop/live/fc9ed5b396ed0b7105ecb214d359d3db/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women (Khán Đài A) source
-https://www3.f2k3.shop/live/24eeea98d20b1fccadb7f884c89d3042/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Linyi Yihu U20 vs Wenzhou FC U20 (Khán Đài A) source
+https://www3.f2k3.shop/live/6afb1465e5d32f1be17c251d601b5cad/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Angel City FC Women vs Kansas City Current Women (Khán Đài A) source
-https://www3.f2k3.shop/live/4755bdd1a27430084c59e2884eb1d87a/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Yiwu Shangcheng School U20 vs Guangzhou Rockgoal U20 (Khán Đài A) source
+https://www3.f2k3.shop/live/170f83e30d69d6275f131ee169124f18/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Guangdong Guangzhou Power U20 vs Beijing Guoan U20 (Khán Đài A) source
-https://www3.f2k3.shop/live/d77faec23476e58bf68e092e50e97a7b/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Tianjin Dihua U20 vs Shijiazhuang Gongfu U20 (Khán Đài A) source
+https://www3.f2k3.shop/live/8779b0c930182cdeadbf0b70ed384f58/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Zhejiang Professional FC U20 vs Qingdao Hainiu U20 (Khán Đài A) source
-https://www3.f2k3.shop/live/eeae62e3aaa68c54205b5208b2dd7ff6/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Qingdao Red Lions U20 vs Shanghai Port U20 (Khán Đài A) source
+https://www3.f2k3.shop/live/78dc6433f95ee9a1382040823f5f9fe4/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Hubei Istar U20 vs Shanghai Shenhua U20 (Khán Đài A) source
-https://www3.f2k3.shop/live/178197c4acbaff9360d22c9b0ffea52f/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions (Khán Đài A) source
+https://www3.f2k3.shop/live/616bf2d8e6fedcf720b6fbf2891da742/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Henan FC U20 vs Lanzhou Longyuan Athletic U20 (Khán Đài A) source
-https://www3.f2k3.shop/live/5dce23e7cdfa8666b7f2eb2cc2b7e912/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Jiaxing Team vs Zhoushan Team (Khán Đài A) source
+https://www3.f2k3.shop/live/8f7be2c2341b63a7c7ab728530b3012d/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco vs Independiente Medellin (Chuối Chiên) HD1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 21/05 Gunma Bank Green Wings W vs Vietinbank (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco vs Independiente Medellin (Chuối Chiên) HD2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 21/05 Gunma Bank Green Wings W vs Vietinbank (Chuối Chiên) HD2
 https://gckc0525.edgemaxcdn.org/live/m5x1.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Junior vs Sporting Cristal (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Junior vs Sporting Cristal (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x2.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",18h30 ngày 21/05 Jamshedpur vs Odisha (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/chuoitieu/playlist.m3u8
@@ -179,273 +173,159 @@ https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h45 ngày 21/05 Ajax vs Groningen (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/chuoitohd.flv
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal (Gà Vàng) sd_1
-https://pull-gv.fastestcdn-global.com/live/4fe125dd998742388c18ddf200400715/index.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [BLV COCA] (Socolive) flv
+https://pull06.scstream.net/live/stream-327159_lsd.flv?auth_key=1779352555-0-0-51834cf9904d83079a09e41e75076086
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV MESSI] (Socolive) flv
-https://pull06.scstream.net/live/stream-494201_lsd.flv?auth_key=1779336715-0-0-6d571ca0bd8350273cb0e3b121cb1b9a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [BLV COCA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-327159_lhd.flv?auth_key=1779352555-0-0-28b8760f43597b5cf50c83d5065e6ea7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV MESSI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-494201_lhd.flv?auth_key=1779336715-0-0-ecdf75f4ecf91c51a36926ea8f60848a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [BLV COCA] (Socolive) m3u8
+https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1779352555-0-0-db8c75c7444587508f6596b651a88a3c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV MESSI] (Socolive) m3u8
-https://pull.niues.live/live/stream-494201_lsd.m3u8?auth_key=1779336715-0-0-5742ff161c4bea3d01285a052a043c14
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [BLV COCA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1779352555-0-0-87a14540bcd10f414bda28d6e7414f84
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV MESSI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1779336715-0-0-91c7bf9b225202fc71f65b877495c387
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [BRIAN] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912106_lsd.flv?auth_key=1779352555-0-0-caca0c540a5685eac0cc40bde1043026
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV TOMIA] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912008_lsd.flv?auth_key=1779336715-0-0-71e83c991971c5a1a1efb4fec7e9c5ad
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [BRIAN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912106_lhd.flv?auth_key=1779352555-0-0-5b68c6b76f311abd0e6ddcc4f1dd9294
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV TOMIA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912008_lhd.flv?auth_key=1779336715-0-0-d0dfbfa176339eca6eec9b28743e6e8f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [BRIAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912106_lsd.m3u8?auth_key=1779352555-0-0-b404d5ca67d92eb0e063de08ff973db4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV TOMIA] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1779336715-0-0-e0787731e9ad9373c7ec54a67ba9b06e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [BRIAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1779352555-0-0-6fab056b6363e943f041a53d3eed4703
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV TOMIA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1779336715-0-0-c5b3a678018c305b7ce3819715d4aa15
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [MONEY MAN] (Socolive) flv
+https://pull06.scstream.net/live/stream-605412_lsd.flv?auth_key=1779352555-0-0-081eed87fdcfa0e39709f4e38ede8e5e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV 7UP] (Socolive) flv
-https://pull06.scstream.net/live/stream-534219_lsd.flv?auth_key=1779336715-0-0-0172700e0113e2a60bed54ca1b293bcb
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [MONEY MAN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-605412_lhd.flv?auth_key=1779352555-0-0-7ab86714276aba7b1c74db9a858facb9
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV 7UP] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-534219_lhd.flv?auth_key=1779336715-0-0-20c4704ae46639593a078ca823d31acc
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [MONEY MAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-605412_lsd.m3u8?auth_key=1779352555-0-0-82db7b654a8801fd6a8b6c2d53ee3ce3
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV 7UP] (Socolive) m3u8
-https://pull.niues.live/live/stream-534219_lsd.m3u8?auth_key=1779336715-0-0-ad3fd0aebb8116ff7bd3efdadc7292c3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [MONEY MAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-605412_lhd.m3u8?auth_key=1779352555-0-0-b0ad762740dc4aadee0491883fd136b6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV 7UP] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-534219_lhd.m3u8?auth_key=1779336715-0-0-596aa5c8ae1bf12a6f8a944a9f20943a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [CHAN SENA] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912115_lsd.flv?auth_key=1779352555-0-0-8414741f0da771176489af21a2f64fe7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [RICKHANTER] (Socolive) flv
-https://pull.niur.live/live/stream-9912122_lsd.flv?txSecret=9cae32ce61d13dceac66d791887ed90a&txTime=6a0ecc5b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [CHAN SENA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912115_lhd.flv?auth_key=1779352555-0-0-f752ad0f20dc5f23a7d703ed4dc25b00
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [RICKHANTER] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912122_lhd.flv?txSecret=4f5d53234ad9617d49cbc6e5b5a6c8c4&txTime=6a0ecc5b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [CHAN SENA] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1779352555-0-0-31cd83c8a63eff1fbfd45fe7c7282c6a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [RICKHANTER] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912122_lsd.m3u8?txSecret=9cae32ce61d13dceac66d791887ed90a&txTime=6a0ecc5b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [CHAN SENA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1779352555-0-0-a944ab160792540a8ecf1bfbe220cf35
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [RICKHANTER] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=4f5d53234ad9617d49cbc6e5b5a6c8c4&txTime=6a0ecc5b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [A CHÈ] (Socolive) flv
+https://pull06.scstream.net/live/stream-356042_lsd.flv?auth_key=1779352555-0-0-f68957b502490757e5199cb9955f3b46
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV CUỘI] (Socolive) flv
-https://pull06.scstream.net/live/stream-256080_lsd.flv?auth_key=1779336715-0-0-57bf82e586c163df234bb1b98bf43cd3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [A CHÈ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-356042_lhd.flv?auth_key=1779352555-0-0-3d930204dbd8c5f6c2b93312a896f050
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV CUỘI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-256080_lhd.flv?auth_key=1779336715-0-0-23eb084e010d952f9d7c033a3f74c131
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [A CHÈ] (Socolive) m3u8
+https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1779352555-0-0-7c07ed74dee4170f0c33c27579bf62e1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV CUỘI] (Socolive) m3u8
-https://pull.niues.live/live/stream-256080_lsd.m3u8?auth_key=1779336715-0-0-02440c009c7a4d5b1a3db7e22c1cf7f1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [A CHÈ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1779352555-0-0-626ae1847dc0fc094cad2878d2185695
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [BLV CUỘI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1779336715-0-0-dcc050f85c6b40f04ce8ca7e212dc492
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [KING] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1779352555-0-0-be038de4b85324aa636a6e8f0e0f813f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV TAP] (Socolive) flv
-https://pull.niur.live/live/stream-9912041_lsd.flv?txSecret=33a088a5488fbf42f654cea1ef9cc1a9&txTime=6a0ecc5b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [KING] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1779352555-0-0-3148b15cc44304ec9481bde8c3c9831b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV TAP] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912041_lhd.flv?txSecret=df52f31f238b439ec4a4f9e3fc5dcb4c&txTime=6a0ecc5b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [KING] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1779352555-0-0-a012dcb063b00760c77735ba986931c2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV TAP] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912041_lsd.m3u8?txSecret=33a088a5488fbf42f654cea1ef9cc1a9&txTime=6a0ecc5b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [KING] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1779352555-0-0-7e05e85190c996f6ac1bf9c151fc8459
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV TAP] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=df52f31f238b439ec4a4f9e3fc5dcb4c&txTime=6a0ecc5b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [SAO LA] (Socolive) flv
+https://pull.niur.live/live/stream-462413_lsd.flv?txSecret=e78fe81d61acc5cbef73032dbc43ac4f&txTime=6a0f0a3b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [LOGAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-552832_lsd.flv?auth_key=1779336715-0-0-19dd40258ea2af6ad9c70c518775b265
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [SAO LA] (Socolive) hdFlv
+https://pull.niur.live/live/stream-462413_lhd.flv?txSecret=61ce99e6d7d4e0ce94ede80cec37756a&txTime=6a0f0a3b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [LOGAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-552832_lhd.flv?auth_key=1779336715-0-0-245092709d5d7396cf16304fa2450221
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [SAO LA] (Socolive) m3u8
+https://pull.niur.live/live/stream-462413_lsd.m3u8?txSecret=e78fe81d61acc5cbef73032dbc43ac4f&txTime=6a0f0a3b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [LOGAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-552832_lsd.m3u8?auth_key=1779336715-0-0-f132d0e3c7abe947a67b4b5fa53ef4fd
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [SAO LA] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-462413_lhd.m3u8?txSecret=61ce99e6d7d4e0ce94ede80cec37756a&txTime=6a0f0a3b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Colorado Rapids vs San Jose Earthquakes [LOGAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1779336715-0-0-b05eee58cef29252c9f6021513d51077
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [BLV HENRY] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912112_lsd.flv?auth_key=1779352915-0-0-8104ab1ac7be7150a71096fdd7625458
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [TẠ BIÊN GIỚI] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912108_lsd.flv?auth_key=1779336715-0-0-fce2063efb9a7fdab7133aba027c4c29
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [BLV HENRY] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912112_lhd.flv?auth_key=1779352915-0-0-7227ac880a419748a5a4e3902d9bf899
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [TẠ BIÊN GIỚI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912108_lhd.flv?auth_key=1779336715-0-0-bd4edb3760818ac8273f39127c518822
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [BLV HENRY] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912112_lsd.m3u8?auth_key=1779352915-0-0-daef4b4e8120ccbb977e644384e9fafb
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [TẠ BIÊN GIỚI] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912108_lsd.m3u8?auth_key=1779336715-0-0-08a46affefc21583caa7e6642dbc4307
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Southland Sharks vs Wellington Saints [BLV HENRY] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1779352915-0-0-6ba2eaf916a911f12db6d94306fcd9a7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [TẠ BIÊN GIỚI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1779336715-0-0-88f6cf20e8c3b5222337e11d709a2100
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [DECO] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912060_lsd.flv?auth_key=1779352915-0-0-54c2181262b2a8f01251c6e6deed5923
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV COCA] (Socolive) flv
-https://pull06.scstream.net/live/stream-327159_lsd.flv?auth_key=1779336715-0-0-68a6a228d003f4940e18aea82c8cb0c2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [DECO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912060_lhd.flv?auth_key=1779352915-0-0-70eb6d64b955c94958638d2c84a25fe6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV COCA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-327159_lhd.flv?auth_key=1779336715-0-0-c170415a3f7e4872e5d9c2accab1b504
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [DECO] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912060_lsd.m3u8?auth_key=1779352915-0-0-3c4c155b69bde3d83b1383c78d197e39
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV COCA] (Socolive) m3u8
-https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1779336715-0-0-1e7a7eb677edb4b0e4c58c8bf1fc452c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [DECO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1779352915-0-0-486289c61a71c0c9e965ad3e700cc673
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV COCA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1779336715-0-0-12d595008bbb70d1484187db72453bdb
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [TẠ BIÊN GIỚI] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912108_lsd.flv?auth_key=1779352915-0-0-02932d6c5d99a8c0f8e8c03db7b9c15c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [BLV A TÚ] (Socolive) flv
-https://pull06.scstream.net/live/stream-557845_lsd.flv?auth_key=1779336715-0-0-9e4b8d1af27f4cc8a364c3452df4f1ba
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [TẠ BIÊN GIỚI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912108_lhd.flv?auth_key=1779352915-0-0-b176a94687799b0719d94f6fbe9587b7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [BLV A TÚ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-557845_lhd.flv?auth_key=1779336715-0-0-80df9f398ee99859d146438ebfd4a45d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [TẠ BIÊN GIỚI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912108_lsd.m3u8?auth_key=1779352915-0-0-fd615548d8f5dee4b81a74a1b04e0a9e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [BLV A TÚ] (Socolive) m3u8
-https://pull.niues.live/live/stream-557845_lsd.m3u8?auth_key=1779336715-0-0-fc18bf1528494cda541afe0be23c66a3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [TẠ BIÊN GIỚI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1779352915-0-0-36a51d2333548a5e76c7f3b263433dc4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [BLV A TÚ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1779336715-0-0-7c344685ef6943f51a401f1ebf868c5a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [BLV RÔSI] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912102_lsd.flv?auth_key=1779352915-0-0-ea2ce7858055f6ecf2996896b9c6cc7c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV FIREMAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-991140_lsd.flv?auth_key=1779336715-0-0-47b83c629f9e08ee86022adeacf290aa
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [BLV RÔSI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912102_lhd.flv?auth_key=1779352915-0-0-ed7b504b270b17cc1831f434140cf33d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV FIREMAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-991140_lhd.flv?auth_key=1779336715-0-0-cdf21b0a7f7f8f08df5ae44550a97956
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [BLV RÔSI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912102_lsd.m3u8?auth_key=1779352915-0-0-9287069a4a3e95aec35854274526576b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV FIREMAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-991140_lsd.m3u8?auth_key=1779336715-0-0-ff5b12853299b0120ed69d5a2a4016f6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV FIREMAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1779336715-0-0-65be23adbea09a3d02dac15ef6c20c30
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [A PÁO] (Socolive) flv
-https://pull06.scstream.net/live/stream-235232_lsd.flv?auth_key=1779336715-0-0-2008e723112637a9c2245fe844fa87db
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [A PÁO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-235232_lhd.flv?auth_key=1779336715-0-0-76b7b4eefaaf771051664ff01b975683
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [A PÁO] (Socolive) m3u8
-https://pull.niues.live/live/stream-235232_lsd.m3u8?auth_key=1779336715-0-0-0664f804e3a8b9e52d5197077bc5f319
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [A PÁO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1779336715-0-0-d39dd10072cd26838300115660b16184
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [BLV THÓC] (Socolive) flv
-https://pull06.scstream.net/live/stream-606448_lsd.flv?auth_key=1779336715-0-0-5e079f30807b56dc1e040fc7aeceac0d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [BLV THÓC] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-606448_lhd.flv?auth_key=1779336715-0-0-d45d58fff146937e5fc97faef52ac1bc
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [BLV THÓC] (Socolive) m3u8
-https://pull.niues.live/live/stream-606448_lsd.m3u8?auth_key=1779336715-0-0-0522fcef44d02826a333f98e012e77b2
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Cusco FC vs Dep.Independiente Medellin [BLV THÓC] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-606448_lhd.m3u8?auth_key=1779336715-0-0-647e13766dc56302a464dcbf07901860
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [HÀ DUY KIÊN] (Socolive) flv
-https://pull06.scstream.net/live/stream-607400_lsd.flv?auth_key=1779336715-0-0-58b8772d3fc9c7e00487d26735b31973
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [HÀ DUY KIÊN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-607400_lhd.flv?auth_key=1779336715-0-0-5d5170223d72a9949fa50ee82ea62c66
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [HÀ DUY KIÊN] (Socolive) m3u8
-https://pull.niues.live/live/stream-607400_lsd.m3u8?auth_key=1779336715-0-0-818bf9963772a92d00acd32d7d20d841
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [HÀ DUY KIÊN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1779336715-0-0-e82a4478b0b54433f71f8456558e87f8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Seattle Storm W vs Connecticut Sun W [CHAN SENA] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912115_lsd.flv?auth_key=1779336715-0-0-952c72abc34559d86314cca88add2573
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Seattle Storm W vs Connecticut Sun W [CHAN SENA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912115_lhd.flv?auth_key=1779336715-0-0-9a6d6a7fb5f57526e72951e9e159a3da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Seattle Storm W vs Connecticut Sun W [CHAN SENA] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1779336715-0-0-a07371af24a0c549db19e3bdb97d3471
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Seattle Storm W vs Connecticut Sun W [CHAN SENA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1779336715-0-0-d61bc8492faedb193e4d84f1a9eaf81f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 21/05 Khangarid FC vs Central Stallions [BLV RÔSI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912102_lhd.m3u8?auth_key=1779352915-0-0-3bc6a6d3d8fc211f69a473e92ad6c1a1
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
-https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779336715-0-0-52d135491679d697e21f0d5397cd0434
+https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779352915-0-0-0c2ef6c6fea976fd5d8da09fc260fe82
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779336715-0-0-83ebb949d2daabb1708fd3b4b6669dc0
+https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779352915-0-0-53130bb5c24e06a28a3e12f985ae67af
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
-https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779336715-0-0-3c50b51f66b4403431a854fc6bcb31bc
+https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779352915-0-0-8c0a0b8d1c51c9d5537f08306098c5cc
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779336715-0-0-064d11c6b49a94d75ff1b5b6f66c7284
+https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779352915-0-0-6d159a2643a95530e7bb835c03120afd
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV PIRLO] (Socolive) flv
-https://pull06.scstream.net/live/stream-351530_lsd.flv?auth_key=1779337075-0-0-19c6ff24e2a4287f7fe2dff76ee3cc31
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h30 21/05 CHEN Yu Fei vs Devika SIHAG (Hội Quán) FHD
+https://hqlive.yarncdn.live/live/hqtv_blv_phanca/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV PIRLO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-351530_lhd.flv?auth_key=1779337075-0-0-e5c76c30df017597d6e25a4b67b62442
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h30 21/05 CHEN Yu Fei vs Devika SIHAG (Hội Quán) SD
+https://alive.zlylive.com/hqtv_blv_phanca/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV PIRLO] (Socolive) m3u8
-https://pull.niues.live/live/stream-351530_lsd.m3u8?auth_key=1779337075-0-0-8c20721a9b8247d085d8a7e355c2267b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV PIRLO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-351530_lhd.m3u8?auth_key=1779337075-0-0-a9c62ca942532cc66754cd6d74379b33
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV CHIVAS] (Socolive) flv
-https://pull.niur.live/live/stream-485739_lsd.flv?txSecret=d0059ad9d0341c22e9052e7e67716418&txTime=6a0ecdc3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV CHIVAS] (Socolive) hdFlv
-https://pull.niur.live/live/stream-485739_lhd.flv?txSecret=7797d22ac3745db6b7f021c9c46c09d8&txTime=6a0ecdc3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV CHIVAS] (Socolive) m3u8
-https://pull.niur.live/live/stream-485739_lsd.m3u8?txSecret=d0059ad9d0341c22e9052e7e67716418&txTime=6a0ecdc3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 21/05 Washington Spirit Women vs Pachuca Women [BLV CHIVAS] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=7797d22ac3745db6b7f021c9c46c09d8&txTime=6a0ecdc3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV CÒ] (Socolive) flv
-https://pull06.scstream.net/live/stream-582342_lsd.flv?auth_key=1779337075-0-0-788bce24c14204248265db2dc0b5096e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV CÒ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-582342_lhd.flv?auth_key=1779337075-0-0-b107217d94abbb1019e05d2e165b715b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV CÒ] (Socolive) m3u8
-https://pull.niues.live/live/stream-582342_lsd.m3u8?auth_key=1779337075-0-0-a68a94fe0806382f1fe21b7e22d168dd
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 21/05 Atletico Junior Barranquilla vs Sporting Cristal [BLV CÒ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1779337075-0-0-f8d1721fc98df4b1a5bd9503437eaa3b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 21/05 Oklahoma City Thunder vs San Antonio Spurs [KING] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1779337075-0-0-0ca64c1b6f305743314b19c33e2b0069
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 21/05 Oklahoma City Thunder vs San Antonio Spurs [KING] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1779337075-0-0-afddcb450431164b2e6752e57b2be2d3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 21/05 Oklahoma City Thunder vs San Antonio Spurs [KING] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1779337075-0-0-3a1a3edd961a3bab477cf5427cc97264
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 21/05 Oklahoma City Thunder vs San Antonio Spurs [KING] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1779337075-0-0-d161e60517c13383207024535eedb110
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 21/05 Junior vs Sporting Cristal (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phananh/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 21/05 Junior vs Sporting Cristal (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 21/05 PERODUA Malaysia Masters 2026 (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanchuot/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 21/05 PERODUA Malaysia Masters 2026 (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phanchuot/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 21/05 Colorado Rapids vs San Jose Earthquakes
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 21/05 Southland Sharks vs Wellington Saints
 https://live5.msrktz.app/live/87379114.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 21/05 Junior vs Sporting Cristal
-https://live5.msrktz.app/live/68848594.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 21/05 Cusco vs Medellin Independiente
-https://live5.msrktz.app/live/90725470.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 21/05 Seattle Storm vs Connecticut Sun
-https://live5.msrktz.app/live/90865415.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 21/05 Washington Spirit Nữ vs Pachuca Nữ
-https://live5.msrktz.app/live/87547578.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 21/05 Khangarid Klub vs Central Stallions
+https://live5.msrktz.app/live/43612277.m3u8
 
