@@ -1,9 +1,9 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5b/Bologna_F.C._1909_logo.svg",23:00 | Bologna vs Inter
-https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",02:00 | Real Madrid vs Athletic Club
 https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/f/fe/Valenciacf.png",02:00 | Valencia vs Barcelona
+https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Gremio_logo.svg/1280px-Gremio_logo.svg.png",05:00 | Gremio vs Santos
 https://alive.zlylive.com/hqtv_blv_phanca/tracks-v2a1/mono.m3u8
@@ -20,9 +20,6 @@ https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/e/ec/San_Antonio_Spurs_logo.png",07:00 | San Antonio Spurs vs Oklahoma City Thunder
 https://alive.yarncdn.live/hqtv_blv_phantu/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://media.api-sports.io/football/teams/157.png",01:00 | Bayern München vs VfB Stuttgart
-https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png",02:00 | Real Madrid vs Athletic Club
 https://alive.yarncdn.live/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8
 
@@ -31,6 +28,9 @@ https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/2/22/HLHT_FC.svg",18:00 | Hồng Lĩnh Hà Tĩnh vs Công An Nhân Dân
 https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/b/b4/Logo_H%C3%A0_N%E1%BB%99i_FC.png",19:15 | Ha Noi vs Nam Dinh
+https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/541.png",Real Madrid vs Athletic Club
 https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
@@ -41,11 +41,11 @@ https://bglive.yarncdn.live/live/bgtv_blv_tieuhac/playlist.m3u8
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/538.png",Celta Vigo vs Sevilla
 https://bglive.yarncdn.live/live/bgtv_blv_lavie/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Mallorca vs Real Oviedo (Lương Sơn) BLV PHI HỔ m3u
-https://hls.cdnfaster-a.live/live/PHIHO/index.m3u8?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Bilbao (Lương Sơn) BLV MÃ SIÊU m3u
+https://hls.cdnfaster-a.live/live/MASIEU/index.m3u8?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Mallorca vs Real Oviedo (Lương Sơn) BLV PHI HỔ flv
-https://flv.cdnfaster-a.live/live/PHIHO.flv?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Bilbao (Lương Sơn) BLV MÃ SIÊU flv
+https://flv.cdnfaster-a.live/live/MASIEU.flv?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia vs FC Barcelona (Lương Sơn) BLV LƯU BỊ m3u
 https://hls.cdnfaster-a.live/live/LUUBI/index.m3u8?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
@@ -53,26 +53,20 @@ https://hls.cdnfaster-a.live/live/LUUBI/index.m3u8?expire=1788427256&sign=e15f8b
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia vs FC Barcelona (Lương Sơn) BLV LƯU BỊ flv
 https://flv.cdnfaster-a.live/live/LUUBI.flv?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia vs FC Barcelona (Lương Sơn) BLV LEO m3u
-https://hls.cdnfaster-a.live/live/LEO/index.m3u8?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
-
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia vs FC Barcelona (Lương Sơn) BLV TRIỆU TỬ LONG m3u
 https://hls.cdnfaster-a.live/live/TRIEUTULONG/index.m3u8?expire=1788427256&sign=45e4fdc4bdb8472f513ccc78f57f6070
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia vs FC Barcelona (Lương Sơn) BLV TRIỆU TỬ LONG flv
 https://flv.cdnfaster-a.live/live/TRIEUTULONG.flv?expire=1788427256&sign=45e4fdc4bdb8472f513ccc78f57f6070
 
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia vs FC Barcelona (Lương Sơn) BLV LEO m3u
+https://hls.cdnfaster-a.live/live/LEO/index.m3u8?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
+
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Bilbao (Lương Sơn) BLV LỮ BỐ m3u
 https://hls.cdnfaster-a.live/live/LUBO/index.m3u8?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Bilbao (Lương Sơn) BLV LỮ BỐ flv
 https://flv.cdnfaster-a.live/live/LUBO.flv?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Bilbao (Lương Sơn) BLV MÃ SIÊU m3u
-https://hls.cdnfaster-a.live/live/MASIEU/index.m3u8?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Bilbao (Lương Sơn) BLV MÃ SIÊU flv
-https://flv.cdnfaster-a.live/live/MASIEU.flv?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Bilbao (Lương Sơn) BLV MAYBACH m3u
 https://hls.cdnfaster-a.live/live/MAYBACH/index.m3u8?expire=1923468720&sign=862d9b5fa441bf644b6c2fbcec08487b
@@ -86,35 +80,35 @@ https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a7
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Bilbao (Lương Sơn) BLV YẾN THANH flv
 https://flv.cdnfaster-a.live/live/YENTHANH1.flv?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante (Lương Sơn) BLV LÝ ỨNG m3u
-https://hls.cdnfaster-a.live/live/LYUNG1/index.m3u8?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante (Lương Sơn) BLV LÝ ỨNG flv
-https://flv.cdnfaster-a.live/live/LYUNG1.flv?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa (Lương Sơn) BLV TÂY MÔN KHÁNH m3u
-https://hls.cdnfaster-a.live/live/TAYMONKHANH/index.m3u8?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa (Lương Sơn) BLV TÂY MÔN KHÁNH flv
-https://flv.cdnfaster-a.live/live/TAYMONKHANH.flv?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs Osasuna (Lương Sơn) BLV TIỂU LANG m3u
 https://hls.cdnfaster-a.live/live/AJUN/index.m3u8?expire=2556118740&sign=4cf66df9135854d82fa43d2c5f365419
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs Osasuna (Lương Sơn) BLV TIỂU LANG flv
 https://flv.cdnfaster-a.live/live/AJUN.flv?expire=2556118740&sign=4cf66df9135854d82fa43d2c5f365419
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona vs Elche (Lương Sơn) BLV HÀN TÍN m3u
-https://hls.cdnfaster-a.live/live/HANTIN/index.m3u8?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona vs Elche (Lương Sơn) BLV HÀN TÍN flv
-https://flv.cdnfaster-a.live/live/HANTIN.flv?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
-
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Celta Vigo vs Sevilla (Lương Sơn) BLV LÃO HẠC m3u
 https://hls.cdnfaster-a.live/live/LAOHAC/index.m3u8?expire=2556118740&sign=d7e003f1201f61166a559ac474dc7491
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Celta Vigo vs Sevilla (Lương Sơn) BLV LÃO HẠC flv
 https://flv.cdnfaster-a.live/live/LAOHAC.flv?expire=2556118740&sign=d7e003f1201f61166a559ac474dc7491
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante (Lương Sơn) BLV LÝ ỨNG m3u
+https://hls.cdnfaster-a.live/live/LYUNG1/index.m3u8?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante (Lương Sơn) BLV LÝ ỨNG flv
+https://flv.cdnfaster-a.live/live/LYUNG1.flv?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Mallorca vs Real Oviedo (Lương Sơn) BLV PHI HỔ m3u
+https://hls.cdnfaster-a.live/live/PHIHO/index.m3u8?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Mallorca vs Real Oviedo (Lương Sơn) BLV PHI HỔ flv
+https://flv.cdnfaster-a.live/live/PHIHO.flv?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona vs Elche (Lương Sơn) BLV HÀN TÍN m3u
+https://hls.cdnfaster-a.live/live/HANTIN/index.m3u8?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona vs Elche (Lương Sơn) BLV HÀN TÍN flv
+https://flv.cdnfaster-a.live/live/HANTIN.flv?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Espanyol vs Real Sociedad (Lương Sơn) BLV NGƯỜI THÉP m3u
 https://hls.cdnfaster-a.live/live/NGUOITHEP/index.m3u8?expire=2556118740&sign=6d80f4e33c3761371f29a8ca0645fee5
@@ -127,18 +121,6 @@ https://hls.cdnfaster-a.live/live/MOTCHAN1/index.m3u8?expire=1891347600&sign=cbb
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Oud-Heverlee Leuven vs Racing Genk (Lương Sơn) BLV MỘT CHÂN flv
 https://flv.cdnfaster-a.live/live/MOTCHAN1.flv?expire=2556072660&sign=4b991d1cc92d0eb9bddfcb0b1b372a21
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 Bayern Munchen vs VfB Stuttgart (Lương Sơn) BLV TÔN LẬP m3u
-https://hls.cdnfaster-a.live/live/TONLAP/index.m3u8?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 Bayern Munchen vs VfB Stuttgart (Lương Sơn) BLV TÔN LẬP flv
-https://flv.cdnfaster-a.live/live/TONLAP.flv?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 Bayern Munchen vs VfB Stuttgart (Lương Sơn) BLV DƯƠNG CHÍ m3u
-https://hls.cdnfaster-a.live/live/VANCONAN/index.m3u8?expire=1830276060&sign=53991e2e589a2f7031dd37b82a585e33
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 Bayern Munchen vs VfB Stuttgart (Lương Sơn) BLV DƯƠNG CHÍ flv
-https://flv.cdnfaster-a.live/live/VANCONAN.flv?expire=1830276060&sign=53991e2e589a2f7031dd37b82a585e33
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 23/05 FC Tulsa vs Hartford Athletic (Khán Đài A) source
 https://www3.f2k3.shop/live/235c29178801ef36a970731709755e2a/playlist.m3u8
@@ -154,30 +136,6 @@ https://www3.f2k3.shop/live/87b8a02016610052ff23e50744f98f77/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Mexico vs Ghana (Khán Đài A) source
 https://www3.f2k3.shop/live/e699af6f4692703a8c718f285b40deb2/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 Bayern München vs VfB Stuttgart (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 Bayern München vs VfB Stuttgart (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/chuoitay.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 Bayern München vs VfB Stuttgart (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 Bayern München vs VfB Stuttgart (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/chuoitayhd.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/chuoitieu/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/chuoitieu.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/chuoitieuhd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/chuoitieuhd.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Alaves vs Rayo Vallecano (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8
@@ -260,383 +218,281 @@ https://www3.f2k3.shop/live/a60cdd817beb680017f46a5c111202f7/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Canberra Olympic U23 vs Belconnen United U23 (Gà Vàng) source
 https://www3.f2k3.shop/live/829f44b193d50a1f8dcb948fab6a0983/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [LÃO LÂM] (Socolive) flv
-https://pull06.scstream.net/live/stream-527384_lsd.flv?auth_key=1779566755-0-0-2688f553a3d1a0a63f771e85054c6ef3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [LÃO LÂM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-527384_lhd.flv?auth_key=1779566755-0-0-a7cde9c4f2328c51206cca0ebc299eb9
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [LÃO LÂM] (Socolive) m3u8
-https://pull.niues.live/live/stream-527384_lsd.m3u8?auth_key=1779566755-0-0-2ca30e4e017d373919a540345babec3f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [LÃO LÂM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1779566755-0-0-d2f3dacb14ae49a59f1fbe722f2b6cc0
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV VITAMIN] (Socolive) flv
-https://pull06.scstream.net/live/stream-400722_lsd.flv?auth_key=1779566755-0-0-024a772c7b87d9029c43a0a6534460f1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV VITAMIN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-400722_lhd.flv?auth_key=1779566755-0-0-c05082cf4ed4747166409770253ab8b6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV VITAMIN] (Socolive) m3u8
-https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1779566755-0-0-778e999fbc4c8399f88b892fafec20cc
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV VITAMIN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1779566755-0-0-c59942e4406a474021d2fbf314be8930
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV COZY] (Socolive) flv
-https://pull06.scstream.net/live/stream-531989_lsd.flv?auth_key=1779566755-0-0-e2a6576ef877ffe91f45433fee49d9d7
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV COZY] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-531989_lhd.flv?auth_key=1779566755-0-0-4b4daef1547ad7bb9fd8e5ba3dd86d54
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV COZY] (Socolive) m3u8
-https://pull.niues.live/live/stream-531989_lsd.m3u8?auth_key=1779566755-0-0-a7a1953e0266cba8e44b422e922737f5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV COZY] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1779566755-0-0-cbc4ddfaa4ea49128cc4f6e413e1e5d3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV BÉO] (Socolive) flv
-https://pull.niur.live/live/stream-459401_lsd.flv?txSecret=82a334755e7064d727c18639b100cf4e&txTime=6a124ef3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV BÉO] (Socolive) hdFlv
-https://pull.niur.live/live/stream-459401_lhd.flv?txSecret=f5268de2430158f8b1ec47f0e46c44ec&txTime=6a124ef3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV BÉO] (Socolive) m3u8
-https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=82a334755e7064d727c18639b100cf4e&txTime=6a124ef3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV BÉO] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=f5268de2430158f8b1ec47f0e46c44ec&txTime=6a124ef3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV LONG] (Socolive) flv
-https://pull.niur.live/live/stream-9912050_lsd.flv?txSecret=b06400425079eed470b6627be054c39a&txTime=6a124ef3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV LONG] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912050_lhd.flv?txSecret=18465817b3fab058d3c8173ed3190561&txTime=6a124ef3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV LONG] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912050_lsd.m3u8?txSecret=b06400425079eed470b6627be054c39a&txTime=6a124ef3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV LONG] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912050_lhd.m3u8?txSecret=18465817b3fab058d3c8173ed3190561&txTime=6a124ef3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV A WIN] (Socolive) flv
-https://pull06.scstream.net/live/stream-536185_lsd.flv?auth_key=1779566755-0-0-182057adba5a67b9d9c163e60d913e25
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV A WIN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-536185_lhd.flv?auth_key=1779566755-0-0-0511805e81653ffb1166957e256401db
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV A WIN] (Socolive) m3u8
-https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1779566755-0-0-812eaeeed4867b5d84e877e57d00719e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV A WIN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1779566755-0-0-72dd03490956115592036d03b1c945ca
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [A BỆU] (Socolive) flv
-https://pull06.scstream.net/live/stream-484845_lsd.flv?auth_key=1779567115-0-0-54303640b8d83ad66f15b171b3ec5233
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [A BỆU] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-484845_lhd.flv?auth_key=1779567115-0-0-0d9dae896657064fbdfd873aef24eb63
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [A BỆU] (Socolive) m3u8
-https://pull.niues.live/live/stream-484845_lsd.m3u8?auth_key=1779567115-0-0-0368971ec8588e6697bdf7e18cddd635
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [A BỆU] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1779567115-0-0-93c8528e6f544975b3299380f5cb3ee6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [THẠCH TÚ] (Socolive) flv
-https://pull.niur.live/live/stream-9912116_lsd.flv?txSecret=5592c4c8c5b7233aaae9c8a96ad098ec&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [THẠCH TÚ] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912116_lhd.flv?txSecret=2607e7f02877de31f38e668510181d7a&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [THẠCH TÚ] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=5592c4c8c5b7233aaae9c8a96ad098ec&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [THẠCH TÚ] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=2607e7f02877de31f38e668510181d7a&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [BLV PIRLO] (Socolive) flv
-https://pull06.scstream.net/live/stream-351530_lsd.flv?auth_key=1779567115-0-0-e599d309ee831649a9c7223670319fa6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [BLV PIRLO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-351530_lhd.flv?auth_key=1779567115-0-0-547a1217d067fa2ad78fa9543828366b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [BLV PIRLO] (Socolive) m3u8
-https://pull.niues.live/live/stream-351530_lsd.m3u8?auth_key=1779567115-0-0-c51217f9a328a18a246960ef7d3f418b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [BLV PIRLO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-351530_lhd.m3u8?auth_key=1779567115-0-0-be0dea4e9aa2e2c51023377c553cb675
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [SAO LA] (Socolive) flv
-https://pull.niur.live/live/stream-462413_lsd.flv?txSecret=b150b838a66100a57cb34b044960def8&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [SAO LA] (Socolive) hdFlv
-https://pull.niur.live/live/stream-462413_lhd.flv?txSecret=13b27090d5f54b256abda4edde057f74&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [SAO LA] (Socolive) m3u8
-https://pull.niur.live/live/stream-462413_lsd.m3u8?txSecret=b150b838a66100a57cb34b044960def8&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [SAO LA] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-462413_lhd.m3u8?txSecret=13b27090d5f54b256abda4edde057f74&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [BLV COCA] (Socolive) flv
-https://pull06.scstream.net/live/stream-327159_lsd.flv?auth_key=1779567115-0-0-b307bfb4912aea9425cbe10766f3fda2
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [BLV COCA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-327159_lhd.flv?auth_key=1779567115-0-0-bb95e10b0f0eecd5a88965e4a84b5400
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [BLV COCA] (Socolive) m3u8
-https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1779567115-0-0-a941c80e09e748cb6b66df2a9e6936f3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [BLV COCA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1779567115-0-0-1b1de22430ee83be53ac4793ed295208
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [VƯƠNG ANH] (Socolive) flv
-https://pull.niur.live/live/stream-548860_lsd.flv?txSecret=3bfe2a21c1a34d1567e3451ed673c073&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [VƯƠNG ANH] (Socolive) hdFlv
-https://pull.niur.live/live/stream-548860_lhd.flv?txSecret=4832f274adabec3ea4def59ae56c1bfc&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [VƯƠNG ANH] (Socolive) m3u8
-https://pull.niur.live/live/stream-548860_lsd.m3u8?txSecret=3bfe2a21c1a34d1567e3451ed673c073&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 24/05 FC Bayern Munich vs VfB Stuttgart [VƯƠNG ANH] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-548860_lhd.m3u8?txSecret=4832f274adabec3ea4def59ae56c1bfc&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [CÔNG CHẤT] (Socolive) flv
-https://pull06.scstream.net/live/stream-291277_lsd.flv?auth_key=1779567115-0-0-c55f79ea043a0d928b2edbe2a7a13961
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [CÔNG CHẤT] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-291277_lhd.flv?auth_key=1779567115-0-0-b520831eae9a53ac20d1063723860d82
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [CÔNG CHẤT] (Socolive) m3u8
-https://pull.niues.live/live/stream-291277_lsd.m3u8?auth_key=1779567115-0-0-05e5bd4e6c58511752fa053af7005db8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [CÔNG CHẤT] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1779567115-0-0-0f359ca366a054c1548d151b435cb6e4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV RAMBO] (Socolive) flv
-https://pull.niur.live/live/stream-534055_lsd.flv?txSecret=40731ada29abe1a00eb97b709a74cfb7&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV RAMBO] (Socolive) hdFlv
-https://pull.niur.live/live/stream-534055_lhd.flv?txSecret=74bae89da5ac33272495ff6a6a96ecdb&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV RAMBO] (Socolive) m3u8
-https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=40731ada29abe1a00eb97b709a74cfb7&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV RAMBO] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=74bae89da5ac33272495ff6a6a96ecdb&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV KEM] (Socolive) flv
-https://pull06.scstream.net/live/stream-513394_lsd.flv?auth_key=1779567115-0-0-99252b5fedf968bb03e6ff472619820f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV KEM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-513394_lhd.flv?auth_key=1779567115-0-0-74636c643bc1a331f83780937c965ee9
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV KEM] (Socolive) m3u8
-https://pull.niues.live/live/stream-513394_lsd.m3u8?auth_key=1779567115-0-0-b55b51cfd7330003d9928080de64c735
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV KEM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-513394_lhd.m3u8?auth_key=1779567115-0-0-13a487655e14e3bc1c633dc3d6b97fbc
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [LOKA] (Socolive) flv
-https://pull06.scstream.net/live/stream-589848_lsd.flv?auth_key=1779567115-0-0-8065d139699a2c61b576a89545d1dc1b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [LOKA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-589848_lhd.flv?auth_key=1779567115-0-0-e6578dccffd862d97c5a5ef7f37ba752
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [LOKA] (Socolive) m3u8
-https://pull.niues.live/live/stream-589848_lsd.m3u8?auth_key=1779567115-0-0-7c7964916fd232eeff7f876cffae477d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [LOKA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1779567115-0-0-822546d6d3d35da2342b161c0716894b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV WUKONG] (Socolive) flv
-https://pull06.scstream.net/live/stream-511367_lsd.flv?auth_key=1779567115-0-0-905c572351efb0f21f74439fcb76c30b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV WUKONG] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-511367_lhd.flv?auth_key=1779567115-0-0-492e5dbcb531f091181cab4699df19b5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV WUKONG] (Socolive) m3u8
-https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1779567115-0-0-f7391e19017771c6833f9976a56bf933
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV WUKONG] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1779567115-0-0-02c390c7d14435ca7ae6cba0daab618b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante [TRÀ ĐÁ] (Socolive) flv
-https://pull06.scstream.net/live/stream-603914_lsd.flv?auth_key=1779567115-0-0-e08b9434f14852fcbbb5f6def070f361
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante [TRÀ ĐÁ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-603914_lhd.flv?auth_key=1779567115-0-0-b253757319d2cb45b196953eb35512ef
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante [TRÀ ĐÁ] (Socolive) m3u8
-https://pull.niues.live/live/stream-603914_lsd.m3u8?auth_key=1779567115-0-0-e0f05294dfbab7fa9d4526efc59e6c29
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante [TRÀ ĐÁ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1779567115-0-0-65e692c5dddf579badbc16c157140737
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV GÔN] (Socolive) flv
-https://pull.niur.live/live/stream-445260_lsd.flv?txSecret=2dd1b9f428ced660e5b7f72806e16a7d&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV GÔN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-445260_lhd.flv?txSecret=109e1f08ac3d3d418f6fc244abc0da7a&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV GÔN] (Socolive) m3u8
-https://pull.niur.live/live/stream-445260_lsd.m3u8?txSecret=2dd1b9f428ced660e5b7f72806e16a7d&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV GÔN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-445260_lhd.m3u8?txSecret=109e1f08ac3d3d418f6fc244abc0da7a&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs CA Osasuna [BLV VOI] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912114_lsd.flv?auth_key=1779567115-0-0-d7058a35f8a4d15d13319606177e3a70
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs CA Osasuna [BLV VOI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912114_lhd.flv?auth_key=1779567115-0-0-61be9c0e7083f8d54c9437b7169f3b28
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs CA Osasuna [BLV VOI] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912114_lsd.m3u8?auth_key=1779567115-0-0-37f2f322d79694e5676824fb1dc6a436
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs CA Osasuna [BLV VOI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1779567115-0-0-abd339182b298a847ad1d2b57a13485f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV VIP] (Socolive) flv
-https://pull.niur.live/live/stream-491873_lsd.flv?txSecret=044ba624368f5f5eebf9cdb7a89b7bf0&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV VIP] (Socolive) hdFlv
-https://pull.niur.live/live/stream-491873_lhd.flv?txSecret=6c8e89ecf9470db3a90a0cb452583952&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV VIP] (Socolive) m3u8
-https://pull.niur.live/live/stream-491873_lsd.m3u8?txSecret=044ba624368f5f5eebf9cdb7a89b7bf0&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV VIP] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=6c8e89ecf9470db3a90a0cb452583952&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Deportivo Alavés vs Rayo Vallecano [ĐỖ TÚ TÀI] (Socolive) flv
-https://pull06.scstream.net/live/stream-607552_lsd.flv?auth_key=1779567115-0-0-4c2ca5afa0a0254e98104c34761250dd
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Deportivo Alavés vs Rayo Vallecano [ĐỖ TÚ TÀI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-607552_lhd.flv?auth_key=1779567115-0-0-02ff2e035b26193051e24b10dd66e280
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Deportivo Alavés vs Rayo Vallecano [ĐỖ TÚ TÀI] (Socolive) m3u8
-https://pull.niues.live/live/stream-607552_lsd.m3u8?auth_key=1779567115-0-0-b1cebd667c6f31614816a5f8068000b6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Deportivo Alavés vs Rayo Vallecano [ĐỖ TÚ TÀI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1779567115-0-0-ad7200e868238e47bd582a346c964f5d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Espanyol vs Real Sociedad [PINKMAN] (Socolive) flv
-https://pull.niur.live/live/stream-595715_lsd.flv?txSecret=c33825fc225195c5a8732893f5b4d84e&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Espanyol vs Real Sociedad [PINKMAN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-595715_lhd.flv?txSecret=1c3cc0c300d69541e00f055f2a58c2dd&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Espanyol vs Real Sociedad [PINKMAN] (Socolive) m3u8
-https://pull.niur.live/live/stream-595715_lsd.m3u8?txSecret=c33825fc225195c5a8732893f5b4d84e&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Espanyol vs Real Sociedad [PINKMAN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-595715_lhd.m3u8?txSecret=1c3cc0c300d69541e00f055f2a58c2dd&txTime=6a12505b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
-https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779567115-0-0-fda0178d2c8f4aaddd4142c4cc678172
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779567115-0-0-57ea6901a978eeeb14637a03580b92ed
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
-https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779567115-0-0-50c029d0452f0727269f6fb11031fbec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779567115-0-0-a5a810166ea134825bc6eed5a97540cf
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [CR Bưởi] (Socolive) flv
-https://pull06.scstream.net/live/stream-387694_lsd.flv?auth_key=1779567475-0-0-2614bcac20493fbb69fb6562bdaadb6f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [CR Bưởi] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-387694_lhd.flv?auth_key=1779567475-0-0-5dd2701649a372e4fb010430fa12d68f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [CR Bưởi] (Socolive) m3u8
-https://pull.niues.live/live/stream-387694_lsd.m3u8?auth_key=1779567475-0-0-8005c2166252a4e8efdb706e299ed564
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [CR Bưởi] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-387694_lhd.m3u8?auth_key=1779567475-0-0-58bf3d347c769b72c074c484fe9d4330
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV CUỘI] (Socolive) flv
-https://pull06.scstream.net/live/stream-256080_lsd.flv?auth_key=1779567475-0-0-1eb9a7a9ae022cfae4ddb85f13fa4788
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV CUỘI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-256080_lhd.flv?auth_key=1779567475-0-0-dffee7c31fdee34e5da01c93aa79100a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV CUỘI] (Socolive) m3u8
-https://pull.niues.live/live/stream-256080_lsd.m3u8?auth_key=1779567475-0-0-f083334d7ba4e880a3e36b0272ed14e5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV CUỘI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1779567475-0-0-7d6673a095881beb6a9af3c08bca59df
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa [NGƯỜI CÁ] (Socolive) flv
-https://pull06.scstream.net/live/stream-595335_lsd.flv?auth_key=1779567475-0-0-cd005eea60c43622d917943a1b393b09
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa [NGƯỜI CÁ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-595335_lhd.flv?auth_key=1779567475-0-0-1fe5945a5c3b914d9d9698841b535bc5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa [NGƯỜI CÁ] (Socolive) m3u8
-https://pull.niues.live/live/stream-595335_lsd.m3u8?auth_key=1779567475-0-0-71764cd557e7892a49f7723441d92a95
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 24/05 Lazio vs Pisa [NGƯỜI CÁ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-595335_lhd.m3u8?auth_key=1779567475-0-0-afcd8865637e1c80b1424fdad0f1ec82
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [KÉP] (Socolive) flv
-https://pull06.scstream.net/live/stream-560690_lsd.flv?auth_key=1779567475-0-0-41bb1d0ffe1a32ef63c1d5feb6dde440
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [KÉP] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-560690_lhd.flv?auth_key=1779567475-0-0-4dc0d59c8dcab6b29289831e746f9ca2
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [KÉP] (Socolive) m3u8
-https://pull.niues.live/live/stream-560690_lsd.m3u8?auth_key=1779567475-0-0-8bbeeda2c7ccacccc98dc0762cd45782
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [KÉP] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1779567475-0-0-0a1ca0dc548ea95ca0e9d892c687af9b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Mallorca vs Real Oviedo [CHANH MUỐI] (Socolive) flv
-https://pull06.scstream.net/live/stream-598549_lsd.flv?auth_key=1779567475-0-0-9489ed021a50895752cfd673ca48a03b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Mallorca vs Real Oviedo [CHANH MUỐI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-598549_lhd.flv?auth_key=1779567475-0-0-c16f361f827a43eb3aa4379f80104a8b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Mallorca vs Real Oviedo [CHANH MUỐI] (Socolive) m3u8
-https://pull.niues.live/live/stream-598549_lsd.m3u8?auth_key=1779567475-0-0-45b3c022a2d45d25dd38fc8cdda32b50
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Mallorca vs Real Oviedo [CHANH MUỐI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-598549_lhd.m3u8?auth_key=1779567475-0-0-1509a031f82a1f6e176b2bb8482d8f44
-
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RC Celta vs Sevilla FC [QUỐC KHÁNH] (Socolive) flv
-https://pull.niur.live/live/stream-602153_lsd.flv?txSecret=443f80c19fcbbe50157c0913e5a706f7&txTime=6a1251c3
+https://pull.niur.live/live/stream-602153_lsd.flv?txSecret=6a63bc68e68d7f745bd7d13df5ef6447&txTime=6a1262a3
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RC Celta vs Sevilla FC [QUỐC KHÁNH] (Socolive) hdFlv
-https://pull.niur.live/live/stream-602153_lhd.flv?txSecret=eea386cb813857f4160dcbca1a6f1527&txTime=6a1251c3
+https://pull.niur.live/live/stream-602153_lhd.flv?txSecret=44bc324d89a57d5f3e34cf04a84a6e20&txTime=6a1262a3
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RC Celta vs Sevilla FC [QUỐC KHÁNH] (Socolive) m3u8
-https://pull.niur.live/live/stream-602153_lsd.m3u8?txSecret=443f80c19fcbbe50157c0913e5a706f7&txTime=6a1251c3
+https://pull.niur.live/live/stream-602153_lsd.m3u8?txSecret=6a63bc68e68d7f745bd7d13df5ef6447&txTime=6a1262a3
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RC Celta vs Sevilla FC [QUỐC KHÁNH] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-602153_lhd.m3u8?txSecret=eea386cb813857f4160dcbca1a6f1527&txTime=6a1251c3
+https://pull.niur.live/live/stream-602153_lhd.m3u8?txSecret=44bc324d89a57d5f3e34cf04a84a6e20&txTime=6a1262a3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV CUỘI] (Socolive) flv
+https://pull06.scstream.net/live/stream-256080_lsd.flv?auth_key=1779571795-0-0-8ef04944dec7131367fbaaf352c02810
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV CUỘI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-256080_lhd.flv?auth_key=1779571795-0-0-de47a932d3abe482838bc9752adb7338
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV CUỘI] (Socolive) m3u8
+https://pull.niues.live/live/stream-256080_lsd.m3u8?auth_key=1779571795-0-0-e6795853141d827c270d6c1476cbf01e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV CUỘI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1779571795-0-0-60fe955c6e4b22f872465ea83d8c4239
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [KÉP] (Socolive) flv
+https://pull06.scstream.net/live/stream-560690_lsd.flv?auth_key=1779571795-0-0-3a19a46d8a318b4f52895ff1342ece03
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [KÉP] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-560690_lhd.flv?auth_key=1779571795-0-0-e29c3347ac5fc27f0451c32d9abfe747
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [KÉP] (Socolive) m3u8
+https://pull.niues.live/live/stream-560690_lsd.m3u8?auth_key=1779571795-0-0-a5ce4ceaef5db2fb7effc3a6ec970bf6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [KÉP] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1779571795-0-0-5a46d83af64ffd8a6632b8e8a9400024
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [CR Bưởi] (Socolive) flv
+https://pull06.scstream.net/live/stream-387694_lsd.flv?auth_key=1779571795-0-0-440582de77e4f57468b170294f150abd
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [CR Bưởi] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-387694_lhd.flv?auth_key=1779571795-0-0-71af0ee50e163aec8f7fabcaea6d56a5
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [CR Bưởi] (Socolive) m3u8
+https://pull.niues.live/live/stream-387694_lsd.m3u8?auth_key=1779571795-0-0-ccf59bd06f40a89ca0b59bd423dd5b53
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [CR Bưởi] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-387694_lhd.m3u8?auth_key=1779571795-0-0-4d4b8d5d817d8f22714e2fc305b6265e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Mallorca vs Real Oviedo [CHANH MUỐI] (Socolive) flv
+https://pull06.scstream.net/live/stream-598549_lsd.flv?auth_key=1779571795-0-0-8c032bb11c4cdd79265d3b5b91be218b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Mallorca vs Real Oviedo [CHANH MUỐI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-598549_lhd.flv?auth_key=1779571795-0-0-fe0d3935ebb61d440c528574f69519d5
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Mallorca vs Real Oviedo [CHANH MUỐI] (Socolive) m3u8
+https://pull.niues.live/live/stream-598549_lsd.m3u8?auth_key=1779571795-0-0-835832aa9b20c422be19440233594584
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Mallorca vs Real Oviedo [CHANH MUỐI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-598549_lhd.m3u8?auth_key=1779571795-0-0-181559cd0d71987b18e6cf53e776f4a6
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RC Celta vs Sevilla FC [BLV A TINH] (Socolive) flv
-https://pull.niur.live/live/stream-598119_lsd.flv?txSecret=757b308880f1484b9661b754eede3829&txTime=6a1251c3
+https://pull.niur.live/live/stream-598119_lsd.flv?txSecret=b50e88c126f674c636e14801064f84a1&txTime=6a1262a3
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RC Celta vs Sevilla FC [BLV A TINH] (Socolive) hdFlv
-https://pull.niur.live/live/stream-598119_lhd.flv?txSecret=4df46441c129a94abb75bee734b26c85&txTime=6a1251c3
+https://pull.niur.live/live/stream-598119_lhd.flv?txSecret=18f95d538e92c5a4effbe75c1de63d32&txTime=6a1262a3
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RC Celta vs Sevilla FC [BLV A TINH] (Socolive) m3u8
-https://pull.niur.live/live/stream-598119_lsd.m3u8?txSecret=757b308880f1484b9661b754eede3829&txTime=6a1251c3
+https://pull.niur.live/live/stream-598119_lsd.m3u8?txSecret=b50e88c126f674c636e14801064f84a1&txTime=6a1262a3
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RC Celta vs Sevilla FC [BLV A TINH] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=4df46441c129a94abb75bee734b26c85&txTime=6a1251c3
+https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=18f95d538e92c5a4effbe75c1de63d32&txTime=6a1262a3
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 23/05 Bologna vs Inter (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV VITAMIN] (Socolive) flv
+https://pull06.scstream.net/live/stream-400722_lsd.flv?auth_key=1779572155-0-0-738b2e63da7b6424db9be562106a25de
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 23/05 Bologna vs Inter (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV VITAMIN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-400722_lhd.flv?auth_key=1779572155-0-0-4ca991cdb13f37d35a96a2e103b1755c
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV VITAMIN] (Socolive) m3u8
+https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1779572155-0-0-a146a9d292e98a30dd29652f3c68fc1e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV VITAMIN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1779572155-0-0-4a7280d314386528d481e33a7a81fe85
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [LÃO LÂM] (Socolive) flv
+https://pull06.scstream.net/live/stream-527384_lsd.flv?auth_key=1779572155-0-0-6a07c68fc5c2c6d6c5ca6b9b9681a1f1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [LÃO LÂM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-527384_lhd.flv?auth_key=1779572155-0-0-b74760a8415e4310cd50348db6fb1f5b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [LÃO LÂM] (Socolive) m3u8
+https://pull.niues.live/live/stream-527384_lsd.m3u8?auth_key=1779572155-0-0-ccd3601e33a651a381925f01503ad432
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [LÃO LÂM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1779572155-0-0-d4acad7489d551cd6a09d58e3fa291d4
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV COZY] (Socolive) flv
+https://pull06.scstream.net/live/stream-531989_lsd.flv?auth_key=1779572155-0-0-84a3afc14c11c0860878f8bba76a1473
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV COZY] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-531989_lhd.flv?auth_key=1779572155-0-0-8a908b6d549acbe23c611b01843813fc
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV COZY] (Socolive) m3u8
+https://pull.niues.live/live/stream-531989_lsd.m3u8?auth_key=1779572155-0-0-b59c238d38d83e38c02057b4c7218809
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV COZY] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1779572155-0-0-bc264b291828e86fb418f1393b5da595
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV BÉO] (Socolive) flv
+https://pull.niur.live/live/stream-459401_lsd.flv?txSecret=c1f44bebe89a9e4cba20ab1871298f07&txTime=6a12640b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV BÉO] (Socolive) hdFlv
+https://pull.niur.live/live/stream-459401_lhd.flv?txSecret=f971aafceb1e84c8882360e017d1cf9a&txTime=6a12640b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV BÉO] (Socolive) m3u8
+https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=c1f44bebe89a9e4cba20ab1871298f07&txTime=6a12640b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Valencia CF vs FC Barcelona [BLV BÉO] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=f971aafceb1e84c8882360e017d1cf9a&txTime=6a12640b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV LONG] (Socolive) flv
+https://pull.niur.live/live/stream-9912050_lsd.flv?txSecret=26b29426f77b4a0199a7ca63c5ece91b&txTime=6a12640b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV LONG] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912050_lhd.flv?txSecret=83e7bed2d67602934f85579350814be8&txTime=6a12640b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV LONG] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912050_lsd.m3u8?txSecret=26b29426f77b4a0199a7ca63c5ece91b&txTime=6a12640b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV LONG] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912050_lhd.m3u8?txSecret=83e7bed2d67602934f85579350814be8&txTime=6a12640b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV A WIN] (Socolive) flv
+https://pull06.scstream.net/live/stream-536185_lsd.flv?auth_key=1779572155-0-0-0436f66576b8714a3c857a77b1ac9c73
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV A WIN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-536185_lhd.flv?auth_key=1779572155-0-0-7bd36f6c9b603c42ef05429ddad0c08b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV A WIN] (Socolive) m3u8
+https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1779572155-0-0-48d2d6b9fcd2376bbabda047c8ac628f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV A WIN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1779572155-0-0-a1b546e38a47e2860156aee0d31739a3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [CÔNG CHẤT] (Socolive) flv
+https://pull06.scstream.net/live/stream-291277_lsd.flv?auth_key=1779572515-0-0-05199cb5fbb8b230fdb6913404a3ccb1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [CÔNG CHẤT] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-291277_lhd.flv?auth_key=1779572515-0-0-1645fe6513128ce49309c2ee53d26fdf
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [CÔNG CHẤT] (Socolive) m3u8
+https://pull.niues.live/live/stream-291277_lsd.m3u8?auth_key=1779572515-0-0-47011a1a2067ab84da4a4db63079e7ce
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [CÔNG CHẤT] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1779572515-0-0-d84c0f8b8c15f724a3f51e45d793c702
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [LOKA] (Socolive) flv
+https://pull06.scstream.net/live/stream-589848_lsd.flv?auth_key=1779572515-0-0-61e7a99f7d6ec644b6d00b9fdc2b7670
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [LOKA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-589848_lhd.flv?auth_key=1779572515-0-0-255035f4a81cda3acb5848e2e865aff9
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [LOKA] (Socolive) m3u8
+https://pull.niues.live/live/stream-589848_lsd.m3u8?auth_key=1779572515-0-0-f44729c29733f6f6fb8e41c8b049a879
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [LOKA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1779572515-0-0-47689d43cd075b8de0afc6983bad6d6f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV WUKONG] (Socolive) flv
+https://pull06.scstream.net/live/stream-511367_lsd.flv?auth_key=1779572515-0-0-5505bcdadc220dc802ef7e8aa0e50039
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV WUKONG] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-511367_lhd.flv?auth_key=1779572515-0-0-68dc5fa261f31936a379d03fa6b03107
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV WUKONG] (Socolive) m3u8
+https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1779572515-0-0-96881592ebfc98396cfa88f5c7329e40
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Madrid vs Athletic Club [BLV WUKONG] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1779572515-0-0-711e5013e25c2b504b8e463d3d00a52f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante [TRÀ ĐÁ] (Socolive) flv
+https://pull06.scstream.net/live/stream-603914_lsd.flv?auth_key=1779572515-0-0-5a74f08887f11d86cd454e1a766acc9a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante [TRÀ ĐÁ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-603914_lhd.flv?auth_key=1779572515-0-0-bcda0a39a4b4ec5397312bac97288a78
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante [TRÀ ĐÁ] (Socolive) m3u8
+https://pull.niues.live/live/stream-603914_lsd.m3u8?auth_key=1779572515-0-0-0a9d3c537985a2edafee6c01fecc065f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Real Betis vs Levante [TRÀ ĐÁ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1779572515-0-0-cfeef9bb267f241f00d427d9898f43f2
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV RAMBO] (Socolive) flv
+https://pull.niur.live/live/stream-534055_lsd.flv?txSecret=256fc807fda8ad1aad486c14a406cef3&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV RAMBO] (Socolive) hdFlv
+https://pull.niur.live/live/stream-534055_lhd.flv?txSecret=4775866ca9c19c1cb6ce9b73de158534&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV RAMBO] (Socolive) m3u8
+https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=256fc807fda8ad1aad486c14a406cef3&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV RAMBO] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=4775866ca9c19c1cb6ce9b73de158534&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV VIP] (Socolive) flv
+https://pull.niur.live/live/stream-491873_lsd.flv?txSecret=56e65cde59308700d45baeb3c6a5fdb5&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV VIP] (Socolive) hdFlv
+https://pull.niur.live/live/stream-491873_lhd.flv?txSecret=88c32e1a0dcc107f0ad24edf4cb35108&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV VIP] (Socolive) m3u8
+https://pull.niur.live/live/stream-491873_lsd.m3u8?txSecret=56e65cde59308700d45baeb3c6a5fdb5&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV VIP] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=88c32e1a0dcc107f0ad24edf4cb35108&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV GÔN] (Socolive) flv
+https://pull.niur.live/live/stream-445260_lsd.flv?txSecret=b5fe7905a7eace2ed0efbc1e9c18f441&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV GÔN] (Socolive) hdFlv
+https://pull.niur.live/live/stream-445260_lhd.flv?txSecret=b43647014b8935de6ab524033095eeda&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV GÔN] (Socolive) m3u8
+https://pull.niur.live/live/stream-445260_lsd.m3u8?txSecret=b5fe7905a7eace2ed0efbc1e9c18f441&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Girona FC vs Elche [BLV GÔN] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-445260_lhd.m3u8?txSecret=b43647014b8935de6ab524033095eeda&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Deportivo Alavés vs Rayo Vallecano [ĐỖ TÚ TÀI] (Socolive) flv
+https://pull06.scstream.net/live/stream-607552_lsd.flv?auth_key=1779572515-0-0-a7698c60501e61684aa1fd6c00ab9a5a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Deportivo Alavés vs Rayo Vallecano [ĐỖ TÚ TÀI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-607552_lhd.flv?auth_key=1779572515-0-0-b32369818c783e48e57cccf5193675fb
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Deportivo Alavés vs Rayo Vallecano [ĐỖ TÚ TÀI] (Socolive) m3u8
+https://pull.niues.live/live/stream-607552_lsd.m3u8?auth_key=1779572515-0-0-a4a33418cc84333fdd3ff081672bd7dc
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Deportivo Alavés vs Rayo Vallecano [ĐỖ TÚ TÀI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1779572515-0-0-181a1789a6a2371713c7d78073815b4a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs CA Osasuna [BLV VOI] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912114_lsd.flv?auth_key=1779572515-0-0-d3937d9e894990e33aa444c37c874a3b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs CA Osasuna [BLV VOI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912114_lhd.flv?auth_key=1779572515-0-0-f4b92991ff8a04bc4d2eba3619768bf5
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs CA Osasuna [BLV VOI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912114_lsd.m3u8?auth_key=1779572515-0-0-0f1dd52e8d815edfd75e6ccd1bcf5a15
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 Getafe vs CA Osasuna [BLV VOI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1779572515-0-0-c64da56e801541b4cf833a3f0d1f2de0
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Espanyol vs Real Sociedad [PINKMAN] (Socolive) flv
+https://pull.niur.live/live/stream-595715_lsd.flv?txSecret=5b54a5e1026cd0bd4dc5ed7af53f9ec0&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Espanyol vs Real Sociedad [PINKMAN] (Socolive) hdFlv
+https://pull.niur.live/live/stream-595715_lhd.flv?txSecret=8da08ffd5a9d5df493c08eb74e715223&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Espanyol vs Real Sociedad [PINKMAN] (Socolive) m3u8
+https://pull.niur.live/live/stream-595715_lsd.m3u8?txSecret=5b54a5e1026cd0bd4dc5ed7af53f9ec0&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 24/05 RCD Espanyol vs Real Sociedad [PINKMAN] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-595715_lhd.m3u8?txSecret=8da08ffd5a9d5df493c08eb74e715223&txTime=6a126573
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
+https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779572515-0-0-1e89cd38415823b44b44dd8b8b0e4b41
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779572515-0-0-10af31d35dbd687f2210209d8d3d339a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
+https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779572515-0-0-0d546bd0b6c30745a9155aa357ec7229
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779572515-0-0-ab045f3ca86d3a98572a0d1a4f0dff16
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 24/05 Real Madrid vs Athletic Club (Hội Quán) FHD
 https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
@@ -644,11 +500,11 @@ https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 24/05 Real Madrid vs Athletic Club (Hội Quán) SD
 https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 24/05 Bayern München vs VfB Stuttgart (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanbap/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 24/05 Valencia vs Barcelona (Hội Quán) FHD
+https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 24/05 Bayern München vs VfB Stuttgart (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phanbap/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 24/05 Valencia vs Barcelona (Hội Quán) SD
+https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 24/05 Real Madrid CF vs Athletic Bilbao
 https://live5.msrktz.app/live/24561735.m3u8
@@ -656,15 +512,12 @@ https://live5.msrktz.app/live/24561735.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 24/05 Valencia CF vs FC Barcelona
 https://live5.msrktz.app/live/90865415.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 24/05 FC Bayern München vs VfB Stuttgart
-https://live5.msrktz.app/live/08552895.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 24/05 S.S. Lazio vs Pisa
-https://live5.msrktz.app/live/43612277.m3u8
-
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 24/05 Real Betis Balompié vs Levante
 https://live5.msrktz.app/live/68848594.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 24/05 Celta Vigo vs Sevilla FC
-https://live5.msrktz.app/live/75915087.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h00 24/05 Sao Paulo vs Botafogo RJ
+https://live5.msrktz.app/live/99121525.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",03h30 24/05 Minnesota United vs Real Salt Lake
+https://live5.msrktz.app/live/14707124.m3u8
 
