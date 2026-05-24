@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Gremio_logo.svg/1280px-Gremio_logo.svg.png",05:00 | Gremio vs Santos
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/LOGO_BFC.png/960px-LOGO_BFC.png",18:00 | Binh Duong vs Song Lam Nghe An
 https://alive.zlylive.com/hqtv_blv_phanca/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/2/22/HLHT_FC.svg",18:00 | Hồng Lĩnh Hà Tĩnh vs Công An Nhân Dân
@@ -41,11 +41,23 @@ https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/47.png",Tottenham vs Everton
 https://bglive.yarncdn.live/live/bgtv_blv_lavie/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Gremio (RS) vs Santos (Lương Sơn) BLV VÕ TÒNG m3u
-https://hls.cdnfaster-a.live/live/VOTONG/index.m3u8?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets (Lương Sơn) BLV YẾN THANH m3u
+https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Gremio (RS) vs Santos (Lương Sơn) BLV VÕ TÒNG flv
-https://flv.cdnfaster-a.live/live/VOTONG.flv?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets (Lương Sơn) BLV YẾN THANH flv
+https://flv.cdnfaster-a.live/live/YENTHANH1.flv?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h40 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo (Lương Sơn) BLV KAKA m3u
+https://hls.cdnfaster-a.live/live/KAKA/index.m3u8?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h40 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo (Lương Sơn) BLV KAKA flv
+https://flv.cdnfaster-a.live/live/KAKA.flv?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h40 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo (Lương Sơn) BLV KEVILL m3u
+https://hls.cdnfaster-a.live/live/KEVILL/index.m3u8?expire=1788427256&sign=189afcf7f800d4c6c8a5aa97649a110799
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h40 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo (Lương Sơn) BLV KEVILL flv
+https://flv.cdnfaster-a.live/live/KEVILL.flv?expire=1788427256&sign=189afcf7f800d4c6c8a5aa97649a110799
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 23/05 FC Tulsa vs Hartford Athletic (Khán Đài A) source
 https://www3.f2k3.shop/live/235c29178801ef36a970731709755e2a/playlist.m3u8
@@ -62,29 +74,23 @@ https://www3.f2k3.shop/live/87b8a02016610052ff23e50744f98f77/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Mexico vs Ghana (Khán Đài A) source
 https://www3.f2k3.shop/live/e699af6f4692703a8c718f285b40deb2/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City SC (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City SC (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x1.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 Charlotte vs New England Revolution (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 Charlotte vs New England Revolution (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x2.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs CF Montreal (Chuối Chiên) HD1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/m5x3/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs CF Montreal (Chuối Chiên) HD2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo (Chuối Chiên) HD2
 https://gckc0525.edgemaxcdn.org/live/m5x3.flv
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo vs Palmeiras (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/m5x4/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/m5x1/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo vs Palmeiras (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/m5x4.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/m5x1.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 24/05 Mito Hollyhock vs Kawasaki Frontale (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/m5x2/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h00 ngày 24/05 Mito Hollyhock vs Kawasaki Frontale (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/m5x2.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 24/05 Bắc Ninh vs Hồ Chí Minh II (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
@@ -155,288 +161,309 @@ https://www3.f2k3.shop/live/a60cdd817beb680017f46a5c111202f7/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Canberra Olympic U23 vs Belconnen United U23 (Gà Vàng) source
 https://www3.f2k3.shop/live/829f44b193d50a1f8dcb948fab6a0983/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City [BLV CHIVAS] (Socolive) flv
-https://pull.niur.live/live/stream-485739_lsd.flv?txSecret=8b36c0bc610f31b60a7f4a10bed72f0a&txTime=6a128fa3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 Portland Timbers vs San Jose Earthquakes [BLV Củ Cải] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912091_lsd.flv?auth_key=1779596995-0-0-520e7a516483c284081157564843e836
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City [BLV CHIVAS] (Socolive) hdFlv
-https://pull.niur.live/live/stream-485739_lhd.flv?txSecret=a75ad7430071fcd7cdbcfd2943c277d4&txTime=6a128fa3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 Portland Timbers vs San Jose Earthquakes [BLV Củ Cải] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912091_lhd.flv?auth_key=1779596995-0-0-d314b765956009dd557a59ef16859831
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City [BLV CHIVAS] (Socolive) m3u8
-https://pull.niur.live/live/stream-485739_lsd.m3u8?txSecret=8b36c0bc610f31b60a7f4a10bed72f0a&txTime=6a128fa3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 Portland Timbers vs San Jose Earthquakes [BLV Củ Cải] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912091_lsd.m3u8?auth_key=1779596995-0-0-a165af9381be37dd86df63968bbe25d6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City [BLV CHIVAS] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=a75ad7430071fcd7cdbcfd2943c277d4&txTime=6a128fa3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 Portland Timbers vs San Jose Earthquakes [BLV Củ Cải] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1779596995-0-0-ab0f3b383c0fc9d95bf85a1969832883
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [BLV SATIVA] (Socolive) flv
-https://pull06.scstream.net/live/stream-321443_lsd.flv?auth_key=1779583315-0-0-cee9e5c5cdc174e344a650cb6b0a4376
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV RÔSI] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912102_lsd.flv?auth_key=1779596995-0-0-7535369f04c9852821c9da3dd1dbdfc4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [BLV SATIVA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-321443_lhd.flv?auth_key=1779583315-0-0-2895cd0b42af2d2180e6f670111cc81d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV RÔSI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912102_lhd.flv?auth_key=1779596995-0-0-bda1a743730105cd433be7488075c61c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [BLV SATIVA] (Socolive) m3u8
-https://pull.niues.live/live/stream-321443_lsd.m3u8?auth_key=1779583315-0-0-12fe55f880c493edb802d7ab22b36b94
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV RÔSI] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912102_lsd.m3u8?auth_key=1779596995-0-0-b39955b026ae8cbf70a4c07093941f93
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [BLV SATIVA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-321443_lhd.m3u8?auth_key=1779583315-0-0-7cb76bf6254b57b585ce9c7502334cf8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV RÔSI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912102_lhd.m3u8?auth_key=1779596995-0-0-5fe73467c2596c05e8d21d2fcc0ed9bf
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [HÀ DUY KIÊN] (Socolive) flv
-https://pull06.scstream.net/live/stream-607400_lsd.flv?auth_key=1779583315-0-0-fccd89eafd6ea65a564c17159e876614
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV CÁO] (Socolive) flv
+https://pull06.scstream.net/live/stream-597929_lsd.flv?auth_key=1779596995-0-0-b7fc0667a271d23aad9089d8c27dd521
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [HÀ DUY KIÊN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-607400_lhd.flv?auth_key=1779583315-0-0-0d5f6efdf3b93383beea864375eac8bc
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV CÁO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-597929_lhd.flv?auth_key=1779596995-0-0-1d08920a344e214e71f410116bd96960
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [HÀ DUY KIÊN] (Socolive) m3u8
-https://pull.niues.live/live/stream-607400_lsd.m3u8?auth_key=1779583315-0-0-8280fba590b4560d0d559e7a4c802579
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV CÁO] (Socolive) m3u8
+https://pull.niues.live/live/stream-597929_lsd.m3u8?auth_key=1779596995-0-0-de06e8c3abf26435c0eb7ef477929d8a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [HÀ DUY KIÊN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1779583315-0-0-5dd6f94aa312523d05cc9dac6ee9752e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV CÁO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1779596995-0-0-a92566f185b57b3eb0464717fb85f168
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo - RJ vs Palmeiras - SP [BLV FIREMAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-991140_lsd.flv?auth_key=1779583315-0-0-d5ac3b73c6e1b0fe282acd195a38b2be
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [BRIAN] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912106_lsd.flv?auth_key=1779596995-0-0-23eb27fbc366610aa6d4ee18ff415548
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo - RJ vs Palmeiras - SP [BLV FIREMAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-991140_lhd.flv?auth_key=1779583315-0-0-4e2ee8216f8b1435a4ceac05cb935f9f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [BRIAN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912106_lhd.flv?auth_key=1779596995-0-0-b28d0a7116d61101ed7ccc5939f5cfba
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo - RJ vs Palmeiras - SP [BLV FIREMAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-991140_lsd.m3u8?auth_key=1779583315-0-0-29bbc42ea9dc75c5e1596242347d9032
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [BRIAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912106_lsd.m3u8?auth_key=1779596995-0-0-742935ead985a44f96a831efb7aafc7a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo - RJ vs Palmeiras - SP [BLV FIREMAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1779583315-0-0-7c2b85ed1f4de018a379ae8fe916d423
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [BRIAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1779596995-0-0-71b9359ad3e1949ca117e4fd49a8d292
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [A PÁO] (Socolive) flv
-https://pull06.scstream.net/live/stream-235232_lsd.flv?auth_key=1779583315-0-0-29d35a667ea3178243075a022688923a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [KING] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1779596995-0-0-3c51b1b9b983d9a8106f96be24b42249
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [A PÁO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-235232_lhd.flv?auth_key=1779583315-0-0-b2b5144049fdc6f999f90ba6c1efe70a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [KING] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1779596995-0-0-8cddaf7e478b403c73af9d5dc3153ab9
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [A PÁO] (Socolive) m3u8
-https://pull.niues.live/live/stream-235232_lsd.m3u8?auth_key=1779583315-0-0-5981f7e459641db9b4485c45c7e28d2a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [KING] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1779596995-0-0-8e49d15724992b3eeb274a5fc3f091d0
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [A PÁO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1779583315-0-0-0cd023a0f3c5953622c197ac3ae9b311
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [KING] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1779596995-0-0-affb17f9ea5c136b931ee3e20425303c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [KING] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1779583315-0-0-a0b72d5b0418bd75728b1434f55e7469
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [CHAN SENA] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912115_lsd.flv?auth_key=1779596995-0-0-0b55a848b6b853d51e8c82cfc440b17c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [KING] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1779583315-0-0-eec3ea57135e98f4394f8953fa69fcc0
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [CHAN SENA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912115_lhd.flv?auth_key=1779596995-0-0-92d5c263d50edad9a0e6b3244250d958
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [KING] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1779583315-0-0-04e748d5b5ab4b3674ea7e78371d4030
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [CHAN SENA] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1779596995-0-0-1410929b50675716198df6af220cdd29
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [KING] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1779583315-0-0-598870de63f8b5c8716db21e0e4dc3f6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [CHAN SENA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1779596995-0-0-01108658d9c95ec22f2f4ab7bacf4e47
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [BLV HENRY] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912112_lsd.flv?auth_key=1779583315-0-0-fe0b409060638b8912afc52bf5ccfc3b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [A CHÈ] (Socolive) flv
+https://pull06.scstream.net/live/stream-356042_lsd.flv?auth_key=1779596995-0-0-4471b85a14aef2006f9aea31d5f4ab47
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [BLV HENRY] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912112_lhd.flv?auth_key=1779583315-0-0-d653bb7d291637b8a0ddcc593fc8db13
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [A CHÈ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-356042_lhd.flv?auth_key=1779596995-0-0-11900b560f0afe7272a8719d3140d86f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [BLV HENRY] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912112_lsd.m3u8?auth_key=1779583315-0-0-ba025e2886412adf6966da7bf4ea2d87
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [A CHÈ] (Socolive) m3u8
+https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1779596995-0-0-b4de92a12d04161e0cb8e2c5015eb5e2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [BLV HENRY] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1779583315-0-0-05483e0d94b78d7bdb443d1e7dc7ab69
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [A CHÈ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1779596995-0-0-be352c3bb7cb98c9ec181bc654e4a36a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 ngày 24/05 Vanraure Hachinohe FC vs Tochigi SC [BLV ALEX] (Socolive) flv
+https://pull06.scstream.net/live/stream-532081_lsd.flv?auth_key=1779596995-0-0-c1a9d720fce045b53bec55737edca658
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 ngày 24/05 Vanraure Hachinohe FC vs Tochigi SC [BLV ALEX] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-532081_lhd.flv?auth_key=1779596995-0-0-973309576e7b98131d2dc75f4a9399bf
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 ngày 24/05 Vanraure Hachinohe FC vs Tochigi SC [BLV ALEX] (Socolive) m3u8
+https://pull.niues.live/live/stream-532081_lsd.m3u8?auth_key=1779596995-0-0-0553dff1532852b53a6406c2c0cf174a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 ngày 24/05 Vanraure Hachinohe FC vs Tochigi SC [BLV ALEX] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1779596995-0-0-8c628bb59a5530bd2c440dbc92282846
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [DECO] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912060_lsd.flv?auth_key=1779597355-0-0-7f2269e759387914c8269adb0eac7467
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [DECO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912060_lhd.flv?auth_key=1779597355-0-0-53552b8d6cb54db0fdcf228fb4c01f5d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [DECO] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912060_lsd.m3u8?auth_key=1779597355-0-0-74b4430760464fdb9acca661a8d0243a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [DECO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1779597355-0-0-68ddc18067a87fe64437ace6869796e4
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 Portland Timbers vs San Jose Earthquakes [BLV MESSI] (Socolive) flv
+https://pull06.scstream.net/live/stream-494201_lsd.flv?auth_key=1779597355-0-0-8be9bfa14de30690f7a0f4e4e709918b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 Portland Timbers vs San Jose Earthquakes [BLV MESSI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-494201_lhd.flv?auth_key=1779597355-0-0-99980efd81a2e2bd1c0c3e362742d193
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 Portland Timbers vs San Jose Earthquakes [BLV MESSI] (Socolive) m3u8
+https://pull.niues.live/live/stream-494201_lsd.m3u8?auth_key=1779597355-0-0-27d5c49567797371545854eb45e47dd2
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 Portland Timbers vs San Jose Earthquakes [BLV MESSI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1779597355-0-0-c2110af4627bfbe48186591659ff2eb0
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [BLV FIREMAN] (Socolive) flv
+https://pull06.scstream.net/live/stream-991140_lsd.flv?auth_key=1779597355-0-0-0bd92c74db021283a9c52cdd92d65612
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [BLV FIREMAN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-991140_lhd.flv?auth_key=1779597355-0-0-4de78afdec302ca0bf3617d207c978df
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [BLV FIREMAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-991140_lsd.m3u8?auth_key=1779597355-0-0-f3d82611dc69737c50d3b64c000d14d0
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [BLV FIREMAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1779597355-0-0-7f93c0b9eceb3d2b7ebfb902a5814e84
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV 7UP] (Socolive) flv
+https://pull06.scstream.net/live/stream-534219_lsd.flv?auth_key=1779597355-0-0-9192e3b1fd252702603d8abc21de7c37
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV 7UP] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-534219_lhd.flv?auth_key=1779597355-0-0-f82d5d610e6d1e06f9166233eb1165af
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV 7UP] (Socolive) m3u8
+https://pull.niues.live/live/stream-534219_lsd.m3u8?auth_key=1779597355-0-0-a81ae3168f9e5fe05617ce71af191190
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV 7UP] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-534219_lhd.m3u8?auth_key=1779597355-0-0-d468de7b220acd1cc6b383355fa36618
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV TAP] (Socolive) flv
+https://pull.niur.live/live/stream-9912041_lsd.flv?txSecret=2f51d97102fe6d320b618dbcd7770161&txTime=6a12c67b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV TAP] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912041_lhd.flv?txSecret=4178e9be5e59278392c31cbd151ac49e&txTime=6a12c67b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV TAP] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912041_lsd.m3u8?txSecret=2f51d97102fe6d320b618dbcd7770161&txTime=6a12c67b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV TAP] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=4178e9be5e59278392c31cbd151ac49e&txTime=6a12c67b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV ĐỐM] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912110_lsd.flv?auth_key=1779597355-0-0-72da03e8bf325189c6bdcc204632fd91
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV ĐỐM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912110_lhd.flv?auth_key=1779597355-0-0-788c79a93fdb2c47a07f24a677c21d9b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV ĐỐM] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912110_lsd.m3u8?auth_key=1779597355-0-0-268d96eb3fd212de3b5152eb0c36d260
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV ĐỐM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1779597355-0-0-3c3ddfbcfd9457cf2d5ff6528b1e4635
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV ENZO] (Socolive) flv
+https://pull06.scstream.net/live/stream-380460_lsd.flv?auth_key=1779597355-0-0-92bc3fe13f48338ba367167f12f06b3b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV ENZO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-380460_lhd.flv?auth_key=1779597355-0-0-94458db02bd5c2c160234ec25476582c
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV ENZO] (Socolive) m3u8
+https://pull.niues.live/live/stream-380460_lsd.m3u8?auth_key=1779597355-0-0-118ea0d54c6c962886bef960bbc63889
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h30 ngày 24/05 San Diego FC vs Vancouver Whitecaps [BLV ENZO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1779597355-0-0-1a4e953fc0e257174ced60337da5c25f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 ngày 24/05 Vanraure Hachinohe FC vs Tochigi SC [BLV RYO] (Socolive) flv
+https://pull06.scstream.net/live/stream-602019_lsd.flv?auth_key=1779597355-0-0-31b63870dd73b71f193336b8fc6b9628
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 ngày 24/05 Vanraure Hachinohe FC vs Tochigi SC [BLV RYO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-602019_lhd.flv?auth_key=1779597355-0-0-f736eb0f4f72d3f36f27223b4b7e1c05
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 ngày 24/05 Vanraure Hachinohe FC vs Tochigi SC [BLV RYO] (Socolive) m3u8
+https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1779597355-0-0-1a1e82a994b91f14c95fc822532388fb
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 ngày 24/05 Vanraure Hachinohe FC vs Tochigi SC [BLV RYO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1779597355-0-0-f100a0ded3f823b3227a81e9c22011b2
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
-https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779583315-0-0-53c25d7387ca8f0a3534d5e8762317b0
+https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779597355-0-0-7637d0f28994b39a7bd5768a22da7ce5
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779583315-0-0-38333a1d3373572e39047340b2027b2b
+https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779597355-0-0-3c137d07d78b91f26aa2cd82e583cba1
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
-https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779583315-0-0-01a373b70ff9ee1329cb5c36546adb14
+https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779597355-0-0-1c3490c81b15c5ca610f6a6ef24c9865
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779583315-0-0-c941560fe4b93d1c03536405bac8cbb4
+https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779597355-0-0-6aa599021b276eab42cf51ced01ba151
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [BLV LUCAS] (Socolive) flv
-https://pull06.scstream.net/live/stream-304148_lsd.flv?auth_key=1779583675-0-0-28b7200ed98428eaee781fde7aec2f7a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [BLV TOMIA] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912008_lsd.flv?auth_key=1779597715-0-0-30651f97062b620e1e7a75ee8ddc950f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [BLV LUCAS] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-304148_lhd.flv?auth_key=1779583675-0-0-58b064ed874960d5379a02e7adf3a291
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [BLV TOMIA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912008_lhd.flv?auth_key=1779597715-0-0-dff375f4f37f17478d5f065b6e140743
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [BLV LUCAS] (Socolive) m3u8
-https://pull.niues.live/live/stream-304148_lsd.m3u8?auth_key=1779583675-0-0-fd091590d703a9d3d7109e15d1528e15
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [BLV TOMIA] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1779597715-0-0-a31cfb7c4166625bcd82d5f265f82ca1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [BLV LUCAS] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1779583675-0-0-45272e3da4440dde331aa7cb03ea1ee2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [BLV TOMIA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1779597715-0-0-7f9c478ddb9fd90058af53c6d54537de
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs Montreal Impact [BLV RYO] (Socolive) flv
-https://pull06.scstream.net/live/stream-602019_lsd.flv?auth_key=1779583675-0-0-dc1005cbcf0f19cef79797b814c2519c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV COCA] (Socolive) flv
+https://pull06.scstream.net/live/stream-327159_lsd.flv?auth_key=1779597715-0-0-2b1ae1063702498ba17682c7d7a7cf4f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs Montreal Impact [BLV RYO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-602019_lhd.flv?auth_key=1779583675-0-0-a1cc3ce5c043716453778f7ae5144a04
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV COCA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-327159_lhd.flv?auth_key=1779597715-0-0-c462b7212e5146e5834cd20d90011e1f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs Montreal Impact [BLV RYO] (Socolive) m3u8
-https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1779583675-0-0-67bb2172cb6558346abec077604e6f4f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV COCA] (Socolive) m3u8
+https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1779597715-0-0-d54ddac5df021b39dacf9524dfaa09f7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs Montreal Impact [BLV RYO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1779583675-0-0-d3cd204fc22169f24a574cb64ca62875
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV COCA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1779597715-0-0-47038d1f3b864a7c72c4310d9199e3e6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs Montreal Impact [BLV HÚP] (Socolive) flv
-https://pull06.scstream.net/live/stream-611382_lsd.flv?auth_key=1779583675-0-0-ffa7cfaacf31fdb0b172b6a069d00f5d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV TOMMY] (Socolive) flv
+https://pull06.scstream.net/live/stream-414317_lsd.flv?auth_key=1779597715-0-0-16fb52bf64765a030c0b0a3a9e711df0
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs Montreal Impact [BLV HÚP] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-611382_lhd.flv?auth_key=1779583675-0-0-01d8914f19891542f7a43f75ccc017c1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV TOMMY] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-414317_lhd.flv?auth_key=1779597715-0-0-1751a60676ed3a93fb79a4044cb5b773
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs Montreal Impact [BLV HÚP] (Socolive) m3u8
-https://pull.niues.live/live/stream-611382_lsd.m3u8?auth_key=1779583675-0-0-6f98e1450a51403e05cd4c56e30fec65
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV TOMMY] (Socolive) m3u8
+https://pull.niues.live/live/stream-414317_lsd.m3u8?auth_key=1779597715-0-0-94b773eecb6248102a3d99704b47ab08
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 DC United vs Montreal Impact [BLV HÚP] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-611382_lhd.m3u8?auth_key=1779583675-0-0-5650d80a2f95979c9c6092fa000f3262
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h30 ngày 24/05 Los Angeles Galaxy vs Houston Dynamo [BLV TOMMY] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1779597715-0-0-0c89a5a8ee86192aa7ed1c5159673d31
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [BLV THÓC] (Socolive) flv
-https://pull06.scstream.net/live/stream-606448_lsd.flv?auth_key=1779583675-0-0-389143250fdf601807806e94ec3748ac
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [BLV HENRY] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912112_lsd.flv?auth_key=1779597715-0-0-ff4d42f0920ede1df1234e0cab81b170
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [BLV THÓC] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-606448_lhd.flv?auth_key=1779583675-0-0-b5eba474c160765067d3d041626ef661
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [BLV HENRY] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912112_lhd.flv?auth_key=1779597715-0-0-1fc2f88ca6ebf31f8d9cb900cc1986dc
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [BLV THÓC] (Socolive) m3u8
-https://pull.niues.live/live/stream-606448_lsd.m3u8?auth_key=1779583675-0-0-d816f2bae75fc9aeb7d2b616ca7c2c70
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [BLV HENRY] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912112_lsd.m3u8?auth_key=1779597715-0-0-4feb8aaa1a879f2123714b7ad9dac824
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Grêmio - RS vs Santos Fc - SP [BLV THÓC] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-606448_lhd.m3u8?auth_key=1779583675-0-0-ff101cd2d3cf1fed865771c5e341030a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [BLV HENRY] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1779597715-0-0-e4b98949fbe429c97e8b28b20b2f3764
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 Charlotte FC vs New England Revolution [BLV GÔN] (Socolive) flv
-https://pull.niur.live/live/stream-445260_lsd.flv?txSecret=4a258f97c88236b0cd8a17302fd1cb95&txTime=6a12910b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [LOGAN] (Socolive) flv
+https://pull06.scstream.net/live/stream-552832_lsd.flv?auth_key=1779597715-0-0-75ddae17df079f32324f8ddbab0805b8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 Charlotte FC vs New England Revolution [BLV GÔN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-445260_lhd.flv?txSecret=b8150732fc4d2d3bde3c953cc269f3c8&txTime=6a12910b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [LOGAN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-552832_lhd.flv?auth_key=1779597715-0-0-53d975f21178290c436634e5cc8642e6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 Charlotte FC vs New England Revolution [BLV GÔN] (Socolive) m3u8
-https://pull.niur.live/live/stream-445260_lsd.m3u8?txSecret=4a258f97c88236b0cd8a17302fd1cb95&txTime=6a12910b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [LOGAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-552832_lsd.m3u8?auth_key=1779597715-0-0-7b19007d7cd6398170dd0446ddcb1a4a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 Charlotte FC vs New England Revolution [BLV GÔN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-445260_lhd.m3u8?txSecret=b8150732fc4d2d3bde3c953cc269f3c8&txTime=6a12910b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [LOGAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1779597715-0-0-12c58c5c65e159126bbf9964cd69346d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [CHAN SENA] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912115_lsd.flv?auth_key=1779583675-0-0-ee99c65c3734acf628815fc5ef8405dd
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [HUNTER] (Socolive) flv
+https://pull06.scstream.net/live/stream-558264_lsd.flv?auth_key=1779597715-0-0-8efe893e5b768fcc3237429ed74ba3b8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [CHAN SENA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912115_lhd.flv?auth_key=1779583675-0-0-61dab8d2d3ba098fa66156d2a470a48c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [HUNTER] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-558264_lhd.flv?auth_key=1779597715-0-0-516d7af24a0ad6b4ae6a9d1701e597b2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [CHAN SENA] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1779583675-0-0-5d3c066454c450f634ece953db8a925a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [HUNTER] (Socolive) m3u8
+https://pull.niues.live/live/stream-558264_lsd.m3u8?auth_key=1779597715-0-0-aed49b3035bb459152d315f1b7b0214c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [CHAN SENA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1779583675-0-0-32cac47234c42a251d925026df1df175
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 24/05 Nelson Giants vs Otago Nuggets [HUNTER] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-558264_lhd.m3u8?auth_key=1779597715-0-0-005b00a1ce2579c3d12107002aa85c04
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [HUNTER] (Socolive) flv
-https://pull06.scstream.net/live/stream-558264_lsd.flv?auth_key=1779583675-0-0-5a2f5ee8c7582b7d81f916182ea9edb2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [CHANH MUỐI] (Socolive) flv
+https://pull06.scstream.net/live/stream-598549_lsd.flv?auth_key=1779597715-0-0-36ded770b5170477d1e93f3493bffe3c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [HUNTER] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-558264_lhd.flv?auth_key=1779583675-0-0-ba46975564b97988ea5d7a7a18d33d74
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [CHANH MUỐI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-598549_lhd.flv?auth_key=1779597715-0-0-76bd9214be2536f2c583000e4768c459
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [HUNTER] (Socolive) m3u8
-https://pull.niues.live/live/stream-558264_lsd.m3u8?auth_key=1779583675-0-0-2d6096bd174060ca5e1062e86bf4d421
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [CHANH MUỐI] (Socolive) m3u8
+https://pull.niues.live/live/stream-598549_lsd.m3u8?auth_key=1779597715-0-0-aad3e546b73be697c2c8edc58787d42f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [HUNTER] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-558264_lhd.m3u8?auth_key=1779583675-0-0-3243501f3773812d77a81351f73c3fe7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 ngày 24/05 Fagiano Okayama vs Cerezo Osaka [CHANH MUỐI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-598549_lhd.m3u8?auth_key=1779597715-0-0-b89b8e51c1a40e840761bc3a240cccc0
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City [BLV NẤM] (Socolive) flv
-https://pull06.scstream.net/live/stream-608899_lsd.flv?auth_key=1779584035-0-0-37f608907a8e8176d24266eaea152642
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City [BLV NẤM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-608899_lhd.flv?auth_key=1779584035-0-0-4368145ff456cd039fe9a0639b6f2ace
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City [BLV NẤM] (Socolive) m3u8
-https://pull.niues.live/live/stream-608899_lsd.m3u8?auth_key=1779584035-0-0-a6a49278f2b788beef8994c10d259527
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h30 ngày 24/05 FC Cincinnati vs Orlando City [BLV NẤM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-608899_lhd.m3u8?auth_key=1779584035-0-0-5b4bc78d96f370d9b89e9c9f805e9c6e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [XUÂN SON] (Socolive) flv
-https://pull.niur.live/live/stream-501412_lsd.flv?txSecret=8f24cff5291bf6680bd18f504cce600b&txTime=6a129273
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [XUÂN SON] (Socolive) hdFlv
-https://pull.niur.live/live/stream-501412_lhd.flv?txSecret=faea3fd9f3c2c7472797a9d6fd5ca108&txTime=6a129273
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [XUÂN SON] (Socolive) m3u8
-https://pull.niur.live/live/stream-501412_lsd.m3u8?txSecret=8f24cff5291bf6680bd18f504cce600b&txTime=6a129273
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 24/05 Mirassol - SP vs Fluminense - RJ [XUÂN SON] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=faea3fd9f3c2c7472797a9d6fd5ca108&txTime=6a129273
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [BRIAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912106_lsd.flv?auth_key=1779584035-0-0-5a203351ee275347889f0e594d9a9cd9
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [BRIAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912106_lhd.flv?auth_key=1779584035-0-0-25ce1bc89b6407b6c8ed07a1c929350a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [BRIAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912106_lsd.m3u8?auth_key=1779584035-0-0-8788acbd747b3347a4c591f906bde7cf
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [BRIAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1779584035-0-0-495a131a27f821c28c9c210b3bd02c31
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 24/05 Chicago Fire vs Toronto FC [BLV XO] (Socolive) flv
-https://pull06.scstream.net/live/stream-472241_lsd.flv?auth_key=1779584035-0-0-92bddfb7c0d0cefc8fa91c98bdc0e7f4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 24/05 Chicago Fire vs Toronto FC [BLV XO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-472241_lhd.flv?auth_key=1779584035-0-0-e01a7fe807f491b3310ef8d55ba20c90
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 24/05 Chicago Fire vs Toronto FC [BLV XO] (Socolive) m3u8
-https://pull.niues.live/live/stream-472241_lsd.m3u8?auth_key=1779584035-0-0-888646da76b3dc5c3e10e7cde22cc36e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 24/05 Chicago Fire vs Toronto FC [BLV XO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1779584035-0-0-944826226b29a9b65d22e5daa384dd32
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [A CHÈ] (Socolive) flv
-https://pull06.scstream.net/live/stream-356042_lsd.flv?auth_key=1779584035-0-0-808c0f2a3be782337fc508ee62ff62e3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [A CHÈ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-356042_lhd.flv?auth_key=1779584035-0-0-f4c71756afc3f11c89ee41959c4ba6f5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [A CHÈ] (Socolive) m3u8
-https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1779584035-0-0-b781a49a98ffc27a714f44f9e8bcb3e2
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Cleveland Cavaliers vs New York Knicks [A CHÈ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1779584035-0-0-5045ce5cb3fca8c48885d7d1eecde8eb
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo - RJ vs Palmeiras - SP [BLV ANH TÀI] (Socolive) flv
-https://pull06.scstream.net/live/stream-406865_lsd.flv?auth_key=1779584035-0-0-7706ff2c611149fa01eca1dc1dee2d5f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo - RJ vs Palmeiras - SP [BLV ANH TÀI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-406865_lhd.flv?auth_key=1779584035-0-0-fd4fabfee44b9348051cbf89037ae9ed
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo - RJ vs Palmeiras - SP [BLV ANH TÀI] (Socolive) m3u8
-https://pull.niues.live/live/stream-406865_lsd.m3u8?auth_key=1779584035-0-0-c85f4e0c13e0ba7b23e579d016234c69
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 ngày 24/05 Flamengo - RJ vs Palmeiras - SP [BLV ANH TÀI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1779584035-0-0-494bf145b5f2dfb66d2e65c5fad5a265
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 24/05 Gremio vs Santos (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanca/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 24/05 Gremio vs Santos (Hội Quán) SD
-https://alive.zlylive.com/hqtv_blv_phanca/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 24/05 Cleveland Cavaliers vs New York Knicks (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanbap/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 24/05 Cleveland Cavaliers vs New York Knicks (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phanbap/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 24/05 Flamengo vs Palmeiras (Hội Quán) FHD
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 24/05 Fagiano Okayama vs Cerezo Osaka (Hội Quán) FHD
 https://hqlive.yarncdn.live/live/hqtv_blv_phananh/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 24/05 Flamengo vs Palmeiras (Hội Quán) SD
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h55 24/05 Fagiano Okayama vs Cerezo Osaka (Hội Quán) SD
 https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 24/05 Mirassol vs Fluminense RJ
-https://live5.msrktz.app/live/90865415.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 24/05 Đ (Hội Quán) FHD
+https://hqlive.yarncdn.live/live/hqtv_blv_phanchuot/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h40 24/05 Charlotte FC vs New England Revolution
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",11h00 24/05 Đ (Hội Quán) SD
+https://alive.yarncdn.live/hqtv_blv_phanchuot/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",08h40 24/05 San Diego FC vs Vancouver Whitecaps
+https://live5.msrktz.app/live/99121525.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h40 24/05 Los Angeles Galaxy vs Houston Dynamo
 https://live5.msrktz.app/live/88508431.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 24/05 Flamengo vs Palmeiras
-https://live5.msrktz.app/live/02456966.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 24/05 Cleveland Cavaliers vs New York Knicks
-https://live5.msrktz.app/live/87379114.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h00 24/05 Las Vegas Aces vs Los Angeles Sparks
-https://live5.msrktz.app/live/82054853.m3u8
 
