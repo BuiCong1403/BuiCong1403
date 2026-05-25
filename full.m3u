@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/en/7/7b/Suwon_Samsung_Bluewings.svg",14:30 | Suwon Bluewings vs Cheonan City
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg",18:30 | Croatia U17 vs Belgium U17
 https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/333.png",22:00 | Sarpsborg 08 FF vs Molde
@@ -29,11 +29,17 @@ https://bglive.yarncdn.live/live/bgtv_blv_lavie/playlist.m3u8
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/625.png",Lyngby vs AC Horsens
 https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h10 ngày 25/05 BOURNEMOUTH vs MAN CITY (Lương Sơn) BLV LEO REPLAY m3u
-https://hls.cdnfaster-a.live/live/TO6A/index.m3u8?expire=1891408380&sign=df6b95775ca8cf6b58a17d54271d96e3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC (Lương Sơn) BLV YẾN THANH m3u
+https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h10 ngày 25/05 BOURNEMOUTH vs MAN CITY (Lương Sơn) BLV LEO REPLAY flv
-https://flv.cdnfaster-a.live/live/TO6A.flv?expire=1891408380&sign=df6b95775ca8cf6b58a17d54271d96e3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC (Lương Sơn) BLV YẾN THANH flv
+https://flv.cdnfaster-a.live/live/YENTHANH1.flv?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC (Lương Sơn) BLV MỘT CHÂN m3u
+https://hls.cdnfaster-a.live/live/MOTCHAN1/index.m3u8?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC (Lương Sơn) BLV MỘT CHÂN flv
+https://flv.cdnfaster-a.live/live/MOTCHAN1.flv?expire=2556072660&sign=4b991d1cc92d0eb9bddfcb0b1b372a21
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 23/05 FC Tulsa vs Hartford Athletic (Khán Đài A) source
 https://www3.f2k3.shop/live/235c29178801ef36a970731709755e2a/playlist.m3u8
@@ -49,18 +55,6 @@ https://www3.f2k3.shop/live/87b8a02016610052ff23e50744f98f77/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Mexico vs Ghana (Khán Đài A) source
 https://www3.f2k3.shop/live/e699af6f4692703a8c718f285b40deb2/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 25/05 Suwon Bluewings vs Cheonan City (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 25/05 Suwon Bluewings vs Cheonan City (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/chuoitay.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 25/05 Suwon Bluewings vs Cheonan City (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 25/05 Suwon Bluewings vs Cheonan City (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/chuoitayhd.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8
@@ -122,6 +116,18 @@ https://gckc0525.edgemaxcdn.org/live/chuoibohd/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 26/05 Estonia U17 vs Spain U17 (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/chuoibohd.flv
 
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h00 ngày 26/05 Coritiba vs Bahia (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h00 ngày 26/05 Coritiba vs Bahia (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/chuoitay.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h00 ngày 26/05 Coritiba vs Bahia (Chuối Chiên) FHD1
+https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",06h00 ngày 26/05 Coritiba vs Bahia (Chuối Chiên) FHD2
+https://gckc0525.edgemaxcdn.org/live/chuoitayhd.flv
+
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Tacoma Defiance vs Ventura County FC (Gà Vàng) source
 https://www3.f2k3.shop/live/821d54abadb12c6c15edba538ab20ad1/playlist.m3u8
 
@@ -131,87 +137,120 @@ https://www3.f2k3.shop/live/a60cdd817beb680017f46a5c111202f7/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Canberra Olympic U23 vs Belconnen United U23 (Gà Vàng) source
 https://www3.f2k3.shop/live/829f44b193d50a1f8dcb948fab6a0983/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Brighton Hove Albion vs Manchester United [Sóc nhàm nhang nhồ] (Socolive) flv
-https://pull06.scstream.net/live/stream-152898_lsd.flv?auth_key=1779688795-0-0-429bd4bbb9315d585832a4d140c266a7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV PIRLO] (Socolive) flv
+https://pull06.scstream.net/live/stream-351530_lsd.flv?auth_key=1779705715-0-0-5f0d355d639906b7aafd00e1734068f5
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Brighton Hove Albion vs Manchester United [Sóc nhàm nhang nhồ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-152898_lhd.flv?auth_key=1779688795-0-0-caab10d364e40853818330d2d03a121d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV PIRLO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-351530_lhd.flv?auth_key=1779705715-0-0-c683aaf8955d39117fc38ff90553b275
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Brighton Hove Albion vs Manchester United [Sóc nhàm nhang nhồ] (Socolive) m3u8
-https://pull.niues.live/live/stream-152898_lsd.m3u8?auth_key=1779688795-0-0-25ea347ebe968f352b6f505bd8e587ff
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV PIRLO] (Socolive) m3u8
+https://pull.niues.live/live/stream-351530_lsd.m3u8?auth_key=1779705715-0-0-7a03619ef7d2d6abac87e0e1e65a4d0e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Brighton Hove Albion vs Manchester United [Sóc nhàm nhang nhồ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-152898_lhd.m3u8?auth_key=1779688795-0-0-23c56c33a9941102eaf41a77be61673f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV PIRLO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-351530_lhd.m3u8?auth_key=1779705715-0-0-64b761cbbd3d2f4ee969adbe2c8195bc
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Manchester City vs Aston Villa [Sóc trong rừng xà nu] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912079_lsd.flv?auth_key=1779688795-0-0-c7de069bb0c322293e42452b4e137362
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [VƯƠNG ANH] (Socolive) flv
+https://pull.niur.live/live/stream-548860_lsd.flv?txSecret=ade504c172cdc02efaf3cb74bc762c86&txTime=6a146f2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Manchester City vs Aston Villa [Sóc trong rừng xà nu] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912079_lhd.flv?auth_key=1779688795-0-0-3ff29da1678657af35a6c26e870d073d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [VƯƠNG ANH] (Socolive) hdFlv
+https://pull.niur.live/live/stream-548860_lhd.flv?txSecret=f98f27fed4a5f0a67c20c7dcc26ed735&txTime=6a146f2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Manchester City vs Aston Villa [Sóc trong rừng xà nu] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912079_lsd.m3u8?auth_key=1779688795-0-0-863cf4236ba1baf552b10e250faa2bce
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [VƯƠNG ANH] (Socolive) m3u8
+https://pull.niur.live/live/stream-548860_lsd.m3u8?txSecret=ade504c172cdc02efaf3cb74bc762c86&txTime=6a146f2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Manchester City vs Aston Villa [Sóc trong rừng xà nu] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912079_lhd.m3u8?auth_key=1779688795-0-0-cf4827ac34c1db7a96fba5bd32803907
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [VƯƠNG ANH] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-548860_lhd.m3u8?txSecret=f98f27fed4a5f0a67c20c7dcc26ed735&txTime=6a146f2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Liverpool vs Brentford [Sóc đau cổ vai gáy] (Socolive) flv
-https://pull06.scstream.net/live/stream-179093_lsd.flv?auth_key=1779688795-0-0-1e2f043fec15a437b252752f767a893e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV TAP] (Socolive) flv
+https://pull.niur.live/live/stream-9912041_lsd.flv?txSecret=7df69fdd0cae36149c823d5d280e461b&txTime=6a146f2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Liverpool vs Brentford [Sóc đau cổ vai gáy] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-179093_lhd.flv?auth_key=1779688795-0-0-bc355dbfa5ae8972dcabdd36336adc0d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV TAP] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912041_lhd.flv?txSecret=26f5f134ab518c676a1a07774e2fe48b&txTime=6a146f2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Liverpool vs Brentford [Sóc đau cổ vai gáy] (Socolive) m3u8
-https://pull.niues.live/live/stream-179093_lsd.m3u8?auth_key=1779688795-0-0-29f1695bf594e700429d85802f2ea19e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV TAP] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912041_lsd.m3u8?txSecret=7df69fdd0cae36149c823d5d280e461b&txTime=6a146f2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Liverpool vs Brentford [Sóc đau cổ vai gáy] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-179093_lhd.m3u8?auth_key=1779688795-0-0-b65d04b2d12bf2db9c3efd3346db15f2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV TAP] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=26f5f134ab518c676a1a07774e2fe48b&txTime=6a146f2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Sunderland vs Chelsea [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) flv
-https://pull06.scstream.net/live/stream-133277_lsd.flv?auth_key=1779688795-0-0-4c8ba448bfe1bcf2c9ff4fcf8e0f89a1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV COCA] (Socolive) flv
+https://pull06.scstream.net/live/stream-327159_lsd.flv?auth_key=1779706075-0-0-ab99f28c6f1de49fbf25f05530b7ee34
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Sunderland vs Chelsea [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-133277_lhd.flv?auth_key=1779688795-0-0-b45e6ecacfe751e085e89e15209d75bd
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV COCA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-327159_lhd.flv?auth_key=1779706075-0-0-165e298210f7146097c604d8a59ff8a2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Sunderland vs Chelsea [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) m3u8
-https://pull.niues.live/live/stream-133277_lsd.m3u8?auth_key=1779688795-0-0-c936552dca265c42db510e0241e957b7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV COCA] (Socolive) m3u8
+https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1779706075-0-0-c1972250398727518bd173e35c3cb61a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Sunderland vs Chelsea [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-133277_lhd.m3u8?auth_key=1779688795-0-0-f3c517ce4370d515b814053ff12c8417
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV COCA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1779706075-0-0-649fd0a9a0034a6c5017f658069690e1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ITA D1 - AC Milan vs Cagliari [Sóc mèo méo meo] (Socolive) flv
-https://pull06.scstream.net/live/stream-343500_lsd.flv?auth_key=1779688795-0-0-aa6f92871b6fb6d44d954af0a35f6cec
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV CUỘI] (Socolive) flv
+https://pull06.scstream.net/live/stream-256080_lsd.flv?auth_key=1779706075-0-0-f0d7267a239b84417898b415bdc44019
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ITA D1 - AC Milan vs Cagliari [Sóc mèo méo meo] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-343500_lhd.flv?auth_key=1779688795-0-0-48cdedd220c595ca5e70b6addd86d2f3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV CUỘI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-256080_lhd.flv?auth_key=1779706075-0-0-aef9d96b35d5033d6ccd9838c1f0e24b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ITA D1 - AC Milan vs Cagliari [Sóc mèo méo meo] (Socolive) m3u8
-https://pull.niues.live/live/stream-343500_lsd.m3u8?auth_key=1779688795-0-0-958fff92a890295db7196430e8e9263e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV CUỘI] (Socolive) m3u8
+https://pull.niues.live/live/stream-256080_lsd.m3u8?auth_key=1779706075-0-0-5eb5420c43483e9d7d115da2aa65f31f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ITA D1 - AC Milan vs Cagliari [Sóc mèo méo meo] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-343500_lhd.m3u8?auth_key=1779688795-0-0-dc3490f3841a5c09c12cb3874eb5e1da
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [BLV CUỘI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1779706075-0-0-b7f4c4ca0373c7c198be2e6d9ff5e2d2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Crystal Palace vs Arsenal [Sóc trèo cây ngô đồng] (Socolive) flv
-https://pull06.scstream.net/live/stream-133824_lsd.flv?auth_key=1779688795-0-0-0a36961c4d81261f780bf5135f18d7e7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [A BỆU] (Socolive) flv
+https://pull06.scstream.net/live/stream-484845_lsd.flv?auth_key=1779706435-0-0-27781912674c245201cc00ba9b82fe60
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Crystal Palace vs Arsenal [Sóc trèo cây ngô đồng] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-133824_lhd.flv?auth_key=1779688795-0-0-d83e536a569d3a7127f801419db1f97c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [A BỆU] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-484845_lhd.flv?auth_key=1779706435-0-0-a78d1b486e1ae48d1c7255288fd7f215
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Crystal Palace vs Arsenal [Sóc trèo cây ngô đồng] (Socolive) m3u8
-https://pull.niues.live/live/stream-133824_lsd.m3u8?auth_key=1779688795-0-0-10571115a57a7d467768696f67f8920a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [A BỆU] (Socolive) m3u8
+https://pull.niues.live/live/stream-484845_lsd.m3u8?auth_key=1779706435-0-0-22897e334bad9c373a23cbf8b233d7a4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: ENG PR - Crystal Palace vs Arsenal [Sóc trèo cây ngô đồng] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-133824_lhd.m3u8?auth_key=1779688795-0-0-0549d057db985dd1e4f3665a75ac725e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 ngày 25/05 South Melbourne vs Avondale FC [A BỆU] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1779706435-0-0-4d7fd2c1b1a52fe58a3c40803f1ee6e4
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 25/05 GenSan Warriors vs Pasay Voyagers [KING] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1779706435-0-0-38c535c18e48825c24cd053f7bad3d7b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 25/05 GenSan Warriors vs Pasay Voyagers [KING] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1779706435-0-0-1080581423438e51d1a754c9677c7845
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 25/05 GenSan Warriors vs Pasay Voyagers [KING] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1779706435-0-0-356fb88959a7a299b175189fbe5ff08d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 25/05 GenSan Warriors vs Pasay Voyagers [KING] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1779706435-0-0-fc5790ce935de447b3825fc958d8bc9f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 25/05 GenSan Warriors vs Pasay Voyagers [CHAN SENA] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912115_lsd.flv?auth_key=1779706435-0-0-dcd172f8161a579eceadd4ed0d1bf729
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 25/05 GenSan Warriors vs Pasay Voyagers [CHAN SENA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912115_lhd.flv?auth_key=1779706435-0-0-ad9e78c4a970e447f88af0c5a9ec3064
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 25/05 GenSan Warriors vs Pasay Voyagers [CHAN SENA] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1779706435-0-0-9950481cdb9853502d0325627f0dfd89
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 25/05 GenSan Warriors vs Pasay Voyagers [CHAN SENA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1779706435-0-0-7e0679dd5c352b256b6b9dfa651653f2
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
-https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779689155-0-0-ff32de64cd94270d9f409a92c9b12fce
+https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1779706435-0-0-7f07c44d9292fefd00b41e6df97dbbed
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779689155-0-0-edde7bfde5f1f17e5c15a0e375d7a8ad
+https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1779706435-0-0-37ff2a534f85b9aa514552e4ed3f6e25
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
-https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779689155-0-0-202e81be9df655946c8171c0d2d35302
+https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1779706435-0-0-8a3a74f4c284a0e034918d650e4105b4
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779689155-0-0-2b948b33261fe4613cca5d3195dc3a02
+https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1779706435-0-0-f2f796a43ab8614afc23dce452f24de8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 25/05 Iga Świątek vs Emerson Jones (Hội Quán) FHD
+https://hqlive.yarncdn.live/live/hqtv_blv_phantu/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 25/05 Iga Świątek vs Emerson Jones (Hội Quán) SD
+https://alive.yarncdn.live/hqtv_blv_phantu/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h30 25/05 South Melbourne vs Avondale FC
+https://live05.msdht.app/live/90725470.m3u8
 
