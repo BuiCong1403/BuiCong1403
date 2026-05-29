@@ -1,18 +1,12 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Andorra.svg/250px-Flag_of_Andorra.svg.png",23:00 | Andorra vs Iraq
-https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/1280px-Flag_of_South_Africa.svg.png",23:00 | South Africa vs Nicaragua
-https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://pbs.twimg.com/media/Gr5VwgSXoAA3ipY?format=jpg&name=large",20:00 | Alex de Minaur vs Jakub Mensik
-https://alive.zlylive.com/hqtv_blv_phanca/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/4/4a/Jo%C3%A3o_Fonseca_%282024_Cary%29_09_%28cropped%29.jpg",20:30 | Joao Fonseca vs Novak Djokovic
 https://alive.yarncdn.live/hqtv_blv_phanchuot/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHPUzabryz7df8DJGSlU-oaXS6zaWEi7A-sg&s",22:00 | Casper Ruud vs Tommy Paul
 https://alive.yarncdn.live/hqtv_blv_phantu/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/3482.png",19:30 | Chojniczanka Chojnice vs Rekord Bielsko-Biała
+https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",23:00 | Paris Saint Germain vs Arsenal
 https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
@@ -20,8 +14,14 @@ https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",23:00 | Paris Saint Germain vs Arsenal
 https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
 
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/mcpMspef1hwHwi9qrfp4YQ_96x96.png",23:00 | Paris Saint Germain vs Arsenal
+https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
+
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/331.png",00:00 | Rosenborg vs Bodo/Glimt
 https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/1468.png",08:10 | Depor FC vs Millonarios
+https://alive.zlylive.com/hqtv_blv_phanca/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/vi/1/18/YokohamaFC.png",12:00 | Yokohama FC vs Omiya Ardija
 https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
@@ -29,68 +29,38 @@ https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://media.api-sports.io/football/teams/31.png",22:00 | Morocco vs Burundi
 https://alive.yarncdn.live/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/10124.png",Riga vs Grobiņa
-https://bglive.yarncdn.live/live/bgtv_blv_lavie/playlist.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/12507.png",France U17 vs Denmark U17
-https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
-
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/1113.png",Bosnia & Herzegovina vs FYR Macedonia
 https://bglive.yarncdn.live/live/bgtv_blv_tieuhac/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United (Lương Sơn) BLV TÔN LẬP m3u
-https://hls.cdnfaster-a.live/live/TONLAP/index.m3u8?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/84.png",Nice vs Saint Etienne
+https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United (Lương Sơn) BLV TÔN LẬP flv
-https://flv.cdnfaster-a.live/live/TONLAP.flv?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/293.png",Gamba Osaka vs Tokyo Verdy
+https://bglive.yarncdn.live/live/bgtv_blv_lavie/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 29/05 El Mokawloon El Arab vs Future FC (Lương Sơn) BLV VÕ TÒNG m3u
-https://hls.cdnfaster-a.live/live/VOTONG/index.m3u8?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 29/05 El Mokawloon El Arab vs Future FC (Lương Sơn) BLV VÕ TÒNG flv
-https://flv.cdnfaster-a.live/live/VOTONG.flv?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Ittifaq(UAE) vs Gulf United FC (Lương Sơn) BLV LÃO HẠC m3u
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 NBE SC vs Al-Ittihad Alexandria (Lương Sơn) BLV LÃO HẠC m3u
 https://hls.cdnfaster-a.live/live/LAOHAC/index.m3u8?expire=2556118740&sign=d7e003f1201f61166a559ac474dc7491
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Ittifaq(UAE) vs Gulf United FC (Lương Sơn) BLV LÃO HẠC flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 NBE SC vs Al-Ittihad Alexandria (Lương Sơn) BLV LÃO HẠC flv
 https://flv.cdnfaster-a.live/live/LAOHAC.flv?expire=2556118740&sign=d7e003f1201f61166a559ac474dc7491
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al Oruba (UAE) vs Masfut (Lương Sơn) BLV TÂY MÔN KHÁNH m3u
-https://hls.cdnfaster-a.live/live/TAYMONKHANH/index.m3u8?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al Oruba (UAE) vs Masfut (Lương Sơn) BLV TÂY MÔN KHÁNH flv
-https://flv.cdnfaster-a.live/live/TAYMONKHANH.flv?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Jazira Al-Hamra vs Ahli Al-Fujirah (Lương Sơn) BLV FERNANDO m3u
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg (Lương Sơn) BLV FERNANDO m3u
 https://hls.cdnfaster-a.live/live/FERNANDO/index.m3u8?expire=1924930980&sign=bab24fb93b0be5c98af9138659989bcb
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Jazira Al-Hamra vs Ahli Al-Fujirah (Lương Sơn) BLV FERNANDO flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg (Lương Sơn) BLV FERNANDO flv
 https://flv.cdnfaster-a.live/live/FERNANDO.flv?expire=1924930980&sign=bab24fb93b0be5c98af9138659989bcb
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Thaid vs Emirates Club (Lương Sơn) BLV MÃ SIÊU m3u
-https://hls.cdnfaster-a.live/live/MASIEU/index.m3u8?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro (Lương Sơn) BLV TÂY MÔN KHÁNH m3u
+https://hls.cdnfaster-a.live/live/TAYMONKHANH/index.m3u8?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Thaid vs Emirates Club (Lương Sơn) BLV MÃ SIÊU flv
-https://flv.cdnfaster-a.live/live/MASIEU.flv?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro (Lương Sơn) BLV TÂY MÔN KHÁNH flv
+https://flv.cdnfaster-a.live/live/TAYMONKHANH.flv?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 29/05 ZED FC vs Kahraba Ismailia (Lương Sơn) BLV SHIN m3u
-https://hls.cdnfaster-a.live/live/SHIN/index.m3u8?expire=1830276060&sign=2e2271dce625a0d03d328eeed8859587
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Mamelodi Sundowns vs RB Leipzig (Lương Sơn) BLV LÝ ỨNG m3u
+https://hls.cdnfaster-a.live/live/LYUNG1/index.m3u8?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 29/05 ZED FC vs Kahraba Ismailia (Lương Sơn) BLV SHIN flv
-https://flv.cdnfaster-a.live/live/SHIN.flv?expire=1830276060&sign=2e2271dce625a0d03d328eeed8859587
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolock vs FC Torpedo Zhodino (Lương Sơn) BLV YẾN THANH m3u
-https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolock vs FC Torpedo Zhodino (Lương Sơn) BLV YẾN THANH flv
-https://flv.cdnfaster-a.live/live/YENTHANH1.flv?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina (Lương Sơn) BLV KAKA m3u
-https://hls.cdnfaster-a.live/live/KAKA/index.m3u8?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina (Lương Sơn) BLV KAKA flv
-https://flv.cdnfaster-a.live/live/KAKA.flv?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Mamelodi Sundowns vs RB Leipzig (Lương Sơn) BLV LÝ ỨNG flv
+https://flv.cdnfaster-a.live/live/LYUNG1.flv?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 23/05 FC Tulsa vs Hartford Athletic (Khán Đài A) source
 https://www3.f2k3.shop/live/235c29178801ef36a970731709755e2a/playlist.m3u8
@@ -106,30 +76,6 @@ https://www3.f2k3.shop/live/87b8a02016610052ff23e50744f98f77/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Mexico vs Ghana (Khán Đài A) source
 https://www3.f2k3.shop/live/e699af6f4692703a8c718f285b40deb2/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 29/05 Masr vs Kahraba Ismailia (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 29/05 Masr vs Kahraba Ismailia (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/chuoitay.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 29/05 Masr vs Kahraba Ismailia (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 29/05 Masr vs Kahraba Ismailia (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/chuoitayhd.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 Iran vs Gambia (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/max/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 Iran vs Gambia (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/max.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 Iran vs Gambia (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/maxhd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 Iran vs Gambia (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/maxhd.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 France U17 vs Denmark U17 (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
@@ -155,17 +101,29 @@ https://gckc0525.edgemaxcdn.org/live/anhhothd/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 South Africa vs Nicaragua (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/anhhothd.flv
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 Andorra vs Iraq (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 30/05 Bosnia & Herzegovina vs FYR Macedonia (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 Andorra vs Iraq (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/chuoinho.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 30/05 Bosnia & Herzegovina vs FYR Macedonia (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/chuoitay.flv
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 Andorra vs Iraq (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 30/05 Bosnia & Herzegovina vs FYR Macedonia (Chuối Chiên) FHD1
+https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 Andorra vs Iraq (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/chuoinhohd.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 30/05 Bosnia & Herzegovina vs FYR Macedonia (Chuối Chiên) FHD2
+https://gckc0525.edgemaxcdn.org/live/chuoitayhd.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 Nice vs Saint Etienne (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/max/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 Nice vs Saint Etienne (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/max.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 Nice vs Saint Etienne (Chuối Chiên) FHD1
+https://gckc0525.edgemaxcdn.org/live/maxhd/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 Nice vs Saint Etienne (Chuối Chiên) FHD2
+https://gckc0525.edgemaxcdn.org/live/maxhd.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Tacoma Defiance vs Ventura County FC (Gà Vàng) source
 https://www3.f2k3.shop/live/821d54abadb12c6c15edba538ab20ad1/playlist.m3u8
@@ -176,287 +134,353 @@ https://www3.f2k3.shop/live/a60cdd817beb680017f46a5c111202f7/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Canberra Olympic U23 vs Belconnen United U23 (Gà Vàng) source
 https://www3.f2k3.shop/live/829f44b193d50a1f8dcb948fab6a0983/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United [TYPN] (Socolive) flv
-https://pull.niur.live/live/stream-9912009_lsd.flv?txSecret=7fe0ac172750a58dced3c21811780155&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [THẠCH TÚ] (Socolive) flv
+https://pull.niur.live/live/stream-9912116_lsd.flv?txSecret=ac83a4909bb67b6a878d5fa041847ab2&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United [TYPN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912009_lhd.flv?txSecret=fd0a7c8eea163f2fec2e88359d7115af&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [THẠCH TÚ] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912116_lhd.flv?txSecret=cbcd3b95f61ec4c288db9e0ce2889dbb&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United [TYPN] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912009_lsd.m3u8?txSecret=7fe0ac172750a58dced3c21811780155&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [THẠCH TÚ] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=ac83a4909bb67b6a878d5fa041847ab2&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United [TYPN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912009_lhd.m3u8?txSecret=fd0a7c8eea163f2fec2e88359d7115af&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [THẠCH TÚ] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=cbcd3b95f61ec4c288db9e0ce2889dbb&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [BLV RÔSI] (Socolive) flv
-https://pull.niur.live/live/stream-9912102_lsd.flv?txSecret=96f087644d0f321c4e31db59df99c6c4&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [VƯƠNG ANH] (Socolive) flv
+https://pull.niur.live/live/stream-548860_lsd.flv?txSecret=82845d1bc17e270dd6508144995e2cab&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [BLV RÔSI] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912102_lhd.flv?txSecret=c9a089193cb731fe60df988662df6db3&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [VƯƠNG ANH] (Socolive) hdFlv
+https://pull.niur.live/live/stream-548860_lhd.flv?txSecret=7032cac3d3537e196061b7c057416a6b&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [BLV RÔSI] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912102_lsd.m3u8?txSecret=96f087644d0f321c4e31db59df99c6c4&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [VƯƠNG ANH] (Socolive) m3u8
+https://pull.niur.live/live/stream-548860_lsd.m3u8?txSecret=82845d1bc17e270dd6508144995e2cab&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [BLV RÔSI] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=c9a089193cb731fe60df988662df6db3&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [VƯƠNG ANH] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-548860_lhd.m3u8?txSecret=7032cac3d3537e196061b7c057416a6b&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [CÔNG CHẤT] (Socolive) flv
-https://pull06.scstream.net/live/stream-291277_lsd.flv?auth_key=1780071116-0-0-b551e642592ba69d4b2a7000805d1f69
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV BÉO] (Socolive) flv
+https://pull.niur.live/live/stream-459401_lsd.flv?txSecret=87a2bc2a3904a114318c0fb78bef6bde&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [CÔNG CHẤT] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-291277_lhd.flv?auth_key=1780071116-0-0-7bf9cbd99c640e5b92834202cd9faae1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV BÉO] (Socolive) hdFlv
+https://pull.niur.live/live/stream-459401_lhd.flv?txSecret=1bfddd4b02c3415352d41fe0fd16004e&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [CÔNG CHẤT] (Socolive) m3u8
-https://pull.niues.live/live/stream-291277_lsd.m3u8?auth_key=1780071116-0-0-31a5b97744a8d2c590783d8e972ad75e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV BÉO] (Socolive) m3u8
+https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=87a2bc2a3904a114318c0fb78bef6bde&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [CÔNG CHẤT] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1780071116-0-0-c13480d1612326cd2550f937aa77258f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV BÉO] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=1bfddd4b02c3415352d41fe0fd16004e&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [BLV A TÚ] (Socolive) flv
-https://pull06.scstream.net/live/stream-557845_lsd.flv?auth_key=1780071116-0-0-89acca28ada97ef3a40dac46f2f51587
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [BLV COCA] (Socolive) flv
+https://pull06.scstream.net/live/stream-327159_lsd.flv?auth_key=1780081916-0-0-0c646cb2f2d489b1541016f4ac41323a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [BLV A TÚ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-557845_lhd.flv?auth_key=1780071116-0-0-a2b8288ecd60c787d88a5058144dd6d9
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [BLV COCA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-327159_lhd.flv?auth_key=1780081916-0-0-7037aa2f0a40d9eb86a66db79b5baee2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [BLV A TÚ] (Socolive) m3u8
-https://pull.niues.live/live/stream-557845_lsd.m3u8?auth_key=1780071116-0-0-77ec61a66efde9f90c0eebdd6de82758
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [BLV COCA] (Socolive) m3u8
+https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1780081916-0-0-dbca33749cff4a55f76af6b94c4744b8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [BLV A TÚ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1780071116-0-0-1c1a41630fafa4c2b6b8c080228808be
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [BLV COCA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1780081916-0-0-861a3949044bf7c8f981b65cb00a5b48
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [LOGAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-552832_lsd.flv?auth_key=1780071116-0-0-bf1db6b18e2ea1e644023328bb129ee3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [CR Bưởi] (Socolive) flv
+https://pull06.scstream.net/live/stream-387694_lsd.flv?auth_key=1780081916-0-0-f5a17b9610dd81ac4daedb3b5e17d5e9
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [LOGAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-552832_lhd.flv?auth_key=1780071116-0-0-8fe43eaba9cebae6ed154f045bcd26ad
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [CR Bưởi] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-387694_lhd.flv?auth_key=1780081916-0-0-9c20095f1a6153f8a2a56820e29dca48
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [LOGAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-552832_lsd.m3u8?auth_key=1780071116-0-0-8254538b1ad492e9b70f43e508fc0e98
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [CR Bưởi] (Socolive) m3u8
+https://pull.niues.live/live/stream-387694_lsd.m3u8?auth_key=1780081916-0-0-30100c3b8d9b0172c7bb47a5b62a5d3e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Riga FC vs Grobina [LOGAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1780071116-0-0-6d1a97c20caa2193c343f5ac106a04f9
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [CR Bưởi] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-387694_lhd.m3u8?auth_key=1780081916-0-0-b4fe8d3fad20292cfd4df1df34585797
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolotsk vs FC Torpedo Zhodino [QUỐC KHÁNH] (Socolive) flv
-https://pull.niur.live/live/stream-602153_lsd.flv?txSecret=f95e4d64251a64209af2522a896c59f3&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 Ludogorets Razgrad vs Lokomotiv Plovdiv [A PÁO] (Socolive) flv
+https://pull06.scstream.net/live/stream-235232_lsd.flv?auth_key=1780081916-0-0-4e8b14653ad8eb0d6b508570c317113d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolotsk vs FC Torpedo Zhodino [QUỐC KHÁNH] (Socolive) hdFlv
-https://pull.niur.live/live/stream-602153_lhd.flv?txSecret=474ae82f2d20d1880c162bef919b65cf&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 Ludogorets Razgrad vs Lokomotiv Plovdiv [A PÁO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-235232_lhd.flv?auth_key=1780081916-0-0-49dd09ccecd8e213c9d3d253828346a4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolotsk vs FC Torpedo Zhodino [QUỐC KHÁNH] (Socolive) m3u8
-https://pull.niur.live/live/stream-602153_lsd.m3u8?txSecret=f95e4d64251a64209af2522a896c59f3&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 Ludogorets Razgrad vs Lokomotiv Plovdiv [A PÁO] (Socolive) m3u8
+https://pull.niues.live/live/stream-235232_lsd.m3u8?auth_key=1780081916-0-0-d9f8b6b3c99e7a439f5b10175f7f3f2d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolotsk vs FC Torpedo Zhodino [QUỐC KHÁNH] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-602153_lhd.m3u8?txSecret=474ae82f2d20d1880c162bef919b65cf&txTime=6a1a011c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",23h00 ngày 29/05 Ludogorets Razgrad vs Lokomotiv Plovdiv [A PÁO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1780081916-0-0-d4968d4be9c31bb65d6681466251ffad
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Dila Gori vs Samgurali Tskh [BLV ANH TÀI] (Socolive) flv
-https://pull06.scstream.net/live/stream-406865_lsd.flv?auth_key=1780071116-0-0-f85154e43bad82c2bad2f2ab697bd4f4
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [CÔNG CHẤT] (Socolive) flv
+https://pull06.scstream.net/live/stream-291277_lsd.flv?auth_key=1780081916-0-0-86af0e9d1b2d7192b8e9c84d0cb92703
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Dila Gori vs Samgurali Tskh [BLV ANH TÀI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-406865_lhd.flv?auth_key=1780071116-0-0-b3446de17e8753abae371d48a2350458
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [CÔNG CHẤT] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-291277_lhd.flv?auth_key=1780081916-0-0-3259656917fde2dfe9951a4b1288ea24
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Dila Gori vs Samgurali Tskh [BLV ANH TÀI] (Socolive) m3u8
-https://pull.niues.live/live/stream-406865_lsd.m3u8?auth_key=1780071116-0-0-16ace4e4aad8ea663755c88582946ecb
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [CÔNG CHẤT] (Socolive) m3u8
+https://pull.niues.live/live/stream-291277_lsd.m3u8?auth_key=1780081916-0-0-617c23fac4e3fff475d83210973b52b2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Dila Gori vs Samgurali Tskh [BLV ANH TÀI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1780071116-0-0-3b1b18d9fdfc1a220911fd7b461cf92f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [CÔNG CHẤT] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1780081916-0-0-9d02e9929991ba1f939a7228ba9f01ca
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV ALEX] (Socolive) flv
-https://pull06.scstream.net/live/stream-532081_lsd.flv?auth_key=1780071116-0-0-a78eb8ab498460c02022c9f05eae8897
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV XO] (Socolive) flv
+https://pull06.scstream.net/live/stream-472241_lsd.flv?auth_key=1780081916-0-0-503e1b964c7783dd87f4f66b623bad42
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV ALEX] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-532081_lhd.flv?auth_key=1780071116-0-0-eb8ffd2e55be6df964946d48cfbe890a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV XO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-472241_lhd.flv?auth_key=1780081916-0-0-2b0f813ba54de0637cec8292b7e13b2e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV ALEX] (Socolive) m3u8
-https://pull.niues.live/live/stream-532081_lsd.m3u8?auth_key=1780071116-0-0-42e16f6233b1146dcc5c56d87ce1cedd
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV XO] (Socolive) m3u8
+https://pull.niues.live/live/stream-472241_lsd.m3u8?auth_key=1780081916-0-0-f71283b06b0d162e5e05e660b4f30417
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV ALEX] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1780071116-0-0-96328a8197af93c520612164fe67a6ba
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV XO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1780081916-0-0-a5f19dd5b34b7d0e2f930e61c539d00c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",INTERF: South Africa vs Nicaragua [NGƯỜI CÁ] (Socolive) flv
-https://pull06.scstream.net/live/stream-595335_lsd.flv?auth_key=1780071116-0-0-7449b41a6636f687c376a5558fa19324
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [RICKHANTER] (Socolive) flv
+https://pull.niur.live/live/stream-9912122_lsd.flv?txSecret=16b1d522aead99b6aee4290496b81d52&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",INTERF: South Africa vs Nicaragua [NGƯỜI CÁ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-595335_lhd.flv?auth_key=1780071116-0-0-d628c396d12936a7f4a4f7615748bf4d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [RICKHANTER] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912122_lhd.flv?txSecret=f669acaa96d59a47d6275f29dd8237a8&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",INTERF: South Africa vs Nicaragua [NGƯỜI CÁ] (Socolive) m3u8
-https://pull.niues.live/live/stream-595335_lsd.m3u8?auth_key=1780071116-0-0-aa6bafe2430eb05696dd4262dbca231a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [RICKHANTER] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912122_lsd.m3u8?txSecret=16b1d522aead99b6aee4290496b81d52&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",INTERF: South Africa vs Nicaragua [NGƯỜI CÁ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-595335_lhd.m3u8?auth_key=1780071116-0-0-5871ef7ea6f03082ef4fe85f0e68d33b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Rosenborg vs Bodo Glimt [RICKHANTER] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=f669acaa96d59a47d6275f29dd8237a8&txTime=6a1a2b4c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [CR Bưởi] (Socolive) flv
-https://pull06.scstream.net/live/stream-387694_lsd.flv?auth_key=1780071476-0-0-e12ce808571d9c4c60dd26ffc7326151
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 30/05 FC Dinamo 1948 vs FCSB [LÃO LÂM] (Socolive) flv
+https://pull06.scstream.net/live/stream-527384_lsd.flv?auth_key=1780081916-0-0-922139d02b66ca3eb441612075711985
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [CR Bưởi] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-387694_lhd.flv?auth_key=1780071476-0-0-b6eb2f93124a8c9f96ddc5daac741ad6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 30/05 FC Dinamo 1948 vs FCSB [LÃO LÂM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-527384_lhd.flv?auth_key=1780081916-0-0-89fdd677542d4b34220249d6e5e0c20e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [CR Bưởi] (Socolive) m3u8
-https://pull.niues.live/live/stream-387694_lsd.m3u8?auth_key=1780071476-0-0-5922fe1b2709cae2f49514c59d9e6076
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 30/05 FC Dinamo 1948 vs FCSB [LÃO LÂM] (Socolive) m3u8
+https://pull.niues.live/live/stream-527384_lsd.m3u8?auth_key=1780081916-0-0-a9b2e78465be141adbcc534178dbee52
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [CR Bưởi] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-387694_lhd.m3u8?auth_key=1780071476-0-0-fa9113c7e87a07e02eabc37436a8e009
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 30/05 FC Dinamo 1948 vs FCSB [LÃO LÂM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1780081916-0-0-545a80aeac0c3724e03cd50c3ea9130e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",UEFA U17: France U17 vs Denmark U17 [BLV MIXI] (Socolive) flv
-https://pull06.scstream.net/live/stream-290928_lsd.flv?auth_key=1780071476-0-0-883714c09a19b758ea724e08f253b388
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg [BLV KEM] (Socolive) flv
+https://pull06.scstream.net/live/stream-513394_lsd.flv?auth_key=1780081916-0-0-3163f11f14a9f9eb1a553a12fd5fdb6c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",UEFA U17: France U17 vs Denmark U17 [BLV MIXI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-290928_lhd.flv?auth_key=1780071476-0-0-04defaff50ece5947d3c4052933a978f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg [BLV KEM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-513394_lhd.flv?auth_key=1780081916-0-0-f6291e1e9afa9d53f9ce7e5487bb39ad
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",UEFA U17: France U17 vs Denmark U17 [BLV MIXI] (Socolive) m3u8
-https://pull.niues.live/live/stream-290928_lsd.m3u8?auth_key=1780071476-0-0-e29ace5067fc0387a4e82aea18596bac
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg [BLV KEM] (Socolive) m3u8
+https://pull.niues.live/live/stream-513394_lsd.m3u8?auth_key=1780081916-0-0-a3438863503f586fb931e9f2f0e25212
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",UEFA U17: France U17 vs Denmark U17 [BLV MIXI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-290928_lhd.m3u8?auth_key=1780071476-0-0-3d49927b148937fa59dc9b6b54a5f6cb
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg [BLV KEM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-513394_lhd.m3u8?auth_key=1780081916-0-0-9ecedd12ed4c2cedadeb922ba228a806
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [BLV ĐỐM] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912110_lsd.flv?auth_key=1780071476-0-0-de38d2e84ff944446db3c058b88cd342
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Brann vs Sarpsborg 08 [BLV ANH TÀI] (Socolive) flv
+https://pull06.scstream.net/live/stream-406865_lsd.flv?auth_key=1780081916-0-0-db81bd303c5597ec8dd0db4e94998f59
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [BLV ĐỐM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912110_lhd.flv?auth_key=1780071476-0-0-7fd32b1ae28f034ef061d1fb87a3aca5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Brann vs Sarpsborg 08 [BLV ANH TÀI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-406865_lhd.flv?auth_key=1780081916-0-0-619c09cf6c1fe7948b96ab32a8dd0314
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [BLV ĐỐM] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912110_lsd.m3u8?auth_key=1780071476-0-0-1819a0eaa49d905c737e859ccfd04cc2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Brann vs Sarpsborg 08 [BLV ANH TÀI] (Socolive) m3u8
+https://pull.niues.live/live/stream-406865_lsd.m3u8?auth_key=1780081916-0-0-8a5bf5e800838609302d3202e753c064
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [BLV ĐỐM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1780071476-0-0-b9dcfb2371f62199d4655aa004eea958
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Brann vs Sarpsborg 08 [BLV ANH TÀI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1780081916-0-0-931f0772cc03e76ad1f9ebc46f1e8960
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 KTP Kotka vs SJK Akatemia [HẢI THANH] (Socolive) flv
-https://pull06.scstream.net/live/stream-599634_lsd.flv?auth_key=1780071476-0-0-ed5d5d48d991b1e3284b00d86d3b5f4b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Brann vs Sarpsborg 08 [BLV A TÚ] (Socolive) flv
+https://pull06.scstream.net/live/stream-557845_lsd.flv?auth_key=1780081916-0-0-96ae0957fa284a5d1358ba929655ab2d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 KTP Kotka vs SJK Akatemia [HẢI THANH] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-599634_lhd.flv?auth_key=1780071476-0-0-806f4f85d6f2e0cf092ae1a263d1a9c2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Brann vs Sarpsborg 08 [BLV A TÚ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-557845_lhd.flv?auth_key=1780081916-0-0-e93980d4ab8180ecdb539a100179a5d7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 KTP Kotka vs SJK Akatemia [HẢI THANH] (Socolive) m3u8
-https://pull.niues.live/live/stream-599634_lsd.m3u8?auth_key=1780071476-0-0-18378886aa3ab8033c6b3b1b0c9cd4cf
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Brann vs Sarpsborg 08 [BLV A TÚ] (Socolive) m3u8
+https://pull.niues.live/live/stream-557845_lsd.m3u8?auth_key=1780081916-0-0-76ad1b549630b3c0a539ff2fee33a3bc
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 KTP Kotka vs SJK Akatemia [HẢI THANH] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-599634_lhd.m3u8?auth_key=1780071476-0-0-4477b814267579eea21e72a6fe494f0f
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Brann vs Sarpsborg 08 [BLV A TÚ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1780081916-0-0-f4f98434b1165e7f49ba0adfea19cd42
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Aalesund FK vs Ham-Kam [BLV LUCAS] (Socolive) flv
+https://pull06.scstream.net/live/stream-304148_lsd.flv?auth_key=1780081916-0-0-9a09570432c0e4b6cad1fecc968edde3
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Aalesund FK vs Ham-Kam [BLV LUCAS] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-304148_lhd.flv?auth_key=1780081916-0-0-558e66981044c46480d7160fc9e06b43
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Aalesund FK vs Ham-Kam [BLV LUCAS] (Socolive) m3u8
+https://pull.niues.live/live/stream-304148_lsd.m3u8?auth_key=1780081916-0-0-64eda1618f6ecfa91296c626197df7cf
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Aalesund FK vs Ham-Kam [BLV LUCAS] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1780081916-0-0-81437dcb46e5ebf1142b30a80231e283
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Fredrikstad vs Start Kristiansand [BLV RYO] (Socolive) flv
+https://pull06.scstream.net/live/stream-602019_lsd.flv?auth_key=1780081916-0-0-5fa4a96e5d0c44810e94af4dfed5d450
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Fredrikstad vs Start Kristiansand [BLV RYO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-602019_lhd.flv?auth_key=1780081916-0-0-1636f9bbdb6e2d55f75c9dbeb32362b4
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Fredrikstad vs Start Kristiansand [BLV RYO] (Socolive) m3u8
+https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1780081916-0-0-317136258b771dfca0582f3b62e5ddb9
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Fredrikstad vs Start Kristiansand [BLV RYO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1780081916-0-0-ef031ddb68e7e3babb64c013f89cd681
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 KFUM Oslo vs Tromso IL [BLV SATIVA] (Socolive) flv
+https://pull06.scstream.net/live/stream-321443_lsd.flv?auth_key=1780081916-0-0-72a4094cf0e7337f4d5e7587d4e254ac
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 KFUM Oslo vs Tromso IL [BLV SATIVA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-321443_lhd.flv?auth_key=1780081916-0-0-0446a71261bdcde93e1eab555c9a1271
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 KFUM Oslo vs Tromso IL [BLV SATIVA] (Socolive) m3u8
+https://pull.niues.live/live/stream-321443_lsd.m3u8?auth_key=1780081916-0-0-e99c49d3ba74fe732c4e2f63486deb1d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 KFUM Oslo vs Tromso IL [BLV SATIVA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-321443_lhd.m3u8?auth_key=1780081916-0-0-9abbe8b47331b6eb165c3163104d1f9a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg [CHANH MUỐI] (Socolive) flv
+https://pull06.scstream.net/live/stream-598549_lsd.flv?auth_key=1780081916-0-0-b246f489edc70ebddb39a79bc8cc371d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg [CHANH MUỐI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-598549_lhd.flv?auth_key=1780081916-0-0-64b86d3fde769e97cc3e3f31e8b225bd
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg [CHANH MUỐI] (Socolive) m3u8
+https://pull.niues.live/live/stream-598549_lsd.m3u8?auth_key=1780081916-0-0-8fe6ae7b1b2655b070c5b06ef2aeb918
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Orgryte vs Elfsborg [CHANH MUỐI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-598549_lhd.m3u8?auth_key=1780081916-0-0-059f8af7f9a016412bea63cd2e5e6dd7
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Vålerenga Fotball Elite vs Kristiansund BK [BLV CÁO] (Socolive) flv
+https://pull06.scstream.net/live/stream-597929_lsd.flv?auth_key=1780081916-0-0-d87b861d089c155fc961ebe5c86709a2
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Vålerenga Fotball Elite vs Kristiansund BK [BLV CÁO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-597929_lhd.flv?auth_key=1780081916-0-0-5a51d184edf76af925152527805c2d61
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Vålerenga Fotball Elite vs Kristiansund BK [BLV CÁO] (Socolive) m3u8
+https://pull.niues.live/live/stream-597929_lsd.m3u8?auth_key=1780081916-0-0-b95fc23669526c9bf34e50776b061db9
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 ngày 30/05 Vålerenga Fotball Elite vs Kristiansund BK [BLV CÁO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1780081916-0-0-70da6435cb130eb97ec2a25cccb5c79b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV COZY] (Socolive) flv
+https://pull06.scstream.net/live/stream-531989_lsd.flv?auth_key=1780082276-0-0-afdbf1c8d670e13c4309e92f4b904fd8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV COZY] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-531989_lhd.flv?auth_key=1780082276-0-0-f26df3c2bfd8fa82e59fef69ab9973b8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV COZY] (Socolive) m3u8
+https://pull.niues.live/live/stream-531989_lsd.m3u8?auth_key=1780082276-0-0-94677d924817259c7822c0cc0fd60e76
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV COZY] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1780082276-0-0-439c96002702d697349550a53bf0b979
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV MIXI] (Socolive) flv
+https://pull06.scstream.net/live/stream-290928_lsd.flv?auth_key=1780082276-0-0-67e8355089b4fe82f641f77fba94f380
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV MIXI] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-290928_lhd.flv?auth_key=1780082276-0-0-9c13db65c3e3e8bed645b8eca2bb210a
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV MIXI] (Socolive) m3u8
+https://pull.niues.live/live/stream-290928_lsd.m3u8?auth_key=1780082276-0-0-4fff61011b625f62c15cdd0ae157cddb
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV MIXI] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-290928_lhd.m3u8?auth_key=1780082276-0-0-f1c8574087cd5f0fed9b1dfc41cbabc0
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV PEWPEW] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912015_lsd.flv?auth_key=1780082276-0-0-088cb731d172da3dd27d388559030bb7
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV PEWPEW] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912015_lhd.flv?auth_key=1780082276-0-0-56515b4b2b30bc8e05ac13cd03f2cce8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV PEWPEW] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912015_lsd.m3u8?auth_key=1780082276-0-0-c717a864f9384a5a91aa9dccb6754bb5
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV PEWPEW] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1780082276-0-0-7c45681fa11c2bb9d9b3803bc28438a0
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV VITAMIN] (Socolive) flv
+https://pull06.scstream.net/live/stream-400722_lsd.flv?auth_key=1780082276-0-0-6757eca8d335e47c88a40e9dfa3b7313
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV VITAMIN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-400722_lhd.flv?auth_key=1780082276-0-0-9d8a1bce224858f143af4be6e077529e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV VITAMIN] (Socolive) m3u8
+https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1780082276-0-0-dbdc08e5232e96dad2d5467ba1a29163
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV VITAMIN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1780082276-0-0-b1c7f8117b408ece1ecfffc7fbd243d6
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV FIREMAN] (Socolive) flv
+https://pull06.scstream.net/live/stream-991140_lsd.flv?auth_key=1780082276-0-0-c8ab9439af481e80877a08b4efae445c
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV FIREMAN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-991140_lhd.flv?auth_key=1780082276-0-0-efa680823844e7e1811418f8b1f58257
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV FIREMAN] (Socolive) m3u8
+https://pull.niues.live/live/stream-991140_lsd.m3u8?auth_key=1780082276-0-0-7b5b6f5822eef3a57bda3ae06441b5c7
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV FIREMAN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1780082276-0-0-53013e1facfb864b119d5094d8578380
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [LOKA] (Socolive) flv
+https://pull06.scstream.net/live/stream-589848_lsd.flv?auth_key=1780082276-0-0-25b9c7aad0b3470c9074a332cf858d08
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [LOKA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-589848_lhd.flv?auth_key=1780082276-0-0-1222cd96e1614cc049932adfb2694aef
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [LOKA] (Socolive) m3u8
+https://pull.niues.live/live/stream-589848_lsd.m3u8?auth_key=1780082276-0-0-06777e6f30c27cd9140b63caf4e3da5e
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [LOKA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1780082276-0-0-2cfd38138ef8d694e2c43b145acbfb3d
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV VIP] (Socolive) flv
+https://pull.niur.live/live/stream-491873_lsd.flv?txSecret=f84503f7657baf379d6b71fba4120c9c&txTime=6a1a2cb4
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV VIP] (Socolive) hdFlv
+https://pull.niur.live/live/stream-491873_lhd.flv?txSecret=15994a60ae6b6a7bd906bcab46b92960&txTime=6a1a2cb4
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV VIP] (Socolive) m3u8
+https://pull.niur.live/live/stream-491873_lsd.m3u8?txSecret=f84503f7657baf379d6b71fba4120c9c&txTime=6a1a2cb4
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV VIP] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=15994a60ae6b6a7bd906bcab46b92960&txTime=6a1a2cb4
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
-https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1780071476-0-0-33e66b2cce45b81ffb52c22a286d8d9e
+https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1780082276-0-0-935b246c2ed116a2b067e644e8f244c0
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1780071476-0-0-ae1c81d1274d641cb9452ea8ed01fb97
+https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1780082276-0-0-5c77c39348d4732669881e6e949d0f0f
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
-https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1780071476-0-0-1494c2fe19692bece5042f8c89b4c29f
+https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1780082276-0-0-be97ef18f42dce22818981c7a9067d36
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1780071476-0-0-43b82eafafa112b7f2963ad3f64756ea
+https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1780082276-0-0-4afdb6396216454c224067d9ed6e9c0b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United [BLV LION] (Socolive) flv
-https://pull06.scstream.net/live/stream-603255_lsd.flv?auth_key=1780071836-0-0-f7f10d54ff14ab1cadf197a6b0c3eee2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV LONG] (Socolive) flv
+https://pull.niur.live/live/stream-9912050_lsd.flv?txSecret=32a11aa066a965406dbc4bd69f32301e&txTime=6a1a2e1c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United [BLV LION] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-603255_lhd.flv?auth_key=1780071836-0-0-75b02ae8cb6436cd1fba229915a75dc2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV LONG] (Socolive) hdFlv
+https://pull.niur.live/live/stream-9912050_lhd.flv?txSecret=e8201dde9413f1470fbbef63a5b748b2&txTime=6a1a2e1c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United [BLV LION] (Socolive) m3u8
-https://pull.niues.live/live/stream-603255_lsd.m3u8?auth_key=1780071836-0-0-ea005fffb9971c1d1fc9ca6be5397a97
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV LONG] (Socolive) m3u8
+https://pull.niur.live/live/stream-9912050_lsd.m3u8?txSecret=32a11aa066a965406dbc4bd69f32301e&txTime=6a1a2e1c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Al-Hamriyah vs Dubai United [BLV LION] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1780071836-0-0-fa95c193d98226989b526a51f7c2231a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 ngày 30/05 Monza vs Catanzaro [BLV LONG] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-9912050_lhd.m3u8?txSecret=e8201dde9413f1470fbbef63a5b748b2&txTime=6a1a2e1c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV 7UP] (Socolive) flv
-https://pull06.scstream.net/live/stream-534219_lsd.flv?auth_key=1780071836-0-0-2a787d5c9708af3d06c55a42f505daa7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV ROBBEN] (Socolive) flv
+https://pull06.scstream.net/live/stream-527383_lsd.flv?auth_key=1780082636-0-0-88f7f2c861a65e6d1d25f93f845e8d2b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV 7UP] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-534219_lhd.flv?auth_key=1780071836-0-0-98e782d2035d73a943b7073bad619970
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV ROBBEN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-527383_lhd.flv?auth_key=1780082636-0-0-2e39f4cdf23ec5ffd20b3841a4b779b6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV 7UP] (Socolive) m3u8
-https://pull.niues.live/live/stream-534219_lsd.m3u8?auth_key=1780071836-0-0-7abc0da00b476672da1bfc867aa6733b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV ROBBEN] (Socolive) m3u8
+https://pull.niues.live/live/stream-527383_lsd.m3u8?auth_key=1780082636-0-0-faf81b4e99350aa2f795e15f902ef824
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV 7UP] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-534219_lhd.m3u8?auth_key=1780071836-0-0-14cb5bc8118be6ab3c5f9f59a183357a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 30/05 OGC Nice vs AS Saint-Étienne [BLV ROBBEN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1780082636-0-0-631ab7a68d711914b8ed9a5e997298c4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [LÃO LÂM] (Socolive) flv
-https://pull06.scstream.net/live/stream-527384_lsd.flv?auth_key=1780071836-0-0-d298e35d1545767077a78cc7c98a3339
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 30/05 FC Dinamo 1948 vs FCSB [BLV GÔN] (Socolive) flv
+https://pull.niur.live/live/stream-445260_lsd.flv?txSecret=126db13f3977a1e8b0fafae84a21406a&txTime=6a1a2e1c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [LÃO LÂM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-527384_lhd.flv?auth_key=1780071836-0-0-229970463d254e061098d10db5fccb73
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 30/05 FC Dinamo 1948 vs FCSB [BLV GÔN] (Socolive) hdFlv
+https://pull.niur.live/live/stream-445260_lhd.flv?txSecret=920e465c3c1686f3d2a909ac7efc644a&txTime=6a1a2e1c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [LÃO LÂM] (Socolive) m3u8
-https://pull.niues.live/live/stream-527384_lsd.m3u8?auth_key=1780071836-0-0-b00c0c320b010d5a221e8526a8c01fc7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 30/05 FC Dinamo 1948 vs FCSB [BLV GÔN] (Socolive) m3u8
+https://pull.niur.live/live/stream-445260_lsd.m3u8?txSecret=126db13f3977a1e8b0fafae84a21406a&txTime=6a1a2e1c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [LÃO LÂM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1780071836-0-0-3c2de6617e556b8bde2cbc5c9764ad09
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV TOMIA] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912008_lsd.flv?auth_key=1780071836-0-0-0ef27200969e5b2999ab0064f1151df4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV TOMIA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912008_lhd.flv?auth_key=1780071836-0-0-8f7d00d3880df55dcbd57f6ccbb7925c
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV TOMIA] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1780071836-0-0-93a95d59c64547051d1469af07a2ed83
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 29/05 Iran vs Gambia [BLV TOMIA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1780071836-0-0-bd03b11dda4a82883a04094ca0c070c1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [THẠCH TÚ] (Socolive) flv
-https://pull.niur.live/live/stream-9912116_lsd.flv?txSecret=15f9330568e8ab506f560ba452e7f1d1&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [THẠCH TÚ] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912116_lhd.flv?txSecret=002299f2dd844bfc8ed3def313817915&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [THẠCH TÚ] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=15f9330568e8ab506f560ba452e7f1d1&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 ngày 29/05 Majd FC vs Hatta [THẠCH TÚ] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=002299f2dd844bfc8ed3def313817915&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 FC Haka vs JIPPO [BLV GÔN] (Socolive) flv
-https://pull.niur.live/live/stream-445260_lsd.flv?txSecret=47e2253572ea3df13a22d32cc5641dd9&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 FC Haka vs JIPPO [BLV GÔN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-445260_lhd.flv?txSecret=de17b2327350e3f34a0f303bdab737b9&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 FC Haka vs JIPPO [BLV GÔN] (Socolive) m3u8
-https://pull.niur.live/live/stream-445260_lsd.m3u8?txSecret=47e2253572ea3df13a22d32cc5641dd9&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 FC Haka vs JIPPO [BLV GÔN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-445260_lhd.m3u8?txSecret=de17b2327350e3f34a0f303bdab737b9&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 FC Haka vs JIPPO [BLV RAMBO] (Socolive) flv
-https://pull.niur.live/live/stream-534055_lsd.flv?txSecret=7e7a401eed5f7e6026c82d7305170f7c&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 FC Haka vs JIPPO [BLV RAMBO] (Socolive) hdFlv
-https://pull.niur.live/live/stream-534055_lhd.flv?txSecret=a9bd53e0034a958fd36dca65ab3fe6de&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 FC Haka vs JIPPO [BLV RAMBO] (Socolive) m3u8
-https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=7e7a401eed5f7e6026c82d7305170f7c&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 FC Haka vs JIPPO [BLV RAMBO] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a9bd53e0034a958fd36dca65ab3fe6de&txTime=6a1a03ec
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 KTP Kotka vs SJK Akatemia [TƯ MÃ Ý] (Socolive) flv
-https://pull06.scstream.net/live/stream-611377_lsd.flv?auth_key=1780071836-0-0-456ae1c9227d0a668af4b941980d2a6e
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 KTP Kotka vs SJK Akatemia [TƯ MÃ Ý] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-611377_lhd.flv?auth_key=1780071836-0-0-1b30d744e91c16b604ab2d8e9090b30f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 KTP Kotka vs SJK Akatemia [TƯ MÃ Ý] (Socolive) m3u8
-https://pull.niues.live/live/stream-611377_lsd.m3u8?auth_key=1780071836-0-0-0e64cc0d46cbe478b60e1fdee3cdec83
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 ngày 29/05 KTP Kotka vs SJK Akatemia [TƯ MÃ Ý] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-611377_lhd.m3u8?auth_key=1780071836-0-0-2e7fcd573ff8a37020d7a9eeea9b6c99
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolotsk vs FC Torpedo Zhodino [CHANH MUỐI] (Socolive) flv
-https://pull06.scstream.net/live/stream-598549_lsd.flv?auth_key=1780071836-0-0-f02fbb04058f10ebc9fe495b145959eb
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolotsk vs FC Torpedo Zhodino [CHANH MUỐI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-598549_lhd.flv?auth_key=1780071836-0-0-46ba77af3655d1403c1e2bfb845c890f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolotsk vs FC Torpedo Zhodino [CHANH MUỐI] (Socolive) m3u8
-https://pull.niues.live/live/stream-598549_lsd.m3u8?auth_key=1780071836-0-0-213bd79bfde6c59da2a0523ad7bba274
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 ngày 29/05 Naftan Novopolotsk vs FC Torpedo Zhodino [CHANH MUỐI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-598549_lhd.m3u8?auth_key=1780071836-0-0-ebbc85697fb21d553fdf65343fb31e92
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 29/05 Alex de Minaur vs Jakub Mensik (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanca/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 29/05 Alex de Minaur vs Jakub Mensik (Hội Quán) SD
-https://alive.zlylive.com/hqtv_blv_phanca/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 30/05 FC Dinamo 1948 vs FCSB [BLV GÔN] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-445260_lhd.m3u8?txSecret=920e465c3c1686f3d2a909ac7efc644a&txTime=6a1a2e1c
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h30 29/05 Joao Fonseca vs Novak Djokovic (Hội Quán) FHD
 https://hqlive.yarncdn.live/live/hqtv_blv_phanchuot/playlist.m3u8
@@ -470,27 +494,39 @@ https://hqlive.yarncdn.live/live/hqtv_blv_phantu/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 29/05 Casper Ruud vs Tommy Paul (Hội Quán) SD
 https://alive.yarncdn.live/hqtv_blv_phantu/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h45 29/05 Hoàng Sao vs Maks Benko  (Hội Quán) FHD
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 30/05 Rosenborg vs Bodo/Glimt (Hội Quán) FHD
+https://tdlive.yarncdn.live/live/tdtv_blv_taotinhtao/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 30/05 Rosenborg vs Bodo/Glimt (Hội Quán) SD
+https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 30/05 đ (Hội Quán) FHD
 https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h45 29/05 Hoàng Sao vs Maks Benko  (Hội Quán) SD
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 30/05 đ (Hội Quán) SD
 https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 29/05 Iran vs Gambia
-https://live05.msdht.app/live/97312754.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 30/05 Nice vs Saint Etienne (Hội Quán) FHD
+https://tdlive.yarncdn.live/live/tdtv_blv_taokinhte/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 29/05 Majd FC vs Hatta
-https://live05.msdht.app/live/87379114.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 30/05 Nice vs Saint Etienne (Hội Quán) SD
+https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h15 29/05 Al Hamriyah vs United FC
-https://live05.msdht.app/live/02456966.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 30/05 Rosenborg vs Bodo Glimt
+https://live05.msdht.app/live/14830711.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 29/05 Riga FC vs Grobina
-https://live05.msdht.app/live/43612277.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h00 29/05 Dila Gori vs Samgurali
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 30/05 Orgryte vs Elfsborg
 https://live05.msdht.app/live/68848594.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",22h30 29/05 Haka vs JIPPO
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h00 30/05 KFUM Oslo vs Tromso
+https://live05.msdht.app/live/43612277.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h00 30/05 A.C. Monza vs U.S. Catanzaro 1929
 https://live05.msdht.app/live/87547578.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 30/05 Bosnia Herzegovina vs Bắc Macedonia
+https://live05.msdht.app/live/24561735.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 30/05 OGC Nice vs AS Saint-Étienne
+https://live05.msdht.app/live/97312754.m3u8
 
