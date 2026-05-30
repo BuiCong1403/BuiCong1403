@@ -287,7 +287,7 @@ if __name__ == "__main__":
 
     # TV.m3u giữ nguyên group
     data += load_external_keep_group(
-        "https://raw.githubusercontent.com/hieu-TQS/TV/refs/heads/main/TV.m3u"
+        "https://vpsttt.vietanhtv.top/tv/"
     )
 
     # FPT SPORT
