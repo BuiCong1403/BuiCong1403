@@ -1,12 +1,12 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png",01:45 | Germany vs Finland
-https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png",01:45 | Germany vs Finland
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png",04:30 | Brazil vs Panama
 https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/2384.png",02:30 | USA vs Senegal
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png",04:30 | Brazil vs Panama
 https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/19157.png",16:00 | Vietnam U19 vs Timor-Leste U19
+https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN" tvg-logo="https://media.api-sports.io/football/teams/19157.png",16:00 | Vietnam U19 vs Timor-Leste U19
 https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
@@ -32,14 +32,11 @@ https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://media.api-sports.io/football/teams/31.png",22:00 | Morocco vs Burundi
 https://alive.yarncdn.live/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/25.png",Germany vs Finland
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/19157.png",Vietnam U19 vs Timor-Leste U19
 https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
 
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/2384.png",USA vs Senegal
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/17948.png",Denmark U17 vs Italy U17
 https://bglive.yarncdn.live/live/bgtv_blv_delua/playlist.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/6.png",Brazil vs Panama
-https://bglive.yarncdn.live/live/bgtv_blv_khomuc/playlist.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/12507.png",France U17 vs Montenegro U17
 https://bglive.yarncdn.live/live/bgtv_blv_tieuhac/playlist.m3u8
@@ -47,7 +44,10 @@ https://bglive.yarncdn.live/live/bgtv_blv_tieuhac/playlist.m3u8
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/1536.png",Tajikistan vs Palestine
 https://bglive.yarncdn.live/live/bgtv_blv_lavie/playlist.m3u8
 
-#EXTINF:-1 group-title="UPDATE 03:05⏱01/06" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5oGX8rfISQE2e82j_6uBF0mvjnvwYDhWOCApBQWQ3tQ&s=10",UPDATE 03:05⏱01/06
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://static.flashscore.com/res/image/data/b3MRYRwS-dCIdRhFh.png",Brunei vs Timoer-Lester
+https://bglive.yarncdn.live/live/bgtv_blv_khomuc/playlist.m3u8
+
+#EXTINF:-1 group-title="UPDATE 04:58⏱01/06" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5oGX8rfISQE2e82j_6uBF0mvjnvwYDhWOCApBQWQ3tQ&s=10",UPDATE 04:58⏱01/06
 https://vietanh18h1.duckdns.org/tiktok_video_2.mp4
 
 #EXTINF:-1 group-title="Sự Kiện TV360" tvg-logo="https://vietanhtv.id.vn/logo/tv360plus1.png",TV360+1
@@ -770,66 +770,6 @@ https://strm.voh.com.vn/radio/channel1/chunklist_w1203304311.m3u8
 #EXTINF:-1 group-title="Radio" tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-am610-512x512-104316.png",VOH AM 610
 https://strm.voh.com.vn/radio/channel2/chunklist_w558517770.m3u8
 
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",01:30-01/06: Estudiantes La Plata - Rosario Central (ARG Cup) - BLV RYO
-https://vpsttt.vietanhtv.top/socolive/get.php?id=602019
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",01:30-01/06: Estudiantes La Plata - Rosario Central (ARG Cup) - BLV HÚP
-https://vpsttt.vietanhtv.top/socolive/get.php?id=611382
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",01:35-01/06: Farul Constanta - Chindia Targoviste (ROM D1) - HẢI THANH
-https://vpsttt.vietanhtv.top/socolive/get.php?id=599634
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",01:45-01/06: Germany - Finland (INTERF) - SAO LA
-https://vpsttt.vietanhtv.top/socolive/get.php?id=462413
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",01:45-01/06: Germany - Finland (INTERF) - CÔNG CHẤT
-https://vpsttt.vietanhtv.top/socolive/get.php?id=291277
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",01:45-01/06: Germany - Finland (INTERF) - A BỆU
-https://vpsttt.vietanhtv.top/socolive/get.php?id=484845
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",01:45-01/06: Germany - Finland (INTERF) - BLV BÉO
-https://vpsttt.vietanhtv.top/socolive/get.php?id=459401
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",01:45-01/06: Germany - Finland (INTERF) - BLV FIREMAN
-https://vpsttt.vietanhtv.top/socolive/get.php?id=250874
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",01:45-01/06: Germany - Finland (INTERF) - BLV LONG
-https://vpsttt.vietanhtv.top/socolive/get.php?id=132343
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:00-01/06: Cordoba - SD Huesca (SPA D2) - BLV RAMBO
-https://vpsttt.vietanhtv.top/socolive/get.php?id=534055
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:00-01/06: Cordoba - SD Huesca (SPA D2) - BLV AB
-https://vpsttt.vietanhtv.top/socolive/get.php?id=612980
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:00-01/06: CD Leganes - Mirandes (SPA D2) - BLV CÁO
-https://vpsttt.vietanhtv.top/socolive/get.php?id=597929
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:00-01/06: Palmeiras - SP - Chapecoense - SC (BRA D1) - BLV A WIN
-https://vpsttt.vietanhtv.top/socolive/get.php?id=536185
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:00-01/06: Palmeiras - SP - Chapecoense - SC (BRA D1) - KÉP
-https://vpsttt.vietanhtv.top/socolive/get.php?id=560690
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:00-01/06: Vasco da Gama Saf - RJ - Atlético Mineiro - MG (BRA D1) - BLV WUKONG
-https://vpsttt.vietanhtv.top/socolive/get.php?id=511367
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:30-01/06: USA - Senegal (INTERF) - BLV ROBBEN
-https://vpsttt.vietanhtv.top/socolive/get.php?id=527383
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:30-01/06: USA - Senegal (INTERF) - BLV COZY
-https://vpsttt.vietanhtv.top/socolive/get.php?id=531989
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:30-01/06: USA - Senegal (INTERF) - BLV VOI
-https://vpsttt.vietanhtv.top/socolive/get.php?id=552716
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:30-01/06: USA - Senegal (INTERF) - BLV VITAMIN
-https://vpsttt.vietanhtv.top/socolive/get.php?id=400722
-
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",02:30-01/06: USA - Senegal (INTERF) - ĐỖ TÚ TÀI
-https://vpsttt.vietanhtv.top/socolive/get.php?id=607552
-
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",04:30-01/06: Brazil - Panama (INTERF) - BLV KEM
 https://vpsttt.vietanhtv.top/socolive/get.php?id=513394
 
@@ -854,14 +794,14 @@ https://vpsttt.vietanhtv.top/socolive/get.php?id=608899
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",05:00-01/06: Cienciano - Sporting Cristal (PER D1) - BLV YONE
 https://vpsttt.vietanhtv.top/socolive/get.php?id=372746
 
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",05:00-01/06: Cienciano - Sporting Cristal (PER D1) - BLV LUCAS
-https://vpsttt.vietanhtv.top/socolive/get.php?id=304148
-
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",05:00-01/06: Cienciano - Sporting Cristal (PER D1) - BLV GÔN
 https://vpsttt.vietanhtv.top/socolive/get.php?id=445260
 
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",05:00-01/06: Cienciano - Sporting Cristal (PER D1) - NGƯỜI CÁ
 https://vpsttt.vietanhtv.top/socolive/get.php?id=595335
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",05:00-01/06: Cienciano - Sporting Cristal (PER D1) - BLV ALEX
+https://vpsttt.vietanhtv.top/socolive/get.php?id=532081
 
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",06:30-01/06: Cruzeiro - MG - Fluminense - RJ (BRA D1) - BLV COCA
 https://vpsttt.vietanhtv.top/socolive/get.php?id=327159
@@ -929,6 +869,9 @@ https://vpsttt.vietanhtv.top/socolive/get.php?id=168740
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",16:00-01/06: Vietnam U19 - Timor Leste U19 (AFF U19) - TẠ BIÊN GIỚI
 https://vpsttt.vietanhtv.top/socolive/get.php?id=118206
 
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",16:00-01/06: Vietnam U19 - Timor Leste U19 (AFF U19) - SAO LA
+https://vpsttt.vietanhtv.top/socolive/get.php?id=462413
+
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",16:00-01/06: Vietnam U19 - Timor Leste U19 (AFF U19) - BLV MESSI
 https://vpsttt.vietanhtv.top/socolive/get.php?id=494201
 
@@ -956,20 +899,35 @@ https://vpsttt.vietanhtv.top/socolive/get.php?id=598119
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",17:00-01/06: Vanraure Hachinohe FC - Fukushima United FC (JPN D2) - BLV PEWPEW
 https://vpsttt.vietanhtv.top/socolive/get.php?id=109053
 
-#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",18:30-01/06: Denmark U17 - Italy U17 (UEFA U17) - BLV ALEX
-https://vpsttt.vietanhtv.top/socolive/get.php?id=532081
-
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",18:30-01/06: Denmark U17 - Italy U17 (UEFA U17) - BLV MIXI
 https://vpsttt.vietanhtv.top/socolive/get.php?id=290928
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",18:30-01/06: France U17 - Montenegro U17 (UEFA U17) - BLV LUCAS
+https://vpsttt.vietanhtv.top/socolive/get.php?id=304148
 
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",18:30-01/06: France U17 - Montenegro U17 (UEFA U17) - QUỐC KHÁNH
 https://vpsttt.vietanhtv.top/socolive/get.php?id=602153
 
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",18:30-01/06: France U17 - Montenegro U17 (UEFA U17) - BLV FIREMAN
+https://vpsttt.vietanhtv.top/socolive/get.php?id=250874
+
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",18:30-01/06: France U17 - Montenegro U17 (UEFA U17) - BLV KAN
 https://vpsttt.vietanhtv.top/socolive/get.php?id=283501
 
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",20:00-01/06: Japan U19 - Cote d'Ivoire U23 (TOUT) - A BỆU
+https://vpsttt.vietanhtv.top/socolive/get.php?id=484845
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",20:00-01/06: Japan U19 - Cote d'Ivoire U23 (TOUT) - BLV ROBBEN
+https://vpsttt.vietanhtv.top/socolive/get.php?id=527383
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",21:00-01/06: BATE-2 Borisov - Kommunalnik Slonim (BLR D1) - BLV CÁO
+https://vpsttt.vietanhtv.top/socolive/get.php?id=597929
+
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",21:00-01/06: Al Masry - ZED FC (EGY LC) - PINKMAN
 https://vpsttt.vietanhtv.top/socolive/get.php?id=595715
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",22:00-01/06: Diala - Duhok SC (IRQ D1) - BLV VOI
+https://vpsttt.vietanhtv.top/socolive/get.php?id=552716
 
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",22:00-01/06: Diala - Duhok SC (IRQ D1) - BLV PICK
 https://vpsttt.vietanhtv.top/socolive/get.php?id=598549
@@ -977,53 +935,65 @@ https://vpsttt.vietanhtv.top/socolive/get.php?id=598549
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",22:00-01/06: Mosul FC - Al Qasim SC (IRQ D1) - BLV ANH TÀI
 https://vpsttt.vietanhtv.top/socolive/get.php?id=406865
 
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",22:00-01/06: Mosul FC - Al Qasim SC (IRQ D1) - BLV HÚP
+https://vpsttt.vietanhtv.top/socolive/get.php?id=611382
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",22:00-01/06: Al-Naft SC - Newroz SC (IRQ D1) - BLV RAMBO
+https://vpsttt.vietanhtv.top/socolive/get.php?id=534055
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",22:00-01/06: Al-Naft SC - Newroz SC (IRQ D1) - ĐỖ TÚ TÀI
+https://vpsttt.vietanhtv.top/socolive/get.php?id=607552
+
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",22:00-01/06: FC Molodechno - Dinamo-2 Minsk (BLR D1) - BLV 24H
 https://vpsttt.vietanhtv.top/socolive/get.php?id=612928
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",22:00-01/06: Volna Pinsk - Niva Dolbizno (BLR D1) - BLV RYO
+https://vpsttt.vietanhtv.top/socolive/get.php?id=602019
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",22:00-01/06: Volna Pinsk - Niva Dolbizno (BLR D1) - KÉP
+https://vpsttt.vietanhtv.top/socolive/get.php?id=560690
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",23:00-01/06: Slovakia - Malta (INTERF) - CÔNG CHẤT
+https://vpsttt.vietanhtv.top/socolive/get.php?id=291277
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",23:00-01/06: Slovakia - Malta (INTERF) - BLV COZY
+https://vpsttt.vietanhtv.top/socolive/get.php?id=531989
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",23:00-01/06: Slovakia - Malta (INTERF) - BLV BÉO
+https://vpsttt.vietanhtv.top/socolive/get.php?id=459401
+
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",23:00-01/06: Slovakia - Malta (INTERF) - BLV LONG
+https://vpsttt.vietanhtv.top/socolive/get.php?id=132343
 
 #EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",23:00-01/06: Bulgaria - Montenegro (INTERF) - BLV XO
 https://vpsttt.vietanhtv.top/socolive/get.php?id=472241
 
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[01:45 01/06] Đức vs Phần Lan - BLV BLV COCA (L1) Giải :Giao hữu Quốc tế
-https://live05.msdht.app/live/24561735.flv
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",23:00-01/06: Bulgaria - Montenegro (INTERF) - BLV VITAMIN
+https://vpsttt.vietanhtv.top/socolive/get.php?id=400722
 
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[01:45 01/06] Đức vs Phần Lan - BLV BLV COCA (L2) Giải :Giao hữu Quốc tế
-https://live05.msdht.app/live/24561735.m3u8
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",23:30-01/06: Venezuela U20 - Canada U20 (TOUT) - BLV WUKONG
+https://vpsttt.vietanhtv.top/socolive/get.php?id=511367
 
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[01:45 01/06] Đức vs Phần Lan - BLV BLV C2 (L1) Giải :Giao hữu Quốc tế
-https://live05.msdht.app/live/08552895.flv
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",23:30-01/06: Venezuela U20 - Canada U20 (TOUT) - BLV AB
+https://vpsttt.vietanhtv.top/socolive/get.php?id=612980
 
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[01:45 01/06] Đức vs Phần Lan - BLV BLV C2 (L2) Giải :Giao hữu Quốc tế
-https://live05.msdht.app/live/08552895.m3u8
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",00:00-02/06: Wadi Degla SC - Enppi (EGY LC) - HẢI THANH
+https://vpsttt.vietanhtv.top/socolive/get.php?id=599634
 
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[02:30 01/06] Mỹ vs Senegal - BLV BLV REVIVE (L1) Giải :Giao hữu Quốc tế
-https://live05.msdht.app/live/33982309.flv
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",00:30-02/06: FC Voluntari - Hermannstadt (ROM D1) - QUÂN JK
+https://vpsttt.vietanhtv.top/socolive/get.php?id=611178
 
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[02:30 01/06] Mỹ vs Senegal - BLV BLV REVIVE (L2) Giải :Giao hữu Quốc tế
-https://live05.msdht.app/live/33982309.m3u8
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",05:00-02/06: Club Leones del Norte - Macara (ECU D1) - BLV CHIVAS
+https://vpsttt.vietanhtv.top/socolive/get.php?id=485739
 
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/3888349404e5d5d09f977b30df0ee151.png!w80",[00:30 01/06] F. Constanta vs Chindia Targoviste - BLV BLV MOUNTAIN DEW (L1) Giải :Giải Vô địch quốc gia Romania
-https://live05.msdht.app/live/87547578.flv
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",06:00-02/06: Colombia - Costa Rica (INTERF) - LOKA
+https://vpsttt.vietanhtv.top/socolive/get.php?id=589848
 
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/3888349404e5d5d09f977b30df0ee151.png!w80",[00:30 01/06] F. Constanta vs Chindia Targoviste - BLV BLV MOUNTAIN DEW (L2) Giải :Giải Vô địch quốc gia Romania
-https://live05.msdht.app/live/87547578.m3u8
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",06:00-02/06: Deportes Santa Cruz - CD Copiapo S.A. (CHI D2) - BLV A WIN
+https://vpsttt.vietanhtv.top/socolive/get.php?id=536185
 
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/d8fd96705da596e5bcd51ae7c4482156.png!w80",[01:30 01/06] Estudiantes La Plata vs Rosario Central - BLV BLV REDBULL (L1) Giải :Cúp Argentina
-https://live05.msdht.app/live/68848594.flv
-
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/d8fd96705da596e5bcd51ae7c4482156.png!w80",[01:30 01/06] Estudiantes La Plata vs Rosario Central - BLV BLV REDBULL (L2) Giải :Cúp Argentina
-https://live05.msdht.app/live/68848594.m3u8
-
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/5ad7bd885c64690f15f6971a2827190d.png!w80",[02:00 01/06] Palmeiras vs Chapecoense SC - BLV BLV PEPSI (L1) Giải :Giải bóng đá Hạng nhất Brasil
-https://live05.msdht.app/live/43612277.flv
-
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/5ad7bd885c64690f15f6971a2827190d.png!w80",[02:00 01/06] Palmeiras vs Chapecoense SC - BLV BLV PEPSI (L2) Giải :Giải bóng đá Hạng nhất Brasil
-https://live05.msdht.app/live/43612277.m3u8
-
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/basketball/competition/86f522333da4c3e2c144996fc4d2520b.png!w80",[02:30 01/06] Golden State Valkyries vs Las Vegas Aces - BLV BLV POCARI (L1) Giải :Hiệp hội bóng rổ quốc gia nữ
-https://live05.msdht.app/live/19919577.flv
-
-#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/basketball/competition/86f522333da4c3e2c144996fc4d2520b.png!w80",[02:30 01/06] Golden State Valkyries vs Las Vegas Aces - BLV BLV POCARI (L2) Giải :Hiệp hội bóng rổ quốc gia nữ
-https://live05.msdht.app/live/19919577.m3u8
+#EXTINF:-1 group-title="Socolive" tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592",16:30-02/06: Brisbane Wolves - Brisbane Roar Youth (AUS NPLQ) - MULLER
+https://vpsttt.vietanhtv.top/socolive/get.php?id=611176
 
 #EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[04:30 01/06] Brazil vs Panama - BLV BLV SPRITE (L1) Giải :Giao hữu Quốc tế
 https://live05.msdht.app/live/90725470.flv
@@ -1049,6 +1019,24 @@ https://live05.msdht.app/live/87379114.flv
 #EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/fee37a97f3d0e08209e4846fcff45cba.png!w80",[07:00 01/06] Palestino vs A. Italiano - BLV BLV Cozy (L2) Giải :Giải vô địch quốc gia Chile
 https://live05.msdht.app/live/87379114.m3u8
 
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/c8bdf96ccd4faeab5087c45bd1da30af.png!w80",[16:00 01/06] Việt Nam U19 vs Đông Timor U19 - BLV BLV COCA (L1) Giải :AFF Championship U19
+https://live05.msdht.app/live/24561735.flv
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/c8bdf96ccd4faeab5087c45bd1da30af.png!w80",[16:00 01/06] Việt Nam U19 vs Đông Timor U19 - BLV BLV COCA (L2) Giải :AFF Championship U19
+https://live05.msdht.app/live/24561735.m3u8
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/c8bdf96ccd4faeab5087c45bd1da30af.png!w80",[16:00 01/06] Việt Nam U19 vs Đông Timor U19 - BLV BLV REVIVE (L1) Giải :AFF Championship U19
+https://live05.msdht.app/live/33982309.flv
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/c8bdf96ccd4faeab5087c45bd1da30af.png!w80",[16:00 01/06] Việt Nam U19 vs Đông Timor U19 - BLV BLV REVIVE (L2) Giải :AFF Championship U19
+https://live05.msdht.app/live/33982309.m3u8
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/0fb580bce0dd25298f777277ab60bcf1.png!w80",[17:00 01/06] Vanraure vs Fukushima United FC - BLV BLV MOUNTAIN DEW (L1) Giải :J2/J3 100 Year Vision League
+https://live05.msdht.app/live/87547578.flv
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/0fb580bce0dd25298f777277ab60bcf1.png!w80",[17:00 01/06] Vanraure vs Fukushima United FC - BLV BLV MOUNTAIN DEW (L2) Giải :J2/J3 100 Year Vision League
+https://live05.msdht.app/live/87547578.m3u8
+
 #EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/78ba9a58d9a23652e5ce8b607a2a2d9b.png!w80",[17:30 01/06] Melbourne Victory FC Young vs Melbourne Knights - BLV BLV BÍ ĐAO (L1) Giải :Giải bóng đá Hạng nhất bang Victoria của Úc
 https://live05.msdht.app/live/99121525.flv
 
@@ -1060,6 +1048,30 @@ https://live05.msdht.app/live/88508431.flv
 
 #EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/8b8af0306472b55b13a3d9164ceaba74.png!w80",[18:30 01/06] Đan Mạch U17 vs Ý U17 - BLV BLV RỒNG ĐỎ (L2) Giải :Euro U17
 https://live05.msdht.app/live/88508431.m3u8
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/c8bdf96ccd4faeab5087c45bd1da30af.png!w80",[20:00 01/06] Indonesia U19 vs Myanmar U19 - BLV BLV POCARI (L1) Giải :AFF Championship U19
+https://live05.msdht.app/live/19919577.flv
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/c8bdf96ccd4faeab5087c45bd1da30af.png!w80",[20:00 01/06] Indonesia U19 vs Myanmar U19 - BLV BLV POCARI (L2) Giải :AFF Championship U19
+https://live05.msdht.app/live/19919577.m3u8
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/d2e8bd4b3f540e6fc78a7313b7b19c34.png!w80",[20:00 01/06] Nhật Bản U19 vs Bờ Biển Ngà U23 - BLV BLV C2 (L1) Giải :Toulon Tournament
+https://live05.msdht.app/live/08552895.flv
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/d2e8bd4b3f540e6fc78a7313b7b19c34.png!w80",[20:00 01/06] Nhật Bản U19 vs Bờ Biển Ngà U23 - BLV BLV C2 (L2) Giải :Toulon Tournament
+https://live05.msdht.app/live/08552895.m3u8
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/83de79c5af1aa8e7d2f4f445045c4b9d.png!w80",[21:00 01/06] El Masry vs ZED FC - BLV BLV REDBULL (L1) Giải :Cúp Liên đoàn Bóng đá Ai Cập
+https://live05.msdht.app/live/68848594.flv
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/83de79c5af1aa8e7d2f4f445045c4b9d.png!w80",[21:00 01/06] El Masry vs ZED FC - BLV BLV REDBULL (L2) Giải :Cúp Liên đoàn Bóng đá Ai Cập
+https://live05.msdht.app/live/68848594.m3u8
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[23:00 01/06] Bulgaria vs Montenegro - BLV BLV PEPSI (L1) Giải :Giao hữu Quốc tế
+https://live05.msdht.app/live/43612277.flv
+
+#EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[23:00 01/06] Bulgaria vs Montenegro - BLV BLV PEPSI (L2) Giải :Giao hữu Quốc tế
+https://live05.msdht.app/live/43612277.m3u8
 
 #EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[23:00 02/06] Croatia vs Bỉ - BLV BLV ÔLONG (L1) Giải :Giao hữu Quốc tế
 https://live05.msdht.app/live/97312754.flv
@@ -1073,23 +1085,23 @@ https://live05.msdht.app/live/14830711.flv
 #EXTINF:-1 group-title="ColaTV" tvg-logo="https://img.colatv88xd.cc/football/competition/4e7c9460ee862d47c2ce6debfef6aace.png!w80",[23:00 02/06] Croatia vs Bỉ - BLV BLV GIÀ LÀNG (L2) Giải :Giao hữu Quốc tế
 https://live05.msdht.app/live/14830711.m3u8
 
-#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png",[01:45 01/06] Germany vs Finland - BLV PHAN MÃ (FHD)
-https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
-
-#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png",[01:45 01/06] Germany vs Finland - BLV PHAN MÃ (SD)
-https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png",[01:45 01/06] Germany vs Finland - BLV TÁO GIÀ (FHD)
+#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png",[04:30 01/06] Brazil vs Panama - BLV TÁO GIÀ (FHD)
 https://tdlive.yarncdn.live/live/tdtv_blv_taotinhtao/playlist.m3u8
 
-#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1920px-Flag_of_Germany.svg.png",[01:45 01/06] Germany vs Finland - BLV TÁO GIÀ (SD)
+#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png",[04:30 01/06] Brazil vs Panama - BLV TÁO GIÀ (SD)
 https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://media.api-sports.io/football/teams/2384.png",[02:30 01/06] USA vs Senegal - BLV LƯƠNG BỔNG (FHD)
+#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png",[04:30 01/06] Brazil vs Panama - BLV LƯƠNG BỔNG (FHD)
 https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
 
-#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://media.api-sports.io/football/teams/2384.png",[02:30 01/06] USA vs Senegal - BLV LƯƠNG BỔNG (SD)
+#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png",[04:30 01/06] Brazil vs Panama - BLV LƯƠNG BỔNG (SD)
 https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://media.api-sports.io/football/teams/19157.png",[16:00 01/06] Vietnam U19 vs Timor Leste U19 - BLV PHAN MÃ (FHD)
+https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
+
+#EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://media.api-sports.io/football/teams/19157.png",[16:00 01/06] Vietnam U19 vs Timor Leste U19 - BLV PHAN MÃ (SD)
+https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://media.api-sports.io/football/teams/19157.png",[16:00 01/06] Vietnam U19 vs Timor Leste U19 - BLV TÁO KINH TẾ  (FHD)
 https://tdlive.yarncdn.live/live/tdtv_blv_taokinhte/playlist.m3u8
@@ -1133,71 +1145,17 @@ https://tdlive.yarncdn.live/live/tdtv_blv_taovannghe/playlist.m3u8
 #EXTINF:-1 group-title="Hội Quán TV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Norway.svg/250px-Flag_of_Norway.svg.png",[00:00 02/06]  Norway vs Sweden - BLV THẦN THÔNG (SD)
 https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central (Lương Sơn) BLV HÀN TÍN m3u
-https://hls.cdnfaster-a.live/live/HANTIN/index.m3u8?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama (Lương Sơn) BLV VƯƠNG LUÂN m3u
+https://hls.cdnfaster-a.live/live/VUONGLUAN/index.m3u8?expire=1893165900&sign=60fcb5252d4dafeac0cb5da922c56645
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central (Lương Sơn) BLV HÀN TÍN flv
-https://flv.cdnfaster-a.live/live/HANTIN.flv?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama (Lương Sơn) BLV VƯƠNG LUÂN flv
+https://flv.cdnfaster-a.live/live/VUONGLUAN.flv?expire=1893165900&sign=60fcb5252d4dafeac0cb5da922c56645
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Lương Sơn) BLV LỮ BỐ m3u
-https://hls.cdnfaster-a.live/live/LUBO/index.m3u8?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama (Lương Sơn) BLV FERNANDO m3u
+https://hls.cdnfaster-a.live/live/FERNANDO/index.m3u8?expire=1924930980&sign=bab24fb93b0be5c98af9138659989bcb
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Lương Sơn) BLV LỮ BỐ flv
-https://flv.cdnfaster-a.live/live/LUBO.flv?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Vasco da Gama vs Atletico Mineiro (Lương Sơn) BLV MAYBACH m3u
-https://hls.cdnfaster-a.live/live/MAYBACH/index.m3u8?expire=1923468720&sign=862d9b5fa441bf644b6c2fbcec08487b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Vasco da Gama vs Atletico Mineiro (Lương Sơn) BLV MAYBACH flv
-https://flv.cdnfaster-a.live/live/MAYBACH.flv?expire=1923468720&sign=862d9b5fa441bf644b6c2fbcec08487b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Vasco da Gama vs Atletico Mineiro (Lương Sơn) BLV QUAN VŨ m3u
-https://hls.cdnfaster-a.live/live/QUANVU/index.m3u8?expire=1788427256&sign=056d097a0bbbd810493fd64ccf4831b7
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Vasco da Gama vs Atletico Mineiro (Lương Sơn) BLV QUAN VŨ flv
-https://flv.cdnfaster-a.live/live/QUANVU.flv?expire=1788427256&sign=056d097a0bbbd810493fd64ccf4831b7
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras vs Chapecoense SC (Lương Sơn) BLV TRIỆU TỬ LONG m3u
-https://hls.cdnfaster-a.live/live/TRIEUTULONG/index.m3u8?expire=1788427256&sign=45e4fdc4bdb8472f513ccc78f57f6070
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras vs Chapecoense SC (Lương Sơn) BLV TRIỆU TỬ LONG flv
-https://flv.cdnfaster-a.live/live/TRIEUTULONG.flv?expire=1788427256&sign=45e4fdc4bdb8472f513ccc78f57f6070
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Lương Sơn) BLV PHI HỔ m3u
-https://hls.cdnfaster-a.live/live/PHIHO/index.m3u8?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Lương Sơn) BLV PHI HỔ flv
-https://flv.cdnfaster-a.live/live/PHIHO.flv?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Lương Sơn) BLV DƯƠNG CHÍ m3u
-https://hls.cdnfaster-a.live/live/VANCONAN/index.m3u8?expire=1830276060&sign=53991e2e589a2f7031dd37b82a585e33
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Lương Sơn) BLV DƯƠNG CHÍ flv
-https://flv.cdnfaster-a.live/live/VANCONAN.flv?expire=1830276060&sign=53991e2e589a2f7031dd37b82a585e33
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Huachipato vs Univ Catolica (Lương Sơn) BLV LÝ ỨNG m3u
-https://hls.cdnfaster-a.live/live/LYUNG1/index.m3u8?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Huachipato vs Univ Catolica (Lương Sơn) BLV LÝ ỨNG flv
-https://flv.cdnfaster-a.live/live/LYUNG1.flv?expire=1788427256&sign=d5c6932fefdcb98268754f4ccd4aa45d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Huachipato vs Univ Catolica (Lương Sơn) BLV TÂY MÔN KHÁNH m3u
-https://hls.cdnfaster-a.live/live/TAYMONKHANH/index.m3u8?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Huachipato vs Univ Catolica (Lương Sơn) BLV TÂY MÔN KHÁNH flv
-https://flv.cdnfaster-a.live/live/TAYMONKHANH.flv?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca (Lương Sơn) BLV LÝ QUỲ m3u
-https://hls.cdnfaster-a.live/live/LYQUY/index.m3u8?expire=1891408380&sign=4eb9451ad0178fa8207d583db7d469e3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca (Lương Sơn) BLV LÝ QUỲ flv
-https://flv.cdnfaster-a.live/live/LYQUY.flv?expire=1891408380&sign=4eb9451ad0178fa8207d583db7d469e3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h35 ngày 01/06 USA vs Senegal (Lương Sơn) BLV LEO m3u
-https://hls.cdnfaster-a.live/live/LEO/index.m3u8?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h35 ngày 01/06 USA vs Senegal (Lương Sơn) BLV LEO flv
-https://flv.cdnfaster-a.live/live/LEO.flv?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama (Lương Sơn) BLV FERNANDO flv
+https://flv.cdnfaster-a.live/live/FERNANDO.flv?expire=1924930980&sign=bab24fb93b0be5c98af9138659989bcb
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 23/05 FC Tulsa vs Hartford Athletic (Khán Đài A) source
 https://www3.f2k3.shop/live/235c29178801ef36a970731709755e2a/playlist.m3u8
@@ -1214,41 +1172,17 @@ https://www3.f2k3.shop/live/87b8a02016610052ff23e50744f98f77/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Mexico vs Ghana (Khán Đài A) source
 https://www3.f2k3.shop/live/e699af6f4692703a8c718f285b40deb2/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Chuối Chiên) HD1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/max/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Chuối Chiên) HD2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama (Chuối Chiên) HD2
 https://gckc0525.edgemaxcdn.org/live/max.flv
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Chuối Chiên) FHD1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama (Chuối Chiên) FHD1
 https://gckc0525.edgemaxcdn.org/live/maxhd/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Chuối Chiên) FHD2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/maxhd.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/chuoito.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/chuoitohd.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/chuoibo/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/chuoibo.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/chuoibohd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/chuoibohd.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/anhhot/playlist.m3u8
@@ -1273,6 +1207,18 @@ https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 01/06 Vietnam U19 vs Timor-Leste U19 (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/chuoitayhd.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 01/06 Vietnam U19 vs Timor-Leste U19 (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 01/06 Vietnam U19 vs Timor-Leste U19 (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/chuoito.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 01/06 Vietnam U19 vs Timor-Leste U19 (Chuối Chiên) FHD1
+https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",16h00 ngày 01/06 Vietnam U19 vs Timor-Leste U19 (Chuối Chiên) FHD2
+https://gckc0525.edgemaxcdn.org/live/chuoitohd.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 01/06 Vanraure Hachinohe vs Fukushima United (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/anhbeo/playlist.m3u8
@@ -1311,6 +1257,18 @@ https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8
 https://gckc0525.edgemaxcdn.org/live/chuoinhohd.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 01/06 Indonesia U19 vs Myanmar U19 (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/chuoibo/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 01/06 Indonesia U19 vs Myanmar U19 (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/chuoibo.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 01/06 Indonesia U19 vs Myanmar U19 (Chuối Chiên) FHD1
+https://gckc0525.edgemaxcdn.org/live/chuoibohd/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 01/06 Indonesia U19 vs Myanmar U19 (Chuối Chiên) FHD2
+https://gckc0525.edgemaxcdn.org/live/chuoibohd.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 01/06 Indonesia U19 vs Myanmar U19 (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/alex/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",20h00 ngày 01/06 Indonesia U19 vs Myanmar U19 (Chuối Chiên) HD2
@@ -1331,255 +1289,159 @@ https://www3.f2k3.shop/live/a60cdd817beb680017f46a5c111202f7/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Canberra Olympic U23 vs Belconnen United U23 (Gà Vàng) source
 https://www3.f2k3.shop/live/829f44b193d50a1f8dcb948fab6a0983/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV LONG] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912117_lsd.flv?auth_key=1780260476-0-0-2b53aa26fc4506b85357ce57da0070b5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [LÃO LÂM] (Socolive) flv
+https://pull06.scstream.net/live/stream-527384_lsd.flv?auth_key=1780267316-0-0-3ff944a255a9de5ebaf51331726d33e6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV LONG] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912117_lhd.flv?auth_key=1780260476-0-0-b27558256d6a111f0f78cc14efd38635
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [LÃO LÂM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-527384_lhd.flv?auth_key=1780267316-0-0-ab36ad1ccf12821557459e27a576678d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV LONG] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912117_lsd.m3u8?auth_key=1780260476-0-0-38614b4d3926c7dc27e1ef70fcb64721
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [LÃO LÂM] (Socolive) m3u8
+https://pull.niues.live/live/stream-527384_lsd.m3u8?auth_key=1780267316-0-0-3de5a66ac186e87de707a4bb47efc54e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV LONG] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912117_lhd.m3u8?auth_key=1780260476-0-0-27651bc945795e8c03403374605ec3d7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [LÃO LÂM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1780267316-0-0-60c143c638d3ed7d4ffcd7915b9c67b1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Vasco da Gama Saf - RJ vs Atlético Mineiro - MG [BLV WUKONG] (Socolive) flv
-https://pull06.scstream.net/live/stream-511367_lsd.flv?auth_key=1780260476-0-0-cc819e28430bc7890c300766574c66ea
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV GÔN] (Socolive) flv
+https://pull.niur.live/live/stream-445260_lsd.flv?txSecret=617182cbc82447b52f03004565a4bcb4&txTime=6a1cff84
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Vasco da Gama Saf - RJ vs Atlético Mineiro - MG [BLV WUKONG] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-511367_lhd.flv?auth_key=1780260476-0-0-e97b858653ab2fe35d19d3d46ec0c079
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV GÔN] (Socolive) hdFlv
+https://pull.niur.live/live/stream-445260_lhd.flv?txSecret=efc4169c325867277086e300a758ac5c&txTime=6a1cff84
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Vasco da Gama Saf - RJ vs Atlético Mineiro - MG [BLV WUKONG] (Socolive) m3u8
-https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1780260476-0-0-a511c84ad484d84ce3239c602a61a386
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV GÔN] (Socolive) m3u8
+https://pull.niur.live/live/stream-445260_lsd.m3u8?txSecret=617182cbc82447b52f03004565a4bcb4&txTime=6a1cff84
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Vasco da Gama Saf - RJ vs Atlético Mineiro - MG [BLV WUKONG] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1780260476-0-0-5559eb1ede1d623437c4e6514bcd7779
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV GÔN] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-445260_lhd.m3u8?txSecret=efc4169c325867277086e300a758ac5c&txTime=6a1cff84
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [CÔNG CHẤT] (Socolive) flv
-https://pull06.scstream.net/live/stream-291277_lsd.flv?auth_key=1780260476-0-0-557f7e0eb1731c931caaa3088fc58a68
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [HÀ DUY KIÊN] (Socolive) flv
+https://pull06.scstream.net/live/stream-607400_lsd.flv?auth_key=1780267316-0-0-42c5007010fc84f9f5d6c0254988808d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [CÔNG CHẤT] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-291277_lhd.flv?auth_key=1780260476-0-0-fb4c0c5314d6db0a2b483dab562f0289
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [HÀ DUY KIÊN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-607400_lhd.flv?auth_key=1780267316-0-0-5cad325b31860d406eb2e59e05957b33
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [CÔNG CHẤT] (Socolive) m3u8
-https://pull.niues.live/live/stream-291277_lsd.m3u8?auth_key=1780260476-0-0-e563b5e1fa190d50dd69bca864a404d6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [HÀ DUY KIÊN] (Socolive) m3u8
+https://pull.niues.live/live/stream-607400_lsd.m3u8?auth_key=1780267316-0-0-61bfd6dc8494c9965fb128e64457d34e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [CÔNG CHẤT] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-291277_lhd.m3u8?auth_key=1780260476-0-0-73de16528cf9c5d2e7503499373608c7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [HÀ DUY KIÊN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1780267316-0-0-a0c6711ccb765ef2d4730833034493ae
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras - SP vs Chapecoense - SC [BLV A WIN] (Socolive) flv
-https://pull06.scstream.net/live/stream-536185_lsd.flv?auth_key=1780260476-0-0-c042e81ef9d71756595a6c31b085bf6d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV ALEX] (Socolive) flv
+https://pull06.scstream.net/live/stream-532081_lsd.flv?auth_key=1780267316-0-0-4776d360ff21160bf153107ba99e2263
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras - SP vs Chapecoense - SC [BLV A WIN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-536185_lhd.flv?auth_key=1780260476-0-0-0da764177770072ee7ae6f0fabc781f1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV ALEX] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-532081_lhd.flv?auth_key=1780267316-0-0-abf9b6d49276e78dd329d624e5262ee9
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras - SP vs Chapecoense - SC [BLV A WIN] (Socolive) m3u8
-https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1780260476-0-0-eb773ebb4750ef919bf9c94d9fbae50d
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV ALEX] (Socolive) m3u8
+https://pull.niues.live/live/stream-532081_lsd.m3u8?auth_key=1780267316-0-0-5c012cb261b188ba26e69150f02ca8a4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras - SP vs Chapecoense - SC [BLV A WIN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1780260476-0-0-736aad929a48e493a06400ddecfb9967
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras - SP vs Chapecoense - SC [KÉP] (Socolive) flv
-https://pull06.scstream.net/live/stream-560690_lsd.flv?auth_key=1780260476-0-0-d78860669af44e09e1dfe0c62e818ef1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras - SP vs Chapecoense - SC [KÉP] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-560690_lhd.flv?auth_key=1780260476-0-0-cdb0ccd5f95adea2b028b3e417c9cc66
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras - SP vs Chapecoense - SC [KÉP] (Socolive) m3u8
-https://pull.niues.live/live/stream-560690_lsd.m3u8?auth_key=1780260476-0-0-5d225400163deb8a1d73b78e5c725498
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Palmeiras - SP vs Chapecoense - SC [KÉP] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-560690_lhd.m3u8?auth_key=1780260476-0-0-da606f9304063b41ce29b863fa9ae754
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 CD Leganes vs Mirandes [BLV CÁO] (Socolive) flv
-https://pull06.scstream.net/live/stream-597929_lsd.flv?auth_key=1780260476-0-0-b53ca47e3bc890ce3ac98f829b045c70
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 CD Leganes vs Mirandes [BLV CÁO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-597929_lhd.flv?auth_key=1780260476-0-0-60af5c85959866046a8053ad43b8c9f1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 CD Leganes vs Mirandes [BLV CÁO] (Socolive) m3u8
-https://pull.niues.live/live/stream-597929_lsd.m3u8?auth_key=1780260476-0-0-857fe13e53c226031167110297da87fd
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 CD Leganes vs Mirandes [BLV CÁO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1780260476-0-0-8a12bb43cc453fcc123bbd17a408624b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca [BLV RAMBO] (Socolive) flv
-https://pull.niur.live/live/stream-534055_lsd.flv?txSecret=6b27ef3d7ccb67c4adf9fcb6c933b992&txTime=6a1ce4cc
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca [BLV RAMBO] (Socolive) hdFlv
-https://pull.niur.live/live/stream-534055_lhd.flv?txSecret=e8ab6e8fb5f364cd83b8e6c093cfdb35&txTime=6a1ce4cc
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca [BLV RAMBO] (Socolive) m3u8
-https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=6b27ef3d7ccb67c4adf9fcb6c933b992&txTime=6a1ce4cc
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca [BLV RAMBO] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=e8ab6e8fb5f364cd83b8e6c093cfdb35&txTime=6a1ce4cc
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [SAO LA] (Socolive) flv
-https://pull.niur.live/live/stream-462413_lsd.flv?txSecret=e976a3cf91e9ff71959491bea497993e&txTime=6a1ce634
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [SAO LA] (Socolive) hdFlv
-https://pull.niur.live/live/stream-462413_lhd.flv?txSecret=a7a33c2b00f731e9bcaf52130a09af4f&txTime=6a1ce634
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [SAO LA] (Socolive) m3u8
-https://pull.niur.live/live/stream-462413_lsd.m3u8?txSecret=e976a3cf91e9ff71959491bea497993e&txTime=6a1ce634
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [SAO LA] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-462413_lhd.m3u8?txSecret=a7a33c2b00f731e9bcaf52130a09af4f&txTime=6a1ce634
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 01/06 Farul Constanta vs Chindia Targoviste [HẢI THANH] (Socolive) flv
-https://pull06.scstream.net/live/stream-599634_lsd.flv?auth_key=1780260836-0-0-896e15ee67e28923856fe9f01d6598a4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 01/06 Farul Constanta vs Chindia Targoviste [HẢI THANH] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-599634_lhd.flv?auth_key=1780260836-0-0-4e32e050faec36d373f2c2f0bbd8e751
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 01/06 Farul Constanta vs Chindia Targoviste [HẢI THANH] (Socolive) m3u8
-https://pull.niues.live/live/stream-599634_lsd.m3u8?auth_key=1780260836-0-0-4454ed085e2850db70ea25de5b819d31
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",00h30 ngày 01/06 Farul Constanta vs Chindia Targoviste [HẢI THANH] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-599634_lhd.m3u8?auth_key=1780260836-0-0-eda5965d900120271a9168832ec746b3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [A BỆU] (Socolive) flv
-https://pull06.scstream.net/live/stream-484845_lsd.flv?auth_key=1780260836-0-0-148aa159759bbddc3173c7faae8b2a7b
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [A BỆU] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-484845_lhd.flv?auth_key=1780260836-0-0-0850db90d0cd55eb6b91030caa4552b3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [A BỆU] (Socolive) m3u8
-https://pull.niues.live/live/stream-484845_lsd.m3u8?auth_key=1780260836-0-0-279e517f1daf55ef931287196b32104d
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [A BỆU] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1780260836-0-0-d3e416326b5f9146b6a662e770b74118
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV BÉO] (Socolive) flv
-https://pull.niur.live/live/stream-459401_lsd.flv?txSecret=91143a5009bf3d17a59f2332ae60be8e&txTime=6a1ce634
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV BÉO] (Socolive) hdFlv
-https://pull.niur.live/live/stream-459401_lhd.flv?txSecret=33ea39d35e370f627e5fd7dde5d2bc9d&txTime=6a1ce634
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV BÉO] (Socolive) m3u8
-https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=91143a5009bf3d17a59f2332ae60be8e&txTime=6a1ce634
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV BÉO] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=33ea39d35e370f627e5fd7dde5d2bc9d&txTime=6a1ce634
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [ĐỖ TÚ TÀI] (Socolive) flv
-https://pull06.scstream.net/live/stream-607552_lsd.flv?auth_key=1780260836-0-0-c24b812fd1e7f45fc60054ed9c711581
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [ĐỖ TÚ TÀI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-607552_lhd.flv?auth_key=1780260836-0-0-80c80ab22c53392903e54a13133432ea
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [ĐỖ TÚ TÀI] (Socolive) m3u8
-https://pull.niues.live/live/stream-607552_lsd.m3u8?auth_key=1780260836-0-0-346d28fc8621fc6b5033b14b2cbfd683
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [ĐỖ TÚ TÀI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1780260836-0-0-dbfa79e380521867b3251ae4500fadb4
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central [BLV RYO] (Socolive) flv
-https://pull06.scstream.net/live/stream-602019_lsd.flv?auth_key=1780260836-0-0-d383e84e69fa04ee8c18abb6b66ca094
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central [BLV RYO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-602019_lhd.flv?auth_key=1780260836-0-0-8f2c04742e944daefeb4d8da408d1664
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central [BLV RYO] (Socolive) m3u8
-https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1780260836-0-0-b87794a1731ddaf8e56e0ed383953407
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central [BLV RYO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1780260836-0-0-e8a414dce56fa5b7eb1989f323c1535b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV ALEX] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1780267316-0-0-2101763dd4fada32bba3dd9dd4bb875f
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
-https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1780260836-0-0-4a2cfb67ef659787426a42ae7758ef02
+https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1780267316-0-0-0086e2f0b75220b75b7a4bc37571fa48
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1780260836-0-0-cd8106e230756f605780436b7d0ff1ca
+https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1780267316-0-0-bb18db5abbf6bba237b88a2733fbd219
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
-https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1780260836-0-0-78878ef2c0506f1f4fbc7584801588a0
+https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1780267316-0-0-b8d4484937869c06ad2a37227932e322
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1780260836-0-0-adfb3f12f13d26dbb536eafb514508b9
+https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1780267316-0-0-72bbc9f5b44b15c9973b401414ed4731
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV COZY] (Socolive) flv
-https://pull06.scstream.net/live/stream-531989_lsd.flv?auth_key=1780261196-0-0-08b1e1eae33225a249eb874fd07b3d10
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV THÓC] (Socolive) flv
+https://pull06.scstream.net/live/stream-606448_lsd.flv?auth_key=1780267676-0-0-20d80390850440c1e7d46190b3e21ecc
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV COZY] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-531989_lhd.flv?auth_key=1780261196-0-0-0c29ca8a86ba6962f227976bf28cb014
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV THÓC] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-606448_lhd.flv?auth_key=1780267676-0-0-eac4d1c4dfbddae59e9ac3a13c5a62c8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV COZY] (Socolive) m3u8
-https://pull.niues.live/live/stream-531989_lsd.m3u8?auth_key=1780261196-0-0-e464081d0119881e454f41aeef0a5293
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV THÓC] (Socolive) m3u8
+https://pull.niues.live/live/stream-606448_lsd.m3u8?auth_key=1780267676-0-0-910631d0008b51de91463efa99a27d08
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV COZY] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1780261196-0-0-03d26fd12afcaed5d434d294fe070205
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV THÓC] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-606448_lhd.m3u8?auth_key=1780267676-0-0-efdddfa284fe31088e76cd84692d767a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV ROBBEN] (Socolive) flv
-https://pull06.scstream.net/live/stream-527383_lsd.flv?auth_key=1780261196-0-0-0b896eac5e75aed849d178abd1a8bdac
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV CÒ] (Socolive) flv
+https://pull06.scstream.net/live/stream-582342_lsd.flv?auth_key=1780267676-0-0-164fe3742105c7d3bf2ef9e021baf734
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV ROBBEN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-527383_lhd.flv?auth_key=1780261196-0-0-58c4f581d4c1601f357a3bb25244e10e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV CÒ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-582342_lhd.flv?auth_key=1780267676-0-0-b020ca29b872496927c84adcf077867a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV ROBBEN] (Socolive) m3u8
-https://pull.niues.live/live/stream-527383_lsd.m3u8?auth_key=1780261196-0-0-7222e9b663146dbcb2d48bbcd679e86e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV CÒ] (Socolive) m3u8
+https://pull.niues.live/live/stream-582342_lsd.m3u8?auth_key=1780267676-0-0-0fe5503d74bcb459a47c81fcf1268dab
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV ROBBEN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1780261196-0-0-fd5a5f75d4df558b39dd4e9eac640d28
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV CÒ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1780267676-0-0-9251aac5349c0fb1807924767879a5a9
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV FIREMAN] (Socolive) flv
-https://pull06.scstream.net/live/stream-991140_lsd.flv?auth_key=1780261196-0-0-2a644d92747ac76e8662fd45fcc3dfd2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV YONE] (Socolive) flv
+https://pull06.scstream.net/live/stream-372746_lsd.flv?auth_key=1780268036-0-0-10ff0c1571fbb81957455e30f1933e6a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV FIREMAN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-991140_lhd.flv?auth_key=1780261196-0-0-ac7ec2b2effbd4d4f5c540239aceeeff
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV YONE] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-372746_lhd.flv?auth_key=1780268036-0-0-e12f379f91d9ec2ba799dbc111c3b599
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV FIREMAN] (Socolive) m3u8
-https://pull.niues.live/live/stream-991140_lsd.m3u8?auth_key=1780261196-0-0-5fe93df6afd2fc1ebbe40259150638f8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV YONE] (Socolive) m3u8
+https://pull.niues.live/live/stream-372746_lsd.m3u8?auth_key=1780268036-0-0-09f2a14f007d8b6c053743070b4ee77f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h45 ngày 01/06 Germany vs Finland [BLV FIREMAN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1780261196-0-0-069b1614dea6046ae14c32a1a25ca60c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [BLV YONE] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1780268036-0-0-c19fea220f5fbcdc37de825ff33f9af5
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV VOI] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912114_lsd.flv?auth_key=1780261196-0-0-12b9a8c1fa874f772e0020efc8fc0d29
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV KEM] (Socolive) flv
+https://pull06.scstream.net/live/stream-513394_lsd.flv?auth_key=1780268036-0-0-5fc902fba9f85316b9bdd5a3c87f72e5
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV VOI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912114_lhd.flv?auth_key=1780261196-0-0-c8c4d7b91c21349660da20907e1ebcbd
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV KEM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-513394_lhd.flv?auth_key=1780268036-0-0-2e0202fefbeb5e1869621c3045a2ea31
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV VOI] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912114_lsd.m3u8?auth_key=1780261196-0-0-8e5024f722b7e5829435e8690346395b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV KEM] (Socolive) m3u8
+https://pull.niues.live/live/stream-513394_lsd.m3u8?auth_key=1780268036-0-0-d057edd8307860167938bfc015748d82
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV VOI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1780261196-0-0-21f2b419952b60af9dfcbeb694a110c2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV KEM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-513394_lhd.m3u8?auth_key=1780268036-0-0-6613ed64b9e95b8387f0aa347f3572fa
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV VITAMIN] (Socolive) flv
-https://pull06.scstream.net/live/stream-400722_lsd.flv?auth_key=1780261196-0-0-e118113d64bb89b93c20df4abf902e90
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 O.Higgins vs Everton CD [XUÂN SON] (Socolive) flv
+https://pull.niur.live/live/stream-501412_lsd.flv?txSecret=61ec4dc9aaaf455fd3556ce02b72f8a0&txTime=6a1d0254
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV VITAMIN] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-400722_lhd.flv?auth_key=1780261196-0-0-2e21d50051f67a648ac29343f43696f5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 O.Higgins vs Everton CD [XUÂN SON] (Socolive) hdFlv
+https://pull.niur.live/live/stream-501412_lhd.flv?txSecret=25bbd45d516bbc74ac1446c5465f7a90&txTime=6a1d0254
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV VITAMIN] (Socolive) m3u8
-https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1780261196-0-0-77dd1bc37c21ca0e2b4f748c749f3439
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 O.Higgins vs Everton CD [XUÂN SON] (Socolive) m3u8
+https://pull.niur.live/live/stream-501412_lsd.m3u8?txSecret=61ec4dc9aaaf455fd3556ce02b72f8a0&txTime=6a1d0254
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h30 ngày 01/06 USA vs Senegal [BLV VITAMIN] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1780261196-0-0-a422c283ab58ca71eca1879071559fdd
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 O.Higgins vs Everton CD [XUÂN SON] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=25bbd45d516bbc74ac1446c5465f7a90&txTime=6a1d0254
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central [BLV HÚP] (Socolive) flv
-https://pull06.scstream.net/live/stream-611382_lsd.flv?auth_key=1780261196-0-0-4e94472186ff6f69fc5a0d42749d3768
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [NGƯỜI CÁ] (Socolive) flv
+https://pull06.scstream.net/live/stream-595335_lsd.flv?auth_key=1780268036-0-0-83aec90098e9bcf3186121a6aef3c772
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central [BLV HÚP] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-611382_lhd.flv?auth_key=1780261196-0-0-c824cbc30d686b9bec09ce37602ad808
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [NGƯỜI CÁ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-595335_lhd.flv?auth_key=1780268036-0-0-97c50d9ade3603e0e4d87091008f7b34
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central [BLV HÚP] (Socolive) m3u8
-https://pull.niues.live/live/stream-611382_lsd.m3u8?auth_key=1780261196-0-0-c80d08e02310c295c4f141874181b534
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [NGƯỜI CÁ] (Socolive) m3u8
+https://pull.niues.live/live/stream-595335_lsd.m3u8?auth_key=1780268036-0-0-a1ff7779cd832c40de3975bea45bb064
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",01h30 ngày 01/06 Estudiantes La Plata vs Rosario Central [BLV HÚP] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-611382_lhd.m3u8?auth_key=1780261196-0-0-74baf2dbfd273058fdd7d9f459cbb9e5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",05h00 ngày 01/06 Cienciano vs Sporting Cristal [NGƯỜI CÁ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-595335_lhd.m3u8?auth_key=1780268036-0-0-dead1fb9683526747180bcbdad614988
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca [BLV AB] (Socolive) flv
-https://pull06.scstream.net/live/stream-612980_lsd.flv?auth_key=1780261196-0-0-566bd94b0050af0e3f887229c16979ed
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 O.Higgins vs Everton CD [BLV NẤM] (Socolive) flv
+https://pull06.scstream.net/live/stream-608899_lsd.flv?auth_key=1780268036-0-0-e464e87b929a965fe096a921086a2f7e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca [BLV AB] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-612980_lhd.flv?auth_key=1780261196-0-0-9e9b2c0013be3cb803c84541261c7493
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 O.Higgins vs Everton CD [BLV NẤM] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-608899_lhd.flv?auth_key=1780268036-0-0-efea6c91a20e7b0b4db945777939bbac
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca [BLV AB] (Socolive) m3u8
-https://pull.niues.live/live/stream-612980_lsd.m3u8?auth_key=1780261196-0-0-714c7f30a748190491e25dcd8bfd220a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 O.Higgins vs Everton CD [BLV NẤM] (Socolive) m3u8
+https://pull.niues.live/live/stream-608899_lsd.m3u8?auth_key=1780268036-0-0-8d265327f9389a9f3351928c7e3f3a45
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 01/06 Cordoba vs SD Huesca [BLV AB] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-612980_lhd.m3u8?auth_key=1780261196-0-0-25b0ee914d7266ebaa29750cc24ea683
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 O.Higgins vs Everton CD [BLV NẤM] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-608899_lhd.m3u8?auth_key=1780268036-0-0-8378ec8b3f0e1a2e20bed5653365f5d8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV LUCAS] (Socolive) flv
+https://pull06.scstream.net/live/stream-304148_lsd.flv?auth_key=1780268036-0-0-6ead36a1a2b83c25265eb2053471ceec
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV LUCAS] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-304148_lhd.flv?auth_key=1780268036-0-0-215900fbe537b8e1194e40aa18360fc1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV LUCAS] (Socolive) m3u8
+https://pull.niues.live/live/stream-304148_lsd.m3u8?auth_key=1780268036-0-0-edb026ba2efca1e432f0f5bb98dd4647
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",04h30 ngày 01/06 Brazil vs Panama [BLV LUCAS] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1780268036-0-0-f9d73f9762aeedc69476bfc220809dc8
 
