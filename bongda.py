@@ -413,8 +413,6 @@ def write_json(data):
 # ================= MAIN =================
 if __name__ == "__main__":
     data = []
-     # TV.m3u giữ nguyên group
-    data += load_external_keep_group("https://vpsttt.vietanhtv.top/tv/")
     # HỘI QUÁN 1
     data += process_standard("https://sv.hoiquantv.xyz/api/v1/external/fixtures/unfinished", "HỘI QUÁN 1")
     # HỘI QUÁN 2
