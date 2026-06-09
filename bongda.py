@@ -292,7 +292,7 @@ if __name__ == "__main__":
 
     # FPT SPORT
     data += load_fpt_sport(
-        "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u"
+        "https://raw.githubusercontent.com/Jityhehe/ipttonghop/fea76ad83c83525b4c3875d1c210706b0daa0f2f/all_matches.m3u"
     )
 
     # WRITE
