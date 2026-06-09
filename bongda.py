@@ -134,7 +134,54 @@ def process_vongcam():
         })
 
     return out
-
+# ================= HỘI QUÁN 2 =================
+def process_hoiquan2(url):
+    out = []
+    data = fetch_json(url)
+    for group in data.get("groups", []):
+        for ch in group.get("channels", []):
+            dt = datetime.now()
+            streams = ch.get("sources", [])[0].get("contents", [])[0].get("streams", [])
+            stream_url = None
+            if streams:
+                links = streams[0].get("stream_links", [])
+                if links:
+                    stream_url = links[0].get("url")
+            out.append({
+                "time": dt,
+                "group": "HỘI QUÁN 2",
+                "title": ch.get("name"),
+                "logo": ch.get("image", {}).get("url", ""),
+                "url": stream_url,
+                "blv": "Mặc định"
+            })
+    return out
+    
+# ================= QUE CHOA TV =================
+def process_quechoa_tv(url):
+    out = []
+    data = fetch_json(url)
+    for group in data.get("groups", []):
+        for ch in group.get("channels", []):
+            dt = datetime.now()
+            logo = ch.get("image", {}).get("url", "")
+            title = ch.get("name", "")
+            for src in ch.get("sources", []):
+                blv_name = src.get("name", "Chính")  # Lấy tên BLV từ luồng phát của Quê Choa
+                for content in src.get("contents", []):
+                    for stream in content.get("streams", []):
+                        links = stream.get("stream_links", [])
+                        if links:
+                            stream_url = links[0].get("url")
+                            out.append({
+                                "time": dt,
+                                "group": "QUECHOA TV",
+                                "title": title,
+                                "logo": logo,
+                                "url": stream_url,
+                                "blv": blv_name
+                            })
+    return out
 
 # ================= LOAD EXTERNAL KEEP GROUP =================
 def load_external_keep_group(url):
@@ -294,6 +341,11 @@ if __name__ == "__main__":
     data += load_fpt_sport(
         "https://raw.githubusercontent.com/Jityhehe/ipttonghop/fea76ad83c83525b4c3875d1c210706b0daa0f2f/all_matches.m3u"
     )
+    # HỘI QUÁN 2
+    data += process_hoiquan2("https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan1.json")
 
+    # QUE CHOA TV
+    data += process_quechoa_tv("https://apithethao1.vercel.app/quechoatv")
+    
     # WRITE
     write_files(data)
