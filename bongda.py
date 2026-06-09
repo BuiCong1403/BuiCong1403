@@ -248,26 +248,51 @@ def process_quechoa_tv(url):
 
 # ================= LOAD FPT SPORT =================
 def load_fpt_sport(url):
-    out = []
-    try:
-        r = session.get(url, timeout=15)
-        lines = r.text.splitlines()
-        title = ""
-        for line in lines:
-            if line.startswith("#EXTINF"):
-                title = line.split(",")[-1].strip()
-            elif line.startswith("http"):
-                out.append({
-                    "time": datetime.now(),
-                    "group": "FPT SPORT",
-                    "title": title if title else "FPT SPORT",
-                    "logo": "",
-                    "url": line.strip(),
-                    "blv": "FPT"
-                })
-    except Exception as e:
-        print(f"Error loading FPT Sport: {e}")
-    return out
+out = []
+try:
+    r = session.get(url, timeout=15)
+
+    lines = r.text.splitlines()
+
+    title = ""
+    group = "FPT SPORT"
+    logo = ""
+
+    for line in lines:
+
+        line = line.strip()
+
+        if line.startswith("#EXTINF"):
+
+            title = line.split(",")[-1].strip()
+
+            m = re.search(r'group-title="([^"]*)"', line)
+            if m:
+                group = m.group(1)
+
+            m = re.search(r'tvg-logo="([^"]*)"', line)
+            if m:
+                logo = m.group(1)
+
+        elif line.startswith("http"):
+
+            if ".m3u8" not in line.lower():
+                continue
+
+            out.append({
+                "time": datetime.now(),
+                "group": group,
+                "title": title,
+                "logo": logo,
+                "url": line,
+                "blv": "M3U"
+            })
+
+except Exception as e:
+    print(f"Error loading playlist: {e}")
+
+return out
+```
 
 # ================= WRITE FILE =================
 def write_files(data):
@@ -432,7 +457,7 @@ if __name__ == "__main__":
     # QUE CHOA TV
     data += process_quechoa_tv("https://apithethao1.vercel.app/quechoatv")
     # FPT SPORT
-    data += load_fpt_sport("https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u")
+    data += load_fpt_sport("https://vpsttt.vietanhtv.top/tv/")
     
     # WRITE
     live_data = write_files(data)
