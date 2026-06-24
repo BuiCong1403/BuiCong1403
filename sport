@@ -1,4 +1,34 @@
 #EXTM3U url-tvg="https://vnepg.site/epg.xml"
+#EXTINF:0,VTV6
+#EXTGRP:VTV-FLV
+https://live-a.fptplay53.net/live/media/vtv6/live247-hls-avc/vtv6-avc1_5600000=10000-mp4a_131600=20000.m3u8
+#EXTINF:0,VTV6-1
+#EXTGRP:VTV-FLV
+https://live-a.fptplay53.net/live/media/vtv6/live247-hls-avc/index.m3u8
+#EXTINF:0,VTV7
+#EXTGRP:VTV-FLV
+http://42.1.99.192:8080/live/vtv7.flv
+#EXTINF:0,VTV2
+#EXTGRP:VTV-FLV
+http://42.1.99.192:8080/live/vtv2.flv
+#EXTINF:0,VTV3
+#EXTGRP:VTV-FLV
+http://42.1.99.192:8080/live/vtv3.flv
+#EXTINF:0,VTV 9
+#EXTGRP:VTV-FLV
+http://42.1.99.192:8080/live/vtv9.flv
+#EXTINF:0,VTV10
+#EXTGRP:VTV-FLV
+http://42.1.99.192:8080/live/vtv10.flv
+#EXTINF:0,VTV G0-cam xuc
+#EXTGRP:VTV-FLV
+https://hoiquan.dpdns.org/VTVGo/?BinhLuanCamXuc
+#EXTINF:0,VTV GO FIFA
+#EXTGRP:VTV-FLV
+https://hoiquan.dpdns.org/VTVGo/?WC-FiFa
+#EXTINF:0,VTV GO ENGLISH
+#EXTGRP:VTV-FLV
+https://hoiquan.dpdns.org/VTVGo/?kenh-tieng-anh-1
 #EXTINF:0,VTV1
 #EXTGRP:VTV
 https://live.fptplay53.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -8,22 +38,19 @@ https://live.fptplay53.net/live/media/vtv2/live247-hls-avc/vtv2-avc1_5600000=100
 #EXTINF:0,VTV3
 #EXTGRP:VTV
 https://live-a.fptplay53.net/live/media/vtv3/live247-hls-avc/vtv3-avc1_5600000=10000-mp4a_131600=20000.m3u8
-#EXTINF:0,QPVN
-#EXTGRP:VTV
-https://live.fptplay53.net/live/media/vtv4/live247-hls-avc/vtv4-avc1_5600000=10000-mp4a_131600=20000.m3u8
-#EXTINF:0,ANTV
-#EXTGRP:VTV
-https://live.fptplay53.net/fnxhd2/anninhtv_vhls.smil/chunklist.m3u8
 #EXTINF:0,VTV4
 #EXTGRP:VTV
-https://live.fptplay53.net/fnxch2/vtv4hd_abr.smil/chunklist.m3u8
+https://live.fptplay53.net/live/media/vtv4/live247-hls-avc/vtv4-avc1_5600000=10000-mp4a_131600=20000.m3u8
+#EXTINF:0,VTV VNTODAY
+#EXTGRP:VTV
+https://live.fptplay53.net/fnxhd1/vntoday_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:0,VTV5
 #EXTGRP:VTV
 https://live.fptplay53.net/live/media/vtv5/live247-hls-avc/vtv5-avc1_5600000=10000-mp4a_131600=20000.m3u8
-#EXTINF:0,VTV5TNB
+#EXTINF:0,VTV5 TNB
 #EXTGRP:VTV
 https://live.fptplay53.net/live/media/vtv5tnb/live-hls-avc/vtv5tnb-avc1_4000000=10000-mp4a_131600=20000.m3u8
-#EXTINF:0,VTV5TAYNGUYEN
+#EXTINF:0,VTV5 TAYNGUYEN
 #EXTGRP:VTV
 https://live.fptplay53.net/fnxhd1/vtv5taynguyen_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:0,VTV6
@@ -41,155 +68,6 @@ https://live.fptplay53.net/live/media/vtv9/live247-hls-avc/vtv9-avc1_5600000=100
 #EXTINF:0,VTV10
 #EXTGRP:VTV
 https://live.fptplay53.net/live/media/vtv10/live247-hls-avc/vtv10-avc1_5600000=10000-mp4a_131600=20000.m3u8
-#EXTINF:0,VIETNAM TODAY
-#EXTGRP:VTV
-https://live.fptplay53.net/fnxhd1/vntoday_vhls.smil/chunklist_b5000000.m3u8
-#EXTINF:-1 group-title="Sự Kiện VTVPrime" tvg-logo="https://vtvprime.vn/sideLogoBig.png", Sự Kiện VTVPrime 11
-https://liveh34byt.vtvprime.vn/hls/SKSS1/04.m3u8
-#EXTINF:-1 group-title="Sự Kiện VTVPrime" tvg-logo="https://vtvprime.vn/sideLogoBig.png", Sự Kiện VTVPrime 12
-https://liveh34byt.vtvprime.vn/hls/SKSS2/04.m3u8
-#EXTINF:-1 group-title="Sự Kiện VTVPrime" tvg-logo="https://vtvprime.vn/sideLogoBig.png", Sự Kiện VTVPrime 13
-https://liveh34byt.vtvprime.vn/hls/SKSS3/04.m3u8
-#EXTINF:-1 group-title="Sự Kiện VTVPrime" tvg-logo="https://vtvprime.vn/sideLogoBig.png", Sự Kiện VTVPrime 14
-https://liveh34byt.vtvprime.vn/hls/SKSS4/04.m3u8
-#EXTINF:-1 group-title="Sự Kiện VTVPrime" tvg-logo="https://vtvprime.vn/sideLogoBig.png", Sự Kiện VTVPrime 15
-https://liveh34byt.vtvprime.vn/hls/SKSS5/04.m3u8
-#EXTINF:-1 group-title="Sự Kiện VTVPrime" tvg-logo="https://vtvprime.vn/sideLogoBig.png", Sự Kiện VTVPrime 16
-https://liveh34byt.vtvprime.vn/hls/SKSS6/04.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 1
-https://live.fptplay53.net/live/media/su-kien-1/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 2
-https://live.fptplay53.net/live/media/su-kien-2/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 3
-https://live.fptplay53.net/live/media/su-kien-3/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 4
-https://live.fptplay53.net/live/media/su-kien-4/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 5
-https://live.fptplay53.net/live/media/su-kien-5/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 6
-https://live.fptplay53.net/live/media/su-kien-6/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 7
-https://live.fptplay53.net/live/media/su-kien-7/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 8
-https://live.fptplay53.net/live/media/su-kien-8/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 9
-https://live.fptplay53.net/live/media/su-kien-9/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 10
-https://live.fptplay53.net/live/media/su-kien-10/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 11
-https://live.fptplay53.net/live/media/su-kien-11/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 12
-https://live.fptplay53.net/live/media/su-kien-12/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 13
-https://live.fptplay53.net/live/media/su-kien-13/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 14
-https://live.fptplay53.net/live/media/su-kien-14/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 15
-https://live.fptplay53.net/live/media/su-kien-15/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 16
-https://live.fptplay53.net/live/media/su-kien-16/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 17
-https://live.fptplay53.net/live/media/su-kien-17/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 18
-https://live.fptplay53.net/live/media/su-kien-18/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 19
-https://live.fptplay53.net/live/media/su-kien-19/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 20
-https://live.fptplay53.net/live/media/su-kien-20/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 21
-https://live.fptplay53.net/live/media/su-kien-21/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 22
-https://live.fptplay53.net/live/media/su-kien-22/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Sự kiện trực tiếp 23
-https://live.fptplay53.net/live/media/su-kien-23/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 1
-https://live.fptplay53.net/live/media/event-01/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 2
-https://live.fptplay53.net/live/media/event-02/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 3
-https://live.fptplay53.net/live/media/event-03/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 4
-https://live.fptplay53.net/live/media/event-04/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 5
-https://live.fptplay53.net/live/media/event-05/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 6
-https://live.fptplay53.net/live/media/event-06/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 7
-https://live.fptplay53.net/live/media/event-07/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 8
-https://live.fptplay53.net/live/media/event-08/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 9
-https://live.fptplay53.net/live/media/event-09/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 10
-https://live.fptplay53.net/live/media/event-10/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 11
-https://live.fptplay53.net/live/media/event-11/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 12
-https://live.fptplay53.net/live/media/event-12/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 13
-https://live.fptplay53.net/live/media/event-13/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 14
-https://live.fptplay53.net/live/media/event-14/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 15
-https://live.fptplay53.net/live/media/event-15/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 16
-https://live.fptplay53.net/live/media/event-16/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 17
-https://live.fptplay53.net/live/media/event-17/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 18
-https://live.fptplay53.net/live/media/event-18/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 19
-https://live.fptplay53.net/live/media/event-19/hls_avc_v6/index.m3u8
-#EXTINF:-1 group-title="Sự Kiện FPT PLAY",Event 20
-https://live.fptplay53.net/live/media/event-20/hls_avc_v6/index.m3u8
-#EXTINF:0,TV360 live
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/TuyetDoiKhongKinhDoanh/tv360.live/KenhCoBan.m3u8
-#EXTINF:0,TV360 9
-#EXTGRP:TV360
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9887
-#EXTINF:0,TV360 10
-#EXTGRP:TV360
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9957
-#EXTINF:0,TV360 11
-#EXTGRP:TV360
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9958
-#EXTINF:0,Phim Việt
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/TuyetDoiKhongKinhDoanh/phim-viet/KenhCoBan.m3u8
-#EXTINF:0,Phim US
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/TuyetDoiKhongKinhDoanh/phim-au-my/KenhCoBan.m3u8
-#EXTINF:0,Phim HH
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/TuyetDoiKhongKinhDoanh/hoat-hinh/KenhCoBan.m3u8
-#EXTINF:0,TV360 1
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/OnliveTV/tv360plus1/Free.m3u8
-#EXTINF:0,TV360 2
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/OnliveTV/tv360plus2/Free.m3u8
-#EXTINF:0,TV360 3
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/OnliveTV/tv360plus3/Free.m3u8
-#EXTINF:0,TV360 4
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/OnliveTV/tv360plus4/Free.m3u8
-#EXTINF:0,TV360 5
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/OnliveTV/tv360plus5/Free.m3u8
-#EXTINF:0,TV360 6
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/OnliveTV/tv360plus6/Free.m3u8
-#EXTINF:0,TV360 7
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/OnliveTV/tv360plus7/Free.m3u8
-#EXTINF:0,TV360 8
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/OnliveTV/tv360plus8/Free.m3u8
-#EXTINF:0,TV360 12
-#EXTGRP:TV360
-https://toiyeuvietnam.dpdns.org/OnliveTV/tv360plus12/Free.m3u8
 #EXTINF:0, HANOI1
 #EXTGRP:HANOITV
 https://cloudstreamhntv.tek4tv.vn/capture/smil:HN1.smil/chunklist_w256840765_b3128000_slen.m3u8
@@ -238,207 +116,100 @@ https://live.fptplay53.net/epzhd1/htvcthuanviethd_vhls.smil/chunklist.m3u8
 #EXTINF:0,HTV PLUS
 #EXTGRP:HTV
 https://live.fptplay53.net/epzhd1/htvcplus_vhls.smil/chunklist.m3u8
-#EXTINF:0,Nem Chua
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv_nemchua.m3u8
-#EXTINF:0,Van Minh
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv_vanminh.m3u8
-#EXTINF:0,Che xanh
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv2.m3u8
-#EXTINF:0,Khu Man
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv_khuman.m3u8
-#EXTINF:0,Dua Hau
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv_duahau.m3u8
-#EXTINF:0,Bo sưa
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv_bosua.m3u8
-#EXTINF:0,Rua Man
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv_ruouman.m3u8
-#EXTINF:0,Hat mit
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv_quechoa_1.m3u8
-#EXTINF:0,Khoai Tay
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv_khoaitay.m3u8
-#EXTINF:0,Puma
-#EXTGRP:Quechoa
-https://ahghndtkyqmm-pull.bpmedialive.com/quechoa/blv_puma.m3u8
-#EXTINF:0,Mr Dunkest
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-mr-dunkest.flv
-#EXTINF:0,Dưa hấu-Hoadao
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-dua-hau.flv
-#EXTINF:0,Táo
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-tao.flv
-#EXTINF:0,Mập
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-a-map.flv
-#EXTINF:0,Văn Chuẩn
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-van-chuan.flv
-#EXTINF:0,Pháo
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-phao.flv
-#EXTINF:0,Mèo béo
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-meo-beo.flv
-#EXTINF:0,A Tài
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-gio-tai.flv
-#EXTINF:0,Chim nhỏ
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-chim-nho.flv
-#EXTINF:0,Dylan
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-dylan.flv
-#EXTINF:0,Cháo Quẩy
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-chao-quay.flv
-#EXTINF:0,Fanta
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-fanta.flv
-#EXTINF:0,Người Kiến
-#EXTGRP:Quechoa
-https://pull.globalcdnnetworksc2031.info/str01/blv-nguoi-kien.flv
-#EXTINF:0,Củ hành
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phando/playlist.m3u8
-#EXTINF:0,Lương Bổng
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8
-#EXTINF:0,Phan Anh
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phananh/playlist.m3u8
-#EXTINF:0,Phan Bách
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phanchuot/playlist.m3u8
-#EXTINF:0,Phan Ca
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phanca/playlist.m3u8
-#EXTINF:0,Phan Chop
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phanchop/playlist.m3u8
-#EXTINF:0,Phan Hà Linh
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phanhalinh/playlist.m3u8
-#EXTINF:0,Phan Lâm
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phanlam/playlist.m3u8
-#EXTINF:0,Phan Mã
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
-#EXTINF:0,Phan Mão
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phanbap/playlist.m3u8
-#EXTINF:0,Phan Tô
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phanto/playlist.m3u8
-#EXTINF:0,Phan Từ
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_phantu/playlist.m3u8
-#EXTINF:0,Thiên Lôi
-#EXTGRP:Quechoa
-https://hqlive.yarncdn.live/live/hqtv_blv_thienloi/playlist.m3u8
-#EXTINF:0,Thợ Lặn
-#EXTGRP:Quechoa
-https://xclive.yarncdn.live/live/xctv_blv_tholan/playlist.m3u8
-#EXTINF:0,Người Kiến
-#EXTGRP:Quechoa
-https://xclive.yarncdn.live/live/xctv_blv_nguoikien/playlist.m3u8
-#EXTINF:0,Bịp Con
-#EXTGRP:Quechoa
-https://xclive.yarncdn.live/live/xctv_blv_bipcon/playlist.m3u8
-#EXTINF:0,A Cỏ
-#EXTGRP:Quechoa
-https://xclive.yarncdn.live/live/xctv_blv_aco/playlist.m3u8
-#EXTINF:0,FOOT 4K
-#EXTGRP: CANAL
-http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/256629
-#EXTINF:0,SPORT 360
-#EXTGRP: CANAL
-http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/256628
-#EXTINF:0,SPORT
-#EXTGRP: CANAL
-http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/250
-#EXTINF:0,EPL
-#EXTGRP: CANAL
-http://cdn69630.sp-vpn-vad.com:80/at2sc0r6b4/kmmutt995q/115870
-#EXTINF:0,TNT 4K
-#EXTGRP: CANAL
-http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:45:42:1E&stream=1174213&extension=ts
-#EXTINF:0,TNT 1
-#EXTGRP: CANAL
-http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=894977&extension=ts
-#EXTINF:0,TNT 2
-#EXTGRP: CANAL
-http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=894978&extension=ts
-#EXTINF:0,TNT 3
-#EXTGRP: CANAL
-http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=894979&extension=ts
-#EXTINF:0,TNT 4
-#EXTGRP: CANAL
-http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=894980&extension=ts
-#EXTINF:0,SKY MAIN EVENT
-#EXTGRP: CANAL
+#EXTINF:0,ELEVEN SPORTS 4K
+#EXTGRP:SPORT
+http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281071.m3u8
+#EXTINF:0,TNT SPORT ULTIMATE 4K
+#EXTGRP:SPORT
+http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281083.m3u8
+#EXTINF:0, HK NOW SPORTS EPL 4K
+#EXTGRP:SPORT
+http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1301200.m3u8
+#EXTINF:0,SKY SPORTS MAIN EVENT 4K
+#EXTGRP:SPORT
+http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281430.m3u8
+#EXTINF:0,FOX SPORTS 1 4K (EVENTS ONLY)
+#EXTGRP:SPORT
+http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1436346.m3u8
+#EXTINF:0,FOX SPORT1
+#EXTGRP:SPORT
+http://kstv.us:8080/jimmyrhale/JE1974aa$$/22526
+#EXTINF:0,FOX SPORT1 (P)
+#EXTGRP:SPORT
+http://proxpanel.cc:8080/ConradWong/FAZvDyXbGe7E/915
+#EXTINF:0,FOX SPORT1 (V)
+#EXTGRP:SPORT
+http://vuzemedia.xyz/live/Nestor1/Nestor1/53390.m3u8
+#EXTINF:0,FOX SPORT1 (K)
+#EXTGRP:SPORT
+http://kstv.us:8080/jimmyrhale/JE1974aa$$/23322
+#EXTINF:0,FOX SPORT1 (K1)
+#EXTGRP:SPORT
+http://kstv.us:8080/jimmyrhale/JE1974aa$$/23321
+#EXTINF:0,FOX SPORT1 (K2)
+#EXTGRP:SPORT
+http://kstv.us:8080/jimmyrhale/JE1974aa$$/15932
+#EXTINF:0,FOX SPORT1 (P)
+#EXTGRP:SPORT
+http://proxpanel.cc:8080/ConradWong/FAZvDyXbGe7E/1651
+#EXTINF:0,FOX SPORT1 (V)
+#EXTGRP:SPORT
+http://vuzemedia.xyz/live/Nestor1/Nestor1/317098.m3u8
+#EXTINF:0,FOX SPORT1 (V1)
+#EXTGRP:SPORT
+http://vuzemedia.xyz/live/Nestor1/Nestor1/54233.m3u8
+#EXTINF:0,FOX SPORT1 (V2)
+#EXTGRP:SPORT
+http://vuzemedia.xyz/live/Nestor1/Nestor1/54235.m3u8
+#EXTINF:0,FOX SPORT1 (V3)
+#EXTGRP:SPORT
+http://vuzemedia.xyz/live/Nestor1/Nestor1/54260.m3u8
+#EXTINF:0,SKY SPORT MAINEVENT
+#EXTGRP:SPORT
 http://kstv.us:8080/jimmyrhale/JE1974aa$$/47868
-#EXTINF:0,SKY EPL
-#EXTGRP: CANAL
+#EXTINF:0,SKY SPORT EPL
+#EXTGRP:SPORT
 http://kstv.us:8080/jimmyrhale/JE1974aa$$/47871
-#EXTINF:0,SKY FOOTBALL
-#EXTGRP: CANAL
+#EXTINF:0,SKY SPORT FBALL
+#EXTGRP:SPORT
 http://kstv.us:8080/jimmyrhale/JE1974aa$$/47866
-#EXTINF:0,HUB01
-#EXTGRP: CANAL
+#EXTINF:0,SKY SPORT NEWS
+#EXTGRP:SPORT
+http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47870.m3u8
+#EXTINF:0,SKY SPORT F1
+#EXTGRP:SPORT
+http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47865.m3u8
+#EXTINF:0,SKY SPORT MIX
+#EXTGRP:SPORT
+http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47869.m3u8
+#EXTINF:0,PRIMIER SPORT 1
+#EXTGRP:SPORT
+http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47858.m3u8
+#EXTINF:0,PRIMIER SPORT 2
+#EXTGRP:SPORT
+http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47859.m3u8
+#EXTINF:0,HUB PREMIER 1 FHD
+#EXTGRP:SPORT
 http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/324806.ts
-#EXTINF:0,HUB02
-#EXTGRP: CANAL
+#EXTINF:0,HUB PREMIER 2 FHD
+#EXTGRP:SPORT
 http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/324807.ts
-#EXTINF:0,HUB03
-#EXTGRP: CANAL
+#EXTINF:0,HUB PREMIER 3 FHD
+#EXTGRP:SPORT
 http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/324808.ts
-#EXTINF:0,HUB04
-#EXTGRP: CANAL
+#EXTINF:0,HUB PREMIER 4 FHD
+#EXTGRP:SPORT
 http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/324809.ts
-#EXTINF:0,DAZN1
-#EXTGRP: CANAL
+#EXTINF:0,DAZN 1 FHD
+#EXTGRP:SPORT
 http://kstv.us:8080/jimmyrhale/JE1974aa$$/48443
-#EXTINF:0,DAZN2
-#EXTGRP: CANAL
+#EXTINF:0,DAZN 2 FHD
+#EXTGRP:SPORT
 http://kstv.us:8080/jimmyrhale/JE1974aa$$/48444
-#EXTINF:0,DAZN3
-#EXTGRP: CANAL
+#EXTINF:0,DAZN 3 FHD
+#EXTGRP:SPORT
 http://kstv.us:8080/jimmyrhale/JE1974aa$$/48445
-#EXTINF:0,DAZN4
-#EXTGRP: CANAL
+#EXTINF:0,DAZN 4 FHD
+#EXTGRP:SPORT
 http://kstv.us:8080/jimmyrhale/JE1974aa$$/48446
-#EXTINF:0,TNT 1A
-#EXTGRP: CANAL
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47850
-#EXTINF:0,TNT 1B
-#EXTGRP: CANAL
-http://11374b1a.edemist.com/iptv/2SXSBE6GL5QXEU/6566/index.m3u8
-#EXTINF:0,TNT 1C
-#EXTGRP: CANAL
-http://11374b1a.edemist.com/iptv/2SXSBE6GL5QXEU/2505/index.m3u8
-#EXTINF:0,TNT 2
-#EXTGRP: CANAL
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47851
-#EXTINF:0,TNT 3
-#EXTGRP: CANAL
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47852
-#EXTINF:0,TNT 4
-#EXTGRP: CANAL
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47853
-#EXTINF:0,BEIN 1
-#EXTGRP: CANAL
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/12554
-#EXTINF:0,BEIN 2
-#EXTGRP: CANAL
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/12553
+
