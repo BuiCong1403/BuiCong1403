@@ -1,10 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/1280px-Flag_of_Algeria.svg.png",09:00 | Algeria vs Austria
-https://alive.yarncdn.live/hqtv_blv_phanquay/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/960px-Flag_of_Jordan.svg.png",09:00 | Jordan vs Argentina
-https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQOuJBhheUKikHwopx5J3hD7olyljs3suGQ&s",18:30 | Trung Quốc vs Đức
 https://alive.yarncdn.live/hqtv_blv_phanbong/tracks-v2a1/mono.m3u8
 
@@ -14,17 +8,23 @@ https://alive.yarncdn.live/hqtv_blv_phanhai/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/ca/Flag_of_Iran.svg",18:30 | Iran vs Cuba
 https://alive.yarncdn.live/hqtv_blv_phanphep/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/10216.png",12:00 | Gold Coast United vs Moreton City Excelsior
-https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/10217.png",14:00 | Lions vs WDSC Wolves
-https://alive.zlylive.com/hqtv_blv_phanca/tracks-v2a1/mono.m3u8
+https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/21263.png",18:00 | Dalian Zhixing vs Shanghai Shenhua
 https://alive.zlylive.com/hqtv_blv_phanhalinh/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/2259.png",20:00 | FK Tobol Kostanay vs Altay
 https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/3670.png",16:00 | Ha Noi W vs Ho Chi Minh W
+https://alive.zlylive.com/hqtv_blv_phanca/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/18834.png",22:00 | FS Jelgava vs Grobiņa
+https://alive.yarncdn.live/hqtv_blv_phanquay/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/1280px-Flag_of_South_Africa.svg.png",02:00 | South Africa vs Canada
+https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/1280px-Flag_of_South_Africa.svg.png",02:00 | South Africa vs Canada
 https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
@@ -41,29 +41,17 @@ https://alive.yarncdn.live/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://img.uefa.com/imgml/flags/240x240/MNE.png",23:00 | Montenegro U17 vs Denmark U17
 https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="XAY CON" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/1280px-Flag_of_Algeria.svg.png",09:00 | Algeria vs Austria
+#EXTINF:-1 group-title="XAY CON" tvg-logo="https://media.api-sports.io/football/teams/17265.png",17:00 | Qingdao Youth Island vs Hangzhou Greentown
 https://alive.yarncdn.live/xctv_blv_rongdat/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="XAY CON" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Jordan.svg/960px-Flag_of_Jordan.svg.png",09:00 | Jordan vs Argentina
-https://alive.yarncdn.live/xctv_blv_tholan/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="XAY CON" tvg-logo="https://media.api-sports.io/football/teams/21263.png",18:00 | Dalian Zhixing vs Shanghai Shenhua
 https://alive.yarncdn.live/xctv_blv_chuoi/tracks-v2a1/mono.m3u8
 
+#EXTINF:-1 group-title="XAY CON" tvg-logo="https://media.api-sports.io/football/teams/2259.png",20:00 | FK Tobol Kostanay vs Altay
+https://alive.yarncdn.live/xctv_blv_tholan/tracks-v2a1/mono.m3u8
+
 #EXTINF:-1 group-title="XAY CON" tvg-logo="https://media.api-sports.io/football/teams/16611.png",21:00 | Zhenys vs FC Astana
 https://alive.yarncdn.live/xctv_blv_bipcon/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/1532.png",Algeria vs Áo
-https://bglive.yarncdn.live/live/bgtv_blv_mason/playlist.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/1548.png",Jordan vs Argentina
-https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/1548.png",Jordan vs Argentina
-https://bglive.yarncdn.live/live/bgtv_blv_phimc/playlist.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/1548.png",Jordan vs Argentina
-https://bglive.yarncdn.live/live/bgtv_blv_cuccu/playlist.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://static.flashscore.com/res/image/data/UFsHESEa-dUwawdyp.png",Trung Quốc vs Đức
 https://bglive.yarncdn.live/live/bgtv_blv_tieumeo/playlist.m3u8
@@ -71,32 +59,29 @@ https://bglive.yarncdn.live/live/bgtv_blv_tieumeo/playlist.m3u8
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/27196.png",U19 Thụy Sĩ vs U19 Tây Ban Nha
 https://bglive.yarncdn.live/live/bgtv_blv_max/playlist.m3u8
 
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/IUYV_ZAMxDdabQPzSpTJtg_96x96.png",U18 Việt Nam vs U18 Thái Lan
+https://bglive.yarncdn.live/live/bgtv_blv_cuccu/playlist.m3u8
+
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/16611.png",Zhenys vs FC Astana
 https://bglive.yarncdn.live/live/bgtv_blv_phaothan/playlist.m3u8
 
-#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/a54769d9dca7f2ac5a2e1b261c868993.png!w80",02:00 | Jordan vs Argentina
-https://live05.meung.app/live/24561735.m3u8
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/10353.png",Wales U19 vs Spain U19
+https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
 
-#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/694edc2479b949e4a7a78d00275ced1e.png!w80",02:00 | Algeria vs Áo
-https://live05.meung.app/live/02456966.m3u8
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/1531.png",South Africa vs Canada
+https://bglive.yarncdn.live/live/bgtv_blv_phimc/playlist.m3u8
 
-#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/basketball/team/256e715800fb8321f7cf1dacce3aa35e.png!w80",03:00 | Canterbury Rams vs Bay Hawks
-https://live05.meung.app/live/82054853.m3u8
-
-#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/e1605aa2375e5aa780e43e89a0f1b080.png!w80",05:00 | Marconi Stallions vs Blacktown City
-https://live05.meung.app/live/16226575.m3u8
-
-#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/3728683390847f335552d077cf0b8752.png!w80",05:30 | South Melbourne vs Green Gully
-https://live05.meung.app/live/87547578.m3u8
-
-#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/basketball/team/9b31beec1bba99785bda025ddeaeef10.png!w80",06:00 | Nelson Giants vs Auckland Huskies
-https://live05.meung.app/live/19919577.m3u8
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/10336.png",Germany U19 vs Denmark U19
+https://bglive.yarncdn.live/live/bgtv_blv_mason/playlist.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/ae6301924eac2e5f0ad32a32ab7355f2.png!w80",07:00 | Queensland Lions SC vs Wynnum Wolves
 https://live05.meung.app/live/14707124.m3u8
 
+#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/basketball/team/9b31beec1bba99785bda025ddeaeef10.png!w80",06:00 | Nelson Giants vs Auckland Huskies
+https://live05.meung.app/live/19919577.m3u8
+
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/cc0f42f7eec708cb429156b1becb3f93.png!w80",08:00 | Ulaangom City FC vs Khovd
-https://live05.meung.app/live/87379114.m3u8
+https://live05.meung.app/live/87547578.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/383d42e0d0843463b538bc3367d0c4c9.png!w80",10:00 | Qingdao West Coast vs Zhejiang Professional
 https://live05.meung.app/live/90865415.m3u8
@@ -107,8 +92,14 @@ https://live05.meung.app/live/14830711.m3u8
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/b34589daf40274c74efdf970f5f41672.png!w80",12:00 | Heilongjiang Ice City vs Wuxi Wugou
 https://live05.meung.app/live/75748097.m3u8
 
+#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/86533cc9d630918f58b7166d3ba9ea88.png!w80",13:00 | Ostrowitz vs Dinamo Minsk 2
+https://live05.meung.app/live/16226575.m3u8
+
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/aed0f0a3abd1cb4e732b2135a575f227.png!w80",15:30 | FK Isloch Minsk vs Belshina
 https://live05.meung.app/live/99121525.m3u8
+
+#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/a5e650365ee5c40efb649bf12015eb6d.png!w80",16:30 | Cobresal vs Antofagasta
+https://live05.meung.app/live/82054853.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/a30bc83d95b629973ef10dbe8221ca63.png!w80",19:00 | Nam Phi vs Canada
 https://live05.meung.app/live/78905744.m3u8
@@ -116,92 +107,38 @@ https://live05.meung.app/live/78905744.m3u8
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/84f85d4178e4287ed8ad5f76ad4c5e46.png!w80",21:30 | Fortaleza vs Sport Club Recife PE
 https://live05.meung.app/live/59444581.m3u8
 
-#EXTINF:-1 group-title="TAM QUOC TV" tvg-logo="https://media.api-sports.io/football/teams/1548.png",09:00 | Jordan vs Argentina
+#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/5d34bc7cb1b44bb5889dc4548c8e3b24.png!w80",02:00 | Los Angeles FC II vs Houston Dynamo B
+https://live05.meung.app/live/87379114.m3u8
+
+#EXTINF:-1 group-title="TAM QUOC TV" tvg-logo="https://static.flashscore.com/res/image/data/r7q7GrzB-6ys9CWQj.png",18:00 | Bulgaria  vs Ukraine
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 
-#EXTINF:-1 group-title="TAM QUOC TV" tvg-logo="https://media.api-sports.io/football/teams/1532.png",09:00 | Algeria vs Austria
+#EXTINF:-1 group-title="TAM QUOC TV" tvg-logo="https://media.api-sports.io/football/teams/1531.png",02:00 | South Africa vs Canada
 https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 
 #EXTINF:-1 group-title="TAM QUOC TV" tvg-logo="https://media.api-sports.io/football/teams/1531.png",02:00 | South Africa vs Canada
 https://tqlive.yarncdn.live/live/tqtv_blv_asoi/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV TRIỆU TỬ LONG m3u
-https://hls.cdnfaster-a.live/live/TRIEUTULONG/index.m3u8?expire=1788427256&sign=45e4fdc4bdb8472f513ccc78f57f6070
+#EXTINF:-1 group-title="TAM QUOC TV" tvg-logo="https://media.api-sports.io/football/teams/6.png",00:00 | Brazil vs Japan
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV TRIỆU TỬ LONG flv
-https://flv.cdnfaster-a.live/live/TRIEUTULONG.flv?expire=1788427256&sign=45e4fdc4bdb8472f513ccc78f57f6070
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV LỮ BỐ m3u
-https://hls.cdnfaster-a.live/live/LUBO/index.m3u8?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV LỮ BỐ flv
-https://flv.cdnfaster-a.live/live/LUBO.flv?expire=1788427256&sign=fa2834495401eb5d1dc40ba2f3bd21c1
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV MÃ SIÊU m3u
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Wynnum Wolves (Lương Sơn) BLV MÃ SIÊU m3u
 https://hls.cdnfaster-a.live/live/MASIEU/index.m3u8?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV MÃ SIÊU flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Wynnum Wolves (Lương Sơn) BLV MÃ SIÊU flv
 https://flv.cdnfaster-a.live/live/MASIEU.flv?expire=1788427256&sign=b91fcfc36fe72375e8f8cc813de0220b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV LƯU BỊ m3u
-https://hls.cdnfaster-a.live/live/LUUBI/index.m3u8?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Wynnum Wolves (Lương Sơn) BLV HÀN TÍN m3u
+https://hls.cdnfaster-a.live/live/HANTIN/index.m3u8?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV LƯU BỊ flv
-https://flv.cdnfaster-a.live/live/LUUBI.flv?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Wynnum Wolves (Lương Sơn) BLV HÀN TÍN flv
+https://flv.cdnfaster-a.live/live/HANTIN.flv?expire=1898537700&sign=546f072aa0beee54643020b57b8be5df
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV KAKA m3u
-https://hls.cdnfaster-a.live/live/KAKA/index.m3u8?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV KAKA flv
-https://flv.cdnfaster-a.live/live/KAKA.flv?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV PHI HỔ m3u
-https://hls.cdnfaster-a.live/live/PHIHO/index.m3u8?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV PHI HỔ flv
-https://flv.cdnfaster-a.live/live/PHIHO.flv?expire=2556118740&sign=ebc20a588b7a62eb65d12f7372d39a3f
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV LEO m3u
-https://hls.cdnfaster-a.live/live/LEO/index.m3u8?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Lương Sơn) BLV LEO flv
-https://flv.cdnfaster-a.live/live/LEO.flv?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV LÃO HẠC m3u
-https://hls.cdnfaster-a.live/live/LAOHAC/index.m3u8?expire=2556118740&sign=d7e003f1201f61166a559ac474dc7491
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV LÃO HẠC flv
-https://flv.cdnfaster-a.live/live/LAOHAC.flv?expire=2556118740&sign=d7e003f1201f61166a559ac474dc7491
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV YẾN THANH m3u
-https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV YẾN THANH flv
-https://flv.cdnfaster-a.live/live/YENTHANH1.flv?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV TÂY MÔN KHÁNH m3u
-https://hls.cdnfaster-a.live/live/TAYMONKHANH/index.m3u8?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV TÂY MÔN KHÁNH flv
-https://flv.cdnfaster-a.live/live/TAYMONKHANH.flv?expire=1788427256&sign=b79b5be508185d24f76a0b1effca53da
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV VÕ TÒNG m3u
-https://hls.cdnfaster-a.live/live/VOTONG/index.m3u8?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV VÕ TÒNG flv
-https://flv.cdnfaster-a.live/live/VOTONG.flv?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks (Lương Sơn) BLV LÝ QUỲ m3u
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara (Lương Sơn) BLV LÝ QUỲ m3u
 https://hls.cdnfaster-a.live/live/LYQUY/index.m3u8?expire=1891408380&sign=4eb9451ad0178fa8207d583db7d469e3
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks (Lương Sơn) BLV LÝ QUỲ flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara (Lương Sơn) BLV LÝ QUỲ flv
 https://flv.cdnfaster-a.live/live/LYQUY.flv?expire=1891408380&sign=4eb9451ad0178fa8207d583db7d469e3
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV NGƯỜI THÉP m3u
-https://hls.cdnfaster-a.live/live/NGUOITHEP/index.m3u8?expire=2556118740&sign=6d80f4e33c3761371f29a8ca0645fee5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Lương Sơn) BLV NGƯỜI THÉP flv
-https://flv.cdnfaster-a.live/live/NGUOITHEP.flv?expire=2556118740&sign=6d80f4e33c3761371f29a8ca0645fee5
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",07h30 ngày 23/05 FC Tulsa vs Hartford Athletic (Khán Đài A) source
 https://www3.f2k3.shop/live/235c29178801ef36a970731709755e2a/playlist.m3u8
@@ -218,41 +155,11 @@ https://www3.f2k3.shop/live/87b8a02016610052ff23e50744f98f77/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Mexico vs Ghana (Khán Đài A) source
 https://www3.f2k3.shop/live/e699af6f4692703a8c718f285b40deb2/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 28/06 Kazakhstan vs Thailand (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/m3x6/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/angao.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/angaohd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/angaohd.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/troctru.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/troctruhd.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Chuối Chiên) HD1
-https://gckc0525.edgemaxcdn.org/live/chuoichao/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Chuối Chiên) HD2
-https://gckc0525.edgemaxcdn.org/live/chuoichao.flv
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Chuối Chiên) FHD1
-https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina (Chuối Chiên) FHD2
-https://gckc0525.edgemaxcdn.org/live/chuoichaohd.flv
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h30 ngày 28/06 Kazakhstan vs Thailand (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/m3x6.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung City (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8
@@ -265,6 +172,18 @@ https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung City (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/chuoinhohd.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 28/06 Qingdao Youth Island vs Hangzhou Greentown (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/chuoichao/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 28/06 Qingdao Youth Island vs Hangzhou Greentown (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/chuoichao.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 28/06 Qingdao Youth Island vs Hangzhou Greentown (Chuối Chiên) FHD1
+https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",17h00 ngày 28/06 Qingdao Youth Island vs Hangzhou Greentown (Chuối Chiên) FHD2
+https://gckc0525.edgemaxcdn.org/live/chuoichaohd.flv
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",18h00 ngày 28/06 Bulgaria vs Ukraine (Chuối Chiên) HD1
 https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
@@ -314,6 +233,30 @@ https://gckc0525.edgemaxcdn.org/live/chuoibohd/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",19h00 ngày 28/06 Vietnam W vs Thailand W (Chuối Chiên) FHD2
 https://gckc0525.edgemaxcdn.org/live/chuoibohd.flv
 
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 28/06 Zhenys vs FC Astana (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 28/06 Zhenys vs FC Astana (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/troctru.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 28/06 Zhenys vs FC Astana (Chuối Chiên) FHD1
+https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",21h00 ngày 28/06 Zhenys vs FC Astana (Chuối Chiên) FHD2
+https://gckc0525.edgemaxcdn.org/live/troctruhd.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 29/06 South Africa vs Canada (Chuối Chiên) HD1
+https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 29/06 South Africa vs Canada (Chuối Chiên) HD2
+https://gckc0525.edgemaxcdn.org/live/angao.flv
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 29/06 South Africa vs Canada (Chuối Chiên) FHD1
+https://gckc0525.edgemaxcdn.org/live/angaohd/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",02h00 ngày 29/06 South Africa vs Canada (Chuối Chiên) FHD2
+https://gckc0525.edgemaxcdn.org/live/angaohd.flv
+
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Tacoma Defiance vs Ventura County FC (Gà Vàng) source
 https://www3.f2k3.shop/live/821d54abadb12c6c15edba538ab20ad1/playlist.m3u8
 
@@ -323,354 +266,357 @@ https://www3.f2k3.shop/live/a60cdd817beb680017f46a5c111202f7/playlist.m3u8
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 23/05 Canberra Olympic U23 vs Belconnen United U23 (Gà Vàng) source
 https://www3.f2k3.shop/live/829f44b193d50a1f8dcb948fab6a0983/playlist.m3u8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV ĐỐM] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912110_lsd.flv?auth_key=1782620242-0-0-4c83a38b9dacc1e7bb07a8cc328d1435
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV CÒ] (Socolive) flv
+https://pull06.scstream.net/live/stream-582342_lsd.flv?auth_key=1782635422-0-0-81ae567863c8a6d6f65ec0f9ae15a63c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV ĐỐM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912110_lhd.flv?auth_key=1782620242-0-0-0e951e9e7c1d2068d989d60816358099
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV CÒ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-582342_lhd.flv?auth_key=1782635422-0-0-b08f98f7f0a72fec7d849d6cd6ad966b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV ĐỐM] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912110_lsd.m3u8?auth_key=1782620242-0-0-269f4f07c098596cb702a089dc983b58
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV CÒ] (Socolive) m3u8
+https://pull.niues.live/live/stream-582342_lsd.m3u8?auth_key=1782635422-0-0-2c94e7443aaa32139a7350387fca65e6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV ĐỐM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1782620242-0-0-428935726a91c7151962f9fddd2dd7b4
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV CÒ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1782635422-0-0-cd6adfbe95d0e8f51220f55247326d30
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV MESSI] (Socolive) flv
-https://pull.niur.live/live/stream-494201_lsd.flv?txSecret=d7b51ab02289fdb0fc467dd05d2597a5&txTime=6a40e6a2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV PEWPEW] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912015_lsd.flv?auth_key=1782635422-0-0-ce20264dd03c5921539a3e89640a1840
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV MESSI] (Socolive) hdFlv
-https://pull.niur.live/live/stream-494201_lhd.flv?txSecret=112e500f971f7e5c605e245828b1891f&txTime=6a40e6a2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV PEWPEW] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912015_lhd.flv?auth_key=1782635422-0-0-ec78cf58a77c08d06ac3439c3a531a91
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV MESSI] (Socolive) m3u8
-https://pull.niur.live/live/stream-494201_lsd.m3u8?txSecret=d7b51ab02289fdb0fc467dd05d2597a5&txTime=6a40e6a2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV PEWPEW] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912015_lsd.m3u8?auth_key=1782635422-0-0-62fcaf9108f5b637d1fe1d75064ae33a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV MESSI] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-494201_lhd.m3u8?txSecret=112e500f971f7e5c605e245828b1891f&txTime=6a40e6a2
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV PEWPEW] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1782635422-0-0-d1b4a0635af5214ad19853b709628075
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV ENZO] (Socolive) flv
-https://pull06.scstream.net/live/stream-380460_lsd.flv?auth_key=1782620242-0-0-559b3625ff7f66cd63eb18c29c0c227c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [QUÂN JK] (Socolive) flv
+https://pull06.scstream.net/live/stream-611178_lsd.flv?auth_key=1782635422-0-0-d6ebb81491504c25fdfb12f2a978837f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV ENZO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-380460_lhd.flv?auth_key=1782620242-0-0-0b84a35c37e4c88c436454e05041463a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [QUÂN JK] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-611178_lhd.flv?auth_key=1782635422-0-0-abb97dde2af5760c20d4411c1cb2fdee
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV ENZO] (Socolive) m3u8
-https://pull.niues.live/live/stream-380460_lsd.m3u8?auth_key=1782620242-0-0-ee92a09e9e4255162b9dcd9ee0403d6b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [QUÂN JK] (Socolive) m3u8
+https://pull.niues.live/live/stream-611178_lsd.m3u8?auth_key=1782635422-0-0-497afed4f5b47dada597794d0ac1e8d8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV ENZO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1782620242-0-0-5daecfc53c037207c450383125a7392b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [QUÂN JK] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-611178_lhd.m3u8?auth_key=1782635422-0-0-64ad00c24f9f9957dac08cd7feb3afb5
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV A TÚ] (Socolive) flv
-https://pull06.scstream.net/live/stream-557845_lsd.flv?auth_key=1782620242-0-0-4acfd63ced4730af2325cec3343c2d75
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Ulaangom City vs Khovd Broncos [BLV CÁO] (Socolive) flv
+https://pull06.scstream.net/live/stream-597929_lsd.flv?auth_key=1782635422-0-0-dfee5c6b5582ff36042474a05a4c0534
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV A TÚ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-557845_lhd.flv?auth_key=1782620242-0-0-c17e3bc88468c720ef351de5bb2794d0
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Ulaangom City vs Khovd Broncos [BLV CÁO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-597929_lhd.flv?auth_key=1782635422-0-0-d62ce9da8b9e7a7d37cc8b2c9f72b646
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV A TÚ] (Socolive) m3u8
-https://pull.niues.live/live/stream-557845_lsd.m3u8?auth_key=1782620242-0-0-a117681b1559fc1c92aececf89e96417
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Ulaangom City vs Khovd Broncos [BLV CÁO] (Socolive) m3u8
+https://pull.niues.live/live/stream-597929_lsd.m3u8?auth_key=1782635422-0-0-aac288459a5a7e307cdf321b3bdb0e0b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV A TÚ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1782620242-0-0-d5a5aa6b569d016b9f9faf3684418ed4
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Ulaangom City vs Khovd Broncos [BLV CÁO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1782635422-0-0-70f5a8e178a6bcd7c3903e255897b01b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [A CHÈ] (Socolive) flv
-https://pull06.scstream.net/live/stream-356042_lsd.flv?auth_key=1782620242-0-0-092858db37f483bbbb4f5474146bbbe6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [NGƯỜI CÁ] (Socolive) flv
+https://pull06.scstream.net/live/stream-595335_lsd.flv?auth_key=1782635722-0-0-60df293423337dcaca4031a8dcad6b2c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [A CHÈ] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-356042_lhd.flv?auth_key=1782620242-0-0-395e8a09613e5cea7de29023f2a773c6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [NGƯỜI CÁ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-595335_lhd.flv?auth_key=1782635722-0-0-6a27d63c362af5242aec2eadedb5a943
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [A CHÈ] (Socolive) m3u8
-https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1782620242-0-0-2db7bb61df68df2beced5911a3180ba5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [NGƯỜI CÁ] (Socolive) m3u8
+https://pull.niues.live/live/stream-595335_lsd.m3u8?auth_key=1782635722-0-0-e1a08ca2cad086ac74cfd2f566177670
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [A CHÈ] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1782620242-0-0-5f07a5b51c7c5ede153ae857635e2961
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [NGƯỜI CÁ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-595335_lhd.m3u8?auth_key=1782635722-0-0-c2b00469a5e570384e3d89d66b03c155
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [CHAN SENA] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912115_lsd.flv?auth_key=1782620242-0-0-3a8d684c9063386bf06672e33d21a374
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [KING] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1782635722-0-0-a245d9eff72fffba032e819fad43fa73
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [CHAN SENA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912115_lhd.flv?auth_key=1782620242-0-0-860881795335463185d913a8eb6c8837
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [KING] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1782635722-0-0-272de5bee5cba747a167891c3f2138b8
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [CHAN SENA] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1782620242-0-0-cc8ec68529f9e664233131c569a45623
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [KING] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1782635722-0-0-4844fbacc8f10b731ded74ab39a92bf6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [CHAN SENA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1782620242-0-0-d96aa0fa886b5fc336a8d497d2bee922
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [KING] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1782635722-0-0-73716f76118a80a6602d893964d743c2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [DECO] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912060_lsd.flv?auth_key=1782620602-0-0-3c02d91d1b2dc950e67227dcffc34027
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Ulaangom City vs Khovd Broncos [BLV VITAMIN] (Socolive) flv
+https://pull06.scstream.net/live/stream-400722_lsd.flv?auth_key=1782635722-0-0-d2d9579c81c93ee24a3d941cf28ab56e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [DECO] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912060_lhd.flv?auth_key=1782620602-0-0-d18ffa23263b82e7be8455997c18e629
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Ulaangom City vs Khovd Broncos [BLV VITAMIN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-400722_lhd.flv?auth_key=1782635722-0-0-17cd3d34e4a7fb2f3422ac426c32be33
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [DECO] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912060_lsd.m3u8?auth_key=1782620602-0-0-f8e2df3e72f482c7a3af271fd1187bdb
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Ulaangom City vs Khovd Broncos [BLV VITAMIN] (Socolive) m3u8
+https://pull.niues.live/live/stream-400722_lsd.m3u8?auth_key=1782635722-0-0-82240affc0789cf6ffd016553a9ffb2e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [DECO] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1782620602-0-0-7b80f9767eda7ee4069abcbb1ef01508
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Ulaangom City vs Khovd Broncos [BLV VITAMIN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1782635722-0-0-bf6948239050708e5bd438e0562c7734
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV TOMMY] (Socolive) flv
-https://pull06.scstream.net/live/stream-414317_lsd.flv?auth_key=1782620602-0-0-06670136f98f33141a32233cc2d1e17e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [QUỐC KHÁNH] (Socolive) flv
+https://pull06.scstream.net/live/stream-602153_lsd.flv?auth_key=1782635722-0-0-43724ec471e902843f07927fdcadcdd4
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV TOMMY] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-414317_lhd.flv?auth_key=1782620602-0-0-1fc9d178a95412a4d28a4e555f910b09
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [QUỐC KHÁNH] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-602153_lhd.flv?auth_key=1782635722-0-0-863258244fd93df089cb618c622220cd
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV TOMMY] (Socolive) m3u8
-https://pull.niues.live/live/stream-414317_lsd.m3u8?auth_key=1782620602-0-0-3d2b5965006e98d97b9db219d6cbd4a8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [QUỐC KHÁNH] (Socolive) m3u8
+https://pull.niues.live/live/stream-602153_lsd.m3u8?auth_key=1782635722-0-0-b5c840328ab18e4eb581074e893a0594
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV TOMMY] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-414317_lhd.m3u8?auth_key=1782620602-0-0-d7b85a6976f363f52e796dd1bdbd40ef
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [QUỐC KHÁNH] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-602153_lhd.m3u8?auth_key=1782635722-0-0-d69eaa134fb3c496ce98b47391021fd2
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV TAP] (Socolive) flv
-https://pull.niur.live/live/stream-9912041_lsd.flv?txSecret=c3d8a027d1db14ac8aa0a0b0cfa4e2fd&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV ROBBEN] (Socolive) flv
+https://pull06.scstream.net/live/stream-527383_lsd.flv?auth_key=1782635722-0-0-2ac303fdc19fc8e90fb6a2160c748e91
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV TAP] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912041_lhd.flv?txSecret=04b951eaa98ed155a54eef17f2418997&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV ROBBEN] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-527383_lhd.flv?auth_key=1782635722-0-0-e3e209d59b39de94fa1f39a42ed03b0e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV TAP] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912041_lsd.m3u8?txSecret=c3d8a027d1db14ac8aa0a0b0cfa4e2fd&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV ROBBEN] (Socolive) m3u8
+https://pull.niues.live/live/stream-527383_lsd.m3u8?auth_key=1782635722-0-0-87f230d529ca25dfe5a367a631bb1b84
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV TAP] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=04b951eaa98ed155a54eef17f2418997&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV ROBBEN] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1782635722-0-0-13c7e6df8ad6f6e00a5e6715991f9246
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [RICKHANTER] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912122_lsd.flv?auth_key=1782620602-0-0-54cb947cadf7b54bd82c9814cce1c77b
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h30 ngày 28/06 South Melbourne vs Green Gully Cavaliers [A BỆU] (Socolive) flv
+https://pull06.scstream.net/live/stream-484845_lsd.flv?auth_key=1782635722-0-0-720b46c535441be95d0e1c1be1e380dc
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [RICKHANTER] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912122_lhd.flv?auth_key=1782620602-0-0-6426ae6ade3c171e322642a87b5ba620
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h30 ngày 28/06 South Melbourne vs Green Gully Cavaliers [A BỆU] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-484845_lhd.flv?auth_key=1782635722-0-0-70087e9fdd9e8053254c1d2a80f93a18
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [RICKHANTER] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912122_lsd.m3u8?auth_key=1782620602-0-0-bb1726f2709bbc4b6a209dd9c57f3fa8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h30 ngày 28/06 South Melbourne vs Green Gully Cavaliers [A BỆU] (Socolive) m3u8
+https://pull.niues.live/live/stream-484845_lsd.m3u8?auth_key=1782635722-0-0-7f4d6cf39fb3f942c9ab0164ca532c0f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [RICKHANTER] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912122_lhd.m3u8?auth_key=1782620602-0-0-1c3fa852751b0bad1acd1765b605270c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",12h30 ngày 28/06 South Melbourne vs Green Gully Cavaliers [A BỆU] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1782635722-0-0-b7aa70a9925b422d52dda735716e414b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV 7UP] (Socolive) flv
-https://pull06.scstream.net/live/stream-534219_lsd.flv?auth_key=1782620602-0-0-ab717577ecd3ef688a688bfbc8c3e8b7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [HUNTER] (Socolive) flv
+https://pull06.scstream.net/live/stream-558264_lsd.flv?auth_key=1782635722-0-0-1c15f37a1851a1d2ffc2cc503211b25e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV 7UP] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-534219_lhd.flv?auth_key=1782620602-0-0-e9535414b8684b9608af9c044f9e7019
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [HUNTER] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-558264_lhd.flv?auth_key=1782635722-0-0-2c04d4dfec2a86167d4b945a8affa643
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV 7UP] (Socolive) m3u8
-https://pull.niues.live/live/stream-534219_lsd.m3u8?auth_key=1782620602-0-0-03f94cc1258e6b082e4845b6b4934da7
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [HUNTER] (Socolive) m3u8
+https://pull.niues.live/live/stream-558264_lsd.m3u8?auth_key=1782635722-0-0-10a4fc9465c4f6885bf3419a367f4d1f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV 7UP] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-534219_lhd.m3u8?auth_key=1782620602-0-0-e6cdbf160f604ab69c08edc650608528
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [HUNTER] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-558264_lhd.m3u8?auth_key=1782635722-0-0-f9db072c1eb3772c08d6ceda69a75e28
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV Củ Cải] (Socolive) flv
-https://pull.niur.live/live/stream-9912091_lsd.flv?txSecret=71bdf939118168c8a9545de7af9c708c&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [XUÂN TÓC ĐỎ] (Socolive) flv
+https://pull.niur.live/live/stream-610518_lsd.flv?txSecret=c2ee3a014e7190947a5e69e7f4c86627&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV Củ Cải] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912091_lhd.flv?txSecret=205fef13d97ed4db13ba010fc163de4d&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [XUÂN TÓC ĐỎ] (Socolive) hdFlv
+https://pull.niur.live/live/stream-610518_lhd.flv?txSecret=da8b3fa5342d4915427e5cba458bd9ba&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV Củ Cải] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912091_lsd.m3u8?txSecret=71bdf939118168c8a9545de7af9c708c&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [XUÂN TÓC ĐỎ] (Socolive) m3u8
+https://pull.niur.live/live/stream-610518_lsd.m3u8?txSecret=c2ee3a014e7190947a5e69e7f4c86627&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV Củ Cải] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912091_lhd.m3u8?txSecret=205fef13d97ed4db13ba010fc163de4d&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [XUÂN TÓC ĐỎ] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=da8b3fa5342d4915427e5cba458bd9ba&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV COZY] (Socolive) flv
-https://pull.niur.live/live/stream-531989_lsd.flv?txSecret=bf0b5461e64a0a3df3b2efcc89d14381&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV LION] (Socolive) flv
+https://pull06.scstream.net/live/stream-603255_lsd.flv?auth_key=1782635722-0-0-0a4b0baf03e0d43336f990e152873705
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV COZY] (Socolive) hdFlv
-https://pull.niur.live/live/stream-531989_lhd.flv?txSecret=d0decc6789cc2ab7f2bda9a4ab3ade1b&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV LION] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-603255_lhd.flv?auth_key=1782635722-0-0-378d23f6f743a4b919e4eb35bbf14801
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV COZY] (Socolive) m3u8
-https://pull.niur.live/live/stream-531989_lsd.m3u8?txSecret=bf0b5461e64a0a3df3b2efcc89d14381&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV LION] (Socolive) m3u8
+https://pull.niues.live/live/stream-603255_lsd.m3u8?auth_key=1782635722-0-0-35ec39a0030c841ab4bd9b8504442c33
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV COZY] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-531989_lhd.m3u8?txSecret=d0decc6789cc2ab7f2bda9a4ab3ade1b&txTime=6a40e80a
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV LION] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1782635722-0-0-2622d9b50c185c0a8bcc4ba8be65ffcf
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV TOMIA] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912008_lsd.flv?auth_key=1782620602-0-0-11cd0d6fced4522e340ef1a15acc8df5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV VIP] (Socolive) flv
+https://pull.niur.live/live/stream-491873_lsd.flv?txSecret=4152d5eb61003f847a62cc0f52a29464&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV TOMIA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912008_lhd.flv?auth_key=1782620602-0-0-0a255685be605055339efa14d72c52ed
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV VIP] (Socolive) hdFlv
+https://pull.niur.live/live/stream-491873_lhd.flv?txSecret=98d89557c219ba9c338be1a27ee1fecc&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV TOMIA] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1782620602-0-0-270b1a0904ce9fb81c026ec8e92eab74
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV VIP] (Socolive) m3u8
+https://pull.niur.live/live/stream-491873_lsd.m3u8?txSecret=4152d5eb61003f847a62cc0f52a29464&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV TOMIA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1782620602-0-0-ce857fce4ecd413c53b0d5dadcaa06a4
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV VIP] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=98d89557c219ba9c338be1a27ee1fecc&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [LÃO LÂM] (Socolive) flv
-https://pull06.scstream.net/live/stream-527384_lsd.flv?auth_key=1782620602-0-0-587a261583a2f7e9b98d44ef5c1f567e
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV RAMBO] (Socolive) flv
+https://pull.niur.live/live/stream-534055_lsd.flv?txSecret=ef9fc94996c4e0e90009ad90b0ccd19e&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [LÃO LÂM] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-527384_lhd.flv?auth_key=1782620602-0-0-6dca2fb2ec47971755590aba98d81dd0
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV RAMBO] (Socolive) hdFlv
+https://pull.niur.live/live/stream-534055_lhd.flv?txSecret=1690a807b55affd03e451760ef5f7e46&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [LÃO LÂM] (Socolive) m3u8
-https://pull.niues.live/live/stream-527384_lsd.m3u8?auth_key=1782620602-0-0-e7d0ab5b1b01d88f869bdc2f5e07ff33
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV RAMBO] (Socolive) m3u8
+https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=ef9fc94996c4e0e90009ad90b0ccd19e&txTime=6a41231a
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [LÃO LÂM] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1782620602-0-0-1607f62f7895d5ef8a11969cfec0e396
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV ROBBEN] (Socolive) flv
-https://pull.niur.live/live/stream-527383_lsd.flv?txSecret=6e1a991c2766d17819b3c1d9d1eb9b22&txTime=6a40e80a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV ROBBEN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-527383_lhd.flv?txSecret=0eb508f187f2d59b8de41ce91a8d2932&txTime=6a40e80a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV ROBBEN] (Socolive) m3u8
-https://pull.niur.live/live/stream-527383_lsd.m3u8?txSecret=6e1a991c2766d17819b3c1d9d1eb9b22&txTime=6a40e80a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV ROBBEN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-527383_lhd.m3u8?txSecret=0eb508f187f2d59b8de41ce91a8d2932&txTime=6a40e80a
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [KING] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912099_lsd.flv?auth_key=1782620602-0-0-f011fd0ca53424f0b62f7c64b4289239
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [KING] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912099_lhd.flv?auth_key=1782620602-0-0-ca9e5e7de5a4c6dede10007a805c93d2
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [KING] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1782620602-0-0-64345ffc24fde50ee89845a8166474bb
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [KING] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1782620602-0-0-1d6431986f87b58e0a925a9f5369f6a5
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [HUNTER] (Socolive) flv
-https://pull06.scstream.net/live/stream-558264_lsd.flv?auth_key=1782620602-0-0-4d222d765919f8bb7aa378b8bcd67455
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [HUNTER] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-558264_lhd.flv?auth_key=1782620602-0-0-3a4595502347c16603eef8f33fdd9e34
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [HUNTER] (Socolive) m3u8
-https://pull.niues.live/live/stream-558264_lsd.m3u8?auth_key=1782620602-0-0-0627842d138101fc195a8207bf3e94c9
-
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",10h00 ngày 28/06 Canterbury Rams vs Bay Hawks [HUNTER] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-558264_lhd.m3u8?auth_key=1782620602-0-0-422d9be292463c49bb1c05d558a05aef
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",15h00 ngày 28/06 Dangjin Citizen vs Gangneung Citizen [BLV RAMBO] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=1690a807b55affd03e451760ef5f7e46&txTime=6a41231a
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) flv
-https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1782620602-0-0-c5e7f60161848016fdcaab301e7902a2
+https://pull06.scstream.net/live/stream-175784_lsd.flv?auth_key=1782635722-0-0-ec47679cf4655deed9883883b7919e16
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1782620602-0-0-fb076f93a963c466564602af4a7b34e2
+https://pull06.scstream.net/live/stream-175784_lhd.flv?auth_key=1782635722-0-0-115383c9c5c2054fdd9cc59e476f1c64
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8
-https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1782620602-0-0-aef999a2b5a4325470f0f4eada82e6a4
+https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1782635722-0-0-e94405d9ce360f307d783b7cc9d0a9a8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="",BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1782620602-0-0-8a58b5ff0f7ee3fd07f2a6f25989974e
+https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1782635722-0-0-90009180a5e3b476e24cad7c0a041ae0
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [TẠ BIÊN GIỚI] (Socolive) flv
-https://pull06.scstream.net/live/stream-9912108_lsd.flv?auth_key=1782621022-0-0-3e7f1969002cd2763372d937b3b499ff
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Algeria vs Austria [Sóc mèo méo meo] (Socolive) flv
+https://pull06.scstream.net/live/stream-343500_lsd.flv?auth_key=1782635722-0-0-1ace02deefa011667dd6d76701fb9ce7
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [TẠ BIÊN GIỚI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-9912108_lhd.flv?auth_key=1782621022-0-0-6c1a274ba5916afbd5160fd2378660ef
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Algeria vs Austria [Sóc mèo méo meo] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-343500_lhd.flv?auth_key=1782635722-0-0-37a4b479bce78dd6e4e7da9b7488f0d5
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [TẠ BIÊN GIỚI] (Socolive) m3u8
-https://pull.niues.live/live/stream-9912108_lsd.m3u8?auth_key=1782621022-0-0-2c96c5fbb87215a611f77bfb66ea54e5
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Algeria vs Austria [Sóc mèo méo meo] (Socolive) m3u8
+https://pull.niues.live/live/stream-343500_lsd.m3u8?auth_key=1782635722-0-0-28812131a7e7b003ae12a1401b1b19c6
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [TẠ BIÊN GIỚI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1782621022-0-0-b8b7ae34e8d6d098f2f011d31f4dda31
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Algeria vs Austria [Sóc mèo méo meo] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-343500_lhd.m3u8?auth_key=1782635722-0-0-55b48b50e93677da422f77b6bd2de31b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV FIREMAN] (Socolive) flv
-https://pull.niur.live/live/stream-991140_lsd.flv?txSecret=1bef4ddfe60f3967759b821eec504537&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Jordan vs Argentina [Sóc trong rừng xà nu] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912079_lsd.flv?auth_key=1782635722-0-0-f825504fb66c3c63dcb89869f5c8311b
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV FIREMAN] (Socolive) hdFlv
-https://pull.niur.live/live/stream-991140_lhd.flv?txSecret=8dac795702f50fab2986872e6afb121f&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Jordan vs Argentina [Sóc trong rừng xà nu] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912079_lhd.flv?auth_key=1782635722-0-0-9618e73cb82ad146dc5a29a5c5104b39
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV FIREMAN] (Socolive) m3u8
-https://pull.niur.live/live/stream-991140_lsd.m3u8?txSecret=1bef4ddfe60f3967759b821eec504537&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Jordan vs Argentina [Sóc trong rừng xà nu] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912079_lsd.m3u8?auth_key=1782635722-0-0-0c95c9df17d811e095b3d5170ac76158
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV FIREMAN] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-991140_lhd.m3u8?txSecret=8dac795702f50fab2986872e6afb121f&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Jordan vs Argentina [Sóc trong rừng xà nu] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912079_lhd.m3u8?auth_key=1782635722-0-0-bc8b81eee2603f24f9edbe5716665263
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV COCA] (Socolive) flv
-https://pull06.scstream.net/live/stream-327159_lsd.flv?auth_key=1782621022-0-0-17c19838d2336b429734a9690841df68
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV A TÚ] (Socolive) flv
+https://pull06.scstream.net/live/stream-557845_lsd.flv?auth_key=1782636082-0-0-7eec6d467e1b0abd78e8d90011f5d2cb
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV COCA] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-327159_lhd.flv?auth_key=1782621022-0-0-142ad86e074c8f365cb6d7ba902cf954
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV A TÚ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-557845_lhd.flv?auth_key=1782636082-0-0-70cb70769afabb3819e563517cfbbede
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV COCA] (Socolive) m3u8
-https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1782621022-0-0-21234dc371d8e3e19c4c23eaf9d372eb
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV A TÚ] (Socolive) m3u8
+https://pull.niues.live/live/stream-557845_lsd.m3u8?auth_key=1782636082-0-0-8846ecfe5ba36ee2903e1a655607aacf
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV COCA] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1782621022-0-0-e6d431e110b6fbd40ea098243da402d6
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV A TÚ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1782636082-0-0-842687b1fc21d173a18e3fbb64a8dabb
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [CR Bưởi] (Socolive) flv
-https://pull.niur.live/live/stream-387694_lsd.flv?txSecret=9d9de29531bb522c606a856eec121d90&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV BÉO] (Socolive) flv
+https://pull.niur.live/live/stream-459401_lsd.flv?txSecret=d4039d61a5844eb2e6b8f699be0636aa&txTime=6a412482
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [CR Bưởi] (Socolive) hdFlv
-https://pull.niur.live/live/stream-387694_lhd.flv?txSecret=2ac6dadb9b0ba18cd991af537ec219c5&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV BÉO] (Socolive) hdFlv
+https://pull.niur.live/live/stream-459401_lhd.flv?txSecret=0b42d10eb75955a444fef622cb2e8847&txTime=6a412482
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [CR Bưởi] (Socolive) m3u8
-https://pull.niur.live/live/stream-387694_lsd.m3u8?txSecret=9d9de29531bb522c606a856eec121d90&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV BÉO] (Socolive) m3u8
+https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=d4039d61a5844eb2e6b8f699be0636aa&txTime=6a412482
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [CR Bưởi] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=2ac6dadb9b0ba18cd991af537ec219c5&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV BÉO] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=0b42d10eb75955a444fef622cb2e8847&txTime=6a412482
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV CUỘI] (Socolive) flv
-https://pull06.scstream.net/live/stream-256080_lsd.flv?auth_key=1782621022-0-0-b6bf29b55054599814c7e87b90044fe3
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV GÔN] (Socolive) flv
+https://pull.niur.live/live/stream-445260_lsd.flv?txSecret=51ff414c5d2a07e0058fb7557fefc92a&txTime=6a412482
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV CUỘI] (Socolive) hdFlv
-https://pull06.scstream.net/live/stream-256080_lhd.flv?auth_key=1782621022-0-0-881cf23d2946d362c259cb7e987dacbe
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV GÔN] (Socolive) hdFlv
+https://pull.niur.live/live/stream-445260_lhd.flv?txSecret=b27904fe811029074b66f959845e0009&txTime=6a412482
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV CUỘI] (Socolive) m3u8
-https://pull.niues.live/live/stream-256080_lsd.m3u8?auth_key=1782621022-0-0-cd32d42eabae436a1471389112727899
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV GÔN] (Socolive) m3u8
+https://pull.niur.live/live/stream-445260_lsd.m3u8?txSecret=51ff414c5d2a07e0058fb7557fefc92a&txTime=6a412482
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Jordan vs Argentina [BLV CUỘI] (Socolive) hdM3u8
-https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1782621022-0-0-f64ba9e0750447cd687ce16258ff2f3c
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 ngày 28/06 Queensland Lions SC vs Brisbane Wolves [BLV GÔN] (Socolive) hdM3u8
+https://pull.niur.live/live/stream-445260_lhd.m3u8?txSecret=b27904fe811029074b66f959845e0009&txTime=6a412482
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV PEWPEW] (Socolive) flv
-https://pull.niur.live/live/stream-9912015_lsd.flv?txSecret=ef8d915516ebcfbb4b03d38c7bfaa464&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV RYO] (Socolive) flv
+https://pull06.scstream.net/live/stream-602019_lsd.flv?auth_key=1782636082-0-0-05746b10262ae047d3cb1abba6bfcdfa
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV PEWPEW] (Socolive) hdFlv
-https://pull.niur.live/live/stream-9912015_lhd.flv?txSecret=e9b2bdc01b469c5bfe9e60b59fcdde57&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV RYO] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-602019_lhd.flv?auth_key=1782636082-0-0-f475e0132f886d067db859380e45b002
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV PEWPEW] (Socolive) m3u8
-https://pull.niur.live/live/stream-9912015_lsd.m3u8?txSecret=ef8d915516ebcfbb4b03d38c7bfaa464&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV RYO] (Socolive) m3u8
+https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1782636082-0-0-e89cf8fcb9097d6327562c6e63778aab
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV PEWPEW] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-9912015_lhd.m3u8?txSecret=e9b2bdc01b469c5bfe9e60b59fcdde57&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV RYO] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1782636082-0-0-4041a72a31873e88c138158c056da748
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [SAO LA] (Socolive) flv
-https://pull.niur.live/live/stream-462413_lsd.flv?txSecret=83aaf2ef457cef4298a6889f71842ea7&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV COZY] (Socolive) flv
+https://pull06.scstream.net/live/stream-531989_lsd.flv?auth_key=1782636082-0-0-ee6a86ca4e9b7a411ed47e80d6029a5c
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [SAO LA] (Socolive) hdFlv
-https://pull.niur.live/live/stream-462413_lhd.flv?txSecret=13cc8ea228f9d3aae35a83a8a61865e6&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV COZY] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-531989_lhd.flv?auth_key=1782636082-0-0-ae774de2d518e7fccf4df76120f20e08
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [SAO LA] (Socolive) m3u8
-https://pull.niur.live/live/stream-462413_lsd.m3u8?txSecret=83aaf2ef457cef4298a6889f71842ea7&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV COZY] (Socolive) m3u8
+https://pull.niues.live/live/stream-531989_lsd.m3u8?auth_key=1782636082-0-0-ad6140835e0e95ebd1e937f95a6cc9cb
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [SAO LA] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-462413_lhd.m3u8?txSecret=13cc8ea228f9d3aae35a83a8a61865e6&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h15 ngày 28/06 APIA Leichhardt Tigers vs Rockdale City Suns [BLV COZY] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1782636082-0-0-38130a2dda852beda419766ee35f1d0e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV KEM] (Socolive) flv
-https://pull.niur.live/live/stream-513394_lsd.flv?txSecret=b58f25212a9a053aeeae50539330366d&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [CHAN SENA] (Socolive) flv
+https://pull06.scstream.net/live/stream-9912115_lsd.flv?auth_key=1782636082-0-0-528dd097ae74e5148c66be9900172abc
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV KEM] (Socolive) hdFlv
-https://pull.niur.live/live/stream-513394_lhd.flv?txSecret=51a408307751831486ef73cc162c84b3&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [CHAN SENA] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-9912115_lhd.flv?auth_key=1782636082-0-0-60461e93b620787c521a8771848784ac
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV KEM] (Socolive) m3u8
-https://pull.niur.live/live/stream-513394_lsd.m3u8?txSecret=b58f25212a9a053aeeae50539330366d&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [CHAN SENA] (Socolive) m3u8
+https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1782636082-0-0-7fcc8e8a08a591403ebd78fd7250473d
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV KEM] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-513394_lhd.m3u8?txSecret=51a408307751831486ef73cc162c84b3&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [CHAN SENA] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1782636082-0-0-971df69a1ad4a4a732db2859f065487f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV CÒ] (Socolive) flv
-https://pull.niur.live/live/stream-582342_lsd.flv?txSecret=9850d55622b297de67074231c5da086d&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [A CHÈ] (Socolive) flv
+https://pull06.scstream.net/live/stream-356042_lsd.flv?auth_key=1782636082-0-0-9762dad9aab82653cace148bcad9e5f5
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV CÒ] (Socolive) hdFlv
-https://pull.niur.live/live/stream-582342_lhd.flv?txSecret=9e3ba7f389093dccc091158390b9867d&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [A CHÈ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-356042_lhd.flv?auth_key=1782636082-0-0-47b7009e7b15382a850630f8f32a6a0e
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV CÒ] (Socolive) m3u8
-https://pull.niur.live/live/stream-582342_lsd.m3u8?txSecret=9850d55622b297de67074231c5da086d&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [A CHÈ] (Socolive) m3u8
+https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1782636082-0-0-3bff3123dd50f2abc1e4d48a4994e984
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 ngày 28/06 Algeria vs Austria [BLV CÒ] (Socolive) hdM3u8
-https://pull.niur.live/live/stream-582342_lhd.m3u8?txSecret=9e3ba7f389093dccc091158390b9867d&txTime=6a40e9ae
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",13h00 ngày 28/06 Nelson Giants vs Auckland Tuatara [A CHÈ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1782636082-0-0-035235cbbe0fbdca70c7fd1d03e09388
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 28/06 Algeria vs Austria (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanquay/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Democratic Republic of the Congo vs Uzbekistan [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) flv
+https://pull06.scstream.net/live/stream-133277_lsd.flv?auth_key=1782636082-0-0-61552668ebc3ba15b4bdbb0bc4ceb38f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 28/06 Algeria vs Austria (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phanquay/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Democratic Republic of the Congo vs Uzbekistan [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-133277_lhd.flv?auth_key=1782636082-0-0-e8e78d0212a0818fd86f74c0faa1559f
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 28/06 Jordan vs Argentina (Hội Quán) FHD
-https://hqlive.yarncdn.live/live/hqtv_blv_phanma/playlist.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Democratic Republic of the Congo vs Uzbekistan [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) m3u8
+https://pull.niues.live/live/stream-133277_lsd.m3u8?auth_key=1782636082-0-0-935ba7458bcdd24f7b13325443618022
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 28/06 Jordan vs Argentina (Hội Quán) SD
-https://alive.yarncdn.live/hqtv_blv_phanma/tracks-v1a1/mono.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Democratic Republic of the Congo vs Uzbekistan [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-133277_lhd.m3u8?auth_key=1782636082-0-0-2be28b9bc3a83d5841e6ce50a43809e1
 
-#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",09h00 28/06 Jordan vs Argentina
-https://live05.meung.app/live/08552895.m3u8
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Panama vs England [Sóc đau cổ vai gáy] (Socolive) flv
+https://pull06.scstream.net/live/stream-179093_lsd.flv?auth_key=1782636082-0-0-ff7a045d45bbad9a59c588075acddef2
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Panama vs England [Sóc đau cổ vai gáy] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-179093_lhd.flv?auth_key=1782636082-0-0-85685df756c20563fbe8d5baff85ef42
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Panama vs England [Sóc đau cổ vai gáy] (Socolive) m3u8
+https://pull.niues.live/live/stream-179093_lsd.m3u8?auth_key=1782636082-0-0-847a7974699c4b8ca09772f7efd6c25f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Panama vs England [Sóc đau cổ vai gáy] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-179093_lhd.m3u8?auth_key=1782636082-0-0-7e771bc6a7865f06dd7a44a5c89fd5e1
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Colombia vs Portugal [Sóc trèo cây ngô đồng] (Socolive) flv
+https://pull06.scstream.net/live/stream-133824_lsd.flv?auth_key=1782636082-0-0-072446ec4dd756e74fbaf4c370f1318f
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Colombia vs Portugal [Sóc trèo cây ngô đồng] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-133824_lhd.flv?auth_key=1782636082-0-0-543f9ddaa0602fbf9db15344c6ae33c9
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Colombia vs Portugal [Sóc trèo cây ngô đồng] (Socolive) m3u8
+https://pull.niues.live/live/stream-133824_lsd.m3u8?auth_key=1782636082-0-0-03c91ba6c53baf9219877a517d66d3ad
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Colombia vs Portugal [Sóc trèo cây ngô đồng] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-133824_lhd.m3u8?auth_key=1782636082-0-0-9d8c4b613d473ad35ddeb374834bbe2b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Croatia vs Ghana [Sóc nhàm nhang nhồ] (Socolive) flv
+https://pull06.scstream.net/live/stream-152898_lsd.flv?auth_key=1782636082-0-0-97fb3e60f2cc2fcf00c7d9b94e48bfc5
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Croatia vs Ghana [Sóc nhàm nhang nhồ] (Socolive) hdFlv
+https://pull06.scstream.net/live/stream-152898_lhd.flv?auth_key=1782636082-0-0-95e3cb338d5e8416ae6e533e28890337
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Croatia vs Ghana [Sóc nhàm nhang nhồ] (Socolive) m3u8
+https://pull.niues.live/live/stream-152898_lsd.m3u8?auth_key=1782636082-0-0-50243ab8ecb8105c29688b0c316787ad
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",Tường thuật: WORLD CUP - Croatia vs Ghana [Sóc nhàm nhang nhồ] (Socolive) hdM3u8
+https://pull.niues.live/live/stream-152898_lhd.m3u8?auth_key=1782636082-0-0-5b1a369c09ceb96dbb25e2f0a75d490b
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 28/06 Lions vs WDSC Wolves (Hội Quán) FHD
+https://tdlive.yarncdn.live/live/tdtv_blv_taotinhtao/playlist.m3u8
+
+#EXTINF:-1 group-title="FPT SPORT" tvg-logo="",14h00 28/06 Lions vs WDSC Wolves (Hội Quán) SD
+https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v1a1/mono.m3u8
 
