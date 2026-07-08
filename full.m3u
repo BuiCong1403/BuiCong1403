@@ -1,7 +1,4 @@
 #EXTM3U
-#EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/20674.png",15:00 | Xi'an Ronghai vs Dalian Kewei
-https://alive.yarncdn.live/hqtv_blv_phanquay/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/9426.png",17:00 | Paro vs Tensung
 https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
 
@@ -19,6 +16,9 @@ https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/139.png",06:00 | Ponte Preta vs Criciuma
 https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://media.api-sports.io/football/teams/582.png",23:00 | Alashkert vs Yelimay Semey
+https://alive.yarncdn.live/hqtv_blv_phanquay/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="HỘI QUÁN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Flag_of_Japan.svg/960px-Flag_of_Japan.svg.png",17:20 | Japan W - Brazil W
 https://alive.yarncdn.live/hqtv_blv_phanhai/tracks-v2a1/mono.m3u8
@@ -44,9 +44,6 @@ https://alive.yarncdn.live/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="THIÊN ĐÌNH" tvg-logo="https://img.uefa.com/imgml/flags/240x240/MNE.png",23:00 | Montenegro U17 vs Denmark U17
 https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="XAY CON" tvg-logo="https://media.api-sports.io/football/teams/20674.png",15:00 | Xi'an Ronghai vs Dalian Kewei
-https://alive.yarncdn.live/xctv_blv_phubeo/tracks-v2a1/mono.m3u8
-
 #EXTINF:-1 group-title="XAY CON" tvg-logo="https://media.api-sports.io/football/teams/9426.png",17:00 | Paro vs Tensung
 https://alive.yarncdn.live/xctv_blv_rongdat/tracks-v2a1/mono.m3u8
 
@@ -59,11 +56,8 @@ https://alive.yarncdn.live/xctv_blv_tammao/tracks-v2a1/mono.m3u8
 #EXTINF:-1 group-title="XAY CON" tvg-logo="https://media.api-sports.io/football/teams/2271.png",00:00 | Petrocub vs Egnatia Rrogozhinë
 https://alive.yarncdn.live/xctv_blv_bipcon/tracks-v2a1/mono.m3u8
 
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjPLq5-ZP3PdMB0VK0epq_QikfLqhwFruhp9PvE1eYYQ&s=10",Thái Lan - Hoa Kỳ
-https://bglive.yarncdn.live/live/bgtv_blv_phaothan/playlist.m3u8
-
-#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/20674.png",Xi'an Ronghai vs Dalian Kewei
-https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
+#EXTINF:-1 group-title="XAY CON" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7c/Vancouver_Whitecaps_logo.svg",09:30 | Vancouver Whitecaps vs Cavalry FC
+https://alive.yarncdn.live/xctv_blv_phubeo/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsekIgFLh-3R0Uto0MlV2jCZuJXOVwquWEEpdEesfM4A&s=10",Ukraina -  Ý
 https://bglive.yarncdn.live/live/bgtv_blv_tieumeo/playlist.m3u8
@@ -77,59 +71,65 @@ https://bglive.yarncdn.live/live/bgtv_blv_mason/playlist.m3u8
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/10535.png",Komárno vs Lokomotíva Zvolen
 https://bglive.yarncdn.live/live/bgtv_blv_max/playlist.m3u8
 
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/664.png",Kairat Almaty vs Sutjeska
+https://bglive.yarncdn.live/live/bgtv_blv_phaothan/playlist.m3u8
+
+#EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/687.png",Flora Tallinn vs Saburtalo
+https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8
+
 #EXTINF:-1 group-title="VÒNG CẤM TV" tvg-logo="https://media.api-sports.io/football/teams/3345.png",Atlètic Club d'Escaldes vs Mornar
 https://bglive.yarncdn.live/live/bgtv_blv_phimc/playlist.m3u8
 
-#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/6329d7d96869a8cdbbe2ebec83d9d7e2.png!w80",08:00 | Shanxi Chongde Ronghai vs Dalian Kewei
-https://live05.bfgrut.app/live/87547578.m3u8
-
-#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/92fb3cf79ea2ba919b94b04668e13491.png!w80",08:30 | Olympique Lyonnais vs Macon
-https://live05.bfgrut.app/live/78905744.m3u8
-
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/ae37aedbd9647e80fe75821a00a31516.png!w80",10:00 | FC Paro vs Tensung FC
-https://live05.bfgrut.app/live/59444581.m3u8
+https://live05.grita.app/live/59444581.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/b493c3e5b0fb8c1c48b1a685b2a33c26.png!w80",11:30 | Hangzhou Linping vs Jiangxi Beidamen
-https://live05.bfgrut.app/live/16226575.m3u8
+https://live05.grita.app/live/16226575.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/685d3703a0b1410dc3bf2280eb5a15ec.png!w80",13:00 | Đan Mạch U19 vs Ý U19
-https://live05.bfgrut.app/live/90865415.m3u8
+https://live05.grita.app/live/90865415.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/3ef04912f88c3166f1a47864cde71949.png!w80",15:00 | Kairat vs FK Sutjeska Niksic
-https://live05.bfgrut.app/live/14830711.m3u8
+https://live05.grita.app/live/14830711.m3u8
+
+#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/e5858bd2ddb51631a85b1af22f5a1a6a.png!w80",15:30 | Tây Ban Nha U19 vs Croatia U19
+https://live05.grita.app/live/87547578.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/5b9c9b4f40414f2be603cf1dac1bdad6.png!w80",16:00 | FC Flora Tallinn vs Saburtalo Tbilisi
-https://live05.bfgrut.app/live/08552895.m3u8
+https://live05.grita.app/live/08552895.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/8888bb52a971c98b7518618bf61e7ad2.png!w80",17:00 | BC Maxline vs Univ. Craiova
-https://live05.bfgrut.app/live/24561735.m3u8
+https://live05.grita.app/live/24561735.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/9a9f43853cff237db04680cfc985bb57.png!w80",17:00 | CLB CS Petrocub vs Egnatia
-https://live05.bfgrut.app/live/33860426.m3u8
+https://live05.grita.app/live/33860426.m3u8
+
+#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/d2428da8ed3ec5eeba351e8a5e4c551f.png!w80",22:00 | Oruro thật vs Đại học De ​​Vinto
+https://live05.grita.app/live/99121525.m3u8
+
+#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/f9b2e922f6ca83c14def96049ccbfe42.png!w80",23:00 | Union La Calera vs Coquimbo Unido
+https://live05.grita.app/live/78905744.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/basketball/team/d994ab69186bb52d6b0967e1567a217e.png!w80",23:00 | Toronto Tempo vs Golden State Valkyries
-https://live05.bfgrut.app/live/87379114.m3u8
+https://live05.grita.app/live/87379114.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/basketball/team/616c37f8e35a1c33a4766dbc86c0ca3a.png!w80",23:30 | Connecticut Sun vs Minnesota Lynx
-https://live05.bfgrut.app/live/19919577.m3u8
-
-#EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/784732b83e10369eca2deed4bb4b79c2.png!w80",01:00 | CD Independiente Juniors vs LDU Quito
-https://live05.bfgrut.app/live/99121525.m3u8
+https://live05.grita.app/live/19919577.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/basketball/team/0a53a0f3a3e739e2f9e57430b0291e28.png!w80",02:00 | Los Angeles Sparks vs Indiana Fever
-https://live05.bfgrut.app/live/82054853.m3u8
+https://live05.grita.app/live/82054853.m3u8
 
 #EXTINF:-1 group-title="CO LA TV" tvg-logo="https://img.gvapi.cc/football/team/2be300dfaf22aea36b0f57a2832859ae.png!w80",02:00 | Vancouver FC vs CLB Montreal Impact
-https://live05.bfgrut.app/live/75748097.m3u8
+https://live05.grita.app/live/75748097.m3u8
 
-#EXTINF:-1 group-title="TAM QUỐC TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu6wtcvpUjS8-S0kWhEpr722DqUftk5fYAFKucjVv-xw&s=10",15:00 | Úc U17 vs Nigeria U17
-https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
-
-#EXTINF:-1 group-title="TAM QUỐC TV" tvg-logo="https://media.api-sports.io/football/teams/402.png",17:00 | Aalborg vs Randers FC
+#EXTINF:-1 group-title="TAM QUỐC TV" tvg-logo="https://media.api-sports.io/football/teams/9426.png",17:00 | Paro vs Tensung
 https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8
 
 #EXTINF:-1 group-title="TAM QUỐC TV" tvg-logo="https://media.api-sports.io/football/teams/4676.png",19:00 | Kolding IF vs Vendsyssel FF
 https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
+
+#EXTINF:-1 group-title="TAM QUỐC TV" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJOQrq80V5LWl4HBTpbg3zw5Tjy0MYVDbYJd2bK7usQg&s=10",21:00 | Nữ River Plate vs Nữ Banfield
+https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8
 
 #EXTINF:-1 group-title="FPT SPORT" tvg-logo="https://upload-img.cdnokvip.com/uploads/team_logo/1782965678.png",11h30 ngày 02/07 Anh vs Congo (Lương Sơn) BLV KAKA REPLAY m3u
 https://hls.cdnfaster-a.live/live/TO3A/index.m3u8?expire=1891408380&sign=9c81b067b218299e5542cfcd512206bf
@@ -425,9 +425,6 @@ https://live05.koepgd.app/live/90865415.m3u8
 #EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-c89cf853ad_11a27064_20260708.png?v=11a27064",Úc U17 vs Nigeria U17 | 15:00 08/07
 https://sgtdrxtdjeliv.vcdn.cloud/1783428439_hd/1783428439_hd@720p.m3u8
 
-#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-3da6da6f16_44e5e4e3_20260708.png?v=44e5e4e3",Xi'an Ronghai  vs Dalian Kewei | 15:00 08/07
-https://sgtdrxtdjeliv.vcdn.cloud/1783428492_hd/1783428492_hd@720p.m3u8
-
 #EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-abcac47ee5_bf3d9fef_20260708.png?v=bf3d9fef",Gold Coast Knights W  vs Souths Strikers W | 17:30 08/07
 https://sgtdrxtdjeliv.vcdn.cloud/1783428606_hd/1783428606_hd@720p.m3u8
 
@@ -458,13 +455,13 @@ https://sgtdrxtdjeliv.vcdn.cloud/1783466464_hd/1783466464_hd@720p.m3u8
 #EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-39fe5e975f_050956a6_20260708.png?v=050956a6",Ponte Preta vs Criciuma | 06:00 09/07
 https://sgtdrxtdjeliv.vcdn.cloud/1783466536_hd/1783466536_hd@720p.m3u8
 
-#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-c3ca389c1d_3ebbb27f_20260708.png?v=3ebbb27f",Manila Stars vs Binan Tatak Gel | 15:00 08/07
-https://sgtdrxtdjeliv.vcdn.cloud/1783483233_hd/1783483233_hd@720p.m3u8
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-65123abc62_90c1e281_20260708.png?v=90c1e281",Hà Nội 2 Nữ vs Phong Phú Hà Nam Nữ | 16:00 09/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783474190_hd/1783474190_hd@720p.m3u8
 
-#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-0286ddb40c_180532f6_20260708.png?v=180532f6",Sarangani Province vs Paranaque Patriots | 17:00 08/07
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-0286ddb40c_b52746bd_20260708.png?v=b52746bd",Sarangani Province vs Paranaque Patriots | 17:00 08/07
 https://sgtdrxtdjeliv.vcdn.cloud/1783483323_hd/1783483323_hd@720p.m3u8
 
-#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-059422dc5c_11e3335e_20260708.png?v=11e3335e",Meycauayan vs Pasay Voyagers | 19:00 08/07
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-059422dc5c_de3ea8d6_20260708.png?v=de3ea8d6",Meycauayan vs Pasay Voyagers | 19:00 08/07
 https://sgtdrxtdjeliv.vcdn.cloud/1783483361_hd/1783483361_hd@720p.m3u8
 
 #EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-3455aba5c1_a970a3ae_20260708.png?v=a970a3ae",Toronto Tempo vs Golden State Valkyries | 06:00 09/07
@@ -484,9 +481,6 @@ https://sgtdrxtdjeliv.vcdn.cloud/1783309713_hd/1783309713_hd@720p.m3u8
 
 #EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-29c5fb9366_2a4080fc_20260708.png?v=2a4080fc",Linda Noskova  vs Elise Mertens | 19:00 08/07
 https://sgtdrxtdjeliv.vcdn.cloud/1783483826_hd/1783483826_hd@720p.m3u8
-
-#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-687b3ff713_464efcad_20260708.png?v=464efcad",Thailand W  vs USA W | 13:30 08/07
-https://sgtdrxtdjeliv.vcdn.cloud/1783468310_hd/1783468310_hd@720p.m3u8
 
 #EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-056c4b7327_00df836e_20260708.png?v=00df836e",Italy W  vs Ukaraine W | 16:00 08/07
 https://sgtdrxtdjeliv.vcdn.cloud/1783483435_hd/1783483435_hd@720p.m3u8
@@ -518,8 +512,32 @@ https://sgtdrxtdjeliv.vcdn.cloud/1783310013_hd/1783310013_hd@720p.m3u8
 #EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-83d2794508_edebb8f4_20260708.png?v=edebb8f4",Czech Republic W vs Netherlands W | 21:30 09/07
 https://sgtdrxtdjeliv.vcdn.cloud/1783310069_hd/1783310069_hd@720p.m3u8
 
-#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-bf9e3c51db_168561f0_20260708.png?v=168561f0",G2 vs  T1 | 13:00 08/07
-https://sgtdrxtdjeliv.vcdn.cloud/1783483899_hd/1783483899_hd@720p.m3u8
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-3ab2d4f728_1bdc9f32_20260708.png?v=1bdc9f32",ONE Friday Fights 161 vs The Inner Circle 21 | 18:30 10/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783386402_hd/1783386402_hd@720p.m3u8
+
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-c1a662a34d_dcf9d282_20260708.png?v=dcf9d282",LION CHAMPIONSHIP vs LC 33 | 20:00 11/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783386681_hd/1783386681_hd@720p.m3u8
+
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-9fbeffd8ad_38ae3512_20260708.png?v=38ae3512",McGregor vs Holloway 2 | 04:00 12/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783388318_hd/1783388318_hd@720p.m3u8
+
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-6e3fbcc38d_9a9c6fdb_20260708.png?v=9a9c6fdb",ONE Friday Fights 162  vs The Inner Circle 22 | 18:30 17/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783388521_hd/1783388521_hd@720p.m3u8
+
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-47b2c0e27d_9a12a972_20260708.png?v=9a12a972",Lessei vs Rabah | 08:00 18/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783388661_hd/1783388661_hd@720p.m3u8
+
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-53ecb3dd8f_f56cf9d6_20260708.png?v=f56cf9d6",Du Plessis vs Usman | 04:00 19/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783391300_hd/1783391300_hd@720p.m3u8
+
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-f82794c727_01b7355b_20260708.png?v=01b7355b",ONE Friday Fights 163 vs The Inner Circle 23 | 18:30 24/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783391764_hd/1783391764_hd@720p.m3u8
+
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-9ae1268e24_73c893ff_20260708.png?v=73c893ff", Ankalaev vs Rountree Jr | 20:00 25/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783392693_hd/1783392693_hd@720p.m3u8
+
+#EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-b3ebd7ed3a_864ca4b3_20260708.png?v=864ca4b3", Jean vs Musaev | 06:00 26/07
+https://sgtdrxtdjeliv.vcdn.cloud/1783392746_hd/1783392746_hd@720p.m3u8
 
 #EXTINF:-1 group-title="GIỜ VÀNG" tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-c5542751ad_dc3f8b98_20260708.png?v=dc3f8b98",New York Yankees vs Tampa Bay Rays | 05:40 09/07
 https://sgtdrxtdjeliv.vcdn.cloud/1783466778_hd/1783466778_hd@720p.m3u8
