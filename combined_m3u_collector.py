@@ -25,7 +25,7 @@ except Exception:
 
 
 BASE_DIR = Path(__file__).resolve().parent
-ALL_M3U = BASE_DIR / "all.m3u"
+ALL_M3U = BASE_DIR / "full.m3u"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
