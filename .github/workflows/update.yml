@@ -37,7 +37,7 @@ jobs:
 
       - name: Run script
         run: |
-          python bongda.py   # ⚠️ đổi nếu tên file khác
+          python combined_m3u_collector.py   # ⚠️ đổi nếu tên file khác
 
       - name: Commit & Push if changed
         run: |
