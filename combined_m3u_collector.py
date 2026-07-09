@@ -25,7 +25,7 @@ except Exception:
 
 
 BASE_DIR = Path(__file__).resolve().parent
-ALL_M3U = BASE_DIR / "full.m3u"
+ALL_M3U = BASE_DIR / "all.m3u"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
@@ -860,13 +860,13 @@ def main():
         seen_urls.add(url)
         deduped.append(channel)
 
-    write_m3u(full_M3U, deduped)
+    write_m3u(ALL_M3U, deduped)
 
     log("")
     log(f"[DONE] Total unique links: {len(deduped)}")
     for source_name, count in per_source_counts.items():
         log(f"[DONE] {source_name}: {count}")
-    log(f"[DONE] M3U: {full_M3U}")
+    log(f"[DONE] M3U: {ALL_M3U}")
 
 
 if __name__ == "__main__":
