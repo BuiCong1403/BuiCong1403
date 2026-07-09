@@ -1,1 +1,1852 @@
-
+{
+  "updated": "2026-07-09 15:26 ICT",
+  "total": 203,
+  "per_source": {
+    "HoiQuan3": 24,
+    "HoiQuan1": 24,
+    "HoiQuan2": 4,
+    "ThienDinh": 12,
+    "XayCon": 15,
+    "VongCamTV": 21,
+    "CoLaTV": 14,
+    "TamQuocTV": 9,
+    "LuongSonTV": 0,
+    "QueChoaTV": 0,
+    "FPTSport": 53,
+    "GioVang": 36,
+    "QueChoaRaw": 0,
+    "TieuLamTV": 0,
+    "HoaDaoTV": 0,
+    "ChuoiChienTV": 40,
+    "QueChoa8": 0
+  },
+  "channels": [
+    {
+      "source": "HoiQuan3",
+      "name": "[19:00 | 09.07] Akademiya Ontustik - Arys [1. Division] | BLV: BLV PHAN CA [FHD]",
+      "group": "1. Division",
+      "logo": "https://media.api-sports.io/football/teams/4545.png",
+      "stream_url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanca/playlist.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[19:00 | 09.07] Akademiya Ontustik - Arys [1. Division] | BLV: BLV PHAN CA [HD]",
+      "group": "1. Division",
+      "logo": "https://media.api-sports.io/football/teams/4545.png",
+      "stream_url": "https://alive.zlylive.com/hqtv_blv_phanca/tracks-v2a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[19:00 | 09.07] Akademiya Ontustik - Arys [1. Division] | BLV: BLV PHAN CA [SD]",
+      "group": "1. Division",
+      "logo": "https://media.api-sports.io/football/teams/4545.png",
+      "stream_url": "https://alive.zlylive.com/hqtv_blv_phanca/tracks-v1a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[20:00 | 09.07] Aktobe Jas - Khan Tengri [1. Division] | BLV: BLV TÁO GIÀ [FHD]",
+      "group": "1. Division",
+      "logo": "https://media.api-sports.io/football/teams/4546.png",
+      "stream_url": "https://tdlive.yarncdn.live/live/tdtv_blv_taotinhtao/playlist.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[20:00 | 09.07] Aktobe Jas - Khan Tengri [1. Division] | BLV: BLV TÁO GIÀ [HD]",
+      "group": "1. Division",
+      "logo": "https://media.api-sports.io/football/teams/4546.png",
+      "stream_url": "https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[20:00 | 09.07] Aktobe Jas - Khan Tengri [1. Division] | BLV: BLV TÁO GIÀ [SD]",
+      "group": "1. Division",
+      "logo": "https://media.api-sports.io/football/teams/4546.png",
+      "stream_url": "https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v1a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[23:00 | 09.07] Alashkert - Yelimay Semey [UEFA Europa Conference League] | BLV: BLV PHAN QUẨY [FHD]",
+      "group": "UEFA Europa Conference League",
+      "logo": "https://media.api-sports.io/football/teams/582.png",
+      "stream_url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanquay/playlist.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[23:00 | 09.07] Alashkert - Yelimay Semey [UEFA Europa Conference League] | BLV: BLV PHAN QUẨY [HD]",
+      "group": "UEFA Europa Conference League",
+      "logo": "https://media.api-sports.io/football/teams/582.png",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phanquay/tracks-v2a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[23:00 | 09.07] Alashkert - Yelimay Semey [UEFA Europa Conference League] | BLV: BLV PHAN QUẨY [SD]",
+      "group": "UEFA Europa Conference League",
+      "logo": "https://media.api-sports.io/football/teams/582.png",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phanquay/tracks-v1a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[03:00 | 10.07] France - Morocco [World Cup] | BLV: BLV LƯƠNG BỔNG [FHD]",
+      "group": "World Cup",
+      "logo": "https://media.api-sports.io/football/teams/2.png",
+      "stream_url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanliem/playlist.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[03:00 | 10.07] France - Morocco [World Cup] | BLV: BLV LƯƠNG BỔNG [HD]",
+      "group": "World Cup",
+      "logo": "https://media.api-sports.io/football/teams/2.png",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v2a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[03:00 | 10.07] France - Morocco [World Cup] | BLV: BLV LƯƠNG BỔNG [SD]",
+      "group": "World Cup",
+      "logo": "https://media.api-sports.io/football/teams/2.png",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phanliem/tracks-v1a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[03:00 | 10.07] France - Morocco [World Cup] | BLV: BLV THẦN THÔNG [FHD]",
+      "group": "World Cup",
+      "logo": "https://media.api-sports.io/football/teams/2.png",
+      "stream_url": "https://tdlive.yarncdn.live/live/tdtv_blv_taovannghe/playlist.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[03:00 | 10.07] France - Morocco [World Cup] | BLV: BLV THẦN THÔNG [HD]",
+      "group": "World Cup",
+      "logo": "https://media.api-sports.io/football/teams/2.png",
+      "stream_url": "https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[03:00 | 10.07] France - Morocco [World Cup] | BLV: BLV THẦN THÔNG [SD]",
+      "group": "World Cup",
+      "logo": "https://media.api-sports.io/football/teams/2.png",
+      "stream_url": "https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v1a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[07:00 | 10.07] Nacional Potosí - Aurora [Primera División] | BLV: BLV PHAN ANH [FHD]",
+      "group": "Primera División",
+      "logo": "https://media.api-sports.io/football/teams/3706.png",
+      "stream_url": "https://hqlive.yarncdn.live/live/hqtv_blv_phananh/playlist.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[07:00 | 10.07] Nacional Potosí - Aurora [Primera División] | BLV: BLV PHAN ANH [HD]",
+      "group": "Primera División",
+      "logo": "https://media.api-sports.io/football/teams/3706.png",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v2a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[07:00 | 10.07] Nacional Potosí - Aurora [Primera División] | BLV: BLV PHAN ANH [SD]",
+      "group": "Primera División",
+      "logo": "https://media.api-sports.io/football/teams/3706.png",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phananh/tracks-v1a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[19:30 | 09.07] Trung Quốc - Ukraina [Nation League Women] | BLV: BLV PHAN HẢI [FHD]",
+      "group": "Nation League Women",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQOuJBhheUKikHwopx5J3hD7olyljs3suGQ&s",
+      "stream_url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanhai/playlist.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[19:30 | 09.07] Trung Quốc - Ukraina [Nation League Women] | BLV: BLV PHAN HẢI [HD]",
+      "group": "Nation League Women",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQOuJBhheUKikHwopx5J3hD7olyljs3suGQ&s",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phanhai/tracks-v2a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[19:30 | 09.07] Trung Quốc - Ukraina [Nation League Women] | BLV: BLV PHAN HẢI [SD]",
+      "group": "Nation League Women",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQOuJBhheUKikHwopx5J3hD7olyljs3suGQ&s",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phanhai/tracks-v1a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[21:30 | 09.07] CH Séc - Hà Lan [Nation League Women] | BLV: BLV PHAN BỐNG [FHD]",
+      "group": "Nation League Women",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
+      "stream_url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanbong/playlist.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[21:30 | 09.07] CH Séc - Hà Lan [Nation League Women] | BLV: BLV PHAN BỐNG [HD]",
+      "group": "Nation League Women",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phanbong/tracks-v2a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan3",
+      "name": "[21:30 | 09.07] CH Séc - Hà Lan [Nation League Women] | BLV: BLV PHAN BỐNG [SD]",
+      "group": "Nation League Women",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg",
+      "stream_url": "https://alive.yarncdn.live/hqtv_blv_phanbong/tracks-v1a1/mono.m3u8",
+      "referer": "https://sv2.hoiquan3.live/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan2",
+      "name": "⚽ Oman vs Hàn Quốc | 13:30 | F",
+      "group": "🔴 Live bóng đá",
+      "logo": "https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan_thumbs/kaytee-80f0f2d9f951.webp?v=1782375273",
+      "stream_url": "https://hqlive.yarncdn.live/live/hqtv_blv_phanphep/playlist.m3u8",
+      "referer": "https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan1.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan2",
+      "name": "⚽ Oman vs Hàn Quốc | 13:30 | F",
+      "group": "🔴 Live bóng đá",
+      "logo": "https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan_thumbs/kaytee-80f0f2d9f951.webp?v=1782375273",
+      "stream_url": "https://tfx13gr3dgmtugrzdgpbqgrhdommeqfsg17uff3hsnhuqcp1ghmucpf5gk.100ycdn.com/hqlive.yarncdn.live/live/hqtv_blv_phanphep/playlist.m3u8?wsSession=6931d1040439771ff9a052ea-178237525792539&wsIPSercert=fc4acc60e94b8aeff93609b084b272d2&wsBindIP=2&wsserid=1168239032787589538",
+      "referer": "https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan1.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "HoiQuan2",
+      "name": "⚽ Khovd vs Hunters | 15:00 | F",
+      "group": "🔴 Live bóng đá",
+      "logo": "https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan_thumbs/kaytee-51753caf3f1f.webp?v=1782375274",
+      "stream_url": "https://tfx13gr3dgmtugrzdgpbqgrhdommeqfsg17uff3hsnhuqcp1ghmucpf5gk.100ycdn.com/hqlive.yarncdn.live/live/hqtv_blv_phanca/playlist.m3u8?wsSession=6931d1040439771ff9a052ea-178237525794165&wsIPSercert=fc4acc60e94b8aeff93609b084b272d2&wsBindIP=2&wsserid=1168239032787589538",
+      "referer": "https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan1.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ThienDinh",
+      "name": "[22:00 | 26.05] Morocco vs Burundi [Friendlies] | BLV: BLV Táo Mèo [FHD]",
+      "group": "Thien Dinh",
+      "logo": "https://media.api-sports.io/football/teams/31.png",
+      "stream_url": "https://tdlive.yarncdn.live/live/tdtv_blv_taomeo/playlist.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ThienDinh",
+      "name": "[22:00 | 26.05] Morocco vs Burundi [Friendlies] | BLV: BLV Táo Mèo [HD]",
+      "group": "Thien Dinh",
+      "logo": "https://media.api-sports.io/football/teams/31.png",
+      "stream_url": "https://alive.yarncdn.live/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ThienDinh",
+      "name": "[22:00 | 26.05] Morocco vs Burundi [Friendlies] | BLV: BLV Táo Mèo [SD]",
+      "group": "Thien Dinh",
+      "logo": "https://media.api-sports.io/football/teams/31.png",
+      "stream_url": "https://alive.yarncdn.live/tdtv_blv_taomeo/tracks-v1a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ThienDinh",
+      "name": "[23:00 | 26.05] Montenegro U17 vs Denmark U17 [UEFA U17 Championship - Qualification] | BLV: BLV Táo Kinh Tế(A Tích) [FHD]",
+      "group": "Thien Dinh",
+      "logo": "https://img.uefa.com/imgml/flags/240x240/MNE.png",
+      "stream_url": "https://tdlive.yarncdn.live/live/tdtv_blv_taokinhte/playlist.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ThienDinh",
+      "name": "[23:00 | 26.05] Montenegro U17 vs Denmark U17 [UEFA U17 Championship - Qualification] | BLV: BLV Táo Kinh Tế(A Tích) [HD]",
+      "group": "Thien Dinh",
+      "logo": "https://img.uefa.com/imgml/flags/240x240/MNE.png",
+      "stream_url": "https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v2a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ThienDinh",
+      "name": "[23:00 | 26.05] Montenegro U17 vs Denmark U17 [UEFA U17 Championship - Qualification] | BLV: BLV Táo Kinh Tế(A Tích) [SD]",
+      "group": "Thien Dinh",
+      "logo": "https://img.uefa.com/imgml/flags/240x240/MNE.png",
+      "stream_url": "https://alive.yarncdn.live/tdtv_blv_taokinhte/tracks-v1a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[19:00 | 09.07] Akademiya Ontustik vs Arys [1. Division] | BLV: BLV Ciu [FHD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/4545.png",
+      "stream_url": "https://xclive.yarncdn.live/live/xctv_blv_chuoi/playlist.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[19:00 | 09.07] Akademiya Ontustik vs Arys [1. Division] | BLV: BLV Ciu [HD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/4545.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_chuoi/tracks-v2a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[19:00 | 09.07] Akademiya Ontustik vs Arys [1. Division] | BLV: BLV Ciu [SD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/4545.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_chuoi/tracks-v1a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[20:00 | 09.07] Aktobe Jas vs Khan Tengri [1. Division] | BLV: BLV Tam Mao [FHD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/4546.png",
+      "stream_url": "https://xclive.yarncdn.live/live/xctv_blv_tammao/playlist.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[20:00 | 09.07] Aktobe Jas vs Khan Tengri [1. Division] | BLV: BLV Tam Mao [HD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/4546.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_tammao/tracks-v2a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[20:00 | 09.07] Aktobe Jas vs Khan Tengri [1. Division] | BLV: BLV Tam Mao [SD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/4546.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_tammao/tracks-v1a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[21:00 | 09.07] Atlètic Club d'Escaldes vs Mornar [UEFA Europa Conference League] | BLV: BLV PIB [FHD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/3345.png",
+      "stream_url": "https://xclive.yarncdn.live/live/xctv_blv_bipcon/playlist.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[21:00 | 09.07] Atlètic Club d'Escaldes vs Mornar [UEFA Europa Conference League] | BLV: BLV PIB [HD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/3345.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_bipcon/tracks-v2a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[21:00 | 09.07] Atlètic Club d'Escaldes vs Mornar [UEFA Europa Conference League] | BLV: BLV PIB [SD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/3345.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_bipcon/tracks-v1a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[01:00 | 10.07] HNK Hajduk Split vs Žilina [UEFA Europa League] | BLV: BLV Rồng Đất [FHD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/608.png",
+      "stream_url": "https://xclive.yarncdn.live/live/xctv_blv_rongdat/playlist.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[01:00 | 10.07] HNK Hajduk Split vs Žilina [UEFA Europa League] | BLV: BLV Rồng Đất [HD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/608.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_rongdat/tracks-v2a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[01:00 | 10.07] HNK Hajduk Split vs Žilina [UEFA Europa League] | BLV: BLV Rồng Đất [SD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/608.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_rongdat/tracks-v1a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[07:00 | 10.07] Nacional Potosí vs Aurora [Primera División] | BLV: BLV Kent [FHD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/3706.png",
+      "stream_url": "https://xclive.yarncdn.live/live/xctv_blv_phubeo/playlist.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[07:00 | 10.07] Nacional Potosí vs Aurora [Primera División] | BLV: BLV Kent [HD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/3706.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_phubeo/tracks-v2a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "XayCon",
+      "name": "[07:00 | 10.07] Nacional Potosí vs Aurora [Primera División] | BLV: BLV Kent [SD]",
+      "group": "Xay Con",
+      "logo": "https://media.api-sports.io/football/teams/3706.png",
+      "stream_url": "https://alive.yarncdn.live/xctv_blv_phubeo/tracks-v1a1/mono.m3u8",
+      "referer": "",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Bỉ vs Canada | FHD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThgW0VAuV6rUk40nM2HsIybZ3kJdRX8vBan-_y5oEzxA&s=10",
+      "stream_url": "https://bglive.yarncdn.live/live/bgtv_blv_phaothan/playlist.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Bỉ vs Canada | HD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThgW0VAuV6rUk40nM2HsIybZ3kJdRX8vBan-_y5oEzxA&s=10",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_phaothan/tracks-v2a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Bỉ vs Canada | SD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThgW0VAuV6rUk40nM2HsIybZ3kJdRX8vBan-_y5oEzxA&s=10",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_phaothan/tracks-v1a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Nữ Hà Nội 2 vs Nữ Phong Phú Hà Nam | FHD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShohnkyv1Eqxs62ilIAnnOa8oIFxnprVgVVZ-1RhMaHw&s=10",
+      "stream_url": "https://bglive.yarncdn.live/live/bgtv_blv_trada/playlist.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Nữ Hà Nội 2 vs Nữ Phong Phú Hà Nam | HD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShohnkyv1Eqxs62ilIAnnOa8oIFxnprVgVVZ-1RhMaHw&s=10",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_trada/tracks-v2a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Nữ Hà Nội 2 vs Nữ Phong Phú Hà Nam | SD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShohnkyv1Eqxs62ilIAnnOa8oIFxnprVgVVZ-1RhMaHw&s=10",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_trada/tracks-v1a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Nhật Bản vs Thái Lan | FHD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8J_fMN0R_ZOM_VbIdnJCS8Wb2YvyKeGV-mWo63Q-7g&s=10",
+      "stream_url": "https://bglive.yarncdn.live/live/bgtv_blv_cuccu/playlist.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Nhật Bản vs Thái Lan | HD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8J_fMN0R_ZOM_VbIdnJCS8Wb2YvyKeGV-mWo63Q-7g&s=10",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_cuccu/tracks-v2a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Nhật Bản vs Thái Lan | SD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe8J_fMN0R_ZOM_VbIdnJCS8Wb2YvyKeGV-mWo63Q-7g&s=10",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_cuccu/tracks-v1a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Transport United vs Bhutan U19 | FHD",
+      "group": "VongCamTV",
+      "logo": "https://media.api-sports.io/football/teams/5593.png",
+      "stream_url": "https://bglive.yarncdn.live/live/bgtv_blv_max/playlist.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Transport United vs Bhutan U19 | HD",
+      "group": "VongCamTV",
+      "logo": "https://media.api-sports.io/football/teams/5593.png",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_max/tracks-v2a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Transport United vs Bhutan U19 | SD",
+      "group": "VongCamTV",
+      "logo": "https://media.api-sports.io/football/teams/5593.png",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_max/tracks-v1a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Trung Quốc vs Ukraina | FHD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RxL8e0VEaJfzEJQsAmlJxdRkzVwAwAiDwD0o39YJBA&s=10",
+      "stream_url": "https://bglive.yarncdn.live/live/bgtv_blv_tieumeo/playlist.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Trung Quốc vs Ukraina | HD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RxL8e0VEaJfzEJQsAmlJxdRkzVwAwAiDwD0o39YJBA&s=10",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_tieumeo/tracks-v2a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Trung Quốc vs Ukraina | SD",
+      "group": "VongCamTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3RxL8e0VEaJfzEJQsAmlJxdRkzVwAwAiDwD0o39YJBA&s=10",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_tieumeo/tracks-v1a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Atlètic Club d'Escaldes vs Mornar | FHD",
+      "group": "VongCamTV",
+      "logo": "https://media.api-sports.io/football/teams/3345.png",
+      "stream_url": "https://bglive.yarncdn.live/live/bgtv_blv_phimc/playlist.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Atlètic Club d'Escaldes vs Mornar | HD",
+      "group": "VongCamTV",
+      "logo": "https://media.api-sports.io/football/teams/3345.png",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_phimc/tracks-v2a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Atlètic Club d'Escaldes vs Mornar | SD",
+      "group": "VongCamTV",
+      "logo": "https://media.api-sports.io/football/teams/3345.png",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_phimc/tracks-v1a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Dila vs Virtus | FHD",
+      "group": "VongCamTV",
+      "logo": "https://media.api-sports.io/football/teams/3499.png",
+      "stream_url": "https://bglive.yarncdn.live/live/bgtv_blv_mason/playlist.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Dila vs Virtus | HD",
+      "group": "VongCamTV",
+      "logo": "https://media.api-sports.io/football/teams/3499.png",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_mason/tracks-v2a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "VongCamTV",
+      "name": "Dila vs Virtus | SD",
+      "group": "VongCamTV",
+      "logo": "https://media.api-sports.io/football/teams/3499.png",
+      "stream_url": "https://alive.yarncdn.live/bgtv_blv_mason/tracks-v1a1/mono.m3u8",
+      "referer": "https://bugiotv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "07:00 | Canterbury Rams vs Taranaki Mountainairs | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/basketball/team/256e715800fb8321f7cf1dacce3aa35e.png!w80",
+      "stream_url": "https://live05.grita.app/live/90865415.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "09:00 | Hà Nội 2 Nữ vs Phong Phú Hà Nam Nữ | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/424ac25c370b644caebd91d8ba01df34.png!w80",
+      "stream_url": "https://live05.grita.app/live/82054853.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "12:00 | Transport United vs BFF Academy U19 | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/fc0e456663f75dc4e49d2f55d09a9f92.png!w80",
+      "stream_url": "https://live05.grita.app/live/19919577.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "12:00 | Akademiya Ontustik vs FK Arys | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/9fd252984e0e48f24d736e43fec2cd2d.png!w80",
+      "stream_url": "https://live05.grita.app/live/08552895.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "13:00 | Jaiyq vs Tobol Kostanai B | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/c83d1d71c8993bf33db0def8547d8d40.png!w80",
+      "stream_url": "https://live05.grita.app/live/87547578.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "13:00 | FK Aktobe II vs Khan Tengri FC | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/0b4f03fc5a3a1cdf5b96c476ef0c9f35.png!w80",
+      "stream_url": "https://live05.grita.app/live/16226575.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "16:00 | Qarabag vs Vestri | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/7f7d00906d511bcf48f9a600580ff953.png!w80",
+      "stream_url": "https://live05.grita.app/live/59444581.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "17:00 | Sheriff Tiraspol vs Aluminij | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/6be65a265ff052f7736d951643b2750c.png!w80",
+      "stream_url": "https://live05.grita.app/live/99121525.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "18:00 | CLB Hajduk Split vs MSK Zilina | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/5099192a1226b54aa2ce2a430edf9af9.png!w80",
+      "stream_url": "https://live05.grita.app/live/33860426.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "20:00 | Pháp vs Ma Rốc | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/8eb4b4c01bf3375828c5494c2f6e7685.png!w80",
+      "stream_url": "https://live05.grita.app/live/78905744.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "20:00 | Pháp vs Ma Rốc | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/8eb4b4c01bf3375828c5494c2f6e7685.png!w80",
+      "stream_url": "https://live05.grita.app/live/24561735.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "20:00 | Pháp vs Ma Rốc | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/8eb4b4c01bf3375828c5494c2f6e7685.png!w80",
+      "stream_url": "https://live05.grita.app/live/75748097.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "01:00 | Real Colorado Foxes vs Flatirons Rush | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/football/team/3a4e4fffd6008f30cd056f416cd336fc.png!w80",
+      "stream_url": "https://live05.grita.app/live/41943555.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "CoLaTV",
+      "name": "01:00 | Washington Wizards vs Utah Jazz | BLV",
+      "group": "CoLaTV",
+      "logo": "https://img.gvapi.cc/basketball/team/ac18ecfecac3af349477383866cf8ef5.png!w80",
+      "stream_url": "https://live05.grita.app/live/87379114.m3u8",
+      "referer": "https://cltvlv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "TamQuocTV",
+      "name": "[03:00 | 10.07] Salam Al Qarfa - Ittihad Ibb | BLV Ricky [FHD]",
+      "group": "TamQuocTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFY8CUwawvkOOcQgXph7TEAJNC1w20kgVup-SpdbcTw&s=10",
+      "stream_url": "https://tqlive.yarncdn.live/live/tqtv_blv_ricky/playlist.m3u8",
+      "referer": "https://tamquoctv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "TamQuocTV",
+      "name": "[03:00 | 10.07] Salam Al Qarfa - Ittihad Ibb | BLV Ricky [HD]",
+      "group": "TamQuocTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFY8CUwawvkOOcQgXph7TEAJNC1w20kgVup-SpdbcTw&s=10",
+      "stream_url": "https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8",
+      "referer": "https://tamquoctv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "TamQuocTV",
+      "name": "[03:00 | 10.07] Salam Al Qarfa - Ittihad Ibb | BLV Ricky [SD]",
+      "group": "TamQuocTV",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXFY8CUwawvkOOcQgXph7TEAJNC1w20kgVup-SpdbcTw&s=10",
+      "stream_url": "https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8",
+      "referer": "https://tamquoctv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "TamQuocTV",
+      "name": "[03:30 | 10.07] Izhevsk vs Dinamo Barnaul | BLV Mã Siêu [FHD]",
+      "group": "TamQuocTV",
+      "logo": "https://media.api-sports.io/football/teams/27650.png",
+      "stream_url": "https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8",
+      "referer": "https://tamquoctv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "TamQuocTV",
+      "name": "[03:30 | 10.07] Izhevsk vs Dinamo Barnaul | BLV Mã Siêu [HD]",
+      "group": "TamQuocTV",
+      "logo": "https://media.api-sports.io/football/teams/27650.png",
+      "stream_url": "https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v2a1/mono.m3u8",
+      "referer": "https://tamquoctv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "TamQuocTV",
+      "name": "[03:30 | 10.07] Izhevsk vs Dinamo Barnaul | BLV Mã Siêu [SD]",
+      "group": "TamQuocTV",
+      "logo": "https://media.api-sports.io/football/teams/27650.png",
+      "stream_url": "https://alive.yarncdn.live/tqtv_blv_masieu/tracks-v1a1/mono.m3u8",
+      "referer": "https://tamquoctv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "TamQuocTV",
+      "name": "[04:00 | 10.07] Atlètic Club d'Escaldes vs Mornar | BLV Coca [FHD]",
+      "group": "TamQuocTV",
+      "logo": "https://media.api-sports.io/football/teams/3345.png",
+      "stream_url": "https://tqlive.yarncdn.live/live/tqtv_blv_coca/playlist.m3u8",
+      "referer": "https://tamquoctv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "TamQuocTV",
+      "name": "[04:00 | 10.07] Atlètic Club d'Escaldes vs Mornar | BLV Coca [HD]",
+      "group": "TamQuocTV",
+      "logo": "https://media.api-sports.io/football/teams/3345.png",
+      "stream_url": "https://alive.yarncdn.live/tqtv_blv_coca/tracks-v2a1/mono.m3u8",
+      "referer": "https://tamquoctv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "TamQuocTV",
+      "name": "[04:00 | 10.07] Atlètic Club d'Escaldes vs Mornar | BLV Coca [SD]",
+      "group": "TamQuocTV",
+      "logo": "https://media.api-sports.io/football/teams/3345.png",
+      "stream_url": "https://alive.yarncdn.live/tqtv_blv_coca/tracks-v1a1/mono.m3u8",
+      "referer": "https://tamquoctv.xyz/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "11h30 ngày 02/07 Anh vs Congo (Lương Sơn) BLV KAKA REPLAY m3u",
+      "group": "FPT Sport",
+      "logo": "https://upload-img.cdnokvip.com/uploads/team_logo/1782965678.png",
+      "stream_url": "https://hls.cdnfaster-a.live/live/TO3A/index.m3u8?expire=1891408380&sign=9c81b067b218299e5542cfcd512206bf",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "07h30 ngày 23/05 FC Tulsa vs Hartford Athletic (Khán Đài A) source",
+      "group": "FPT Sport",
+      "logo": "https://img.sports-data.online/football/team/1a8729f6837d72a8092aaabd02695c2b.png",
+      "stream_url": "https://www3.f2k3.shop/live/235c29178801ef36a970731709755e2a/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "09h00 ngày 23/05 UNSW FC Women vs University of Sydney Women (Khán Đài A) source",
+      "group": "FPT Sport",
+      "logo": "https://img.sports-data.online/football/team/75bf136c336015d3adb291a238ea039e.png",
+      "stream_url": "https://www3.f2k3.shop/live/8988f3aa5ce2f85d4c50a0bc65d9d998/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "09h00 ngày 23/05 Newcastle Olympic FC Reserves vs Charlestown Azzurri Reserves (Khán Đài A) source",
+      "group": "FPT Sport",
+      "logo": "https://img.sports-data.online/football/team/c15d35c692bbc81249bbf8dc1755b42a.png",
+      "stream_url": "https://www3.f2k3.shop/live/6f115b2fe383bc3710a61f46cc1b22f9/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "07h10 ngày 23/05 Boston Legacy W vs Seattle Reign (W) (Khán Đài A) source",
+      "group": "FPT Sport",
+      "logo": "https://img.sports-data.online/football/team/bcd699518dceed7a5399ad506c0efe25.png",
+      "stream_url": "https://www3.f2k3.shop/live/87b8a02016610052ff23e50744f98f77/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "09h00 ngày 23/05 Mexico vs Ghana (Khán Đài A) source",
+      "group": "FPT Sport",
+      "logo": "https://img.sports-data.online/football/team/e399c54b84794822f6e5e3c02c7f3b6e.png",
+      "stream_url": "https://www3.f2k3.shop/live/e699af6f4692703a8c718f285b40deb2/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "13h00 ngày 02/07 Uzbekistan W vs Mongolia W (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_142848_7bd3d526.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/m4x1/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "13h00 ngày 02/07 South Korea W vs Vietnam W (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_142845_9a7711e0.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoibo/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "13h00 ngày 02/07 South Korea W vs Vietnam W (Chuối Chiên) FHD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_142845_9a7711e0.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoibohd/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "16h00 ngày 02/07 Iran W vs Indonesia W (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_142847_b96e660a.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "16h00 ngày 02/07 Iran W vs Indonesia W (Chuối Chiên) FHD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_142847_b96e660a.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "19h00 ngày 02/07 Thailand W vs Australia W (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_142846_1ef0d541.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitim/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "19h00 ngày 02/07 Thailand W vs Australia W (Chuối Chiên) FHD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_142846_1ef0d541.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitimhd/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "19h00 ngày 02/07 Transport United vs Drukpa (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_145104_78e6132b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "19h00 ngày 02/07 Transport United vs Drukpa (Chuối Chiên) FHD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_145104_78e6132b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "20h00 ngày 02/07 Croatia U19 vs Italy U19 (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_144555_7dd16e8b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoigia/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "20h00 ngày 02/07 Croatia U19 vs Italy U19 (Chuối Chiên) FHD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_144555_7dd16e8b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "20h00 ngày 02/07 Tobol 2 vs Aktobe Jas (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.api-sports.io/Bóng đá/teams/27634.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoichao/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "20h00 ngày 02/07 Tobol 2 vs Aktobe Jas (Chuối Chiên) FHD1",
+      "group": "FPT Sport",
+      "logo": "https://media.api-sports.io/Bóng đá/teams/27634.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "23h00 ngày 02/07 Kuressaare vs Flora Tallinn (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130143_d65992e3.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "23h00 ngày 02/07 Kuressaare vs Flora Tallinn (Chuối Chiên) FHD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130143_d65992e3.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "02h00 ngày 03/07 Spain vs Austria (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_125449_8711159b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "02h00 ngày 03/07 Spain vs Austria (Chuối Chiên) FHD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_125449_8711159b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/angaohd/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "06h00 ngày 03/07 Portugal vs Croatia (Chuối Chiên) HD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_125456_dde261ec.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "06h00 ngày 03/07 Portugal vs Croatia (Chuối Chiên) FHD1",
+      "group": "FPT Sport",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_125456_dde261ec.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "09h00 ngày 23/05 Tacoma Defiance vs Ventura County FC (Gà Vàng) source",
+      "group": "FPT Sport",
+      "logo": "https://img.sports-data.online/football/team/ff0d0739c041ad09fdc99db4c355a932.png",
+      "stream_url": "https://www3.f2k3.shop/live/821d54abadb12c6c15edba538ab20ad1/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "07h00 ngày 23/05 Sporting Kansas CityReserves vs Austin FC II (Gà Vàng) source",
+      "group": "FPT Sport",
+      "logo": "https://img.sports-data.online/football/team/a3c5593b106980072677a648800a11d8.png",
+      "stream_url": "https://www3.f2k3.shop/live/a60cdd817beb680017f46a5c111202f7/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "09h00 ngày 23/05 Canberra Olympic U23 vs Belconnen United U23 (Gà Vàng) source",
+      "group": "FPT Sport",
+      "logo": "https://img.sports-data.online/football/team/4f7090cc3dd92dfefdcddf743908cf94.png",
+      "stream_url": "https://www3.f2k3.shop/live/829f44b193d50a1f8dcb948fab6a0983/playlist.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [CHAN SENA] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1782977363-0-0-4b3cef5f4afd4e6ef9f51fe964ae1797",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [CHAN SENA] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1782977363-0-0-72135d13bc98bb970a734bda3e9dde55",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [A CHÈ] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1782977723-0-0-f1eeab6290753e274c15743f2c615887",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [A CHÈ] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1782977723-0-0-0d9005c803eac817c1610ff4bb74c1b4",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [BLV HENRY] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-9912112_lsd.m3u8?auth_key=1782977723-0-0-0e491047cae694e22097336278cb400b",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [BLV HENRY] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1782977723-0-0-eaff798b79a8d564a3d3160e38c1963e",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [BRIAN] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-9912106_lsd.m3u8?auth_key=1782977723-0-0-8bd15691f346e1009336dacd4584bb5c",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [BRIAN] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1782977723-0-0-e3d0db497cf33c650db337ab7a2ed636",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [HUNTER] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-558264_lsd.m3u8?auth_key=1782978083-0-0-f623876d16c88fe0ac668de68267a953",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 ngày 02/07 Bay Hawks vs Taranaki Airs [HUNTER] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260630/78e838bf90f69ebccf57fa9227a6efc4.png",
+      "stream_url": "https://pull.niues.live/live/stream-558264_lhd.m3u8?auth_key=1782978083-0-0-00bd7ba1cb5a5a0274849c76e041ab20",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-175784_lsd.m3u8?auth_key=1782978083-0-0-0e106df05a160eb8b298e3fc2e9d0170",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "BIT.LY/SOCOLIVE [SOCOLIVE] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-175784_lhd.m3u8?auth_key=1782978083-0-0-297f60bfcf2af7eb46bc1654d5978999",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - England vs Democratic Republic of the Congo [Sóc đau cổ vai gáy] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-179093_lsd.m3u8?auth_key=1782978083-0-0-5ba81c6955e66839be3d7df0cd3b12ad",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - England vs Democratic Republic of the Congo [Sóc đau cổ vai gáy] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-179093_lhd.m3u8?auth_key=1782978083-0-0-01031fa226e1100dfc487acdcf891071",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - Belgium vs Senegal [Sóc nhàm nhang nhồ] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-152898_lsd.m3u8?auth_key=1782978083-0-0-69995fc9cc3c2f8bb53ca1c4516fca52",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - Belgium vs Senegal [Sóc nhàm nhang nhồ] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-152898_lhd.m3u8?auth_key=1782978083-0-0-a36228545c64f2947d58b3abbce8daab",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - Cote d'Ivoire vs Norway [Sóc trong rừng xà nu] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-9912079_lsd.m3u8?auth_key=1782978143-0-0-20c26a7cb8d17b203a001cee5cfc1b41",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - Cote d'Ivoire vs Norway [Sóc trong rừng xà nu] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-9912079_lhd.m3u8?auth_key=1782978143-0-0-9a954cc2b0362c68d05512d6b3e9064d",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - France vs Sweden [Sóc trèo cây ngô đồng] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-133824_lsd.m3u8?auth_key=1782978143-0-0-1f6f343676895ccf3fe238c2e983ce63",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - France vs Sweden [Sóc trèo cây ngô đồng] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-133824_lhd.m3u8?auth_key=1782978143-0-0-dea02c1758fb40483681de616d7d36be",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - Mexico vs Ecuador [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-133277_lsd.m3u8?auth_key=1782978143-0-0-a84c97ad125b0dce3a8110eb2c2d7390",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - Mexico vs Ecuador [Sóc Nhó Nhịu Nhô Nhùng] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-133277_lhd.m3u8?auth_key=1782978143-0-0-33336ab406a8bb61549b140f3f395ac2",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - USA vs Bosnia and Herzegovina [Sóc mèo méo meo] (Socolive) m3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-343500_lsd.m3u8?auth_key=1782978143-0-0-15f6879ce61a477fff795c188ab2f5d8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "Tường thuật: WORLD CUP - USA vs Bosnia and Herzegovina [Sóc mèo méo meo] (Socolive) hdM3u8",
+      "group": "FPT Sport",
+      "logo": "https://sta.vnres.co/file/common/20260628/5aeb814df5ffd54337ee4f52c3daa050.png",
+      "stream_url": "https://pull.niues.live/live/stream-343500_lhd.m3u8?auth_key=1782978143-0-0-27b2fc9b491f1b06385322936d9acf1f",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "FPTSport",
+      "name": "14h00 02/07 Bay Hawks vs Taranaki Mountainairs",
+      "group": "FPT Sport",
+      "logo": "https://img.gvapi.cc/basketball/team/dc1ae89261a19f838b5f2fa0e21d37fa.png!w80",
+      "stream_url": "https://live05.koepgd.app/live/90865415.m3u8",
+      "referer": "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Hà Nội 2 Nữ vs Phong Phú Hà Nam Nữ | 16:00 09/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-ad842c082a_87caa2b1_20260709.png?v=87caa2b1",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783558412_hd/1783558412_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Atlètic Club d'Escaldes vs Mornar | 21:00 09/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-60024a9902_6c7a474d_20260709.png?v=6c7a474d",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783246075_hd/1783246075_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Alashkert vs FK Yelimay Semey | 23:00 09/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-8d6dd6ce6a_0c95539a_20260709.png?v=0c95539a",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783579166_hd/1783579166_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Liepajas Metalurgs vs Decic Tuzi | 23:00 09/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-36116813bd_383119b8_20260709.png?v=383119b8",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783579418_hd/1783579418_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Hegelmann Litauen vs Paide Linnameeskond | 23:00 09/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-bf9dbab3e9_d64c237b_20260709.png?v=d64c237b",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783579531_hd/1783579531_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Qarabag vs Vestri | 23:00 09/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-a24a84e9a9_c5fa1300_20260709.png?v=c5fa1300",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783579692_hd/1783579692_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "FC Sheriff vs NK Aluminij | 00:00 10/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-2e5c2ca813_398054bc_20260709.png?v=398054bc",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783579799_hd/1783579799_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Dynamo Kyiv vs Universitaea Cluj | 00:00 10/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-3d10a94b4a_d7d9e06b_20260709.png?v=d7d9e06b",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783579870_hd/1783579870_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Dinamo Minsk vs Sileks | 00:00 10/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-7f1e6e7fee_af2ddb69_20260709.png?v=af2ddb69",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783580061_hd/1783580061_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "KS Dinamo Tirana vs FC Astana | 02:00 10/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-da1ca53ab4_c1f4a447_20260709.png?v=c1f4a447",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783581216_hd/1783581216_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Pháp vs Ma Rốc | 03:00 10/07 | GV",
+      "group": "⚽ Bóng Đá",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-8233e2f265_dbc704bb_20260709.png?v=dbc704bb",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783582462_hd/1783582462_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Bacolod Tubo Slashers vs Cebu Classic | 15:00 09/07 | GV",
+      "group": "🏀 Bóng Rổ (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-f28a6ade99_4fc4aa52_20260709.png?v=4fc4aa52",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783309487_hd/1783309487_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Bataan Risers vs Ilagan Isabela Cowboys | 17:00 09/07 | GV",
+      "group": "🏀 Bóng Rổ (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-cfdf37fa63_a610db5e_20260709.png?v=a610db5e",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783309546_hd/1783309546_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "San Juan Knights vs GenSan Warriors | 19:00 09/07 | GV",
+      "group": "🏀 Bóng Rổ (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-8d43e1b6c7_ad2dbd29_20260709.png?v=ad2dbd29",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783309713_hd/1783309713_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Hanoi Buffalous vs Ho Chi Minh City Wings | 19:30 09/07 | GV",
+      "group": "🏀 Bóng Rổ (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-fcffd9b4e7_6a14790e_20260709.png?v=6a14790e",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783583825_hd/1783583825_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "New Orleans Pelicans vs Minnesota Timberwolves | 02:30 10/07 | GV",
+      "group": "🏀 Bóng Rổ (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-9c714c3ff4_f3504910_20260709.png?v=f3504910",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783581303_hd/1783581303_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Philadelphia 76ers vs Detroit Pistons | 04:30 10/07 | GV",
+      "group": "🏀 Bóng Rổ (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-19ff3c2fdd_17897e87_20260709.png?v=17897e87",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783581630_hd/1783581630_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Dallas Mavericks vs Golden State Warriors | 06:00 10/07 | GV",
+      "group": "🏀 Bóng Rổ (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-37c01815cf_b327bf0c_20260709.png?v=b327bf0c",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783581761_hd/1783581761_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Orlando Magic vs Charlotte Hornets | 06:30 10/07 | GV",
+      "group": "🏀 Bóng Rổ (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-2c0bc1e5f1_b43e7a47_20260709.png?v=b43e7a47",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783581822_hd/1783581822_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Marta Kostyuk vs Linda Noskova | 21:00 09/07 | GV",
+      "group": "🎾 Tennis",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-471e12217e_1294a885_20260709.png?v=1294a885",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783558475_hd/1783558475_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Belgium W vs Canada W | 16:00 09/07 | GV",
+      "group": "🏐 Bóng Chuyền",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-0f0316f892_6a258705_20260709.png?v=6a258705",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783580726_hd/1783580726_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Japan W vs Thailand W | 17:20 09/07 | GV",
+      "group": "🏐 Bóng Chuyền",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-7d974994f1_c2b3bfdc_20260709.png?v=c2b3bfdc",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783309951_hd/1783309951_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "China W vs Ukraine W | 19:30 09/07 | GV",
+      "group": "🏐 Bóng Chuyền",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-09798379e6_9d648013_20260709.png?v=9d648013",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783310013_hd/1783310013_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Czech Republic W vs Netherlands W | 21:30 09/07 | GV",
+      "group": "🏐 Bóng Chuyền",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-83d2794508_edebb8f4_20260709.png?v=edebb8f4",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783310069_hd/1783310069_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "France W vs Serbia W | 01:00 10/07 | GV",
+      "group": "🏐 Bóng Chuyền",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-42c3c9b8e8_bfa259e0_20260709.png?v=bfa259e0",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783582730_hd/1783582730_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "HLE vs BLG | 15:00 09/07 | GV",
+      "group": "🎮 Esport (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-93a68bacf4_6735bb7a_20260709.png?v=6735bb7a",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783577297_hd/1783577297_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "WSOP Event #90 – $50,000 No vs Limit Hold'em High Roller | 03:00 10/07 | GV",
+      "group": "🎮 Esport (1 LIVE)",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-d2a51efff8_f2667051_20260709.png?v=f2667051",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783583119_hd/1783583119_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "ONE Friday Fights 161 vs The Inner Circle 21 | 18:30 10/07 | GV",
+      "group": "🥊 Võ Thuật",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-3ab2d4f728_1bdc9f32_20260709.png?v=1bdc9f32",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783386402_hd/1783386402_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "LION CHAMPIONSHIP vs LC 33 | 20:00 11/07 | GV",
+      "group": "🥊 Võ Thuật",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-c1a662a34d_dcf9d282_20260709.png?v=dcf9d282",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783386681_hd/1783386681_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "McGregor vs Holloway 2 | 04:00 12/07 | GV",
+      "group": "🥊 Võ Thuật",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-9fbeffd8ad_38ae3512_20260709.png?v=38ae3512",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783388318_hd/1783388318_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "ONE Friday Fights 162 vs The Inner Circle 22 | 18:30 17/07 | GV",
+      "group": "🥊 Võ Thuật",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-6e3fbcc38d_9a9c6fdb_20260709.png?v=9a9c6fdb",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783388521_hd/1783388521_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Lessei vs Rabah | 08:00 18/07 | GV",
+      "group": "🥊 Võ Thuật",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-47b2c0e27d_9a12a972_20260709.png?v=9a12a972",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783388661_hd/1783388661_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Du Plessis vs Usman | 04:00 19/07 | GV",
+      "group": "🥊 Võ Thuật",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-53ecb3dd8f_f56cf9d6_20260709.png?v=f56cf9d6",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783391300_hd/1783391300_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "ONE Friday Fights 163 vs The Inner Circle 23 | 18:30 24/07 | GV",
+      "group": "🥊 Võ Thuật",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-f82794c727_01b7355b_20260709.png?v=01b7355b",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783391764_hd/1783391764_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Ankalaev vs Rountree Jr | 20:00 25/07 | GV",
+      "group": "🥊 Võ Thuật",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-9ae1268e24_73c893ff_20260709.png?v=73c893ff",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783392693_hd/1783392693_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "GioVang",
+      "name": "Jean vs Musaev | 06:00 26/07 | GV",
+      "group": "🥊 Võ Thuật",
+      "logo": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-b3ebd7ed3a_864ca4b3_20260709.png?v=864ca4b3",
+      "stream_url": "https://sgtdrxtdjeliv.vcdn.cloud/1783392746_hd/1783392746_hd@720p.m3u8",
+      "referer": "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[16h00] Belgium W vs Canada W | BLV: Chuối Già [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/20250829_212618_887a8760.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoigia.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[16h00] Belgium W vs Canada W | BLV: Chuối Già [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/20250829_212618_887a8760.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoigiahd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[17h20] Japan W vs Thailand W | BLV: Chuối Tây [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/20250829_081346_8027acab.gif",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitay.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[17h20] Japan W vs Thailand W | BLV: Chuối Tây [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/20250829_081346_8027acab.gif",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitayhd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[19h00] Transport United vs Bhutan U19 | BLV: Chuối Chao [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_145104_78e6132b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoichao.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[19h00] Transport United vs Bhutan U19 | BLV: Chuối Chao [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_145104_78e6132b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoichaohd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[19h30] China W vs Ukraine W | BLV: Chuối Bơ [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.api-sports.io/volley/teams/2218.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoibo.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[19h30] China W vs Ukraine W | BLV: Chuối Bơ [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.api-sports.io/volley/teams/2218.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoibohd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[21h00] Atlètic Club d'Escaldes vs Mornar | BLV: Chuối Nhỏ [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130333_b43373b2.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoinho.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[21h00] Atlètic Club d'Escaldes vs Mornar | BLV: Chuối Nhỏ [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130333_b43373b2.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoinhohd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[23h00] Kalju Nomme vs Linfield | BLV: Chuối Tiêu [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130141_423b4d5b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitieu/playlist.m3u8",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[23h00] Kalju Nomme vs Linfield | BLV: Chuối Tiêu [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130141_423b4d5b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitieu.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[23h00] Kalju Nomme vs Linfield | BLV: Chuối Tiêu [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130141_423b4d5b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitieuhd/playlist.m3u8",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[23h00] Kalju Nomme vs Linfield | BLV: Chuối Tiêu [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130141_423b4d5b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitieuhd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[23h00] Kalju Nomme vs Linfield | BLV: Chuối To [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130141_423b4d5b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoito.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[23h00] Kalju Nomme vs Linfield | BLV: Chuối To [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_130141_423b4d5b.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitohd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[00h00] Sheriff Tiraspol vs Aluminij | BLV: Trốc Tru [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_132652_83c03d88.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/troctru.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[00h00] Sheriff Tiraspol vs Aluminij | BLV: Trốc Tru [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_132652_83c03d88.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/troctruhd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[01h00] Serbia W vs France W | BLV: Chuối Tím [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/20250829_080458_8929e0d7.gif",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitim.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[01h00] Serbia W vs France W | BLV: Chuối Tím [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/20250829_080458_8929e0d7.gif",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/chuoitimhd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[03h00] France vs Morocco | BLV: A Ngao [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_125447_e304fc82.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/angao.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    },
+    {
+      "source": "ChuoiChienTV",
+      "name": "[03h00] France vs Morocco | BLV: A Ngao [HD]",
+      "group": "ChuoiChienTV",
+      "logo": "https://media.chuoichientv.net/media/uploads/20250623_125447_e304fc82.png",
+      "stream_url": "https://gckc0525.edgemaxcdn.org/live/angaohd.flv",
+      "referer": "https://live.chuoichientv.com/",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+  ]
+}
