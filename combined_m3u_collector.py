@@ -472,16 +472,42 @@ def parse_extinf(line):
     }
 
 
-def collect_m3u_playlist(source, playlist_url, group_name, referer=""):
+def is_supported_playlist_url(url, allow_non_m3u8=False):
+    url = clean_text(url)
+    if not url or not url.startswith(("http://", "https://")):
+        return False
+    lower = url.lower().split("?", 1)[0]
+    if lower.endswith(".mpd") or ".mpd/" in lower:
+        return False
+    if url.startswith(("udp://", "rtp://")):
+        return False
+    return allow_non_m3u8 or ".m3u8" in lower
+
+
+def collect_m3u_playlist(
+    source,
+    playlist_url,
+    group_name,
+    referer="",
+    preserve_group=False,
+    allow_non_m3u8=False,
+    timeout=30,
+    retries=2,
+):
     log(f"[{source}] Fetch M3U")
-    try:
-        r = request_get(playlist_url, timeout=20)
-        log(f"[{source}] HTTP {r.status_code}")
-        if r.status_code != 200:
+    r = None
+    for attempt in range(1, retries + 1):
+        try:
+            r = request_get(playlist_url, timeout=timeout)
+            log(f"[{source}] HTTP {r.status_code}")
+            if r.status_code == 200:
+                break
             return []
-    except Exception as exc:
-        log(f"[{source}] Error: {exc}")
-        return []
+        except Exception as exc:
+            log(f"[{source}] Attempt {attempt}/{retries} error: {exc}")
+            if attempt == retries:
+                return []
+            time.sleep(2)
 
     channels = []
     current = {"title": group_name, "logo": "", "group": group_name}
@@ -492,12 +518,13 @@ def collect_m3u_playlist(source, playlist_url, group_name, referer=""):
         if line.startswith("#EXTINF"):
             current = parse_extinf(line)
             continue
-        if line.startswith("http") and is_valid_stream_url(line):
+        if line.startswith("http") and is_supported_playlist_url(line, allow_non_m3u8=allow_non_m3u8):
+            group = current.get("group") if preserve_group else group_name
             channels.append(
                 {
                     "source": source,
                     "name": current.get("title") or group_name,
-                    "group": group_name or current.get("group") or source,
+                    "group": group or group_name or source,
                     "logo": current.get("logo", ""),
                     "stream_url": line,
                     "referer": referer or playlist_url,
@@ -821,6 +848,18 @@ def main():
                 "TieuLamTV",
                 "https://raw.githubusercontent.com/Bacbenny/testtieulam/refs/heads/main/output/iptv.m3u",
                 "Tieu Lam TV",
+            ),
+        ),
+        (
+            "VietAnhTV",
+            lambda: collect_m3u_playlist(
+                "VietAnhTV",
+                "http://vpsttt.vietanhtv.top/tv/",
+                "VietAnhTV",
+                preserve_group=True,
+                allow_non_m3u8=True,
+                timeout=90,
+                retries=3,
             ),
         ),
         ("HoaDaoTV", collect_hoadaotv),
