@@ -27,7 +27,7 @@ except Exception:
 
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "output_combined"
-ALL_M3U = BASE_DIR / "all.m3u"
+ALL_M3U = BASE_DIR / "full.m3u"
 ALL_JSON = BASE_DIR / "all_sources.json"
 STATS_TXT = BASE_DIR / "stats.txt"
 TZ_VN = timezone(timedelta(hours=7))
