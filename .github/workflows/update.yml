@@ -29,19 +29,19 @@ jobs:
       - name: Generate all.m3u
         run: |
           python combined_m3u_collector.py
-          test -f all.m3u
-          test -s all.m3u
-          ls -lh all.m3u all_sources.json stats.txt
+          test -f full.m3u
+          test -s full.m3u
+          ls -lh full.m3u all_sources.json stats.txt
           cat stats.txt
 
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add all.m3u all_sources.json stats.txt output_combined/
+          git add full.m3u all_sources.json stats.txt output_combined/
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
           else
-            git commit -m "Update all.m3u"
+            git commit -m "Update full.m3u"
             git push
           fi
