@@ -10,8 +10,13 @@ from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 
-import requests
+try:
+    import requests
+except Exception:
+    requests = None
 
 
 try:
@@ -20,10 +25,11 @@ except Exception:
     pass
 
 
-OUTPUT_DIR = Path("output_combined")
-ALL_M3U = OUTPUT_DIR / "all_sources.m3u"
-ALL_JSON = OUTPUT_DIR / "all_sources.json"
-STATS_TXT = OUTPUT_DIR / "stats.txt"
+BASE_DIR = Path(__file__).resolve().parent
+OUTPUT_DIR = BASE_DIR / "output_combined"
+ALL_M3U = BASE_DIR / "all.m3u"
+ALL_JSON = BASE_DIR / "all_sources.json"
+STATS_TXT = BASE_DIR / "stats.txt"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
@@ -54,7 +60,29 @@ def request_get(url, headers=None, params=None, timeout=20):
     }
     if headers:
         merged_headers.update(headers)
-    return requests.get(url, headers=merged_headers, params=params, timeout=timeout)
+    if requests is not None:
+        return requests.get(url, headers=merged_headers, params=params, timeout=timeout)
+    return urllib_request("GET", url, headers=merged_headers, params=params, timeout=timeout)
+
+
+class UrllibResponse:
+    def __init__(self, status_code, data, url):
+        self.status_code = status_code
+        self.content = data
+        self.text = data.decode("utf-8", errors="replace")
+        self.url = url
+
+    def json(self):
+        return json.loads(self.text)
+
+
+def urllib_request(method, url, headers=None, params=None, timeout=20):
+    if params:
+        separator = "&" if "?" in url else "?"
+        url = url + separator + urlencode(params)
+    request = Request(url, headers=headers or {}, method=method)
+    with urlopen(request, timeout=timeout) as response:
+        return UrllibResponse(response.getcode(), response.read(), response.geturl())
 
 
 def fetch_json(url, headers=None, timeout=20):
@@ -107,7 +135,10 @@ def is_working_m3u8(url, referer="", user_agent=UA):
         headers["Referer"] = referer
 
     try:
-        response = requests.head(url, headers=headers, timeout=5, allow_redirects=True)
+        if requests is not None:
+            response = requests.head(url, headers=headers, timeout=5, allow_redirects=True)
+        else:
+            response = urllib_request("HEAD", url, headers=headers, timeout=5)
         if response.status_code in (200, 204, 206):
             return True
         if response.status_code not in (403, 405):
@@ -117,7 +148,10 @@ def is_working_m3u8(url, referer="", user_agent=UA):
 
     try:
         headers["Range"] = "bytes=0-2048"
-        response = requests.get(url, headers=headers, timeout=8, stream=True, allow_redirects=True)
+        if requests is not None:
+            response = requests.get(url, headers=headers, timeout=8, stream=True, allow_redirects=True)
+        else:
+            response = urllib_request("GET", url, headers=headers, timeout=8)
         return response.status_code in (200, 204, 206)
     except Exception:
         return False
