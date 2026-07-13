@@ -35,6 +35,8 @@ UA = (
 )
 
 CHUOICHIEN_TOKEN = os.environ.get("CHUOICHIEN_TOKEN", "").strip()
+KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.khandaia.link")
+KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -250,7 +252,7 @@ def collect_hoiquan3():
                     {
                         "source": source,
                         "name": name,
-                        "group": league,
+                        "group": "Hoi Quan",
                         "logo": logo,
                         "stream_url": stream_url,
                         "referer": site_url,
@@ -259,6 +261,15 @@ def collect_hoiquan3():
                 )
     log(f"[{source}] {len(channels)} links")
     return channels
+
+
+def collect_khandaia():
+    return collect_standard_api(
+        "KhanDaiA",
+        f"{KHANDAIA_KNOWN_API_BASE.rstrip('/')}/fixtures/unfinished",
+        KHANDAIA_FRONTEND_URL,
+        "Khan Dai A",
+    )
 
 
 def collect_standard_api(source, api_url, site_url="", group_name=None):
@@ -327,7 +338,6 @@ def collect_grouped_json(source, api_url, group_name):
 
     groups = data.get("groups") if isinstance(data, dict) else []
     for group in groups or []:
-        actual_group = clean_text(group.get("name")) or group_name
         for channel in group.get("channels") or []:
             logo = ((channel.get("image") or {}).get("url")) or ""
             title = clean_text(channel.get("name")) or group_name
@@ -338,7 +348,7 @@ def collect_grouped_json(source, api_url, group_name):
                     {
                         "source": source,
                         "name": f"{title} | {blv_name}",
-                        "group": actual_group,
+                        "group": group_name,
                         "logo": logo,
                         "stream_url": stream_url,
                         "referer": api_url,
@@ -778,7 +788,7 @@ def main():
                 "HoiQuan1",
                 "https://sv.hoiquantv.xyz/api/v1/external/fixtures/unfinished",
                 "https://sv2.hoiquan3.live/",
-                "Hoi Quan 1",
+                "Hoi Quan",
             ),
         ),
         (
@@ -786,9 +796,10 @@ def main():
             lambda: collect_grouped_json(
                 "HoiQuan2",
                 "https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan1.json",
-                "Hoi Quan 2",
+                "Hoi Quan",
             ),
         ),
+        ("KhanDaiA", collect_khandaia),
         (
             "ThienDinh",
             lambda: collect_standard_api(
@@ -819,11 +830,14 @@ def main():
             lambda: collect_grouped_json("QueChoaTV", "https://apithethao1.vercel.app/quechoatv", "Que Choa TV"),
         ),
         (
-            "FPTSport",
+            "TinhLaGi",
             lambda: collect_m3u_playlist(
-                "FPTSport",
-                "https://raw.githubusercontent.com/t23-02/bongda/refs/heads/main/bongda.m3u",
-                "FPT Sport",
+                "TinhLaGi",
+                "https://tinhlagi.pro/s.m3u",
+                "Tinh La Gi",
+                allow_non_m3u8=True,
+                timeout=60,
+                retries=3,
             ),
         ),
         (
