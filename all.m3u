@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-07-14 04:06 ICT
-# Total   : 533
+# Updated : 2026-07-14 06:03 ICT
+# Total   : 604
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpEq0ZDxhCpCOUtgbmrKrxUfha1DH3ajU-Q&s" group-title="Hoi Quan",[06:30 | 14.07] Ceara - Athletic Club [Serie B] | BLV: BLV PHAN ANH [FHD]
 https://hqlive.yarncdn.live/live/hqtv_blv_phananh/playlist.m3u8
@@ -37,6 +37,15 @@ https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/5433.png" group-title="Hoi Quan",[19:00 | 14.07] Bhutan U19 - Drukpa [Premier League] | BLV: BLV THẦN THÔNG [SD]
 https://alive.yarncdn.live/tdtv_blv_taovannghe/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/21167.png" group-title="Hoi Quan",[21:00 | 14.07] Muras United - Bars [Premier League] | BLV: BLV TÁO GIÀ [FHD]
+https://tdlive.yarncdn.live/live/tdtv_blv_taotinhtao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/21167.png" group-title="Hoi Quan",[21:00 | 14.07] Muras United - Bars [Premier League] | BLV: BLV TÁO GIÀ [HD]
+https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/21167.png" group-title="Hoi Quan",[21:00 | 14.07] Muras United - Bars [Premier League] | BLV: BLV TÁO GIÀ [SD]
+https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan_thumbs/kaytee-80f0f2d9f951.webp?v=1782375273" group-title="Hoi Quan",⚽ Oman vs Hàn Quốc | 13:30 | F
 https://hqlive.yarncdn.live/live/hqtv_blv_phanphep/playlist.m3u8
@@ -110,15 +119,6 @@ https://alive.yarncdn.live/tdtv_blv_taomeo/tracks-v2a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/31.png" group-title="Thien Dinh",[22:00 | 26.05] Morocco vs Burundi [Friendlies] | BLV: BLV Táo Mèo [SD]
 https://alive.yarncdn.live/tdtv_blv_taomeo/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/4548.png" group-title="Thien Dinh",[21:00 | 26.05] Astana II vs Khan Tengri [1. Division] | BLV: BLV Táo Tỉnh Táo [FHD]
-https://tdlive.yarncdn.live/live/tdtv_blv_taotinhtao/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/4548.png" group-title="Thien Dinh",[21:00 | 26.05] Astana II vs Khan Tengri [1. Division] | BLV: BLV Táo Tỉnh Táo [HD]
-https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/4548.png" group-title="Thien Dinh",[21:00 | 26.05] Astana II vs Khan Tengri [1. Division] | BLV: BLV Táo Tỉnh Táo [SD]
-https://alive.yarncdn.live/tdtv_blv_taotinhtao/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.uefa.com/imgml/flags/240x240/MNE.png" group-title="Thien Dinh",[23:00 | 26.05] Montenegro U17 vs Denmark U17 [UEFA U17 Championship - Qualification] | BLV: BLV Táo Kinh Tế(A Tích) [FHD]
 https://tdlive.yarncdn.live/live/tdtv_blv_taokinhte/playlist.m3u8
 
@@ -173,15 +173,6 @@ https://alive.yarncdn.live/xctv_blv_chuoi/tracks-v2a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/10124.png" group-title="Xay Con",[00:00 | 15.07] Riga vs Ararat-Armenia [UEFA Champions League] | BLV: BLV Ciu [SD]
 https://alive.yarncdn.live/xctv_blv_chuoi/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/276.png" group-title="VongCamTV",Breidablik vs Keflavik | FHD
-https://bglive.yarncdn.live/live/bgtv_blv_max/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/276.png" group-title="VongCamTV",Breidablik vs Keflavik | HD
-https://alive.yarncdn.live/bgtv_blv_max/tracks-v2a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/276.png" group-title="VongCamTV",Breidablik vs Keflavik | SD
-https://alive.yarncdn.live/bgtv_blv_max/tracks-v1a1/mono.m3u8
-
 #EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/129.png" group-title="VongCamTV",Ceara vs Athletic Club | FHD
 https://bglive.yarncdn.live/live/bgtv_blv_mason/playlist.m3u8
 
@@ -199,6 +190,15 @@ https://alive.yarncdn.live/bgtv_blv_tieumeo/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/2619.png" group-title="VongCamTV",Cavalry FC vs Vancouver Whitecaps | SD
 https://alive.yarncdn.live/bgtv_blv_tieumeo/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://img0.aiscore.com/football/team/2ee0214c45e742b6ae9a1107593918d5.png!w60" group-title="VongCamTV",Nữ Phong Phú Hà Nam vs Nữ TP.Hồ Chí Minh 2 | FHD
+https://bglive.yarncdn.live/live/bgtv_blv_max/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img0.aiscore.com/football/team/2ee0214c45e742b6ae9a1107593918d5.png!w60" group-title="VongCamTV",Nữ Phong Phú Hà Nam vs Nữ TP.Hồ Chí Minh 2 | HD
+https://alive.yarncdn.live/bgtv_blv_max/tracks-v2a1/mono.m3u8
+
+#EXTINF:-1 tvg-logo="https://img0.aiscore.com/football/team/2ee0214c45e742b6ae9a1107593918d5.png!w60" group-title="VongCamTV",Nữ Phong Phú Hà Nam vs Nữ TP.Hồ Chí Minh 2 | SD
+https://alive.yarncdn.live/bgtv_blv_max/tracks-v1a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/848.png" group-title="VongCamTV",Hangzhou Greentown vs Qingdao Jonoon | FHD
 https://bglive.yarncdn.live/live/bgtv_blv_phaothan/playlist.m3u8
@@ -226,12 +226,6 @@ https://alive.yarncdn.live/bgtv_blv_phimc/tracks-v2a1/mono.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/21167.png" group-title="VongCamTV",Muras United vs Bars | SD
 https://alive.yarncdn.live/bgtv_blv_phimc/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/631e4cfa5f1d5bee45618fb97fc3f0b4.png!w80" group-title="CoLaTV",19:15 | CLB Breidablik vs CLB Keflavik | BLV
-https://live05.miekgo.app/live/41943555.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/20bd29045f9e765f9162647ec74b9d75.png!w80" group-title="CoLaTV",22:00 | Cerro Largo vs Defensor Sp | BLV
-https://live05.miekgo.app/live/75748097.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/24403efa393f55163b5593c435bbe4a7.png!w80" group-title="CoLaTV",22:00 | America MG vs Londrina | BLV
 https://live05.miekgo.app/live/16226575.m3u8
@@ -272,6 +266,12 @@ https://live05.miekgo.app/live/14830711.m3u8
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/69a1fa27157714ad23f29d9693f264ef.png!w80" group-title="CoLaTV",11:00 | T T Hà Nội U21 vs Hung Vuong An Giang U21 | BLV
 https://live05.miekgo.app/live/08552895.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e80d49b16e8a1ea6b6d38643e1d429b0.png!w80" group-title="CoLaTV",16:00 | Saburtalo Tbilisi vs FC Flora Tallinn | BLV
+https://live05.miekgo.app/live/41943555.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/52a0b0ec8cb8af8d29711d63ed1d0c8c.png!w80" group-title="CoLaTV",19:00 | Shamrock Rovers vs Floriana | BLV
+https://live05.miekgo.app/live/75748097.m3u8
+
 #EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/11182.png" group-title="TamQuocTV",[23:30 | 14.07] Rochedale Rovers vs SD Raiders | BLV Mã Siêu [FHD]
 https://tqlive.yarncdn.live/live/tqtv_blv_masieu/playlist.m3u8
 
@@ -299,20 +299,32 @@ https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v2a1/mono.m3u8
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/fTsZ5XYA-j1jME9Xt.png" group-title="TamQuocTV",[01:35 | 15.07] Zhejiang FC - Qingdao Hainiu | BLV Ricky [SD]
 https://alive.yarncdn.live/tqtv_blv_ricky/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F3422_165363440831.png&away=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F3422_165363440831.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (BLV NGƯỜI THÉP) [hls]
-https://hls.cdnfaster-a.live/live/NGUOITHEP/index.m3u8?expire=2556118740&sign=6d80f4e33c3761371f29a8ca0645fee5
+#EXTINF:-1 tvg-logo="https://cdn-img.cdnokvip.com/logos/7566_1hrb7wwkee31.png" group-title="Luong Son TV",Cerro Largo vs Defensor Sporting Montevideo [Liga AUF Uruguaya] | BLV LƯU BỊ [FHD]
+https://hls.cdnfaster-a.live/live/LUUBI/index.m3u8?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F3422_165363440831.png&away=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F3422_165363440831.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (BLV NGƯỜI THÉP) [flv]
-https://flv.cdnfaster-a.live/live/NGUOITHEP.flv?expire=2556118740&sign=6d80f4e33c3761371f29a8ca0645fee5
+#EXTINF:-1 tvg-logo="https://cdn-img.cdnokvip.com/logos/3346_167376773696.png" group-title="Luong Son TV",Itabaiana(SE) vs Brusque FC [Brasileiro, Serie C] | BLV VÕ TÒNG [FHD]
+https://hls.cdnfaster-a.live/live/VOTONG/index.m3u8?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F7566_1hrb7wwkee31.png&away=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F7566_1hrb7wwkee31.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV LƯU BỊ) [hls]
+#EXTINF:-1 tvg-logo="https://cdn-img.cdnokvip.com/logos/11680_1gxsf3fvqxt.png" group-title="Luong Son TV",America MG vs Londrina PR [Brazil Serie B] | BLV LEO [FHD]
+https://hls.cdnfaster-a.live/live/LEO/index.m3u8?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
+
+#EXTINF:-1 tvg-logo="https://upload-img.cdnokvip.com/uploads/team_logo/1783972357.png" group-title="Luong Son TV",Atlanta Dream W vs Los Angeles Sparks W [WNBA] | BLV YẾN THANH [FHD]
+https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F3346_167376773696.png&away=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F3346_167376773696.png&time=05%3A30+14%2F07" group-title="Tinh La Gi",05:30 14/07 Itabaiana(SE) vs Brusque FC (BLV VÕ TÒNG) [flv]
+https://flv.cdnfaster-a.live/live/VOTONG.flv?expire=1891347600&sign=cbb47d2000b9576a7b34114624ff8299
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F11680_1gxsf3fvqxt.png&away=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F11680_1gxsf3fvqxt.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (BLV LEO) [flv]
+https://flv.cdnfaster-a.live/live/LEO.flv?expire=1923642660&sign=58990a132e2f8d3f764c947b95b28af6
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F7566_1hrb7wwkee31.png&away=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F7566_1hrb7wwkee31.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV LƯU BỊ) [flv]
+https://flv.cdnfaster-a.live/live/LUUBI.flv?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fupload-img.cdnokvip.com%2Fuploads%2Fteam_logo%2F1783972357.png&away=https%3A%2F%2Fupload-img.cdnokvip.com%2Fuploads%2Fteam_logo%2F1783972357.png&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Atlanta Dream W vs Los Angeles Sparks W (BLV YẾN THANH) [flv]
+https://flv.cdnfaster-a.live/live/YENTHANH1.flv?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F559_164983446440.png&away=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F559_164983446440.png&time=02%3A00+15%2F07" group-title="Tinh La Gi",02:00 15/07 France vs Spain (BLV KAKA) [hls]
 https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png%21w80&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png%21w80&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 CLB Breidablik vs CLB Keflavik (BLV KHÔNG ĐỘ) [flv]
-https://live05.miekgo.app/live/41943555.flv
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png%21w80&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png%21w80&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sp (BLV SPRITE) [flv]
-https://live05.miekgo.app/live/75748097.flv
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png%21w80&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png%21w80&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina (BLV FANTA) [flv]
 https://live05.miekgo.app/live/16226575.flv
@@ -344,16 +356,19 @@ https://live05.miekgo.app/live/24561735.flv
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F424ac25c370b644caebd91d8ba01df34.png%21w80&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F424ac25c370b644caebd91d8ba01df34.png%21w80&time=16%3A00+14%2F07" group-title="Tinh La Gi",16:00 14/07 Hà Nội 2 Nữ vs TKS Việt Nam Nữ (BLV MOUNTAIN DEW) [flv]
 https://live05.miekgo.app/live/87547578.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133502_1d6d1a3e.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133502_1d6d1a3e.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (Trốc Tru) [FHD1] [FHD1]
-https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.png%21w80&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.png%21w80&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Rochedale Rovers vs SD Raiders FC (BLV 7UP) [flv]
+https://live05.miekgo.app/live/78905744.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133502_1d6d1a3e.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133502_1d6d1a3e.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (Trốc Tru) [FHD2] [FHD2]
-https://gckc0525.edgemaxcdn.org/live/troctruhd.flv
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F761b47aa242b8e4a5bf183da184304d7.png%21w80&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F761b47aa242b8e4a5bf183da184304d7.png%21w80&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 Thái Nguyên Nữ vs Hồ Chí Minh Nữ (BLV GIÀ LÀNG) [flv]
+https://live05.miekgo.app/live/14830711.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.api-sports.io%2Ffootball%2Fteams%2F19410.png&away=https%3A%2F%2Fmedia.api-sports.io%2Ffootball%2Fteams%2F19410.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Paysandu vs Fenix (Chuối Chao) [FHD1] [FHD1]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.png%21w80&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.png%21w80&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 T T Hà Nội U21 vs Hung Vuong An Giang U21 (BLV C2) [flv]
+https://live05.miekgo.app/live/08552895.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_131722_9a811ba1.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_131722_9a811ba1.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting (Chuối Chao) [FHD1] [FHD1]
 https://gckc0525.edgemaxcdn.org/live/chuoichaohd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.api-sports.io%2Ffootball%2Fteams%2F19410.png&away=https%3A%2F%2Fmedia.api-sports.io%2Ffootball%2Fteams%2F19410.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Paysandu vs Fenix (Chuối Chao) [FHD2] [FHD2]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_131722_9a811ba1.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_131722_9a811ba1.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting (Chuối Chao) [FHD2] [FHD2]
 https://gckc0525.edgemaxcdn.org/live/chuoichaohd.flv
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133407_126a7074.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133407_126a7074.png&time=08%3A30+14%2F07" group-title="Tinh La Gi",08:30 14/07 Cavalry FC vs Vancouver Whitecaps (A Ngao) [FHD1] [FHD1]
@@ -362,23 +377,86 @@ https://gckc0525.edgemaxcdn.org/live/angaohd/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133407_126a7074.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133407_126a7074.png&time=08%3A30+14%2F07" group-title="Tinh La Gi",08:30 14/07 Cavalry FC vs Vancouver Whitecaps (A Ngao) [FHD2] [FHD2]
 https://gckc0525.edgemaxcdn.org/live/angaohd.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (Triệu Hằng)
-https://cdn-global.ebaclofen.org/vsc/vsc-thai-tu-lion/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_135226_b632be79.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_135226_b632be79.png&time=09%3A30+14%2F07" group-title="Tinh La Gi",09:30 14/07 Pakistan vs Thailand (Chuối Bơ) [FHD1] [FHD1]
+https://gckc0525.edgemaxcdn.org/live/chuoibohd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/e15f89581927fef02353061bca605d0c/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_135226_b632be79.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_135226_b632be79.png&time=09%3A30+14%2F07" group-title="Tinh La Gi",09:30 14/07 Pakistan vs Thailand (Chuối Bơ) [FHD2] [FHD2]
+https://gckc0525.edgemaxcdn.org/live/chuoibohd.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (Nhà Đài 2)
-https://hls.streamhub.media/hls/thesport-api-e59bed53f2dd7bb4b396/master.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_134311_eaf689af.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_134311_eaf689af.png&time=12%3A00+14%2F07" group-title="Tinh La Gi",12:00 14/07 India vs Philippines (Chuối Tây) [FHD1] [FHD1]
+https://gckc0525.edgemaxcdn.org/live/chuoitayhd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0ad622f45edd4fda12f1d7c038d5d36a.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0ad622f45edd4fda12f1d7c038d5d36a.png&time=03%3A15+14%2F07" group-title="Tinh La Gi",03:15 14/07 Vestri vs Fylkir (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/881fbb32b76e72bdefc2da0e302e2fd1/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_134311_eaf689af.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_134311_eaf689af.png&time=12%3A00+14%2F07" group-title="Tinh La Gi",12:00 14/07 India vs Philippines (Chuối Tây) [FHD2] [FHD2]
+https://gckc0525.edgemaxcdn.org/live/chuoitayhd.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0ad622f45edd4fda12f1d7c038d5d36a.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0ad622f45edd4fda12f1d7c038d5d36a.png&time=03%3A15+14%2F07" group-title="Tinh La Gi",03:15 14/07 Vestri vs Fylkir (Nhà Đài 2)
-https://hls.streamhub.media/hls/thesport-api-59eb48126439ea6b3d95/master.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_134250_2a12c2b6.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_134250_2a12c2b6.png&time=12%3A30+14%2F07" group-title="Tinh La Gi",12:30 14/07 Australia vs Saudi Arabia (Chuối Già) [FHD1] [FHD1]
+https://gckc0525.edgemaxcdn.org/live/chuoigiahd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_134250_2a12c2b6.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_134250_2a12c2b6.png&time=12%3A30+14%2F07" group-title="Tinh La Gi",12:30 14/07 Australia vs Saudi Arabia (Chuối Già) [FHD2] [FHD2]
+https://gckc0525.edgemaxcdn.org/live/chuoigiahd.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_141338_a872ce13.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_141338_a872ce13.png&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 APIA Leichhardt Tigers vs Peninsula Power (Chuối To) [FHD1] [FHD1]
+https://gckc0525.edgemaxcdn.org/live/chuoitohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_141338_a872ce13.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_141338_a872ce13.png&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 APIA Leichhardt Tigers vs Peninsula Power (Chuối To) [FHD2] [FHD2]
+https://gckc0525.edgemaxcdn.org/live/chuoitohd.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_141414_5188530f.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_141414_5188530f.png&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Rochedale Rovers vs SD Raiders (Chuối Tiêu) [FHD1] [FHD1]
+https://gckc0525.edgemaxcdn.org/live/chuoitieuhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_141414_5188530f.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_141414_5188530f.png&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Rochedale Rovers vs SD Raiders (Chuối Tiêu) [FHD2] [FHD2]
+https://gckc0525.edgemaxcdn.org/live/chuoitieuhd.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133506_7ac57820.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133506_7ac57820.png&time=18%3A35+14%2F07" group-title="Tinh La Gi",18:35 14/07 Hangzhou Greentown vs Qingdao Jonoon (Chuối Nhỏ) [FHD1] [FHD1]
+https://gckc0525.edgemaxcdn.org/live/chuoinhohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133506_7ac57820.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_133506_7ac57820.png&time=18%3A35+14%2F07" group-title="Tinh La Gi",18:35 14/07 Hangzhou Greentown vs Qingdao Jonoon (Chuối Nhỏ) [FHD2] [FHD2]
+https://gckc0525.edgemaxcdn.org/live/chuoinhohd.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_145103_a5b5bb19.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_145103_a5b5bb19.png&time=19%3A00+14%2F07" group-title="Tinh La Gi",19:00 14/07 Bhutan U19 vs Drukpa (Chuối Tím) [FHD1] [FHD1]
+https://gckc0525.edgemaxcdn.org/live/chuoitimhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_145103_a5b5bb19.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_145103_a5b5bb19.png&time=19%3A00+14%2F07" group-title="Tinh La Gi",19:00 14/07 Bhutan U19 vs Drukpa (Chuối Tím) [FHD2] [FHD2]
+https://gckc0525.edgemaxcdn.org/live/chuoitimhd.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_130333_9a00594d.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_130333_9a00594d.png&time=23%3A00+14%2F07" group-title="Tinh La Gi",23:00 14/07 Inter Club d'Escaldes vs Lincoln Red Imps FC (Trốc Tru) [FHD1] [FHD1]
+https://gckc0525.edgemaxcdn.org/live/troctruhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_130333_9a00594d.png&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_130333_9a00594d.png&time=23%3A00+14%2F07" group-title="Tinh La Gi",23:00 14/07 Inter Club d'Escaldes vs Lincoln Red Imps FC (Trốc Tru) [FHD2] [FHD2]
+https://gckc0525.edgemaxcdn.org/live/troctruhd.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F9b72383913f8619d62592712c2048fb4.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F9b72383913f8619d62592712c2048fb4.png&time=04%3A00+14%2F07" group-title="Tinh La Gi",04:00 14/07 Barcelona Guayaquil Women vs Independiente del Valle Women (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/51ab74ce26877a628fc7ef249bdc8b2c/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F9b72383913f8619d62592712c2048fb4.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F9b72383913f8619d62592712c2048fb4.png&time=04%3A00+14%2F07" group-title="Tinh La Gi",04:00 14/07 Barcelona Guayaquil Women vs Independiente del Valle Women (Nhà Đài 2)
 https://hls.streamhub.media/hls/thesport-api-dfb838de8d928f0007ce/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/89f0a2dc26123717658a6682127bbf6d/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-6343f1691510567cfbf2/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fd7f9b9cce063d9d6b50675b0ee576f4a.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fd7f9b9cce063d9d6b50675b0ee576f4a.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Paysandu FC vs Centro Atletico Fenix (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/43646e3a250f6081b82d0eb79b88cdd9/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fd7f9b9cce063d9d6b50675b0ee576f4a.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fd7f9b9cce063d9d6b50675b0ee576f4a.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Paysandu FC vs Centro Atletico Fenix (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-77fb22e3314484b880bc/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/0c7cde45bc651624d9689ae348e81e16/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-9d8a58deeb7431f56dc4/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F25afbf2325055b13d468c19167ba532e.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F25afbf2325055b13d468c19167ba532e.png&time=05%3A30+14%2F07" group-title="Tinh La Gi",05:30 14/07 Itabaiana(SE) vs Brusque FC (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/4ad7d1390b90772b613637706bb5e83b/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F25afbf2325055b13d468c19167ba532e.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F25afbf2325055b13d468c19167ba532e.png&time=05%3A30+14%2F07" group-title="Tinh La Gi",05:30 14/07 Itabaiana(SE) vs Brusque FC (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-e0c94360f949e92b3d64/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F87b05db9f90fc41e0faa409474ada50c.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F87b05db9f90fc41e0faa409474ada50c.png&time=16%3A00+14%2F07" group-title="Tinh La Gi",16:00 14/07 Andorra CF vs Millwall (Tôn Quyền)
+https://cdn-global.ebaclofen.org/vsc/vsc-thai-tu-lion/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2ee0214c45e742b6ae9a1107593918d5.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2ee0214c45e742b6ae9a1107593918d5.png&time=16%3A00+14%2F07" group-title="Tinh La Gi",16:00 14/07 Phong Phu Ha Nam Women vs Ho Chi Minh City B Women (Tào Duệ)
 https://cdn1-global.ebaclofen.org/live/pro4/index.m3u8
@@ -407,83 +485,80 @@ https://cdn1-global.ebaclofen.org/live/pro2/index.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fe80d49b16e8a1ea6b6d38643e1d429b0.png&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fe80d49b16e8a1ea6b6d38643e1d429b0.png&time=23%3A00+14%2F07" group-title="Tinh La Gi",23:00 14/07 FC Iberia 1999 Tbilisi vs FC Flora Tallinn (Lê Lợi)
 https://cdn1-global.ebaclofen.org/live/pro1/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Flauthai.net%2Fe57e250a-0b79-45ed-88e4-6387e95b7107.png&away=https%3A%2F%2Flauthai.net%2Fe57e250a-0b79-45ed-88e4-6387e95b7107.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (NGƯỜI THỎ) [hls]
-https://live.lta005.cc/live/breidablik-keflavik-besta.m3u8?txPackageType=ll-hls-cmaf&txSecret=a9c9cc65b10beaffe0b83c2f66b1edcd&txTime=6A595D5F
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Flauthai.net%2F9e724d65-2bf5-4110-9155-9ace681815b6.png&away=https%3A%2F%2Flauthai.net%2F9e724d65-2bf5-4110-9155-9ace681815b6.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (NGƯỜI BẠC) [hls]
 https://live.lta005.cc/live/americamg-londrina-brasb.m3u8?txPackageType=ll-hls-cmaf&txSecret=3cb527c03eac7e2abfe248b801ad0b73&txTime=6A595D5F
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Flauthai.net%2F8456fee0-3ff6-4f77-94c2-c9fbb5221970.png&away=https%3A%2F%2Flauthai.net%2F8456fee0-3ff6-4f77-94c2-c9fbb5221970.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (NGƯỜI NẶN) [hls]
 https://live.lta005.cc/live/cerrolargo-denfensorsp-uruprimdiv.m3u8?txPackageType=ll-hls-cmaf&txSecret=d81eed03365ce9d7170f31b860aa68fd&txTime=6A595D5F
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F6ypq3nh0w05md7o%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F6ypq3nh0w05md7o%2Fimage%2Fsmall&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (RAVEN)
-https://live2.streambylivepulse.com/live/channel21.flv
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Flauthai.net%2F83507d00-6291-408b-8fa6-07fdf268039a.png&away=https%3A%2F%2Flauthai.net%2F83507d00-6291-408b-8fa6-07fdf268039a.png&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (MG) (NGƯỜI SÓI) [hls]
+https://live.lta005.cc/live/ceara-acmg-brasb.m3u8?txPackageType=ll-hls-cmaf&txSecret=562616db6edea173a075e0f54e092440&txTime=6A595D5F
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F6ypq3nh0w05md7o%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F6ypq3nh0w05md7o%2Fimage%2Fsmall&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (HD RAVEN) [HD]
-https://live3.procdnlive.com/livecdn/channel21.flv?auth_key=3000001783975532-0-0-e7b1009d6f86a328fa8b7207c266fc9c
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fzp5rzgh76k0q82w%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fzp5rzgh76k0q82w%2Fimage%2Fsmall&time=03%3A15+14%2F07" group-title="Tinh La Gi",03:15 14/07 Vestri vs Fylkir (OLER)
-https://live2.streambylivepulse.com/live/channel28.flv
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fzp5rzgh76k0q82w%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fzp5rzgh76k0q82w%2Fimage%2Fsmall&time=03%3A15+14%2F07" group-title="Tinh La Gi",03:15 14/07 Vestri vs Fylkir (HD OLER) [HD]
-https://live3.procdnlive.com/livecdn/channel28.flv?auth_key=3000001783975539-0-0-0c754601941a3d0455972b3fca68865a
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F56ypq3ktdvomd7o%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F56ypq3ktdvomd7o%2Fimage%2Fsmall&time=03%3A30+14%2F07" group-title="Tinh La Gi",03:30 14/07 Indiana Pacers vs Toronto Raptors (ALAN)
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgx7lm73tdjlr2wd%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgx7lm73tdjlr2wd%2Fimage%2Fsmall&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Memphis Grizzlies vs Dallas Mavericks (ALAN)
 https://live2.streambylivepulse.com/live/channel25.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F56ypq3ktdvomd7o%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F56ypq3ktdvomd7o%2Fimage%2Fsmall&time=03%3A30+14%2F07" group-title="Tinh La Gi",03:30 14/07 Indiana Pacers vs Toronto Raptors (HD ALAN) [HD]
-https://live3.procdnlive.com/livecdn/channel25.flv?auth_key=3000001783975545-0-0-ab69bf32de13dd61dba5b3d933808625
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgx7lm73tdjlr2wd%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgx7lm73tdjlr2wd%2Fimage%2Fsmall&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Memphis Grizzlies vs Dallas Mavericks (HD ALAN) [HD]
+https://live3.procdnlive.com/livecdn/channel25.flv?auth_key=3000001783982730-0-0-e09dc4bd65d60ca8443895d0b40a0acf
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fk82rekhv7lyrepz%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fk82rekhv7lyrepz%2Fimage%2Fsmall&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor SC (TONI)
 https://live2.streambylivepulse.com/live/channel9.flv
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fk82rekhv7lyrepz%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fk82rekhv7lyrepz%2Fimage%2Fsmall&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor SC (HD TONI) [HD]
-https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783975573-0-0-f199cd007b81ac72c7db6ddcebea78c0
+https://live3.procdnlive.com/livecdn/channel9.flv?auth_key=3000001783982738-0-0-5d8ce07949031846db8a18dba407c20f
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fy0or5jh44x8qwzv%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fy0or5jh44x8qwzv%2Fimage%2Fsmall&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (BEE)
 https://live2.streambylivepulse.com/live/channel8.flv
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fy0or5jh44x8qwzv%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fy0or5jh44x8qwzv%2Fimage%2Fsmall&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (HD BEE) [HD]
-https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783975579-0-0-5cfecdde06225bef15e11448c34d47fc
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F2y8m4zh3jpgql07%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F2y8m4zh3jpgql07%2Fimage%2Fsmall&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (HIRO)
-https://live2.streambylivepulse.com/live/channel14.flv
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F2y8m4zh3jpgql07%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F2y8m4zh3jpgql07%2Fimage%2Fsmall&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (HD HIRO) [HD]
-https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783975585-0-0-5bec169002aa51888d8d1b0a26d0e955
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F23xmvkho41vqg8n%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F23xmvkho41vqg8n%2Fimage%2Fsmall&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Atletico Atlanta vs Colegiales (XMEN)
-https://live2.streambylivepulse.com/live/channel13.flv
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F23xmvkho41vqg8n%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F23xmvkho41vqg8n%2Fimage%2Fsmall&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Atletico Atlanta vs Colegiales (HD XMEN) [HD]
-https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783975609-0-0-4105fef405716c41d988a45acf7f060e
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F8yomo4hkw36q0j6%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F8yomo4hkw36q0j6%2Fimage%2Fsmall&time=08%3A30+14%2F07" group-title="Tinh La Gi",08:30 14/07 Cavalry FC vs Vancouver Whitecaps (HELLO)
-https://live2.pro2cdnlive.com/live/channel22.flv
+https://live3.procdnlive.com/livecdn/channel8.flv?auth_key=3000001783982743-0-0-fb75f29bc37e0925a3d84418e4cb2d61
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fp3glrwyten8qdyj%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fp3glrwyten8qdyj%2Fimage%2Fsmall&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Boston Celtics vs Atlanta Hawks (STEP)
 https://live2.streambylivepulse.com/live/channel26.flv
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fp3glrwyten8qdyj%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fp3glrwyten8qdyj%2Fimage%2Fsmall&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Boston Celtics vs Atlanta Hawks (HD STEP) [HD]
-https://live3.procdnlive.com/livecdn/channel26.flv?auth_key=3000001783975618-0-0-adc8c9204cf4d96a4ef9716e6f2f9145
+https://live3.procdnlive.com/livecdn/channel26.flv?auth_key=3000001783982773-0-0-25348b5264413eccbce0c09f8f24e2f5
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgx7lm73tdjlr2wd%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgx7lm73tdjlr2wd%2Fimage%2Fsmall&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Memphis Grizzlies vs Dallas Mavericks (HD ALAN) [HD]
-https://live3.procdnlive.com/livecdn/channel25.flv?auth_key=3000001783975625-0-0-55799702de5f01cb9f5d9baa25be3379
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F2y8m4zh3jpgql07%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F2y8m4zh3jpgql07%2Fimage%2Fsmall&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (HIRO)
+https://live2.streambylivepulse.com/live/channel14.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F2y8m4zh3jpgql07%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F2y8m4zh3jpgql07%2Fimage%2Fsmall&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (HD HIRO) [HD]
+https://live3.procdnlive.com/livecdn/channel14.flv?auth_key=3000001783982780-0-0-fc77faa199b59b97e08da9d33153c821
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F23xmvkho41vqg8n%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F23xmvkho41vqg8n%2Fimage%2Fsmall&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Atletico Atlanta vs Colegiales (XMEN)
+https://live2.streambylivepulse.com/live/channel13.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F23xmvkho41vqg8n%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F23xmvkho41vqg8n%2Fimage%2Fsmall&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Atletico Atlanta vs Colegiales (HD XMEN) [HD]
+https://live3.procdnlive.com/livecdn/channel13.flv?auth_key=3000001783982786-0-0-de75dffdf5e82e8c5d8882ec34667c8a
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F8yomo4hkw36q0j6%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F8yomo4hkw36q0j6%2Fimage%2Fsmall&time=08%3A30+14%2F07" group-title="Tinh La Gi",08:30 14/07 Cavalry FC vs Vancouver Whitecaps (HELLO)
+https://live2.streambylivepulse.com/live/channel22.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F8yomo4hkw36q0j6%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F8yomo4hkw36q0j6%2Fimage%2Fsmall&time=08%3A30+14%2F07" group-title="Tinh La Gi",08:30 14/07 Cavalry FC vs Vancouver Whitecaps (HD HELLO) [HD]
+https://live3.procdnlive.com/livecdn/channel22.flv?auth_key=3000001783982808-0-0-819c84bf918507c9a0716f79768398f2
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fpxwrxlhjz1pryk0%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2Fpxwrxlhjz1pryk0%2Fimage%2Fsmall&time=13%3A00+14%2F07" group-title="Tinh La Gi",13:00 14/07 Nữ Shanghai Shenhua vs Nữ Henan (TOM)
+https://live2.pro2cdnlive.com/live/channel4.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F3glrw7ho1o2qdyj%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ffootball%2Fteam%2F3glrw7ho1o2qdyj%2Fimage%2Fsmall&time=13%3A00+14%2F07" group-title="Tinh La Gi",13:00 14/07 Nữ Shandong Jinghua vs Nữ Yongchuan (NEMO)
+https://live2.pro2cdnlive.com/live/channel17.flv
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgy0or5gtd87qwzv%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgy0or5gtd87qwzv%2Fimage%2Fsmall&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Cleveland Cavaliers vs Miami Heat (TOMMY)
 https://live2.streambylivepulse.com/live/channel29.flv
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgy0or5gtd87qwzv%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fgy0or5gtd87qwzv%2Fimage%2Fsmall&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Cleveland Cavaliers vs Miami Heat (HD TOMMY) [HD]
-https://live3.procdnlive.com/livecdn/channel29.flv?auth_key=3000001783975630-0-0-c383691738c6038f58403dc195518592
+https://live3.procdnlive.com/livecdn/channel29.flv?auth_key=3000001783982819-0-0-2c31be7367071de59eb2f9224d7a9c19
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fz8yomovtj1jq0j6%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fz8yomovtj1jq0j6%2Fimage%2Fsmall&time=08%3A00+14%2F07" group-title="Tinh La Gi",08:00 14/07 Utah Jazz vs Chicago Bulls (STEP)
-https://live2.pro2cdnlive.com/live/channel26.flv
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fz8yomovtj1jq0j6%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fz8yomovtj1jq0j6%2Fimage%2Fsmall&time=08%3A00+14%2F07" group-title="Tinh La Gi",08:00 14/07 Utah Jazz vs Chicago Bulls (HD STEP) [HD]
+https://live3.procdnlive.com/livecdn/channel26.flv?auth_key=3000001783982826-0-0-7d2a7470e40ce3928a4131d7fb90caf8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F9k82re8td2nrepz%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F9k82re8td2nrepz%2Fimage%2Fsmall&time=09%3A00+14%2F07" group-title="Tinh La Gi",09:00 14/07 Milwaukee Bucks vs Phoenix Suns (ALAN)
-https://live2.pro2cdnlive.com/live/channel25.flv
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F9k82re8td2nrepz%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F9k82re8td2nrepz%2Fimage%2Fsmall&time=09%3A00+14%2F07" group-title="Tinh La Gi",09:00 14/07 Milwaukee Bucks vs Phoenix Suns (HD ALAN) [HD]
+https://live3.procdnlive.com/livecdn/channel25.flv?auth_key=3000001783982831-0-0-cd35147bf1fa3fbc1e1944ab9339bd62
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fp4jwq25tdgxq0ve%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2Fp4jwq25tdgxq0ve%2Fimage%2Fsmall&time=10%3A00+14%2F07" group-title="Tinh La Gi",10:00 14/07 Portland Trail Blazers vs Minnesota Timberwolves (TOMMY)
 https://live2.pro2cdnlive.com/live/channel29.flv
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F1l4rjzt177vm7vx%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Fbasketball%2Fteam%2F1l4rjzt177vm7vx%2Fimage%2Fsmall&time=17%3A00+14%2F07" group-title="Tinh La Gi",17:00 14/07 Quezon Huskers vs Bataan Risers (STEP)
+https://live2.pro2cdnlive.com/live/channel26.flv
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ftennis%2Fteam%2Fednm9efdyxnryox%2Fimage%2Fsmall&away=https%3A%2F%2Fimgts.sportpulseapiz.com%2Ftennis%2Fteam%2Fednm9efdyxnryox%2Fimage%2Fsmall&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 Juan Manuel Cerundolo vs Zdenek Kolar (VIC)
 https://live2.pro2cdnlive.com/live/channel32.flv
@@ -494,8 +569,14 @@ https://live2.pro2cdnlive.com/live/channel30.flv
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.png&away=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.png&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (BLV TRẠNG TÈO) [geo]
 https://pull.asynccdn.com/live/72ef379d259145b8b6343373822c8323/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.png&away=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.png&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (Nhà đài)
+https://lilive1.eu.cc/live/a079c99f3828a7dc095513cdb14169e7/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2Fb19bd906560a2ff7e4339e37a5ce109d.png&away=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2Fb19bd906560a2ff7e4339e37a5ce109d.png&time=08%3A30+14%2F07" group-title="Tinh La Gi",08:30 14/07 Cavalry FC vs Vancouver Whitecaps (BLV TRẠNG NGỐ) [geo]
 https://pull.asynccdn.com/live/fe44166983794e8c8621834ea25856bd/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2Fb19bd906560a2ff7e4339e37a5ce109d.png&away=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2Fb19bd906560a2ff7e4339e37a5ce109d.png&time=08%3A30+14%2F07" group-title="Tinh La Gi",08:30 14/07 Cavalry FC vs Vancouver Whitecaps (Nhà đài)
+https://lilive1.eu.cc/live/15ffffb96d2384dafc7c90e54c73a30b/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2F424ac25c370b644caebd91d8ba01df34.png&away=https%3A%2F%2Fimg.sports-data.online%2Ffootball%2Fteam%2F424ac25c370b644caebd91d8ba01df34.png&time=16%3A00+14%2F07" group-title="Tinh La Gi",16:00 14/07 Ha Noi IIWomen vs Than KSVN Women (BLV TRẠNG TÈO) [geo]
 https://pull.asynccdn.com/live/41024fb77b6f4136a1912e2c1013289b/index.m3u8
@@ -551,17 +632,23 @@ https://pull.asynccdn.com/live/c5daf42542b94dd88ee94421406a4331/index.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fstatic.flashscore.com%2Fres%2Fimage%2Fdata%2FhjKM6ZCr-6ys9CWQj.png&away=https%3A%2F%2Fstatic.flashscore.com%2Fres%2Fimage%2Fdata%2FhjKM6ZCr-6ys9CWQj.png&time=18%3A00+15%2F07" group-title="Tinh La Gi",18:00 15/07 Germany vs Slovenia (BLV TRẠNG BỊP) [geo]
 https://pull.asynccdn.com/live/bcf9ff08109445d08665b2e064342ca6/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&away=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (Lữ Bố (Giàng Phụng Tiên)) [hls]
-https://hls.cdnfaster-b.site/live/GIANGPHUNGTIEN/index.m3u8?expire=1892388660&sign=307f59b7df73ce01272ff1281896bae9
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png&away=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (Giàng A Mèo) [hls]
+https://hls.cdnfaster-b.site/live/THOLAN/index.m3u8?expire=1861431180&sign=1080a8fb636c46fc4dbbfe3aeeb0efe0
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&away=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (Lữ Bố (Giàng Phụng Tiên)) [flv]
-https://flv.cdnfaster-b.site/live/GIANGPHUNGTIEN.flv?expire=1892388660&sign=307f59b7df73ce01272ff1281896bae9
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png&away=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (Giàng A Mèo) [flv]
+https://flv.cdnfaster-b.site/live/THOLAN.flv?expire=1861431180&sign=1080a8fb636c46fc4dbbfe3aeeb0efe0
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&away=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (GIÀNG A BẨY ) [hls]
-https://hls.cdnfaster-b.site/live/GIANGABAY/index.m3u8?expire=1839139740&sign=0386abc1f8ac44d77d90458199531caf
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&away=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (Giàng A Voi) [hls]
+https://hls.cdnfaster-b.site/live/APHO/index.m3u8?expire=1803369120&sign=ae3b38199c263a1a3707b0ab3e83f68e
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&away=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.png&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (GIÀNG A BẨY ) [flv]
-https://flv.cdnfaster-b.site/live/GIANGABAY.flv?expire=1839139740&sign=0386abc1f8ac44d77d90458199531caf
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&away=https%3A%2F%2Fimg.url-api-ck.com%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (Giàng A Voi) [flv]
+https://flv.cdnfaster-b.site/live/APHO.flv?expire=1803369120&sign=ae3b38199c263a1a3707b0ab3e83f68e
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fapi.url-api-ck.com%2Fuploads%2Flivestream-customs%2F1783976460052-j8s9si8d11s.png&away=https%3A%2F%2Fapi.url-api-ck.com%2Fuploads%2Flivestream-customs%2F1783976460052-j8s9si8d11s.png&time=23%3A59+14%2F07" group-title="Tinh La Gi",23:59 14/07 Tây Ban Nha vs Bỉ (Thích Đủ Thứ) [hls]
+https://hls.cdnfaster-b.site/live/Anui/index.m3u8?expire=1856932200&sign=475553d6e8f7f7c36ecbdc57417cd9a3
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fapi.url-api-ck.com%2Fuploads%2Flivestream-customs%2F1783976460052-j8s9si8d11s.png&away=https%3A%2F%2Fapi.url-api-ck.com%2Fuploads%2Flivestream-customs%2F1783976460052-j8s9si8d11s.png&time=23%3A59+14%2F07" group-title="Tinh La Gi",23:59 14/07 Tây Ban Nha vs Bỉ (Thích Đủ Thứ) [flv]
+https://flv.cdnfaster-b.site/live/Anui.flv?expire=1856932200&sign=475553d6e8f7f7c36ecbdc57417cd9a3
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fstatic.sportsfeed.pro%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.png&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.png&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Atlanta Dream vs Los Angeles Sparks (Okocha) [flv]
 https://playback.livetl001.com/live/6a02c3637fd690a3410710a5.flv
@@ -569,38 +656,83 @@ https://playback.livetl001.com/live/6a02c3637fd690a3410710a5.flv
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fstatic.sportsfeed.pro%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.png&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.png&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Atlanta Dream vs Los Angeles Sparks (Okocha) [hls]
 https://playback.livetl001.com/live/6a02c3637fd690a3410710a5.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (A PÁO) [geo]
-https://live.inplyr.com/room/235232.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (Meomeo) [flv]
+https://playback.livetl001.com/live/69be75e0a0a45974afb67776.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (A PÁO)
-https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1783979964-0-0-c790b197a334a188076bd7cf520939f4
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.png&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (Meomeo) [hls]
+https://playback.livetl001.com/live/69be75e0a0a45974afb67776.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (A BỆU) [geo]
-https://live.inplyr.com/room/484845.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.png&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.png&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (Cố tư nghiêm) [flv]
+https://playback.livetl001.com/live/69a1aaa7230584579e2d5ce1.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (A BỆU)
-https://pull.niues.live/live/stream-484845_lhd.m3u8?auth_key=1783979964-0-0-c74b991604efcac733c8f4449e699815
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.png&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.png&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (Cố tư nghiêm) [hls]
+https://playback.livetl001.com/live/69a1aaa7230584579e2d5ce1.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (BLV KEM) [geo]
-https://live.inplyr.com/room/513394.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.png&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.png&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Atletico Atlanta vs Colegiales (Kayti) [flv]
+https://playback.livetl001.com/live/69b8e6f43bcf2231c35d5144.flv
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (BLV KEM)
-https://pull.niues.live/live/stream-513394_lhd.m3u8?auth_key=1783979664-0-0-e900553886533468fd4bb0ac9cd2c238
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.png&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.png&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Atletico Atlanta vs Colegiales (Kayti) [hls]
+https://playback.livetl001.com/live/69b8e6f43bcf2231c35d5144.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (BLV NOVA) [geo]
-https://live.inplyr.com/room/619108.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Memphis Grizzlies vs Dallas Mavericks (BRIAN) [geo]
+https://live.inplyr.com/room/122591.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (CHÍ PHÈO) [geo]
-https://live.inplyr.com/room/273736.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Memphis Grizzlies vs Dallas Mavericks (BRIAN)
+https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1783986264-0-0-a480bfdcb3a6e0acff2b12bc124fa88f
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F631e4cfa5f1d5bee45618fb97fc3f0b4.webp&time=02%3A15+14%2F07" group-title="Tinh La Gi",02:15 14/07 Breidablik vs Keflavik (BLV PEWPEW) [geo]
-https://live.inplyr.com/room/109053.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Memphis Grizzlies vs Dallas Mavericks (A CHÈ) [geo]
+https://live.inplyr.com/room/356042.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 The Cong Viettel U21 vs LPBank HAGL U21 (BLV GÔN) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Memphis Grizzlies vs Dallas Mavericks (A CHÈ)
+https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1783986264-0-0-34b9c780972a84a13cbbcca1118f27a1
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.webp&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Atlanta Dream vs Los Angeles Sparks W (CHAN SENA) [geo]
+https://live.inplyr.com/room/515530.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.webp&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Atlanta Dream vs Los Angeles Sparks W (CHAN SENA)
+https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1783986264-0-0-9d55e5af05cd5776f1b5730fc9ab8005
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (BLV GÔN) [geo]
 https://live.inplyr.com/room/445260.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 The Cong Viettel U21 vs LPBank HAGL U21 (BLV RAMBO) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (BLV GÔN)
+https://pull.niues.live/live/stream-445260_lhd.m3u8?auth_key=1783986204-0-0-239213636ad06d5ec583fd48a832a68a
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (XUÂN SON) [geo]
+https://live.inplyr.com/room/501412.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (XUÂN SON)
+https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=9a29bcf5ff5cf6422bb1307f228657c8&txTime=6a55bea8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (BLV PICK) [geo]
+https://live.inplyr.com/room/598549.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (BLV PICK)
+https://pull.niues.live/live/stream-598549_lhd.m3u8?auth_key=1783985904-0-0-d00631667cd0b16885d040c3e0158008
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (BLV RAMBO) [geo]
 https://live.inplyr.com/room/534055.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV RYO) [geo]
+https://live.inplyr.com/room/602019.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV RYO)
+https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1783986024-0-0-2704c60e2f9cdd645da239615e426d9c
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV LUCAS) [geo]
+https://live.inplyr.com/room/304148.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV LUCAS)
+https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1783986024-0-0-8fa5f063f3617168a182afa97cf58be1
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV CHIVAS) [geo]
+https://live.inplyr.com/room/485739.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV CHIVAS)
+https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=d4c49d2e34b003b2117d8ffc0870a2d0&txTime=6a55bea8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV GIÓ) [geo]
+https://live.inplyr.com/room/321443.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 The Cong Viettel U21 vs LPBank HAGL U21 (BLV A WIN) [geo]
 https://live.inplyr.com/room/536185.m3u8
@@ -611,17 +743,11 @@ https://live.inplyr.com/room/557845.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 The Cong Viettel U21 vs LPBank HAGL U21 (BLV CÁO) [geo]
 https://live.inplyr.com/room/597929.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F943b657247cc4c6361acb7d364216129.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 The Cong Viettel U21 vs LPBank HAGL U21 (BLV PICK) [geo]
-https://live.inplyr.com/room/598549.m3u8
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 Tay Ninh U21 vs Song Lam Nghe An U21 (BLV FIREMAN) [geo]
 https://live.inplyr.com/room/250874.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 Tay Ninh U21 vs Song Lam Nghe An U21 (BLV KAN) [geo]
 https://live.inplyr.com/room/283501.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 Tay Ninh U21 vs Song Lam Nghe An U21 (BLV LUCAS) [geo]
-https://live.inplyr.com/room/304148.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 Tay Ninh U21 vs Song Lam Nghe An U21 (BLV VOI) [geo]
 https://live.inplyr.com/room/552716.m3u8
@@ -629,26 +755,32 @@ https://live.inplyr.com/room/552716.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 Tay Ninh U21 vs Song Lam Nghe An U21 (BLV CÒ) [geo]
 https://live.inplyr.com/room/582342.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV RYO) [geo]
-https://live.inplyr.com/room/602019.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F56f5512cad8883191c4cacbf05f4b7de.webp&time=15%3A30+14%2F07" group-title="Tinh La Gi",15:30 14/07 Tay Ninh U21 vs Song Lam Nghe An U21 (A PÁO) [geo]
+https://live.inplyr.com/room/235232.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV CHIVAS) [geo]
-https://live.inplyr.com/room/485739.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fbbeab4da483809c99fe819976006d507.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fbbeab4da483809c99fe819976006d507.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 TP Ho Chi Minh U21 vs PVF CAND U21 (BLV WUKONG) [geo]
+https://live.inplyr.com/room/511367.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F20bd29045f9e765f9162647ec74b9d75.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 Cerro Largo vs Defensor Sporting Montevideo (BLV GIÓ) [geo]
-https://live.inplyr.com/room/321443.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fbbeab4da483809c99fe819976006d507.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fbbeab4da483809c99fe819976006d507.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 TP Ho Chi Minh U21 vs PVF CAND U21 (BLV LION) [geo]
+https://live.inplyr.com/room/603255.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F24403efa393f55163b5593c435bbe4a7.webp&time=05%3A00+14%2F07" group-title="Tinh La Gi",05:00 14/07 America MG vs Londrina PR (XUÂN SON) [geo]
-https://live.inplyr.com/room/501412.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fbbeab4da483809c99fe819976006d507.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fbbeab4da483809c99fe819976006d507.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 TP Ho Chi Minh U21 vs PVF CAND U21 (HÀ DUY KIÊN) [geo]
+https://live.inplyr.com/room/607400.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.webp&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Atlanta Dream vs Los Angeles Sparks W (CHAN SENA) [geo]
-https://live.inplyr.com/room/515530.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fbbeab4da483809c99fe819976006d507.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fbbeab4da483809c99fe819976006d507.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 TP Ho Chi Minh U21 vs PVF CAND U21 (BLV FOX) [geo]
+https://live.inplyr.com/room/620003.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fbe3ef0f7745b3b45b846fac31ca987c6.webp&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Atlanta Dream vs Los Angeles Sparks W (BRIAN) [geo]
-https://live.inplyr.com/room/122591.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 Ha Noi U21 vs An Giang U21 (BLV XO) [geo]
+https://live.inplyr.com/room/472241.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2F5150102b33043405b63b2e7c72759fa8.webp&time=06%3A00+14%2F07" group-title="Tinh La Gi",06:00 14/07 Memphis Grizzlies vs Dallas Mavericks (A CHÈ) [geo]
-https://live.inplyr.com/room/356042.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 Ha Noi U21 vs An Giang U21 (VƯƠNG ANH) [geo]
+https://live.inplyr.com/room/548860.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 Ha Noi U21 vs An Giang U21 (ĐỖ TÚ TÀI) [geo]
+https://live.inplyr.com/room/607552.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F69a1fa27157714ad23f29d9693f264ef.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 Ha Noi U21 vs An Giang U21 (XUÂN TÓC ĐỎ) [geo]
+https://live.inplyr.com/room/610518.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Faf8774ff48aa426f5516ba6d507c5381.webp&time=06%3A30+14%2F07" group-title="Tinh La Gi",06:30 14/07 Ceara vs Athletic Club (BLV COZY) [geo]
 https://live.inplyr.com/room/531989.m3u8
@@ -670,9 +802,6 @@ https://live.inplyr.com/room/380460.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.webp&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Atletico Atlanta vs Colegiales (NGƯỜI CÁ) [geo]
 https://live.inplyr.com/room/595335.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.webp&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Atletico Atlanta vs Colegiales (BLV LION) [geo]
-https://live.inplyr.com/room/603255.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F1173dcf4726c8da0e9c133b306bab95d.webp&time=07%3A00+14%2F07" group-title="Tinh La Gi",07:00 14/07 Atletico Atlanta vs Colegiales (KÉP) [geo]
 https://live.inplyr.com/room/560690.m3u8
@@ -716,6 +845,54 @@ https://live.inplyr.com/room/532081.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F424ac25c370b644caebd91d8ba01df34.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F424ac25c370b644caebd91d8ba01df34.webp&time=16%3A00+14%2F07" group-title="Tinh La Gi",16:00 14/07 Ha Noi IIWomen vs Than KSVN Women (BLV COCA) [geo]
 https://live.inplyr.com/room/327159.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Rochedale Rovers vs SD Raiders FC (BLV MESSI) [geo]
+https://live.inplyr.com/room/494201.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Rochedale Rovers vs SD Raiders FC (BLV A TINH) [geo]
+https://live.inplyr.com/room/598119.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Rochedale Rovers vs SD Raiders FC (BEN 10) [geo]
+https://live.inplyr.com/room/612098.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F030a377635b3ac3fe5cbb49221594110.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Rochedale Rovers vs SD Raiders FC (PEANUT) [geo]
+https://live.inplyr.com/room/620084.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Wests APIA FC vs Peninsula Power (BLV CUỘI) [geo]
+https://live.inplyr.com/room/256080.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Wests APIA FC vs Peninsula Power (LOKA) [geo]
+https://live.inplyr.com/room/589848.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Wests APIA FC vs Peninsula Power (QUỐC KHÁNH) [geo]
+https://live.inplyr.com/room/602153.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Wests APIA FC vs Peninsula Power (TRÀ ĐÁ) [geo]
+https://live.inplyr.com/room/603914.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fb40490f71ac7ea0ae68ac775782d4d2a.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Wests APIA FC vs Peninsula Power (VINFAST) [geo]
+https://live.inplyr.com/room/617313.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F147e42758f282d0b24ee9dd2aa4e67d2.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F147e42758f282d0b24ee9dd2aa4e67d2.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Gold Coast United Women vs Brisbane City Women (BLV PEWPEW) [geo]
+https://live.inplyr.com/room/109053.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F4eca58c68a5f0f23edbc005ed726e9d7.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F4eca58c68a5f0f23edbc005ed726e9d7.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Eastern Suburbs SC Women vs Olympic FC W (LÃO LÂM) [geo]
+https://live.inplyr.com/room/527384.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F439b6ce751392e8c69194066ef6a9c10.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F439b6ce751392e8c69194066ef6a9c10.webp&time=16%3A30+14%2F07" group-title="Tinh La Gi",16:30 14/07 Capalaba Women vs Sunshine Coast Wanderers Women (BLV KEM) [geo]
+https://live.inplyr.com/room/513394.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fae214e0e1fe684797043596e4585f858.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fae214e0e1fe684797043596e4585f858.webp&time=17%3A30+14%2F07" group-title="Tinh La Gi",17:30 14/07 Boroondara Eagles Women vs Preston Lions Women (BLV NOVA) [geo]
+https://live.inplyr.com/room/619108.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fae214e0e1fe684797043596e4585f858.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fae214e0e1fe684797043596e4585f858.webp&time=17%3A30+14%2F07" group-title="Tinh La Gi",17:30 14/07 Boroondara Eagles Women vs Preston Lions Women (BLV VIP) [geo]
+https://live.inplyr.com/room/491873.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F48c639a4b55669182fd011ace2895b0c.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F48c639a4b55669182fd011ace2895b0c.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 TNG Thai Nguyen Women vs Hồ Chí Minh City Women (BLV BÉO) [geo]
+https://live.inplyr.com/room/459401.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F48c639a4b55669182fd011ace2895b0c.webp&away=https%3A%2F%2Fsocolives.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F48c639a4b55669182fd011ace2895b0c.webp&time=18%3A00+14%2F07" group-title="Tinh La Gi",18:00 14/07 TNG Thai Nguyen Women vs Hồ Chí Minh City Women (HẢI THANH) [geo]
+https://live.inplyr.com/room/599634.m3u8
+
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-efb2bff2c6_369e555c_20260714.png?v=369e555c" group-title="Gio Vang",Breidablik vs Keflavík | 02:15 14/07 | GV
 https://sgtdrxtdjeliv.vcdn.cloud/1783904411_hd/1783904411_hd@720p.m3u8
 
@@ -742,9 +919,6 @@ https://sgtdrxtdjeliv.vcdn.cloud/1783930064_hd/1783930064_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-d0347138e7_9f54380e_20260714.png?v=9f54380e" group-title="Gio Vang",Indiana Pacers vs Toronto Raptors | 03:30 14/07 | GV
 https://sgtdrxtdjeliv.vcdn.cloud/1783903308_hd/1783903308_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-c01852cc5c_b4c63080_20260714.png?v=b4c63080" group-title="Gio Vang",Memphis Grizzlies vs Dallas Mavericks | 06:00 14/07 | GV
-https://sgtdrxtdjeliv.vcdn.cloud/1783903347_hd/1783903347_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-e0f043a3a1_a8df59fe_20260714.png?v=a8df59fe" group-title="Gio Vang",Atlanta Dream vs Los Angeles Sparks | 06:00 14/07 | GV
 https://sgtdrxtdjeliv.vcdn.cloud/1783903378_hd/1783903378_hd@720p.m3u8
@@ -791,7 +965,7 @@ https://sgtdrxtdjeliv.vcdn.cloud/1783392746_hd/1783392746_hd@720p.m3u8
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/gv-89491df375_e3aabca7_20260714.png?v=e3aabca7" group-title="Gio Vang",Homerun Derby vs Homerun Derby | 07:00 14/07 | GV
 https://sgtdrxtdjeliv.vcdn.cloud/1783954805_hd/1783954805_hd@720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5oGX8rfISQE2e82j_6uBF0mvjnvwYDhWOCApBQWQ3tQ&s=10" group-title="UPDATE 04:06⏱14/07",UPDATE 04:06⏱14/07
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5oGX8rfISQE2e82j_6uBF0mvjnvwYDhWOCApBQWQ3tQ&s=10" group-title="UPDATE 06:02⏱14/07",UPDATE 06:02⏱14/07
 https://vpsttt.vietanhtv.top/1.mp4
 
 #EXTINF:-1 tvg-logo="https://image1.vnmedia.xyz/logo/vtv6hd.png" group-title="Độ Trễ Thấp",VTV6 HD
@@ -801,58 +975,58 @@ http://103.78.0.190:8080/live/vtv6.flv?token=vtv_secret_20260714
 http://103.78.0.190:8080/live/vtv6link2.flv?token=vtv_secret_20260714
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus1.png" group-title="Sự Kiện TV360",TV360+1
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=2554&expires=1783991205&token=849a3ba38a1275ee3335c89eeb21ec6a
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=2554&expires=1783998176&token=cab7941dd308e10b17777011a06c58c6
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus2.png" group-title="Sự Kiện TV360",TV360+2
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=1&expires=1783991205&token=355ccd43a425f8c22b75250503f79506
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=1&expires=1783998176&token=64b16dbbb6ac277f8a9857195f04d54e
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus3.png" group-title="Sự Kiện TV360",TV360+3
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=148&expires=1783991205&token=29f0ebbdbe6608e91c9aef58de37fee0
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=148&expires=1783998176&token=0b5ce9d2b0e1f7786bd3ee103763cb5a
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus4.png" group-title="Sự Kiện TV360",TV360+4
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=2458&expires=1783991205&token=e5fc2a4880200037f6ae16feea472198
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=2458&expires=1783998176&token=0d5d59ff2c927712f8ee2490ded1b7f0
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus5.png" group-title="Sự Kiện TV360",TV360+5
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9867&expires=1783991205&token=27b992bdb0fd41191add4778dc51de4c
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9867&expires=1783998176&token=687f9f9252edc1c32121148c5eddb3e2
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus6.png" group-title="Sự Kiện TV360",TV360+6
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9868&expires=1783991205&token=4f530b6d5eb86f2ed71a9b78ee578277
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9868&expires=1783998176&token=cc11fcb7e5b69b327b21e648f82761b5
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus7.png" group-title="Sự Kiện TV360",TV360+7
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9869&expires=1783991205&token=2ab5b5d3171324a5be2d2475ced6c259
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9869&expires=1783998176&token=846cdde5107ef0b861ff33d188185da7
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus8.png" group-title="Sự Kiện TV360",TV360+8
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9870&expires=1783991205&token=478d319bd251b3f0d0bc8898c6f27ccb
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9870&expires=1783998176&token=f8f0a0201abd979cd019c5f6ffacb1ed
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus9.png" group-title="Sự Kiện TV360",TV360+9
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9887&expires=1783991205&token=96b1a7088debf756707bf7f0770dfcd3
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9887&expires=1783998176&token=6fbbfb9ba21d9e30953a24802556a247
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus10.png" group-title="Sự Kiện TV360",TV360+10
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9957&expires=1783991205&token=91d9de90d750f1150597b488a5dd4cd4
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9957&expires=1783998176&token=0fd0906e4a32ee2e5a5945ae146079ae
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus11.png" group-title="Sự Kiện TV360",TV360+11
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9958&expires=1783991205&token=bc79cb7ca1fc3892f4d2a20faac5bc4a
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9958&expires=1783998176&token=692473e754225951dfd536cd6e164c65
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/tv360plus12.png" group-title="Sự Kiện TV360",TV360+12
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=10001&expires=1783991205&token=b58f0f8f8551f2777d3cec1a15932a38
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=10001&expires=1783998176&token=9d35b593cbf26866f046a42c08d55a46
 
 #EXTINF:-1 tvg-logo="https://img-zlr1.tv360.vn/image1/2026/05/15/01/1778782670293/dd4067f28084_480_270.png" group-title="Sự Kiện TV360",TV360+13
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=10022&expires=1783991205&token=3ebc7626b709a568f708662ed3e86d9f
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=10022&expires=1783998176&token=9d7bb4e3e260e48c3110c871687fc727
 
 #EXTINF:-1 tvg-logo="https://img-zlr1.tv360.vn/image1/2026/05/15/01/177878325467/bbecb3ccb477_480_270.png" group-title="Sự Kiện TV360",TV360+14
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=10023&expires=1783991205&token=e29873b2983454dcbc9ffc50008982de
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=10023&expires=1783998176&token=a131168e40530b83a425c85000889130
 
 #EXTINF:-1 tvg-logo="https://img-zlr1.tv360.vn/image1/2026/05/15/01/1778783528367/ddfa21d56253_480_270.png" group-title="Sự Kiện TV360",TV360+15
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=10024&expires=1783991205&token=f8239e3d3f6abddeb3d000989a64f219
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=10024&expires=1783998176&token=f94240f32da6a153c022c13d2aef37b5
 
 #EXTINF:-1 tvg-logo="https://img-ali1.tv360.vn/image1/2025/12/31/18/1767180734794/7cda83f18b5d_640_360.png" group-title="Rạp Phim",Phim Việt
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9902&expires=1783991205&token=107be636cc4b68e73c08beeb56ff75ea
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9902&expires=1783998176&token=3321577424d0dba24b72f60be82834a1
 
 #EXTINF:-1 tvg-logo="https://img-ali1.tv360.vn/image1/2025/03/24/23/1742835081398/4e6776be1efd_640_360.png" group-title="Rạp Phim",Phim Âu Mỹ
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9903&expires=1783991205&token=bf882c6780449abe1e6dc1ff3d5b9583
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9903&expires=1783998176&token=e32e905f661b8407dbfa601fefa3273b
 
 #EXTINF:-1 tvg-logo="https://img-ali1.tv360.vn/image1/2025/12/31/19/1767185202351/540d7e229911_640_360.png" group-title="Rạp Phim",Hoạt hình
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9934&expires=1783991205&token=dd77e487baf812d0c4585c0d7635e396
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=9934&expires=1783998176&token=e34703a05089f03062bc2f234c1fca5b
 
 #EXTINF:-1 tvg-logo="http://vietanh18h1.duckdns.org/ic/vtv1.png" group-title="VTV",VTV1 HD
 https://live.fptplay53.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -939,46 +1113,46 @@ https://live.fptplay53.net/epzhd1/htvcphunu_vhls.smil/chunklist_b5000000.m3u8
 https://vpsttt.vietanhtv.top/vieon/vieon.php?id=vie-giai-tri-hd
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/onphimviet.png" group-title="VTVcab",ON Phim Việt
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=175&expires=1783991205&token=a545a2af1274d9ef5703c62e90396e9b
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=175&expires=1783998176&token=ab97c4348d1fadc16a0e9c9bbf27c072
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/onmovies.png" group-title="VTVcab",On Movies
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=181&expires=1783991205&token=6e1f6ce51e25f7d301b33e70e6af1994
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=181&expires=1783998176&token=bcd257bcc0c3475f23788a2a8763df8c
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/onechannel.png" group-title="VTVcab",ON E- Channel
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=182&expires=1783991205&token=6676f22ac4a035d89724c38f6be67a87
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=182&expires=1783998176&token=276dd595212fb1ab42111c08db02a54e
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/ono2tv.png" group-title="VTVcab",On O2TV
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=136&expires=1783991205&token=7b6425c7c0f68e2d7cd108f24f7e6136
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=136&expires=1783998176&token=8d1e05762891a0f214e0ac958f543090
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/onbibi.png" group-title="VTVcab",On BiBi
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=178&expires=1783991205&token=bfec4a26093beaede8b30d700a42cc96
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=178&expires=1783998176&token=a05940c7969a38345f990e82096292de
 
 #EXTINF:-1 tvg-logo="https://img-ali1.tv360.vn/image1/2023/07/19/09/1689732099410/a13853e5de55_480_270.png" group-title="VTVcab",ON Info TV
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=189&expires=1783991205&token=f528f3351ea1a1b20d7dd7502230b1c7
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=189&expires=1783998176&token=545b148053e6312cbec7ffb2d8daa5ce
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/oncine.png" group-title="VTVcab",ON Cine
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=176&expires=1783991205&token=7d8aff9ec097affd1bd70871fbf25b66
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=176&expires=1783998176&token=d46084f8b91f3d0598a2cb6aff4131f8
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/onstyle.png" group-title="VTVcab",ON Style TV
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=184&expires=1783991205&token=917ae8d2f02849d4897ba1f43e908f88
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=184&expires=1783998176&token=acc6bc088677f893aa0da8041901d8cc
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/onmusic.png" group-title="VTVcab",On Music
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=185&expires=1783991205&token=f5aa436f3cb1f0fc6f044d5605bf799a
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=185&expires=1783998176&token=5395e31432df40842817b2bc58e294f7
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/ontrendingtv.png" group-title="VTVcab",ON TRENDING TV
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=186&expires=1783991205&token=f3f485b8b359edd2df0142f1dc9987ac
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=186&expires=1783998176&token=19f29c8b43a94aac6e81d841f9eb1c56
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/viedrama.png" group-title="VTVcab",ON Vie Dramas
 https://vpsttt.vietanhtv.top/vieon/vieon.php?id=vie-dramas-hd
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/HHfL7Dq/cocab20.webp" group-title="VTVcab",ON V Family
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=187&expires=1783991205&token=5b02f39973c484ad5b7ddf3828bc315a
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=187&expires=1783998176&token=ff746910eb26ad6121e2b6adb2ef1ff5
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/onkids.png" group-title="VTVcab",On Kids
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=179&expires=1783991205&token=c02ec53be4229b5f6c507934ffc85eee
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=179&expires=1783998176&token=916719c64471d24389376df205eca14e
 
 #EXTINF:-1 tvg-logo="https://img-ali1.tv360.vn/image1/2023/07/19/09/1689732652862/f124f55c3587_640_360.png" group-title="VTVcab",On Life
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=188&expires=1783991205&token=e493976a5f1c20199e6d0031ce0ebe4c
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=188&expires=1783998176&token=925ff0f86c4816ba9ea3358724114a26
 
 #EXTINF:-1 tvg-logo="https://vietanhtv.id.vn/logo/sctv2.png" group-title="SCTV",SCTV2 HD - TODAY TV
 https://liveh12vng.vtvprime.vn/hls/SCTV2/03.m3u8
@@ -1152,10 +1326,10 @@ https://live.fptplay53.net/fnxsd1/thanhhoa_hls.smil/chunklist_b2500000.m3u8
 https://live.fptplay53.net/fnxsd1/tuyenquang_hls.smil/chunklist_b2500000.m3u8
 
 #EXTINF:-1 tvg-logo="https://freem3u.xyz/static/images/hanoicab/hitv.png" group-title="Địa Phương",HiTV
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=32&expires=1783991205&token=bfaac74c70b04d8902144cfe1415925a
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=32&expires=1783998176&token=1472412fdd25ebdcc328484b56ae4133
 
 #EXTINF:-1 tvg-logo="https://freem3u.xyz/static/images/hanoicab/youtv.png" group-title="Địa Phương",You TV
-https://vpsttt.vietanhtv.top/tv360/tv360.php?id=31&expires=1783991205&token=d4385000fc519e7ecb29bb19995ea474
+https://vpsttt.vietanhtv.top/tv360/tv360.php?id=31&expires=1783998176&token=4f4dc48504aebc5cb2d316b617ddf7eb
 
 #EXTINF:-1 tvg-logo="https://freem3u.xyz/static/images/tvb/tvbv.png" group-title="Quốc Tế",TVB Việt Nam
 https://amg01868-amg01868c3-tvbanywhere-us-4491.playouts.now.amagi.tv/playlist/amg01868-tvbusa-tvbvietnam-tvbanywhereus/playlist.m3u8?_xtfc=6864eb7721a75224098f21dba116e648&_xt=1772525259
@@ -1343,24 +1517,6 @@ https://strm.voh.com.vn/radio/channel1/chunklist_w1203304311.m3u8
 #EXTINF:-1 tvg-logo="https://image.voh.com.vn/voh/image/2023/12/06/voh-am610-512x512-104316.png" group-title="Radio",VOH AM 610
 https://strm.voh.com.vn/radio/channel2/chunklist_w558517770.m3u8
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",02:15-14/07: Breidablik - Keflavik (ICE PR) - A PÁO
-https://vpsttt.vietanhtv.top/socolive/get.php?id=235232
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",02:15-14/07: Breidablik - Keflavik (ICE PR) - A BỆU
-https://vpsttt.vietanhtv.top/socolive/get.php?id=484845
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",02:15-14/07: Breidablik - Keflavik (ICE PR) - BLV KEM
-https://vpsttt.vietanhtv.top/socolive/get.php?id=513394
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",02:15-14/07: Breidablik - Keflavik (ICE PR) - BLV NOVA
-https://vpsttt.vietanhtv.top/socolive/get.php?id=619108
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",02:15-14/07: Breidablik - Keflavik (ICE PR) - CHÍ PHÈO
-https://vpsttt.vietanhtv.top/socolive/get.php?id=273736
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",02:15-14/07: Breidablik - Keflavik (ICE PR) - BLV PEWPEW
-https://vpsttt.vietanhtv.top/socolive/get.php?id=109053
-
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",05:00-14/07: Cerro Largo - Defensor Sporting Montevideo (URU D1) - BLV RYO
 https://vpsttt.vietanhtv.top/socolive/get.php?id=602019
 
@@ -1457,6 +1613,9 @@ https://vpsttt.vietanhtv.top/socolive/get.php?id=552716
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",15:30-14/07: Tay Ninh U21 - Song Lam Nghe An U21 (VIE U21) - BLV CÒ
 https://vpsttt.vietanhtv.top/socolive/get.php?id=582342
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",15:30-14/07: Tay Ninh U21 - Song Lam Nghe An U21 (VIE U21) - A PÁO
+https://vpsttt.vietanhtv.top/socolive/get.php?id=235232
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",15:30-14/07: The Cong Viettel U21 - LPBank HAGL U21 (VIE U21) - BLV A WIN
 https://vpsttt.vietanhtv.top/socolive/get.php?id=536185
 
@@ -1508,8 +1667,17 @@ https://vpsttt.vietanhtv.top/socolive/get.php?id=494201
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",16:30-14/07: Rochedale Rovers - SD Raiders FC (AUS FFA) - BLV A TINH
 https://vpsttt.vietanhtv.top/socolive/get.php?id=598119
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",16:30-14/07: Capalaba W - Sunshine Coast Wanderers W (AUS WQSL) - BLV KEM
+https://vpsttt.vietanhtv.top/socolive/get.php?id=513394
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",16:30-14/07: Eastern Suburbs W - Olympic FC W (AUS WQSL) - LÃO LÂM
 https://vpsttt.vietanhtv.top/socolive/get.php?id=527384
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",16:30-14/07: Gold Coast W - Brisbane City W (AUS WQSL) - BLV PEWPEW
+https://vpsttt.vietanhtv.top/socolive/get.php?id=109053
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",17:30-14/07: Boroondara Eagles Women's - Preston Lions Women's (AUS WNPL) - BLV NOVA
+https://vpsttt.vietanhtv.top/socolive/get.php?id=619108
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",17:30-14/07: Boroondara Eagles Women's - Preston Lions Women's (AUS WNPL) - BLV VIP
 https://vpsttt.vietanhtv.top/socolive/get.php?id=491873
@@ -1544,6 +1712,12 @@ https://vpsttt.vietanhtv.top/socolive/get.php?id=620003
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",18:35-14/07: Zhejiang Professional FC - Qingdao Hainiu (CHA SL) - BLV ĐỐM
 https://vpsttt.vietanhtv.top/socolive/get.php?id=434982
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",19:00-14/07: BFF Academy U19 - Drukpa FC (BTN PL) - CHÍ PHÈO
+https://vpsttt.vietanhtv.top/socolive/get.php?id=273736
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",19:00-14/07: BFF Academy U19 - Drukpa FC (BTN PL) - A BỆU
+https://vpsttt.vietanhtv.top/socolive/get.php?id=484845
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",23:00-14/07: FC Iberia 1999 Tbilisi - FC Flora Tallinn (UEFA CL) - BLV LONG
 https://vpsttt.vietanhtv.top/socolive/get.php?id=132343
 
@@ -1571,28 +1745,19 @@ https://vpsttt.vietanhtv.top/socolive/get.php?id=291277
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",00:00-15/07: Riga FC - Ararat-Armenia FC (UEFA CL) - CR Bưởi
 https://vpsttt.vietanhtv.top/socolive/get.php?id=387694
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",02:00-15/07: France - Spain (WORLD CUP) - BLV 7UP
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20210503/fca5954ec22137ad05325506d6645592" group-title="Socolive",17:00-15/07: Jeonnam Dragons - Chungnam Asan (KOR Cup) - BLV 7UP
 https://vpsttt.vietanhtv.top/socolive/get.php?id=534219
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/competition/2c764cfc9ae1beacd2dcb28cb831755a.png!w80" group-title="ColaTV",[16:30 14/07] Rochedale Rovers vs SD Raiders FC - BLV BLV 7UP (L1) Giải :Cúp bóng đá của Hiệp hội Bóng đá Úc
-https://live05.miekgo.app/live/78905744.flv
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/competition/https://oss-logo-hk.oss-accelerate.aliyuncs.com/admin/image/admin/Qnq-OwRoTmuTcJWhDklkdA.png" group-title="ColaTV",[23:00 14/07] Saburtalo Tbilisi vs FC Flora Tallinn - BLV BLV KHÔNG ĐỘ (L1) Giải :Champions League
+https://live05.miekgo.app/live/41943555.flv
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/competition/40121ad4dae08e4bef3bb8d4a46606d1.png!w80" group-title="ColaTV",[18:00 14/07] Thái Nguyên Nữ vs Hồ Chí Minh Nữ - BLV BLV GIÀ LÀNG (L1) Giải :Women's National League
-https://live05.miekgo.app/live/14830711.flv
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/competition/https://oss-logo-hk.oss-accelerate.aliyuncs.com/admin/image/admin/Qnq-OwRoTmuTcJWhDklkdA.png" group-title="ColaTV",[02:00 15/07] Shamrock Rovers vs Floriana - BLV BLV SPRITE (L1) Giải :Champions League
+https://live05.miekgo.app/live/75748097.flv
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/competition/dccfa6d312fd001fd1118c028806144d.png!w80" group-title="ColaTV",[18:00 14/07] T T Hà Nội U21 vs Hung Vuong An Giang U21 - BLV BLV C2 (L1) Giải :Giải bóng đá trẻ U21 Việt Nam
-https://live05.miekgo.app/live/08552895.flv
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133502_1d6d1a3e.png" group-title="ChuoiChienTV",[02h15] Breidablik vs Keflavik | BLV: Trốc Tru [HD]
-https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133502_1d6d1a3e.png" group-title="ChuoiChienTV",[02h15] Breidablik vs Keflavik | BLV: Trốc Tru [HD]
-https://gckc0525.edgemaxcdn.org/live/troctru.flv
-
-#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/19410.png" group-title="ChuoiChienTV",[05h00] Paysandu vs Fenix | BLV: Chuối Chao [HD]
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131722_9a811ba1.png" group-title="ChuoiChienTV",[05h00] Cerro Largo vs Defensor Sporting | BLV: Chuối Chao [HD]
 https://gckc0525.edgemaxcdn.org/live/chuoichao/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://media.api-sports.io/football/teams/19410.png" group-title="ChuoiChienTV",[05h00] Paysandu vs Fenix | BLV: Chuối Chao [HD]
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131722_9a811ba1.png" group-title="ChuoiChienTV",[05h00] Cerro Largo vs Defensor Sporting | BLV: Chuối Chao [HD]
 https://gckc0525.edgemaxcdn.org/live/chuoichao.flv
 
 #EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133407_126a7074.png" group-title="ChuoiChienTV",[08h30] Cavalry FC vs Vancouver Whitecaps | BLV: A Ngao [HD]
@@ -1600,4 +1765,52 @@ https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133407_126a7074.png" group-title="ChuoiChienTV",[08h30] Cavalry FC vs Vancouver Whitecaps | BLV: A Ngao [HD]
 https://gckc0525.edgemaxcdn.org/live/angao.flv
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_135226_b632be79.png" group-title="ChuoiChienTV",[09h30] Pakistan vs Thailand | BLV: Chuối Bơ [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoibo/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_135226_b632be79.png" group-title="ChuoiChienTV",[09h30] Pakistan vs Thailand | BLV: Chuối Bơ [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoibo.flv
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134311_eaf689af.png" group-title="ChuoiChienTV",[12h00] India vs Philippines | BLV: Chuối Tây [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134311_eaf689af.png" group-title="ChuoiChienTV",[12h00] India vs Philippines | BLV: Chuối Tây [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoitay.flv
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134250_2a12c2b6.png" group-title="ChuoiChienTV",[12h30] Australia vs Saudi Arabia | BLV: Chuối Già [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoigia/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134250_2a12c2b6.png" group-title="ChuoiChienTV",[12h30] Australia vs Saudi Arabia | BLV: Chuối Già [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoigia.flv
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_141338_a872ce13.png" group-title="ChuoiChienTV",[16h30] APIA Leichhardt Tigers vs Peninsula Power | BLV: Chuối To [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_141338_a872ce13.png" group-title="ChuoiChienTV",[16h30] APIA Leichhardt Tigers vs Peninsula Power | BLV: Chuối To [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoito.flv
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_141414_5188530f.png" group-title="ChuoiChienTV",[16h30] Rochedale Rovers vs SD Raiders | BLV: Chuối Tiêu [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoitieu/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_141414_5188530f.png" group-title="ChuoiChienTV",[16h30] Rochedale Rovers vs SD Raiders | BLV: Chuối Tiêu [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoitieu.flv
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133506_7ac57820.png" group-title="ChuoiChienTV",[18h35] Hangzhou Greentown vs Qingdao Jonoon | BLV: Chuối Nhỏ [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133506_7ac57820.png" group-title="ChuoiChienTV",[18h35] Hangzhou Greentown vs Qingdao Jonoon | BLV: Chuối Nhỏ [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoinho.flv
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_145103_a5b5bb19.png" group-title="ChuoiChienTV",[19h00] Bhutan U19 vs Drukpa | BLV: Chuối Tím [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoitim/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_145103_a5b5bb19.png" group-title="ChuoiChienTV",[19h00] Bhutan U19 vs Drukpa | BLV: Chuối Tím [HD]
+https://gckc0525.edgemaxcdn.org/live/chuoitim.flv
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_130333_9a00594d.png" group-title="ChuoiChienTV",[23h00] Inter Club d'Escaldes vs Lincoln Red Imps FC | BLV: Trốc Tru [HD]
+https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_130333_9a00594d.png" group-title="ChuoiChienTV",[23h00] Inter Club d'Escaldes vs Lincoln Red Imps FC | BLV: Trốc Tru [HD]
+https://gckc0525.edgemaxcdn.org/live/troctru.flv
 
