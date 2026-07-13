@@ -37,6 +37,8 @@ UA = (
 CHUOICHIEN_TOKEN = os.environ.get("CHUOICHIEN_TOKEN", "").strip()
 KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.khandaia.link")
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
+LUONGSON_API_URL = os.environ.get("LUONGSON_API", "https://api-ls.cdnokvip.com/api/get-livestream-group")
+LUONGSON_MATCH_URL = os.environ.get("LUONGSON_MATCH", "https://api-ls.cdnokvip.com/api/match-detail?matchId=%s")
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -270,6 +272,63 @@ def collect_khandaia():
         KHANDAIA_FRONTEND_URL,
         "Khan Dai A",
     )
+
+
+def collect_luongson():
+    source = "LuongSonTV"
+    log(f"[{source}] Fetch API")
+    data = fetch_json(LUONGSON_API_URL, headers={"Accept": "application/json, */*"}, timeout=25)
+    items = ((data.get("value") or {}).get("datas") or []) if isinstance(data, dict) else []
+    channels = []
+
+    for item in items:
+        match_id = item.get("matchId")
+        if not match_id:
+            continue
+
+        detail_url = LUONGSON_MATCH_URL % match_id
+        try:
+            response = request_get(detail_url, headers={"Accept": "application/json, */*"}, timeout=20)
+            if response.status_code == 405 and requests is not None:
+                response = requests.post(detail_url, headers={"User-Agent": UA, "Accept": "application/json, */*"}, timeout=20)
+            if response.status_code != 200:
+                continue
+            detail = response.json()
+        except Exception:
+            continue
+
+        match = ((detail.get("value") or {}).get("datas") or {}) if isinstance(detail, dict) else {}
+        stream_urls = [
+            ("FHD", match.get("linkLive")),
+            ("HD", match.get("linkLiveFlv")),
+            ("CDN", match.get("cdnUrl")),
+        ]
+        title = clean_text(
+            f"{match.get('homeName') or item.get('homeName') or ''} vs {match.get('awayName') or item.get('awayName') or ''}"
+        ).strip(" vs")
+        if not title:
+            title = source
+        commentator = clean_text(match.get("commentator") or item.get("commentator")) or "BLV"
+        logo = match.get("homeLogo") or item.get("homeLogo") or match.get("awayLogo") or item.get("awayLogo") or ""
+        league = clean_text(match.get("leagueName") or item.get("leagueName")) or source
+
+        for quality, stream_url in stream_urls:
+            if not is_valid_stream_url(stream_url):
+                continue
+            channels.append(
+                {
+                    "source": source,
+                    "name": f"{title} [{league}] | {commentator} [{quality}]",
+                    "group": "Luong Son TV",
+                    "logo": logo,
+                    "stream_url": stream_url,
+                    "referer": "https://luongsontv60.com/",
+                    "user_agent": UA,
+                }
+            )
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
 
 
 def collect_standard_api(source, api_url, site_url="", group_name=None):
@@ -821,10 +880,7 @@ def main():
         ("VongCamTV", collect_vongcam),
         ("CoLaTV", collect_cola),
         ("TamQuocTV", collect_tamquoc),
-        (
-            "LuongSonTV",
-            lambda: collect_grouped_json("LuongSonTV", "https://apithethao1.vercel.app/luongsontv", "Luong Son TV"),
-        ),
+        ("LuongSonTV", collect_luongson),
         (
             "QueChoaTV",
             lambda: collect_grouped_json("QueChoaTV", "https://apithethao1.vercel.app/quechoatv", "Que Choa TV"),
