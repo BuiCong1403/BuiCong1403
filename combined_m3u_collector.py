@@ -10,6 +10,7 @@ from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin
+from urllib.parse import unquote
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
@@ -145,6 +146,7 @@ SPORT_SOURCES = {
     "HoaDaoTV",
     "ChuoiChienTV",
     "QueChoa8",
+    "S8TV",
 }
 
 SPORT_KEYWORDS = [
@@ -795,6 +797,30 @@ MODE_LABEL = {
     "ndhd": "Nha dai HD",
 }
 
+S8TV_TITLE_URL_RE = re.compile(
+    r'\\"title\\":\\"((?:\\\\.|[^\\"])*)\\"(?:(?!\\"title\\":).){0,4000}?'
+    r'\\"(?:link_m3u8|videoUrl)\\":\\"((?:\\\\.|[^\\"])*)\\"',
+    re.S,
+)
+S8TV_PLACEHOLDER_RE = re.compile(r'\\"link_video_placeholder\\":\\"((?:\\\\.|[^\\"])*)\\"')
+S8TV_M3U8_RE = re.compile(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*")
+
+
+def decode_json_string(value):
+    try:
+        return json.loads(f'"{value}"')
+    except Exception:
+        return value.replace("\\/", "/").replace('\\"', '"')
+
+
+def title_from_stream_url(url, prefix):
+    path = unquote(url.split("?", 1)[0]).strip("/")
+    parts = [part for part in path.split("/") if part and part.lower() != "master.m3u8"]
+    label = parts[-1] if parts else prefix
+    label = label.replace("+", " ").replace("_", " ").replace("-", " ")
+    label = re.sub(r"\s+", " ", label).strip()
+    return f"{prefix} {label}".strip()
+
 
 def extract_stream_url(text):
     for pattern in STREAM_PATTERNS:
@@ -904,6 +930,83 @@ def collect_hoadaotv():
     return channels
 
 
+def collect_s8tv():
+    source = "S8TV"
+    site_url = "https://s8tv002.com/"
+    headers = {
+        "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
+        "Referer": site_url,
+    }
+    log(f"[{source}] Fetch home")
+    try:
+        html_text = fetch_text(site_url, headers=headers, timeout=25)
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+    if not html_text:
+        log(f"[{source}] Home not available")
+        return []
+
+    channels = []
+    seen_urls = set()
+
+    for match in S8TV_TITLE_URL_RE.finditer(html_text):
+        title = clean_text(decode_json_string(match.group(1)))
+        stream_url = clean_text(decode_json_string(match.group(2)))
+        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+            continue
+        seen_urls.add(stream_url)
+        title = re.sub(r"\s+-\s+Xem lại.*$", "", title, flags=re.I).strip() or source
+        channels.append(
+            {
+                "source": source,
+                "name": title,
+                "group": source,
+                "logo": "",
+                "stream_url": stream_url,
+                "referer": site_url,
+                "user_agent": UA,
+            }
+        )
+
+    for match in S8TV_PLACEHOLDER_RE.finditer(html_text):
+        stream_url = clean_text(decode_json_string(match.group(1)))
+        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+            continue
+        seen_urls.add(stream_url)
+        channels.append(
+            {
+                "source": source,
+                "name": "S8TV Live",
+                "group": source,
+                "logo": "",
+                "stream_url": stream_url,
+                "referer": site_url,
+                "user_agent": UA,
+            }
+        )
+
+    for stream_url in S8TV_M3U8_RE.findall(html_text):
+        stream_url = clean_text(decode_json_string(stream_url))
+        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+            continue
+        seen_urls.add(stream_url)
+        channels.append(
+            {
+                "source": source,
+                "name": title_from_stream_url(stream_url, source),
+                "group": source,
+                "logo": "",
+                "stream_url": stream_url,
+                "referer": site_url,
+                "user_agent": UA,
+            }
+        )
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_missing_source(name):
     log(f"[{name}] Skipped: file in Downloads contains only HTTP 429 text, not scraper code")
     return []
@@ -1010,6 +1113,7 @@ def main():
         ),
         ("HoaDaoTV", collect_hoadaotv),
         ("ChuoiChienTV", collect_chuoichien),
+        ("S8TV", collect_s8tv),
         ("QueChoa8", lambda: collect_missing_source("QueChoa8")),
     ]
 
