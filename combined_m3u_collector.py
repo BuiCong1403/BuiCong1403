@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import time
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
@@ -126,6 +127,81 @@ def is_valid_stream_url(url):
     return bool(url and ".m3u8" in url and not url.startswith(("udp://", "rtp://")))
 
 
+SPORT_SOURCES = {
+    "HoiQuan1",
+    "HoiQuan2",
+    "HoiQuan3",
+    "KhanDaiA",
+    "ThienDinh",
+    "XayCon",
+    "VongCamTV",
+    "CoLaTV",
+    "TamQuocTV",
+    "LuongSonTV",
+    "QueChoaTV",
+    "GioVang",
+    "QueChoaRaw",
+    "TieuLamTV",
+    "HoaDaoTV",
+    "ChuoiChienTV",
+    "QueChoa8",
+}
+
+SPORT_KEYWORDS = [
+    ("Bong Chuyen", ("bong chuyen", "volleyball", "v-league volleyball")),
+    ("Bong Ro", ("bong ro", "basketball", "wnba", "nba", "fiba", "trail blazers", "mystics", "sparks")),
+    ("Tennis", ("tennis", "atp", "wta")),
+    ("Cau Long", ("cau long", "badminton", "bwf")),
+    ("Futsal", ("futsal",)),
+]
+
+
+def text_key(value):
+    value = clean_text(value).lower()
+    value = unicodedata.normalize("NFD", value)
+    value = "".join(ch for ch in value if unicodedata.category(ch) != "Mn")
+    value = value.replace("đ", "d")
+    return "".join(ch for ch in value if ch.isalnum() or ch.isspace()).strip()
+
+
+def detect_sport(*parts):
+    haystack = text_key(" ".join(clean_text(part) for part in parts if part))
+    for sport, keywords in SPORT_KEYWORDS:
+        if any(keyword in haystack for keyword in keywords):
+            return sport
+    return "Bong Da"
+
+
+def extract_match_title(channel):
+    title = clean_text(channel.get("match_title") or channel.get("name") or "")
+    if not title:
+        return ""
+    parts = [part.strip() for part in title.split("|") if part.strip()]
+    if len(parts) >= 2 and re.fullmatch(r"\d{1,2}:\d{2}", parts[0]):
+        title = parts[1]
+    else:
+        title = parts[0] if parts else title
+    title = re.sub(r"^\[[^\]]+\]\s*", "", title).strip()
+    title = re.sub(r"\s*\[[^\]]+\]\s*$", "", title).strip()
+    title = re.sub(r"\s+", " ", title)
+    return title[:120]
+
+
+def output_group(channel):
+    source = clean_text(channel.get("source"))
+    if source in SPORT_SOURCES:
+        match_title = extract_match_title(channel)
+        if match_title:
+            sport = clean_text(channel.get("sport")) or detect_sport(
+                channel.get("name"),
+                channel.get("group"),
+                channel.get("league"),
+                channel.get("logo"),
+            )
+            return f"{sport} | {match_title}"
+    return clean_text(channel.get("group") or channel.get("source") or "Unknown")
+
+
 def is_working_m3u8(url, referer="", user_agent=UA):
     if not is_valid_stream_url(url):
         return False
@@ -202,7 +278,7 @@ def write_m3u(path, channels):
         for ch in channels:
             attrs = [
                 f'tvg-logo="{ch.get("logo", "")}"',
-                f'group-title="{ch.get("group", ch.get("source", "Unknown"))}"',
+                f'group-title="{output_group(ch)}"',
             ]
             f.write(f'#EXTINF:-1 {" ".join(attrs)},{ch.get("name", "Unknown")}\n')
             f.write(f'{ch.get("stream_url", "")}\n\n')
@@ -969,6 +1045,7 @@ def main():
         seen_urls.add(url)
         deduped.append(channel)
 
+    deduped.sort(key=lambda channel: (output_group(channel), clean_text(channel.get("name")), channel.get("stream_url", "")))
     write_m3u(ALL_M3U, deduped)
 
     log("")
