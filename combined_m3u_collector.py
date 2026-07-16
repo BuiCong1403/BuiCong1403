@@ -41,6 +41,8 @@ KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.kh
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
 LUONGSON_API_URL = os.environ.get("LUONGSON_API", "https://api-ls.cdnokvip.com/api/get-livestream-group")
 LUONGSON_MATCH_URL = os.environ.get("LUONGSON_MATCH", "https://api-ls.cdnokvip.com/api/match-detail?matchId=%s")
+NAUXOI_API_BASE = os.environ.get("NAUXOI_API", "https://apixx.connect9nx.com/api")
+NAUXOI_SITE_URL = os.environ.get("NAUXOI_SITE", "https://nauxoi.fit/")
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -128,6 +130,14 @@ def is_valid_stream_url(url):
     return bool(url and ".m3u8" in url and not url.startswith(("udp://", "rtp://")))
 
 
+def is_valid_highlight_url(url):
+    url = clean_text(url)
+    if not url or not url.startswith(("http://", "https://")):
+        return False
+    lower = url.lower().split("?", 1)[0]
+    return (".m3u8" in lower or lower.endswith(".mp4")) and ".mpd" not in lower
+
+
 SPORT_SOURCES = {
     "HoiQuan1",
     "HoiQuan2",
@@ -190,6 +200,9 @@ def extract_match_title(channel):
 
 
 def output_group(channel):
+    group = clean_text(channel.get("group"))
+    if group.startswith("Highlight |"):
+        return group
     source = clean_text(channel.get("source"))
     if source in SPORT_SOURCES:
         match_title = extract_match_title(channel)
@@ -201,11 +214,11 @@ def output_group(channel):
                 channel.get("logo"),
             )
             return f"{sport} | {match_title}"
-    return clean_text(channel.get("group") or channel.get("source") or "Unknown")
+    return clean_text(group or channel.get("source") or "Unknown")
 
 
 def is_working_m3u8(url, referer="", user_agent=UA):
-    if not is_valid_stream_url(url):
+    if not is_valid_stream_url(url) and not is_valid_highlight_url(url):
         return False
 
     headers = {"User-Agent": user_agent or UA}
@@ -949,6 +962,10 @@ def collect_s8tv():
 
     channels = []
     seen_urls = set()
+    placeholder_urls = {
+        clean_text(decode_json_string(match.group(1)))
+        for match in S8TV_PLACEHOLDER_RE.finditer(html_text)
+    }
 
     for match in S8TV_TITLE_URL_RE.finditer(html_text):
         title = clean_text(decode_json_string(match.group(1)))
@@ -961,24 +978,7 @@ def collect_s8tv():
             {
                 "source": source,
                 "name": title,
-                "group": source,
-                "logo": "",
-                "stream_url": stream_url,
-                "referer": site_url,
-                "user_agent": UA,
-            }
-        )
-
-    for match in S8TV_PLACEHOLDER_RE.finditer(html_text):
-        stream_url = clean_text(decode_json_string(match.group(1)))
-        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
-            continue
-        seen_urls.add(stream_url)
-        channels.append(
-            {
-                "source": source,
-                "name": "S8TV Live",
-                "group": source,
+                "group": "Highlight | S8TV",
                 "logo": "",
                 "stream_url": stream_url,
                 "referer": site_url,
@@ -988,17 +988,65 @@ def collect_s8tv():
 
     for stream_url in S8TV_M3U8_RE.findall(html_text):
         stream_url = clean_text(decode_json_string(stream_url))
-        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+        if not is_valid_stream_url(stream_url) or stream_url in seen_urls or stream_url in placeholder_urls:
+            continue
+        if "live-bong.s3" not in stream_url.lower():
             continue
         seen_urls.add(stream_url)
         channels.append(
             {
                 "source": source,
                 "name": title_from_stream_url(stream_url, source),
-                "group": source,
+                "group": "Highlight | S8TV",
                 "logo": "",
                 "stream_url": stream_url,
                 "referer": site_url,
+                "user_agent": UA,
+            }
+        )
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+def collect_nauxoi_highlights():
+    source = "NauXoiHighlight"
+    api_url = f"{NAUXOI_API_BASE.rstrip('/')}/highlights"
+    headers = {
+        "Accept": "application/json, */*",
+        "Origin": NAUXOI_SITE_URL.rstrip("/"),
+        "Referer": NAUXOI_SITE_URL,
+    }
+    log(f"[{source}] Fetch highlights")
+    data = fetch_json(api_url, headers=headers, timeout=25)
+    content = ((data.get("data") or {}).get("content") or []) if isinstance(data, dict) else []
+    channels = []
+    seen_urls = set()
+
+    for item in content:
+        stream_url = clean_text(item.get("videoUrl"))
+        if not is_valid_highlight_url(stream_url) or stream_url in seen_urls:
+            continue
+        seen_urls.add(stream_url)
+        home = item.get("homeTeam") or {}
+        away = item.get("awayTeam") or {}
+        title = clean_text(item.get("title"))
+        if not title:
+            title = clean_text(f"{home.get('name') or ''} vs {away.get('name') or ''}").strip(" vs") or source
+        logo = clean_text(item.get("thumbnail"))
+        if logo.startswith("/"):
+            logo_base = NAUXOI_API_BASE.rstrip("/")
+            if logo_base.endswith("/api"):
+                logo_base = logo_base[:-4]
+            logo = urljoin(logo_base + "/", logo.lstrip("/"))
+        channels.append(
+            {
+                "source": source,
+                "name": title,
+                "group": "Highlight | Nau Xoi",
+                "logo": logo,
+                "stream_url": stream_url,
+                "referer": NAUXOI_SITE_URL,
                 "user_agent": UA,
             }
         )
@@ -1114,6 +1162,7 @@ def main():
         ("HoaDaoTV", collect_hoadaotv),
         ("ChuoiChienTV", collect_chuoichien),
         ("S8TV", collect_s8tv),
+        ("NauXoiHighlight", collect_nauxoi_highlights),
         ("QueChoa8", lambda: collect_missing_source("QueChoa8")),
     ]
 
