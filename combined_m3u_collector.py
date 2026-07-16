@@ -43,6 +43,8 @@ LUONGSON_API_URL = os.environ.get("LUONGSON_API", "https://api-ls.cdnokvip.com/a
 LUONGSON_MATCH_URL = os.environ.get("LUONGSON_MATCH", "https://api-ls.cdnokvip.com/api/match-detail?matchId=%s")
 NAUXOI_API_BASE = os.environ.get("NAUXOI_API", "https://apixx.connect9nx.com/api")
 NAUXOI_SITE_URL = os.environ.get("NAUXOI_SITE", "https://nauxoi.fit/")
+TIEULAMWC_API_BASE = os.environ.get("TIEULAMWC_API", "https://api.tlap17062026.com")
+TIEULAMWC_REFERER = os.environ.get("TIEULAMWC_REFERER", "https://sv2.tieulamwc.com/")
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -157,6 +159,7 @@ SPORT_SOURCES = {
     "ChuoiChienTV",
     "QueChoa8",
     "S8TV",
+    "TieuLamWC",
 }
 
 SPORT_KEYWORDS = [
@@ -296,6 +299,12 @@ def write_m3u(path, channels):
                 f'group-title="{output_group(ch)}"',
             ]
             f.write(f'#EXTINF:-1 {" ".join(attrs)},{ch.get("name", "Unknown")}\n')
+            referer = clean_text(ch.get("referer"))
+            user_agent = clean_text(ch.get("user_agent"))
+            if referer:
+                f.write(f"#EXTVLCOPT:http-referrer={referer}\n")
+            if user_agent:
+                f.write(f"#EXTVLCOPT:http-user-agent={user_agent}\n")
             f.write(f'{ch.get("stream_url", "")}\n\n')
 
 
@@ -1055,6 +1064,79 @@ def collect_nauxoi_highlights():
     return channels
 
 
+def collect_tieulamwc():
+    source = "TieuLamWC"
+    api_base = TIEULAMWC_API_BASE.rstrip("/")
+    referer = TIEULAMWC_REFERER
+    headers = {
+        "Accept": "application/json, */*",
+        "Referer": referer,
+        "Origin": referer.rstrip("/"),
+    }
+    log(f"[{source}] Fetch matches")
+    try:
+        response = request_get(f"{api_base}/matches/graph", headers=headers, timeout=25)
+        if response.status_code == 405 and requests is not None:
+            response = requests.post(
+                f"{api_base}/matches/graph",
+                headers={"User-Agent": UA, **headers},
+                json={},
+                timeout=25,
+            )
+        log(f"[{source}] HTTP {response.status_code}")
+        if response.status_code != 200:
+            return []
+        data = response.json()
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+
+    items = data.get("data") if isinstance(data, dict) else []
+    channels = []
+    for item in items or []:
+        match_id = item.get("id")
+        if not match_id or not (item.get("is_live") or item.get("source_live")):
+            continue
+        try:
+            live = fetch_json(f"{api_base}/match/{match_id}/live", headers=headers, timeout=20)
+        except Exception:
+            continue
+        title = clean_text(item.get("title"))
+        if not title:
+            title = clean_text(f"{item.get('team_1') or ''} vs {item.get('team_2') or ''}").strip(" vs") or source
+        league = clean_text(item.get("league"))
+        sport = detect_sport(item.get("desc"), league, title)
+        logo = clean_text(item.get("team_1_logo") or item.get("team_2_logo"))
+        blv = clean_text(item.get("blv")) or "BLV"
+        stream_candidates = [
+            ("HD1", live.get("hd_1")),
+            ("HD2", live.get("hd_2")),
+            ("HD3", live.get("hd_3")),
+            ("SRC", live.get("source")),
+        ]
+        seen_urls = set()
+        for quality, stream_url in stream_candidates:
+            stream_url = clean_text(stream_url)
+            if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+                continue
+            seen_urls.add(stream_url)
+            channels.append(
+                {
+                    "source": source,
+                    "name": f"{title} [{league}] | {blv} [{quality}]",
+                    "group": source,
+                    "sport": sport,
+                    "logo": logo,
+                    "stream_url": stream_url,
+                    "referer": referer,
+                    "user_agent": UA,
+                }
+            )
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_missing_source(name):
     log(f"[{name}] Skipped: file in Downloads contains only HTTP 429 text, not scraper code")
     return []
@@ -1108,6 +1190,7 @@ def main():
         ("CoLaTV", collect_cola),
         ("TamQuocTV", collect_tamquoc),
         ("LuongSonTV", collect_luongson),
+        ("TieuLamWC", collect_tieulamwc),
         (
             "QueChoaTV",
             lambda: collect_grouped_json("QueChoaTV", "https://apithethao1.vercel.app/quechoatv", "Que Choa TV"),
