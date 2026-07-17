@@ -44,7 +44,15 @@ LUONGSON_MATCH_URL = os.environ.get("LUONGSON_MATCH", "https://api-ls.cdnokvip.c
 NAUXOI_API_BASE = os.environ.get("NAUXOI_API", "https://apixx.connect9nx.com/api")
 NAUXOI_SITE_URL = os.environ.get("NAUXOI_SITE", "https://nauxoi.fit/")
 TIEULAMWC_API_BASE = os.environ.get("TIEULAMWC_API", "https://api.tlap17062026.com")
-TIEULAMWC_REFERER = os.environ.get("TIEULAMWC_REFERER", "https://sv2.tieulamwc.com/")
+TIEULAMWC_REFERERS = [
+    item.strip()
+    for item in os.environ.get("TIEULAMWC_REFERERS", "https://sv2.tieulam2.xyz/,https://sv2.tieulamwc.com/").split(",")
+    if item.strip()
+]
+GIOVANG_REFERER = os.environ.get("GIOVANG_REFERER", "https://giovang.store/")
+HOIQUAN_REFERER = os.environ.get("HOIQUAN_REFERER", "https://hoiquan12.live/")
+XAYCON_REFERER = os.environ.get("XAYCON_REFERER", "https://sv2.xaycon3.live/")
+BUGIO_REFERER = os.environ.get("BUGIO_REFERER", "https://sv1.bugio9.live/")
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -251,6 +259,13 @@ def is_working_m3u8(url, referer="", user_agent=UA):
         return False
 
 
+def first_working_referer(url, referers):
+    for referer in referers:
+        if is_working_m3u8(url, referer=referer, user_agent=UA):
+            return referer
+    return referers[0] if referers else ""
+
+
 def verify_live_channels(channels):
     unique = []
     seen = set()
@@ -310,7 +325,7 @@ def write_m3u(path, channels):
 
 def collect_hoiquan3():
     source = "HoiQuan3"
-    site_url = "https://sv2.hoiquan3.live/"
+    site_url = HOIQUAN_REFERER
     api_url = "https://sv.hoiquantv.xyz/api/v1/external/fixtures/unfinished"
     headers = {
         "Accept": "application/json, */*",
@@ -490,9 +505,13 @@ def iter_grouped_stream_links(channel):
                         yield stream_name, stream_url
 
 
-def collect_grouped_json(source, api_url, group_name):
+def collect_grouped_json(source, api_url, group_name, referer=None):
     log(f"[{source}] Fetch grouped JSON")
-    data = fetch_json(api_url)
+    headers = {"Accept": "application/json, */*"}
+    if referer:
+        headers["Referer"] = referer
+        headers["Origin"] = referer.rstrip("/")
+    data = fetch_json(api_url, headers=headers)
     channels = []
 
     groups = data.get("groups") if isinstance(data, dict) else []
@@ -510,7 +529,7 @@ def collect_grouped_json(source, api_url, group_name):
                         "group": group_name,
                         "logo": logo,
                         "stream_url": stream_url,
-                        "referer": api_url,
+                        "referer": referer or api_url,
                         "user_agent": UA,
                     }
                 )
@@ -522,7 +541,14 @@ def collect_vongcam():
     source = "VongCamTV"
     api_url = "https://sv.bugiotv.xyz/internal/api/matches"
     log(f"[{source}] Fetch API")
-    data = fetch_json(api_url)
+    data = fetch_json(
+        api_url,
+        headers={
+            "Accept": "application/json, */*",
+            "Referer": BUGIO_REFERER,
+            "Origin": BUGIO_REFERER.rstrip("/"),
+        },
+    )
     channels = []
 
     for item in data.get("data") or []:
@@ -542,7 +568,7 @@ def collect_vongcam():
                     "group": source,
                     "logo": (item.get("homeClub") or {}).get("logoUrl", ""),
                     "stream_url": stream_url,
-                    "referer": "https://bugiotv.xyz/",
+                    "referer": BUGIO_REFERER,
                     "user_agent": UA,
                 }
             )
@@ -1067,11 +1093,11 @@ def collect_nauxoi_highlights():
 def collect_tieulamwc():
     source = "TieuLamWC"
     api_base = TIEULAMWC_API_BASE.rstrip("/")
-    referer = TIEULAMWC_REFERER
+    api_referer = TIEULAMWC_REFERERS[0] if TIEULAMWC_REFERERS else "https://sv2.tieulam2.xyz/"
     headers = {
         "Accept": "application/json, */*",
-        "Referer": referer,
-        "Origin": referer.rstrip("/"),
+        "Referer": api_referer,
+        "Origin": api_referer.rstrip("/"),
     }
     log(f"[{source}] Fetch matches")
     try:
@@ -1115,11 +1141,16 @@ def collect_tieulamwc():
             ("SRC", live.get("source")),
         ]
         seen_urls = set()
+        referer_cache = {}
         for quality, stream_url in stream_candidates:
             stream_url = clean_text(stream_url)
             if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
                 continue
             seen_urls.add(stream_url)
+            referer = referer_cache.get(stream_url)
+            if referer is None:
+                referer = first_working_referer(stream_url, TIEULAMWC_REFERERS)
+                referer_cache[stream_url] = referer
             channels.append(
                 {
                     "source": source,
@@ -1155,7 +1186,7 @@ def main():
             lambda: collect_standard_api(
                 "HoiQuan1",
                 "https://sv.hoiquantv.xyz/api/v1/external/fixtures/unfinished",
-                "https://sv2.hoiquan3.live/",
+                HOIQUAN_REFERER,
                 "Hoi Quan",
             ),
         ),
@@ -1165,6 +1196,7 @@ def main():
                 "HoiQuan2",
                 "https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan1.json",
                 "Hoi Quan",
+                HOIQUAN_REFERER,
             ),
         ),
         ("KhanDaiA", collect_khandaia),
@@ -1182,7 +1214,7 @@ def main():
             lambda: collect_standard_api(
                 "XayCon",
                 "https://sv.xaycontv.xyz/api/v1/external/fixtures/unfinished",
-                "",
+                XAYCON_REFERER,
                 "Xay Con",
             ),
         ),
@@ -1212,6 +1244,7 @@ def main():
                 "GioVang",
                 "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
                 "Gio Vang",
+                GIOVANG_REFERER,
             ),
         ),
         (
@@ -1220,6 +1253,7 @@ def main():
                 "QueChoaRaw",
                 "https://raw.githubusercontent.com/huybuonvp/xem_football/refs/heads/main/All_CHANNEL.json",
                 "Que Choa",
+                "https://quechoa8.live/",
             ),
         ),
         (
@@ -1228,6 +1262,7 @@ def main():
                 "TieuLamTV",
                 "https://raw.githubusercontent.com/Bacbenny/testtieulam/refs/heads/main/output/iptv.m3u",
                 "Tieu Lam TV",
+                referer=TIEULAMWC_REFERERS[0] if TIEULAMWC_REFERERS else "https://sv2.tieulam2.xyz/",
             ),
         ),
         (
