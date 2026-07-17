@@ -5,6 +5,7 @@ import re
 import sys
 import time
 import unicodedata
+import warnings
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
@@ -37,6 +38,12 @@ UA = (
 )
 
 CHUOICHIEN_TOKEN = os.environ.get("CHUOICHIEN_TOKEN", "").strip()
+CHUOICHIEN_SITE_URL = os.environ.get("CHUOICHIEN_SITE_URL", "https://live25.chuoichientv.com")
+CHUOICHIEN_SITE_REF = os.environ.get("CHUOICHIEN_SITE_REF", "https://live.chuoichientv.com")
+CHUOICHIEN_API_URL = os.environ.get(
+    "CHUOICHIEN_API_URL",
+    "https://api.chuoichientv.com/v1/matches?page=1&limit=100&sport=&type=blv",
+)
 KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.khandaia.link")
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
 LUONGSON_API_URL = os.environ.get("LUONGSON_API", "https://api-ls.cdnokvip.com/api/get-livestream-group")
@@ -50,9 +57,16 @@ TIEULAMWC_REFERERS = [
     if item.strip()
 ]
 GIOVANG_REFERER = os.environ.get("GIOVANG_REFERER", "https://giovang.store/")
-HOIQUAN_REFERER = os.environ.get("HOIQUAN_REFERER", "https://hoiquan12.live/")
+HOIQUAN_API_BASE = os.environ.get("HOIQUAN_API_BASE", "https://sv.hoiquantv.xyz/api/v1/external")
+HOIQUAN3_REFERER = os.environ.get("HOIQUAN3_REFERER", "https://sv2.hoiquan3.live/")
+HOIQUAN1_REFERER = os.environ.get("HOIQUAN1_REFERER", "https://sv2.hoiquan1.live/")
+HOIQUAN_REFERER = os.environ.get("HOIQUAN_REFERER", HOIQUAN3_REFERER)
 XAYCON_REFERER = os.environ.get("XAYCON_REFERER", "https://sv2.xaycon3.live/")
 BUGIO_REFERER = os.environ.get("BUGIO_REFERER", "https://sv1.bugio9.live/")
+QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
+QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
+VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
+VSC9_REFERER = os.environ.get("VSC9_REFERER", "https://vsc9.top/")
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -325,8 +339,8 @@ def write_m3u(path, channels):
 
 def collect_hoiquan3():
     source = "HoiQuan3"
-    site_url = HOIQUAN_REFERER
-    api_url = "https://sv.hoiquantv.xyz/api/v1/external/fixtures/unfinished"
+    site_url = HOIQUAN3_REFERER
+    api_url = f"{HOIQUAN_API_BASE.rstrip('/')}/fixtures/unfinished"
     headers = {
         "Accept": "application/json, */*",
         "Referer": site_url,
@@ -732,9 +746,9 @@ def collect_m3u_playlist(
 
 def collect_chuoichien():
     source = "ChuoiChienTV"
-    site_url = "https://live25.chuoichientv.com"
-    site_ref = "https://live.chuoichientv.com"
-    api_url = "https://api.chuoichientv.com/v1/matches?page=1&limit=100&sport=&type=blv"
+    site_url = CHUOICHIEN_SITE_URL
+    site_ref = CHUOICHIEN_SITE_REF
+    api_url = CHUOICHIEN_API_URL
     headers = {
         "Accept": "application/json, */*",
         "Origin": site_url,
@@ -852,6 +866,8 @@ S8TV_TITLE_URL_RE = re.compile(
 )
 S8TV_PLACEHOLDER_RE = re.compile(r'\\"link_video_placeholder\\":\\"((?:\\\\.|[^\\"])*)\\"')
 S8TV_M3U8_RE = re.compile(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*")
+VSC9_M3U8_RE = re.compile(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*")
+VSC9_TIME_RE = re.compile(r"(\d{1,2}:\d{2}\s+\d{1,2}/\d{1,2})")
 
 
 def decode_json_string(value):
@@ -868,6 +884,86 @@ def title_from_stream_url(url, prefix):
     label = label.replace("+", " ").replace("_", " ").replace("-", " ")
     label = re.sub(r"\s+", " ", label).strip()
     return f"{prefix} {label}".strip()
+
+
+def fetch_vsc9_html():
+    headers = {
+        "User-Agent": UA,
+        "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
+        "Referer": VSC9_REFERER,
+    }
+    for verify in (True, False):
+        try:
+            if requests is not None:
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore")
+                    response = requests.get(VSC9_URL, headers=headers, timeout=30, verify=verify)
+            else:
+                response = request_get(VSC9_URL, headers=headers, timeout=30)
+            if response.status_code == 200 and response.text:
+                return response.text
+        except Exception:
+            continue
+    return ""
+
+
+def vsc9_title_from_context(html_text, url):
+    pos = html_text.find(url)
+    raw_context = html_text[max(0, pos - 2500):pos] if pos >= 0 else ""
+    after_context = html_text[pos:pos + 700] if pos >= 0 else ""
+
+    def last_json_value(pattern):
+        matches = re.findall(pattern, raw_context)
+        if not matches:
+            return ""
+        return clean_text(decode_json_string(matches[-1]))
+
+    date_value = last_json_value(r'\\"date\\":\\"([^"]+)\\"')
+    time_value = last_json_value(r'\\"time\\":\\"([^"]+)\\"')
+    home_name = last_json_value(r'\\"home\\":\{(?:(?!\\"away\\").)*?\\"name\\":\\"([^"]+)\\"')
+    away_name = last_json_value(r'\\"away\\":\{(?:(?!\\"lives\\").)*?\\"name\\":\\"([^"]+)\\"')
+    commentator_after = re.search(r'\\"commentator\\":\\"([^"]+)\\"', after_context)
+    commentator = clean_text(decode_json_string(commentator_after.group(1))) if commentator_after else ""
+    if not commentator:
+        commentator = last_json_value(r'\\"commentator\\":\\"([^"]+)\\"')
+
+    day_label = ""
+    date_match = re.match(r"(\d{4})-(\d{2})-(\d{2})", date_value)
+    if date_match:
+        day_label = f"{date_match.group(3)}/{date_match.group(2)}"
+    time_label = clean_text(f"{time_value} {day_label}").strip()
+
+    if home_name and away_name:
+        title = clean_text(f"{time_label} ⚽ {home_name} vs {away_name}").strip()
+        if commentator:
+            title = f"{title} ({commentator})"
+    else:
+        context = decode_json_string(raw_context.replace("\\u0026", "&"))
+        context = html.unescape(context)
+        context = re.sub(r"<[^>]+>", " ", context)
+        context = re.sub(r"\\[nrt]", " ", context)
+        context = re.sub(r"\s+", " ", context).strip()
+        time_match = VSC9_TIME_RE.search(context)
+        time_label = time_match.group(1) if time_match else time_label
+        title = title_from_stream_url(url, "VSC9")
+
+    title = clean_text(title).strip(" ,")
+    return title, time_label
+
+
+def playlist_is_usable(url, referer):
+    headers = {
+        "User-Agent": UA,
+        "Accept": "application/vnd.apple.mpegurl,application/x-mpegURL,*/*",
+    }
+    if referer:
+        headers["Referer"] = referer
+        headers["Origin"] = referer.rstrip("/")
+    try:
+        response = request_get(url, headers=headers, timeout=15)
+        return response.status_code == 200 and response.text.lstrip().startswith("#EXTM3U")
+    except Exception:
+        return False
 
 
 def extract_stream_url(text):
@@ -1044,6 +1140,43 @@ def collect_s8tv():
     return channels
 
 
+def collect_vsc9():
+    source = "VSC9"
+    log(f"[{source}] Fetch home")
+    html_text = fetch_vsc9_html()
+    if not html_text:
+        log(f"[{source}] Home not available")
+        return []
+
+    channels = []
+    seen_urls = set()
+    for raw_url in VSC9_M3U8_RE.findall(html_text):
+        stream_url = clean_text(decode_json_string(raw_url))
+        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+            continue
+        seen_urls.add(stream_url)
+        if not playlist_is_usable(stream_url, VSC9_REFERER):
+            continue
+        title, time_label = vsc9_title_from_context(html_text, raw_url)
+        group = "Vua San Co TV"
+        if time_label:
+            group = f"{group} | {time_label}"
+        channels.append(
+            {
+                "source": source,
+                "name": title or title_from_stream_url(stream_url, source),
+                "group": group,
+                "logo": "https://vsc9.top/favicon.ico",
+                "stream_url": stream_url,
+                "referer": VSC9_REFERER,
+                "user_agent": UA,
+            }
+        )
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_nauxoi_highlights():
     source = "NauXoiHighlight"
     api_url = f"{NAUXOI_API_BASE.rstrip('/')}/highlights"
@@ -1185,8 +1318,8 @@ def main():
             "HoiQuan1",
             lambda: collect_standard_api(
                 "HoiQuan1",
-                "https://sv.hoiquantv.xyz/api/v1/external/fixtures/unfinished",
-                HOIQUAN_REFERER,
+                f"{HOIQUAN_API_BASE.rstrip('/')}/fixtures/unfinished",
+                HOIQUAN1_REFERER,
                 "Hoi Quan",
             ),
         ),
@@ -1196,7 +1329,7 @@ def main():
                 "HoiQuan2",
                 "https://pub-26bab83910ab4b5781549d12d2f0ef6f.r2.dev/hoiquan1.json",
                 "Hoi Quan",
-                HOIQUAN_REFERER,
+                HOIQUAN1_REFERER,
             ),
         ),
         ("KhanDaiA", collect_khandaia),
@@ -1225,7 +1358,12 @@ def main():
         ("TieuLamWC", collect_tieulamwc),
         (
             "QueChoaTV",
-            lambda: collect_grouped_json("QueChoaTV", "https://apithethao1.vercel.app/quechoatv", "Que Choa TV"),
+            lambda: collect_grouped_json(
+                "QueChoaTV",
+                "https://apithethao1.vercel.app/quechoatv",
+                "Que Choa TV",
+                QUECHOA_HOME_URL,
+            ),
         ),
         (
             "TinhLaGi",
@@ -1253,7 +1391,7 @@ def main():
                 "QueChoaRaw",
                 "https://raw.githubusercontent.com/huybuonvp/xem_football/refs/heads/main/All_CHANNEL.json",
                 "Que Choa",
-                "https://quechoa8.live/",
+                QUECHOA_HOME_URL,
             ),
         ),
         (
@@ -1280,7 +1418,7 @@ def main():
         ("HoaDaoTV", collect_hoadaotv),
         ("ChuoiChienTV", collect_chuoichien),
         ("S8TV", collect_s8tv),
-        ("NauXoiHighlight", collect_nauxoi_highlights),
+        ("VSC9", collect_vsc9),
         ("QueChoa8", lambda: collect_missing_source("QueChoa8")),
     ]
 
