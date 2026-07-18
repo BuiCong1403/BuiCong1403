@@ -67,6 +67,14 @@ QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
 VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", "https://vsc9.top/")
+ALL_CHANNEL_M3U_URL = os.environ.get(
+    "ALL_CHANNEL_M3U_URL",
+    "https://raw.githubusercontent.com/huybuonvp/xem_football/refs/heads/main/All_CHANNEL.m3u",
+)
+VMTTV_M3U_URL = os.environ.get(
+    "VMTTV_M3U_URL",
+    "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv",
+)
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -226,19 +234,6 @@ def extract_match_title(channel):
 
 def output_group(channel):
     group = clean_text(channel.get("group"))
-    if group.startswith("Highlight |"):
-        return group
-    source = clean_text(channel.get("source"))
-    if source in SPORT_SOURCES:
-        match_title = extract_match_title(channel)
-        if match_title:
-            sport = clean_text(channel.get("sport")) or detect_sport(
-                channel.get("name"),
-                channel.get("group"),
-                channel.get("league"),
-                channel.get("logo"),
-            )
-            return f"{sport} | {match_title}"
     return clean_text(group or channel.get("source") or "Unknown")
 
 
@@ -693,6 +688,31 @@ def is_supported_playlist_url(url, allow_non_m3u8=False):
     return allow_non_m3u8 or ".m3u8" in lower
 
 
+def group_key(value):
+    value = clean_text(value).lower()
+    value = unicodedata.normalize("NFD", value)
+    value = "".join(ch for ch in value if unicodedata.category(ch) != "Mn")
+    value = value.replace("Ä‘", "d").replace("đ", "d")
+    return re.sub(r"[^a-z0-9]+", "", value)
+
+
+def group_matches_any(group, allowed_groups):
+    if not allowed_groups:
+        return True
+    key = group_key(group)
+    for allowed_group in allowed_groups:
+        target = group_key(allowed_group)
+        if not target:
+            continue
+        if target == "vtv":
+            if key == "vtv":
+                return True
+            continue
+        if target in key:
+            return True
+    return False
+
+
 def collect_m3u_playlist(
     source,
     playlist_url,
@@ -702,6 +722,7 @@ def collect_m3u_playlist(
     allow_non_m3u8=False,
     timeout=30,
     retries=2,
+    allowed_groups=None,
 ):
     log(f"[{source}] Fetch M3U")
     r = None
@@ -729,6 +750,8 @@ def collect_m3u_playlist(
             continue
         if line.startswith("http") and is_supported_playlist_url(line, allow_non_m3u8=allow_non_m3u8):
             group = current.get("group") if preserve_group else group_name
+            if not group_matches_any(group, allowed_groups):
+                continue
             channels.append(
                 {
                     "source": source,
@@ -1386,12 +1409,30 @@ def main():
             ),
         ),
         (
-            "QueChoaRaw",
-            lambda: collect_grouped_json(
-                "QueChoaRaw",
-                "https://raw.githubusercontent.com/huybuonvp/xem_football/refs/heads/main/All_CHANNEL.json",
-                "Que Choa",
-                QUECHOA_HOME_URL,
+            "AllChannelM3U",
+            lambda: collect_m3u_playlist(
+                "AllChannelM3U",
+                ALL_CHANNEL_M3U_URL,
+                "All Channel",
+                referer="https://github.com/huybuonvp/xem_football",
+                preserve_group=True,
+                allow_non_m3u8=True,
+                timeout=60,
+                retries=3,
+            ),
+        ),
+        (
+            "VMTTV",
+            lambda: collect_m3u_playlist(
+                "VMTTV",
+                VMTTV_M3U_URL,
+                "VMTTV",
+                referer="https://github.com/vuminhthanh12/vuminhthanh12",
+                preserve_group=True,
+                allow_non_m3u8=True,
+                timeout=60,
+                retries=3,
+                allowed_groups=("FIFA WORLD CUP 2026", "worldcup", "world cup", "VTV"),
             ),
         ),
         (
@@ -1401,18 +1442,6 @@ def main():
                 "https://raw.githubusercontent.com/Bacbenny/testtieulam/refs/heads/main/output/iptv.m3u",
                 "Tieu Lam TV",
                 referer=TIEULAMWC_REFERERS[0] if TIEULAMWC_REFERERS else "https://sv2.tieulam2.xyz/",
-            ),
-        ),
-        (
-            "VietAnhTV",
-            lambda: collect_m3u_playlist(
-                "VietAnhTV",
-                "http://vpsttt.vietanhtv.top/tv/",
-                "VietAnhTV",
-                preserve_group=True,
-                allow_non_m3u8=True,
-                timeout=90,
-                retries=3,
             ),
         ),
         ("HoaDaoTV", collect_hoadaotv),
