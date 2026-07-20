@@ -1399,6 +1399,8 @@ def main():
                 allow_non_m3u8=True,
                 timeout=60,
                 retries=3,
+                default_referer_to_playlist=False,
+                user_agent="",
             ),
         ),
         (
