@@ -1432,7 +1432,7 @@ def main():
                 allow_non_m3u8=True,
                 timeout=60,
                 retries=3,
-                allowed_groups=("FIFA WORLD CUP 2026", "worldcup", "world cup", "VTV"),
+                allowed_groups=("VTV",),
             ),
         ),
         (
