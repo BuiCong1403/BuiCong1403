@@ -723,6 +723,8 @@ def collect_m3u_playlist(
     timeout=30,
     retries=2,
     allowed_groups=None,
+    default_referer_to_playlist=True,
+    user_agent=UA,
 ):
     log(f"[{source}] Fetch M3U")
     r = None
@@ -759,8 +761,8 @@ def collect_m3u_playlist(
                     "group": group or group_name or source,
                     "logo": current.get("logo", ""),
                     "stream_url": line,
-                    "referer": referer or playlist_url,
-                    "user_agent": UA,
+                    "referer": referer or (playlist_url if default_referer_to_playlist else ""),
+                    "user_agent": user_agent,
                 }
             )
     log(f"[{source}] {len(channels)} raw links")
@@ -1414,11 +1416,13 @@ def main():
                 "AllChannelM3U",
                 ALL_CHANNEL_M3U_URL,
                 "All Channel",
-                referer="https://github.com/huybuonvp/xem_football",
+                referer="",
                 preserve_group=True,
                 allow_non_m3u8=True,
                 timeout=60,
                 retries=3,
+                default_referer_to_playlist=False,
+                user_agent="",
             ),
         ),
         (
