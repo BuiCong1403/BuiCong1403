@@ -75,6 +75,10 @@ VMTTV_M3U_URL = os.environ.get(
     "VMTTV_M3U_URL",
     "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv",
 )
+CUONGHEHE_M3U_URL = os.environ.get(
+    "CUONGHEHE_M3U_URL",
+    "https://raw.githubusercontent.com/cuongnh1989/iptv/refs/heads/main/cuonghehe",
+)
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -318,11 +322,15 @@ def write_m3u(path, channels):
         f.write(f"# Updated : {now_ict()}\n")
         f.write(f"# Total   : {len(channels)}\n\n")
         for ch in channels:
-            attrs = [
-                f'tvg-logo="{ch.get("logo", "")}"',
-                f'group-title="{output_group(ch)}"',
-            ]
-            f.write(f'#EXTINF:-1 {" ".join(attrs)},{ch.get("name", "Unknown")}\n')
+            raw_extinf = clean_text(ch.get("raw_extinf")) if ch.get("preserve_extinf") else ""
+            if raw_extinf:
+                f.write(f"{raw_extinf}\n")
+            else:
+                attrs = [
+                    f'tvg-logo="{ch.get("logo", "")}"',
+                    f'group-title="{output_group(ch)}"',
+                ]
+                f.write(f'#EXTINF:-1 {" ".join(attrs)},{ch.get("name", "Unknown")}\n')
             referer = clean_text(ch.get("referer"))
             user_agent = clean_text(ch.get("user_agent"))
             if referer:
@@ -725,6 +733,7 @@ def collect_m3u_playlist(
     allowed_groups=None,
     default_referer_to_playlist=True,
     user_agent=UA,
+    preserve_extinf=False,
 ):
     log(f"[{source}] Fetch M3U")
     r = None
@@ -749,6 +758,7 @@ def collect_m3u_playlist(
             continue
         if line.startswith("#EXTINF"):
             current = parse_extinf(line)
+            current["raw_extinf"] = line
             continue
         if line.startswith("http") and is_supported_playlist_url(line, allow_non_m3u8=allow_non_m3u8):
             group = current.get("group") if preserve_group else group_name
@@ -763,6 +773,8 @@ def collect_m3u_playlist(
                     "stream_url": line,
                     "referer": referer or (playlist_url if default_referer_to_playlist else ""),
                     "user_agent": user_agent,
+                    "raw_extinf": current.get("raw_extinf", ""),
+                    "preserve_extinf": preserve_extinf,
                 }
             )
     log(f"[{source}] {len(channels)} raw links")
@@ -826,6 +838,52 @@ def collect_chuoichien():
                     }
                 )
     log(f"[{source}] {len(channels)} links")
+    return channels
+
+
+def collect_cuonghehe():
+    source = "CuongHeHe"
+    channels = collect_m3u_playlist(
+        source,
+        CUONGHEHE_M3U_URL,
+        "CuongHeHe",
+        referer="",
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=3,
+        default_referer_to_playlist=False,
+        user_agent="",
+        preserve_extinf=True,
+    )
+    selected = []
+    sport_group_key = "thethaoquocte"
+    for channel in channels:
+        name = clean_text(channel.get("name"))
+        group = clean_text(channel.get("group"))
+        if "4k" in name.lower() or group_key(group) == sport_group_key:
+            selected.append(channel)
+    log(f"[{source}] {len(selected)} selected links")
+    return selected
+
+
+def collect_vmttv():
+    source = "VMTTV"
+    channels = collect_m3u_playlist(
+        source,
+        VMTTV_M3U_URL,
+        "VMTTV",
+        referer="https://github.com/vuminhthanh12/vuminhthanh12",
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=3,
+        allowed_groups=("VTV", "the thao quoc te"),
+    )
+    sport_group_key = "thethaoquocte"
+    for channel in channels:
+        if group_key(channel.get("group")) == sport_group_key:
+            channel["group"] = "THỂ THAO QUỐC TẾ"
     return channels
 
 
@@ -1401,6 +1459,7 @@ def main():
                 retries=3,
                 default_referer_to_playlist=False,
                 user_agent="",
+                preserve_extinf=True,
             ),
         ),
         (
@@ -1425,22 +1484,11 @@ def main():
                 retries=3,
                 default_referer_to_playlist=False,
                 user_agent="",
+                preserve_extinf=True,
             ),
         ),
-        (
-            "VMTTV",
-            lambda: collect_m3u_playlist(
-                "VMTTV",
-                VMTTV_M3U_URL,
-                "VMTTV",
-                referer="https://github.com/vuminhthanh12/vuminhthanh12",
-                preserve_group=True,
-                allow_non_m3u8=True,
-                timeout=60,
-                retries=3,
-                allowed_groups=("VTV",),
-            ),
-        ),
+        ("VMTTV", collect_vmttv),
+        ("CuongHeHe", collect_cuonghehe),
         (
             "TieuLamTV",
             lambda: collect_m3u_playlist(
