@@ -46,6 +46,8 @@ CHUOICHIEN_API_URL = os.environ.get(
 )
 KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.khandaia.link")
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
+COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
+COLATV_API_URL = os.environ.get("COLATV_API", "https://api.cltvlv.com/api/matches")
 LUONGSON_API_URL = os.environ.get("LUONGSON_API", "https://api-ls.cdnokvip.com/api/get-livestream-group")
 LUONGSON_MATCH_URL = os.environ.get("LUONGSON_MATCH", "https://api-ls.cdnokvip.com/api/match-detail?matchId=%s")
 NAUXOI_API_BASE = os.environ.get("NAUXOI_API", "https://apixx.connect9nx.com/api")
@@ -63,6 +65,8 @@ HOIQUAN1_REFERER = os.environ.get("HOIQUAN1_REFERER", "https://sv2.hoiquan1.live
 HOIQUAN_REFERER = os.environ.get("HOIQUAN_REFERER", HOIQUAN3_REFERER)
 XAYCON_REFERER = os.environ.get("XAYCON_REFERER", "https://sv2.xaycon3.live/")
 BUGIO_REFERER = os.environ.get("BUGIO_REFERER", "https://sv1.bugio9.live/")
+VONGCAM_API_URL = os.environ.get("VONGCAM_API", "https://sv.bugiotv.xyz/internal/api/matches")
+VONGCAM_FRONTEND_URL = os.environ.get("VONGCAM_FRONTEND", BUGIO_REFERER)
 QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
 VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
@@ -139,6 +143,121 @@ def fetch_json(url, headers=None, timeout=20):
     except Exception as exc:
         log(f"[HTTP] JSON error {url}: {exc}")
         return {}
+
+
+API_DISCOVERY_CACHE = {}
+
+
+def discover_frontend_url(frontend_url, timeout=8):
+    frontend_url = clean_text(frontend_url).rstrip("/")
+    if not frontend_url:
+        return ""
+    try:
+        response = request_get(
+            frontend_url,
+            headers={"Accept": "text/html,application/xhtml+xml,*/*;q=0.9"},
+            timeout=timeout,
+        )
+        if response.status_code == 200:
+            return clean_text(getattr(response, "url", "") or frontend_url).rstrip("/")
+    except Exception as exc:
+        log(f"[DISCOVER] Frontend error {frontend_url}: {exc}")
+    return ""
+
+
+def iter_script_urls(html_text, base_url, limit=10):
+    seen = set()
+    for match in re.finditer(r"""<script[^>]+src=["']([^"']+\.js[^"']*)["']""", html_text or "", re.I):
+        script_url = urljoin(base_url.rstrip("/") + "/", html.unescape(match.group(1)))
+        if script_url in seen:
+            continue
+        seen.add(script_url)
+        yield script_url
+        if len(seen) >= limit:
+            break
+
+
+def discover_api_url(source, frontend_url, fallback_url, patterns, transform=None):
+    cache_key = (source, frontend_url, fallback_url)
+    if cache_key in API_DISCOVERY_CACHE:
+        return API_DISCOVERY_CACHE[cache_key]
+
+    final_frontend = discover_frontend_url(frontend_url)
+    if not final_frontend:
+        API_DISCOVERY_CACHE[cache_key] = fallback_url
+        return fallback_url
+    headers = {
+        "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
+        "Referer": final_frontend.rstrip("/") + "/",
+    }
+    texts = []
+    try:
+        response = request_get(final_frontend or frontend_url, headers=headers, timeout=10)
+        if response.status_code == 200:
+            texts.append(response.text)
+            for script_url in iter_script_urls(response.text, final_frontend or frontend_url):
+                try:
+                    js_response = request_get(script_url, headers=headers, timeout=12)
+                    if js_response.status_code == 200:
+                        texts.append(js_response.text)
+                except Exception:
+                    continue
+    except Exception as exc:
+        log(f"[{source}] API discovery skipped: {exc}")
+
+    for text in texts:
+        for pattern in patterns:
+            for match in re.findall(pattern, text):
+                candidate = match[0] if isinstance(match, tuple) else match
+                candidate = html.unescape(clean_text(candidate).rstrip(".,;)'\"`"))
+                if transform:
+                    candidate = transform(candidate)
+                if candidate:
+                    log(f"[{source}] Discovered API: {candidate}")
+                    API_DISCOVERY_CACHE[cache_key] = candidate
+                    return candidate
+
+    API_DISCOVERY_CACHE[cache_key] = fallback_url
+    return fallback_url
+
+
+def external_api_base_from_hit(hit):
+    match = re.match(r"(https://sv\.[a-z0-9.-]+/api/v1/external)", hit)
+    return match.group(1) if match else ""
+
+
+def cola_api_from_hit(hit):
+    match = re.match(r"(https://[a-z0-9.-]+)/api/", hit)
+    return match.group(1).rstrip("/") + "/api/matches" if match else ""
+
+
+def discover_external_api_base(source, frontend_url, fallback_base):
+    return discover_api_url(
+        source,
+        frontend_url,
+        fallback_base.rstrip("/"),
+        (r"https://sv\.[a-z0-9.-]+/api/v1/external",),
+        external_api_base_from_hit,
+    )
+
+
+def discover_internal_matches_api(source, frontend_url, fallback_url):
+    return discover_api_url(
+        source,
+        frontend_url,
+        fallback_url,
+        (r"https?://[a-z0-9.-]+/internal/api/matches",),
+    )
+
+
+def discover_cola_api():
+    return discover_api_url(
+        "CoLaTV",
+        COLATV_FRONTEND_URL,
+        COLATV_API_URL,
+        (r"https://[a-z0-9.-]+/api/match[^\"'`\s<)]*",),
+        cola_api_from_hit,
+    )
 
 
 def clean_text(value):
@@ -351,7 +470,8 @@ def write_m3u(path, channels):
 def collect_hoiquan3():
     source = "HoiQuan3"
     site_url = HOIQUAN3_REFERER
-    api_url = f"{HOIQUAN_API_BASE.rstrip('/')}/fixtures/unfinished"
+    api_base = discover_external_api_base(source, site_url, HOIQUAN_API_BASE)
+    api_url = f"{api_base.rstrip('/')}/fixtures/unfinished"
     headers = {
         "Accept": "application/json, */*",
         "Referer": site_url,
@@ -405,10 +525,21 @@ def collect_hoiquan3():
     return channels
 
 
+def collect_hoiquan1():
+    api_base = discover_external_api_base("HoiQuan1", HOIQUAN1_REFERER, HOIQUAN_API_BASE)
+    return collect_standard_api(
+        "HoiQuan1",
+        f"{api_base.rstrip('/')}/fixtures/unfinished",
+        HOIQUAN1_REFERER,
+        "Hoi Quan",
+    )
+
+
 def collect_khandaia():
+    api_base = discover_external_api_base("KhanDaiA", KHANDAIA_FRONTEND_URL, KHANDAIA_KNOWN_API_BASE)
     return collect_standard_api(
         "KhanDaiA",
-        f"{KHANDAIA_KNOWN_API_BASE.rstrip('/')}/fixtures/unfinished",
+        f"{api_base.rstrip('/')}/fixtures/unfinished",
         KHANDAIA_FRONTEND_URL,
         "Khan Dai A",
     )
@@ -564,7 +695,7 @@ def collect_grouped_json(source, api_url, group_name, referer=None):
 
 def collect_vongcam():
     source = "VongCamTV"
-    api_url = "https://sv.bugiotv.xyz/internal/api/matches"
+    api_url = discover_internal_matches_api(source, VONGCAM_FRONTEND_URL, VONGCAM_API_URL)
     log(f"[{source}] Fetch API")
     data = fetch_json(
         api_url,
@@ -603,7 +734,7 @@ def collect_vongcam():
 
 def collect_cola():
     source = "CoLaTV"
-    api_url = "https://api.cltvlv.com/api/matches"
+    api_url = discover_cola_api()
     log(f"[{source}] Fetch API")
     data = fetch_json(api_url)
     values = (data.get("data") or {}).values() if isinstance(data.get("data"), dict) else []
@@ -1426,15 +1557,7 @@ def main():
 
     collectors = [
         ("HoiQuan3", collect_hoiquan3),
-        (
-            "HoiQuan1",
-            lambda: collect_standard_api(
-                "HoiQuan1",
-                f"{HOIQUAN_API_BASE.rstrip('/')}/fixtures/unfinished",
-                HOIQUAN1_REFERER,
-                "Hoi Quan",
-            ),
-        ),
+        ("HoiQuan1", collect_hoiquan1),
         (
             "HoiQuan2",
             lambda: collect_grouped_json(
