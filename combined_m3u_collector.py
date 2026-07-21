@@ -79,6 +79,10 @@ CUONGHEHE_M3U_URL = os.environ.get(
     "CUONGHEHE_M3U_URL",
     "https://raw.githubusercontent.com/cuongnh1989/iptv/refs/heads/main/cuonghehe",
 )
+COTIVI_SPORTS_M3U_URL = os.environ.get(
+    "COTIVI_SPORTS_M3U_URL",
+    "https://raw.githubusercontent.com/Bacbenny/freetvco/refs/heads/main/output/cotivi_sports.m3u",
+)
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -325,6 +329,10 @@ def write_m3u(path, channels):
             raw_extinf = clean_text(ch.get("raw_extinf")) if ch.get("preserve_extinf") else ""
             if raw_extinf:
                 f.write(f"{raw_extinf}\n")
+                for option_line in ch.get("raw_options") or []:
+                    option_line = clean_text(option_line)
+                    if option_line:
+                        f.write(f"{option_line}\n")
             else:
                 attrs = [
                     f'tvg-logo="{ch.get("logo", "")}"',
@@ -751,7 +759,7 @@ def collect_m3u_playlist(
             time.sleep(2)
 
     channels = []
-    current = {"title": group_name, "logo": "", "group": group_name}
+    current = {"title": group_name, "logo": "", "group": group_name, "raw_options": []}
     for raw_line in r.text.splitlines():
         line = raw_line.strip()
         if not line:
@@ -759,6 +767,10 @@ def collect_m3u_playlist(
         if line.startswith("#EXTINF"):
             current = parse_extinf(line)
             current["raw_extinf"] = line
+            current["raw_options"] = []
+            continue
+        if line.startswith(("#EXTVLCOPT", "#KODIPROP", "#EXTHTTP")):
+            current.setdefault("raw_options", []).append(line)
             continue
         if line.startswith("http") and is_supported_playlist_url(line, allow_non_m3u8=allow_non_m3u8):
             group = current.get("group") if preserve_group else group_name
@@ -774,6 +786,7 @@ def collect_m3u_playlist(
                     "referer": referer or (playlist_url if default_referer_to_playlist else ""),
                     "user_agent": user_agent,
                     "raw_extinf": current.get("raw_extinf", ""),
+                    "raw_options": list(current.get("raw_options") or []),
                     "preserve_extinf": preserve_extinf,
                 }
             )
@@ -885,6 +898,22 @@ def collect_vmttv():
         if group_key(channel.get("group")) == sport_group_key:
             channel["group"] = "THỂ THAO QUỐC TẾ"
     return channels
+
+
+def collect_cotivi_sports():
+    return collect_m3u_playlist(
+        "CoTiViSports",
+        COTIVI_SPORTS_M3U_URL,
+        "CoTiVi Sports",
+        referer="",
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=3,
+        default_referer_to_playlist=False,
+        user_agent="",
+        preserve_extinf=True,
+    )
 
 
 class LinkCardParser(HTMLParser):
@@ -1489,6 +1518,7 @@ def main():
         ),
         ("VMTTV", collect_vmttv),
         ("CuongHeHe", collect_cuonghehe),
+        ("CoTiViSports", collect_cotivi_sports),
         (
             "TieuLamTV",
             lambda: collect_m3u_playlist(
