@@ -87,6 +87,11 @@ COTIVI_SPORTS_M3U_URL = os.environ.get(
     "COTIVI_SPORTS_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/freetvco/refs/heads/main/output/cotivi_sports.m3u",
 )
+DEKIKI_M3U_URL = os.environ.get(
+    "DEKIKI_M3U_URL",
+    "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
+)
+SPORT_INTERNATIONAL_GROUP = "Th\u1ec3 thao qu\u1ed1c t\u1ebf"
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -264,6 +269,41 @@ def clean_text(value):
     value = html.unescape(str(value or ""))
     value = re.sub(r"\s+", " ", value)
     return value.strip()
+
+
+def remove_icons(value):
+    text = str(value or "")
+    cleaned = []
+    for char in text:
+        code = ord(char)
+        category = unicodedata.category(char)
+        if code in (0x200D, 0xFE0F):
+            continue
+        if category == "So" and code >= 0x2600:
+            continue
+        if 0x1F000 <= code <= 0x1FAFF:
+            continue
+        cleaned.append(char)
+    return re.sub(r"\s+", " ", "".join(cleaned)).strip()
+
+
+def sanitize_extinf_line(line):
+    line = remove_icons(line)
+    line = re.sub(r"\s+\|", " |", line)
+    line = re.sub(r"\|\s+", "| ", line)
+    line = re.sub(r"\s+,", ",", line)
+    return line
+
+
+def set_extinf_group_title(line, group_title):
+    line = str(line or "")
+    replacement = f'group-title="{group_title}"'
+    if re.search(r'group-title="[^"]*"', line):
+        return re.sub(r'group-title="[^"]*"', replacement, line, count=1)
+    if "," in line:
+        left, right = line.split(",", 1)
+        return f"{left} {replacement},{right}"
+    return f"{line} {replacement}"
 
 
 def parse_iso_to_ict(value, fmt="%H:%M | %d.%m"):
@@ -447,7 +487,7 @@ def write_m3u(path, channels):
         for ch in channels:
             raw_extinf = clean_text(ch.get("raw_extinf")) if ch.get("preserve_extinf") else ""
             if raw_extinf:
-                f.write(f"{raw_extinf}\n")
+                f.write(f"{sanitize_extinf_line(raw_extinf)}\n")
                 for option_line in ch.get("raw_options") or []:
                     option_line = clean_text(option_line)
                     if option_line:
@@ -457,7 +497,8 @@ def write_m3u(path, channels):
                     f'tvg-logo="{ch.get("logo", "")}"',
                     f'group-title="{output_group(ch)}"',
                 ]
-                f.write(f'#EXTINF:-1 {" ".join(attrs)},{ch.get("name", "Unknown")}\n')
+                name = remove_icons(ch.get("name", "Unknown"))
+                f.write(f'#EXTINF:-1 {" ".join(attrs)},{name}\n')
             referer = clean_text(ch.get("referer"))
             user_agent = clean_text(ch.get("user_agent"))
             if referer:
@@ -1045,6 +1086,29 @@ def collect_cotivi_sports():
         user_agent="",
         preserve_extinf=True,
     )
+
+
+def collect_dekiki_sports():
+    source = "DekikiSports"
+    channels = collect_m3u_playlist(
+        source,
+        DEKIKI_M3U_URL,
+        SPORT_INTERNATIONAL_GROUP,
+        referer="",
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=3,
+        allowed_groups=("bong da anh", "the thao quoc te"),
+        default_referer_to_playlist=False,
+        user_agent="",
+        preserve_extinf=True,
+    )
+    for channel in channels:
+        channel["group"] = SPORT_INTERNATIONAL_GROUP
+        channel["raw_extinf"] = set_extinf_group_title(channel.get("raw_extinf", ""), SPORT_INTERNATIONAL_GROUP)
+    log(f"[{source}] {len(channels)} selected links")
+    return channels
 
 
 class LinkCardParser(HTMLParser):
@@ -1642,6 +1706,7 @@ def main():
         ("VMTTV", collect_vmttv),
         ("CuongHeHe", collect_cuonghehe),
         ("CoTiViSports", collect_cotivi_sports),
+        ("DekikiSports", collect_dekiki_sports),
         (
             "TieuLamTV",
             lambda: collect_m3u_playlist(
