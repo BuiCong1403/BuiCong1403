@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-07-24 04:02 ICT
-# Total   : 636
+# Updated : 2026-07-24 05:12 ICT
+# Total   : 644
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/3de7fff92c61b2ac93b08814386cf85d.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 07:15 25/07 Huracan vs CLB Banfield (BLV 7UP) [flv]
 #EXTVLCOPT:http-referrer=https://colatv.org/
@@ -323,8 +323,6 @@ https://eqr2hdarxfliv.vcdn.cloud/1784612301_hd/1784612301_hd@720p.m3u8
 https://eqr2hdarxfliv.vcdn.cloud/1784823877_hd/1784823877_hd@720p.m3u8
 
 #EXTINF:-1 tvg-id="OTK8qpRYRrRMVCHcnx_oVg~~" tvg-name="[00:00-24/07] OG - Team Spirit [BLV Tôm] - BLAST Bounty CS2" tvg-logo="https://static.flashscore.com/res/image/data/AD1Y91dM-xQC2cLHL.png" group-title="Giờ Vàng",[00:00-24/07] OG - Team Spirit [BLV Tôm] - BLAST Bounty CS2
-#EXTVLCOPT:http-referrer=https://giovang.link
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
 https://isokhcqqlbdwkfkttvki.supabase.co/functions/v1/resolve-stream?url=https%3A%2F%2Fpay.locket.top%2Ftv%2Fget.php%3Fsource%3Dgiovangtv%26keys%3DOTK8qpRYRrRMVCHcnx_oVg~~
 
 #EXTINF:-1 tvg-id="BRPd7S9Z9nZOfPzr3Dn5CjycagE5tYAgpRlJd-k4neY~" tvg-name="[02:00-24/07] Hajduk Split - Pafos FC - C2" tvg-logo="https://images.keovip88.net/images/teams/hajduk-split.png" group-title="Giờ Vàng",[02:00-24/07] Hajduk Split - Pafos FC - C2
@@ -580,10 +578,25 @@ https://eqr2hdarxfliv.vcdn.cloud/1784788832_hd/1784788832_hd@720p.m3u8
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fk-rigas-futbola-skola.png" group-title="Giờ Vàng TV" group-logo="https://live-api.keonhacaitp.one/favicon.ico", 23:30 23/07/2026 Rigas Futbola skola vs Vestri (Số 15) [PC] [hls]
 https://eqr2hdarxfliv.vcdn.cloud/1784788958_hd/1784788958_hd@720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn-img.cdnokvip.com/logos/1932_165363454417.png" group-title="Luong Son TV",Valur Reykjavik vs HSK Zrinjski Mostar [UEFA Conference League] | BLV TÔN LẬP [FHD]
+#EXTINF:-1 tvg-logo="https://cdn-img.cdnokvip.com/logos/3760_1h6wfbyh4f3.png" group-title="Luong Son TV",Belgrano vs Rosario Central [Argentine Division 1] | BLV KAKA [FHD]
 #EXTVLCOPT:http-referrer=https://luongsontv60.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://hls.cdnfaster-a.live/live/TONLAP/index.m3u8?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
+https://hls.cdnfaster-a.live/live/KAKA/index.m3u8?expire=1788427256&sign=c34e1c9b22c9ced94eca7e7bf7a81ae6
+
+#EXTINF:-1 tvg-logo="https://cdn-img.cdnokvip.com/logos/914_1h51a813012f.png" group-title="Luong Son TV",Bolivar vs Gremio (RS) [Copa Sudamericana] | BLV LƯU BỊ [FHD]
+#EXTVLCOPT:http-referrer=https://luongsontv60.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hls.cdnfaster-a.live/live/LUUBI/index.m3u8?expire=1788427256&sign=e15f8b184dc9c61cc5dacfd962841ae1
+
+#EXTINF:-1 tvg-logo="https://cdn-img.cdnokvip.com/logos/426_1gtqm76wzmz.png" group-title="Luong Son TV",Botafogo RJ vs Vitoria BA [Brazil Serie A] | BLV YẾN THANH [FHD]
+#EXTVLCOPT:http-referrer=https://luongsontv60.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hls.cdnfaster-a.live/live/YENTHANH1/index.m3u8?expire=1788427256&sign=a79cc8d996707223a0011d33d04d4582
+
+#EXTINF:-1 tvg-logo="https://cdn-img.cdnokvip.com/logos/51084_1k37xz2jsf1c.png" group-title="Luong Son TV",Leones del Norte vs Guayaquil City [Liga Pro Ecuador Serie A] | BLV VƯƠNG LUÂN [FHD]
+#EXTVLCOPT:http-referrer=https://luongsontv60.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://hls.cdnfaster-a.live/live/VUONGLUAN/index.m3u8?expire=1893165900&sign=60fcb5252d4dafeac0cb5da922c56645
 
 #EXTINF:-1 tvg-id="54302" tvg-name="[00:00-24/07] Dyn. Kyiv - PAOK [BLV Văn Minh] - UEFA Europa League" tvg-logo="https://phaohoa1.live/media/teams/logos/team_98.jpg" group-title="Pháo Hoa",[00:00-24/07] Dyn. Kyiv - PAOK [BLV Văn Minh] - UEFA Europa League
 https://pay.locket.top/tv/get.php?source=phaohoatv&keys=54302
@@ -616,64 +629,61 @@ https://pay.locket.top/tv/get.php?source=phaohoatv&keys=54276
 https://pay.locket.top/tv/get.php?source=phaohoatv&keys=54282
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/74f9f6f0ba78f93a3505205c0c22a52c.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:00 24/07 Bolivar vs Grêmio - RS (BLV BLV COZY)
-https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784836556-0-0-cb5b2d390c5672949460bdeab75e990b
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/74f9f6f0ba78f93a3505205c0c22a52c.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:00 24/07 Bolivar vs Grêmio - RS (BLV BLV THÓC)
-https://pull.niur.live/live/stream-606448_lhd.m3u8?txSecret=c9a020466ff43436cd9d42b4dbff1448&txTime=6a542952
+https://pull.niues.live/live/stream-531989_lhd.m3u8?auth_key=1784848195-0-0-f93e531917194b8d7f8b13e489dc3d24
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/74f9f6f0ba78f93a3505205c0c22a52c.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:00 24/07 Bolivar vs Grêmio - RS (BLV BLV YONE)
-https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784783127-0-0-00aa320f70e9eb071eaba3cb497aa49b
+https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1784848195-0-0-c9ad71d667a8730d76a5236a33cead72
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/74f9f6f0ba78f93a3505205c0c22a52c.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:00 24/07 Bolivar vs Grêmio - RS (BLV HÀ DUY KIÊN)
-https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784781588-0-0-6706a67bc5a016e0b3079800318cff6f
+https://pull.niues.live/live/stream-607400_lhd.m3u8?auth_key=1784848195-0-0-1f24cf18bcf95f9a7ce17eda41a32bdd
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/bdbe8592c25cdba418791f72678df473.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Belgrano vs Rosario Central (BLV BLV KAN)
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=c0810d18e0f0f1143100eee39a6ec8c0&txTime=6a61e73f
+https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=6e6103ef9fdacb5981458919cda95bfc&txTime=6a62e593
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/bdbe8592c25cdba418791f72678df473.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Belgrano vs Rosario Central (BLV BLV LONG)
-https://pull.niur.live/live/stream-9912117_lhd.m3u8?txSecret=192a94853a1bab278232bdf12aa25330&txTime=6a62c648
+https://pull.niur.live/live/stream-9912117_lhd.m3u8?txSecret=30c096af11a37db4aec75feff8afe952&txTime=6a62e593
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/bdbe8592c25cdba418791f72678df473.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Belgrano vs Rosario Central (BLV BLV TOMIA)
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1784827566-0-0-dbec16034836bee025acc0b5ee0f379c
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1784848195-0-0-dcc447841d7c1ff1474475ff82f1c665
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/bdbe8592c25cdba418791f72678df473.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Belgrano vs Rosario Central (BLV CHÍ PHÈO)
-https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784827509-0-0-829a0c2b24df4d85b8fcfa5f40d5b398
+https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1784848195-0-0-130cb8d0e7688e303d7c2df15c8ce9f8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/9caa1af42a2b915ebf1e9edb3515b38e.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Botafogo - RJ vs Vitória - BA (BLV BLV NOVA)
-https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1784830697-0-0-fe09c7c8d9b86b028ede37e8bc92dc02
+https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1784848195-0-0-760a3d61d1cd30b2d6d756f6e3b96f86
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/9caa1af42a2b915ebf1e9edb3515b38e.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Botafogo - RJ vs Vitória - BA (BLV BLV RÔSI)
-https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=8cd52b5dc6a1aaafa2adde3384632637&txTime=6a61f58d
+https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=e948fd64d5e57840352ccb1c6a75efef&txTime=6a62e593
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/9caa1af42a2b915ebf1e9edb3515b38e.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Botafogo - RJ vs Vitória - BA (BLV BLV VOI)
 https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1784785165-0-0-06a1253dc007327ea2863dcb0f64d7e0
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/9caa1af42a2b915ebf1e9edb3515b38e.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Botafogo - RJ vs Vitória - BA (BLV ĐỖ TÚ TÀI)
-https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784836256-0-0-ced984c32b5bb8d9ae234511c2834131
+https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1784848195-0-0-5094617a46f0f91be94a43d54dc94378
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/c5de9aadff6a0fc7c6f0de3e52132c4e.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Corinthians - SP vs Remo - PA (BLV BLV LUCAS)
 https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1784840010-0-0-a1c13627ad10481cf2ba33eb08acc779
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/c5de9aadff6a0fc7c6f0de3e52132c4e.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Corinthians - SP vs Remo - PA (BLV BLV RAMBO)
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a3355ab80428867979049e1afd4aaf6f&txTime=6a61e768
+https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=d8d231a28c1b3a4deac696e5a1ad3efc&txTime=6a62e593
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/c5de9aadff6a0fc7c6f0de3e52132c4e.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Corinthians - SP vs Remo - PA (BLV BLV ROBBEN)
 https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1784785137-0-0-97ee944c87f0376df26f2acdd10e0385
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/c5de9aadff6a0fc7c6f0de3e52132c4e.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Corinthians - SP vs Remo - PA (BLV PEANUT)
-https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784838622-0-0-bc0b33dac98ef2bee6e17254e6b04c0b
+https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1784848195-0-0-816336a941aa47ed5034393dc818695d
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/753f4548dfb3f82ff25fa15f1e405e54.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Sarmiento Junin vs Argentinos Juniors (BLV A PÁO)
-https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784785475-0-0-b79dc758fea6e3bcd27e5257bd8d9015
+https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1784848195-0-0-c7d2606b499da26d9b76211a09b7a364
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/753f4548dfb3f82ff25fa15f1e405e54.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Sarmiento Junin vs Argentinos Juniors (BLV BLV A TÚ)
-https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784822106-0-0-a6e4045f5df02be81ee6502c156baff1
+https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1784848195-0-0-9f742f621e379fd055cbfba2a88325fe
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/753f4548dfb3f82ff25fa15f1e405e54.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Sarmiento Junin vs Argentinos Juniors (BLV BLV CHIVAS)
-https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=1e14065415fe6595bda100af92721414&txTime=6a61d1d5
+https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=da519dae2675fcdbbff182da2c0905d5&txTime=6a62e593
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/753f4548dfb3f82ff25fa15f1e405e54.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 05:30 24/07 Sarmiento Junin vs Argentinos Juniors (BLV BLV GIÓ)
-https://pull.niues.live/live/stream-321443_lhd.m3u8?auth_key=1784822478-0-0-d4490203fa50c77d3600ce3bbc4ee8e9
+https://pull.niues.live/live/stream-321443_lhd.m3u8?auth_key=1784848195-0-0-59bfff3d12f5e9ad2d6a860ca2458ce8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/7703d567f1ff9c68dc4470c436f902ef.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 24/07 Cuiaba vs Atletico Clube Goianiense (BLV BLV FOX)
 https://pull.niues.live/live/stream-620003_lhd.m3u8?auth_key=1784832908-0-0-3ef97f7837569e9c806d40c17137c957
@@ -801,8 +811,14 @@ https://pull.niues.live/live/stream-9912015_lhd.m3u8?auth_key=1784843634-0-0-59a
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/b697db10402636bd2e6361b16e8c48f0.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 19:00 24/07 FK Yelimay Semey B vs FK Taraz (BLV BLV XO)
 https://pull.niues.live/live/stream-472241_lhd.m3u8?auth_key=1784836524-0-0-d1ed4a8547c2dcdc156d08ef9e26821d
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/686011be8e9819910ca5c79d1e9b6c5d.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 20:00 24/07 FC Shakhtyor Karagandy vs FK Arys (BLV BLV THÓC)
+https://pull.niur.live/live/stream-606448_lhd.m3u8?txSecret=c9a020466ff43436cd9d42b4dbff1448&txTime=6a542952
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260720/c1b9c04c2072ecbc27c913fbd98c891d.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 20:00 24/07 FK Aktobe II vs Kairat Almaty II (BLV BLV LION)
 https://pull.niur.live/live/stream-603255_lhd.m3u8?txSecret=a4b8940ab4095ccbbaa10365c5a9e1d2&txTime=6a62b708
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260722/6497dd5cac86229c1d9f1bdfc13ade85.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 21:00 24/07 Bournemouth AFC vs FC St. Pauli (BLV BLV CÁO)
+https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1784840102-0-0-995f0667ea066bdfee166ad85aadc5d6
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260722/6497dd5cac86229c1d9f1bdfc13ade85.png" group-title="SOCO SPORT" group-logo="https://tructiepbongda.com/favicon.ico", 21:00 24/07 Bournemouth AFC vs FC St. Pauli (BLV BLV ENZO)
 https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1784785461-0-0-944ea4266a54e797a24c83279c8e291a
@@ -1609,6 +1625,9 @@ https://hls.streamhub.media/hls/thesport-api-fa37ceead7aca32963a6/master.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F1932_165363454417.png&time=02%3A15+24%2F07" group-title=" LƯƠNG SƠN TV",02:15 24/07 Valur Reykjavik vs HSK Zrinjski Mostar (BLV TÔN LẬP) [flv]
 https://flv.cdnfaster-a.live/live/TONLAP.flv?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fcdn-img.cdnokvip.com%2Flogos%2F1932_165363454417.png&time=02%3A15+24%2F07" group-title=" LƯƠNG SƠN TV",02:15 24/07 Valur Reykjavik vs HSK Zrinjski Mostar (BLV TÔN LẬP) [hls]
+https://hls.cdnfaster-a.live/live/TONLAP/index.m3u8?expire=1788427256&sign=72cc58a29d787d621b0832b54e1a78df
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fb95bc960b3da7a0823037c9f0ad86329.png&time=02%3A15+24%2F07" group-title=" VUA SÂN CỎ TV",02:15 24/07 Valur Reykjavik vs HSK Zrinjski Mostar (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/e3fc8df1432442e321c48aaf05a50e26/playlist.m3u8
 
@@ -2288,4 +2307,13 @@ https://live.fptplay53.net/fnxhd1/vntoday_vhls.smil/chunklist_b5000000.m3u8
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/1eae81e51945df5660e24dc6f0ea353c.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 00:00 25/07 CSKA Moscow vs Baltika Kaliningrad (Lưu Triệt)
 https://cdn-global.ebaclofen.org/vsc/vsc-te-tuong-alien/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0bab5c51d1f07f0dc8447c5b860debe3.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 04:30 24/07 Club Leones del Norte vs Guayaquil City (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-11786ee88ac564cc2009/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6aee0e3c4adf0a133ff26dd20c7ea29f.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 04:30 24/07 Orense SC vs Sociedad Deportiva Aucas (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-d383f96b6e38a1db3a9d/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/97b953630af2877305a6bcb90444dc72.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 05:00 24/07 Bolivar vs Grêmio - RS (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-4b756f6fab0e080cded6/master.m3u8
 
