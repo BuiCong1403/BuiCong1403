@@ -87,6 +87,11 @@ COTIVI_SPORTS_M3U_URL = os.environ.get(
     "COTIVI_SPORTS_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/freetvco/refs/heads/main/output/cotivi_sports.m3u",
 )
+CHOANG_JSON_URL = os.environ.get(
+    "CHOANG_JSON_URL",
+    "https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/output.json",
+)
+CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv18.com/")
 DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
@@ -452,30 +457,7 @@ def verify_live_channels(channels):
         seen.add(url)
         channel["stream_url"] = url
         unique.append(channel)
-
-    if not VERIFY_STREAMS or not unique:
-        return unique
-
-    live = []
-    with ThreadPoolExecutor(max_workers=MAX_VERIFY_WORKERS) as executor:
-        futures = {
-            executor.submit(
-                is_working_m3u8,
-                channel.get("stream_url", ""),
-                channel.get("referer", ""),
-                channel.get("user_agent", UA),
-            ): channel
-            for channel in unique
-        }
-        for future in as_completed(futures):
-            channel = futures[future]
-            try:
-                if future.result():
-                    live.append(channel)
-            except Exception:
-                pass
-    live.sort(key=lambda item: (item.get("source", ""), item.get("name", "")))
-    return live
+    return unique
 
 
 def write_m3u(path, channels):
@@ -1462,8 +1444,6 @@ def collect_vsc9():
         if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
             continue
         seen_urls.add(stream_url)
-        if not playlist_is_usable(stream_url, VSC9_REFERER):
-            continue
         title, time_label = vsc9_title_from_context(html_text, raw_url)
         group = "Vua San Co TV"
         if time_label:
@@ -1685,6 +1665,15 @@ def main():
                 "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
                 "Gio Vang",
                 GIOVANG_REFERER,
+            ),
+        ),
+        (
+            "ChoangTV",
+            lambda: collect_grouped_json(
+                "ChoangTV",
+                CHOANG_JSON_URL,
+                "ChoangTV",
+                CHOANG_REFERER,
             ),
         ),
         (
