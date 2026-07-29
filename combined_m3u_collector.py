@@ -29,6 +29,7 @@ except Exception:
 
 BASE_DIR = Path(__file__).resolve().parent
 ALL_M3U = BASE_DIR / "all.m3u"
+PHIMLONGTIENG_M3U = BASE_DIR / "phimlongtieng.m3u"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
@@ -97,6 +98,8 @@ DEKIKI_M3U_URL = os.environ.get(
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
 )
 SPORT_INTERNATIONAL_GROUP = "Th\u1ec3 thao qu\u1ed1c t\u1ebf"
+PHIMLONGTIENG_URL = os.environ.get("PHIMLONGTIENG_URL", "https://aismile.dpdns.org/phimlongtieng_noshare/")
+PHIMLONGTIENG_GROUP = "Phim l\u1ed3ng ti\u1ebfng"
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -329,9 +332,14 @@ def channel_key(channel):
     )
 
 
+def is_hls_url(url):
+    lower = clean_text(url).lower().split("?", 1)[0]
+    return ".m3u8" in lower or lower.endswith("/m3u8")
+
+
 def is_valid_stream_url(url):
     url = clean_text(url)
-    return bool(url and ".m3u8" in url and not url.startswith(("udp://", "rtp://")))
+    return bool(url and is_hls_url(url) and not url.startswith(("udp://", "rtp://")))
 
 
 def is_valid_highlight_url(url):
@@ -339,7 +347,7 @@ def is_valid_highlight_url(url):
     if not url or not url.startswith(("http://", "https://")):
         return False
     lower = url.lower().split("?", 1)[0]
-    return (".m3u8" in lower or lower.endswith(".mp4")) and ".mpd" not in lower
+    return (is_hls_url(url) or lower.endswith(".mp4")) and ".mpd" not in lower
 
 
 SPORT_SOURCES = {
@@ -458,6 +466,19 @@ def verify_live_channels(channels):
         channel["stream_url"] = url
         unique.append(channel)
     return unique
+
+
+def dedupe_and_sort_channels(channels):
+    deduped = []
+    seen_urls = set()
+    for channel in channels:
+        url = channel.get("stream_url", "").strip()
+        if not url or url in seen_urls:
+            continue
+        seen_urls.add(url)
+        deduped.append(channel)
+    deduped.sort(key=lambda channel: (output_group(channel), clean_text(channel.get("name")), channel.get("stream_url", "")))
+    return deduped
 
 
 def write_m3u(path, channels):
@@ -684,6 +705,16 @@ def iter_grouped_stream_links(channel):
                         yield stream_name, stream_url
 
 
+def headers_from_request_headers(request_headers):
+    headers = {}
+    for item in request_headers or []:
+        key = clean_text(item.get("key"))
+        value = clean_text(item.get("value"))
+        if key and value:
+            headers[key.lower()] = value
+    return headers
+
+
 def collect_grouped_json(source, api_url, group_name, referer=None):
     log(f"[{source}] Fetch grouped JSON")
     headers = {"Accept": "application/json, */*"}
@@ -855,7 +886,7 @@ def is_supported_playlist_url(url, allow_non_m3u8=False):
         return False
     if url.startswith(("udp://", "rtp://")):
         return False
-    return allow_non_m3u8 or ".m3u8" in lower
+    return allow_non_m3u8 or is_hls_url(url)
 
 
 def group_key(value):
@@ -1090,6 +1121,89 @@ def collect_dekiki_sports():
         channel["group"] = SPORT_INTERNATIONAL_GROUP
         channel["raw_extinf"] = set_extinf_group_title(channel.get("raw_extinf", ""), SPORT_INTERNATIONAL_GROUP)
     log(f"[{source}] {len(channels)} selected links")
+    return channels
+
+
+def collect_phimlongtieng():
+    source = "PhimLongTieng"
+    base_url = PHIMLONGTIENG_URL.rstrip("/") + "/"
+    log(f"[{source}] Fetch catalog")
+    root = fetch_json(base_url, headers={"Accept": "application/json, */*", "Referer": base_url}, timeout=30)
+    movies = []
+    seen_detail_urls = set()
+
+    def add_movie(movie):
+        detail_url = clean_text(((movie.get("remote_data") or {}).get("url")))
+        if not detail_url or detail_url in seen_detail_urls:
+            return
+        seen_detail_urls.add(detail_url)
+        movies.append(movie)
+
+    for movie in root.get("channels") or []:
+        add_movie(movie)
+    for group in root.get("groups") or []:
+        for movie in group.get("channels") or []:
+            add_movie(movie)
+
+    log(f"[{source}] {len(movies)} movies")
+
+    def collect_movie(movie):
+        detail_url = clean_text(((movie.get("remote_data") or {}).get("url")))
+        if not detail_url:
+            return []
+        movie_name = clean_text(movie.get("name")) or source
+        movie_desc = clean_text(movie.get("description"))
+        logo = ((movie.get("image") or {}).get("url")) or ""
+        data = fetch_json(
+            detail_url,
+            headers={
+                "Accept": "application/json, */*",
+                "Referer": base_url,
+            },
+            timeout=30,
+        )
+        movie_channels = []
+        for src in data.get("sources") or []:
+            audio_name = clean_text(src.get("name"))
+            for content in src.get("contents") or []:
+                for stream in content.get("streams") or []:
+                    episode_name = clean_text(stream.get("name")) or "Tap"
+                    for link in stream.get("stream_links") or []:
+                        stream_url = clean_text(link.get("url"))
+                        if not is_valid_stream_url(stream_url):
+                            continue
+                        headers = headers_from_request_headers(link.get("request_headers"))
+                        parts = [movie_name]
+                        if movie_desc:
+                            parts.append(movie_desc)
+                        if audio_name:
+                            parts.append(audio_name)
+                        parts.append(episode_name)
+                        movie_channels.append(
+                            {
+                                "source": source,
+                                "name": " | ".join(parts),
+                                "group": PHIMLONGTIENG_GROUP,
+                                "logo": logo,
+                                "stream_url": stream_url,
+                                "referer": headers.get("referer", "https://www.1phim12.com/"),
+                                "user_agent": headers.get("user-agent", "Smile Player"),
+                            }
+                        )
+        return movie_channels
+
+    channels = []
+    max_workers = int(os.environ.get("PHIMLONGTIENG_WORKERS", "8"))
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(collect_movie, movie): movie for movie in movies}
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception as exc:
+                movie = futures[future]
+                log(f"[{source}] Detail error {movie.get('id')}: {exc}")
+
+    log(f"[{source}] {len(channels)} raw links")
     return channels
 
 
@@ -1735,23 +1849,24 @@ def main():
         if selected:
             all_channels.extend(selected)
 
-    deduped = []
-    seen_urls = set()
-    for channel in all_channels:
-        url = channel.get("stream_url", "").strip()
-        if not url or url in seen_urls:
-            continue
-        seen_urls.add(url)
-        deduped.append(channel)
-
-    deduped.sort(key=lambda channel: (output_group(channel), clean_text(channel.get("name")), channel.get("stream_url", "")))
+    deduped = dedupe_and_sort_channels(all_channels)
     write_m3u(ALL_M3U, deduped)
+
+    log("")
+    try:
+        phimlongtieng_channels = dedupe_and_sort_channels(verify_live_channels(collect_phimlongtieng()))
+    except Exception as exc:
+        log(f"[PhimLongTieng] Fatal error: {exc}")
+        phimlongtieng_channels = []
+    write_m3u(PHIMLONGTIENG_M3U, phimlongtieng_channels)
 
     log("")
     log(f"[DONE] Total unique links: {len(deduped)}")
     for source_name, count in per_source_counts.items():
         log(f"[DONE] {source_name}: {count}")
     log(f"[DONE] M3U: {ALL_M3U}")
+    log(f"[DONE] PhimLongTieng: {len(phimlongtieng_channels)}")
+    log(f"[DONE] M3U: {PHIMLONGTIENG_M3U}")
 
 
 if __name__ == "__main__":
