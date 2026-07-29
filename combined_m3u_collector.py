@@ -96,7 +96,7 @@ DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
 )
-SPORT_INTERNATIONAL_GROUP = "Th\u1ec3 thao qu\u1ed1c t\u1ebf"
+SPORT_INTERNATIONAL_GROUP = "TH\u1ec2 THAO QU\u1ed0C T\u1ebe"
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -386,6 +386,34 @@ def text_key(value):
     return "".join(ch for ch in value if ch.isalnum() or ch.isspace()).strip()
 
 
+def compact_text_key(value):
+    return re.sub(r"[^a-z0-9]+", "", text_key(value))
+
+
+GROUP_CANONICAL_RULES = [
+    ("Gi\u1edd V\u00e0ng TV", ("giovang", "gio vang", "gio vang tv")),
+    ("Socolive TV", ("socolive", "soco live", "soco sport", "socosport")),
+    (SPORT_INTERNATIONAL_GROUP, ("the thao quoc te", "thethaoquocte", "sport quoc te", "international sport")),
+]
+
+
+def canonical_group_title(group):
+    group = clean_text(group)
+    if not group:
+        return group
+    key = compact_text_key(group)
+    spaced_key = text_key(group)
+    for canonical, aliases in GROUP_CANONICAL_RULES:
+        for alias in aliases:
+            alias_key = compact_text_key(alias)
+            alias_spaced = text_key(alias)
+            if alias_key and alias_key in key:
+                return canonical
+            if alias_spaced and alias_spaced in spaced_key:
+                return canonical
+    return group
+
+
 def detect_sport(*parts):
     haystack = text_key(" ".join(clean_text(part) for part in parts if part))
     for sport, keywords in SPORT_KEYWORDS:
@@ -411,7 +439,16 @@ def extract_match_title(channel):
 
 def output_group(channel):
     group = clean_text(channel.get("group"))
-    return clean_text(group or channel.get("source") or "Unknown")
+    return canonical_group_title(group or channel.get("source") or "Unknown")
+
+
+def normalize_channel_group(channel):
+    group = output_group(channel)
+    channel["group"] = group
+    raw_extinf = clean_text(channel.get("raw_extinf"))
+    if raw_extinf:
+        channel["raw_extinf"] = set_extinf_group_title(raw_extinf, group)
+    return channel
 
 
 def is_working_m3u8(url, referer="", user_agent=UA):
@@ -469,6 +506,7 @@ def dedupe_and_sort_channels(channels):
     deduped = []
     seen_urls = set()
     for channel in channels:
+        channel = normalize_channel_group(channel)
         url = channel.get("stream_url", "").strip()
         if not url or url in seen_urls:
             continue
