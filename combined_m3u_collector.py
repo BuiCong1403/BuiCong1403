@@ -94,6 +94,9 @@ CHOANG_JSON_URL = os.environ.get(
     "https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/output.json",
 )
 CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv18.com/")
+XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
+XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.buzzscorelinez.com/")
+XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
 DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
@@ -103,6 +106,11 @@ TV365_ERROR_M3U_URL = os.environ.get(
     "https://raw.githubusercontent.com/TV365-VN/TV365-DATA/refs/heads/main/error.m3u",
 )
 SPORT_INTERNATIONAL_GROUP = "TH\u1ec2 THAO QU\u1ed0C T\u1ebe"
+FLV_OTT_GROUP = "FLV | OTT Player"
+FLV_OTT_USER_AGENT = (
+    "Mozilla/5.0 (Linux; Android 10; Mobile) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
+)
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -345,6 +353,21 @@ def is_hls_url(url):
     return ".m3u8" in lower or lower.endswith("/m3u8")
 
 
+def is_flv_url(url):
+    lower = clean_text(url).lower().split("?", 1)[0]
+    return lower.endswith(".flv")
+
+
+def is_valid_xoilacz_stream_url(url):
+    url = clean_text(url)
+    if not url or not url.startswith(("http://", "https://")):
+        return False
+    lower = url.lower().split("?", 1)[0]
+    if lower.endswith(".mpd") or ".mpd/" in lower:
+        return False
+    return is_hls_url(url) or is_flv_url(url)
+
+
 def is_valid_stream_url(url):
     url = clean_text(url)
     return bool(url and is_hls_url(url) and not url.startswith(("udp://", "rtp://")))
@@ -454,7 +477,20 @@ def output_group(channel):
 
 
 def normalize_channel_group(channel):
-    if channel.get("preserve_group_exact"):
+    if is_flv_url(channel.get("stream_url")):
+        group = FLV_OTT_GROUP
+        channel["user_agent"] = FLV_OTT_USER_AGENT
+        if not clean_text(channel.get("referer")):
+            stream_url_key = clean_text(channel.get("stream_url")).lower()
+            if "streambylivepulse.com" in stream_url_key or "procdnlive.com" in stream_url_key:
+                channel["referer"] = XOILACZ_REFERER
+        raw_options = []
+        for option_line in channel.get("raw_options") or []:
+            if "http-user-agent=" in clean_text(option_line).lower():
+                continue
+            raw_options.append(option_line)
+        channel["raw_options"] = raw_options
+    elif channel.get("preserve_group_exact"):
         group = clean_text(channel.get("group") or channel.get("source") or "Unknown")
     else:
         group = output_group(channel)
@@ -518,13 +554,21 @@ def verify_live_channels(channels):
 
 def dedupe_and_sort_channels(channels):
     deduped = []
-    seen_urls = set()
+    seen_urls = {}
     for channel in channels:
         channel = normalize_channel_group(channel)
         url = channel.get("stream_url", "").strip()
-        if not url or url in seen_urls:
+        if not url:
             continue
-        seen_urls.add(url)
+        if url in seen_urls:
+            current_index = seen_urls[url]
+            current = deduped[current_index]
+            current_header_score = bool(clean_text(current.get("referer"))) + bool(clean_text(current.get("user_agent")))
+            new_header_score = bool(clean_text(channel.get("referer"))) + bool(clean_text(channel.get("user_agent")))
+            if new_header_score > current_header_score:
+                deduped[current_index] = channel
+            continue
+        seen_urls[url] = len(deduped)
         deduped.append(channel)
     deduped.sort(key=lambda channel: (output_group(channel), clean_text(channel.get("name")), channel.get("stream_url", "")))
     return deduped
@@ -537,6 +581,13 @@ def write_m3u(path, channels):
         f.write(f"# Updated : {now_ict()}\n")
         f.write(f"# Total   : {len(channels)}\n\n")
         for ch in channels:
+            if is_flv_url(ch.get("stream_url")):
+                name = remove_icons(ch.get("name", "Unknown"))
+                f.write(f"#EXTINF:0,{name}\n")
+                f.write(f"#EXTGRP:{output_group(ch)}\n")
+                f.write(f'{ch.get("stream_url", "")}\n\n')
+                continue
+
             raw_extinf = clean_text(ch.get("raw_extinf")) if ch.get("preserve_extinf") else ""
             if raw_extinf:
                 f.write(f"{sanitize_extinf_line(raw_extinf)}\n")
@@ -1249,6 +1300,144 @@ def collect_dekiki_sports():
     return channels
 
 
+def xoilacz_actual_base_url():
+    base_url = XOILACZ_SITE_URL.rstrip("/") + "/"
+    try:
+        response = request_get(base_url, timeout=15)
+        actual_url = response.url
+        return actual_url if actual_url.endswith("/") else actual_url + "/"
+    except Exception:
+        return base_url
+
+
+def xoilacz_headers(base_url):
+    origin_match = re.match(r"^https?://[^/]+", base_url)
+    origin = origin_match.group(0) if origin_match else base_url.rstrip("/")
+    return {
+        "Accept": "application/json, text/plain, */*",
+        "Origin": origin,
+        "Referer": base_url,
+        "User-Agent": UA,
+    }
+
+
+def extract_xoilacz_url_stream(stream_page_url, headers):
+    try:
+        html_text = fetch_text(stream_page_url, headers=headers, timeout=25)
+    except Exception:
+        return ""
+    match = re.search(r'var\s+urlStream\s*=\s*["\']([^"\']+)["\'];', html_text)
+    return clean_text(match.group(1).replace("\\/", "/")) if match else ""
+
+
+def extract_xoilacz_stream_links(detail_url, headers):
+    try:
+        html_text = fetch_text(detail_url, headers=headers, timeout=25)
+    except Exception:
+        return []
+    match = re.search(r"var\s+list_stream\s*=\s*(\[.*?\]);", html_text, re.S)
+    if not match:
+        return []
+    try:
+        list_stream = json.loads(match.group(1))
+    except Exception:
+        return []
+
+    stream_urls = []
+    for item in list_stream:
+        if not isinstance(item, list) or not item:
+            continue
+        stream_page_url = clean_text(str(item[0]).replace("\\/", "/"))
+        if not stream_page_url.startswith(("http://", "https://")):
+            continue
+        stream_url = extract_xoilacz_url_stream(stream_page_url, headers) or stream_page_url
+        if is_valid_xoilacz_stream_url(stream_url) and stream_url not in stream_urls:
+            stream_urls.append(stream_url)
+    return stream_urls
+
+
+def collect_xoilacz():
+    source = "XoiLacZ"
+    base_url = xoilacz_actual_base_url()
+    headers = xoilacz_headers(base_url)
+    channels = []
+    seen_urls = set()
+
+    def collect_match(block):
+        if "redirectPopup" not in block:
+            return []
+        blv_match = re.search(r"number-blv-(\d+)", block)
+        if blv_match and int(blv_match.group(1)) <= 0:
+            return []
+        link_match = re.search(
+            r'<a[^>]+class="[^"]*redirectPopup[^"]*"[^>]+href="([^"]+)"[^>]+title="([^"]*)"',
+            block,
+            re.S,
+        )
+        if not link_match:
+            link_match = re.search(
+                r'<a[^>]+href="([^"]+)"[^>]+title="([^"]*)"[^>]+class="[^"]*redirectPopup[^"]*"',
+                block,
+                re.S,
+            )
+        if not link_match:
+            return []
+
+        href = clean_text(link_match.group(1))
+        title = clean_text(html.unescape(link_match.group(2)))
+        detail_url = urljoin(base_url, href)
+        match_channels = []
+        for idx, stream_url in enumerate(extract_xoilacz_stream_links(detail_url, headers), 1):
+            quality = "FLV" if is_flv_url(stream_url) else "HLS"
+            match_channels.append(
+                {
+                    "source": source,
+                    "name": f"{title} | Link {idx} [{quality}]",
+                    "group": "Xôi Lạc Z TV",
+                    "logo": "",
+                        "stream_url": stream_url,
+                        "referer": XOILACZ_REFERER,
+                        "user_agent": FLV_OTT_USER_AGENT,
+                    }
+                )
+        return match_channels
+
+    for page in range(max(1, XOILACZ_PAGES)):
+        url = f"{base_url.rstrip('/')}/sport/football/load-more/home/page/{page}/per/20?t={int(time.time())}"
+        log(f"[{source}] Fetch page {page}")
+        try:
+            data = fetch_json(url, headers=headers, timeout=30)
+        except Exception as exc:
+            log(f"[{source}] Page {page} error: {exc}")
+            break
+        html_text = ((data.get("data") or {}).get("html") or "") if isinstance(data, dict) else ""
+        if not html_text:
+            break
+
+        blocks = re.findall(
+            r'(<div\s+class="grid-matches__item[^>]*grid-matches__item-match.*?)(?=<div\s+class="grid-matches__item|\Z)',
+            html_text,
+            re.S,
+        )
+        with ThreadPoolExecutor(max_workers=6) as executor:
+            futures = [executor.submit(collect_match, block) for block in blocks]
+            for future in as_completed(futures):
+                try:
+                    match_channels = future.result()
+                except Exception:
+                    continue
+                for channel in match_channels:
+                    stream_url = channel.get("stream_url")
+                    if stream_url in seen_urls:
+                        continue
+                    seen_urls.add(stream_url)
+                    channels.append(channel)
+        time.sleep(0.5)
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 class LinkCardParser(HTMLParser):
     def __init__(self, base_url):
         super().__init__()
@@ -1855,6 +2044,7 @@ def main():
         ("CuongHeHe", collect_cuonghehe),
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
+        ("XoiLacZ", collect_xoilacz),
         (
             "TV365KidsInternational",
             lambda: collect_m3u_playlist(
