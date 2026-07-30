@@ -48,6 +48,7 @@ KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.kh
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
 COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
 COLATV_API_URL = os.environ.get("COLATV_API", "https://api.cltvlv.com/api/matches")
+BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv.pro/")
 LUONGSON_API_URL = os.environ.get("LUONGSON_API", "https://api-ls.cdnokvip.com/api/get-livestream-group")
 LUONGSON_MATCH_URL = os.environ.get("LUONGSON_MATCH", "https://api-ls.cdnokvip.com/api/match-detail?matchId=%s")
 NAUXOI_API_BASE = os.environ.get("NAUXOI_API", "https://apixx.connect9nx.com/api")
@@ -71,6 +72,7 @@ QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
 VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", "https://vsc9.top/")
+S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tv008.com/")
 ALL_CHANNEL_M3U_URL = os.environ.get(
     "ALL_CHANNEL_M3U_URL",
     "https://raw.githubusercontent.com/huybuonvp/xem_football/refs/heads/main/All_CHANNEL.m3u",
@@ -294,6 +296,11 @@ def remove_icons(value):
 
 def sanitize_extinf_line(line):
     line = remove_icons(line)
+    line = re.sub(
+        r'group-title="([^"]*)"',
+        lambda match: f'group-title="{clean_text(match.group(1))}"',
+        line,
+    )
     line = re.sub(r"\s+\|", " |", line)
     line = re.sub(r"\|\s+", "| ", line)
     line = re.sub(r"\s+,", ",", line)
@@ -443,7 +450,10 @@ def output_group(channel):
 
 
 def normalize_channel_group(channel):
-    group = output_group(channel)
+    if channel.get("preserve_group_exact"):
+        group = clean_text(channel.get("group") or channel.get("source") or "Unknown")
+    else:
+        group = output_group(channel)
     channel["group"] = group
     raw_extinf = clean_text(channel.get("raw_extinf"))
     if raw_extinf:
@@ -859,6 +869,80 @@ def collect_cola():
     return channels
 
 
+def biaom_field_from_context(context, field):
+    matches = re.findall(rf'{re.escape(field)}\\":\\"((?:\\\\.|[^\\"])*)\\"', context)
+    return clean_text(decode_json_string(matches[-1]).rstrip("\\")) if matches else ""
+
+
+def biaom_nested_field_from_context(context, object_name, field):
+    pattern = rf'{re.escape(object_name)}\\":\{{[^{{}}]*?{re.escape(field)}\\":\\"((?:\\\\.|[^\\"])*)\\"'
+    matches = re.findall(pattern, context)
+    return clean_text(decode_json_string(matches[-1]).rstrip("\\")) if matches else ""
+
+
+def collect_biaom():
+    source = "BiaomTV"
+    site_url = BIAOM_SITE_URL.rstrip("/") + "/"
+    headers = {
+        "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
+        "Referer": site_url,
+    }
+    log(f"[{source}] Fetch home")
+    try:
+        html_text = fetch_text(site_url, headers=headers, timeout=30)
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+    if not html_text:
+        log(f"[{source}] Home not available")
+        return []
+
+    channels = []
+    seen_urls = set()
+    for match in re.finditer(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*", html_text):
+        stream_url = clean_text(decode_json_string(match.group(0)))
+        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+            continue
+        seen_urls.add(stream_url)
+
+        context = html_text[max(0, match.start() - 1600) : match.start()]
+        league = biaom_field_from_context(context, "league_title") or biaom_nested_field_from_context(context, "league", "name")
+        home = biaom_field_from_context(context, "localteam_title") or biaom_nested_field_from_context(context, "home", "name")
+        away = biaom_field_from_context(context, "visitorteam_title") or biaom_nested_field_from_context(context, "away", "name")
+        start_time = biaom_field_from_context(context, "starting_at")
+        logo = (
+            biaom_field_from_context(context, "localteam_logo")
+            or biaom_field_from_context(context, "visitorteam_logo")
+            or biaom_nested_field_from_context(context, "home", "image_url")
+            or biaom_nested_field_from_context(context, "away", "image_url")
+        )
+        time_label = parse_iso_to_ict(start_time, fmt="%H:%M-%d/%m")
+
+        title_parts = []
+        if time_label:
+            title_parts.append(f"[{time_label}]")
+        if home and away:
+            title_parts.append(f"{home} vs {away}")
+        if league:
+            title_parts.append(f"[{league}]")
+        title = " ".join(title_parts) or title_from_stream_url(stream_url, source)
+
+        channels.append(
+            {
+                "source": source,
+                "name": title,
+                "group": source,
+                "logo": logo,
+                "stream_url": stream_url,
+                "referer": site_url,
+                "user_agent": UA,
+            }
+        )
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_tamquoc():
     source = "TamQuocTV"
     api_url = "https://sv.tamquoctv.xyz/internal/api/matches"
@@ -962,6 +1046,7 @@ def collect_m3u_playlist(
     default_referer_to_playlist=True,
     user_agent=UA,
     preserve_extinf=False,
+    preserve_group_exact=False,
 ):
     log(f"[{source}] Fetch M3U")
     r = None
@@ -1008,6 +1093,7 @@ def collect_m3u_playlist(
                     "raw_extinf": current.get("raw_extinf", ""),
                     "raw_options": list(current.get("raw_options") or []),
                     "preserve_extinf": preserve_extinf,
+                    "preserve_group_exact": preserve_group_exact,
                 }
             )
     log(f"[{source}] {len(channels)} raw links")
@@ -1431,7 +1517,7 @@ def collect_hoadaotv():
 
 def collect_s8tv():
     source = "S8TV"
-    site_url = "https://s8tv002.com/"
+    site_url = S8TV_SITE_URL.rstrip("/") + "/"
     headers = {
         "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
         "Referer": site_url,
@@ -1698,6 +1784,7 @@ def main():
         ),
         ("VongCamTV", collect_vongcam),
         ("CoLaTV", collect_cola),
+        ("BiaomTV", collect_biaom),
         ("TamQuocTV", collect_tamquoc),
         ("LuongSonTV", collect_luongson),
         ("TieuLamWC", collect_tieulamwc),
@@ -1716,12 +1803,14 @@ def main():
                 "TinhLaGi",
                 "https://tinhlagi.pro/s.m3u",
                 "Tinh La Gi",
+                preserve_group=True,
                 allow_non_m3u8=True,
                 timeout=60,
                 retries=3,
                 default_referer_to_playlist=False,
                 user_agent="",
                 preserve_extinf=True,
+                preserve_group_exact=True,
             ),
         ),
         (
