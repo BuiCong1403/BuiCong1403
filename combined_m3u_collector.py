@@ -98,6 +98,10 @@ DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
 )
+TV365_ERROR_M3U_URL = os.environ.get(
+    "TV365_ERROR_M3U_URL",
+    "https://raw.githubusercontent.com/TV365-VN/TV365-DATA/refs/heads/main/error.m3u",
+)
 SPORT_INTERNATIONAL_GROUP = "TH\u1ec2 THAO QU\u1ed0C T\u1ebe"
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
@@ -1851,6 +1855,22 @@ def main():
         ("CuongHeHe", collect_cuonghehe),
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
+        (
+            "TV365KidsInternational",
+            lambda: collect_m3u_playlist(
+                "TV365KidsInternational",
+                TV365_ERROR_M3U_URL,
+                "TV365",
+                preserve_group=True,
+                allow_non_m3u8=True,
+                timeout=60,
+                retries=3,
+                allowed_groups=("thieu nhi", "quoc te"),
+                default_referer_to_playlist=False,
+                user_agent="",
+                preserve_extinf=True,
+            ),
+        ),
         (
             "TieuLamTV",
             lambda: collect_m3u_playlist(
