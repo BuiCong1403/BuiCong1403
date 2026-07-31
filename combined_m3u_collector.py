@@ -97,6 +97,9 @@ CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv18.com/")
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.buzzscorelinez.com/")
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
+AZABU_BASE_URL = os.environ.get("AZABU_BASE_URL", "https://azabuglobal.com/")
+AZABU_LIVE_LIMIT = int(os.environ.get("AZABU_LIVE_LIMIT", "30"))
+AZABU_HIGHLIGHT_PAGES = int(os.environ.get("AZABU_HIGHLIGHT_PAGES", "1"))
 DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
@@ -1520,6 +1523,149 @@ def title_from_stream_url(url, prefix):
     return f"{prefix} {label}".strip()
 
 
+def escaped_json_field(context, field):
+    matches = re.findall(rf'{re.escape(field)}\\":\\"((?:\\\\.|[^\\"])*)\\"', context)
+    return clean_text(decode_json_string(matches[-1])) if matches else ""
+
+
+def title_from_html_page(html_text, fallback):
+    patterns = [
+        r"<h1[^>]*>(.*?)</h1>",
+        r'property="og:title"\s+content="([^"]+)"',
+        r"<title>(.*?)</title>",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, html_text, re.I | re.S)
+        if not match:
+            continue
+        title = re.sub(r"<.*?>", " ", match.group(1))
+        title = clean_text(html.unescape(title))
+        title = re.sub(r"\s+-\s+Xoilacz\.TV\s*$", "", title, flags=re.I)
+        if title:
+            return title
+    return fallback
+
+
+def azabu_headers(referer=None):
+    base_url = AZABU_BASE_URL.rstrip("/") + "/"
+    return {
+        "Accept": "text/html,application/xhtml+xml,application/json,*/*",
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def collect_azabu_live():
+    source = "AzabuLive"
+    base_url = AZABU_BASE_URL.rstrip("/") + "/"
+    log(f"[{source}] Fetch home")
+    try:
+        html_text = fetch_text(base_url, headers=azabu_headers(), timeout=30)
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+
+    detail_urls = []
+    for match in re.finditer(r'href="(/truc-tiep/[^"]+?/link/\d+)"', html_text, re.I):
+        detail_url = urljoin(base_url, re.sub(r"/link/\d+/?$", "/", match.group(1)))
+        if detail_url not in detail_urls:
+            detail_urls.append(detail_url)
+    detail_urls = detail_urls[: max(1, AZABU_LIVE_LIMIT)]
+
+    def collect_detail(detail_url):
+        try:
+            detail_html = fetch_text(detail_url, headers=azabu_headers(detail_url), timeout=25)
+        except Exception:
+            return []
+        title = title_from_html_page(detail_html, "Azabu Live")
+        stream_urls = extract_xoilacz_stream_links(detail_url, azabu_headers(detail_url))
+        result = []
+        for idx, stream_url in enumerate(stream_urls, 1):
+            quality = "FLV" if is_flv_url(stream_url) else "HLS"
+            result.append(
+                {
+                    "source": source,
+                    "name": f"{title} | Link {idx} [{quality}]",
+                    "group": "Azabu Live",
+                    "logo": "",
+                    "stream_url": stream_url,
+                    "referer": AZABU_BASE_URL.rstrip("/") + "/",
+                    "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                }
+            )
+        return result
+
+    channels = []
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(collect_detail, detail_url) for detail_url in detail_urls]
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception:
+                continue
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+def collect_azabu_highlights():
+    source = "AzabuHighlight"
+    base_url = AZABU_BASE_URL.rstrip("/") + "/"
+    highlight_url = urljoin(base_url, "highlight/")
+    post_urls = []
+
+    for page in range(1, max(1, AZABU_HIGHLIGHT_PAGES) + 1):
+        page_url = highlight_url if page == 1 else urljoin(highlight_url, f"page/{page}/")
+        log(f"[{source}] Fetch page {page}")
+        try:
+            html_text = fetch_text(page_url, headers=azabu_headers(page_url), timeout=30)
+        except Exception:
+            continue
+        for match in re.finditer(r"https://azabuglobal\.com/highlight/[^\s'\"<>]+/", html_text, re.I):
+            post_url = match.group(0)
+            if "/page/" not in post_url and post_url not in post_urls:
+                post_urls.append(post_url)
+
+    def collect_post(post_url):
+        try:
+            html_text = fetch_text(post_url, headers=azabu_headers(post_url), timeout=25)
+        except Exception:
+            return []
+        title = title_from_html_page(html_text, "Azabu Highlight")
+        logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
+        logo = logo_match.group(1) if logo_match else ""
+        stream_urls = []
+        for match in re.finditer(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*", html_text, re.I):
+            stream_url = clean_text(match.group(0).replace("\\/", "/").replace("\\u0026", "&"))
+            if is_valid_stream_url(stream_url) and stream_url not in stream_urls:
+                stream_urls.append(stream_url)
+        return [
+            {
+                "source": source,
+                "name": title,
+                "group": "Highlight | Azabu Global",
+                "logo": logo,
+                "stream_url": stream_url,
+                "referer": post_url,
+                "user_agent": UA,
+            }
+            for stream_url in stream_urls
+        ]
+
+    channels = []
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception:
+                continue
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def fetch_vsc9_html():
     headers = {
         "User-Agent": UA,
@@ -1615,6 +1761,9 @@ def extract_stream_url(text):
 def fetch_text(url, headers=None, params=None, timeout=15):
     r = request_get(url, headers=headers, params=params, timeout=timeout)
     if r.status_code == 200:
+        content = getattr(r, "content", None)
+        if content is not None:
+            return content.decode("utf-8", errors="replace")
         return r.text
     return ""
 
@@ -2045,6 +2194,8 @@ def main():
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
         ("XoiLacZ", collect_xoilacz),
+        ("AzabuLive", collect_azabu_live),
+        ("AzabuHighlight", collect_azabu_highlights),
         (
             "TV365KidsInternational",
             lambda: collect_m3u_playlist(
