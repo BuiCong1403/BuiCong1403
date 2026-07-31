@@ -79,7 +79,7 @@ ALL_CHANNEL_M3U_URL = os.environ.get(
 )
 VMTTV_M3U_URL = os.environ.get(
     "VMTTV_M3U_URL",
-    "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv",
+    "https://raw.githubusercontent.com/thaichieucm92/MyTV/refs/heads/main/MyTVnew",
 )
 CUONGHEHE_M3U_URL = os.environ.get(
     "CUONGHEHE_M3U_URL",
@@ -1255,7 +1255,7 @@ def collect_vmttv():
         allow_non_m3u8=True,
         timeout=60,
         retries=3,
-        allowed_groups=("VTV", "the thao quoc te"),
+        allowed_groups=("VTV", "the thao quoc te", "su kien fpt play"),
     )
     sport_group_key = "thethaoquocte"
     for channel in channels:
