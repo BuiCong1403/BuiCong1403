@@ -100,6 +100,10 @@ XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
 AZABU_BASE_URL = os.environ.get("AZABU_BASE_URL", "https://azabuglobal.com/")
 AZABU_LIVE_LIMIT = int(os.environ.get("AZABU_LIVE_LIMIT", "30"))
 AZABU_HIGHLIGHT_PAGES = int(os.environ.get("AZABU_HIGHLIGHT_PAGES", "1"))
+ANTLIVE_REFERER = os.environ.get("ANTLIVE_REFERER", "https://www.antlive116.com/")
+ANTLIVE_STATIC_FLV_URLS = [
+    ("AntLive Channel 33168120", "https://live02.x69saw6.net/live/33168120.flv"),
+]
 DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
@@ -1609,6 +1613,25 @@ def collect_azabu_live():
     return channels
 
 
+def collect_antlive_static():
+    source = "AntLive"
+    channels = []
+    for name, stream_url in ANTLIVE_STATIC_FLV_URLS:
+        channels.append(
+            {
+                "source": source,
+                "name": name,
+                "group": "AntLive",
+                "logo": "",
+                "stream_url": stream_url,
+                "referer": ANTLIVE_REFERER,
+                "user_agent": FLV_OTT_USER_AGENT,
+            }
+        )
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_azabu_highlights():
     source = "AzabuHighlight"
     base_url = AZABU_BASE_URL.rstrip("/") + "/"
@@ -2195,6 +2218,7 @@ def main():
         ("DekikiSports", collect_dekiki_sports),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
+        ("AntLive", collect_antlive_static),
         ("AzabuHighlight", collect_azabu_highlights),
         (
             "TV365KidsInternational",
