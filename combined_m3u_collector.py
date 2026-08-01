@@ -100,10 +100,8 @@ XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
 AZABU_BASE_URL = os.environ.get("AZABU_BASE_URL", "https://azabuglobal.com/")
 AZABU_LIVE_LIMIT = int(os.environ.get("AZABU_LIVE_LIMIT", "30"))
 AZABU_HIGHLIGHT_PAGES = int(os.environ.get("AZABU_HIGHLIGHT_PAGES", "1"))
-ANTLIVE_REFERER = os.environ.get("ANTLIVE_REFERER", "https://www.antlive116.com/")
-ANTLIVE_STATIC_FLV_URLS = [
-    ("AntLive Channel 33168120", "https://live02.x69saw6.net/live/33168120.flv"),
-]
+TRUCTIEP_HD_BASE_URL = os.environ.get("TRUCTIEP_HD_BASE_URL", "https://tructiep-hd.club/")
+TRUCTIEP_HD_LIMIT = int(os.environ.get("TRUCTIEP_HD_LIMIT", "30"))
 DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
@@ -1613,21 +1611,93 @@ def collect_azabu_live():
     return channels
 
 
-def collect_antlive_static():
-    source = "AntLive"
+def tructiep_hd_headers(referer=None):
+    base_url = TRUCTIEP_HD_BASE_URL.rstrip("/") + "/"
+    return {
+        "Accept": "text/html,application/xhtml+xml,application/json,*/*",
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def collect_tructiep_hd():
+    source = "TructiepHD"
+    base_url = TRUCTIEP_HD_BASE_URL.rstrip("/") + "/"
+    log(f"[{source}] Fetch home")
+    try:
+        home_html = fetch_text(base_url, headers=tructiep_hd_headers(), timeout=30)
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+
+    match_pages = []
+    seen = set()
+    pattern = r'href="(https?://[^"]*tructiep-hd\.club/[^"]+?-m\d+(?:\?server(?:_link_wb)?=\d+)?)"[^>]*title="([^"]*)"'
+    for match in re.finditer(pattern, home_html, re.I):
+        detail_url = html.unescape(match.group(1))
+        title = clean_text(html.unescape(match.group(2)))
+        if detail_url in seen:
+            continue
+        seen.add(detail_url)
+        match_pages.append((detail_url, title))
+        if len(match_pages) >= max(1, TRUCTIEP_HD_LIMIT):
+            break
+
+    def collect_detail(detail_url, title):
+        try:
+            detail_html = fetch_text(detail_url, headers=tructiep_hd_headers(detail_url), timeout=25)
+        except Exception:
+            return []
+        iframe_urls = []
+        for iframe_match in re.finditer(r'<iframe[^>]+src="([^"]*watch_link/[^"]+)"', detail_html, re.I):
+            iframe_url = urljoin(base_url, html.unescape(iframe_match.group(1)))
+            if iframe_url not in iframe_urls:
+                iframe_urls.append(iframe_url)
+        if not iframe_urls:
+            return []
+
+        result = []
+        display_title = re.sub(r"^Xem\s+trực\s+tiếp\s+trận\s+đấu\s+", "", title, flags=re.I)
+        display_title = clean_text(display_title or title_from_html_page(detail_html, "Tructiep-HD"))
+        for idx, iframe_url in enumerate(iframe_urls, 1):
+            try:
+                iframe_html = fetch_text(iframe_url, headers=tructiep_hd_headers(detail_url), timeout=25)
+            except Exception:
+                continue
+            stream_urls = []
+            for stream_match in re.finditer(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*", iframe_html, re.I):
+                stream_url = clean_text(
+                    html.unescape(stream_match.group(0).replace("\\/", "/").replace("\\u0026", "&"))
+                )
+                if stream_url not in stream_urls:
+                    stream_urls.append(stream_url)
+            for stream_index, stream_url in enumerate(stream_urls, 1):
+                suffix = ""
+                if len(iframe_urls) > 1 or len(stream_urls) > 1:
+                    suffix = f" | Link {idx}.{stream_index}"
+                result.append(
+                    {
+                        "source": source,
+                        "name": f"{display_title}{suffix}",
+                        "group": "Tructiep-HD",
+                        "logo": "https://tructiep-hd.club/public/favicon.ico",
+                        "stream_url": stream_url,
+                        "referer": base_url,
+                        "user_agent": UA,
+                    }
+                )
+        return result
+
     channels = []
-    for name, stream_url in ANTLIVE_STATIC_FLV_URLS:
-        channels.append(
-            {
-                "source": source,
-                "name": name,
-                "group": "AntLive",
-                "logo": "",
-                "stream_url": stream_url,
-                "referer": ANTLIVE_REFERER,
-                "user_agent": FLV_OTT_USER_AGENT,
-            }
-        )
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(collect_detail, detail_url, title) for detail_url, title in match_pages]
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception:
+                continue
+
     log(f"[{source}] {len(channels)} raw links")
     return channels
 
@@ -2218,7 +2288,7 @@ def main():
         ("DekikiSports", collect_dekiki_sports),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
-        ("AntLive", collect_antlive_static),
+        ("TructiepHD", collect_tructiep_hd),
         ("AzabuHighlight", collect_azabu_highlights),
         (
             "TV365KidsInternational",
