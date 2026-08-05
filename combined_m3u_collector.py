@@ -79,7 +79,7 @@ ALL_CHANNEL_M3U_URL = os.environ.get(
 )
 VMTTV_M3U_URL = os.environ.get(
     "VMTTV_M3U_URL",
-    "https://raw.githubusercontent.com/thaichieucm92/MyTV/refs/heads/main/MyTVnew",
+    "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv",
 )
 CUONGHEHE_M3U_URL = os.environ.get(
     "CUONGHEHE_M3U_URL",
