@@ -124,6 +124,7 @@ FLV_OTT_USER_AGENT = (
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
 MAX_VERIFY_WORKERS = int(os.environ.get("MAX_VERIFY_WORKERS", "20"))
+FILTER_PAST_EVENTS = os.environ.get("FILTER_PAST_EVENTS", "1").strip().lower() not in {"0", "false", "no"}
 
 
 def log(message):
@@ -347,6 +348,98 @@ def parse_iso_to_ict(value, fmt="%H:%M | %d.%m"):
         return dt.astimezone(TZ_VN).strftime(fmt)
     except Exception:
         return str(value)
+
+
+def parse_iso_to_ict_date(value):
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(str(value).replace("Z", "+00:00")).astimezone(TZ_VN).date()
+    except Exception:
+        return None
+
+
+def parse_epoch_to_ict_date(value):
+    try:
+        timestamp = int(value)
+        if timestamp > 10_000_000_000:
+            timestamp = timestamp / 1000
+        return datetime.fromtimestamp(timestamp, TZ_VN).date()
+    except Exception:
+        return None
+
+
+def date_from_text(value):
+    text = clean_text(value)
+    if not text:
+        return None
+    today = datetime.now(TZ_VN).date()
+    match = re.search(r"\b(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})\b", text)
+    if match:
+        try:
+            return datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=TZ_VN).date()
+        except Exception:
+            return None
+    for match in re.finditer(r"(?<!\d)(\d{1,2})[/-](\d{1,2})(?:[/-](20\d{2}))?(?!\d)", text):
+        day = int(match.group(1))
+        month = int(match.group(2))
+        year = int(match.group(3)) if match.group(3) else today.year
+        try:
+            candidate = datetime(year, month, day, tzinfo=TZ_VN).date()
+        except Exception:
+            continue
+        if not match.group(3) and (today - candidate).days > 180:
+            try:
+                candidate = datetime(today.year + 1, month, day, tzinfo=TZ_VN).date()
+            except Exception:
+                pass
+        return candidate
+    for match in re.finditer(r"(?<!\d)(\d{1,2})[.](\d{1,2})(?!\d)", text):
+        day = int(match.group(1))
+        month = int(match.group(2))
+        try:
+            return datetime(today.year, month, day, tzinfo=TZ_VN).date()
+        except Exception:
+            continue
+    return None
+
+
+def channel_event_date(channel):
+    explicit = channel.get("event_date")
+    if explicit:
+        if hasattr(explicit, "date"):
+            return explicit.date()
+        parsed = parse_iso_to_ict_date(explicit) or date_from_text(explicit)
+        if parsed:
+            return parsed
+    text = " ".join(
+        clean_text(part)
+        for part in (
+            channel.get("name"),
+            channel.get("group"),
+            channel.get("raw_extinf"),
+            " ".join(channel.get("raw_options") or []),
+        )
+        if part
+    )
+    return date_from_text(text)
+
+
+def filter_current_and_future_events(channels):
+    if not FILTER_PAST_EVENTS:
+        return channels
+    today = datetime.now(TZ_VN).date()
+    kept = []
+    removed = 0
+    for channel in channels:
+        event_date = channel_event_date(channel)
+        if event_date and event_date < today:
+            removed += 1
+            continue
+        kept.append(channel)
+    if removed:
+        log(f"[FILTER] Removed past-date events: {removed}")
+    return kept
 
 
 def channel_key(channel):
@@ -650,6 +743,7 @@ def collect_hoiquan3():
         home_name = clean_text(home.get("name")) or "Home"
         away_name = clean_text(away.get("name")) or "Away"
         logo = home.get("logoUrl") or away.get("logoUrl") or ""
+        event_date = parse_iso_to_ict_date(item.get("startTime"))
         time_label = parse_iso_to_ict(item.get("startTime"))
 
         for wrapper in item.get("fixtureCommentators") or []:
@@ -672,6 +766,7 @@ def collect_hoiquan3():
                         "stream_url": stream_url,
                         "referer": site_url,
                         "user_agent": UA,
+                        "event_date": event_date,
                     }
                 )
     log(f"[{source}] {len(channels)} links")
@@ -776,6 +871,7 @@ def collect_standard_api(source, api_url, site_url="", group_name=None):
         if not title:
             title = f"{home_name or 'Home'} - {away_name or 'Away'}"
         logo = home.get("logoUrl") or away.get("logoUrl") or ""
+        event_date = parse_iso_to_ict_date(item.get("startTime"))
         time_label = parse_iso_to_ict(item.get("startTime"))
 
         for wrapper in item.get("fixtureCommentators") or []:
@@ -796,6 +892,7 @@ def collect_standard_api(source, api_url, site_url="", group_name=None):
                         "stream_url": stream_url,
                         "referer": site_url,
                         "user_agent": UA,
+                        "event_date": event_date,
                     }
                 )
     log(f"[{source}] {len(channels)} raw links")
@@ -905,6 +1002,7 @@ def collect_cola():
 
     for item in values:
         match_time = item.get("matchTime")
+        event_date = parse_epoch_to_ict_date(match_time)
         try:
             dt = datetime.fromtimestamp(match_time).strftime("%H:%M")
         except Exception:
@@ -927,6 +1025,7 @@ def collect_cola():
                         "stream_url": stream_url,
                         "referer": "https://cltvlv.com/",
                         "user_agent": UA,
+                        "event_date": event_date,
                     }
                 )
     log(f"[{source}] {len(channels)} raw links")
@@ -1204,6 +1303,7 @@ def collect_chuoichien():
             league = clean_text(league_data.get("name") or league_data.get("title")) or source
         else:
             league = clean_text(league_data) or source
+        event_date = parse_iso_to_ict_date(match.get("matchTime"))
         time_label = parse_iso_to_ict(match.get("matchTime"), "%Hh%M")
 
         for blv in match.get("blvs") or []:
@@ -1222,6 +1322,7 @@ def collect_chuoichien():
                         "stream_url": stream_url,
                         "referer": site_ref + "/",
                         "user_agent": UA,
+                        "event_date": event_date,
                     }
                 )
     log(f"[{source}] {len(channels)} links")
@@ -1283,6 +1384,7 @@ def collect_socolive():
         title = clean_text(f"{home_name} vs {guest_name}") if home_name and guest_name else home_name or guest_name
         league = clean_text(match.get("subCateName") or match.get("categoryName")) or "Socolive TV"
         logo = clean_text(match.get("hostIcon") or match.get("guestIcon") or match.get("categoryIcon"))
+        event_date = parse_epoch_to_ict_date(match.get("matchTime"))
         time_label = socolive_time_label(match.get("matchTime"))
         anchors = match.get("anchors") or []
         for anchor_item in anchors:
@@ -1328,6 +1430,7 @@ def collect_socolive():
                         "stream_url": stream_url,
                         "referer": SOCOLIVE_REFERER,
                         "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                        "event_date": event_date,
                     }
                 )
 
@@ -2461,6 +2564,7 @@ def main():
         if selected:
             all_channels.extend(selected)
 
+    all_channels = filter_current_and_future_events(all_channels)
     deduped = dedupe_and_sort_channels(all_channels)
     write_m3u(ALL_M3U, deduped)
 
