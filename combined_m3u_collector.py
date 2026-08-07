@@ -70,6 +70,24 @@ TIEULAMWC_REFERERS = [
     if item.strip()
 ]
 GIOVANG_REFERER = os.environ.get("GIOVANG_REFERER", "https://giovang.store/")
+GIOVANG_API_LIVE = os.environ.get(
+    "GIOVANG_API_LIVE",
+    "https://live-api.keovip88.net/storage/livestream/live.json",
+)
+GIOVANG_API_ALL = os.environ.get(
+    "GIOVANG_API_ALL",
+    "https://live-api.keovip88.net/storage/livestream/all.json",
+)
+GIOVANG_API_FIXTURES = os.environ.get("GIOVANG_API_FIXTURES", "https://live-api.keovip88.net/api/fixtures/")
+GIOVANG_LIMIT = int(os.environ.get("GIOVANG_LIMIT", "100"))
+GIOVANG_FALLBACK_JSON_URL = os.environ.get(
+    "GIOVANG_FALLBACK_JSON_URL",
+    "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
+)
+CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", "https://choangtv19.com")
+CHOANG_API_URL = os.environ.get("CHOANG_API_URL", "https://api.choangtv19.com/matchSchedule/getList")
+CHOANG_DETAIL_URL = os.environ.get("CHOANG_DETAIL_URL", "https://api.choangtv19.com/matchSchedule/getDetail")
+CHOANG_DAYS = int(os.environ.get("CHOANG_DAYS", "2"))
 HOIQUAN_API_BASE = os.environ.get("HOIQUAN_API_BASE", "https://sv.hoiquantv.xyz/api/v1/external")
 HOIQUAN3_REFERER = os.environ.get("HOIQUAN3_REFERER", "https://sv2.hoiquan3.live/")
 HOIQUAN1_REFERER = os.environ.get("HOIQUAN1_REFERER", "https://sv2.hoiquan1.live/")
@@ -103,7 +121,7 @@ CHOANG_JSON_URL = os.environ.get(
     "CHOANG_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/output.json",
 )
-CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv18.com/")
+CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv19.com/")
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.buzzscorelinez.com/")
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
@@ -955,6 +973,154 @@ def collect_grouped_json(source, api_url, group_name, referer=None):
                         "user_agent": UA,
                     }
                 )
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+def parse_vn_datetime_text(value):
+    text = clean_text(value)
+    if not text:
+        return None
+    text = re.sub(r"([+-]\d{2})$", r"\1:00", text)
+    for fmt in ("%Y-%m-%d %H:%M:%S%z", "%Y-%m-%d %H:%M:%S", "%d/%m/%Y %H:%M", "%d-%m-%Y %H:%M:%S"):
+        try:
+            dt = datetime.strptime(text, fmt)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=TZ_VN)
+            return dt.astimezone(TZ_VN)
+        except Exception:
+            continue
+    return None
+
+
+def collect_giovang_api():
+    source = "GioVang"
+    headers = {
+        "Accept": "application/json, */*",
+        "Origin": GIOVANG_REFERER.rstrip("/"),
+        "Referer": GIOVANG_REFERER,
+    }
+    log(f"[{source}] Fetch API")
+    data = fetch_json(GIOVANG_API_ALL, headers=headers, timeout=30)
+    fixtures = data.get("response") if isinstance(data, dict) else []
+    if not fixtures:
+        log(f"[{source}] Direct API empty, fallback grouped JSON")
+        return collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
+
+    channels = []
+    seen_urls = set()
+    for item in fixtures[:GIOVANG_LIMIT]:
+        fixture_id = clean_text(item.get("id") or item.get("fi"))
+        if not fixture_id:
+            continue
+        detail = fetch_json(urljoin(GIOVANG_API_FIXTURES.rstrip("/") + "/", fixture_id), headers=headers, timeout=20)
+        match = detail.get("response") if isinstance(detail, dict) else {}
+        if not isinstance(match, dict):
+            continue
+
+        teams = match.get("teams") or item.get("teams") or {}
+        home = teams.get("home") or {}
+        away = teams.get("away") or {}
+        home_name = clean_text(home.get("name")) or "Home"
+        away_name = clean_text(away.get("name")) or "Away"
+        league = clean_text(((match.get("league") or item.get("league") or {}).get("title"))) or "Giờ Vàng TV"
+        logo = clean_text(home.get("logo") or away.get("logo"))
+        time_label = clean_text(match.get("time") or item.get("time"))
+        event_date = date_from_text(match.get("date") or item.get("date"))
+
+        for blv in match.get("blv") or []:
+            blv_name = clean_text(blv.get("blv_name") or blv.get("name")) or "BLV"
+            streams = [
+                ("HD", blv.get("pc_stream_url")),
+                ("Mobile", blv.get("mobile_stream_url")),
+                ("HD Alt", blv.get("link_stream_hd")),
+                ("SD", blv.get("link_stream_sd")),
+            ]
+            for quality, stream_url in streams:
+                stream_url = clean_text(stream_url)
+                if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+                    continue
+                seen_urls.add(stream_url)
+                channels.append(
+                    {
+                        "source": source,
+                        "name": f"[{time_label}] {home_name} vs {away_name} | {blv_name} [{quality}]",
+                        "group": "Giờ Vàng TV",
+                        "logo": logo,
+                        "stream_url": stream_url,
+                        "referer": GIOVANG_REFERER,
+                        "user_agent": UA,
+                        "event_date": event_date,
+                    }
+                )
+
+    if not channels:
+        log(f"[{source}] Direct API has no stream, fallback grouped JSON")
+        return collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+def collect_choangtv_api():
+    source = "ChoangTV"
+    headers = {
+        "Accept": "application/json, */*",
+        "Origin": CHOANG_SITE_URL.rstrip("/"),
+        "Referer": CHOANG_REFERER,
+    }
+    channels = []
+    seen_urls = set()
+    today = datetime.now(TZ_VN).date()
+
+    log(f"[{source}] Fetch API")
+    for day_offset in range(max(1, CHOANG_DAYS)):
+        target_date = today + timedelta(days=day_offset)
+        list_data = fetch_json(
+            CHOANG_API_URL,
+            headers=headers,
+            timeout=20,
+        ) if "?" in CHOANG_API_URL else fetch_json(
+            f"{CHOANG_API_URL}?date={target_date.isoformat()}",
+            headers=headers,
+            timeout=20,
+        )
+        matches = list_data.get("data") if isinstance(list_data, dict) else []
+        if not isinstance(matches, list):
+            continue
+        for item in matches:
+            match_id = item.get("id")
+            if not match_id:
+                continue
+            detail_url = f"{CHOANG_DETAIL_URL}?matchId={match_id}"
+            detail = fetch_json(detail_url, headers=headers, timeout=20)
+            match = detail.get("data") if isinstance(detail, dict) else {}
+            if not isinstance(match, dict):
+                continue
+            stream_url = clean_text(match.get("liveUrl"))
+            if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+                continue
+            seen_urls.add(stream_url)
+            dt = parse_vn_datetime_text(match.get("time") or item.get("time"))
+            time_label = dt.strftime("%Hh%M") if dt else ""
+            channels.append(
+                {
+                    "source": source,
+                    "name": (
+                        f"[{time_label}] {clean_text(match.get('name1')) or 'Home'} "
+                        f"vs {clean_text(match.get('name2')) or 'Away'} | {clean_text(match.get('caster')) or 'BLV'}"
+                    ),
+                    "group": "ChoangTV",
+                    "logo": clean_text(match.get("logo1") or match.get("logo2") or match.get("casterLogo")),
+                    "stream_url": stream_url,
+                    "referer": CHOANG_REFERER,
+                    "user_agent": UA,
+                    "event_date": dt.date() if dt else date_from_text(match.get("time") or item.get("time")),
+                }
+            )
+
+    if not channels:
+        log(f"[{source}] Direct API has no stream, fallback grouped JSON")
+        return collect_grouped_json(source, CHOANG_JSON_URL, "ChoangTV", CHOANG_REFERER)
     log(f"[{source}] {len(channels)} raw links")
     return channels
 
@@ -2526,24 +2692,8 @@ def main():
                 preserve_group_exact=True,
             ),
         ),
-        (
-            "GioVang",
-            lambda: collect_grouped_json(
-                "GioVang",
-                "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
-                "Gio Vang",
-                GIOVANG_REFERER,
-            ),
-        ),
-        (
-            "ChoangTV",
-            lambda: collect_grouped_json(
-                "ChoangTV",
-                CHOANG_JSON_URL,
-                "ChoangTV",
-                CHOANG_REFERER,
-            ),
-        ),
+        ("GioVang", collect_giovang_api),
+        ("ChoangTV", collect_choangtv_api),
         ("SocoliveTV", collect_socolive),
         (
             "AllChannelM3U",
