@@ -44,6 +44,12 @@ CHUOICHIEN_API_URL = os.environ.get(
     "CHUOICHIEN_API_URL",
     "https://api.chuoichientv.com/v1/matches?page=1&limit=100&sport=&type=blv",
 )
+BONG_LAU_SITE_URL = os.environ.get("BONG_LAU_SITE_URL", "https://lau03.bonglautv1.org")
+BONG_LAU_REFERER = os.environ.get("BONG_LAU_REFERER", "https://lau03.bonglautv1.org/")
+BONG_LAU_API_URL = os.environ.get(
+    "BONG_LAU_API_URL",
+    "https://api-v2.chuoichientv.net/v2/matches?page=1&limit=100&sport=&type=blv",
+)
 KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.khandaia.link")
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
 COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
@@ -1329,6 +1335,60 @@ def collect_chuoichien():
     return channels
 
 
+def collect_bonglau():
+    source = "BongLauTV"
+    headers = {
+        "Accept": "application/json, */*",
+        "Origin": BONG_LAU_SITE_URL.rstrip("/"),
+        "Referer": BONG_LAU_REFERER,
+    }
+
+    log(f"[{source}] Fetch API")
+    try:
+        r = request_get(BONG_LAU_API_URL, headers=headers, timeout=20)
+        log(f"[{source}] HTTP {r.status_code}")
+        if r.status_code != 200:
+            return []
+        matches = r.json().get("matches") or []
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+
+    channels = []
+    for match in matches:
+        teams = match.get("teams") or {}
+        home = teams.get("home") or {}
+        away = teams.get("away") or {}
+        home_name = clean_text(home.get("name")) or "Home"
+        away_name = clean_text(away.get("name")) or "Away"
+        logo = home.get("logo") or away.get("logo") or ""
+        event_date = parse_iso_to_ict_date(match.get("matchTime"))
+        time_label = parse_iso_to_ict(match.get("matchTime"), "%Hh%M")
+        blvs = match.get("blvs_bonglau") or match.get("blvs") or []
+
+        for blv in blvs:
+            blv_name = clean_text(blv.get("name") or blv.get("nickname")) or "BLV"
+            for stream in blv.get("streams") or []:
+                stream_url = clean_text(stream.get("url"))
+                if not stream_url:
+                    continue
+                quality = clean_text(stream.get("label") or stream.get("name") or stream.get("quality")) or "HD"
+                channels.append(
+                    {
+                        "source": source,
+                        "name": f"[{time_label}] {home_name} vs {away_name} | BLV: {blv_name} [{quality}]",
+                        "group": "Bong Lau TV",
+                        "logo": logo,
+                        "stream_url": stream_url,
+                        "referer": BONG_LAU_REFERER,
+                        "user_agent": UA,
+                        "event_date": event_date,
+                    }
+                )
+    log(f"[{source}] {len(channels)} links")
+    return channels
+
+
 def parse_jsonp(text, callback_name):
     pattern = rf"\s*{re.escape(callback_name)}\((.*)\)\s*;?\s*$"
     match = re.match(pattern, text or "", re.S)
@@ -2535,6 +2595,7 @@ def main():
             ),
         ),
         ("HoaDaoTV", collect_hoadaotv),
+        ("BongLauTV", collect_bonglau),
         ("ChuoiChienTV", collect_chuoichien),
         ("S8TV", collect_s8tv),
         ("VSC9", collect_vsc9),
