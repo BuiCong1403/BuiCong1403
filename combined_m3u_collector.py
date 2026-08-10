@@ -398,33 +398,42 @@ def date_from_text(value):
     if not text:
         return None
     today = datetime.now(TZ_VN).date()
+
+    def build_date(day, month, year=None):
+        has_year = bool(year)
+        year = int(year) if has_year else today.year
+        try:
+            candidate = datetime(year, int(month), int(day), tzinfo=TZ_VN).date()
+        except Exception:
+            return None
+        if not has_year and (today - candidate).days > 180:
+            try:
+                candidate = datetime(today.year + 1, int(month), int(day), tzinfo=TZ_VN).date()
+            except Exception:
+                pass
+        return candidate
+
     match = re.search(r"\b(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})\b", text)
     if match:
         try:
             return datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=TZ_VN).date()
         except Exception:
             return None
+    for match in re.finditer(
+        r"(?:^|[^\d])\d{1,2}:\d{2}\s*[- ]\s*(\d{1,2})[/-](\d{1,2})(?:[/-](20\d{2}))?(?!\d)",
+        text,
+    ):
+        candidate = build_date(match.group(1), match.group(2), match.group(3))
+        if candidate:
+            return candidate
     for match in re.finditer(r"(?<!\d)(\d{1,2})[/-](\d{1,2})(?:[/-](20\d{2}))?(?!\d)", text):
-        day = int(match.group(1))
-        month = int(match.group(2))
-        year = int(match.group(3)) if match.group(3) else today.year
-        try:
-            candidate = datetime(year, month, day, tzinfo=TZ_VN).date()
-        except Exception:
-            continue
-        if not match.group(3) and (today - candidate).days > 180:
-            try:
-                candidate = datetime(today.year + 1, month, day, tzinfo=TZ_VN).date()
-            except Exception:
-                pass
-        return candidate
+        candidate = build_date(match.group(1), match.group(2), match.group(3))
+        if candidate:
+            return candidate
     for match in re.finditer(r"(?<!\d)(\d{1,2})[.](\d{1,2})(?!\d)", text):
-        day = int(match.group(1))
-        month = int(match.group(2))
-        try:
-            return datetime(today.year, month, day, tzinfo=TZ_VN).date()
-        except Exception:
-            continue
+        candidate = build_date(match.group(1), match.group(2))
+        if candidate:
+            return candidate
     return None
 
 
