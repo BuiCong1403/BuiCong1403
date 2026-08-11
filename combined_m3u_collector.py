@@ -84,9 +84,10 @@ GIOVANG_FALLBACK_JSON_URL = os.environ.get(
     "GIOVANG_FALLBACK_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
 )
-CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", "https://choangtv19.com")
-CHOANG_API_URL = os.environ.get("CHOANG_API_URL", "https://api.choangtv19.com/matchSchedule/getList")
-CHOANG_DETAIL_URL = os.environ.get("CHOANG_DETAIL_URL", "https://api.choangtv19.com/matchSchedule/getDetail")
+CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", "https://choangtv20.com")
+CHOANG_API_URL = os.environ.get("CHOANG_API_URL", "https://api.choangtv20.com/matchSchedule/getList")
+CHOANG_DETAIL_URL = os.environ.get("CHOANG_DETAIL_URL", "https://api.choangtv20.com/matchSchedule/getDetail")
+CHOANG_CDN_BASE = os.environ.get("CHOANG_CDN_BASE", "https://cdn.sports-cas889abxfileposo.site/live")
 CHOANG_DAYS = int(os.environ.get("CHOANG_DAYS", "2"))
 HOIQUAN_API_BASE = os.environ.get("HOIQUAN_API_BASE", "https://sv.hoiquantv.xyz/api/v1/external")
 HOIQUAN3_REFERER = os.environ.get("HOIQUAN3_REFERER", "https://sv2.hoiquan3.live/")
@@ -121,7 +122,7 @@ CHOANG_JSON_URL = os.environ.get(
     "CHOANG_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/output.json",
 )
-CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv19.com/")
+CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv20.com/")
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.buzzscorelinez.com/")
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
@@ -1105,7 +1106,7 @@ def collect_choangtv_api():
             match = detail.get("data") if isinstance(detail, dict) else {}
             if not isinstance(match, dict):
                 continue
-            stream_url = clean_text(match.get("liveUrl"))
+            stream_url = normalize_choang_stream_url(match.get("liveUrl"))
             if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
                 continue
             seen_urls.add(stream_url)
@@ -1132,6 +1133,17 @@ def collect_choangtv_api():
         return collect_grouped_json(source, CHOANG_JSON_URL, "ChoangTV", CHOANG_REFERER)
     log(f"[{source}] {len(channels)} raw links")
     return channels
+
+
+def normalize_choang_stream_url(value):
+    stream_url = clean_text(value)
+    if not stream_url:
+        return ""
+    if stream_url.startswith("//"):
+        return "https:" + stream_url
+    if stream_url.startswith(("http://", "https://")):
+        return stream_url
+    return CHOANG_CDN_BASE.rstrip("/") + "/" + stream_url.lstrip("/")
 
 
 def collect_vongcam():
