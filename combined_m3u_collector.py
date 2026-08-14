@@ -1,4 +1,5 @@
 import html
+import base64
 import json
 import os
 import re
@@ -84,9 +85,9 @@ GIOVANG_FALLBACK_JSON_URL = os.environ.get(
     "GIOVANG_FALLBACK_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
 )
-CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", "https://choangtv20.com")
-CHOANG_API_URL = os.environ.get("CHOANG_API_URL", "https://api.choangtv20.com/matchSchedule/getList")
-CHOANG_DETAIL_URL = os.environ.get("CHOANG_DETAIL_URL", "https://api.choangtv20.com/matchSchedule/getDetail")
+CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", "https://choangtv21.com")
+CHOANG_API_URL = os.environ.get("CHOANG_API_URL", "https://api.choangtv21.com/matchSchedule/getList")
+CHOANG_DETAIL_URL = os.environ.get("CHOANG_DETAIL_URL", "https://api.choangtv21.com/matchSchedule/getDetail")
 CHOANG_CDN_BASE = os.environ.get("CHOANG_CDN_BASE", "https://cdn.sports-cas889abxfileposo.site/live")
 CHOANG_DAYS = int(os.environ.get("CHOANG_DAYS", "2"))
 HOIQUAN_API_BASE = os.environ.get("HOIQUAN_API_BASE", "https://sv.hoiquantv.xyz/api/v1/external")
@@ -122,7 +123,15 @@ CHOANG_JSON_URL = os.environ.get(
     "CHOANG_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/output.json",
 )
-CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv20.com/")
+CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv21.com/")
+CDNLIVE_EVENTS_URL = os.environ.get(
+    "CDNLIVE_EVENTS_URL",
+    "https://api.cdnlivetv.tv/api/v1/events/sports/?user=cdnlivetv&plan=free",
+)
+CDNLIVE_REFERER = os.environ.get("CDNLIVE_REFERER", "https://cdnlivetv.tv/")
+CDNLIVE_GROUP = os.environ.get("CDNLIVE_GROUP", "CDNLive")
+CDNLIVE_LIMIT = int(os.environ.get("CDNLIVE_LIMIT", "80") or "80")
+CDNLIVE_WORKERS = int(os.environ.get("CDNLIVE_WORKERS", "12") or "12")
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.buzzscorelinez.com/")
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
@@ -537,6 +546,7 @@ SPORT_SOURCES = {
     "QueChoa8",
     "S8TV",
     "TieuLamWC",
+    "CDNLive",
 }
 
 SPORT_KEYWORDS = [
@@ -2640,6 +2650,148 @@ def collect_tieulamwc():
     return channels
 
 
+def decode_cdnlive_base64(value):
+    value = clean_text(value).replace("-", "+").replace("_", "/")
+    if not value:
+        return ""
+    value += "=" * ((4 - len(value) % 4) % 4)
+    try:
+        return base64.b64decode(value).decode("utf-8", errors="replace")
+    except Exception:
+        return ""
+
+
+def resolve_cdnlive_playlist(player_url):
+    player_url = clean_text(player_url)
+    if not player_url:
+        return ""
+    headers = {
+        "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
+        "Referer": CDNLIVE_REFERER,
+        "Origin": CDNLIVE_REFERER.rstrip("/"),
+    }
+    try:
+        response = request_get(player_url, headers=headers, timeout=20)
+    except Exception as exc:
+        log(f"[CDNLive] Player error {player_url}: {exc}")
+        return ""
+    if response.status_code != 200:
+        log(f"[CDNLive] Player HTTP {response.status_code} {player_url}")
+        return ""
+    page = response.text
+    source_match = re.search(r"source\s*:\s*\{\s*src\s*:\s*([A-Za-z0-9_$]+)\s*,\s*format", page)
+    if not source_match:
+        return ""
+    source_var = source_match.group(1)
+    assign_match = re.search(r"var\s+" + re.escape(source_var) + r"\s*=\s*(.*?);", page, re.S)
+    if not assign_match:
+        return ""
+    assign_expr = assign_match.group(1)
+    fn_match = re.search(r"([A-Za-z0-9_$]+)\s*\(", assign_expr)
+    if not fn_match:
+        return ""
+    decode_fn = fn_match.group(1)
+    refs = re.findall(re.escape(decode_fn) + r"\s*\(\s*([A-Za-z0-9_$]+)\s*\)", assign_expr)
+    if not refs:
+        return ""
+    values = {
+        name: value
+        for name, _, value in re.findall(r"""var\s+([A-Za-z0-9_$]+)\s*=\s*(["'])(.*?)\2""", page, re.S)
+    }
+    playlist_url = "".join(decode_cdnlive_base64(values.get(ref, "")) for ref in refs)
+    return playlist_url if is_valid_stream_url(playlist_url) else ""
+
+
+def collect_cdnlive():
+    source = "CDNLive"
+    headers = {
+        "Accept": "application/json,text/plain,*/*",
+        "Origin": CDNLIVE_REFERER.rstrip("/"),
+        "Referer": CDNLIVE_REFERER,
+    }
+    log(f"[{source}] Fetch events")
+    data = fetch_json(CDNLIVE_EVENTS_URL, headers=headers, timeout=45)
+    root = data.get("cdn-live-tv") if isinstance(data, dict) else {}
+    if not isinstance(root, dict):
+        return []
+
+    candidates = []
+    seen_player_urls = set()
+    for sport_name, events in root.items():
+        if not isinstance(events, list):
+            continue
+        for event in events:
+            if not isinstance(event, dict):
+                continue
+            event_title = clean_text(event.get("event"))
+            start_text = clean_text(event.get("start") or event.get("time"))
+            tournament = clean_text(event.get("tournament") or event.get("country"))
+            event_date = date_from_text(start_text)
+            logo = clean_text(event.get("homeTeamIMG") or event.get("awayTeamIMG") or event.get("countryIMG"))
+            for channel in event.get("channels") or []:
+                if not isinstance(channel, dict):
+                    continue
+                player_url = clean_text(channel.get("url"))
+                if not player_url or player_url in seen_player_urls:
+                    continue
+                seen_player_urls.add(player_url)
+                channel_name = clean_text(channel.get("channel_name") or channel.get("name") or "CDNLive")
+                candidates.append(
+                    {
+                        "event_title": event_title,
+                        "start_text": start_text,
+                        "tournament": tournament,
+                        "sport_name": clean_text(sport_name),
+                        "event_date": event_date,
+                        "logo": clean_text(channel.get("image")) or logo,
+                        "channel_name": channel_name,
+                        "player_url": player_url,
+                    }
+                )
+                if len(candidates) >= CDNLIVE_LIMIT:
+                    break
+            if len(candidates) >= CDNLIVE_LIMIT:
+                break
+        if len(candidates) >= CDNLIVE_LIMIT:
+            break
+
+    channels = []
+    seen_streams = set()
+
+    def resolve(candidate):
+        stream_url = resolve_cdnlive_playlist(candidate["player_url"])
+        if not stream_url:
+            return None
+        start_prefix = f"[{candidate['start_text']}] " if candidate["start_text"] else ""
+        tournament_suffix = f" | {candidate['tournament']}" if candidate["tournament"] else ""
+        return {
+            "source": source,
+            "name": f"{start_prefix}{candidate['event_title']} - {candidate['channel_name']}{tournament_suffix}",
+            "group": CDNLIVE_GROUP,
+            "sport": detect_sport(candidate["sport_name"], candidate["tournament"], candidate["event_title"]),
+            "logo": candidate["logo"],
+            "stream_url": stream_url,
+            "referer": CDNLIVE_REFERER,
+            "user_agent": UA,
+            "event_date": candidate["event_date"],
+        }
+
+    with ThreadPoolExecutor(max_workers=max(1, CDNLIVE_WORKERS)) as executor:
+        futures = [executor.submit(resolve, candidate) for candidate in candidates]
+        for future in as_completed(futures):
+            channel = future.result()
+            if not channel:
+                continue
+            stream_url = channel["stream_url"]
+            if stream_url in seen_streams:
+                continue
+            seen_streams.add(stream_url)
+            channels.append(channel)
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_missing_source(name):
     log(f"[{name}] Skipped: file in Downloads contains only HTTP 429 text, not scraper code")
     return []
@@ -2736,6 +2888,7 @@ def main():
         ("CuongHeHe", collect_cuonghehe),
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
+        ("CDNLive", collect_cdnlive),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
         ("TructiepHD", collect_tructiep_hd),
