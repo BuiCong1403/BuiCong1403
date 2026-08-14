@@ -115,6 +115,7 @@ CUONGHEHE_M3U_URL = os.environ.get(
     "CUONGHEHE_M3U_URL",
     "https://raw.githubusercontent.com/cuongnh1989/iptv/refs/heads/main/cuonghehe",
 )
+TT1_4K_M3U_PATH = Path(os.environ.get("TT1_4K_M3U_PATH", str(BASE_DIR / "tt1.m3u")))
 COTIVI_SPORTS_M3U_URL = os.environ.get(
     "COTIVI_SPORTS_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/freetvco/refs/heads/main/output/cotivi_sports.m3u",
@@ -1721,6 +1722,47 @@ def collect_cuonghehe():
     return selected
 
 
+def collect_tt1_4k():
+    source = "CuongHeHe4K"
+    path = TT1_4K_M3U_PATH
+    if not path.exists():
+        log(f"[{source}] Skipped: {path} not found")
+        return []
+
+    channels = []
+    seen_urls = set()
+    current = {"title": "4K", "logo": ""}
+    for raw_line in path.read_text(encoding="utf-8", errors="replace").splitlines():
+        line = raw_line.strip()
+        if not line:
+            continue
+        if line.startswith("#EXTINF"):
+            current = parse_extinf(line)
+            continue
+        if line.startswith("http") and is_supported_playlist_url(line, allow_non_m3u8=True):
+            if line in seen_urls:
+                continue
+            seen_urls.add(line)
+            title = remove_icons(current.get("title") or "4K")
+            if not title.lower().startswith("4k"):
+                title = f"4K | {title}"
+            channels.append(
+                {
+                    "source": source,
+                    "name": title,
+                    "group": "cuonghehe",
+                    "logo": current.get("logo", ""),
+                    "stream_url": line,
+                    "referer": "",
+                    "user_agent": "",
+                    "preserve_group_exact": True,
+                }
+            )
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_vmttv():
     source = "VMTTV"
     channels = collect_m3u_playlist(
@@ -2886,6 +2928,7 @@ def main():
         ),
         ("VMTTV", collect_vmttv),
         ("CuongHeHe", collect_cuonghehe),
+        ("CuongHeHe4K", collect_tt1_4k),
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
         ("CDNLive", collect_cdnlive),
