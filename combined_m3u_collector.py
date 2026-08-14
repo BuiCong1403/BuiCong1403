@@ -116,6 +116,11 @@ CUONGHEHE_M3U_URL = os.environ.get(
     "https://raw.githubusercontent.com/cuongnh1989/iptv/refs/heads/main/cuonghehe",
 )
 TT1_4K_M3U_PATH = Path(os.environ.get("TT1_4K_M3U_PATH", str(BASE_DIR / "tt1.m3u")))
+TT1_4K_ALLOWED_PREFIXES = tuple(
+    prefix.strip().lower()
+    for prefix in os.environ.get("TT1_4K_ALLOWED_PREFIXES", "4K | UK,4K | VIP").split(",")
+    if prefix.strip()
+)
 COTIVI_SPORTS_M3U_URL = os.environ.get(
     "COTIVI_SPORTS_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/freetvco/refs/heads/main/output/cotivi_sports.m3u",
@@ -1748,6 +1753,9 @@ def collect_tt1_4k():
             title = re.sub(r"\s+", " ", title).strip(" -|")
             if not title.lower().startswith("4k"):
                 title = f"4K | {title}"
+            title_key = title.lower()
+            if TT1_4K_ALLOWED_PREFIXES and not title_key.startswith(TT1_4K_ALLOWED_PREFIXES):
+                continue
             channels.append(
                 {
                     "source": source,
