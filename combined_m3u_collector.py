@@ -1744,13 +1744,15 @@ def collect_tt1_4k():
                 continue
             seen_urls.add(line)
             title = remove_icons(current.get("title") or "4K")
+            title = re.sub(r"#+", "", title)
+            title = re.sub(r"\s+", " ", title).strip(" -|")
             if not title.lower().startswith("4k"):
                 title = f"4K | {title}"
             channels.append(
                 {
                     "source": source,
                     "name": title,
-                    "group": "cuonghehe",
+                    "group": "4K",
                     "logo": current.get("logo", ""),
                     "stream_url": line,
                     "referer": "",
