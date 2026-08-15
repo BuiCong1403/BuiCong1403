@@ -80,7 +80,7 @@ GIOVANG_API_ALL = os.environ.get(
     "https://live-api.keovip88.net/storage/livestream/all.json",
 )
 GIOVANG_API_FIXTURES = os.environ.get("GIOVANG_API_FIXTURES", "https://live-api.keovip88.net/api/fixtures/")
-GIOVANG_LIMIT = int(os.environ.get("GIOVANG_LIMIT", "100"))
+GIOVANG_LIMIT = int(os.environ.get("GIOVANG_LIMIT", "300"))
 GIOVANG_FALLBACK_JSON_URL = os.environ.get(
     "GIOVANG_FALLBACK_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
@@ -165,6 +165,7 @@ FLV_OTT_USER_AGENT = (
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
 MAX_VERIFY_WORKERS = int(os.environ.get("MAX_VERIFY_WORKERS", "20"))
 FILTER_PAST_EVENTS = os.environ.get("FILTER_PAST_EVENTS", "1").strip().lower() not in {"0", "false", "no"}
+PAST_EVENT_GRACE_MINUTES = int(os.environ.get("PAST_EVENT_GRACE_MINUTES", "180") or "180")
 
 
 def log(message):
@@ -185,6 +186,12 @@ def request_get(url, headers=None, params=None, timeout=20):
     if requests is not None:
         return requests.get(url, headers=merged_headers, params=params, timeout=timeout)
     return urllib_request("GET", url, headers=merged_headers, params=params, timeout=timeout)
+
+
+def request_get_no_cache(url, headers=None, params=None, timeout=20):
+    params = dict(params or {})
+    params.setdefault("t", int(time.time() * 1000))
+    return request_get(url, headers=headers, params=params, timeout=timeout)
 
 
 class UrllibResponse:
@@ -217,6 +224,11 @@ def fetch_json(url, headers=None, timeout=20):
     except Exception as exc:
         log(f"[HTTP] JSON error {url}: {exc}")
         return {}
+
+
+def fetch_json_no_cache(url, headers=None, timeout=20):
+    separator = "&" if "?" in url else "?"
+    return fetch_json(f"{url}{separator}t={int(time.time() * 1000)}", headers=headers, timeout=timeout)
 
 
 API_DISCOVERY_CACHE = {}
@@ -390,6 +402,15 @@ def parse_iso_to_ict(value, fmt="%H:%M | %d.%m"):
         return str(value)
 
 
+def parse_iso_to_ict_datetime(value):
+    if not value:
+        return None
+    try:
+        return datetime.fromisoformat(str(value).replace("Z", "+00:00")).astimezone(TZ_VN)
+    except Exception:
+        return None
+
+
 def parse_iso_to_ict_date(value):
     if not value:
         return None
@@ -405,6 +426,16 @@ def parse_epoch_to_ict_date(value):
         if timestamp > 10_000_000_000:
             timestamp = timestamp / 1000
         return datetime.fromtimestamp(timestamp, TZ_VN).date()
+    except Exception:
+        return None
+
+
+def parse_epoch_to_ict_datetime(value):
+    try:
+        timestamp = int(value)
+        if timestamp > 10_000_000_000:
+            timestamp = timestamp / 1000
+        return datetime.fromtimestamp(timestamp, TZ_VN)
     except Exception:
         return None
 
@@ -453,6 +484,90 @@ def date_from_text(value):
     return None
 
 
+def datetime_from_text(value):
+    text = clean_text(value)
+    if not text:
+        return None
+    today = datetime.now(TZ_VN).date()
+    patterns = [
+        r"\b(20\d{2})[-/.](\d{1,2})[-/.](\d{1,2})\s+(\d{1,2}):(\d{2})\b",
+        r"\b(\d{1,2}):(\d{2})\s*[- ]\s*(\d{1,2})[/-](\d{1,2})(?:[/-](20\d{2}))?\b",
+        r"\b(\d{1,2}):(\d{2})\s+(\d{1,2})[/-](\d{1,2})(?:[/-](20\d{2}))?\b",
+    ]
+    match = re.search(patterns[0], text)
+    if match:
+        try:
+            return datetime(
+                int(match.group(1)),
+                int(match.group(2)),
+                int(match.group(3)),
+                int(match.group(4)),
+                int(match.group(5)),
+                tzinfo=TZ_VN,
+            )
+        except Exception:
+            return None
+    for pattern in patterns[1:]:
+        match = re.search(pattern, text)
+        if not match:
+            continue
+        hour, minute, day, month, year = match.groups()
+        year = int(year) if year else today.year
+        try:
+            candidate = datetime(year, int(month), int(day), int(hour), int(minute), tzinfo=TZ_VN)
+        except Exception:
+            continue
+        if not match.group(5) and (today - candidate.date()).days > 180:
+            try:
+                candidate = candidate.replace(year=today.year + 1)
+            except Exception:
+                pass
+        return candidate
+    return None
+
+
+def combine_date_and_time(event_date, time_text):
+    if not event_date:
+        return None
+    if hasattr(event_date, "date"):
+        event_date = event_date.date()
+    match = re.search(r"\b(\d{1,2}):(\d{2})\b", clean_text(time_text))
+    if not match:
+        return None
+    try:
+        return datetime(
+            event_date.year,
+            event_date.month,
+            event_date.day,
+            int(match.group(1)),
+            int(match.group(2)),
+            tzinfo=TZ_VN,
+        )
+    except Exception:
+        return None
+
+
+def channel_event_datetime(channel):
+    explicit = channel.get("event_datetime")
+    if explicit:
+        if hasattr(explicit, "astimezone"):
+            return explicit.astimezone(TZ_VN)
+        parsed = parse_vn_datetime_text(explicit) or datetime_from_text(explicit)
+        if parsed:
+            return parsed
+    text = " ".join(
+        clean_text(part)
+        for part in (
+            channel.get("name"),
+            channel.get("group"),
+            channel.get("raw_extinf"),
+            " ".join(channel.get("raw_options") or []),
+        )
+        if part
+    )
+    return parse_vn_datetime_text(text) or datetime_from_text(text)
+
+
 def channel_event_date(channel):
     explicit = channel.get("event_date")
     if explicit:
@@ -477,17 +592,24 @@ def channel_event_date(channel):
 def filter_current_and_future_events(channels):
     if not FILTER_PAST_EVENTS:
         return channels
-    today = datetime.now(TZ_VN).date()
+    now = datetime.now(TZ_VN)
+    today = now.date()
+    cutoff = now - timedelta(minutes=max(0, PAST_EVENT_GRACE_MINUTES))
     kept = []
-    removed = 0
+    removed_by_date = 0
+    removed_by_time = 0
     for channel in channels:
+        event_dt = channel_event_datetime(channel)
+        if event_dt and event_dt < cutoff:
+            removed_by_time += 1
+            continue
         event_date = channel_event_date(channel)
         if event_date and event_date < today:
-            removed += 1
+            removed_by_date += 1
             continue
         kept.append(channel)
-    if removed:
-        log(f"[FILTER] Removed past-date events: {removed}")
+    if removed_by_date or removed_by_time:
+        log(f"[FILTER] Removed past events: date={removed_by_date}, time={removed_by_time}")
     return kept
 
 
@@ -775,7 +897,7 @@ def collect_hoiquan3():
     }
     log(f"[{source}] Fetch API")
     try:
-        r = request_get(api_url, headers=headers, timeout=20)
+        r = request_get_no_cache(api_url, headers=headers, timeout=20)
         log(f"[{source}] HTTP {r.status_code}")
         if r.status_code != 200:
             return []
@@ -793,7 +915,8 @@ def collect_hoiquan3():
         home_name = clean_text(home.get("name")) or "Home"
         away_name = clean_text(away.get("name")) or "Away"
         logo = home.get("logoUrl") or away.get("logoUrl") or ""
-        event_date = parse_iso_to_ict_date(item.get("startTime"))
+        event_datetime = parse_iso_to_ict_datetime(item.get("startTime"))
+        event_date = event_datetime.date() if event_datetime else parse_iso_to_ict_date(item.get("startTime"))
         time_label = parse_iso_to_ict(item.get("startTime"))
 
         for wrapper in item.get("fixtureCommentators") or []:
@@ -817,6 +940,7 @@ def collect_hoiquan3():
                         "referer": site_url,
                         "user_agent": UA,
                         "event_date": event_date,
+                        "event_datetime": event_datetime,
                     }
                 )
     log(f"[{source}] {len(channels)} links")
@@ -846,7 +970,7 @@ def collect_khandaia():
 def collect_luongson():
     source = "LuongSonTV"
     log(f"[{source}] Fetch API")
-    data = fetch_json(LUONGSON_API_URL, headers={"Accept": "application/json, */*"}, timeout=25)
+    data = fetch_json_no_cache(LUONGSON_API_URL, headers={"Accept": "application/json, */*"}, timeout=25)
     items = ((data.get("value") or {}).get("datas") or []) if isinstance(data, dict) else []
     channels = []
 
@@ -857,7 +981,7 @@ def collect_luongson():
 
         detail_url = LUONGSON_MATCH_URL % match_id
         try:
-            response = request_get(detail_url, headers={"Accept": "application/json, */*"}, timeout=20)
+            response = request_get_no_cache(detail_url, headers={"Accept": "application/json, */*"}, timeout=20)
             if response.status_code == 405 and requests is not None:
                 response = requests.post(detail_url, headers={"User-Agent": UA, "Accept": "application/json, */*"}, timeout=20)
             if response.status_code != 200:
@@ -907,7 +1031,7 @@ def collect_standard_api(source, api_url, site_url="", group_name=None):
         headers["Origin"] = site_url.rstrip("/")
 
     log(f"[{source}] Fetch standard API")
-    data = fetch_json(api_url, headers=headers)
+    data = fetch_json_no_cache(api_url, headers=headers)
     items = data if isinstance(data, list) else data.get("data") or data.get("fixtures") or []
     channels = []
 
@@ -921,7 +1045,8 @@ def collect_standard_api(source, api_url, site_url="", group_name=None):
         if not title:
             title = f"{home_name or 'Home'} - {away_name or 'Away'}"
         logo = home.get("logoUrl") or away.get("logoUrl") or ""
-        event_date = parse_iso_to_ict_date(item.get("startTime"))
+        event_datetime = parse_iso_to_ict_datetime(item.get("startTime"))
+        event_date = event_datetime.date() if event_datetime else parse_iso_to_ict_date(item.get("startTime"))
         time_label = parse_iso_to_ict(item.get("startTime"))
 
         for wrapper in item.get("fixtureCommentators") or []:
@@ -943,6 +1068,7 @@ def collect_standard_api(source, api_url, site_url="", group_name=None):
                         "referer": site_url,
                         "user_agent": UA,
                         "event_date": event_date,
+                        "event_datetime": event_datetime,
                     }
                 )
     log(f"[{source}] {len(channels)} raw links")
@@ -977,7 +1103,7 @@ def collect_grouped_json(source, api_url, group_name, referer=None):
     if referer:
         headers["Referer"] = referer
         headers["Origin"] = referer.rstrip("/")
-    data = fetch_json(api_url, headers=headers)
+    data = fetch_json_no_cache(api_url, headers=headers)
     channels = []
 
     groups = data.get("groups") if isinstance(data, dict) else []
@@ -1027,8 +1153,20 @@ def collect_giovang_api():
         "Referer": GIOVANG_REFERER,
     }
     log(f"[{source}] Fetch API")
-    data = fetch_json(GIOVANG_API_ALL, headers=headers, timeout=30)
-    fixtures = data.get("response") if isinstance(data, dict) else []
+    live_data = fetch_json_no_cache(GIOVANG_API_LIVE, headers=headers, timeout=30)
+    all_data = fetch_json_no_cache(GIOVANG_API_ALL, headers=headers, timeout=30)
+    live_items = live_data.get("response") if isinstance(live_data, dict) else []
+    all_items = all_data.get("response") if isinstance(all_data, dict) else []
+    seen_fixtures = {}
+    for item in live_items or []:
+        fixture_id = clean_text(item.get("id") or item.get("fi"))
+        if fixture_id:
+            seen_fixtures[fixture_id] = item
+    for item in all_items or []:
+        fixture_id = clean_text(item.get("id") or item.get("fi"))
+        if fixture_id and fixture_id not in seen_fixtures:
+            seen_fixtures[fixture_id] = item
+    fixtures = list(seen_fixtures.values())
     if not fixtures:
         log(f"[{source}] Direct API empty, fallback grouped JSON")
         return collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
@@ -1039,7 +1177,9 @@ def collect_giovang_api():
         fixture_id = clean_text(item.get("id") or item.get("fi"))
         if not fixture_id:
             continue
-        detail = fetch_json(urljoin(GIOVANG_API_FIXTURES.rstrip("/") + "/", fixture_id), headers=headers, timeout=20)
+        if clean_text(item.get("status_code")).upper() == "FT":
+            continue
+        detail = fetch_json_no_cache(urljoin(GIOVANG_API_FIXTURES.rstrip("/") + "/", fixture_id), headers=headers, timeout=20)
         match = detail.get("response") if isinstance(detail, dict) else {}
         if not isinstance(match, dict):
             continue
@@ -1052,7 +1192,8 @@ def collect_giovang_api():
         league = clean_text(((match.get("league") or item.get("league") or {}).get("title"))) or "Giờ Vàng TV"
         logo = clean_text(home.get("logo") or away.get("logo"))
         time_label = clean_text(match.get("time") or item.get("time"))
-        event_date = date_from_text(match.get("date") or item.get("date"))
+        event_date = date_from_text(match.get("date") or item.get("date") or item.get("day_month"))
+        event_datetime = combine_date_and_time(event_date, time_label)
 
         for blv in match.get("blv") or []:
             blv_name = clean_text(blv.get("blv_name") or blv.get("name")) or "BLV"
@@ -1077,6 +1218,7 @@ def collect_giovang_api():
                         "referer": GIOVANG_REFERER,
                         "user_agent": UA,
                         "event_date": event_date,
+                        "event_datetime": event_datetime,
                     }
                 )
 
@@ -1101,11 +1243,11 @@ def collect_choangtv_api():
     log(f"[{source}] Fetch API")
     for day_offset in range(max(1, CHOANG_DAYS)):
         target_date = today + timedelta(days=day_offset)
-        list_data = fetch_json(
+        list_data = fetch_json_no_cache(
             CHOANG_API_URL,
             headers=headers,
             timeout=20,
-        ) if "?" in CHOANG_API_URL else fetch_json(
+        ) if "?" in CHOANG_API_URL else fetch_json_no_cache(
             f"{CHOANG_API_URL}?date={target_date.isoformat()}",
             headers=headers,
             timeout=20,
@@ -1118,7 +1260,7 @@ def collect_choangtv_api():
             if not match_id:
                 continue
             detail_url = f"{CHOANG_DETAIL_URL}?matchId={match_id}"
-            detail = fetch_json(detail_url, headers=headers, timeout=20)
+            detail = fetch_json_no_cache(detail_url, headers=headers, timeout=20)
             match = detail.get("data") if isinstance(detail, dict) else {}
             if not isinstance(match, dict):
                 continue
@@ -1141,6 +1283,7 @@ def collect_choangtv_api():
                     "referer": CHOANG_REFERER,
                     "user_agent": UA,
                     "event_date": dt.date() if dt else date_from_text(match.get("time") or item.get("time")),
+                    "event_datetime": dt,
                 }
             )
 
@@ -1166,7 +1309,7 @@ def collect_vongcam():
     source = "VongCamTV"
     api_url = discover_internal_matches_api(source, VONGCAM_FRONTEND_URL, VONGCAM_API_URL)
     log(f"[{source}] Fetch API")
-    data = fetch_json(
+    data = fetch_json_no_cache(
         api_url,
         headers={
             "Accept": "application/json, */*",
@@ -1205,13 +1348,14 @@ def collect_cola():
     source = "CoLaTV"
     api_url = discover_cola_api()
     log(f"[{source}] Fetch API")
-    data = fetch_json(api_url)
+    data = fetch_json_no_cache(api_url)
     values = (data.get("data") or {}).values() if isinstance(data.get("data"), dict) else []
     channels = []
 
     for item in values:
         match_time = item.get("matchTime")
-        event_date = parse_epoch_to_ict_date(match_time)
+        event_datetime = parse_epoch_to_ict_datetime(match_time)
+        event_date = event_datetime.date() if event_datetime else parse_epoch_to_ict_date(match_time)
         try:
             dt = datetime.fromtimestamp(match_time).strftime("%H:%M")
         except Exception:
@@ -1235,6 +1379,7 @@ def collect_cola():
                         "referer": "https://cltvlv.com/",
                         "user_agent": UA,
                         "event_date": event_date,
+                        "event_datetime": event_datetime,
                     }
                 )
     log(f"[{source}] {len(channels)} raw links")
@@ -1319,7 +1464,7 @@ def collect_tamquoc():
     source = "TamQuocTV"
     api_url = "https://sv.tamquoctv.xyz/internal/api/matches"
     log(f"[{source}] Fetch API")
-    data = fetch_json(api_url)
+    data = fetch_json_no_cache(api_url)
     items = data.get("data") or []
     if isinstance(items, dict):
         items = list(items.values())
@@ -1487,7 +1632,7 @@ def collect_chuoichien():
 
     log(f"[{source}] Fetch API")
     try:
-        r = request_get(api_url, headers=headers, timeout=20)
+        r = request_get_no_cache(api_url, headers=headers, timeout=20)
         log(f"[{source}] HTTP {r.status_code}")
         if r.status_code == 401:
             log(f"[{source}] Need token: set CHUOICHIEN_TOKEN environment variable")
@@ -1512,7 +1657,8 @@ def collect_chuoichien():
             league = clean_text(league_data.get("name") or league_data.get("title")) or source
         else:
             league = clean_text(league_data) or source
-        event_date = parse_iso_to_ict_date(match.get("matchTime"))
+        event_datetime = parse_iso_to_ict_datetime(match.get("matchTime"))
+        event_date = event_datetime.date() if event_datetime else parse_iso_to_ict_date(match.get("matchTime"))
         time_label = parse_iso_to_ict(match.get("matchTime"), "%Hh%M")
 
         for blv in match.get("blvs") or []:
@@ -1532,6 +1678,7 @@ def collect_chuoichien():
                         "referer": site_ref + "/",
                         "user_agent": UA,
                         "event_date": event_date,
+                        "event_datetime": event_datetime,
                     }
                 )
     log(f"[{source}] {len(channels)} links")
@@ -1548,7 +1695,7 @@ def collect_bonglau():
 
     log(f"[{source}] Fetch API")
     try:
-        r = request_get(BONG_LAU_API_URL, headers=headers, timeout=20)
+        r = request_get_no_cache(BONG_LAU_API_URL, headers=headers, timeout=20)
         log(f"[{source}] HTTP {r.status_code}")
         if r.status_code != 200:
             return []
@@ -1565,7 +1712,8 @@ def collect_bonglau():
         home_name = clean_text(home.get("name")) or "Home"
         away_name = clean_text(away.get("name")) or "Away"
         logo = home.get("logo") or away.get("logo") or ""
-        event_date = parse_iso_to_ict_date(match.get("matchTime"))
+        event_datetime = parse_iso_to_ict_datetime(match.get("matchTime"))
+        event_date = event_datetime.date() if event_datetime else parse_iso_to_ict_date(match.get("matchTime"))
         time_label = parse_iso_to_ict(match.get("matchTime"), "%Hh%M")
         blvs = match.get("blvs_bonglau") or match.get("blvs") or []
 
@@ -1586,6 +1734,7 @@ def collect_bonglau():
                         "referer": BONG_LAU_REFERER,
                         "user_agent": UA,
                         "event_date": event_date,
+                        "event_datetime": event_datetime,
                     }
                 )
     log(f"[{source}] {len(channels)} links")
@@ -1647,7 +1796,8 @@ def collect_socolive():
         title = clean_text(f"{home_name} vs {guest_name}") if home_name and guest_name else home_name or guest_name
         league = clean_text(match.get("subCateName") or match.get("categoryName")) or "Socolive TV"
         logo = clean_text(match.get("hostIcon") or match.get("guestIcon") or match.get("categoryIcon"))
-        event_date = parse_epoch_to_ict_date(match.get("matchTime"))
+        event_datetime = parse_epoch_to_ict_datetime(match.get("matchTime"))
+        event_date = event_datetime.date() if event_datetime else parse_epoch_to_ict_date(match.get("matchTime"))
         time_label = socolive_time_label(match.get("matchTime"))
         anchors = match.get("anchors") or []
         for anchor_item in anchors:
@@ -1694,6 +1844,7 @@ def collect_socolive():
                         "referer": SOCOLIVE_REFERER,
                         "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
                         "event_date": event_date,
+                        "event_datetime": event_datetime,
                     }
                 )
 
@@ -2587,7 +2738,7 @@ def collect_nauxoi_highlights():
         "Referer": NAUXOI_SITE_URL,
     }
     log(f"[{source}] Fetch highlights")
-    data = fetch_json(api_url, headers=headers, timeout=25)
+    data = fetch_json_no_cache(api_url, headers=headers, timeout=25)
     content = ((data.get("data") or {}).get("content") or []) if isinstance(data, dict) else []
     channels = []
     seen_urls = set()
@@ -2635,7 +2786,7 @@ def collect_tieulamwc():
     }
     log(f"[{source}] Fetch matches")
     try:
-        response = request_get(f"{api_base}/matches/graph", headers=headers, timeout=25)
+        response = request_get_no_cache(f"{api_base}/matches/graph", headers=headers, timeout=25)
         if response.status_code == 405 and requests is not None:
             response = requests.post(
                 f"{api_base}/matches/graph",
@@ -2658,7 +2809,7 @@ def collect_tieulamwc():
         if not match_id or not (item.get("is_live") or item.get("source_live")):
             continue
         try:
-            live = fetch_json(f"{api_base}/match/{match_id}/live", headers=headers, timeout=20)
+            live = fetch_json_no_cache(f"{api_base}/match/{match_id}/live", headers=headers, timeout=20)
         except Exception:
             continue
         title = clean_text(item.get("title"))
@@ -2762,7 +2913,7 @@ def collect_cdnlive():
         "Referer": CDNLIVE_REFERER,
     }
     log(f"[{source}] Fetch events")
-    data = fetch_json(CDNLIVE_EVENTS_URL, headers=headers, timeout=45)
+    data = fetch_json_no_cache(CDNLIVE_EVENTS_URL, headers=headers, timeout=45)
     root = data.get("cdn-live-tv") if isinstance(data, dict) else {}
     if not isinstance(root, dict):
         return []
@@ -2778,7 +2929,8 @@ def collect_cdnlive():
             event_title = clean_text(event.get("event"))
             start_text = clean_text(event.get("start") or event.get("time"))
             tournament = clean_text(event.get("tournament") or event.get("country"))
-            event_date = date_from_text(start_text)
+            event_datetime = datetime_from_text(start_text)
+            event_date = event_datetime.date() if event_datetime else date_from_text(start_text)
             logo = clean_text(event.get("homeTeamIMG") or event.get("awayTeamIMG") or event.get("countryIMG"))
             for channel in event.get("channels") or []:
                 if not isinstance(channel, dict):
@@ -2795,6 +2947,7 @@ def collect_cdnlive():
                         "tournament": tournament,
                         "sport_name": clean_text(sport_name),
                         "event_date": event_date,
+                        "event_datetime": event_datetime,
                         "logo": clean_text(channel.get("image")) or logo,
                         "channel_name": channel_name,
                         "player_url": player_url,
@@ -2826,6 +2979,7 @@ def collect_cdnlive():
             "referer": CDNLIVE_REFERER,
             "user_agent": UA,
             "event_date": candidate["event_date"],
+            "event_datetime": candidate["event_datetime"],
         }
 
     with ThreadPoolExecutor(max_workers=max(1, CDNLIVE_WORKERS)) as executor:
