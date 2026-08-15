@@ -1935,12 +1935,16 @@ def collect_vmttv():
         allow_non_m3u8=True,
         timeout=60,
         retries=3,
-        allowed_groups=("VTV", "the thao quoc te", "su kien fpt play"),
+        allowed_groups=("VTV", "the thao quoc te", "su kien fpt play", "su kien vtvprime"),
     )
     sport_group_key = "thethaoquocte"
+    event_group_keys = {"sukienfptplay", "sukienvtvprime"}
     for channel in channels:
-        if group_key(channel.get("group")) == sport_group_key:
+        channel_group_key = group_key(channel.get("group"))
+        if channel_group_key == sport_group_key:
             channel["group"] = "THỂ THAO QUỐC TẾ"
+        elif channel_group_key in event_group_keys:
+            channel["group"] = "Sựu kiện"
     return channels
 
 
