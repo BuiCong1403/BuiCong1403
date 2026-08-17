@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-08-17 21:27 ICT
-# Total   : 629
+# Updated : 2026-08-17 22:27 ICT
+# Total   : 445
 
 #EXTINF:-1 tvg-logo="https://go4.pw/bein/bein-sports-english-1.png" group-title="4K",4K | UK - BEIN SPORTS 1 ENGLISH HD
 http://zazaint.com:80/MAGU52TLAM/SAAk0NZH71/348325
@@ -425,6 +425,16 @@ http://zazaint.com:80/MAGU52TLAM/SAAk0NZH71/1404538
 #EXTINF:-1 tvg-logo="https://go4.pw/ASIA/PAKISTAN/TEN-SPORTS.png" group-title="4K",4K | VIP - TEN SPORTS FHD
 http://zazaint.com:80/MAGU52TLAM/SAAk0NZH71/1406508
 
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_130406_7b096f36.png" group-title="Bong Lau TV",[00h45] Estudiantes de Rio Cuarto vs Atletico Tucuman | BLV: A Ngao [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_130406_7b096f36.png" group-title="Bong Lau TV",[00h45] Estudiantes de Rio Cuarto vs Atletico Tucuman | BLV: A Ngao [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angao/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133447_d0325169.png" group-title="Bong Lau TV",[01h00] Jong Ajax vs Emmen | BLV: Chuối Nhỏ [FHD]
 #EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -434,16 +444,6 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinho/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_150315_92f462b7.png" group-title="Bong Lau TV",[19h00] BGC Asian Scholars W vs S'Amuser W | BLV: A Ngao [FHD]
-#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_150315_92f462b7.png" group-title="Bong Lau TV",[19h00] BGC Asian Scholars W vs S'Amuser W | BLV: A Ngao [HD]
-#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angao/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_150323_5d476e29.png" group-title="Bong Lau TV",[21h00] Kaya W vs Ilbirs W | BLV: Chuối Đá [FHD]
 #EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
@@ -498,598 +498,409 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoito/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/masn-us.webp" group-title="CDNLive",[2026-08-17 22:05] Tampa Bay Rays vs Baltimore Orioles - MASN US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb4dc/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNGRjOjE3ODY5OTExNDA0OTQ6Y2RubGl2ZXR2LnR2OjIwNDViOWRkMGEyNjRiNTUuMzNhMGZkNTkxYTQ5OTliYWNjOWM4ZGM3ODIzZDA2YzMxMTE5OGM4NTc1MzJmNjVkNGUyY2UzZTllMWI5MzY3ZA
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb4dc/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNGRjOjE3ODY5OTQ3MTM3NTM6Y2RubGl2ZXR2LnR2OmY3ZTI3N2I4NGFkMzgxYzAuZDNmNGI5NTJhM2ZkOTAwYmM3ZDFlZDE4NDhlZjk2ZjRkYmQ3MjllNWY3NGZjODFiNjk2Yzc2NGUwZjlkMDQ5ZA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-17 22:05] Tampa Bay Rays vs Baltimore Orioles - MLB | Baltimore Orioles | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62f/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJmOjE3ODY5OTExNDA1MjE6Y2RubGl2ZXR2LnR2OmZjZDdhZDZkZTI1ZWFkZDkuMzdiNDVmODgwYjIzYTAxYzYyYTFkNjhiYjAwZDExZDMwOTBmZWNhZTQwOTM4Mjc2ZDUxN2JmZDNhMDRjNTc1Nw
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62f/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJmOjE3ODY5OTQ3MTM3NDc6Y2RubGl2ZXR2LnR2OjU1ZTQyZmE4NzQ2YzQ5MTQuMTMwMzlhZTQzMTQ4N2E1ZGIwZWVlMjgyMDlkMjRkNWVjMWE3MzFiMzI4ZjZmMmE4OGY0ZTA4Yjc4NTJhNWU0NQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-17 22:05] Tampa Bay Rays vs Baltimore Orioles - MLB | Tampa Bay Rays | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb61a/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjFhOjE3ODY5OTExNDA1MjQ6Y2RubGl2ZXR2LnR2OjQ4MDZmNGU5MWNjZTg4YjguOGFkMTZmMmU0ZDQzOTEyNjZiNWFlZjVlZjdmY2Y3YWMzMTBmY2IyYzVmNDk1NWQ3OWU2YjRiZDRmZDQ0NzY1Mg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb61a/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjFhOjE3ODY5OTQ3MTM3Nzc6Y2RubGl2ZXR2LnR2OjdlNzczNTg1NzhlMmQ5NmQuM2U0OTYyZmRkODk0ODM5NmZmNGYwZjE5NjQ4ZmVlYjU5ZDVmZTEzNjNmZGFiNzBjM2M0MGRjMzJmMDU1MzFlYw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-17 22:05] Tampa Bay Rays vs Baltimore Orioles - Sportsnet West HD CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2be/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmJlOjE3ODY5OTExNDA0ODE6Y2RubGl2ZXR2LnR2Ojk3NjcwODA4MTRjODk4N2QuMmVlMDk5NTgwZDJjYTNiNGVjODJhNmIxZmFlM2RhMzhhZmVkOTY5NWYzYWIxZGFhYWEyYzk3NmU0NjZjNDZmMg
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2be/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmJlOjE3ODY5OTQ3MTM3NTQ6Y2RubGl2ZXR2LnR2OjIxN2UxOTc0YjU0YjlkMDUuNzczMjc1MTVmZjBhNDY4MzAwMWRlYzBmZWFlODJiMjNmYzllOWY2ZmE3YWY5ZjYzMzQ4ZjM3Y2U0ZTQzY2ZjMA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135276" group-title="CDNLive",[2026-08-17 22:40] Philadelphia Phillies vs Miami Marlins - MLB | Miami Marlins | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb628/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI4OjE3ODY5OTExNDA1MTk6Y2RubGl2ZXR2LnR2OjI4NmFkYTJkNWM2YWJmMDQuY2M1YzNiNTgwNTM4YjJjNTM1OWVkYWYxNDhhMzRkN2E0NjM1NjUzMzAxODAzMjQwNjk5YWUyYWRhNTk3MjVjZQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb628/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI4OjE3ODY5OTQ3MTM3OTU6Y2RubGl2ZXR2LnR2OmFlMmFmMzg0MmM0M2JhYjEuNWFhYTMxZWUzNzY1YmRhYmI1MTg2NmFlMjAxZmM5NzI1OTUzYTM5ZTdiNjU2NzczYmFlMjdmMjZmYjQ4NjUyYQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135276" group-title="CDNLive",[2026-08-17 22:40] Philadelphia Phillies vs Miami Marlins - MLB | Philadelphia Phillies | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb616/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjE2OjE3ODY5OTExNDA1MDA6Y2RubGl2ZXR2LnR2OjkzZmIyNzNhYWUwNDM5ZGQuMTgwNmM3MzUyYmMwYTYyN2M1M2Q0YjRlYzdlNGFiNDc1ODUyZTM5YTIwNjdhZTljNzdjNzY0NmI0ODQyZDI4ZA
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb616/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjE2OjE3ODY5OTQ3MTM4MjE6Y2RubGl2ZXR2LnR2OjU4YWZmNjhiZGUyOTNiMDMuNmRmOTQ5N2NmY2UyN2VkNGVmMDM1N2EyODIwZGNiMDM5YTAyNGNjNDg0NmM2OGM5MGRlMzRkOTJkYWViOTM4Yw
 
-#EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/nbc-sports-philadelphia-hd-us.webp" group-title="CDNLive",[2026-08-17 22:40] Philadelphia Phillies vs Miami Marlins - NBC Sports Philadelphia HD US | MLB
+#EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/nbc-sports-philadelphia-us.webp" group-title="CDNLive",[2026-08-17 22:40] Philadelphia Phillies vs Miami Marlins - NBC Sports Philadelphia US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb5da/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNWRhOjE3ODY5OTExNDA0NzE6Y2RubGl2ZXR2LnR2OmFmMjlkZWJlNmI2NjQ3YjkuNGMxMDIxNTE4YmM3MGJjYWJiMWE0ZWYyM2JjY2ZmM2E5Yjc2ZGEyNzY3OWRjMGU2Yjc0ODRiNzIxOGVmMDM0OQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb519/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNTE5OjE3ODY5OTQ3MTM3OTY6Y2RubGl2ZXR2LnR2Ojk1OWVhNmQyNTU3N2Q3NmMuODk1ZTdiMDgxODFhYTcxZGU2OTFiNTYxYTUwOGYyMDI4ZGY3ODY2MDM4YjNjYjc5YWI3ZTVmNDkwNWJhZGUyOA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/brazil/espn-3-fhd-br.webp" group-title="CDNLive",[2026-08-17 23:05] Pittsburgh Pirates vs Detroit Tigers - ESPN 3 FHD BR | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce886/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlODg2OjE3ODY5OTExNDExMzc6Y2RubGl2ZXR2LnR2OjZmOWZkYWU2NDI4YjM4NmQuOWY0ZjlhYTYzOGYyNjEwZWFhYmNhZmRmMjQ0N2ViNDM4YjVhMzA5ZTgwOGZhZmMxZWMwN2YzN2Q3NjY3MTdhNQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce886/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlODg2OjE3ODY5OTQ3MTQwODU6Y2RubGl2ZXR2LnR2OmI5ZGUxYmFlNDM4ZmNmZjMuMmE1NmQ5NGVjMmIxYmI5ZmQzMGE1YjRlYmZiY2E1MmEyNTg3NWUyOGI4N2Q5ZDM2OWQ3YTFlZjRjYTFkZGM1NA
 
-#EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/espn-us.webp" group-title="CDNLive",[2026-08-17 23:05] Pittsburgh Pirates vs Detroit Tigers - ESPN US | MLB
+#EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/espn-fhd-us.webp" group-title="CDNLive",[2026-08-17 23:05] Pittsburgh Pirates vs Detroit Tigers - ESPN FHD US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb305/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzA1OjE3ODY5OTExNDA1MDM6Y2RubGl2ZXR2LnR2OjcxODhhODNkMDNlYzQyMjcuYTQwMzUyMjFmOGU2NmFiYWZhNjlhM2E2ZjE1NmIwMTNkOWVhM2E3MTllMDEwMWZjMTA1ODFmNDc2MGI3YjhmZg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb59e/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNTllOjE3ODY5OTQ3MTM3OTQ6Y2RubGl2ZXR2LnR2OjRkY2ZhMDA1MTQyYTAyZjUuMDZhNmI4MjdhYWY0MmNhOTJjMWQ1NjBkNzFlNzZjZDZkZWZkNTVjNjUxNjgyMmFmY2M4YzVkZDI0MmQ3OGVhMQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135277" group-title="CDNLive",[2026-08-17 23:05] Pittsburgh Pirates vs Detroit Tigers - MLB | Detroit Tigers | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb629/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI5OjE3ODY5OTExNDA0OTg6Y2RubGl2ZXR2LnR2OjgxOTVjNTJlODI5NmY1NzkuZjc1ZjY3NTVlMjI0MTA1ZDg0MzZlNGViOGE2YTM3ZmEwMzhjMWUyZjhiYzkyYTBkMmE5Mzg1ODM4NmQyNDg5Ng
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb629/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI5OjE3ODY5OTQ3MTM4Mjk6Y2RubGl2ZXR2LnR2Ojg0ZjUxM2Y3YTFhYzUzYjUuMDNhYzliMDk3MzAzYmU3YjY2ZDkzY2Y4ODc3MDcxNzQ3ZTE4MzJlNmQ5ODQ4YzE0OGYwMzdmMWYzNDFlYmEyOA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135277" group-title="CDNLive",[2026-08-17 23:05] Pittsburgh Pirates vs Detroit Tigers - MLB | Pittsburgh Pirates | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb621/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjIxOjE3ODY5OTExNDA1MTg6Y2RubGl2ZXR2LnR2OmZhOGRkMzUzZjMwNjdiOTIuZjY4YTcxZWMyYjFkOTE4Nzk1NGE1OGEzNDI5ZTg4ZjNhNTE2NjI3ZjY4NmIzNzJlYTBlNjhhNDdlNzA0YjU1NA
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb621/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjIxOjE3ODY5OTQ3MTM3ODA6Y2RubGl2ZXR2LnR2OjRkMDJmZWExZGNlYTY2NzcuN2UwZTM1NzVmNjQ0MjBhYjA5YTU4ODA1NzE4Y2VkY2Y0MDlhMWI0NzcxZjc1YmQzOTkzNjE1ZmMyMTQ2ZWJiZg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135277" group-title="CDNLive",[2026-08-17 23:05] Pittsburgh Pirates vs Detroit Tigers - TSN 5 FHD CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc179/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTc5OjE3ODY5OTExNDA1MTQ6Y2RubGl2ZXR2LnR2OjhiNzA3NWFkNmY4ZjVhMzEuZDFhNDdjNDllMDJmNzIyZDFiYjQ3ZTU1NzM4YWVjMTk4MWIyN2NjMTFiOWY1NzcxN2UxMzc0OGFlYmI4Y2U1MQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc179/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTc5OjE3ODY5OTQ3MTM4MTg6Y2RubGl2ZXR2LnR2OjEzYThiNTQ3OTJlNmFjZTkuMjE3NzhhN2QxNTVhZGQ5OTNiOTFkOTUxNThjNjE3Y2Y2NzNjYTE2ODIyMjZkMjU2OGQwMmY0NjM0NGRiOGIyOQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135252" group-title="CDNLive",[2026-08-17 23:10] Boston Red Sox vs Arizona Diamondbacks - MLB | Arizona Diamondbacks | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb630/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjMwOjE3ODY5OTExNDEwMzg6Y2RubGl2ZXR2LnR2OmMxOWY0OWZjYzM5MTAyNjEuODM5ZjFmYmUwNTRjNzIwMGVmMzVkZjcwMTU0ZTlhMTA3YjY5NDNkYzVhMTU5ZmRkMzE3Y2U5MThjNzM2ODE3Mw
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb630/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjMwOjE3ODY5OTQ3MTQyOTU6Y2RubGl2ZXR2LnR2OjFmNDllOTQwMWZkZThkZDcuN2VlNjQ4YWIxYWU1YzJkMmU0YjMzMWY3YjQ5N2YyZjNiNjI3YTlmNjg3ODg0OGMzM2U4ODAyZTQ5ZjgzYTQ2NQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135252" group-title="CDNLive",[2026-08-17 23:10] Boston Red Sox vs Arizona Diamondbacks - MLB | Boston Red Sox | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62e/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJlOjE3ODY5OTExNDExMjI6Y2RubGl2ZXR2LnR2OjMyMzU0OGUyMTBmMTg4NTguM2VkODljOWVjMzQxNzFjMTA3Mjc0NjMxMGIyYTQ4NGZmZTdiNTVkYzM0NTY1Y2Q3ZTgwMDc1NGRlMDZjNWIyNg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62e/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJlOjE3ODY5OTQ3MTQyMzY6Y2RubGl2ZXR2LnR2OjAwM2Y4YzYyMjRiNGFkMTEuNjllZDIyMDJjNGRiZDYwNzgyNjU2M2ViNzEzZDhiMjJiMzY4NGFiMTJkNjU1ZTZmMTJiMTM3MjdhMDQwYWUyOA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/nesn-us.webp" group-title="CDNLive",[2026-08-17 23:10] Boston Red Sox vs Arizona Diamondbacks - NESN US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb51b/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNTFiOjE3ODY5OTExNDEwOTc6Y2RubGl2ZXR2LnR2OjM4YTM3ZjU3OTliYThlZTcuZmY0YTQ4NDdhYThmNWJlODg2NDc1ODliMWZkNzZkZjk0MTE3Yjg1ODc4NTMzNzY4OGFlZjYxYzQ3YjJmMTI0NQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb51b/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNTFiOjE3ODY5OTQ3MTQzMDE6Y2RubGl2ZXR2LnR2OmUzZGI0MzdkZjk5Zjc0MmEuZGRmNWNjZmQ4MDBjODk3ZjY5Njk0YjkxMDExMjg2ZWNmZmQ4NzdlMmY0OTgwNjAzZTVkYmEwODYyYjM2ZjliNw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/canada/rds-2-ca.webp" group-title="CDNLive",[2026-08-17 23:10] Boston Red Sox vs Arizona Diamondbacks - RDS 2 CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc161/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTYxOjE3ODY5OTExNDExNDg6Y2RubGl2ZXR2LnR2OjBkNDRhYmUzNTFkNTdmYmUuYWY5ZGUzM2FiMTIwMzViNTMxZjQ4NWJjYTUwY2VjMjljMjUzZjdiMDI3ZDQzNWU4ZjY2MmYxZGZmOGQwOGFiMA
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc161/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTYxOjE3ODY5OTQ3MTQzMDM6Y2RubGl2ZXR2LnR2OmMyM2RmN2NjNmQwYjVhOGQuODY2ODFmOTVhZDc1MWQ1OGNhMzlkNWM4MDAzMWYzZWYxODRkYzQwMjY5ZjA0ZTA2NzkwNGFmZjMwOGE2MDdmZA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135275" group-title="CDNLive",[2026-08-17 23:10] New York Mets vs San Diego Padres - MLB | New York Mets | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb625/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI1OjE3ODY5OTExNDEwNTA6Y2RubGl2ZXR2LnR2OjBmNjQ2MzM3M2ZkM2QxODMuOTBlYTUzYTY4M2I4NjU2MWJlMjAzZjliZjJlNTZjZWZkNjg0ODUzMzYwOTEyNDQ1OWQyNTY4NTM0MWVjOGFlMg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb625/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI1OjE3ODY5OTQ3MTQyNTU6Y2RubGl2ZXR2LnR2OmZmOWE5NzQ0OTk3YTkwYzIuNGZhZjU5NmU5M2NmY2YwZDg3YzdjNTc5MDhjNmYyMmViYjYzOTIwYjc4NTVhZDMxM2E0ZTcxMjBlMDg2OGZkNg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135275" group-title="CDNLive",[2026-08-17 23:10] New York Mets vs San Diego Padres - MLB | San Diego Padres | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb61e/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjFlOjE3ODY5OTExNDExMjI6Y2RubGl2ZXR2LnR2OjM3MjlmMGFhNWI4N2U3MzAuNjQzZDE1Y2ZjZjViN2FmYzMyNTJiZGY4Njc1Y2M5YmZmYzQ2MzNlODEwNzZmM2Q3YzVmZjk4ZjBiZjM1YTlkYg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb61e/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjFlOjE3ODY5OTQ3MTQyMzQ6Y2RubGl2ZXR2LnR2OmUzNWY4MDBjYzE2ZmI2ODQuNGYzYjA4YzVkNDdlZjZjNWI1Mjc3YmJkNzMyMTU3YTk1YzYxYjQ5NGJkMmU1ZTZkZWUxYWIzNDkwZGJkNjFhMA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/sportsnet-new-york-fhd-us.webp" group-title="CDNLive",[2026-08-17 23:10] New York Mets vs San Diego Padres - SportsNet New York FHD US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb52e/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNTJlOjE3ODY5OTExNDExMjI6Y2RubGl2ZXR2LnR2Ojg3OGY2OTNmZWY4ZGZjNmIuNWU2NDc2NWNhOTRkNzgxMWUzNzgyN2NkZjAyNmRiZTY2ZGM4NzhhMDFmYmExMmMxZTgxNzZkNzM3ZGQ5MDZkOQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb52e/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNTJlOjE3ODY5OTQ3MTQyMTE6Y2RubGl2ZXR2LnR2OjE5Y2Y3ZWJjMWQ5OWZlZTcuYzRjYjk4NzM0MDJmMmE0YmJkMGY0ZjRhODZjMTI5OGE0MjA1NWYyNTMxZWYxZjJiMTlkMGRlNjAyZDRlMjYzNw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135257" group-title="CDNLive",[2026-08-17 23:40] Kansas City Royals vs Athletics - MLB | Kansas City Royals | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb615/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjE1OjE3ODY5OTExNDExMjk6Y2RubGl2ZXR2LnR2OjdiZGIyNGE2YzNiZmZjOGQuNzY4OTc2MTljMmZkMWE2YzQwYTNlZWNlNDkyZDFmN2E1YjJiM2I1Y2QxYjFlNzE3YmFlNGIyODM2ZDY4ZTMxYg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb615/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjE1OjE3ODY5OTQ3MTQzMjA6Y2RubGl2ZXR2LnR2OmI4ZmUwMmM4NGQ1ODJkMDUuOGU3N2ZjMTdkMmZhZTE2ODc0YThlODIxYzUwY2NjOTViNTJmMmQ1ZWU0MDlmOWI1NjBhOTIwZWI5ZmU2Y2I5Yw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135257" group-title="CDNLive",[2026-08-17 23:40] Kansas City Royals vs Athletics - MLB | Oakland Athletics | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb622/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjIyOjE3ODY5OTExNDEwODc6Y2RubGl2ZXR2LnR2OmU3NjY1MzQ2ZTIwZjg1ZTkuZGQ4NzNiOTBmZDhiNTRkYjhkYzk3NDdiMThiOWI2MjA0MWY0ZTU0YWZkNzc0MGMzN2ZjMmY4YjJiZjI4N2M1Mw
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb622/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjIyOjE3ODY5OTQ3MTQzMTM6Y2RubGl2ZXR2LnR2OjgxZThkZDUwYTQ1MDgxNDkuNjg3MTk4ZTdhOGJjYjFmNTI4Y2EyOTZhM2YzOTE0NTE1MTQ1ZWIyMjI3NWNkMzQ3OTc0ODdkZTkyNzkzMmExMw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/nbc-sports-california-hd-us.webp" group-title="CDNLive",[2026-08-17 23:40] Kansas City Royals vs Athletics - NBC Sports California HD US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb5d7/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNWQ3OjE3ODY5OTExNDExMDk6Y2RubGl2ZXR2LnR2OjEwMWJlM2M5MWIxNjZkYjkuMThkY2NjM2JmODIzNjBmOTg2NDE3MzExMTU1NmM2MDgxN2MxY2QyMjA1NDY2MDgxNjk1YTY0YjdlNGQ2MDEyMg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb5d7/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNWQ3OjE3ODY5OTQ3MTQzMTM6Y2RubGl2ZXR2LnR2OjU4MGFjZTg3MTc1N2IwNTEuYzMwOTZjYmJlZGMxOTY0ZjE4OWI3NWNhZTVmMDdjMDJhZWVlOThkZjdiZThiYjYxNWNhNmRmNzFjNTRkYmY0Zg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/france/bein-sports-max-4-hd-fr.webp" group-title="CDNLive",[2026-08-17 23:40] Kansas City Royals vs Athletics - beIN Sports Max 4 HD FR | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2c81d8192bb76cd238/playlist.m3u8?token=NmEyODhkMmM4MWQ4MTkyYmI3NmNkMjM4OjE3ODY5OTExNDExMjg6Y2RubGl2ZXR2LnR2OmQyOWYwODExYTY1MDRiM2QuMDg5ZjhjNTk1MjZkZTczM2FiYWYwM2MxZjE2ZjI5YWI3NzYzM2UyZDU0Yzk0NjY5M2I0Nzg0M2U1OTNkZmEyYQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2c81d8192bb76cd238/playlist.m3u8?token=NmEyODhkMmM4MWQ4MTkyYmI3NmNkMjM4OjE3ODY5OTQ3MTQzMjI6Y2RubGl2ZXR2LnR2OjFjYjVkNzYyOTIyZWQ3ODguNGVjY2YyMjE2NzRlODIzYmNlODM4NWM4MTdhNjRmODcwYjlmMGI0ZmQ1YWIyMDBhYzQ3NGNkZTdmNzZjZThlMw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135259" group-title="CDNLive",[2026-08-17 23:40] Minnesota Twins vs Atlanta Braves - MLB | Atlanta Braves | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb612/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjEyOjE3ODY5OTExNDE1NjI6Y2RubGl2ZXR2LnR2OmQ2OWY1OTZmZmEzMGRjNDcuZGFlOGMyZTJkNzI5YTViMWJiMzE1OGZhNzJkY2YyNWE3ZThkMzlhMjgxOTEyYTdmMmVmNGQ2MmIyMDU3ZTg0Yw
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb612/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjEyOjE3ODY5OTQ3MTQ2NzA6Y2RubGl2ZXR2LnR2OmM0OThkODcyODU5ZWE0ZmQuODA3YjEzZTg2ZDE1ODgyZjJkZDY0ZDRjMDNjYWEyNDM0NDk5ODRiODUwZTc4YzI4NWZkZGIzMTc5NDhkNjQ1OQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135259" group-title="CDNLive",[2026-08-17 23:40] Minnesota Twins vs Atlanta Braves - MLB | Minnesota Twins | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb624/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI0OjE3ODY5OTExNDE1MzA6Y2RubGl2ZXR2LnR2OjY0NmQ0NjU4MDc3MjE0ODQuYTA5NjNkNWI0NDI3NTBlM2U3ZTk1Mzg5YjQ4OTU0Njc1YTI0Nzg0ZWI4OTUyMGIyMTU5MTY2YjI5MzViMTIwNQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb624/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI0OjE3ODY5OTQ3MTQ1MjU6Y2RubGl2ZXR2LnR2Ojk5YmI1NzU1ZDY0ODg0YTguMTBjMjhhZDU3MWRkMzJkZDQ3YzU3MzNkYTk4YWY2ZmU3ZDgyNjI5NjA3NTMzYjg1NDlhNTNjZmZkMzQ2OWQ0OQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/chicago-sports-network-chsn-us.webp" group-title="CDNLive",[2026-08-18 00:05] Chicago Cubs vs Chicago White Sox - Chicago Sports Network CHSN US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb311/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzExOjE3ODY5OTExNDE3MTY6Y2RubGl2ZXR2LnR2OjRlY2VjYjYzZjk2M2Y0N2EuNTNlMmYzMDkyNjE5YmQ3OWFkMzllMzEwMDg5YmY5OTkzMGM3Y2MxNTgyNmQxNThjMWE1MWIwMThmN2UzMWI2Mw
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb311/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzExOjE3ODY5OTQ3MTQ3MzI6Y2RubGl2ZXR2LnR2OmQ5ZWEwNjBiYjg0YjJjYjUuNDVmNWRmNmNhODNjNGM3M2NiYjZlZDI3NWI3ODlkNmI0NmNlYWRhZGNjMzVmYWZkMTE5MmJhMDIzNTJjYWUzMw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135269" group-title="CDNLive",[2026-08-18 00:05] Chicago Cubs vs Chicago White Sox - MLB | Chicago Cubs | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb631/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjMxOjE3ODY5OTExNDE2MTc6Y2RubGl2ZXR2LnR2OjUwYzRhY2NkMGE4OTcwNzUuMDc4YmFkNmUwMGM3NjM0YjczOTY3ZGY5MTI2MDdlODQ3ZTQyOGRmNjBmYmM1MTk2ZmZhMDVjNjBlNTI4Y2Q1Mg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb631/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjMxOjE3ODY5OTQ3MTQ2NjU6Y2RubGl2ZXR2LnR2OmMyY2NhOTYxODViNjBiOTcuY2FlYzI1NWI4OGIyZDQ2N2Q0ZjBhNjFiMmQyYTc0NDhlMjliMmQ3MGMyMjg3OTMwYzRhYzU4ZTQ2NGFjN2I5YQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135269" group-title="CDNLive",[2026-08-18 00:05] Chicago Cubs vs Chicago White Sox - MLB | Chicago White Sox | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62d/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJkOjE3ODY5OTExNDE2MjA6Y2RubGl2ZXR2LnR2OmY0ZjZiOWI5ZjQxYTJjM2UuMmZiYTUyM2ZiOWFkNTMyMjg3NDg4YTIzN2IwZTg4MWNkZmFmNTcxNjI1NDBiNjc5MTBkYmY1ZTQ2NjZmM2Y3Yw
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62d/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJkOjE3ODY5OTQ3MTQ3MDM6Y2RubGl2ZXR2LnR2OmRkM2M1ZmYxMjJjMDQyZGUuYmU1NDhhYWMzMGEzZDY0N2ExODVhZjE1ZDFmM2JmMTJlMjdkZDQ2MzAzMTgwNDIzMjliNTJiMDQ5MmUzMWQxMg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/marquee-sports-network-fhd-us.webp" group-title="CDNLive",[2026-08-18 00:05] Chicago Cubs vs Chicago White Sox - Marquee Sports Network FHD US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb5ce/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNWNlOjE3ODY5OTExNDE3MTM6Y2RubGl2ZXR2LnR2OmIzODQyMWIwZWM2NmU0ODEuNTI3MDM0NmIxOGZjNmY0MGZkODBjYmU4MjI0ZTg3MGFiODY4YTJlYjllMTczNThiNjRjN2JlZDE4ODg0NzhhOA
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb5ce/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNWNlOjE3ODY5OTQ3MTQ3NDU6Y2RubGl2ZXR2LnR2OmRiYTc2ZmM0MWRiMmRkODQuNzRlZGNlOWRhNTBiM2Q1M2ZkYzE0MTQwMmY2OGJlMWZkZmFkOTljZTljZjUyN2RjZTI5NjU2NmQ4ODU4NDNkNQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135269" group-title="CDNLive",[2026-08-18 00:05] Chicago Cubs vs Chicago White Sox - Sportsnet One HD CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2b0/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmIwOjE3ODY5OTExNDE3MDE6Y2RubGl2ZXR2LnR2OjJmN2E5MjBlODliNjNmYjkuY2YwNDZlODg4ZjkzOTU5OTdmNGU4NmU1ZDljNDQzYWEzMjgyYjE0NmFjMDBlN2UzNmQ1N2VlMWRlN2YxMzVjMg
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2b0/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmIwOjE3ODY5OTQ3MTQ4MDI6Y2RubGl2ZXR2LnR2OmI2YTgzZWE5YjljZjRmYzAuNmNkZDI0ZjE1ZDg3NmNlMzc5NGNkOGFmYmM2N2IzYzU5YWI3YmE3ZDY1NWU5MDk5YTQwNjQ1NDU3ZGM0ZjA3Yg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135271" group-title="CDNLive",[2026-08-18 00:40] Colorado Rockies vs Los Angeles Dodgers - MLB | Colorado Rockies | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62a/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJhOjE3ODY5OTExNDE2NzA6Y2RubGl2ZXR2LnR2OjYyYjQ4ODQ2NzE3NmJkNzkuNTJmOWQwMDRhNzQ1ZDQ5Yzc5MmExYzY0NzJmZjRlOWJmNjI4YzJmNWU3MzIzZGI0ZDVkMjMwZDViYzI2NzQ2OA
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62a/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJhOjE3ODY5OTQ3MTQ4MzM6Y2RubGl2ZXR2LnR2OmY5NzE4NDg2YTc5MGYyNTYuMWNjZjk5NmZlZTZjZGIwZjRkMGIyZTgyMjdlMzU4MGU3MjQwNjc3YTVlMmMwYzdhMmQwZTUzMDYyNjQ3MWU0Yg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135271" group-title="CDNLive",[2026-08-18 00:40] Colorado Rockies vs Los Angeles Dodgers - MLB | Los Angeles Dodgers | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb626/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI2OjE3ODY5OTExNDE2Nzg6Y2RubGl2ZXR2LnR2OmFmZjQ5YTIzNzcyMDZmYTIuYTIyM2QyNWY4YTk1ZjVkMGZjNWNmYWMyOWE4ZDZhYzBmM2FlNTBlNzA0NjhkNjg5NzkzNzZkZGQ0ZDU5OTY2YQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb626/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI2OjE3ODY5OTQ3MTQ4Mzc6Y2RubGl2ZXR2LnR2OmE5N2IwODNjYTQyM2E1Y2YuNGRlNmQwYWIxNzUwYWUwNjkzZGFiODM3ZTNjNDRmZmRkNmEyNTVkYTE0ODYwN2E2ZTA2MGVjMmI1NTI4NzUzNw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/channels/images6318/united-states/spectrum-sportsnet-la-dodgers-hd-us.webp" group-title="CDNLive",[2026-08-18 00:40] Colorado Rockies vs Los Angeles Dodgers - Spectrum Sportsnet LA Dodgers HD US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb5ea/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNWVhOjE3ODY5OTExNDE2NzE6Y2RubGl2ZXR2LnR2OmI5YzkxODk1Y2FmYzM5MTAuYzliZWQzMDY5MTUwZDM0ZDdhYTNlZmU0NjIyMDAxMjY2OGZlMjk4ZTlhZGU0MTdjNzQ3YjI4NzU4MzU3NTZiMQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb5ea/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNWVhOjE3ODY5OTQ3MTQ4MDA6Y2RubGl2ZXR2LnR2OmJiNzBlOWUyMGU0NjVjNzkuYjk5OGQ0YTVlZmVjOWExNWYxY2Y3YzQzNmMzMjVjM2M5M2EwYzIyMWQwZDY1ZTZlMDIwOWM3MTY2OTY2MTEyMA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135664" group-title="CDNLive",[2026-08-18 22:30] Londrina vs Atlético Goianiense - Premiere 1 HD BR | Brazilian Serie B
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce75e/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzVlOjE3ODY5OTExMzkwODc6Y2RubGl2ZXR2LnR2OjA3N2ZmODZlYmNlMDdiZGMuZDY2ZGE3ZDQzODZhMDQ4ZjU1NzcxOTlkZWJmYmI1NzlhNDIyMjY4YjVkNGFmZmU2MzI0MTNkYmIxYjUwMzBkNQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce75e/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzVlOjE3ODY5OTQ3MTI3MjQ6Y2RubGl2ZXR2LnR2OmNjN2NiMjVhNWZkZTY4YzkuYzJhYTQ1YWQyOWVmZmJkMTZiYTU3YzIzOTQ1MDY3NjNiNjU1MmJmN2YzOGUyODMyMjA5YmU4Zjg3NTNjNDA0Ng
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135664" group-title="CDNLive",[2026-08-18 22:30] Londrina vs Atlético Goianiense - Premiere 2 HD BR | Brazilian Serie B
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce75f/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzVmOjE3ODY5OTExMzkxMTQ6Y2RubGl2ZXR2LnR2OjE0NTAwZmY3ODA2YzA4ZjIuMGZmNWI0YWExMzI2YjA4YmZlN2JkOTdjNDI0Y2ViZTg5NzkwZGRhZWY0OTFlN2ExMTYyZjgxZDAzMmU2ZmVkMw
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce75f/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzVmOjE3ODY5OTQ3MTI3NDM6Y2RubGl2ZXR2LnR2OmE0YWZkNTEzMGM2YzFmNzQuMjJjYzkwNTNkNGE0YWNiY2M1YWUxNjUwYmI0MTdkZjM1NWY1ZjNiZDYwYmUyZDA1YjA0NDE3YmU1NTI3ZmJiMA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135664" group-title="CDNLive",[2026-08-18 22:30] Londrina vs Atlético Goianiense - Premiere 3 HD BR | Brazilian Serie B
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce760/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzYwOjE3ODY5OTExMzkwNzk6Y2RubGl2ZXR2LnR2OmUwNWMxMWVhMWVmZWM2MGEuNTFjMzhlMjUwYTZiZWE4NTBlZGViZGM0YmU1ZWYwZDgxODcxMzRkZWFhYTA2YjEyYTk4OTZhMjIyMDk0YTMxOQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce760/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzYwOjE3ODY5OTQ3MTI3NTQ6Y2RubGl2ZXR2LnR2OjBkNjUyMzA2NzMzYzU4ZDkuN2IxM2IzYjY5NDE0ZjMwNDJmZDI2OWUyZGQ0ODM4MjAyMTdlYjNkNzFiOTRmNjhmMWUwYTRlMDQ3YzRjNGZkMQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135664" group-title="CDNLive",[2026-08-18 22:30] Londrina vs Atlético Goianiense - Premiere 4 HD BR | Brazilian Serie B
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce761/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzYxOjE3ODY5OTExMzkxMTY6Y2RubGl2ZXR2LnR2OmI4ZTdlNjhhYTI2OTI2ZGEuMjY2NGRhYjdiM2M0NTYzYzBjZjJhZTgzYzVkZjgxZTY1Y2MyNTNlZDJhZDI3YmE0NDc5ODU4YjEzZDI2NDMyMQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce761/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzYxOjE3ODY5OTQ3MTI3Mzg6Y2RubGl2ZXR2LnR2OjAxNDcxMWQ0NDRmOTI3NmEuNGRhMzg1MzhlZTQyNDI4YWRjZjMxNGI1MjM3MGFhNDIwMTJmZmMxNThhYTE5ZGRhMDY2OWM1MjcxMzFmNGViOQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135664" group-title="CDNLive",[2026-08-18 22:30] Londrina vs Atlético Goianiense - Premiere 5 HD BR | Brazilian Serie B
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce762/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzYyOjE3ODY5OTExMzkxNDY6Y2RubGl2ZXR2LnR2OjNlOTgzNjBiZGUyNzJkM2EuNjEwYTgzMTAyMzU4Zjk4MjkyZDBlMTE2YjNiZTdkMGY4ZDFjOTE5YmQzOWZlMjRmMWI4MWExNzQ2ZTkyODY1NQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce762/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzYyOjE3ODY5OTQ3MTI3Njc6Y2RubGl2ZXR2LnR2OjIyYmY2YmU5ZGNhMjRmN2UuYTRhY2VlZDZkODY5NmNmNDFjN2MxYjQ3MWM3ODEwZjUyOGMyODJkMDc5YTQyNTAzNTcwNmM5OTFhNGE1MWQ5Nw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135664" group-title="CDNLive",[2026-08-18 22:30] Londrina vs Atlético Goianiense - Premiere 6 HD BR | Brazilian Serie B
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce763/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzYzOjE3ODY5OTExMzkxMjU6Y2RubGl2ZXR2LnR2OjBmYjdmYjFlNmRmZjM0MmMuZmJiNWI2MjVhZjc3NTBiZjhiNDg4NDE5MmVlN2MyZjc2YWFmYzUwNDlhY2RlMjU4Y2VmMzcxZGYzYTUyNWZhMg
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce763/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzYzOjE3ODY5OTQ3MTI3MTE6Y2RubGl2ZXR2LnR2OjkxYTc2ZDE2ZjAwZGE2ZTEuYjhjNTU0NDFiZWYzMjBjNGU3ZDRjYzYxZmFhZmFhYjRhODdiNjY3MDNhMmFkMGY3NGNlNzQxOGFjMWI1OWFhOQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135664" group-title="CDNLive",[2026-08-18 22:30] Londrina vs Atlético Goianiense - Premiere 7 HD BR | Brazilian Serie B
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce764/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzY0OjE3ODY5OTExMzkxMzU6Y2RubGl2ZXR2LnR2OjhlOWU4YWExMmExMDM4ZGIuZmJjMjc2MjhhYmYwNjgwYjY4OWQwOGNiMTJiYTRkMTExZjg5NzMwYzFkYzAzYTk4NWQyNTJiZTQ4MjhhNmQyZA
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce764/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNzY0OjE3ODY5OTQ3MTI3MTE6Y2RubGl2ZXR2LnR2OmQ2NDY1ODdmYjcxMDdhMjUuZTE3NzJjYzc5OWU3ODU2ZjQ4MzliNjIzZmMwZGYxNjI2MzI2ZjIxMTkyNWY1NTIxODM1YWIyY2Q4MzlkNmViZg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135664" group-title="CDNLive",[2026-08-18 22:30] Londrina vs Atlético Goianiense - Premiere Clubes HD BR | Brazilian Serie B
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce89d/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlODlkOjE3ODY5OTExMzkxMzk6Y2RubGl2ZXR2LnR2OmNlN2M4ZGJhMjhiYjFmZTguYTVlNWZjN2EyZDMzY2Y5MTI1Y2Y3NzIzZTliMzIwNjE3YzRkZWQ1MzNlYmEzNGJlZGFjMWZiMTZkZGYzNmIxMg
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce89d/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlODlkOjE3ODY5OTQ3MTI3NDM6Y2RubGl2ZXR2LnR2Ojg4MjgwNDQ1MTVkYWUxNGIuMWVlOTNmMzUwYjRiNmZjZTdjYWRkZjkwNGU3OWU0MzI1MjcyOWY4NjJiM2UwYzY1NGYwZDdlNjUzNmNiYTVkNQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135251" group-title="CDNLive",[2026-08-18 22:35] Baltimore Orioles vs New York Yankees - MASN 2 US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb4d1/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNGQxOjE3ODY5OTExNDE3MDY6Y2RubGl2ZXR2LnR2Ojg2YTVhNzE4YjM4ZTAyOTkuNWExOTAxNGQ4MDQ4ZmJiMWM2ODRjN2EyYWJjN2UxMTViNTIyZWFiYmM3NWJiZjRhOGI3MDI3MDYyOTc0OTYzOA
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb4d1/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNGQxOjE3ODY5OTQ3MTQ4MzI6Y2RubGl2ZXR2LnR2OjJkYzViYzAzMWM5YzZiZGEuZjNhZmE0ODI5OTZlY2Q3ZTg2ZWFlMTBmMGU4MmIzZGQ5MTgwNDgyMWU1Mjk5YzIxNWVkMmY3ZWI0MDU4MzE4Mw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135251" group-title="CDNLive",[2026-08-18 22:35] Baltimore Orioles vs New York Yankees - MASN US | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb4dc/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNGRjOjE3ODY5OTExNDIwOTI6Y2RubGl2ZXR2LnR2OmI0NjYyNmVlZDMzMjAyOTcuMDgxYzYzMTBiZDBjZmY4YTBmMjVhY2Q2M2YyNjM1M2JmYTM3MWY0YjliZTNlMDg4N2MwOTU2MjgyYTkzNTYxYw
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb4dc/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiNGRjOjE3ODY5OTQ3MTUwMTc6Y2RubGl2ZXR2LnR2OjUzNDdiYzc3OTdmYTAzZGYuMDQ1Y2Q1NDAzZDVlNzhjNzNmNTRiYTNmNDQzNzhlMjE2NTIzYTdjOTg3MWQ1NDBlZGRlMjI3MDFhNGU4NmJiZg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135251" group-title="CDNLive",[2026-08-18 22:35] Baltimore Orioles vs New York Yankees - MLB | New York Yankees | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb623/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjIzOjE3ODY5OTExNDE3MDU6Y2RubGl2ZXR2LnR2Ojc1OTkxYzk2NzU5NTAzMDAuMWE0ZTg4ZDBhNDE4NzZlY2U5MDljZmIyYWE2YmNkN2VmMTFhYTg2NTM5ODU1YTQwNDY4YTJlNWZmNzhmMjY5NQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb623/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjIzOjE3ODY5OTQ3MTQ4MDA6Y2RubGl2ZXR2LnR2OjVmNmI3NGE2MDlkNjVjYTAuNDYxMDE0YmU5ZTYyYmFhYzdlZGY3MTg1MGJkYjIyZmE3ODRkMDUwNzJjYjA3Y2I2ZDdlZTAxNTE3ZmVlODFkNg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135254" group-title="CDNLive",[2026-08-18 22:40] Cleveland Guardians vs San Francisco Giants - MLB | Cleveland Guardians | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62c/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJjOjE3ODY5OTExNDIyOTQ6Y2RubGl2ZXR2LnR2OjU1MTJmMGUzZTdjNzNmNWMuNTA2MGExNmViZmUzNmZjNjMxNzkwN2Y4OTdjNGU0ZTljZTZlMTczZmZkMTIzMzZiZjg2YmY0ZTYwNWQwNDJkNg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb62c/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjJjOjE3ODY5OTQ3MTUzNDI6Y2RubGl2ZXR2LnR2OjNmZjA5NmVjMGM4NjFhZDguNjZlM2UyNjc1ODQzNjAwOWNlM2FjMjU2OWY5Y2EwYmQzZWViMTQ2NDhiOWYzZWYxYzhmZDkxOWJkNDlhZWYyOA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135254" group-title="CDNLive",[2026-08-18 22:40] Cleveland Guardians vs San Francisco Giants - MLB | San Francisco Giants | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb61d/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjFkOjE3ODY5OTExNDI2MDk6Y2RubGl2ZXR2LnR2OjJjZTA2YWZjY2ExZGFjM2YuNWM2MzQ2MzljYzg2ZmE4YmExZGY1ZjQ3ODVjNGU0YzdhZTA3MTExMWExYzQ1MWE1ZDVjMjU1ZWFlMWY0MjQxOQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb61d/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjFkOjE3ODY5OTQ3MTU0NTE6Y2RubGl2ZXR2LnR2OjlmM2IyMTJkNTc2ZjEyOWYuNzFmMWMyMTY3MzllODc1NzhkNjU0ZTU1Y2QwNjAzM2U3NTU3YTk0NDk2N2RlZjVlMzUxM2I2MzkxMjIzNDlmYw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135254" group-title="CDNLive",[2026-08-18 22:40] Cleveland Guardians vs San Francisco Giants - beIN Sports Max 4 HD FR | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2c81d8192bb76cd238/playlist.m3u8?token=NmEyODhkMmM4MWQ4MTkyYmI3NmNkMjM4OjE3ODY5OTExNDI2MjY6Y2RubGl2ZXR2LnR2OjhkOGE3YzZiZjA2MzA0MWIuMDAzMmEyMTE0ZDE3OWU4NWYyNTI4MWE2YzY5MWM0YWMzNjFmYWEzNTA3NzVmYTdhMjEwNmZmYmIwMzI1MjUxMg
+https://cdnlivetv.tv/secure/api/v1/6a288d2c81d8192bb76cd238/playlist.m3u8?token=NmEyODhkMmM4MWQ4MTkyYmI3NmNkMjM4OjE3ODY5OTQ3MTU2MjU6Y2RubGl2ZXR2LnR2OjY0ZTQ3ODAwYjhkZjc2MWIuYTU5NGE3NWEwY2UxMmU4NTg5NGYyYTFiNmQ3YTJmYTgyZWUyOTFjMmY4MTFjM2RkNjNjZDNiYmVlZDc2ZjM2NA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135254" group-title="CDNLive",[2026-08-18 22:40] Cleveland Guardians vs San Francisco Giants - beIN Sports Max 4 SD FR | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2c81d8192bb76cd239/playlist.m3u8?token=NmEyODhkMmM4MWQ4MTkyYmI3NmNkMjM5OjE3ODY5OTExNDI2ODA6Y2RubGl2ZXR2LnR2OmQyM2MyNzljZmE0NGU1M2MuMDZhNTQ3MTI0MGVhNzVhYjYyYTVlZWZmMWQ2MzVkNWNmYTgxMzM4YzY4Zjc3MzI5NmU4NDdiNGViNzcwNjY2OQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2c81d8192bb76cd239/playlist.m3u8?token=NmEyODhkMmM4MWQ4MTkyYmI3NmNkMjM5OjE3ODY5OTQ3MTU1OTg6Y2RubGl2ZXR2LnR2OjMwYTMwZjZhNzA3ODU3NmUuN2JmNmJjNzZhYmY2Njc1YzI2MzlmODU3YzEwMzE3ODUyZDY2N2ZjN2EyNzVkZjJmYzI0ZDU5OTUwZDg5ZDRlYw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - MLB | Toronto Blue Jays | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb618/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjE4OjE3ODY5OTExNDIwOTk6Y2RubGl2ZXR2LnR2OmFhNmJhNzE4OGYyYjQ2NTYuNjg2OTE1ZTRmYTU4ODEwMjhlYTRhMjY5YWU4ODhhODNhOWRlZmMzZmI1NDU4OTVhMmU5YmIzNGFmMjYwYWZiZg
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb618/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjE4OjE3ODY5OTQ3MTUxNjM6Y2RubGl2ZXR2LnR2OjA5NWY0Y2E3YTRjNGFjZDkuN2IwNTVmYTFkOTIzY2ZiMDFmNDZlMTNjM2FjZmM3YjhkNDc4ZThhNjM0NzFiMTU4NDQ5MTkxYTI3MWI0ZWI5Nw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - SPORTSNET EAST CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc168/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTY4OjE3ODY5OTExNDIyMTc6Y2RubGl2ZXR2LnR2OjZjMTc0YTFkMThhY2QxMDYuOTI2YjVhYTEyMTBlY2Y0ZjE4YTA2ZTliZjdkMDRmNjljNzlmOTA5YThlZWY1YjAyYzQ5OTEwZWY4OWY2NTUxMA
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc168/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTY4OjE3ODY5OTQ3MTUyNzQ6Y2RubGl2ZXR2LnR2OmUzNDc5ZTQ2YTE2ZDliZDUuMWM0OWRlNzEwZjI3MDE0Yzc0NDYyYTM5MTI1ZTVhMTlhZjdkNjY0NjIzZjZlYzY2NzVlZjIxYjJmOTU2OTEwNA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - Sportsnet Ontario CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc165/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTY1OjE3ODY5OTExNDIxODQ6Y2RubGl2ZXR2LnR2OmM2MzQzYzZlZmM0NDRiYjQuNDg3MGRlNmNkNWI1OWUwYmU0MTE2ZTg4ZTM1MzI5YjM5NjNkNWQ0MmIzZTY2NGYyMWQ4ZGMwMTg0MmM5OTUxOQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc165/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTY1OjE3ODY5OTQ3MTUyMjU6Y2RubGl2ZXR2LnR2OjJkMGVkM2JlMjI3MzIxZGUuMTY0YzdiYWIwMzQ2YjIxNTViNmI3ODBiZGNjOTJlNWZjNGI5NGFjMjk5OTJmMDllNzVhYmI1NTE0YWQ0YzZiMw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - Sportsnet Ontario HD CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2bc/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmJjOjE3ODY5OTExNDIyMjE6Y2RubGl2ZXR2LnR2OjA4N2QzNDZhNzEzZTYwNTYuYmY5NzMzMDYxOWMyYjRmYWRkMzZmMzliYzFhYTY4Y2Y0OWY0MGIwNDc0MjM3ODI5MzdhYmJkNDU5NTUwMDEwMw
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2bc/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmJjOjE3ODY5OTQ3MTUyNjc6Y2RubGl2ZXR2LnR2OjRkZWI2MTkzNzY4ZGJkMDAuMzg3NGFkYWEyYjZhNWU2Njk3NjYyNWE0MDRlZDBiMDA2ZjEyNTA5MTg0YTY3ODU4MzFkNGQ0NTI3ZWQwYjZhYg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - Sportsnet Pacific CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc164/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTY0OjE3ODY5OTExNDIxNDE6Y2RubGl2ZXR2LnR2OmJiNjE1YmM3NWYzZTMyMjguNWFhMzliYThmZWZjOTUzYzUyYTIxZDJkMGUwYTQxNzU0OTNmNmU1YWY3ZWMyNTlhMWUxNDdkNzk5NjhiNmExZQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc164/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTY0OjE3ODY5OTQ3MTUxNzY6Y2RubGl2ZXR2LnR2OmJhMzdhNzNiMjY4OWE5MTQuOTBhNWIzZTE1YTFlMmI0MTVkYjhhMzRjM2Y4NDEzYjdhZjNiZDMyNzMzODkyNmIwOGExZTc2Y2FmZjZhY2E2Zg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - Sportsnet Pacific HD CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2bd/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmJkOjE3ODY5OTExNDIyMjU6Y2RubGl2ZXR2LnR2OmEyOTIxMzEwZjA2MjJiYTUuYjVkNmMxN2I4MTRmZTIzOWQ2YjI5YTE2YjdmYWU2ODg2YzkwYTc1NDk0NDVjZDI0MjJlZTIwMjY4ODFlODcwMQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2bd/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmJkOjE3ODY5OTQ3MTUyMzU6Y2RubGl2ZXR2LnR2OmU5N2E4YmE4N2YxNjg1ZjIuODRmMzExZTBhNWM0OGRiYTQ0MjE1OTUzN2EzOGFiNjlhMjRiODBmNGQwMDViYTZlOTdlZmJjZWRlOTJlZTU0ZA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - Sportsnet West CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc167/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTY3OjE3ODY5OTExNDIxODQ6Y2RubGl2ZXR2LnR2OjEzODVhN2M1NjQ0NzEzZjIuMGIxNDk4MWFiMmE5YTQzMmZhMzY5MjE4ODQ2MjFmOTYzNWJlMzZkMmZhNWE3N2M0MTcxMDRjZGUwMDUzMTNmMw
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc167/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTY3OjE3ODY5OTQ3MTUyMTg6Y2RubGl2ZXR2LnR2OjMzMmZhZTdkMjhiZGFlMmEuMmM2OTQxNGI3YzY2NDM5N2QxZjI1Y2Y2MzNjZDZiM2JiZWNkODU5OWExMzU2N2QwNjc0ZmUwZTA2M2Y3ZGNmNg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - TVA Sports 2 HD QC | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2d3/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmQzOjE3ODY5OTExNDIzMDc6Y2RubGl2ZXR2LnR2OjA1MzAxZmFhZWQyYTdmYWEuYjQwN2EzODg0ZTc5NjZkYTYyN2NjYTljYmVkZDhhY2M4YzVmZmJhZGQwODMyM2UxMjY2NzI5ZjhjMTMyOGY1YQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2d3/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmQzOjE3ODY5OTQ3MTUzNTI6Y2RubGl2ZXR2LnR2OmIzN2JmNjBmODI2MmQ0N2IuZGFkODExZTU5OTRiMGNmYTVlY2I3OWFhNjExMzc5YjgwNDIxZTcxNmY2MzI3NDI5YjllMTQ0ZDNjMWRlOWM2Mg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - TVA Sports CA | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc159/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTU5OjE3ODY5OTExNDIxNDI6Y2RubGl2ZXR2LnR2OjU4ZjliMzUwYzZlMGIxMWIuMjg1ZTg3ZmM3YWJhYzc4MmNhOThhMjhiMDZjN2FiMzhiYjBhMDhlMTliOWZhNTNlOTJmNTBjNjFjYTMwNDA5OQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc159/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTU5OjE3ODY5OTQ3MTUxODY6Y2RubGl2ZXR2LnR2OmU1MGU5MWI5ZjU2OWE1YmQuODJkNmEwYmRkMGU4MjQ4Y2ZlZjNjMzMyOGZhY2RlOGJmOTc1NDgwMDc4NDUwOTU0M2NlZTY5YWQxNTMzNWFhZg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135263" group-title="CDNLive",[2026-08-18 22:40] Tampa Bay Rays vs Toronto Blue Jays - TVA Sports QC | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2d2/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmQyOjE3ODY5OTExNDIyOTc6Y2RubGl2ZXR2LnR2OjQ4MDg0NWI1NTQ2ZTM4MzkuYzllODkxNmRkMGNmNjRlNjRjNmQxYzQ1Mzc5NmVlMTQxZTlkMDZkMDYwNzVkZTlmZmFlMjBlYmJjMWFhMjM1Mg
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc2d2/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMmQyOjE3ODY5OTQ3MTUzMzE6Y2RubGl2ZXR2LnR2OjI2ZDkzNmQ0ZjhlNDc0NDQuZGVjMTBiMjQ5NTlkMjAwNTY4N2U4ZGRmOGZiZTMzNWQyNTIwNjg0ZjliMGYzMDdhZTY2ZTdlY2Q0OGQzMmUxZA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135274" group-title="CDNLive",[2026-08-18 23:40] Milwaukee Brewers vs Seattle Mariners - MLB | Milwaukee Brewers | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb613/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjEzOjE3ODY5OTExNDI2NzM6Y2RubGl2ZXR2LnR2OjNhZjgwZjU4ZDAzNzMxNGYuNjRjODdiYzE3YTliM2RmNDZhMTNiMzE3ZDY1ODE3Nzk2ZGViM2Q0N2QxMGEyMjMzYTk1OWUzYzIzZThhYjM4NQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb613/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjEzOjE3ODY5OTQ3MTU2MTc6Y2RubGl2ZXR2LnR2OjZjYzY1MjAwN2I1M2UwNDEuNWE4NzJmMWYxYjUyYWU4ZGMwYjhhMmY2MTRlNmRmNjRlZWU4ZmYyNTQyMmE3MTUzNmJhOGVjMWRjMDNlMDY5Mw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135274" group-title="CDNLive",[2026-08-18 23:40] Milwaukee Brewers vs Seattle Mariners - MLB | Seattle Mariners | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb61c/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjFjOjE3ODY5OTExNDI2OTA6Y2RubGl2ZXR2LnR2OjVkZjg5Yzg4NzZjM2U0YmIuYjQyMWUxMjYwZDI4ZmM4MjkzNWZhOWY2NTk4ZDg0ZWQ2NmNlMzljZTZmYjBjOTFmMGI1NGNmN2I1MmIxYjkyMA
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb61c/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjFjOjE3ODY5OTQ3MTU3MDE6Y2RubGl2ZXR2LnR2OjgzZDliZDNlNjc3NzQ2YzEuNmI1NThhYzA2MzRlMjU3YzliOTg3MDBmYWIzNzVmODQ0MGVkZjk2NWU0MzM3ZmE2NGM1YzgzZmQ4MjdlMjYyMw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135264" group-title="CDNLive",[2026-08-19 00:05] Texas Rangers vs Washington Nationals - MLB | Texas Rangers | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb619/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjE5OjE3ODY5OTExNDI2ODM6Y2RubGl2ZXR2LnR2OjBhMGNkZDBjNjVjOWM1NjcuZDVhZjE3YjQ2NTRhZTRiM2EzNjQzYjNkNjY1OThhODlhNmM1Zjg5ZTVlMzM2Y2FkNDI4ZWYwNjI1YzVhOWRjYQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb619/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjE5OjE3ODY5OTQ3MTU2OTA6Y2RubGl2ZXR2LnR2OjhmMjc2MzE3MWE0YjJhNmYuMTYwZThlM2I5MTkyODlhNmJhZDBjYmVkMjE1MWNkNmIyODMyNmJmZDAwNjRjYTllNmZiYTE4MWI2MDc4NGFkYg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135256" group-title="CDNLive",[2026-08-19 00:10] Houston Astros vs Los Angeles Angels - MLB | Houston Astros | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb627/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI3OjE3ODY5OTExNDI3MzA6Y2RubGl2ZXR2LnR2OjUyODc3ODZjMTRjMjcxMTguNTQ2YTIzNjM1MWQ4YzA4Mzc4ZTM0OThjMGRkNzNjY2I5NGQ1YWUzNWFkMWU5ZTBjYWE5OGZjNGQzN2QzNWY4MQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb627/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjI3OjE3ODY5OTQ3MTU3MTQ6Y2RubGl2ZXR2LnR2OmM3YzRhNzA4YWI3NDEyOWQuODZkM2QyMGRkN2FkMzdlY2MwMTk5NzIyNzQ5MWYzNDE5MGY1OWNkYTQ2NzdlNDlkMjdkZmIxNzAzMzk2ZWRmMA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135256" group-title="CDNLive",[2026-08-19 00:10] Houston Astros vs Los Angeles Angels - MLB | Los Angeles Angels | MLB
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb632/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjMyOjE3ODY5OTExNDI3NDA6Y2RubGl2ZXR2LnR2OjNhNzNhYjM3ZmZlNDA5ODUuMDU1MWVjN2MwZmRiNDIxYjQxZDAwYmFkZTY2MjRjODIwYWY3Nzg0OGRmMmRjNTMwMmUyZjcyNmU2NWUxZDUzZA
+https://cdnlivetv.tv/secure/api/v1/6a288d2881d8192bb76cb632/playlist.m3u8?token=NmEyODhkMjg4MWQ4MTkyYmI3NmNiNjMyOjE3ODY5OTQ3MTU3MDY6Y2RubGl2ZXR2LnR2OjkxYmZjY2E2ZTkzMjczNmIuMTBjNGFiNzgxNzM5MjQxNTAzNjg5NDAzNjE3NWJlZDRjMzYwYTc1OTY3MDMwMjM5NDMxMmNjNzQyNWNhMWMxOA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135003" group-title="CDNLive",[2026-08-20 23:30] Montreal Alouettes vs Ottawa Redblacks - TSN 1 HD CA | CFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc172/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTcyOjE3ODY5OTExMzkxMjE6Y2RubGl2ZXR2LnR2OjViNGM0MjhhZTA2MTYxZmEuOWFlZDY1NjNjODY3MDk3NmRiMmI4NTEwZjVhMzdlYzMyNWUxMjg3NjE4ZjQ4ZjQ2MjQ2Y2E3MTEzNzJmNDVjYQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc172/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTcyOjE3ODY5OTQ3MTI2NTc6Y2RubGl2ZXR2LnR2OjA0ZTk1OTU0ZjY5MmZlZGUuOGRmOTlkYTExYzgwNjc5ZGRkZmNiMjAwOTkxOTQ2M2UzZTY5ODdiMjI3OTJjMDU3YzI5MTZjMDZmOWZiMDI4ZQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135003" group-title="CDNLive",[2026-08-20 23:30] Montreal Alouettes vs Ottawa Redblacks - TSN 3 HD CA | CFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc175/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTc1OjE3ODY5OTExMzkxMjU6Y2RubGl2ZXR2LnR2OjhkMGI0NjA2NDg0N2I2NDEuYWE0MzAwZjIwOGRkNTlkZjk1OGQyNDIyYzY3YzYyYTZiMzc5Y2UwMDJiYzgwMjY5ZTA3ZGY1M2YxZDE2MWU5Nw
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc175/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTc1OjE3ODY5OTQ3MTI3NDc6Y2RubGl2ZXR2LnR2OjQ4MTg3MTY1MmRmOTQ2YjYuYmU3OTMzZTM2N2IxODAwN2NmZmNkMDY2ZmE0MGRlNTBiYWNkNjI3OTVhZTc4Yjk1YWI0OTZhZWExMTJlYTRjZQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135003" group-title="CDNLive",[2026-08-20 23:30] Montreal Alouettes vs Ottawa Redblacks - TSN 5 HD CA | CFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc178/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTc4OjE3ODY5OTExMzkxMTc6Y2RubGl2ZXR2LnR2OmY3ODc1ZjQyYWU5ZjBmYmMuYTI1ZmVjMmZkZDQxYWU2ZTU5NGRhYzkwMmQ0ZWVhZTk0Y2NhNDVjNDk1MDAyMzU5MzkwNzQzYWJlYzc5YWZmOQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc178/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTc4OjE3ODY5OTQ3MTI3MjQ6Y2RubGl2ZXR2LnR2OjQ0OTdhOTI4NzMxNDcyYjUuMTU4OGUzMzY3YmJjOTcxNGQ0MWYzZDVlMmRkM2NjYTcwMTdkMjkyNDIyYjQzMDA1YzUwZDM1NmFmMDU3ODEwZg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - ESPN Deportes FHD LAM | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce5f3/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNWYzOjE3ODY5OTExMzk4MjA6Y2RubGl2ZXR2LnR2OjdlNDIzZmVlZjM5YTA4YWYuODllYmM3N2RkYjg0OWQ1ZGUwZmQ0OWY5MzgwNThkMmQyY2JkYjczYTY4MWY1ZWVkOGE3NjcyYWJiMGZjMzM3NQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2e81d8192bb76ce5f3/playlist.m3u8?token=NmEyODhkMmU4MWQ4MTkyYmI3NmNlNWYzOjE3ODY5OTQ3MTMyNjU6Y2RubGl2ZXR2LnR2OjdhZTdjMTE3NmRhYTAxZmMuYTAwNGJmZTFmYWJlMGE3ODFmODNkOTcxNmU3YTNhN2NiYzY2NzJlZWY2OTRhNGQ2NWM1MmFmZGE4NmY2ZmM2Nw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - ESPN Deportes HD LAM | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cbee9/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNiZWU5OjE3ODY5OTExMzk4Mjc6Y2RubGl2ZXR2LnR2OjYwOTI4MDFlYWUzNmRlNmYuZWMzOThkNTc3M2M0M2ZmNzE0MjhjMTlmZDUzNDFkZDI5NzI1MDNlYmRhZGIwMzQyMjAxOWJjYTY1MTVmMzFkZA
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cbee9/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNiZWU5OjE3ODY5OTQ3MTMyOTA6Y2RubGl2ZXR2LnR2OjM2ZGNmMWJmMzMyYTc2YmEuNWU1OGJhMTU3YjBjNWJiZDRkNjZiODEzNjVhMTcyZjE4NGI1NjUwMWZiNDk3Mjg5NWI2NGIxOGFmYzZiMTY3OA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - ESPN Deportes US | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb34c/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzRjOjE3ODY5OTExMzk4MDg6Y2RubGl2ZXR2LnR2OjQ0MDBjMzIwOWFmZjNjOTEuODljNTFmYTdmYmZmZGQ4NzJlMDU1OWUzZjFjZDVmNTQ0MzAxYjEyZWE4N2NiOGNhYjRiODhhMWY3ZmU3NzRhYQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb34c/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzRjOjE3ODY5OTQ3MTMxMzU6Y2RubGl2ZXR2LnR2OjI0MmU2MTNiMGI5YzNmNGIuY2M3NjYyYWIwMTAyODk0ZmM2NTIwMTc4MTY0YWYwN2M0ODkwMzAwOWUzNGRiNDVkY2NlMGM2NjJhMjBlNWMzOA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - ESPN US | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb305/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzA1OjE3ODY5OTExMzkwODA6Y2RubGl2ZXR2LnR2OjMxZDZhNTEwMmIyYmZiODEuODFjZjUxOWJhYWI5NTA0ZTc2MDgwYzA3NTZiYjBmZWQzMmYwYzE3MGU4NzY5NTM5NDg3MzRmM2YzN2M4ZmZmZg
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb305/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzA1OjE3ODY5OTQ3MTI3MjY6Y2RubGl2ZXR2LnR2OmFiYjYzYTFlYmYwYWIxM2YuYzMzN2FkNDUwZjExODgyYjVkYWI5NDcwMzc2YzZkMDhiMWYyMjI0Njg4YzQxNjA2MWU4YTFkYzgxMzY2OTEyNQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - Sky Sports Action FHD UK | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc327/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzI3OjE3ODY5OTExMzk3ODU6Y2RubGl2ZXR2LnR2OmUwOTFjYjNiYzhkZTY1ODMuNzE4M2ZlNGY2ZjQ2ZmVlMTczNDQyMTFhM2NlZmRhYmFhNzNhYzA5ZWY0NDhlYmJlODJiODg4ZjE2ZjFhMThjYQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc327/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzI3OjE3ODY5OTQ3MTMyOTQ6Y2RubGl2ZXR2LnR2OjBlN2UwNzE3MWIyOWQ1MmIuOTU1ZDU3MzFiZDNjYmQ3OWYxYmNmMDliNWQ1NjAwNGMyNDE2YWQ4OWJlMzY4NjVlYmM3OWI0ZDVlZTZjNzhhOQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - Sky Sports Action HD UK | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc326/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzI2OjE3ODY5OTExMzk4MzU6Y2RubGl2ZXR2LnR2OmU4NzhmMzI5MzVkODYxODguNzJiODY1NDZjOTQ5OTBiZTM4MDkxODMyZGRmZmEzNjE0NDg2ZTAxNTE5YjEzOTg2YTY2ZGNmMTE0N2Y0OTZmMg
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc326/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzI2OjE3ODY5OTQ3MTMyNjA6Y2RubGl2ZXR2LnR2OmM2YTQwNTJmMWE1ODRlNWQuNjc0ODBlYjAxMzZhNmFlNjcxMTI5OTFkZDAyN2I3MWRiYTc1NDM1MDEyN2UzODkxMDU3YTNkMTM5Njc2MThkYw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - Sky Sports Action UK | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc325/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzI1OjE3ODY5OTExMzk4NDE6Y2RubGl2ZXR2LnR2OjVhM2FjMmIyMmZjODcwM2UuOWEyNTVjOTNjNDc5OGRkZGFhMWZmNGNiOTQzNzg3NWRhMDI3M2I2YWM5YzEzYzY2ZTA1NzE4YTEyNDM4NDRjZQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc325/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMzI1OjE3ODY5OTQ3MTMyOTE6Y2RubGl2ZXR2LnR2OmY4MzcwZjcwNTFkNGIwNGEuNzA5ODEyOTMxY2JkN2QzYmIxYzlmNGYyYjRhZTM4NGIyMWY5ZmQ2YWZjMDkyYmJhNWJiZTI5ODlkMWIzOGRlOQ
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - TSN 2 CA | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc171/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTcxOjE3ODY5OTExMzk4MTY6Y2RubGl2ZXR2LnR2OmQ4ZjU4YTYyMGQ1ODI0MjYuYzhmZDdmNWU4ODVlYWJlYmM0OGE3NmU2Nzg5NzRhYWJlZjYwNDgzY2IyMGJkN2QxM2NiMGRiYmEwNDBiMDY0ZQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc171/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTcxOjE3ODY5OTQ3MTMyNDg6Y2RubGl2ZXR2LnR2Ojc5MTVlNTE4OGJmYjQ2MGYuNzNjYjAxNzUzOGZiZjU2N2UxNTgwNzA2Mzg1OWQ1NDY0MDk0N2Y4NGFmYTc0MTNkMDU3NTgyMDhiYTViYTkzNw
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - TSN 2 FHD CA | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc173/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTczOjE3ODY5OTExMzk4MDA6Y2RubGl2ZXR2LnR2Ojk3ZWU5Y2I1NTQ2MzNjYmEuNmZlY2RiZDEzN2FhOTMwZmQwNmFhYzRiNTk3MjU0YTliOTY5MTNlNzI2YzQxNjQyNWIwZGM3YmRiMjc4YWQ3NQ
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc173/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTczOjE3ODY5OTQ3MTMyODY6Y2RubGl2ZXR2LnR2OjgzZDkzMTA0YTI0MDM1MTkuZTkwMzZjNmU1Y2YyMzEzYzI4YzQ5NTNiMGIyMDM1NWJiNDRjOTg1ZDExNGYzOWE3NjRhNGZiNTY0MmUxMGNhZg
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/134926" group-title="CDNLive",[2026-08-21 00:00] Houston Texans vs Las Vegas Raiders - TSN 2 HD CA | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc174/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTc0OjE3ODY5OTExMzk4MzQ6Y2RubGl2ZXR2LnR2Ojc4NGZhNDcwNWRlZTVkZGEuYmQyOThlNWJjZmExZGZlNjRiZTI4ZTA5NDQ2ZWE0MDUyZjNiOWQ2ODViN2RhY2U2ZmI0YWI1YzYwZmFkNGVlNA
+https://cdnlivetv.tv/secure/api/v1/6a288d2a81d8192bb76cc174/playlist.m3u8?token=NmEyODhkMmE4MWQ4MTkyYmI3NmNjMTc0OjE3ODY5OTQ3MTMyNTc6Y2RubGl2ZXR2LnR2Ojg0NTNkY2E3ZDJmNTYzNDUuZGU0NjZhMjcwNTE2ZjJlMzg2ZjhhYmQwZjgzMTUzOWI3YjhmNTJlNTZiOTNlYmEzZjZjNDUwNjQ1MmM1ZmE1MA
 
 #EXTINF:-1 tvg-logo="https://cdnlivetv.tv/api/v1/team/images/135908" group-title="CDNLive",[2026-08-21 02:00] Los Angeles Chargers vs San Francisco 49ers - NFL Network US | NFL
 #EXTVLCOPT:http-referrer=https://cdnlivetv.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb306/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzA2OjE3ODY5OTExMzk3ODU6Y2RubGl2ZXR2LnR2OmE2YTNhZDBiMjQxMmY0MzIuMmUyN2I3OTdmMmQ4MDRlZDVhYzJjYjI5MzQzYzBmN2VhY2FhNjEyZjMyNTRiNzhiNDA4ZTQ5OTNhYjZkOGY4Ng
+https://cdnlivetv.tv/secure/api/v1/6a288d2781d8192bb76cb306/playlist.m3u8?token=NmEyODhkMjc4MWQ4MTkyYmI3NmNiMzA2OjE3ODY5OTQ3MTMyNzY6Y2RubGl2ZXR2LnR2OjI2ZmVkYWFmY2I5MGM3ZGQuOTUyOTY2MTA3MWZkNTk0NDE3ZmMwMGVhMjYyOWI3ZTUxMDU4ODg3Njc1OTk1ODIxZjNjMTI5Y2U5ZDE2ODY0MA
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/fc749b5065db363497b7d93c966b0a51.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 00:00 18/08 Sporting Gijon vs Sabadell (BLV BÍ ĐAO) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/99121525.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/thumbs/chtv-57c1a51002_e4cd1ddf_20260817.png?v=e4cd1ddf" group-title="ChoangTV",TONG LU vs KONG DEJING | CHTV
+#EXTVLCOPT:http-referrer=https://choangtv21.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.sports-cas889abxfileposo.site/live/live6373/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/578175c1a0691907824154179e179ade.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 00:45 18/08 Estudiantes Rio Cuarto vs Atl. Tucuman (BLV STING) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/14707124.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/93cb3602a997b8de2f0a671f32ff5c6f.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 01:00 18/08 Al-Raed vs Al Hilal (BLV SODA) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/02456966.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e28443c9a1a5b87394ed79c3690ebbd7.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 02:00 18/08 Dep. La Coruna vs Elche (BLV ROCKSTAR) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/82054853.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/b22d9b2c5fc8d98df9194a9c5d66ec83.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 02:00 19/08 Câu lạc bộ bóng đá Dinamo Zagreb vs Viking FK (BLV 247) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/90865415.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7fc8831956b0f4fab51d0390a3957780.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 06:00 18/08 Sport Club Internacional vs Remo Belem (PA) (BLV SPRITE) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/75748097.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/93aebb72f5f275d332976c73a7731186.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 07:30 18/08 Palestino vs Huachipato (BLV MOUNTAIN DEW) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/87547578.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/380d81d4050b81debf9a5500239e96d0.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 09:00 18/08 Golden State Valkyries vs Dallas Wings (BLV Cozy) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/87379114.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e8327d4681b4a73c83be9fe087b30721.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 18:35 18/08 Shanghai Shenhua vs Beijing Guoan (BLV 7UP) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/78905744.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/16c2d7a61e2b6829ac8d3912b4e5357d.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 19:30 17/08 New Taipei Nữ vs No Limits Nữ (BLV POCARI) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/19919577.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/6e0d069a8e8c63f58835aba4469ec4d4.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 20:00 17/08 College of Asian Scholars Nữ vs S'Amuser Nữ (BLV MONSTER) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/75915087.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/cc07df4709bfbf8c4b6c3bd8a6f90698.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 21:00 17/08 Kaya FC Nữ vs Ilbirs Nữ (BLV FANTA) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/16226575.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/a19ee4a4454087b98d1f2bb9058a337e.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 22:00 17/08 Gnistan Helsinki vs Ilves (BLV GIÀ LÀNG) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/14830711.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/af718a29d1eacceec7da5c5815b1679b.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 22:00 17/08 Polissya Zhytomyr vs FK Zorya Luhansk (BLV PEPSI) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/59444581.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/74c37787bcf9656e1372913981f69859.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 22:30 17/08 Universitaea Cluj vs FC UT Arad (BLV KHÔNG ĐỘ) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/41943555.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7ca5de14056c7290f6787e0943aa11ad.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 23:00 17/08 Pisa vs Empoli F.C. (BLV CASTING) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/95826384.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7ca5de14056c7290f6787e0943aa11ad.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 23:00 17/08 Pisa vs Empoli F.C. (BLV REVIVE) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/33982309.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/616bf242a532f72e970648f2ead423cf.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 23:30 17/08 U.S. Sassuolo Calcio vs Cesena (BLV SAMURAI) [hls]
-#EXTVLCOPT:http-referrer=https://colatv.org/
-https://live05.miekgo.app/live/07808742.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1786968823310_TONG LU.jpg" group-title="ChoangTV",[19h00] TONG LU vs KONG DEJING | BLV Thập Cẩm
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/thumbs/chtv-586f4882d9_b337833b_20260817.png?v=b337833b" group-title="ChoangTV",TONG LU vs KONG DEJING | Thập Cẩm | CHTV
 #EXTVLCOPT:http-referrer=https://choangtv21.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6371/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1765226684776_táº£i xuá»ng.png" group-title="ChoangTV",[21h00] BẢO MINH vs GIA BẢO | BLV Bỉm Sữa
-#EXTVLCOPT:http-referrer=https://choangtv21.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.sports-cas889abxfileposo.site/live/live6372/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/93aebb72f5f275d332976c73a7731186.png!w80" group-title="CoLaTV",00:30 | Palestino vs Huachipato | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/87547578.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/380d81d4050b81debf9a5500239e96d0.png!w80" group-title="CoLaTV",02:00 | Golden State Valkyries vs Dallas Wings | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/87379114.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e8327d4681b4a73c83be9fe087b30721.png!w80" group-title="CoLaTV",11:35 | Shanghai Shenhua vs Beijing Guoan | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/78905744.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/6e0d069a8e8c63f58835aba4469ec4d4.png!w80" group-title="CoLaTV",13:00 | College of Asian Scholars Nữ vs S'Amuser Nữ | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/75915087.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/cc07df4709bfbf8c4b6c3bd8a6f90698.png!w80" group-title="CoLaTV",14:00 | Kaya FC Nữ vs Ilbirs Nữ | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/16226575.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/a19ee4a4454087b98d1f2bb9058a337e.png!w80" group-title="CoLaTV",15:00 | Gnistan Helsinki vs Ilves | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/14830711.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/af718a29d1eacceec7da5c5815b1679b.png!w80" group-title="CoLaTV",15:00 | Polissya Zhytomyr vs FK Zorya Luhansk | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/59444581.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/74c37787bcf9656e1372913981f69859.png!w80" group-title="CoLaTV",15:30 | Universitaea Cluj vs FC UT Arad | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/41943555.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7ca5de14056c7290f6787e0943aa11ad.png!w80" group-title="CoLaTV",16:00 | Pisa vs Empoli F.C. | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/33982309.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7ca5de14056c7290f6787e0943aa11ad.png!w80" group-title="CoLaTV",16:00 | Pisa vs Empoli F.C. | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/95826384.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/616bf242a532f72e970648f2ead423cf.png!w80" group-title="CoLaTV",16:30 | U.S. Sassuolo Calcio vs Cesena | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/07808742.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/fc749b5065db363497b7d93c966b0a51.png!w80" group-title="CoLaTV",17:00 | Sporting Gijon vs Sabadell | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/99121525.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/578175c1a0691907824154179e179ade.png!w80" group-title="CoLaTV",17:45 | Estudiantes Rio Cuarto vs Atl. Tucuman | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/14707124.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/93cb3602a997b8de2f0a671f32ff5c6f.png!w80" group-title="CoLaTV",18:00 | Al-Raed vs Al Hilal | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/02456966.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/a413daa882f96b18ddb1f0e8c9dbfda7.png!w80" group-title="CoLaTV",18:30 | FCSB vs Botosani | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/19919577.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/b22d9b2c5fc8d98df9194a9c5d66ec83.png!w80" group-title="CoLaTV",19:00 | Câu lạc bộ bóng đá Dinamo Zagreb vs Viking FK | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/90865415.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e28443c9a1a5b87394ed79c3690ebbd7.png!w80" group-title="CoLaTV",19:00 | Dep. La Coruna vs Elche | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/82054853.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7fc8831956b0f4fab51d0390a3957780.png!w80" group-title="CoLaTV",23:00 | Sport Club Internacional vs Remo Belem (PA) | BLV
-#EXTVLCOPT:http-referrer=https://cltvlv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.meung.app/live/75748097.m3u8
-
-#EXTINF:-1 tvg-logo="https://go4.pw/VIP/4k_ultra.png" group-title="CuongHeHe",VIP - ELEVEN SPORTS 4K
-http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281071.m3u8
-
-#EXTINF:-1 tvg-logo="https://go4.pw/VIP/4k_ultra.png" group-title="CuongHeHe",VIP - FOX SPORTS 1 4K (EVENTS ONLY)
-http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1436346.m3u8
-
-#EXTINF:-1 tvg-logo="https://go4.pw/VIP/4k_ultra.png" group-title="CuongHeHe",VIP - HK NOW SPORTS EPL 4K
-http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1301200.m3u8
-
-#EXTINF:-1 tvg-logo="https://go4.pw/VIP/4k_ultra.png" group-title="CuongHeHe",VIP - SKY SPORTS MAIN EVENT 4K
-http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281430.m3u8
-
-#EXTINF:-1 tvg-logo="https://go4.pw/VIP/4k_ultra.png" group-title="CuongHeHe",VIP - TNT SPORT ULTIMATE 4K
-http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281083.m3u8
-
-#EXTINF:0,00:00 18/08 Sporting Gijon vs Sabadell (BLV BÍ ĐAO) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/99121525.flv
-
 #EXTINF:0,00:15 18/08 GIANTX vs Karmine Corp (HD MARTY) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-30.flv?auth_key=3000001786976363-0-0-3771f845774f1bf8840c92e4a924b90b
-
-#EXTINF:0,00:45 18/08 Estudiantes Rio Cuarto vs Atl. Tucuman (BLV STING) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/14707124.flv
+https://live2.deliverfluxlive.com/livecdn/channel-30.flv?auth_key=3000001786977241-0-0-790ce5fab746282135c9c0f831983207
 
 #EXTINF:0,01:00 18/08 Nữ Brazil vs Nữ South Sudan (HD STEP) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-26.flv?auth_key=3000001786976306-0-0-2293230674add3df0f2de87123e89789
+https://live2.deliverfluxlive.com/livecdn/channel-26.flv?auth_key=3000001786977205-0-0-d9ec27653cab2ad91612c4bcb528125f
 
 #EXTINF:0,01:00 18/08 Nữ Brazil vs Nữ South Sudan (STEP)
 #EXTGRP:FLV | OTT Player
 https://live2.livefeedtextbox.com/live/channel26.flv
-
-#EXTINF:0,01:00 18/08 Al-Raed vs Al Hilal (BLV SODA) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/02456966.flv
 
 #EXTINF:0,01:45 18/08 Cremonese vs Sampdoria (KEN) [flv]
 #EXTGRP:FLV | OTT Player
@@ -1102,14 +913,6 @@ https://cdnflv.xbdbotv.live/live/ZjE5NzI5MTU1c3A2eXFud3ZqZ3RuaWE0NXhibHAwZHZxMGR
 #EXTINF:0,02:00 18/08 Deportivo La Coruña vs Elche (BUDWEISER) [flv]
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzMyNzM5c3Nrd3plNm13ZWk4aWpxZWJ0cWRxdDBoMmR4bHlndG5wbTlzaGM1d2QwbjkzNGxhbHk.flv
-
-#EXTINF:0,02:00 18/08 Dep. La Coruna vs Elche (BLV ROCKSTAR) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/82054853.flv
-
-#EXTINF:0,02:00 19/08 Câu lạc bộ bóng đá Dinamo Zagreb vs Viking FK (BLV 247) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/90865415.flv
 
 #EXTINF:0,02:15 18/08 Casa Pia vs Benfica (ASAHI) [flv]
 #EXTGRP:FLV | OTT Player
@@ -1135,10 +938,6 @@ https://live2.pro2cdnlive.com/live/channel-31.flv
 #EXTGRP:FLV | OTT Player
 https://live2.pro2cdnlive.com/live/channel31.flv
 
-#EXTINF:0,06:00 18/08 Sport Club Internacional vs Remo Belem (PA) (BLV SPRITE) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/75748097.flv
-
 #EXTINF:0,06:30 18/08 Nữ Canada vs Nữ Senegal (HD TOMMY) [HD]
 #EXTGRP:FLV | OTT Player
 https://live2.pro2cdnlive.com/live/channel-29.flv
@@ -1146,10 +945,6 @@ https://live2.pro2cdnlive.com/live/channel-29.flv
 #EXTINF:0,06:30 18/08 Nữ Canada vs Nữ Senegal (TOMMY)
 #EXTGRP:FLV | OTT Player
 https://live2.pro2cdnlive.com/live/channel29.flv
-
-#EXTINF:0,07:30 18/08 Palestino vs Huachipato (BLV MOUNTAIN DEW) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/87547578.flv
 
 #EXTINF:0,09:00 18/08 Nữ Golden State vs Nữ Dallas Wings (ALAN)
 #EXTGRP:FLV | OTT Player
@@ -1159,69 +954,37 @@ https://live2.pro2cdnlive.com/live/channel25.flv
 #EXTGRP:FLV | OTT Player
 https://live2.pro2cdnlive.com/live/channel-25.flv
 
-#EXTINF:0,09:00 18/08 Golden State Valkyries vs Dallas Wings (BLV Cozy) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/87379114.flv
-
-#EXTINF:0,18:35 18/08 Shanghai Shenhua vs Beijing Guoan (BLV 7UP) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/78905744.flv
-
-#EXTINF:0,19:00 17/08 Nữ College Asian vs Nữ S\'Amuser (HD XMEN) [HD]
-#EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel87.flv?wsSecret=9a4d5dd5ff03a7f78a786ca285ecf28d&wsABSTime=1787019419
-
-#EXTINF:0,19:30 17/08 Nữ Hang Yuan vs Nữ No Limits (HD RAVEN) [HD]
-#EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel21.flv?wsSecret=051329e6395df8405ebe733480863bc4&wsABSTime=1787019386
-
-#EXTINF:0,19:30 17/08 Nữ Hang Yuan vs Nữ No Limits (RAVEN)
-#EXTGRP:FLV | OTT Player
-https://live2.livefeedtextbox.com/live/channel21.flv
-
-#EXTINF:0,19:30 17/08 New Taipei Nữ vs No Limits Nữ (BLV POCARI) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/19919577.flv
-
 #EXTINF:0,20:00 17/08 CA Huracan Women vs CA Independiente Women [ARG WPA] [ARG WPA]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5683054_1.flv?auth_key=1786976734-3038-0-b689b1c0180cffe1e972b87a6a1dd421
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5683054_1.flv?auth_key=1786977641-8761-0-3d821f2b9d068efbd45110966631d021
 
 #EXTINF:0,20:00 17/08 Molde B vs Rosenborg B [NOR D3] [NOR D3]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5319999_1.flv?auth_key=1786976732-5875-0-4d77acebfd1f23aab2ce53f15c54a394
-
-#EXTINF:0,20:00 17/08 College of Asian Scholars Nữ vs S'Amuser Nữ (BLV MONSTER) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/75915087.flv
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5319999_1.flv?auth_key=1786977634-6673-0-ee7530a9d33a66281f68e65076219bff
 
 #EXTINF:0,21:00 17/08 Nữ Kaya FC vs Nữ Ilbirs Bishkek (HD TOM) [HD]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=57c4acb86ce6f243bd7027de3dec805b&wsABSTime=1787019428
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=f97633c34ae89d5d2855b4843fa03361&wsABSTime=1787020306
 
 #EXTINF:0,21:00 17/08 Social Atletico Television Women vs CA San Lorenzo Almagro Women [ARG WPA] [ARG WPA]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5683055_1.flv?auth_key=1786976739-2231-0-6d2df18f40fd0c36cbd2247ba67d3735
-
-#EXTINF:0,21:00 17/08 Kaya FC Nữ vs Ilbirs Nữ (BLV FANTA) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/16226575.flv
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5683055_1.flv?auth_key=1786977646-2305-0-21845eec41d9671b5376b5cc16a140a0
 
 #EXTINF:0,22:00 17/08 FC Siauliai vs FK Panevezys (HD OLER) [HD]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel28.flv?wsSecret=67cd6e9a7842d1f52f20d65b1c727026&wsABSTime=1787019461
+https://live1.quickscoreboardz.com/live/channel28.flv?wsSecret=8bb8475627e115b67f8b901788448245&wsABSTime=1787020340
 
 #EXTINF:0,22:00 17/08 FK Auda Riga vs Grobina (HD XMEN) [HD]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=7419118e091987d6caf07aa1ee0a6931&wsABSTime=1787019471
+https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=b4cf3d8ccd67eb9c9537330532c6ea84&wsABSTime=1787020347
 
 #EXTINF:0,22:00 17/08 Gnistan Helsinki vs Ilves Tampere (HD FILIP) [HD]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=117625eaafc910bbe61e6e2cb8da2214&wsABSTime=1787019453
+https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=b6ee94c114bc558d52b44d26ffbbf18d&wsABSTime=1787020315
 
 #EXTINF:0,22:00 17/08 Iga Swiatek vs Maria Sakkari (HD LUCAS) [HD]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel31.flv?wsSecret=b3b9497054e34ebf34ad7224d4f63b3d&wsABSTime=1787019533
+https://live1.quickscoreboardz.com/live/channel31.flv?wsSecret=fb1d68ab3bc66195fedf0a45008605fd&wsABSTime=1787020376
 
 #EXTINF:0,22:00 17/08 Iga Swiatek vs Maria Sakkari (LUCAS)
 #EXTGRP:FLV | OTT Player
@@ -1229,7 +992,7 @@ https://live2.livefeedtextbox.com/live/channel31.flv
 
 #EXTINF:0,22:00 17/08 Natus Vincere vs Team Heretics (HD MARTY) [HD]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel30.flv?wsSecret=5b7852f580782c4032ce744352b5a686&wsABSTime=1787019554
+https://live1.quickscoreboardz.com/live/channel30.flv?wsSecret=285b6f215004fb012b062c3d36b5591f&wsABSTime=1787020383
 
 #EXTINF:0,22:00 17/08 Natus Vincere vs Team Heretics (MARTY)
 #EXTGRP:FLV | OTT Player
@@ -1237,31 +1000,23 @@ https://live2.livefeedtextbox.com/live/channel30.flv
 
 #EXTINF:0,22:00 17/08 Nữ Bam Khatoon vs Nữ CSKA Pamir Dushanbe (HD HIRO) [HD]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=1fc4bb1ff4a1027de53872183f72fee3&wsABSTime=1787019480
+https://live2.deliverfluxlive.com/livecdn/channel-14.flv?auth_key=3000001786977158-0-0-6fd279c3a4d708037a0683780c94df0a
 
 #EXTINF:0,22:00 17/08 Nữ Nasaf Qarshi vs Nữ Master 7 (HD KEN) [HD]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=87a68d619fb27fc055c43b74d086b854&wsABSTime=1787019487
+https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=2ce5a02ae2eb6bb6e9f8eedfd25f987a&wsABSTime=1787020368
 
-#EXTINF:0,22:00 17/08 Gnistan Helsinki vs Ilves (BLV GIÀ LÀNG) [flv]
+#EXTINF:0,22:30 17/08 Qarabag vs Shamakhi FK (HD LOGAN) [HD]
 #EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/14830711.flv
-
-#EXTINF:0,22:00 17/08 Polissya Zhytomyr vs FK Zorya Luhansk (BLV PEPSI) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/59444581.flv
+https://live1.quickscoreboardz.com/live/channel23.flv?wsSecret=03172685780c16c17e26107be1b8bee0&wsABSTime=1787020398
 
 #EXTINF:0,22:30 17/08 Universitatea Cluj vs FC UT Arad (HD NEMO) [HD]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=87a1b136a90ddca3e1d5f9179fce924a&wsABSTime=1787019497
-
-#EXTINF:0,22:30 17/08 Universitaea Cluj vs FC UT Arad (BLV KHÔNG ĐỘ) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/41943555.flv
+https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=ff3cd0c6c3e3c8f16bd1e529aaf0b159&wsABSTime=1787020391
 
 #EXTINF:0,23:00 17/08 Nữ Tây Ban Nha vs Nữ Hungary (HD TYSON) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-33.flv?auth_key=3000001786976346-0-0-74610320fe9bc00f5b17aa29d0bff2e9
+https://live2.deliverfluxlive.com/livecdn/channel-33.flv?auth_key=3000001786977233-0-0-da2a16a9f6c8c1bad9fff5ecccae26f0
 
 #EXTINF:0,23:00 17/08 Nữ Tây Ban Nha vs Nữ Hungary (TYSON)
 #EXTGRP:FLV | OTT Player
@@ -1271,14 +1026,6 @@ https://live2.livefeedtextbox.com/live/channel33.flv
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzI4MzUzc3A2eXFud3ZqZ3RuaWE0NXhibHAwZHZxMGR5cTF0eGFiYXJ6ZnJjcWY4YWRlY2VxdDE.flv
 
-#EXTINF:0,23:00 17/08 Pisa vs Empoli F.C. (BLV CASTING) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/95826384.flv
-
-#EXTINF:0,23:00 17/08 Pisa vs Empoli F.C. (BLV REVIVE) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/33982309.flv
-
 #EXTINF:0,23:30 17/08 Sassuolo vs Cesena (NEM NƯỚNG) [flv]
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzI4MzUyc3VqaWNlYmlxZzdhZms3YXp3ZWt0N2sxN2RleWQ4djNoMGEzcHZxMTdlYnM2NHA1a3U.flv
@@ -1287,9 +1034,13 @@ https://cdnflv.xbdbotv.live/live/ZjE5NzI4MzUyc3VqaWNlYmlxZzdhZms3YXp3ZWt0N2sxN2R
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzI4MzUyc2QwbjJucHM3enNmbmlwaWdvdHcyOGw3eGR5ZzI0NnU5a2twNTJ0d2RocXd5OHhuNTc.flv
 
-#EXTINF:0,23:30 17/08 U.S. Sassuolo Calcio vs Cesena (BLV SAMURAI) [flv]
+#EXTINF:0,Dziugas Telsiai vs Suduva lúc 22:45 ngày 17/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/07808742.flv
+https://live2.livefeedtextbox.com/live/channel24.flv
+
+#EXTINF:0,Dziugas Telsiai vs Suduva lúc 22:45 ngày 17/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+https://live1.quickscoreboardz.com/live/channel24.flv?wsSecret=074bfadec907090ac1bf364bdbbd9830&wsABSTime=1787023520
 
 #EXTINF:0,FC Siauliai vs FK Panevezys lúc 22:00 ngày 17/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
@@ -1297,11 +1048,15 @@ https://live2.livefeedtextbox.com/live/channel28.flv
 
 #EXTINF:0,FC Siauliai vs FK Panevezys lúc 22:00 ngày 17/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel28.flv?wsSecret=8dec402bd8a6a94317e909ed3a9aefe3&wsABSTime=1787019945
+https://live1.quickscoreboardz.com/live/channel28.flv?wsSecret=ae72fc7e8970752114dc8e5307ec8711&wsABSTime=1787023519
+
+#EXTINF:0,FK Auda Riga vs Grobina lúc 22:00 ngày 17/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+https://live2.livefeedtextbox.com/live/channel13.flv
 
 #EXTINF:0,FK Auda Riga vs Grobina lúc 22:00 ngày 17/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=1dc467039a9e3cc49c534fd1c3af0f84&wsABSTime=1787019945
+https://live1.quickscoreboardz.com/live/channel13.flv?wsSecret=3a288c19876c8ac83d33f62697d03082&wsABSTime=1787023519
 
 #EXTINF:0,Gnistan Helsinki vs Ilves Tampere lúc 22:00 ngày 17/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
@@ -1309,7 +1064,7 @@ https://live2.livefeedtextbox.com/live/channel19.flv
 
 #EXTINF:0,Gnistan Helsinki vs Ilves Tampere lúc 22:00 ngày 17/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=fe2eb095f4ae7e68b8747856efe767b5&wsABSTime=1787019945
+https://live1.quickscoreboardz.com/live/channel19.flv?wsSecret=9b5a72c2ec502b9207b8421a67e9dcd7&wsABSTime=1787023519
 
 #EXTINF:0,Nữ Bam Khatoon vs Nữ CSKA Pamir Dushanbe lúc 22:00 ngày 17/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
@@ -1317,15 +1072,7 @@ https://live2.livefeedtextbox.com/live/channel14.flv
 
 #EXTINF:0,Nữ Bam Khatoon vs Nữ CSKA Pamir Dushanbe lúc 22:00 ngày 17/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel14.flv?wsSecret=0a40a3d38d537a9d5019fa2e08339cdb&wsABSTime=1787019945
-
-#EXTINF:0,Nữ College Asian vs Nữ S\'Amuser lúc 19:00 ngày 17/08/2026 | Link 1 [FLV]
-#EXTGRP:FLV | OTT Player
-https://live2.livefeedtextbox.com/live/channel13.flv
-
-#EXTINF:0,Nữ College Asian vs Nữ S\'Amuser lúc 19:00 ngày 17/08/2026 | Link 2 [FLV]
-#EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel87.flv?wsSecret=bf03bee3be886d82013522bdf8c8a758&wsABSTime=1787019945
+https://live2.deliverfluxlive.com/livecdn/channel-14.flv?auth_key=3000001786980319-0-0-d6808c45e0387491b00f4ae8beb2d6df
 
 #EXTINF:0,Nữ Kaya FC vs Nữ Ilbirs Bishkek lúc 21:00 ngày 17/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
@@ -1333,7 +1080,7 @@ https://live2.livefeedtextbox.com/live/channel4.flv
 
 #EXTINF:0,Nữ Kaya FC vs Nữ Ilbirs Bishkek lúc 21:00 ngày 17/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=574c582138260a523945c59753c58db0&wsABSTime=1787019945
+https://live1.quickscoreboardz.com/live/channel4.flv?wsSecret=6c1998e4cb146bd25900773e59078ec0&wsABSTime=1787023518
 
 #EXTINF:0,Nữ Nasaf Qarshi vs Nữ Master 7 lúc 22:00 ngày 17/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
@@ -1341,7 +1088,15 @@ https://live2.livefeedtextbox.com/live/channel18.flv
 
 #EXTINF:0,Nữ Nasaf Qarshi vs Nữ Master 7 lúc 22:00 ngày 17/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=9e38367a6a0f9c0c43af114485d13ed3&wsABSTime=1787019946
+https://live1.quickscoreboardz.com/live/channel18.flv?wsSecret=c340fb818201b21afdbc7a6055b88e49&wsABSTime=1787023519
+
+#EXTINF:0,Pisa vs Empoli lúc 23:00 ngày 17/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+https://live2.livefeedtextbox.com/live/channel1.flv
+
+#EXTINF:0,Pisa vs Empoli lúc 23:00 ngày 17/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+https://live2.deliverfluxlive.com/livecdn/channel-1.flv?auth_key=3000001786980320-0-0-092111b6fdf1334c0a94a5c347c7c135
 
 #EXTINF:0,Qarabag vs Shamakhi FK lúc 22:30 ngày 17/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
@@ -1349,7 +1104,15 @@ https://live2.livefeedtextbox.com/live/channel23.flv
 
 #EXTINF:0,Qarabag vs Shamakhi FK lúc 22:30 ngày 17/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel23.flv?wsSecret=baa696763ba43aceb3c430791b3ea972&wsABSTime=1787019946
+https://live1.quickscoreboardz.com/live/channel23.flv?wsSecret=0a8c1559ed2b5b086dbb5f7c629c11be&wsABSTime=1787023520
+
+#EXTINF:0,Spartak Varna vs FK Septemvri Sofia lúc 23:00 ngày 17/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+https://live2.livefeedtextbox.com/live/channel16.flv
+
+#EXTINF:0,Spartak Varna vs FK Septemvri Sofia lúc 23:00 ngày 17/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+https://live2.deliverfluxlive.com/livecdn/channel-16.flv?auth_key=3000001786980320-0-0-b0ebcb7bec5f12a8e67d1760fc618a67
 
 #EXTINF:0,Universitatea Cluj vs FC UT Arad lúc 22:30 ngày 17/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
@@ -1357,10 +1120,7 @@ https://live2.livefeedtextbox.com/live/channel17.flv
 
 #EXTINF:0,Universitatea Cluj vs FC UT Arad lúc 22:30 ngày 17/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=0d4d29cacdf165241eb55c67c976b4e4&wsABSTime=1787019946
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=None&time=20%3A00+17%2F08" group-title="GIỜ VÀNG TV",20:00 17/08 Dutch Poker Classics vs NLH Main Event Finale Table (Số 7) [hls]
-https://eqr2hdarxfliv.vcdn.cloud/1786951799_hd/1786951799_hd@720p.m3u8
+https://live1.quickscoreboardz.com/live/channel17.flv?wsSecret=fab7cd946f3439efa03769998ff5713f&wsABSTime=1787023519
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimages.keovip88.net%2Fimages%2Fteams%2Fpolissya-zhytomyr.png&time=22%3A00+17%2F08" group-title="GIỜ VÀNG TV",22:00 17/08 Polissya Zhytomyr vs Zorya (blv-leo) [hls]
 https://freem3u.xyz/static/no-signal/low.m3u8
@@ -1583,12 +1343,6 @@ https://live.inplyr.com/room/356042.m3u8
 #EXTVLCOPT:http-referrer=https://socolivep.cv/
 https://live.inplyr.com/room/558264.m3u8
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260815/d8529cef7155abe4801e37a2af817dc6.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 21:00 17/08 Bahrain U18 vs Syria U18 (BLV A CHÈ)
-https://pull.niur.live/live/stream-356042_lhd.m3u8?txSecret=d5e8733cd6a590fb6584d6020c886776&txTime=6a836cf0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260815/d8529cef7155abe4801e37a2af817dc6.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 21:00 17/08 Bahrain U18 vs Syria U18 (BLV HUNTER)
-https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=2190fa5435c7a821ce75860e3c1c3fce&txTime=6a836cf0
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260814%2F093d39406544fa1eb75014434017beae.png&time=22%3A00+17%2F08" group-title="SOCOLIVE TV",22:00 17/08 Gnistan Helsinki vs Ilves Tampere (A BỆU) [geo]
 #EXTVLCOPT:http-referrer=https://socolivep.cv/
 https://live.inplyr.com/room/484845.m3u8
@@ -1620,30 +1374,6 @@ https://live.inplyr.com/room/139384.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260814%2F264690a0f1a04a756c8095194141afea.png&time=22%3A00+17%2F08" group-title="SOCOLIVE TV",22:00 17/08 Siauliai vs FK Panevezys (PEANUT) [geo]
 #EXTVLCOPT:http-referrer=https://socolivep.cv/
 https://live.inplyr.com/room/620084.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/093d39406544fa1eb75014434017beae.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:00 17/08 Gnistan Helsinki vs Ilves Tampere (BLV A BỆU)
-https://pull.niur.live/live/stream-484845_lhd.m3u8?txSecret=293eeff3d130eafd377c03d8ac34c905&txTime=6a825ec4
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/093d39406544fa1eb75014434017beae.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:00 17/08 Gnistan Helsinki vs Ilves Tampere (BLV BLV GIÓ)
-https://pull.niur.live/live/stream-321443_lhd.m3u8?txSecret=21b13611f8916606b9a3596541b5c14d&txTime=6a825f3f
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/093d39406544fa1eb75014434017beae.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:00 17/08 Gnistan Helsinki vs Ilves Tampere (BLV BLV TOMIA)
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1786938312-0-0-727c273cd3afae3e43739455d3c494d7
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/093d39406544fa1eb75014434017beae.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:00 17/08 Gnistan Helsinki vs Ilves Tampere (BLV CR Bưởi)
-https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=4f6473f7dd56c98c5e06d787d1a38226&txTime=6a82e65d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/093d39406544fa1eb75014434017beae.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:00 17/08 Gnistan Helsinki vs Ilves Tampere (BLV THOMAS)
-https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=3d57e006875ae8688e9f402a9165b079&txTime=6a836cf0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/093d39406544fa1eb75014434017beae.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:00 17/08 Gnistan Helsinki vs Ilves Tampere (BLV ZIDANE)
-https://pull.niur.live/live/stream-9912060_lhd.m3u8?txSecret=860965b54a61af285c9d9313e2d58feb&txTime=6a82ed78
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/264690a0f1a04a756c8095194141afea.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:00 17/08 Siauliai vs FK Panevezys (BLV BLV RÔSI)
-https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=4256f4fe2f6c3bb4104d6b82e108bb1e&txTime=6a836ccd
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/264690a0f1a04a756c8095194141afea.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:00 17/08 Siauliai vs FK Panevezys (BLV PEANUT)
-https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1786910259-0-0-bcdb30cd0b6c87631180f4a2eaabe941
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260814%2Fe8140054c4829062771e735c302ed241.png&time=22%3A30+17%2F08" group-title="SOCOLIVE TV",22:30 17/08 FC Universitatea Cluj vs FC UT Arad (BLV ALEX) [geo]
 #EXTVLCOPT:http-referrer=https://socolivep.cv/
@@ -1684,36 +1414,6 @@ https://live.inplyr.com/room/622240.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260814%2Fc2bd0cfdb382888c9a1231da44a5b5a6.png&time=22%3A30+17%2F08" group-title="SOCOLIVE TV",22:30 17/08 Qarabag vs Shamakhi FK (KENCHU) [geo]
 #EXTVLCOPT:http-referrer=https://socolivep.cv/
 https://live.inplyr.com/room/622602.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/e8140054c4829062771e735c302ed241.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 FC Universitatea Cluj vs FC UT Arad (BLV BLV ALEX)
-https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1786909803-0-0-08995da9bd8ca880035132418b415fe5
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/e8140054c4829062771e735c302ed241.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 FC Universitatea Cluj vs FC UT Arad (BLV BLV BÉO)
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=c8727b74553e3b0ee3a5251f91b3f413&txTime=6a823edf
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/e8140054c4829062771e735c302ed241.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 FC Universitatea Cluj vs FC UT Arad (BLV BLV FIREMAN)
-https://pull.niur.live/live/stream-991140_lhd.m3u8?txSecret=6299a37fd928a41961317d30d464af14&txTime=6a827719
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/e8140054c4829062771e735c302ed241.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 FC Universitatea Cluj vs FC UT Arad (BLV BLV KAN)
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=6b468590bf1003f072de53964bdd4a83&txTime=6a8184aa
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/e8140054c4829062771e735c302ed241.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 FC Universitatea Cluj vs FC UT Arad (BLV BLV LONG)
-https://pull.niur.live/live/stream-9912117_lhd.m3u8?txSecret=75604a3186cecf44a41a0807f304714b&txTime=6a82758a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/e8140054c4829062771e735c302ed241.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 FC Universitatea Cluj vs FC UT Arad (BLV LÃO LÂM)
-https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1786917066-0-0-369df10042218bbc5b4f8bb268ae7102
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/c2bd0cfdb382888c9a1231da44a5b5a6.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 Qarabag vs Shamakhi FK (BLV BLV ENZO)
-https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1786945321-0-0-c27de444d6789d4d33c0a545bd5d3443
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/c2bd0cfdb382888c9a1231da44a5b5a6.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 Qarabag vs Shamakhi FK (BLV BLV RYO)
-https://pull.niur.live/live/stream-602019_lhd.m3u8?txSecret=de965b8f31f7411fce350754017228b7&txTime=6a825f61
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/c2bd0cfdb382888c9a1231da44a5b5a6.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 Qarabag vs Shamakhi FK (BLV CURRY)
-https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1786909949-0-0-f52819a566d683a42be18beb1762dd17
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260814/c2bd0cfdb382888c9a1231da44a5b5a6.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:30 17/08 Qarabag vs Shamakhi FK (BLV KENCHU)
-https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1786979631-0-0-7cc24b748f732a84313eb83559e0bd6e
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260814%2F9cf2ecc3c52300bc3be87b557c956ba5.png&time=23%3A00+17%2F08" group-title="SOCOLIVE TV",23:00 17/08 Al-Anwar Club vs Al Ahli SC (BLV ANH TÀI) [geo]
 #EXTVLCOPT:http-referrer=https://socolivep.cv/
@@ -1807,526 +1507,20 @@ https://live.inplyr.com/room/619561.m3u8
 #EXTVLCOPT:http-referrer=https://socolivep.cv/
 https://live.inplyr.com/room/610518.m3u8
 
-#EXTINF:-1 tvg-id="" group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://ip-tv.dev/images/ico/bein-sport-1.png",BeIN Sport 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562828&extension=ts&play_token=EEB56vdGPc
-
-#EXTINF:-1 tvg-id="" group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://ip-tv.dev/images/ico/bein-sport-2.png",BeIN Sport 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562827&extension=ts&play_token=Xg5LZ9WvtZ
-
-#EXTINF:-1 tvg-id="" group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://ip-tv.dev/images/ico/bein-sport-3.png",BeIN Sport 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562826&extension=ts&play_token=8RElLEnwpX
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/bein-sports-1.png", Bein Sports 1
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/12554
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/bein-sports-2.png", Bein Sports 2
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/12553
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 1
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941442&extension=ts&play_token=6sw55uPREH
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 10
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941470&extension=ts&play_token=2SQs9dSZmM
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 11
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941471&extension=ts&play_token=ReuCTADsrG
-
-#EXTINF:-1 tvg-logo="https://cdn.livesoccertv.com/images/channels/thumbnails/canalplus-live-12.png" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 12
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941472&extension=ts&play_token=3EM8alU2An
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 2
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941443&extension=ts&play_token=BO2CiGVxUy
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 3
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941444&extension=ts&play_token=lWRMv4h4G6
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 4
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941444&extension=ts&play_token=T8Adfmt7Vu
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 5
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941446&extension=ts&play_token=onKUvLJ1FX
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 6
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941447&extension=ts&play_token=VmOfMyrDfy
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 7
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941449&extension=ts&play_token=uUpqkgtfue
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 8
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941468&extension=ts&play_token=oLegwjYDD5
-
-#EXTINF:-1 tvg-logo="https://s1.dmcdn.net/v/JjNMw1Z-Js5kwK7KN/x720" group-title="THỂ THAO QUỐC TẾ",CANAL+ LIVE 9
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=941470&extension=ts&play_token=10cpSzSEsB
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/cbs-sports-network.png", CBS Sports Network
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/15944
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/eb/Canal%2BFoot.png" group-title="THỂ THAO QUỐC TẾ",Canal+ Foot
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=941405&extension=ts&play_token=ODWyLygMWo
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1a/Canal%2B_Sport_2015.png" group-title="THỂ THAO QUỐC TẾ",Canal+ Sport
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=958758&extension=ts&play_token=MskDtCSrpn
-
-#EXTINF:-1 tvg-name="DAZN 1" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png" group-title="THỂ THAO QUỐC TẾ",DAZN 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1695109&extension=ts&play_token=t0j93etvkP
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/dazn-1.png", DAZN 1 FHD
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/48443
-
-#EXTINF:-1 tvg-name="DAZN 2" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png" group-title="THỂ THAO QUỐC TẾ",DAZN 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1695108&extension=ts&play_token=aYsWHS4Gig
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/dazn-2.png", DAZN 2 FHD
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/48444
-
-#EXTINF:-1 tvg-name="DAZN 3" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png" group-title="THỂ THAO QUỐC TẾ",DAZN 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1695107&extension=ts&play_token=pypVacFvth
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/dazn-3.png", DAZN 3 FHD
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/48445
-
-#EXTINF:-1 tvg-name="DAZN 4" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png" group-title="THỂ THAO QUỐC TẾ",DAZN 4
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1695106&extension=ts&play_token=ekXWJ9x2vA
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/dazn-4.png", DAZN 4 FHD
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/48446
-
-#EXTINF:-1 tvg-name="DAZN 5" tvg-logo="http://51.158.145.100/picons/logos/PPV/DAZN.png" group-title="THỂ THAO QUỐC TẾ",DAZN 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1695105&extension=ts&play_token=qdjNMuk8Hy
-
-#EXTINF:-1 tvg-id="1683616" tvg-name="DAZN F1" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/6574.jpg?48196" group-title="THỂ THAO QUỐC TẾ",DAZN F1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0D3EF042F2D3E57DBB30B1C58FD91B38
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1683616&extension=ts&play_token=qmdLPSRtTw
-
-#EXTINF:-1 tvg-id="1683618" tvg-name="DAZN LA LIGA" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/10145.jpg?78386" group-title="THỂ THAO QUỐC TẾ" tvg-chno="14530",DAZN LA LIGA
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0D3EF042F2D3E57DBB30B1C58FD91B38
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1683618&extension=ts&play_token=8zwJKn0VRG
-
-#EXTINF:-1 tvg-name="Diema Sport 2 HD" tvg-logo="http://photo-tmdb.com/stalker_portal/logos/diemasport2hd.png" group-title="THỂ THAO QUỐC TẾ",Diema Sport 2 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 71A8164DEF77336477A332C505001E8E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562902&extension=ts&play_token=Yb4llqYu1C
-
-#EXTINF:-1 tvg-name="Diema Sport 3 HD" tvg-logo="http://51.158.145.100/picons/logos/logos/1457953.png" group-title="THỂ THAO QUỐC TẾ",Diema Sport 3 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 71A8164DEF77336477A332C505001E8E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562901&extension=ts&play_token=htjUFgoXc2
-
-#EXTINF:-1 tvg-name="Diema Sport HD" tvg-logo="http://51.158.145.100/picons/logos/logos/154827.png" group-title="THỂ THAO QUỐC TẾ",Diema Sport HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 71A8164DEF77336477A332C505001E8E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562903&extension=ts&play_token=P39oJDdHXB
-
-#EXTINF:-1 tvg-id="" group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://i.imgur.com/AOu4FXH.png",Eleven Sport 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 71A8164DEF77336477A332C505001E8E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562589&extension=ts&play_token=zOBguQkAJa
-
-#EXTINF:-1 tvg-id="" group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://i.imgur.com/bTIRgqG.png",Eleven Sport 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 71A8164DEF77336477A332C505001E8E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562588&extension=ts&play_token=n1H7kjNCKy
-
-#EXTINF:-1 tvg-id="" group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://i.imgur.com/bWjGol4.png",Eleven Sport 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 71A8164DEF77336477A332C505001E8E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562587&extension=ts&play_token=NOWAI2rZ2V
-
-#EXTINF:-1 tvg-id="" group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://i.imgur.com/SEKXaAW.png",Eleven Sport 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 71A8164DEF77336477A332C505001E8E
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562586&extension=ts&play_token=xVB5nRiMzR
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/37/Eurosport1hd.png" group-title="THỂ THAO QUỐC TẾ",Eurosport 1
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=933004&extension=ts&play_token=jtuDUMdLno
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Eurosport2hd.png" group-title="THỂ THAO QUỐC TẾ",Eurosport 2
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=933003&extension=ts&play_token=OIqiUqIbWW
-
-#EXTINF:-1 tvg-id="1968709" tvg-name="HUB PREMIER 1" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15066.png?26106" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2615",HUB PREMIER 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968709&extension=ts&play_token=WUdAWyal8k
-
-#EXTINF:-1 tvg-id="1968700" tvg-name="HUB PREMIER 10" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15075.png?48545" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2624",HUB PREMIER 10
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968700&extension=ts&play_token=A5EH6VL7Wl
-
-#EXTINF:-1 tvg-id="1968699" tvg-name="HUB PREMIER 11" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15076.png?95198" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2625",HUB PREMIER 11
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968699&extension=ts&play_token=Qr5IueAcub
-
-#EXTINF:-1 tvg-id="1968708" tvg-name="HUB PREMIER 2" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15067.png?97755" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2616",HUB PREMIER 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968708&extension=ts&play_token=xEtdfonMTH
-
-#EXTINF:-1 tvg-id="1968707" tvg-name="HUB PREMIER 3" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15068.png?32652" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2617",HUB PREMIER 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968707&extension=ts&play_token=OmP98n79pR
-
-#EXTINF:-1 tvg-id="1968706" tvg-name="HUB PREMIER 4" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15069.png?81417" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2618",HUB PREMIER 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968706&extension=ts&play_token=MXk9RBe1qC
-
-#EXTINF:-1 tvg-id="1968705" tvg-name="HUB PREMIER 5" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15070.png?54185" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2619",HUB PREMIER 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968705&extension=ts&play_token=od9bEPfeAh
-
-#EXTINF:-1 tvg-id="1968704" tvg-name="HUB PREMIER 6" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15071.png?35769" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2620",HUB PREMIER 6
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968704&extension=ts&play_token=R339vAGsQ8
-
-#EXTINF:-1 tvg-id="1968703" tvg-name="HUB PREMIER 7" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15072.png?97857" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2621",HUB PREMIER 7
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968703&extension=ts&play_token=rzoeKEtXD3
-
-#EXTINF:-1 tvg-id="1968702" tvg-name="HUB PREMIER 8" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15073.png?39723" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2622",HUB PREMIER 8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968702&extension=ts&play_token=XeznA2lUdp
-
-#EXTINF:-1 tvg-id="1968701" tvg-name="HUB PREMIER 9" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/15074.png?76475" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2623",HUB PREMIER 9
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1968701&extension=ts&play_token=44MCZVCjWO
-
-#EXTINF:-1 tvg-id="1954594" tvg-name="M+ LALIGA TV" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/8160.png?45398" group-title="THỂ THAO QUỐC TẾ" tvg-chno="14055",M+ LALIGA TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0D3EF042F2D3E57DBB30B1C58FD91B38
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1954594&extension=ts&play_token=o7VAQXpaRq
-
-#EXTINF:-1 tvg-id="1954593" tvg-name="M+ LALIGA TV 2" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/8160.png?45398" group-title="THỂ THAO QUỐC TẾ" tvg-chno="14056",M+ LALIGA TV 2
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1954593&extension=ts&play_token=rGVc5gRtqZ
-
-#EXTINF:-1 tvg-id="1954592" tvg-name="M+ LALIGA TV 3" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/8160.png?45398" group-title="THỂ THAO QUỐC TẾ" tvg-chno="14057",M+ LALIGA TV 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1954592&extension=ts&play_token=xAXkIMtGTB
-
-#EXTINF:-1 tvg-id="1954591" tvg-name="M+ LALIGA TV 4" tvg-logo="https://photo-tmdb.com/stalker_portal/misc/logos/320/8160.png?45398" group-title="THỂ THAO QUỐC TẾ" tvg-chno="14058",M+ LALIGA TV 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer C0946A4F97309D913C2C3125833B2529
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1954591&extension=ts&play_token=ruT4hBqlJ6
-
-#EXTINF:-1 tvg-logo="https://m.media-amazon.com/images/I/611NwkDJjOL.png" group-title="THỂ THAO QUỐC TẾ",MUTV
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1312824&extension=ts&play_token=3ouilCRXf9
-
-#EXTINF:-1 tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/er6tz11641505761.png" group-title="THỂ THAO QUỐC TẾ",Max Sport 1 HD
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=228727&extension=ts&play_token=mwh0b4DmEo
-
-#EXTINF:-1 tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/8qhlj81641505795.png" group-title="THỂ THAO QUỐC TẾ",Max Sport 2 HD
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=228726&extension=ts&play_token=1WFblY6SIm
-
-#EXTINF:-1 tvg-logo="https://msatcable.com/wp-content/uploads/2023/05/xoceudhlccd61ha1z10u8orii5.png" group-title="THỂ THAO QUỐC TẾ",Max Sport 4 HD
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=228724&extension=ts&play_token=TJrfSv76Xi
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Polsat_Sport_1_2024.svg/250px-Polsat_Sport_1_2024.svg.png" group-title="THỂ THAO QUỐC TẾ",Polsat Sport 1
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=1729162&extension=ts&play_token=9JXfYd9pyq
-
-#EXTINF:-1 tvg-logo="https://ipla-e2-42.pluscdn.pl/p/cms_thumbnails/qx/qxn4b9d2175hjjvvy4ehpa92nztaynba.png" group-title="THỂ THAO QUỐC TẾ",Polsat Sport 2
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=1729164&extension=ts&play_token=vFbihF9Rmr
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Polsat_Sport_3_2024.svg/250px-Polsat_Sport_3_2024.svg.png" group-title="THỂ THAO QUỐC TẾ",Polsat Sport 3
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=1729168&extension=ts&play_token=ThvjYQPppG
-
-#EXTINF:-1 tvg-logo="https://r2.thesportsdb.com/images/media/channel/logo/p5csyn1620551587.png" group-title="THỂ THAO QUỐC TẾ",Sky Sport F1
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=1149423&extension=ts&play_token=1jkVQWGCqc
-
-#EXTINF:-1 tvg-logo="https://e0.365dm.com/24/01/2048x1152/skysports-sky-sports-tennis_6437040.jpg" group-title="THỂ THAO QUỐC TẾ",Sky Sport Tennis
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=1149433&extension=ts&play_token=Y1kv3yxPS8
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/sky-sports-football.png", Sky Sports Football FHD
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47866
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/sky-sports-main-event.png", Sky Sports Main Event FHD
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47868
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/sky-sports-premier-league.png", Sky Sports Premier League FHD
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47871
-
-#EXTINF:-1 tvg-name="TABII SPORT HD" tvg-logo="http://picon.tivi-ott.net:25461/picon.png" group-title="THỂ THAO QUỐC TẾ",TABII SPORT HD
-http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=894999&extension=ts
-
-#EXTINF:-1 tvg-logo="https://media.info/l/o/1/1539.1690027797.png" group-title="THỂ THAO QUỐC TẾ",TNT Sports 1 4Mbps for 4G
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=894977&extension=ts&play_token=W2HvDO5iES
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/tnt-sports-1.png", TNT Sports 1 a
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47850
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/tnt-sports-1.png", TNT Sports 1 b
-http://11374b1a.edemist.com/iptv/2SXSBE6GL5QXEU/6566/index.m3u8
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/tnt-sports-1.png", TNT Sports 1 c
-http://11374b1a.edemist.com/iptv/2SXSBE6GL5QXEU/2505/index.m3u8
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/tnt-sports-2.png", TNT Sports 2
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47851
-
-#EXTINF:-1 tvg-logo="https://media.info/l/o/1/1540.1690027877.png" group-title="THỂ THAO QUỐC TẾ",TNT Sports 2 4Mbps for 4G
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=1091517&extension=ts&play_token=zKzxFKTNmb
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/tnt-sports-3.png", TNT Sports 3
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47852
-
-#EXTINF:-1 tvg-logo="https://media.info/l/o/5/5712.1690027954.png" group-title="THỂ THAO QUỐC TẾ",TNT Sports 3 4Mbps for 4G
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=894979&extension=ts&play_token=RLLwKaJKqY
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/tnt-sports-4.png", TNT Sports 4
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/47853
-
-#EXTINF:-1 tvg-logo="https://media.info/l/o/1/1491.1690027975.png" group-title="THỂ THAO QUỐC TẾ",TNT Sports 4 4Mbps for 4G
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.watchtivo-8k.com:80/play/live.php?mac=00:1A:79:3F:0C:96&stream=894980&extension=ts&play_token=4ofwEIdTU4
-
-#EXTINF:-1 tvg-name="TRING SPORT 1 HD" tvg-logo="http://picon.tivi-ott.net:25461/picon.png" group-title="THỂ THAO QUỐC TẾ",TRING SPORT 1 HD
-http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=895006&extension=ts
-
-#EXTINF:-1 tvg-name="TRING SPORT 2 HD" tvg-logo="http://picon.tivi-ott.net:25461/picon.png" group-title="THỂ THAO QUỐC TẾ",TRING SPORT 2 HD
-http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=895007&extension=ts
-
-#EXTINF:-1 tvg-name="TRING SPORT 3 HD" tvg-logo="http://picon.tivi-ott.net:25461/picon.png" group-title="THỂ THAO QUỐC TẾ",TRING SPORT 3 HD
-http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=895008&extension=ts
-
-#EXTINF:-1 tvg-logo="https://television.com.ar/wp-content/uploads/2024/01/276279.jpg" group-title="THỂ THAO QUỐC TẾ",Tyc Sport Argentina
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1090606&extension=ts&play_token=UU20nTSWow
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ",UK - HUB PREMIER 01 FHD
-http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/324806.ts
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ",UK - HUB PREMIER 02 FHD
-http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/324807.ts
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ",UK - HUB PREMIER 03 FHD
-http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/324808.ts
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ",UK - HUB PREMIER 04 FHD
-http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/324809.ts
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://www.256fallowfield.co.uk/wp-content/uploads/2019/04/premier-sports-logo.png",UK | Premier Sport 1
-http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47858.m3u8
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://www.256fallowfield.co.uk/wp-content/uploads/2019/04/premier-sports-logo.png",UK | Premier Sport 2
-http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47859.m3u8
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/140/skychb1306.png",UK | Sky Sports F1
-http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47865.m3u8
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/140/skychb1322.png",UK | Sky Sports GOLF
-http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47867.m3u8
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/240/skychb4091.png",UK | Sky Sports Mix
-http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47869.m3u8
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/320/140/skychb1314.png",UK | Sky Sports News
-http://kstv.us:8080/live/jimmyrhale/JE1974aa$$/47870.m3u8
-
-#EXTINF:-1 group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://raw.githubusercontent.com/lamtung16/iptv/refs/heads/main/logos/usa-network.png", USA Network
-http://kstv.us:8080/jimmyrhale/JE1974aa$$/15905
-
-#EXTINF:-1 tvg-id="1562512" tvg-name="V SPORT FOOTBALL" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/10642.jpg?33626" group-title="THỂ THAO QUỐC TẾ" tvg-chno="2818",V SPORT FOOTBALL
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 0D3EF042F2D3E57DBB30B1C58FD91B38
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562512&extension=ts&play_token=GPfAiySAti
-
-#EXTINF:-1 tvg-id="641220" tvg-name="V SPORT ULTRA UHD" tvg-logo="http://photo-tmdb.com/stalker_portal/misc/logos/320/12976.jpg?19897" group-title="THỂ THAO QUỐC TẾ" tvg-chno="22066",V SPORT ULTRA UHD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:C1:AF:02; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
-http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=641220&extension=ts&play_token=pn3nksdeU2
-
-#EXTINF:-1 tvg-logo="https://tructiep-hd.club/public/favicon.ico" group-title="Tructiep-HD",Hang Yuan FC (w) vs No Limits (W) lúc 19:30 17/08/2026
+#EXTINF:-1 tvg-logo="https://tructiep-hd.club/public/favicon.ico" group-title="Tructiep-HD",Bossekop vs Tromso B lúc 21:00 17/08/2026
 #EXTVLCOPT:http-referrer=https://tructiep-hd.club/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.kinxie.com/live/14106048_d75e49382e28a5ecbbf3b1f2a4f3d465_autoChange.m3u8?auth_key=1786987500-0-0-d90f0402f79bc0d14af1fbdb4876aabf
+https://live.kinxie.com/live/67920850_0ea80c691bf61494af9bb329ce61ebc4_autoChange.m3u8?auth_key=1786991383-0-0-3edb769c2e06c3058a38c939be4134a8
 
-#EXTINF:-1 tvg-logo="https://tructiep-hd.club/public/favicon.ico" group-title="Tructiep-HD",Huracan Women vs CA Independiente Women lúc 20:00 17/08/2026
+#EXTINF:-1 tvg-logo="https://tructiep-hd.club/public/favicon.ico" group-title="Tructiep-HD",Polissya Zhytomyr vs Zorya lúc 22:00 17/08/2026
 #EXTVLCOPT:http-referrer=https://tructiep-hd.club/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.kinxie.com/live/73669906_f000095fb42d7452a12bf1d03eb41f2d_autoChange.m3u8?auth_key=1786987499-0-0-03558641b540196197825a2bb65a5023
+https://live1.kinxie.com/live/72409642_70d2498679f33d66cfd8ac8dd9d3ccba_autoChange.m3u8?auth_key=1786993428-0-0-e61abffa12408eca8b2a6c6eff02eb3a
 
-#EXTINF:-1 tvg-logo="https://tructiep-hd.club/public/favicon.ico" group-title="Tructiep-HD",Molde B vs Rosenborg B lúc 20:00 17/08/2026
+#EXTINF:-1 tvg-logo="https://tructiep-hd.club/public/favicon.ico" group-title="Tructiep-HD",Social Atletico Television Women vs San Lorenzo Women lúc 21:00 17/08/2026
 #EXTVLCOPT:http-referrer=https://tructiep-hd.club/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.kinxie.com/live/67919804_56c3b3c434acfc7d794319d4e120643a_autoChange.m3u8?auth_key=1786987499-0-0-199a344c468684aa39293347973cd1e2
-
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dGohEWXz7Sk/maxresdefault.jpg" group-title="VTV",VTV1
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/VTV10.png" group-title="VTV",VTV10
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv10/live247-hls-avc/vtv10-avc1_5600000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/Logo/refs/heads/main/VTV2.jpg" group-title="VTV",VTV2
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv2/live247-hls-avc/vtv2-avc1_5600000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/4jr8Y13NSME/maxresdefault.jpg" group-title="VTV",VTV3
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv3/live247-hls-avc/vtv3-avc1_5600000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/Logo/refs/heads/main/VTV4.jpg" group-title="VTV",VTV4
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv4/live247-hls-avc/vtv4-avc1_5600000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/maxresdefault.jpg" group-title="VTV",VTV5 Tây Nam Bộ
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv5tnb/live-hls-avc/vtv5tnb-avc1_4000000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://s7730.cdn.mytvnet.vn/vimages/d4/46/61/1c/cf/f6/d461c-pvtv5tynguynhd-channel-unkn.png" group-title="VTV",VTV5 Tây Nguyên
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv5tn/live-hls-avc/vtv5tn-avc1_4000000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/Logo/refs/heads/main/VTV6.png" group-title="VTV",VTV6
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv6/live247-hls-avc/vtv6-avc1_5600000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/Logo/refs/heads/main/VTV7.png" group-title="VTV",VTV7
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv7/live247-hls-avc/vtv7-avc1_5600000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vtv8.jpg" group-title="VTV",VTV8
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv8/live-hls-avc/vtv8-avc1_4000000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/Logo/refs/heads/main/VTV9.png" group-title="VTV",VTV9
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vtv9/live247-hls-avc/vtv9-avc1_5600000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/VietnamToday.jpg" group-title="VTV",Vietnam Today
-#EXTVLCOPT:http-referrer=https://github.com/vuminhthanh12/vuminhthanh12
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/vietnamtoday-avc1_4000000=10000-mp4a_131600=20000.m3u8
+https://live1.kinxie.com/live/73669908_0aff23314a9fec9bfebd292e4514c3fd_autoChange.m3u8?auth_key=1786991383-0-0-c3531dfbb786dfbea97037cd2dbcab2d
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F8ad2a2e612382ffd08afd5ab57ebfcf1.png&time=00%3A00+18%2F08" group-title="Vua Sân Cỏ TV",00:00 18/08 Arka Gdynia vs Puszcza Niepolomice (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/dd99e021a2f8a9792e7eb54d607031b6/playlist.m3u8
@@ -2460,7 +1654,7 @@ https://cdn-global.ebaclofen.org/vsc/jonhny5/index.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F616bf242a532f72e970648f2ead423cf.png&time=23%3A30+17%2F08" group-title="Vua Sân Cỏ TV",23:30 17/08 Sassuolo vs Cesena (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/012cf86ded47ed7d9044d795c6aa9fbb/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/info_card.php?kind=clock&t=1786976644" group-title="TINHLAGI.PRO",Cập Nhật
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/info_card.php?kind=clock&t=1786980124" group-title="TINHLAGI.PRO",Cập Nhật
 https://tinhlagi.pro/logo.jpg
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fd1c0s7hi3ugzoc.cloudfront.net%2Fteams%2Fcremonese-10722&time=01%3A45+18%2F08" group-title="BIA ÔM TV",01:45 18/08 Cremonese vs Sampdoria (KEN) [hls]
