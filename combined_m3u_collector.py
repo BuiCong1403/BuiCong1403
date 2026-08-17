@@ -154,6 +154,7 @@ TV365_ERROR_M3U_URL = os.environ.get(
     "TV365_ERROR_M3U_URL",
     "https://raw.githubusercontent.com/TV365-VN/TV365-DATA/refs/heads/main/error.m3u",
 )
+TINHLAGI_SPORT_M3U_URL = os.environ.get("TINHLAGI_SPORT_M3U_URL", "https://tinhlagi.pro/s.m3u")
 SPORT_INTERNATIONAL_GROUP = "TH\u1ec2 THAO QU\u1ed0C T\u1ebe"
 FLV_OTT_GROUP = "FLV | OTT Player"
 FLV_OTT_USER_AGENT = (
@@ -599,6 +600,9 @@ def filter_current_and_future_events(channels):
     removed_by_date = 0
     removed_by_time = 0
     for channel in channels:
+        if channel.get("skip_event_filter"):
+            kept.append(channel)
+            continue
         event_dt = channel_event_datetime(channel)
         if event_dt and event_dt < cutoff:
             removed_by_time += 1
@@ -702,6 +706,7 @@ GROUP_CANONICAL_RULES = [
     ("Gi\u1edd V\u00e0ng TV", ("giovang", "gio vang", "gio vang tv")),
     ("Socolive TV", ("socolive", "soco live", "soco sport", "socosport")),
     (SPORT_INTERNATIONAL_GROUP, ("the thao quoc te", "thethaoquocte", "sport quoc te", "international sport")),
+    ("Vua S\u00e2n C\u1ecf TV", ("vua san co", "vuasanco", "vsc9")),
 ]
 
 
@@ -766,6 +771,8 @@ def normalize_channel_group(channel):
         channel["raw_options"] = raw_options
     elif channel.get("preserve_group_exact"):
         group = clean_text(channel.get("group") or channel.get("source") or "Unknown")
+        if "vuasanco" in compact_text_key(group):
+            group = "Vua S\u00e2n C\u1ecf TV"
     else:
         group = output_group(channel)
     channel["group"] = group
@@ -826,6 +833,16 @@ def verify_live_channels(channels):
     return unique
 
 
+def channel_priority(channel):
+    group = group_key(channel.get("group"))
+    source = clean_text(channel.get("source"))
+    if group == group_key("Sựu kiện"):
+        return 50
+    if source == "VMTTV":
+        return 10
+    return 0
+
+
 def dedupe_and_sort_channels(channels):
     deduped = []
     seen_urls = {}
@@ -839,7 +856,11 @@ def dedupe_and_sort_channels(channels):
             current = deduped[current_index]
             current_header_score = bool(clean_text(current.get("referer"))) + bool(clean_text(current.get("user_agent")))
             new_header_score = bool(clean_text(channel.get("referer"))) + bool(clean_text(channel.get("user_agent")))
-            if new_header_score > current_header_score:
+            current_priority = channel_priority(current)
+            new_priority = channel_priority(channel)
+            if new_priority > current_priority or (
+                new_priority == current_priority and new_header_score > current_header_score
+            ):
                 deduped[current_index] = channel
             continue
         seen_urls[url] = len(deduped)
@@ -1945,6 +1966,7 @@ def collect_vmttv():
             channel["group"] = "THỂ THAO QUỐC TẾ"
         elif channel_group_key in event_group_keys:
             channel["group"] = "Sựu kiện"
+            channel["skip_event_filter"] = True
     return channels
 
 
@@ -2187,7 +2209,11 @@ S8TV_TITLE_URL_RE = re.compile(
 )
 S8TV_PLACEHOLDER_RE = re.compile(r'\\"link_video_placeholder\\":\\"((?:\\\\.|[^\\"])*)\\"')
 S8TV_M3U8_RE = re.compile(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*")
-VSC9_M3U8_RE = re.compile(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*")
+VSC9_M3U8_RE = re.compile(
+    r"https?://(?:(?!https?://)[^\s'\"<>{}\\,\]])+?\.m3u8"
+    r"(?:\?(?:(?!https?://)[^\s'\"<>{}\\,\]])*)?",
+    re.I,
+)
 VSC9_TIME_RE = re.compile(r"(\d{1,2}:\d{2}\s+\d{1,2}/\d{1,2})")
 
 
@@ -2196,6 +2222,26 @@ def decode_json_string(value):
         return json.loads(f'"{value}"')
     except Exception:
         return value.replace("\\/", "/").replace('\\"', '"')
+
+
+def extract_vsc9_m3u8_urls(text):
+    text = html.unescape(decode_json_string(clean_text(text)))
+    urls = []
+    seen = set()
+    for match in VSC9_M3U8_RE.finditer(text):
+        url = clean_text(match.group(0)).rstrip(".,);]")
+        if is_valid_stream_url(url) and url not in seen:
+            seen.add(url)
+            urls.append(url)
+
+    url_set = set(urls)
+    preferred = []
+    for url in urls:
+        master_url = re.sub(r"/ffmpeg_index_\d+\.m3u8(?:\?.*)?$", "/master.m3u8", url, flags=re.I)
+        if master_url != url and master_url in url_set:
+            continue
+        preferred.append(url)
+    return preferred
 
 
 def title_from_stream_url(url, prefix):
@@ -2708,12 +2754,11 @@ def collect_vsc9():
 
     channels = []
     seen_urls = set()
-    for raw_url in VSC9_M3U8_RE.findall(html_text):
-        stream_url = clean_text(decode_json_string(raw_url))
+    for stream_url in extract_vsc9_m3u8_urls(html_text):
         if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
             continue
         seen_urls.add(stream_url)
-        title, time_label = vsc9_title_from_context(html_text, raw_url)
+        title, time_label = vsc9_title_from_context(html_text, stream_url)
         group = "Vua San Co TV"
         if time_label:
             group = f"{group} | {time_label}"
@@ -3063,7 +3108,7 @@ def main():
             "TinhLaGi",
             lambda: collect_m3u_playlist(
                 "TinhLaGi",
-                "https://tinhlagi.pro/s.m3u",
+                TINHLAGI_SPORT_M3U_URL,
                 "Tinh La Gi",
                 preserve_group=True,
                 allow_non_m3u8=True,
