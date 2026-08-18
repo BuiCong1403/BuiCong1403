@@ -70,21 +70,26 @@ TIEULAMWC_REFERERS = [
     for item in os.environ.get("TIEULAMWC_REFERERS", "https://sv2.tieulam2.xyz/,https://sv2.tieulamwc.com/").split(",")
     if item.strip()
 ]
-GIOVANG_REFERER = os.environ.get("GIOVANG_REFERER", "https://giovang.store/")
+GIOVANG_REFERER = os.environ.get("GIOVANG_REFERER", "https://giovang.city/")
 GIOVANG_API_LIVE = os.environ.get(
     "GIOVANG_API_LIVE",
-    "https://live-api.keovip88.net/storage/livestream/live.json",
+    "https://live-api.keonhacaitp.one/storage/livestream/live.json",
 )
 GIOVANG_API_ALL = os.environ.get(
     "GIOVANG_API_ALL",
-    "https://live-api.keovip88.net/storage/livestream/all.json",
+    "https://live-api.keonhacaitp.one/storage/livestream/all.json",
 )
-GIOVANG_API_FIXTURES = os.environ.get("GIOVANG_API_FIXTURES", "https://live-api.keovip88.net/api/fixtures/")
+GIOVANG_API_FIXTURES = os.environ.get("GIOVANG_API_FIXTURES", "https://live-api.keonhacaitp.one/api/fixtures/")
+GIOVANG_OLD_API_LIVE = "https://live-api.keovip88.net/storage/livestream/live.json"
+GIOVANG_OLD_API_ALL = "https://live-api.keovip88.net/storage/livestream/all.json"
+GIOVANG_OLD_API_FIXTURES = "https://live-api.keovip88.net/api/fixtures/"
 GIOVANG_LIMIT = int(os.environ.get("GIOVANG_LIMIT", "300"))
 GIOVANG_FALLBACK_JSON_URL = os.environ.get(
     "GIOVANG_FALLBACK_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
 )
+PHAOHOA_API_BASE = (os.environ.get("PHAOHOA_API") or "https://phaohoa1.live").rstrip("/")
+PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://phaohoa.live").rstrip("/")
 CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", "https://choangtv21.com")
 CHOANG_API_URL = os.environ.get("CHOANG_API_URL", "https://api.choangtv21.com/matchSchedule/getList")
 CHOANG_DETAIL_URL = os.environ.get("CHOANG_DETAIL_URL", "https://api.choangtv21.com/matchSchedule/getDetail")
@@ -1174,19 +1179,27 @@ def collect_giovang_api():
         "Referer": GIOVANG_REFERER,
     }
     log(f"[{source}] Fetch API")
-    live_data = fetch_json_no_cache(GIOVANG_API_LIVE, headers=headers, timeout=30)
-    all_data = fetch_json_no_cache(GIOVANG_API_ALL, headers=headers, timeout=30)
-    live_items = live_data.get("response") if isinstance(live_data, dict) else []
-    all_items = all_data.get("response") if isinstance(all_data, dict) else []
+    api_sets = [
+        (GIOVANG_API_LIVE, GIOVANG_API_ALL, GIOVANG_API_FIXTURES),
+        (GIOVANG_OLD_API_LIVE, GIOVANG_OLD_API_ALL, GIOVANG_OLD_API_FIXTURES),
+    ]
     seen_fixtures = {}
-    for item in live_items or []:
-        fixture_id = clean_text(item.get("id") or item.get("fi"))
-        if fixture_id:
-            seen_fixtures[fixture_id] = item
-    for item in all_items or []:
-        fixture_id = clean_text(item.get("id") or item.get("fi"))
-        if fixture_id and fixture_id not in seen_fixtures:
-            seen_fixtures[fixture_id] = item
+    fixture_api_by_id = {}
+    for live_url, all_url, fixtures_url in api_sets:
+        live_data = fetch_json_no_cache(live_url, headers=headers, timeout=30)
+        all_data = fetch_json_no_cache(all_url, headers=headers, timeout=30)
+        live_items = live_data.get("response") if isinstance(live_data, dict) else []
+        all_items = all_data.get("response") if isinstance(all_data, dict) else []
+        for item in live_items or []:
+            fixture_id = clean_text(item.get("id") or item.get("fi"))
+            if fixture_id and fixture_id not in seen_fixtures:
+                seen_fixtures[fixture_id] = item
+                fixture_api_by_id[fixture_id] = fixtures_url
+        for item in all_items or []:
+            fixture_id = clean_text(item.get("id") or item.get("fi"))
+            if fixture_id and fixture_id not in seen_fixtures:
+                seen_fixtures[fixture_id] = item
+                fixture_api_by_id[fixture_id] = fixtures_url
     fixtures = list(seen_fixtures.values())
     if not fixtures:
         log(f"[{source}] Direct API empty, fallback grouped JSON")
@@ -1200,7 +1213,12 @@ def collect_giovang_api():
             continue
         if clean_text(item.get("status_code")).upper() == "FT":
             continue
-        detail = fetch_json_no_cache(urljoin(GIOVANG_API_FIXTURES.rstrip("/") + "/", fixture_id), headers=headers, timeout=20)
+        primary_fixtures_url = fixture_api_by_id.get(fixture_id) or GIOVANG_API_FIXTURES
+        detail = {}
+        for fixtures_url in dict.fromkeys([primary_fixtures_url, GIOVANG_API_FIXTURES, GIOVANG_OLD_API_FIXTURES]):
+            detail = fetch_json_no_cache(urljoin(fixtures_url.rstrip("/") + "/", fixture_id), headers=headers, timeout=20)
+            if isinstance(detail, dict) and detail.get("response"):
+                break
         match = detail.get("response") if isinstance(detail, dict) else {}
         if not isinstance(match, dict):
             continue
@@ -1246,6 +1264,108 @@ def collect_giovang_api():
     if not channels:
         log(f"[{source}] Direct API has no stream, fallback grouped JSON")
         return collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+PHAOHOA_STREAM_RE = re.compile(r"https://[^\"'\s<>]+?\.m3u8[^\"'\s<>]*", re.I)
+
+
+def decode_phaohoa_html(text):
+    return html.unescape(text or "").replace("\\u002F", "/").replace("\\/", "/")
+
+
+def is_slug_like(value):
+    value = clean_text(value)
+    return bool(re.search(r"[a-z0-9]+-[a-z0-9-]*", value)) and value.lower() == value
+
+
+def phaohoa_match_info_from_context(context):
+    strings = [clean_text(s) for s in re.findall(r'"([^"{}\[\],:]+)"', context)]
+    strings = [s for s in strings if s]
+
+    start_matches = re.findall(r'"(\d{4}-\d{2}-\d{2}T[^"]+)"', context)
+    event_datetime = parse_iso_to_ict_datetime(start_matches[-1]) if start_matches else None
+    time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
+
+    tail = strings
+    if "requires_token" in strings:
+        last_requires_token = len(strings) - 1 - strings[::-1].index("requires_token")
+        tail = strings[last_requires_token + 1:]
+    id_index = tail.index("id") if "id" in tail else len(tail)
+    match_segment = tail[:id_index]
+
+    name_pairs = []
+    for index, value in enumerate(match_segment[:-1]):
+        next_value = match_segment[index + 1]
+        if value.startswith("/") or next_value.startswith("/"):
+            continue
+        if " vs " in value.lower() or value.startswith(("http://", "https://")):
+            continue
+        if is_slug_like(next_value):
+            name_pairs.append(value)
+
+    home_name = name_pairs[-2] if len(name_pairs) >= 2 else ""
+    away_name = name_pairs[-1] if len(name_pairs) >= 1 else ""
+
+    blv_name = ""
+    if "is_live" in strings:
+        last_is_live = len(strings) - 1 - strings[::-1].index("is_live")
+        after_live = strings[last_is_live + 1:]
+        for value in after_live:
+            if value.startswith("/") or is_slug_like(value):
+                continue
+            if value in {"id", "name", "slug", "avatar_url", "sort_order", "chat_enabled"}:
+                continue
+            blv_name = value
+            break
+
+    return home_name, away_name, blv_name, time_label, event_datetime
+
+
+def collect_phaohoa():
+    source = "PhaoHoaTV"
+    log(f"[{source}] Fetch home")
+    headers = {
+        "User-Agent": UA,
+        "Accept": "text/html,application/xhtml+xml,*/*",
+        "Referer": PHAOHOA_FRONTEND_URL + "/",
+    }
+    try:
+        response = requests.get(PHAOHOA_API_BASE + "/", headers=headers, timeout=30)
+        html_text = decode_phaohoa_html(response.text)
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+
+    channels = []
+    seen_urls = set()
+    for match in PHAOHOA_STREAM_RE.finditer(html_text):
+        stream_url = clean_text(match.group(0)).rstrip(".,);]")
+        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+            continue
+        seen_urls.add(stream_url)
+        context = html_text[max(0, match.start() - 2600):match.start()]
+        home_name, away_name, blv_name, time_label, event_datetime = phaohoa_match_info_from_context(context)
+        if home_name and away_name:
+            name = f"[{time_label}] {home_name} vs {away_name}".strip()
+        else:
+            name = title_from_stream_url(stream_url, source)
+        if blv_name:
+            name = f"{name} | {blv_name}"
+        channels.append(
+            {
+                "source": source,
+                "name": name,
+                "group": "PhaoHoaTV",
+                "logo": PHAOHOA_API_BASE + "/images/logo.png",
+                "stream_url": stream_url,
+                "referer": PHAOHOA_API_BASE + "/",
+                "user_agent": UA,
+                "event_datetime": event_datetime,
+            }
+        )
+
     log(f"[{source}] {len(channels)} raw links")
     return channels
 
@@ -3121,6 +3241,7 @@ def main():
             ),
         ),
         ("GioVang", collect_giovang_api),
+        ("PhaoHoaTV", collect_phaohoa),
         ("ChoangTV", collect_choangtv_api),
         ("SocoliveTV", collect_socolive),
         (
