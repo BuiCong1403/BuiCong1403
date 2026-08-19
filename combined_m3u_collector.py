@@ -2224,6 +2224,259 @@ def collect_dekiki_sports():
     return channels
 
 
+def xoigac_headers(base_url, referer=None, accept="text/html,application/xhtml+xml,application/json,*/*"):
+    base_url = base_url.rstrip("/") + "/"
+    return {
+        "Accept": accept,
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def parse_xoigac_home_matches(html_text):
+    matches = []
+    seen_ids = set()
+    # The rendered page embeds flat JSON match objects. Keeping this parser small
+    # makes it resilient when the surrounding Next/Vite bundle changes.
+    pattern = r'\{[^{}]*"id"\s*:\s*\d+[^{}]*"homeTeam"\s*:[^{}]*"awayTeam"\s*:[^{}]*"matchDate"\s*:[^{}]*\}'
+    for raw_match in re.finditer(pattern, html_text or "", re.S):
+        raw = html.unescape(raw_match.group(0)).replace("\\/", "/")
+        try:
+            item = json.loads(raw)
+        except Exception:
+            continue
+        match_id = clean_text(item.get("id"))
+        if not match_id or match_id in seen_ids:
+            continue
+        seen_ids.add(match_id)
+        matches.append(item)
+        if len(matches) >= max(1, XOIGAC_LIMIT):
+            break
+    return matches
+
+
+def collect_xoigac():
+    source = "Xoigac"
+    base_url = XOIGAC_SITE_URL.rstrip("/") + "/"
+    log(f"[{source}] Fetch home")
+    try:
+        html_text = fetch_text(base_url, headers=xoigac_headers(base_url), timeout=30)
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+
+    matches = parse_xoigac_home_matches(html_text)
+    if not matches:
+        log(f"[{source}] 0 matches")
+        return []
+
+    channels = []
+    seen_urls = set()
+
+    def resolve(item):
+        match_id = clean_text(item.get("id"))
+        if not match_id:
+            return []
+        api_url = urljoin(base_url, f"api/stream/info/{match_id}")
+        try:
+            response = request_get_no_cache(
+                api_url,
+                headers=xoigac_headers(base_url, accept="application/json, text/plain, */*"),
+                timeout=20,
+            )
+            if response.status_code != 200:
+                return []
+            data = response.json()
+        except Exception:
+            return []
+        if not isinstance(data, dict) or data.get("success") is False:
+            return []
+        stream_url = clean_text(data.get("playbackUrl") or data.get("playUrl") or data.get("url"))
+        if not is_valid_stream_url(stream_url):
+            return []
+
+        home = clean_text(item.get("homeTeam"))
+        away = clean_text(item.get("awayTeam"))
+        title = " vs ".join(part for part in (home, away) if part) or f"Xoigac {match_id}"
+        league = clean_text(item.get("league"))
+        status = clean_text(item.get("status") or data.get("status"))
+        commentator = clean_text(item.get("streamerNickname"))
+        event_datetime = parse_iso_to_ict_datetime(item.get("matchDate"))
+        event_date = event_datetime.date() if event_datetime else None
+        time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
+        logo = clean_text(item.get("homeTeamLogo") or item.get("awayTeamLogo") or item.get("leagueLogo"))
+        if logo and not logo.startswith(("http://", "https://")):
+            logo = urljoin(base_url, logo)
+
+        suffix_bits = [bit for bit in (league, status, commentator) if bit]
+        suffix = f" | {' | '.join(suffix_bits)}" if suffix_bits else ""
+        name = f"{f'[{time_label}] ' if time_label else ''}{title}{suffix} [HLS]"
+        return [
+            {
+                "source": source,
+                "name": name,
+                "group": XOIGAC_GROUP,
+                "sport": detect_sport(league, title),
+                "logo": logo,
+                "stream_url": stream_url,
+                "referer": base_url,
+                "user_agent": UA,
+                "event_date": event_date,
+                "event_datetime": event_datetime,
+            }
+        ]
+
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(resolve, item) for item in matches]
+        for future in as_completed(futures):
+            try:
+                for channel in future.result():
+                    stream_url = channel.get("stream_url")
+                    if stream_url in seen_urls:
+                        continue
+                    seen_urls.add(stream_url)
+                    channels.append(channel)
+            except Exception:
+                continue
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+def mebong_headers(base_url, referer=None, accept="application/json, text/plain, */*"):
+    base_url = base_url.rstrip("/") + "/"
+    return {
+        "Accept": accept,
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def extract_mebong_embed_src(page_html):
+    patterns = [
+        r'<iframe[^>]+id=["\']iframe-stream["\'][^>]+src=["\']([^"\']+)',
+        r'src=["\']([^"\']*/?api/hls-embed\?[^"\']+)',
+        r'["\'](/api/hls-embed\?[^"\']+)',
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, page_html or "", re.I | re.S)
+        if match:
+            return html.unescape(match.group(1))
+    return ""
+
+
+def mebong_original_stream_url(embed_src):
+    parsed = urlparse(html.unescape(embed_src or ""))
+    query = parse_qs(parsed.query)
+    stream_values = query.get("u") or query.get("url")
+    if not stream_values:
+        match = re.search(r"[?&](?:u|url)=([^&\"']+)", embed_src or "")
+        if not match:
+            return ""
+        return clean_text(unquote(match.group(1)))
+    return clean_text(stream_values[0])
+
+
+def collect_mebongtv():
+    source = "MebongTV"
+    base_url = MEBONG_SITE_URL.rstrip("/") + "/"
+    api_url = urljoin(base_url, "api/home-matches")
+    log(f"[{source}] Fetch home matches")
+    data = fetch_json_no_cache(api_url, headers=mebong_headers(base_url), timeout=30)
+    matches = data.get("matches") if isinstance(data, dict) else []
+    if not isinstance(matches, list) or not matches:
+        log(f"[{source}] 0 matches")
+        return []
+
+    channels = []
+    seen_urls = set()
+
+    def resolve(item):
+        if not isinstance(item, dict):
+            return []
+        href = clean_text(item.get("href"))
+        if not href:
+            return []
+        detail_url = urljoin(base_url, href)
+        try:
+            page_html = fetch_text(
+                detail_url,
+                headers=mebong_headers(base_url, referer=base_url, accept="text/html,application/xhtml+xml,*/*"),
+                timeout=25,
+            )
+        except Exception:
+            return []
+
+        embed_src = extract_mebong_embed_src(page_html)
+        original_url = mebong_original_stream_url(embed_src)
+        if not is_valid_stream_url(original_url):
+            return []
+        proxy_url = urljoin(
+            base_url,
+            "api/hls-proxy?"
+            + urlencode(
+                {
+                    "u": original_url,
+                    "ua": MEBONG_PROXY_UA,
+                }
+            ),
+        )
+
+        title = clean_text(item.get("text"))
+        home = clean_text(item.get("home"))
+        away = clean_text(item.get("away"))
+        if not title:
+            title = " vs ".join(part for part in (home, away) if part) or "MebongTV"
+        league = clean_text(item.get("league"))
+        status = clean_text(item.get("status") or item.get("liveLabel") or item.get("matchStatus"))
+        commentator = clean_text(item.get("commentator"))
+        event_datetime = parse_epoch_to_ict_datetime(item.get("runtime"))
+        event_date = event_datetime.date() if event_datetime else date_from_text(item.get("timeLabel"))
+        time_label = clean_text(item.get("timeLabel")) or (event_datetime.strftime("%H:%M %d/%m") if event_datetime else "")
+        if time_label and title.startswith(time_label):
+            title = clean_text(title[len(time_label) :])
+        logo = clean_text(item.get("homeLogo") or item.get("awayLogo") or item.get("leagueLogo") or item.get("thumbnailUrl"))
+        if logo and not logo.startswith(("http://", "https://")):
+            logo = urljoin(base_url, logo)
+
+        suffix_bits = [bit for bit in (league, status, commentator) if bit]
+        suffix = f" | {' | '.join(suffix_bits)}" if suffix_bits else ""
+        name = f"{f'[{time_label}] ' if time_label else ''}{title}{suffix} [HLS]"
+        return [
+            {
+                "source": source,
+                "name": name,
+                "group": MEBONG_GROUP,
+                "sport": detect_sport(league, title),
+                "logo": logo,
+                "stream_url": proxy_url,
+                "referer": base_url,
+                "user_agent": UA,
+                "event_date": event_date,
+                "event_datetime": event_datetime,
+            }
+        ]
+
+    limited_matches = matches[: max(1, MEBONG_LIMIT)]
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(resolve, item) for item in limited_matches]
+        for future in as_completed(futures):
+            try:
+                for channel in future.result():
+                    stream_url = channel.get("stream_url")
+                    if stream_url in seen_urls:
+                        continue
+                    seen_urls.add(stream_url)
+                    channels.append(channel)
+            except Exception:
+                continue
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def xoilacz_actual_base_url():
     base_url = XOILACZ_SITE_URL.rstrip("/") + "/"
     try:
@@ -3476,6 +3729,8 @@ def main():
         ("DekikiSports", collect_dekiki_sports),
         ("CDNLive", collect_cdnlive),
         ("Tivihub", collect_tivihub),
+        ("Xoigac", collect_xoigac),
+        ("MebongTV", collect_mebongtv),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
         ("TructiepHD", collect_tructiep_hd),
