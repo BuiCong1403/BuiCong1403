@@ -60,9 +60,11 @@ BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv12.com/")
 LUONGSON_API_URL = os.environ.get("LUONGSON_API", "https://api-ls.cdnokvip.com/api/get-livestream-group")
 LUONGSON_MATCH_URL = os.environ.get("LUONGSON_MATCH", "https://api-ls.cdnokvip.com/api/match-detail?matchId=%s")
 SOCOLIVE_API_URL = os.environ.get("SOCOLIVE_API_URL", "https://json.vnres.co/matches.json?v=%d")
+SOCOLIVE_LIVE_ROOMS_URL = os.environ.get("SOCOLIVE_LIVE_ROOMS_URL", "https://json.vnres.co/all_live_rooms.json?v=%d")
 SOCOLIVE_MATCH_URL = os.environ.get("SOCOLIVE_MATCH_URL", "https://json.vnres.co/room/%s/detail.json?v=%d")
-SOCOLIVE_REFERER = os.environ.get("SOCOLIVE_REFERER", "https://socolive.best/")
+SOCOLIVE_REFERER = os.environ.get("SOCOLIVE_REFERER", "https://socoliveaus.co/")
 SOCOLIVE_LIMIT = int(os.environ.get("SOCOLIVE_LIMIT", "30"))
+SOCOLIVE_LIVE_ROOM_LIMIT = int(os.environ.get("SOCOLIVE_LIVE_ROOM_LIMIT", "80"))
 NAUXOI_API_BASE = os.environ.get("NAUXOI_API", "https://apixx.connect9nx.com/api")
 NAUXOI_SITE_URL = os.environ.get("NAUXOI_SITE", "https://nauxoi.fit/")
 TIEULAMWC_API_BASE = os.environ.get("TIEULAMWC_API", "https://api.tlap17062026.com")
@@ -1956,7 +1958,8 @@ def collect_socolive():
         matches = matches_data
 
     channels = []
-    seen_rooms = set()
+    room_candidates = []
+    seen_candidate_rooms = set()
     seen_urls = set()
     for match in matches[: max(1, SOCOLIVE_LIMIT)]:
         home_name = clean_text(match.get("hostName"))
@@ -1971,50 +1974,106 @@ def collect_socolive():
         for anchor_item in anchors:
             anchor_info = anchor_item.get("anchor") or {}
             room_num = clean_text(anchor_info.get("roomNum") or anchor_item.get("uid"))
-            if not room_num or room_num in seen_rooms:
+            if not room_num or room_num in seen_candidate_rooms:
                 continue
-            seen_rooms.add(room_num)
-            detail_url = SOCOLIVE_MATCH_URL % (room_num, int(time.time())) if "%s" in SOCOLIVE_MATCH_URL else SOCOLIVE_MATCH_URL
-            try:
-                detail_text = fetch_text(detail_url, headers=headers, timeout=20)
-            except Exception:
+            seen_candidate_rooms.add(room_num)
+            room_candidates.append(
+                {
+                    "room_num": room_num,
+                    "title": title,
+                    "league": league,
+                    "logo": logo,
+                    "time_label": time_label,
+                    "event_date": event_date,
+                    "event_datetime": event_datetime,
+                    "blv_name": clean_text(anchor_item.get("nickName")),
+                }
+            )
+
+    live_rooms_url = SOCOLIVE_LIVE_ROOMS_URL % int(time.time()) if "%d" in SOCOLIVE_LIVE_ROOMS_URL else SOCOLIVE_LIVE_ROOMS_URL
+    try:
+        live_rooms_text = fetch_text(live_rooms_url, headers=headers, timeout=30)
+        live_rooms_data = parse_jsonp(live_rooms_text, "all_live_rooms")
+    except Exception:
+        live_rooms_data = {}
+    live_rooms_root = (live_rooms_data.get("data") or {}) if isinstance(live_rooms_data, dict) else {}
+    live_room_count = 0
+    if isinstance(live_rooms_root, dict):
+        for rooms in live_rooms_root.values():
+            if not isinstance(rooms, list):
                 continue
-            detail = parse_jsonp(detail_text, "detail")
-            detail_data = (detail.get("data") or {}) if isinstance(detail, dict) else {}
-            room = detail_data.get("room") or {}
-            stream_data = detail_data.get("stream") or {}
-            blv_name = clean_text(anchor_item.get("nickName") or (room.get("anchor") or {}).get("nickName") or room.get("detail"))
-            stream_pairs = [
-                ("SD M3U8", stream_data.get("m3u8")),
-                ("HD M3U8", stream_data.get("hdM3u8")),
-                ("SD FLV", stream_data.get("flv")),
-                ("HD FLV", stream_data.get("hdFlv")),
-            ]
-            for quality, stream_url in stream_pairs:
-                stream_url = clean_text(stream_url)
-                if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+            for room in rooms:
+                room_num = clean_text(room.get("roomNum"))
+                if not room_num or room_num in seen_candidate_rooms:
                     continue
-                seen_urls.add(stream_url)
-                name_bits = []
-                if time_label:
-                    name_bits.append(f"[{time_label}]")
-                name_bits.append(title or clean_text(room.get("title")) or source)
-                if blv_name:
-                    name_bits.append(f"| BLV: {blv_name}")
-                name_bits.append(f"[{quality}]")
-                channels.append(
+                seen_candidate_rooms.add(room_num)
+                live_room_count += 1
+                room_candidates.append(
                     {
-                        "source": source,
-                        "name": " ".join(name_bits),
-                        "group": f"Socolive TV | {league}",
-                        "logo": logo or clean_text(room.get("cover") or room.get("customCoverUrl")),
-                        "stream_url": stream_url,
-                        "referer": SOCOLIVE_REFERER,
-                        "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
-                        "event_date": event_date,
-                        "event_datetime": event_datetime,
+                        "room_num": room_num,
+                        "title": clean_text(room.get("title") or room.get("detail") or room.get("notice")),
+                        "league": clean_text(room.get("title")).split(":", 1)[0] if ":" in clean_text(room.get("title")) else "Socolive TV",
+                        "logo": clean_text(room.get("cover") or room.get("customCoverUrl")),
+                        "time_label": "",
+                        "event_date": None,
+                        "event_datetime": None,
+                        "blv_name": clean_text((room.get("anchor") or {}).get("nickName") or room.get("detail")),
                     }
                 )
+                if live_room_count >= max(0, SOCOLIVE_LIVE_ROOM_LIMIT):
+                    break
+            if live_room_count >= max(0, SOCOLIVE_LIVE_ROOM_LIMIT):
+                break
+
+    for candidate in room_candidates:
+        room_num = candidate["room_num"]
+        detail_url = SOCOLIVE_MATCH_URL % (room_num, int(time.time())) if "%s" in SOCOLIVE_MATCH_URL else SOCOLIVE_MATCH_URL
+        try:
+            detail_text = fetch_text(detail_url, headers=headers, timeout=20)
+        except Exception:
+            continue
+        detail = parse_jsonp(detail_text, "detail")
+        detail_data = (detail.get("data") or {}) if isinstance(detail, dict) else {}
+        room = detail_data.get("room") or {}
+        stream_data = detail_data.get("stream") or {}
+        blv_name = clean_text(candidate.get("blv_name") or (room.get("anchor") or {}).get("nickName") or room.get("detail"))
+        title = clean_text(candidate.get("title") or room.get("title") or source)
+        league = clean_text(candidate.get("league") or "Socolive TV")
+        logo = clean_text(candidate.get("logo") or room.get("cover") or room.get("customCoverUrl"))
+        time_label = clean_text(candidate.get("time_label"))
+        event_date = candidate.get("event_date")
+        event_datetime = candidate.get("event_datetime")
+        stream_pairs = [
+            ("SD M3U8", stream_data.get("m3u8")),
+            ("HD M3U8", stream_data.get("hdM3u8")),
+            ("SD FLV", stream_data.get("flv")),
+            ("HD FLV", stream_data.get("hdFlv")),
+        ]
+        for quality, stream_url in stream_pairs:
+            stream_url = clean_text(stream_url)
+            if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+                continue
+            seen_urls.add(stream_url)
+            name_bits = []
+            if time_label:
+                name_bits.append(f"[{time_label}]")
+            name_bits.append(title or source)
+            if blv_name:
+                name_bits.append(f"| BLV: {blv_name}")
+            name_bits.append(f"[{quality}]")
+            channels.append(
+                {
+                    "source": source,
+                    "name": " ".join(name_bits),
+                    "group": f"Socolive TV | {league}",
+                    "logo": logo,
+                    "stream_url": stream_url,
+                    "referer": SOCOLIVE_REFERER,
+                    "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                    "event_date": event_date,
+                    "event_datetime": event_datetime,
+                }
+            )
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
