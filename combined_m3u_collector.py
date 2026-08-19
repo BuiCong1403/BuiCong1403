@@ -454,6 +454,18 @@ def parse_epoch_to_ict_datetime(value):
         return None
 
 
+def parse_utc_text_to_ict_datetime(value):
+    text = clean_text(value)
+    if not text:
+        return None
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d %H:%M"):
+        try:
+            return datetime.strptime(text, fmt).replace(tzinfo=timezone.utc).astimezone(TZ_VN)
+        except Exception:
+            pass
+    return parse_iso_to_ict_datetime(text)
+
+
 def date_from_text(value):
     text = clean_text(value)
     if not text:
@@ -3113,8 +3125,9 @@ def collect_cdnlive():
             event_title = clean_text(event.get("event"))
             start_text = clean_text(event.get("start") or event.get("time"))
             tournament = clean_text(event.get("tournament") or event.get("country"))
-            event_datetime = datetime_from_text(start_text)
+            event_datetime = parse_utc_text_to_ict_datetime(event.get("start")) or datetime_from_text(start_text)
             event_date = event_datetime.date() if event_datetime else date_from_text(start_text)
+            time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else start_text
             logo = clean_text(event.get("homeTeamIMG") or event.get("awayTeamIMG") or event.get("countryIMG"))
             for channel in event.get("channels") or []:
                 if not isinstance(channel, dict):
@@ -3128,6 +3141,7 @@ def collect_cdnlive():
                     {
                         "event_title": event_title,
                         "start_text": start_text,
+                        "time_label": time_label,
                         "tournament": tournament,
                         "sport_name": clean_text(sport_name),
                         "event_date": event_date,
@@ -3151,7 +3165,7 @@ def collect_cdnlive():
         stream_url = resolve_cdnlive_playlist(candidate["player_url"])
         if not stream_url:
             return None
-        start_prefix = f"[{candidate['start_text']}] " if candidate["start_text"] else ""
+        start_prefix = f"[{candidate['time_label']}] " if candidate["time_label"] else ""
         tournament_suffix = f" | {candidate['tournament']}" if candidate["tournament"] else ""
         return {
             "source": source,
@@ -3252,6 +3266,7 @@ def collect_tivihub():
         referer = clean_text(detail.get("referer")) or TIVIHUB_REFERER
         event_datetime = parse_epoch_to_ict_datetime(detail.get("timestamp") or detail.get("start_at") or match.get("timestamp"))
         event_date = event_datetime.date() if event_datetime else None
+        time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
         results = []
         for stream in detail.get("link_live") or []:
             if not isinstance(stream, dict):
@@ -3266,7 +3281,7 @@ def collect_tivihub():
             results.append(
                 {
                     "source": source,
-                    "name": f"{title} [{quality}]{suffix}",
+                    "name": f"{f'[{time_label}] ' if time_label else ''}{title} [{quality}]{suffix}",
                     "group": f"{TIVIHUB_GROUP_PREFIX} - {group_name}",
                     "sport": detect_sport(group_name, league, title),
                     "logo": logo,
