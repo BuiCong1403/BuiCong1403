@@ -30,6 +30,7 @@ except Exception:
 
 BASE_DIR = Path(__file__).resolve().parent
 ALL_M3U = BASE_DIR / "all.m3u"
+SPORT_M3U = BASE_DIR / "sport.m3u"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
@@ -143,6 +144,12 @@ CDNLIVE_REFERER = os.environ.get("CDNLIVE_REFERER", "https://cdnlivetv.tv/")
 CDNLIVE_GROUP = os.environ.get("CDNLIVE_GROUP", "CDNLive")
 CDNLIVE_LIMIT = int(os.environ.get("CDNLIVE_LIMIT", "80") or "80")
 CDNLIVE_WORKERS = int(os.environ.get("CDNLIVE_WORKERS", "12") or "12")
+TIVIHUB_M3U_URL = os.environ.get("TIVIHUB_M3U_URL", "https://api.tivihub.app/matches.m3u")
+TIVIHUB_API_BASE_URL = os.environ.get("TIVIHUB_API_BASE_URL", "https://api.tivihub.app/api/match/")
+TIVIHUB_GROUP_PREFIX = os.environ.get("TIVIHUB_GROUP_PREFIX", "Tivihub")
+TIVIHUB_REFERER = os.environ.get("TIVIHUB_REFERER", "https://iframe.rumsport8.live")
+TIVIHUB_LIMIT = int(os.environ.get("TIVIHUB_LIMIT", "200") or "200")
+TIVIHUB_WORKERS = int(os.environ.get("TIVIHUB_WORKERS", "12") or "12")
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.buzzscorelinez.com/")
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
@@ -166,6 +173,7 @@ FLV_OTT_USER_AGENT = (
     "Mozilla/5.0 (Linux; Android 10; Mobile) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
 )
+SPORT_M3U_SOURCES = {"CDNLive", "Tivihub"}
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -684,6 +692,7 @@ SPORT_SOURCES = {
     "S8TV",
     "TieuLamWC",
     "CDNLive",
+    "Tivihub",
 }
 
 SPORT_KEYWORDS = [
@@ -3173,6 +3182,117 @@ def collect_cdnlive():
     return channels
 
 
+def parse_tivihub_matches_m3u(text):
+    matches = []
+    current = {}
+    for raw_line in str(text or "").splitlines():
+        line = raw_line.strip()
+        if not line:
+            continue
+        if line.startswith("#EXTINF"):
+            attrs = dict(re.findall(r'([\w-]+)="([^"]*)"', line))
+            title = line.split(",", 1)[1].strip() if "," in line else attrs.get("match-name", "")
+            current = {
+                "id": clean_text(attrs.get("match-id") or attrs.get("tvg-id")),
+                "title": clean_text(title or attrs.get("match-name")),
+                "group": clean_text(attrs.get("group-title") or attrs.get("group")),
+                "status": clean_text(attrs.get("match-status")),
+                "league": clean_text(attrs.get("league-name")),
+                "timestamp": clean_text(attrs.get("match-timestamp")),
+                "logo": clean_text(attrs.get("localteam-logo") or attrs.get("visitorteam-logo")),
+            }
+            continue
+        if line.startswith("http") and current.get("id"):
+            matches.append(dict(current))
+            current = {}
+            if len(matches) >= TIVIHUB_LIMIT:
+                break
+    return matches
+
+
+def collect_tivihub():
+    source = "Tivihub"
+    headers = {
+        "Accept": "application/json,text/plain,*/*",
+        "Referer": TIVIHUB_REFERER,
+        "Origin": TIVIHUB_REFERER.rstrip("/"),
+    }
+    log(f"[{source}] Fetch M3U")
+    try:
+        response = request_get_no_cache(TIVIHUB_M3U_URL, headers={"Accept": "*/*"}, timeout=45)
+        log(f"[{source}] HTTP {response.status_code}")
+        if response.status_code != 200:
+            return []
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+
+    matches = parse_tivihub_matches_m3u(response.text)
+    if not matches:
+        log(f"[{source}] 0 matches")
+        return []
+
+    channels = []
+    seen_streams = set()
+
+    def resolve(match):
+        match_id = match.get("id")
+        if not match_id:
+            return []
+        detail_url = TIVIHUB_API_BASE_URL.rstrip("/") + "/" + match_id
+        data = fetch_json_no_cache(detail_url, headers=headers, timeout=20)
+        detail = data.get("data") if isinstance(data, dict) else {}
+        if not isinstance(detail, dict):
+            return []
+        title = clean_text(detail.get("name") or match.get("title") or source)
+        league = clean_text(detail.get("league_name") or match.get("league"))
+        status = clean_text(detail.get("status") or match.get("status"))
+        group_name = clean_text(match.get("group") or "LIVE")
+        logo = clean_text(detail.get("localteam_logo") or detail.get("visitorteam_logo") or match.get("logo"))
+        referer = clean_text(detail.get("referer")) or TIVIHUB_REFERER
+        event_datetime = parse_epoch_to_ict_datetime(detail.get("timestamp") or detail.get("start_at") or match.get("timestamp"))
+        event_date = event_datetime.date() if event_datetime else None
+        results = []
+        for stream in detail.get("link_live") or []:
+            if not isinstance(stream, dict):
+                continue
+            stream_url = clean_text(stream.get("stream_link"))
+            if not is_valid_stream_url(stream_url):
+                continue
+            quality = clean_text(stream.get("display_name") or stream.get("stream_name") or "HD")
+            line = clean_text(stream.get("line"))
+            suffix_bits = [bit for bit in (league, status, line) if bit]
+            suffix = f" | {' | '.join(suffix_bits)}" if suffix_bits else ""
+            results.append(
+                {
+                    "source": source,
+                    "name": f"{title} [{quality}]{suffix}",
+                    "group": f"{TIVIHUB_GROUP_PREFIX} - {group_name}",
+                    "sport": detect_sport(group_name, league, title),
+                    "logo": logo,
+                    "stream_url": stream_url,
+                    "referer": referer,
+                    "user_agent": UA,
+                    "event_date": event_date,
+                    "event_datetime": event_datetime,
+                }
+            )
+        return results
+
+    with ThreadPoolExecutor(max_workers=max(1, TIVIHUB_WORKERS)) as executor:
+        futures = [executor.submit(resolve, match) for match in matches]
+        for future in as_completed(futures):
+            for channel in future.result():
+                stream_url = channel["stream_url"]
+                if stream_url in seen_streams:
+                    continue
+                seen_streams.add(stream_url)
+                channels.append(channel)
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_missing_source(name):
     log(f"[{name}] Skipped: file in Downloads contains only HTTP 429 text, not scraper code")
     return []
@@ -3272,6 +3392,7 @@ def main():
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
         ("CDNLive", collect_cdnlive),
+        ("Tivihub", collect_tivihub),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
         ("TructiepHD", collect_tructiep_hd),
@@ -3310,6 +3431,7 @@ def main():
     ]
 
     all_channels = []
+    sport_channels = []
     per_source_counts = {}
     for source_name, collector in collectors:
         log("")
@@ -3330,17 +3452,25 @@ def main():
         selected = verify_live_channels(unique)
         per_source_counts[source_name] = len(selected)
         if selected:
-            all_channels.extend(selected)
+            if source_name in SPORT_M3U_SOURCES:
+                sport_channels.extend(selected)
+            else:
+                all_channels.extend(selected)
 
     all_channels = filter_current_and_future_events(all_channels)
     deduped = dedupe_and_sort_channels(all_channels)
     write_m3u(ALL_M3U, deduped)
+    sport_channels = filter_current_and_future_events(sport_channels)
+    sport_deduped = dedupe_and_sort_channels(sport_channels)
+    write_m3u(SPORT_M3U, sport_deduped)
 
     log("")
     log(f"[DONE] Total unique links: {len(deduped)}")
+    log(f"[DONE] Sport unique links: {len(sport_deduped)}")
     for source_name, count in per_source_counts.items():
         log(f"[DONE] {source_name}: {count}")
     log(f"[DONE] M3U: {ALL_M3U}")
+    log(f"[DONE] SPORT M3U: {SPORT_M3U}")
 
 
 if __name__ == "__main__":
