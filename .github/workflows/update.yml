@@ -26,18 +26,20 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install requests
 
-      - name: Generate M3U file
+      - name: Generate M3U files
         run: |
           python combined_m3u_collector.py
           test -f all.m3u
           test -s all.m3u
-          ls -lh all.m3u
+          test -f sport.m3u
+          test -s sport.m3u
+          ls -lh all.m3u sport.m3u
 
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add all.m3u
+          git add all.m3u sport.m3u
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
           else
