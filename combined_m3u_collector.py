@@ -11,7 +11,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import parse_qs
 from urllib.parse import urljoin
+from urllib.parse import urlparse
 from urllib.parse import unquote
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -152,6 +154,13 @@ TIVIHUB_GROUP_PREFIX = os.environ.get("TIVIHUB_GROUP_PREFIX", "Tivihub")
 TIVIHUB_REFERER = os.environ.get("TIVIHUB_REFERER", "https://iframe.rumsport8.live")
 TIVIHUB_LIMIT = int(os.environ.get("TIVIHUB_LIMIT", "200") or "200")
 TIVIHUB_WORKERS = int(os.environ.get("TIVIHUB_WORKERS", "12") or "12")
+XOIGAC_SITE_URL = os.environ.get("XOIGAC_SITE_URL", "https://xoigac.live/")
+XOIGAC_GROUP = os.environ.get("XOIGAC_GROUP", "Xoigac")
+XOIGAC_LIMIT = int(os.environ.get("XOIGAC_LIMIT", "40") or "40")
+MEBONG_SITE_URL = os.environ.get("MEBONG_SITE_URL", "https://mebongtv.live/")
+MEBONG_GROUP = os.environ.get("MEBONG_GROUP", "MebongTV")
+MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "40") or "40")
+MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.buzzscorelinez.com/")
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
