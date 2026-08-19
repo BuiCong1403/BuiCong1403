@@ -776,10 +776,13 @@ def normalize_channel_group(channel):
         channel["raw_options"] = raw_options
     elif channel.get("preserve_group_exact"):
         group = clean_text(channel.get("group") or channel.get("source") or "Unknown")
-        group_key = compact_text_key(group)
-        if "giovang" in group_key:
-            group = "Giờ Vàng TV"
-        elif "vuasanco" in group_key:
+        if channel.get("source") == "TinhLaGi":
+            group = canonical_group_title(remove_icons(group))
+            if "tinhlagi" in compact_text_key(group):
+                group = "Tinhlagi"
+            else:
+                group = f"Tinhlagi - {group}"
+        elif "vuasanco" in compact_text_key(group):
             group = "Vua S\u00e2n C\u1ecf TV"
     else:
         group = output_group(channel)
