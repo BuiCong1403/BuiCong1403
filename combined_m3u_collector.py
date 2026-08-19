@@ -55,7 +55,7 @@ KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.kh
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
 COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
 COLATV_API_URL = os.environ.get("COLATV_API", "https://api.cltvlv.com/api/matches")
-BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv.pro/")
+BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv12.com/")
 LUONGSON_API_URL = os.environ.get("LUONGSON_API", "https://api-ls.cdnokvip.com/api/get-livestream-group")
 LUONGSON_MATCH_URL = os.environ.get("LUONGSON_MATCH", "https://api-ls.cdnokvip.com/api/match-detail?matchId=%s")
 SOCOLIVE_API_URL = os.environ.get("SOCOLIVE_API_URL", "https://json.vnres.co/matches.json?v=%d")
