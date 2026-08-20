@@ -112,7 +112,7 @@ QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
 VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", "https://vsc9.top/")
-S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tv008.com/")
+S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tv001.com/")
 ALL_CHANNEL_M3U_URL = os.environ.get(
     "ALL_CHANNEL_M3U_URL",
     "https://raw.githubusercontent.com/huybuonvp/xem_football/refs/heads/main/All_CHANNEL.m3u",
@@ -154,12 +154,10 @@ TIVIHUB_GROUP_PREFIX = os.environ.get("TIVIHUB_GROUP_PREFIX", "Tivihub")
 TIVIHUB_REFERER = os.environ.get("TIVIHUB_REFERER", "https://iframe.rumsport8.live")
 TIVIHUB_LIMIT = int(os.environ.get("TIVIHUB_LIMIT", "200") or "200")
 TIVIHUB_WORKERS = int(os.environ.get("TIVIHUB_WORKERS", "12") or "12")
-XOIGAC_SITE_URL = os.environ.get("XOIGAC_SITE_URL", "https://xoigac.live/")
-XOIGAC_GROUP = os.environ.get("XOIGAC_GROUP", "Xoigac")
-XOIGAC_LIMIT = int(os.environ.get("XOIGAC_LIMIT", "40") or "40")
 MEBONG_SITE_URL = os.environ.get("MEBONG_SITE_URL", "https://mebongtv.live/")
 MEBONG_GROUP = os.environ.get("MEBONG_GROUP", "MebongTV")
-MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "40") or "40")
+MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "80") or "80")
+MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.buzzscorelinez.com/")
@@ -746,6 +744,26 @@ GROUP_CANONICAL_RULES = [
     ("Vua S\u00e2n C\u1ecf TV", ("vua san co", "vuasanco", "vsc9")),
 ]
 
+PREFERRED_OUTPUT_GROUPS = [
+    "FLV | OTT Player",
+    "Gi\u1edd V\u00e0ng TV",
+    "Vua S\u00e2n C\u1ecf TV",
+    "Socolive TV",
+    "CoLaTV",
+    "BiaomTV",
+    "MebongTV",
+]
+
+PREFERRED_SOURCE_PRIORITY = {
+    "GioVang": 80,
+    "VSC9": 76,
+    "SocoliveTV": 72,
+    "CoLaTV": 68,
+    "BiaomTV": 64,
+    "MebongTV": 60,
+    "TinhLaGi": 40,
+}
+
 
 def canonical_group_title(group):
     group = clean_text(group)
@@ -880,10 +898,29 @@ def channel_priority(channel):
     group = group_key(channel.get("group"))
     source = clean_text(channel.get("source"))
     if group == group_key("Sựu kiện"):
-        return 50
+        return 100
     if source == "VMTTV":
-        return 10
-    return 0
+        return 90
+    if is_flv_url(channel.get("stream_url")):
+        return 85
+    return PREFERRED_SOURCE_PRIORITY.get(source, 0)
+
+
+def group_sort_rank(channel):
+    group = group_key(output_group(channel))
+    for index, preferred_group in enumerate(PREFERRED_OUTPUT_GROUPS):
+        if group == group_key(preferred_group):
+            return index
+    if group.startswith("tinhlagi"):
+        return len(PREFERRED_OUTPUT_GROUPS) + 10
+    return len(PREFERRED_OUTPUT_GROUPS) + 50
+
+
+def channel_time_sort_value(channel):
+    event_dt = channel_event_datetime(channel)
+    if event_dt:
+        return int(event_dt.timestamp())
+    return 9_999_999_999
 
 
 def dedupe_and_sort_channels(channels):
@@ -908,7 +945,15 @@ def dedupe_and_sort_channels(channels):
             continue
         seen_urls[url] = len(deduped)
         deduped.append(channel)
-    deduped.sort(key=lambda channel: (output_group(channel), clean_text(channel.get("name")), channel.get("stream_url", "")))
+    deduped.sort(
+        key=lambda channel: (
+            group_sort_rank(channel),
+            output_group(channel),
+            channel_time_sort_value(channel),
+            clean_text(channel.get("name")),
+            channel.get("stream_url", ""),
+        )
+    )
     return deduped
 
 
@@ -2224,126 +2269,6 @@ def collect_dekiki_sports():
     return channels
 
 
-def xoigac_headers(base_url, referer=None, accept="text/html,application/xhtml+xml,application/json,*/*"):
-    base_url = base_url.rstrip("/") + "/"
-    return {
-        "Accept": accept,
-        "Origin": base_url.rstrip("/"),
-        "Referer": referer or base_url,
-        "User-Agent": UA,
-    }
-
-
-def parse_xoigac_home_matches(html_text):
-    matches = []
-    seen_ids = set()
-    # The rendered page embeds flat JSON match objects. Keeping this parser small
-    # makes it resilient when the surrounding Next/Vite bundle changes.
-    pattern = r'\{[^{}]*"id"\s*:\s*\d+[^{}]*"homeTeam"\s*:[^{}]*"awayTeam"\s*:[^{}]*"matchDate"\s*:[^{}]*\}'
-    for raw_match in re.finditer(pattern, html_text or "", re.S):
-        raw = html.unescape(raw_match.group(0)).replace("\\/", "/")
-        try:
-            item = json.loads(raw)
-        except Exception:
-            continue
-        match_id = clean_text(item.get("id"))
-        if not match_id or match_id in seen_ids:
-            continue
-        seen_ids.add(match_id)
-        matches.append(item)
-        if len(matches) >= max(1, XOIGAC_LIMIT):
-            break
-    return matches
-
-
-def collect_xoigac():
-    source = "Xoigac"
-    base_url = XOIGAC_SITE_URL.rstrip("/") + "/"
-    log(f"[{source}] Fetch home")
-    try:
-        html_text = fetch_text(base_url, headers=xoigac_headers(base_url), timeout=30)
-    except Exception as exc:
-        log(f"[{source}] Error: {exc}")
-        return []
-
-    matches = parse_xoigac_home_matches(html_text)
-    if not matches:
-        log(f"[{source}] 0 matches")
-        return []
-
-    channels = []
-    seen_urls = set()
-
-    def resolve(item):
-        match_id = clean_text(item.get("id"))
-        if not match_id:
-            return []
-        api_url = urljoin(base_url, f"api/stream/info/{match_id}")
-        try:
-            response = request_get_no_cache(
-                api_url,
-                headers=xoigac_headers(base_url, accept="application/json, text/plain, */*"),
-                timeout=20,
-            )
-            if response.status_code != 200:
-                return []
-            data = response.json()
-        except Exception:
-            return []
-        if not isinstance(data, dict) or data.get("success") is False:
-            return []
-        stream_url = clean_text(data.get("playbackUrl") or data.get("playUrl") or data.get("url"))
-        if not is_valid_stream_url(stream_url):
-            return []
-
-        home = clean_text(item.get("homeTeam"))
-        away = clean_text(item.get("awayTeam"))
-        title = " vs ".join(part for part in (home, away) if part) or f"Xoigac {match_id}"
-        league = clean_text(item.get("league"))
-        status = clean_text(item.get("status") or data.get("status"))
-        commentator = clean_text(item.get("streamerNickname"))
-        event_datetime = parse_iso_to_ict_datetime(item.get("matchDate"))
-        event_date = event_datetime.date() if event_datetime else None
-        time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
-        logo = clean_text(item.get("homeTeamLogo") or item.get("awayTeamLogo") or item.get("leagueLogo"))
-        if logo and not logo.startswith(("http://", "https://")):
-            logo = urljoin(base_url, logo)
-
-        suffix_bits = [bit for bit in (league, status, commentator) if bit]
-        suffix = f" | {' | '.join(suffix_bits)}" if suffix_bits else ""
-        name = f"{f'[{time_label}] ' if time_label else ''}{title}{suffix} [HLS]"
-        return [
-            {
-                "source": source,
-                "name": name,
-                "group": XOIGAC_GROUP,
-                "sport": detect_sport(league, title),
-                "logo": logo,
-                "stream_url": stream_url,
-                "referer": base_url,
-                "user_agent": UA,
-                "event_date": event_date,
-                "event_datetime": event_datetime,
-            }
-        ]
-
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        futures = [executor.submit(resolve, item) for item in matches]
-        for future in as_completed(futures):
-            try:
-                for channel in future.result():
-                    stream_url = channel.get("stream_url")
-                    if stream_url in seen_urls:
-                        continue
-                    seen_urls.add(stream_url)
-                    channels.append(channel)
-            except Exception:
-                continue
-
-    log(f"[{source}] {len(channels)} raw links")
-    return channels
-
-
 def mebong_headers(base_url, referer=None, accept="application/json, text/plain, */*"):
     base_url = base_url.rstrip("/") + "/"
     return {
@@ -2379,13 +2304,47 @@ def mebong_original_stream_url(embed_src):
     return clean_text(stream_values[0])
 
 
+def mebong_all_matches(data):
+    if not isinstance(data, dict):
+        return []
+    result = []
+    seen = set()
+
+    def add_items(items):
+        for item in items or []:
+            if not isinstance(item, dict):
+                continue
+            key = clean_text(item.get("href") or item.get("slug") or item.get("fid") or item.get("text"))
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            result.append(item)
+
+    add_items(data.get("matches"))
+    for items in (data.get("matchesBySport") or {}).values():
+        add_items(items)
+    return result
+
+
+def fetch_mebong_detail_html(detail_url, base_url):
+    headers = mebong_headers(base_url, referer=base_url, accept="text/html,application/xhtml+xml,*/*")
+    for attempt in range(1, 4):
+        try:
+            return fetch_text(detail_url, headers=headers, timeout=25)
+        except Exception:
+            if attempt == 3:
+                return ""
+            time.sleep(0.4 * attempt)
+    return ""
+
+
 def collect_mebongtv():
     source = "MebongTV"
     base_url = MEBONG_SITE_URL.rstrip("/") + "/"
     api_url = urljoin(base_url, "api/home-matches")
     log(f"[{source}] Fetch home matches")
     data = fetch_json_no_cache(api_url, headers=mebong_headers(base_url), timeout=30)
-    matches = data.get("matches") if isinstance(data, dict) else []
+    matches = mebong_all_matches(data)
     if not isinstance(matches, list) or not matches:
         log(f"[{source}] 0 matches")
         return []
@@ -2400,13 +2359,8 @@ def collect_mebongtv():
         if not href:
             return []
         detail_url = urljoin(base_url, href)
-        try:
-            page_html = fetch_text(
-                detail_url,
-                headers=mebong_headers(base_url, referer=base_url, accept="text/html,application/xhtml+xml,*/*"),
-                timeout=25,
-            )
-        except Exception:
+        page_html = fetch_mebong_detail_html(detail_url, base_url)
+        if not page_html:
             return []
 
         embed_src = extract_mebong_embed_src(page_html)
@@ -2460,7 +2414,7 @@ def collect_mebongtv():
         ]
 
     limited_matches = matches[: max(1, MEBONG_LIMIT)]
-    with ThreadPoolExecutor(max_workers=8) as executor:
+    with ThreadPoolExecutor(max_workers=max(1, MEBONG_WORKERS)) as executor:
         futures = [executor.submit(resolve, item) for item in limited_matches]
         for future in as_completed(futures):
             try:
@@ -3729,7 +3683,6 @@ def main():
         ("DekikiSports", collect_dekiki_sports),
         ("CDNLive", collect_cdnlive),
         ("Tivihub", collect_tivihub),
-        ("Xoigac", collect_xoigac),
         ("MebongTV", collect_mebongtv),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
