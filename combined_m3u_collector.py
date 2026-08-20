@@ -88,7 +88,7 @@ GIOVANG_API_FIXTURES = os.environ.get("GIOVANG_API_FIXTURES", "https://live-api.
 GIOVANG_OLD_API_LIVE = "https://live-api.keovip88.net/storage/livestream/live.json"
 GIOVANG_OLD_API_ALL = "https://live-api.keovip88.net/storage/livestream/all.json"
 GIOVANG_OLD_API_FIXTURES = "https://live-api.keovip88.net/api/fixtures/"
-GIOVANG_LIMIT = int(os.environ.get("GIOVANG_LIMIT", "300"))
+GIOVANG_LIMIT = int(os.environ.get("GIOVANG_LIMIT", "1000"))
 GIOVANG_FALLBACK_JSON_URL = os.environ.get(
     "GIOVANG_FALLBACK_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
@@ -160,13 +160,11 @@ MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "80") or "80")
 MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
-XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.buzzscorelinez.com/")
+XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.edgevaultmedia.com/")
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
 AZABU_BASE_URL = os.environ.get("AZABU_BASE_URL", "https://azabuglobal.com/")
 AZABU_LIVE_LIMIT = int(os.environ.get("AZABU_LIVE_LIMIT", "30"))
 AZABU_HIGHLIGHT_PAGES = int(os.environ.get("AZABU_HIGHLIGHT_PAGES", "1"))
-TRUCTIEP_HD_BASE_URL = os.environ.get("TRUCTIEP_HD_BASE_URL", "https://tructiep-hd.club/")
-TRUCTIEP_HD_LIMIT = int(os.environ.get("TRUCTIEP_HD_LIMIT", "30"))
 DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
@@ -717,6 +715,7 @@ SPORT_SOURCES = {
 }
 
 SPORT_KEYWORDS = [
+    ("Bida", ("bida", "billiard", "billiards", "pool", "cuesports", "phoenix open")),
     ("Bong Chuyen", ("bong chuyen", "volleyball", "v-league volleyball")),
     ("Bong Ro", ("bong ro", "basketball", "wnba", "nba", "fiba", "trail blazers", "mystics", "sparks")),
     ("Tennis", ("tennis", "atp", "wta")),
@@ -738,6 +737,7 @@ def compact_text_key(value):
 
 
 GROUP_CANONICAL_RULES = [
+    ("Sự kiện", ("su kien", "suu kien")),
     ("Gi\u1edd V\u00e0ng TV", ("giovang", "gio vang", "gio vang tv")),
     ("Socolive TV", ("socolive", "soco live", "soco sport", "socosport")),
     (SPORT_INTERNATIONAL_GROUP, ("the thao quoc te", "thethaoquocte", "sport quoc te", "international sport")),
@@ -745,6 +745,8 @@ GROUP_CANONICAL_RULES = [
 ]
 
 PREFERRED_OUTPUT_GROUPS = [
+    "VTV",
+    "Sự kiện",
     "FLV | OTT Player",
     "Gi\u1edd V\u00e0ng TV",
     "Vua S\u00e2n C\u1ecf TV",
@@ -897,7 +899,9 @@ def verify_live_channels(channels):
 def channel_priority(channel):
     group = group_key(channel.get("group"))
     source = clean_text(channel.get("source"))
-    if group == group_key("Sựu kiện"):
+    if group == group_key("VTV"):
+        return 110
+    if group == group_key("Sự kiện"):
         return 100
     if source == "VMTTV":
         return 90
@@ -968,6 +972,9 @@ def write_m3u(path, channels):
                 name = remove_icons(ch.get("name", "Unknown"))
                 f.write(f"#EXTINF:0,{name}\n")
                 f.write(f"#EXTGRP:{output_group(ch)}\n")
+                referer = clean_text(ch.get("referer"))
+                if referer:
+                    f.write(f"#EXTVLCOPT:http-referrer={referer}\n")
                 f.write(f'{ch.get("stream_url", "")}\n\n')
                 continue
 
@@ -1254,6 +1261,13 @@ def parse_vn_datetime_text(value):
     return None
 
 
+def giovang_item_datetime(item):
+    event_date = date_from_text(item.get("date") or item.get("day_month"))
+    return combine_date_and_time(event_date, item.get("time")) or datetime_from_text(
+        clean_text(f"{item.get('time', '')} {item.get('date') or item.get('day_month') or ''}")
+    )
+
+
 def collect_giovang_api():
     source = "GioVang"
     headers = {
@@ -1283,7 +1297,15 @@ def collect_giovang_api():
             if fixture_id and fixture_id not in seen_fixtures:
                 seen_fixtures[fixture_id] = item
                 fixture_api_by_id[fixture_id] = fixtures_url
+    now = datetime.now(TZ_VN)
     fixtures = list(seen_fixtures.values())
+    fixtures.sort(
+        key=lambda item: (
+            giovang_item_datetime(item) is None,
+            giovang_item_datetime(item) and giovang_item_datetime(item) < now - timedelta(minutes=PAST_EVENT_GRACE_MINUTES),
+            giovang_item_datetime(item) or datetime.max.replace(tzinfo=TZ_VN),
+        )
+    )
     if not fixtures:
         log(f"[{source}] Direct API empty, fallback grouped JSON")
         return collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
@@ -1344,9 +1366,13 @@ def collect_giovang_api():
                     }
                 )
 
+    fallback_channels = collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
+    if fallback_channels:
+        channels.extend(fallback_channels)
+
     if not channels:
         log(f"[{source}] Direct API has no stream, fallback grouped JSON")
-        return collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
+        return fallback_channels
     log(f"[{source}] {len(channels)} raw links")
     return channels
 
@@ -1489,23 +1515,29 @@ def collect_choangtv_api():
             if not isinstance(match, dict):
                 continue
             stream_url = normalize_choang_stream_url(match.get("liveUrl"))
+            if not stream_url:
+                stream_url = normalize_choang_stream_url(f"live{match_id}/index.m3u8")
             if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
                 continue
             seen_urls.add(stream_url)
             dt = parse_vn_datetime_text(match.get("time") or item.get("time"))
             time_label = dt.strftime("%Hh%M") if dt else ""
+            league = clean_text(match.get("league") or item.get("league"))
+            category = clean_text(match.get("category") or item.get("category"))
             channels.append(
                 {
                     "source": source,
                     "name": (
                         f"[{time_label}] {clean_text(match.get('name1')) or 'Home'} "
                         f"vs {clean_text(match.get('name2')) or 'Away'} | {clean_text(match.get('caster')) or 'BLV'}"
+                        f"{f' [{league}]' if league else ''}"
                     ),
                     "group": "ChoangTV",
                     "logo": clean_text(match.get("logo1") or match.get("logo2") or match.get("casterLogo")),
                     "stream_url": stream_url,
                     "referer": CHOANG_REFERER,
                     "user_agent": UA,
+                    "sport": detect_sport(category, league, match.get("name1"), match.get("name2")),
                     "event_date": dt.date() if dt else date_from_text(match.get("time") or item.get("time")),
                     "event_datetime": dt,
                 }
@@ -2225,7 +2257,7 @@ def collect_vmttv():
         if channel_group_key == sport_group_key:
             channel["group"] = "THỂ THAO QUỐC TẾ"
         elif channel_group_key in event_group_keys:
-            channel["group"] = "Sựu kiện"
+            channel["group"] = "Sự kiện"
             channel["skip_event_filter"] = True
     return channels
 
@@ -2751,97 +2783,6 @@ def collect_azabu_live():
     channels = []
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_detail, detail_url) for detail_url in detail_urls]
-        for future in as_completed(futures):
-            try:
-                channels.extend(future.result())
-            except Exception:
-                continue
-
-    log(f"[{source}] {len(channels)} raw links")
-    return channels
-
-
-def tructiep_hd_headers(referer=None):
-    base_url = TRUCTIEP_HD_BASE_URL.rstrip("/") + "/"
-    return {
-        "Accept": "text/html,application/xhtml+xml,application/json,*/*",
-        "Origin": base_url.rstrip("/"),
-        "Referer": referer or base_url,
-        "User-Agent": UA,
-    }
-
-
-def collect_tructiep_hd():
-    source = "TructiepHD"
-    base_url = TRUCTIEP_HD_BASE_URL.rstrip("/") + "/"
-    log(f"[{source}] Fetch home")
-    try:
-        home_html = fetch_text(base_url, headers=tructiep_hd_headers(), timeout=30)
-    except Exception as exc:
-        log(f"[{source}] Error: {exc}")
-        return []
-
-    match_pages = []
-    seen = set()
-    pattern = r'href="(https?://[^"]*tructiep-hd\.club/[^"]+?-m\d+(?:\?server(?:_link_wb)?=\d+)?)"[^>]*title="([^"]*)"'
-    for match in re.finditer(pattern, home_html, re.I):
-        detail_url = html.unescape(match.group(1))
-        title = clean_text(html.unescape(match.group(2)))
-        if detail_url in seen:
-            continue
-        seen.add(detail_url)
-        match_pages.append((detail_url, title))
-        if len(match_pages) >= max(1, TRUCTIEP_HD_LIMIT):
-            break
-
-    def collect_detail(detail_url, title):
-        try:
-            detail_html = fetch_text(detail_url, headers=tructiep_hd_headers(detail_url), timeout=25)
-        except Exception:
-            return []
-        iframe_urls = []
-        for iframe_match in re.finditer(r'<iframe[^>]+src="([^"]*watch_link/[^"]+)"', detail_html, re.I):
-            iframe_url = urljoin(base_url, html.unescape(iframe_match.group(1)))
-            if iframe_url not in iframe_urls:
-                iframe_urls.append(iframe_url)
-        if not iframe_urls:
-            return []
-
-        result = []
-        display_title = re.sub(r"^Xem\s+trực\s+tiếp\s+trận\s+đấu\s+", "", title, flags=re.I)
-        display_title = clean_text(display_title or title_from_html_page(detail_html, "Tructiep-HD"))
-        for idx, iframe_url in enumerate(iframe_urls, 1):
-            try:
-                iframe_html = fetch_text(iframe_url, headers=tructiep_hd_headers(detail_url), timeout=25)
-            except Exception:
-                continue
-            stream_urls = []
-            for stream_match in re.finditer(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*", iframe_html, re.I):
-                stream_url = clean_text(
-                    html.unescape(stream_match.group(0).replace("\\/", "/").replace("\\u0026", "&"))
-                )
-                if stream_url not in stream_urls:
-                    stream_urls.append(stream_url)
-            for stream_index, stream_url in enumerate(stream_urls, 1):
-                suffix = ""
-                if len(iframe_urls) > 1 or len(stream_urls) > 1:
-                    suffix = f" | Link {idx}.{stream_index}"
-                result.append(
-                    {
-                        "source": source,
-                        "name": f"{display_title}{suffix}",
-                        "group": "Tructiep-HD",
-                        "logo": "https://tructiep-hd.club/public/favicon.ico",
-                        "stream_url": stream_url,
-                        "referer": base_url,
-                        "user_agent": UA,
-                    }
-                )
-        return result
-
-    channels = []
-    with ThreadPoolExecutor(max_workers=8) as executor:
-        futures = [executor.submit(collect_detail, detail_url, title) for detail_url, title in match_pages]
         for future in as_completed(futures):
             try:
                 channels.extend(future.result())
@@ -3686,7 +3627,6 @@ def main():
         ("MebongTV", collect_mebongtv),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
-        ("TructiepHD", collect_tructiep_hd),
         ("AzabuHighlight", collect_azabu_highlights),
         (
             "TV365KidsInternational",
