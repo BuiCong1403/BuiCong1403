@@ -95,9 +95,11 @@ GIOVANG_FALLBACK_JSON_URL = os.environ.get(
 )
 PHAOHOA_API_BASE = (os.environ.get("PHAOHOA_API") or "https://phaohoa1.live").rstrip("/")
 PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://phaohoa.live").rstrip("/")
-CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", "https://choangtv21.com")
-CHOANG_API_URL = os.environ.get("CHOANG_API_URL", "https://api.choangtv21.com/matchSchedule/getList")
-CHOANG_DETAIL_URL = os.environ.get("CHOANG_DETAIL_URL", "https://api.choangtv21.com/matchSchedule/getDetail")
+CHOANG_ENTRY_SITE_URL = os.environ.get("CHOANG_ENTRY_SITE_URL", "https://choangtv.com/")
+CHOANG_DEFAULT_DOMAIN = os.environ.get("CHOANG_DEFAULT_DOMAIN", "choangtv21.com")
+CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", f"https://{CHOANG_DEFAULT_DOMAIN}")
+CHOANG_API_URL = os.environ.get("CHOANG_API_URL", f"https://api.{CHOANG_DEFAULT_DOMAIN}/matchSchedule/getList")
+CHOANG_DETAIL_URL = os.environ.get("CHOANG_DETAIL_URL", f"https://api.{CHOANG_DEFAULT_DOMAIN}/matchSchedule/getDetail")
 CHOANG_CDN_BASE = os.environ.get("CHOANG_CDN_BASE", "https://cdn.sports-cas889abxfileposo.site/live")
 CHOANG_DAYS = int(os.environ.get("CHOANG_DAYS", "2"))
 HOIQUAN_API_BASE = os.environ.get("HOIQUAN_API_BASE", "https://sv.hoiquantv.xyz/api/v1/external")
@@ -139,7 +141,7 @@ CHOANG_JSON_URL = os.environ.get(
     "CHOANG_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/output.json",
 )
-CHOANG_REFERER = os.environ.get("CHOANG_REFERER", "https://choangtv21.com/")
+CHOANG_REFERER = os.environ.get("CHOANG_REFERER", f"https://{CHOANG_DEFAULT_DOMAIN}/")
 CDNLIVE_EVENTS_URL = os.environ.get(
     "CDNLIVE_EVENTS_URL",
     "https://api.cdnlivetv.tv/api/v1/events/sports/?user=cdnlivetv&plan=free",
@@ -766,6 +768,17 @@ PREFERRED_SOURCE_PRIORITY = {
     "TinhLaGi": 40,
 }
 
+OMIT_REFERRER_GROUPS = {
+    "VTV",
+    "Sự kiện",
+    "Socolive TV",
+    "CoLaTV",
+    "CO LA TV",
+    "Highlight | S8TV",
+    "MebongTV",
+}
+OMIT_REFERRER_GROUP_KEYS = {compact_text_key(item) for item in OMIT_REFERRER_GROUPS}
+
 
 def canonical_group_title(group):
     group = clean_text(group)
@@ -810,6 +823,11 @@ def extract_match_title(channel):
 def output_group(channel):
     group = clean_text(channel.get("group"))
     return canonical_group_title(group or channel.get("source") or "Unknown")
+
+
+def should_write_referrer(channel):
+    group = output_group(channel)
+    return compact_text_key(group) not in OMIT_REFERRER_GROUP_KEYS
 
 
 def normalize_channel_group(channel):
@@ -973,7 +991,7 @@ def write_m3u(path, channels):
                 f.write(f"#EXTINF:0,{name}\n")
                 f.write(f"#EXTGRP:{output_group(ch)}\n")
                 referer = clean_text(ch.get("referer"))
-                if referer:
+                if referer and should_write_referrer(ch):
                     f.write(f"#EXTVLCOPT:http-referrer={referer}\n")
                 f.write(f'{ch.get("stream_url", "")}\n\n')
                 continue
@@ -994,7 +1012,7 @@ def write_m3u(path, channels):
                 f.write(f'#EXTINF:-1 {" ".join(attrs)},{name}\n')
             referer = clean_text(ch.get("referer"))
             user_agent = clean_text(ch.get("user_agent"))
-            if referer:
+            if referer and should_write_referrer(ch):
                 f.write(f"#EXTVLCOPT:http-referrer={referer}\n")
             if user_agent:
                 f.write(f"#EXTVLCOPT:http-user-agent={user_agent}\n")
@@ -1479,12 +1497,43 @@ def collect_phaohoa():
     return channels
 
 
+def resolve_choang_endpoints():
+    site_url = CHOANG_SITE_URL.rstrip("/")
+    referer = CHOANG_REFERER
+    api_url = CHOANG_API_URL
+    detail_url = CHOANG_DETAIL_URL
+
+    if os.environ.get("CHOANG_SITE_URL") or os.environ.get("CHOANG_API_URL") or os.environ.get("CHOANG_DETAIL_URL"):
+        return site_url, referer, api_url, detail_url
+
+    try:
+        response = request_get(
+            CHOANG_ENTRY_SITE_URL,
+            headers={"Accept": "text/html,application/xhtml+xml,*/*"},
+            timeout=10,
+        )
+        parsed = urlparse(response.url)
+        netloc = parsed.netloc[4:] if parsed.netloc.startswith("www.") else parsed.netloc
+        if parsed.scheme and netloc:
+            site_url = f"{parsed.scheme}://{netloc}"
+            referer = site_url + "/"
+            api_url = f"{parsed.scheme}://api.{netloc}/matchSchedule/getList"
+            detail_url = f"{parsed.scheme}://api.{netloc}/matchSchedule/getDetail"
+            if netloc != CHOANG_DEFAULT_DOMAIN:
+                log(f"[ChoangTV] Discovered domain: {site_url}")
+    except Exception as exc:
+        log(f"[ChoangTV] Domain discovery skipped: {exc}")
+
+    return site_url, referer, api_url, detail_url
+
+
 def collect_choangtv_api():
     source = "ChoangTV"
+    site_url, referer, api_url, detail_api_url = resolve_choang_endpoints()
     headers = {
         "Accept": "application/json, */*",
-        "Origin": CHOANG_SITE_URL.rstrip("/"),
-        "Referer": CHOANG_REFERER,
+        "Origin": site_url,
+        "Referer": referer,
     }
     channels = []
     seen_urls = set()
@@ -1494,11 +1543,11 @@ def collect_choangtv_api():
     for day_offset in range(max(1, CHOANG_DAYS)):
         target_date = today + timedelta(days=day_offset)
         list_data = fetch_json_no_cache(
-            CHOANG_API_URL,
+            api_url,
             headers=headers,
             timeout=20,
-        ) if "?" in CHOANG_API_URL else fetch_json_no_cache(
-            f"{CHOANG_API_URL}?date={target_date.isoformat()}",
+        ) if "?" in api_url else fetch_json_no_cache(
+            f"{api_url}?date={target_date.isoformat()}",
             headers=headers,
             timeout=20,
         )
@@ -1509,7 +1558,7 @@ def collect_choangtv_api():
             match_id = item.get("id")
             if not match_id:
                 continue
-            detail_url = f"{CHOANG_DETAIL_URL}?matchId={match_id}"
+            detail_url = f"{detail_api_url}?matchId={match_id}"
             detail = fetch_json_no_cache(detail_url, headers=headers, timeout=20)
             match = detail.get("data") if isinstance(detail, dict) else {}
             if not isinstance(match, dict):
@@ -1535,7 +1584,7 @@ def collect_choangtv_api():
                     "group": "ChoangTV",
                     "logo": clean_text(match.get("logo1") or match.get("logo2") or match.get("casterLogo")),
                     "stream_url": stream_url,
-                    "referer": CHOANG_REFERER,
+                    "referer": referer,
                     "user_agent": UA,
                     "sport": detect_sport(category, league, match.get("name1"), match.get("name2")),
                     "event_date": dt.date() if dt else date_from_text(match.get("time") or item.get("time")),
@@ -1545,7 +1594,7 @@ def collect_choangtv_api():
 
     if not channels:
         log(f"[{source}] Direct API has no stream, fallback grouped JSON")
-        return collect_grouped_json(source, CHOANG_JSON_URL, "ChoangTV", CHOANG_REFERER)
+        return collect_grouped_json(source, CHOANG_JSON_URL, "ChoangTV", referer)
     log(f"[{source}] {len(channels)} raw links")
     return channels
 
