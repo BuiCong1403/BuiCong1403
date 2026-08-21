@@ -1002,6 +1002,8 @@ def write_m3u(path, channels):
                 for option_line in ch.get("raw_options") or []:
                     option_line = clean_text(option_line)
                     if option_line:
+                        if option_line.lower().startswith("#extvlcopt:http-referrer=") and not should_write_referrer(ch):
+                            continue
                         f.write(f"{option_line}\n")
             else:
                 attrs = [
