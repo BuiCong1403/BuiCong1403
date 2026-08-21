@@ -1853,8 +1853,12 @@ def collect_m3u_playlist(
         if line.startswith("http") and is_supported_playlist_url(line, allow_non_m3u8=allow_non_m3u8):
             group = current.get("group") if preserve_group else group_name
             title = current.get("title") or group_name
-            if source == "TinhLaGi" and group_key(group) == "tinhlagi" and group_key(title) == "capnhat":
-                continue
+            if source == "TinhLaGi":
+                logo = clean_text(current.get("logo"))
+                if group_key(title) == "capnhat" or line.rstrip("/") == "https://tinhlagi.pro/logo.jpg":
+                    continue
+                if "tinhlagi.pro/info_card.php?kind=clock" in logo:
+                    continue
             if not group_matches_any(group, allowed_groups):
                 continue
             channels.append(
