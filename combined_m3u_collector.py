@@ -1852,12 +1852,15 @@ def collect_m3u_playlist(
             continue
         if line.startswith("http") and is_supported_playlist_url(line, allow_non_m3u8=allow_non_m3u8):
             group = current.get("group") if preserve_group else group_name
+            title = current.get("title") or group_name
+            if source == "TinhLaGi" and group_key(group) == "tinhlagi" and group_key(title) == "capnhat":
+                continue
             if not group_matches_any(group, allowed_groups):
                 continue
             channels.append(
                 {
                     "source": source,
-                    "name": current.get("title") or group_name,
+                    "name": title,
                     "group": group or group_name or source,
                     "logo": current.get("logo", ""),
                     "stream_url": line,
@@ -2220,6 +2223,7 @@ def collect_tt1_4k():
             title_key = title.lower()
             if TT1_4K_ALLOWED_PREFIXES and not title_key.startswith(TT1_4K_ALLOWED_PREFIXES):
                 continue
+            title = re.sub(r"^4K\s*\|\s*(?:UK|VIP)\s*-\s*", "", title, flags=re.I)
             channels.append(
                 {
                     "source": source,
