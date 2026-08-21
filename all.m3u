@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-08-22 00:26 ICT
-# Total   : 612
+# Updated : 2026-08-22 01:33 ICT
+# Total   : 819
 
 #EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dGohEWXz7Sk/maxresdefault.jpg" group-title="VTV",VTV1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -50,18 +50,6 @@ https://vips-livecdn.fptplay.net/live/media/vtv9/live247-hls-avc/vtv9-avc1_56000
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/vietnamtoday-avc1_4000000=10000-mp4a_131600=20000.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.fptplay53.net/media/home_event/OTT_ECS/2026/08/19/21_1787073196070.jpg" group-title="Sự kiện",Event 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/event-05/hls_avc_v6/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.fptplay53.net/media/home_event/OTT_ECS/2026/08/20/golf-dp-world-tour-nexo-championship-2026---slide-thumb_1787192403814.jpg" group-title="Sự kiện",Sự Kiện 1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/su-kien-01/hls_avc_v6/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.fptplay53.net/media/home_event/OTT_ECS/2026/08/20/pickleball-ho-chi-minh-city-open-2026---slide-thumb_1787191978730.jpg" group-title="Sự kiện",Sự Kiện 3
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://vips-livecdn.fptplay.net/live/media/su-kien-03/hls_avc_v6/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://images.fptplay53.net/media/home_event/OTT_ECS/2026/08/21/21_1787290690123.jpg" group-title="Sự kiện",Sự Kiện 4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://vips-livecdn.fptplay.net/live/media/su-kien-04/hls_avc_v6/index.m3u8
@@ -70,109 +58,213 @@ https://vips-livecdn.fptplay.net/live/media/su-kien-04/hls_avc_v6/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://vips-livecdn.fptplay.net/live/media/su-kien-06/hls_avc_v6/index.m3u8
 
-#EXTINF:0,00:00 22/08 ATUS Velden vs ATSV Wolfsberg [AUT D3S] [AUT D3S]
+#EXTINF:0,00:00 22/08 Abou Qir Fertilizers SC vs Bank El Ahly (HD XMEN) [HD]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539498_1.flv?auth_key=1787333330-5117-0-b81b51ceea3786f7cb8261523491e4d7
+https://live2.deliverfluxlive.com/livecdn/channel-13.flv?auth_key=3000001787336220-0-0-b74f41b3665edaa52b364d2ad2b87c27
 
 #EXTINF:0,00:00 22/08 Abu Qair Semad vs National Bank of Egypt SC [EGY PL] [EGY PL]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5686830_2.flv?auth_key=1787333343-3906-0-fcb8026e271ba603a630d7adbc27eb37
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5686830_1.flv?auth_key=1787336831-1531-0-f5bf8c066d5d1ef07f1852fd046cf891
+
+#EXTINF:0,00:00 22/08 Abu Qair Semad vs National Bank of Egypt SC [EGY PL] [EGY PL]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5686830_2.flv?auth_key=1787336831-3696-0-8b4792e2fff87f0f501a64c306aaaf37
+
+#EXTINF:0,00:00 22/08 Al Faisaly vs Al Wehdat (HD RAVEN) [HD]
+#EXTGRP:FLV | OTT Player
+https://live2.deliverfluxlive.com/livecdn/channel-21.flv?auth_key=3000001787336213-0-0-4b0f423d5c0d8d4cfc60447f5f42ada8
 
 #EXTINF:0,00:00 22/08 B93 Copenhagen vs Hellerup IK [DEN D2] [DEN D2]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539495_1.flv?auth_key=1787333300-6075-0-335c38b278faa147f1776353d9db3e40
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539495_1.flv?auth_key=1787336802-9141-0-074307006bf8a9aa761a7e3b82e46550
 
 #EXTINF:0,00:00 22/08 Deutschlandsberger SC vs Hochegger Dacher Eggendorf/Hartberg II [AUT D3S] [AUT D3S]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539500_1.flv?auth_key=1787333323-7233-0-f271389c6dfd0182641a4443b9a29e94
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539500_1.flv?auth_key=1787336817-4674-0-fcf6827a9ffc4118fec0dd78c49af495
 
 #EXTINF:0,00:00 22/08 El Zamalek vs El Ittihad Alexandria [EGY PL] [EGY PL]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5686829_2.flv?auth_key=1787333349-7811-0-3a622bbfa56f1b8c1268b97da7d104db
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5686829_1.flv?auth_key=1787336833-2217-0-fd20c10bc4f6085cfd5388d20556c49d
+
+#EXTINF:0,00:00 22/08 El Zamalek vs El Ittihad Alexandria [EGY PL] [EGY PL]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5686829_2.flv?auth_key=1787336833-6496-0-0d94e286059f9c3c7522f2a139c12f16
 
 #EXTINF:0,00:00 22/08 FC Alashkert vs Gandzasar Kapan [ARM D1] [ARM D1]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539480_1.flv?auth_key=1787333352-8025-0-db711a61306d7a8119c96e0dfc47bd28
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539480_1.flv?auth_key=1787336839-5148-0-e7bbfd4cb92e60bab459641d4afa2132
 
 #EXTINF:0,00:00 22/08 FC Cajamarca vs Atletico Grau [PER D1] [PER D1]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539968_1.flv?auth_key=1787333362-4687-0-9010c80404c1d58671a73757d9762406
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539968_1.flv?auth_key=1787336847-3829-0-fe588192982d307949514513713bd925
 
 #EXTINF:0,00:00 22/08 FC Fredericia vs Aarhus Fremad [DEN D1] [DEN D1]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539492_1.flv?auth_key=1787333294-6045-0-dc4078457365a6e3f3b2fee355a8bb6f
-
-#EXTINF:0,00:00 22/08 FC Gleisdorf 09 vs SC Kalsdorf [AUT D3S] [AUT D3S]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539728_1.flv?auth_key=1787333317-6143-0-d2fede1ff43f7e2e46aa0fd24f9a4374
-
-#EXTINF:0,00:00 22/08 FC Pinzgau Saalfelden vs SV Seekirchen [AUT D3N] [AUT D3N]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539930_1.flv?auth_key=1787333338-1588-0-0d0283c604c5f06a3675594d1ad4b702
-
-#EXTINF:0,00:00 22/08 Fremad Amager vs FC Roskilde [DEN D2] [DEN D2]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539494_1.flv?auth_key=1787333304-3257-0-519d6131ca3543a24c895785a7e90077
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539492_1.flv?auth_key=1787336800-8789-0-8a3b395fc4133dfb73587f27fa28ff45
 
 #EXTINF:0,00:00 22/08 Herrestads AIF vs Vanersborgs IF [SWE D2NG] [SWE D2NG]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5362635_1.flv?auth_key=1787333292-9368-0-6ff1c1d29925f38cfb913888b51898dd
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5362635_1.flv?auth_key=1787336795-3814-0-a8ac9193d6cf1c674062b3539fefe917
+
+#EXTINF:0,00:00 22/08 IK Sirius FK vs Hacken (HD POLO) [HD]
+#EXTGRP:FLV | OTT Player
+https://live2.deliverfluxlive.com/livecdn/channel-10.flv?auth_key=3000001787336228-0-0-ae987f3e76065e1d01f70ee446960ade
 
 #EXTINF:0,00:00 22/08 IK Sirius vs BK Hacken [SWE PR] [SWE PR]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5362598_1.flv?auth_key=1787333287-8609-0-b3b5f0bfb452c187e9f54df3192d6e98
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5362598_1.flv?auth_key=1787336785-1196-0-1d9879052be185b0dfbc4905053ad859
 
 #EXTINF:0,00:00 22/08 IK Sirius vs BK Hacken [SWE PR] [SWE PR]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5362598_3.flv?auth_key=1787333287-7334-0-e84021a6720aa3b406540e046142137c
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5362598_3.flv?auth_key=1787336785-3949-0-822921d87d274b671c52516f7bd10aee
 
 #EXTINF:0,00:00 22/08 Ridabu IL vs Raufoss [NOR Cup] [NOR Cup]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5556977_1.flv?auth_key=1787333314-3677-0-24bf30e1b0e3092b4d4a2155b4a09745
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5556977_1.flv?auth_key=1787336813-6483-0-48e48dec4eabb97f11f01529ff065843
 
 #EXTINF:0,00:00 22/08 SK Hranice vs MFK Havirov [Cze D3M] [Cze D3M]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5612047_1.flv?auth_key=1787333355-4235-0-fb3cd6273d5dd5d99b98797c1928e8d4
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5612047_1.flv?auth_key=1787336842-8626-0-d09976f833031cf949efc7f20cc22102
 
 #EXTINF:0,00:00 22/08 SL Benfica B vs Portimonense SC [POR L2] [POR L2]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5540042_1.flv?auth_key=1787333282-4176-0-47fd3eefcfc02e53553ea2acd9ee3c3d
-
-#EXTINF:0,00:00 22/08 Thisted FC vs Skive IK [DEN D2] [DEN D2]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539493_1.flv?auth_key=1787333310-1078-0-03aab0839f8c7ee734dd4b26afb26ca4
-
-#EXTINF:0,00:00 22/08 VST Volkermarkt vs SV Donau Klagenfurt [AUT D3S] [AUT D3S]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539497_1.flv?auth_key=1787333334-2381-0-364656a3ac90c9d92dc4b2035a0086a5
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5540042_1.flv?auth_key=1787336782-8374-0-fe6f03b1bbd574ab4bc4daa6e66ad7ad
 
 #EXTINF:0,00:00 22/08 Wolfsberger AC Am vs SK Treibach [AUT D3S] [AUT D3S]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5540119_1.flv?auth_key=1787333328-1267-0-6c651e47b19018ae13458f8ead475d82
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5540119_1.flv?auth_key=1787336821-5647-0-3c44e1e5d9466fbcba17ee3de84b78b7
+
+#EXTINF:0,00:00 22/08 Zamalek vs Ittihad Alexandria (HD TOM) [HD]
+#EXTGRP:FLV | OTT Player
+https://live2.deliverfluxlive.com/livecdn/channel-4.flv?auth_key=3000001787336204-0-0-077b1717b47dd73293ee5eeb998c4d3e
 
 #EXTINF:0,00:15 22/08 Team Vitality vs Natus Vincere (HD MARTY) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-30.flv?auth_key=3000001787332642-0-0-dab4ee3d872bb0897ee539267dd989da
+https://live2.deliverfluxlive.com/livecdn/channel-30.flv?auth_key=3000001787336235-0-0-39c0bccbf82b7fd23743f6525cace01b
 
 #EXTINF:0,00:15 22/08 Team Vitality vs Natus Vincere (MARTY)
 #EXTGRP:FLV | OTT Player
 https://live2.livefeedtextbox.com/live/channel30.flv
 
+#EXTINF:0,00:30 22/08 Aldosivi vs Union Santa Fe [ARG D1] [ARG D1]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5365813_1.flv?auth_key=1787336867-2700-0-9ddfcc79e1ad389885ca1750b03403c9
+
 #EXTINF:0,00:30 22/08 CLB Aldosivi vs Union de Santa Fe (BLV PEPSI) [flv]
 #EXTGRP:FLV | OTT Player
 https://live05.meung.app/live/59444581.flv
+
+#EXTINF:0,00:30 22/08 Italy (W) vs China (W) [FriendlyB] [FriendlyB]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/201_5698243_1.flv?auth_key=1787336983-4101-0-a0632593158b99746be6500afbba8476
+
+#EXTINF:0,00:30 22/08 Neuchatel Xamax vs Stade Lausanne Ouchy [SWI D1] [SWI D1]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539506_1.flv?auth_key=1787336851-2894-0-a72cec1d3007fe7ec62eadbac067c515
+
+#EXTINF:0,00:30 22/08 Petrolul Ploiesti vs Rapid Bucuresti [ROM D1] [ROM D1]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539880_1.flv?auth_key=1787336870-3431-0-b00275f58d7ca6f1e334aea33672abe3
+
+#EXTINF:0,00:30 22/08 SV Ried vs Grazer AK 1902 [AUT D1] [AUT D1]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539505_1.flv?auth_key=1787336864-6383-0-d76dc0338824416991fd6ede662b621e
+
+#EXTINF:0,00:30 22/08 Stade Nyonnais vs Etoile Carouge [SWI D1] [SWI D1]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539507_1.flv?auth_key=1787336857-7522-0-1eaa44d244a923345d90af9de70a2514
+
+#EXTINF:0,00:40 22/08 Fremad Amager vs FC Roskilde [DEN D2] [DEN D2]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539494_1.flv?auth_key=1787336875-3515-0-f561b737628b0e2d851a20f7d588e5a9
+
+#EXTINF:0,00:50 22/08 Al-Wehda Mecca(SA) vs Al Adalah [KSA D1] [KSA D1]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5626900_1.flv?auth_key=1787336879-5810-0-baaa234c247fc37d8487922d50e52b07
 
 #EXTINF:0,01:00 22/08 Al Qadisiya vs Al-Ittihad FC (BLV MONSTER) [flv]
 #EXTGRP:FLV | OTT Player
 https://live05.meung.app/live/75915087.flv
 
+#EXTINF:0,01:00 22/08 Al Qadsiah (KSA) vs Al Ittihad Jeddah [KSA PL] [KSA PL]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5615225_1.flv?auth_key=1787336942-5035-0-1a603b96ce4c67fe48b142815c26eb97
+
+#EXTINF:0,01:00 22/08 Al Qadsiah (KSA) vs Al Ittihad Jeddah [KSA PL] [KSA PL]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5615225_2.flv?auth_key=1787336942-9767-0-0d31a6b7b545bfaa1527ec7de79bad35
+
+#EXTINF:0,01:00 22/08 Al-Faisaly Harmah vs Neom SC [KSA PL] [KSA PL]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5615224_1.flv?auth_key=1787336936-6622-0-35336fbe8bf638f8103dc676436dd2e2
+
 #EXTINF:0,01:00 22/08 Al-Qadsiah vs Al Ittihad (Vịt Nướng) [flv]
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5Nzc3NzEzc2hneXg3cGRhMDJkZTVhMWV2YTE4bzZ0Z2RiaHh0Y25rYW4yazRneXV4ZHcxbzNsbDQ.flv
 
-#EXTINF:0,01:30 22/08 Đức vs CH Séc (HD 1) [HD]
+#EXTINF:0,01:00 22/08 Clermont Foot vs Dijon FCO [FRA D2] [FRA D2]
 #EXTGRP:FLV | OTT Player
-https://live1.quickscoreboardz.com/live/channel42.flv?wsSecret=e9daf767794dd3b43442bd051fbbaf29&wsABSTime=1787375884
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539515_1.flv?auth_key=1787336887-7859-0-f5362d81bcf2bfa34aea45b87f61d61b
+
+#EXTINF:0,01:00 22/08 Den Bosch vs FC Eindhoven [NED D2] [NED D2]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539523_2.flv?auth_key=1787336908-9094-0-e813970d68edf5d13b352b459c380e7d
+
+#EXTINF:0,01:00 22/08 Deportivo Muniz vs General Lamadrid [ARG PCM] [ARG PCM]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5362503_1.flv?auth_key=1787336932-5350-0-ebdd424e823ddf009829d75ea03b472f
+
+#EXTINF:0,01:00 22/08 FC Dordrecht vs Roda JC Kerkrade [NED D2] [NED D2]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539520_2.flv?auth_key=1787336912-1531-0-8785589e6e52259a5162037aa2116274
+
+#EXTINF:0,01:00 22/08 FC Emmen vs Jong AZ Alkmaar [NED D2] [NED D2]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539521_2.flv?auth_key=1787336917-2634-0-77155b5a8dbc985632deff3b5a0158fa
+
+#EXTINF:0,01:00 22/08 FC Sochaux vs EA Guingamp [FRA D2] [FRA D2]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539512_1.flv?auth_key=1787336900-6511-0-7147f63a5218b60e3caaf206d6239e48
+
+#EXTINF:0,01:00 22/08 FK Sarajevo vs BSK Banja Luka [BIH PL] [BIH PL]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5558357_1.flv?auth_key=1787336947-6430-0-ea19ccdb05bc068e004b8413b2f0b916
+
+#EXTINF:0,01:00 22/08 MVV Maastricht vs FC Volendam [NED D2] [NED D2]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539518_2.flv?auth_key=1787336904-3796-0-ea2c0dd64a988dffbba7fa2c1d3b0d8c
+
+#EXTINF:0,01:00 22/08 NK Rudes Zagreb vs Lokomotiva Zagreb [CRO D1] [CRO D1]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539765_1.flv?auth_key=1787336951-8941-0-b06a952fbb8b9d650bf909e49e73f264
+
+#EXTINF:0,01:00 22/08 PAU FC vs AS Nancy-Lorraine [FRA D2] [FRA D2]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539513_1.flv?auth_key=1787336897-3685-0-c67f25274a0098c82f2cbc53e63f320c
+
+#EXTINF:0,01:00 22/08 US Boulogne vs Red Star FC [FRA D2] [FRA D2]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539516_1.flv?auth_key=1787336883-4494-0-0911685189ab8abe016f14687d73c314
+
+#EXTINF:0,01:00 22/08 USL Dunkerque vs Montpellier HSC [FRA D2] [FRA D2]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539514_1.flv?auth_key=1787336892-2480-0-cb69ab93119a28299fc8d5189b31de82
+
+#EXTINF:0,01:15 22/08 Cherno More vs Dunav Ruse [BUL D1] [BUL D1]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539775_1.flv?auth_key=1787336954-8066-0-e41d1a37d51561f0f52d17cb1fe17d3e
+
+#EXTINF:0,01:15 22/08 NK Olimpija Ljubljana vs NK Nafta 1903 [SLO D1] [SLO D1]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5539891_1.flv?auth_key=1787336959-1106-0-d16f0dc4e116ba4668f547a0cf4b9d6f
+
+#EXTINF:0,01:30 22/08 Đức vs CH Séc (HD STEP) [HD]
+#EXTGRP:FLV | OTT Player
+https://live2.deliverfluxlive.com/livecdn/channel-26.flv?auth_key=3000001787336183-0-0-c4498f7444443729517739d3bcc00718
+
+#EXTINF:0,01:30 22/08 Đức vs CH Séc (STEP)
+#EXTGRP:FLV | OTT Player
+https://live2.livefeedtextbox.com/live/channel26.flv
 
 #EXTINF:0,01:45 22/08 Hansa Rostock vs VfB Stuttgart (BLV STING) [flv]
 #EXTGRP:FLV | OTT Player
@@ -180,7 +272,7 @@ https://live05.meung.app/live/14707124.flv
 
 #EXTINF:0,01:45 22/08 Marseille vs Strasbourg (HD ASTRA) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-11.flv?auth_key=3000001787332650-0-0-9b5c2c5e04dcf5d5f9ab6549459e7194
+https://live2.deliverfluxlive.com/livecdn/channel-11.flv?auth_key=3000001787336242-0-0-14b4c1510737bf98c2894dbdcc233a95
 
 #EXTINF:0,01:45 22/08 Olympique Marseille vs Strasbourg (Lẩu Ếch) [flv]
 #EXTGRP:FLV | OTT Player
@@ -190,25 +282,45 @@ https://cdnflv.xbdbotv.live/live/ZjE5NzE1NjMzc2E4bGNhNmE5OHVqZ2t0Nm13MnQ2cGF0cWR
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzE1NjMzc2QwbjJucHM3enNmbmlwaWdvdHcyOGw3eGRwcHhjNjlsMmlicDQ4Mzg5djV3aTBuZms.flv
 
+#EXTINF:0,01:45 22/08 Olympique de Marseille vs RC Strasbourg (BLV KHÔNG ĐỘ) [flv]
+#EXTGRP:FLV | OTT Player
+https://live05.meung.app/live/41943555.flv
+
+#EXTINF:0,01:45 22/08 Standard Liege vs LaLouvière (BLV REDBULL) [flv]
+#EXTGRP:FLV | OTT Player
+https://live05.meung.app/live/49572724.flv
+
+#EXTINF:0,02:00 22/08 Arsenal vs CLB Coventry City (BLV GIÀ LÀNG) [flv]
+#EXTGRP:FLV | OTT Player
+https://live05.meung.app/live/14830711.flv
+
+#EXTINF:0,02:00 22/08 Arsenal vs CLB Coventry City (BLV REVIVE) [flv]
+#EXTGRP:FLV | OTT Player
+https://live05.meung.app/live/33982309.flv
+
 #EXTINF:0,02:00 22/08 Arsenal vs Coventry City (ASAHI) [flv]
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzIyMjAzc2hmNTg3OXQ1aHl6a3RiYmo3d2swbnJlNmR0aGplZ2dsMWE4YTUwd3NpYWV3bHU5ZHo.flv
 
 #EXTINF:0,02:00 22/08 Arsenal vs Coventry City (HD MAX) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-6.flv?auth_key=3000001787332662-0-0-03e746d2de66557863922ae02251df26
+https://live2.deliverfluxlive.com/livecdn/channel-6.flv?auth_key=3000001787336257-0-0-a936132486a6ee54f57eef8ffe58823f
 
 #EXTINF:0,02:00 22/08 Arsenal vs Coventry City (HD NICK) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-5.flv?auth_key=3000001787332668-0-0-d93eac950cf01c1a4c2d5b6a2d321a9c
+https://live2.deliverfluxlive.com/livecdn/channel-5.flv?auth_key=3000001787336268-0-0-2f5488834fc09bfa7626e6c0493e695c
 
 #EXTINF:0,02:00 22/08 Arsenal vs Coventry City (HD ROY) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-1.flv?auth_key=3000001787332657-0-0-3199baa0d44d7dddb9ef403581f999d9
+https://live2.deliverfluxlive.com/livecdn/channel-1.flv?auth_key=3000001787336250-0-0-13385c036958288811e274154d93d977
 
 #EXTINF:0,02:00 22/08 Arsenal vs Coventry City (NEM NƯỚNG) [flv]
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzIyMjAzc3VqaWNlYmlxZzdhZms3YXp3ZWt0N2sxN2RqanVieGh3bGNlenk4bm5peTVtd2NyenQ.flv
+
+#EXTINF:0,02:00 22/08 Real Betis Balompié vs Real Sociedad (BLV SODA) [flv]
+#EXTGRP:FLV | OTT Player
+https://live05.meung.app/live/02456966.flv
 
 #EXTINF:0,02:00 22/08 Real Betis vs Real Sociedad (BUDWEISER) [flv]
 #EXTGRP:FLV | OTT Player
@@ -216,15 +328,15 @@ https://cdnflv.xbdbotv.live/live/ZjE5NzMyNzMwc3Nrd3plNm13ZWk4aWpxZWJ0cWRxdDBoMmR
 
 #EXTINF:0,02:00 22/08 Real Betis vs Real Sociedad (FULL HD BRADY) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-15.flv?auth_key=3000001787332680-0-0-2eccf2a202717a7962d08751135c5609
+https://live2.deliverfluxlive.com/livecdn/channel-15.flv?auth_key=3000001787336282-0-0-9ed1df84c169694d14533d136b15562a
 
 #EXTINF:0,02:00 22/08 Real Betis vs Real Sociedad (KEN)
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-18.flv?auth_key=3000001787332676-0-0-78ca90620f7c7530e887381031e02f75
+https://live2.deliverfluxlive.com/livecdn/channel-18.flv?auth_key=3000001787336276-0-0-06fc085bee659c52e011c66afa079298
 
 #EXTINF:0,02:00 22/08 Taylor Fritz vs Brandon Nakashima (HD LUCAS) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-31.flv?auth_key=3000001787332702-0-0-3e4715482a7db422da1be3f9a36c3047
+https://live2.deliverfluxlive.com/livecdn/channel-31.flv?auth_key=3000001787336299-0-0-c80b7b4ac641ae8df9fb83c9f8ba83d6
 
 #EXTINF:0,02:00 22/08 Taylor Fritz vs Brandon Nakashima (LUCAS)
 #EXTGRP:FLV | OTT Player
@@ -233,6 +345,10 @@ https://live2.livefeedtextbox.com/live/channel31.flv
 #EXTINF:0,04:05 22/08 Jaguares de Cordoba vs CLB Boyaca Chico (BLV BÍ ĐAO) [flv]
 #EXTGRP:FLV | OTT Player
 https://live05.meung.app/live/99121525.flv
+
+#EXTINF:0,06:00 22/08 Estudiantes Rio Cuarto vs CLB San Lorenzo (BLV WARRIOR) [flv]
+#EXTGRP:FLV | OTT Player
+https://live05.meung.app/live/97885009.flv
 
 #EXTINF:0,06:00 22/08 Lorenzo Musetti vs Frances Tiafoe (HD VIC) [HD]
 #EXTGRP:FLV | OTT Player
@@ -314,15 +430,85 @@ https://live05.meung.app/live/16226575.flv
 #EXTGRP:FLV | OTT Player
 https://live05.meung.app/live/78905744.flv
 
+#EXTINF:0,Abou Qir Fertilizers SC vs Bank El Ahly lúc 00:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel13.flv
+
+#EXTINF:0,Abou Qir Fertilizers SC vs Bank El Ahly lúc 00:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-13.flv?auth_key=3000001787337194-0-0-2f3b2a42937e18aa92a66e2f0072c0bb
+
+#EXTINF:0,Al Faisaly vs Al Wehdat lúc 00:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel21.flv
+
+#EXTINF:0,Al Faisaly vs Al Wehdat lúc 00:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-21.flv?auth_key=3000001787337194-0-0-0f7a51e95f8b7f3f90303a21b3ae810b
+
+#EXTINF:0,Al Faisaly vs Neom SC lúc 01:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel22.flv
+
+#EXTINF:0,Al Faisaly vs Neom SC lúc 01:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-22.flv?auth_key=3000001787337195-0-0-0183151bd8bcfc3d43fbdfc93bb7b2a2
+
+#EXTINF:0,Al Qadsiah vs Al Ittihad(KSA) lúc 01:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel14.flv
+
+#EXTINF:0,Al Qadsiah vs Al Ittihad(KSA) lúc 01:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-14.flv?auth_key=3000001787337195-0-0-81b95bd18cf1f056c3d34cbb194f8815
+
+#EXTINF:0,Arsenal vs Coventry City lúc 02:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel1.flv
+
+#EXTINF:0,Arsenal vs Coventry City lúc 02:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-1.flv?auth_key=3000001787337193-0-0-836f93bdb3a903f939366f50de956a03
+
+#EXTINF:0,Arsenal vs Coventry City lúc 02:00 ngày 22/08/2026 | Link 3 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel6.flv
+
 #EXTINF:0,Arsenal vs Coventry City lúc 02:00 ngày 22/08/2026 | Link 4 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.deliverfluxlive.com/livecdn/channel-6.flv?auth_key=3000001787333187-0-0-f300d601fdc958ea9d8b884442473ce1
+https://live2.deliverfluxlive.com/livecdn/channel-6.flv?auth_key=3000001787337194-0-0-4ec185c91dcb6af7a222ee4bee5c43e5
+
+#EXTINF:0,Arsenal vs Coventry City lúc 02:00 ngày 22/08/2026 | Link 5 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel5.flv
 
 #EXTINF:0,Arsenal vs Coventry City lúc 02:00 ngày 22/08/2026 | Link 6 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.deliverfluxlive.com/livecdn/channel-5.flv?auth_key=3000001787333188-0-0-489415eec685e64764eb7ea347771bf2
+https://live2.deliverfluxlive.com/livecdn/channel-5.flv?auth_key=3000001787337195-0-0-1de5e5d77d5a7408f63e1c7f526e1336
+
+#EXTINF:0,IK Sirius FK vs Hacken lúc 00:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel10.flv
+
+#EXTINF:0,IK Sirius FK vs Hacken lúc 00:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-10.flv?auth_key=3000001787337194-0-0-f8f9ba38d1c57c3ff9ea42e2c46c51ea
 
 #EXTINF:0,Marseille vs Strasbourg lúc 01:45 ngày 22/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
@@ -332,17 +518,57 @@ https://live2.livefeedtextbox.com/live/channel11.flv
 #EXTINF:0,Marseille vs Strasbourg lúc 01:45 ngày 22/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.deliverfluxlive.com/livecdn/channel-11.flv?auth_key=3000001787333187-0-0-9a41586d9b191c12a4b6d28fa1d93fe1
+https://live2.deliverfluxlive.com/livecdn/channel-11.flv?auth_key=3000001787337193-0-0-11115344fb4fa30225c15deb99a7ae36
 
-#EXTINF:0,Real Betis vs Real Sociedad lúc 02:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTINF:0,Petrolul vs FC Rapid 1923 lúc 00:30 ngày 22/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.deliverfluxlive.com/livecdn/channel-18.flv?auth_key=3000001787333187-0-0-693a2ea0e9e56bc3d11aa7f454b1b7ce
+https://live2.livefeedtextbox.com/live/channel8.flv
 
-#EXTINF:0,Real Betis vs Real Sociedad lúc 02:00 ngày 22/08/2026 | Link 3 [FLV]
+#EXTINF:0,Petrolul vs FC Rapid 1923 lúc 00:30 ngày 22/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.livefeedtextbox.com/live/channel18.flv
+https://live2.deliverfluxlive.com/livecdn/channel-8.flv?auth_key=3000001787337195-0-0-2af7f64ad0727598f317f9de9db84c52
+
+#EXTINF:0,Real Betis vs Real Sociedad lúc 02:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel15.flv
+
+#EXTINF:0,Real Betis vs Real Sociedad lúc 02:00 ngày 22/08/2026 | Link 4 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-15.flv?auth_key=3000001787337194-0-0-0c25e1b696d4c2ec74169c36f09a785c
+
+#EXTINF:0,Real Zaragoza vs Athletic Bilbao lúc 00:30 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel9.flv
+
+#EXTINF:0,Real Zaragoza vs Athletic Bilbao lúc 00:30 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-9.flv?auth_key=3000001787337196-0-0-f20b8aa5c05469a0b4a8dbf91f04b754
+
+#EXTINF:0,SV Ried vs Grazer AK lúc 00:30 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel17.flv
+
+#EXTINF:0,SV Ried vs Grazer AK lúc 00:30 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-17.flv?auth_key=3000001787337195-0-0-b9055c1420821d4785ee39ed105d7172
+
+#EXTINF:0,Zamalek vs Ittihad Alexandria lúc 00:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel4.flv
+
+#EXTINF:0,Zamalek vs Ittihad Alexandria lúc 00:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-4.flv?auth_key=3000001787337194-0-0-c3a9c9a57baf1bf4cf63b12529cf11c8
 
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/arsenal.png" group-title="Giờ Vàng TV",[02:00] Arsenal vs Coventry | Đầu Cầu Arsenal [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -457,6 +683,12 @@ https://eqr2hdarxfliv.vcdn.cloud/1787304815_hd/1787304815_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://eqr2hdarxfliv.vcdn.cloud/1787272182_hd/1787272182_hd@720p.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fabc619ec1945b54ceeaa2e9716fe2963.png&time=00%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:00 22/08 Abou Qir Fertilizers SC vs Bank El Ahly (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/27c643aa1864748534db552ab2c155e8/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fabc619ec1945b54ceeaa2e9716fe2963.png&time=00%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:00 22/08 Abou Qir Fertilizers SC vs Bank El Ahly (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-87c66c4b3fb49c2b5b4e/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F34566a9d9544037e59023eff44faf028.png&time=00%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:00 22/08 Alashkert vs Gandzasar Kapan (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/8ea4eae4189df5786e3abf85d50af961/playlist.m3u8
 
@@ -495,6 +727,9 @@ https://hls.streamhub.media/hls/thesport-api-1630ddd09fd8cafdc91a/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F8ae34693eb0763728db39a4c2a2d814f.png&time=00%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:00 22/08 FC Stockholm Internazionale vs Jarfalla (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/163485f3a273b9c305cfcb01cc2dd855/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F8ae34693eb0763728db39a4c2a2d814f.png&time=00%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:00 22/08 FC Stockholm Internazionale vs Jarfalla (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-7d7ccee0833d5cab4313/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F53065afcbcf4b386b8aef9eefab540a9.png&time=00%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:00 22/08 Fredericia vs Aarhus Fremad (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/2875d16f8b2fd1c1f6cdc721c61efa9a/playlist.m3u8
@@ -565,11 +800,20 @@ https://station1-global.ebaclofen.org/live/e40c17ce45ffc8b5db3b01ad79721c79/play
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F9068d1d2e3c1998ede5cf5b1922e560a.png&time=00%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:00 22/08 Wolfsberger AC Amateure vs SK Treibach (Nhà Đài 2)
 https://hls.streamhub.media/hls/thesport-api-9d25501368c6298d11a6/master.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F6ad4e821a96f050ba29f431fbf57801e.png&time=00%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:00 22/08 Zamalek SC vs Ittihad Alexandria SC (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/d7083b73956d5d433c6f39e39db15a46/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F6ad4e821a96f050ba29f431fbf57801e.png&time=00%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:00 22/08 Zamalek SC vs Ittihad Alexandria SC (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-65fb05209fc948a02dd1/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F086fad2b496bcf474e2df4eed691c6b2.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Aldosivi Mar del Plata vs Club Atlético Unión (Huyền Diệp)
 https://cdn-global.ebaclofen.org/vsc/vsc-vuong-tu-neil/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F086fad2b496bcf474e2df4eed691c6b2.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Aldosivi Mar del Plata vs Club Atlético Unión (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/caf24acbe5eac8f9f0c81ab716af73ec/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F086fad2b496bcf474e2df4eed691c6b2.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Aldosivi Mar del Plata vs Club Atlético Unión (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-385212bc1353a29166d7/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F99233e5ef77ace10ac2bc8074c0198b0.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 First Vienna Women vs Sturm Graz/Stattegg Women (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/e5ea8de34c79fa9908e92f6ed3515901/playlist.m3u8
@@ -577,32 +821,176 @@ https://station1-global.ebaclofen.org/live/e5ea8de34c79fa9908e92f6ed3515901/play
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fb54325678c3ec6b201d628978a053fef.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Neuchatel Xamax vs Stade Ouchy (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/0cf8335071eefea4dddee2011ddfe104/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fb54325678c3ec6b201d628978a053fef.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Neuchatel Xamax vs Stade Ouchy (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-0c97a9d27a16afcfc3b9/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fa568766c6a9883fa021d0469ec813dc2.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Petrolul Ploiesti vs FC Rapid 1923 (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/788cf78ca3b4b6288ac7c1401667ec61/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fa568766c6a9883fa021d0469ec813dc2.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Petrolul Ploiesti vs FC Rapid 1923 (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-fd7366ee6ee7e33d1b96/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ff5866286ca3b27aca7be5c5b1e933f8f.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 SV Ried vs Grazer AK (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/af59a283f3488754f872de5b462875cd/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ff5866286ca3b27aca7be5c5b1e933f8f.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 SV Ried vs Grazer AK (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-0e3ed5bfa1f7bc00fef5/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F73f449ce0e914b137e557e4b16d50f79.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Stade Nyonnais vs Etoile Carouge (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/16c1bdb2f5e58c789fc5d6636cb5f5de/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F73f449ce0e914b137e557e4b16d50f79.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Stade Nyonnais vs Etoile Carouge (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-e7b8ee04f43972d9ecd4/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F282741de14344077486f9a8482c0d971.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:30 22/08 Víkingur Gøta vs B36 Torshavn (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/6948d8fae43b102f512a21169fc4e737/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fb510505e58cd138df949e152ab1c85f4.png&time=00%3A50+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:50 22/08 Al Wehda Mecca vs Al-Adalah (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/99275a09c0ea33788f4e0f26358b5642/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fb510505e58cd138df949e152ab1c85f4.png&time=00%3A50+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",00:50 22/08 Al Wehda Mecca vs Al-Adalah (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-d250cbfa04c50b924960/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fbc74439d19c8bbaa17c57406b120b86d.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Al Qadsiah vs Al Ittihad Club (Ngô Quyền)
 https://cdn-global.ebaclofen.org/vsc/vsc-te-tuong-alien/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fbc74439d19c8bbaa17c57406b120b86d.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Al Qadsiah vs Al Ittihad Club (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/226746fa1a1df5a2ca7f3dd0ebd48240/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fbc74439d19c8bbaa17c57406b120b86d.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Al Qadsiah vs Al Ittihad Club (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-5fff30127f6e216906bb/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F4e9f55c1006ca24b2b535054a52187e8.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Al-Faisaly Harmah vs NEOM Sports Club (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/e267b3bcdc3561cae7a95cd2403bf2b5/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F4e9f55c1006ca24b2b535054a52187e8.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Al-Faisaly Harmah vs NEOM Sports Club (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-701c05ada0d4eb47bfa1/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F4e9f55c1006ca24b2b535054a52187e8.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Al-Faisaly Harmah vs NEOM Sports Club (Tôn Quyền)
 https://cdn1-global.ebaclofen.org/live/pro1/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2c61be832465c05fe591b927e063c83f.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Boulogne vs Red Star FC 93 (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/5d57bb56b913c15315c5837df2b7982e/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2c61be832465c05fe591b927e063c83f.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Boulogne vs Red Star FC 93 (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-895b8cbfec258cd6a4b2/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F53bcb0dffb14a347071436feb56a6436.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Clermont vs Dijon (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/a56d0a32cd041585b17e7fcb2ca52302/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F53bcb0dffb14a347071436feb56a6436.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Clermont vs Dijon (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-45f5369aabf5d3bfd52c/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ffcf9e7cc7e13ce9607e2dbf1f14955c2.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Club Atletico Acassuso vs Godoy Cruz Antonio Tomba (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/c0667d9f36fc3cb0c99ad5cdb0eca441/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ffcf9e7cc7e13ce9607e2dbf1f14955c2.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Club Atletico Acassuso vs Godoy Cruz Antonio Tomba (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-8e697b3690dc781876b4/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0e6bfc80b47b7f0a2c1cfbbe5dbc00b7.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Deportivo Muniz vs General Lamadrid (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/015335db0b2a398ef3a4e57cf7a1c9b5/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0e6bfc80b47b7f0a2c1cfbbe5dbc00b7.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Deportivo Muniz vs General Lamadrid (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-08c31cf70a9250ec0e26/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F687e0cddc35e14d8b15af1cfe265c1be.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 KSC Lokeren vs KAS Eupen (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/57879c53c9393e2e9b5f7ad12d882a0c/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F7e3a84b5a5d586f6c4024c758b78dd78.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Pau FC vs Nancy (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/a2ae100aa5bb8a0cd1e7c26e2a8f4ed3/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F7e3a84b5a5d586f6c4024c758b78dd78.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Pau FC vs Nancy (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-31c2ad9f1b35724d6284/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F3632ef89c514832f76dd27a0c497482d.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 RSCA Futures vs Excelsior Virton (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/52153e0ae0b235987e7c610519b11c21/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F3632ef89c514832f76dd27a0c497482d.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 RSCA Futures vs Excelsior Virton (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-ce5182cc16805fc7cb88/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F5c84cb6e7c5225c625cb3735e4328ba7.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Rudes vs NK Lokomotiva Zagreb (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/232ee9ae22adfad23804d8977a160d9d/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F5c84cb6e7c5225c625cb3735e4328ba7.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Rudes vs NK Lokomotiva Zagreb (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-172f98892eb4c6f79dac/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F923138a0ae0fac73cc50bbc58b3bf796.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Sarajevo vs BSK Banja Luka (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/4804feafd3fd0de3469fd262f1bf9673/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F923138a0ae0fac73cc50bbc58b3bf796.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Sarajevo vs BSK Banja Luka (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-76730f8b5aaeaa5ee311/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fa1591aae4ee4d750684ee71c6c78a332.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Sochaux vs Guingamp (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/9d9e2f7d6ae6b3a01f95629af32d70fc/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fa1591aae4ee4d750684ee71c6c78a332.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 Sochaux vs Guingamp (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-1ca5ee704ed48c26af67/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ff029ed3d5dcf7f49a42c7f1474411a3c.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 USL Dunkerque vs Montpellier Hérault SC (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/2315da449312ddb06f3d3d7ffdaa00b2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ff029ed3d5dcf7f49a42c7f1474411a3c.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:00 22/08 USL Dunkerque vs Montpellier Hérault SC (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-5c11ed544e52b808d150/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F6356dcedfefdbc98de34cce75214de28.png&time=01%3A15+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:15 22/08 Cherno More Varna vs FC Dunav Ruse (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/556c2104593990623d1d201777c8da8f/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fdb570f6a73a4d7e10ede827746ae992c.jpg&time=01%3A15+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:15 22/08 FC Rapperswil-Jona vs Winterthur (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/165361a3729dee28db3f7e89fee986ef/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fdb570f6a73a4d7e10ede827746ae992c.jpg&time=01%3A15+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:15 22/08 FC Rapperswil-Jona vs Winterthur (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-12c829f7bd276605c2fa/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F016486307fcd47800a3b166cb5523f07.png&time=01%3A15+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:15 22/08 NK Olimpija Ljubljana vs NK Nafta (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/6878db5be7d133de26517b327c88a637/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6356dcedfefdbc98de34cce75214de28.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 01:15 22/08 Cherno More Varna vs FC Dunav Ruse (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-70e827f274aae10954b9/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/016486307fcd47800a3b166cb5523f07.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 01:15 22/08 NK Olimpija Ljubljana vs NK Nafta (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-8811ac43da809c8df1bf/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F17f25472211b78b396faf8c420e7ea8c.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Admira Wacker vs First Vienna FC 1894 (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/f3b06ec29dc70c6b57d2459b4c36d461/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fe8562e3f468a3ac1c609bf7b1380de99.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Chojniczanka Chojnice vs Stal Stalowa Wola (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/acfb3ec51ac87a63011eaea5e7ff5968/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F27471fce495bec5e33bc83b508eba608.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Comunicaciones BsAs vs Sportivo Italiano (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/f44e46d109bcf6c726beeba94d4fdb58/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F181ad56f9efa4afb8872971448266f51.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Cracovia Krakow vs KS Wieczysta Krakow (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/b5c48d88123e83a7ab28821fc8526506/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F1a02b3bb5ec75b6ca8430c57915ac922.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Erzurum BB vs Galatasaray (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/f5bcd557a27a3d417bd510956c664716/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F1a02b3bb5ec75b6ca8430c57915ac922.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Erzurum BB vs Galatasaray (Phổ Nghi)
 https://cdn1-global.ebaclofen.org/live/pro2/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F1e7880aacbbfea735a5e3d8def60c31f.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Inverness vs Partick Thistle FC (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/d64274e26e19be9a7da4089b61fc33d3/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0d3eabc5ecaf407ef8dc5cae3840930d.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Karagumruk vs Bursaspor (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/d255d4d87ae53e147243d4b0107e3f67/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fb3cb1dab4929d327b7ee42553a2fef58.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Lechia Gdansk vs Pogon Siedlce (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/4115e0c519febe871be8eeb39c7759c0/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fe50fadf148a07731dbba8acade1645fe.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 San Telmo vs Deportivo Moron (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/20e7d0c844d7e7fae572e2fe1e971360/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Faf68158e991ab635b8735937e8d529f7.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:30 22/08 Vicenza vs Catanzaro (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/30012afce99908302cb1fc849cf92894/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0dc4b45524350a50a4d3276a2525693f.png&time=01%3A45+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:45 22/08 Marseille vs RC Strasbourg Alsace (Lưu Triệt)
 https://cdn1-global.ebaclofen.org/live/pro3/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0dc4b45524350a50a4d3276a2525693f.png&time=01%3A45+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",01:45 22/08 Marseille vs RC Strasbourg Alsace (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/4333f8cc3eb34c07f147cae79935d68d/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fd6f5debc456da1119256ab66462ab510.png&time=02%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",02:00 22/08 Arsenal vs Coventry City (Dương Kiên)
+https://cdn-global.ebaclofen.org/vsc/jonhny5/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fd6f5debc456da1119256ab66462ab510.png&time=02%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",02:00 22/08 Arsenal vs Coventry City (Lưu Bang)
 https://cdn-global.ebaclofen.org/vsc/vsc-hiep-si-tan/index.m3u8
@@ -613,20 +1001,11 @@ https://station1-global.ebaclofen.org/live/568cb842f8a908dc52cd78978b3a43c9/play
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fcd6fd11fd9ca07c46747cb03b87f4dbb.png&time=02%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",02:00 22/08 Cordoba vs Girona FC (Trần Hoàng)
 https://cdn1-global.ebaclofen.org/live/pro4/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F018e260ad68bdad741c61e3171c4c608.png&time=02%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",02:00 22/08 Real Betis vs Real Sociedad (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/f00983092b07d3b3fddcc04fc56d8529/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/d6f5debc456da1119256ab66462ab510.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 02:00 22/08 Arsenal vs Coventry City (Dương Kiên)
-https://cdn-global.ebaclofen.org/vsc/jonhny5/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/018e260ad68bdad741c61e3171c4c608.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 02:00 22/08 Real Betis vs Real Sociedad (Lê Hoàn)
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F018e260ad68bdad741c61e3171c4c608.png&time=02%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",02:00 22/08 Real Betis vs Real Sociedad (Lê Hoàn)
 https://cdn-global.ebaclofen.org/vsc/jonhny6/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/578175c1a0691907824154179e179ade.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 06:00 22/08 Estudiantes Rio Cuarto vs San Lorenzo (Doanh Chính)
-https://cdn1-global.ebaclofen.org/live/pro5/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/9592d1e0be6375b9e6c5ef169b7aa864.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 21:00 22/08 Everton vs Crystal Palace (Lê Hoàn)
-https://cdn1-global.ebaclofen.org/live/pro6/index.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F018e260ad68bdad741c61e3171c4c608.png&time=02%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",02:00 22/08 Real Betis vs Real Sociedad (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/f00983092b07d3b3fddcc04fc56d8529/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F5736b9d2b0cadc3c1ba779bf6787d878.png&time=21%3A15+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",21:15 22/08 Al Duhail vs Al-Sailiya (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/fe75f0ea5c618634f520803aaaaab032/playlist.m3u8
@@ -664,6 +1043,12 @@ https://station1-global.ebaclofen.org/live/d03c8afb47aa0d1feaef5dd8203dbe0f/play
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a0a227a6100628d3213e1fc321acd4f2.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 01:00 23/08 Al-Ahli SFC vs Abha (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/a4a401dca4cdf07a9e2dd53e6a5404b6/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/214049d4df11756a2eb21bbd8266e2a1.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 02:30 23/08 RCD Espanyol de Barcelona vs Real Madrid (Lưu Triệt)
+https://cdn1-global.ebaclofen.org/live/pro5/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/8663a7bedcf20394242d069637e67219.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 18:00 23/08 West Bromwich Albion vs Burnley (Lưu Triệt)
+https://cdn1-global.ebaclofen.org/live/pro6/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F82a1ff2fa56077a25595288406888007.webp&time=00%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",00:00 22/08 IK Sirius FK vs Hacken (BLV FOX) [geo]
 https://live.inplyr.com/room/620003.m3u8
 
@@ -677,16 +1062,28 @@ https://live.inplyr.com/room/603914.m3u8
 https://live.inplyr.com/room/610518.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/7a603db53cf624d5e3628bdb1688e1e8.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:00 22/08 IK Sirius FK vs Hacken (BLV BLV FOX)
-https://pull.niues.live/live/stream-620003_lhd.m3u8?auth_key=1787336400-0-0-ba516fc1d4f13ca5a3a883dca2c0635f
+https://pull.niues.live/live/stream-620003_lhd.m3u8?auth_key=1787340600-0-0-222f1717d6439d1ea064629109450450
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/7a603db53cf624d5e3628bdb1688e1e8.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:00 22/08 IK Sirius FK vs Hacken (BLV PEANUT)
-https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1787336400-0-0-c145758031e9d6366cd6cc4213f02ee6
+https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1787340600-0-0-21ec83aaaf23467fa7269622f9468be3
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/7a603db53cf624d5e3628bdb1688e1e8.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:00 22/08 IK Sirius FK vs Hacken (BLV TRÀ ĐÁ)
-https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1787336400-0-0-ba5d2b2fc46ff3abe098bd1a7f7c1d69
+https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1787340600-0-0-fc8823f6bb35ab20e4e2ae7d6b598476
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/7a603db53cf624d5e3628bdb1688e1e8.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:00 22/08 IK Sirius FK vs Hacken (BLV XUÂN TÓC ĐỎ)
-https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=41ffe725e95769e5744e36eafea84eea&txTime=6a88dd20
+https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=0f5557e35f910a39f39ec9b6daecceef&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260818/d22063a0d2b5d50edb705bcd00efa6c8.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:00 22/08 Waldhof Mannheim vs 1. FC Kaiserslautern (BLV BLV CÁP)
+https://pull.niur.live/live/stream-610677_lhd.m3u8?txSecret=5324f98e371f590ccea14b36fd9513c9&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260818/d22063a0d2b5d50edb705bcd00efa6c8.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:00 22/08 Waldhof Mannheim vs 1. FC Kaiserslautern (BLV BLV HEHE)
+https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1787340600-0-0-e2aa390b8abb977a054c4785824307ad
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260818/d22063a0d2b5d50edb705bcd00efa6c8.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:00 22/08 Waldhof Mannheim vs 1. FC Kaiserslautern (BLV CHÍ PHÈO)
+https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1787340600-0-0-f74f5d9ddab340c44da6cc8ac04862c2
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260818/d22063a0d2b5d50edb705bcd00efa6c8.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:00 22/08 Waldhof Mannheim vs 1. FC Kaiserslautern (BLV XUÂN SON)
+https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=a7ae14daedf3c8b49ed7674c89969a28&txTime=6a88ed88
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F43e27357b2a9f29839ea1c16b8af92fd.png&time=00%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",00:30 22/08 Aldosivi Mar del Plata vs Club Atlético Unión (BLV CÒ) [geo]
 https://live.inplyr.com/room/582342.m3u8
@@ -695,10 +1092,7 @@ https://live.inplyr.com/room/582342.m3u8
 https://live.inplyr.com/room/536185.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/43e27357b2a9f29839ea1c16b8af92fd.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:30 22/08 Aldosivi Mar del Plata vs Club Atlético Unión (BLV BLV CÒ)
-https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1787336400-0-0-ea6486fcde97a67d4d86ffb11a4e2233
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4cc776763ed8ef5a20eb3f8ee5efac9c.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 00:30 22/08 SV Ried vs Grazer AK (BLV BLV A WIN)
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1786841602-0-0-4f35ee9272d4ec4993f2d2f97bd929b1
+https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1787340600-0-0-683d847c13054ebbb7908247b1e5c9be
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fb9234da71798d9fff8223b3245c49ab9.png&time=01%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",01:00 22/08 Al Faisaly vs Neom SC (BLV BẢY) [geo]
 https://live.inplyr.com/room/621843.m3u8
@@ -719,28 +1113,76 @@ https://live.inplyr.com/room/527383.m3u8
 https://live.inplyr.com/room/589848.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/b9234da71798d9fff8223b3245c49ab9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:00 22/08 Al Faisaly vs Neom SC (BLV BLV BẢY)
-https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1787331849-0-0-c43bfbd1a2ed5f7d7933ed84cdfc672f
+https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1787340600-0-0-6da0233aaed1ececb7de51f779649797
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/b9234da71798d9fff8223b3245c49ab9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:00 22/08 Al Faisaly vs Neom SC (BLV CACAO)
-https://pull.niues.live/live/stream-620661_lhd.m3u8?auth_key=1787334785-0-0-25d2e3f87d7cacc9bed6a2ae0a84d5c4
+https://pull.niues.live/live/stream-620661_lhd.m3u8?auth_key=1787340600-0-0-9b645b0e165a61acb6b5d5faeab1c5f1
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/b9234da71798d9fff8223b3245c49ab9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:00 22/08 Al Faisaly vs Neom SC (BLV CURRY)
+https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1787340600-0-0-068e869f952200fdac2aa4cc3b20264e
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3cd80b96a67be2f1732c9e9eb7da035.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:00 22/08 Al Qadsiah vs Al Ittihad (BLV BLV ALEX)
-https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1787336400-0-0-a05e935a947c0e78c0b91fe90a4248c8
+https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1787340600-0-0-56605fad6c6325f1bbbff899cf2f17d9
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3cd80b96a67be2f1732c9e9eb7da035.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:00 22/08 Al Qadsiah vs Al Ittihad (BLV BLV CÁO)
+https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1787340600-0-0-f895c84c70a811be4467ef441d38a4ef
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3cd80b96a67be2f1732c9e9eb7da035.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:00 22/08 Al Qadsiah vs Al Ittihad (BLV BLV FIREMAN)
+https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1787340600-0-0-d8b6c7c6ca5e24c2b16bf7f054ba4cfa
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3cd80b96a67be2f1732c9e9eb7da035.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:00 22/08 Al Qadsiah vs Al Ittihad (BLV BLV LONG)
-https://pull.niur.live/live/stream-9912117_lhd.m3u8?txSecret=c660272299c2ad81483729837e854e7b&txTime=6a88cdd2
+https://pull.niues.live/live/stream-9912117_lhd.m3u8?auth_key=1787340600-0-0-94b3a553b1f3eb92fe406834bdf4f51e
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3cd80b96a67be2f1732c9e9eb7da035.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:00 22/08 Al Qadsiah vs Al Ittihad (BLV BLV ROBBEN)
-https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1787328357-0-0-f68a4dfc849f302dea790b3de08843ab
+https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1787340600-0-0-891b959379908fede4dbc31a2aec19f1
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3cd80b96a67be2f1732c9e9eb7da035.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:00 22/08 Al Qadsiah vs Al Ittihad (BLV LOKA)
-https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1787331484-0-0-c79c294707b2ec784e1dcf84f594445c
+https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1787340600-0-0-45d8a514ad39ae1afddab31ca797bb7d
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F4e558b6a4b8db8f630b4e551ae270d2d.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",01:30 22/08 Erzurumspor FK vs Galatasaray (BLV A TINH) [geo]
+https://live.inplyr.com/room/598119.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F4e558b6a4b8db8f630b4e551ae270d2d.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",01:30 22/08 Erzurumspor FK vs Galatasaray (BLV ANH TÀI) [geo]
+https://live.inplyr.com/room/406865.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F4e558b6a4b8db8f630b4e551ae270d2d.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",01:30 22/08 Erzurumspor FK vs Galatasaray (BOSS) [geo]
+https://live.inplyr.com/room/620504.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F4e558b6a4b8db8f630b4e551ae270d2d.png&time=01%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",01:30 22/08 Erzurumspor FK vs Galatasaray (GRAP) [geo]
+https://live.inplyr.com/room/622093.m3u8
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4e558b6a4b8db8f630b4e551ae270d2d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:30 22/08 Erzurumspor FK vs Galatasaray (BLV BLV A TINH)
+https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=1c1ad25098ece2d9b7f970058c4a1df2&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4e558b6a4b8db8f630b4e551ae270d2d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:30 22/08 Erzurumspor FK vs Galatasaray (BLV BLV ANH TÀI)
+https://pull.niur.live/live/stream-406865_lhd.m3u8?txSecret=80134ead60200c7569f77fc1f528876b&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4e558b6a4b8db8f630b4e551ae270d2d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:30 22/08 Erzurumspor FK vs Galatasaray (BLV BOSS)
+https://pull.niur.live/live/stream-620504_lhd.m3u8?txSecret=9d0a9d7e677e32217eac3f57debd30bd&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4e558b6a4b8db8f630b4e551ae270d2d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:30 22/08 Erzurumspor FK vs Galatasaray (BLV GRAP)
+https://pull.niur.live/live/stream-622093_lhd.m3u8?txSecret=a1f2d2b9816090b9a983e125a9352039&txTime=6a88ed88
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fbacb4277c05eb86588e7e7fe56ac7a59.png&time=01%3A45+22%2F08" group-title="Tinhlagi - Socolive TV",01:45 22/08 Hansa Rostock vs VfB Stuttgart (MP3) [geo]
 https://live.inplyr.com/room/621840.m3u8
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/bacb4277c05eb86588e7e7fe56ac7a59.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:45 22/08 Hansa Rostock vs VfB Stuttgart (BLV BLV PIRLO)
+https://pull.niues.live/live/stream-351530_lhd.m3u8?auth_key=1787340600-0-0-6556997a8edaf35ce903c06046a9ba3d
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/bacb4277c05eb86588e7e7fe56ac7a59.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:45 22/08 Hansa Rostock vs VfB Stuttgart (BLV BLV WUKONG)
+https://pull.niur.live/live/stream-511367_lhd.m3u8?txSecret=d0358fe91689dd586383ef6918db6b64&txTime=6a88ed88
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/bacb4277c05eb86588e7e7fe56ac7a59.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:45 22/08 Hansa Rostock vs VfB Stuttgart (BLV MP3)
-https://pull.niur.live/live/stream-621840_lhd.m3u8?txSecret=ffa481c476891f2bdf561ccb6c6c6857&txTime=6a88d6e8
+https://pull.niur.live/live/stream-621840_lhd.m3u8?txSecret=5757de7bcc8f81c4ffbc7681804ddc1f&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/bacb4277c05eb86588e7e7fe56ac7a59.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:45 22/08 Hansa Rostock vs VfB Stuttgart (BLV VINFAST)
+https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1787340594-0-0-782f86fd93976e52cb399cd4301b89bf
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/142273cdbaaa09aeebbec9d54564e8b2.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:45 22/08 Marseille vs RC Strasbourg Alsace (BLV SEVEN)
+https://pull.niur.live/live/stream-618546_lhd.m3u8?txSecret=615cb72ceed4b4c2667000a2ecb9daec&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/142273cdbaaa09aeebbec9d54564e8b2.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 01:45 22/08 Marseille vs RC Strasbourg Alsace (BLV TUẤN CÙI)
+https://pull.niues.live/live/stream-400722_lhd.m3u8?auth_key=1787340600-0-0-84a629741776085b4132408f22ef3c08
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fef22889e19c36c5617b706ed185d2738.png&time=02%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",02:00 22/08 Arsenal vs Coventry City (BLV BÉO) [geo]
 https://live.inplyr.com/room/459401.m3u8
@@ -752,13 +1194,40 @@ https://live.inplyr.com/room/494201.m3u8
 https://live.inplyr.com/room/123226.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/ef22889e19c36c5617b706ed185d2738.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Arsenal vs Coventry City (BLV BLV BÉO)
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=59bf1b87d40d10125c12ac3bcca4a617&txTime=6a88cdff
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=359b4e5da02f1e17b4238500161a4fb5&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/ef22889e19c36c5617b706ed185d2738.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Arsenal vs Coventry City (BLV BLV CUỘI)
+https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1787340600-0-0-c27e8132d3086b150dd91e7a204c0e6e
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/ef22889e19c36c5617b706ed185d2738.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Arsenal vs Coventry City (BLV BLV MESSI)
-https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1787319405-0-0-91e4cb32cebcc7e437cb23b6bf91d7b0
+https://pull.niues.live/live/stream-494201_lhd.m3u8?auth_key=1787340600-0-0-3290ee9bc838f393b56a4b3035e87d6b
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/ef22889e19c36c5617b706ed185d2738.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Arsenal vs Coventry City (BLV HẢI THANH)
+https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1787340600-0-0-3f1bfa5d32743fb8155988652c29d0e7
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/ef22889e19c36c5617b706ed185d2738.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Arsenal vs Coventry City (BLV RICKHANTER)
-https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=adc1eec273f23c0af4223f0d2302b2eb&txTime=6a88bbce
+https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=47968ed1e883ebf9f06f50872e38b512&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/ef22889e19c36c5617b706ed185d2738.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Arsenal vs Coventry City (BLV SAO LA)
+https://pull.niur.live/live/stream-462413_lhd.m3u8?txSecret=ade7991155504b011c072012334ff74d&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4555a0bf44138c84a3d33d16f9c155d5.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Real Betis vs Real Sociedad (BLV A BỆU)
+https://pull.niur.live/live/stream-484845_lhd.m3u8?txSecret=5ad8e3158dec09b16e7c3b4b723ba705&txTime=6a88ed8b
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4555a0bf44138c84a3d33d16f9c155d5.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Real Betis vs Real Sociedad (BLV BLV GIÓ)
+https://pull.niur.live/live/stream-321443_lhd.m3u8?txSecret=c5fef7b9431e880ec25a1b1bc1f859d7&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4555a0bf44138c84a3d33d16f9c155d5.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Real Betis vs Real Sociedad (BLV BLV XO)
+https://pull.niur.live/live/stream-472241_lhd.m3u8?txSecret=847786ff90013ac5f6b99938d63af0c4&txTime=6a88ed88
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4555a0bf44138c84a3d33d16f9c155d5.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Real Betis vs Real Sociedad (BLV LÃO LÂM)
+https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1787340600-0-0-77ade7dc29fb9b74d3a46abc8b855809
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4555a0bf44138c84a3d33d16f9c155d5.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Real Betis vs Real Sociedad (BLV NGƯỜI CÁ)
+https://pull.niues.live/live/stream-595335_lhd.m3u8?auth_key=1787340600-0-0-7965aef9fd6e0aef81ec5f4b6ccdfe7f
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4555a0bf44138c84a3d33d16f9c155d5.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 02:00 22/08 Real Betis vs Real Sociedad (BLV ĐỖ TÚ TÀI)
+https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1787340600-0-0-490cb3fc509d0a3f102abe16affe2e21
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Ff5239b1ff2913a8ed848272ccbbc4482.png&time=04%3A05+22%2F08" group-title="Tinhlagi - Socolive TV",04:05 22/08 Jaguares de Cordoba vs Boyaca Chico (BLV CHIVAS) [geo]
 https://live.inplyr.com/room/485739.m3u8
@@ -898,8 +1367,17 @@ https://pull.niur.live/live/stream-304148_lhd.m3u8?txSecret=ac30a4f2870dd443ad03
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e85712ea2cb4cf3666fafbb16225a585.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 08:00 22/08 Club Leon vs Rayados de Monterrey (BLV BLV PEWPEW)
 https://pull.niur.live/live/stream-9912015_lhd.m3u8?txSecret=6603d8fadead1478b2a31cb61218567d&txTime=6a880d0e
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/c3be635094f58e9f6b9f261e99a2ceb1.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 08:00 22/08 Tigres UANL vs Atlante FC (BLV BLV A TÚ)
+https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1787338580-0-0-cc3642e1aaa95b148091a9f6822aeed8
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/c3be635094f58e9f6b9f261e99a2ceb1.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 08:00 22/08 Tigres UANL vs Atlante FC (BLV BLV TOMIA)
 https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1787331354-0-0-7f80b693a230e6eff143082f34f73d07
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/c3be635094f58e9f6b9f261e99a2ceb1.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 08:00 22/08 Tigres UANL vs Atlante FC (BLV CÔNG CHẤT)
+https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=fc28465ec7c9adeaf34135bb02c1ddfc&txTime=6a88e741
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/c3be635094f58e9f6b9f261e99a2ceb1.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 08:00 22/08 Tigres UANL vs Atlante FC (BLV LOGAN)
+https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=462c5ee027707cb8dc53b781af8e9167&txTime=6a88e611
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/c3be635094f58e9f6b9f261e99a2ceb1.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 08:00 22/08 Tigres UANL vs Atlante FC (BLV THOMAS)
 https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=1753abb794575a18e6d8a1338effdf0c&txTime=6a88bc58
@@ -952,6 +1430,12 @@ https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=1c498c53b14347736867
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/5300aaa50730ce3afa1336f1d483a875.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Queretaro FC vs Toluca (BLV QUỐC KHÁNH)
 https://pull.niur.live/live/stream-9912118_lhd.m3u8?txSecret=75b778b6a8d57c4c7862c628e5847478&txTime=6a88bcdf
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/49eb552d0a4061eafe916b3470869796.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Melbourne City NPL vs Bentleigh greens (BLV BLV RYO)
+https://pull.niur.live/live/stream-602019_lhd.m3u8?txSecret=9fb74e367a5ab09f539b02142ec77ada&txTime=6a88e62c
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/49eb552d0a4061eafe916b3470869796.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Melbourne City NPL vs Bentleigh greens (BLV KENCHU)
+https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1787338830-0-0-7a39716db20603caea44158d18f3a7d3
+
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/22f0cc669b7a84a3b61e27dbb57cb139.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 14:30 22/08 NWS Spirit vs SD Raiders FC (BLV MOUNTAIN DEW) [hls]
 https://live05.miekgo.app/live/87547578.m3u8
 
@@ -976,9 +1460,33 @@ https://live05.meung.app/live/75915087.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.meung.app/live/14707124.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/a450173b3d636ba2c86d3d7c5bdc4026.png!w80" group-title="CoLaTV",18:45 | Olympique de Marseille vs RC Strasbourg | BLV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.meung.app/live/41943555.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/dcfd6a2671c5c5e09dd83daeb85feff9.png!w80" group-title="CoLaTV",18:45 | Standard Liege vs LaLouvière | BLV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.meung.app/live/49572724.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/d6f5debc456da1119256ab66462ab510.png!w80" group-title="CoLaTV",19:00 | Arsenal vs CLB Coventry City | BLV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.meung.app/live/14830711.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/d6f5debc456da1119256ab66462ab510.png!w80" group-title="CoLaTV",19:00 | Arsenal vs CLB Coventry City | BLV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.meung.app/live/33982309.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/018e260ad68bdad741c61e3171c4c608.png!w80" group-title="CoLaTV",19:00 | Real Betis Balompié vs Real Sociedad | BLV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.meung.app/live/02456966.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/b7f3a068b301edd82ad4c56496f41063.png!w80" group-title="CoLaTV",21:05 | Jaguares de Cordoba vs CLB Boyaca Chico | BLV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.meung.app/live/99121525.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/578175c1a0691907824154179e179ade.png!w80" group-title="CoLaTV",23:00 | Estudiantes Rio Cuarto vs CLB San Lorenzo | BLV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.meung.app/live/97885009.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/96c0adc8a98bb466bfa539f11ce8ae04.png!w80" group-title="CoLaTV",23:30 | Chicago Sky vs Golden State Valkyries | BLV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1012,6 +1520,11 @@ https://live05.meung.app/live/90865415.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.meung.app/live/78905744.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/f49e60c7362306f1ad509c846d4dc0fd.png" group-title="BiaomTV",[00:00-22/08] Alashkert Yerevan vs Gandzasar Kapan [Armenian Premier League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/8ea4eae4189df5786e3abf85d50af961/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/dea4f3022be38d6f1bd7817216632dc3.png" group-title="BiaomTV",[00:00-22/08] Atus Velden vs ATSV Wolfsberg [Austrian 3.Liga]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1026,6 +1539,36 @@ https://lilive1.eu.cc/live/b605bc5976ca72d63ace40c80d5e00ac/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/9244041d993b6311d06622924b7907e8/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/0d700fc48d10d4068e28be27334ac1ef.png" group-title="BiaomTV",[00:00-22/08] FC Cajamarca vs Atletico Grau [Peruvian Liga 1]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/1144ce131c2029c0e2d754fbbb911c19/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/3bdf1cf3d9d6ae841205e8f4c3fd0932.png" group-title="BiaomTV",[00:00-22/08] FC Pinzgau Saalfelden vs SV Seekirchen [Austrian 3.Liga]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/6bf90d54081443e27e757c8d9e32d3e8/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/8ae34693eb0763728db39a4c2a2d814f.png" group-title="BiaomTV",[00:00-22/08] FC Stockholm Internazionale vs Jarfalla [Sweden Division 1]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/163485f3a273b9c305cfcb01cc2dd855/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/53065afcbcf4b386b8aef9eefab540a9.png" group-title="BiaomTV",[00:00-22/08] Fredericia vs Aarhus Fremad [Danish 1st Division]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/2875d16f8b2fd1c1f6cdc721c61efa9a/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/3515b25b2d87eb8b252411993cb83f7c.png" group-title="BiaomTV",[00:00-22/08] Fremad Amager vs Roskilde [Danish 2nd Division]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/6d5c3f8c58ef3c751282044eca6f943f/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/52bdcf4922c5875910e4271075b31ba5.png" group-title="BiaomTV",[00:00-22/08] Hranice KUNZ vs MFK Havirov [Czech Third League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/15950a1a710a1b52c58b69f3f26d9aa0/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/82a1ff2fa56077a25595288406888007.png" group-title="BiaomTV",[00:00-22/08] IK Sirius FK vs Hacken [Sweden Allsvenskan]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
@@ -1047,10 +1590,70 @@ https://lilive1.eu.cc/live/4cc8cb47982a205805ec6fe08457cf3f/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/16fa4640ba9f8534dff9e7934554eac5/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/0413f3620ec30423777be92f84078824.png" group-title="BiaomTV",[00:00-22/08] SL Benfica B vs Portimonense SC [Liga Portugal 2]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/abb15440eec0ef54d11f6f5dc043143b/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/f93250a6af9eb59be453f9e0c6ccb0f7.png" group-title="BiaomTV",[00:00-22/08] Thisted FC vs Skive IK [Danish 2nd Division]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/b9ae39ea780198c73e990ce415712b09/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/8c9dc125cedcc74a5ce6e5c307139510.png" group-title="BiaomTV",[00:00-22/08] VST Volkermarkt vs SV Donau Klagenfurt [Austrian 3.Liga]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/dd69adc6f9062948149b8fb65a8a2de4/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/9068d1d2e3c1998ede5cf5b1922e560a.png" group-title="BiaomTV",[00:00-22/08] Wolfsberger AC Amateure vs SK Treibach [Austrian 3.Liga]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/e40c17ce45ffc8b5db3b01ad79721c79/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/6ad4e821a96f050ba29f431fbf57801e.png" group-title="BiaomTV",[00:00-22/08] Zamalek SC vs Ittihad Alexandria SC [Egyptian Premier League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/d7083b73956d5d433c6f39e39db15a46/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/086fad2b496bcf474e2df4eed691c6b2.png" group-title="BiaomTV",[00:30-22/08] Aldosivi Mar del Plata vs Club Atlético Unión [Argentine Division 1]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/caf24acbe5eac8f9f0c81ab716af73ec/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/99233e5ef77ace10ac2bc8074c0198b0.png" group-title="BiaomTV",[00:30-22/08] First Vienna Women vs Sturm Graz/Stattegg Women [Austrian Frauen Bundesliga]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/e5ea8de34c79fa9908e92f6ed3515901/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/b54325678c3ec6b201d628978a053fef.png" group-title="BiaomTV",[00:30-22/08] Neuchatel Xamax vs Stade Ouchy [Switzerland Challenge League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/0cf8335071eefea4dddee2011ddfe104/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/a568766c6a9883fa021d0469ec813dc2.png" group-title="BiaomTV",[00:30-22/08] Petrolul Ploiesti vs FC Rapid 1923 [Romanian Super Liga]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/788cf78ca3b4b6288ac7c1401667ec61/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/c6572895da6f4c0f9de429f9b1e1c178.png" group-title="BiaomTV",[00:30-22/08] SV Ried vs Grazer AK [Austrian Bundesliga]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/af59a283f3488754f872de5b462875cd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/73f449ce0e914b137e557e4b16d50f79.png" group-title="BiaomTV",[00:30-22/08] Stade Nyonnais vs Etoile Carouge [Switzerland Challenge League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/16c1bdb2f5e58c789fc5d6636cb5f5de/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/282741de14344077486f9a8482c0d971.png" group-title="BiaomTV",[00:30-22/08] Víkingur Gøta vs B36 Torshavn [Faroe Islands Premier League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/6948d8fae43b102f512a21169fc4e737/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/b510505e58cd138df949e152ab1c85f4.png" group-title="BiaomTV",[00:45-22/08] Al Wehda Mecca vs Al-Adalah [Saudi Arabia Division 1]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/99275a09c0ea33788f4e0f26358b5642/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/alqadsiah-13092" group-title="BiaomTV",[01:00-22/08] Al-Qadsiah vs Al Ittihad [VĐQG Ả Rập Saudi]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
@@ -1082,106 +1685,242 @@ https://cdnhls.xbdbotv.live/live/ZjE5NzIyMjAzc3VqaWNlYmlxZzdhZms3YXp3ZWt0N2sxN2R
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdnhls.xbdbotv.live/live/ZjE5NzMyNzMwc3Nrd3plNm13ZWk4aWpxZWJ0cWRxdDBoMmRyZWs4cm9sajE4bm9oaHJxZWt0cGU0bmw/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/6792393a7bfaff902eafa5043dd89d40.png" group-title="BiaomTV",FC Haka vs SJK Akatemia [Finnish Ykkosliiga]
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/5e5f56f16382d66ff8bcdb20bd309169.png" group-title="BiaomTV",Al-Nasr Dubai vs Al Wahda(UAE) [United Arab Emirates Adnoc Pro-League]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/5cc366114bf8eaaa30b263a5abc80de4/playlist.m3u8
+https://lilive1.eu.cc/live/602dc1fc150b0289f35087a81e7754e0/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/34566a9d9544037e59023eff44faf028.png" group-title="MebongTV",[00:00 - 22/08] Alashkert Gandzasar Kapan | Armenian Premier League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/abc619ec1945b54ceeaa2e9716fe2963.png" group-title="MebongTV",[00:00 - 22/08] Abou Qir Fertilizers SC Bank El Ahly | Egyptian Premier League | Hiệp 2 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-87c66c4b3fb49c2b5b4e%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/34566a9d9544037e59023eff44faf028.png" group-title="MebongTV",[00:00 - 22/08] Alashkert Gandzasar Kapan | Armenian Premier League | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-a78c1a70aeb1d312cf13%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/dea4f3022be38d6f1bd7817216632dc3.png" group-title="MebongTV",[00:00 - 22/08] Atus Velden ATSV Wolfsberg | Austrian 3.Liga | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/dea4f3022be38d6f1bd7817216632dc3.png" group-title="MebongTV",[00:00 - 22/08] Atus Velden ATSV Wolfsberg | Austrian 3.Liga | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-2651a792c4054936e9cf%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/ebf29a5389bdbd7cafced2656ce673a3.png" group-title="MebongTV",[00:00 - 22/08] Boldklubben af 1893 HIK Hellerup | Danish 2nd Division | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/ebf29a5389bdbd7cafced2656ce673a3.png" group-title="MebongTV",[00:00 - 22/08] Boldklubben af 1893 HIK Hellerup | Danish 2nd Division | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-3a874214b59c5ef14f0c%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3ee5cb5629a0a9bd4a3339183334415a.png" group-title="MebongTV",[00:00 - 22/08] Deutschlandsberger SC FSC Eggendorf Hartberg II | Austrian 3.Liga | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3ee5cb5629a0a9bd4a3339183334415a.png" group-title="MebongTV",[00:00 - 22/08] Deutschlandsberger SC FSC Eggendorf Hartberg II | Austrian 3.Liga | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-8cdc30eb69c40de64039%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0d700fc48d10d4068e28be27334ac1ef.png" group-title="MebongTV",[00:00 - 22/08] FC Cajamarca Atletico Grau | Peruvian Liga 1 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0d700fc48d10d4068e28be27334ac1ef.png" group-title="MebongTV",[00:00 - 22/08] FC Cajamarca Atletico Grau | Peruvian Liga 1 | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-7df1d128f0d0c406eed9%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3bdf1cf3d9d6ae841205e8f4c3fd0932.png" group-title="MebongTV",[00:00 - 22/08] FC Pinzgau Saalfelden SV Seekirchen | Austrian 3.Liga | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3bdf1cf3d9d6ae841205e8f4c3fd0932.png" group-title="MebongTV",[00:00 - 22/08] FC Pinzgau Saalfelden SV Seekirchen | Austrian 3.Liga | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-1630ddd09fd8cafdc91a%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/8ae34693eb0763728db39a4c2a2d814f.png" group-title="MebongTV",[00:00 - 22/08] FC Stockholm Internazionale Jarfalla | Sweden Division 1 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/8ae34693eb0763728db39a4c2a2d814f.png" group-title="MebongTV",[00:00 - 22/08] FC Stockholm Internazionale Jarfalla | Sweden Division 1 | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F163485f3a273b9c305cfcb01cc2dd855%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-7d7ccee0833d5cab4313%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/53065afcbcf4b386b8aef9eefab540a9.png" group-title="MebongTV",[00:00 - 22/08] Fredericia Aarhus Fremad | Danish 1st Division | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/53065afcbcf4b386b8aef9eefab540a9.png" group-title="MebongTV",[00:00 - 22/08] Fredericia Aarhus Fremad | Danish 1st Division | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-55def619cf55896174fc%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3515b25b2d87eb8b252411993cb83f7c.png" group-title="MebongTV",[00:00 - 22/08] Fremad Amager Roskilde | Danish 2nd Division | To be determined | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3515b25b2d87eb8b252411993cb83f7c.png" group-title="MebongTV",[00:00 - 22/08] Fremad Amager Roskilde | Danish 2nd Division | Nghỉ giữa hiệp | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-9ac742bb67c0999b5ee9%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/52bdcf4922c5875910e4271075b31ba5.png" group-title="MebongTV",[00:00 - 22/08] Hranice KUNZ MFK Havirov | Czech Third League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/52bdcf4922c5875910e4271075b31ba5.png" group-title="MebongTV",[00:00 - 22/08] Hranice KUNZ MFK Havirov | Czech Third League | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-69ce0b05cd403c1279e0%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/82a1ff2fa56077a25595288406888007.png" group-title="MebongTV",[00:00 - 22/08] IK Sirius FK Hacken | Sweden Allsvenskan | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/82a1ff2fa56077a25595288406888007.png" group-title="MebongTV",[00:00 - 22/08] IK Sirius FK Hacken | Sweden Allsvenskan | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-2b9bfbced52338d28b34%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/30012421d9ce713e1f733db588e8681c.png" group-title="MebongTV",[00:00 - 22/08] Ridabu Raufoss IL | Norwegian SAS Braathens Cup | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/30012421d9ce713e1f733db588e8681c.png" group-title="MebongTV",[00:00 - 22/08] Ridabu Raufoss IL | Norwegian SAS Braathens Cup | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-8c0e849b159dd05db858%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/d3e11356966efd8cbd83ac95c87965b8.png" group-title="MebongTV",[00:00 - 22/08] SC Gleisdorf SC Kalsdorf | Austrian 3.Liga | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/d3e11356966efd8cbd83ac95c87965b8.png" group-title="MebongTV",[00:00 - 22/08] SC Gleisdorf SC Kalsdorf | Austrian 3.Liga | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-ec3c7a17e6e32dfa90f0%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/4c982c733d72ab1f92026e822a0673c8.png" group-title="MebongTV",[00:00 - 22/08] SC Mannsdorf Kremser | Austrian 3.Liga | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/4c982c733d72ab1f92026e822a0673c8.png" group-title="MebongTV",[00:00 - 22/08] SC Mannsdorf Kremser | Austrian 3.Liga | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-d27c7dbe84e935ede520%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0413f3620ec30423777be92f84078824.png" group-title="MebongTV",[00:00 - 22/08] SL Benfica B Portimonense | Liga Portugal 2 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0413f3620ec30423777be92f84078824.png" group-title="MebongTV",[00:00 - 22/08] SL Benfica B Portimonense | Liga Portugal 2 | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-2112dfed464a6c0a9181%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f93250a6af9eb59be453f9e0c6ccb0f7.png" group-title="MebongTV",[00:00 - 22/08] Thisted FC Skive IK | Danish 2nd Division | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f93250a6af9eb59be453f9e0c6ccb0f7.png" group-title="MebongTV",[00:00 - 22/08] Thisted FC Skive IK | Danish 2nd Division | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-5699a717dbe49b51c58f%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/8c9dc125cedcc74a5ce6e5c307139510.png" group-title="MebongTV",[00:00 - 22/08] VST Volkermarkt SV Donau Klagenfurt | Austrian 3.Liga | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/8c9dc125cedcc74a5ce6e5c307139510.png" group-title="MebongTV",[00:00 - 22/08] VST Volkermarkt SV Donau Klagenfurt | Austrian 3.Liga | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-76eee153ab4c778a525e%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/9068d1d2e3c1998ede5cf5b1922e560a.png" group-title="MebongTV",[00:00 - 22/08] Wolfsberger AC Amateure SK Treibach | Austrian 3.Liga | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/9068d1d2e3c1998ede5cf5b1922e560a.png" group-title="MebongTV",[00:00 - 22/08] Wolfsberger AC Amateure SK Treibach | Austrian 3.Liga | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-9d25501368c6298d11a6%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/b54325678c3ec6b201d628978a053fef.png" group-title="MebongTV",[00:30 - 22/08] Neuchatel Xamax Stade Ouchy | Switzerland Challenge League | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6ad4e821a96f050ba29f431fbf57801e.png" group-title="MebongTV",[00:00 - 22/08] Zamalek SC Ittihad Alexandria SC | Egyptian Premier League | Hiệp 2 | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F0cf8335071eefea4dddee2011ddfe104%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-65fb05209fc948a02dd1%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a568766c6a9883fa021d0469ec813dc2.png" group-title="MebongTV",[00:30 - 22/08] Petrolul Ploiesti FC Rapid 1923 | Romanian Super Liga | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/b54325678c3ec6b201d628978a053fef.png" group-title="MebongTV",[00:30 - 22/08] Neuchatel Xamax Stade Ouchy | Switzerland Challenge League | Nghỉ giữa hiệp | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F788cf78ca3b4b6288ac7c1401667ec61%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-0c97a9d27a16afcfc3b9%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f5866286ca3b27aca7be5c5b1e933f8f.png" group-title="MebongTV",[00:30 - 22/08] SV Ried Grazer AK | Austrian Bundesliga | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a568766c6a9883fa021d0469ec813dc2.png" group-title="MebongTV",[00:30 - 22/08] Petrolul Ploiesti FC Rapid 1923 | Romanian Super Liga | Nghỉ giữa hiệp | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Faf59a283f3488754f872de5b462875cd%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-fd7366ee6ee7e33d1b96%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/73f449ce0e914b137e557e4b16d50f79.png" group-title="MebongTV",[00:30 - 22/08] Stade Nyonnais Etoile Carouge | Switzerland Challenge League | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f5866286ca3b27aca7be5c5b1e933f8f.png" group-title="MebongTV",[00:30 - 22/08] SV Ried Grazer AK | Austrian Bundesliga | Nghỉ giữa hiệp | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F16c1bdb2f5e58c789fc5d6636cb5f5de%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-0e3ed5bfa1f7bc00fef5%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/73f449ce0e914b137e557e4b16d50f79.png" group-title="MebongTV",[00:30 - 22/08] Stade Nyonnais Etoile Carouge | Switzerland Challenge League | Nghỉ giữa hiệp | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-e7b8ee04f43972d9ecd4%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/b510505e58cd138df949e152ab1c85f4.png" group-title="MebongTV",[00:50 - 22/08] Al Wehda Mecca Al-Adalah | Saudi Arabia Division 1 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-d250cbfa04c50b924960%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/bc74439d19c8bbaa17c57406b120b86d.png" group-title="MebongTV",[01:00 - 22/08] Al Qadsiah Al Ittihad Club | Saudi Professional League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-5fff30127f6e216906bb%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/4e9f55c1006ca24b2b535054a52187e8.png" group-title="MebongTV",[01:00 - 22/08] Al-Faisaly Harmah NEOM Sports Club | Saudi Professional League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-701c05ada0d4eb47bfa1%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/2c61be832465c05fe591b927e063c83f.png" group-title="MebongTV",[01:00 - 22/08] Boulogne Red Star FC 93 | French Ligue 2 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-895b8cbfec258cd6a4b2%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/53bcb0dffb14a347071436feb56a6436.png" group-title="MebongTV",[01:00 - 22/08] Clermont Dijon | French Ligue 2 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-45f5369aabf5d3bfd52c%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/fcf9e7cc7e13ce9607e2dbf1f14955c2.png" group-title="MebongTV",[01:00 - 22/08] Club Atletico Acassuso Godoy Cruz Antonio Tomba | ARG Primera Nacional | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-8e697b3690dc781876b4%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0e6bfc80b47b7f0a2c1cfbbe5dbc00b7.png" group-title="MebongTV",[01:00 - 22/08] Deportivo Muniz General Lamadrid | Argentine Group C Tebolidun League Manchester | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-08c31cf70a9250ec0e26%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/687e0cddc35e14d8b15af1cfe265c1be.png" group-title="MebongTV",[01:00 - 22/08] KSC Lokeren KAS Eupen | Belgian Challenger Pro League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F57879c53c9393e2e9b5f7ad12d882a0c%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/7e3a84b5a5d586f6c4024c758b78dd78.png" group-title="MebongTV",[01:00 - 22/08] Pau FC Nancy | French Ligue 2 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-31c2ad9f1b35724d6284%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3632ef89c514832f76dd27a0c497482d.png" group-title="MebongTV",[01:00 - 22/08] RSCA Futures Excelsior Virton | Belgian Challenger Pro League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-ce5182cc16805fc7cb88%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/5c84cb6e7c5225c625cb3735e4328ba7.png" group-title="MebongTV",[01:00 - 22/08] Rudes NK Lokomotiva Zagreb | Croatian Football League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-172f98892eb4c6f79dac%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/923138a0ae0fac73cc50bbc58b3bf796.png" group-title="MebongTV",[01:00 - 22/08] Sarajevo BSK Banja Luka | Bosnia and Herzegovina Premier League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-76730f8b5aaeaa5ee311%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a1591aae4ee4d750684ee71c6c78a332.png" group-title="MebongTV",[01:00 - 22/08] Sochaux Guingamp | French Ligue 2 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-1ca5ee704ed48c26af67%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f029ed3d5dcf7f49a42c7f1474411a3c.png" group-title="MebongTV",[01:00 - 22/08] USL Dunkerque Montpellier Hérault SC | French Ligue 2 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-5c11ed544e52b808d150%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6356dcedfefdbc98de34cce75214de28.png" group-title="MebongTV",[01:15 - 22/08] Cherno More Varna FC Dunav Ruse | Bulgarian First League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-70e827f274aae10954b9%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/db570f6a73a4d7e10ede827746ae992c.jpg" group-title="MebongTV",[01:15 - 22/08] FC Rapperswil-Jona Winterthur | Switzerland Challenge League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-12c829f7bd276605c2fa%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/016486307fcd47800a3b166cb5523f07.png" group-title="MebongTV",[01:15 - 22/08] NK Olimpija Ljubljana NK Nafta | Slovenia 1.Liga | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-8811ac43da809c8df1bf%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/17f25472211b78b396faf8c420e7ea8c.png" group-title="MebongTV",[01:30 - 22/08] Admira Wacker First Vienna FC 1894 | Austrian 2.Liga | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-4ea540b518bc143fb595%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/e8562e3f468a3ac1c609bf7b1380de99.png" group-title="MebongTV",[01:30 - 22/08] Chojniczanka Chojnice Stal Stalowa Wola | Poland Liga 2 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Facfb3ec51ac87a63011eaea5e7ff5968%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/27471fce495bec5e33bc83b508eba608.png" group-title="MebongTV",[01:30 - 22/08] Comunicaciones BsAs Sportivo Italiano | Argentine Group B Tebolidun League Manchester | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Ff44e46d109bcf6c726beeba94d4fdb58%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/181ad56f9efa4afb8872971448266f51.png" group-title="MebongTV",[01:30 - 22/08] Cracovia Krakow KS Wieczysta Krakow | PKO Bank Polski EKSTRAKLASA | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fb5c48d88123e83a7ab28821fc8526506%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/1a02b3bb5ec75b6ca8430c57915ac922.png" group-title="MebongTV",[01:30 - 22/08] Erzurum BB Galatasaray | Turkish Super League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Ff5bcd557a27a3d417bd510956c664716%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/1e7880aacbbfea735a5e3d8def60c31f.png" group-title="MebongTV",[01:30 - 22/08] Inverness Partick Thistle FC | Scottish Championship | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fd64274e26e19be9a7da4089b61fc33d3%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0d3eabc5ecaf407ef8dc5cae3840930d.png" group-title="MebongTV",[01:30 - 22/08] Karagumruk Bursaspor | Turkish First League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fd255d4d87ae53e147243d4b0107e3f67%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/b3cb1dab4929d327b7ee42553a2fef58.png" group-title="MebongTV",[01:30 - 22/08] Lechia Gdansk Pogon Siedlce | Poland Liga 1 | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F4115e0c519febe871be8eeb39c7759c0%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/e50fadf148a07731dbba8acade1645fe.png" group-title="MebongTV",[01:30 - 22/08] San Telmo Deportivo Moron | ARG Primera Nacional | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F20e7d0c844d7e7fae572e2fe1e971360%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/af68158e991ab635b8735937e8d529f7.png" group-title="MebongTV",[01:30 - 22/08] Vicenza Catanzaro | Italian Serie B | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F30012afce99908302cb1fc849cf92894%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/10eb6cf9451cb5e1fce5346d3688b8fa.png" group-title="MebongTV",[01:45 - 22/08] Bohemians Derry City | Ireland Premier Division | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fbfd9ea5cc5ba6e54e02cd45042af914d%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/2ab30f41e9c824b1cdd5ebcded771df2.png" group-title="MebongTV",[01:45 - 22/08] Drogheda United St. Patricks Athletic | Ireland Premier Division | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F1786b43ba7ee8fe49c5b67ff191ad72d%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6b689b46cb5355bd8de1baa916e65aef.png" group-title="MebongTV",[01:45 - 22/08] Dundalk Galway United | Ireland Premier Division | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F2d750defb97ab8ac8cc28397aa18235c%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/5e374b2a57b436c372bc3de0bfbb8cc9.png" group-title="MebongTV",[01:45 - 22/08] Hansa Rostock VfB Stuttgart | DFB Pokal | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F333d29c6f28830630ce8f0fc38812d34%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0dc4b45524350a50a4d3276a2525693f.png" group-title="MebongTV",[01:45 - 22/08] Marseille RC Strasbourg Alsace | French Ligue 1 | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F4333f8cc3eb34c07f147cae79935d68d%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/dcfd6a2671c5c5e09dd83daeb85feff9.png" group-title="MebongTV",[01:45 - 22/08] Standard Liege RAAL La Louvière | Belgian Pro League | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F4202292d66189021e554524d0041dd7e%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/d6f5debc456da1119256ab66462ab510.png" group-title="MebongTV",[02:00 - 22/08] Arsenal Coventry City | English Premier League | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F568cb842f8a908dc52cd78978b3a43c9%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fmebongtv.b-cdn.net%2Flive%2Fmb_c8UxfaSmLD5EFL76NYPj4P4qDwX4s40m.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/018e260ad68bdad741c61e3171c4c608.png" group-title="MebongTV",[02:00 - 22/08] Real Betis Real Sociedad | Spanish La Liga | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1231,6 +1970,10 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_130406_7b096f36.png&time=06%3A00+22%2F08" group-title="Tinhlagi - CHUỐI CHIÊN TV",06:00 22/08 Estudiantes de Rio Cuarto vs San Lorenzo (Chuối Nhỏ) [FHD] [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F086fad2b496bcf474e2df4eed691c6b2.png%21w80&time=00%3A30+22%2F08" group-title="Tinhlagi - COLA TV",00:30 22/08 CLB Aldosivi vs Union de Santa Fe (BLV PEPSI) [hls 2]
 https://live05.miekgo.app/live/59444581.m3u8
 
@@ -1240,8 +1983,26 @@ https://live05.miekgo.app/live/75915087.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F5e374b2a57b436c372bc3de0bfbb8cc9.png%21w80&time=01%3A45+22%2F08" group-title="Tinhlagi - COLA TV",01:45 22/08 Hansa Rostock vs VfB Stuttgart (BLV STING) [hls 2]
 https://live05.miekgo.app/live/14707124.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2Fa450173b3d636ba2c86d3d7c5bdc4026.png%21w80&time=01%3A45+22%2F08" group-title="Tinhlagi - COLA TV",01:45 22/08 Olympique de Marseille vs RC Strasbourg (BLV KHÔNG ĐỘ) [hls 2]
+https://live05.miekgo.app/live/41943555.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2Fdcfd6a2671c5c5e09dd83daeb85feff9.png%21w80&time=01%3A45+22%2F08" group-title="Tinhlagi - COLA TV",01:45 22/08 Standard Liege vs LaLouvière (BLV REDBULL) [hls 2]
+https://live05.miekgo.app/live/49572724.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2Fd6f5debc456da1119256ab66462ab510.png%21w80&time=02%3A00+22%2F08" group-title="Tinhlagi - COLA TV",02:00 22/08 Arsenal vs CLB Coventry City (BLV GIÀ LÀNG) [hls 2]
+https://live05.miekgo.app/live/14830711.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2Fd6f5debc456da1119256ab66462ab510.png%21w80&time=02%3A00+22%2F08" group-title="Tinhlagi - COLA TV",02:00 22/08 Arsenal vs CLB Coventry City (BLV REVIVE) [hls 2]
+https://live05.miekgo.app/live/33982309.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F018e260ad68bdad741c61e3171c4c608.png%21w80&time=02%3A00+22%2F08" group-title="Tinhlagi - COLA TV",02:00 22/08 Real Betis Balompié vs Real Sociedad (BLV SODA) [hls 2]
+https://live05.miekgo.app/live/02456966.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2Fb7f3a068b301edd82ad4c56496f41063.png%21w80&time=04%3A05+22%2F08" group-title="Tinhlagi - COLA TV",04:05 22/08 Jaguares de Cordoba vs CLB Boyaca Chico (BLV BÍ ĐAO) [hls 2]
 https://live05.miekgo.app/live/99121525.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F578175c1a0691907824154179e179ade.png%21w80&time=06%3A00+22%2F08" group-title="Tinhlagi - COLA TV",06:00 22/08 Estudiantes Rio Cuarto vs CLB San Lorenzo (BLV WARRIOR) [hls 2]
+https://live05.miekgo.app/live/97885009.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Fbasketball%2Fteam%2F96c0adc8a98bb466bfa539f11ce8ae04.png%21w80&time=06%3A30+22%2F08" group-title="Tinhlagi - COLA TV",06:30 22/08 Chicago Sky vs Golden State Valkyries (BLV Cozy) [hls 2]
 https://live05.miekgo.app/live/87379114.m3u8
@@ -1264,8 +2025,14 @@ https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2Fteam_141.jpg&time=02%3A00+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",02:00 22/08 Arsenal vs Coventry (A Heo) [hls]
 https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2FOIP_hdpF9Rm.jpg&time=09%3A00+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",09:00 22/08 Việt Nam vs Hàn Quốc (KaKa) [hls]
+https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2FOIP_WqmhllM.jpg&time=14%3A00+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",14:00 22/08 Indonesia vs Kazakhstan (Tày) [hls]
 https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2Fteam_480.jpg&time=20%3A00+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",20:00 22/08 Thái Lan vs Việt Nam (Kevin) [hls]
+https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2Fteam_480.jpg&time=20%3A00+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",20:00 22/08 Thái Lan vs Việt Nam (Người Lửa) [hls]
 https://luong.phaohoa.live/live/phaohoa1/index.m3u8?expire=1815505159&sign=9137553faeae361734eec8bda5ea16e2
@@ -1708,6 +2475,11 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctru/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichao/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_130406_7b096f36.png" group-title="Bong Lau TV",[06h00] Estudiantes de Rio Cuarto vs San Lorenzo | BLV: Chuối Nhỏ [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinho/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787327308465_CARLO BIADO.jpg" group-title="ChoangTV",[00h00] Carlo Biado vs Max Lechner(6win) | BLV [Recorded Table 2026 PHOENIX OPEN ( nhánh thua )]
 #EXTVLCOPT:http-referrer=https://choangtv21.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1748,17 +2520,17 @@ https://cdn.sports-cas889abxfileposo.site/live/live6664/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6657/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787328834933_AJ MANAS.jpg" group-title="ChoangTV",[01h30] Aj Manas vs Aleksa Pecelj | BLV [Table 1 2026 PHOENIX OPEN ( nhánh thua )]
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787328834933_AJ MANAS.jpg" group-title="ChoangTV",[01h30] Aj Manas vs Aleksa Pecelj | BLV BÚN CHÓ [Table 1 2026 PHOENIX OPEN ( nhánh thua )]
 #EXTVLCOPT:http-referrer=https://choangtv21.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6659/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787332220460_YAPP BÃ©o.jpg" group-title="ChoangTV",[01h30] Aloysius Yapp vs Dimitrios Loukatos(6win) | BLV [2026 PHOENIX OPEN ( nhánh thua )]
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787332220460_YAPP BÃ©o.jpg" group-title="ChoangTV",[01h30] Aloysius Yapp vs Dimitrios Loukatos(6win) | BLV Thập Cẩm [Table 2 2026 PHOENIX OPEN ( nhánh thua )]
 #EXTVLCOPT:http-referrer=https://choangtv21.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6667/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787329035969_David Alcaide.jpg" group-title="ChoangTV",[01h30] David Alcaide vs Jonas Souto Comino(5win) | BLV [Table TV 2026 PHOENIX OPEN ( nhánh thua )]
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787329035969_David Alcaide.jpg" group-title="ChoangTV",[01h30] David Alcaide vs Jonas Souto Comino(5win) | BLV VÁNG [Table TV 2026 PHOENIX OPEN ( nhánh thua )]
 #EXTVLCOPT:http-referrer=https://choangtv21.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6660/index.m3u8
@@ -1768,17 +2540,22 @@ https://cdn.sports-cas889abxfileposo.site/live/live6660/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6663/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787329628575_JEFFREY DE LUNA.jpg" group-title="ChoangTV",[01h30] Jeffrey De Luna vs Mario He | BLV [Table4 2026 PHOENIX OPEN ( nhánh thua )]
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787335599624_Screenshot 2026-08-22 010635.png" group-title="ChoangTV",[01h30] Gerson Martinez vs Bemie Regalario | BLV Kèn Kèn [Table3 2026 PHOENIX OPEN ( nhánh thua )]
+#EXTVLCOPT:http-referrer=https://choangtv21.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.sports-cas889abxfileposo.site/live/live6669/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787329628575_JEFFREY DE LUNA.jpg" group-title="ChoangTV",[01h30] Jeffrey De Luna vs Mario He | BLV Tào A Man [Table4 2026 PHOENIX OPEN ( nhánh thua )]
 #EXTVLCOPT:http-referrer=https://choangtv21.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6662/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787332724520_Moritz Neuhausen.jpg" group-title="ChoangTV",[01h30] Moritz Neuhausen vs Alex Kazakis (8win) | BLV [2026 PHOENIX OPEN ( nhánh thua )]
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787332724520_Moritz Neuhausen.jpg" group-title="ChoangTV",[01h30] Moritz Neuhausen vs Alex Kazakis (8win) | BLV SÊ KÔÔ [Table 6 2026 PHOENIX OPEN ( nhánh thua )]
 #EXTVLCOPT:http-referrer=https://choangtv21.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6668/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787329481014_NAOYUKI OI.jpg" group-title="ChoangTV",[23h00] Naoyuki Oi vs Marco Teutscher | BLV [Table8 2026 PHOENIX OPEN ( nhánh thua )]
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787329481014_NAOYUKI OI.jpg" group-title="ChoangTV",[01h30] Naoyuki Oi vs Marco Teutscher | BLV GIÀNG A PHỌ [Table8 2026 PHOENIX OPEN ( nhánh thua )]
 #EXTVLCOPT:http-referrer=https://choangtv21.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6661/index.m3u8
@@ -1798,8 +2575,9 @@ http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281430.m3u8
 #EXTINF:-1 tvg-logo="https://go4.pw/VIP/4k_ultra.png" group-title="CuongHeHe",VIP - TNT SPORT ULTIMATE 4K
 http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281083.m3u8
 
-#EXTINF:-1 tvg-logo="https://phaohoa1.live/media/teams/logos/team_3121.jpg" group-title="PHAO HOA TV" group-logo="https://phaohoa1.live/favicon.ico", 21:00 22/08 Ipswich vs Sunderland (BLV Pháo Thủ) [hls]
+#EXTINF:-1 tvg-logo="https://phaohoa1.live/images/logo.png" group-title="PhaoHoaTV",[21:00 22/08] Ipswich vs Sunderland | Pháo Thủ
 #EXTVLCOPT:http-referrer=https://phaohoa1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
 
 #EXTINF:-1 tvg-id="" group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://ip-tv.dev/images/ico/bein-sport-1.png",BeIN Sport 1
