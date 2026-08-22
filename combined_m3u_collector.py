@@ -779,6 +779,17 @@ OMIT_REFERRER_GROUPS = {
 }
 OMIT_REFERRER_GROUP_KEYS = {compact_text_key(item) for item in OMIT_REFERRER_GROUPS}
 
+OMIT_USER_AGENT_GROUPS = {
+    "VTV",
+    "Sự kiện",
+    "Socolive TV",
+    "CoLaTV",
+    "CO LA TV",
+    "Highlight | S8TV",
+    "MebongTV",
+}
+OMIT_USER_AGENT_GROUP_KEYS = {compact_text_key(item) for item in OMIT_USER_AGENT_GROUPS}
+
 
 def canonical_group_title(group):
     group = clean_text(group)
@@ -828,6 +839,11 @@ def output_group(channel):
 def should_write_referrer(channel):
     group = output_group(channel)
     return compact_text_key(group) not in OMIT_REFERRER_GROUP_KEYS
+
+
+def should_write_user_agent(channel):
+    group = output_group(channel)
+    return compact_text_key(group) not in OMIT_USER_AGENT_GROUP_KEYS
 
 
 def normalize_channel_group(channel):
@@ -1004,6 +1020,8 @@ def write_m3u(path, channels):
                     if option_line:
                         if option_line.lower().startswith("#extvlcopt:http-referrer=") and not should_write_referrer(ch):
                             continue
+                        if option_line.lower().startswith("#extvlcopt:http-user-agent=") and not should_write_user_agent(ch):
+                            continue
                         f.write(f"{option_line}\n")
             else:
                 attrs = [
@@ -1016,7 +1034,7 @@ def write_m3u(path, channels):
             user_agent = clean_text(ch.get("user_agent"))
             if referer and should_write_referrer(ch):
                 f.write(f"#EXTVLCOPT:http-referrer={referer}\n")
-            if user_agent:
+            if user_agent and should_write_user_agent(ch):
                 f.write(f"#EXTVLCOPT:http-user-agent={user_agent}\n")
             f.write(f'{ch.get("stream_url", "")}\n\n')
 
