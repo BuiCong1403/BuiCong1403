@@ -1697,10 +1697,7 @@ def collect_cola():
         match_time = item.get("matchTime")
         event_datetime = parse_epoch_to_ict_datetime(match_time)
         event_date = event_datetime.date() if event_datetime else parse_epoch_to_ict_date(match_time)
-        try:
-            dt = datetime.fromtimestamp(match_time).strftime("%H:%M")
-        except Exception:
-            dt = ""
+        dt = event_datetime.strftime("%H:%M") if event_datetime else ""
         home = item.get("home_team") or {}
         away = item.get("away_team") or {}
         title = f"{dt} | {clean_text(home.get('name'))} vs {clean_text(away.get('name'))}".strip()
