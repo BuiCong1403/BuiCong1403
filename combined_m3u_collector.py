@@ -123,6 +123,14 @@ VMTTV_M3U_URL = os.environ.get(
     "VMTTV_M3U_URL",
     "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv",
 )
+MYTV_FPT_EVENTS_M3U_URL = os.environ.get(
+    "MYTV_FPT_EVENTS_M3U_URL",
+    "https://raw.githubusercontent.com/thaichieucm92/MyTV/9c3081488d0dccb26381819d0d1120c3110f0b2d/MyTVnew",
+)
+LKVN_FPT_EVENTS_M3U_URL = os.environ.get(
+    "LKVN_FPT_EVENTS_M3U_URL",
+    "https://raw.githubusercontent.com/LKVN85/GIAI-TRI/3410a334f3e86938dd644cfe11dca70e4bf71a7b/LKVN%20GIAI%20TRI.M3U",
+)
 CUONGHEHE_M3U_URL = os.environ.get(
     "CUONGHEHE_M3U_URL",
     "https://raw.githubusercontent.com/cuongnh1989/iptv/refs/heads/main/cuonghehe",
@@ -176,6 +184,11 @@ TV365_ERROR_M3U_URL = os.environ.get(
     "https://raw.githubusercontent.com/TV365-VN/TV365-DATA/refs/heads/main/error.m3u",
 )
 TINHLAGI_SPORT_M3U_URL = os.environ.get("TINHLAGI_SPORT_M3U_URL", "https://tinhlagi.pro/s.m3u")
+CLOUDOK_M3U_URL = os.environ.get(
+    "CLOUDOK_M3U_URL",
+    "https://raspy-waterfall-a003.ngoibut-cachmang.workers.dev/",
+)
+CLOUDOK_AUTH_TOKEN = os.environ.get("CLOUDOK_AUTH_TOKEN", "dc5521f1fe411d6f2e83c2bf047d6294")
 SPORT_INTERNATIONAL_GROUP = "TH\u1ec2 THAO QU\u1ed0C T\u1ebe"
 FLV_OTT_GROUP = "FLV | OTT Player"
 FLV_OTT_USER_AGENT = (
@@ -749,6 +762,7 @@ GROUP_CANONICAL_RULES = [
 PREFERRED_OUTPUT_GROUPS = [
     "VTV",
     "Sự kiện",
+    "MyTVFPTEvents",
     "FLV | OTT Player",
     "Gi\u1edd V\u00e0ng TV",
     "Vua S\u00e2n C\u1ecf TV",
@@ -771,6 +785,7 @@ PREFERRED_SOURCE_PRIORITY = {
 OMIT_REFERRER_GROUPS = {
     "VTV",
     "Sự kiện",
+    "MyTVFPTEvents",
     "Socolive TV",
     "CoLaTV",
     "CO LA TV",
@@ -782,6 +797,7 @@ OMIT_REFERRER_GROUP_KEYS = {compact_text_key(item) for item in OMIT_REFERRER_GRO
 OMIT_USER_AGENT_GROUPS = {
     "VTV",
     "Sự kiện",
+    "MyTVFPTEvents",
     "Socolive TV",
     "CoLaTV",
     "CO LA TV",
@@ -1889,12 +1905,13 @@ def collect_m3u_playlist(
     user_agent=UA,
     preserve_extinf=False,
     preserve_group_exact=False,
+    request_headers=None,
 ):
     log(f"[{source}] Fetch M3U")
     r = None
     for attempt in range(1, retries + 1):
         try:
-            r = request_get(playlist_url, timeout=timeout)
+            r = request_get(playlist_url, headers=request_headers, timeout=timeout)
             log(f"[{source}] HTTP {r.status_code}")
             if r.status_code == 200:
                 break
@@ -2325,10 +2342,10 @@ def collect_vmttv():
         allow_non_m3u8=True,
         timeout=60,
         retries=3,
-        allowed_groups=("VTV", "the thao quoc te", "su kien fpt play", "su kien vtvprime"),
+        allowed_groups=("VTV", "the thao quoc te", "su kien vtvprime"),
     )
     sport_group_key = "thethaoquocte"
-    event_group_keys = {"sukienfptplay", "sukienvtvprime"}
+    event_group_keys = {"sukienvtvprime"}
     for channel in channels:
         channel_group_key = group_key(channel.get("group"))
         if channel_group_key == sport_group_key:
@@ -2337,6 +2354,79 @@ def collect_vmttv():
             channel["group"] = "Sự kiện"
             channel["skip_event_filter"] = True
     return channels
+
+
+def collect_mytv_fpt_events():
+    source = "MyTVFPTEvents"
+    primary_channels = collect_m3u_playlist(
+        source,
+        MYTV_FPT_EVENTS_M3U_URL,
+        source,
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=3,
+        allowed_groups=("su kien fpt play",),
+        default_referer_to_playlist=False,
+        user_agent="",
+        preserve_extinf=True,
+    )
+
+    supplement_channels = collect_m3u_playlist(
+        source,
+        LKVN_FPT_EVENTS_M3U_URL,
+        source,
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=3,
+        allowed_groups=("su kien",),
+        default_referer_to_playlist=False,
+        user_agent="",
+        preserve_extinf=True,
+    )
+
+    channels = []
+    seen_urls = set()
+    for channel in primary_channels + supplement_channels:
+        name_key = text_key(channel.get("name"))
+        stream_key = clean_text(channel.get("stream_url")).lower()
+        is_fpt_event = (
+            "fpt" in name_key
+            or "/live/media/event-" in stream_key
+            or "/live/media/su-kien-" in stream_key
+        )
+        if not is_fpt_event:
+            continue
+        if stream_key in seen_urls:
+            continue
+        seen_urls.add(stream_key)
+        channel["source"] = source
+        channel["group"] = source
+        channel["skip_event_filter"] = True
+        channels.append(channel)
+    return channels
+
+
+def collect_cloudok_premier_league():
+    return collect_m3u_playlist(
+        "CloudOKPremierLeague",
+        CLOUDOK_M3U_URL,
+        "PREMIER LEAGUE",
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=3,
+        allowed_groups=("premier league",),
+        default_referer_to_playlist=False,
+        user_agent="",
+        preserve_extinf=True,
+        request_headers={
+            "Accept": "text/plain,application/octet-stream,*/*",
+            "Cache-Control": "no-cache",
+            "X-Auth-Token": CLOUDOK_AUTH_TOKEN,
+        },
+    )
 
 
 def collect_cotivi_sports():
@@ -3695,6 +3785,8 @@ def main():
             ),
         ),
         ("VMTTV", collect_vmttv),
+        ("MyTVFPTEvents", collect_mytv_fpt_events),
+        ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("CuongHeHe", collect_cuonghehe),
         ("CuongHeHe4K", collect_tt1_4k),
         ("CoTiViSports", collect_cotivi_sports),
