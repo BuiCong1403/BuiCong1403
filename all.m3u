@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-08-22 11:30 ICT
-# Total   : 874
+# Updated : 2026-08-22 12:25 ICT
+# Total   : 929
 
 #EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dGohEWXz7Sk/maxresdefault.jpg" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -38,69 +38,78 @@ https://vips-livecdn.fptplay.net/live/media/vtv9/live247-hls-avc/vtv9-avc1_56000
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/VietnamToday.jpg" group-title="VTV",Vietnam Today
 https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/vietnamtoday-avc1_4000000=10000-mp4a_131600=20000.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.fptplay53.net/media/home_event/OTT_ECS/2026/08/21/pickleball-ho-chi-minh-city-open-2026---slide-thumb_1787298325404.jpg" group-title="Sự kiện",Event 1
-https://vips-livecdn.fptplay.net/live/media/event-01/hls_avc_v6/index.m3u8
+#EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/03/12/slider_1773281920969.jpg", Event 1
+https://live.fptplay53.net/live/media/event-01/hls_avc_v6/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.fptplay53.net/media/home_event/OTT_ECS/2026/08/21/22_1787286071075.jpg" group-title="Sự kiện",Event 2
-https://vips-livecdn.fptplay.net/live/media/event-02/hls_avc_v6/index.m3u8
+#EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/03/11/14_1773210720585.jpg", Event 1 4K
+https://live.fptplay53.net/live/media/event-01-4k/hls_avc_v6/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.fptplay53.net/media/home_event/OTT_ECS/2026/08/22/ban-tin-the-thao-24-slide-thumb-1_1787367419608.jpg" group-title="Sự kiện",Sự Kiện 1
-https://vips-livecdn.fptplay.net/live/media/su-kien-01/hls_avc_v6/index.m3u8
+#EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/03/11/14_1773209623821.jpg", Event 3
+https://live.fptplay53.net/live/media/event-03/hls_avc_v6/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.fptplay53.net/media/home_event/OTT_ECS/2026/08/20/stour-pickleball-vietnam-masters---camela-cup-2026---slide-thumb_1787194041336.jpg" group-title="Sự kiện",Sự Kiện 3
-https://vips-livecdn.fptplay.net/live/media/su-kien-03/hls_avc_v6/index.m3u8
+#EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/03/14/live-3x3-hanoi-open-cup-2026-slide-thumb_1773424774193.jpg", Event 6
+https://live.fptplay53.net/live/media/event-06/hls_avc_v6/index.m3u8
 
-#EXTINF:0,09:00 22/08 Nữ Toronto Tempo vs Nữ Portland Fire (HD STEP) [HD]
-#EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-26.flv?auth_key=3000001787372207-0-0-cd26ba3f555ea51ddccd0368918f7104
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Event 10
+https://live.fptplay53.net/live/media/event-10/hls_avc_v6/index.m3u8
 
-#EXTINF:0,09:00 22/08 Nữ Toronto Tempo vs Nữ Portland Fire (STEP)
-#EXTGRP:FLV | OTT Player
-https://live2.livefeedtextbox.com/live/channel26.flv
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Event 11
+https://live.fptplay53.net/live/media/event-11/hls_avc_v6/index.m3u8
 
-#EXTINF:0,09:00 22/08 Toronto Tempo vs Portland Fire (BLV POCARI) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/19919577.flv
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Event 2
+https://live.fptplay53.net/live/media/event-02/hls_avc_v6/index.m3u8
 
-#EXTINF:0,09:00 22/08 Toronto Tempo vs Portland Fire [WNBA] [WNBA]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/201_5342131_1.flv?auth_key=1787372771-4197-0-9d62a9fc7ada27590f821272033eef25
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Event 4
+https://live.fptplay53.net/live/media/event-04/hls_avc_v6/index.m3u8
 
-#EXTINF:0,09:15 22/08 Diablos Rojos del Mexico BC vs Lobos Puebla BC [MLNBP] [MLNBP]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/201_5546713_1.flv?auth_key=1787372781-3727-0-79d3785f9a8a3f690d57956e4255fd91
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Event 5
+https://live.fptplay53.net/live/media/event-05/hls_avc_v6/index.m3u8
 
-#EXTINF:0,09:30 22/08 Panteras de Aguascalientes BC vs Santos del Potosi BC [MLNBP] [MLNBP]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/201_5546715_1.flv?auth_key=1787372786-9732-0-319db39e8e1a76ac5daa6e33a07e607f
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Event 7
+https://live.fptplay53.net/live/media/event-07/hls_avc_v6/index.m3u8
 
-#EXTINF:0,10:00 22/08 CF Monterrey Women vs Club Leon Women [MEX LMXW] [MEX LMXW]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5615227_1.flv?auth_key=1787372741-2431-0-9c138dc5bdf2755fee494a953103e6b5
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Event 8
+https://live.fptplay53.net/live/media/event-08/hls_avc_v6/index.m3u8
 
-#EXTINF:0,10:00 22/08 Club Atletico La Paz (MEX) vs Cruz Azul Hidalgo [MEX D2] [MEX D2]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539547_1.flv?auth_key=1787372738-8056-0-8b3c35f6d6bc46427cebe793616ee66c
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Event 9
+https://live.fptplay53.net/live/media/event-09/hls_avc_v6/index.m3u8
 
-#EXTINF:0,10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (HD BEE) [HD]
-#EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-8.flv?auth_key=3000001787372177-0-0-309f9fb678d1fdcba00c5ca6715ec929
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Sự Kiện 10
+https://live.fptplay53.net/live/media/su-kien-10/hls_avc_v6/index.m3u8
 
-#EXTINF:0,10:00 22/08 Eastern Suburbs AFC vs East Coast Bays [NZL NLN] [NZL NLN]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5693576_1.flv?auth_key=1787372753-3791-0-3a26e225ff7299f6a095dce2fd47284e
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Sự Kiện 11
+https://live.fptplay53.net/live/media/su-kien-11/hls_avc_v6/index.m3u8
 
-#EXTINF:0,10:00 22/08 FC Juarez vs Club America (HD NEMO) [HD]
-#EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-17.flv?auth_key=3000001787372194-0-0-428fcb386035b889825b5dac351b9d04
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Sự Kiện 3
+https://live.fptplay53.net/live/media/su-kien-03/hls_avc_v6/index.m3u8
 
-#EXTINF:0,10:00 22/08 Nữ Monterrey vs Nữ Leon (HD TONI) [HD]
-#EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-9.flv?auth_key=3000001787372186-0-0-f2dae74f6acd7a88fad51ef39e0d110e
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Sự Kiện 5
+https://live.fptplay53.net/live/media/su-kien-05/hls_avc_v6/index.m3u8
+
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Sự Kiện 7
+https://live.fptplay53.net/live/media/su-kien-07/hls_avc_v6/index.m3u8
+
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Sự Kiện 8
+https://live.fptplay53.net/live/media/su-kien-08/hls_avc_v6/index.m3u8
+
+#EXTINF:-1 group-title="MyTVFPTEvents", FPT Sự Kiện 9
+https://live.fptplay53.net/live/media/su-kien-09/hls_avc_v6/index.m3u8
+
+#EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/01/29/live-hexagon-cup-2026-slide-thumb_1769678335263.jpg", Sự Kiện 1
+https://live.fptplay53.net/live/media/su-kien-01/hls_avc_v6/index.m3u8
+
+#EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/Screenshot_2026-01-30-19-20-09-71_e4a7629f8b54b65896372810f9ae9b6f.jpg", Sự Kiện 2
+https://live.fptplay53.net/live/media/su-kien-02/hls_avc_v6/index.m3u8
+
+#EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/01/28/slider_1769591719293.jpg", Sự Kiện 4
+https://live.fptplay53.net/live/media/su-kien-04/hls_avc_v6/index.m3u8
+
+#EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/01/27/slider_1769494261646.jpg", Sự Kiện 6
+https://live.fptplay53.net/live/media/su-kien-06/hls_avc_v6/index.m3u8
 
 #EXTINF:0,10:00 22/08 Soles de Mexicali BC vs Mineros de Zacatecas BC [MLNBP] [MLNBP]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/201_5546716_1.flv?auth_key=1787372790-5973-0-569e49d7f2e46091233bc2bb5da9a69f
+https://livesp.zhibozhibozhibozhibo.com/sport/201_5546716_1.flv?auth_key=1787376393-2490-0-8ee161b6b27ac758b620cc65c09df1e4
 
 #EXTINF:0,10:00 22/08 Soles de Mexicali vs Mineros de Zacatecas (ALAN)
 #EXTGRP:FLV | OTT Player
@@ -108,43 +117,19 @@ https://live2.livefeedtextbox.com/live/channel25.flv
 
 #EXTINF:0,10:00 22/08 Soles de Mexicali vs Mineros de Zacatecas (HD ALAN) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-25.flv?auth_key=3000001787372215-0-0-2f20fc280f87c455ffef4be46e9295e4
-
-#EXTINF:0,10:00 22/08 Western Springs vs Tauranga City [NZL NLN] [NZL NLN]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5693575_1.flv?auth_key=1787372748-7877-0-1767ac9cd71e494493568a4364cbc32f
-
-#EXTINF:0,10:10 22/08 Juarez vs Club America (BLV GIÀ LÀNG) [flv]
-#EXTGRP:FLV | OTT Player
-https://live05.meung.app/live/14830711.flv
-
-#EXTINF:0,10:10 22/08 Juarez vs Club America [MEX D1] [MEX D1]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539546_1.flv?auth_key=1787372757-8213-0-b4810bec6b17f0dc9d7d2cedff455e15
-
-#EXTINF:0,10:10 22/08 Queretaro FC vs Toluca (HD RAVEN) [HD]
-#EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-21.flv?auth_key=3000001787372201-0-0-0684371b7cc4fa0b2848329e39277386
+https://live2.deliverfluxlive.com/livecdn/channel-25.flv?auth_key=3000001787375790-0-0-f54436c9b80773c3079e14c7b4d87610
 
 #EXTINF:0,10:10 22/08 Queretaro vs Toluca (BLV SAMURAI) [flv]
 #EXTGRP:FLV | OTT Player
 https://live05.meung.app/live/07808742.flv
 
-#EXTINF:0,10:10 22/08 Queretaro vs Toluca [MEX D1] [MEX D1]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5539970_1.flv?auth_key=1787372761-3760-0-76d96dc12f24cf283419ecf7d9a1bca6
-
-#EXTINF:0,10:15 22/08 Petone FC vs Wellington Olympic [NZL NLC] [NZL NLC]
-#EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/202_5693578_1.flv?auth_key=1787372766-2594-0-5412c2fb980972fc9b821ed0e3d60d50
-
 #EXTINF:0,11:00 22/08 Perth Wildcats BC vs Cairns Taipans BC [ABA] [ABA]
 #EXTGRP:FLV | OTT Player
-https://livesp.zhibozhibozhibozhibo.com/sport/201_5622899_1.flv?auth_key=1787372777-6256-0-d42b4805882c7c2b3d65bb43678895c7
+https://livesp.zhibozhibozhibozhibo.com/sport/201_5622899_1.flv?auth_key=1787376391-8001-0-1b3444c1c8f495ae2705bca9e103e8d1
 
 #EXTINF:0,11:00 22/08 Perth Wildcats vs Cairns Taipans (HD TOMMY) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-29.flv?auth_key=3000001787372223-0-0-6f76ee61a4ecf9bedacff9c0c6cecbad
+https://live2.deliverfluxlive.com/livecdn/channel-29.flv?auth_key=3000001787375797-0-0-afe6a649e250e4f34b06aa467d1ff3bc
 
 #EXTINF:0,11:00 22/08 Perth Wildcats vs Cairns Taipans (TOMMY)
 #EXTGRP:FLV | OTT Player
@@ -152,11 +137,67 @@ https://live2.livefeedtextbox.com/live/channel29.flv
 
 #EXTINF:0,11:30 22/08 Canberra Olympic vs Brindabella Blues FC (HD OLER) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-28.flv?auth_key=3000001787372171-0-0-ee6c6c8f4963dbde748dfb559cba4398
+https://live2.deliverfluxlive.com/livecdn/channel-28.flv?auth_key=3000001787375766-0-0-58e17f1bcf1658123293ee4d925e8ae7
+
+#EXTINF:0,11:30 22/08 Canberra Olympic vs Brindabella Blues [AUS NPLACT] [AUS NPLACT]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5693580_1.flv?auth_key=1787376332-5502-0-afb9e49091e054c9288ac00465054125
+
+#EXTINF:0,12:00 22/08 Avondale Women vs Boroondara Carey Eagles Women [AUS WNPV] [AUS WNPV]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5338436_1.flv?auth_key=1787376359-6775-0-1b141e996daa8ffd14f02d3c328eeec6
+
+#EXTINF:0,12:00 22/08 Canberra Croatia vs Belconnen United [AUS NPLACT] [AUS NPLACT]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5693584_1.flv?auth_key=1787376346-2594-0-dac389faba75051cc1e086a0e0675add
+
+#EXTINF:0,12:00 22/08 Canberra FC vs Belconnen United (HD JEAN) [HD]
+#EXTGRP:FLV | OTT Player
+https://live2.deliverfluxlive.com/livecdn/channel-7.flv?auth_key=3000001787375782-0-0-4be6a04b3deaf358d174dc539c4716fe
+
+#EXTINF:0,12:00 22/08 Canberra White Eagles vs Monaro Panthers [AUS NPLACT] [AUS NPLACT]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5693583_1.flv?auth_key=1787376351-3552-0-766932fc253d9e43b294c53ed4836d90
+
+#EXTINF:0,12:00 22/08 Essendon Royals Women vs Heidelberg United Women [AUS WNPV] [AUS WNPV]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5338437_1.flv?auth_key=1787376363-7837-0-8fa5a4470842a952e443100177be4e4e
+
+#EXTINF:0,12:00 22/08 Keilor Park Women vs Box Hill Women [AUS WNPV] [AUS WNPV]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5338438_1.flv?auth_key=1787376365-9676-0-b685ed17f6d99a633d77891f7b86a8c5
+
+#EXTINF:0,12:00 22/08 Melbourne City NPL vs Bentleigh greens (HD JOHAN) [HD]
+#EXTGRP:FLV | OTT Player
+https://live2.deliverfluxlive.com/livecdn/channel-12.flv?auth_key=3000001787375773-0-0-641d18141a811434e19e0e31d7ebde8a
+
+#EXTINF:0,12:00 22/08 Melbourne City Youth vs Bentleigh Greens [AUS NPLV] [AUS NPLV]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_4937813_1.flv?auth_key=1787376336-2070-0-04002902a253f1a3c1dc0ab4511faa5b
+
+#EXTINF:0,12:00 22/08 Melbourne Victory Youth Women vs Alamein Women [AUS WNPV] [AUS WNPV]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5338440_1.flv?auth_key=1787376370-1719-0-acbb243027d039350a0f36a188266811
+
+#EXTINF:0,12:00 22/08 NWS Spirit Women vs Manly United Women [AUS WNPNS] [AUS WNPNS]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5341853_1.flv?auth_key=1787376376-8647-0-01879301722d850e70fad2c0a49b4721
+
+#EXTINF:0,12:00 22/08 Queanbeyan City vs O'Connor Knights [AUS NPLACT] [AUS NPLACT]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5693582_1.flv?auth_key=1787376354-1376-0-9c0fb91e1bd74ca04cfaea336f5d591f
+
+#EXTINF:0,12:00 22/08 Tuggeranong United vs Canberra Juventus [AUS NPLACT] [AUS NPLACT]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5693581_1.flv?auth_key=1787376340-5116-0-701388f3f0796af920bbde68ed328fb8
 
 #EXTINF:0,12:15 22/08 Altona Magic vs Avondale FC (BLV BÍ ĐAO) [flv]
 #EXTGRP:FLV | OTT Player
 https://live05.meung.app/live/99121525.flv
+
+#EXTINF:0,12:15 22/08 Altona Magic vs Avondale FC [AUS NPLV] [AUS NPLV]
+#EXTGRP:FLV | OTT Player
+https://livesp.zhibozhibozhibozhibo.com/sport/202_5341855_1.flv?auth_key=1787376381-7285-0-4d3b5325ecf939996910a553ab125f9b
 
 #EXTINF:0,13:00 22/08 Hokkaido Consadole Sapporo vs CLB Omiya Ardija (BLV MONSTER) [flv]
 #EXTGRP:FLV | OTT Player
@@ -164,11 +205,15 @@ https://live05.meung.app/live/75915087.flv
 
 #EXTINF:0,14:00 22/08 Abra Weavers vs Valenzuela Classic (HD STEP) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-26.flv?auth_key=3000001787372229-0-0-88db40e85e6c75816c76979fb6e4fc32
+https://live2.deliverfluxlive.com/livecdn/channel-26.flv?auth_key=3000001787375804-0-0-84f8af252fe2194aed9cdc559e9d7657
+
+#EXTINF:0,14:00 22/08 Abra Weavers vs Valenzuela Classic (STEP)
+#EXTGRP:FLV | OTT Player
+https://live2.livefeedtextbox.com/live/channel26.flv
 
 #EXTINF:0,14:00 22/08 Nữ Kazakhstan vs Nữ Indonesia (HD TYSON) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-33.flv?auth_key=3000001787372251-0-0-397d8cc35de922514bad33b203e552ad
+https://live2.deliverfluxlive.com/livecdn/channel-33.flv?auth_key=3000001787375842-0-0-be84e1733cd30a6cc4348e10b8ae4370
 
 #EXTINF:0,14:00 22/08 Nữ Kazakhstan vs Nữ Indonesia (TYSON)
 #EXTGRP:FLV | OTT Player
@@ -180,19 +225,15 @@ https://live05.meung.app/live/87547578.flv
 
 #EXTINF:0,15:00 22/08 Dplus vs Gen.G Esports (HD MARTY) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.deliverfluxlive.com/livecdn/channel-30.flv?auth_key=3000001787372260-0-0-22d3da1eb2eb1be07f9fbbaf88e1019b
+https://live2.deliverfluxlive.com/livecdn/channel-30.flv?auth_key=3000001787375864-0-0-beb09803fb0faf8c64d8cd0504fcc8f1
 
 #EXTINF:0,15:00 22/08 Dplus vs Gen.G Esports (MARTY)
 #EXTGRP:FLV | OTT Player
 https://live2.livefeedtextbox.com/live/channel30.flv
 
-#EXTINF:0,16:00 22/08 Brisbane Bullets vs NBL1 North Select (ALAN)
-#EXTGRP:FLV | OTT Player
-https://live2.pro2cdnlive.com/live/channel25.flv
-
 #EXTINF:0,16:00 22/08 Brisbane Bullets vs NBL1 North Select (HD ALAN) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.pro2cdnlive.com/live/channel-25.flv
+https://live2.deliverfluxlive.com/livecdn/channel-25.flv?auth_key=3000001787375812-0-0-6b75ba333eada5e1ff18dffed47d4727
 
 #EXTINF:0,16:00 22/08 Kashima Antlers vs Avispa Fukuoka (BLV SPRITE) [flv]
 #EXTGRP:FLV | OTT Player
@@ -204,11 +245,11 @@ https://live05.meung.app/live/59444581.flv
 
 #EXTINF:0,16:00 22/08 SEM Phoenix vs Melbourne United (HD TOMMY) [HD]
 #EXTGRP:FLV | OTT Player
-https://live2.pro2cdnlive.com/live/channel-29.flv
+https://live2.deliverfluxlive.com/livecdn/channel-29.flv?auth_key=3000001787375819-0-0-3295191e47fa013e676d160e9df19c73
 
-#EXTINF:0,16:00 22/08 SEM Phoenix vs Melbourne United (TOMMY)
+#EXTINF:0,16:30 22/08 Fagiano Okayama vs Tokyo Verdy (BLV POCARI) [flv]
 #EXTGRP:FLV | OTT Player
-https://live2.pro2cdnlive.com/live/channel29.flv
+https://live05.meung.app/live/19919577.flv
 
 #EXTINF:0,17:00 22/08 Cerezo Osaka vs Shimizu S-Pulse (BLV ROCKSTAR) [flv]
 #EXTGRP:FLV | OTT Player
@@ -290,6 +331,22 @@ https://live2.pro2cdnlive.com/live/channel33.flv
 #EXTGRP:FLV | OTT Player
 https://live05.meung.app/live/97885009.flv
 
+#EXTINF:0,19:00 22/08 Nữ Liaoning Hengye vs Nữ DongGuan (ALAN)
+#EXTGRP:FLV | OTT Player
+https://live2.pro2cdnlive.com/live/channel25.flv
+
+#EXTINF:0,19:00 22/08 Nữ Liaoning Hengye vs Nữ DongGuan (HD ALAN) [HD]
+#EXTGRP:FLV | OTT Player
+https://live2.pro2cdnlive.com/live/channel-25.flv
+
+#EXTINF:0,19:30 22/08 Nha Trang Dolphins vs Đà Nẵng Dragons (HD TOMMY) [HD]
+#EXTGRP:FLV | OTT Player
+https://live2.pro2cdnlive.com/live/channel-29.flv
+
+#EXTINF:0,19:30 22/08 Nha Trang Dolphins vs Đà Nẵng Dragons (TOMMY)
+#EXTGRP:FLV | OTT Player
+https://live2.pro2cdnlive.com/live/channel29.flv
+
 #EXTINF:0,20:00 22/08 Thái Lan vs Việt Nam (TRÂU GÁC BẾP) [flv]
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzExNDMwc3A2eXFud3ZqZ3RuaWE0NXhibHAwZHZxMGR4MHM2ZHE0ZjdwcnhwbWR6ZTVmN2Z4emM.flv
@@ -354,10 +411,6 @@ https://cdnflv.xbdbotv.live/live/ZjE5NzEzNjE0c3VqaWNlYmlxZzdhZms3YXp3ZWt0N2sxN2R
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzEzNjE0c2hneXg3cGRhMDJkZTVhMWV2YTE4bzZ0Z2RwcDh5b2wwOHpjeTRqdjU5NWg0ajJpNDM.flv
 
-#EXTINF:0,02:00 23/08 Jessica Pegula vs Iga Swiatek (HD 1) [HD]
-#EXTGRP:FLV | OTT Player
-https://live2.pro2cdnlive.com/live/channel57.flv
-
 #EXTINF:0,02:30 23/08 Espanyol vs Real Madrid (ASAHI) [flv]
 #EXTGRP:FLV | OTT Player
 https://cdnflv.xbdbotv.live/live/ZjE5NzMyNzI4c2hmNTg3OXQ1aHl6a3RiYmo3d2swbnJlNmRwdzd4NjFpeHM2M2RieXJqMTVyM2RrNXg.flv
@@ -370,6 +423,30 @@ https://cdnflv.xbdbotv.live/live/ZjE5NzMyNzI4c2E4bGNhNmE5OHVqZ2t0Nm13MnQ2cGF0cWR
 #EXTGRP:FLV | OTT Player
 https://live05.meung.app/live/87379114.flv
 
+#EXTINF:0,17:30 23/08 Machida vs Urawa Reds (BLV GIÀ LÀNG) [flv]
+#EXTGRP:FLV | OTT Player
+https://live05.meung.app/live/14830711.flv
+
+#EXTINF:0,Altona Magic vs Avondale FC lúc 12:15 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel14.flv
+
+#EXTINF:0,Altona Magic vs Avondale FC lúc 12:15 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-14.flv?auth_key=3000001787376314-0-0-ec15de68e7639896ce725a679a5cbdcb
+
+#EXTINF:0,Canberra FC vs Belconnen United lúc 12:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.livefeedtextbox.com/live/channel7.flv
+
+#EXTINF:0,Canberra FC vs Belconnen United lúc 12:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTGRP:FLV | OTT Player
+#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
+https://live2.deliverfluxlive.com/livecdn/channel-7.flv?auth_key=3000001787376314-0-0-634c2244ee2f51ce61cfd1bbc910230f
+
 #EXTINF:0,Canberra Olympic vs Brindabella Blues FC lúc 11:30 ngày 22/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
@@ -378,70 +455,30 @@ https://live2.livefeedtextbox.com/live/channel28.flv
 #EXTINF:0,Canberra Olympic vs Brindabella Blues FC lúc 11:30 ngày 22/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.deliverfluxlive.com/livecdn/channel-28.flv?auth_key=3000001787373050-0-0-88266210519c7846dfb9189170618cda
+https://live2.deliverfluxlive.com/livecdn/channel-28.flv?auth_key=3000001787376314-0-0-7dc90798fa6f121ac8f632ab22c336af
 
-#EXTINF:0,Club Atletico La Paz vs Cruz Azul Hidalgo lúc 10:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTINF:0,Melbourne City NPL vs Bentleigh greens lúc 12:00 ngày 22/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.livefeedtextbox.com/live/channel8.flv
+https://live2.livefeedtextbox.com/live/channel12.flv
 
-#EXTINF:0,Club Atletico La Paz vs Cruz Azul Hidalgo lúc 10:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTINF:0,Melbourne City NPL vs Bentleigh greens lúc 12:00 ngày 22/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.deliverfluxlive.com/livecdn/channel-8.flv?auth_key=3000001787373050-0-0-2f4e57662ae2fc87b272c930c768e225
+https://live2.deliverfluxlive.com/livecdn/channel-12.flv?auth_key=3000001787376314-0-0-9691cce2be1271aaa153f374cd7df51e
 
-#EXTINF:0,FC Juarez vs Club America lúc 10:00 ngày 22/08/2026 | Link 1 [FLV]
+#EXTINF:0,Playford City vs White City lúc 12:30 ngày 22/08/2026 | Link 1 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.livefeedtextbox.com/live/channel17.flv
+https://live2.livefeedtextbox.com/live/channel4.flv
 
-#EXTINF:0,FC Juarez vs Club America lúc 10:00 ngày 22/08/2026 | Link 2 [FLV]
+#EXTINF:0,Playford City vs White City lúc 12:30 ngày 22/08/2026 | Link 2 [FLV]
 #EXTGRP:FLV | OTT Player
 #EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.deliverfluxlive.com/livecdn/channel-17.flv?auth_key=3000001787373050-0-0-a8c90fe8144925138e4300f97ed851c1
+https://live2.deliverfluxlive.com/livecdn/channel-4.flv?auth_key=3000001787376314-0-0-c8a2fda3fbdf5cae6cb070d2d3c45388
 
-#EXTINF:0,Nữ Monterrey vs Nữ Leon lúc 10:00 ngày 22/08/2026 | Link 1 [FLV]
-#EXTGRP:FLV | OTT Player
-#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.livefeedtextbox.com/live/channel9.flv
-
-#EXTINF:0,Nữ Monterrey vs Nữ Leon lúc 10:00 ngày 22/08/2026 | Link 2 [FLV]
-#EXTGRP:FLV | OTT Player
-#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.deliverfluxlive.com/livecdn/channel-9.flv?auth_key=3000001787373050-0-0-40b7dbe8bbdf4ca103b7218bf1106943
-
-#EXTINF:0,Queretaro FC vs Toluca lúc 10:10 ngày 22/08/2026 | Link 1 [FLV]
-#EXTGRP:FLV | OTT Player
-#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.livefeedtextbox.com/live/channel21.flv
-
-#EXTINF:0,Queretaro FC vs Toluca lúc 10:10 ngày 22/08/2026 | Link 2 [FLV]
-#EXTGRP:FLV | OTT Player
-#EXTVLCOPT:http-referrer=https://xlz.edgevaultmedia.com/
-https://live2.deliverfluxlive.com/livecdn/channel-21.flv?auth_key=3000001787373050-0-0-488a994386b3ca843821402b6903b206
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/14025078_6d8f1b7a_20260822.png?v=6d8f1b7a" group-title="Giờ Vàng TV",Toronto Tempo vs Portland Fire | 09:00 22/08 | GV
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1787327078_hd/1787327078_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/thumbs/kan8n0iu1xh3_cd9342df_20260822.png?v=cd9342df" group-title="Giờ Vàng TV",Việt Nam vs Hàn Quốc | 09:00 22/08 | GV
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1787327108_hd/1787327108_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/YeWStKhl-xUjXmOIP.png" group-title="Giờ Vàng TV",[09:10] Los Angeles Dodgers vs Pittsburgh Pirates | Ngu [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1787327724_hd/1787327724_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-juarez.png" group-title="Giờ Vàng TV",[10:10] FC Juarez vs Club America | Trĩ [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fc-juarez.png" group-title="Giờ Vàng TV" group-logo="https://live-api.keonhacaitp.one/favicon.ico", 10:10 22/08/2026 FC Juarez vs Club America (Trĩ) [PC] [hls]
 https://eqr2hdarxfliv.vcdn.cloud/1787326882_hd/1787326882_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=None&time=12%3A00+22%2F08" group-title="Tinhlagi - Giờ Vàng TV",12:00 22/08 Bán Kết vs Bán Kết (blv-18) [hls]
-https://freem3u.xyz/static/no-signal/low.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Giờ Vàng TV",[12:00] Bán Kết vs Bán Kết | Dory [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -452,6 +489,9 @@ https://eqr2hdarxfliv.vcdn.cloud/1787327454_hd/1787327454_hd@720p.m3u8
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://eqr2hdarxfliv.vcdn.cloud/1787326918_hd/1787326918_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fd3%2FFlag_of_Kazakhstan.svg%2F330px-Flag_of_Kazakhstan.svg.png&time=14%3A00+22%2F08" group-title="Tinhlagi - Giờ Vàng TV",14:00 22/08 Kazakhstan vs Indonesia (blv-sun) [hls]
+https://freem3u.xyz/static/no-signal/low.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/330px-Flag_of_Kazakhstan.svg.png" group-title="Giờ Vàng TV",[14:00] Kazakhstan vs Indonesia | Sún [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -483,30 +523,6 @@ https://eqr2hdarxfliv.vcdn.cloud/1787371829_hd/1787371829_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://eqr2hdarxfliv.vcdn.cloud/1787272182_hd/1787272182_hd@720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F7e16680bbd661fd90dbf08501ae7a98e.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/5836ec7212ed058a53f8e7cfe77fa1f5/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F7e16680bbd661fd90dbf08501ae7a98e.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (Nhà Đài 2)
-https://hls.streamhub.media/hls/thesport-api-eb3afcff5937852338e2/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F19c556045bbdc3aae1101beb27d6ee9c.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",10:00 22/08 Monterrey Women vs Leon Women (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/fc380fdf4cec7b86a0c7475194e7ffc7/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F19c556045bbdc3aae1101beb27d6ee9c.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",10:00 22/08 Monterrey Women vs Leon Women (Nhà Đài 2)
-https://hls.streamhub.media/hls/thesport-api-19014e8259f6fc01dcbf/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2ef06350057f561b5dce57c7fca99a74.png&time=10%3A10+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",10:10 22/08 FC Juarez vs Club America (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/4d9c9c8f91171f9838b1afca021f5ec1/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2ef06350057f561b5dce57c7fca99a74.png&time=10%3A10+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",10:10 22/08 FC Juarez vs Club America (Nhà Đài 2)
-https://hls.streamhub.media/hls/thesport-api-8c5dbafb1dc6ed678bcb/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fe93c69c95a943755907a17adf4d7d732.png&time=10%3A10+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",10:10 22/08 Queretaro FC vs Toluca (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/c77047b0ff759fa669d9577ecf7fb75c/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fe93c69c95a943755907a17adf4d7d732.png&time=10%3A10+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",10:10 22/08 Queretaro FC vs Toluca (Nhà Đài 2)
-https://hls.streamhub.media/hls/thesport-api-2930a510dc006497a7f4/master.m3u8
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ff1e0b8ca5095cc1ed9c6e45027dff358.png&time=11%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",11:00 22/08 Newcastle Croatia vs Wallsend (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/17981ccbe21b4ec7ec8904162e60dd5b/playlist.m3u8
 
@@ -516,17 +532,71 @@ https://hls.streamhub.media/hls/thesport-api-0a6e84b07db8b16c4236/master.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F6d1c454cefb8b653d03158e60468e425.png&time=11%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",11:30 22/08 Canberra Olympic vs Brindabella Blues FC (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/19445f2a85514971b73f550928acee51/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F6d1c454cefb8b653d03158e60468e425.png&time=11%3A30+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",11:30 22/08 Canberra Olympic vs Brindabella Blues FC (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-10ba5df9963ee14ac10c/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F89471a940cef200c717e39893452d8b9.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Avondale FC Women vs Boroondara Eagles Women (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/80df76ae40b4e84f149dc7b09e2069ba/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F89471a940cef200c717e39893452d8b9.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Avondale FC Women vs Boroondara Eagles Women (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-ef724dd5adcd20fe3364/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0e8a5b04bcb76a376d0f0ddf9f54fbaa.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Canberra FC vs Belconnen United (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/81c8af6a43786e0f3df979d74accec8d/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F0e8a5b04bcb76a376d0f0ddf9f54fbaa.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Canberra FC vs Belconnen United (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-a550bfd6242a9256937b/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2e2ec6721545fb4ceaa95fba18202359.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Canberra White Eagles vs Monaro Panthers (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/cae9a9d768d141006bc49d7a77aa428b/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2e2ec6721545fb4ceaa95fba18202359.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Canberra White Eagles vs Monaro Panthers (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-90f66ee1b3487cfe52c6/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F3137227e584e6b35dc3f662b4946b074.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Essendon Royals Women vs Heidelberg United Women (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/4897a883e6c571a830518bc42a6a0446/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F3137227e584e6b35dc3f662b4946b074.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Essendon Royals Women vs Heidelberg United Women (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-879b0f7a8f40d6f8511e/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Feb2bab44c78e972ebda8d968afc241df.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Keilor Park (w) vs Box Hill Women (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/82414b06c5561d58313e747ae888c6b4/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Feb2bab44c78e972ebda8d968afc241df.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Keilor Park (w) vs Box Hill Women (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-828569f21890036ce802/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F4024dec852e8e27a4078cce29d93657f.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Melbourne City NPL vs Bentleigh greens (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/4c3d8cea52a433b5915a047def88631d/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F4024dec852e8e27a4078cce29d93657f.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Melbourne City NPL vs Bentleigh greens (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-bfc354d2ed246cd3f044/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F68e09edfa0e55191e2c350e32afd5abd.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Melbourne Victory FC Youth(W) vs Alamein Women (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/58d86385895727cb69acb0bb07538b25/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F68e09edfa0e55191e2c350e32afd5abd.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Melbourne Victory FC Youth(W) vs Alamein Women (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-dbbe3790ae0bfdc22be9/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F9521849769be7dbc461e7d099a4d9c80.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 NWS Spirit Women vs Manly Utd Women (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/8d83cb5228bb38349125460fd2928649/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F9521849769be7dbc461e7d099a4d9c80.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 NWS Spirit Women vs Manly Utd Women (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-0d6b1d9d9dce442903c6/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fa0ef1c660a091cc07eb2ca99c30d53eb.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Queanbeyan City vs OConnor Knights (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/cc2a30e33c0a4d9fe6d141fe0bd4f13e/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fa0ef1c660a091cc07eb2ca99c30d53eb.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Queanbeyan City vs OConnor Knights (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-79f1c12a975c52324871/master.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F725b21909119a9d48e0328b1c0da11aa.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Tuggeranong United vs Canberra Juventus (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/a604e39414c2ca604cf8ae7ba8b6c6dd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F725b21909119a9d48e0328b1c0da11aa.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",12:00 22/08 Tuggeranong United vs Canberra Juventus (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-022cc5d1251976e13673/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/5fe8e44d486217553612d132ac6346c6.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 12:15 22/08 Altona Magic vs Avondale FC (Nhà Đài 2)
+https://hls.streamhub.media/hls/thesport-api-63a8579983f4a3fea88e/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ff91eeb7b80705b293c459c2ae64237a4.png&time=13%3A00+22%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",13:00 22/08 New Lambton FC vs Kahibah FC (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/c0eab329b2529c7a711eab2afc62ccf2/playlist.m3u8
@@ -978,122 +1048,59 @@ https://station1-global.ebaclofen.org/live/89dd1e170cc8de013d7c9b72acfb0b73/play
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/c2767b71e70059af4a695f5716e6a2e7.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 01:15 23/08 UTC Cajamarca vs Comerciantes Unidos (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/9919def5470034c636eabaa23b55546b/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260820%2F5203fd1386160af896e45a25b9f65b99.png&time=09%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",09:00 22/08 Toronto Tempo W vs Portland Fire W (BRIAN) [geo]
-https://live.inplyr.com/room/122591.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260820%2F5203fd1386160af896e45a25b9f65b99.png&time=09%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",09:00 22/08 Toronto Tempo W vs Portland Fire W (CHAN SENA) [geo]
-https://live.inplyr.com/room/515530.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260820%2F8080d38c93c64fc6f1e3fe90400ae515.png&time=09%3A15+22%2F08" group-title="Tinhlagi - Socolive TV",09:15 22/08 Diablos Rojos vs Lobos Plateados (BLV HENRY) [geo]
-https://live.inplyr.com/room/428392.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260820%2F7ff35742bb77503961875b5721a9c3df.jpg&time=09%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",09:30 22/08 Panteras vs Santos (A CHÈ) [geo]
-https://live.inplyr.com/room/356042.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260822/96a281c2412894aa0223aa5c36fa8d66.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 09:30 22/08 Panteras vs Santos (BLV A CHÈ)
-https://pull.niur.live/live/stream-356042_lhd.m3u8?txSecret=d5f42263be5ba1f5b580e5ab98cbc59e&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F11bb837b5b8aa74b5db925fa74d49e59.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (BLV NOVA) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F7e16680bbd661fd90dbf08501ae7a98e.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (BLV NOVA) [geo]
 https://live.inplyr.com/room/619108.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F11bb837b5b8aa74b5db925fa74d49e59.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (BLV VOI) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F7e16680bbd661fd90dbf08501ae7a98e.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (BLV VOI) [geo]
 https://live.inplyr.com/room/552716.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F11bb837b5b8aa74b5db925fa74d49e59.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (T REX) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F7e16680bbd661fd90dbf08501ae7a98e.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (T REX) [geo]
 https://live.inplyr.com/room/619672.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F73afc7d2e2c9e19c174155e9cf779281.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 FC Juarez vs Club America (BLV TAP) [geo]
-https://live.inplyr.com/room/147801.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F73afc7d2e2c9e19c174155e9cf779281.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 FC Juarez vs Club America (BLV ZOWIE) [geo]
-https://live.inplyr.com/room/434982.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F73afc7d2e2c9e19c174155e9cf779281.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 FC Juarez vs Club America (ZIDANE) [geo]
-https://live.inplyr.com/room/168740.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F138e65fab0668393438e869c88bda4b5.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Monterrey Women vs Leon Women (BLV KAN) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F19c556045bbdc3aae1101beb27d6ee9c.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Monterrey Women vs Leon Women (BLV KAN) [geo]
 https://live.inplyr.com/room/283501.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F138e65fab0668393438e869c88bda4b5.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Monterrey Women vs Leon Women (BLV YONE) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F19c556045bbdc3aae1101beb27d6ee9c.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Monterrey Women vs Leon Women (BLV YONE) [geo]
 https://live.inplyr.com/room/372746.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F138e65fab0668393438e869c88bda4b5.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Monterrey Women vs Leon Women (CHAN ĐÊ) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F19c556045bbdc3aae1101beb27d6ee9c.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Monterrey Women vs Leon Women (CHAN ĐÊ) [geo]
 https://live.inplyr.com/room/621887.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F5300aaa50730ce3afa1336f1d483a875.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (BLV RÔSI) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F74eb06ea57f32cb35dcc025665caa97e.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (BLV LUCAS) [geo]
+https://live.inplyr.com/room/304148.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F74eb06ea57f32cb35dcc025665caa97e.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (BLV RÔSI) [geo]
 https://live.inplyr.com/room/139384.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F5300aaa50730ce3afa1336f1d483a875.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (BÁ PHÚ) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F74eb06ea57f32cb35dcc025665caa97e.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (BÁ PHÚ) [geo]
 https://live.inplyr.com/room/118206.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F5300aaa50730ce3afa1336f1d483a875.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (CR Bưởi) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F74eb06ea57f32cb35dcc025665caa97e.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (CR Bưởi) [geo]
 https://live.inplyr.com/room/387694.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F5300aaa50730ce3afa1336f1d483a875.png&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (QUỐC KHÁNH) [geo]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F74eb06ea57f32cb35dcc025665caa97e.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (CÔNG CHẤT) [geo]
+https://live.inplyr.com/room/291277.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F74eb06ea57f32cb35dcc025665caa97e.webp&time=10%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",10:00 22/08 Queretaro FC vs Toluca (QUỐC KHÁNH) [geo]
 https://live.inplyr.com/room/602153.m3u8
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/11bb837b5b8aa74b5db925fa74d49e59.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (BLV BLV NOVA)
-https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1787376000-0-0-0249869f8962787ba211e80399284c03
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F2ef06350057f561b5dce57c7fca99a74.webp&time=10%3A10+22%2F08" group-title="Tinhlagi - Socolive TV",10:10 22/08 FC Juarez vs Club America (BLV Củ Cải) [geo]
+https://live.inplyr.com/room/360663.m3u8
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/11bb837b5b8aa74b5db925fa74d49e59.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (BLV BLV VOI)
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1787376000-0-0-808212b8073f1600addb7fd0cc307458
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F2ef06350057f561b5dce57c7fca99a74.webp&time=10%3A10+22%2F08" group-title="Tinhlagi - Socolive TV",10:10 22/08 FC Juarez vs Club America (BLV ENZO) [geo]
+https://live.inplyr.com/room/380460.m3u8
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/11bb837b5b8aa74b5db925fa74d49e59.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Club Atletico La Paz vs Cruz Azul Hidalgo (BLV T REX)
-https://pull.niur.live/live/stream-619672_lhd.m3u8?txSecret=6ce6881471a69674900c48eed184920d&txTime=6a8977d1
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F2ef06350057f561b5dce57c7fca99a74.webp&time=10%3A10+22%2F08" group-title="Tinhlagi - Socolive TV",10:10 22/08 FC Juarez vs Club America (BLV TAP) [geo]
+https://live.inplyr.com/room/147801.m3u8
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/73afc7d2e2c9e19c174155e9cf779281.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 FC Juarez vs Club America (BLV BLV Củ Cải)
-https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1787376000-0-0-9e2d54100662f0afe4c2659a332506b1
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F2ef06350057f561b5dce57c7fca99a74.webp&time=10%3A10+22%2F08" group-title="Tinhlagi - Socolive TV",10:10 22/08 FC Juarez vs Club America (BLV ZOWIE) [geo]
+https://live.inplyr.com/room/434982.m3u8
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/73afc7d2e2c9e19c174155e9cf779281.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 FC Juarez vs Club America (BLV BLV ENZO)
-https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1787376000-0-0-f6dbbc6cdd692119e1a2bd2d0317f8da
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F2ef06350057f561b5dce57c7fca99a74.webp&time=10%3A10+22%2F08" group-title="Tinhlagi - Socolive TV",10:10 22/08 FC Juarez vs Club America (THOMAS) [geo]
+https://live.inplyr.com/room/414317.m3u8
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/73afc7d2e2c9e19c174155e9cf779281.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 FC Juarez vs Club America (BLV BLV TAP)
-https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=01a2baafa0c881abfaeedb13fffb13b9&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/73afc7d2e2c9e19c174155e9cf779281.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 FC Juarez vs Club America (BLV BLV ZOWIE)
-https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1787376000-0-0-6929b2dab39130a7bdc36816e0f3cc7f
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/73afc7d2e2c9e19c174155e9cf779281.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 FC Juarez vs Club America (BLV THOMAS)
-https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=9438966f6db51318b7c3b6d5edc44200&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/73afc7d2e2c9e19c174155e9cf779281.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 FC Juarez vs Club America (BLV ZIDANE)
-https://pull.niur.live/live/stream-9912060_lhd.m3u8?txSecret=256a722a823ecf0d06bb4fab9e6f0bf8&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/138e65fab0668393438e869c88bda4b5.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Monterrey Women vs Leon Women (BLV BLV KAN)
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=a32da027fb4313be5fe1e6d2f12b2b13&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/138e65fab0668393438e869c88bda4b5.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Monterrey Women vs Leon Women (BLV BLV YONE)
-https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1787376000-0-0-60bb3114953206a311ccb92139c82694
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/138e65fab0668393438e869c88bda4b5.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Monterrey Women vs Leon Women (BLV CHAN ĐÊ)
-https://pull.niues.live/live/stream-621887_lhd.m3u8?auth_key=1787376001-0-0-ea0bbbaa042cb7968b8e96f3bdf20ca9
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/5300aaa50730ce3afa1336f1d483a875.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Queretaro FC vs Toluca (BLV BLV LUCAS)
-https://pull.niur.live/live/stream-304148_lhd.m3u8?txSecret=b6b7d98cdf2b55d7bbe3769ef6347750&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/5300aaa50730ce3afa1336f1d483a875.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Queretaro FC vs Toluca (BLV BLV RÔSI)
-https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=0b87f6293664611bede0a4b8146a0772&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/5300aaa50730ce3afa1336f1d483a875.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Queretaro FC vs Toluca (BLV BÁ PHÚ)
-https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1787376000-0-0-fec4fd6e2504a58a4b61d85b3c03d36a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/5300aaa50730ce3afa1336f1d483a875.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Queretaro FC vs Toluca (BLV CR Bưởi)
-https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=a8d824242ad6b7ef1810f6874a1925bd&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/5300aaa50730ce3afa1336f1d483a875.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Queretaro FC vs Toluca (BLV CÔNG CHẤT)
-https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=f818db570e6349de35d08f1796f20059&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/5300aaa50730ce3afa1336f1d483a875.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 10:00 22/08 Queretaro FC vs Toluca (BLV QUỐC KHÁNH)
-https://pull.niur.live/live/stream-9912118_lhd.m3u8?txSecret=01f8575b0e1f39d9e952eb1a6e8f41b9&txTime=6a8977d0
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260822%2F9b1821caea66b8931c1f3e4f768983d4.png&time=11%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",11:00 22/08 Japan U18 vs Philippines U18 (KING) [geo]
-https://live.inplyr.com/room/168964.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260822/9b1821caea66b8931c1f3e4f768983d4.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 11:00 22/08 Japan U18 vs Philippines U18 (BLV BLV HENRY)
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1787376000-0-0-bb21ac4518b86d1eaf60f414c856e2e2
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260822/9b1821caea66b8931c1f3e4f768983d4.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 11:00 22/08 Japan U18 vs Philippines U18 (BLV KING)
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1787319467-0-0-1c47e8851edf735c8cfbda9a31f4fd51
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F2ef06350057f561b5dce57c7fca99a74.webp&time=10%3A10+22%2F08" group-title="Tinhlagi - Socolive TV",10:10 22/08 FC Juarez vs Club America (ZIDANE) [geo]
+https://live.inplyr.com/room/168740.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F746f329b9727ccd37de5920ff7541bf7.png&time=11%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",11:30 22/08 Canberra Olympic vs Brindabella Blues FC (BLV TOMIA) [geo]
 https://live.inplyr.com/room/187579.m3u8
@@ -1102,10 +1109,10 @@ https://live.inplyr.com/room/187579.m3u8
 https://live.inplyr.com/room/619561.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/746f329b9727ccd37de5920ff7541bf7.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 11:30 22/08 Canberra Olympic vs Brindabella Blues FC (BLV BLV TOMIA)
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1787376000-0-0-603b96a108f4919303809ef882117bc4
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1787379600-0-0-54f444a6f70c3b5293ee2fd94a741b5e
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/746f329b9727ccd37de5920ff7541bf7.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 11:30 22/08 Canberra Olympic vs Brindabella Blues FC (BLV BÚN ĐẬU)
-https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1787376000-0-0-9bb3ab6235f52abc644f3fae55163da7
+https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1787379600-0-0-d4e0071cff0c61b037d5831b6d97342c
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fde82ada6e07693a3fb9b3bad01d9c160.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",12:00 22/08 Canberra FC vs Belconnen United (BLV CÁP) [geo]
 https://live.inplyr.com/room/610677.m3u8
@@ -1118,6 +1125,12 @@ https://live.inplyr.com/room/620797.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fcc937e7118b32a56965ce14798d0597a.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",12:00 22/08 Canberra White Eagles vs Monaro Panthers (XUÂN SON) [geo]
 https://live.inplyr.com/room/501412.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260822%2F9b1821caea66b8931c1f3e4f768983d4.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",12:00 22/08 Japan U18 vs Philippines U18 (BLV HENRY) [geo]
+https://live.inplyr.com/room/428392.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260822%2F9b1821caea66b8931c1f3e4f768983d4.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",12:00 22/08 Japan U18 vs Philippines U18 (KING) [geo]
+https://live.inplyr.com/room/168964.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F49eb552d0a4061eafe916b3470869796.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",12:00 22/08 Melbourne City NPL vs Bentleigh greens (BLV RYO) [geo]
 https://live.inplyr.com/room/602019.m3u8
@@ -1134,35 +1147,44 @@ https://live.inplyr.com/room/617313.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F586e8ab0085e42d905f63510a2e09d05.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",12:00 22/08 Tuggeranong United vs Canberra Juventus (CACAO) [geo]
 https://live.inplyr.com/room/620661.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F586e8ab0085e42d905f63510a2e09d05.png&time=12%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",12:00 22/08 Tuggeranong United vs Canberra Juventus (HÀ DUY KIÊN) [geo]
+https://live.inplyr.com/room/607400.m3u8
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/de82ada6e07693a3fb9b3bad01d9c160.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Canberra FC vs Belconnen United (BLV BLV CÁP)
-https://pull.niur.live/live/stream-610677_lhd.m3u8?txSecret=5a64bec1760465fc64fde67b7f485f01&txTime=6a88f88f
+https://pull.niur.live/live/stream-610677_lhd.m3u8?txSecret=336f0c3b4a656b3619bcabf31f22b4dd&txTime=6a8985e0
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/de82ada6e07693a3fb9b3bad01d9c160.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Canberra FC vs Belconnen United (BLV BLV FIREMAN)
-https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1787346356-0-0-f07b6111d14b048153e7db685a0dd0f3
+https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1787379600-0-0-ce920b551e4db95965e651d39d6c7ca3
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/cc937e7118b32a56965ce14798d0597a.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Canberra White Eagles vs Monaro Panthers (BLV BÒ TƯƠI)
-https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1787340890-0-0-a96b85bfcf9c1a8d0c0c5eb3b0170931
+https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1787379600-0-0-bb9b7323f50f9e0bfabc1b80a0b9b62e
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/cc937e7118b32a56965ce14798d0597a.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Canberra White Eagles vs Monaro Panthers (BLV XUÂN SON)
-https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=108abca5289b22eac06799e108bce8ad&txTime=6a88f8bd
+https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=9499a924623237926288e8ec74251554&txTime=6a8985e0
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260822/9b1821caea66b8931c1f3e4f768983d4.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Japan U18 vs Philippines U18 (BLV BLV HENRY)
+https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1787379600-0-0-948b2bd1db12c1194e02b11fa15bddd7
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260822/9b1821caea66b8931c1f3e4f768983d4.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Japan U18 vs Philippines U18 (BLV KING)
+https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1787379600-0-0-d5c18c93909daaa48911bfd03330e04c
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/49eb552d0a4061eafe916b3470869796.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Melbourne City NPL vs Bentleigh greens (BLV BLV RYO)
-https://pull.niur.live/live/stream-602019_lhd.m3u8?txSecret=9fb74e367a5ab09f539b02142ec77ada&txTime=6a88e62c
+https://pull.niur.live/live/stream-602019_lhd.m3u8?txSecret=2641e59bc35bb7dd9ad26cb85135b052&txTime=6a8985e0
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/49eb552d0a4061eafe916b3470869796.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Melbourne City NPL vs Bentleigh greens (BLV KENCHU)
-https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1787376001-0-0-27acfc035a04aec16d43af05ad10a65b
+https://pull.niues.live/live/stream-622602_lhd.m3u8?auth_key=1787379600-0-0-fc953c2f8d70a5a751f242b34402a01c
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4c1cfbee2829ba11363a1cfa3f7019be.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Queanbeyan City vs OConnor Knights (BLV BLV LION)
-https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1787369134-0-0-edc76d77c208081829f9d77d62cd71e9
+https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1787379600-0-0-598a159787590fe0317dab516c44073c
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/4c1cfbee2829ba11363a1cfa3f7019be.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Queanbeyan City vs OConnor Knights (BLV VINFAST)
-https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1787348605-0-0-9898eaf7d856ef419ca5753f254e4345
+https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1787379600-0-0-cd06c276d5c7eec7c24cf78b818e7577
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/586e8ab0085e42d905f63510a2e09d05.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Tuggeranong United vs Canberra Juventus (BLV CACAO)
-https://pull.niues.live/live/stream-620661_lhd.m3u8?auth_key=1787345820-0-0-fffa8f2d81e29bb15e57d21d2feb5474
+https://pull.niues.live/live/stream-620661_lhd.m3u8?auth_key=1787379600-0-0-5924caec22f1d3d8ba3514869401c343
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/586e8ab0085e42d905f63510a2e09d05.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:00 22/08 Tuggeranong United vs Canberra Juventus (BLV HÀ DUY KIÊN)
-https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=9b936df1cb7ab39654ab6370937a6076&txTime=6a8977d0
+https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=888bceb97de58f30106b85f8284e6cfb&txTime=6a8985e0
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F5f0dc2159d15f7be1d4f08e938f54375.png&time=12%3A15+22%2F08" group-title="Tinhlagi - Socolive TV",12:15 22/08 Altona Magic vs Avondale FC (BLV BÉO) [geo]
 https://live.inplyr.com/room/459401.m3u8
@@ -1171,10 +1193,10 @@ https://live.inplyr.com/room/459401.m3u8
 https://live.inplyr.com/room/622241.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/5f0dc2159d15f7be1d4f08e938f54375.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:15 22/08 Altona Magic vs Avondale FC (BLV BLV BÉO)
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=caaaffe1a894c9068890710fee10c2d5&txTime=6a890f4c
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=4e13750aa4e181472d6b4884f138e584&txTime=6a8985e0
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/5f0dc2159d15f7be1d4f08e938f54375.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:15 22/08 Altona Magic vs Avondale FC (BLV BLV HEHE)
-https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1787346160-0-0-dc8e6b05d90ff752caf22ce90b8797ea
+https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1787379600-0-0-08636eb2dc621a758d26b4b36179e25f
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F288920ac529a0832d9ddee6f5f93e510.png&time=12%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",12:30 22/08 Playford City vs White City Woodville (BOSS) [geo]
 https://live.inplyr.com/room/620504.m3u8
@@ -1183,10 +1205,10 @@ https://live.inplyr.com/room/620504.m3u8
 https://live.inplyr.com/room/603914.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/288920ac529a0832d9ddee6f5f93e510.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:30 22/08 Playford City vs White City Woodville (BLV BOSS)
-https://pull.niur.live/live/stream-620504_lhd.m3u8?txSecret=5cf6a4101ba5da5b0596c0362c9b2975&txTime=6a89087e
+https://pull.niur.live/live/stream-620504_lhd.m3u8?txSecret=13b93758e3b18f9f5c7cbaecc0cc5e68&txTime=6a8985e0
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/288920ac529a0832d9ddee6f5f93e510.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 12:30 22/08 Playford City vs White City Woodville (BLV TRÀ ĐÁ)
-https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1787342003-0-0-94daa7104b7490b88640895efd940a01
+https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1787379600-0-0-451fad4aa81ab408bac4863a6b1bcfc9
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fd78b0dd20563ed6abbd78fb8c02505a9.png&time=13%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",13:00 22/08 Hokkaido Consadole Sapporo vs RB Omiya Ardija (BLV CUỘI) [geo]
 https://live.inplyr.com/room/256080.m3u8
@@ -1197,23 +1219,35 @@ https://live.inplyr.com/room/582342.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fd78b0dd20563ed6abbd78fb8c02505a9.png&time=13%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",13:00 22/08 Hokkaido Consadole Sapporo vs RB Omiya Ardija (BLV XO) [geo]
 https://live.inplyr.com/room/472241.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fd78b0dd20563ed6abbd78fb8c02505a9.png&time=13%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",13:00 22/08 Hokkaido Consadole Sapporo vs RB Omiya Ardija (LOGAN) [geo]
+https://live.inplyr.com/room/552832.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fb5c82d69d2017a3cbb9b3ce560410425.png&time=13%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",13:00 22/08 Hume City vs Caroline Springs George Cross (A PÁO) [geo]
+https://live.inplyr.com/room/235232.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F1cc02a784e9e0f2e7e16e1ecb72cbc55.png&time=13%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",13:00 22/08 Sutherland Sharks vs St George City FA (PEANUT) [geo]
 https://live.inplyr.com/room/620084.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/d78b0dd20563ed6abbd78fb8c02505a9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 13:00 22/08 Hokkaido Consadole Sapporo vs RB Omiya Ardija (BLV BLV CUỘI)
-https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1787350259-0-0-b5d676528660df727ee2df335d46ec5d
+https://pull.niues.live/live/stream-256080_lhd.m3u8?auth_key=1787379600-0-0-3679f2b6456aefece64132d225e3e661
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/d78b0dd20563ed6abbd78fb8c02505a9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 13:00 22/08 Hokkaido Consadole Sapporo vs RB Omiya Ardija (BLV BLV CÒ)
 https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1787343943-0-0-388a598fd2e4c1c0603f28b7f15c3e1c
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/d78b0dd20563ed6abbd78fb8c02505a9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 13:00 22/08 Hokkaido Consadole Sapporo vs RB Omiya Ardija (BLV BLV XO)
-https://pull.niur.live/live/stream-472241_lhd.m3u8?txSecret=0850cf09d89f700ef229f8221f90f68e&txTime=6a8910d5
+https://pull.niur.live/live/stream-472241_lhd.m3u8?txSecret=e60c2e22d600b27c812f9639c326b955&txTime=6a8985e0
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/d78b0dd20563ed6abbd78fb8c02505a9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 13:00 22/08 Hokkaido Consadole Sapporo vs RB Omiya Ardija (BLV LOGAN)
 https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=1c6e4185cc79bd99d12f3a8d83e4aec6&txTime=6a8967a5
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/b5c82d69d2017a3cbb9b3ce560410425.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 13:00 22/08 Hume City vs Caroline Springs George Cross (BLV A PÁO)
 https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1787371242-0-0-5629b443b50f0aba43480d949393c52c
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/b5c82d69d2017a3cbb9b3ce560410425.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 13:00 22/08 Hume City vs Caroline Springs George Cross (BLV BLV LUCAS)
+https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1787379301-0-0-5039f59ce5256b70abc4d368dbb053ab
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/1cc02a784e9e0f2e7e16e1ecb72cbc55.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 13:00 22/08 Sutherland Sharks vs St George City FA (BLV CHAN ĐÊ)
+https://pull.niues.live/live/stream-621887_lhd.m3u8?auth_key=1787378658-0-0-e3ac6bfc9f1bc65238714691def07447
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/1cc02a784e9e0f2e7e16e1ecb72cbc55.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 13:00 22/08 Sutherland Sharks vs St George City FA (BLV PEANUT)
 https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1787342042-0-0-3bca35e8dd56a001eed215bbd03f9296
@@ -1223,6 +1257,9 @@ https://live.inplyr.com/room/622093.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/531e505151459b16e37409701eb35e28.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 13:45 22/08 Kingborough Lions vs Launceston City (BLV GRAP)
 https://pull.niur.live/live/stream-622093_lhd.m3u8?txSecret=676183c7425837ec69888aedb7429cba&txTime=6a8907d9
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260820%2F85e73e0f94abb91b07cdbea430a7af4f.png&time=14%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",14:00 22/08 Abra Weavers vs Valenzuela City Darkhorse (CHAN SENA) [geo]
+https://live.inplyr.com/room/515530.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260820%2F85e73e0f94abb91b07cdbea430a7af4f.png&time=14%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",14:00 22/08 Abra Weavers vs Valenzuela City Darkhorse (HUNTER) [geo]
 https://live.inplyr.com/room/558264.m3u8
@@ -1245,20 +1282,23 @@ https://pull.niues.live/live/stream-620003_lhd.m3u8?auth_key=1787341997-0-0-5d07
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/1e18ccd26585587da84494d95bc8bd2f.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 14:00 22/08 Dandenong City SC vs Preston Lions (BLV BLV PIRLO)
 https://pull.niues.live/live/stream-351530_lhd.m3u8?auth_key=1787348665-0-0-331cdb67918bbb59436b6871d47ec961
 
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260822/af168e006f877ae6490be494e035dc1d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 14:00 22/08 Iran U18 vs Chinese Taipei U18 (BLV BRIAN)
-https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1787376000-0-0-840caa515a38a040465bf00187a1281a
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fc64f62c71ef69b99408e86d72749829b.png&time=14%3A15+22%2F08" group-title="Tinhlagi - Socolive TV",14:15 22/08 University NSW vs Manly United (NGƯỜI CÁ) [geo]
 https://live.inplyr.com/room/595335.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/c64f62c71ef69b99408e86d72749829b.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 14:15 22/08 University NSW vs Manly United (BLV NGƯỜI CÁ)
 https://pull.niues.live/live/stream-595335_lhd.m3u8?auth_key=1787349438-0-0-08dc0aee412d9a9fe9911d21a8d2d9e4
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260822%2Faf168e006f877ae6490be494e035dc1d.png&time=15%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",15:00 22/08 Iran U18 vs Chinese Taipei U18 (BRIAN) [geo]
+https://live.inplyr.com/room/122591.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F3a54c071c447221814366eb517688a2f.png&time=15%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",15:00 22/08 Vanraure Hachinohe FC vs Vegalta Sendai (BLV ALEX) [geo]
 https://live.inplyr.com/room/532081.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F3a54c071c447221814366eb517688a2f.png&time=15%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",15:00 22/08 Vanraure Hachinohe FC vs Vegalta Sendai (BLV MESSI) [geo]
 https://live.inplyr.com/room/494201.m3u8
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260822/af168e006f877ae6490be494e035dc1d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 15:00 22/08 Iran U18 vs Chinese Taipei U18 (BLV BRIAN)
+https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1787376150-0-0-c73bf3d3ee66ce7c550cda8aa3c43226
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/3a54c071c447221814366eb517688a2f.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 15:00 22/08 Vanraure Hachinohe FC vs Vegalta Sendai (BLV BLV ALEX)
 https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1787346089-0-0-844d106eb647ce86d8162ff4ac4afdf1
@@ -1272,14 +1312,32 @@ https://live.inplyr.com/room/598119.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fe3fd38190cc3837d150bd89e84bfae3c.png&time=16%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",16:00 22/08 Kashima Antlers vs Avispa Fukuoka (CHÍ PHÈO) [geo]
 https://live.inplyr.com/room/273736.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260820%2F3c8ac930b93dd0059624bf319cdf079f.jpg&time=16%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",16:00 22/08 Rizal Golden Coolers vs Ilagan Isabela Cowboys (A CHÈ) [geo]
+https://live.inplyr.com/room/356042.m3u8
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3fd38190cc3837d150bd89e84bfae3c.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 16:00 22/08 Kashima Antlers vs Avispa Fukuoka (BLV BLV A TINH)
 https://pull.niur.live/live/stream-598119_lhd.m3u8?txSecret=143364d55ae487ae2a892f991de751b7&txTime=6a8907ad
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3fd38190cc3837d150bd89e84bfae3c.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 16:00 22/08 Kashima Antlers vs Avispa Fukuoka (BLV BLV Củ Cải)
+https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1787379549-0-0-f1134cde6591cd70cf73919edcdee89d
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3fd38190cc3837d150bd89e84bfae3c.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 16:00 22/08 Kashima Antlers vs Avispa Fukuoka (BLV BLV ZOWIE)
+https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1787379226-0-0-cd10dfbbbd448403abbfcc01c3354ae9
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3fd38190cc3837d150bd89e84bfae3c.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 16:00 22/08 Kashima Antlers vs Avispa Fukuoka (BLV CHÍ PHÈO)
 https://pull.niues.live/live/stream-273736_lhd.m3u8?auth_key=1787348685-0-0-a59a7b58cbbda8f56f560d6193f77d6f
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e3fd38190cc3837d150bd89e84bfae3c.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 16:00 22/08 Kashima Antlers vs Avispa Fukuoka (BLV ZIDANE)
+https://pull.niur.live/live/stream-9912060_lhd.m3u8?txSecret=872f48ad78d080d43ace86d260efea09&txTime=6a8984e9
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260820/3c8ac930b93dd0059624bf319cdf079f.jpg" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 16:00 22/08 Rizal Golden Coolers vs Ilagan Isabela Cowboys (BLV A CHÈ)
+https://pull.niur.live/live/stream-356042_lhd.m3u8?txSecret=48794c526dd7be6ded6b1da1f502fb24&txTime=6a897bb2
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fd3ec41c85d9b873af6ceeefc4e39bb6e.png&time=16%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",16:30 22/08 Fagiano Okayama vs Tokyo Verdy (LOKA) [geo]
 https://live.inplyr.com/room/589848.m3u8
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/d3ec41c85d9b873af6ceeefc4e39bb6e.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 16:30 22/08 Fagiano Okayama vs Tokyo Verdy (BLV BLV RÔSI)
+https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=f23e5a6856f86a653b9ad6a9cea88c9c&txTime=6a898557
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/d3ec41c85d9b873af6ceeefc4e39bb6e.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 16:30 22/08 Fagiano Okayama vs Tokyo Verdy (BLV LOKA)
 https://pull.niues.live/live/stream-589848_lhd.m3u8?auth_key=1787346166-0-0-f39347ac00653295f1d21a15b0abb9ea
@@ -1296,6 +1354,9 @@ https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1787346054-0-0-1790
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/57c666974d168fd29f604e2c45a5aa91.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 17:00 22/08 Cerezo Osaka vs Shimizu S-Pulse (BLV HẢI THANH)
 https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1787349234-0-0-57f2c21ede5a7adc4832cd3a01d08add
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F9049ab707056e5e95ae6a8fee4ea83ae.png&time=17%3A15+22%2F08" group-title="Tinhlagi - Socolive TV",17:15 22/08 Sanfrecce Hiroshima vs Kawasaki Frontale (BLV A TÚ) [geo]
+https://live.inplyr.com/room/557845.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F9049ab707056e5e95ae6a8fee4ea83ae.png&time=17%3A15+22%2F08" group-title="Tinhlagi - Socolive TV",17:15 22/08 Sanfrecce Hiroshima vs Kawasaki Frontale (BLV ROBBEN) [geo]
 https://live.inplyr.com/room/527383.m3u8
 
@@ -1305,17 +1366,29 @@ https://pull.niues.live/live/stream-557845_lhd.m3u8?auth_key=1787371483-0-0-12df
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/9049ab707056e5e95ae6a8fee4ea83ae.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 17:15 22/08 Sanfrecce Hiroshima vs Kawasaki Frontale (BLV BLV ROBBEN)
 https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1787346260-0-0-5ae911d6bcaf058d665308581fd8d42c
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2Fbb3195c018051d228f8e63d013993cac.png&time=17%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",17:30 22/08 FC Anyang vs FC Seoul (BLV PEWPEW) [geo]
+https://live.inplyr.com/room/109053.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F213fa666da7c7a81611cf6e512f55033.png&time=17%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",17:30 22/08 Yokohama F. Marinos vs Vissel Kobe (BLV CHIVAS) [geo]
+https://live.inplyr.com/room/485739.m3u8
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/bb3195c018051d228f8e63d013993cac.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 17:30 22/08 FC Anyang vs FC Seoul (BLV BLV PEWPEW)
 https://pull.niur.live/live/stream-9912015_lhd.m3u8?txSecret=b99f7c75ef33af904cad49aa8df66e9d&txTime=6a896533
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/213fa666da7c7a81611cf6e512f55033.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 17:30 22/08 Yokohama F. Marinos vs Vissel Kobe (BLV BLV CHIVAS)
 https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=5431a4286e1995dbd7623050fa1bde7b&txTime=6a895d8b
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/213fa666da7c7a81611cf6e512f55033.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 17:30 22/08 Yokohama F. Marinos vs Vissel Kobe (BLV BÁ PHÚ)
+https://pull.niues.live/live/stream-9912108_lhd.m3u8?auth_key=1787379531-0-0-2591224ae5f08ff5d07fc0764d4d907b
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F1b7204f0fd4473b49dcfc7626130c1eb.png&time=18%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",18:00 22/08 Energie Cottbus vs FC Augsburg (XUÂN TÓC ĐỎ) [geo]
 https://live.inplyr.com/room/610518.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F1b7204f0fd4473b49dcfc7626130c1eb.png&time=18%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",18:00 22/08 Energie Cottbus vs FC Augsburg (ĐỖ TÚ TÀI) [geo]
 https://live.inplyr.com/room/607552.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F75de301256f1ce46d549e485a1284bd9.png&time=18%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",18:00 22/08 SV Wehen Wiesbaden vs Bayer 04 Leverkusen (CƠM NẾP) [geo]
+https://live.inplyr.com/room/618950.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F75de301256f1ce46d549e485a1284bd9.png&time=18%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",18:00 22/08 SV Wehen Wiesbaden vs Bayer 04 Leverkusen (RỒNG ĐẤT) [geo]
 https://live.inplyr.com/room/620649.m3u8
@@ -1329,11 +1402,17 @@ https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=8495cbb21137e7789ca3
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/1b7204f0fd4473b49dcfc7626130c1eb.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:00 22/08 Energie Cottbus vs FC Augsburg (BLV ĐỖ TÚ TÀI)
 https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1787349410-0-0-a643b4607fcdee42284628c363f49e03
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/75de301256f1ce46d549e485a1284bd9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:00 22/08 SV Wehen Wiesbaden vs Bayer 04 Leverkusen (BLV BLV YONE)
+https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1787378687-0-0-3a0d1fae58c4e6d2a52093e4186a971d
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/75de301256f1ce46d549e485a1284bd9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:00 22/08 SV Wehen Wiesbaden vs Bayer 04 Leverkusen (BLV CƠM NẾP)
 https://pull.niues.live/live/stream-618950_lhd.m3u8?auth_key=1787371429-0-0-b741a62d71f9916ba0519819a6f2912e
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/75de301256f1ce46d549e485a1284bd9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:00 22/08 SV Wehen Wiesbaden vs Bayer 04 Leverkusen (BLV RỒNG ĐẤT)
 https://pull.niues.live/live/stream-620649_lhd.m3u8?auth_key=1787348558-0-0-89af963ffacb7eaff36584c11c409728
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/75de301256f1ce46d549e485a1284bd9.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:00 22/08 SV Wehen Wiesbaden vs Bayer 04 Leverkusen (BLV T REX)
+https://pull.niur.live/live/stream-619672_lhd.m3u8?txSecret=e55876f314be9ab681acc86a83d6eae1&txTime=6a898211
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/f078fa013735b0361e015a37baaa6af7.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:00 22/08 Wuhan Three Towns vs Tianjin Jinmen Tiger (BLV SEVEN)
 https://pull.niur.live/live/stream-618546_lhd.m3u8?txSecret=13a56f85a6a8c2ead18ccac3c6e22a4a&txTime=6a890d52
@@ -1365,14 +1444,32 @@ https://pull.niur.live/live/stream-321443_lhd.m3u8?txSecret=0c4307cf4a502ee64514
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/f92c2398edfae50583bda939ad7b2f7b.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Hull City vs Manchester United (BLV BLV LONG)
 https://pull.niues.live/live/stream-9912117_lhd.m3u8?auth_key=1787346116-0-0-1b1763833a5638412ddfa3511f5be3ff
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/f92c2398edfae50583bda939ad7b2f7b.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Hull City vs Manchester United (BLV CR Bưởi)
+https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=06fdda57b333a6921f7d122dba239895&txTime=6a8985e0
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/f92c2398edfae50583bda939ad7b2f7b.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Hull City vs Manchester United (BLV CÔNG CHẤT)
+https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=4913c80674f36fe526074a9b3f24be18&txTime=6a8984fc
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/f92c2398edfae50583bda939ad7b2f7b.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Hull City vs Manchester United (BLV LÃO LÂM)
 https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1787349650-0-0-e1ec66f60474a7bafac81880556d4e25
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/f92c2398edfae50583bda939ad7b2f7b.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Hull City vs Manchester United (BLV QUỐC KHÁNH)
+https://pull.niur.live/live/stream-9912118_lhd.m3u8?txSecret=d698e5c0e36c015f93c4134c00596ef5&txTime=6a89855a
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/f92c2398edfae50583bda939ad7b2f7b.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Hull City vs Manchester United (BLV RICKHANTER)
 https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=ed6feb9b80c9bbbab1b1ec851bb758cc&txTime=6a891011
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/f92c2398edfae50583bda939ad7b2f7b.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Hull City vs Manchester United (BLV SAO LA)
 https://pull.niur.live/live/stream-462413_lhd.m3u8?txSecret=e9d3ae8de690e08f1880214d4d75f98a&txTime=6a890f40
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/f92c2398edfae50583bda939ad7b2f7b.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Hull City vs Manchester United (BLV THOMAS)
+https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=c298e0ed402dbb17c90cfe01f14f96f3&txTime=6a8985e2
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e2c2bebd05529d8a3e9e7ddd503dbe44.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Lincoln City vs Portsmouth (BLV BLV NOVA)
+https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1787378609-0-0-2c2fab11a7e2193f39d2eaa990ac0b89
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/e2c2bebd05529d8a3e9e7ddd503dbe44.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 22/08 Lincoln City vs Portsmouth (BLV BLV VOI)
+https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1787378635-0-0-16a46adeeec918c100ef0f3fd77494f6
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F392df638d7ed58e9423e3b21ad7a29cc.png&time=18%3A35+22%2F08" group-title="Tinhlagi - Socolive TV",18:35 22/08 Chengdu Rongcheng vs Shanghai Shenhua (BLV ANH TÀI) [geo]
 https://live.inplyr.com/room/406865.m3u8
@@ -1389,6 +1486,9 @@ https://live.inplyr.com/room/622240.m3u8
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/392df638d7ed58e9423e3b21ad7a29cc.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:35 22/08 Chengdu Rongcheng vs Shanghai Shenhua (BLV BLV ANH TÀI)
 https://pull.niur.live/live/stream-406865_lhd.m3u8?txSecret=e5d3562cb3a9d9e7d61ab3d764680d8e&txTime=6a8919a2
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/392df638d7ed58e9423e3b21ad7a29cc.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:35 22/08 Chengdu Rongcheng vs Shanghai Shenhua (BLV BLV KAN)
+https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=840340d109d9b19054707d6561b72b76&txTime=6a89828b
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/392df638d7ed58e9423e3b21ad7a29cc.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:35 22/08 Chengdu Rongcheng vs Shanghai Shenhua (BLV BLV VIP)
 https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=7e8ddc425e5db976a526dd81408980fd&txTime=6a895d1d
 
@@ -1397,6 +1497,9 @@ https://pull.niur.live/live/stream-511367_lhd.m3u8?txSecret=caa9562eec7450753633
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/6e9fbe4648776f24a619321d76c7f2ef.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:35 22/08 Shenzhen Peng City vs Zhejiang Professional FC (BLV CURRY)
 https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1787345825-0-0-a100f15f0084329b78ff3caf904898b2
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F20ed6c809521ef49744a5b3ac0188e8f.png&time=19%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",19:00 22/08 Qingdao West Coast vs Shandong Taishan (BLV RAMBO) [geo]
+https://live.inplyr.com/room/534055.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F20ed6c809521ef49744a5b3ac0188e8f.png&time=19%3A00+22%2F08" group-title="Tinhlagi - Socolive TV",19:00 22/08 Qingdao West Coast vs Shandong Taishan (MP3) [geo]
 https://live.inplyr.com/room/621840.m3u8
@@ -1407,6 +1510,12 @@ https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=5de9fc6a1e681d040a97
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/20ed6c809521ef49744a5b3ac0188e8f.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 19:00 22/08 Qingdao West Coast vs Shandong Taishan (BLV MP3)
 https://pull.niur.live/live/stream-621840_lhd.m3u8?txSecret=e9e3376f418ab7f03f5efc730396ec26&txTime=6a890cf1
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260820/e499c322f734c095b34c6923234ddb34.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 20:00 22/08 Thailand vs Vietnam (BLV BLV TAP)
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=ab3a9d484ea05dd2d2314daab72e074a&txTime=6a898488
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260819/11fbf87130e548d5919e07e134ae1241.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 22:00 22/08 Athletic Club vs Sevilla FC (BLV BLV ENZO)
+https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1787379513-0-0-6be4fa211af66532ec124c40d93ecfab
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260819%2F195516316924b98f5e94b78480365f84.png&time=23%3A30+22%2F08" group-title="Tinhlagi - Socolive TV",23:30 22/08 Udinese vs Como (BLV BẢY) [geo]
 https://live.inplyr.com/room/621843.m3u8
 
@@ -1416,11 +1525,8 @@ https://live.inplyr.com/room/400722.m3u8
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/b48443679dd0356cc64abce373f763e1.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 09:00 23/08 Phoenix Mercury vs Atlanta Dream (BLV Cozy) [hls]
 https://live05.miekgo.app/live/87379114.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/2ef06350057f561b5dce57c7fca99a74.png!w80" group-title="CoLaTV",03:10 | Juarez vs Club America | BLV
-https://live05.meung.app/live/14830711.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e93c69c95a943755907a17adf4d7d732.png!w80" group-title="CoLaTV",03:10 | Queretaro vs Toluca | BLV
-https://live05.meung.app/live/07808742.m3u8
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/539c489a7bd94dd9d785308fd0f0a6b9.png!w80" group-title="CO LA TV" group-logo="https://api.cltvlv.com/favicon.ico", 17:30 23/08 Machida vs Urawa Reds (BLV GIÀ LÀNG) [hls]
+https://live05.miekgo.app/live/14830711.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/5fe8e44d486217553612d132ac6346c6.png!w80" group-title="CoLaTV",05:15 | Altona Magic vs Avondale FC | BLV
 https://live05.meung.app/live/99121525.m3u8
@@ -1445,6 +1551,9 @@ https://live05.meung.app/live/82054853.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/32aa68e1fa3d62dad572d19b21a09353.png!w80" group-title="CoLaTV",10:00 | Nagoya Grampus vs Gamba Osaka | BLV
 https://live05.meung.app/live/02456966.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/c81d5ff7a33a4f6a9312a8703f619352.png!w80" group-title="CoLaTV",10:15 | Sanfrecce Hiroshima vs Kawasaki Frontale | BLV
+https://live05.meung.app/live/07808742.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/ee2117f952745163fecfa4b74a6a2bea.png!w80" group-title="CoLaTV",10:30 | CLB Jeonbuk Hyundai Motors vs CLB Ulsan Hyundai | BLV
 https://live05.meung.app/live/14707124.m3u8
@@ -1473,52 +1582,15 @@ https://live05.meung.app/live/78905744.m3u8
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/b48443679dd0356cc64abce373f763e1.png!w80" group-title="CoLaTV",02:00 | Phoenix Mercury vs Atlanta Dream | BLV
 https://live05.meung.app/live/87379114.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/2233da92c55e8a00fa8fe778a0e5e403.png" group-title="BiaomTV",[09:45-22/08] Canberra White Eagles U23 vs Monaro Panthers U23 [Australia Capital Territory U23 League]
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/539c489a7bd94dd9d785308fd0f0a6b9.png!w80" group-title="CoLaTV",10:30 | Machida vs Urawa Reds | BLV
+https://live05.meung.app/live/14830711.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/c47f3abff391da0484c6078eb53571ec.webp" group-title="BiaomTV",[11:00-22/08] Glenorchy Knights Women vs Launceston United Women [Australia Tasmania Women's Premier League]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/027d5d74ccd5f285adafd32d744bb471/playlist.m3u8
+https://lilive1.eu.cc/live/587e2276db2103656684664eb2154b25/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/7e16680bbd661fd90dbf08501ae7a98e.png" group-title="BiaomTV",[09:45-22/08] Club Atletico La Paz vs Cruz Azul Hidalgo [Mexico Ascenso MX]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/5836ec7212ed058a53f8e7cfe77fa1f5/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/400d98a7d41f425de763148e54299823.png" group-title="BiaomTV",[10:00-22/08] Eastern Suburbs AFC vs East Coast Bays [New Zealand Northern Premier League]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/c9e6770a92f3398af514e1963954a4b7/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/2ef06350057f561b5dce57c7fca99a74.png" group-title="BiaomTV",[10:00-22/08] FC Juarez vs Club America [Mexico Liga MX]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/4d9c9c8f91171f9838b1afca021f5ec1/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/19c556045bbdc3aae1101beb27d6ee9c.png" group-title="BiaomTV",[10:00-22/08] Monterrey Women vs Leon Women [Mexico Liga MX Femenil]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/fc380fdf4cec7b86a0c7475194e7ffc7/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/22b8a1add9247e3d7ab27d27e4f15fa8.png" group-title="BiaomTV",[10:00-22/08] West Torrens Birkalla Women vs Campbelltown City (w) [South Australia Women's Premier League]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/15087ab1afe34dc494234ba732c718c5/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/ac08bad913aac04e8826ad9bc024b96b.png" group-title="BiaomTV",[10:00-22/08] Western Springs AFC vs Tauranga City United [New Zealand Northern Premier League]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/ec5ab210b75ffeac255241b18f14cb4e/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/4d0141d206115ed72412425c6f1cac4c.png" group-title="BiaomTV",[10:10-22/08] Petone FC vs Wellington Olympic [New Zealand Central Premier League]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/23b58da1ee74b88c4d931f1a3027a554/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/74eb06ea57f32cb35dcc025665caa97e.png" group-title="BiaomTV",[10:10-22/08] Queretaro FC vs Toluca [Mexico Liga MX]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/c77047b0ff759fa669d9577ecf7fb75c/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/f1e0b8ca5095cc1ed9c6e45027dff358.png" group-title="BiaomTV",[10:45-22/08] Newcastle Croatia vs Wallsend [Australia Northern New South Wales Premier League]
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/f1e0b8ca5095cc1ed9c6e45027dff358.png" group-title="BiaomTV",[11:00-22/08] Newcastle Croatia vs Wallsend [Australia Northern New South Wales Premier League]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/17981ccbe21b4ec7ec8904162e60dd5b/playlist.m3u8
@@ -1532,11 +1604,6 @@ https://lilive1.eu.cc/live/5a1d5a259d236a432f5e89627f050107/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/19445f2a85514971b73f550928acee51/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/c47f3abff391da0484c6078eb53571ec.webp" group-title="BiaomTV",[11:30-22/08] Glenorchy Knights Women vs Launceston United Women [Australia Tasmania Women's Premier League]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/587e2276db2103656684664eb2154b25/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/09e64ff748b74bc0674f58c05ba91caa.png" group-title="BiaomTV",[11:30-22/08] Taroona Women vs Launceston City (w) [Australia Tasmania Women's Premier League]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
@@ -1563,10 +1630,30 @@ https://lilive1.eu.cc/live/81c8af6a43786e0f3df979d74accec8d/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/cae9a9d768d141006bc49d7a77aa428b/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/3137227e584e6b35dc3f662b4946b074.png" group-title="BiaomTV",[12:00-22/08] Essendon Royals Women vs Heidelberg United Women [Australia Victorian Women's Premier League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/4897a883e6c571a830518bc42a6a0446/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/eb2bab44c78e972ebda8d968afc241df.png" group-title="BiaomTV",[12:00-22/08] Keilor Park (w) vs Box Hill Women [Australia Victorian Women's Premier League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/82414b06c5561d58313e747ae888c6b4/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/4024dec852e8e27a4078cce29d93657f.png" group-title="BiaomTV",[12:00-22/08] Melbourne City NPL vs Bentleigh greens [National Premier Leagues Victoria]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/4c3d8cea52a433b5915a047def88631d/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/68e09edfa0e55191e2c350e32afd5abd.png" group-title="BiaomTV",[12:00-22/08] Melbourne Victory FC Youth(W) vs Alamein Women [Australia Victorian Women's Premier League]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/58d86385895727cb69acb0bb07538b25/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/9521849769be7dbc461e7d099a4d9c80.png" group-title="BiaomTV",[12:00-22/08] NWS Spirit Women vs Manly Utd Women [Australia New South Wales Women's League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/8d83cb5228bb38349125460fd2928649/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/a0ef1c660a091cc07eb2ca99c30d53eb.png" group-title="BiaomTV",[12:00-22/08] Queanbeyan City vs OConnor Knights [Australia National Premier Leagues Capital Football 1]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
@@ -1577,6 +1664,11 @@ https://lilive1.eu.cc/live/cc2a30e33c0a4d9fe6d141fe0bd4f13e/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/a604e39414c2ca604cf8ae7ba8b6c6dd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/f91eeb7b80705b293c459c2ae64237a4.png" group-title="BiaomTV",[12:30-22/08] New Lambton FC vs Kahibah FC [Australia Northern New South Wales Premier League]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/c0eab329b2529c7a711eab2afc62ccf2/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/6f4c0e59df74cf32fbb8ec3d3a3c65b3.png" group-title="BiaomTV",[12:30-22/08] Playford City vs White City Woodville [South Australia National Premier Leagues]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
@@ -1597,11 +1689,6 @@ https://lilive1.eu.cc/live/09ccd13fa2ac302245d4ecd23453ae6f/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/b701a603c01e08947587657926c13b0d/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/f91eeb7b80705b293c459c2ae64237a4.png" group-title="BiaomTV",[13:00-22/08] New Lambton FC vs Kahibah FC [Australia Northern New South Wales Premier League]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/c0eab329b2529c7a711eab2afc62ccf2/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/e4f191ddee95b37b08ab1fe9ac086ab3.png" group-title="BiaomTV",[13:30-22/08] Darwin Hearts vs University Azzurri FC [Australia Darwin Premier League]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
@@ -1633,15 +1720,25 @@ https://lilive1.eu.cc/live/b3c02e15555fee5721ebd196a83a0517/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/58658b5bb2132670429cd312227a3756/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/a566022739480ab6fd458f235bfbc4ce.png" group-title="BiaomTV",[14:30-22/08] Pyeongchang United FC vs Jincheon HR FC [Korean K League 4]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/4cc57500d71fc9c521cbdfa8fa601d82/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/bf15765055eda003a3410454713c8e4d.png" group-title="BiaomTV",[15:00-22/08] Dalian Yingbo B vs Beijing IT [Chinese Football League 2]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/32e8e2ecba150b6477acce5a15c75309/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/4dfc08afd10a8aa30aa5655918faf2c7.png" group-title="BiaomTV",[15:00-22/08] Haimen Codion vs Shandong Taishan B [Chinese Football League 2]
+#EXTVLCOPT:http-referrer=https://biaomtv12.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/ceb59734a1fa9e02ac014dbe1b0b37df/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/0f85c27382e31bf29d52345ca2084f6e.png" group-title="BiaomTV",[15:00-22/08] Jungnang Chorus Mustang FC vs Namyangju Citizen [Korean K League 4]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/9bc57440c537a200aa5b8b6a6e61d86d/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/a566022739480ab6fd458f235bfbc4ce.png" group-title="BiaomTV",[15:00-22/08] Pyeongchang United FC vs Jincheon HR FC [Korean K League 4]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/4cc57500d71fc9c521cbdfa8fa601d82/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/sanfrecce-hiroshima-14738" group-title="BiaomTV",[17:15-22/08] Sanfrecce Hiroshima vs Kawasaki Frontale [VĐQG Nhật Bản]
 #EXTVLCOPT:http-referrer=https://biaomtv12.com/
@@ -1743,40 +1840,47 @@ https://cdnhls.xbdbotv.live/live/ZjE5NzMyNzI4c2E4bGNhNmE5OHVqZ2t0Nm13MnQ2cGF0cWR
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdnhls.xbdbotv.live/live/ZjE5NzMyNzI4c2hmNTg3OXQ1aHl6a3RiYmo3d2swbnJlNmRwdzd4NjFpeHM2M2RieXJqMTVyM2RrNXg/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/4f28789d34785d1beec27bc27b65ff31.png" group-title="BiaomTV",Nomads vs Wanaka AFC [New Zealand South Premier League]
-#EXTVLCOPT:http-referrer=https://biaomtv12.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/e9d822f45ba28d34b765fe726f099bff/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/7e16680bbd661fd90dbf08501ae7a98e.png" group-title="MebongTV",[10:00 - 22/08] Club Atletico La Paz Cruz Azul Hidalgo | Mexico Ascenso MX | Hiệp 2 | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-eb3afcff5937852338e2%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/19c556045bbdc3aae1101beb27d6ee9c.png" group-title="MebongTV",[10:00 - 22/08] Monterrey Women Leon Women | Mexico Liga MX Femenil | Hiệp 2 | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-19014e8259f6fc01dcbf%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/2ef06350057f561b5dce57c7fca99a74.png" group-title="MebongTV",[10:10 - 22/08] FC Juarez Club America | Mexico Liga MX | Hiệp 2 | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fmebongtv.b-cdn.net%2Flive%2Fmb_Wh9T-d8EcE11rx9yFKTjji5KWsstvc4H.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/e93c69c95a943755907a17adf4d7d732.png" group-title="MebongTV",[10:10 - 22/08] Queretaro FC Toluca | Mexico Liga MX | Hiệp 2 | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-2930a510dc006497a7f4%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f1e0b8ca5095cc1ed9c6e45027dff358.png" group-title="MebongTV",[11:00 - 22/08] Newcastle Croatia Wallsend | Northern New South Wales Premier League | Hiệp 1 | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f1e0b8ca5095cc1ed9c6e45027dff358.png" group-title="MebongTV",[11:00 - 22/08] Newcastle Croatia Wallsend | Northern New South Wales Premier League | Hiệp 2 | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-0a6e84b07db8b16c4236%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6d1c454cefb8b653d03158e60468e425.png" group-title="MebongTV",[11:30 - 22/08] Canberra Olympic Brindabella Blues FC | National Premier Leagues Capital Football 1 | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6d1c454cefb8b653d03158e60468e425.png" group-title="MebongTV",[11:30 - 22/08] Canberra Olympic Brindabella Blues FC | National Premier Leagues Capital Football 1 | Nghỉ giữa hiệp | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-10ba5df9963ee14ac10c%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0e8a5b04bcb76a376d0f0ddf9f54fbaa.png" group-title="MebongTV",[12:00 - 22/08] Canberra FC Belconnen United | National Premier Leagues Capital Football 1 | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F81c8af6a43786e0f3df979d74accec8d%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/89471a940cef200c717e39893452d8b9.png" group-title="MebongTV",[12:00 - 22/08] Avondale FC Women Boroondara Eagles Women | Victorian Women's Premier League | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-ef724dd5adcd20fe3364%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/2e2ec6721545fb4ceaa95fba18202359.png" group-title="MebongTV",[12:00 - 22/08] Canberra White Eagles Monaro Panthers | National Premier Leagues Capital Football 1 | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fcae9a9d768d141006bc49d7a77aa428b%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0e8a5b04bcb76a376d0f0ddf9f54fbaa.png" group-title="MebongTV",[12:00 - 22/08] Canberra FC Belconnen United | National Premier Leagues Capital Football 1 | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-a550bfd6242a9256937b%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a0ef1c660a091cc07eb2ca99c30d53eb.png" group-title="MebongTV",[12:00 - 22/08] Queanbeyan City OConnor Knights | National Premier Leagues Capital Football 1 | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fcc2a30e33c0a4d9fe6d141fe0bd4f13e%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/2e2ec6721545fb4ceaa95fba18202359.png" group-title="MebongTV",[12:00 - 22/08] Canberra White Eagles Monaro Panthers | National Premier Leagues Capital Football 1 | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-90f66ee1b3487cfe52c6%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/725b21909119a9d48e0328b1c0da11aa.png" group-title="MebongTV",[12:00 - 22/08] Tuggeranong United Canberra Juventus | National Premier Leagues Capital Football 1 | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fa604e39414c2ca604cf8ae7ba8b6c6dd%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3137227e584e6b35dc3f662b4946b074.png" group-title="MebongTV",[12:00 - 22/08] Essendon Royals Women Heidelberg United Women | Victorian Women's Premier League | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-879b0f7a8f40d6f8511e%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/eb2bab44c78e972ebda8d968afc241df.png" group-title="MebongTV",[12:00 - 22/08] Keilor Park (w) Box Hill Women | Victorian Women's Premier League | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-828569f21890036ce802%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/4024dec852e8e27a4078cce29d93657f.png" group-title="MebongTV",[12:00 - 22/08] Melbourne City NPL Bentleigh greens | National Premier Leagues Victoria | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-bfc354d2ed246cd3f044%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/68e09edfa0e55191e2c350e32afd5abd.png" group-title="MebongTV",[12:00 - 22/08] Melbourne Victory FC Youth(W) Alamein Women | Victorian Women's Premier League | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-dbbe3790ae0bfdc22be9%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/9521849769be7dbc461e7d099a4d9c80.png" group-title="MebongTV",[12:00 - 22/08] NWS Spirit Women Manly Utd Women | New South Wales Women's League | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-0d6b1d9d9dce442903c6%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a0ef1c660a091cc07eb2ca99c30d53eb.png" group-title="MebongTV",[12:00 - 22/08] Queanbeyan City OConnor Knights | National Premier Leagues Capital Football 1 | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-79f1c12a975c52324871%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/725b21909119a9d48e0328b1c0da11aa.png" group-title="MebongTV",[12:00 - 22/08] Tuggeranong United Canberra Juventus | National Premier Leagues Capital Football 1 | Hiệp 1 | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-022cc5d1251976e13673%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/5fe8e44d486217553612d132ac6346c6.png" group-title="MebongTV",[12:15 - 22/08] Altona Magic Avondale FC | National Premier Leagues Victoria | Hiệp 1 | Nhà Đài 2 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-63a8579983f4a3fea88e%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6f4c0e59df74cf32fbb8ec3d3a3c65b3.png" group-title="MebongTV",[12:30 - 22/08] Playford City White City Woodville | National Premier Leagues | Chưa Bắt Đầu | Nhà Đài 2 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fhls.streamhub.media%2Fhls%2Fthesport-api-63e69cfa2c2700e82684%2Fmaster.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f91eeb7b80705b293c459c2ae64237a4.png" group-title="MebongTV",[13:00 - 22/08] New Lambton FC Kahibah FC | Northern New South Wales Premier League | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fc0eab329b2529c7a711eab2afc62ccf2%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
@@ -1955,26 +2059,14 @@ https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.or
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/7d9cdc9c7f607b1d4f8826b10dadf4e1.png" group-title="MebongTV",[22:00 - 22/08] Dinamo Saint Petersburg FC Cherepovets | RUS D3B | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F449ebd6e2f5bef8890b278b03d11f2de%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/0e3ed5f60153ea8c32422ab2148d18ee.png" group-title="MebongTV",[22:00 - 22/08] Druzhba Maikop Kyzyltash Bakhchysarai | RUS D3B | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fa53abe89012cdd5bddea0f66b6c1d8da%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3374000ead73230f827925cd67f2751a.png" group-title="MebongTV",[22:00 - 22/08] FK Kraluv Dvur FC Pisek | Czech Third League | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F35037908cf477d379d5361457d116226%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/06f374676939eb07e6582e60f4e0ce0c.png" group-title="MebongTV",[22:00 - 22/08] FK Oryol FK Ryazan | RUS D3B | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F67d38fbc4ed1b336d32ffa5e811d1cb8%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6e770639e316afd0a0db733a97c9400e.png" group-title="MebongTV",[22:00 - 22/08] Mlada Boleslav Synot Slovacko | Czech Chance Liga | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F2984f9059cc4c08785fa38ff45578fae%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/93e03441245b50761941be24f97f50b3.png" group-title="MebongTV",[22:00 - 22/08] Nart Cherkessk Rubin Yalta | RUS D3B | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F3b12f0de03a7abf5826ddcdad1e2879e%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/21551996567bcd206ee574043d509a84.png" group-title="MebongTV",[22:00 - 22/08] Real Oviedo CD Leganes | Spanish Segunda Division | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F86b4558b497b1c00a824f138ab9a5cb2%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f64db24a9743228fc27cbc1aecbf8658.png" group-title="MebongTV",[22:00 - 22/08] Rheindorf Altach TSV Hartberg | Austrian Bundesliga | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fd0ef3b82cded3cd056aa488f9b65a8de%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/44cc5a54d7859b9d062a6f56a39819f8.png" group-title="MebongTV",[22:00 - 22/08] Sabah Baku Sumgayit FK | Azerbaijan Premier League | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Faa1dd4ea601491a124632f77d515cca2%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
@@ -1982,11 +2074,11 @@ https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.or
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/54bf4539d4f9a31e332c958a5428adfd.png" group-title="MebongTV",[22:00 - 22/08] Sokol Brozany Pardubice B | Czech Third League | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fd1bbeec29d77d4b40b3980c3050d0a74%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/432c13e823ffcc46ee9255384e525629.png" group-title="MebongTV",[22:00 - 22/08] Spaeri FC Samgurali Tskh | Georgia Erovnuli Liga | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
+https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2Fb644472f539f93a5212fe9eef6821714%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/57b793fd1960ed5d3805121a60ae6d45.png" group-title="MebongTV",[22:00 - 22/08] Strogino Moscow SKA Khabarovsk-2 | RUS D3B | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
 https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F6b5a43b71ad72c6f15f7d9f7c6dbfeab%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/db5c1496362a58da79f7c6aa9b90c3aa.png" group-title="MebongTV",[22:00 - 22/08] Volgar-Gazprom Astrachan Rodina Moskva II | RUS D3A | Chưa Bắt Đầu | Nhà Đài 1 [HLS]
-https://mebongtv.live/api/hls-proxy?u=https%3A%2F%2Fstation1-global.ebaclofen.org%2Flive%2F4ecb206075d10b946b056015ff2c790f%2Fplaylist.m3u8&ua=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_134255_1b35202d.png&time=14%3A00+22%2F08" group-title="Tinhlagi - CHUỐI CHIÊN TV",14:00 22/08 Kazakhstan vs Indonesia (Chuối Tây) [FHD] [FHD]
 #EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
@@ -2008,12 +2100,6 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Fbasketball%2Fteam%2Fd994ab69186bb52d6b0967e1567a217e.png%21w80&time=09%3A00+22%2F08" group-title="Tinhlagi - COLA TV",09:00 22/08 Toronto Tempo vs Portland Fire (BLV POCARI) [hls 2]
-https://live05.miekgo.app/live/19919577.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F2ef06350057f561b5dce57c7fca99a74.png%21w80&time=10%3A10+22%2F08" group-title="Tinhlagi - COLA TV",10:10 22/08 Juarez vs Club America (BLV GIÀ LÀNG) [hls 2]
-https://live05.miekgo.app/live/14830711.m3u8
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2Fe93c69c95a943755907a17adf4d7d732.png%21w80&time=10%3A10+22%2F08" group-title="Tinhlagi - COLA TV",10:10 22/08 Queretaro vs Toluca (BLV SAMURAI) [hls 2]
 https://live05.miekgo.app/live/07808742.m3u8
 
@@ -2031,6 +2117,9 @@ https://live05.miekgo.app/live/75748097.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F198103640a4eb0c209b21b6c6891a027.png%21w80&time=16%3A00+22%2F08" group-title="Tinhlagi - COLA TV",16:00 22/08 Negeri Sembilan vs Kuala Lumpur City FC (BLV PEPSI) [hls 2]
 https://live05.miekgo.app/live/59444581.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2Ffb5c6121bf5b351f60ebf8ffd5b9d887.png%21w80&time=16%3A30+22%2F08" group-title="Tinhlagi - COLA TV",16:30 22/08 Fagiano Okayama vs Tokyo Verdy (BLV POCARI) [hls 2]
+https://live05.miekgo.app/live/19919577.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2Fab10ee503e539e55a9a11a9ff202405a.png%21w80&time=17%3A00+22%2F08" group-title="Tinhlagi - COLA TV",17:00 22/08 Cerezo Osaka vs Shimizu S-Pulse (BLV ROCKSTAR) [hls 2]
 https://live05.miekgo.app/live/82054853.m3u8
@@ -2062,9 +2151,6 @@ https://live05.miekgo.app/live/97885009.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F43b2dd1c93748297cfbbea4d31247641.png%21w80&time=20%3A00+22%2F08" group-title="Tinhlagi - COLA TV",20:00 22/08 Thái Lan vs ĐTQG Việt Nam (BLV 7UP) [hls 2]
 https://live05.miekgo.app/live/78905744.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2FOIP_hdpF9Rm.jpg&time=09%3A00+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",09:00 22/08 Việt Nam vs Hàn Quốc (KaKa) [hls]
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2FOIP_WqmhllM.jpg&time=14%3A00+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",14:00 22/08 Indonesia vs Kazakhstan (Tày) [hls]
 https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
 
@@ -2073,6 +2159,9 @@ https://luong.phaohoa.live/live/phaohoa3/index.m3u8?expire=1815505159&sign=32dbf
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2Fteam_3119.jpg&time=18%3A30+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",18:30 22/08 Hull City vs Manchester United (A Heo) [hls]
 https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2FOIP_OOrZwnR.jpg&time=18%3A30+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",18:30 22/08 Trung Quốc vs Iraq (KaKa) [hls]
+https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2FOIP_p55YJlm.jpg&time=19%3A59+22%2F08" group-title="Tinhlagi - PHÁO HOA TV",19:59 22/08 Italy vs Montenegro (Chim Nhỏ) [hls]
 https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d
@@ -2534,46 +2623,6 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctru/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichao/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787358951946_2.jpg" group-title="ChoangTV",[09h00] Albert Januarta(7win) vs Aloysius yapp | BLV VÁNG [Table ? 2026 PHOENIX OPEN]
-#EXTVLCOPT:http-referrer=https://choangtv21.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.sports-cas889abxfileposo.site/live/live6686/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787363791893_2.jpg" group-title="ChoangTV",[09h00] Albert Januarta(8win) vs Aloysius yapp | BLV [Table ? 2026 PHOENIX OPEN]
-#EXTVLCOPT:http-referrer=https://choangtv21.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.sports-cas889abxfileposo.site/live/live6689/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787366428030_phil.png" group-title="ChoangTV",[09h00] Carto Biado vs Wictor Zielinski | BLV Kèn Kèn [Table 4 2026 PHOENIX OPEN]
-#EXTVLCOPT:http-referrer=https://choangtv21.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.sports-cas889abxfileposo.site/live/live6693/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787365747346_phil.png" group-title="ChoangTV",[09h00] Harry Vergara vs Aleksa Pecelj | BLV Kèn Kèn [Table 3 2026 PHOENIX OPEN]
-#EXTVLCOPT:http-referrer=https://choangtv21.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.sports-cas889abxfileposo.site/live/live6690/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787359077846_phil.png" group-title="ChoangTV",[09h00] Jeffrey Roda(8win) vs Joshua Filler | BLV [Table ? 2026 PHOENIX OPEN]
-#EXTVLCOPT:http-referrer=https://choangtv21.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.sports-cas889abxfileposo.site/live/live6687/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787365791972_21.jpg" group-title="ChoangTV",[09h00] Oliver Szolnoki vs Jonas Souto | BLV VÁNG [Table 2 2026 PHOENIX OPEN]
-#EXTVLCOPT:http-referrer=https://choangtv21.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.sports-cas889abxfileposo.site/live/live6691/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787359439103_19.jpg" group-title="ChoangTV",[09h00] Pijus Labutis vs Mario He | BLV BÚN CHÓ [Table 6 2026 PHOENIX OPEN]
-#EXTVLCOPT:http-referrer=https://choangtv21.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.sports-cas889abxfileposo.site/live/live6688/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787366243376_9.jpg" group-title="ChoangTV",[09h00] Robbie Capito vs Tyler Styer | BLV BÚN CHÓ [Table 1 2026 PHOENIX OPEN]
-#EXTVLCOPT:http-referrer=https://choangtv21.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.sports-cas889abxfileposo.site/live/live6692/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787367562548_1765337449015_tÃ¡ÂºÂ£i xuÃ¡Â»_ng.png" group-title="ChoangTV",[10h30] Bình Ốc vs Tuyên Con(7win) | BLV Bỉm Sữa [TV1 V7 - 99 TITANIUM CHAMPIONSHIP]
 #EXTVLCOPT:http-referrer=https://choangtv21.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2599,6 +2648,31 @@ https://cdn.sports-cas889abxfileposo.site/live/live6695/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.sports-cas889abxfileposo.site/live/live6698/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787376053107_AN NHIá»T.jpg" group-title="ChoangTV",[12h00] An Nhiệt vs Khải Tony(6win) | BLV SÊ KÔÔ [V7 - 99 TITANIUM CHAMPIONSHIP]
+#EXTVLCOPT:http-referrer=https://choangtv21.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.sports-cas889abxfileposo.site/live/live6701/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787375150770_BÃNH CHUáº¨N.jpg" group-title="ChoangTV",[12h00] Bình Chuẩn vs Duy Đinh(8win) | BLV Lee Min Hoo [V7 - 99 TITANIUM CHAMPIONSHIP]
+#EXTVLCOPT:http-referrer=https://choangtv21.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.sports-cas889abxfileposo.site/live/live6702/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787374053420_1765337449015_tÃ¡ÂºÂ£i xuÃ¡Â»_ng.png" group-title="ChoangTV",[12h00] Kiên Pháp vs Tùng Gái(6win) | BLV [V7 - 99 TITANIUM CHAMPIONSHIP]
+#EXTVLCOPT:http-referrer=https://choangtv21.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.sports-cas889abxfileposo.site/live/live6699/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1787375495148_NGá»C XÄM.png" group-title="ChoangTV",[12h00] Ngọc Xăm vs Cu Búng(7win) | BLV [V7 - 99 TITANIUM CHAMPIONSHIP]
+#EXTVLCOPT:http-referrer=https://choangtv21.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.sports-cas889abxfileposo.site/live/live6703/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn-choangtv.com/img/logo/1777147422361_Screenshot 2026-04-26 030339.png" group-title="ChoangTV",[12h00] Tkon vs Tùng Linh(5win) | BLV Bỉm Sữa [V7 - 99 TITANIUM CHAMPIONSHIP]
+#EXTVLCOPT:http-referrer=https://choangtv21.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.sports-cas889abxfileposo.site/live/live6700/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://go4.pw/VIP/4k_ultra.png" group-title="CuongHeHe",VIP - ELEVEN SPORTS 4K
 http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281071.m3u8
 
@@ -2613,6 +2687,75 @@ http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281430.m3u8
 
 #EXTINF:-1 tvg-logo="https://go4.pw/VIP/4k_ultra.png" group-title="CuongHeHe",VIP - TNT SPORT ULTIMATE 4K
 http://ysift55.xyz:80/live/WJ74AC4SRKQQYR7/pahruAQRs8/1281083.m3u8
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/PL4K.png" group-title="PREMIER LEAGUE",EPL - 4K 01 FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979906.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/PL4K.png" group-title="PREMIER LEAGUE",EPL - 4K 02 FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979907.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/Bournemouth.png" group-title="PREMIER LEAGUE",EPL - AFC BOURNEMOUTH FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979901.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/ARSENAL.png" group-title="PREMIER LEAGUE",EPL - ARSENAL FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/348374.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/AstonVilla.png" group-title="PREMIER LEAGUE",EPL - ASTON VILLA FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979902.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/Brentford.png" group-title="PREMIER LEAGUE",EPL - BRENTFORD FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979900.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/Brighton.png" group-title="PREMIER LEAGUE",EPL - BRIGHTON FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979899.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/bur.png" group-title="PREMIER LEAGUE",EPL - BURNLEY FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979904.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/Chelsea.png" group-title="PREMIER LEAGUE",EPL - CHELSEA FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979898.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/CrystalPalace.png" group-title="PREMIER LEAGUE",EPL - CRYSTAL PALACE FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979897.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/Everton.png" group-title="PREMIER LEAGUE",EPL - EVERTON FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979896.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/Fulham.png" group-title="PREMIER LEAGUE",EPL - FULHAM FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979895.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/led.png" group-title="PREMIER LEAGUE",EPL - LEEDS UNITED FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979905.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/LIVERPOOL.png" group-title="PREMIER LEAGUE",EPL - LIVERPOOL FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/348384.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/ManchesterCity.png" group-title="PREMIER LEAGUE",EPL - MANCHESTER CITY FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979894.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/Manchesterutd.png" group-title="PREMIER LEAGUE",EPL - MANCHESTER UTD FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/985136.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/NewcastleUtd.png" group-title="PREMIER LEAGUE",EPL - NEWCASTLE UTD FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979893.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/NottinghamForest.png" group-title="PREMIER LEAGUE",EPL - NOTTINGHAM FOREST FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979892.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/champ/Sunderland.png" group-title="PREMIER LEAGUE",EPL - SUNDERLAND FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979903.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/Tottenham.png" group-title="PREMIER LEAGUE",EPL - TOTTENHAM FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979891.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/WestHam.png" group-title="PREMIER LEAGUE",EPL - WEST HAM FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979890.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/UK/Wolverhampton.png" group-title="PREMIER LEAGUE",EPL - WOLVERHAMPTON WANDERERS FHD
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/979889.ts
+
+#EXTINF:-1 tvg-logo="https://go4.pw/EUROPE/UK/UK.png" group-title="PREMIER LEAGUE",UK - PREMIER LEAGUE
+http://africamango.xyz:80/live/1K9RC4BXSPMJKJW/Hlb0VdvXIl/1276949.ts
 
 #EXTINF:-1 tvg-id="" group-title="THỂ THAO QUỐC TẾ" tvg-logo="https://ip-tv.dev/images/ico/bein-sport-1.png",BeIN Sport 1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
