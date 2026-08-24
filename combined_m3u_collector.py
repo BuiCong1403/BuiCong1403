@@ -200,6 +200,7 @@ TV365_ERROR_M3U_URL = os.environ.get(
 )
 TINHLAGI_SPORT_M3U_URL = os.environ.get("TINHLAGI_SPORT_M3U_URL", "https://tinhlagi.pro/s.m3u")
 THETHAOCOBAN_M3U_URL = os.environ.get("THETHAOCOBAN_M3U_URL", "https://thcoban.github.io/ththethao/ttthethao.m3u")
+WRITE_RAW_REFERENCE_M3U = os.environ.get("WRITE_RAW_REFERENCE_M3U", "0").strip().lower() in {"1", "true", "yes", "on"}
 CLOUDOK_M3U_URL = os.environ.get(
     "CLOUDOK_M3U_URL",
     "https://raspy-waterfall-a003.ngoibut-cachmang.workers.dev/",
@@ -4062,20 +4063,25 @@ def main():
     write_m3u(ALL_M3U, deduped)
 
     write_ott_m3u(OTT_M3U, ott_deduped)
-    tinhlagi_raw_count = write_raw_playlist(TINHLAGI_M3U, "TinhLaGiRaw", TINHLAGI_SPORT_M3U_URL)
-    thethaocoban_raw_count = write_raw_playlist(THETHAOCOBAN_M3U, "TheThaoCoBanRaw", THETHAOCOBAN_M3U_URL)
+    tinhlagi_raw_count = 0
+    thethaocoban_raw_count = 0
+    if WRITE_RAW_REFERENCE_M3U:
+        tinhlagi_raw_count = write_raw_playlist(TINHLAGI_M3U, "TinhLaGiRaw", TINHLAGI_SPORT_M3U_URL)
+        thethaocoban_raw_count = write_raw_playlist(THETHAOCOBAN_M3U, "TheThaoCoBanRaw", THETHAOCOBAN_M3U_URL)
 
     log("")
     log(f"[DONE] Total unique links: {len(deduped)}")
     log(f"[DONE] OTT unique links: {len(ott_deduped)}")
-    log(f"[DONE] TinhLaGi raw links: {tinhlagi_raw_count}")
-    log(f"[DONE] TheThaoCoBan raw links: {thethaocoban_raw_count}")
+    if WRITE_RAW_REFERENCE_M3U:
+        log(f"[DONE] TinhLaGi raw links: {tinhlagi_raw_count}")
+        log(f"[DONE] TheThaoCoBan raw links: {thethaocoban_raw_count}")
     for source_name, count in per_source_counts.items():
         log(f"[DONE] {source_name}: {count}")
     log(f"[DONE] M3U: {ALL_M3U}")
     log(f"[DONE] OTT M3U: {OTT_M3U}")
-    log(f"[DONE] TINHLAGI M3U: {TINHLAGI_M3U}")
-    log(f"[DONE] THETHAOCOBAN M3U: {THETHAOCOBAN_M3U}")
+    if WRITE_RAW_REFERENCE_M3U:
+        log(f"[DONE] TINHLAGI M3U: {TINHLAGI_M3U}")
+        log(f"[DONE] THETHAOCOBAN M3U: {THETHAOCOBAN_M3U}")
 
 
 if __name__ == "__main__":
