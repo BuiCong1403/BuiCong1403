@@ -173,6 +173,14 @@ MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.livecarriercdn.com/")
+XOILACZ_FALLBACK_REFERERS = [
+    item.strip()
+    for item in os.environ.get(
+        "XOILACZ_FALLBACK_REFERERS",
+        "https://xlz.livecarriercdn.com/,https://xoilacxtv.tv/,https://xoilacct.tv/",
+    ).split(",")
+    if item.strip()
+]
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
 XOILACZ_SPORTS = [
     item.strip()
@@ -699,6 +707,17 @@ def is_valid_xoilacz_stream_url(url):
     return is_hls_url(url) or is_flv_url(url)
 
 
+def xoilacz_stream_referer(stream_url):
+    stream_url_key = clean_text(stream_url).lower()
+    if (
+        "originpullstream.com" in stream_url_key
+        or "m3u8delivery.com" in stream_url_key
+        or "quickscoreboardz.com" in stream_url_key
+    ):
+        return XOILACZ_FALLBACK_REFERERS[0] if XOILACZ_FALLBACK_REFERERS else XOILACZ_REFERER
+    return XOILACZ_REFERER
+
+
 def is_valid_stream_url(url):
     url = clean_text(url)
     return bool(url and is_hls_url(url) and not url.startswith(("udp://", "rtp://")))
@@ -877,8 +896,10 @@ def normalize_channel_group(channel):
                 "streambylivepulse.com" in stream_url_key
                 or "procdnlive.com" in stream_url_key
                 or "originpullstream.com" in stream_url_key
+                or "m3u8delivery.com" in stream_url_key
+                or "quickscoreboardz.com" in stream_url_key
             ):
-                channel["referer"] = XOILACZ_REFERER
+                channel["referer"] = xoilacz_stream_referer(stream_url_key)
         raw_options = []
         for option_line in channel.get("raw_options") or []:
             if "http-user-agent=" in clean_text(option_line).lower():
@@ -2723,6 +2744,7 @@ def collect_mebongtv():
 def xoilacz_base_candidates():
     candidates = [
         XOILACZ_SITE_URL,
+        "https://xoilacxtv.tv/",
         "https://nmsba.com/",
         "https://xoilacz.io/",
         "https://xoilacz.vip/",
@@ -2749,7 +2771,7 @@ def xoilacz_headers(base_url):
     }
 
 
-def extract_xoilacz_url_stream(stream_page_url, headers):
+def extract_xoilacz_url_stream(stream_page_url, headers, detail_url=""):
     candidates = [stream_page_url]
     if "/off-tvc" not in stream_page_url:
         separator = "&" if "?" in stream_page_url else "?"
@@ -2764,7 +2786,13 @@ def extract_xoilacz_url_stream(stream_page_url, headers):
             continue
         seen.add(candidate)
         try:
-            html_text = fetch_text(candidate, headers=headers, timeout=25)
+            request_headers = dict(headers or {})
+            if detail_url and "/ajax/chanel/" in candidate:
+                detail_origin = re.match(r"^https?://[^/]+", detail_url)
+                if detail_origin:
+                    request_headers["Origin"] = detail_origin.group(0)
+                request_headers["Referer"] = detail_url
+            html_text = fetch_text(candidate, headers=request_headers, timeout=25)
         except Exception:
             continue
         match = re.search(r'(?:var|let|const)\s+urlStream\s*=\s*["\']([^"\']+)["\']', html_text)
@@ -2815,7 +2843,7 @@ def extract_xoilacz_stream_links(detail_url, headers):
         stream_page_url = clean_text(str(item[0]).replace("\\/", "/"))
         if not stream_page_url.startswith(("http://", "https://")):
             continue
-        stream_url = extract_xoilacz_url_stream(stream_page_url, headers) or stream_page_url
+        stream_url = extract_xoilacz_url_stream(stream_page_url, headers, detail_url) or stream_page_url
         if is_valid_xoilacz_stream_url(stream_url) and stream_url not in stream_urls:
             stream_urls.append(stream_url)
     return stream_urls
@@ -2873,11 +2901,11 @@ def collect_xoilacz():
             match_channels.append(
                 {
                     "source": source,
-                    "name": f"{title} | Link {idx} [{quality}]",
-                    "group": "Xôi Lạc Z TV",
-                    "logo": "",
+                        "name": f"{title} | Link {idx} [{quality}]",
+                        "group": "Xôi Lạc Z TV",
+                        "logo": "",
                         "stream_url": stream_url,
-                        "referer": XOILACZ_REFERER,
+                        "referer": xoilacz_stream_referer(stream_url),
                         "user_agent": FLV_OTT_USER_AGENT,
                     }
                 )
