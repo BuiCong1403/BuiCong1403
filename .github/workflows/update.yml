@@ -30,21 +30,18 @@ jobs:
         run: |
           python combined_m3u_collector.py
           rm -f sport.m3u
+          rm -f tinhlagi.m3u thethaocoban.m3u
           test -f all.m3u
           test -s all.m3u
           test -f ott.m3u
           test -s ott.m3u
-          test -f tinhlagi.m3u
-          test -s tinhlagi.m3u
-          test -f thethaocoban.m3u
-          test -s thethaocoban.m3u
-          ls -lh all.m3u ott.m3u tinhlagi.m3u thethaocoban.m3u
+          ls -lh all.m3u ott.m3u
 
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A all.m3u ott.m3u tinhlagi.m3u thethaocoban.m3u sport.m3u
+          git add -A all.m3u ott.m3u sport.m3u tinhlagi.m3u thethaocoban.m3u
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
           else
