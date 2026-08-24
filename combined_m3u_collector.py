@@ -172,8 +172,13 @@ MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "80") or "80")
 MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
-XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.edgevaultmedia.com/")
+XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.livecarriercdn.com/")
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
+XOILACZ_SPORTS = [
+    item.strip()
+    for item in os.environ.get("XOILACZ_SPORTS", "football,basketball,tennis,volleyball").split(",")
+    if item.strip()
+]
 AZABU_BASE_URL = os.environ.get("AZABU_BASE_URL", "https://azabuglobal.com/")
 AZABU_LIVE_LIMIT = int(os.environ.get("AZABU_LIVE_LIMIT", "30"))
 AZABU_HIGHLIGHT_PAGES = int(os.environ.get("AZABU_HIGHLIGHT_PAGES", "1"))
@@ -868,7 +873,11 @@ def normalize_channel_group(channel):
         channel["user_agent"] = FLV_OTT_USER_AGENT
         if not clean_text(channel.get("referer")):
             stream_url_key = clean_text(channel.get("stream_url")).lower()
-            if "streambylivepulse.com" in stream_url_key or "procdnlive.com" in stream_url_key:
+            if (
+                "streambylivepulse.com" in stream_url_key
+                or "procdnlive.com" in stream_url_key
+                or "originpullstream.com" in stream_url_key
+            ):
                 channel["referer"] = XOILACZ_REFERER
         raw_options = []
         for option_line in channel.get("raw_options") or []:
@@ -2711,14 +2720,22 @@ def collect_mebongtv():
     return channels
 
 
-def xoilacz_actual_base_url():
-    base_url = XOILACZ_SITE_URL.rstrip("/") + "/"
-    try:
-        response = request_get(base_url, timeout=15)
-        actual_url = response.url
-        return actual_url if actual_url.endswith("/") else actual_url + "/"
-    except Exception:
-        return base_url
+def xoilacz_base_candidates():
+    candidates = [
+        XOILACZ_SITE_URL,
+        "https://nmsba.com/",
+        "https://xoilacz.io/",
+        "https://xoilacz.vip/",
+        "https://xoilacxtb.tv/",
+        "https://xoilaczzrrz.tv/",
+    ]
+    seen = set()
+    for candidate in candidates:
+        base_url = candidate.rstrip("/") + "/"
+        if base_url in seen:
+            continue
+        seen.add(base_url)
+        yield base_url
 
 
 def xoilacz_headers(base_url):
@@ -2733,12 +2750,49 @@ def xoilacz_headers(base_url):
 
 
 def extract_xoilacz_url_stream(stream_page_url, headers):
-    try:
-        html_text = fetch_text(stream_page_url, headers=headers, timeout=25)
-    except Exception:
-        return ""
-    match = re.search(r'var\s+urlStream\s*=\s*["\']([^"\']+)["\'];', html_text)
-    return clean_text(match.group(1).replace("\\/", "/")) if match else ""
+    candidates = [stream_page_url]
+    if "/off-tvc" not in stream_page_url:
+        separator = "&" if "?" in stream_page_url else "?"
+        candidates.append(f"{stream_page_url.rstrip('/')}/off-tvc{separator}is_off_add=true")
+    if "xlz" in stream_page_url:
+        candidates.extend([url.replace("xlz", "xl365") for url in list(candidates)])
+        candidates.extend([url.replace("xlz", "xl") for url in list(candidates)])
+
+    seen = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        try:
+            html_text = fetch_text(candidate, headers=headers, timeout=25)
+        except Exception:
+            continue
+        match = re.search(r'(?:var|let|const)\s+urlStream\s*=\s*["\']([^"\']+)["\']', html_text)
+        if match:
+            return clean_text(match.group(1).replace("\\/", "/"))
+        ad_urls = set()
+        ads_match = re.search(r"var\s+adsTvc\s*=\s*(\[[\s\S]*?\]);", html_text)
+        if ads_match:
+            try:
+                ads = json.loads(ads_match.group(1))
+                for ad in ads:
+                    if isinstance(ad, dict) and ad.get("file"):
+                        ad_urls.add(clean_text(str(ad.get("file")).replace("\\/", "/")))
+            except Exception:
+                pass
+        direct_urls = [
+            clean_text(match.group(0).replace("\\/", "/"))
+            for match in re.finditer(r'https?://[^"\']+\.(?:m3u8|flv)(?:\?[^"\']*)?', html_text)
+        ]
+        real_urls = [url for url in direct_urls if url not in ad_urls]
+        if real_urls:
+            return real_urls[0]
+        if direct_urls:
+            return direct_urls[-1]
+        src_match = re.search(r'(?:source|file)\s*[:=]\s*["\'](https?://[^"\']+)["\']', html_text, re.I)
+        if src_match:
+            return clean_text(src_match.group(1).replace("\\/", "/"))
+    return ""
 
 
 def extract_xoilacz_stream_links(detail_url, headers):
@@ -2767,16 +2821,30 @@ def extract_xoilacz_stream_links(detail_url, headers):
     return stream_urls
 
 
+def extract_xoilacz_match_blocks(html_text):
+    blocks = re.findall(
+        r'(<div\s+class="grid-matches__item[^>]*grid-matches__item-match.*?)(?=<div\s+class="grid-matches__item|\Z)',
+        html_text,
+        re.S,
+    )
+    if blocks:
+        return blocks
+    fallback_blocks = []
+    for match in re.finditer(r'<a[^>]+href="([^"]+)"[^>]+title="([^"]*)"', html_text, re.S):
+        anchor = match.group(0)
+        href = match.group(1)
+        if "truc-tiep" not in href and "live" not in href:
+            continue
+        fallback_blocks.append(anchor)
+    return fallback_blocks
+
+
 def collect_xoilacz():
     source = "XoiLacZ"
-    base_url = xoilacz_actual_base_url()
-    headers = xoilacz_headers(base_url)
     channels = []
     seen_urls = set()
 
     def collect_match(block):
-        if "redirectPopup" not in block:
-            return []
         blv_match = re.search(r"number-blv-(\d+)", block)
         if blv_match and int(blv_match.group(1)) <= 0:
             return []
@@ -2791,6 +2859,8 @@ def collect_xoilacz():
                 block,
                 re.S,
             )
+        if not link_match:
+            link_match = re.search(r'<a[^>]+href="([^"]+)"[^>]+title="([^"]*)"', block, re.S)
         if not link_match:
             return []
 
@@ -2813,37 +2883,62 @@ def collect_xoilacz():
                 )
         return match_channels
 
-    for page in range(max(1, XOILACZ_PAGES)):
-        url = f"{base_url.rstrip('/')}/sport/football/load-more/home/page/{page}/per/20?t={int(time.time())}"
-        log(f"[{source}] Fetch page {page}")
-        try:
-            data = fetch_json(url, headers=headers, timeout=30)
-        except Exception as exc:
-            log(f"[{source}] Page {page} error: {exc}")
-            break
-        html_text = ((data.get("data") or {}).get("html") or "") if isinstance(data, dict) else ""
-        if not html_text:
-            break
+    for base_url in xoilacz_base_candidates():
+        headers = xoilacz_headers(base_url)
+        before_base = len(channels)
+        for sport in XOILACZ_SPORTS:
+            for page in range(max(1, XOILACZ_PAGES)):
+                url = f"{base_url.rstrip('/')}/sport/{sport}/load-more/home/page/{page}/per/20?t={int(time.time())}"
+                log(f"[{source}] Fetch {base_url} {sport} page {page}")
+                data = fetch_json(url, headers=headers, timeout=18)
+                html_text = ((data.get("data") or {}).get("html") or "") if isinstance(data, dict) else ""
+                if not html_text:
+                    break
 
-        blocks = re.findall(
-            r'(<div\s+class="grid-matches__item[^>]*grid-matches__item-match.*?)(?=<div\s+class="grid-matches__item|\Z)',
-            html_text,
-            re.S,
-        )
-        with ThreadPoolExecutor(max_workers=6) as executor:
-            futures = [executor.submit(collect_match, block) for block in blocks]
-            for future in as_completed(futures):
+                blocks = extract_xoilacz_match_blocks(html_text)
+                with ThreadPoolExecutor(max_workers=6) as executor:
+                    futures = [executor.submit(collect_match, block) for block in blocks]
+                    for future in as_completed(futures):
+                        try:
+                            match_channels = future.result()
+                        except Exception:
+                            continue
+                        for channel in match_channels:
+                            stream_url = channel.get("stream_url")
+                            if stream_url in seen_urls:
+                                continue
+                            seen_urls.add(stream_url)
+                            channels.append(channel)
+                time.sleep(0.5)
+        if len(channels) == before_base:
+            for path in ("", "truc-tiep/"):
+                page_url = urljoin(base_url, path)
+                log(f"[{source}] Fetch fallback {page_url}")
                 try:
-                    match_channels = future.result()
-                except Exception:
+                    html_text = fetch_text(page_url, headers=headers, timeout=18)
+                except Exception as exc:
+                    log(f"[{source}] Fallback error {page_url}: {exc}")
                     continue
-                for channel in match_channels:
-                    stream_url = channel.get("stream_url")
-                    if stream_url in seen_urls:
-                        continue
-                    seen_urls.add(stream_url)
-                    channels.append(channel)
-        time.sleep(0.5)
+                blocks = extract_xoilacz_match_blocks(html_text)
+                if not blocks:
+                    continue
+                with ThreadPoolExecutor(max_workers=6) as executor:
+                    futures = [executor.submit(collect_match, block) for block in blocks]
+                    for future in as_completed(futures):
+                        try:
+                            match_channels = future.result()
+                        except Exception:
+                            continue
+                        for channel in match_channels:
+                            stream_url = channel.get("stream_url")
+                            if stream_url in seen_urls:
+                                continue
+                            seen_urls.add(stream_url)
+                            channels.append(channel)
+                if len(channels) > before_base:
+                    break
+        if len(channels) > before_base:
+            break
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
