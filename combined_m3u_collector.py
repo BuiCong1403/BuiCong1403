@@ -32,7 +32,9 @@ except Exception:
 
 BASE_DIR = Path(__file__).resolve().parent
 ALL_M3U = BASE_DIR / "all.m3u"
-SPORT_M3U = BASE_DIR / "sport.m3u"
+OTT_M3U = BASE_DIR / "ott.m3u"
+TINHLAGI_M3U = BASE_DIR / "tinhlagi.m3u"
+THETHAOCOBAN_M3U = BASE_DIR / "thethaocoban.m3u"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
@@ -184,6 +186,7 @@ TV365_ERROR_M3U_URL = os.environ.get(
     "https://raw.githubusercontent.com/TV365-VN/TV365-DATA/refs/heads/main/error.m3u",
 )
 TINHLAGI_SPORT_M3U_URL = os.environ.get("TINHLAGI_SPORT_M3U_URL", "https://tinhlagi.pro/s.m3u")
+THETHAOCOBAN_M3U_URL = os.environ.get("THETHAOCOBAN_M3U_URL", "https://thcoban.github.io/ththethao/ttthethao.m3u")
 CLOUDOK_M3U_URL = os.environ.get(
     "CLOUDOK_M3U_URL",
     "https://raspy-waterfall-a003.ngoibut-cachmang.workers.dev/",
@@ -195,7 +198,6 @@ FLV_OTT_USER_AGENT = (
     "Mozilla/5.0 (Linux; Android 10; Mobile) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
 )
-SPORT_M3U_SOURCES = {"CDNLive", "Tivihub"}
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
@@ -725,8 +727,6 @@ SPORT_SOURCES = {
     "QueChoa8",
     "S8TV",
     "TieuLamWC",
-    "CDNLive",
-    "Tivihub",
 }
 
 SPORT_KEYWORDS = [
@@ -1053,6 +1053,59 @@ def write_m3u(path, channels):
             if user_agent and should_write_user_agent(ch):
                 f.write(f"#EXTVLCOPT:http-user-agent={user_agent}\n")
             f.write(f'{ch.get("stream_url", "")}\n\n')
+
+
+def write_ott_m3u(path, channels):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        f.write(f"# Updated : {now_ict()}\n")
+        f.write(f"# Total   : {len(channels)}\n\n")
+        for ch in channels:
+            name = remove_icons(ch.get("name", "Unknown"))
+            if is_flv_url(ch.get("stream_url")):
+                f.write(f"#EXTINF:0,{name}\n")
+                f.write(f"#EXTGRP:{FLV_OTT_GROUP}\n")
+            else:
+                attrs = [
+                    f'tvg-logo="{ch.get("logo", "")}"',
+                    f'group-title="{output_group(ch)}"',
+                ]
+                f.write(f'#EXTINF:-1 {" ".join(attrs)},{name}\n')
+            f.write(f'{ch.get("stream_url", "")}\n\n')
+
+
+def split_ott_channels(channels):
+    normal_channels = []
+    ott_channels = []
+    for channel in channels:
+        if is_flv_url(channel.get("stream_url")):
+            ott_channels.append(channel)
+        else:
+            normal_channels.append(channel)
+    return normal_channels, ott_channels
+
+
+def channel_needs_extvlcopt(channel):
+    if clean_text(channel.get("referer")) and should_write_referrer(channel):
+        return True
+    if clean_text(channel.get("user_agent")) and should_write_user_agent(channel):
+        return True
+    for option_line in channel.get("raw_options") or []:
+        option_line = clean_text(option_line).lower()
+        if option_line.startswith("#extvlcopt:http-referrer=") and should_write_referrer(channel):
+            return True
+        if option_line.startswith("#extvlcopt:http-user-agent=") and should_write_user_agent(channel):
+            return True
+    return False
+
+
+def select_ott_compatible_channels(channels):
+    selected = []
+    for channel in channels:
+        if is_flv_url(channel.get("stream_url")) or not channel_needs_extvlcopt(channel):
+            selected.append(channel)
+    return selected
 
 
 def collect_hoiquan3():
@@ -2403,6 +2456,22 @@ def collect_mytv_fpt_events():
         channel["skip_event_filter"] = True
         channels.append(channel)
     return channels
+
+
+def collect_thethaocoban():
+    return collect_m3u_playlist(
+        "TheThaoCoBan",
+        THETHAOCOBAN_M3U_URL,
+        "TheThaoCoBan",
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=3,
+        default_referer_to_playlist=False,
+        user_agent="",
+        preserve_extinf=True,
+        preserve_group_exact=True,
+    )
 
 
 def collect_cloudok_premier_league():
@@ -3788,8 +3857,6 @@ def main():
         ("CuongHeHe4K", collect_tt1_4k),
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
-        ("CDNLive", collect_cdnlive),
-        ("Tivihub", collect_tivihub),
         ("MebongTV", collect_mebongtv),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
@@ -3828,7 +3895,8 @@ def main():
     ]
 
     all_channels = []
-    sport_channels = []
+    tinhlagi_channels = []
+    thethaocoban_channels = []
     per_source_counts = {}
     for source_name, collector in collectors:
         log("")
@@ -3849,25 +3917,45 @@ def main():
         selected = verify_live_channels(unique)
         per_source_counts[source_name] = len(selected)
         if selected:
-            if source_name in SPORT_M3U_SOURCES:
-                sport_channels.extend(selected)
-            else:
-                all_channels.extend(selected)
+            all_channels.extend(selected)
+            if source_name == "TinhLaGi":
+                tinhlagi_channels.extend(selected)
+
+    log("")
+    try:
+        thethaocoban_channels = verify_live_channels(collect_thethaocoban())
+    except Exception as exc:
+        log(f"[TheThaoCoBan] Fatal error: {exc}")
+        thethaocoban_channels = []
+    per_source_counts["TheThaoCoBan"] = len(thethaocoban_channels)
 
     all_channels = filter_current_and_future_events(all_channels)
-    deduped = dedupe_and_sort_channels(all_channels)
+    deduped_with_ott = dedupe_and_sort_channels(all_channels)
+    deduped, _flv_channels = split_ott_channels(deduped_with_ott)
+    ott_deduped = select_ott_compatible_channels(deduped_with_ott)
     write_m3u(ALL_M3U, deduped)
-    sport_channels = filter_current_and_future_events(sport_channels)
-    sport_deduped = dedupe_and_sort_channels(sport_channels)
-    write_m3u(SPORT_M3U, sport_deduped)
+
+    tinhlagi_channels = filter_current_and_future_events(tinhlagi_channels)
+    tinhlagi_deduped = dedupe_and_sort_channels(tinhlagi_channels)
+    write_m3u(TINHLAGI_M3U, tinhlagi_deduped)
+
+    thethaocoban_channels = filter_current_and_future_events(thethaocoban_channels)
+    thethaocoban_deduped = dedupe_and_sort_channels(thethaocoban_channels)
+    write_m3u(THETHAOCOBAN_M3U, thethaocoban_deduped)
+
+    write_ott_m3u(OTT_M3U, ott_deduped)
 
     log("")
     log(f"[DONE] Total unique links: {len(deduped)}")
-    log(f"[DONE] Sport unique links: {len(sport_deduped)}")
+    log(f"[DONE] OTT unique links: {len(ott_deduped)}")
+    log(f"[DONE] TinhLaGi unique links: {len(tinhlagi_deduped)}")
+    log(f"[DONE] TheThaoCoBan unique links: {len(thethaocoban_deduped)}")
     for source_name, count in per_source_counts.items():
         log(f"[DONE] {source_name}: {count}")
     log(f"[DONE] M3U: {ALL_M3U}")
-    log(f"[DONE] SPORT M3U: {SPORT_M3U}")
+    log(f"[DONE] OTT M3U: {OTT_M3U}")
+    log(f"[DONE] TINHLAGI M3U: {TINHLAGI_M3U}")
+    log(f"[DONE] THETHAOCOBAN M3U: {THETHAOCOBAN_M3U}")
 
 
 if __name__ == "__main__":
