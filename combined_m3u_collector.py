@@ -171,7 +171,7 @@ MEBONG_GROUP = os.environ.get("MEBONG_GROUP", "MebongTV")
 MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "80") or "80")
 MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
-XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacz.vip/")
+XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacxtv.tv/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.livecarriercdn.com/")
 XOILACZ_FALLBACK_REFERERS = [
     item.strip()
@@ -2744,8 +2744,8 @@ def collect_mebongtv():
 
 def xoilacz_base_candidates():
     candidates = [
-        XOILACZ_SITE_URL,
         "https://xoilacxtv.tv/",
+        XOILACZ_SITE_URL,
         "https://nmsba.com/",
         "https://xoilacz.io/",
         "https://xoilacz.vip/",
