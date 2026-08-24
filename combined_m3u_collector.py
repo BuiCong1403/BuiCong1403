@@ -1075,6 +1075,21 @@ def write_ott_m3u(path, channels):
             f.write(f'{ch.get("stream_url", "")}\n\n')
 
 
+def write_raw_playlist(path, source_name, playlist_url):
+    log(f"[{source_name}] Fetch raw M3U")
+    try:
+        response = request_get(playlist_url, headers={"Accept": "*/*"}, timeout=60)
+        log(f"[{source_name}] Raw HTTP {response.status_code}")
+        if response.status_code != 200:
+            return 0
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(response.text, encoding="utf-8", newline="")
+        return response.text.count("#EXTINF")
+    except Exception as exc:
+        log(f"[{source_name}] Raw error: {exc}")
+        return 0
+
+
 def split_ott_channels(channels):
     normal_channels = []
     ott_channels = []
@@ -3895,8 +3910,6 @@ def main():
     ]
 
     all_channels = []
-    tinhlagi_channels = []
-    thethaocoban_channels = []
     per_source_counts = {}
     for source_name, collector in collectors:
         log("")
@@ -3918,16 +3931,6 @@ def main():
         per_source_counts[source_name] = len(selected)
         if selected:
             all_channels.extend(selected)
-            if source_name == "TinhLaGi":
-                tinhlagi_channels.extend(selected)
-
-    log("")
-    try:
-        thethaocoban_channels = verify_live_channels(collect_thethaocoban())
-    except Exception as exc:
-        log(f"[TheThaoCoBan] Fatal error: {exc}")
-        thethaocoban_channels = []
-    per_source_counts["TheThaoCoBan"] = len(thethaocoban_channels)
 
     all_channels = filter_current_and_future_events(all_channels)
     deduped_with_ott = dedupe_and_sort_channels(all_channels)
@@ -3935,21 +3938,15 @@ def main():
     ott_deduped = select_ott_compatible_channels(deduped_with_ott)
     write_m3u(ALL_M3U, deduped)
 
-    tinhlagi_channels = filter_current_and_future_events(tinhlagi_channels)
-    tinhlagi_deduped = dedupe_and_sort_channels(tinhlagi_channels)
-    write_m3u(TINHLAGI_M3U, tinhlagi_deduped)
-
-    thethaocoban_channels = filter_current_and_future_events(thethaocoban_channels)
-    thethaocoban_deduped = dedupe_and_sort_channels(thethaocoban_channels)
-    write_m3u(THETHAOCOBAN_M3U, thethaocoban_deduped)
-
     write_ott_m3u(OTT_M3U, ott_deduped)
+    tinhlagi_raw_count = write_raw_playlist(TINHLAGI_M3U, "TinhLaGiRaw", TINHLAGI_SPORT_M3U_URL)
+    thethaocoban_raw_count = write_raw_playlist(THETHAOCOBAN_M3U, "TheThaoCoBanRaw", THETHAOCOBAN_M3U_URL)
 
     log("")
     log(f"[DONE] Total unique links: {len(deduped)}")
     log(f"[DONE] OTT unique links: {len(ott_deduped)}")
-    log(f"[DONE] TinhLaGi unique links: {len(tinhlagi_deduped)}")
-    log(f"[DONE] TheThaoCoBan unique links: {len(thethaocoban_deduped)}")
+    log(f"[DONE] TinhLaGi raw links: {tinhlagi_raw_count}")
+    log(f"[DONE] TheThaoCoBan raw links: {thethaocoban_raw_count}")
     for source_name, count in per_source_counts.items():
         log(f"[DONE] {source_name}: {count}")
     log(f"[DONE] M3U: {ALL_M3U}")
