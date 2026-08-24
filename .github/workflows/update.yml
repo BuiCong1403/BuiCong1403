@@ -41,7 +41,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A all.m3u ott.m3u sport.m3u tinhlagi.m3u thethaocoban.m3u
+          git add all.m3u ott.m3u combined_m3u_collector.py export_reference_m3u.bat .gitignore
+          git add -u
           if git diff --cached --quiet; then
             echo "No generated changes to commit."
           else
