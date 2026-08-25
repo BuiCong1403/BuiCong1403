@@ -207,7 +207,7 @@ CLOUDOK_M3U_URL = os.environ.get(
 )
 CLOUDOK_AUTH_TOKEN = os.environ.get("CLOUDOK_AUTH_TOKEN", "dc5521f1fe411d6f2e83c2bf047d6294")
 SPORT_INTERNATIONAL_GROUP = "TH\u1ec2 THAO QU\u1ed0C T\u1ebe"
-FLV_OTT_GROUP = "FLV | OTT Player"
+FLV_OTT_GROUP = "FLV"
 FLV_OTT_USER_AGENT = (
     "Mozilla/5.0 (Linux; Android 10; Mobile) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
@@ -788,7 +788,7 @@ PREFERRED_OUTPUT_GROUPS = [
     "VTV",
     "Sự kiện",
     "MyTVFPTEvents",
-    "FLV | OTT Player",
+    "FLV",
     "Gi\u1edd V\u00e0ng TV",
     "Vua S\u00e2n C\u1ecf TV",
     "Socolive TV",
@@ -1094,15 +1094,9 @@ def write_ott_m3u(path, channels):
         f.write(f"# Total   : {len(channels)}\n\n")
         for ch in channels:
             name = remove_icons(ch.get("name", "Unknown"))
-            if is_flv_url(ch.get("stream_url")):
-                f.write(f"#EXTINF:0,{name}\n")
-                f.write(f"#EXTGRP:{FLV_OTT_GROUP}\n")
-            else:
-                attrs = [
-                    f'tvg-logo="{ch.get("logo", "")}"',
-                    f'group-title="{output_group(ch)}"',
-                ]
-                f.write(f'#EXTINF:-1 {" ".join(attrs)},{name}\n')
+            group = FLV_OTT_GROUP if is_flv_url(ch.get("stream_url")) else output_group(ch)
+            f.write(f"#EXTINF:0,{name}\n")
+            f.write(f"#EXTGRP:{group}\n")
             f.write(f'{ch.get("stream_url", "")}\n\n')
 
 
