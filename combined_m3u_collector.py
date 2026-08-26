@@ -203,6 +203,12 @@ TV365_ERROR_M3U_URL = os.environ.get(
 TINHLAGI_SPORT_M3U_URL = os.environ.get("TINHLAGI_SPORT_M3U_URL", "https://tinhlagi.pro/s.m3u")
 THETHAOCOBAN_M3U_URL = os.environ.get("THETHAOCOBAN_M3U_URL", "https://thcoban.github.io/ththethao/ttthethao.m3u")
 WRITE_RAW_REFERENCE_M3U = os.environ.get("WRITE_RAW_REFERENCE_M3U", "0").strip().lower() in {"1", "true", "yes", "on"}
+THETHAOCOBAN_SOURCE_FALLBACK = (
+    os.environ.get("THETHAOCOBAN_SOURCE_FALLBACK", "1").strip().lower() not in {"0", "false", "no"}
+)
+XOILACZ_TTCB_MIN_LINKS = int(os.environ.get("XOILACZ_TTCB_MIN_LINKS", "20") or "20")
+VSC9_TTCB_MIN_TODAY_LINKS = int(os.environ.get("VSC9_TTCB_MIN_TODAY_LINKS", "20") or "20")
+PHAOHOA_TTCB_MIN_LINKS = int(os.environ.get("PHAOHOA_TTCB_MIN_LINKS", "20") or "20")
 CLOUDOK_M3U_URL = os.environ.get(
     "CLOUDOK_M3U_URL",
     "https://raspy-waterfall-a003.ngoibut-cachmang.workers.dev/",
@@ -1801,6 +1807,17 @@ def collect_phaohoa():
                 }
             )
 
+    if len(channels) < PHAOHOA_TTCB_MIN_LINKS:
+        channels.extend(
+            collect_thethaocoban_source_fallback(
+                "PhaoHoaTV",
+                "PhaoHoaTV",
+                ("phao hoa", "pháo hoa"),
+                ("phaohoa.live",),
+                seen_urls,
+            )
+        )
+
     log(f"[{source}] {len(channels)} raw links")
     return channels
 
@@ -2693,6 +2710,79 @@ def collect_thethaocoban():
     )
 
 
+THETHAOCOBAN_REFERENCE_CACHE = None
+
+
+def get_thethaocoban_reference_channels():
+    global THETHAOCOBAN_REFERENCE_CACHE
+    if THETHAOCOBAN_REFERENCE_CACHE is None:
+        THETHAOCOBAN_REFERENCE_CACHE = collect_m3u_playlist(
+            "TheThaoCoBanReference",
+            THETHAOCOBAN_M3U_URL,
+            "TheThaoCoBan",
+            preserve_group=True,
+            allow_non_m3u8=True,
+            timeout=60,
+            retries=3,
+            default_referer_to_playlist=False,
+            user_agent="",
+            preserve_extinf=False,
+            preserve_group_exact=False,
+        )
+    return list(THETHAOCOBAN_REFERENCE_CACHE)
+
+
+def thethaocoban_fallback_referer(target_source, stream_url):
+    if target_source == "XoiLacZ":
+        return xoilacz_stream_referer(stream_url)
+    if target_source == "VSC9":
+        return VSC9_REFERER
+    if target_source == "PhaoHoaTV":
+        return PHAOHOA_API_BASE.rstrip("/") + "/"
+    return ""
+
+
+def collect_thethaocoban_source_fallback(
+    target_source,
+    target_group,
+    allowed_groups,
+    host_keywords=(),
+    seen_urls=None,
+):
+    if not THETHAOCOBAN_SOURCE_FALLBACK:
+        return []
+    seen_urls = seen_urls if seen_urls is not None else set()
+    channels = []
+    for channel in get_thethaocoban_reference_channels():
+        group = channel.get("group")
+        if not group_matches_any(group, allowed_groups):
+            continue
+        stream_url = clean_text(channel.get("stream_url"))
+        stream_key = stream_url.lower()
+        if host_keywords and not any(keyword in stream_key for keyword in host_keywords):
+            continue
+        if stream_url in seen_urls:
+            continue
+        seen_urls.add(stream_url)
+        item = dict(channel)
+        item.update(
+            {
+                "source": target_source,
+                "group": target_group,
+                "referer": thethaocoban_fallback_referer(target_source, stream_url),
+                "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                "raw_extinf": "",
+                "raw_options": [],
+                "preserve_extinf": False,
+                "preserve_group_exact": False,
+            }
+        )
+        channels.append(item)
+    if channels:
+        log(f"[{target_source}] TheThaoCoBan fallback {len(channels)} raw links")
+    return channels
+
+
 def collect_cloudok_premier_league():
     return collect_m3u_playlist(
         "CloudOKPremierLeague",
@@ -3141,6 +3231,17 @@ def collect_xoilacz():
                     break
         if len(channels) > before_base:
             break
+
+    if len(channels) < XOILACZ_TTCB_MIN_LINKS:
+        channels.extend(
+            collect_thethaocoban_source_fallback(
+                "XoiLacZ",
+                "Xôi Lạc Z TV",
+                ("xoi lac", "xôi lạc"),
+                ("originpullstream.com", "m3u8delivery.com", "quickscoreboardz.com", "livecarriercdn.com"),
+                seen_urls,
+            )
+        )
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
@@ -3715,6 +3816,16 @@ def collect_vsc9_tinhlagi_fallback(seen_urls):
     return channels
 
 
+def collect_vsc9_thethaocoban_fallback(seen_urls):
+    return collect_thethaocoban_source_fallback(
+        "VSC9",
+        "Vua Sân Cỏ TV",
+        ("vua san co", "vua sân cỏ"),
+        ("ebaclofen.org",),
+        seen_urls,
+    )
+
+
 def collect_vsc9():
     source = "VSC9"
     log(f"[{source}] Fetch home")
@@ -3723,6 +3834,7 @@ def collect_vsc9():
     seen_urls = set()
     if not html_text:
         log(f"[{source}] Home not available")
+        channels.extend(collect_vsc9_thethaocoban_fallback(seen_urls))
         channels.extend(collect_vsc9_tinhlagi_fallback(seen_urls))
         log(f"[{source}] {len(channels)} raw links")
         return channels
@@ -3761,8 +3873,12 @@ def collect_vsc9():
 
     today = datetime.now(TZ_VN).date()
     today_count = sum(1 for channel in channels if channel_event_date(channel) == today)
+    if today_count < VSC9_TTCB_MIN_TODAY_LINKS:
+        log(f"[{source}] Today links low ({today_count}), use TheThaoCoBan VSC fallback")
+        channels.extend(collect_vsc9_thethaocoban_fallback(seen_urls))
+        today_count = sum(1 for channel in channels if channel_event_date(channel) == today)
     if today_count < VSC9_TODAY_MIN_LINKS:
-        log(f"[{source}] Today links low ({today_count}), use Tinhlagi VSC fallback")
+        log(f"[{source}] Today links still low ({today_count}), use Tinhlagi VSC fallback")
         channels.extend(collect_vsc9_tinhlagi_fallback(seen_urls))
 
     log(f"[{source}] {len(channels)} raw links")
