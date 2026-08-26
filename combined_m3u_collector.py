@@ -116,6 +116,8 @@ QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
 VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", "https://vsc9.top/")
+VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "1").strip().lower() not in {"0", "false", "no"}
+VSC9_TODAY_MIN_LINKS = int(os.environ.get("VSC9_TODAY_MIN_LINKS", "10") or "10")
 S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tv001.com/")
 ALL_CHANNEL_M3U_URL = os.environ.get(
     "ALL_CHANNEL_M3U_URL",
@@ -367,6 +369,91 @@ def external_api_base_from_hit(hit):
 def cola_api_from_hit(hit):
     match = re.match(r"(https://[a-z0-9.-]+)/api/", hit)
     return match.group(1).rstrip("/") + "/api/matches" if match else ""
+
+
+def phaohoa_frontend_candidates():
+    candidates = [
+        PHAOHOA_API_BASE,
+        PHAOHOA_FRONTEND_URL,
+        "https://phaohoa1.live",
+        "https://phaohoa2.live",
+        "https://phaohoa3.live",
+        "https://phaohoa4.live",
+        "https://phaohoa.live",
+    ]
+    seen = set()
+    for candidate in candidates:
+        candidate = clean_text(candidate).rstrip("/")
+        if candidate and candidate not in seen:
+            seen.add(candidate)
+            yield candidate
+
+
+def probe_phaohoa_api_base(base_url, referer_url=""):
+    base_url = clean_text(base_url).rstrip("/")
+    if not base_url:
+        return False
+    headers = {
+        "Accept": "application/json, text/plain, */*",
+        "Origin": base_url,
+        "Referer": (referer_url or base_url).rstrip("/") + "/lich-truc-tiep",
+    }
+    response = fetch_json(
+        base_url + "/api/matches/?status=live&page_size=1&ordering=smart",
+        headers=headers,
+        timeout=8,
+    )
+    if isinstance(response, dict) and ("results" in response or "count" in response):
+        return True
+    return isinstance(response, list)
+
+
+def discover_phaohoa_api_base():
+    cache_key = ("PhaoHoaTV", PHAOHOA_FRONTEND_URL, PHAOHOA_API_BASE)
+    if cache_key in API_DISCOVERY_CACHE:
+        return API_DISCOVERY_CACHE[cache_key]
+
+    for frontend in phaohoa_frontend_candidates():
+        final_frontend = discover_frontend_url(frontend) or frontend
+        texts = []
+        try:
+            response = request_get(
+                final_frontend.rstrip("/") + "/lich-truc-tiep",
+                headers={"Accept": "text/html,application/xhtml+xml,*/*;q=0.9"},
+                timeout=10,
+            )
+            if response.status_code == 200:
+                texts.append(response.text)
+                for script_url in iter_script_urls(response.text, final_frontend, limit=8):
+                    try:
+                        js_response = request_get(script_url, headers={"Referer": final_frontend + "/"}, timeout=12)
+                        if js_response.status_code == 200:
+                            texts.append(js_response.text)
+                    except Exception:
+                        continue
+        except Exception:
+            texts = []
+
+        for text in texts:
+            hits = []
+            hits.extend(re.findall(r'apiBase["\']?\s*:\s*["\'](https?://[^"\']+|/api)["\']', text))
+            hits.extend(re.findall(r'VITE_(?:SERVER_)?API_BASE(?:_URL)?["\']?\s*:\s*["\'](https?://[^"\']+)["\']', text))
+            hits.extend(re.findall(r'https://phaohoa\d*\.live', text))
+            for hit in hits:
+                candidate = final_frontend if hit == "/api" else clean_text(hit).rstrip("/")
+                if probe_phaohoa_api_base(candidate, final_frontend):
+                    log(f"[PhaoHoaTV] Discovered API base: {candidate}")
+                    API_DISCOVERY_CACHE[cache_key] = candidate
+                    return candidate
+
+    for candidate in phaohoa_frontend_candidates():
+        if probe_phaohoa_api_base(candidate):
+            log(f"[PhaoHoaTV] Discovered API base: {candidate}")
+            API_DISCOVERY_CACHE[cache_key] = candidate
+            return candidate
+
+    API_DISCOVERY_CACHE[cache_key] = PHAOHOA_API_BASE
+    return PHAOHOA_API_BASE
 
 
 def discover_external_api_base(source, frontend_url, fallback_base):
@@ -1583,11 +1670,12 @@ def phaohoa_match_info_from_context(context):
 def collect_phaohoa():
     source = "PhaoHoaTV"
     log(f"[{source}] Fetch API")
+    api_base = discover_phaohoa_api_base()
     headers = {
         "User-Agent": UA,
         "Accept": "application/json, text/plain, */*",
-        "Origin": PHAOHOA_API_BASE,
-        "Referer": PHAOHOA_API_BASE + "/lich-truc-tiep",
+        "Origin": api_base,
+        "Referer": api_base + "/lich-truc-tiep",
     }
 
     channels = []
@@ -1620,9 +1708,9 @@ def collect_phaohoa():
                 "source": source,
                 "name": " | ".join(part for part in title_parts if part),
                 "group": "PhaoHoaTV",
-                "logo": PHAOHOA_API_BASE + "/images/logo.png",
+                "logo": api_base + "/images/logo.png",
                 "stream_url": stream_url,
-                "referer": PHAOHOA_API_BASE + "/",
+                "referer": api_base + "/",
                 "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
                 "event_datetime": event_datetime,
             }
@@ -1650,7 +1738,7 @@ def collect_phaohoa():
             query = dict(params)
             query["page"] = page
             response = fetch_json(
-                PHAOHOA_API_BASE + "/api/matches/?" + urlencode(query),
+                api_base + "/api/matches/?" + urlencode(query),
                 headers=headers,
                 timeout=30,
             )
@@ -1682,7 +1770,7 @@ def collect_phaohoa():
     if not channels:
         log(f"[{source}] API has no stream, fallback HTML scan")
         try:
-            response = request_get(PHAOHOA_API_BASE + "/lich-truc-tiep", headers=headers, timeout=30)
+            response = request_get(api_base + "/lich-truc-tiep", headers=headers, timeout=30)
             html_text = decode_phaohoa_html(response.text)
         except Exception as exc:
             log(f"[{source}] Fallback error: {exc}")
@@ -1705,9 +1793,9 @@ def collect_phaohoa():
                     "source": source,
                     "name": name,
                     "group": "PhaoHoaTV",
-                    "logo": PHAOHOA_API_BASE + "/images/logo.png",
+                    "logo": api_base + "/images/logo.png",
                     "stream_url": stream_url,
-                    "referer": PHAOHOA_API_BASE + "/",
+                    "referer": api_base + "/",
                     "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
                     "event_datetime": event_datetime,
                 }
@@ -3590,16 +3678,55 @@ def collect_s8tv():
     return channels
 
 
+def collect_vsc9_tinhlagi_fallback(seen_urls):
+    if not VSC9_TINHLAGI_FALLBACK:
+        return []
+    fallback = collect_m3u_playlist(
+        "VSC9TinhlagiFallback",
+        TINHLAGI_SPORT_M3U_URL,
+        "Vua Sân Cỏ TV",
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=2,
+        allowed_groups=("vua san co", "vua sân cỏ"),
+        default_referer_to_playlist=False,
+        user_agent=UA,
+        preserve_extinf=False,
+        preserve_group_exact=False,
+    )
+    channels = []
+    for channel in fallback:
+        stream_url = clean_text(channel.get("stream_url"))
+        if "ebaclofen.org" not in stream_url.lower():
+            continue
+        if stream_url in seen_urls:
+            continue
+        seen_urls.add(stream_url)
+        channel["source"] = "VSC9"
+        channel["group"] = "Vua Sân Cỏ TV"
+        channel["referer"] = VSC9_REFERER
+        channel["user_agent"] = UA
+        channel["preserve_extinf"] = False
+        channel["preserve_group_exact"] = False
+        channels.append(channel)
+    if channels:
+        log(f"[VSC9] Tinhlagi fallback {len(channels)} raw links")
+    return channels
+
+
 def collect_vsc9():
     source = "VSC9"
     log(f"[{source}] Fetch home")
     html_text = fetch_vsc9_html()
-    if not html_text:
-        log(f"[{source}] Home not available")
-        return []
-
     channels = []
     seen_urls = set()
+    if not html_text:
+        log(f"[{source}] Home not available")
+        channels.extend(collect_vsc9_tinhlagi_fallback(seen_urls))
+        log(f"[{source}] {len(channels)} raw links")
+        return channels
+
     pages = [(VSC9_URL, html_text)]
     detail_urls = extract_vsc9_detail_urls(html_text)
     if detail_urls:
@@ -3631,6 +3758,12 @@ def collect_vsc9():
                     "user_agent": UA,
                 }
             )
+
+    today = datetime.now(TZ_VN).date()
+    today_count = sum(1 for channel in channels if channel_event_date(channel) == today)
+    if today_count < VSC9_TODAY_MIN_LINKS:
+        log(f"[{source}] Today links low ({today_count}), use Tinhlagi VSC fallback")
+        channels.extend(collect_vsc9_tinhlagi_fallback(seen_urls))
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
