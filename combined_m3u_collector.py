@@ -1524,7 +1524,8 @@ def collect_giovang_api():
     return channels
 
 
-PHAOHOA_STREAM_RE = re.compile(r"https://[^\"'\s<>]+?\.m3u8[^\"'\s<>]*", re.I)
+PHAOHOA_STREAM_RE = re.compile(r"https://[^\"'\s<>]+?\.(?:m3u8|flv)[^\"'\s<>]*", re.I)
+PHAOHOA_DAYS = int(os.environ.get("PHAOHOA_DAYS", "7") or "7")
 
 
 def decode_phaohoa_html(text):
@@ -1581,46 +1582,136 @@ def phaohoa_match_info_from_context(context):
 
 def collect_phaohoa():
     source = "PhaoHoaTV"
-    log(f"[{source}] Fetch home")
+    log(f"[{source}] Fetch API")
     headers = {
         "User-Agent": UA,
-        "Accept": "text/html,application/xhtml+xml,*/*",
-        "Referer": PHAOHOA_FRONTEND_URL + "/",
+        "Accept": "application/json, text/plain, */*",
+        "Origin": PHAOHOA_API_BASE,
+        "Referer": PHAOHOA_API_BASE + "/lich-truc-tiep",
     }
-    try:
-        response = requests.get(PHAOHOA_API_BASE + "/", headers=headers, timeout=30)
-        html_text = decode_phaohoa_html(response.text)
-    except Exception as exc:
-        log(f"[{source}] Error: {exc}")
-        return []
 
     channels = []
     seen_urls = set()
-    for match in PHAOHOA_STREAM_RE.finditer(html_text):
-        stream_url = clean_text(match.group(0)).rstrip(".,);]")
-        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
-            continue
+
+    def add_stream(match_item, stream_url, blv_name="", label=""):
+        stream_url = clean_text(stream_url).rstrip(".,);]")
+        if not stream_url or stream_url in seen_urls:
+            return
+        if not (is_hls_url(stream_url) or is_flv_url(stream_url)):
+            return
         seen_urls.add(stream_url)
-        context = html_text[max(0, match.start() - 2600):match.start()]
-        home_name, away_name, blv_name, time_label, event_datetime = phaohoa_match_info_from_context(context)
+        event_datetime = parse_iso_to_ict_datetime(match_item.get("start_time"))
+        time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
+        home_name = clean_text(match_item.get("home_team_name"))
+        away_name = clean_text(match_item.get("away_team_name"))
+        title_parts = []
+        if time_label:
+            title_parts.append(time_label)
         if home_name and away_name:
-            name = f"[{time_label}] {home_name} vs {away_name}".strip()
+            title_parts.append(f"{home_name} vs {away_name}")
         else:
-            name = title_from_stream_url(stream_url, source)
+            title_parts.append(clean_text(match_item.get("name")) or title_from_stream_url(stream_url, source))
         if blv_name:
-            name = f"{name} | {blv_name}"
+            title_parts.append(f"BLV {blv_name}")
+        if label:
+            title_parts.append(label)
         channels.append(
             {
                 "source": source,
-                "name": name,
+                "name": " | ".join(part for part in title_parts if part),
                 "group": "PhaoHoaTV",
                 "logo": PHAOHOA_API_BASE + "/images/logo.png",
                 "stream_url": stream_url,
                 "referer": PHAOHOA_API_BASE + "/",
-                "user_agent": UA,
+                "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
                 "event_datetime": event_datetime,
             }
         )
+
+    def collect_match_streams(match_item):
+        for field, label in (
+            ("primary_stream_url", "Main"),
+            ("backup_stream_url", "Backup"),
+            ("flv_stream_url", "FLV"),
+        ):
+            add_stream(match_item, match_item.get(field), "", label)
+        for commentator in match_item.get("commentators") or []:
+            blv_name = clean_text(commentator.get("name"))
+            for field, label in (
+                ("stream_url", "Main"),
+                ("backup_stream_url", "Backup"),
+                ("flv_stream_url", "FLV"),
+            ):
+                add_stream(match_item, commentator.get(field), blv_name, label)
+
+    def fetch_matches(params):
+        page = 1
+        while page <= 5:
+            query = dict(params)
+            query["page"] = page
+            response = fetch_json(
+                PHAOHOA_API_BASE + "/api/matches/?" + urlencode(query),
+                headers=headers,
+                timeout=30,
+            )
+            results = response.get("results") if isinstance(response, dict) else response
+            if not isinstance(results, list) or not results:
+                break
+            for item in results:
+                if isinstance(item, dict):
+                    status = clean_text(item.get("status")).lower()
+                    if status in {"finished", "ended", "full_time"}:
+                        continue
+                    collect_match_streams(item)
+            if not (isinstance(response, dict) and response.get("next")):
+                break
+            page += 1
+
+    fetch_matches({"status": "live", "page_size": 100, "ordering": "smart"})
+    today = datetime.now(TZ_VN).date()
+    for offset in range(max(1, PHAOHOA_DAYS)):
+        event_date = today + timedelta(days=offset)
+        fetch_matches(
+            {
+                "page_size": 100,
+                "ordering": "smart",
+                "start_time__date": event_date.isoformat(),
+            }
+        )
+
+    if not channels:
+        log(f"[{source}] API has no stream, fallback HTML scan")
+        try:
+            response = request_get(PHAOHOA_API_BASE + "/lich-truc-tiep", headers=headers, timeout=30)
+            html_text = decode_phaohoa_html(response.text)
+        except Exception as exc:
+            log(f"[{source}] Fallback error: {exc}")
+            html_text = ""
+        for match in PHAOHOA_STREAM_RE.finditer(html_text):
+            stream_url = clean_text(match.group(0)).rstrip(".,);]")
+            if not (is_hls_url(stream_url) or is_flv_url(stream_url)) or stream_url in seen_urls:
+                continue
+            seen_urls.add(stream_url)
+            context = html_text[max(0, match.start() - 2600):match.start()]
+            home_name, away_name, blv_name, time_label, event_datetime = phaohoa_match_info_from_context(context)
+            if home_name and away_name:
+                name = f"[{time_label}] {home_name} vs {away_name}".strip()
+            else:
+                name = title_from_stream_url(stream_url, source)
+            if blv_name:
+                name = f"{name} | {blv_name}"
+            channels.append(
+                {
+                    "source": source,
+                    "name": name,
+                    "group": "PhaoHoaTV",
+                    "logo": PHAOHOA_API_BASE + "/images/logo.png",
+                    "stream_url": stream_url,
+                    "referer": PHAOHOA_API_BASE + "/",
+                    "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                    "event_datetime": event_datetime,
+                }
+            )
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
@@ -3034,6 +3125,12 @@ VSC9_M3U8_RE = re.compile(
     r"(?:\?(?:(?!https?://)[^\s'\"<>{}\\,\]])*)?",
     re.I,
 )
+VSC9_STREAM_RE = re.compile(
+    r"https?://(?:(?!https?://)[^\s'\"<>{}\\,\]])+?\.(?:m3u8|flv)"
+    r"(?:\?(?:(?!https?://)[^\s'\"<>{}\\,\]])*)?",
+    re.I,
+)
+VSC9_DETAIL_RE = re.compile(r'(?:https?://vsc9\.top)?/truc-tiep/[^\s"\'<>\\]+', re.I)
 VSC9_TIME_RE = re.compile(r"(\d{1,2}:\d{2}\s+\d{1,2}/\d{1,2})")
 
 
@@ -3048,20 +3145,26 @@ def extract_vsc9_m3u8_urls(text):
     text = html.unescape(decode_json_string(clean_text(text)))
     urls = []
     seen = set()
-    for match in VSC9_M3U8_RE.finditer(text):
+    for match in VSC9_STREAM_RE.finditer(text):
         url = clean_text(match.group(0)).rstrip(".,);]")
-        if is_valid_stream_url(url) and url not in seen:
+        if (is_hls_url(url) or is_flv_url(url)) and url not in seen:
             seen.add(url)
             urls.append(url)
+    return urls
 
-    url_set = set(urls)
-    preferred = []
-    for url in urls:
-        master_url = re.sub(r"/ffmpeg_index_\d+\.m3u8(?:\?.*)?$", "/master.m3u8", url, flags=re.I)
-        if master_url != url and master_url in url_set:
-            continue
-        preferred.append(url)
-    return preferred
+
+def extract_vsc9_detail_urls(text):
+    text = html.unescape(decode_json_string(clean_text(text)))
+    urls = []
+    seen = set()
+    for match in VSC9_DETAIL_RE.finditer(text):
+        url = clean_text(match.group(0)).rstrip(".,);]")
+        url = url.replace("\\/", "/")
+        url = urljoin(VSC9_URL, url)
+        if url not in seen:
+            seen.add(url)
+            urls.append(url)
+    return urls
 
 
 def title_from_stream_url(url, prefix):
@@ -3071,6 +3174,16 @@ def title_from_stream_url(url, prefix):
     label = label.replace("+", " ").replace("_", " ").replace("-", " ")
     label = re.sub(r"\s+", " ", label).strip()
     return f"{prefix} {label}".strip()
+
+
+def title_from_url_slug(url):
+    path = urlparse(url).path.rstrip("/")
+    slug = unquote(path.rsplit("/", 1)[-1]) if path else ""
+    slug = re.sub(r"\bluc-\d{3,4}-ngay-\d{1,2}-\d{1,2}-\d{4}\b", "", slug, flags=re.I)
+    slug = re.sub(r"-[a-z0-9]{8,}$", "", slug, flags=re.I)
+    slug = slug.replace("+", " ").replace("_", " ").replace("-", " ")
+    slug = re.sub(r"\s+", " ", slug).strip()
+    return slug.title() if slug else ""
 
 
 def escaped_json_field(context, field):
@@ -3216,7 +3329,7 @@ def collect_azabu_highlights():
     return channels
 
 
-def fetch_vsc9_html():
+def fetch_vsc9_url(url):
     headers = {
         "User-Agent": UA,
         "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
@@ -3227,14 +3340,18 @@ def fetch_vsc9_html():
             if requests is not None:
                 with warnings.catch_warnings():
                     warnings.simplefilter("ignore")
-                    response = requests.get(VSC9_URL, headers=headers, timeout=30, verify=verify)
+                    response = requests.get(url, headers=headers, timeout=30, verify=verify)
             else:
-                response = request_get(VSC9_URL, headers=headers, timeout=30)
+                response = request_get(url, headers=headers, timeout=30)
             if response.status_code == 200 and response.text:
                 return response.text
         except Exception:
             continue
     return ""
+
+
+def fetch_vsc9_html():
+    return fetch_vsc9_url(VSC9_URL)
 
 
 def vsc9_title_from_context(html_text, url):
@@ -3483,25 +3600,37 @@ def collect_vsc9():
 
     channels = []
     seen_urls = set()
-    for stream_url in extract_vsc9_m3u8_urls(html_text):
-        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
-            continue
-        seen_urls.add(stream_url)
-        title, time_label = vsc9_title_from_context(html_text, stream_url)
-        group = "Vua San Co TV"
-        if time_label:
-            group = f"{group} | {time_label}"
-        channels.append(
-            {
-                "source": source,
-                "name": title or title_from_stream_url(stream_url, source),
-                "group": group,
-                "logo": "https://vsc9.top/favicon.ico",
-                "stream_url": stream_url,
-                "referer": VSC9_REFERER,
-                "user_agent": UA,
-            }
-        )
+    pages = [(VSC9_URL, html_text)]
+    detail_urls = extract_vsc9_detail_urls(html_text)
+    if detail_urls:
+        log(f"[{source}] Fetch {len(detail_urls)} detail pages")
+    for detail_url in detail_urls[:120]:
+        detail_html = fetch_vsc9_url(detail_url)
+        if detail_html:
+            pages.append((detail_url, detail_html))
+
+    for page_url, page_html in pages:
+        for stream_url in extract_vsc9_m3u8_urls(page_html):
+            if stream_url in seen_urls:
+                continue
+            seen_urls.add(stream_url)
+            title, time_label = vsc9_title_from_context(page_html, stream_url)
+            if not title:
+                title = title_from_url_slug(page_url) or title_from_stream_url(stream_url, source)
+            group = "Vua San Co TV"
+            if time_label:
+                group = f"{group} | {time_label}"
+            channels.append(
+                {
+                    "source": source,
+                    "name": title,
+                    "group": group,
+                    "logo": "https://vsc9.top/favicon.ico",
+                    "stream_url": stream_url,
+                    "referer": VSC9_REFERER,
+                    "user_agent": UA,
+                }
+            )
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
