@@ -173,7 +173,7 @@ MEBONG_GROUP = os.environ.get("MEBONG_GROUP", "MebongTV")
 MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "80") or "80")
 MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
-XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacxtv.tv/")
+XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacxtg.tv/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.livecarriercdn.com/")
 XOILACZ_FALLBACK_REFERERS = [
     item.strip()
@@ -183,10 +183,10 @@ XOILACZ_FALLBACK_REFERERS = [
     ).split(",")
     if item.strip()
 ]
-XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "1"))
+XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "2"))
 XOILACZ_SPORTS = [
     item.strip()
-    for item in os.environ.get("XOILACZ_SPORTS", "football,basketball,tennis,volleyball").split(",")
+    for item in os.environ.get("XOILACZ_SPORTS", "football,basketball,tennis,volleyball,esports,badminton").split(",")
     if item.strip()
 ]
 AZABU_BASE_URL = os.environ.get("AZABU_BASE_URL", "https://azabuglobal.com/")
@@ -220,12 +220,19 @@ FLV_OTT_USER_AGENT = (
     "Mozilla/5.0 (Linux; Android 10; Mobile) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
 )
+MULTI_EVENT_STREAM_SOURCES = {
+    "PhaoHoaTV",
+    "XoiLacZ",
+    "VSC9",
+    "CoLaTV",
+    "MebongTV",
+}
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
 MAX_VERIFY_WORKERS = int(os.environ.get("MAX_VERIFY_WORKERS", "20"))
 FILTER_PAST_EVENTS = os.environ.get("FILTER_PAST_EVENTS", "1").strip().lower() not in {"0", "false", "no"}
-PAST_EVENT_GRACE_MINUTES = int(os.environ.get("PAST_EVENT_GRACE_MINUTES", "180") or "180")
+PAST_EVENT_GRACE_MINUTES = int(os.environ.get("PAST_EVENT_GRACE_MINUTES", "360") or "360")
 
 
 def log(message):
@@ -781,6 +788,18 @@ def channel_key(channel):
     )
 
 
+def stream_dedupe_key(channel):
+    url = clean_text(channel.get("stream_url"))
+    if channel.get("source") in MULTI_EVENT_STREAM_SOURCES:
+        return (
+            url,
+            clean_text(channel.get("source")),
+            clean_text(channel.get("name")),
+            str(channel_event_datetime(channel) or ""),
+        )
+    return (url,)
+
+
 def is_hls_url(url):
     lower = clean_text(url).lower().split("?", 1)[0]
     return ".m3u8" in lower or lower.endswith("/m3u8")
@@ -807,6 +826,8 @@ def xoilacz_stream_referer(stream_url):
         "originpullstream.com" in stream_url_key
         or "m3u8delivery.com" in stream_url_key
         or "quickscoreboardz.com" in stream_url_key
+        or "cachefluxlive.com" in stream_url_key
+        or "playlistedgecdn.com" in stream_url_key
     ):
         return XOILACZ_FALLBACK_REFERERS[0] if XOILACZ_FALLBACK_REFERERS else XOILACZ_REFERER
     return XOILACZ_REFERER
@@ -992,6 +1013,8 @@ def normalize_channel_group(channel):
                 or "originpullstream.com" in stream_url_key
                 or "m3u8delivery.com" in stream_url_key
                 or "quickscoreboardz.com" in stream_url_key
+                or "cachefluxlive.com" in stream_url_key
+                or "playlistedgecdn.com" in stream_url_key
             ):
                 channel["referer"] = xoilacz_stream_referer(stream_url_key)
         raw_options = []
@@ -1062,9 +1085,10 @@ def verify_live_channels(channels):
     seen = set()
     for channel in channels:
         url = clean_text(channel.get("stream_url"))
-        if not url or url in seen:
+        key = stream_dedupe_key(channel)
+        if not url or key in seen:
             continue
-        seen.add(url)
+        seen.add(key)
         channel["stream_url"] = url
         unique.append(channel)
     return unique
@@ -1109,8 +1133,9 @@ def dedupe_and_sort_channels(channels):
         url = channel.get("stream_url", "").strip()
         if not url:
             continue
-        if url in seen_urls:
-            current_index = seen_urls[url]
+        dedupe_key = stream_dedupe_key(channel)
+        if dedupe_key in seen_urls:
+            current_index = seen_urls[dedupe_key]
             current = deduped[current_index]
             current_header_score = bool(clean_text(current.get("referer"))) + bool(clean_text(current.get("user_agent")))
             new_header_score = bool(clean_text(channel.get("referer"))) + bool(clean_text(channel.get("user_agent")))
@@ -1121,7 +1146,7 @@ def dedupe_and_sort_channels(channels):
             ):
                 deduped[current_index] = channel
             continue
-        seen_urls[url] = len(deduped)
+        seen_urls[dedupe_key] = len(deduped)
         deduped.append(channel)
     deduped.sort(
         key=lambda channel: (
@@ -1689,15 +1714,23 @@ def collect_phaohoa():
 
     def add_stream(match_item, stream_url, blv_name="", label=""):
         stream_url = clean_text(stream_url).rstrip(".,);]")
-        if not stream_url or stream_url in seen_urls:
+        event_datetime = parse_iso_to_ict_datetime(match_item.get("start_time"))
+        home_name = clean_text(match_item.get("home_team_name"))
+        away_name = clean_text(match_item.get("away_team_name"))
+        stream_key = (
+            stream_url,
+            event_datetime.isoformat() if event_datetime else "",
+            home_name,
+            away_name,
+            clean_text(blv_name),
+            clean_text(label),
+        )
+        if not stream_url or stream_key in seen_urls:
             return
         if not (is_hls_url(stream_url) or is_flv_url(stream_url)):
             return
-        seen_urls.add(stream_url)
-        event_datetime = parse_iso_to_ict_datetime(match_item.get("start_time"))
+        seen_urls.add(stream_key)
         time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
-        home_name = clean_text(match_item.get("home_team_name"))
-        away_name = clean_text(match_item.get("away_team_name"))
         title_parts = []
         if time_label:
             title_parts.append(time_label)
@@ -1807,7 +1840,7 @@ def collect_phaohoa():
                 }
             )
 
-    if len(channels) < PHAOHOA_TTCB_MIN_LINKS:
+    if not channels:
         channels.extend(
             collect_thethaocoban_source_fallback(
                 "PhaoHoaTV",
@@ -3007,8 +3040,9 @@ def collect_mebongtv():
 
 def xoilacz_base_candidates():
     candidates = [
-        "https://xoilacxtv.tv/",
         XOILACZ_SITE_URL,
+        "https://xoilacxtg.tv/",
+        "https://xoilacxtv.tv/",
         "https://nmsba.com/",
         "https://xoilacz.io/",
         "https://xoilacz.vip/",
@@ -3238,7 +3272,14 @@ def collect_xoilacz():
                 "XoiLacZ",
                 "Xôi Lạc Z TV",
                 ("xoi lac", "xôi lạc"),
-                ("originpullstream.com", "m3u8delivery.com", "quickscoreboardz.com", "livecarriercdn.com"),
+                (
+                    "originpullstream.com",
+                    "m3u8delivery.com",
+                    "quickscoreboardz.com",
+                    "cachefluxlive.com",
+                    "playlistedgecdn.com",
+                    "livecarriercdn.com",
+                ),
                 seen_urls,
             )
         )
