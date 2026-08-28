@@ -48,13 +48,13 @@ CHUOICHIEN_SITE_URL = os.environ.get("CHUOICHIEN_SITE_URL", "https://live25.chuo
 CHUOICHIEN_SITE_REF = os.environ.get("CHUOICHIEN_SITE_REF", "https://live.chuoichientv.com")
 CHUOICHIEN_API_URL = os.environ.get(
     "CHUOICHIEN_API_URL",
-    "https://api.chuoichientv.com/v1/matches?page=1&limit=100&sport=&type=blv",
+    "https://api.chuoichientv.com/v1/matches?page=1&limit=200&sport=&type=blv",
 )
 BONG_LAU_SITE_URL = os.environ.get("BONG_LAU_SITE_URL", "https://lau03.bonglautv1.org")
 BONG_LAU_REFERER = os.environ.get("BONG_LAU_REFERER", "https://lau03.bonglautv1.org/")
 BONG_LAU_API_URL = os.environ.get(
     "BONG_LAU_API_URL",
-    "https://api-v2.chuoichientv.net/v2/matches?page=1&limit=100&sport=&type=blv",
+    "https://api-v2.chuoichientv.net/v2/matches?page=1&limit=200&sport=&type=blv",
 )
 KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.khandaia.link")
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
@@ -67,8 +67,8 @@ SOCOLIVE_API_URL = os.environ.get("SOCOLIVE_API_URL", "https://json.vnres.co/mat
 SOCOLIVE_LIVE_ROOMS_URL = os.environ.get("SOCOLIVE_LIVE_ROOMS_URL", "https://json.vnres.co/all_live_rooms.json?v=%d")
 SOCOLIVE_MATCH_URL = os.environ.get("SOCOLIVE_MATCH_URL", "https://json.vnres.co/room/%s/detail.json?v=%d")
 SOCOLIVE_REFERER = os.environ.get("SOCOLIVE_REFERER", "https://socoliveaus.co/")
-SOCOLIVE_LIMIT = int(os.environ.get("SOCOLIVE_LIMIT", "30"))
-SOCOLIVE_LIVE_ROOM_LIMIT = int(os.environ.get("SOCOLIVE_LIVE_ROOM_LIMIT", "80"))
+SOCOLIVE_LIMIT = int(os.environ.get("SOCOLIVE_LIMIT", "160"))
+SOCOLIVE_LIVE_ROOM_LIMIT = int(os.environ.get("SOCOLIVE_LIVE_ROOM_LIMIT", "220"))
 NAUXOI_API_BASE = os.environ.get("NAUXOI_API", "https://apixx.connect9nx.com/api")
 NAUXOI_SITE_URL = os.environ.get("NAUXOI_SITE", "https://nauxoi.fit/")
 TIEULAMWC_API_BASE = os.environ.get("TIEULAMWC_API", "https://api.tlap17062026.com")
@@ -103,7 +103,7 @@ CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", f"https://{CHOANG_DEFAULT_DO
 CHOANG_API_URL = os.environ.get("CHOANG_API_URL", f"https://api.{CHOANG_DEFAULT_DOMAIN}/matchSchedule/getList")
 CHOANG_DETAIL_URL = os.environ.get("CHOANG_DETAIL_URL", f"https://api.{CHOANG_DEFAULT_DOMAIN}/matchSchedule/getDetail")
 CHOANG_CDN_BASE = os.environ.get("CHOANG_CDN_BASE", "https://cdn.sports-cas889abxfileposo.site/live")
-CHOANG_DAYS = int(os.environ.get("CHOANG_DAYS", "2"))
+CHOANG_DAYS = int(os.environ.get("CHOANG_DAYS", "7"))
 HOIQUAN_API_BASE = os.environ.get("HOIQUAN_API_BASE", "https://sv.hoiquantv.xyz/api/v1/external")
 HOIQUAN3_REFERER = os.environ.get("HOIQUAN3_REFERER", "https://sv2.hoiquan3.live/")
 HOIQUAN1_REFERER = os.environ.get("HOIQUAN1_REFERER", "https://sv2.hoiquan1.live/")
@@ -170,7 +170,7 @@ TIVIHUB_LIMIT = int(os.environ.get("TIVIHUB_LIMIT", "200") or "200")
 TIVIHUB_WORKERS = int(os.environ.get("TIVIHUB_WORKERS", "12") or "12")
 MEBONG_SITE_URL = os.environ.get("MEBONG_SITE_URL", "https://mebongtv.live/")
 MEBONG_GROUP = os.environ.get("MEBONG_GROUP", "MebongTV")
-MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "80") or "80")
+MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "200") or "200")
 MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
 XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacxtg.tv/")
@@ -183,15 +183,15 @@ XOILACZ_FALLBACK_REFERERS = [
     ).split(",")
     if item.strip()
 ]
-XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "2"))
+XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "4"))
 XOILACZ_SPORTS = [
     item.strip()
     for item in os.environ.get("XOILACZ_SPORTS", "football,basketball,tennis,volleyball,esports,badminton").split(",")
     if item.strip()
 ]
 AZABU_BASE_URL = os.environ.get("AZABU_BASE_URL", "https://azabuglobal.com/")
-AZABU_LIVE_LIMIT = int(os.environ.get("AZABU_LIVE_LIMIT", "30"))
-AZABU_HIGHLIGHT_PAGES = int(os.environ.get("AZABU_HIGHLIGHT_PAGES", "1"))
+AZABU_LIVE_LIMIT = int(os.environ.get("AZABU_LIVE_LIMIT", "120"))
+AZABU_HIGHLIGHT_PAGES = int(os.environ.get("AZABU_HIGHLIGHT_PAGES", "3"))
 DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
@@ -221,6 +221,14 @@ FLV_OTT_USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
 )
 MULTI_EVENT_STREAM_SOURCES = {
+    "AzabuLive",
+    "BiaomTV",
+    "BongLauTV",
+    "ChoangTV",
+    "ChuoiChienTV",
+    "GioVang",
+    "S8TV",
+    "SocoliveTV",
     "PhaoHoaTV",
     "XoiLacZ",
     "VSC9",
@@ -232,7 +240,7 @@ MULTI_EVENT_STREAM_SOURCES = {
 VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", "true", "yes"}
 MAX_VERIFY_WORKERS = int(os.environ.get("MAX_VERIFY_WORKERS", "20"))
 FILTER_PAST_EVENTS = os.environ.get("FILTER_PAST_EVENTS", "1").strip().lower() not in {"0", "false", "no"}
-PAST_EVENT_GRACE_MINUTES = int(os.environ.get("PAST_EVENT_GRACE_MINUTES", "360") or "360")
+PAST_EVENT_GRACE_MINUTES = int(os.environ.get("PAST_EVENT_GRACE_MINUTES", "480") or "480")
 
 
 def log(message):
@@ -798,6 +806,13 @@ def stream_dedupe_key(channel):
             str(channel_event_datetime(channel) or ""),
         )
     return (url,)
+
+
+def source_stream_seen_key(source, stream_url, *parts):
+    key = [clean_text(stream_url)]
+    if source in MULTI_EVENT_STREAM_SOURCES:
+        key.extend(clean_text(part) for part in parts if clean_text(part))
+    return tuple(key)
 
 
 def is_hls_url(url):
@@ -1614,9 +1629,10 @@ def collect_giovang_api():
             ]
             for quality, stream_url in streams:
                 stream_url = clean_text(stream_url)
-                if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+                seen_key = source_stream_seen_key(source, stream_url, fixture_id, blv_name, quality, event_datetime)
+                if not is_valid_stream_url(stream_url) or seen_key in seen_urls:
                     continue
-                seen_urls.add(stream_url)
+                seen_urls.add(seen_key)
                 channels.append(
                     {
                         "source": source,
@@ -1773,7 +1789,7 @@ def collect_phaohoa():
 
     def fetch_matches(params):
         page = 1
-        while page <= 5:
+        while page <= 10:
             query = dict(params)
             query["page"] = page
             response = fetch_json(
@@ -1794,13 +1810,13 @@ def collect_phaohoa():
                 break
             page += 1
 
-    fetch_matches({"status": "live", "page_size": 100, "ordering": "smart"})
+    fetch_matches({"status": "live", "page_size": 200, "ordering": "smart"})
     today = datetime.now(TZ_VN).date()
     for offset in range(max(1, PHAOHOA_DAYS)):
         event_date = today + timedelta(days=offset)
         fetch_matches(
             {
-                "page_size": 100,
+                "page_size": 200,
                 "ordering": "smart",
                 "start_time__date": event_date.isoformat(),
             }
@@ -1924,9 +1940,10 @@ def collect_choangtv_api():
             stream_url = normalize_choang_stream_url(match.get("liveUrl"))
             if not stream_url:
                 stream_url = normalize_choang_stream_url(f"live{match_id}/index.m3u8")
-            if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+            seen_key = source_stream_seen_key(source, stream_url, match_id, match.get("name1"), match.get("name2"), match.get("caster"), dt)
+            if not is_valid_stream_url(stream_url) or seen_key in seen_urls:
                 continue
-            seen_urls.add(stream_url)
+            seen_urls.add(seen_key)
             dt = parse_vn_datetime_text(match.get("time") or item.get("time"))
             time_label = dt.strftime("%Hh%M") if dt else ""
             league = clean_text(match.get("league") or item.get("league"))
@@ -2078,9 +2095,10 @@ def collect_biaom():
     seen_urls = set()
     for match in re.finditer(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*", html_text):
         stream_url = clean_text(decode_json_string(match.group(0)))
-        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+        seen_key = source_stream_seen_key(source, stream_url, title, start_time)
+        if not is_valid_stream_url(stream_url) or seen_key in seen_urls:
             continue
-        seen_urls.add(stream_url)
+        seen_urls.add(seen_key)
 
         context = html_text[max(0, match.start() - 1600) : match.start()]
         league = biaom_field_from_context(context, "league_title") or biaom_nested_field_from_context(context, "league", "name")
@@ -2549,9 +2567,10 @@ def collect_socolive():
         ]
         for quality, stream_url in stream_pairs:
             stream_url = clean_text(stream_url)
-            if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+            seen_key = source_stream_seen_key(source, stream_url, room_num, title, blv_name, quality, event_datetime)
+            if not is_valid_stream_url(stream_url) or seen_key in seen_urls:
                 continue
-            seen_urls.add(stream_url)
+            seen_urls.add(seen_key)
             name_bits = []
             if time_label:
                 name_bits.append(f"[{time_label}]")
@@ -2794,9 +2813,10 @@ def collect_thethaocoban_source_fallback(
         stream_key = stream_url.lower()
         if host_keywords and not any(keyword in stream_key for keyword in host_keywords):
             continue
-        if stream_url in seen_urls:
+        seen_key = source_stream_seen_key("VSC9", stream_url, channel.get("name"))
+        if seen_key in seen_urls:
             continue
-        seen_urls.add(stream_url)
+        seen_urls.add(seen_key)
         item = dict(channel)
         item.update(
             {
@@ -3027,9 +3047,15 @@ def collect_mebongtv():
             try:
                 for channel in future.result():
                     stream_url = channel.get("stream_url")
-                    if stream_url in seen_urls:
+                    seen_key = source_stream_seen_key(
+                        source,
+                        stream_url,
+                        channel.get("name"),
+                        channel.get("event_datetime"),
+                    )
+                    if seen_key in seen_urls:
                         continue
-                    seen_urls.add(stream_url)
+                    seen_urls.add(seen_key)
                     channels.append(channel)
             except Exception:
                 continue
@@ -3231,9 +3257,10 @@ def collect_xoilacz():
                             continue
                         for channel in match_channels:
                             stream_url = channel.get("stream_url")
-                            if stream_url in seen_urls:
+                            seen_key = source_stream_seen_key(source, stream_url, channel.get("name"))
+                            if seen_key in seen_urls:
                                 continue
-                            seen_urls.add(stream_url)
+                            seen_urls.add(seen_key)
                             channels.append(channel)
                 time.sleep(0.5)
         if len(channels) == before_base:
@@ -3257,9 +3284,10 @@ def collect_xoilacz():
                             continue
                         for channel in match_channels:
                             stream_url = channel.get("stream_url")
-                            if stream_url in seen_urls:
+                            seen_key = source_stream_seen_key(source, stream_url, channel.get("name"))
+                            if seen_key in seen_urls:
                                 continue
-                            seen_urls.add(stream_url)
+                            seen_urls.add(seen_key)
                             channels.append(channel)
                 if len(channels) > before_base:
                     break
@@ -3712,7 +3740,7 @@ def collect_hoadaotv():
     log(f"[{source}] {len(matches)} match pages")
     channels = []
     for index, match in enumerate(matches, start=1):
-        if index > 80:
+        if index > 200:
             break
         try:
             detail = fetch_text(match["url"], headers=headers, timeout=12)
@@ -3884,17 +3912,18 @@ def collect_vsc9():
     detail_urls = extract_vsc9_detail_urls(html_text)
     if detail_urls:
         log(f"[{source}] Fetch {len(detail_urls)} detail pages")
-    for detail_url in detail_urls[:120]:
+    for detail_url in detail_urls[:240]:
         detail_html = fetch_vsc9_url(detail_url)
         if detail_html:
             pages.append((detail_url, detail_html))
 
     for page_url, page_html in pages:
         for stream_url in extract_vsc9_m3u8_urls(page_html):
-            if stream_url in seen_urls:
-                continue
-            seen_urls.add(stream_url)
             title, time_label = vsc9_title_from_context(page_html, stream_url)
+            seen_key = source_stream_seen_key(source, stream_url, title, time_label, page_url)
+            if seen_key in seen_urls:
+                continue
+            seen_urls.add(seen_key)
             if not title:
                 title = title_from_url_slug(page_url) or title_from_stream_url(stream_url, source)
             group = "Vua San Co TV"
