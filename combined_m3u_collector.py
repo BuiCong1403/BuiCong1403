@@ -192,6 +192,10 @@ XOILACZ_SPORTS = [
 AZABU_BASE_URL = os.environ.get("AZABU_BASE_URL", "https://azabuglobal.com/")
 AZABU_LIVE_LIMIT = int(os.environ.get("AZABU_LIVE_LIMIT", "120"))
 AZABU_HIGHLIGHT_PAGES = int(os.environ.get("AZABU_HIGHLIGHT_PAGES", "3"))
+NINETY_PHUTZI_BASE_URL = os.environ.get("NINETY_PHUTZI_BASE_URL", "https://90phutzi.tv/")
+NINETY_PHUTZI_HIGHLIGHT_DAYS_BACK = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_DAYS_BACK", "2") or "2")
+NINETY_PHUTZI_HIGHLIGHT_PAGES = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_PAGES", "4") or "4")
+NINETY_PHUTZI_HIGHLIGHT_LIMIT = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_LIMIT", "200") or "200")
 DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
@@ -234,6 +238,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "VSC9",
     "CoLaTV",
     "MebongTV",
+    "90PhutHighlight",
 }
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
@@ -3587,6 +3592,192 @@ def collect_azabu_highlights():
     return channels
 
 
+def ninety_phutzi_headers(referer=None):
+    base_url = NINETY_PHUTZI_BASE_URL.rstrip("/") + "/"
+    return {
+        "Accept": "text/html,application/xhtml+xml,application/json,*/*",
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def ninety_phutzi_allowed_highlight_dates():
+    today = datetime.now(TZ_VN).date()
+    return {today - timedelta(days=offset) for offset in range(max(0, NINETY_PHUTZI_HIGHLIGHT_DAYS_BACK) + 1)}
+
+
+def ninety_phutzi_date_from_url_or_title(value):
+    text = clean_text(value)
+    today = datetime.now(TZ_VN).date()
+    patterns = (
+        r"(?<!\d)(\d{1,2})(\d{2})[-_/](\d{1,2})[-_/](\d{1,2})(?!\d)",
+        r"(?<!\d)(\d{1,2})[:h](\d{2})[-_/\s]+(\d{1,2})[-_/](\d{1,2})(?!\d)",
+        r"(?<!\d)(\d{1,2})[-_/](\d{1,2})(?:[-_/](20\d{2}))?(?!\d)",
+    )
+    for index, pattern in enumerate(patterns):
+        match = re.search(pattern, text)
+        if not match:
+            continue
+        if index < 2:
+            day, month = match.group(3), match.group(4)
+            year = today.year
+        else:
+            day, month = match.group(1), match.group(2)
+            year = int(match.group(3)) if match.group(3) else today.year
+        try:
+            return datetime(year, int(month), int(day), tzinfo=TZ_VN).date()
+        except Exception:
+            continue
+    return date_from_text(text)
+
+
+def extract_90phutzi_highlight_urls(html_text, base_url):
+    urls = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or ""))
+    for match in re.finditer(r"https?://90phutzi\.tv/highlight/[^\s'\"<>\\]+/?", text, re.I):
+        url = clean_text(match.group(0)).rstrip(".,);]")
+        if url not in seen:
+            seen.add(url)
+            urls.append(url)
+    for match in re.finditer(r"""href=["']([^"']*?/highlight/[^"']+)["']""", text, re.I):
+        url = urljoin(base_url, html.unescape(match.group(1))).split("#", 1)[0]
+        if url not in seen:
+            seen.add(url)
+            urls.append(url)
+    return urls
+
+
+def extract_90phutzi_m3u8_urls(html_text):
+    urls = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or ""))
+    for match in re.finditer(r"https?://[^\s'\"<>{}\\,\]]+?\.m3u8(?:\?[^\s'\"<>{}\\,\]]*)?", text, re.I):
+        stream_url = clean_text(match.group(0).replace("\\/", "/")).rstrip(".,);]")
+        if is_valid_highlight_url(stream_url) and stream_url not in seen:
+            seen.add(stream_url)
+            urls.append(stream_url)
+    return urls
+
+
+def extract_90phutzi_embed_urls(html_text, base_url):
+    urls = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or ""))
+    for match in re.finditer(r"https?://app\.videas\.fr/embed/media/[^\s'\"<>\\]+", text, re.I):
+        embed_url = clean_text(match.group(0)).rstrip(".,);]")
+        if embed_url not in seen:
+            seen.add(embed_url)
+            urls.append(embed_url)
+    for match in re.finditer(r"""(?:src|data-src)=["']([^"']*app\.videas\.fr/embed/media/[^"']+)["']""", text, re.I):
+        embed_url = urljoin(base_url, html.unescape(match.group(1))).rstrip(".,);]")
+        if embed_url not in seen:
+            seen.add(embed_url)
+            urls.append(embed_url)
+    return urls
+
+
+def expand_90phutzi_variant_urls(master_url, referer):
+    urls = []
+    try:
+        playlist_text = fetch_text(master_url, headers=ninety_phutzi_headers(referer), timeout=20)
+    except Exception:
+        return urls
+    if "#EXT-X-STREAM-INF" not in playlist_text:
+        return urls
+    for raw_line in playlist_text.splitlines():
+        line = clean_text(raw_line)
+        if not line or line.startswith("#"):
+            continue
+        variant_url = urljoin(master_url, line)
+        if is_valid_highlight_url(variant_url) and variant_url not in urls:
+            urls.append(variant_url)
+    return urls
+
+
+def collect_90phutzi_highlights():
+    source = "90PhutHighlight"
+    base_url = NINETY_PHUTZI_BASE_URL.rstrip("/") + "/"
+    allowed_dates = ninety_phutzi_allowed_highlight_dates()
+    page_urls = [urljoin(base_url, "highlight/"), urljoin(base_url, "highlights/"), base_url]
+    for page in range(2, max(1, NINETY_PHUTZI_HIGHLIGHT_PAGES) + 1):
+        page_urls.append(urljoin(base_url, f"highlight/page/{page}/"))
+
+    post_urls = []
+    seen_posts = set()
+    for page_url in page_urls:
+        log(f"[{source}] Fetch {page_url}")
+        try:
+            html_text = fetch_text(page_url, headers=ninety_phutzi_headers(page_url), timeout=30)
+        except Exception:
+            continue
+        for post_url in extract_90phutzi_highlight_urls(html_text, base_url):
+            post_date = ninety_phutzi_date_from_url_or_title(post_url)
+            if post_date not in allowed_dates:
+                continue
+            if post_url in seen_posts:
+                continue
+            seen_posts.add(post_url)
+            post_urls.append(post_url)
+            if len(post_urls) >= max(1, NINETY_PHUTZI_HIGHLIGHT_LIMIT):
+                break
+        if len(post_urls) >= max(1, NINETY_PHUTZI_HIGHLIGHT_LIMIT):
+            break
+
+    def collect_post(post_url):
+        try:
+            html_text = fetch_text(post_url, headers=ninety_phutzi_headers(post_url), timeout=25)
+        except Exception:
+            return []
+        title = title_from_html_page(html_text, title_from_url_slug(post_url) or "90Phut Highlight")
+        event_date = ninety_phutzi_date_from_url_or_title(post_url) or ninety_phutzi_date_from_url_or_title(title)
+        if event_date not in allowed_dates:
+            return []
+        logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
+        logo = logo_match.group(1) if logo_match else ""
+        stream_urls = extract_90phutzi_m3u8_urls(html_text)
+        for embed_url in extract_90phutzi_embed_urls(html_text, base_url):
+            try:
+                embed_html = fetch_text(embed_url, headers=ninety_phutzi_headers(post_url), timeout=25)
+            except Exception:
+                continue
+            for stream_url in extract_90phutzi_m3u8_urls(embed_html):
+                if stream_url not in stream_urls:
+                    stream_urls.append(stream_url)
+                for variant_url in expand_90phutzi_variant_urls(stream_url, embed_url):
+                    if variant_url not in stream_urls:
+                        stream_urls.append(variant_url)
+        result = []
+        for idx, stream_url in enumerate(stream_urls, 1):
+            result.append(
+                {
+                    "source": source,
+                    "name": f"{title} | Link {idx}",
+                    "group": "Highlight | 90PhutZi",
+                    "logo": logo,
+                    "stream_url": stream_url,
+                    "referer": post_url,
+                    "user_agent": UA,
+                    "event_date": event_date,
+                    "skip_event_filter": True,
+                }
+            )
+        return result
+
+    channels = []
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception:
+                continue
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def fetch_vsc9_url(url):
     headers = {
         "User-Agent": UA,
@@ -4442,6 +4633,7 @@ def main():
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
         ("AzabuHighlight", collect_azabu_highlights),
+        ("90PhutHighlight", collect_90phutzi_highlights),
         (
             "TV365KidsInternational",
             lambda: collect_m3u_playlist(
