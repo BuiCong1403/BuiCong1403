@@ -154,6 +154,12 @@ CHOANG_JSON_URL = os.environ.get(
     "https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/output.json",
 )
 CHOANG_REFERER = os.environ.get("CHOANG_REFERER", f"https://{CHOANG_DEFAULT_DOMAIN}/")
+SAOKETV_BASE_URL = os.environ.get("SAOKETV_BASE_URL", "https://vip2.saoketv40.xyz/")
+SAOKETV_REFERER = os.environ.get("SAOKETV_REFERER", "https://sk.mediastation.live/")
+SAOKETV_STREAM_URL = os.environ.get(
+    "SAOKETV_STREAM_URL",
+    "https://wtyi0525.edgemaxcdn.org/live/x31-hd-1111/playlist.m3u8",
+)
 CDNLIVE_EVENTS_URL = os.environ.get(
     "CDNLIVE_EVENTS_URL",
     "https://api.cdnlivetv.tv/api/v1/events/sports/?user=cdnlivetv&plan=free",
@@ -196,6 +202,12 @@ NINETY_PHUTZI_BASE_URL = os.environ.get("NINETY_PHUTZI_BASE_URL", "https://90phu
 NINETY_PHUTZI_HIGHLIGHT_DAYS_BACK = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_DAYS_BACK", "2") or "2")
 NINETY_PHUTZI_HIGHLIGHT_PAGES = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_PAGES", "4") or "4")
 NINETY_PHUTZI_HIGHLIGHT_LIMIT = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_LIMIT", "200") or "200")
+H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
+H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "2") or "2")
+H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "120") or "120")
+BONGDAPLUS_BASE_URL = os.environ.get("BONGDAPLUS_BASE_URL", "https://bongdaplus.vn/")
+BONGDAPLUS_HIGHLIGHT_DAYS_BACK = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_DAYS_BACK", "2") or "2")
+BONGDAPLUS_HIGHLIGHT_LIMIT = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_LIMIT", "120") or "120")
 DEKIKI_M3U_URL = os.environ.get(
     "DEKIKI_M3U_URL",
     "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/dekki.m3u",
@@ -238,7 +250,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "VSC9",
     "CoLaTV",
     "MebongTV",
-    "90PhutHighlight",
+    "BongDaPlusHighlight",
 }
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
@@ -866,6 +878,27 @@ def is_valid_highlight_url(url):
     return (is_hls_url(url) or lower.endswith(".mp4")) and ".mpd" not in lower
 
 
+def best_highlight_url(urls):
+    candidates = [clean_text(url) for url in urls if is_valid_highlight_url(url)]
+    if not candidates:
+        return ""
+
+    def score(url):
+        lower = url.lower().split("?", 1)[0]
+        quality_score = 0
+        for quality, value in (("2160", 90), ("1080", 80), ("720", 70), ("576", 60), ("480", 50), ("360", 40)):
+            if quality in lower:
+                quality_score = value
+                break
+        if lower.endswith("playlist.m3u8") or lower.endswith("master.m3u8") or lower.endswith("index.m3u8"):
+            quality_score = max(quality_score, 65)
+        if lower.endswith(".mp4"):
+            quality_score = max(quality_score, 55)
+        return (quality_score, -len(url))
+
+    return max(dict.fromkeys(candidates), key=score)
+
+
 SPORT_SOURCES = {
     "HoiQuan1",
     "HoiQuan2",
@@ -912,10 +945,13 @@ def compact_text_key(value):
 
 GROUP_CANONICAL_RULES = [
     ("Sự kiện", ("su kien", "suu kien")),
+    ("Highlight", ("highlight", "hightlight")),
     ("Gi\u1edd V\u00e0ng TV", ("giovang", "gio vang", "gio vang tv")),
     ("Socolive TV", ("socolive", "soco live", "soco sport", "socosport")),
+    ("CoLaTV", ("cola tv", "co la tv", "colatv")),
     (SPORT_INTERNATIONAL_GROUP, ("the thao quoc te", "thethaoquocte", "sport quoc te", "international sport")),
     ("Vua S\u00e2n C\u1ecf TV", ("vua san co", "vuasanco", "vsc9")),
+    ("Chu\u1ed1i chi\u00ean", ("chuoi chien", "chuoichien", "chuoichientv")),
 ]
 
 PREFERRED_OUTPUT_GROUPS = [
@@ -923,6 +959,7 @@ PREFERRED_OUTPUT_GROUPS = [
     "Sự kiện",
     "MyTVFPTEvents",
     "FLV",
+    "Highlight",
     "Gi\u1edd V\u00e0ng TV",
     "Vua S\u00e2n C\u1ecf TV",
     "Socolive TV",
@@ -2363,7 +2400,7 @@ def collect_chuoichien():
                     {
                         "source": source,
                         "name": f"[{time_label}] {home_name} vs {away_name} | BLV: {blv_name} [{quality}]",
-                        "group": league,
+                        "group": "Chu\u1ed1i chi\u00ean",
                         "logo": logo,
                         "stream_url": stream_url,
                         "referer": site_ref + "/",
@@ -2818,7 +2855,7 @@ def collect_thethaocoban_source_fallback(
         stream_key = stream_url.lower()
         if host_keywords and not any(keyword in stream_key for keyword in host_keywords):
             continue
-        seen_key = source_stream_seen_key("VSC9", stream_url, channel.get("name"))
+        seen_key = source_stream_seen_key(target_source, stream_url, channel.get("name"))
         if seen_key in seen_urls:
             continue
         seen_urls.add(seen_key)
@@ -2860,6 +2897,25 @@ def collect_cloudok_premier_league():
             "X-Auth-Token": CLOUDOK_AUTH_TOKEN,
         },
     )
+
+
+def collect_saoketv():
+    source = "SaoKeTV"
+    stream_url = clean_text(SAOKETV_STREAM_URL)
+    if not is_valid_stream_url(stream_url):
+        log(f"[{source}] 0 raw links")
+        return []
+    channel = {
+        "source": source,
+        "name": "SaoKeTV HD",
+        "group": "SaoKeTV",
+        "logo": "",
+        "stream_url": stream_url,
+        "referer": SAOKETV_REFERER,
+        "user_agent": UA,
+    }
+    log(f"[{source}] 1 raw links")
+    return [channel]
 
 
 def collect_cotivi_sports():
@@ -3566,6 +3622,9 @@ def collect_azabu_highlights():
             stream_url = clean_text(match.group(0).replace("\\/", "/").replace("\\u0026", "&"))
             if is_valid_stream_url(stream_url) and stream_url not in stream_urls:
                 stream_urls.append(stream_url)
+        stream_url = best_highlight_url(stream_urls)
+        if not stream_url:
+            return []
         return [
             {
                 "source": source,
@@ -3576,7 +3635,6 @@ def collect_azabu_highlights():
                 "referer": post_url,
                 "user_agent": UA,
             }
-            for stream_url in stream_urls
         ]
 
     channels = []
@@ -3749,7 +3807,10 @@ def collect_90phutzi_highlights():
                     if variant_url not in stream_urls:
                         stream_urls.append(variant_url)
         result = []
-        for idx, stream_url in enumerate(stream_urls, 1):
+        stream_url = best_highlight_url(stream_urls)
+        if not stream_url:
+            return []
+        for idx, stream_url in enumerate([stream_url], 1):
             result.append(
                 {
                     "source": source,
@@ -3768,6 +3829,291 @@ def collect_90phutzi_highlights():
     channels = []
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception:
+                continue
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+def h24_headers(referer=None):
+    base_url = H24_BASE_URL.rstrip("/") + "/"
+    return {
+        "Accept": "text/html,application/xhtml+xml,application/json,*/*",
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def h24_allowed_highlight_dates():
+    today = datetime.now(TZ_VN).date()
+    return {today - timedelta(days=offset) for offset in range(max(0, H24_HIGHLIGHT_DAYS_BACK) + 1)}
+
+
+def h24_date_from_media_url(url):
+    match = re.search(r"/(20\d{2})-(\d{1,2})-(\d{1,2})/", clean_text(url))
+    if not match:
+        return None
+    try:
+        return datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=TZ_VN).date()
+    except Exception:
+        return None
+
+
+def h24_date_from_article_html(html_text):
+    patterns = (
+        r'property="article:published_time"\s+content="([^"]+)"',
+        r'itemprop="datePublished"\s+content="([^"]+)"',
+        r'"datePublished"\s*:\s*"([^"]+)"',
+        r'(\d{1,2}/\d{1,2}/20\d{2})',
+    )
+    for pattern in patterns:
+        match = re.search(pattern, html_text or "", re.I)
+        if not match:
+            continue
+        parsed_dt = parse_iso_to_ict_datetime(match.group(1)) or datetime_from_text(match.group(1))
+        if parsed_dt:
+            return parsed_dt.date()
+        parsed_date = date_from_text(match.group(1))
+        if parsed_date:
+            return parsed_date
+    return None
+
+
+def extract_h24_article_urls(html_text, base_url):
+    urls = []
+    seen = set()
+    text = html.unescape(html_text or "")
+    for match in re.finditer(r"""href=["']([^"']*video[^"']+\.html)["']""", text, re.I):
+        article_url = urljoin(base_url, match.group(1)).split("#", 1)[0]
+        if "24h.com.vn" not in article_url or article_url in seen:
+            continue
+        if not any(part in article_url.lower() for part in ("/bong-da/", "/the-thao/")):
+            continue
+        seen.add(article_url)
+        urls.append(article_url)
+    return urls
+
+
+def extract_h24_m3u8_urls(html_text):
+    urls = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or ""))
+    for match in re.finditer(r"https?://cdn\.24h\.com\.vn/[^\s'\"<>{}\\,\]]+?\.m3u8(?:\?[^\s'\"<>{}\\,\]]*)?", text, re.I):
+        stream_url = clean_text(match.group(0).replace("\\/", "/")).rstrip(".,);]")
+        if is_valid_highlight_url(stream_url) and stream_url not in seen:
+            seen.add(stream_url)
+            urls.append(stream_url)
+    return urls
+
+
+def collect_24h_highlights():
+    source = "24hHighlight"
+    base_url = H24_BASE_URL.rstrip("/") + "/"
+    allowed_dates = h24_allowed_highlight_dates()
+    page_urls = [
+        urljoin(base_url, "bong-da-c48.html"),
+        urljoin(base_url, "video-bong-da-c297.html"),
+        urljoin(base_url, "video-bong-da-hot-c508.html"),
+        urljoin(base_url, "the-thao-c101.html"),
+    ]
+    article_urls = []
+    seen_articles = set()
+    for page_url in page_urls:
+        log(f"[{source}] Fetch {page_url}")
+        try:
+            html_text = fetch_text(page_url, headers=h24_headers(page_url), timeout=30)
+        except Exception:
+            continue
+        for article_url in extract_h24_article_urls(html_text, base_url):
+            if article_url in seen_articles:
+                continue
+            seen_articles.add(article_url)
+            article_urls.append(article_url)
+            if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+                break
+        if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+            break
+
+    def collect_article(article_url):
+        try:
+            html_text = fetch_text(article_url, headers=h24_headers(article_url), timeout=25)
+        except Exception:
+            return []
+        title = title_from_html_page(html_text, title_from_url_slug(article_url) or "24h Highlight")
+        stream_urls = extract_h24_m3u8_urls(html_text)
+        media_dates = [h24_date_from_media_url(url) for url in stream_urls]
+        event_date = next((date for date in media_dates if date), None) or h24_date_from_article_html(html_text)
+        if event_date not in allowed_dates:
+            return []
+        stream_url = best_highlight_url(stream_urls)
+        if not stream_url:
+            return []
+        logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
+        logo = logo_match.group(1) if logo_match else ""
+        return [
+            {
+                "source": source,
+                "name": title,
+                "group": "Highlight | 24h",
+                "logo": logo,
+                "stream_url": stream_url,
+                "referer": base_url,
+                "user_agent": UA,
+                "event_date": event_date,
+                "skip_event_filter": True,
+            }
+        ]
+
+    channels = []
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(collect_article, article_url) for article_url in article_urls]
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception:
+                continue
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+def bongdaplus_headers(referer=None):
+    base_url = BONGDAPLUS_BASE_URL.rstrip("/") + "/"
+    return {
+        "Accept": "text/html,application/xhtml+xml,application/json,*/*",
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def bongdaplus_allowed_highlight_dates():
+    today = datetime.now(TZ_VN).date()
+    return {today - timedelta(days=offset) for offset in range(max(0, BONGDAPLUS_HIGHLIGHT_DAYS_BACK) + 1)}
+
+
+def bongdaplus_date_from_media_url(url):
+    match = re.search(r"/Media/(20\d{2})/(\d{1,2})/(\d{1,2})/", clean_text(url), re.I)
+    if not match:
+        return None
+    try:
+        return datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=TZ_VN).date()
+    except Exception:
+        return None
+
+
+def extract_bongdaplus_article_urls(html_text, base_url):
+    urls = []
+    seen = set()
+    text = html.unescape(html_text or "")
+    for match in re.finditer(r"""href=["']([^"']*(?:/)?video/highlight[^"']+\.html)["']""", text, re.I):
+        article_url = urljoin(base_url, match.group(1)).split("#", 1)[0]
+        if "bongdaplus.vn" not in article_url or article_url in seen:
+            continue
+        seen.add(article_url)
+        urls.append(article_url)
+    return urls
+
+
+def extract_bongdaplus_media_urls(html_text):
+    urls = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or ""))
+    pattern = r"https?://cdn\.bongdaplus\.vn/[^\s'\"<>{}\\,\]]+?\.(?:mp4|m3u8)(?:\?[^\s'\"<>{}\\,\]]*)?"
+    for match in re.finditer(pattern, text, re.I):
+        media_url = clean_text(match.group(0).replace("\\/", "/")).rstrip(".,);]")
+        if not is_valid_highlight_url(media_url) or media_url in seen:
+            continue
+        seen.add(media_url)
+        urls.append(media_url)
+    return urls
+
+
+def extract_bongdaplus_embed_urls(html_text, base_url):
+    urls = []
+    seen = set()
+    text = html.unescape(html_text or "")
+    for match in re.finditer(r"""(?:src|href)=["']([^"']*/video-embed/\d+\.html)["']""", text, re.I):
+        embed_url = urljoin(base_url, match.group(1)).split("#", 1)[0]
+        if embed_url in seen:
+            continue
+        seen.add(embed_url)
+        urls.append(embed_url)
+    return urls
+
+
+def collect_bongdaplus_highlights():
+    source = "BongDaPlusHighlight"
+    base_url = BONGDAPLUS_BASE_URL.rstrip("/") + "/"
+    allowed_dates = bongdaplus_allowed_highlight_dates()
+    page_urls = [
+        urljoin(base_url, "video"),
+        urljoin(base_url, "video/highlight"),
+    ]
+    article_urls = []
+    seen_articles = set()
+    for page_url in page_urls:
+        log(f"[{source}] Fetch {page_url}")
+        try:
+            html_text = fetch_text(page_url, headers=bongdaplus_headers(page_url), timeout=30)
+        except Exception:
+            continue
+        for article_url in extract_bongdaplus_article_urls(html_text, base_url):
+            if article_url in seen_articles:
+                continue
+            seen_articles.add(article_url)
+            article_urls.append(article_url)
+            if len(article_urls) >= max(1, BONGDAPLUS_HIGHLIGHT_LIMIT):
+                break
+        if len(article_urls) >= max(1, BONGDAPLUS_HIGHLIGHT_LIMIT):
+            break
+
+    def collect_article(article_url):
+        try:
+            html_text = fetch_text(article_url, headers=bongdaplus_headers(article_url), timeout=25)
+        except Exception:
+            return []
+        media_urls = extract_bongdaplus_media_urls(html_text)
+        for embed_url in extract_bongdaplus_embed_urls(html_text, base_url):
+            try:
+                embed_html = fetch_text(embed_url, headers=bongdaplus_headers(article_url), timeout=25)
+            except Exception:
+                continue
+            for media_url in extract_bongdaplus_media_urls(embed_html):
+                if media_url not in media_urls:
+                    media_urls.append(media_url)
+        media_dates = [bongdaplus_date_from_media_url(url) for url in media_urls]
+        event_date = next((date for date in media_dates if date), None) or h24_date_from_article_html(html_text)
+        if event_date not in allowed_dates:
+            return []
+        media_url = best_highlight_url(media_urls)
+        if not media_url:
+            return []
+        title = title_from_html_page(html_text, title_from_url_slug(article_url) or "BongDaPlus Highlight")
+        logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
+        logo = logo_match.group(1) if logo_match else ""
+        return [
+            {
+                "source": source,
+                "name": title,
+                "group": "Highlight",
+                "logo": logo,
+                "stream_url": media_url,
+                "referer": base_url,
+                "user_agent": UA,
+                "event_date": event_date,
+                "skip_event_filter": True,
+            }
+        ]
+
+    channels = []
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(collect_article, article_url) for article_url in article_urls]
         for future in as_completed(futures):
             try:
                 channels.extend(future.result())
@@ -4095,7 +4441,6 @@ def collect_vsc9():
     if not html_text:
         log(f"[{source}] Home not available")
         channels.extend(collect_vsc9_thethaocoban_fallback(seen_urls))
-        channels.extend(collect_vsc9_tinhlagi_fallback(seen_urls))
         log(f"[{source}] {len(channels)} raw links")
         return channels
 
@@ -4137,10 +4482,6 @@ def collect_vsc9():
     if today_count < VSC9_TTCB_MIN_TODAY_LINKS:
         log(f"[{source}] Today links low ({today_count}), use TheThaoCoBan VSC fallback")
         channels.extend(collect_vsc9_thethaocoban_fallback(seen_urls))
-        today_count = sum(1 for channel in channels if channel_event_date(channel) == today)
-    if today_count < VSC9_TODAY_MIN_LINKS:
-        log(f"[{source}] Today links still low ({today_count}), use Tinhlagi VSC fallback")
-        channels.extend(collect_vsc9_tinhlagi_fallback(seen_urls))
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
@@ -4625,6 +4966,7 @@ def main():
         ("VMTTV", collect_vmttv),
         ("MyTVFPTEvents", collect_mytv_fpt_events),
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
+        ("SaoKeTV", collect_saoketv),
         ("CuongHeHe", collect_cuonghehe),
         ("CuongHeHe4K", collect_tt1_4k),
         ("CoTiViSports", collect_cotivi_sports),
@@ -4633,7 +4975,8 @@ def main():
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
         ("AzabuHighlight", collect_azabu_highlights),
-        ("90PhutHighlight", collect_90phutzi_highlights),
+        ("24hHighlight", collect_24h_highlights),
+        ("BongDaPlusHighlight", collect_bongdaplus_highlights),
         (
             "TV365KidsInternational",
             lambda: collect_m3u_playlist(
