@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-08-30 06:25 ICT
-# Total   : 1262
+# Updated : 2026-08-30 07:26 ICT
+# Total   : 1246
 
 #EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dGohEWXz7Sk/maxresdefault.jpg" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -112,20 +112,35 @@ https://live.fptplay53.net/live/media/su-kien-06/hls_avc_v6/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.bongdaplus.vn/assets//Media/2026/08/28/17/hlchelsea28082026.mp4
 
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Highlight Crystal Palace vs Man City: 1-4 (Vòng 2 Ngoại hạng Anh 2026/27)
+#EXTVLCOPT:http-referrer=https://bongdaplus.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.bongdaplus.vn/assets//Media/2026/08/29/13/mc29082026.mp4
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Highlight Juventus vs Parma: 2-0 (Vòng 2 Serie A 2026/27)
+#EXTVLCOPT:http-referrer=https://bongdaplus.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.bongdaplus.vn/assets//Media/2026/08/30/17/juventus-vs-parma-2-0.mp4
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Highlight Liverpool vs Nottingham: 2-2 (Vòng 2 Ngoại hạng Anh 2026/27)
 #EXTVLCOPT:http-referrer=https://bongdaplus.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.bongdaplus.vn/assets//Media/2026/08/29/13/hlliverpool29082026.mp4
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Video bóng đá Al Nassr - Al Taawoun: Ronaldo chói sáng, ngược dòng mãn nhãn (Saudi Pro League)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-08-29/1787952344-alnassr_altaawon_720p.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Video bóng đá Bayern Munich - Stuttgart: 6 bàn thăng hoa, ra quân thuận lợi (Bundesliga)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-08-29/cp_special_bundesliga-1787953487-bayern_stuttgart1.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Video bóng đá Dortmund – Hamburger: Cay đắng phản lưới, thẻ đỏ cuối trận (Bundesliga)
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Video bóng đá Sevilla - Atletico: 33 phút thăng hoa, tạm chiếm ngôi đầu (La Liga)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-08-30/cp_special_bundesliga-1788040156-dortmund_hamburger1.m3u8
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-08-30/cp_special_laliga-1788041484-sevilla_atletico1.m3u8
 
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/real-sociedad.png" group-title="Giờ Vàng TV" group-logo="https://live-api.keonhacaitp.one/favicon.ico", 00:00 30/08/2026 Real Sociedad vs Espanyol (Trĩ) [PC] [hls]
 https://eqr2hdarxfliv.vcdn.cloud/1787988972_hd/1787988972_hd@720p.m3u8
@@ -136,10 +151,7 @@ https://eqr2hdarxfliv.vcdn.cloud/1788021037_hd/1788021037_hd@720p.m3u8
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/sevilla.png" group-title="Giờ Vàng TV" group-logo="https://live-api.keonhacaitp.one/favicon.ico", 02:30 30/08/2026 Sevilla vs Atletico Madrid (Mason) [PC] [hls]
 https://eqr2hdarxfliv.vcdn.cloud/1787989070_hd/1787989070_hd@720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimages.keovip88.net%2Fimages%2Fteams%2Fclub-america.png&time=08%3A00+30%2F08" group-title="Tinhlagi - Giờ Vàng TV",08:00 30/08 Club America vs Puebla (blv-tri) [hls]
-https://freem3u.xyz/static/no-signal/low.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/club-america.png" group-title="Giờ Vàng TV" group-logo="https://live-api.keonhacaitp.one/favicon.ico", 08:00 30/08/2026 Club America vs Puebla (Trĩ) [PC] [hls]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimages.keovip88.net%2Fimages%2Fteams%2Fclub-america.png&time=08%3A00+30%2F08" group-title="Tinhlagi - Giờ Vàng TV",08:00 30/08 Club America vs Puebla (Trĩ) [hls]
 https://eqr2hdarxfliv.vcdn.cloud/1788029777_hd/1788029777_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/club-america.png" group-title="Giờ Vàng TV",[08:00] Club America vs Puebla | Trĩ [HD]
@@ -151,6 +163,9 @@ https://eqr2hdarxfliv.vcdn.cloud/1788029777_hd/1788029777_hd@720p.m3u8
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://eqr2hdarxfliv.vcdn.cloud/1788029777_hd/1788029777_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fcdn.keobongvip.digital%2Fimages%2Fbasketball-teams%2Ff35ccb51f91cd187f149d4d55fc6be24.png&time=09%3A00+30%2F08" group-title="Tinhlagi - Giờ Vàng TV",09:00 30/08 Phoenix Mercury vs Toronto Tempo (blv-cay) [hls]
+https://freem3u.xyz/static/no-signal/low.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/f35ccb51f91cd187f149d4d55fc6be24.png" group-title="Giờ Vàng TV" group-logo="https://live-api.keonhacaitp.one/favicon.ico", 09:00 30/08/2026 Phoenix Mercury vs Toronto Tempo (Cầy) [PC] [hls]
 https://eqr2hdarxfliv.vcdn.cloud/1788030050_hd/1788030050_hd@720p.m3u8
@@ -271,62 +286,6 @@ https://station1-global.ebaclofen.org/live/d5f25fa13009cd9022db413c859371ac/play
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://station1-global.ebaclofen.org/live/d5f25fa13009cd9022db413c859371ac/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fb7f3a068b301edd82ad4c56496f41063.png&time=04%3A25+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",04:25 30/08 Jaguares de Cordoba vs America de Cali (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/0dc93635b39d1a46a25381c3b2287921/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/b7f3a068b301edd82ad4c56496f41063.png" group-title="Vua Sân Cỏ TV",04:25 30/08 Jaguares de Cordoba vs America de Cali (Nhà Đài 1)
-#EXTVLCOPT:http-referrer=https://vsc9.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://station1-global.ebaclofen.org/live/0dc93635b39d1a46a25381c3b2287921/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F079e86cebd6511ce807cc6073a3e26ee.png&time=04%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",04:30 30/08 Atlético Mineiro _ MG vs Vitória _ BA (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/894e51913387bb057c29c5171348e203/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fa632c7cdcfb1f9898d77898dd4ea00c8.png&time=04%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",04:30 30/08 Botafogo SP vs Cuiaba (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/6b36a14d6cb45f7f05f681190d25877b/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fcac9460a93766d0f63c33b15003d9572.png&time=04%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",04:30 30/08 Deportes Limache vs Everton CD (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/1915ffcdb0c16119ce2a9bdc30436fe7/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ff7e33bab2469f4e5b80d4d47cd92b381.png&time=04%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",04:30 30/08 Deportivo Recoleta vs Olimpia Asuncion (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/1a7a7c006a1ce364d4dcffaf843709b8/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/079e86cebd6511ce807cc6073a3e26ee.png" group-title="Vua Sân Cỏ TV",04:30 30/08 Atlético Mineiro _ MG vs Vitória _ BA (Nhà Đài 1)
-#EXTVLCOPT:http-referrer=https://vsc9.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://station1-global.ebaclofen.org/live/894e51913387bb057c29c5171348e203/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a632c7cdcfb1f9898d77898dd4ea00c8.png" group-title="Vua Sân Cỏ TV",04:30 30/08 Botafogo SP vs Cuiaba (Nhà Đài 1)
-#EXTVLCOPT:http-referrer=https://vsc9.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://station1-global.ebaclofen.org/live/6b36a14d6cb45f7f05f681190d25877b/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/cac9460a93766d0f63c33b15003d9572.png" group-title="Vua Sân Cỏ TV",04:30 30/08 Deportes Limache vs Everton CD (Nhà Đài 1)
-#EXTVLCOPT:http-referrer=https://vsc9.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://station1-global.ebaclofen.org/live/1915ffcdb0c16119ce2a9bdc30436fe7/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f7e33bab2469f4e5b80d4d47cd92b381.png" group-title="Vua Sân Cỏ TV",04:30 30/08 Deportivo Recoleta vs Olimpia Asuncion (Nhà Đài 1)
-#EXTVLCOPT:http-referrer=https://vsc9.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://station1-global.ebaclofen.org/live/1a7a7c006a1ce364d4dcffaf843709b8/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F3de7fff92c61b2ac93b08814386cf85d.png&time=05%3A00+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",05:00 30/08 CA Huracan vs Estudiantes Rio Cuarto (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/671214ae35e6ce151b0420b2b3a3839b/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F92b3930be1795a5c2b97a7e19f46a277.png&time=05%3A00+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",05:00 30/08 Tlaxcala FC vs Venados FC Yucatán (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/f784ca3867031893424020a0742e92be/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/3de7fff92c61b2ac93b08814386cf85d.png" group-title="Vua Sân Cỏ TV",05:00 30/08 CA Huracan vs Estudiantes Rio Cuarto (Nhà Đài 1)
-#EXTVLCOPT:http-referrer=https://vsc9.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://station1-global.ebaclofen.org/live/671214ae35e6ce151b0420b2b3a3839b/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/92b3930be1795a5c2b97a7e19f46a277.png" group-title="Vua Sân Cỏ TV",05:00 30/08 Tlaxcala FC vs Venados FC Yucatán (Nhà Đài 1)
-#EXTVLCOPT:http-referrer=https://vsc9.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://station1-global.ebaclofen.org/live/f784ca3867031893424020a0742e92be/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F25cde92a237f9418a491eed48437478e.png&time=05%3A45+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",05:45 30/08 Kansas City Current Women vs North Carolina Courage Women (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/4376e9049c2c43509abc124e198e4ea4/playlist.m3u8
 
@@ -431,58 +390,50 @@ https://station1-global.ebaclofen.org/live/1690415161b05f08cf54db8d9fb7fe70/play
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://station1-global.ebaclofen.org/live/6baebe49722e587abd45b8c984353055/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fdcb67dd58619e29d84853ac2e4ac5e27.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:30 30/08 Atlanta United vs Charlotte FC (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/e9f20e17376d1edd4e746d0e7820b2c2/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Ffd3230c7fa4ad7bde28c640f2f32ca43.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:30 30/08 Atletico Junior Barranquilla vs Independiente Santa Fe (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/50726a5b7cc779491b2426fe140805cf/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2d846f3eea3e2d5067b26de498f83d94.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:30 30/08 DC United vs Los Angeles FC (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/fabe100bfa19f81630c7040f60d8c0fd/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F976fe1d29c112f4baeb844cdda2f04cb.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:30 30/08 Inter Miami CF vs Montreal Impact (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/5ebf2e69b5fc86fc11209fddabde2bb4/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F976fe1d29c112f4baeb844cdda2f04cb.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:30 30/08 Inter Miami CF vs Montreal Impact (Tôn Quyền)
-https://cdn1-global.ebaclofen.org/live/pro1/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F8b8fe90668461b90ddc20516b0e6796d.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:30 30/08 New York Red Bulls vs Philadelphia Union (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/c0885e7305bd8d5c64f2dec7ec62714d/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fa6f6290d4b7699729dc19349484841bf.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:30 30/08 Toronto FC vs New York City FC (Nhà Đài 1)
-https://station1-global.ebaclofen.org/live/2440d1847c6e205c5a528ffaa95558d0/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/976fe1d29c112f4baeb844cdda2f04cb.png" group-title="Vua Sân Cỏ TV",* 06:30 30/08 Inter Miami CF vs Montreal Impact (Tôn Quyền)
-#EXTVLCOPT:http-referrer=https://vsc9.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn1-global.ebaclofen.org/live/pro1/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/dcb67dd58619e29d84853ac2e4ac5e27.png" group-title="Vua Sân Cỏ TV",06:30 30/08 Atlanta United vs Charlotte FC (Nhà Đài 1)
-#EXTVLCOPT:http-referrer=https://vsc9.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://station1-global.ebaclofen.org/live/e9f20e17376d1edd4e746d0e7820b2c2/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/fd3230c7fa4ad7bde28c640f2f32ca43.png" group-title="Vua Sân Cỏ TV",06:30 30/08 Atletico Junior Barranquilla vs Independiente Santa Fe (Nhà Đài 1)
 #EXTVLCOPT:http-referrer=https://vsc9.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://station1-global.ebaclofen.org/live/50726a5b7cc779491b2426fe140805cf/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/2d846f3eea3e2d5067b26de498f83d94.png" group-title="Vua Sân Cỏ TV",06:30 30/08 DC United vs Los Angeles FC (Nhà Đài 1)
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fdcb67dd58619e29d84853ac2e4ac5e27.png&time=06%3A40+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:40 30/08 Atlanta United vs Charlotte FC (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/e9f20e17376d1edd4e746d0e7820b2c2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F2d846f3eea3e2d5067b26de498f83d94.png&time=06%3A40+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:40 30/08 DC United vs Los Angeles FC (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/fabe100bfa19f81630c7040f60d8c0fd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F976fe1d29c112f4baeb844cdda2f04cb.png&time=06%3A40+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:40 30/08 Inter Miami CF vs Montreal Impact (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/5ebf2e69b5fc86fc11209fddabde2bb4/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F8b8fe90668461b90ddc20516b0e6796d.png&time=06%3A40+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:40 30/08 New York Red Bulls vs Philadelphia Union (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/c0885e7305bd8d5c64f2dec7ec62714d/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fa6f6290d4b7699729dc19349484841bf.png&time=06%3A40+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",06:40 30/08 Toronto FC vs New York City FC (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/2440d1847c6e205c5a528ffaa95558d0/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/dcb67dd58619e29d84853ac2e4ac5e27.png" group-title="Vua Sân Cỏ TV",06:40 30/08 Atlanta United vs Charlotte FC (Nhà Đài 1)
+#EXTVLCOPT:http-referrer=https://vsc9.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://station1-global.ebaclofen.org/live/e9f20e17376d1edd4e746d0e7820b2c2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/2d846f3eea3e2d5067b26de498f83d94.png" group-title="Vua Sân Cỏ TV",06:40 30/08 DC United vs Los Angeles FC (Nhà Đài 1)
 #EXTVLCOPT:http-referrer=https://vsc9.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://station1-global.ebaclofen.org/live/fabe100bfa19f81630c7040f60d8c0fd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/976fe1d29c112f4baeb844cdda2f04cb.png" group-title="Vua Sân Cỏ TV",06:30 30/08 Inter Miami CF vs Montreal Impact (Nhà Đài 1)
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/976fe1d29c112f4baeb844cdda2f04cb.png" group-title="Vua Sân Cỏ TV",06:40 30/08 Inter Miami CF vs Montreal Impact (Nhà Đài 1)
 #EXTVLCOPT:http-referrer=https://vsc9.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://station1-global.ebaclofen.org/live/5ebf2e69b5fc86fc11209fddabde2bb4/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/8b8fe90668461b90ddc20516b0e6796d.png" group-title="Vua Sân Cỏ TV",06:30 30/08 New York Red Bulls vs Philadelphia Union (Nhà Đài 1)
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/8b8fe90668461b90ddc20516b0e6796d.png" group-title="Vua Sân Cỏ TV",06:40 30/08 New York Red Bulls vs Philadelphia Union (Nhà Đài 1)
 #EXTVLCOPT:http-referrer=https://vsc9.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://station1-global.ebaclofen.org/live/c0885e7305bd8d5c64f2dec7ec62714d/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a6f6290d4b7699729dc19349484841bf.png" group-title="Vua Sân Cỏ TV",06:30 30/08 Toronto FC vs New York City FC (Nhà Đài 1)
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/a6f6290d4b7699729dc19349484841bf.png" group-title="Vua Sân Cỏ TV",06:40 30/08 Toronto FC vs New York City FC (Nhà Đài 1)
 #EXTVLCOPT:http-referrer=https://vsc9.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://station1-global.ebaclofen.org/live/2440d1847c6e205c5a528ffaa95558d0/playlist.m3u8
@@ -975,6 +926,9 @@ https://station1-global.ebaclofen.org/live/775ccc2d4864e677145367b26b765fe6/play
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/6508946c9a5fe22a8784b905b25e8c79.png" group-title="Vua Sân Cỏ TV",* 20:30 30/08 SC Freiburg vs SV Werder Bremen (Lê Hoàn)
 #EXTVLCOPT:http-referrer=https://vsc9.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn1-global.ebaclofen.org/live/pro1/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F6508946c9a5fe22a8784b905b25e8c79.png&time=20%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",20:30 30/08 SC Freiburg vs SV Werder Bremen (Lê Hoàn)
 https://cdn1-global.ebaclofen.org/live/pro1/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2F6508946c9a5fe22a8784b905b25e8c79.png&time=20%3A30+30%2F08" group-title="Tinhlagi - Vua Sân Cỏ TV",20:30 30/08 SC Freiburg vs SV Werder Bremen (Nhà Đài 1)
@@ -1563,35 +1517,14 @@ https://station1-global.ebaclofen.org/live/00102532540a8958127200db02f02804/play
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/5a2ff46efa33abc6b2908eb6279dfbf8.png" group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 01:45 31/08 Lazio vs Genoa (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/e810f13fb5d4e39f7b68fb148e94aded/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fcef1725baaf3f3be0cb7215c5f39d162.webp&time=03%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",03:30 30/08 Seattle Sounders vs Chicago Fire (GRAP) [geo]
-https://live.inplyr.com/room/622093.m3u8
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fcef1725baaf3f3be0cb7215c5f39d162.webp&time=03%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",03:30 30/08 Seattle Sounders vs Chicago Fire (RỒNG ĐẤT) [geo]
 https://live.inplyr.com/room/620649.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F079e86cebd6511ce807cc6073a3e26ee.webp&time=04%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",04:30 30/08 Atlético Mineiro _ MG vs Vitória _ BA (BLV A WIN) [geo]
 https://live.inplyr.com/room/536185.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F079e86cebd6511ce807cc6073a3e26ee.webp&time=04%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",04:30 30/08 Atlético Mineiro _ MG vs Vitória _ BA (VINFAST) [geo]
-https://live.inplyr.com/room/617313.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/5db02f61bf1696b2cb553a43ae0c5a74.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 04:30 30/08 Atlético Mineiro - MG vs Vitória - BA (BLV BLV A WIN)
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1788049201-0-0-557db55a1d06acded68f8ef8005a115c
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/5db02f61bf1696b2cb553a43ae0c5a74.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 04:30 30/08 Atlético Mineiro - MG vs Vitória - BA (BLV VINFAST)
-https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1788049201-0-0-7ae070f1e1d609d8e8661db25c239198
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F3de7fff92c61b2ac93b08814386cf85d.webp&time=05%3A00+30%2F08" group-title="Tinhlagi - Socolive TV",05:00 30/08 CA Huracan vs AA Estudiantes (Río Cuarto) (BLV RAMBO) [geo]
-https://live.inplyr.com/room/534055.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F3de7fff92c61b2ac93b08814386cf85d.webp&time=05%3A00+30%2F08" group-title="Tinhlagi - Socolive TV",05:00 30/08 CA Huracan vs AA Estudiantes (Río Cuarto) (HÀ DUY KIÊN) [geo]
-https://live.inplyr.com/room/607400.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/451ce50be86178e707dc2ef6daf41386.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 05:00 30/08 CA Huracan vs AA Estudiantes (Río Cuarto) (BLV BLV RAMBO)
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=a25f89070c4c909c75908aded6a409f9&txTime=6a93bd81
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/451ce50be86178e707dc2ef6daf41386.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 05:00 30/08 CA Huracan vs AA Estudiantes (Río Cuarto) (BLV HÀ DUY KIÊN)
-https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=1ed3a0a8cdbc2c674029c8cde541ba8f&txTime=6a93bd81
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2F079e86cebd6511ce807cc6073a3e26ee.webp&time=04%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",04:30 30/08 Atlético Mineiro _ MG vs Vitória _ BA (BLV FOX) [geo]
+https://live.inplyr.com/room/620003.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2Fff9314692ab6025cc5fd36ced689b661.png&time=06%3A00+30%2F08" group-title="Tinhlagi - Socolive TV",06:00 30/08 Atlas vs Queretaro FC (BLV VOI) [geo]
 https://live.inplyr.com/room/552716.m3u8
@@ -1612,22 +1545,22 @@ https://live.inplyr.com/room/621887.m3u8
 https://live.inplyr.com/room/619672.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/ff9314692ab6025cc5fd36ced689b661.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:00 30/08 Atlas vs Queretaro FC (BLV BLV VOI)
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1788049201-0-0-0a053570452a2d455b731bfecfa74ab1
+https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1788052801-0-0-8f40aa4e879593e73ed2074c06788871
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/ff9314692ab6025cc5fd36ced689b661.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:00 30/08 Atlas vs Queretaro FC (BLV CƠM NẾP)
-https://pull.niues.live/live/stream-618950_lhd.m3u8?auth_key=1788049201-0-0-6841642e16e4ee288dbbffb936286c09
+https://pull.niues.live/live/stream-618950_lhd.m3u8?auth_key=1788052801-0-0-9e7ee0b8ed1210f950f64834db9dd2ea
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/e2a4e33a3c03f2e888607860eb1f566d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:00 30/08 Pachuca vs Club Deportivo Guadalajara (BLV A PÁO)
-https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1788049201-0-0-46fd68ef2b41450de9ae0d7a2141b3ad
+https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1788052801-0-0-b1422ddd4177d4cc086b19afc78d5ecb
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/e2a4e33a3c03f2e888607860eb1f566d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:00 30/08 Pachuca vs Club Deportivo Guadalajara (BLV BLV PEWPEW)
-https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1788049201-0-0-71e7a859bc2dec3a066a92601e27e49d
+https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1788052801-0-0-bcf9141155ec80f406a3dc5eb9c8e654
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/e2a4e33a3c03f2e888607860eb1f566d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:00 30/08 Pachuca vs Club Deportivo Guadalajara (BLV CHAN ĐÊ)
-https://pull.niues.live/live/stream-621887_lhd.m3u8?auth_key=1788049201-0-0-3d7a02766059f5ea15abea227a8b11a8
+https://pull.niues.live/live/stream-621887_lhd.m3u8?auth_key=1788052801-0-0-2e14dc669d2c88a047ca532c17434c05
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/e2a4e33a3c03f2e888607860eb1f566d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:00 30/08 Pachuca vs Club Deportivo Guadalajara (BLV T REX)
-https://pull.niur.live/live/stream-619672_lhd.m3u8?txSecret=87218d488ed61cca1c0366d7d0c7b21e&txTime=6a93bd81
+https://pull.niur.live/live/stream-619672_lhd.m3u8?txSecret=12e7e8a18188769ab992ebd951a671ed&txTime=6a93cb91
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2Fd734cf292b5b362c9e095be61d08f0f7.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",06:30 30/08 DC United vs Los Angeles FC (BLV HEHE) [geo]
 https://live.inplyr.com/room/622241.m3u8
@@ -1662,47 +1595,44 @@ https://live.inplyr.com/room/552832.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2Fdccc04e480730bc07084f293f313112d.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",06:30 30/08 New York Red Bulls vs Philadelphia Union (BLV A TÚ) [geo]
 https://live.inplyr.com/room/557845.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2Fdccc04e480730bc07084f293f313112d.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",06:30 30/08 New York Red Bulls vs Philadelphia Union (BLV FOX) [geo]
-https://live.inplyr.com/room/620003.m3u8
-
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2Fdccc04e480730bc07084f293f313112d.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",06:30 30/08 New York Red Bulls vs Philadelphia Union (BLV YONE) [geo]
 https://live.inplyr.com/room/372746.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/d734cf292b5b362c9e095be61d08f0f7.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 DC United vs Los Angeles FC (BLV BLV HEHE)
-https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1788049201-0-0-040ba06d681767aa79c9ef501d45de86
+https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1788052801-0-0-3797d35f9d57cb7c559662b24671c464
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/d734cf292b5b362c9e095be61d08f0f7.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 DC United vs Los Angeles FC (BLV BLV KAN)
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=98c82f36eb4e8ed8898db9a1aef11611&txTime=6a93bd81
+https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=6d56498fc68e13c959cb6d4d7723efb9&txTime=6a93cb91
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/d734cf292b5b362c9e095be61d08f0f7.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 DC United vs Los Angeles FC (BLV BLV TOMIA)
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1788049201-0-0-856a3ad0bf4cd0b3b3f3c7b649389f04
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1788052801-0-0-6c13c13f4fcd2b61a3dd88c6a32b1b03
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/d734cf292b5b362c9e095be61d08f0f7.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 DC United vs Los Angeles FC (BLV NEKO)
-https://pull.niues.live/live/stream-625920_lhd.m3u8?auth_key=1788049201-0-0-305bd997f9ea0e493a30fc935f8be403
+https://pull.niues.live/live/stream-625920_lhd.m3u8?auth_key=1788052801-0-0-95ecd53cd1c047c1d269ec18e4f190d9
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/717c2635400185c084b9ccc3c3ab1c6f.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 Inter Miami CF vs Montreal Impact (BLV BLV Củ Cải)
-https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1788049201-0-0-b25bc8b1d9269f71bbae7a7c361fd518
+https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1788052801-0-0-7785ab6894c105a148343ace8de00e42
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/717c2635400185c084b9ccc3c3ab1c6f.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 Inter Miami CF vs Montreal Impact (BLV BLV LUCAS)
-https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1788049201-0-0-d369bb22950386835b3f8c025a94e4ef
+https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1788052801-0-0-43e06e934e549dfe41ee269720377f00
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/717c2635400185c084b9ccc3c3ab1c6f.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 Inter Miami CF vs Montreal Impact (BLV BLV RÔSI)
-https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=73b5918181ac1a7936ee1f5c8297ca37&txTime=6a93bd81
+https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=a5dd5c18db6c4bfad73bee7d7ebea3de&txTime=6a93cb91
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/717c2635400185c084b9ccc3c3ab1c6f.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 Inter Miami CF vs Montreal Impact (BLV CÔNG CHẤT)
-https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=d75735ad73c2fe8589a71ec8cb46a093&txTime=6a93bd81
+https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=e90a61c99b3884d6b506bef43b2cd63a&txTime=6a93cb91
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/717c2635400185c084b9ccc3c3ab1c6f.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 Inter Miami CF vs Montreal Impact (BLV HẢI THANH)
-https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1788049201-0-0-44eeb0faeb6dfba89f53f895dcb19fb4
+https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1788052801-0-0-8bca92bb036c72ea27c6e5d099e7225e
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/717c2635400185c084b9ccc3c3ab1c6f.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 Inter Miami CF vs Montreal Impact (BLV LOGAN)
-https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=a1a49249a265ea1c3a0c32041a84d702&txTime=6a93bd81
+https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=745c91aeea7e3af872e819305c9747b3&txTime=6a93cb91
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/dccc04e480730bc07084f293f313112d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 New York Red Bulls vs Philadelphia Union (BLV BLV A TÚ)
-https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1788049201-0-0-460407bfbe88daf6e780fdbaaa61fdc1
+https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1788052801-0-0-857c30345478b6e8af668b0f9be85d71
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/dccc04e480730bc07084f293f313112d.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 06:30 30/08 New York Red Bulls vs Philadelphia Union (BLV BLV YONE)
-https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1788049201-0-0-3c09a13fcecf221aa389c71f63ca2e75
+https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1788052801-0-0-d37e651f299d8d8283f3b1efc436050e
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2F90354070db3771730201dcf687da4778.png&time=07%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",07:30 30/08 Houston Dynamo vs San Jose Earthquakes (BLV CÁP) [geo]
 https://live.inplyr.com/room/610677.m3u8
@@ -1722,41 +1652,62 @@ https://live.inplyr.com/room/485739.m3u8
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2Fb58df338f60d6bac1d1f00bbe5ebe553.png&time=07%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",07:30 30/08 Minnesota United FC vs Orlando City (BLV NOVA) [geo]
 https://live.inplyr.com/room/619108.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2Fb58df338f60d6bac1d1f00bbe5ebe553.png&time=07%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",07:30 30/08 Minnesota United FC vs Orlando City (VINFAST) [geo]
+https://live.inplyr.com/room/617313.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2F07c7211c7c4c17f01890b0da6536d148.png&time=07%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",07:30 30/08 Nashville SC vs FC Cincinnati (BLV ANH TÀI) [geo]
 https://live.inplyr.com/room/406865.m3u8
 
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2F07c7211c7c4c17f01890b0da6536d148.png&time=07%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",07:30 30/08 Nashville SC vs FC Cincinnati (BLV RAMBO) [geo]
+https://live.inplyr.com/room/534055.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2F07c7211c7c4c17f01890b0da6536d148.png&time=07%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",07:30 30/08 Nashville SC vs FC Cincinnati (HÀ DUY KIÊN) [geo]
+https://live.inplyr.com/room/607400.m3u8
+
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2F81d1cf5d13263e0b1ce285618fa41d6e.png&time=07%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",07:30 30/08 Sporting Kansas City vs Vancouver Whitecaps (BLV CÒ) [geo]
 https://live.inplyr.com/room/582342.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2F81d1cf5d13263e0b1ce285618fa41d6e.png&time=07%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",07:30 30/08 Sporting Kansas City vs Vancouver Whitecaps (GRAP) [geo]
+https://live.inplyr.com/room/622093.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2F81d1cf5d13263e0b1ce285618fa41d6e.png&time=07%3A30+30%2F08" group-title="Tinhlagi - Socolive TV",07:30 30/08 Sporting Kansas City vs Vancouver Whitecaps (KENCHU) [geo]
 https://live.inplyr.com/room/622602.m3u8
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/90354070db3771730201dcf687da4778.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Houston Dynamo vs San Jose Earthquakes (BLV BLV LION)
-https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1788021061-0-0-283b97041d8c85f82d3ef8a23b53c8f3
+https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1788052801-0-0-861ad52ecb6d31ce316cca9bce339d25
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/90354070db3771730201dcf687da4778.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Houston Dynamo vs San Jose Earthquakes (BLV BLV WUKONG)
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1788024546-0-0-ba3f4ab9b98e2946da67756a11c78964
+https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1788052801-0-0-c16ac7a747e50be34f7059b092cb1bca
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/90354070db3771730201dcf687da4778.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Houston Dynamo vs San Jose Earthquakes (BLV ĐỖ TÚ TÀI)
-https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1788032207-0-0-b120da9abd32b6d1bc848b6eed3565b5
+https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1788052801-0-0-f9d3eb6820afff6a9d72e2ae500062be
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/b58df338f60d6bac1d1f00bbe5ebe553.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Minnesota United FC vs Orlando City (BLV BLV CHIVAS)
-https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=b3f5e696dfe17ff62b57c95aac203dc1&txTime=6a9318a2
+https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=a595e92c637c6a227bccb9da557a356c&txTime=6a93cb91
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/b58df338f60d6bac1d1f00bbe5ebe553.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Minnesota United FC vs Orlando City (BLV BLV NOVA)
 https://pull.niues.live/live/stream-619108_lhd.m3u8?auth_key=1788020746-0-0-0527205ee8c465399c2950be9c1d741c
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/b58df338f60d6bac1d1f00bbe5ebe553.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Minnesota United FC vs Orlando City (BLV VINFAST)
+https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1788052801-0-0-957eac7be2106e32d8ee32c5bc21ea4b
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/07c7211c7c4c17f01890b0da6536d148.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Nashville SC vs FC Cincinnati (BLV BLV ANH TÀI)
-https://pull.niur.live/live/stream-406865_lhd.m3u8?txSecret=6c0e937ce46e3e46e6daeb0b73b9e77a&txTime=6a9379d4
+https://pull.niur.live/live/stream-406865_lhd.m3u8?txSecret=6445ccd105a24aefc2b927008afc6ac8&txTime=6a93cb91
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/07c7211c7c4c17f01890b0da6536d148.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Nashville SC vs FC Cincinnati (BLV BLV RAMBO)
+https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=85972d180f42d027bfd76fc6f5aba8d7&txTime=6a93cb91
+
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/07c7211c7c4c17f01890b0da6536d148.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Nashville SC vs FC Cincinnati (BLV HÀ DUY KIÊN)
+https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=9f768aa3feca3bb7ea44e5c6e76f0ce8&txTime=6a93cb91
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/81d1cf5d13263e0b1ce285618fa41d6e.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Sporting Kansas City vs Vancouver Whitecaps (BLV BLV CÒ)
-https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1788049201-0-0-fda414c65c23d550eb92de7f3b07508a
+https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1788052801-0-0-96a65a3840faef3081d5a0d337e3e73e
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/81d1cf5d13263e0b1ce285618fa41d6e.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Sporting Kansas City vs Vancouver Whitecaps (BLV GRAP)
-https://pull.niur.live/live/stream-622093_lhd.m3u8?txSecret=bc33063d15086000e3380b36b38be66f&txTime=6a93b37d
+https://pull.niur.live/live/stream-622093_lhd.m3u8?txSecret=5d792f9823b28ee290fa341d1da876c8&txTime=6a93cb91
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/81d1cf5d13263e0b1ce285618fa41d6e.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 07:30 30/08 Sporting Kansas City vs Vancouver Whitecaps (BLV KENCHU)
-https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1788047952-0-0-869776ce306b4fddc199ad34d18c6e80
+https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1788052801-0-0-b2304c0798de7c66cccfa17f1325963e
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Ffootball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260826%2F0ac98caa6d553ec72a9fc50dd84ee60a.png&time=08%3A05+30%2F08" group-title="Tinhlagi - Socolive TV",08:05 30/08 Club America vs Puebla (BLV A TINH) [geo]
 https://live.inplyr.com/room/598119.m3u8
@@ -1793,9 +1744,6 @@ https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1788022445-0-0-d73
 
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/0ac98caa6d553ec72a9fc50dd84ee60a.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 08:05 30/08 Club America vs Puebla (BLV QUỐC KHÁNH)
 https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=8eca8f90b185657426b6cde4a0cb8ace&txTime=6a9355f2
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/0ac98caa6d553ec72a9fc50dd84ee60a.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 08:05 30/08 Club America vs Puebla (BLV THOMAS)
-https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=45f75841c4d5ae36498127b7e1d6fdc8&txTime=6a93799e
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fsocolivep.cv%2Fwp-content%2Fuploads%2Ftruc-tiep%2Flogos%2Fbasketball%2Fteam%2Fhttps%3A%2F%2Fsta.vnres.co%2Ffile%2Fcommon%2F20260828%2F0d627a9d9eea9a00c2f07b9c096fad1f.png&time=09%3A00+30%2F08" group-title="Tinhlagi - Socolive TV",09:00 30/08 Phoenix Mercury W vs Toronto Tempo W (A CHÈ) [geo]
 https://live.inplyr.com/room/356042.m3u8
@@ -2028,6 +1976,9 @@ https://pull.niues.live/live/stream-9912123_lhd.m3u8?auth_key=1788031617-0-0-344
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/b124dd93a64994f32017e1a31ead9fdf.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 18:30 30/08 FC St. Pauli vs 1. FC Kaiserslautern (BLV TUẤN CÙI)
 https://pull.niues.live/live/stream-9912138_lhd.m3u8?auth_key=1788039511-0-0-551b7507bf3604dfc3ae4f3e2d2d574e
 
+#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/5ffd330668a73593d10c8313477a3e0e.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 20:00 30/08 Sunderland vs Fulham (BLV THOMAS)
+https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=45f75841c4d5ae36498127b7e1d6fdc8&txTime=6a93799e
+
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260826/b1f37dd8a3ad3027fc745553ee231f90.png" group-title="Socolive TV" group-logo="https://tructiepbongda.com/favicon.ico", 21:45 30/08 SC Telstar vs AFC Ajax (BLV BÚN ĐẬU)
 https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1788011764-0-0-b7fed691712ae56df29dcfb96660ed76
 
@@ -2055,31 +2006,31 @@ https://live05.meung.app/live/87547578.m3u8
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/cff411edceeeb7c1677d9db65ce47164.png!w80" group-title="CoLaTV",06:00 | Pachuca vs Chivas Guadalajara | BLV
 https://live05.meung.app/live/87379114.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F2d846f3eea3e2d5067b26de498f83d94.png%21w80&time=06%3A30+30%2F08" group-title="Tinhlagi - CoLaTV",06:30 30/08 DC United vs Los Angeles FC (BLV SPRITE) [hls 2]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F2d846f3eea3e2d5067b26de498f83d94.png%21w80&time=06%3A40+30%2F08" group-title="Tinhlagi - CoLaTV",06:40 30/08 DC United vs Los Angeles FC (BLV SPRITE) [hls 2]
 https://live05.miekgo.app/live/75748097.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F2d846f3eea3e2d5067b26de498f83d94.png%21w80&time=06%3A30+30%2F08" group-title="Tinhlagi - CoLaTV",06:30 30/08 DC United vs Los Angeles FC (BLV SPRITE) [hls]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F2d846f3eea3e2d5067b26de498f83d94.png%21w80&time=06%3A40+30%2F08" group-title="Tinhlagi - CoLaTV",06:40 30/08 DC United vs Los Angeles FC (BLV SPRITE) [hls]
 https://live05.meung.app/live/75748097.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F976fe1d29c112f4baeb844cdda2f04cb.png%21w80&time=06%3A30+30%2F08" group-title="Tinhlagi - CoLaTV",06:30 30/08 Inter Miami vs CLB Montreal Impact (BLV REVIVE) [hls 2]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F976fe1d29c112f4baeb844cdda2f04cb.png%21w80&time=06%3A40+30%2F08" group-title="Tinhlagi - CoLaTV",06:40 30/08 Inter Miami vs CLB Montreal Impact (BLV REVIVE) [hls 2]
 https://live05.miekgo.app/live/33982309.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F976fe1d29c112f4baeb844cdda2f04cb.png%21w80&time=06%3A30+30%2F08" group-title="Tinhlagi - CoLaTV",06:30 30/08 Inter Miami vs CLB Montreal Impact (BLV REVIVE) [hls]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F976fe1d29c112f4baeb844cdda2f04cb.png%21w80&time=06%3A40+30%2F08" group-title="Tinhlagi - CoLaTV",06:40 30/08 Inter Miami vs CLB Montreal Impact (BLV REVIVE) [hls]
 https://live05.meung.app/live/33982309.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F8b8fe90668461b90ddc20516b0e6796d.png%21w80&time=06%3A30+30%2F08" group-title="Tinhlagi - CoLaTV",06:30 30/08 New York Red Bulls vs CLB Philadelphia Union (BLV WARRIOR) [hls 2]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F8b8fe90668461b90ddc20516b0e6796d.png%21w80&time=06%3A40+30%2F08" group-title="Tinhlagi - CoLaTV",06:40 30/08 New York Red Bulls vs CLB Philadelphia Union (BLV WARRIOR) [hls 2]
 https://live05.miekgo.app/live/97885009.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F8b8fe90668461b90ddc20516b0e6796d.png%21w80&time=06%3A30+30%2F08" group-title="Tinhlagi - CoLaTV",06:30 30/08 New York Red Bulls vs CLB Philadelphia Union (BLV WARRIOR) [hls]
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F8b8fe90668461b90ddc20516b0e6796d.png%21w80&time=06%3A40+30%2F08" group-title="Tinhlagi - CoLaTV",06:40 30/08 New York Red Bulls vs CLB Philadelphia Union (BLV WARRIOR) [hls]
 https://live05.meung.app/live/97885009.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/2d846f3eea3e2d5067b26de498f83d94.png!w80" group-title="CoLaTV",06:30 | DC United vs Los Angeles FC | BLV
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/2d846f3eea3e2d5067b26de498f83d94.png!w80" group-title="CoLaTV",06:40 | DC United vs Los Angeles FC | BLV
 https://live05.meung.app/live/75748097.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/976fe1d29c112f4baeb844cdda2f04cb.png!w80" group-title="CoLaTV",06:30 | Inter Miami vs CLB Montreal Impact | BLV
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/976fe1d29c112f4baeb844cdda2f04cb.png!w80" group-title="CoLaTV",06:40 | Inter Miami vs CLB Montreal Impact | BLV
 https://live05.meung.app/live/33982309.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png!w80" group-title="CoLaTV",06:30 | New York Red Bulls vs CLB Philadelphia Union | BLV
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png!w80" group-title="CoLaTV",06:40 | New York Red Bulls vs CLB Philadelphia Union | BLV
 https://live05.meung.app/live/97885009.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fimg.gvapi.cc%2Ffootball%2Fteam%2F2d87cf3b426597f02435e2c72e8def93.png%21w80&time=07%3A30+30%2F08" group-title="Tinhlagi - CoLaTV",07:30 30/08 Atl. Tucuman vs Belgrano (BLV FANTA) [hls 2]
@@ -2457,11 +2408,17 @@ https://cdnhls.xbdbotv.live/live/ZjE5NzEzNjAzc3VqaWNlYmlxZzdhZms3YXp3ZWt0N2sxN2R
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fd1c0s7hi3ugzoc.cloudfront.net%2Fteams%2Fcelta-de-vigo-36&time=02%3A30+31%2F08" group-title="Tinhlagi - BIA ÔM TV",02:30 31/08 Celta Vigo vs Athletic Bilbao (Lẩu Ếch) [hls]
 https://cdnhls.xbdbotv.live/live/ZjE5NzMyNzIxc2E4bGNhNmE5OHVqZ2t0Nm13MnQ2cGF0cWRpcHFzaWVwYTNsN3libGN3dG0wODhudXU/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F079e86cebd6511ce807cc6073a3e26ee.png&time=04%3A30+30%2F08" group-title="Tinhlagi - Gà Vàng TV",04:30 30/08 Atlético Mineiro _ MG vs Vitoria BA (Cố Tư Nghiêm) (FHD) [hls]
-https://playback.livetl001.com/live/69a1aaa7230584579e2d5ce1_1080p.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Fbasketball%2Fteam%2Fa10caeb4c8734e5288b38265c755c592.jpg&time=13%3A00+30%2F08" group-title="Tinhlagi - Gà Vàng TV",13:00 30/08 Vietnam vs Thailand (Naruto) (FHD) [hls]
+https://playback.livetl001.com/live/6a77144762ca98f0944094c0_1080p.m3u8
 
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Ffootball%2Fteam%2F079e86cebd6511ce807cc6073a3e26ee.png&time=04%3A30+30%2F08" group-title="Tinhlagi - Gà Vàng TV",04:30 30/08 Atlético Mineiro _ MG vs Vitoria BA (Cố Tư Nghiêm) (HD) [hls]
-https://playback.livetl001.com/live/69a1aaa7230584579e2d5ce1.m3u8
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Fbasketball%2Fteam%2Fa10caeb4c8734e5288b38265c755c592.jpg&time=13%3A00+30%2F08" group-title="Tinhlagi - Gà Vàng TV",13:00 30/08 Vietnam vs Thailand (Naruto) (HD) [hls]
+https://playback.livetl001.com/live/6a77144762ca98f0944094c0.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Fbasketball%2Fteam%2F8c41b09a722e18d468b422bcaa46e133.png&time=15%3A00+30%2F08" group-title="Tinhlagi - Gà Vàng TV",15:00 30/08 Hong Kong China vs Indonesia (Titan) (FHD) [hls]
+https://playback.livetl001.com/live/69d37c3a4da3e15776b6db56_1080p.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Fbasketball%2Fteam%2F8c41b09a722e18d468b422bcaa46e133.png&time=15%3A00+30%2F08" group-title="Tinhlagi - Gà Vàng TV",15:00 30/08 Hong Kong China vs Indonesia (Titan) (HD) [hls]
+https://playback.livetl001.com/live/69d37c3a4da3e15776b6db56.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fphaohoa1.live%2Fmedia%2Fteams%2Flogos%2FINTER-90-x-90-1024x1024.png&time=06%3A30+30%2F08" group-title="Tinhlagi - PHÁO HOA TV",06:30 30/08 Inter Miami vs CF Montreal (Chim Nhỏ) [hls]
 https://luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d
@@ -3023,6 +2980,16 @@ http://zazaint.com:80/MAGU52TLAM/SAAk0NZH71/955963
 #EXTINF:-1 tvg-logo="https://go4.pw/UK/tntsports.png" group-title="4K",TNT SPORTS | EVENT 9 HD :
 http://zazaint.com:80/MAGU52TLAM/SAAk0NZH71/1297854
 
+#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp Atlanta United vs Charlotte FC vào lúc 06:30, ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://azabuglobal.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://xlz.m3u8delivery.com/ajax/chanel/type/8/link/channel28
+
+#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp Atlanta United vs Charlotte FC vào lúc 06:30, ngày 30/08/2026 | Link 2 [HLS]
+#EXTVLCOPT:http-referrer=https://azabuglobal.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-28
+
 #EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp Atlas vs Queretaro FC vào lúc 06:00, ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://azabuglobal.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -3033,25 +3000,15 @@ https://xlz.m3u8delivery.com/ajax/chanel/type/7/link/channel66
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-10
 
-#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp CA Huracan vs Estudiantes Cuarto vào lúc 05:00, ngày 30/08/2026 | Link 1 [HLS]
+#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp DC United vs Los Angeles FC vào lúc 06:30, ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://azabuglobal.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://xlz.m3u8delivery.com/ajax/chanel/type/7/link/channel65
+https://xlz.m3u8delivery.com/ajax/chanel/type/8/link/channel8
 
-#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp CA Huracan vs Estudiantes Cuarto vào lúc 05:00, ngày 30/08/2026 | Link 2 [HLS]
+#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp DC United vs Los Angeles FC vào lúc 06:30, ngày 30/08/2026 | Link 2 [HLS]
 #EXTVLCOPT:http-referrer=https://azabuglobal.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-21
-
-#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp CD Jaguares vs America de Cali vào lúc 04:25, ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://azabuglobal.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://xlz.m3u8delivery.com/ajax/chanel/type/7/link/channel68
-
-#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp CD Jaguares vs America de Cali vào lúc 04:25, ngày 30/08/2026 | Link 2 [HLS]
-#EXTVLCOPT:http-referrer=https://azabuglobal.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-27
+https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-8
 
 #EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp Diablos Rojos del México vs Santos del Potosí vào lúc 08:15, ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://azabuglobal.com/
@@ -3163,6 +3120,16 @@ https://xlz.m3u8delivery.com/ajax/chanel/type/8/link/channel30
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-30
 
+#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp NY Red Bulls vs Philadelphia Union vào lúc 06:30, ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://azabuglobal.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://xlz.m3u8delivery.com/ajax/chanel/type/8/link/channel27
+
+#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp NY Red Bulls vs Philadelphia Union vào lúc 06:30, ngày 30/08/2026 | Link 2 [HLS]
+#EXTVLCOPT:http-referrer=https://azabuglobal.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-27
+
 #EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp New Zealand vs Syria vào lúc 13:00, ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://azabuglobal.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -3213,6 +3180,16 @@ https://xlz.m3u8delivery.com/ajax/chanel/type/8/link/channel29
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-29
 
+#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp Toronto FC vs New York City vào lúc 06:30, ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://azabuglobal.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://xlz.m3u8delivery.com/ajax/chanel/type/8/link/channel9
+
+#EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp Toronto FC vs New York City vào lúc 06:30, ngày 30/08/2026 | Link 2 [HLS]
+#EXTVLCOPT:http-referrer=https://azabuglobal.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-9
+
 #EXTINF:-1 tvg-logo="" group-title="Azabu Live",Phát trực tiếp Việt Nam vs Thái Lan vào lúc 13:00, ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://azabuglobal.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -3222,16 +3199,6 @@ https://xlz.m3u8delivery.com/ajax/chanel/type/8/link/channel29
 #EXTVLCOPT:http-referrer=https://azabuglobal.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://xlz.m3u8delivery.com/ajax/chanel/type/5/link/channel-29
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125542_d8ff9d63.png" group-title="Bong Lau TV",[04h30] Atletico-MG vs Vitoria | BLV: Chuối Lá [FHD]
-#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125542_d8ff9d63.png" group-title="Bong Lau TV",[04h30] Atletico-MG vs Vitoria | BLV: Chuối Lá [HD]
-#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://gckc0525.edgemaxcdn.org/live/chuoila/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131436_8ba487aa.png" group-title="Bong Lau TV",[06h30] Inter Miami vs CF Montreal | BLV: Chuối Chao [FHD]
 #EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
@@ -3252,24 +3219,6 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_125542_d8ff9d63.png&time=04%3A30+30%2F08" group-title="Tinhlagi - Chuối chiên",04:30 30/08 Atletico-MG vs Vitoria (Chuối Lá) [FHD] [FHD]
-#EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
-https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125542_d8ff9d63.png" group-title="Chuối chiên" group-logo="https://live38.chuoichientv.com/images/logo/logo.png", 04:30 30/08 Atletico-MG vs Vitoria (Chuối Lá) [HD] [hls]
-#EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
-https://gckc0525.edgemaxcdn.org/live/chuoila/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125542_d8ff9d63.png" group-title="Chuối chiên",[04h30] Atletico-MG vs Vitoria | BLV: Chuối Lá [FHD]
-#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125542_d8ff9d63.png" group-title="Chuối chiên",[04h30] Atletico-MG vs Vitoria | BLV: Chuối Lá [HD]
-#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://gckc0525.edgemaxcdn.org/live/chuoila/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fmedia.chuoichientv.net%2Fmedia%2Fuploads%2F20250623_131436_8ba487aa.png&time=06%3A30+30%2F08" group-title="Tinhlagi - Chuối chiên",06:30 30/08 Inter Miami vs CF Montreal (Chuối Chao) [FHD] [FHD]
 #EXTVLCOPT:http-referrer=https://live.chuoichien.tv/
@@ -3933,16 +3882,6 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel28
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel3
 
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Atlético Mineiro vs Vitória BA lúc 04:30 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel67
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Atlético Mineiro vs Vitória BA lúc 04:30 ngày 30/08/2026 | Link 2 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-22
-
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Australia vs Jordan lúc 16:00 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -3978,11 +3917,6 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/8/link/channel7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-7
 
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Botafogo SP vs Cuiaba lúc 04:30 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel11
-
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Brooklyn FC vs Sporting Jax lúc 06:00 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -3993,30 +3927,15 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel24
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel32
 
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Brunswick Juventus vs Manningham United Blues lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel33
+
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Bồ Đào Nha vs Georgia lúc 01:00 ngày 01/09/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel41
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",CA Huracan vs Estudiantes Cuarto lúc 05:00 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel65
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",CA Huracan vs Estudiantes Cuarto lúc 05:00 ngày 30/08/2026 | Link 2 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-21
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",CD Jaguares vs America de Cali lúc 04:25 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel68
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",CD Jaguares vs America de Cali lúc 04:25 ngày 30/08/2026 | Link 2 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-27
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",CD Motagua vs Olancho FC lúc 08:30 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4042,6 +3961,11 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel42
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel20
+
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Cloud9 vs Lyon Gaming lúc 05:50 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel71
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Club America vs Puebla lúc 08:05 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4077,16 +4001,6 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/8/link/channel8
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-8
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Deportes Limache vs Everton CD lúc 04:30 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel10
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Deportivo Recoleta vs Olimpia Asuncion lúc 04:30 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel12
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Diablos Rojos del México vs Santos del Potosí lúc 06:15 ngày 31/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4163,6 +4077,11 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/8/link/channel26
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-26
 
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",FC Bulleen Lions vs Northcote City lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel34
+
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Fiji vs Mông Cổ lúc 16:00 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -4172,11 +4091,6 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/8/link/channel26
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-26
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Fluxo vs Ex Mibr Academy lúc 04:00 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel75
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Fnatic vs GIANTX lúc 23:30 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4192,11 +4106,6 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-30
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel45
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Fuerza Regia de Monterrey vs Abejas de León lúc 05:15 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel40
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Fuerza Regia de Monterrey vs Abejas de León lúc 05:15 ngày 31/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4267,6 +4176,11 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel41
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel42
+
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Ice Cream Men vs Execration lúc 09:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel71
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Iceland vs Thổ Nhĩ Kỳ lúc 02:30 ngày 01/09/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4368,6 +4282,11 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel27
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel37
 
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Melbourne Victory (R) vs Port Melbourne lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel35
+
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Mexico vs Brazil lúc 09:10 ngày 01/09/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -4412,11 +4331,6 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-30
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel16
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Municipal Zacatecoluca vs Inter F.A lúc 04:30 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel13
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",NY Red Bulls vs Philadelphia Union lúc 06:30 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4478,10 +4392,20 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel34
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel30
 
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Alamein vs Nữ Bulleen Lions FC lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel39
+
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Atlanta Dream vs Nữ Minnesota Lynx lúc 02:00 ngày 31/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel41
+
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Boroondara Eagles vs Nữ Keilor Park lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel38
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Dallas Wings vs Nữ Connecticut Sun lúc 07:30 ngày 31/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4498,10 +4422,10 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-29
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel6
 
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Deportivo Cali vs Nữ Ind. Santa Fe lúc 05:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Heidelberg United vs Nữ Bentleigh Greens lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel16
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel1
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Juarez vs Nữ Cruz Azul lúc 10:10 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4517,6 +4441,11 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-4
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel17
+
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Melbourne City (R) vs Nữ Box Hill lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel37
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Phoenix Mercury vs Nữ Toronto Tempo lúc 09:00 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4543,6 +4472,11 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/8/link/channel25
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-25
 
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Preston Lions vs Nữ Melbourne Victory FC lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel3
+
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Queretaro vs Nữ Monterrey lúc 06:00 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -4562,6 +4496,16 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel42
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel83
+
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ South Melbourne vs Nữ Essendon Royals lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel36
+
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Spring Hills FC vs Nữ Avondale FC lúc 12:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel2
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Nữ Tigres vs Nữ Pachuca lúc 08:06 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4703,11 +4647,6 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/8/link/channel30
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-30
 
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",ShindeN vs Isurus lúc 04:00 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel74
-
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Singapore vs Malaysia lúc 18:00 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -4808,11 +4747,6 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/8/link/channel29
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/5/link/channel-29
 
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Tlaxcala FC vs Venados FC Yucatán lúc 05:00 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel15
-
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Toronto FC vs New York City lúc 06:30 ngày 30/08/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
@@ -4837,11 +4771,6 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel4
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel41
-
-#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Union Espanola vs Rangers Talca lúc 04:30 ngày 30/08/2026 | Link 1 [HLS]
-#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
-https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel9
 
 #EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Uruguay vs Puerto Rico lúc 06:10 ngày 01/09/2026 | Link 1 [HLS]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -4882,4 +4811,9 @@ https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel35
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel29
+
+#EXTINF:-1 tvg-logo="" group-title="Xôi Lạc Z TV",Zomblers vs Chicken Coop lúc 08:00 ngày 30/08/2026 | Link 1 [HLS]
+#EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
+https://xl365.m3u8delivery.com/ajax/chanel/type/7/link/channel73
 
