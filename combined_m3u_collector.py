@@ -205,6 +205,8 @@ NINETY_PHUTZI_HIGHLIGHT_LIMIT = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_LIMI
 H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
 H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "2") or "2")
 H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "120") or "120")
+H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "24") or "24")
+H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "24") or "24")
 BONGDAPLUS_BASE_URL = os.environ.get("BONGDAPLUS_BASE_URL", "https://bongdaplus.vn/")
 BONGDAPLUS_HIGHLIGHT_DAYS_BACK = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_DAYS_BACK", "2") or "2")
 BONGDAPLUS_HIGHLIGHT_LIMIT = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_LIMIT", "120") or "120")
@@ -1324,7 +1326,13 @@ def channel_needs_extvlcopt(channel):
 def select_ott_compatible_channels(channels):
     selected = []
     for channel in channels:
-        if is_flv_url(channel.get("stream_url")) or not channel_needs_extvlcopt(channel):
+        group_key_value = compact_text_key(output_group(channel))
+        if (
+            is_flv_url(channel.get("stream_url"))
+            or group_key_value in {"phaohoatv", "highlight"}
+            or channel.get("source") in {"PhaoHoaTV", "24hHighlight"}
+            or not channel_needs_extvlcopt(channel)
+        ):
             selected.append(channel)
     return selected
 
@@ -3916,6 +3924,52 @@ def extract_h24_article_urls(html_text, base_url):
     return urls
 
 
+def extract_h24_category_urls(html_text, base_url):
+    urls = []
+    seen = set()
+    text = html.unescape(html_text or "")
+    for match in re.finditer(r"""href=["']([^"']*video[^"']*c\d+(?:e\d+)?\.html)["']""", text, re.I):
+        category_url = urljoin(base_url, match.group(1)).split("#", 1)[0]
+        if "24h.com.vn" not in category_url or category_url in seen:
+            continue
+        seen.add(category_url)
+        urls.append(category_url)
+    return urls
+
+
+def normalize_h24_ajax_url(value):
+    value = html.unescape(unquote(clean_text(value))).replace("\\/", "/")
+    if not value:
+        return ""
+    if value.startswith("//"):
+        value = "https:" + value
+    if value.startswith("/"):
+        return urljoin("https://24h.24hstatic.com/", value.lstrip("/"))
+    if value.startswith("https://www.24h.com.vn/ajax/"):
+        return value.replace("https://www.24h.com.vn/ajax/", "https://24h.24hstatic.com/ajax/", 1)
+    if value.startswith("https://24h.24hstatic.com/"):
+        return value
+    return ""
+
+
+def extract_h24_ajax_urls(html_text):
+    urls = []
+    seen = set()
+    text = html.unescape(html_text or "")
+    patterns = (
+        r"AjaxAction\(\s*['\"][^'\"]+['\"]\s*,\s*['\"]([^'\"]+/ajax/[^'\"]+)['\"]",
+        r"""(?:value|data-url)=["']([^"']+/ajax/[^"']+)["']""",
+    )
+    for pattern in patterns:
+        for match in re.finditer(pattern, text, re.I | re.S):
+            ajax_url = normalize_h24_ajax_url(match.group(1))
+            if not ajax_url or ajax_url in seen:
+                continue
+            seen.add(ajax_url)
+            urls.append(ajax_url)
+    return urls
+
+
 def extract_h24_m3u8_urls(html_text):
     urls = []
     seen = set()
@@ -3935,17 +3989,35 @@ def collect_24h_highlights():
     page_urls = [
         urljoin(base_url, "bong-da-c48.html"),
         urljoin(base_url, "video-bong-da-c297.html"),
+        urljoin(base_url, "video-ban-thang-c297.html"),
         urljoin(base_url, "video-bong-da-hot-c508.html"),
+        urljoin(base_url, "video-highlight-c953.html"),
+        urljoin(base_url, "video-highlight-ngoai-hang-anh-c149e5903.html"),
+        urljoin(base_url, "video-tennis-c448.html"),
         urljoin(base_url, "the-thao-c101.html"),
     ]
+    seen_pages = set(page_urls)
+    ajax_urls = []
+    seen_ajax = set()
     article_urls = []
     seen_articles = set()
-    for page_url in page_urls:
+    page_index = 0
+    while page_index < len(page_urls) and page_index < max(1, H24_CATEGORY_LIMIT):
+        page_url = page_urls[page_index]
+        page_index += 1
         log(f"[{source}] Fetch {page_url}")
         try:
             html_text = fetch_text(page_url, headers=h24_headers(page_url), timeout=30)
         except Exception:
             continue
+        for category_url in extract_h24_category_urls(html_text, base_url):
+            if category_url not in seen_pages and len(seen_pages) < max(1, H24_CATEGORY_LIMIT):
+                seen_pages.add(category_url)
+                page_urls.append(category_url)
+        for ajax_url in extract_h24_ajax_urls(html_text):
+            if ajax_url not in seen_ajax and len(ajax_urls) < max(1, H24_AJAX_LIMIT):
+                seen_ajax.add(ajax_url)
+                ajax_urls.append(ajax_url)
         for article_url in extract_h24_article_urls(html_text, base_url):
             if article_url in seen_articles:
                 continue
@@ -3955,6 +4027,30 @@ def collect_24h_highlights():
                 break
         if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
             break
+
+    for ajax_url in ajax_urls:
+        if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+            break
+        log(f"[{source}] Fetch ajax {ajax_url}")
+        try:
+            html_text = fetch_text(
+                ajax_url,
+                headers={**h24_headers(base_url), "X-Requested-With": "XMLHttpRequest"},
+                timeout=30,
+            )
+        except Exception:
+            continue
+        for next_ajax_url in extract_h24_ajax_urls(html_text):
+            if next_ajax_url not in seen_ajax and len(ajax_urls) < max(1, H24_AJAX_LIMIT):
+                seen_ajax.add(next_ajax_url)
+                ajax_urls.append(next_ajax_url)
+        for article_url in extract_h24_article_urls(html_text, base_url):
+            if article_url in seen_articles:
+                continue
+            seen_articles.add(article_url)
+            article_urls.append(article_url)
+            if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+                break
 
     def collect_article(article_url):
         try:
