@@ -899,6 +899,12 @@ def best_highlight_url(urls):
     return max(dict.fromkeys(candidates), key=score)
 
 
+def best_24h_highlight_url(urls):
+    candidates = [clean_text(url) for url in urls if is_valid_highlight_url(url)]
+    special_urls = [url for url in candidates if "cp_special_" in url.lower()]
+    return best_highlight_url(special_urls or candidates)
+
+
 SPORT_SOURCES = {
     "HoiQuan1",
     "HoiQuan2",
@@ -3528,6 +3534,17 @@ def title_from_html_page(html_text, fallback):
     return fallback
 
 
+def clean_highlight_title(title):
+    title = clean_text(title)
+    title = re.sub(r"\s*[-|]\s*(?:24h\.com\.vn|Bongdaplus\.vn|BongDaPlus\.vn)\s*$", "", title, flags=re.I)
+    title = re.sub(r"^(?:xem\s+lại\s+video\s+)?h(?:igh|ight)light\s+", "", title, flags=re.I)
+    title = re.sub(r"^(?:video\s+)?bóng\s+đá\s+", "", title, flags=re.I)
+    title = re.sub(r"^(?:video\s+)?bong\s+da\s+", "", title, flags=re.I)
+    title = re.sub(r"^(?:video\s+)?tennis\s+", "Tennis ", title, flags=re.I)
+    title = re.sub(r"\s+", " ", title).strip(" -|,")
+    return title
+
+
 def azabu_headers(referer=None):
     base_url = AZABU_BASE_URL.rstrip("/") + "/"
     return {
@@ -3944,13 +3961,13 @@ def collect_24h_highlights():
             html_text = fetch_text(article_url, headers=h24_headers(article_url), timeout=25)
         except Exception:
             return []
-        title = title_from_html_page(html_text, title_from_url_slug(article_url) or "24h Highlight")
+        title = clean_highlight_title(title_from_html_page(html_text, title_from_url_slug(article_url) or "24h Highlight"))
         stream_urls = extract_h24_m3u8_urls(html_text)
         media_dates = [h24_date_from_media_url(url) for url in stream_urls]
         event_date = next((date for date in media_dates if date), None) or h24_date_from_article_html(html_text)
         if event_date not in allowed_dates:
             return []
-        stream_url = best_highlight_url(stream_urls)
+        stream_url = best_24h_highlight_url(stream_urls)
         if not stream_url:
             return []
         logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
@@ -4974,9 +4991,7 @@ def main():
         ("MebongTV", collect_mebongtv),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
-        ("AzabuHighlight", collect_azabu_highlights),
         ("24hHighlight", collect_24h_highlights),
-        ("BongDaPlusHighlight", collect_bongdaplus_highlights),
         (
             "TV365KidsInternational",
             lambda: collect_m3u_playlist(
@@ -5005,7 +5020,6 @@ def main():
         ("HoaDaoTV", collect_hoadaotv),
         ("BongLauTV", collect_bonglau),
         ("ChuoiChienTV", collect_chuoichien),
-        ("S8TV", collect_s8tv),
         ("VSC9", collect_vsc9),
         ("QueChoa8", lambda: collect_missing_source("QueChoa8")),
     ]
