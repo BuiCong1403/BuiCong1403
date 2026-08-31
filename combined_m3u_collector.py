@@ -204,9 +204,10 @@ NINETY_PHUTZI_HIGHLIGHT_PAGES = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_PAGE
 NINETY_PHUTZI_HIGHLIGHT_LIMIT = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_LIMIT", "200") or "200")
 H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
 H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "2") or "2")
-H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "120") or "120")
-H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "24") or "24")
-H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "24") or "24")
+H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "240") or "240")
+H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "40") or "40")
+H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "80") or "80")
+H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "10") or "10")
 BONGDAPLUS_BASE_URL = os.environ.get("BONGDAPLUS_BASE_URL", "https://bongdaplus.vn/")
 BONGDAPLUS_HIGHLIGHT_DAYS_BACK = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_DAYS_BACK", "2") or "2")
 BONGDAPLUS_HIGHLIGHT_LIMIT = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_LIMIT", "120") or "120")
@@ -253,6 +254,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "CoLaTV",
     "MebongTV",
     "BongDaPlusHighlight",
+    "24hHighlight",
 }
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
@@ -3948,8 +3950,40 @@ def normalize_h24_ajax_url(value):
     if value.startswith("https://www.24h.com.vn/ajax/"):
         return value.replace("https://www.24h.com.vn/ajax/", "https://24h.24hstatic.com/ajax/", 1)
     if value.startswith("https://24h.24hstatic.com/"):
-        return value
+        return value.replace("https://24h.24hstatic.com//", "https://24h.24hstatic.com/")
     return ""
+
+
+def h24_ajax_dedupe_key(ajax_url):
+    parsed = urlparse(ajax_url)
+    query = parse_qs(parsed.query, keep_blank_values=True)
+    query.pop("t", None)
+    normalized_query = []
+    for key in sorted(query):
+        for value in query[key]:
+            normalized_query.append((key, value))
+    return parsed._replace(query=urlencode(normalized_query, doseq=True)).geturl().rstrip("?&")
+
+
+def h24_ajax_page_variants(ajax_url):
+    ajax_url = normalize_h24_ajax_url(ajax_url)
+    urls = [ajax_url] if ajax_url else []
+
+    def add_variant(pattern):
+        match = re.search(pattern, ajax_url)
+        if not match:
+            return
+        current_page = int(match.group("page"))
+        for page in range(1, max(1, H24_AJAX_PAGE_LIMIT) + 1):
+            if page == current_page:
+                continue
+            variant = ajax_url[: match.start("page")] + str(page) + ajax_url[match.end("page") :]
+            if variant not in urls:
+                urls.append(variant)
+
+    add_variant(r"/ajax/box_template_tin_noi_bat/index/\d+/(?P<page>\d+)/")
+    add_variant(r"/ajax/box_bai_viet_trang_su_kien/index/\d+/\d+/(?P<page>\d+)/")
+    return urls
 
 
 def extract_h24_ajax_urls(html_text):
@@ -3962,11 +3996,12 @@ def extract_h24_ajax_urls(html_text):
     )
     for pattern in patterns:
         for match in re.finditer(pattern, text, re.I | re.S):
-            ajax_url = normalize_h24_ajax_url(match.group(1))
-            if not ajax_url or ajax_url in seen:
-                continue
-            seen.add(ajax_url)
-            urls.append(ajax_url)
+            for ajax_url in h24_ajax_page_variants(match.group(1)):
+                dedupe_key = h24_ajax_dedupe_key(ajax_url)
+                if not ajax_url or dedupe_key in seen:
+                    continue
+                seen.add(dedupe_key)
+                urls.append(ajax_url)
     return urls
 
 
@@ -4015,8 +4050,9 @@ def collect_24h_highlights():
                 seen_pages.add(category_url)
                 page_urls.append(category_url)
         for ajax_url in extract_h24_ajax_urls(html_text):
-            if ajax_url not in seen_ajax and len(ajax_urls) < max(1, H24_AJAX_LIMIT):
-                seen_ajax.add(ajax_url)
+            ajax_key = h24_ajax_dedupe_key(ajax_url)
+            if ajax_key not in seen_ajax and len(ajax_urls) < max(1, H24_AJAX_LIMIT):
+                seen_ajax.add(ajax_key)
                 ajax_urls.append(ajax_url)
         for article_url in extract_h24_article_urls(html_text, base_url):
             if article_url in seen_articles:
@@ -4041,8 +4077,9 @@ def collect_24h_highlights():
         except Exception:
             continue
         for next_ajax_url in extract_h24_ajax_urls(html_text):
-            if next_ajax_url not in seen_ajax and len(ajax_urls) < max(1, H24_AJAX_LIMIT):
-                seen_ajax.add(next_ajax_url)
+            ajax_key = h24_ajax_dedupe_key(next_ajax_url)
+            if ajax_key not in seen_ajax and len(ajax_urls) < max(1, H24_AJAX_LIMIT):
+                seen_ajax.add(ajax_key)
                 ajax_urls.append(next_ajax_url)
         for article_url in extract_h24_article_urls(html_text, base_url):
             if article_url in seen_articles:
