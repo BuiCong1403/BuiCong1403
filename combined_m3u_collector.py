@@ -3550,6 +3550,10 @@ def clean_highlight_title(title):
     title = re.sub(r"^(?:xem\s+lại\s+video\s+)?h(?:igh|ight)light\s+", "", title, flags=re.I)
     title = re.sub(r"^(?:video\s+)?bóng\s+đá\s+", "", title, flags=re.I)
     title = re.sub(r"^(?:video\s+)?bong\s+da\s+", "", title, flags=re.I)
+    title = re.sub(r"^(?:video\s+)?bóng\s+chuyền\s+", "Bóng chuyền ", title, flags=re.I)
+    title = re.sub(r"^(?:video\s+)?bong\s+chuyen\s+", "Bóng chuyền ", title, flags=re.I)
+    title = re.sub(r"^kết\s+quả\s+bóng\s+đá\s+", "", title, flags=re.I)
+    title = re.sub(r"^ket\s+qua\s+bong\s+da\s+", "", title, flags=re.I)
     title = re.sub(r"^(?:video\s+)?tennis\s+", "Tennis ", title, flags=re.I)
     title = re.sub(r"\s+", " ", title).strip(" -|,")
     return title
@@ -3915,15 +3919,51 @@ def extract_h24_article_urls(html_text, base_url):
     urls = []
     seen = set()
     text = html.unescape(html_text or "")
-    for match in re.finditer(r"""href=["']([^"']*video[^"']+\.html)["']""", text, re.I):
-        article_url = urljoin(base_url, match.group(1)).split("#", 1)[0]
-        if "24h.com.vn" not in article_url or article_url in seen:
-            continue
-        if not any(part in article_url.lower() for part in ("/bong-da/", "/the-thao/")):
-            continue
-        seen.add(article_url)
-        urls.append(article_url)
+
+    patterns = (
+        r"""href=["']([^"']+\.html)["']""",
+        r'''"v_url"\s*:\s*"([^"]+\.html)"''',
+        r'''"url"\s*:\s*"([^"]+\.html)"''',
+    )
+    for pattern in patterns:
+        matches = re.finditer(pattern, text, re.I | re.S)
+        for match in matches:
+            raw_url = decode_json_string(match.group(1)).replace("\\/", "/")
+            article_url = urljoin(base_url, raw_url).split("#", 1)[0]
+            if "24h.com.vn" not in article_url or article_url in seen:
+                continue
+            if not any(part in article_url.lower() for part in ("/bong-da/", "/the-thao/", "/tennis", "/bong-chuyen")):
+                continue
+            seen.add(article_url)
+            urls.append(article_url)
     return urls
+
+
+def is_h24_highlight_article(article_url, title):
+    text = compact_text_key(f"{article_url} {title}")
+    needles = (
+        "videobongda",
+        "videotennis",
+        "videobongchuyen",
+        "videothethao",
+        "highlight",
+        "hightlight",
+    )
+    return any(needle in text for needle in needles)
+
+
+def prioritize_h24_article_urls(article_urls):
+    def rank(article_url):
+        key = compact_text_key(article_url)
+        if "videobongda" in key:
+            return 0
+        if any(token in key for token in ("videotennis", "videobongchuyen", "videothethao", "highlight", "hightlight")):
+            return 1
+        if "video" in key:
+            return 2
+        return 3
+
+    return sorted(article_urls, key=lambda article_url: (rank(article_url), article_url))
 
 
 def extract_h24_category_urls(html_text, base_url):
@@ -4094,7 +4134,10 @@ def collect_24h_highlights():
             html_text = fetch_text(article_url, headers=h24_headers(article_url), timeout=25)
         except Exception:
             return []
-        title = clean_highlight_title(title_from_html_page(html_text, title_from_url_slug(article_url) or "24h Highlight"))
+        raw_title = title_from_html_page(html_text, title_from_url_slug(article_url) or "24h Highlight")
+        if not is_h24_highlight_article(article_url, raw_title):
+            return []
+        title = clean_highlight_title(raw_title)
         stream_urls = extract_h24_m3u8_urls(html_text)
         media_dates = [h24_date_from_media_url(url) for url in stream_urls]
         event_date = next((date for date in media_dates if date), None) or h24_date_from_article_html(html_text)
@@ -4120,6 +4163,7 @@ def collect_24h_highlights():
         ]
 
     channels = []
+    article_urls = prioritize_h24_article_urls(article_urls)
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_article, article_url) for article_url in article_urls]
         for future in as_completed(futures):
