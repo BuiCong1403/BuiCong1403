@@ -60,7 +60,15 @@ KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.kh
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
 COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
 COLATV_API_URL = os.environ.get("COLATV_API", "https://api.cltvlv.com/api/matches")
-BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv12.com/")
+BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv15.com/")
+BIAOM_SITE_CANDIDATES = [
+    value.strip()
+    for value in os.environ.get(
+        "BIAOM_SITE_CANDIDATES",
+        "https://biaomtv15.com/,https://biaomtv14.com/,https://biaomtv13.com/,https://biaomtv12.com/,https://biaomtv.pro/",
+    ).split(",")
+    if value.strip()
+]
 LUONGSON_API_URL = os.environ.get("LUONGSON_API", "https://api-ls.cdnokvip.com/api/get-livestream-group")
 LUONGSON_MATCH_URL = os.environ.get("LUONGSON_MATCH", "https://api-ls.cdnokvip.com/api/match-detail?matchId=%s")
 SOCOLIVE_API_URL = os.environ.get("SOCOLIVE_API_URL", "https://json.vnres.co/matches.json?v=%d")
@@ -208,6 +216,7 @@ H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "240") or "240")
 H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "40") or "40")
 H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "80") or "80")
 H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "10") or "10")
+H24_TAKE_ALL_M3U8 = os.environ.get("H24_TAKE_ALL_M3U8", "1").strip().lower() not in {"0", "false", "no"}
 BONGDAPLUS_BASE_URL = os.environ.get("BONGDAPLUS_BASE_URL", "https://bongdaplus.vn/")
 BONGDAPLUS_HIGHLIGHT_DAYS_BACK = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_DAYS_BACK", "2") or "2")
 BONGDAPLUS_HIGHLIGHT_LIMIT = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_LIMIT", "120") or "120")
@@ -909,6 +918,16 @@ def best_24h_highlight_url(urls):
     return best_highlight_url(special_urls or candidates)
 
 
+def h24_stream_quality_label(url):
+    lower = clean_text(url).lower()
+    match = re.search(r"(2160|1080|720|576|480|360)p?", lower)
+    if match:
+        return match.group(1) + "p"
+    if lower.endswith(("playlist.m3u8", "master.m3u8", "index.m3u8")):
+        return "auto"
+    return ""
+
+
 SPORT_SOURCES = {
     "HoiQuan1",
     "HoiQuan2",
@@ -972,6 +991,7 @@ PREFERRED_OUTPUT_GROUPS = [
     "Highlight",
     "Gi\u1edd V\u00e0ng TV",
     "Vua S\u00e2n C\u1ecf TV",
+    "PhaoHoaTV",
     "Socolive TV",
     "CoLaTV",
     "BiaomTV",
@@ -1018,6 +1038,8 @@ def canonical_group_title(group):
     if not group:
         return group
     key = compact_text_key(group)
+    if key.startswith("tinhlagi"):
+        return remove_icons(group)
     spaced_key = text_key(group)
     for canonical, aliases in GROUP_CANONICAL_RULES:
         for alias in aliases:
@@ -1181,7 +1203,7 @@ def group_sort_rank(channel):
         if group == group_key(preferred_group):
             return index
     if group.startswith("tinhlagi"):
-        return len(PREFERRED_OUTPUT_GROUPS) + 10
+        return len(PREFERRED_OUTPUT_GROUPS) + 90
     return len(PREFERRED_OUTPUT_GROUPS) + 50
 
 
@@ -2134,17 +2156,29 @@ def biaom_nested_field_from_context(context, object_name, field):
 
 def collect_biaom():
     source = "BiaomTV"
-    site_url = BIAOM_SITE_URL.rstrip("/") + "/"
-    headers = {
-        "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
-        "Referer": site_url,
-    }
-    log(f"[{source}] Fetch home")
-    try:
-        html_text = fetch_text(site_url, headers=headers, timeout=30)
-    except Exception as exc:
-        log(f"[{source}] Error: {exc}")
-        return []
+    candidates = []
+    for candidate in [BIAOM_SITE_URL, *BIAOM_SITE_CANDIDATES]:
+        candidate = clean_text(candidate).rstrip("/") + "/"
+        if candidate and candidate not in candidates:
+            candidates.append(candidate)
+
+    html_text = ""
+    site_url = ""
+    headers = {}
+    for candidate in candidates:
+        headers = {
+            "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
+            "Referer": candidate,
+        }
+        log(f"[{source}] Fetch home {candidate}")
+        try:
+            html_text = fetch_text(candidate, headers=headers, timeout=20)
+        except Exception as exc:
+            log(f"[{source}] Error {candidate}: {exc}")
+            continue
+        if html_text:
+            site_url = candidate
+            break
     if not html_text:
         log(f"[{source}] Home not available")
         return []
@@ -2153,11 +2187,6 @@ def collect_biaom():
     seen_urls = set()
     for match in re.finditer(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*", html_text):
         stream_url = clean_text(decode_json_string(match.group(0)))
-        seen_key = source_stream_seen_key(source, stream_url, title, start_time)
-        if not is_valid_stream_url(stream_url) or seen_key in seen_urls:
-            continue
-        seen_urls.add(seen_key)
-
         context = html_text[max(0, match.start() - 1600) : match.start()]
         league = biaom_field_from_context(context, "league_title") or biaom_nested_field_from_context(context, "league", "name")
         home = biaom_field_from_context(context, "localteam_title") or biaom_nested_field_from_context(context, "home", "name")
@@ -2179,6 +2208,11 @@ def collect_biaom():
         if league:
             title_parts.append(f"[{league}]")
         title = " ".join(title_parts) or title_from_stream_url(stream_url, source)
+
+        seen_key = source_stream_seen_key(source, stream_url, title, start_time)
+        if not is_valid_stream_url(stream_url) or seen_key in seen_urls:
+            continue
+        seen_urls.add(seen_key)
 
         channels.append(
             {
@@ -4063,13 +4097,24 @@ def collect_24h_highlights():
     allowed_dates = h24_allowed_highlight_dates()
     page_urls = [
         urljoin(base_url, "bong-da-c48.html"),
+        urljoin(base_url, "bong-da-ngoai-hang-anh-c149.html"),
+        urljoin(base_url, "bong-da-tay-ban-nha-c151.html"),
+        urljoin(base_url, "bong-da-duc-c152.html"),
+        urljoin(base_url, "bong-da-phap-c344.html"),
+        urljoin(base_url, "bong-da-y-c150.html"),
+        urljoin(base_url, "bong-da-viet-nam-c182.html"),
+        urljoin(base_url, "cac-giai-bong-da-khac-c315.html"),
+        urljoin(base_url, "cup-c1-champions-league-c153.html"),
         urljoin(base_url, "video-bong-da-c297.html"),
         urljoin(base_url, "video-ban-thang-c297.html"),
         urljoin(base_url, "video-bong-da-hot-c508.html"),
         urljoin(base_url, "video-highlight-c953.html"),
         urljoin(base_url, "video-highlight-ngoai-hang-anh-c149e5903.html"),
+        urljoin(base_url, "clip-1-phut-bong-da-c946.html"),
         urljoin(base_url, "video-tennis-c448.html"),
         urljoin(base_url, "the-thao-c101.html"),
+        urljoin(base_url, "tennis-c119.html"),
+        urljoin(base_url, "bong-chuyen-c796.html"),
     ]
     seen_pages = set(page_urls)
     ajax_urls = []
@@ -4135,23 +4180,34 @@ def collect_24h_highlights():
         except Exception:
             return []
         raw_title = title_from_html_page(html_text, title_from_url_slug(article_url) or "24h Highlight")
-        if not is_h24_highlight_article(article_url, raw_title):
-            return []
         title = clean_highlight_title(raw_title)
         stream_urls = extract_h24_m3u8_urls(html_text)
-        media_dates = [h24_date_from_media_url(url) for url in stream_urls]
-        event_date = next((date for date in media_dates if date), None) or h24_date_from_article_html(html_text)
-        if event_date not in allowed_dates:
+        article_date = h24_date_from_article_html(html_text)
+        valid_streams = []
+        for stream_url in stream_urls:
+            media_date = h24_date_from_media_url(stream_url)
+            event_date = media_date or article_date
+            if event_date not in allowed_dates:
+                continue
+            valid_streams.append((stream_url, event_date))
+        if not valid_streams:
             return []
-        stream_url = best_24h_highlight_url(stream_urls)
-        if not stream_url:
-            return []
+        if not H24_TAKE_ALL_M3U8:
+            stream_url = best_24h_highlight_url([url for url, _event_date in valid_streams])
+            valid_streams = [(stream_url, next(event_date for url, event_date in valid_streams if url == stream_url))]
         logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
         logo = logo_match.group(1) if logo_match else ""
-        return [
-            {
+        results = []
+        for index, (stream_url, event_date) in enumerate(valid_streams, start=1):
+            item_title = title
+            if H24_TAKE_ALL_M3U8 and len(valid_streams) > 1:
+                quality = h24_stream_quality_label(stream_url)
+                suffix = quality or f"link {index}"
+                item_title = f"{title} [{suffix}]"
+            results.append(
+                {
                 "source": source,
-                "name": title,
+                "name": item_title,
                 "group": "Highlight | 24h",
                 "logo": logo,
                 "stream_url": stream_url,
@@ -4159,8 +4215,9 @@ def collect_24h_highlights():
                 "user_agent": UA,
                 "event_date": event_date,
                 "skip_event_filter": True,
-            }
-        ]
+                }
+            )
+        return results
 
     channels = []
     article_urls = prioritize_h24_article_urls(article_urls)
