@@ -213,15 +213,15 @@ NINETY_PHUTZI_HIGHLIGHT_PAGES = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_PAGE
 NINETY_PHUTZI_HIGHLIGHT_LIMIT = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_LIMIT", "200") or "200")
 H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
 H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "7") or "7")
-H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "240") or "240")
+H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "360") or "360")
 H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "40") or "40")
 H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "80") or "80")
 H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "10") or "10")
-H24_SITEMAP_LIMIT = int(os.environ.get("H24_SITEMAP_LIMIT", "180") or "180")
+H24_SITEMAP_LIMIT = int(os.environ.get("H24_SITEMAP_LIMIT", "260") or "260")
 H24_TAKE_ALL_M3U8 = os.environ.get("H24_TAKE_ALL_M3U8", "1").strip().lower() not in {"0", "false", "no"}
 H24_INCLUDE_MP4 = os.environ.get("H24_INCLUDE_MP4", "1").strip().lower() not in {"0", "false", "no"}
-H24_VIDEO_SITEMAP_LIMIT = int(os.environ.get("H24_VIDEO_SITEMAP_LIMIT", "260") or "260")
-H24_VIDEO_SITEMAP_FILES = int(os.environ.get("H24_VIDEO_SITEMAP_FILES", "8") or "8")
+H24_VIDEO_SITEMAP_LIMIT = int(os.environ.get("H24_VIDEO_SITEMAP_LIMIT", "420") or "420")
+H24_VIDEO_SITEMAP_FILES = int(os.environ.get("H24_VIDEO_SITEMAP_FILES", "12") or "12")
 WRITE_HIGHLIGHT_M3U = os.environ.get("WRITE_HIGHLIGHT_M3U", "1").strip().lower() not in {"0", "false", "no"}
 INCLUDE_HIGHLIGHT_IN_MAIN = os.environ.get("INCLUDE_HIGHLIGHT_IN_MAIN", "1").strip().lower() not in {"0", "false", "no"}
 BONGDAPLUS_BASE_URL = os.environ.get("BONGDAPLUS_BASE_URL", "https://bongdaplus.vn/")
@@ -4246,6 +4246,32 @@ def collect_24h_highlights():
     seen_ajax = set()
     article_urls = []
     seen_articles = set()
+
+    def add_article_url(article_url):
+        if not article_url or article_url in seen_articles:
+            return False
+        if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+            return False
+        seen_articles.add(article_url)
+        article_urls.append(article_url)
+        return True
+
+    for sitemap_url in (
+        urljoin(base_url, "sitemap-article-daily.xml"),
+        urljoin(base_url, "sitemap-news.xml"),
+    ):
+        if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+            break
+        log(f"[{source}] Fetch article sitemap {sitemap_url}")
+        try:
+            sitemap_text = fetch_text(sitemap_url, headers=h24_headers(base_url), timeout=30)
+        except Exception:
+            continue
+        for article_url in extract_h24_sitemap_article_urls(sitemap_text):
+            add_article_url(article_url)
+            if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+                break
+
     page_index = 0
     while page_index < len(page_urls) and page_index < max(1, H24_CATEGORY_LIMIT):
         page_url = page_urls[page_index]
@@ -4265,10 +4291,7 @@ def collect_24h_highlights():
                 seen_ajax.add(ajax_key)
                 ajax_urls.append(ajax_url)
         for article_url in extract_h24_article_urls(html_text, base_url):
-            if article_url in seen_articles:
-                continue
-            seen_articles.add(article_url)
-            article_urls.append(article_url)
+            add_article_url(article_url)
             if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
                 break
         if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
@@ -4292,27 +4315,23 @@ def collect_24h_highlights():
                 seen_ajax.add(ajax_key)
                 ajax_urls.append(next_ajax_url)
         for article_url in extract_h24_article_urls(html_text, base_url):
-            if article_url in seen_articles:
-                continue
-            seen_articles.add(article_url)
-            article_urls.append(article_url)
+            add_article_url(article_url)
             if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
                 break
 
     if len(article_urls) < max(1, H24_HIGHLIGHT_LIMIT):
-        sitemap_url = urljoin(base_url, "sitemap-article-daily.xml")
-        log(f"[{source}] Fetch sitemap {sitemap_url}")
-        try:
-            sitemap_text = fetch_text(sitemap_url, headers=h24_headers(base_url), timeout=30)
-        except Exception:
-            sitemap_text = ""
-        for article_url in extract_h24_sitemap_article_urls(sitemap_text):
-            if article_url in seen_articles:
-                continue
-            seen_articles.add(article_url)
-            article_urls.append(article_url)
+        for sitemap_url in h24_video_sitemap_urls():
             if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
                 break
+            log(f"[{source}] Fetch video article sitemap {sitemap_url}")
+            try:
+                sitemap_text = fetch_text(sitemap_url, headers=h24_headers(base_url), timeout=30)
+            except Exception:
+                continue
+            for article_url in extract_h24_sitemap_article_urls(sitemap_text):
+                add_article_url(article_url)
+                if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+                    break
 
     sitemap_channels = []
     if H24_INCLUDE_MP4:
