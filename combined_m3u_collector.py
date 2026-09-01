@@ -836,7 +836,10 @@ def channel_key(channel):
 def stream_dedupe_key(channel):
     url = clean_text(channel.get("stream_url"))
     if channel.get("source") == "24hHighlight":
-        return (h24_variant_family_key(url),)
+        title_key = h24_title_family_key(channel.get("name"))
+        if title_key:
+            return ("24hHighlight", title_key)
+        return ("24hHighlight", h24_variant_family_key(url))
     if channel.get("source") in MULTI_EVENT_STREAM_SOURCES:
         return (
             url,
@@ -927,6 +930,27 @@ def best_24h_highlight_url(urls):
     return best_highlight_url(special_urls or candidates)
 
 
+def h24_highlight_score(url):
+    url = clean_text(url)
+    if not url:
+        return -1
+    lower = url.lower().split("?", 1)[0]
+    score = 0
+    if "cp_special_" in lower:
+        score += 100
+    if lower.endswith(".m3u8"):
+        score += 40
+    elif lower.endswith(".mp4"):
+        score += 20
+    for quality, value in (("2160", 90), ("1080", 80), ("720", 70), ("576", 60), ("480", 50), ("360", 40)):
+        if quality in lower:
+            score += value
+            break
+    if lower.endswith(("playlist.m3u8", "master.m3u8", "index.m3u8")):
+        score += 35
+    return score
+
+
 def h24_stream_quality_label(url):
     lower = clean_text(url).lower()
     match = re.search(r"(2160|1080|720|576|480|360)p?", lower)
@@ -944,12 +968,21 @@ def h24_variant_family_key(url):
     return parsed._replace(path=path, query="", fragment="").geturl()
 
 
+def h24_title_family_key(title):
+    key = text_key(title)
+    key = re.sub(r"\s*\[(?:\d{3,4}p|auto|link\s*\d+)\]\s*$", "", key).strip()
+    key = re.sub(r"\s*\((?:bong da|bong da ngoai hang anh|ngoai hang anh|la liga|bundesliga|ligue 1|the thao|tennis|us open|giai chau a)\)\s*$", "", key).strip()
+    key = re.sub(r"\b(?:video bong da|video ban thang|highlight|hightlight)\b", " ", key)
+    key = re.sub(r"\s+", " ", key).strip()
+    return compact_text_key(key)
+
+
 def best_h24_stream_variants(streams):
     by_family = {}
     for stream_url, event_date in streams:
         family_key = h24_variant_family_key(stream_url)
         current = by_family.get(family_key)
-        if not current or best_highlight_url([current[0], stream_url]) == stream_url:
+        if not current or h24_highlight_score(stream_url) > h24_highlight_score(current[0]):
             by_family[family_key] = (stream_url, event_date)
     return list(by_family.values())
 
@@ -1252,6 +1285,10 @@ def dedupe_and_sort_channels(channels):
         if dedupe_key in seen_urls:
             current_index = seen_urls[dedupe_key]
             current = deduped[current_index]
+            if channel.get("source") == "24hHighlight" and current.get("source") == "24hHighlight":
+                if h24_highlight_score(channel.get("stream_url")) > h24_highlight_score(current.get("stream_url")):
+                    deduped[current_index] = channel
+                continue
             current_header_score = bool(clean_text(current.get("referer"))) + bool(clean_text(current.get("user_agent")))
             new_header_score = bool(clean_text(channel.get("referer"))) + bool(clean_text(channel.get("user_agent")))
             current_priority = channel_priority(current)
