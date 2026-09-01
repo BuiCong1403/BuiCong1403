@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: "0 * * * *"
 
+concurrency:
+  group: update-m3u-main
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -15,6 +19,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -49,5 +55,12 @@ jobs:
             echo "No generated changes to commit."
           else
             git commit -m "Update m3u files"
+            for i in 1 2 3; do
+              if git push; then
+                exit 0
+              fi
+              echo "Push failed, rebasing on latest origin/main and retrying..."
+              git pull --rebase origin main
+            done
             git push
           fi
