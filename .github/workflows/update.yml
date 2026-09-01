@@ -3,7 +3,7 @@ name: Update M3U
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "0 * * * *"
 
 permissions:
   contents: write
@@ -31,11 +31,14 @@ jobs:
           python combined_m3u_collector.py
           rm -f sport.m3u
           rm -f tinhlagi.m3u thethaocoban.m3u
+          rm -f export_reference_m3u.bat
           test -f all.m3u
           test -s all.m3u
           test -f ott.m3u
           test -s ott.m3u
-          ls -lh all.m3u ott.m3u
+          test -f highlight.m3u
+          test -s highlight.m3u
+          ls -lh all.m3u ott.m3u highlight.m3u
 
       - name: Commit generated files
         run: |
