@@ -33,6 +33,7 @@ except Exception:
 BASE_DIR = Path(__file__).resolve().parent
 ALL_M3U = BASE_DIR / "all.m3u"
 OTT_M3U = BASE_DIR / "ott.m3u"
+HIGHLIGHT_M3U = BASE_DIR / "highlight.m3u"
 TINHLAGI_M3U = BASE_DIR / "tinhlagi.m3u"
 THETHAOCOBAN_M3U = BASE_DIR / "thethaocoban.m3u"
 TZ_VN = timezone(timedelta(hours=7))
@@ -211,7 +212,7 @@ NINETY_PHUTZI_HIGHLIGHT_DAYS_BACK = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_
 NINETY_PHUTZI_HIGHLIGHT_PAGES = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_PAGES", "4") or "4")
 NINETY_PHUTZI_HIGHLIGHT_LIMIT = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_LIMIT", "200") or "200")
 H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
-H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "2") or "2")
+H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "7") or "7")
 H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "240") or "240")
 H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "40") or "40")
 H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "80") or "80")
@@ -220,7 +221,9 @@ H24_SITEMAP_LIMIT = int(os.environ.get("H24_SITEMAP_LIMIT", "180") or "180")
 H24_TAKE_ALL_M3U8 = os.environ.get("H24_TAKE_ALL_M3U8", "1").strip().lower() not in {"0", "false", "no"}
 H24_INCLUDE_MP4 = os.environ.get("H24_INCLUDE_MP4", "1").strip().lower() not in {"0", "false", "no"}
 H24_VIDEO_SITEMAP_LIMIT = int(os.environ.get("H24_VIDEO_SITEMAP_LIMIT", "260") or "260")
-H24_VIDEO_SITEMAP_FILES = int(os.environ.get("H24_VIDEO_SITEMAP_FILES", "4") or "4")
+H24_VIDEO_SITEMAP_FILES = int(os.environ.get("H24_VIDEO_SITEMAP_FILES", "8") or "8")
+WRITE_HIGHLIGHT_M3U = os.environ.get("WRITE_HIGHLIGHT_M3U", "1").strip().lower() not in {"0", "false", "no"}
+INCLUDE_HIGHLIGHT_IN_MAIN = os.environ.get("INCLUDE_HIGHLIGHT_IN_MAIN", "1").strip().lower() not in {"0", "false", "no"}
 BONGDAPLUS_BASE_URL = os.environ.get("BONGDAPLUS_BASE_URL", "https://bongdaplus.vn/")
 BONGDAPLUS_HIGHLIGHT_DAYS_BACK = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_DAYS_BACK", "2") or "2")
 BONGDAPLUS_HIGHLIGHT_LIMIT = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_LIMIT", "120") or "120")
@@ -5294,6 +5297,27 @@ def collect_missing_source(name):
     return []
 
 
+def collect_source_channels(source_name, collector):
+    try:
+        channels = collector()
+    except Exception as exc:
+        log(f"[{source_name}] Fatal error: {exc}")
+        channels = []
+
+    unique = []
+    seen = set()
+    for channel in channels:
+        key = channel_key(channel)
+        if not key[0] or key in seen:
+            continue
+        seen.add(key)
+        unique.append(channel)
+
+    selected = verify_live_channels(unique)
+    selected = filter_current_and_future_events(selected)
+    return dedupe_and_sort_channels(selected)
+
+
 def main():
     log("=" * 60)
     mode = "verify live links" if VERIFY_STREAMS else "raw m3u8 collection"
@@ -5393,7 +5417,6 @@ def main():
         ("MebongTV", collect_mebongtv),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
-        ("24hHighlight", collect_24h_highlights),
         (
             "TV365KidsInternational",
             lambda: collect_m3u_playlist(
@@ -5430,26 +5453,26 @@ def main():
     per_source_counts = {}
     for source_name, collector in collectors:
         log("")
-        try:
-            channels = collector()
-        except Exception as exc:
-            log(f"[{source_name}] Fatal error: {exc}")
-            channels = []
-        unique = []
-        seen = set()
-        for channel in channels:
-            key = channel_key(channel)
-            if not key[0] or key in seen:
-                continue
-            seen.add(key)
-            unique.append(channel)
-
-        selected = verify_live_channels(unique)
+        selected = collect_source_channels(source_name, collector)
         per_source_counts[source_name] = len(selected)
         if selected:
             all_channels.extend(selected)
 
-    all_channels = filter_current_and_future_events(all_channels)
+    base_deduped_with_ott = dedupe_and_sort_channels(all_channels)
+    base_deduped, _base_flv_channels = split_ott_channels(base_deduped_with_ott)
+    base_ott_deduped = select_ott_compatible_channels(base_deduped_with_ott)
+    write_m3u(ALL_M3U, base_deduped)
+    write_ott_m3u(OTT_M3U, base_ott_deduped)
+
+    highlight_channels = []
+    log("")
+    highlight_channels = collect_source_channels("24hHighlight", collect_24h_highlights)
+    per_source_counts["24hHighlight"] = len(highlight_channels)
+    if WRITE_HIGHLIGHT_M3U:
+        write_m3u(HIGHLIGHT_M3U, highlight_channels)
+    if INCLUDE_HIGHLIGHT_IN_MAIN and highlight_channels:
+        all_channels.extend(highlight_channels)
+
     deduped_with_ott = dedupe_and_sort_channels(all_channels)
     deduped, _flv_channels = split_ott_channels(deduped_with_ott)
     ott_deduped = select_ott_compatible_channels(deduped_with_ott)
@@ -5465,6 +5488,8 @@ def main():
     log("")
     log(f"[DONE] Total unique links: {len(deduped)}")
     log(f"[DONE] OTT unique links: {len(ott_deduped)}")
+    if WRITE_HIGHLIGHT_M3U:
+        log(f"[DONE] Highlight unique links: {len(highlight_channels)}")
     if WRITE_RAW_REFERENCE_M3U:
         log(f"[DONE] TinhLaGi raw links: {tinhlagi_raw_count}")
         log(f"[DONE] TheThaoCoBan raw links: {thethaocoban_raw_count}")
@@ -5472,6 +5497,8 @@ def main():
         log(f"[DONE] {source_name}: {count}")
     log(f"[DONE] M3U: {ALL_M3U}")
     log(f"[DONE] OTT M3U: {OTT_M3U}")
+    if WRITE_HIGHLIGHT_M3U:
+        log(f"[DONE] HIGHLIGHT M3U: {HIGHLIGHT_M3U}")
     if WRITE_RAW_REFERENCE_M3U:
         log(f"[DONE] TINHLAGI M3U: {TINHLAGI_M3U}")
         log(f"[DONE] THETHAOCOBAN M3U: {THETHAOCOBAN_M3U}")
