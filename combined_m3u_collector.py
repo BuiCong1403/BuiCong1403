@@ -216,7 +216,11 @@ H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "240") or "240")
 H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "40") or "40")
 H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "80") or "80")
 H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "10") or "10")
+H24_SITEMAP_LIMIT = int(os.environ.get("H24_SITEMAP_LIMIT", "180") or "180")
 H24_TAKE_ALL_M3U8 = os.environ.get("H24_TAKE_ALL_M3U8", "1").strip().lower() not in {"0", "false", "no"}
+H24_INCLUDE_MP4 = os.environ.get("H24_INCLUDE_MP4", "1").strip().lower() not in {"0", "false", "no"}
+H24_VIDEO_SITEMAP_LIMIT = int(os.environ.get("H24_VIDEO_SITEMAP_LIMIT", "260") or "260")
+H24_VIDEO_SITEMAP_FILES = int(os.environ.get("H24_VIDEO_SITEMAP_FILES", "4") or "4")
 BONGDAPLUS_BASE_URL = os.environ.get("BONGDAPLUS_BASE_URL", "https://bongdaplus.vn/")
 BONGDAPLUS_HIGHLIGHT_DAYS_BACK = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_DAYS_BACK", "2") or "2")
 BONGDAPLUS_HIGHLIGHT_LIMIT = int(os.environ.get("BONGDAPLUS_HIGHLIGHT_LIMIT", "120") or "120")
@@ -828,6 +832,8 @@ def channel_key(channel):
 
 def stream_dedupe_key(channel):
     url = clean_text(channel.get("stream_url"))
+    if channel.get("source") == "24hHighlight":
+        return (h24_variant_family_key(url),)
     if channel.get("source") in MULTI_EVENT_STREAM_SOURCES:
         return (
             url,
@@ -926,6 +932,23 @@ def h24_stream_quality_label(url):
     if lower.endswith(("playlist.m3u8", "master.m3u8", "index.m3u8")):
         return "auto"
     return ""
+
+
+def h24_variant_family_key(url):
+    parsed = urlparse(clean_text(url))
+    path = unquote(parsed.path).lower()
+    path = re.sub(r"_(?:2160|1080|720|576|480|360)p?(?=\.m3u8$)", "", path)
+    return parsed._replace(path=path, query="", fragment="").geturl()
+
+
+def best_h24_stream_variants(streams):
+    by_family = {}
+    for stream_url, event_date in streams:
+        family_key = h24_variant_family_key(stream_url)
+        current = by_family.get(family_key)
+        if not current or best_highlight_url([current[0], stream_url]) == stream_url:
+            by_family[family_key] = (stream_url, event_date)
+    return list(by_family.values())
 
 
 SPORT_SOURCES = {
@@ -3973,6 +3996,96 @@ def extract_h24_article_urls(html_text, base_url):
     return urls
 
 
+def extract_h24_sitemap_article_urls(xml_text):
+    urls = []
+    seen = set()
+    text = html.unescape(xml_text or "")
+    for match in re.finditer(r"<loc>\s*([^<]+\.html)\s*</loc>", text, re.I):
+        article_url = clean_text(match.group(1))
+        if not article_url or article_url in seen:
+            continue
+        lower_url = article_url.lower()
+        if "24h.com.vn" not in lower_url:
+            continue
+        if not any(part in lower_url for part in ("/bong-da/", "/the-thao/", "/tennis", "/bong-chuyen")):
+            continue
+        seen.add(article_url)
+        urls.append(article_url)
+        if len(urls) >= max(1, H24_SITEMAP_LIMIT):
+            break
+    return urls
+
+
+def extract_h24_video_sitemap_urls(xml_text):
+    results = []
+    seen = set()
+    text = html.unescape(xml_text or "")
+    for block_match in re.finditer(r"<url>\s*(.*?)\s*</url>", text, re.I | re.S):
+        block = decode_json_string(block_match.group(1))
+        loc_match = re.search(r"<loc>\s*([^<]+)\s*</loc>", block, re.I)
+        media_match = re.search(r"<video:content_loc>\s*([^<]+)\s*</video:content_loc>", block, re.I)
+        title_match = re.search(r"<video:title>\s*([^<]+)\s*</video:title>", block, re.I)
+        thumb_match = re.search(r"<video:thumbnail_loc>\s*([^<]+)\s*</video:thumbnail_loc>", block, re.I)
+        pub_match = re.search(r"<video:publication_date>\s*([^<]+)\s*</video:publication_date>", block, re.I)
+        category_match = re.search(r"<video:category>\s*([^<]+)\s*</video:category>", block, re.I)
+        if not media_match:
+            continue
+        article_url = clean_text(loc_match.group(1) if loc_match else "")
+        media_url = clean_text(media_match.group(1).replace("\\/", "/"))
+        lower_article = article_url.lower()
+        lower_media = media_url.lower()
+        if "24h.com.vn" not in lower_article and "cdn.24h.com.vn" not in lower_media:
+            continue
+        if not any(part in lower_article for part in ("/bong-da/", "/the-thao/", "/tennis", "/bong-chuyen")):
+            continue
+        if not H24_INCLUDE_MP4 and lower_media.split("?", 1)[0].endswith(".mp4"):
+            continue
+        if not is_valid_highlight_url(media_url):
+            continue
+        media_date = h24_date_from_media_url(media_url)
+        pub_dt = parse_iso_to_ict_datetime(pub_match.group(1)) if pub_match else None
+        event_date = media_date or (pub_dt.date() if pub_dt else None)
+        if event_date not in h24_allowed_highlight_dates():
+            continue
+        family_key = h24_variant_family_key(media_url)
+        if family_key in seen:
+            continue
+        seen.add(family_key)
+        title = clean_highlight_title(title_match.group(1) if title_match else title_from_url_slug(article_url) or "24h Highlight")
+        category = clean_text(category_match.group(1) if category_match else "")
+        if category and category.lower() not in text_key(title):
+            title = f"{title} ({category})"
+        results.append(
+            {
+                "article_url": article_url,
+                "media_url": media_url,
+                "title": title,
+                "logo": clean_text(thumb_match.group(1) if thumb_match else ""),
+                "event_date": event_date,
+            }
+        )
+        if len(results) >= max(1, H24_VIDEO_SITEMAP_LIMIT):
+            break
+    return results
+
+
+def h24_video_sitemap_urls():
+    base_url = H24_BASE_URL.rstrip("/") + "/"
+    index_url = urljoin(base_url, "sitemap-video.xml")
+    try:
+        index_text = fetch_text(index_url, headers=h24_headers(base_url), timeout=30)
+    except Exception:
+        return []
+    urls = []
+    for match in re.finditer(r"<loc>\s*([^<]+sitemap-video-[^<]+\.xml)\s*</loc>", index_text, re.I):
+        sitemap_url = clean_text(match.group(1))
+        if sitemap_url and sitemap_url not in urls:
+            urls.append(sitemap_url)
+        if len(urls) >= max(1, H24_VIDEO_SITEMAP_FILES):
+            break
+    return urls
+
+
 def is_h24_highlight_article(article_url, title):
     text = compact_text_key(f"{article_url} {title}")
     needles = (
@@ -4079,16 +4192,25 @@ def extract_h24_ajax_urls(html_text):
     return urls
 
 
-def extract_h24_m3u8_urls(html_text):
+def extract_h24_media_urls(html_text):
     urls = []
     seen = set()
     text = html.unescape(decode_json_string(html_text or ""))
-    for match in re.finditer(r"https?://cdn\.24h\.com\.vn/[^\s'\"<>{}\\,\]]+?\.m3u8(?:\?[^\s'\"<>{}\\,\]]*)?", text, re.I):
+    media_pattern = r"https?://cdn\.24h\.com\.vn/[^\s'\"<>{}\\,\]]+?\.(?:m3u8|mp4)(?:\?[^\s'\"<>{}\\,\]]*)?"
+    if not H24_INCLUDE_MP4:
+        media_pattern = r"https?://cdn\.24h\.com\.vn/[^\s'\"<>{}\\,\]]+?\.m3u8(?:\?[^\s'\"<>{}\\,\]]*)?"
+    for match in re.finditer(media_pattern, text, re.I):
         stream_url = clean_text(match.group(0).replace("\\/", "/")).rstrip(".,);]")
+        if "/videoclip/" not in stream_url.lower():
+            continue
         if is_valid_highlight_url(stream_url) and stream_url not in seen:
             seen.add(stream_url)
             urls.append(stream_url)
     return urls
+
+
+def extract_h24_m3u8_urls(html_text):
+    return [url for url in extract_h24_media_urls(html_text) if is_hls_url(url)]
 
 
 def collect_24h_highlights():
@@ -4174,6 +4296,49 @@ def collect_24h_highlights():
             if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
                 break
 
+    if len(article_urls) < max(1, H24_HIGHLIGHT_LIMIT):
+        sitemap_url = urljoin(base_url, "sitemap-article-daily.xml")
+        log(f"[{source}] Fetch sitemap {sitemap_url}")
+        try:
+            sitemap_text = fetch_text(sitemap_url, headers=h24_headers(base_url), timeout=30)
+        except Exception:
+            sitemap_text = ""
+        for article_url in extract_h24_sitemap_article_urls(sitemap_text):
+            if article_url in seen_articles:
+                continue
+            seen_articles.add(article_url)
+            article_urls.append(article_url)
+            if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+                break
+
+    sitemap_channels = []
+    if H24_INCLUDE_MP4:
+        seen_sitemap_media = set()
+        for sitemap_url in h24_video_sitemap_urls():
+            log(f"[{source}] Fetch video sitemap {sitemap_url}")
+            try:
+                video_sitemap_text = fetch_text(sitemap_url, headers=h24_headers(base_url), timeout=30)
+            except Exception:
+                continue
+            for item in extract_h24_video_sitemap_urls(video_sitemap_text):
+                media_key = h24_variant_family_key(item.get("media_url"))
+                if media_key in seen_sitemap_media:
+                    continue
+                seen_sitemap_media.add(media_key)
+                sitemap_channels.append(
+                    {
+                        "source": source,
+                        "name": item.get("title") or "24h Highlight",
+                        "group": "Highlight | 24h",
+                        "logo": item.get("logo") or "",
+                        "stream_url": item.get("media_url") or "",
+                        "referer": item.get("article_url") or base_url,
+                        "user_agent": UA,
+                        "event_date": item.get("event_date"),
+                        "skip_event_filter": True,
+                    }
+                )
+
     def collect_article(article_url):
         try:
             html_text = fetch_text(article_url, headers=h24_headers(article_url), timeout=25)
@@ -4181,7 +4346,7 @@ def collect_24h_highlights():
             return []
         raw_title = title_from_html_page(html_text, title_from_url_slug(article_url) or "24h Highlight")
         title = clean_highlight_title(raw_title)
-        stream_urls = extract_h24_m3u8_urls(html_text)
+        stream_urls = extract_h24_media_urls(html_text)
         article_date = h24_date_from_article_html(html_text)
         valid_streams = []
         for stream_url in stream_urls:
@@ -4195,6 +4360,8 @@ def collect_24h_highlights():
         if not H24_TAKE_ALL_M3U8:
             stream_url = best_24h_highlight_url([url for url, _event_date in valid_streams])
             valid_streams = [(stream_url, next(event_date for url, event_date in valid_streams if url == stream_url))]
+        else:
+            valid_streams = best_h24_stream_variants(valid_streams)
         logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
         logo = logo_match.group(1) if logo_match else ""
         results = []
@@ -4220,6 +4387,7 @@ def collect_24h_highlights():
         return results
 
     channels = []
+    channels.extend(sitemap_channels)
     article_urls = prioritize_h24_article_urls(article_urls)
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_article, article_url) for article_url in article_urls]
