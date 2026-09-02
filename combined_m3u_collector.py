@@ -222,6 +222,14 @@ H24_TAKE_ALL_M3U8 = os.environ.get("H24_TAKE_ALL_M3U8", "1").strip().lower() not
 H24_INCLUDE_MP4 = os.environ.get("H24_INCLUDE_MP4", "1").strip().lower() not in {"0", "false", "no"}
 H24_VIDEO_SITEMAP_LIMIT = int(os.environ.get("H24_VIDEO_SITEMAP_LIMIT", "420") or "420")
 H24_VIDEO_SITEMAP_FILES = int(os.environ.get("H24_VIDEO_SITEMAP_FILES", "12") or "12")
+HIGHLIGHT_MIN_GOOD_COUNT = int(os.environ.get("HIGHLIGHT_MIN_GOOD_COUNT", "30") or "30")
+HIGHLIGHT_KEEP_PREVIOUS_ON_LOW = (
+    os.environ.get("HIGHLIGHT_KEEP_PREVIOUS_ON_LOW", "1").strip().lower() not in {"0", "false", "no"}
+)
+PREVIOUS_HIGHLIGHT_M3U_URL = os.environ.get(
+    "PREVIOUS_HIGHLIGHT_M3U_URL",
+    "https://raw.githubusercontent.com/BuiCong1403/BuiCong1403/refs/heads/main/highlight.m3u",
+)
 WRITE_HIGHLIGHT_M3U = os.environ.get("WRITE_HIGHLIGHT_M3U", "1").strip().lower() not in {"0", "false", "no"}
 INCLUDE_HIGHLIGHT_IN_MAIN = os.environ.get("INCLUDE_HIGHLIGHT_IN_MAIN", "1").strip().lower() not in {"0", "false", "no"}
 BONGDAPLUS_BASE_URL = os.environ.get("BONGDAPLUS_BASE_URL", "https://bongdaplus.vn/")
@@ -975,6 +983,45 @@ def h24_title_family_key(title):
     key = re.sub(r"\b(?:video bong da|video ban thang|highlight|hightlight)\b", " ", key)
     key = re.sub(r"\s+", " ", key).strip()
     return compact_text_key(key)
+
+
+def h24_title_quality_score(title):
+    key = text_key(title)
+    score = 0
+    if re.search(r"\b(?:vs|v)\b", key) or " - " in clean_text(title):
+        score += 80
+    if any(token in key for token in ("ngoai hang anh", "la liga", "bundesliga", "ligue 1", "tennis", "us open")):
+        score += 25
+    if any(token in key for token in ("tin nong", "clip tin nong", "clip 1 phut", "can canh", "nong bang xep hang")):
+        score -= 25
+    return score
+
+
+def h24_channel_score(channel):
+    return h24_highlight_score(channel.get("stream_url")) + h24_title_quality_score(channel.get("name"))
+
+
+def dedupe_h24_highlight_channels(channels):
+    by_url = {}
+    for channel in channels:
+        url_key = h24_variant_family_key(channel.get("stream_url"))
+        if not url_key:
+            continue
+        current = by_url.get(url_key)
+        if not current or h24_channel_score(channel) > h24_channel_score(current):
+            by_url[url_key] = channel
+
+    by_title = {}
+    for channel in by_url.values():
+        title_key = h24_title_family_key(channel.get("name"))
+        if not title_key:
+            by_title[h24_variant_family_key(channel.get("stream_url"))] = channel
+            continue
+        current = by_title.get(title_key)
+        if not current or h24_channel_score(channel) > h24_channel_score(current):
+            by_title[title_key] = channel
+
+    return list(by_title.values())
 
 
 def best_h24_stream_variants(streams):
@@ -2456,6 +2503,37 @@ def collect_m3u_playlist(
             )
     log(f"[{source}] {len(channels)} raw links")
     return channels
+
+
+def collect_previous_highlight_playlist():
+    if not PREVIOUS_HIGHLIGHT_M3U_URL:
+        return []
+    previous = collect_m3u_playlist(
+        "PreviousHighlight",
+        PREVIOUS_HIGHLIGHT_M3U_URL,
+        "Highlight",
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=45,
+        retries=2,
+        default_referer_to_playlist=False,
+        user_agent=UA,
+        preserve_extinf=False,
+    )
+    allowed_dates = h24_allowed_highlight_dates()
+    channels = []
+    for channel in previous:
+        stream_url = clean_text(channel.get("stream_url"))
+        media_date = h24_date_from_media_url(stream_url)
+        if media_date and media_date not in allowed_dates:
+            continue
+        channel["source"] = "24hHighlight"
+        channel["group"] = "Highlight"
+        if not clean_text(channel.get("referer")):
+            channel["referer"] = H24_BASE_URL.rstrip("/") + "/"
+        channel["skip_event_filter"] = True
+        channels.append(channel)
+    return dedupe_h24_highlight_channels(channels)
 
 
 def collect_chuoichien():
@@ -4456,8 +4534,9 @@ def collect_24h_highlights():
             except Exception:
                 continue
 
-    log(f"[{source}] {len(channels)} raw links")
-    return channels
+    deduped_channels = dedupe_h24_highlight_channels(channels)
+    log(f"[{source}] {len(channels)} raw links, {len(deduped_channels)} after highlight dedupe")
+    return deduped_channels
 
 
 def bongdaplus_headers(referer=None):
@@ -5523,6 +5602,15 @@ def main():
     highlight_channels = []
     log("")
     highlight_channels = collect_source_channels("24hHighlight", collect_24h_highlights)
+    if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
+        log(
+            f"[24hHighlight] Low count {len(highlight_channels)} < {HIGHLIGHT_MIN_GOOD_COUNT}; "
+            "merge previous highlight.m3u"
+        )
+        previous_highlights = collect_previous_highlight_playlist()
+        if previous_highlights:
+            highlight_channels = dedupe_and_sort_channels(highlight_channels + previous_highlights)
+            log(f"[24hHighlight] After previous merge: {len(highlight_channels)}")
     per_source_counts["24hHighlight"] = len(highlight_channels)
     if WRITE_HIGHLIGHT_M3U:
         write_m3u(HIGHLIGHT_M3U, highlight_channels)
