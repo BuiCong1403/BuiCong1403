@@ -1,5 +1,5 @@
 #EXTM3U
-# Updated : 2026-09-02 15:04 ICT
+# Updated : 2026-09-02 15:19 ICT
 # Total   : 904
 
 #EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/dGohEWXz7Sk/maxresdefault.jpg" group-title="VTV",VTV1
@@ -156,9 +156,6 @@ https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-08-27/cp_special_laliga-1787
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/bong-da/video-bong-da-tottenham-charlton-tan-binh-ruc-sang-dai-tiec-6-ban-league-cup-c48a1789852.html
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://icdn.24h.com.vn/upload/3-2026/videoclip/2026-08-27/1787780528-tot-char.mp4
-
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/WbSJHDh5-UHhQ6Y1N.png" group-title="Giờ Vàng TV" group-logo="https://live-api.keonhacaitp.one/favicon.ico", 07:00 02/09/2026 Atletico-MG vs Cruzeiro (Ngọng) [PC] [hls]
-https://eqr2hdarxfliv.vcdn.cloud/1788280888_hd/1788280888_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/fortaleza-fc.png" group-title="Giờ Vàng TV" group-logo="https://live-api.keonhacaitp.one/favicon.ico", 08:00 02/09/2026 Fortaleza F.C vs Deportiva Once Caldas (Bón) [PC] [hls]
 https://eqr2hdarxfliv.vcdn.cloud/1788281018_hd/1788281018_hd@720p.m3u8
@@ -558,6 +555,11 @@ https://station1-global.ebaclofen.org/live/d08a1375a53f3ae56d1c6ed76360af34/play
 
 #EXTINF:-1 group-title="Vua Sân Cỏ TV" group-logo="https://vsc9.top/favicon.ico", 09:00 02/09 New Zealand U19 vs Tahiti U19 (Nhà Đài 1)
 https://station1-global.ebaclofen.org/live/2c3aaf2c1ac1e464ec8fd4d839654c54/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/d16bdd3f5c6d0d586dbcc72ec27b3289.png" group-title="Vua Sân Cỏ TV",15:00 02/09 Guangzhou Zhicheng vs Guangdong Chenxingjuli (Nhà Đài 1)
+#EXTVLCOPT:http-referrer=https://vsc9.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://station1-global.ebaclofen.org/live/fab1df4610d6eec942f5613f6104e6f7/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/902a7be56514b493a369803b5ea985b1.png" group-title="Vua Sân Cỏ TV",16:00 02/09 Gintra Universitetas Women vs Sturm Graz/Stattegg Women (Nhà Đài 1)
 #EXTVLCOPT:http-referrer=https://vsc9.top/
@@ -1466,17 +1468,12 @@ https://live05.meung.app/live/41943555.m3u8
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/1800be60204966114d63970b5d0873da.png!w80" group-title="CoLaTV",23:30 | Hannover 96 vs CLB KSC | BLV
 https://live05.meung.app/live/07808742.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/48d3867a5d2968906473327384785365.png" group-title="BiaomTV",[13:00-02/09] Bay Olympic vs Birkenhead United [New Zealand Northern Premier League]
-#EXTVLCOPT:http-referrer=https://biaomtv15.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/558098fa54c45479616dafd035f44179/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/d16bdd3f5c6d0d586dbcc72ec27b3289.png" group-title="BiaomTV",[14:30-02/09] Guangzhou Zhicheng vs Guangdong Chenxingjuli [CFA Member Champions League]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/fab1df4610d6eec942f5613f6104e6f7/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/902a7be56514b493a369803b5ea985b1.png" group-title="BiaomTV",[15:30-02/09] Gintra Universitetas Women vs Sturm Graz/Stattegg Women [UEFA EL W]
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/902a7be56514b493a369803b5ea985b1.png" group-title="BiaomTV",[16:00-02/09] Gintra Universitetas Women vs Sturm Graz/Stattegg Women [UEFA EL W]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/d206f48c87437dcc437ebdd877786a7c/playlist.m3u8
@@ -1500,11 +1497,6 @@ https://lilive1.eu.cc/live/574d480dae12930aa24d638368297e64/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/f5ff9e926f4e70248e0033a0c6ad847d/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/fb70e88d0899b57664c8667c90ec6a9f.png" group-title="BiaomTV",[16:30-02/09] Veres Rivne U19 vs Oleksandria U19 [Ukrainian U19 Liga]
-#EXTVLCOPT:http-referrer=https://biaomtv15.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/03a572f0c9fa990aa314bf0ac7a8017c/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/bf0e2229b39b6cb6fd17e9d0f3fb747e.png" group-title="BiaomTV",[17:00-02/09] Avispa Fukuoka vs Urawa Red Diamonds [Japanese J1 League]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
@@ -1631,7 +1623,7 @@ https://cdnhls.xbdbotv.live/live/ZjE5NzE5MDUzc2E4bGNhNmE5OHVqZ2t0Nm13MnQ2cGF0cWR
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdnhls.xbdbotv.live/live/ZjE5NzE5MDUzc3hhejY1cG50bGJ1czJhbGxhazF5N203cmRnOHdpZWR4OHdzZnNsZWNrMmJ6bGR6dzM/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/51bbefa8069e06c0e2911f4c690feb29.png" group-title="BiaomTV",[17:00-02/09] Sejong Sportstoto WFC vs Fagiano Okayama [Korean WK League]
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/51bbefa8069e06c0e2911f4c690feb29.png" group-title="BiaomTV",[17:00-02/09] Sejong Sportstoto WFC vs Iwaki FC [Korean WK League]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/3433383b0e1cfdd2b9462877e3e60b85/playlist.m3u8
@@ -1665,6 +1657,11 @@ https://lilive1.eu.cc/live/3715d51ef66b6ee1bb9d0d3cc54743c1/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/e90a2a4186ccb56b773b307604200afe/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/fb70e88d0899b57664c8667c90ec6a9f.png" group-title="BiaomTV",[17:00-02/09] Veres Rivne U19 vs Oleksandria U19 [Ukrainian U19 Liga]
+#EXTVLCOPT:http-referrer=https://biaomtv15.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/03a572f0c9fa990aa314bf0ac7a8017c/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/78ddaaa79d9502f5e2df0fbb6261f937.png" group-title="BiaomTV",[17:00-02/09] Yokohama F. Marinos vs Kyoto Sanga [Japanese J1 League]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
@@ -1721,10 +1718,10 @@ https://cdnhls.xbdbotv.live/live/ZjE5NzI5MTE5c2g5dmhtcXZyMjZlcTRtdjJ3YWw5bDZyaWR
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdnhls.xbdbotv.live/live/ZjE5NzI5MTIyc2hneXg3cGRhMDJkZTVhMWV2YTE4bzZ0Z2RvcmVxbjU5OTZ3YWs5YjR6Y3dmcHl6YjM/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/689a8393d9ca1cea1915f728a4f0e31d.png" group-title="BiaomTV",Mizoram Police FC vs Ramthar Veng FC [Indian Mizoram Premier League]
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/48d3867a5d2968906473327384785365.png" group-title="BiaomTV",Bay Olympic vs Birkenhead United [New Zealand Northern Premier League]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/ad56ecd20780bf19941e6b6d55dcee6b/playlist.m3u8
+https://lilive1.eu.cc/live/558098fa54c45479616dafd035f44179/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://go4.pw/bein/bein-sports-english-1.png" group-title="4K",BEIN SPORTS 1 ENGLISH HD
 http://zazaint.com:80/MAGU52TLAM/SAAk0NZH71/348325
@@ -2647,6 +2644,9 @@ https://playback.livetl001.com/live/6a77144762ca98f0944094c0_1080p.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fstatic.sportsfeed.pro%2Fbasketball%2Fteam%2F2f4677e5f2089fb794a968f25c2dcb3a.png&time=14%3A30+02%2F09" group-title="Tinhlagi",14:30 02/09 Cairns Taipans vs Perth Wildcats (Naruto) (HD) [hls]
 https://playback.livetl001.com/live/6a77144762ca98f0944094c0.m3u8
+
+#EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fglobal-cdn.cdnx.tech%2Ffootball%2Fteam%2Fd16bdd3f5c6d0d586dbcc72ec27b3289.png&time=15%3A00+02%2F09" group-title="Tinhlagi",15:00 02/09 Guangzhou Zhicheng vs Guangdong Chenxingjuli (Nhà Đài 1)
+https://station1-global.ebaclofen.org/live/fab1df4610d6eec942f5613f6104e6f7/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://tinhlagi.pro/merge_logos.php?home=https%3A%2F%2Ftinhlagi.pro%2Flogo.jpg&away=https%3A%2F%2Fstatic.flashscore.com%2Fres%2Fimage%2Fdata%2FpKkqJ4Wg-bB59SVBr.png&time=15%3A00+02%2F09" group-title="Tinhlagi",15:00 02/09 HLE vs T1 (Vịt) [hls]
 https://eqr2hdarxfliv.vcdn.cloud/1788311256_hd/1788311256_hd@720p.m3u8
