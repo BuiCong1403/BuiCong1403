@@ -257,6 +257,13 @@ CLOUDOK_M3U_URL = os.environ.get(
     "https://raspy-waterfall-a003.ngoibut-cachmang.workers.dev/",
 )
 CLOUDOK_AUTH_TOKEN = os.environ.get("CLOUDOK_AUTH_TOKEN", "dc5521f1fe411d6f2e83c2bf047d6294")
+SPORTFLOW_SOURCE_URL = os.environ.get(
+    "SPORTFLOW_SOURCE_URL",
+    "https://tvlive.sportflowlivez.com/tvlive_vn_fb2.txt",
+)
+SPORTFLOW_LIMIT = int(os.environ.get("SPORTFLOW_LIMIT", "240") or "240")
+SPORTFLOW_WORKERS = int(os.environ.get("SPORTFLOW_WORKERS", "14") or "14")
+SPORTFLOW_GROUP = os.environ.get("SPORTFLOW_GROUP", "FLV")
 SPORT_INTERNATIONAL_GROUP = "TH\u1ec2 THAO QU\u1ed0C T\u1ebe"
 FLV_OTT_GROUP = "FLV"
 FLV_OTT_USER_AGENT = (
@@ -274,6 +281,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "SocoliveTV",
     "PhaoHoaTV",
     "XoiLacZ",
+    "SportflowLiveZ",
     "VSC9",
     "CoLaTV",
     "MebongTV",
@@ -848,6 +856,12 @@ def stream_dedupe_key(channel):
         if title_key:
             return ("24hHighlight", title_key)
         return ("24hHighlight", h24_variant_family_key(url))
+    if channel.get("source") == "SportflowLiveZ":
+        return (
+            "SportflowLiveZ",
+            clean_text(channel.get("match_id")),
+            tokenless_stream_key(url),
+        )
     if channel.get("source") in MULTI_EVENT_STREAM_SOURCES:
         return (
             url,
@@ -859,7 +873,8 @@ def stream_dedupe_key(channel):
 
 
 def source_stream_seen_key(source, stream_url, *parts):
-    key = [clean_text(stream_url)]
+    stream_value = tokenless_stream_key(stream_url) if source == "SportflowLiveZ" else clean_text(stream_url)
+    key = [stream_value]
     if source in MULTI_EVENT_STREAM_SOURCES:
         key.extend(clean_text(part) for part in parts if clean_text(part))
     return tuple(key)
@@ -873,6 +888,11 @@ def is_hls_url(url):
 def is_flv_url(url):
     lower = clean_text(url).lower().split("?", 1)[0]
     return lower.endswith(".flv")
+
+
+def tokenless_stream_key(url):
+    parsed = urlparse(clean_text(url))
+    return parsed._replace(query="", fragment="").geturl().lower()
 
 
 def is_valid_xoilacz_stream_url(url):
@@ -3568,6 +3588,225 @@ def collect_xoilacz():
     return channels
 
 
+def sportflow_title_from_url(url):
+    match = re.search(r"/truc-tiep/([^/?#]+)", clean_text(url))
+    if not match:
+        return "SportflowLiveZ"
+    slug = unquote(match.group(1))
+    title_slug = slug
+    time_label = ""
+    event_datetime = None
+    time_match = re.search(r"-luc-(\d{2})(\d{2})-ngay-(\d{2})-(\d{2})-(\d{4})", slug)
+    if time_match:
+        hour, minute, day, month, year = time_match.groups()
+        time_label = f"{hour}:{minute} {day}/{month}"
+        try:
+            event_datetime = datetime(
+                int(year),
+                int(month),
+                int(day),
+                int(hour),
+                int(minute),
+                tzinfo=TZ_VN,
+            )
+        except Exception:
+            event_datetime = None
+        title_slug = slug[: time_match.start()]
+    title = re.sub(r"[-_]+", " ", title_slug)
+    title = re.sub(r"\s+", " ", title).strip().title()
+    return f"{time_label} {title}".strip(), event_datetime
+
+
+def parse_sportflow_source(text):
+    text = clean_text(text)
+    if "$" in text:
+        text = text.split("$", 1)[1]
+    pages = []
+    seen = set()
+    for block in text.split("!"):
+        parts = [part for part in block.split("^") if part.strip()]
+        if len(parts) < 2:
+            continue
+        match_id = clean_text(parts[0])
+        for item in parts[1:]:
+            if "|" not in item:
+                continue
+            page_url, mirror_name = item.rsplit("|", 1)
+            page_url = clean_text(page_url)
+            mirror_name = clean_text(mirror_name)
+            if not page_url.startswith(("http://", "https://")) or "/truc-tiep/" not in page_url:
+                continue
+            key = (match_id, page_url)
+            if key in seen:
+                continue
+            seen.add(key)
+            pages.append((match_id, mirror_name, page_url))
+    return pages
+
+
+def sportflow_page_headers(page_url):
+    parsed = urlparse(page_url)
+    origin = f"{parsed.scheme}://{parsed.netloc}" if parsed.scheme and parsed.netloc else page_url
+    return {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Origin": origin,
+        "Referer": origin + "/",
+        "User-Agent": UA,
+    }
+
+
+def sportflow_player_headers(page_url):
+    parsed = urlparse(page_url)
+    origin = f"{parsed.scheme}://{parsed.netloc}" if parsed.scheme and parsed.netloc else ""
+    headers = {
+        "Accept": "text/html,*/*",
+        "Referer": page_url,
+        "User-Agent": UA,
+    }
+    if origin:
+        headers["Origin"] = origin
+    return headers
+
+
+def extract_sportflow_player_urls(html_text):
+    player_urls = []
+    match = re.search(r"var\s+list_stream\s*=\s*(\[.*?\]);", html_text, re.S)
+    if match:
+        raw = match.group(1).replace("\\/", "/")
+        try:
+            data = json.loads(raw)
+            stack = list(data if isinstance(data, list) else [])
+            while stack:
+                item = stack.pop(0)
+                if isinstance(item, list):
+                    stack.extend(item)
+                elif isinstance(item, str) and item.startswith(("http://", "https://")):
+                    player_urls.append(item)
+        except Exception:
+            player_urls.extend(re.findall(r"https?://[^\"'\],\s]+", raw))
+    for src in re.findall(r'<iframe[^>]+src=["\']([^"\']+)["\']', html_text, re.I):
+        src = clean_text(src).replace("\\/", "/")
+        if src.startswith(("http://", "https://")) and "/ajax/chanel/" in src:
+            player_urls.append(src)
+    return list(dict.fromkeys(player_urls))
+
+
+def extract_sportflow_streams_from_player(player_url, page_url):
+    streams = []
+    candidates = [player_url]
+    candidates.append(player_url.rstrip("/") + "/off-tvc?is_off_add=false")
+    candidates.append(player_url + ("&" if "?" in player_url else "?") + "is_off_add=false")
+    seen = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        try:
+            html_text = fetch_text(candidate, headers=sportflow_player_headers(page_url), timeout=12)
+        except Exception:
+            continue
+        url_stream_match = re.search(r'\burlStream\s*=\s*["\']([^"\']+)["\']', html_text)
+        if url_stream_match:
+            streams.append(clean_text(url_stream_match.group(1).replace("\\/", "/")))
+        for stream_url in re.findall(r'https?://[^"\']+\.(?:m3u8|flv)(?:\?[^"\']*)?', html_text, re.I):
+            stream_url = clean_text(stream_url.replace("\\/", "/"))
+            if "flv.min.js" in stream_url.lower() or "/static/" in stream_url.lower():
+                continue
+            streams.append(stream_url)
+        if streams:
+            break
+    return [url for url in dict.fromkeys(streams) if is_valid_xoilacz_stream_url(url)]
+
+
+def collect_sportflowlivez_flv():
+    source = "SportflowLiveZ"
+    log(f"[{source}] Fetch source")
+    try:
+        response = request_get(
+            SPORTFLOW_SOURCE_URL,
+            headers={
+                "Accept": "text/plain,*/*",
+                "Referer": "https://tvlive.sportflowlivez.com/",
+                "User-Agent": UA,
+            },
+            timeout=45,
+        )
+        log(f"[{source}] HTTP {response.status_code}")
+        if response.status_code != 200:
+            return []
+        pages = parse_sportflow_source(response.text)
+    except Exception as exc:
+        log(f"[{source}] Source error: {exc}")
+        return []
+
+    selected_pages = []
+    now_ts = datetime.now(TZ_VN) - timedelta(minutes=PAST_EVENT_GRACE_MINUTES)
+    seen_match_page = set()
+    for match_id, mirror_name, page_url in pages:
+        title, event_datetime = sportflow_title_from_url(page_url)
+        if FILTER_PAST_EVENTS and event_datetime and event_datetime < now_ts:
+            continue
+        key = (match_id, urlparse(page_url).netloc.lower())
+        if key in seen_match_page:
+            continue
+        seen_match_page.add(key)
+        selected_pages.append((match_id, mirror_name, page_url, title, event_datetime))
+        if len(selected_pages) >= SPORTFLOW_LIMIT:
+            break
+
+    channels = []
+    seen_streams = set()
+
+    def resolve(item):
+        match_id, mirror_name, page_url, title, event_datetime = item
+        try:
+            page_html = fetch_text(page_url, headers=sportflow_page_headers(page_url), timeout=12)
+        except Exception:
+            return []
+        player_urls = extract_sportflow_player_urls(page_html)
+        resolved = []
+        for player_url in player_urls[:4]:
+            for stream_url in extract_sportflow_streams_from_player(player_url, page_url):
+                quality = "FLV" if is_flv_url(stream_url) else "HLS"
+                resolved.append(
+                    {
+                        "source": source,
+                        "name": f"{title} [{mirror_name}] [{quality}]",
+                        "group": SPORTFLOW_GROUP,
+                        "logo": "",
+                        "stream_url": stream_url,
+                        "referer": page_url,
+                        "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                        "event_datetime": event_datetime,
+                        "event_date": event_datetime.date() if event_datetime else None,
+                        "match_id": match_id,
+                    }
+                )
+        return resolved
+
+    with ThreadPoolExecutor(max_workers=max(1, SPORTFLOW_WORKERS)) as executor:
+        futures = [executor.submit(resolve, item) for item in selected_pages]
+        for future in as_completed(futures):
+            try:
+                resolved_channels = future.result()
+            except Exception:
+                continue
+            for channel in resolved_channels:
+                key = source_stream_seen_key(
+                    source,
+                    channel.get("stream_url"),
+                    channel.get("match_id"),
+                    channel.get("name"),
+                )
+                if key in seen_streams:
+                    continue
+                seen_streams.add(key)
+                channels.append(channel)
+
+    log(f"[{source}] {len(channels)} raw links from {len(selected_pages)} pages")
+    return channels
+
+
 class LinkCardParser(HTMLParser):
     def __init__(self, base_url):
         super().__init__()
@@ -5553,6 +5792,7 @@ def main():
         ("DekikiSports", collect_dekiki_sports),
         ("MebongTV", collect_mebongtv),
         ("XoiLacZ", collect_xoilacz),
+        ("SportflowLiveZ", collect_sportflowlivez_flv),
         ("AzabuLive", collect_azabu_live),
         (
             "TV365KidsInternational",
