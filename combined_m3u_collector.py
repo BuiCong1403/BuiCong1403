@@ -3738,7 +3738,9 @@ def azabu_headers(referer=None):
     base_url = AZABU_BASE_URL.rstrip("/") + "/"
     return {
         "Accept": "text/html,application/xhtml+xml,application/json,*/*",
+        "Cache-Control": "no-cache",
         "Origin": base_url.rstrip("/"),
+        "Pragma": "no-cache",
         "Referer": referer or base_url,
         "User-Agent": UA,
     }
