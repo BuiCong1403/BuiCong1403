@@ -128,6 +128,10 @@ VSC9_REFERER = os.environ.get("VSC9_REFERER", "https://vsc9.top/")
 VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "1").strip().lower() not in {"0", "false", "no"}
 VSC9_TODAY_MIN_LINKS = int(os.environ.get("VSC9_TODAY_MIN_LINKS", "10") or "10")
 S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tv001.com/")
+VEBOTV_SITE_URL = os.environ.get("VEBOTV_SITE_URL", "https://vebotv.work/")
+VEBOTV_GROUP = os.environ.get("VEBOTV_GROUP", "VeboTV")
+VEBOTV_LIMIT = int(os.environ.get("VEBOTV_LIMIT", "160") or "160")
+VEBOTV_WORKERS = int(os.environ.get("VEBOTV_WORKERS", "10") or "10")
 ALL_CHANNEL_M3U_URL = os.environ.get(
     "ALL_CHANNEL_M3U_URL",
     "https://raw.githubusercontent.com/huybuonvp/xem_football/refs/heads/main/All_CHANNEL.m3u",
@@ -3129,6 +3133,150 @@ def collect_saoketv():
     return [channel]
 
 
+def vebotv_headers(referer=None, accept="text/html,application/xhtml+xml,*/*"):
+    base_url = VEBOTV_SITE_URL.rstrip("/") + "/"
+    return {
+        "Accept": accept,
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def extract_vebotv_match_urls(html_text, base_url):
+    urls = []
+    seen = set()
+    for match in re.finditer(r"""href=["']([^"']*/truc-tiep/[^"']+\?blv=\d+[^"']*)["']""", html_text or "", re.I):
+        url = urljoin(base_url, html.unescape(match.group(1)))
+        if url not in seen:
+            seen.add(url)
+            urls.append(url)
+    return urls
+
+
+def extract_vebotv_post_id(html_text):
+    patterns = [
+        r"stream/resolve[^;]+?post_id['\"]?\s*,\s*['\"]?(\d+)",
+        r"tracker-ticket\?post_id=(\d+)",
+        r"/wp-json/wp/v2/truc-tiep/(\d+)",
+        r"data-post-id=['\"](\d+)['\"]",
+        r"\bpost_id['\"]?\s*[:=]\s*['\"]?(\d+)",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, html_text or "", re.I | re.S)
+        if match:
+            return clean_text(match.group(1))
+    return ""
+
+
+def extract_vebotv_stream_urls(value):
+    urls = []
+    if isinstance(value, str):
+        stream_url = clean_text(value)
+        if is_valid_stream_url(stream_url):
+            urls.append(stream_url)
+        return urls
+    if isinstance(value, dict):
+        for key in ("stream", "url", "m3u8", "flv", "hdM3u8", "sdM3u8", "hdFlv", "sdFlv"):
+            urls.extend(extract_vebotv_stream_urls(value.get(key)))
+        for item in value.values():
+            if isinstance(item, (dict, list)):
+                urls.extend(extract_vebotv_stream_urls(item))
+    elif isinstance(value, list):
+        for item in value:
+            urls.extend(extract_vebotv_stream_urls(item))
+    return list(dict.fromkeys(urls))
+
+
+def vebotv_title_from_page(html_text, page_url):
+    title = title_from_html_page(html_text, title_from_url_slug(page_url) or VEBOTV_GROUP)
+    title = re.sub(r"\s*-\s*VEBOTV.*$", "", title, flags=re.I).strip()
+    title = re.sub(r"^Link\s+Trực\s+Tiếp\s+", "", title, flags=re.I).strip()
+    return clean_text(title) or VEBOTV_GROUP
+
+
+def collect_vebotv():
+    source = "VeboTV"
+    base_url = VEBOTV_SITE_URL.rstrip("/") + "/"
+    try:
+        index_html = fetch_text(base_url, headers=vebotv_headers(), timeout=30)
+    except Exception as exc:
+        log(f"[{source}] index error: {exc}")
+        return []
+
+    match_urls = extract_vebotv_match_urls(index_html, base_url)[:VEBOTV_LIMIT]
+    log(f"[{source}] {len(match_urls)} BLV pages")
+    channels = []
+    seen = set()
+
+    def process(page_url):
+        parsed = urlparse(page_url)
+        blv = clean_text((parse_qs(parsed.query).get("blv") or [""])[0])
+        if not blv:
+            return []
+        try:
+            html_text = fetch_text(page_url, headers=vebotv_headers(page_url), timeout=25)
+        except Exception as exc:
+            log(f"[{source}] page error {page_url}: {exc}")
+            return []
+        post_id = extract_vebotv_post_id(html_text)
+        if not post_id:
+            return []
+        resolver_url = urljoin(base_url, "wp-json/soco/v1/stream/resolve")
+        data = fetch_json(
+            f"{resolver_url}?{urlencode({'post_id': post_id, 'blv': blv})}",
+            headers=vebotv_headers(page_url, accept="application/json"),
+            timeout=25,
+        )
+        stream_urls = extract_vebotv_stream_urls(data)
+        title = vebotv_title_from_page(html_text, page_url)
+        event_datetime = None
+        time_match = re.search(r'id=["\']player-stream["\'][^>]+data-time=["\'](\d+)["\']', html_text, re.I)
+        if time_match:
+            event_datetime = parse_epoch_to_ict_datetime(time_match.group(1))
+        result = []
+        for stream_url in stream_urls:
+            if stream_url.lower().endswith(".flv"):
+                stream_url = re.sub(r"\.flv(?=([?#]|$))", ".m3u8", stream_url, flags=re.I)
+            if not is_valid_stream_url(stream_url):
+                continue
+            result.append(
+                {
+                    "source": source,
+                    "name": f"{title} | BLV {blv}",
+                    "group": VEBOTV_GROUP,
+                    "logo": "",
+                    "stream_url": stream_url,
+                    "referer": page_url,
+                    "user_agent": UA,
+                    "event_datetime": event_datetime,
+                    "event_date": event_datetime.date() if event_datetime else None,
+                }
+            )
+        return result
+
+    with ThreadPoolExecutor(max_workers=VEBOTV_WORKERS) as executor:
+        futures = [executor.submit(process, url) for url in match_urls]
+        for future in as_completed(futures):
+            try:
+                for channel in future.result():
+                    key = source_stream_seen_key(
+                        source,
+                        channel.get("stream_url"),
+                        channel.get("name"),
+                        channel.get("event_datetime"),
+                    )
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    channels.append(channel)
+            except Exception as exc:
+                log(f"[{source}] worker error: {exc}")
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_cotivi_sports():
     return collect_m3u_playlist(
         "CoTiViSports",
@@ -5786,6 +5934,7 @@ def main():
         ("MyTVFPTEvents", collect_mytv_fpt_events),
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
+        ("VeboTV", collect_vebotv),
         ("CuongHeHe", collect_cuonghehe),
         ("CuongHeHe4K", collect_tt1_4k),
         ("CoTiViSports", collect_cotivi_sports),
