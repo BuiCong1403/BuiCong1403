@@ -224,6 +224,18 @@ NINETY_PHUTZI_SEED_URLS = [
     ).split(",")
     if item.strip()
 ]
+DASFOOTBALL_BASE_URL = os.environ.get("DASFOOTBALL_BASE_URL", "https://dasfootball.com/")
+DASFOOTBALL_HIGHLIGHT_DAYS_BACK = int(os.environ.get("DASFOOTBALL_HIGHLIGHT_DAYS_BACK", "7") or "7")
+DASFOOTBALL_HIGHLIGHT_LIMIT = int(os.environ.get("DASFOOTBALL_HIGHLIGHT_LIMIT", "220") or "220")
+DASFOOTBALL_SEED_URLS = [
+    item.strip()
+    for item in os.environ.get(
+        "DASFOOTBALL_SEED_URLS",
+        "https://dasfootball.com/paris-saint-germain-vs-monaco-highlights-2026-09-04/,"
+        "https://cdn.videas.fr/v-medias/s5/hlsv1/e2/94/e2942ef0-0a60-4f79-a763-46c40e29673d/playlist.m3u8",
+    ).split(",")
+    if item.strip()
+]
 H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
 H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "7") or "7")
 H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "360") or "360")
@@ -300,6 +312,8 @@ MULTI_EVENT_STREAM_SOURCES = {
     "MebongTV",
     "BongDaPlusHighlight",
     "24hHighlight",
+    "90PhutHighlight",
+    "DasFootballHighlight",
 }
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
@@ -1497,7 +1511,7 @@ def select_ott_compatible_channels(channels):
         if (
             is_flv_url(channel.get("stream_url"))
             or group_key_value in {"phaohoatv", "highlight"}
-            or channel.get("source") in {"PhaoHoaTV", "24hHighlight", "90PhutHighlight"}
+            or channel.get("source") in {"PhaoHoaTV", "24hHighlight", "90PhutHighlight", "DasFootballHighlight"}
             or not channel_needs_extvlcopt(channel)
         ):
             selected.append(channel)
@@ -4126,6 +4140,7 @@ def clean_highlight_title(title):
     title = re.sub(r"^kết\s+quả\s+bóng\s+đá\s+", "", title, flags=re.I)
     title = re.sub(r"^ket\s+qua\s+bong\s+da\s+", "", title, flags=re.I)
     title = re.sub(r"^(?:video\s+)?tennis\s+", "Tennis ", title, flags=re.I)
+    title = re.sub(r"\s+(?:highlights?|full match replay)(?:\s+20\d{2}\s+\d{1,2}\s+\d{1,2})?\s*$", "", title, flags=re.I)
     title = re.sub(r"\s+", " ", title).strip(" -|,")
     return title
 
@@ -4267,6 +4282,175 @@ def ninety_phutzi_headers(referer=None):
 def ninety_phutzi_allowed_highlight_dates():
     today = datetime.now(TZ_VN).date()
     return {today - timedelta(days=offset) for offset in range(max(0, NINETY_PHUTZI_HIGHLIGHT_DAYS_BACK) + 1)}
+
+
+def dasfootball_headers(referer=None):
+    base_url = DASFOOTBALL_BASE_URL.rstrip("/") + "/"
+    return {
+        "Accept": "text/html,application/xhtml+xml,application/json,*/*",
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def dasfootball_allowed_highlight_dates():
+    today = datetime.now(TZ_VN).date()
+    return {today - timedelta(days=offset) for offset in range(max(0, DASFOOTBALL_HIGHLIGHT_DAYS_BACK) + 1)}
+
+
+def dasfootball_date_from_url(value):
+    text = clean_text(value)
+    match = re.search(r"highlights?-(20\d{2})-(\d{1,2})-(\d{1,2})", text, re.I)
+    if not match:
+        return date_from_text(text)
+    try:
+        return datetime(int(match.group(1)), int(match.group(2)), int(match.group(3)), tzinfo=TZ_VN).date()
+    except Exception:
+        return None
+
+
+def extract_dasfootball_highlight_urls(html_text, base_url):
+    urls = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or ""))
+    patterns = (
+        r"https?://dasfootball\.com/[^\s'\"<>\\]+?highlights?-\d{4}-\d{1,2}-\d{1,2}/?",
+        r"""href=["']([^"']*?highlights?-\d{4}-\d{1,2}-\d{1,2}/?[^"']*)["']""",
+    )
+    for index, pattern in enumerate(patterns):
+        for match in re.finditer(pattern, text, re.I):
+            raw_url = match.group(1) if index else match.group(0)
+            url = urljoin(base_url, html.unescape(raw_url)).split("#", 1)[0]
+            url = clean_text(url).rstrip(".,);]")
+            if url and url not in seen:
+                seen.add(url)
+                urls.append(url)
+    return urls
+
+
+def extract_dasfootball_m3u8_urls(html_text):
+    urls = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or ""))
+    for match in re.finditer(r"https?://[^\s'\"<>{}\\,\]]+?\.m3u8(?:\?[^\s'\"<>{}\\,\]]*)?", text, re.I):
+        stream_url = clean_text(match.group(0).replace("\\/", "/")).rstrip("\\.,);]")
+        if is_valid_highlight_url(stream_url) and stream_url not in seen:
+            seen.add(stream_url)
+            urls.append(stream_url)
+    return urls
+
+
+def collect_dasfootball_highlights():
+    source = "DasFootballHighlight"
+    base_url = DASFOOTBALL_BASE_URL.rstrip("/") + "/"
+    allowed_dates = dasfootball_allowed_highlight_dates()
+    page_urls = [
+        base_url,
+        urljoin(base_url, "premier-league/"),
+        urljoin(base_url, "la-liga/"),
+        urljoin(base_url, "bundesliga/"),
+        urljoin(base_url, "serie-a/"),
+        urljoin(base_url, "ligue-1/"),
+        urljoin(base_url, "champions-league/"),
+        urljoin(base_url, "europa-league/"),
+    ]
+
+    post_urls = []
+    seen_posts = set()
+    direct_seed_urls = []
+    last_seed_title = ""
+    for seed_url in DASFOOTBALL_SEED_URLS:
+        seed_url = clean_text(seed_url)
+        if not seed_url:
+            continue
+        if is_valid_highlight_url(seed_url):
+            if all(existing_url != seed_url for existing_url, _title in direct_seed_urls):
+                direct_seed_urls.append((seed_url, last_seed_title))
+            continue
+        seed_date = dasfootball_date_from_url(seed_url)
+        if seed_date and seed_date not in allowed_dates:
+            continue
+        if seed_url not in seen_posts:
+            seen_posts.add(seed_url)
+            post_urls.append(seed_url)
+            last_seed_title = clean_highlight_title(title_from_url_slug(seed_url) or "")
+
+    for page_url in page_urls:
+        log(f"[{source}] Fetch {page_url}")
+        try:
+            html_text = fetch_text(page_url, headers=dasfootball_headers(page_url), timeout=30)
+        except Exception:
+            continue
+        for post_url in extract_dasfootball_highlight_urls(html_text, base_url):
+            post_date = dasfootball_date_from_url(post_url)
+            if post_date and post_date not in allowed_dates:
+                continue
+            if post_url in seen_posts:
+                continue
+            seen_posts.add(post_url)
+            post_urls.append(post_url)
+            if len(post_urls) >= max(1, DASFOOTBALL_HIGHLIGHT_LIMIT):
+                break
+        if len(post_urls) >= max(1, DASFOOTBALL_HIGHLIGHT_LIMIT):
+            break
+
+    def direct_seed_channel(stream_url, seed_title=""):
+        title = seed_title or title_from_url_slug(stream_url) or "DasFootball Highlight"
+        return {
+            "source": source,
+            "name": clean_highlight_title(title),
+            "group": "Highlight | DasFootball",
+            "logo": "",
+            "stream_url": stream_url,
+            "referer": base_url,
+            "user_agent": UA,
+            "event_date": None,
+            "skip_event_filter": True,
+        }
+
+    def collect_post(post_url):
+        try:
+            html_text = fetch_text(post_url, headers=dasfootball_headers(post_url), timeout=25)
+        except Exception:
+            return []
+        title = clean_highlight_title(title_from_html_page(html_text, title_from_url_slug(post_url) or "DasFootball Highlight"))
+        title = re.sub(r"\s+(?:Highlights?|Full Match Replay).*$", "", title, flags=re.I).strip(" -|,") or title
+        event_date = dasfootball_date_from_url(post_url)
+        if event_date and event_date not in allowed_dates:
+            return []
+        logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
+        logo = logo_match.group(1) if logo_match else ""
+        stream_urls = extract_dasfootball_m3u8_urls(html_text)
+        stream_url = best_highlight_url(stream_urls)
+        if not stream_url:
+            return []
+        return [
+            {
+                "source": source,
+                "name": title,
+                "group": "Highlight | DasFootball",
+                "logo": logo,
+                "stream_url": stream_url,
+                "referer": post_url,
+                "user_agent": UA,
+                "event_date": event_date,
+                "skip_event_filter": True,
+            }
+        ]
+
+    channels = []
+    channels.extend(direct_seed_channel(stream_url, seed_title) for stream_url, seed_title in direct_seed_urls)
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception:
+                continue
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
 
 
 def ninety_phutzi_date_from_url_or_title(value):
@@ -6035,6 +6219,7 @@ def main():
     highlight_channels = []
     log("")
     highlight_sources = []
+    highlight_sources.extend(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
     highlight_sources.extend(collect_source_channels("90PhutHighlight", collect_90phutzi_highlights))
     highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
     highlight_channels = dedupe_and_sort_channels(highlight_sources)
