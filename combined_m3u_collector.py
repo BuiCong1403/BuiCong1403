@@ -211,10 +211,19 @@ XOILACZ_SPORTS = [
 AZABU_BASE_URL = os.environ.get("AZABU_BASE_URL", "https://azabuglobal.com/")
 AZABU_LIVE_LIMIT = int(os.environ.get("AZABU_LIVE_LIMIT", "120"))
 AZABU_HIGHLIGHT_PAGES = int(os.environ.get("AZABU_HIGHLIGHT_PAGES", "3"))
-NINETY_PHUTZI_BASE_URL = os.environ.get("NINETY_PHUTZI_BASE_URL", "https://90phutzi.tv/")
+NINETY_PHUTZI_BASE_URL = os.environ.get("NINETY_PHUTZI_BASE_URL", "https://90phutzba.tv/")
 NINETY_PHUTZI_HIGHLIGHT_DAYS_BACK = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_DAYS_BACK", "2") or "2")
 NINETY_PHUTZI_HIGHLIGHT_PAGES = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_PAGES", "4") or "4")
 NINETY_PHUTZI_HIGHLIGHT_LIMIT = int(os.environ.get("NINETY_PHUTZI_HIGHLIGHT_LIMIT", "200") or "200")
+NINETY_PHUTZI_SEED_URLS = [
+    item.strip()
+    for item in os.environ.get(
+        "NINETY_PHUTZI_SEED_URLS",
+        "https://90phutzba.tv/highlight/psg-vs-as-monaco-0205-05-09/,"
+        "https://cdn.videas.fr/v-medias/s5/hlsv1/9a/15/9a15cad6-1646-46e1-ab51-6a7c4f2b8f70/playlist.m3u8",
+    ).split(",")
+    if item.strip()
+]
 H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
 H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "7") or "7")
 H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "360") or "360")
@@ -1488,7 +1497,7 @@ def select_ott_compatible_channels(channels):
         if (
             is_flv_url(channel.get("stream_url"))
             or group_key_value in {"phaohoatv", "highlight"}
-            or channel.get("source") in {"PhaoHoaTV", "24hHighlight"}
+            or channel.get("source") in {"PhaoHoaTV", "24hHighlight", "90PhutHighlight"}
             or not channel_needs_extvlcopt(channel)
         ):
             selected.append(channel)
@@ -4289,7 +4298,7 @@ def extract_90phutzi_highlight_urls(html_text, base_url):
     urls = []
     seen = set()
     text = html.unescape(decode_json_string(html_text or ""))
-    for match in re.finditer(r"https?://90phutzi\.tv/highlight/[^\s'\"<>\\]+/?", text, re.I):
+    for match in re.finditer(r"https?://90phut[a-z0-9-]*\.tv/highlight/[^\s'\"<>\\]+/?", text, re.I):
         url = clean_text(match.group(0)).rstrip(".,);]")
         if url not in seen:
             seen.add(url)
@@ -4359,6 +4368,23 @@ def collect_90phutzi_highlights():
 
     post_urls = []
     seen_posts = set()
+    direct_seed_urls = []
+    last_seed_title = ""
+    for seed_url in NINETY_PHUTZI_SEED_URLS:
+        seed_url = clean_text(seed_url)
+        if not seed_url:
+            continue
+        if is_valid_highlight_url(seed_url):
+            if all(existing_url != seed_url for existing_url, _title in direct_seed_urls):
+                direct_seed_urls.append((seed_url, last_seed_title))
+            continue
+        if "/highlight/" in seed_url and seed_url not in seen_posts:
+            post_date = ninety_phutzi_date_from_url_or_title(seed_url)
+            if not post_date or post_date in allowed_dates:
+                seen_posts.add(seed_url)
+                post_urls.append(seed_url)
+                last_seed_title = clean_highlight_title(title_from_url_slug(seed_url) or "")
+
     for page_url in page_urls:
         log(f"[{source}] Fetch {page_url}")
         try:
@@ -4378,12 +4404,27 @@ def collect_90phutzi_highlights():
         if len(post_urls) >= max(1, NINETY_PHUTZI_HIGHLIGHT_LIMIT):
             break
 
+    def direct_seed_channel(stream_url, seed_title=""):
+        title = seed_title or title_from_url_slug(stream_url) or "90Phut Highlight"
+        event_date = ninety_phutzi_date_from_url_or_title(stream_url)
+        return {
+            "source": source,
+            "name": clean_highlight_title(title),
+            "group": "Highlight | 90Phut",
+            "logo": "",
+            "stream_url": stream_url,
+            "referer": base_url,
+            "user_agent": UA,
+            "event_date": event_date,
+            "skip_event_filter": True,
+        }
+
     def collect_post(post_url):
         try:
             html_text = fetch_text(post_url, headers=ninety_phutzi_headers(post_url), timeout=25)
         except Exception:
             return []
-        title = title_from_html_page(html_text, title_from_url_slug(post_url) or "90Phut Highlight")
+        title = clean_highlight_title(title_from_html_page(html_text, title_from_url_slug(post_url) or "90Phut Highlight"))
         event_date = ninety_phutzi_date_from_url_or_title(post_url) or ninety_phutzi_date_from_url_or_title(title)
         if event_date not in allowed_dates:
             return []
@@ -4410,7 +4451,7 @@ def collect_90phutzi_highlights():
                 {
                     "source": source,
                     "name": f"{title} | Link {idx}",
-                    "group": "Highlight | 90PhutZi",
+                    "group": "Highlight | 90Phut",
                     "logo": logo,
                     "stream_url": stream_url,
                     "referer": post_url,
@@ -4422,6 +4463,7 @@ def collect_90phutzi_highlights():
         return result
 
     channels = []
+    channels.extend(direct_seed_channel(stream_url, seed_title) for stream_url, seed_title in direct_seed_urls)
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
         for future in as_completed(futures):
@@ -5992,17 +6034,20 @@ def main():
 
     highlight_channels = []
     log("")
-    highlight_channels = collect_source_channels("24hHighlight", collect_24h_highlights)
+    highlight_sources = []
+    highlight_sources.extend(collect_source_channels("90PhutHighlight", collect_90phutzi_highlights))
+    highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
+    highlight_channels = dedupe_and_sort_channels(highlight_sources)
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
         log(
-            f"[24hHighlight] Low count {len(highlight_channels)} < {HIGHLIGHT_MIN_GOOD_COUNT}; "
+            f"[Highlight] Low count {len(highlight_channels)} < {HIGHLIGHT_MIN_GOOD_COUNT}; "
             "merge previous highlight.m3u"
         )
         previous_highlights = collect_previous_highlight_playlist()
         if previous_highlights:
             highlight_channels = dedupe_and_sort_channels(highlight_channels + previous_highlights)
-            log(f"[24hHighlight] After previous merge: {len(highlight_channels)}")
-    per_source_counts["24hHighlight"] = len(highlight_channels)
+            log(f"[Highlight] After previous merge: {len(highlight_channels)}")
+    per_source_counts["Highlight"] = len(highlight_channels)
     if WRITE_HIGHLIGHT_M3U:
         write_m3u(HIGHLIGHT_M3U, highlight_channels)
     if INCLUDE_HIGHLIGHT_IN_MAIN and highlight_channels:
