@@ -1373,7 +1373,24 @@ def group_sort_rank(channel):
     return len(PREFERRED_OUTPUT_GROUPS) + 50
 
 
+def is_highlight_channel(channel):
+    source = clean_text(channel.get("source"))
+    return source in {"24hHighlight", "90PhutHighlight", "DasFootballHighlight"} or group_key(output_group(channel)) == group_key("Highlight")
+
+
+def highlight_time_sort_value(channel):
+    event_dt = channel_event_datetime(channel)
+    if event_dt:
+        return -int(event_dt.timestamp())
+    event_date = channel_event_date(channel)
+    if event_date:
+        return -int(datetime(event_date.year, event_date.month, event_date.day, tzinfo=TZ_VN).timestamp())
+    return 9_999_999_999
+
+
 def channel_time_sort_value(channel):
+    if is_highlight_channel(channel):
+        return highlight_time_sort_value(channel)
     event_dt = channel_event_datetime(channel)
     if event_dt:
         return int(event_dt.timestamp())
