@@ -125,7 +125,7 @@ QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
 VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", "https://vsc9.top/")
-VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "1").strip().lower() not in {"0", "false", "no"}
+VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "0").strip().lower() not in {"0", "false", "no"}
 VSC9_TODAY_MIN_LINKS = int(os.environ.get("VSC9_TODAY_MIN_LINKS", "10") or "10")
 S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tv001.com/")
 VEBOTV_SITE_URL = os.environ.get("VEBOTV_SITE_URL", "https://vebotv.work/")
@@ -237,16 +237,16 @@ DASFOOTBALL_SEED_URLS = [
     if item.strip()
 ]
 H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
-H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "7") or "7")
-H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "360") or "360")
-H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "40") or "40")
-H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "80") or "80")
-H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "10") or "10")
+H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "2") or "2")
+H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "120") or "120")
+H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "24") or "24")
+H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "40") or "40")
+H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "4") or "4")
 H24_SITEMAP_LIMIT = int(os.environ.get("H24_SITEMAP_LIMIT", "260") or "260")
 H24_TAKE_ALL_M3U8 = os.environ.get("H24_TAKE_ALL_M3U8", "1").strip().lower() not in {"0", "false", "no"}
 H24_INCLUDE_MP4 = os.environ.get("H24_INCLUDE_MP4", "1").strip().lower() not in {"0", "false", "no"}
-H24_VIDEO_SITEMAP_LIMIT = int(os.environ.get("H24_VIDEO_SITEMAP_LIMIT", "420") or "420")
-H24_VIDEO_SITEMAP_FILES = int(os.environ.get("H24_VIDEO_SITEMAP_FILES", "12") or "12")
+H24_VIDEO_SITEMAP_LIMIT = int(os.environ.get("H24_VIDEO_SITEMAP_LIMIT", "120") or "120")
+H24_VIDEO_SITEMAP_FILES = int(os.environ.get("H24_VIDEO_SITEMAP_FILES", "3") or "3")
 HIGHLIGHT_MIN_GOOD_COUNT = int(os.environ.get("HIGHLIGHT_MIN_GOOD_COUNT", "30") or "30")
 HIGHLIGHT_KEEP_PREVIOUS_ON_LOW = (
     os.environ.get("HIGHLIGHT_KEEP_PREVIOUS_ON_LOW", "1").strip().lower() not in {"0", "false", "no"}
@@ -883,6 +883,8 @@ def stream_dedupe_key(channel):
         if title_key:
             return ("24hHighlight", title_key)
         return ("24hHighlight", h24_variant_family_key(url))
+    if channel.get("source") in {"90PhutHighlight", "DasFootballHighlight"}:
+        return ("VideasHighlight", videas_highlight_family_key(url))
     if channel.get("source") == "SportflowLiveZ":
         return (
             "SportflowLiveZ",
@@ -919,6 +921,15 @@ def is_flv_url(url):
 
 def tokenless_stream_key(url):
     parsed = urlparse(clean_text(url))
+    return parsed._replace(query="", fragment="").geturl().lower()
+
+
+def videas_highlight_family_key(url):
+    parsed = urlparse(clean_text(url))
+    path = parsed.path.strip("/").lower()
+    match = re.search(r"/hlsv1/(?:[0-9a-f]{2}/[0-9a-f]{2}/)?([0-9a-f-]{20,})/", "/" + path + "/", re.I)
+    if match:
+        return match.group(1)
     return parsed._replace(query="", fragment="").geturl().lower()
 
 
@@ -1152,6 +1163,8 @@ PREFERRED_OUTPUT_GROUPS = [
 ]
 
 PREFERRED_SOURCE_PRIORITY = {
+    "DasFootballHighlight": 96,
+    "90PhutHighlight": 92,
     "GioVang": 80,
     "VSC9": 76,
     "SocoliveTV": 72,
