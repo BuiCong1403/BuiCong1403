@@ -878,6 +878,8 @@ def channel_key(channel):
 
 def stream_dedupe_key(channel):
     url = clean_text(channel.get("stream_url"))
+    if is_highlight_source(channel.get("source")) and "videas.fr" in url.lower():
+        return ("VideasHighlight", videas_highlight_family_key(url))
     if channel.get("source") == "24hHighlight":
         title_key = h24_title_family_key(channel.get("name"))
         if title_key:
@@ -1373,9 +1375,13 @@ def group_sort_rank(channel):
     return len(PREFERRED_OUTPUT_GROUPS) + 50
 
 
+def is_highlight_source(source):
+    return clean_text(source) in {"24hHighlight", "90PhutHighlight", "DasFootballHighlight"}
+
+
 def is_highlight_channel(channel):
     source = clean_text(channel.get("source"))
-    return source in {"24hHighlight", "90PhutHighlight", "DasFootballHighlight"} or group_key(output_group(channel)) == group_key("Highlight")
+    return is_highlight_source(source) or group_key(output_group(channel)) == group_key("Highlight")
 
 
 def highlight_time_sort_value(channel):
