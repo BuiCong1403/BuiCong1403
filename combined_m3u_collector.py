@@ -236,6 +236,20 @@ DASFOOTBALL_SEED_URLS = [
     ).split(",")
     if item.strip()
 ]
+SUPERSPORT_BASE_URL = os.environ.get("SUPERSPORT_BASE_URL", "https://supersport.com/")
+SUPERSPORT_VIDEO_URL = os.environ.get("SUPERSPORT_VIDEO_URL", "https://supersport.com/football/videos")
+SUPERSPORT_HIGHLIGHT_DAYS_BACK = int(os.environ.get("SUPERSPORT_HIGHLIGHT_DAYS_BACK", "7") or "7")
+SUPERSPORT_HIGHLIGHT_LIMIT = int(os.environ.get("SUPERSPORT_HIGHLIGHT_LIMIT", "100") or "100")
+SUPERSPORT_SEED_URLS = [
+    item.strip()
+    for item in os.environ.get(
+        "SUPERSPORT_SEED_URLS",
+        "https://supersport.com/football/video/14b787a5-45d1-4e23-ae83-96a22223b677/"
+        "all-goals-of-the-day-8-september-2026-uefa-champions-league,"
+        "https://vod.supersport.com/2019/SOC_080926_UEFA_GOALS_500K.mp4.m3u8",
+    ).split(",")
+    if item.strip()
+]
 H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
 H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "2") or "2")
 H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "120") or "120")
@@ -314,6 +328,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "24hHighlight",
     "90PhutHighlight",
     "DasFootballHighlight",
+    "SuperSportHighlight",
 }
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
@@ -885,6 +900,8 @@ def stream_dedupe_key(channel):
         if title_key:
             return ("24hHighlight", title_key)
         return ("24hHighlight", h24_variant_family_key(url))
+    if channel.get("source") == "SuperSportHighlight":
+        return ("SuperSportHighlight", url)
     if channel.get("source") in {"90PhutHighlight", "DasFootballHighlight"}:
         return ("VideasHighlight", videas_highlight_family_key(url))
     if channel.get("source") == "SportflowLiveZ":
@@ -1167,6 +1184,7 @@ PREFERRED_OUTPUT_GROUPS = [
 PREFERRED_SOURCE_PRIORITY = {
     "DasFootballHighlight": 96,
     "90PhutHighlight": 92,
+    "SuperSportHighlight": 88,
     "GioVang": 80,
     "VSC9": 76,
     "SocoliveTV": 72,
@@ -1376,7 +1394,7 @@ def group_sort_rank(channel):
 
 
 def is_highlight_source(source):
-    return clean_text(source) in {"24hHighlight", "90PhutHighlight", "DasFootballHighlight"}
+    return clean_text(source) in {"24hHighlight", "90PhutHighlight", "DasFootballHighlight", "SuperSportHighlight"}
 
 
 def is_highlight_channel(channel):
@@ -1547,7 +1565,8 @@ def select_ott_compatible_channels(channels):
         if (
             is_flv_url(channel.get("stream_url"))
             or group_key_value in {"phaohoatv", "highlight"}
-            or channel.get("source") in {"PhaoHoaTV", "24hHighlight", "90PhutHighlight", "DasFootballHighlight"}
+            or channel.get("source")
+            in {"PhaoHoaTV", "24hHighlight", "90PhutHighlight", "DasFootballHighlight", "SuperSportHighlight"}
             or not channel_needs_extvlcopt(channel)
         ):
             selected.append(channel)
@@ -2213,11 +2232,11 @@ def collect_choangtv_api():
             stream_url = normalize_choang_stream_url(match.get("liveUrl"))
             if not stream_url:
                 stream_url = normalize_choang_stream_url(f"live{match_id}/index.m3u8")
+            dt = parse_vn_datetime_text(match.get("time") or item.get("time"))
             seen_key = source_stream_seen_key(source, stream_url, match_id, match.get("name1"), match.get("name2"), match.get("caster"), dt)
             if not is_valid_stream_url(stream_url) or seen_key in seen_urls:
                 continue
             seen_urls.add(seen_key)
-            dt = parse_vn_datetime_text(match.get("time") or item.get("time"))
             time_label = dt.strftime("%Hh%M") if dt else ""
             league = clean_text(match.get("league") or item.get("league"))
             category = clean_text(match.get("category") or item.get("category"))
@@ -4489,6 +4508,178 @@ def collect_dasfootball_highlights():
     return channels
 
 
+def supersport_headers(referer=None):
+    base_url = SUPERSPORT_BASE_URL.rstrip("/") + "/"
+    return {
+        "Accept": "text/html,application/xhtml+xml,application/json,*/*",
+        "Origin": base_url.rstrip("/"),
+        "Referer": referer or base_url,
+        "User-Agent": UA,
+    }
+
+
+def supersport_allowed_highlight_dates():
+    today = datetime.now(TZ_VN).date()
+    return {today - timedelta(days=offset) for offset in range(max(0, SUPERSPORT_HIGHLIGHT_DAYS_BACK) + 1)}
+
+
+def supersport_date_from_value(value):
+    event_dt = parse_iso_to_ict_datetime(value)
+    if event_dt:
+        return event_dt.date()
+    return date_from_text(clean_text(value))
+
+
+def extract_supersport_video_urls(html_text, base_url):
+    urls = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or ""))
+    patterns = (
+        r"https?://supersport\.com/football/video/[^\s'\"<>\\]+",
+        r"""href=["']([^"']*?/football/video/[^"']+)["']""",
+    )
+    for index, pattern in enumerate(patterns):
+        for match in re.finditer(pattern, text, re.I):
+            raw_url = match.group(1) if index else match.group(0)
+            post_url = urljoin(base_url, html.unescape(raw_url)).split("#", 1)[0]
+            post_url = clean_text(post_url).rstrip(".,);]")
+            lower_url = post_url.lower()
+            if not any(marker in lower_url for marker in ("highlight", "goals")):
+                continue
+            if post_url and post_url not in seen:
+                seen.add(post_url)
+                urls.append(post_url)
+    return urls
+
+
+def supersport_json_field(html_text, field):
+    patterns = (
+        rf'"{re.escape(field)}"\s*:\s*"((?:\\.|[^"\\])*)"',
+        rf'{re.escape(field)}\\":\\"((?:\\\\.|[^\\"])*)\\"',
+    )
+    for pattern in patterns:
+        match = re.search(pattern, html_text or "", re.I | re.S)
+        if match:
+            return clean_text(html.unescape(decode_json_string(match.group(1))))
+    return ""
+
+
+def extract_supersport_video_payload(html_text, page_url):
+    source_url = supersport_json_field(html_text, "videoSource")
+    title = supersport_json_field(html_text, "videoTitle")
+    video_date = supersport_json_field(html_text, "videoDate") or supersport_json_field(html_text, "firstPublishedDate")
+    image = supersport_json_field(html_text, "featuredImage") or supersport_json_field(html_text, "image")
+    if not source_url:
+        stream_urls = []
+        text = html.unescape(decode_json_string(html_text or ""))
+        for match in re.finditer(r"https?://vod\.supersport\.com/[^\s'\"<>{}\\,\]]+?\.m3u8", text, re.I):
+            stream_url = clean_text(match.group(0).replace("\\/", "/")).rstrip(".,);]")
+            if is_valid_highlight_url(stream_url) and stream_url not in stream_urls:
+                stream_urls.append(stream_url)
+        source_url = best_highlight_url(stream_urls)
+    if not title:
+        title = title_from_html_page(html_text, title_from_url_slug(page_url) or "SuperSport Highlight")
+    title = clean_highlight_title(title)
+    return {
+        "title": title,
+        "stream_url": source_url,
+        "event_date": supersport_date_from_value(video_date),
+        "logo": urljoin(SUPERSPORT_BASE_URL.rstrip("/") + "/", image) if image else "",
+    }
+
+
+def collect_supersport_highlights():
+    source = "SuperSportHighlight"
+    base_url = SUPERSPORT_BASE_URL.rstrip("/") + "/"
+    allowed_dates = supersport_allowed_highlight_dates()
+    page_urls = [SUPERSPORT_VIDEO_URL, base_url]
+    post_urls = []
+    seen_posts = set()
+    direct_seed_urls = []
+    last_seed_title = ""
+
+    for seed_url in SUPERSPORT_SEED_URLS:
+        seed_url = clean_text(seed_url)
+        if not seed_url:
+            continue
+        if is_valid_highlight_url(seed_url):
+            if all(existing_url != seed_url for existing_url, _title in direct_seed_urls):
+                direct_seed_urls.append((seed_url, last_seed_title))
+            continue
+        if "/football/video/" in seed_url and seed_url not in seen_posts:
+            seen_posts.add(seed_url)
+            post_urls.append(seed_url)
+            last_seed_title = clean_highlight_title(title_from_url_slug(seed_url) or "")
+
+    for page_url in page_urls:
+        log(f"[{source}] Fetch {page_url}")
+        try:
+            html_text = fetch_text(page_url, headers=supersport_headers(page_url), timeout=35)
+        except Exception:
+            continue
+        for post_url in extract_supersport_video_urls(html_text, base_url):
+            if post_url in seen_posts:
+                continue
+            seen_posts.add(post_url)
+            post_urls.append(post_url)
+            if len(post_urls) >= max(1, SUPERSPORT_HIGHLIGHT_LIMIT):
+                break
+        if len(post_urls) >= max(1, SUPERSPORT_HIGHLIGHT_LIMIT):
+            break
+
+    def direct_seed_channel(stream_url, seed_title=""):
+        return {
+            "source": source,
+            "name": seed_title or title_from_stream_url(stream_url, "SuperSport Highlight"),
+            "group": "Highlight | SuperSport",
+            "logo": "",
+            "stream_url": stream_url,
+            "referer": base_url,
+            "user_agent": UA,
+            "event_date": None,
+            "skip_event_filter": True,
+        }
+
+    def collect_post(post_url):
+        try:
+            html_text = fetch_text(post_url, headers=supersport_headers(post_url), timeout=25)
+        except Exception:
+            return []
+        payload = extract_supersport_video_payload(html_text, post_url)
+        stream_url = clean_text(payload.get("stream_url"))
+        if not is_valid_highlight_url(stream_url):
+            return []
+        event_date = payload.get("event_date")
+        if event_date and event_date not in allowed_dates:
+            return []
+        return [
+            {
+                "source": source,
+                "name": payload.get("title") or title_from_url_slug(post_url) or "SuperSport Highlight",
+                "group": "Highlight | SuperSport",
+                "logo": payload.get("logo") or "",
+                "stream_url": stream_url,
+                "referer": post_url,
+                "user_agent": UA,
+                "event_date": event_date,
+                "skip_event_filter": True,
+            }
+        ]
+
+    channels = []
+    channels.extend(direct_seed_channel(stream_url, seed_title) for stream_url, seed_title in direct_seed_urls)
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception:
+                continue
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def ninety_phutzi_date_from_url_or_title(value):
     text = clean_text(value)
     today = datetime.now(TZ_VN).date()
@@ -6255,6 +6446,7 @@ def main():
     highlight_sources = []
     highlight_sources.extend(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
     highlight_sources.extend(collect_source_channels("90PhutHighlight", collect_90phutzi_highlights))
+    highlight_sources.extend(collect_source_channels("SuperSportHighlight", collect_supersport_highlights))
     highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
     highlight_channels = dedupe_and_sort_channels(highlight_sources)
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
