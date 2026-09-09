@@ -6197,8 +6197,6 @@ def main():
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
         ("VeboTV", collect_vebotv),
-        ("CuongHeHe", collect_cuonghehe),
-        ("CuongHeHe4K", collect_tt1_4k),
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
         ("MebongTV", collect_mebongtv),
