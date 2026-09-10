@@ -3,15 +3,19 @@ name: Update M3U
 on:
   workflow_dispatch:
   schedule:
-    # Asia/Bangkok: 04:00, 05:00, 10:00, 15:00
-    - cron: "0 21,3,8 * * *"
+    # Live sports, Asia/Bangkok: 02:00, 16:00, 18:00
+    - cron: "0 19 * * *"
+    - cron: "0 9 * * *"
+    - cron: "0 11 * * *"
+    # Highlights, Asia/Bangkok: 03:30, 04:00, 04:30, 05:00
+    - cron: "30 20 * * *"
+    - cron: "0 21 * * *"
+    - cron: "30 21 * * *"
     - cron: "0 22 * * *"
-    # Asia/Bangkok: 03:30, 04:30, 18:30, 21:30
-    - cron: "30 20,21,11,14 * * *"
 
 concurrency:
   group: update-m3u-main
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -38,7 +42,19 @@ jobs:
 
       - name: Generate M3U files
         run: |
-          python combined_m3u_collector.py
+          RUN_MODE="all"
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            case "${{ github.event.schedule }}" in
+              "30 20 * * *"|"0 21 * * *"|"30 21 * * *"|"0 22 * * *")
+                RUN_MODE="highlight"
+                ;;
+              *)
+                RUN_MODE="live"
+                ;;
+            esac
+          fi
+          echo "RUN_MODE=$RUN_MODE"
+          RUN_MODE="$RUN_MODE" python combined_m3u_collector.py
           rm -f sport.m3u
           rm -f tinhlagi.m3u thethaocoban.m3u
           rm -f export_reference_m3u.bat

@@ -57,7 +57,7 @@ BONG_LAU_API_URL = os.environ.get(
     "BONG_LAU_API_URL",
     "https://api-v2.chuoichientv.net/v2/matches?page=1&limit=200&sport=&type=blv",
 )
-KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://tructiep.khandaia.link")
+KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://khandai3.link")
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
 COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
 COLATV_API_URL = os.environ.get("COLATV_API", "https://api.cltvlv.com/api/matches")
@@ -352,6 +352,16 @@ VERIFY_STREAMS = os.environ.get("VERIFY_STREAMS", "0").strip().lower() in {"1", 
 MAX_VERIFY_WORKERS = int(os.environ.get("MAX_VERIFY_WORKERS", "20"))
 FILTER_PAST_EVENTS = os.environ.get("FILTER_PAST_EVENTS", "1").strip().lower() not in {"0", "false", "no"}
 PAST_EVENT_GRACE_MINUTES = int(os.environ.get("PAST_EVENT_GRACE_MINUTES", "480") or "480")
+RUN_MODE = os.environ.get("RUN_MODE", "all").strip().lower()
+PHAOHOA_SEED_STREAMS = [
+    item.strip()
+    for item in os.environ.get(
+        "PHAOHOA_SEED_STREAMS",
+        "Thai Lan vs Uc|https://luong.phaohoa.live/live/phaohoa5/index.m3u8"
+        "?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|https://khandai3.link/truc-tiep/thai-lan-vs-uc",
+    ).split("||")
+    if item.strip()
+]
 
 
 def log(message):
@@ -2143,6 +2153,32 @@ def collect_phaohoa():
                 "page_size": 200,
                 "ordering": "smart",
                 "start_time__date": event_date.isoformat(),
+            }
+        )
+
+    for seed in PHAOHOA_SEED_STREAMS:
+        parts = [clean_text(part) for part in seed.split("|")]
+        if len(parts) < 2:
+            continue
+        title = parts[0] or "PhaoHoaTV"
+        stream_url = parts[1]
+        referer = parts[2] if len(parts) >= 3 else api_base + "/"
+        if not (is_hls_url(stream_url) or is_flv_url(stream_url)):
+            continue
+        seed_key = (stream_url, title, referer)
+        if seed_key in seen_urls:
+            continue
+        seen_urls.add(seed_key)
+        channels.append(
+            {
+                "source": source,
+                "name": title,
+                "group": "PhaoHoaTV",
+                "logo": api_base + "/images/logo.png",
+                "stream_url": stream_url,
+                "referer": referer,
+                "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                "skip_event_filter": True,
             }
         )
 
@@ -6608,11 +6644,141 @@ def collect_source_channels(source_name, collector):
     return dedupe_and_sort_channels(selected)
 
 
+def split_m3u_text_blocks(text):
+    header = []
+    blocks = []
+    current = []
+    in_block = False
+    for line in (text or "").splitlines():
+        if line.startswith("#EXTINF"):
+            if current:
+                blocks.append(current)
+            current = [line]
+            in_block = True
+        elif in_block:
+            current.append(line)
+            if line and not line.startswith("#"):
+                blocks.append(current)
+                current = []
+                in_block = False
+        else:
+            header.append(line)
+    if current:
+        blocks.append(current)
+    return header, blocks
+
+
+def m3u_block_is_highlight(block):
+    joined = "\n".join(block).lower()
+    return 'group-title="highlight' in joined or "#extgrp:highlight" in joined
+
+
+def update_m3u_header(header, total):
+    result = []
+    wrote_total = False
+    for line in header:
+        if line.startswith("# Updated :"):
+            result.append(f"# Updated : {now_ict()}")
+        elif line.startswith("# Total   :"):
+            result.append(f"# Total   : {total}")
+            wrote_total = True
+        else:
+            result.append(line)
+    if not result or not result[0].startswith("#EXTM3U"):
+        result.insert(0, "#EXTM3U")
+    if not wrote_total:
+        result.insert(1, f"# Total   : {total}")
+    while result and result[-1] == "":
+        result.pop()
+    return result
+
+
+def write_m3u_text_blocks(path, header, blocks):
+    header = update_m3u_header(header[:4], len(blocks))
+    output = "\n".join(header).rstrip() + "\n\n"
+    if blocks:
+        output += "\n\n".join("\n".join(block).rstrip() for block in blocks).rstrip() + "\n"
+    path.write_text(output, encoding="utf-8")
+
+
+def replace_highlight_blocks(path, highlight_blocks):
+    if not path.exists():
+        return 0, len(highlight_blocks), len(highlight_blocks)
+    header, blocks = split_m3u_text_blocks(path.read_text(encoding="utf-8"))
+    kept = [block for block in blocks if not m3u_block_is_highlight(block)]
+    merged = kept + list(highlight_blocks)
+    write_m3u_text_blocks(path, header, merged)
+    return len(kept), len(highlight_blocks), len(merged)
+
+
+def highlight_blocks_from_file():
+    if not HIGHLIGHT_M3U.exists():
+        return []
+    _header, blocks = split_m3u_text_blocks(HIGHLIGHT_M3U.read_text(encoding="utf-8"))
+    return [block for block in blocks if m3u_block_is_highlight(block)]
+
+
+def ott_highlight_blocks_from_channels(channels):
+    blocks = []
+    for channel in channels:
+        stream_url = clean_text(channel.get("stream_url"))
+        if not stream_url:
+            continue
+        name = remove_icons(channel.get("name", "Unknown"))
+        blocks.append([f"#EXTINF:0,{name}", "#EXTGRP:Highlight", stream_url])
+    return blocks
+
+
+def ott_highlight_blocks_from_file():
+    blocks = []
+    for block in highlight_blocks_from_file():
+        title = "Highlight"
+        stream_url = ""
+        for line in block:
+            if line.startswith("#EXTINF"):
+                title = remove_icons(line.rsplit(",", 1)[-1].strip() or "Highlight")
+            elif line and not line.startswith("#"):
+                stream_url = clean_text(line)
+        if stream_url:
+            blocks.append([f"#EXTINF:0,{title}", "#EXTGRP:Highlight", stream_url])
+    return blocks
+
+
+def collect_current_highlights():
+    highlight_sources = []
+    highlight_sources.extend(collect_source_channels("SuperSportHighlight", collect_supersport_highlights))
+    highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
+    highlight_channels = dedupe_and_sort_channels(highlight_sources)
+    if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
+        log(
+            f"[Highlight] Low count {len(highlight_channels)} < {HIGHLIGHT_MIN_GOOD_COUNT}; "
+            "merge previous highlight.m3u"
+        )
+        previous_highlights = collect_previous_highlight_playlist()
+        if previous_highlights:
+            highlight_channels = dedupe_and_sort_channels(highlight_channels + previous_highlights)
+            log(f"[Highlight] After previous merge: {len(highlight_channels)}")
+    return highlight_channels
+
+
 def main():
     log("=" * 60)
     mode = "verify live links" if VERIFY_STREAMS else "raw m3u8 collection"
-    log(f"Combined M3U collector - {now_ict()} - {mode}")
+    log(f"Combined M3U collector - {now_ict()} - {mode} - run_mode={RUN_MODE}")
     log("=" * 60)
+
+    if RUN_MODE == "highlight":
+        highlight_channels = collect_current_highlights()
+        if WRITE_HIGHLIGHT_M3U:
+            write_m3u(HIGHLIGHT_M3U, highlight_channels)
+        all_counts = replace_highlight_blocks(ALL_M3U, highlight_blocks_from_file())
+        ott_counts = replace_highlight_blocks(OTT_M3U, ott_highlight_blocks_from_channels(highlight_channels))
+        log("")
+        log(f"[DONE] Highlight unique links: {len(highlight_channels)}")
+        log(f"[DONE] Updated all.m3u highlight blocks: kept={all_counts[0]} add={all_counts[1]} total={all_counts[2]}")
+        log(f"[DONE] Updated ott.m3u highlight blocks: kept={ott_counts[0]} add={ott_counts[1]} total={ott_counts[2]}")
+        log(f"[DONE] HIGHLIGHT M3U: {HIGHLIGHT_M3U}")
+        return
 
     collectors = [
         ("HoiQuan3", collect_hoiquan3),
@@ -6754,21 +6920,29 @@ def main():
     write_m3u(ALL_M3U, base_deduped)
     write_ott_m3u(OTT_M3U, base_ott_deduped)
 
+    if RUN_MODE in {"live", "base"}:
+        highlight_blocks = highlight_blocks_from_file()
+        ott_highlight_blocks = ott_highlight_blocks_from_file()
+        all_counts = replace_highlight_blocks(ALL_M3U, highlight_blocks) if highlight_blocks else (len(base_deduped), 0, len(base_deduped))
+        ott_counts = (
+            replace_highlight_blocks(OTT_M3U, ott_highlight_blocks)
+            if ott_highlight_blocks
+            else (len(base_ott_deduped), 0, len(base_ott_deduped))
+        )
+        log("")
+        log(f"[DONE] Live unique links: {len(base_deduped)}")
+        log(f"[DONE] OTT live unique links: {len(base_ott_deduped)}")
+        log(f"[DONE] Kept highlight blocks in all.m3u: add={all_counts[1]} total={all_counts[2]}")
+        log(f"[DONE] Kept highlight blocks in ott.m3u: add={ott_counts[1]} total={ott_counts[2]}")
+        for source_name, count in per_source_counts.items():
+            log(f"[DONE] {source_name}: {count}")
+        log(f"[DONE] M3U: {ALL_M3U}")
+        log(f"[DONE] OTT M3U: {OTT_M3U}")
+        return
+
     highlight_channels = []
     log("")
-    highlight_sources = []
-    highlight_sources.extend(collect_source_channels("SuperSportHighlight", collect_supersport_highlights))
-    highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
-    highlight_channels = dedupe_and_sort_channels(highlight_sources)
-    if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
-        log(
-            f"[Highlight] Low count {len(highlight_channels)} < {HIGHLIGHT_MIN_GOOD_COUNT}; "
-            "merge previous highlight.m3u"
-        )
-        previous_highlights = collect_previous_highlight_playlist()
-        if previous_highlights:
-            highlight_channels = dedupe_and_sort_channels(highlight_channels + previous_highlights)
-            log(f"[Highlight] After previous merge: {len(highlight_channels)}")
+    highlight_channels = collect_current_highlights()
     per_source_counts["Highlight"] = len(highlight_channels)
     if WRITE_HIGHLIGHT_M3U:
         write_m3u(HIGHLIGHT_M3U, highlight_channels)
