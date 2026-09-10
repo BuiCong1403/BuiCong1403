@@ -199,11 +199,13 @@ XOILACZ_FALLBACK_REFERERS = [
     item.strip()
     for item in os.environ.get(
         "XOILACZ_FALLBACK_REFERERS",
-        "https://xlz.livecarriercdn.com/,https://xoilacxtv.tv/,https://xoilacct.tv/",
+        "https://xlz.livecarriercdn.com/,https://xlz.domainkqt.cc/,https://xoilacxtv.tv/,https://xoilacct.tv/",
     ).split(",")
     if item.strip()
 ]
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "4"))
+XOILACZ_TIME_BUDGET_SECONDS = int(os.environ.get("XOILACZ_TIME_BUDGET_SECONDS", "30") or "30")
+XOILACZ_REQUEST_TIMEOUT = int(os.environ.get("XOILACZ_REQUEST_TIMEOUT", "5") or "5")
 XOILACZ_SPORTS = [
     item.strip()
     for item in os.environ.get("XOILACZ_SPORTS", "football,basketball,tennis,volleyball,esports,badminton").split(",")
@@ -3408,11 +3410,14 @@ def collect_thethaocoban_source_fallback(
     channels = []
     for channel in get_thethaocoban_reference_channels():
         group = channel.get("group")
-        if not group_matches_any(group, allowed_groups):
-            continue
         stream_url = clean_text(channel.get("stream_url"))
         stream_key = stream_url.lower()
-        if host_keywords and not any(keyword in stream_key for keyword in host_keywords):
+        group_ok = group_matches_any(group, allowed_groups) if allowed_groups else True
+        host_ok = any(keyword in stream_key for keyword in host_keywords) if host_keywords else True
+        if allowed_groups and host_keywords:
+            if not (group_ok or host_ok):
+                continue
+        elif not group_ok or not host_ok:
             continue
         seen_key = source_stream_seen_key(target_source, stream_url, channel.get("name"))
         if seen_key in seen_urls:
@@ -3831,6 +3836,7 @@ def collect_mebongtv():
 def xoilacz_base_candidates():
     candidates = [
         XOILACZ_SITE_URL,
+        "https://xlz.domainkqt.cc/",
         "https://xoilacxtg.tv/",
         "https://xoilacxtv.tv/",
         "https://nmsba.com/",
@@ -3880,7 +3886,7 @@ def extract_xoilacz_url_stream(stream_page_url, headers, detail_url=""):
                 if detail_origin:
                     request_headers["Origin"] = detail_origin.group(0)
                 request_headers["Referer"] = detail_url
-            html_text = fetch_text(candidate, headers=request_headers, timeout=25)
+            html_text = fetch_text(candidate, headers=request_headers, timeout=XOILACZ_REQUEST_TIMEOUT)
         except Exception:
             continue
         match = re.search(r'(?:var|let|const)\s+urlStream\s*=\s*["\']([^"\']+)["\']', html_text)
@@ -3913,7 +3919,7 @@ def extract_xoilacz_url_stream(stream_page_url, headers, detail_url=""):
 
 def extract_xoilacz_stream_links(detail_url, headers):
     try:
-        html_text = fetch_text(detail_url, headers=headers, timeout=25)
+        html_text = fetch_text(detail_url, headers=headers, timeout=XOILACZ_REQUEST_TIMEOUT)
     except Exception:
         return []
     match = re.search(r"var\s+list_stream\s*=\s*(\[.*?\]);", html_text, re.S)
@@ -3959,6 +3965,39 @@ def collect_xoilacz():
     source = "XoiLacZ"
     channels = []
     seen_urls = set()
+    started_at = time.monotonic()
+    deadline = started_at + max(5, XOILACZ_TIME_BUDGET_SECONDS)
+
+    def timed_out():
+        return time.monotonic() >= deadline
+
+    def remaining_timeout(default_timeout=None):
+        remaining = max(1, int(deadline - time.monotonic()))
+        if default_timeout is None:
+            default_timeout = XOILACZ_REQUEST_TIMEOUT
+        return max(1, min(int(default_timeout), remaining))
+
+    def append_thethaocoban_fallback(reason):
+        log(f"[{source}] {reason}; fallback TheThaoCoBan")
+        channels.extend(
+            collect_thethaocoban_source_fallback(
+                "XoiLacZ",
+                "Xôi Lạc Z TV",
+                ("xoi lac", "xôi lạc"),
+                (
+                    "originpullstream.com",
+                    "m3u8delivery.com",
+                    "quickscoreboardz.com",
+                    "cachefluxlive.com",
+                    "playlistedgecdn.com",
+                    "livecarriercdn.com",
+                    "felnorastreamvault.com",
+                    "pro2cdnlive.com",
+                    "domaincdn.cc",
+                ),
+                seen_urls,
+            )
+        )
 
     def collect_match(block):
         blv_match = re.search(r"number-blv-(\d+)", block)
@@ -4000,21 +4039,28 @@ def collect_xoilacz():
         return match_channels
 
     for base_url in xoilacz_base_candidates():
+        if timed_out():
+            break
         headers = xoilacz_headers(base_url)
         before_base = len(channels)
         for sport in XOILACZ_SPORTS:
+            if timed_out():
+                break
             for page in range(max(1, XOILACZ_PAGES)):
+                if timed_out():
+                    break
                 url = f"{base_url.rstrip('/')}/sport/{sport}/load-more/home/page/{page}/per/20?t={int(time.time())}"
                 log(f"[{source}] Fetch {base_url} {sport} page {page}")
-                data = fetch_json(url, headers=headers, timeout=18)
+                data = fetch_json(url, headers=headers, timeout=remaining_timeout())
                 html_text = ((data.get("data") or {}).get("html") or "") if isinstance(data, dict) else ""
                 if not html_text:
                     break
 
                 blocks = extract_xoilacz_match_blocks(html_text)
-                with ThreadPoolExecutor(max_workers=6) as executor:
-                    futures = [executor.submit(collect_match, block) for block in blocks]
-                    for future in as_completed(futures):
+                executor = ThreadPoolExecutor(max_workers=6)
+                futures = [executor.submit(collect_match, block) for block in blocks]
+                try:
+                    for future in as_completed(futures, timeout=remaining_timeout()):
                         try:
                             match_channels = future.result()
                         except Exception:
@@ -4026,22 +4072,29 @@ def collect_xoilacz():
                                 continue
                             seen_urls.add(seen_key)
                             channels.append(channel)
+                except Exception:
+                    pass
+                finally:
+                    executor.shutdown(wait=False, cancel_futures=True)
                 time.sleep(0.5)
         if len(channels) == before_base:
             for path in ("", "truc-tiep/"):
+                if timed_out():
+                    break
                 page_url = urljoin(base_url, path)
                 log(f"[{source}] Fetch fallback {page_url}")
                 try:
-                    html_text = fetch_text(page_url, headers=headers, timeout=18)
+                    html_text = fetch_text(page_url, headers=headers, timeout=remaining_timeout())
                 except Exception as exc:
                     log(f"[{source}] Fallback error {page_url}: {exc}")
                     continue
                 blocks = extract_xoilacz_match_blocks(html_text)
                 if not blocks:
                     continue
-                with ThreadPoolExecutor(max_workers=6) as executor:
-                    futures = [executor.submit(collect_match, block) for block in blocks]
-                    for future in as_completed(futures):
+                executor = ThreadPoolExecutor(max_workers=6)
+                futures = [executor.submit(collect_match, block) for block in blocks]
+                try:
+                    for future in as_completed(futures, timeout=remaining_timeout()):
                         try:
                             match_channels = future.result()
                         except Exception:
@@ -4053,28 +4106,18 @@ def collect_xoilacz():
                                 continue
                             seen_urls.add(seen_key)
                             channels.append(channel)
+                except Exception:
+                    pass
+                finally:
+                    executor.shutdown(wait=False, cancel_futures=True)
                 if len(channels) > before_base:
                     break
         if len(channels) > before_base:
             break
 
     if len(channels) < XOILACZ_TTCB_MIN_LINKS:
-        channels.extend(
-            collect_thethaocoban_source_fallback(
-                "XoiLacZ",
-                "Xôi Lạc Z TV",
-                ("xoi lac", "xôi lạc"),
-                (
-                    "originpullstream.com",
-                    "m3u8delivery.com",
-                    "quickscoreboardz.com",
-                    "cachefluxlive.com",
-                    "playlistedgecdn.com",
-                    "livecarriercdn.com",
-                ),
-                seen_urls,
-            )
-        )
+        reason = f"Only {len(channels)} links after {int(time.monotonic() - started_at)}s"
+        append_thethaocoban_fallback(reason)
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
