@@ -3,10 +3,11 @@ name: Update M3U
 on:
   workflow_dispatch:
   schedule:
-    # Asia/Bangkok: 04:00, 10:00, 15:00
+    # Asia/Bangkok: 04:00, 05:00, 10:00, 15:00
     - cron: "0 21,3,8 * * *"
-    # Asia/Bangkok: 18:30, 21:30
-    - cron: "30 11,14 * * *"
+    - cron: "0 22 * * *"
+    # Asia/Bangkok: 03:30, 04:30, 18:30, 21:30
+    - cron: "30 20,21,11,14 * * *"
 
 concurrency:
   group: update-m3u-main
