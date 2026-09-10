@@ -238,6 +238,14 @@ DASFOOTBALL_SEED_URLS = [
 ]
 SUPERSPORT_BASE_URL = os.environ.get("SUPERSPORT_BASE_URL", "https://supersport.com/")
 SUPERSPORT_VIDEO_URL = os.environ.get("SUPERSPORT_VIDEO_URL", "https://supersport.com/football/videos")
+SUPERSPORT_VIDEO_URLS = [
+    item.strip()
+    for item in os.environ.get(
+        "SUPERSPORT_VIDEO_URLS",
+        "https://supersport.com/live-streaming/videos,https://supersport.com/football/videos",
+    ).split(",")
+    if item.strip()
+]
 SUPERSPORT_HIGHLIGHT_DAYS_BACK = int(os.environ.get("SUPERSPORT_HIGHLIGHT_DAYS_BACK", "7") or "7")
 SUPERSPORT_HIGHLIGHT_LIMIT = int(os.environ.get("SUPERSPORT_HIGHLIGHT_LIMIT", "100") or "100")
 SUPERSPORT_FEED_PAGE_SIZE = int(os.environ.get("SUPERSPORT_FEED_PAGE_SIZE", "30") or "30")
@@ -2650,16 +2658,21 @@ def collect_previous_highlight_playlist():
     channels = []
     for channel in previous:
         stream_url = clean_text(channel.get("stream_url"))
+        lower_url = stream_url.lower()
+        if "cdn.24h.com.vn" not in lower_url and "vod.supersport.com" not in lower_url:
+            continue
         media_date = h24_date_from_media_url(stream_url)
         if media_date and media_date not in allowed_dates:
             continue
-        channel["source"] = "24hHighlight"
+        channel["source"] = "SuperSportHighlight" if "vod.supersport.com" in lower_url else "24hHighlight"
         channel["group"] = "Highlight"
-        if not clean_text(channel.get("referer")):
+        if "vod.supersport.com" in lower_url and not clean_text(channel.get("referer")):
+            channel["referer"] = SUPERSPORT_BASE_URL.rstrip("/") + "/"
+        elif not clean_text(channel.get("referer")):
             channel["referer"] = H24_BASE_URL.rstrip("/") + "/"
         channel["skip_event_filter"] = True
         channels.append(channel)
-    return dedupe_h24_highlight_channels(channels)
+    return channels
 
 
 def collect_chuoichien():
@@ -4698,7 +4711,11 @@ def collect_supersport_highlights():
     source = "SuperSportHighlight"
     base_url = SUPERSPORT_BASE_URL.rstrip("/") + "/"
     allowed_dates = supersport_allowed_highlight_dates()
-    page_urls = [SUPERSPORT_VIDEO_URL, base_url]
+    page_urls = []
+    for page_url in [*SUPERSPORT_VIDEO_URLS, SUPERSPORT_VIDEO_URL, base_url]:
+        page_url = clean_text(page_url)
+        if page_url and page_url not in page_urls:
+            page_urls.append(page_url)
     post_urls = []
     seen_posts = set()
     direct_seed_urls = []
@@ -6740,10 +6757,7 @@ def main():
     highlight_channels = []
     log("")
     highlight_sources = []
-    highlight_sources.extend(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
-    highlight_sources.extend(collect_source_channels("90PhutHighlight", collect_90phutzi_highlights))
     highlight_sources.extend(collect_source_channels("SuperSportHighlight", collect_supersport_highlights))
-    highlight_sources.extend(collect_source_channels("FootballOrginHighlight", collect_footballorgin_highlights))
     highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
     highlight_channels = dedupe_and_sort_channels(highlight_sources)
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
