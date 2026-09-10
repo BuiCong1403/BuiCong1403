@@ -59,6 +59,7 @@ BONG_LAU_API_URL = os.environ.get(
 )
 KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://khandai3.link")
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
+KHANDAIA_INTERNAL_API_BASE = os.environ.get("KHANDAIA_INTERNAL_API", KHANDAIA_FRONTEND_URL).rstrip("/")
 COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
 COLATV_API_URL = os.environ.get("COLATV_API", "https://api.cltvlv.com/api/matches")
 BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv15.com/")
@@ -104,8 +105,8 @@ GIOVANG_FALLBACK_JSON_URL = os.environ.get(
     "GIOVANG_FALLBACK_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
 )
-PHAOHOA_API_BASE = (os.environ.get("PHAOHOA_API") or "https://phaohoa1.live").rstrip("/")
-PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://phaohoa.live").rstrip("/")
+PHAOHOA_API_BASE = (os.environ.get("PHAOHOA_API") or "https://khandai3.link").rstrip("/")
+PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://khandai3.link").rstrip("/")
 CHOANG_ENTRY_SITE_URL = os.environ.get("CHOANG_ENTRY_SITE_URL", "https://choangtv.com/")
 CHOANG_DEFAULT_DOMAIN = os.environ.get("CHOANG_DEFAULT_DOMAIN", "choangtv21.com")
 CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", f"https://{CHOANG_DEFAULT_DOMAIN}")
@@ -334,6 +335,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "S8TV",
     "SocoliveTV",
     "PhaoHoaTV",
+    "KhanDaiA",
     "XoiLacZ",
     "SportflowLiveZ",
     "VSC9",
@@ -517,6 +519,9 @@ def phaohoa_frontend_candidates():
     candidates = [
         PHAOHOA_API_BASE,
         PHAOHOA_FRONTEND_URL,
+        KHANDAIA_INTERNAL_API_BASE,
+        KHANDAIA_FRONTEND_URL,
+        "https://khandai3.link",
         "https://phaohoa1.live",
         "https://phaohoa2.live",
         "https://phaohoa3.live",
@@ -1688,9 +1693,27 @@ def collect_hoiquan1():
 
 
 def collect_khandaia():
-    api_base = discover_external_api_base("KhanDaiA", KHANDAIA_FRONTEND_URL, KHANDAIA_KNOWN_API_BASE)
+    source = "KhanDaiA"
+    frontend_url = discover_frontend_url(KHANDAIA_FRONTEND_URL) or KHANDAIA_FRONTEND_URL
+    api_base = clean_text(KHANDAIA_INTERNAL_API_BASE or frontend_url).rstrip("/")
+    if not probe_phaohoa_api_base(api_base, frontend_url):
+        api_base = clean_text(frontend_url).rstrip("/")
+    channels = []
+    if probe_phaohoa_api_base(api_base, frontend_url):
+        channels = collect_django_matches_api(
+            source,
+            api_base,
+            frontend_url,
+            "Khan Dai A",
+            days=PHAOHOA_DAYS,
+            max_pages=12,
+        )
+    if channels:
+        return channels
+
+    api_base = discover_external_api_base(source, KHANDAIA_FRONTEND_URL, KHANDAIA_KNOWN_API_BASE)
     return collect_standard_api(
-        "KhanDaiA",
+        source,
         f"{api_base.rstrip('/')}/fixtures/unfinished",
         KHANDAIA_FRONTEND_URL,
         "Khan Dai A",
@@ -1801,6 +1824,162 @@ def collect_standard_api(source, api_url, site_url="", group_name=None):
                         "event_datetime": event_datetime,
                     }
                 )
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+def collect_django_matches_api(
+    source,
+    api_base,
+    site_url,
+    group_name,
+    days=7,
+    max_pages=12,
+    include_seed_streams=None,
+):
+    """Collect streams from the current Django /api/matches/ layout.
+
+    Several frontends currently share this shape: paginated `results`, match
+    metadata in snake_case, and stream URLs inside commentator objects.
+    """
+    api_base = clean_text(api_base).rstrip("/")
+    site_url = clean_text(site_url or api_base).rstrip("/")
+    headers = {
+        "User-Agent": UA,
+        "Accept": "application/json, text/plain, */*",
+        "Origin": site_url,
+        "Referer": site_url + "/lich-truc-tiep",
+    }
+    channels = []
+    seen_urls = set()
+
+    def absolute_media_url(value):
+        value = clean_text(value)
+        if not value:
+            return ""
+        return urljoin(api_base + "/", value)
+
+    def add_stream(match_item, stream_url, blv_name="", label="", seed_referer=""):
+        stream_url = clean_text(stream_url).rstrip(".,);]")
+        url_match = re.search(r"https?://\S+", stream_url)
+        if url_match:
+            stream_url = url_match.group(0).rstrip(".,);]")
+        if not (is_hls_url(stream_url) or is_flv_url(stream_url)):
+            return
+        event_datetime = parse_iso_to_ict_datetime(match_item.get("start_time"))
+        status = clean_text(match_item.get("status")).lower()
+        if status in {"finished", "ended", "full_time", "complete", "completed"}:
+            return
+        if event_datetime:
+            cutoff = datetime.now(TZ_VN) - timedelta(minutes=max(0, PAST_EVENT_GRACE_MINUTES))
+            if event_datetime < cutoff:
+                return
+        home_name = clean_text(match_item.get("home_team_name"))
+        away_name = clean_text(match_item.get("away_team_name"))
+        stream_key = source_stream_seen_key(
+            source,
+            stream_url,
+            event_datetime.isoformat() if event_datetime else "",
+            home_name,
+            away_name,
+            blv_name,
+            label,
+        )
+        if stream_key in seen_urls:
+            return
+        seen_urls.add(stream_key)
+        time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
+        tournament = clean_text(match_item.get("tournament_name"))
+        sport_name = clean_text(match_item.get("sport_name"))
+        title_parts = []
+        if time_label:
+            title_parts.append(time_label)
+        if home_name and away_name:
+            title_parts.append(f"{home_name} vs {away_name}")
+        else:
+            title_parts.append(clean_text(match_item.get("name")) or title_from_stream_url(stream_url, source))
+        if sport_name:
+            title_parts.append(sport_name)
+        if tournament:
+            title_parts.append(tournament)
+        if blv_name:
+            title_parts.append(f"BLV {blv_name}")
+        if label:
+            title_parts.append(label)
+        channels.append(
+            {
+                "source": source,
+                "name": " | ".join(part for part in title_parts if part),
+                "group": group_name,
+                "logo": absolute_media_url(match_item.get("home_team_logo") or match_item.get("sport_icon_url")),
+                "stream_url": stream_url,
+                "referer": (seed_referer or site_url + "/"),
+                "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                "event_datetime": event_datetime,
+                "event_date": event_datetime.date() if event_datetime else None,
+            }
+        )
+
+    def collect_match_streams(match_item):
+        for field, label in (
+            ("primary_stream_url", "Main"),
+            ("backup_stream_url", "Backup"),
+            ("flv_stream_url", "FLV"),
+        ):
+            add_stream(match_item, match_item.get(field), "", label)
+        for commentator in match_item.get("commentators") or []:
+            blv_name = clean_text(commentator.get("name"))
+            for field, label in (
+                ("stream_url", "Main"),
+                ("backup_stream_url", "Backup"),
+                ("flv_stream_url", "FLV"),
+            ):
+                add_stream(match_item, commentator.get(field), blv_name, label)
+
+    def fetch_matches(params):
+        page = 1
+        while page <= max_pages:
+            query = dict(params)
+            query["page"] = page
+            response = fetch_json_no_cache(
+                api_base + "/api/matches/?" + urlencode(query),
+                headers=headers,
+                timeout=30,
+            )
+            results = response.get("results") if isinstance(response, dict) else response
+            if not isinstance(results, list) or not results:
+                break
+            for item in results:
+                if isinstance(item, dict):
+                    collect_match_streams(item)
+            if not (isinstance(response, dict) and response.get("next")):
+                break
+            page += 1
+
+    fetch_matches({"status": "live", "page_size": 200, "ordering": "smart"})
+    fetch_matches({"status": "scheduled", "page_size": 200, "ordering": "smart"})
+    today = datetime.now(TZ_VN).date()
+    for offset in range(max(1, int(days or 1))):
+        fetch_matches(
+            {
+                "page_size": 200,
+                "ordering": "smart",
+                "start_time__date": (today + timedelta(days=offset)).isoformat(),
+            }
+        )
+
+    for seed in include_seed_streams or []:
+        parts = [clean_text(part) for part in seed.split("|")]
+        if len(parts) < 2:
+            continue
+        add_stream(
+            {"name": parts[0] or group_name, "start_time": ""},
+            parts[1],
+            "",
+            "",
+            parts[2] if len(parts) >= 3 else site_url + "/",
+        )
+
     log(f"[{source}] {len(channels)} raw links")
     return channels
 
@@ -2052,6 +2231,18 @@ def collect_phaohoa():
     source = "PhaoHoaTV"
     log(f"[{source}] Fetch API")
     api_base = discover_phaohoa_api_base()
+    channels = collect_django_matches_api(
+        source,
+        api_base,
+        api_base,
+        "PhaoHoaTV",
+        days=PHAOHOA_DAYS,
+        max_pages=12,
+        include_seed_streams=PHAOHOA_SEED_STREAMS,
+    )
+    if channels:
+        return channels
+
     headers = {
         "User-Agent": UA,
         "Accept": "application/json, text/plain, */*",
@@ -2059,11 +2250,13 @@ def collect_phaohoa():
         "Referer": api_base + "/lich-truc-tiep",
     }
 
-    channels = []
     seen_urls = set()
 
     def add_stream(match_item, stream_url, blv_name="", label=""):
         stream_url = clean_text(stream_url).rstrip(".,);]")
+        url_match = re.search(r"https?://\S+", stream_url)
+        if url_match:
+            stream_url = url_match.group(0).rstrip(".,);]")
         event_datetime = parse_iso_to_ict_datetime(match_item.get("start_time"))
         home_name = clean_text(match_item.get("home_team_name"))
         away_name = clean_text(match_item.get("away_team_name"))
