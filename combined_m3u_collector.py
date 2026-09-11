@@ -251,7 +251,12 @@ SUPERSPORT_VIDEO_URLS = [
     item.strip()
     for item in os.environ.get(
         "SUPERSPORT_VIDEO_URLS",
-        "https://supersport.com/live-streaming/videos,https://supersport.com/football/videos",
+        "https://supersport.com/live-streaming/videos,"
+        "https://supersport.com/football/videos,"
+        "https://supersport.com/rugby/videos,"
+        "https://supersport.com/cricket/videos,"
+        "https://supersport.com/tennis/videos,"
+        "https://supersport.com/motorsport/videos",
     ).split(",")
     if item.strip()
 ]
@@ -282,7 +287,7 @@ H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "40") or "40")
 H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "4") or "4")
 H24_SITEMAP_LIMIT = int(os.environ.get("H24_SITEMAP_LIMIT", "260") or "260")
 H24_TAKE_ALL_M3U8 = os.environ.get("H24_TAKE_ALL_M3U8", "1").strip().lower() not in {"0", "false", "no"}
-H24_INCLUDE_MP4 = os.environ.get("H24_INCLUDE_MP4", "1").strip().lower() not in {"0", "false", "no"}
+H24_INCLUDE_MP4 = os.environ.get("H24_INCLUDE_MP4", "0").strip().lower() not in {"0", "false", "no"}
 H24_VIDEO_SITEMAP_LIMIT = int(os.environ.get("H24_VIDEO_SITEMAP_LIMIT", "120") or "120")
 H24_VIDEO_SITEMAP_FILES = int(os.environ.get("H24_VIDEO_SITEMAP_FILES", "3") or "3")
 HIGHLIGHT_MIN_GOOD_COUNT = int(os.environ.get("HIGHLIGHT_MIN_GOOD_COUNT", "30") or "30")
@@ -315,6 +320,7 @@ THETHAOCOBAN_SOURCE_FALLBACK = (
 XOILACZ_TTCB_MIN_LINKS = int(os.environ.get("XOILACZ_TTCB_MIN_LINKS", "20") or "20")
 VSC9_TTCB_MIN_TODAY_LINKS = int(os.environ.get("VSC9_TTCB_MIN_TODAY_LINKS", "20") or "20")
 PHAOHOA_TTCB_MIN_LINKS = int(os.environ.get("PHAOHOA_TTCB_MIN_LINKS", "20") or "20")
+TTCB_SUPPLEMENT_MIN_LINKS = int(os.environ.get("TTCB_SUPPLEMENT_MIN_LINKS", "8") or "8")
 CLOUDOK_M3U_URL = os.environ.get(
     "CLOUDOK_M3U_URL",
     "https://raspy-waterfall-a003.ngoibut-cachmang.workers.dev/",
@@ -1052,7 +1058,7 @@ def best_highlight_url(urls):
 
 
 def best_24h_highlight_url(urls):
-    candidates = [clean_text(url) for url in urls if is_valid_highlight_url(url)]
+    candidates = [clean_text(url) for url in urls if is_valid_highlight_url(url) and is_hls_url(url)]
     special_urls = [url for url in candidates if "cp_special_" in url.lower()]
     return best_highlight_url(special_urls or candidates)
 
@@ -1173,6 +1179,9 @@ SPORT_SOURCES = {
     "QueChoa8",
     "S8TV",
     "TieuLamWC",
+    "GaVangTV",
+    "GaVang33TV",
+    "SaoKeTV",
 }
 
 SPORT_KEYWORDS = [
@@ -1205,8 +1214,13 @@ GROUP_CANONICAL_RULES = [
     ("CoLaTV", ("cola tv", "co la tv", "colatv")),
     (SPORT_INTERNATIONAL_GROUP, ("the thao quoc te", "thethaoquocte", "sport quoc te", "international sport")),
     ("Vua S\u00e2n C\u1ecf TV", ("vua san co", "vuasanco", "vsc9")),
+    ("X\u00f4i L\u1ea1c Z TV", ("xoi lac z", "xoilac z", "xoilacz", "xoi lac")),
     ("Khandai", ("khan dai", "khandaia", "khandai")),
     ("Chu\u1ed1i chi\u00ean", ("chuoi chien", "chuoichien", "chuoichientv")),
+    ("G\u00e0 V\u00e0ng TV", ("ga vang tv", "gavangtv")),
+    ("G\u00e0 V\u00e0ng 33 TV", ("ga vang 33", "gavang33")),
+    ("S8 TV", ("s8 tv", "s8tv")),
+    ("Sao K\u00ea TV", ("sao ke", "saoke", "sao ke tv", "saoketv")),
 ]
 
 PREFERRED_OUTPUT_GROUPS = [
@@ -1217,7 +1231,12 @@ PREFERRED_OUTPUT_GROUPS = [
     "Highlight",
     "Gi\u1edd V\u00e0ng TV",
     "Vua S\u00e2n C\u1ecf TV",
+    "X\u00f4i L\u1ea1c Z TV",
     "Khandai",
+    "G\u00e0 V\u00e0ng TV",
+    "G\u00e0 V\u00e0ng 33 TV",
+    "S8 TV",
+    "Sao K\u00ea TV",
     "Socolive TV",
     "CoLaTV",
     "BiaomTV",
@@ -1231,6 +1250,7 @@ PREFERRED_SOURCE_PRIORITY = {
     "FootballOrginHighlight": 86,
     "GioVang": 80,
     "VSC9": 76,
+    "XoiLacZ": 74,
     "SocoliveTV": 72,
     "CoLaTV": 68,
     "BiaomTV": 64,
@@ -3455,6 +3475,85 @@ def collect_thethaocoban_source_fallback(
     return channels
 
 
+TTCB_SUPPLEMENT_RULES = [
+    {
+        "source": "GioVang",
+        "group": "Gi\u1edd V\u00e0ng TV",
+        "allowed_groups": ("gio vang", "giờ vàng"),
+        "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
+    },
+    {
+        "source": "VSC9",
+        "group": "Vua S\u00e2n C\u1ecf TV",
+        "allowed_groups": ("vua san co", "vua sân cỏ"),
+        "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
+    },
+    {
+        "source": "XoiLacZ",
+        "group": "X\u00f4i L\u1ea1c Z TV",
+        "allowed_groups": ("xoi lac", "xôi lạc"),
+        "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
+    },
+    {
+        "source": "GaVangTV",
+        "group": "G\u00e0 V\u00e0ng TV",
+        "allowed_groups": ("ga vang tv", "gà vàng tv"),
+        "min_links": 1,
+    },
+    {
+        "source": "GaVang33TV",
+        "group": "G\u00e0 V\u00e0ng 33 TV",
+        "allowed_groups": ("ga vang 33", "gà vàng 33"),
+        "min_links": 1,
+    },
+    {
+        "source": "S8TV",
+        "group": "S8 TV",
+        "allowed_groups": ("s8 tv", "s8tv"),
+        "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
+    },
+    {
+        "source": "SaoKeTV",
+        "group": "Sao K\u00ea TV",
+        "allowed_groups": ("sao ke", "sao kê"),
+        "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
+    },
+]
+
+
+def supplement_from_thethaocoban_if_needed(channels, per_source_counts):
+    if not THETHAOCOBAN_SOURCE_FALLBACK:
+        return []
+    supplements = []
+    seen_urls = {stream_dedupe_key(channel) for channel in channels if clean_text(channel.get("stream_url"))}
+    for rule in TTCB_SUPPLEMENT_RULES:
+        source = rule["source"]
+        group = rule["group"]
+        current_count = sum(
+            1
+            for channel in channels
+            if clean_text(channel.get("source")) == source or group_key(output_group(channel)) == group_key(group)
+        )
+        min_links = int(rule.get("min_links") or 0)
+        if current_count >= min_links:
+            continue
+        extra = collect_thethaocoban_source_fallback(
+            source,
+            group,
+            rule.get("allowed_groups") or (),
+            seen_urls=seen_urls,
+        )
+        if not extra:
+            continue
+        extra = filter_current_and_future_events(verify_live_channels(extra))
+        if not extra:
+            continue
+        supplements.extend(extra)
+        per_source_counts[f"{source}TTCB"] = len(extra)
+        log(f"[{source}] Supplemented from TheThaoCoBan: current={current_count}, add={len(extra)}")
+    return supplements
+
+
 def collect_cloudok_premier_league():
     return collect_m3u_playlist(
         "CloudOKPremierLeague",
@@ -4865,8 +4964,8 @@ def extract_supersport_video_urls(html_text, base_url):
     seen = set()
     text = html.unescape(decode_json_string(html_text or ""))
     patterns = (
-        r"https?://supersport\.com/football/video/[^\s'\"<>\\]+",
-        r"""href=["']([^"']*?/football/video/[^"']+)["']""",
+        r"https?://supersport\.com/[a-z0-9-]+/video/[^\s'\"<>\\]+",
+        r"""href=["']([^"']*?/[a-z0-9-]+/video/[^"']+)["']""",
     )
     for index, pattern in enumerate(patterns):
         for match in re.finditer(pattern, text, re.I):
@@ -4975,7 +5074,11 @@ def supersport_feed_posts(base_url, allowed_dates):
         event_date = supersport_date_from_value(summary.get("publishedDate")) or published_date
         if event_date and event_date not in allowed_dates:
             return None
-        post_url = urljoin(base_url, f"football/video/{feed_id}/{slug}".strip("/"))
+        post_url = urljoin(base_url, slug.lstrip("/")) if slug.startswith("/") else ""
+        if not post_url:
+            sport_slug = clean_text(summary.get("sport") or summary.get("sportName") or "football").lower()
+            sport_slug = re.sub(r"[^a-z0-9-]+", "-", sport_slug).strip("-") or "football"
+            post_url = urljoin(base_url, f"{sport_slug}/video/{feed_id}/{slug}".strip("/"))
         image = clean_text(summary.get("image"))
         return {
             "url": post_url,
@@ -5022,7 +5125,7 @@ def collect_supersport_highlights():
             if all(existing_url != seed_url for existing_url, _title in direct_seed_urls):
                 direct_seed_urls.append((seed_url, last_seed_title))
             continue
-        if "/football/video/" in seed_url and seed_url not in seen_posts:
+        if re.search(r"/[a-z0-9-]+/video/", seed_url, re.I) and seed_url not in seen_posts:
             seen_posts.add(seed_url)
             post_urls.append({"url": seed_url, "title": "", "event_date": None, "logo": ""})
             last_seed_title = clean_highlight_title(title_from_url_slug(seed_url) or "")
@@ -7127,7 +7230,6 @@ def main():
         ("DekikiSports", collect_dekiki_sports),
         ("MebongTV", collect_mebongtv),
         ("XoiLacZ", collect_xoilacz),
-        ("SportflowLiveZ", collect_sportflowlivez_flv),
         ("AzabuLive", collect_azabu_live),
         (
             "TV365KidsInternational",
@@ -7169,6 +7271,10 @@ def main():
         per_source_counts[source_name] = len(selected)
         if selected:
             all_channels.extend(selected)
+
+    supplemental_channels = supplement_from_thethaocoban_if_needed(all_channels, per_source_counts)
+    if supplemental_channels:
+        all_channels.extend(supplemental_channels)
 
     base_deduped_with_ott = dedupe_and_sort_channels(all_channels)
     base_deduped, _base_flv_channels = split_ott_channels(base_deduped_with_ott)
