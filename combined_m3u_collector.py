@@ -7,7 +7,7 @@ import sys
 import time
 import unicodedata
 import warnings
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor, TimeoutError, as_completed
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -105,6 +105,12 @@ GIOVANG_FALLBACK_JSON_URL = os.environ.get(
     "GIOVANG_FALLBACK_JSON_URL",
     "https://raw.githubusercontent.com/jasminliu98/giovang-stream/refs/heads/main/output.json",
 )
+GIOVANG_USE_JASMIN_FALLBACK = os.environ.get("GIOVANG_USE_JASMIN_FALLBACK", "0").strip().lower() in {
+    "1",
+    "true",
+    "yes",
+    "on",
+}
 PHAOHOA_API_BASE = (os.environ.get("PHAOHOA_API") or "https://khandai3.link").rstrip("/")
 PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://khandai3.link").rstrip("/")
 CHOANG_ENTRY_SITE_URL = os.environ.get("CHOANG_ENTRY_SITE_URL", "https://choangtv.com/")
@@ -320,6 +326,7 @@ SPORTFLOW_SOURCE_URL = os.environ.get(
 )
 SPORTFLOW_LIMIT = int(os.environ.get("SPORTFLOW_LIMIT", "240") or "240")
 SPORTFLOW_WORKERS = int(os.environ.get("SPORTFLOW_WORKERS", "14") or "14")
+SPORTFLOW_TOTAL_TIMEOUT = int(os.environ.get("SPORTFLOW_TOTAL_TIMEOUT", "45") or "45")
 SPORTFLOW_GROUP = os.environ.get("SPORTFLOW_GROUP", "FLV")
 SPORT_INTERNATIONAL_GROUP = "TH\u1ec2 THAO QU\u1ed0C T\u1ebe"
 FLV_OTT_GROUP = "FLV"
@@ -1198,6 +1205,7 @@ GROUP_CANONICAL_RULES = [
     ("CoLaTV", ("cola tv", "co la tv", "colatv")),
     (SPORT_INTERNATIONAL_GROUP, ("the thao quoc te", "thethaoquocte", "sport quoc te", "international sport")),
     ("Vua S\u00e2n C\u1ecf TV", ("vua san co", "vuasanco", "vsc9")),
+    ("Khandai", ("khan dai", "khandaia", "khandai")),
     ("Chu\u1ed1i chi\u00ean", ("chuoi chien", "chuoichien", "chuoichientv")),
 ]
 
@@ -1209,7 +1217,7 @@ PREFERRED_OUTPUT_GROUPS = [
     "Highlight",
     "Gi\u1edd V\u00e0ng TV",
     "Vua S\u00e2n C\u1ecf TV",
-    "PhaoHoaTV",
+    "Khandai",
     "Socolive TV",
     "CoLaTV",
     "BiaomTV",
@@ -1706,7 +1714,7 @@ def collect_khandaia():
             source,
             api_base,
             frontend_url,
-            "Khan Dai A",
+            "Khandai",
             days=PHAOHOA_DAYS,
             max_pages=12,
         )
@@ -1718,7 +1726,7 @@ def collect_khandaia():
         source,
         f"{api_base.rstrip('/')}/fixtures/unfinished",
         KHANDAIA_FRONTEND_URL,
-        "Khan Dai A",
+        "Khandai",
     )
 
 
@@ -2102,8 +2110,11 @@ def collect_giovang_api():
         )
     )
     if not fixtures:
-        log(f"[{source}] Direct API empty, fallback grouped JSON")
-        return collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
+        if GIOVANG_USE_JASMIN_FALLBACK:
+            log(f"[{source}] Direct API empty, fallback grouped JSON")
+            return collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
+        log(f"[{source}] Direct API empty; jasmin fallback disabled")
+        return []
 
     channels = []
     seen_urls = set()
@@ -2162,12 +2173,14 @@ def collect_giovang_api():
                     }
                 )
 
-    fallback_channels = collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
-    if fallback_channels:
-        channels.extend(fallback_channels)
+    fallback_channels = []
+    if GIOVANG_USE_JASMIN_FALLBACK:
+        fallback_channels = collect_grouped_json(source, GIOVANG_FALLBACK_JSON_URL, "Gio Vang", GIOVANG_REFERER)
+        if fallback_channels:
+            channels.extend(fallback_channels)
 
     if not channels:
-        log(f"[{source}] Direct API has no stream, fallback grouped JSON")
+        log(f"[{source}] Direct API has no stream")
         return fallback_channels
     log(f"[{source}] {len(channels)} raw links")
     return channels
@@ -4321,22 +4334,30 @@ def collect_sportflowlivez_flv():
 
     with ThreadPoolExecutor(max_workers=max(1, SPORTFLOW_WORKERS)) as executor:
         futures = [executor.submit(resolve, item) for item in selected_pages]
-        for future in as_completed(futures):
-            try:
-                resolved_channels = future.result()
-            except Exception:
-                continue
-            for channel in resolved_channels:
-                key = source_stream_seen_key(
-                    source,
-                    channel.get("stream_url"),
-                    channel.get("match_id"),
-                    channel.get("name"),
-                )
-                if key in seen_streams:
+        try:
+            completed = as_completed(futures, timeout=max(5, SPORTFLOW_TOTAL_TIMEOUT))
+            for future in completed:
+                try:
+                    resolved_channels = future.result()
+                except Exception:
                     continue
-                seen_streams.add(key)
-                channels.append(channel)
+                for channel in resolved_channels:
+                    key = source_stream_seen_key(
+                        source,
+                        channel.get("stream_url"),
+                        channel.get("match_id"),
+                        channel.get("name"),
+                    )
+                    if key in seen_streams:
+                        continue
+                    seen_streams.add(key)
+                    channels.append(channel)
+        except TimeoutError:
+            pending = sum(1 for future in futures if not future.done())
+            log(f"[{source}] Stop resolving after {SPORTFLOW_TOTAL_TIMEOUT}s; pending pages: {pending}")
+            for future in futures:
+                if not future.done():
+                    future.cancel()
 
     log(f"[{source}] {len(channels)} raw links from {len(selected_pages)} pages")
     return channels
@@ -7079,7 +7100,6 @@ def main():
             ),
         ),
         ("GioVang", collect_giovang_api),
-        ("PhaoHoaTV", collect_phaohoa),
         ("ChoangTV", collect_choangtv_api),
         ("SocoliveTV", collect_socolive),
         (

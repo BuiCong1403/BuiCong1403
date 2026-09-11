@@ -7,11 +7,16 @@ on:
     - cron: "0 19 * * *"
     - cron: "0 9 * * *"
     - cron: "0 11 * * *"
-    # Highlights, Asia/Bangkok: 03:30, 04:00, 04:30, 05:00
+    # Highlights, Asia/Bangkok: every 30 minutes from 03:30 to 07:30
     - cron: "30 20 * * *"
     - cron: "0 21 * * *"
     - cron: "30 21 * * *"
     - cron: "0 22 * * *"
+    - cron: "30 22 * * *"
+    - cron: "0 23 * * *"
+    - cron: "30 23 * * *"
+    - cron: "0 0 * * *"
+    - cron: "30 0 * * *"
 
 concurrency:
   group: update-m3u-main
@@ -45,7 +50,7 @@ jobs:
           RUN_MODE="all"
           if [ "${{ github.event_name }}" = "schedule" ]; then
             case "${{ github.event.schedule }}" in
-              "30 20 * * *"|"0 21 * * *"|"30 21 * * *"|"0 22 * * *")
+              "30 20 * * *"|"0 21 * * *"|"30 21 * * *"|"0 22 * * *"|"30 22 * * *"|"0 23 * * *"|"30 23 * * *"|"0 0 * * *"|"30 0 * * *")
                 RUN_MODE="highlight"
                 ;;
               *)
