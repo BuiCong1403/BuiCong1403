@@ -274,6 +274,10 @@ SUPERSPORT_SEED_URLS = [
     ).split(",")
     if item.strip()
 ]
+SUPERSPORT_DAILY_GOALS_LOOKBACK_DAYS = int(os.environ.get("SUPERSPORT_DAILY_GOALS_LOOKBACK_DAYS", "7") or "7")
+SUPERSPORT_DAILY_GOALS_VALIDATE = (
+    os.environ.get("SUPERSPORT_DAILY_GOALS_VALIDATE", "1").strip().lower() not in {"0", "false", "no"}
+)
 FOOTBALLORGIN_BASE_URL = os.environ.get("FOOTBALLORGIN_BASE_URL", "https://www.footballorgin.com/")
 FOOTBALLORGIN_HIGHLIGHT_DAYS_BACK = int(os.environ.get("FOOTBALLORGIN_HIGHLIGHT_DAYS_BACK", "7") or "7")
 FOOTBALLORGIN_HIGHLIGHT_LIMIT = int(os.environ.get("FOOTBALLORGIN_HIGHLIGHT_LIMIT", "80") or "80")
@@ -4981,6 +4985,90 @@ def extract_supersport_video_urls(html_text, base_url):
     return urls
 
 
+def extract_supersport_embedded_video_posts(html_text, base_url):
+    posts = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or ""))
+    pattern = re.compile(
+        r'"documentId"\s*:\s*"(?P<document_id>[0-9a-f-]{32,36})"'
+        r'(?:(?!"documentId").){0,2500}?'
+        r'"publishedDate"\s*:\s*"(?P<published>[^"]+)"'
+        r'(?:(?!"documentId").){0,2500}?'
+        r'"title"\s*:\s*"(?P<title>(?:\\.|[^"\\])*)"'
+        r'(?:(?!"documentId").){0,2500}?'
+        r'"image"\s*:\s*"(?P<image>(?:\\.|[^"\\])*)"'
+        r'(?:(?!"documentId").){0,2500}?'
+        r'"slug"\s*:\s*"(?P<slug>[^"]+)"'
+        r'(?:(?!"documentId").){0,1200}?'
+        r'"sport"\s*:\s*"(?P<sport>[^"]+)"',
+        re.I | re.S,
+    )
+    for match in pattern.finditer(text):
+        document_id = clean_text(match.group("document_id"))
+        slug = clean_text(match.group("slug"))
+        sport = clean_text(match.group("sport") or "football").lower()
+        if not document_id or not slug:
+            continue
+        title = clean_highlight_title(decode_json_string(match.group("title")))
+        title_key = f"{title} {slug}".lower()
+        if not any(marker in title_key for marker in ("highlight", "goals", "match-in-5")):
+            continue
+        event_date = supersport_date_from_value(match.group("published"))
+        allowed_dates = supersport_allowed_highlight_dates()
+        if event_date and event_date not in allowed_dates:
+            continue
+        sport = re.sub(r"[^a-z0-9-]+", "-", sport).strip("-") or "football"
+        post_url = urljoin(base_url, f"{sport}/video/{document_id}/{slug}")
+        if post_url in seen:
+            continue
+        seen.add(post_url)
+        image = clean_text(decode_json_string(match.group("image")))
+        posts.append(
+            {
+                "url": post_url,
+                "title": title,
+                "event_date": event_date,
+                "logo": urljoin(base_url, image) if image else "",
+            }
+        )
+    return posts
+
+
+def supersport_daily_goals_seed_channels(allowed_dates):
+    source = "SuperSportHighlight"
+    base_url = SUPERSPORT_BASE_URL.rstrip("/") + "/"
+    channels = []
+    today = datetime.now(TZ_VN).date()
+    candidate_dates = [
+        today - timedelta(days=offset)
+        for offset in range(max(1, SUPERSPORT_DAILY_GOALS_LOOKBACK_DAYS))
+    ]
+    candidate_dates = [event_date for event_date in candidate_dates if event_date in allowed_dates]
+    for event_date in candidate_dates:
+        stamp = event_date.strftime("%d%m%y")
+        stream_url = f"https://vod.supersport.com/2019/SOC_{stamp}_UEFA_GOALS_500K.mp4.m3u8"
+        if SUPERSPORT_DAILY_GOALS_VALIDATE and not is_working_m3u8(stream_url, referer=base_url, user_agent=UA):
+            continue
+        channels.append(
+            {
+                "source": source,
+                "name": f"All Goals of the Day | {event_date.strftime('%-d %B %Y')} | UEFA Champions League"
+                if os.name != "nt"
+                else f"All Goals of the Day | {event_date.day} {event_date.strftime('%B %Y')} | UEFA Champions League",
+                "group": "Highlight | SuperSport",
+                "logo": "",
+                "stream_url": stream_url,
+                "referer": base_url,
+                "user_agent": UA,
+                "event_date": event_date,
+                "skip_event_filter": True,
+            }
+        )
+    if channels:
+        log(f"[SuperSportHighlight] Daily goals seeds {len(channels)}")
+    return channels
+
+
 def supersport_json_field(html_text, field):
     patterns = (
         rf'"{re.escape(field)}"\s*:\s*"((?:\\.|[^"\\])*)"',
@@ -5116,6 +5204,7 @@ def collect_supersport_highlights():
     seen_posts = set()
     direct_seed_urls = []
     last_seed_title = ""
+    daily_goal_channels = supersport_daily_goals_seed_channels(allowed_dates)
 
     for seed_url in SUPERSPORT_SEED_URLS:
         seed_url = clean_text(seed_url)
@@ -5145,6 +5234,16 @@ def collect_supersport_highlights():
             html_text = fetch_text(page_url, headers=supersport_headers(page_url), timeout=35)
         except Exception:
             continue
+        for post in extract_supersport_embedded_video_posts(html_text, base_url):
+            post_url = post.get("url")
+            if not post_url or post_url in seen_posts:
+                continue
+            seen_posts.add(post_url)
+            post_urls.append(post)
+            if len(post_urls) >= max(1, SUPERSPORT_HIGHLIGHT_LIMIT):
+                break
+        if len(post_urls) >= max(1, SUPERSPORT_HIGHLIGHT_LIMIT):
+            break
         for post_url in extract_supersport_video_urls(html_text, base_url):
             if post_url in seen_posts:
                 continue
@@ -5198,6 +5297,7 @@ def collect_supersport_highlights():
         ]
 
     channels = []
+    channels.extend(daily_goal_channels)
     channels.extend(direct_seed_channel(stream_url, seed_title) for stream_url, seed_title in direct_seed_urls)
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
