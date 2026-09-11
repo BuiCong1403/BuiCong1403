@@ -278,6 +278,24 @@ SUPERSPORT_DAILY_GOALS_LOOKBACK_DAYS = int(os.environ.get("SUPERSPORT_DAILY_GOAL
 SUPERSPORT_DAILY_GOALS_VALIDATE = (
     os.environ.get("SUPERSPORT_DAILY_GOALS_VALIDATE", "1").strip().lower() not in {"0", "false", "no"}
 )
+SUPERSPORT_DAILY_GOALS_CODES = [
+    item.strip()
+    for item in os.environ.get(
+        "SUPERSPORT_DAILY_GOALS_CODES",
+        "UEFA:UEFA Champions League,"
+        "UEL:UEFA Europa League,"
+        "UECL:UEFA Conference League,"
+        "EPL:Premier League,"
+        "PL:Premier League,"
+        "LALIGA:LaLiga,"
+        "SERIEA:Serie A,"
+        "SERIE_A:Serie A,"
+        "SA:Serie A,"
+        "CARABAO:Carabao Cup,"
+        "FACUP:FA Cup",
+    ).split(",")
+    if item.strip()
+]
 FOOTBALLORGIN_BASE_URL = os.environ.get("FOOTBALLORGIN_BASE_URL", "https://www.footballorgin.com/")
 FOOTBALLORGIN_HIGHLIGHT_DAYS_BACK = int(os.environ.get("FOOTBALLORGIN_HIGHLIGHT_DAYS_BACK", "7") or "7")
 FOOTBALLORGIN_HIGHLIGHT_LIMIT = int(os.environ.get("FOOTBALLORGIN_HIGHLIGHT_LIMIT", "80") or "80")
@@ -5034,36 +5052,92 @@ def extract_supersport_embedded_video_posts(html_text, base_url):
     return posts
 
 
+def supersport_daily_goal_exists(url, referer):
+    headers = {
+        "User-Agent": UA,
+        "Accept": "application/vnd.apple.mpegurl,application/x-mpegURL,*/*",
+        "Referer": referer,
+    }
+    try:
+        if requests is not None:
+            response = requests.head(url, headers=headers, timeout=2, allow_redirects=True)
+        else:
+            response = urllib_request("HEAD", url, headers=headers, timeout=2)
+        if response.status_code in (200, 204, 206):
+            return True
+        if response.status_code not in (403, 405):
+            return False
+    except Exception:
+        pass
+    try:
+        headers["Range"] = "bytes=0-512"
+        response = request_get(url, headers=headers, timeout=3)
+        text = getattr(response, "text", "") or ""
+        return response.status_code in (200, 204, 206) and (
+            "#EXTM3U" in text[:200] or url.lower().split("?", 1)[0].endswith(".m3u8")
+        )
+    except Exception:
+        return False
+
+
 def supersport_daily_goals_seed_channels(allowed_dates):
     source = "SuperSportHighlight"
     base_url = SUPERSPORT_BASE_URL.rstrip("/") + "/"
     channels = []
+    code_labels = []
+    for item in SUPERSPORT_DAILY_GOALS_CODES:
+        if ":" in item:
+            code, label = item.split(":", 1)
+        else:
+            code, label = item, item
+        code = re.sub(r"[^A-Z0-9_]+", "", clean_text(code).upper())
+        label = clean_text(label) or code
+        if code:
+            code_labels.append((code, label))
     today = datetime.now(TZ_VN).date()
     candidate_dates = [
         today - timedelta(days=offset)
         for offset in range(max(1, SUPERSPORT_DAILY_GOALS_LOOKBACK_DAYS))
     ]
     candidate_dates = [event_date for event_date in candidate_dates if event_date in allowed_dates]
+
+    candidates = []
     for event_date in candidate_dates:
         stamp = event_date.strftime("%d%m%y")
-        stream_url = f"https://vod.supersport.com/2019/SOC_{stamp}_UEFA_GOALS_500K.mp4.m3u8"
-        if SUPERSPORT_DAILY_GOALS_VALIDATE and not is_working_m3u8(stream_url, referer=base_url, user_agent=UA):
-            continue
-        channels.append(
-            {
-                "source": source,
-                "name": f"All Goals of the Day | {event_date.strftime('%-d %B %Y')} | UEFA Champions League"
-                if os.name != "nt"
-                else f"All Goals of the Day | {event_date.day} {event_date.strftime('%B %Y')} | UEFA Champions League",
-                "group": "Highlight | SuperSport",
-                "logo": "",
-                "stream_url": stream_url,
-                "referer": base_url,
-                "user_agent": UA,
-                "event_date": event_date,
-                "skip_event_filter": True,
-            }
+        date_label = (
+            event_date.strftime("%-d %B %Y")
+            if os.name != "nt"
+            else f"{event_date.day} {event_date.strftime('%B %Y')}"
         )
+        for code, label in code_labels:
+            stream_url = f"https://vod.supersport.com/2019/SOC_{stamp}_{code}_GOALS_500K.mp4.m3u8"
+            candidates.append((event_date, date_label, label, stream_url))
+
+    def build_if_exists(candidate):
+        event_date, date_label, label, stream_url = candidate
+        if SUPERSPORT_DAILY_GOALS_VALIDATE and not supersport_daily_goal_exists(stream_url, base_url):
+            return None
+        return {
+            "source": source,
+            "name": f"All Goals of the Day | {date_label} | {label}",
+            "group": "Highlight | SuperSport",
+            "logo": "",
+            "stream_url": stream_url,
+            "referer": base_url,
+            "user_agent": UA,
+            "event_date": event_date,
+            "skip_event_filter": True,
+        }
+
+    with ThreadPoolExecutor(max_workers=min(10, max(1, len(candidates)))) as executor:
+        futures = [executor.submit(build_if_exists, candidate) for candidate in candidates]
+        for future in as_completed(futures):
+            try:
+                channel = future.result()
+            except Exception:
+                channel = None
+            if channel:
+                channels.append(channel)
     if channels:
         log(f"[SuperSportHighlight] Daily goals seeds {len(channels)}")
     return channels
