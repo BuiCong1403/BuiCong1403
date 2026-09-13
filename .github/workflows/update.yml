@@ -2,6 +2,12 @@ name: Update M3U
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "combined_m3u_collector.py"
+      - ".github/workflows/update.yml"
   schedule:
     # Live sports, Asia/Bangkok: 02:00, 16:00, 18:00
     - cron: "0 19 * * *"
