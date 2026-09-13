@@ -1080,6 +1080,22 @@ def best_highlight_url(urls):
     return max(dict.fromkeys(candidates), key=score)
 
 
+def is_hls_init_segment_url(url):
+    path = unquote(urlparse(clean_text(url)).path).lower()
+    name = path.rsplit("/", 1)[-1]
+    return bool(re.match(r"init(?:[_-]\d{3,4}p?)?\.mp4$", name))
+
+
+def best_dasfootball_highlight_url(urls):
+    candidates = [
+        clean_text(url)
+        for url in urls
+        if is_valid_highlight_url(url) and not is_hls_init_segment_url(url)
+    ]
+    mp4_candidates = [url for url in candidates if url.lower().split("?", 1)[0].endswith(".mp4")]
+    return best_highlight_url(mp4_candidates or candidates)
+
+
 def best_24h_highlight_url(urls):
     candidates = [clean_text(url) for url in urls if is_valid_highlight_url(url) and is_hls_url(url)]
     special_urls = [url for url in candidates if "cp_special_" in url.lower()]
@@ -4846,16 +4862,25 @@ def extract_dasfootball_highlight_urls(html_text, base_url):
     return urls
 
 
-def extract_dasfootball_m3u8_urls(html_text):
+def extract_dasfootball_media_urls(html_text):
     urls = []
     seen = set()
     text = html.unescape(decode_json_string(html_text or ""))
-    for match in re.finditer(r"https?://[^\s'\"<>{}\\,\]]+?\.m3u8(?:\?[^\s'\"<>{}\\,\]]*)?", text, re.I):
+    pattern = r"https?://[^\s'\"<>{}\\,\]]+?\.(?:m3u8|mp4)(?:\?[^\s'\"<>{}\\,\]]*)?"
+    for match in re.finditer(pattern, text, re.I):
         stream_url = clean_text(match.group(0).replace("\\/", "/")).rstrip("\\.,);]")
-        if is_valid_highlight_url(stream_url) and stream_url not in seen:
+        if (
+            is_valid_highlight_url(stream_url)
+            and not is_hls_init_segment_url(stream_url)
+            and stream_url not in seen
+        ):
             seen.add(stream_url)
             urls.append(stream_url)
     return urls
+
+
+def extract_dasfootball_m3u8_urls(html_text):
+    return [url for url in extract_dasfootball_media_urls(html_text) if is_hls_url(url)]
 
 
 def collect_dasfootball_highlights():
@@ -4938,8 +4963,8 @@ def collect_dasfootball_highlights():
             return []
         logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
         logo = logo_match.group(1) if logo_match else ""
-        stream_urls = extract_dasfootball_m3u8_urls(html_text)
-        stream_url = best_highlight_url(stream_urls)
+        stream_urls = extract_dasfootball_media_urls(html_text)
+        stream_url = best_dasfootball_highlight_url(stream_urls)
         if not stream_url:
             return []
         return [
@@ -7293,6 +7318,7 @@ def collect_current_highlights():
     highlight_sources = []
     highlight_sources.extend(collect_source_channels("SuperSportHighlight", collect_supersport_highlights))
     highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
+    highlight_sources.extend(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
     highlight_channels = dedupe_and_sort_channels(highlight_sources)
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
         log(
