@@ -26,7 +26,7 @@ on:
 
 concurrency:
   group: update-m3u-main
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -34,6 +34,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 35
 
     steps:
       - name: Checkout repository
@@ -52,8 +53,12 @@ jobs:
           python -m pip install requests
 
       - name: Generate M3U files
+        timeout-minutes: 30
         run: |
           RUN_MODE="all"
+          if [ "${{ github.event_name }}" = "push" ]; then
+            RUN_MODE="live"
+          fi
           if [ "${{ github.event_name }}" = "schedule" ]; then
             case "${{ github.event.schedule }}" in
               "30 20 * * *"|"0 21 * * *"|"30 21 * * *"|"0 22 * * *"|"30 22 * * *"|"0 23 * * *"|"30 23 * * *"|"0 0 * * *"|"30 0 * * *")
