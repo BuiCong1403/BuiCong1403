@@ -342,6 +342,7 @@ THETHAOCOBAN_SOURCE_FALLBACK = (
 XOILACZ_TTCB_MIN_LINKS = int(os.environ.get("XOILACZ_TTCB_MIN_LINKS", "20") or "20")
 VSC9_TTCB_MIN_TODAY_LINKS = int(os.environ.get("VSC9_TTCB_MIN_TODAY_LINKS", "20") or "20")
 PHAOHOA_TTCB_MIN_LINKS = int(os.environ.get("PHAOHOA_TTCB_MIN_LINKS", "20") or "20")
+KHANDAIA_TTCB_MIN_LINKS = int(os.environ.get("KHANDAIA_TTCB_MIN_LINKS", "20") or "20")
 TTCB_SUPPLEMENT_MIN_LINKS = int(os.environ.get("TTCB_SUPPLEMENT_MIN_LINKS", "8") or "8")
 CLOUDOK_M3U_URL = os.environ.get(
     "CLOUDOK_M3U_URL",
@@ -3449,6 +3450,8 @@ def thethaocoban_fallback_referer(target_source, stream_url):
         return VSC9_REFERER
     if target_source == "PhaoHoaTV":
         return PHAOHOA_API_BASE.rstrip("/") + "/"
+    if target_source == "KhanDaiA":
+        return KHANDAIA_FRONTEND_URL.rstrip("/") + "/"
     return ""
 
 
@@ -3511,6 +3514,13 @@ TTCB_SUPPLEMENT_RULES = [
         "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
     },
     {
+        "source": "KhanDaiA",
+        "group": "Khandai",
+        "allowed_groups": ("khan dai", "khán đài", "khandaia", "khandai"),
+        "host_keywords": ("phaohoa.live",),
+        "min_links": KHANDAIA_TTCB_MIN_LINKS,
+    },
+    {
         "source": "XoiLacZ",
         "group": "X\u00f4i L\u1ea1c Z TV",
         "allowed_groups": ("xoi lac", "xôi lạc"),
@@ -3563,6 +3573,7 @@ def supplement_from_thethaocoban_if_needed(channels, per_source_counts):
             source,
             group,
             rule.get("allowed_groups") or (),
+            host_keywords=rule.get("host_keywords") or (),
             seen_urls=seen_urls,
         )
         if not extra:
