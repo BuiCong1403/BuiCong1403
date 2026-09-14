@@ -965,9 +965,6 @@ def stream_dedupe_key(channel):
     if is_highlight_source(channel.get("source")) and "videas.fr" in url.lower():
         return ("VideasHighlight", videas_highlight_family_key(url))
     if channel.get("source") == "24hHighlight":
-        title_key = h24_title_family_key(channel.get("name"))
-        if title_key:
-            return ("24hHighlight", title_key)
         return ("24hHighlight", h24_variant_family_key(url))
     if channel.get("source") == "SuperSportHighlight":
         return ("SuperSportHighlight", url)
@@ -1056,7 +1053,7 @@ def is_valid_highlight_url(url):
     if not url or not url.startswith(("http://", "https://")):
         return False
     lower = url.lower().split("?", 1)[0]
-    return (is_hls_url(url) or lower.endswith(".mp4")) and ".mpd" not in lower
+    return (is_hls_url(url) or lower.endswith((".mp4", ".webm"))) and ".mpd" not in lower
 
 
 def best_highlight_url(urls):
@@ -1075,6 +1072,8 @@ def best_highlight_url(urls):
             quality_score = max(quality_score, 65)
         if lower.endswith(".mp4"):
             quality_score = max(quality_score, 55)
+        if lower.endswith(".webm"):
+            quality_score = max(quality_score, 45)
         return (quality_score, -len(url))
 
     return max(dict.fromkeys(candidates), key=score)
@@ -1093,7 +1092,8 @@ def best_dasfootball_highlight_url(urls):
         if is_valid_highlight_url(url) and not is_hls_init_segment_url(url)
     ]
     mp4_candidates = [url for url in candidates if url.lower().split("?", 1)[0].endswith(".mp4")]
-    return best_highlight_url(mp4_candidates or candidates)
+    hls_candidates = [url for url in candidates if is_hls_url(url)]
+    return best_highlight_url(mp4_candidates or hls_candidates or candidates)
 
 
 def best_24h_highlight_url(urls):
@@ -1174,18 +1174,7 @@ def dedupe_h24_highlight_channels(channels):
         current = by_url.get(url_key)
         if not current or h24_channel_score(channel) > h24_channel_score(current):
             by_url[url_key] = channel
-
-    by_title = {}
-    for channel in by_url.values():
-        title_key = h24_title_family_key(channel.get("name"))
-        if not title_key:
-            by_title[h24_variant_family_key(channel.get("stream_url"))] = channel
-            continue
-        current = by_title.get(title_key)
-        if not current or h24_channel_score(channel) > h24_channel_score(current):
-            by_title[title_key] = channel
-
-    return list(by_title.values())
+    return list(by_url.values())
 
 
 def best_h24_stream_variants(streams):
@@ -4866,7 +4855,7 @@ def extract_dasfootball_media_urls(html_text):
     urls = []
     seen = set()
     text = html.unescape(decode_json_string(html_text or ""))
-    pattern = r"https?://[^\s'\"<>{}\\,\]]+?\.(?:m3u8|mp4)(?:\?[^\s'\"<>{}\\,\]]*)?"
+    pattern = r"https?://[^\s'\"<>{}\\,\]]+?\.(?:m3u8|mp4|webm)(?:\?[^\s'\"<>{}\\,\]]*)?"
     for match in re.finditer(pattern, text, re.I):
         stream_url = clean_text(match.group(0).replace("\\/", "/")).rstrip("\\.,);]")
         if (
@@ -7317,8 +7306,8 @@ def ott_highlight_blocks_from_file():
 def collect_current_highlights():
     highlight_sources = []
     highlight_sources.extend(collect_source_channels("SuperSportHighlight", collect_supersport_highlights))
-    highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
     highlight_sources.extend(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
+    highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
     highlight_channels = dedupe_and_sort_channels(highlight_sources)
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
         log(
