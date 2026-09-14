@@ -111,8 +111,12 @@ GIOVANG_USE_JASMIN_FALLBACK = os.environ.get("GIOVANG_USE_JASMIN_FALLBACK", "0")
     "yes",
     "on",
 }
-PHAOHOA_API_BASE = (os.environ.get("PHAOHOA_API") or "https://khandai3.link").rstrip("/")
-PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://khandai3.link").rstrip("/")
+PHAOHOA_API_BASE = (os.environ.get("PHAOHOA_API") or "https://xoiche.tv").rstrip("/")
+PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://xoiche.tv").rstrip("/")
+XOICHE_BASE_URL = (os.environ.get("XOICHE_BASE_URL") or PHAOHOA_FRONTEND_URL or "https://xoiche.tv").rstrip("/")
+XOICHE_SOURCE_WORKERS = int(os.environ.get("XOICHE_SOURCE_WORKERS", "8") or "8")
+XOICHE_MAX_SOURCE_MATCHES = int(os.environ.get("XOICHE_MAX_SOURCE_MATCHES", "80") or "80")
+XOICHE_SOURCE_TOTAL_TIMEOUT = int(os.environ.get("XOICHE_SOURCE_TOTAL_TIMEOUT", "35") or "35")
 CHOANG_ENTRY_SITE_URL = os.environ.get("CHOANG_ENTRY_SITE_URL", "https://choangtv.com/")
 CHOANG_DEFAULT_DOMAIN = os.environ.get("CHOANG_DEFAULT_DOMAIN", "choangtv21.com")
 CHOANG_SITE_URL = os.environ.get("CHOANG_SITE_URL", f"https://{CHOANG_DEFAULT_DOMAIN}")
@@ -554,10 +558,12 @@ def cola_api_from_hit(hit):
 
 def phaohoa_frontend_candidates():
     candidates = [
+        XOICHE_BASE_URL,
         PHAOHOA_API_BASE,
         PHAOHOA_FRONTEND_URL,
         KHANDAIA_INTERNAL_API_BASE,
         KHANDAIA_FRONTEND_URL,
+        "https://xoiche.tv",
         "https://khandai3.link",
         "https://phaohoa1.live",
         "https://phaohoa2.live",
@@ -1258,6 +1264,7 @@ PREFERRED_OUTPUT_GROUPS = [
     "Highlight",
     "Gi\u1edd V\u00e0ng TV",
     "Vua S\u00e2n C\u1ecf TV",
+    "PhaoHoaTV",
     "X\u00f4i L\u1ea1c Z TV",
     "Khandai",
     "G\u00e0 V\u00e0ng TV",
@@ -2289,10 +2296,197 @@ def phaohoa_match_info_from_context(context):
     return home_name, away_name, blv_name, time_label, event_datetime
 
 
+XOICHE_FINISHED_STATUSES = {"ft", "finished", "completed", "complete", "ended", "full_time", "cancelled", "canceled", "postponed", "abandoned"}
+
+
+def xoiche_api_headers(base_url):
+    base_url = clean_text(base_url).rstrip("/") or "https://xoiche.tv"
+    return {
+        "User-Agent": UA,
+        "Accept": "application/json, text/plain, */*",
+        "Origin": base_url,
+        "Referer": base_url + "/",
+    }
+
+
+def find_xoiche_match_dicts(data, out=None):
+    if out is None:
+        out = []
+    if isinstance(data, list):
+        for item in data:
+            find_xoiche_match_dicts(item, out)
+    elif isinstance(data, dict):
+        if data.get("id") and (data.get("kickoffAt") or data.get("slug")) and (data.get("homeTeam") or data.get("awayTeam")):
+            out.append(data)
+        for value in data.values():
+            if isinstance(value, (dict, list)):
+                find_xoiche_match_dicts(value, out)
+    return out
+
+
+def xoiche_team_name(team):
+    if isinstance(team, dict):
+        return clean_text(team.get("name") or team.get("title") or team.get("shortName"))
+    return clean_text(team)
+
+
+def xoiche_logo(team):
+    if isinstance(team, dict):
+        return clean_text(team.get("logoUrl") or team.get("logo") or team.get("image"))
+    return ""
+
+
+def xoiche_stream_urls_from_obj(obj, label="", out=None):
+    if out is None:
+        out = []
+    if isinstance(obj, str):
+        url = urljoin(XOICHE_BASE_URL + "/", clean_text(obj))
+        if is_hls_url(url) or is_flv_url(url):
+            out.append((label, url))
+    elif isinstance(obj, list):
+        for item in obj:
+            xoiche_stream_urls_from_obj(item, label, out)
+    elif isinstance(obj, dict):
+        current_label = label
+        for key in ("name", "displayName", "commentator", "commentatorName", "label", "server", "quality"):
+            value = obj.get(key)
+            if isinstance(value, str) and value.strip() and not value.startswith(("http", "/")):
+                current_label = clean_text(value)
+                break
+        for key, value in obj.items():
+            if isinstance(value, str):
+                url = urljoin(XOICHE_BASE_URL + "/", clean_text(value))
+                if is_hls_url(url) or is_flv_url(url):
+                    out.append((current_label or clean_text(key), url))
+            elif isinstance(value, (dict, list)):
+                xoiche_stream_urls_from_obj(value, current_label, out)
+    return out
+
+
+def collect_xoiche_phaohoa(base_url=None):
+    source = "PhaoHoaTV"
+    base_url = clean_text(base_url or XOICHE_BASE_URL or "https://xoiche.tv").rstrip("/")
+    headers = xoiche_api_headers(base_url)
+    response = fetch_json(base_url + "/api/matches", headers=headers, timeout=30)
+    matches = find_xoiche_match_dicts(response)
+    if not matches:
+        return []
+
+    unique_matches = []
+    seen_match_ids = set()
+    for item in matches:
+        match_id = clean_text(item.get("id"))
+        if not match_id or match_id in seen_match_ids:
+            continue
+        seen_match_ids.add(match_id)
+        unique_matches.append(item)
+
+    def xoiche_match_rank(item):
+        status = clean_text(item.get("status")).lower()
+        event_datetime = parse_iso_to_ict_datetime(item.get("kickoffAt") or item.get("start_time") or item.get("startTime"))
+        if status in {"live", "inplay", "in_play", "playing", "1h", "2h", "ht"}:
+            status_rank = 0
+        elif event_datetime and event_datetime >= datetime.now(TZ_VN) - timedelta(minutes=PAST_EVENT_GRACE_MINUTES):
+            status_rank = 1
+        else:
+            status_rank = 2
+        return (
+            status_rank,
+            event_datetime or datetime.max.replace(tzinfo=TZ_VN),
+            clean_text(item.get("slug")),
+        )
+
+    unique_matches.sort(key=xoiche_match_rank)
+    candidates = unique_matches[: max(1, XOICHE_MAX_SOURCE_MATCHES)]
+
+    def fetch_xoiche_sources(item):
+        match_id = clean_text(item.get("id"))
+        sources = fetch_json(base_url + f"/api/matches/{match_id}/sources", headers=headers, timeout=8)
+        return item, sources
+
+    channels = []
+    seen = set()
+    source_payloads = []
+    executor = ThreadPoolExecutor(max_workers=max(1, XOICHE_SOURCE_WORKERS))
+    try:
+        futures = [executor.submit(fetch_xoiche_sources, item) for item in candidates]
+        try:
+            completed = as_completed(futures, timeout=max(5, XOICHE_SOURCE_TOTAL_TIMEOUT))
+            for future in completed:
+                try:
+                    source_payloads.append(future.result())
+                except Exception:
+                    continue
+        except TimeoutError:
+            log(f"[{source}] XoiChe source scan timeout, keep {len(source_payloads)} responses")
+            for future in futures:
+                future.cancel()
+    finally:
+        executor.shutdown(wait=False, cancel_futures=True)
+
+    source_payloads.sort(key=lambda pair: xoiche_match_rank(pair[0]))
+
+    for item, sources in source_payloads:
+        status = clean_text(item.get("status")).lower()
+        if status in XOICHE_FINISHED_STATUSES:
+            continue
+        match_id = clean_text(item.get("id"))
+        if not match_id:
+            continue
+        stream_pairs = xoiche_stream_urls_from_obj(sources)
+        if not stream_pairs:
+            continue
+        event_datetime = parse_iso_to_ict_datetime(item.get("kickoffAt") or item.get("start_time") or item.get("startTime"))
+        event_date = event_datetime.date() if event_datetime else None
+        home = xoiche_team_name(item.get("homeTeam") or item.get("home_team") or item.get("home"))
+        away = xoiche_team_name(item.get("awayTeam") or item.get("away_team") or item.get("away"))
+        competition = clean_text((item.get("competition") or {}).get("name") if isinstance(item.get("competition"), dict) else item.get("competition"))
+        time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
+        match_name = f"{home} vs {away}".strip(" vs") or clean_text(item.get("name") or item.get("slug")) or "PhaoHoaTV"
+        logo = xoiche_logo(item.get("homeTeam") or item.get("home_team")) or xoiche_logo(item.get("awayTeam") or item.get("away_team"))
+
+        for label, stream_url in stream_pairs:
+            stream_url = clean_text(stream_url).rstrip(".,);]")
+            key = (match_id, stream_url, clean_text(label))
+            if key in seen:
+                continue
+            seen.add(key)
+            title_parts = [part for part in (time_label, match_name, competition) if part]
+            if label:
+                title_parts.append(label)
+            channels.append(
+                {
+                    "source": source,
+                    "name": " | ".join(title_parts),
+                    "group": "PhaoHoaTV",
+                    "logo": logo,
+                    "stream_url": stream_url,
+                    "referer": base_url + "/",
+                    "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                    "event_datetime": event_datetime,
+                    "event_date": event_date,
+                    "skip_event_filter": True,
+                }
+            )
+    if channels:
+        log(f"[{source}] XoiChe {len(channels)} raw links")
+    return channels
+
+
 def collect_phaohoa():
     source = "PhaoHoaTV"
     log(f"[{source}] Fetch API")
+    if "xoiche.tv" in PHAOHOA_API_BASE or "xoiche.tv" in PHAOHOA_FRONTEND_URL or "xoiche.tv" in XOICHE_BASE_URL:
+        channels = collect_xoiche_phaohoa(XOICHE_BASE_URL)
+        if channels:
+            return channels
+
     api_base = discover_phaohoa_api_base()
+    if "xoiche.tv" in api_base:
+        channels = collect_xoiche_phaohoa(api_base)
+        if channels:
+            return channels
+
     channels = collect_django_matches_api(
         source,
         api_base,
@@ -7466,6 +7660,7 @@ def main():
             ),
         ),
         ("GioVang", collect_giovang_api),
+        ("PhaoHoaTV", collect_phaohoa),
         ("ChoangTV", collect_choangtv_api),
         ("SocoliveTV", collect_socolive),
         (
