@@ -240,8 +240,7 @@ DASFOOTBALL_SEED_URLS = [
     item.strip()
     for item in os.environ.get(
         "DASFOOTBALL_SEED_URLS",
-        "https://dasfootball.com/paris-saint-germain-vs-monaco-highlights-2026-09-04/,"
-        "https://cdn.videas.fr/v-medias/s5/hlsv1/e2/94/e2942ef0-0a60-4f79-a763-46c40e29673d/playlist.m3u8",
+        "",
     ).split(",")
     if item.strip()
 ]
@@ -4964,15 +4963,12 @@ def collect_dasfootball_highlights():
     seen_posts = set()
     jsonld_channels = []
     seen_jsonld_streams = set()
-    direct_seed_urls = []
     last_seed_title = ""
     for seed_url in DASFOOTBALL_SEED_URLS:
         seed_url = clean_text(seed_url)
         if not seed_url:
             continue
         if is_valid_highlight_url(seed_url):
-            if all(existing_url != seed_url for existing_url, _title in direct_seed_urls):
-                direct_seed_urls.append((seed_url, last_seed_title))
             continue
         seed_date = dasfootball_date_from_url(seed_url)
         if seed_date and seed_date not in allowed_dates:
@@ -5007,20 +5003,6 @@ def collect_dasfootball_highlights():
         if len(post_urls) >= max(1, DASFOOTBALL_HIGHLIGHT_LIMIT):
             break
 
-    def direct_seed_channel(stream_url, seed_title=""):
-        title = seed_title or title_from_url_slug(stream_url) or "DasFootball Highlight"
-        return {
-            "source": source,
-            "name": clean_highlight_title(title),
-            "group": "Highlight | DasFootball",
-            "logo": "",
-            "stream_url": stream_url,
-            "referer": base_url,
-            "user_agent": UA,
-            "event_date": None,
-            "skip_event_filter": True,
-        }
-
     def collect_post(post_url):
         try:
             html_text = fetch_text(post_url, headers=dasfootball_headers(post_url), timeout=25)
@@ -5053,7 +5035,6 @@ def collect_dasfootball_highlights():
 
     channels = []
     channels.extend(jsonld_channels)
-    channels.extend(direct_seed_channel(stream_url, seed_title) for stream_url, seed_title in direct_seed_urls)
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
         for future in as_completed(futures):
