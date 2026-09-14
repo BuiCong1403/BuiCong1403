@@ -4872,6 +4872,79 @@ def extract_dasfootball_m3u8_urls(html_text):
     return [url for url in extract_dasfootball_media_urls(html_text) if is_hls_url(url)]
 
 
+def iter_dasfootball_jsonld_video_objects(html_text):
+    text = html.unescape(html_text or "")
+    for match in re.finditer(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        text,
+        re.I | re.S,
+    ):
+        raw_json = html.unescape(match.group(1)).strip()
+        if not raw_json:
+            continue
+        try:
+            payload = json.loads(raw_json)
+        except Exception:
+            continue
+        stack = payload if isinstance(payload, list) else [payload]
+        while stack:
+            item = stack.pop(0)
+            if isinstance(item, list):
+                stack.extend(item)
+                continue
+            if not isinstance(item, dict):
+                continue
+            item_type = item.get("@type")
+            if item_type == "VideoObject":
+                yield item
+            for value in item.values():
+                if isinstance(value, (dict, list)):
+                    stack.append(value)
+
+
+def dasfootball_jsonld_channels(html_text, page_url, allowed_dates, source, base_url):
+    channels = []
+    for video in iter_dasfootball_jsonld_video_objects(html_text):
+        title = clean_highlight_title(clean_text(video.get("name")) or title_from_url_slug(video.get("url")) or "DasFootball Highlight")
+        post_url = clean_text(video.get("url")) or page_url
+        event_date = parse_iso_to_ict_date(video.get("uploadDate")) or dasfootball_date_from_url(post_url)
+        if event_date and event_date not in allowed_dates:
+            continue
+        raw_urls = []
+        for key in ("embedUrl", "contentUrl", "url"):
+            value = video.get(key)
+            if isinstance(value, str):
+                raw_urls.append(value)
+        stream_urls = [
+            urljoin(base_url, clean_text(url))
+            for url in raw_urls
+            if is_valid_highlight_url(url) and not is_hls_init_segment_url(url)
+        ]
+        stream_url = best_dasfootball_highlight_url(stream_urls)
+        if not stream_url:
+            continue
+        logo = ""
+        thumb = video.get("thumbnailUrl")
+        if isinstance(thumb, list) and thumb:
+            logo = clean_text(thumb[0])
+        elif isinstance(thumb, str):
+            logo = clean_text(thumb)
+        channels.append(
+            {
+                "source": source,
+                "name": title,
+                "group": "Highlight | DasFootball",
+                "logo": logo,
+                "stream_url": stream_url,
+                "referer": post_url,
+                "user_agent": UA,
+                "event_date": event_date,
+                "skip_event_filter": True,
+            }
+        )
+    return channels
+
+
 def collect_dasfootball_highlights():
     source = "DasFootballHighlight"
     base_url = DASFOOTBALL_BASE_URL.rstrip("/") + "/"
@@ -4889,6 +4962,8 @@ def collect_dasfootball_highlights():
 
     post_urls = []
     seen_posts = set()
+    jsonld_channels = []
+    seen_jsonld_streams = set()
     direct_seed_urls = []
     last_seed_title = ""
     for seed_url in DASFOOTBALL_SEED_URLS:
@@ -4913,6 +4988,12 @@ def collect_dasfootball_highlights():
             html_text = fetch_text(page_url, headers=dasfootball_headers(page_url), timeout=30)
         except Exception:
             continue
+        for channel in dasfootball_jsonld_channels(html_text, page_url, allowed_dates, source, base_url):
+            stream_key = clean_text(channel.get("stream_url"))
+            if not stream_key or stream_key in seen_jsonld_streams:
+                continue
+            seen_jsonld_streams.add(stream_key)
+            jsonld_channels.append(channel)
         for post_url in extract_dasfootball_highlight_urls(html_text, base_url):
             post_date = dasfootball_date_from_url(post_url)
             if post_date and post_date not in allowed_dates:
@@ -4971,6 +5052,7 @@ def collect_dasfootball_highlights():
         ]
 
     channels = []
+    channels.extend(jsonld_channels)
     channels.extend(direct_seed_channel(stream_url, seed_title) for stream_url, seed_title in direct_seed_urls)
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
