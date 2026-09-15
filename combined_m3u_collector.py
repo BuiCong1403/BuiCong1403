@@ -3793,6 +3793,42 @@ def supplement_from_thethaocoban_if_needed(channels, per_source_counts):
     return supplements
 
 
+def supplement_missing_flv_from_thethaocoban(channels, per_source_counts):
+    if not THETHAOCOBAN_SOURCE_FALLBACK:
+        return []
+    existing_urls = {
+        clean_text(channel.get("stream_url")).lower()
+        for channel in channels
+        if clean_text(channel.get("stream_url"))
+    }
+    extras = []
+    for channel in get_thethaocoban_reference_channels():
+        stream_url = clean_text(channel.get("stream_url"))
+        stream_key = stream_url.lower()
+        if not is_flv_url(stream_url) or stream_key in existing_urls:
+            continue
+        existing_urls.add(stream_key)
+        item = dict(channel)
+        item.update(
+            {
+                "source": "TheThaoCoBanFLV",
+                "group": FLV_OTT_GROUP,
+                "referer": xoilacz_stream_referer(stream_url),
+                "user_agent": FLV_OTT_USER_AGENT,
+                "raw_extinf": "",
+                "raw_options": [],
+                "preserve_extinf": False,
+                "preserve_group_exact": False,
+                "skip_event_filter": True,
+            }
+        )
+        extras.append(item)
+    if extras:
+        per_source_counts["TheThaoCoBanFLV"] = len(extras)
+        log(f"[TheThaoCoBanFLV] Added missing FLV links: {len(extras)}")
+    return extras
+
+
 def collect_cloudok_premier_league():
     return collect_m3u_playlist(
         "CloudOKPremierLeague",
@@ -7740,6 +7776,9 @@ def main():
     supplemental_channels = supplement_from_thethaocoban_if_needed(all_channels, per_source_counts)
     if supplemental_channels:
         all_channels.extend(supplemental_channels)
+    missing_flv_channels = supplement_missing_flv_from_thethaocoban(all_channels, per_source_counts)
+    if missing_flv_channels:
+        all_channels.extend(missing_flv_channels)
 
     base_deduped_with_ott = dedupe_and_sort_channels(all_channels)
     base_deduped, _base_flv_channels = split_ott_channels(base_deduped_with_ott)
