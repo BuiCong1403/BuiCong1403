@@ -370,7 +370,6 @@ MULTI_EVENT_STREAM_SOURCES = {
     "AzabuLive",
     "BiaomTV",
     "BongLauTV",
-    "ChoangTV",
     "ChuoiChienTV",
     "GioVang",
     "S8TV",
@@ -400,8 +399,15 @@ PHAOHOA_SEED_STREAMS = [
     item.strip()
     for item in os.environ.get(
         "PHAOHOA_SEED_STREAMS",
-        "Thai Lan vs Uc|https://luong.phaohoa.live/live/phaohoa5/index.m3u8"
-        "?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d|https://khandai3.link/truc-tiep/thai-lan-vs-uc",
+        "",
+    ).split("||")
+    if item.strip()
+]
+BLOCKED_STREAM_SUBSTRINGS = [
+    item.strip()
+    for item in os.environ.get(
+        "BLOCKED_STREAM_SUBSTRINGS",
+        "luong.phaohoa.live/live/phaohoa5/index.m3u8?expire=1815505159&sign=67cc5bcdcabb081229f5406e5b07483d",
     ).split("||")
     if item.strip()
 ]
@@ -1532,6 +1538,8 @@ def dedupe_and_sort_channels(channels):
         channel = normalize_channel_group(channel)
         url = channel.get("stream_url", "").strip()
         if not url:
+            continue
+        if any(blocked in url for blocked in BLOCKED_STREAM_SUBSTRINGS):
             continue
         dedupe_key = stream_dedupe_key(channel)
         if dedupe_key in seen_urls:
@@ -7661,7 +7669,6 @@ def main():
         ),
         ("GioVang", collect_giovang_api),
         ("PhaoHoaTV", collect_phaohoa),
-        ("ChoangTV", collect_choangtv_api),
         ("SocoliveTV", collect_socolive),
         (
             "AllChannelM3U",
