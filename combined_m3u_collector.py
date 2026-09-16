@@ -329,6 +329,12 @@ DASFOOTBALL_M3U_URL = os.environ.get(
     "DASFOOTBALL_M3U_URL",
     "https://raw.githubusercontent.com/BuiCong1403/BuiCong1403/refs/heads/main/dasfootball.m3u",
 )
+MYSPORT_HIGHLIGHTS_URL = os.environ.get(
+    "MYSPORT_HIGHLIGHTS_URL",
+    "https://raw.githubusercontent.com/kyp126/TEST-2/refs/heads/master/My%20Sport%20Highlights",
+)
+MYSPORT_HIGHLIGHTS_DAYS_BACK = int(os.environ.get("MYSPORT_HIGHLIGHTS_DAYS_BACK", "10") or "10")
+MYSPORT_HIGHLIGHTS_LIMIT = int(os.environ.get("MYSPORT_HIGHLIGHTS_LIMIT", "240") or "240")
 WRITE_HIGHLIGHT_M3U = os.environ.get("WRITE_HIGHLIGHT_M3U", "1").strip().lower() not in {"0", "false", "no"}
 INCLUDE_HIGHLIGHT_IN_MAIN = os.environ.get("INCLUDE_HIGHLIGHT_IN_MAIN", "1").strip().lower() not in {"0", "false", "no"}
 BONGDAPLUS_BASE_URL = os.environ.get("BONGDAPLUS_BASE_URL", "https://bongdaplus.vn/")
@@ -391,6 +397,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "24hHighlight",
     "90PhutHighlight",
     "DasFootballHighlight",
+    "MySportHighlights",
     "SuperSportHighlight",
     "FootballOrginHighlight",
 }
@@ -1073,6 +1080,16 @@ def is_valid_highlight_url(url):
     return (is_hls_url(url) or lower.endswith((".mp4", ".webm"))) and ".mpd" not in lower
 
 
+def is_rumble_hls_tar_url(url):
+    parsed = urlparse(clean_text(url))
+    if not parsed.netloc.lower().endswith("rumble.cloud"):
+        return False
+    if not parsed.path.lower().endswith(".tar"):
+        return False
+    params = parse_qs(parsed.query)
+    return any("m3u8" in clean_text(item).lower() for item in params.get("r_file", []))
+
+
 def best_highlight_url(urls):
     candidates = [clean_text(url) for url in urls if is_valid_highlight_url(url)]
     if not candidates:
@@ -1292,6 +1309,7 @@ PREFERRED_OUTPUT_GROUPS = [
 PREFERRED_SOURCE_PRIORITY = {
     "DasFootballHighlight": 96,
     "90PhutHighlight": 92,
+    "MySportHighlights": 90,
     "SuperSportHighlight": 88,
     "FootballOrginHighlight": 86,
     "GioVang": 80,
@@ -1508,6 +1526,7 @@ def is_highlight_source(source):
         "24hHighlight",
         "90PhutHighlight",
         "DasFootballHighlight",
+        "MySportHighlights",
         "SuperSportHighlight",
         "FootballOrginHighlight",
     }
@@ -3235,6 +3254,128 @@ def collect_previous_dasfootball_playlist():
         except Exception as exc:
             log(f"[DasFootballCacheRemote] Error: {exc}")
     return dedupe_and_sort_channels(channels)
+
+
+def mysport_allowed_highlight_dates():
+    today = datetime.now(TZ_VN).date()
+    return {today - timedelta(days=offset) for offset in range(max(0, MYSPORT_HIGHLIGHTS_DAYS_BACK) + 1)}
+
+
+def mysport_date_from_header(line):
+    match = re.match(r"^HL(\d{2})(\d{2})\s*,\s*#genre#", clean_text(line), re.I)
+    if not match:
+        return None
+    today = datetime.now(TZ_VN).date()
+    try:
+        event_date = datetime(today.year, int(match.group(1)), int(match.group(2)), tzinfo=TZ_VN).date()
+    except Exception:
+        return None
+    if event_date > today + timedelta(days=7):
+        try:
+            event_date = datetime(today.year - 1, event_date.month, event_date.day, tzinfo=TZ_VN).date()
+        except Exception:
+            return None
+    return event_date
+
+
+def mysport_clean_title(title):
+    title = clean_text(title).strip(" \t,;|-")
+    if not title:
+        return "MySport Highlight"
+    if re.fullmatch(r"[A-Za-z0-9]{2,8}(?:[-_][A-Za-z0-9]{2,8}){1,3}", title):
+        title = re.sub(r"[-_]+", " vs ", title)
+    title = re.sub(r"\s+", " ", title)
+    return clean_highlight_title(title)
+
+
+def collect_mysport_highlights():
+    source = "MySportHighlights"
+    if not MYSPORT_HIGHLIGHTS_URL:
+        return []
+
+    log(f"[{source}] Fetch custom list")
+    try:
+        text = fetch_text(MYSPORT_HIGHLIGHTS_URL, headers={"User-Agent": UA}, timeout=45)
+    except Exception as exc:
+        log(f"[{source}] Error: {exc}")
+        return []
+    if not text:
+        return []
+
+    allowed_dates = mysport_allowed_highlight_dates()
+    channels = []
+    seen_urls = set()
+    current_date = None
+    pending_title = ""
+    referer = "https://raw.githubusercontent.com/kyp126/TEST-2/"
+
+    def append_channel(raw_title, stream_url):
+        nonlocal channels
+        stream_url = clean_text(stream_url).strip().rstrip(".,);]")
+        if not (is_valid_highlight_url(stream_url) or is_rumble_hls_tar_url(stream_url)):
+            return
+        if is_hls_init_segment_url(stream_url):
+            return
+        if stream_url in seen_urls:
+            return
+        if current_date and current_date not in allowed_dates:
+            return
+        title = mysport_clean_title(raw_title)
+        if current_date:
+            title = f"{title}, ngày {current_date.strftime('%d/%m')}"
+        seen_urls.add(stream_url)
+        channels.append(
+            {
+                "source": source,
+                "name": title,
+                "group": "Highlight | MySport",
+                "logo": "",
+                "stream_url": stream_url,
+                "referer": referer,
+                "user_agent": UA,
+                "event_date": current_date,
+                "skip_event_filter": True,
+            }
+        )
+
+    for raw_line in text.splitlines():
+        line = clean_text(raw_line)
+        if not line:
+            continue
+        header_date = mysport_date_from_header(line)
+        if header_date:
+            current_date = header_date
+            pending_title = ""
+            continue
+        if current_date and current_date not in allowed_dates:
+            pending_title = ""
+            continue
+
+        if "," in line:
+            raw_title, raw_url = line.split(",", 1)
+            raw_title = raw_title.strip() or pending_title
+            raw_url = raw_url.strip()
+            if raw_url.startswith(("http://", "https://")):
+                append_channel(raw_title, raw_url)
+                pending_title = ""
+            elif raw_title:
+                pending_title = raw_title
+            continue
+
+        if line.startswith(("http://", "https://")):
+            append_channel(pending_title, line)
+            pending_title = ""
+            continue
+
+        pending_title = line
+
+        if len(channels) >= max(1, MYSPORT_HIGHLIGHTS_LIMIT):
+            break
+
+    if len(channels) > max(1, MYSPORT_HIGHLIGHTS_LIMIT):
+        channels = channels[: max(1, MYSPORT_HIGHLIGHTS_LIMIT)]
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
 
 
 def collect_chuoichien():
@@ -7687,6 +7828,7 @@ def collect_current_highlights():
             if WRITE_HIGHLIGHT_M3U:
                 write_m3u(DASFOOTBALL_M3U, dasfootball_channels)
     highlight_sources.extend(dasfootball_channels)
+    highlight_sources.extend(collect_source_channels("MySportHighlights", collect_mysport_highlights))
     highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
     highlight_channels = dedupe_and_sort_channels(highlight_sources)
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
