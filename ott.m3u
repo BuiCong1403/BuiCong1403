@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-09-16 07:03 ICT
-# Total   : 256
+# Updated : 2026-09-16 07:32 ICT
+# Total   : 269
 
 #EXTINF:0,VTV1
 #EXTGRP:VTV
@@ -36,7 +36,7 @@ https://vips-livecdn.fptplay.net/live/media/vtv5tn/live-hls-avc/vtv5tn-avc1_4000
 
 #EXTINF:0,VTV6
 #EXTGRP:VTV
-https://vmttv.dpdns.org/VTVGo/?vtv6-hd
+https://vips-livecdn.fptplay.net/live/media/vtv6/live247-hls-avc/vtv6-avc1_5600000=10000-mp4a_140800_vie=20000.m3u8
 
 #EXTINF:0,VTV7
 #EXTGRP:VTV
@@ -146,37 +146,21 @@ https://live.fptplay53.net/live/media/su-kien-04/hls_avc_v6/index.m3u8
 #EXTGRP:MyTVFPTEvents
 https://live.fptplay53.net/live/media/su-kien-06/hls_avc_v6/index.m3u8
 
-#EXTINF:0,05:00 16/09 CA Platense vs Fluminense RJ (HD MAX)
+#EXTINF:0,08:00 05/09 Puebla vs Toluca (HD ZANE)
 #EXTGRP:FLV
-https://live2.domaincdn.cc/livecdn/channel-6.flv?auth_key=3000001789510545-0-0-9988d9ccc481ec53a0cbc6e424ee4d1b
+https://live2.domaincdn.cc/livecdn/channel-22.flv?auth_key=3000001789517789-0-0-5b601978aa570fd5e101dd26b041f8eb
 
-#EXTINF:0,05:00 16/09 CA Platense vs Fluminense RJ (MAX)
+#EXTINF:0,08:00 05/09 Puebla vs Toluca (ZANE)
 #EXTGRP:FLV
-https://live2.zundrixmediapipeline.com/live/channel6.flv
+https://live2.zundrixmediapipeline.com/live/channel22.flv
 
-#EXTINF:0,05:00 16/09 CA Platense vs Fluminese (NGƯỜI NẶN) [flv]
+#EXTINF:0,05:30 16/09 Londrina PR vs Ponte Preta (Siêu Quậy) [flv]
 #EXTGRP:FLV
-https://flv.lauthaitv.cc/live/cap-flu-copalibe.flv
-
-#EXTINF:0,05:00 16/09 Platense vs Fluminense RJ (BLV MOUNTAIN DEW) [flv]
-#EXTGRP:FLV
-https://live05.meung.app/live/87547578_tsc.flv
-
-#EXTINF:0,05:00 16/09 Vasco da Gama vs Ind. Santa Fe (ASTRA)
-#EXTGRP:FLV
-https://live2.zundrixmediapipeline.com/live/channel11.flv
-
-#EXTINF:0,05:00 16/09 Vasco da Gama vs Ind. Santa Fe (HD ASTRA)
-#EXTGRP:FLV
-https://live2.domaincdn.cc/livecdn/channel-11.flv?auth_key=3000001789510538-0-0-569e6e2f1c8592572371d4c1ace3335d
-
-#EXTINF:0,05:00 16/09 Vasco vs CLB Santa Fe (BLV POCARI) [flv]
-#EXTGRP:FLV
-https://live05.meung.app/live/19919577_tsc.flv
+https://playback.livetl001.com/live/6a2a59b347bbddd62a8dc4e4.flv
 
 #EXTINF:0,06:00 16/09 Delfines Del Este vs National Defense (HD TONI)
 #EXTGRP:FLV
-https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001789510603-0-0-43af84616ba2a51cc5f8498d550c6cfe
+https://live2.domaincdn.cc/livecdn/channel-9.flv?auth_key=3000001789517780-0-0-62646484ea62037e54e151272f9673f9
 
 #EXTINF:0,06:00 16/09 Delfines Del Este vs National Defense (TONI)
 #EXTGRP:FLV
@@ -184,7 +168,7 @@ https://live2.zundrixmediapipeline.com/live/channel9.flv
 
 #EXTINF:0,06:00 16/09 Violette AC vs Club Sando Moruga (HD HIRO)
 #EXTGRP:FLV
-https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001789510569-0-0-507a5d9d74f759c2b6820015173fed8a
+https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001789517770-0-0-aa68b167f59cca11678138328091354b
 
 #EXTINF:0,06:00 16/09 Violette AC vs Club Sando Moruga (HIRO)
 #EXTGRP:FLV
@@ -192,7 +176,7 @@ https://live2.zundrixmediapipeline.com/live/channel14.flv
 
 #EXTINF:0,06:00 16/09 Diane Parry vs Peyton Stearns (HD VIC)
 #EXTGRP:FLV
-https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789510629-0-0-177619b79b7fdf28d5935b976e83736a
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001789517798-0-0-9bcd1224d20470fb5628a80d40c78911
 
 #EXTINF:0,06:00 16/09 Diane Parry vs Peyton Stearns (VIC)
 #EXTGRP:FLV
@@ -206,6 +190,14 @@ https://live2.zktsva.app/live/741294.flv
 #EXTGRP:FLV
 https://live05.meung.app/live/75915087_tsc.flv
 
+#EXTINF:0,07:30 16/09 Boyaca Chico vs Alianza Petrolera (HD POLO)
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-10.flv?auth_key=3000001789517749-0-0-36a9c7db1212e48d662fca05845f58ba
+
+#EXTINF:0,07:30 16/09 Boyaca Chico vs Alianza Petrolera (POLO)
+#EXTGRP:FLV
+https://live2.zundrixmediapipeline.com/live/channel10.flv
+
 #EXTINF:0,07:30 16/09 CLB Sao Paulo vs Boca Juniors (BLV SAMURAI) [flv]
 #EXTGRP:FLV
 https://live05.meung.app/live/07808742_tsc.flv
@@ -218,6 +210,26 @@ https://flv.lauthaitv.cc/live/saopaulo-boca-copasuda.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/306290.flv
 
+#EXTINF:0,07:30 16/09 São Paulo vs Boca Juniors (HD OLER)
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-28.flv?auth_key=3000001789517739-0-0-27386ed61a5f82ae4d2ee7d54dbf096d
+
+#EXTINF:0,07:30 16/09 São Paulo vs Boca Juniors (OLER)
+#EXTGRP:FLV
+https://live2.zundrixmediapipeline.com/live/channel28.flv
+
+#EXTINF:0,08:00 16/09 CLB Puebla vs Toluca (BLV BÍ ĐAO) [flv]
+#EXTGRP:FLV
+https://live05.meung.app/live/99121525_tsc.flv
+
+#EXTINF:0,08:00 16/09 Dorados vs Cancun FC (HD SILVA)
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-20.flv?auth_key=3000001789517806-0-0-6fe966e4c811df4159c550e50936bea9
+
+#EXTINF:0,08:00 16/09 Dorados vs Cancun FC (SILVA)
+#EXTGRP:FLV
+https://live2.zundrixmediapipeline.com/live/channel20.flv
+
 #EXTINF:0,08:00 16/09 Puebla vs Toluca (NGƯỜI NẶN) [flv]
 #EXTGRP:FLV
 https://flv.lauthaitv.cc/live/puebla-toluca-mexliga.flv
@@ -226,29 +238,33 @@ https://flv.lauthaitv.cc/live/puebla-toluca-mexliga.flv
 #EXTGRP:FLV
 https://live2.zundrixmediapipeline.com/live/channel25.flv
 
+#EXTINF:0,08:00 16/09 Jordan vs Hàn Quốc (BLV POCARI) [flv]
+#EXTGRP:FLV
+https://live05.meung.app/live/19919577_tsc.flv
+
 #EXTINF:0,08:00 16/09 Jordan vs Hàn Quốc (HD ALAN)
 #EXTGRP:FLV
-https://live2.domaincdn.cc/livecdn/channel-25.flv?auth_key=3000001789510620-0-0-d742260bdb5e2ec8d22fcbc21282e416
+https://live2.domaincdn.cc/livecdn/channel-25.flv?auth_key=3000001789517815-0-0-ed09b9368ff10859037201c43bf6b428
 
 #EXTINF:0,11:00 16/09 Iran vs Bahrain (BLV ROCKSTAR) [flv]
 #EXTGRP:FLV
 https://live05.meung.app/live/82054853_tsc.flv
 
-#EXTINF:0,11:00 16/09 Iran vs Bahrain (HD TOMMY)
-#EXTGRP:FLV
-https://live2.pro2cdnlive.com/live/channel-29.flv
-
-#EXTINF:0,11:00 16/09 Iran vs Bahrain (TOMMY)
-#EXTGRP:FLV
-https://live2.pro2cdnlive.com/live/channel29.flv
-
 #EXTINF:0,11:00 16/09 Nữ Việt Nam vs Nữ Qatar (HD TYSON)
 #EXTGRP:FLV
-https://live2.pro2cdnlive.com/live/channel-33.flv
+https://live2.domaincdn.cc/livecdn/channel-33.flv?auth_key=3000001789517825-0-0-00181b45d10a13ad39a3e82f011deeec
 
 #EXTINF:0,11:00 16/09 Nữ Việt Nam vs Nữ Qatar (TYSON)
 #EXTGRP:FLV
-https://live2.pro2cdnlive.com/live/channel33.flv
+https://live2.zundrixmediapipeline.com/live/channel33.flv
+
+#EXTINF:0,12:00 16/09 UAE U23 vs Iran U23 (HD TOM)
+#EXTGRP:FLV
+https://live2.pro2cdnlive.com/live/channel-4.flv
+
+#EXTINF:0,12:00 16/09 UAE U23 vs Iran U23 (TOM)
+#EXTGRP:FLV
+https://live2.pro2cdnlive.com/live/channel4.flv
 
 #EXTINF:0,12:00 16/09 United Arab Emirates U23 vs Iran U23 (BLV HỔ VẰN) [flv]
 #EXTGRP:FLV
@@ -269,6 +285,10 @@ https://flv.lauthaitv.cc/live/tha-kyr-asiad.flv
 #EXTINF:0,14:00 16/09 Thái Lan U23 vs Kyrgyzstan U23 (BLV FANTA) [flv]
 #EXTGRP:FLV
 https://live05.meung.app/live/16226575_tsc.flv
+
+#EXTINF:0,14:00 16/09 Trung Quốc vs Ả Rập Xê Út (HD 1)
+#EXTGRP:FLV
+https://live2.pro2cdnlive.com/live/channel-1.flv
 
 #EXTINF:0,14:00 16/09 Trung quốc vs Saudi Arabia (BLV Cozy) [flv]
 #EXTGRP:FLV
@@ -293,6 +313,10 @@ https://live05.meung.app/live/08552895_tsc.flv
 #EXTINF:0,17:00 16/09 CLB Jeonbuk Hyundai Motors vs Kashiwa Reysol (BLV WARRIOR) [flv]
 #EXTGRP:FLV
 https://live05.meung.app/live/97885009_tsc.flv
+
+#EXTINF:0,17:00 16/09 CLB Seoul vs CLB Persib Bandung (BLV MOUNTAIN DEW) [flv]
+#EXTGRP:FLV
+https://live05.meung.app/live/87547578_tsc.flv
 
 #EXTINF:0,17:00 16/09 China U23 vs North Korea U23 (Gà Siêu Péo) [flv]
 #EXTGRP:FLV
@@ -326,6 +350,10 @@ https://live05.meung.app/live/14830711_tsc.flv
 #EXTGRP:FLV
 https://live05.meung.app/live/90865415_tsc.flv
 
+#EXTINF:0,17:20 16/09 Đài Loan vs Nhật Bản (HD 1)
+#EXTGRP:FLV
+https://live2.pro2cdnlive.com/live/channel-1.flv
+
 #EXTINF:0,17:20 16/09 Nữ Nhật Bản vs Nepal Women (HD TYSON)
 #EXTGRP:FLV
 https://live2.pro2cdnlive.com/live/channel-33.flv
@@ -334,13 +362,17 @@ https://live2.pro2cdnlive.com/live/channel-33.flv
 #EXTGRP:FLV
 https://live2.pro2cdnlive.com/live/channel33.flv
 
-#EXTINF:0,17:30 16/09 Nhật Bản U23 vs Hồng Kông U23 (BLV BÍ ĐAO) [flv]
-#EXTGRP:FLV
-https://live05.meung.app/live/99121525_tsc.flv
-
 #EXTINF:0,19:00 16/09 Port FC vs Vissel Kobe (NGƯỜI PHÁO) [flv]
 #EXTGRP:FLV
 https://flv.lauthaitv.cc/live/port-vissel-afcc1.flv
+
+#EXTINF:0,19:15 16/09 Port FC vs Vissel Kobe (BLV SODA) [flv]
+#EXTGRP:FLV
+https://live05.meung.app/live/02456966_tsc.flv
+
+#EXTINF:0,19:15 16/09 Port FC vs Vissel Kobe (Gà Siêu Ngố) [flv]
+#EXTGRP:FLV
+https://live2.zktsva.app/live/301238.flv
 
 #EXTINF:0,19:15 16/09 Port FC vs Vissel Kobe (NEM NƯỚNG) [flv]
 #EXTGRP:FLV
@@ -349,6 +381,22 @@ https://cdnflv.xbdbotv.live/live/MTk4NjcwMjM6dWppY2ViaXFnN2Fmazdhendla3Q3azE3Om9
 #EXTINF:0,19:15 16/09 Port FC vs Vissel Kobe (TRÚC BẠCH) [flv]
 #EXTGRP:FLV
 https://cdnflv.xbdbotv.live/live/MTk4NjcwMjM6bjlsaDFnc2lrZDhzZjZhZW5oZjl2cG9xOnNmMGwwbTFnNWJiZjgwbXMxa2ZvM3Vtcg.flv
+
+#EXTINF:0,19:15 16/09 The Cong-Viettel vs Melbourne Victory (Gà Siêu Gáy) [flv]
+#EXTGRP:FLV
+https://live2.zktsva.app/live/294335.flv
+
+#EXTINF:0,19:15 16/09 The Cong-Viettel vs Melbourne Victory (Gà Siêu Tốc) [flv]
+#EXTGRP:FLV
+https://live2.zktsva.app/live/307240.flv
+
+#EXTINF:0,19:15 16/09 Thể Công _ Viettel vs Melbourne Victory (BLV REVIVE) [flv]
+#EXTGRP:FLV
+https://live05.meung.app/live/33982309_tsc.flv
+
+#EXTINF:0,19:15 16/09 Thể Công _ Viettel vs Melbourne Victory (BLV SPRITE) [flv]
+#EXTGRP:FLV
+https://live05.meung.app/live/75748097_tsc.flv
 
 #EXTINF:0,19:15 16/09 Thể Công-Viettel vs Melbourne Victory (Vịt Nướng) [flv]
 #EXTGRP:FLV
@@ -462,9 +510,133 @@ https://flv.lauthaitv.cc/live/bota-gremio-brasa.flv
 #EXTGRP:FLV
 https://flv.lauthaitv.cc/live/miami-cruz-leaguechamp.flv
 
-#EXTINF:0,06:00 16/09 Brazil vs Chile (Famy) [hls]
-#EXTGRP:PhaoHoaTV
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
+#EXTINF:0,Al Ain - Al Nassr: Thất bại tan nát, cú sốc Ronaldo - Felix (Cúp C1 châu Á) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789495455-al_h1_720p.m3u8
+
+#EXTINF:0,Al Ain - Al Nassr: Thất bại tan nát, cú sốc Ronaldo - Felix (Cúp C1 châu Á) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789495455-al_h2_720p.m3u8
+
+#EXTINF:0,Liverpool - Tottenham: Khoảnh khắc ngôi sao, siêu phẩm ấn định (League Cup) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789505757-liv-tot-h1_720p.m3u8
+
+#EXTINF:0,Liverpool - Tottenham: Khoảnh khắc ngôi sao, siêu phẩm ấn định (League Cup) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789505757-liv-tot-h2_720p.m3u8
+
+#EXTINF:0,Tin mới nhất bóng đá trưa 14/9: De Bruyne chấn thương, mức độ ra sao?
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789342012-foden_720p.m3u8
+
+#EXTINF:0,"Quỷ đỏ" đau thấu trời xanh, huyền thoại MU kêu gọi xóa sổ VAR (Clip tin nóng)
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_c1_ban_quyen-1789397406-tinnong260914_720p.m3u8
+
+#EXTINF:0,All Goals Of The Day 8 September 2026 Uefa Champions League
+#EXTGRP:Highlight
+https://vod.supersport.com/2019/SOC_080926_UEFA_GOALS_500K.mp4.m3u8
+
+#EXTINF:0,All Goals of the Day | 9 September 2026 | UEFA Champions League
+#EXTGRP:Highlight
+https://vod.supersport.com/2019/SOC_090926_UEFA_GOALS_500K.mp4.m3u8
+
+#EXTINF:0,Barca dẫn 3-0 vẫn "tim đập chân run", tân binh độc diễn ghi bàn giải cứu phút bù giờ
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789390533-clip90-1409_720p.m3u8
+
+#EXTINF:0,Brest - PSG: Siêu phẩm Torres, 3 điểm nhọc nhằn (Ligue 1) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_ligue1-1789344887-brest_psg1_720p.m3u8
+
+#EXTINF:0,Brest - PSG: Siêu phẩm Torres, 3 điểm nhọc nhằn (Ligue 1) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_ligue1-1789344888-brest_psg2_720p.m3u8
+
+#EXTINF:0,Dembele “đá xoáy” Mbappe trong cuộc đua Quả bóng Vàng, Zidane có bài toán khó
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789385740-dembele_mbappe_720p.m3u8
+
+#EXTINF:0,Elche - Real Madrid: Rượt đuổi điên rồ, siêu dự bị định đoạt phút 90+1 (La Liga)
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/cp_special_laliga-1789507523-real_h1.m3u8
+
+#EXTINF:0,Elversberg - Bayern Munich: Kane hết vô duyên, vất vả trước "lính mới" (Bundesliga) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_bundesliga-1789322001-elversberg_bayern1_720p.m3u8
+
+#EXTINF:0,Elversberg - Bayern Munich: Kane hết vô duyên, vất vả trước "lính mới" (Bundesliga) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_bundesliga-1789322001-elversberg_bayern2_720p.m3u8
+
+#EXTINF:0,HLV Kim: Đội hình A và B của Thái Lan không khác nhiều về lối chơi
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789357742-video9x16-hlv-kim-sang-sik-toi-nghi-doi-hinh-a-voi-b-thai-lan-khong-co-1787963505.m3u8
+
+#EXTINF:0,HLV Thái Lan: 'Những cầu thủ tốt nhất sẽ dự FIFA ASEAN Cup 2026'
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/1789440842-video9x16-hlv-thai-lan-chung-toi-da-goi-nhung-cau-thu-tot-nhat-de-dau--1789396899.m3u8
+
+#EXTINF:0,Ipswich Town - Arsenal: Nam sinh 16 tuổi rực rỡ, "đại tiệc" 6 bàn (League Cup) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789505939-ips-ars-h1_720p.m3u8
+
+#EXTINF:0,Ipswich Town - Arsenal: Nam sinh 16 tuổi rực rỡ, "đại tiệc" 6 bàn (League Cup) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789505939-ips-ars-h2_720p.m3u8
+
+#EXTINF:0,Leeds - Newcastle: 60 phút bùng nổ, đánh chiếm top 3 (Ngoại hạng Anh)
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/cp_special_nha_fpt-1789422145-leeds_newcastle_fpt_720p.m3u8
+
+#EXTINF:0,MU - Man City: Thẻ đỏ cay đắng, ngỡ ngàng Haaland (Ngoại hạng Anh)
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_nha_fpt-1789322409-manutd_mancity_fpt_720p.m3u8
+
+#EXTINF:0,Real Sociedad - Atletico Madrid: Bước ngoặt penalty (La Liga) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_laliga-1789337735-soc-atm-h1_720p.m3u8
+
+#EXTINF:0,Real Sociedad - Atletico Madrid: Bước ngoặt penalty (La Liga) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_laliga-1789337735-soc-atm-h2_720p.m3u8
+
+#EXTINF:0,Ronaldo trêu đồng đội trước đại chiến cúp C1 châu Á, vẫn thi đấu đỉnh cao nhờ bí quyết đơn giản
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/1789437040-ronaldo_720p.m3u8
+
+#EXTINF:0,Rúng động bóng đá: Cầu thủ bị đe dọa tính mạng cả nhà, thủ môn không dám bắt bóng
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/1789435583-ready_guabir--_720p.m3u8
+
+#EXTINF:0,Tennis Zverev - Shelton: Đáp trả sắc bén, đăng quang ngọt ngào (Chung kết US Open)
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_grand_slam-1789336999-zverev-shelton_1_720p.m3u8
+
+#EXTINF:0,Villarreal - Real Betis: Đẳng cấp ngược dòng, bay vào top 3 (La Liga) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/cp_special_laliga-1789423450-villarreal_betis1_720p.m3u8
+
+#EXTINF:0,Villarreal - Real Betis: Đẳng cấp ngược dòng, bay vào top 3 (La Liga) [720p]
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/cp_special_laliga-1789423451-villarreal_betis2_720p.m3u8
+
+#EXTINF:0,Võ sĩ ngổ ngáo đòi cướp đai boxing thế giới, "Vua Ryan" tung mưa đòn hủy diệt
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789382638-dam_720p.m3u8
+
+#EXTINF:0,Văn Hậu đối diện án phạt bổ sung sau pha đạp bóng nguy hiểm với Ngọc Tân
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/1789432861-22.gif_720p.m3u8
+
+#EXTINF:0,Zverev vô địch US Open với tiền thưởng kỷ lục, vui nhộn trêu bạn gái Shelton
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789338193-letraogiaizverev_720p.m3u8
+
+#EXTINF:0,Zverev được ví như "Tư Mã Ý" của tennis: "Nếm mật nằm gai" 10 năm để đứng đầu thiên hạ
+#EXTGRP:Highlight
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_grand_slam-1789382627-zverez_720p.m3u8
 
 #EXTINF:0,11:00 16/09 Trung Quốc vs Philippines (Tày) [hls]
 #EXTGRP:PhaoHoaTV
@@ -534,6 +706,10 @@ https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1
 #EXTGRP:PhaoHoaTV
 https://luong.phaohoa.live/live/phaohoa3/index.m3u8?expire=1815505159&sign=32dbf97946c3646cdd7f664aebd7fa2a
 
+#EXTINF:0,00:00 17/09 Dep. La Coruna vs Sevilla (Tày) [hls]
+#EXTGRP:PhaoHoaTV
+https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
+
 #EXTINF:0,00:00 17/09 Argentina vs Colombia (Famy) [hls]
 #EXTGRP:PhaoHoaTV
 https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
@@ -586,17 +762,17 @@ https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1
 #EXTGRP:PhaoHoaTV
 https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
 
+#EXTINF:0,17:00 17/09 Adelaide United vs Tai Po (Pháo Thủ) [hls]
+#EXTGRP:PhaoHoaTV
+https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
+
+#EXTINF:0,17:00 17/09 Lion City vs Pathum United (Tiểu Mây) [hls]
+#EXTGRP:PhaoHoaTV
+https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
+
 #EXTINF:0,17:20 17/09 Indonesia vs Nepal (Nhà Đài) [hls]
 #EXTGRP:PhaoHoaTV
 https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:0,05:00 | Platense vs Fluminense RJ | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/87547578_tsc.m3u8
-
-#EXTINF:0,05:00 | Vasco vs CLB Santa Fe | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/19919577_tsc.m3u8
 
 #EXTINF:0,07:00 | CRB vs CLB Sport Club Recife PE | BLV
 #EXTGRP:CoLaTV
@@ -605,6 +781,10 @@ https://live05.meung.app/live/75915087_tsc.m3u8
 #EXTINF:0,07:30 | CLB Sao Paulo vs Boca Juniors | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/07808742_tsc.m3u8
+
+#EXTINF:0,08:00 | CLB Puebla vs Toluca | BLV
+#EXTGRP:CoLaTV
+https://live05.meung.app/live/99121525_tsc.m3u8
 
 #EXTINF:0,08:00 | Jordan vs Hàn Quốc | BLV
 #EXTGRP:CoLaTV
@@ -898,130 +1078,3 @@ http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=895007&extens
 #EXTGRP:THỂ THAO QUỐC TẾ
 http://line.tvdsz.cc:80/play/live.php?mac=00:1B:79:41:2E:83&stream=895008&extension=ts
 
-#EXTINF:0,Al Ain - Al Nassr: Thất bại tan nát, cú sốc Ronaldo - Felix (Cúp C1 châu Á) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789495455-al_h1_720p.m3u8
-
-#EXTINF:0,Al Ain - Al Nassr: Thất bại tan nát, cú sốc Ronaldo - Felix (Cúp C1 châu Á) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789495455-al_h2_720p.m3u8
-
-#EXTINF:0,Liverpool - Tottenham: Khoảnh khắc ngôi sao, siêu phẩm ấn định (League Cup) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789505757-liv-tot-h1_720p.m3u8
-
-#EXTINF:0,Liverpool - Tottenham: Khoảnh khắc ngôi sao, siêu phẩm ấn định (League Cup) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789505757-liv-tot-h2_720p.m3u8
-
-#EXTINF:0,Tin mới nhất bóng đá trưa 14/9: De Bruyne chấn thương, mức độ ra sao?
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789342012-foden_720p.m3u8
-
-#EXTINF:0,"Quỷ đỏ" đau thấu trời xanh, huyền thoại MU kêu gọi xóa sổ VAR (Clip tin nóng)
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_c1_ban_quyen-1789397406-tinnong260914_720p.m3u8
-
-#EXTINF:0,All Goals Of The Day 8 September 2026 Uefa Champions League
-#EXTGRP:Highlight
-https://vod.supersport.com/2019/SOC_080926_UEFA_GOALS_500K.mp4.m3u8
-
-#EXTINF:0,All Goals of the Day | 9 September 2026 | UEFA Champions League
-#EXTGRP:Highlight
-https://vod.supersport.com/2019/SOC_090926_UEFA_GOALS_500K.mp4.m3u8
-
-#EXTINF:0,Barca dẫn 3-0 vẫn "tim đập chân run", tân binh độc diễn ghi bàn giải cứu phút bù giờ
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789390533-clip90-1409_720p.m3u8
-
-#EXTINF:0,Brest - PSG: Siêu phẩm Torres, 3 điểm nhọc nhằn (Ligue 1) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_ligue1-1789344887-brest_psg1_720p.m3u8
-
-#EXTINF:0,Brest - PSG: Siêu phẩm Torres, 3 điểm nhọc nhằn (Ligue 1) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_ligue1-1789344888-brest_psg2_720p.m3u8
-
-#EXTINF:0,Dembele “đá xoáy” Mbappe trong cuộc đua Quả bóng Vàng, Zidane có bài toán khó
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789385740-dembele_mbappe_720p.m3u8
-
-#EXTINF:0,Elche - Real Madrid: Rượt đuổi điên rồ, siêu dự bị định đoạt phút 90+1 (La Liga)
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/cp_special_laliga-1789507523-real_h1.m3u8
-
-#EXTINF:0,Elversberg - Bayern Munich: Kane hết vô duyên, vất vả trước "lính mới" (Bundesliga) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_bundesliga-1789322001-elversberg_bayern1_720p.m3u8
-
-#EXTINF:0,Elversberg - Bayern Munich: Kane hết vô duyên, vất vả trước "lính mới" (Bundesliga) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_bundesliga-1789322001-elversberg_bayern2_720p.m3u8
-
-#EXTINF:0,HLV Kim: Đội hình A và B của Thái Lan không khác nhiều về lối chơi
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789357742-video9x16-hlv-kim-sang-sik-toi-nghi-doi-hinh-a-voi-b-thai-lan-khong-co-1787963505.m3u8
-
-#EXTINF:0,HLV Thái Lan: 'Những cầu thủ tốt nhất sẽ dự FIFA ASEAN Cup 2026'
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/1789440842-video9x16-hlv-thai-lan-chung-toi-da-goi-nhung-cau-thu-tot-nhat-de-dau--1789396899.m3u8
-
-#EXTINF:0,Ipswich Town - Arsenal: Nam sinh 16 tuổi rực rỡ, "đại tiệc" 6 bàn (League Cup) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789505939-ips-ars-h1_720p.m3u8
-
-#EXTINF:0,Ipswich Town - Arsenal: Nam sinh 16 tuổi rực rỡ, "đại tiệc" 6 bàn (League Cup) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-16/1789505939-ips-ars-h2_720p.m3u8
-
-#EXTINF:0,Leeds - Newcastle: 60 phút bùng nổ, đánh chiếm top 3 (Ngoại hạng Anh)
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/cp_special_nha_fpt-1789422145-leeds_newcastle_fpt_720p.m3u8
-
-#EXTINF:0,MU - Man City: Thẻ đỏ cay đắng, ngỡ ngàng Haaland (Ngoại hạng Anh)
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_nha_fpt-1789322409-manutd_mancity_fpt_720p.m3u8
-
-#EXTINF:0,Real Sociedad - Atletico Madrid: Bước ngoặt penalty (La Liga) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_laliga-1789337735-soc-atm-h1_720p.m3u8
-
-#EXTINF:0,Real Sociedad - Atletico Madrid: Bước ngoặt penalty (La Liga) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_laliga-1789337735-soc-atm-h2_720p.m3u8
-
-#EXTINF:0,Ronaldo trêu đồng đội trước đại chiến cúp C1 châu Á, vẫn thi đấu đỉnh cao nhờ bí quyết đơn giản
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/1789437040-ronaldo_720p.m3u8
-
-#EXTINF:0,Rúng động bóng đá: Cầu thủ bị đe dọa tính mạng cả nhà, thủ môn không dám bắt bóng
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/1789435583-ready_guabir--_720p.m3u8
-
-#EXTINF:0,Tennis Zverev - Shelton: Đáp trả sắc bén, đăng quang ngọt ngào (Chung kết US Open)
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_grand_slam-1789336999-zverev-shelton_1_720p.m3u8
-
-#EXTINF:0,Villarreal - Real Betis: Đẳng cấp ngược dòng, bay vào top 3 (La Liga) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/cp_special_laliga-1789423450-villarreal_betis1_720p.m3u8
-
-#EXTINF:0,Villarreal - Real Betis: Đẳng cấp ngược dòng, bay vào top 3 (La Liga) [720p]
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/cp_special_laliga-1789423451-villarreal_betis2_720p.m3u8
-
-#EXTINF:0,Võ sĩ ngổ ngáo đòi cướp đai boxing thế giới, "Vua Ryan" tung mưa đòn hủy diệt
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789382638-dam_720p.m3u8
-
-#EXTINF:0,Văn Hậu đối diện án phạt bổ sung sau pha đạp bóng nguy hiểm với Ngọc Tân
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-15/1789432861-22.gif_720p.m3u8
-
-#EXTINF:0,Zverev vô địch US Open với tiền thưởng kỷ lục, vui nhộn trêu bạn gái Shelton
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/1789338193-letraogiaizverev_720p.m3u8
-
-#EXTINF:0,Zverev được ví như "Tư Mã Ý" của tennis: "Nếm mật nằm gai" 10 năm để đứng đầu thiên hạ
-#EXTGRP:Highlight
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-14/cp_special_grand_slam-1789382627-zverez_720p.m3u8
