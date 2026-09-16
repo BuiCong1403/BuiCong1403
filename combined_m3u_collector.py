@@ -34,6 +34,7 @@ BASE_DIR = Path(__file__).resolve().parent
 ALL_M3U = BASE_DIR / "all.m3u"
 OTT_M3U = BASE_DIR / "ott.m3u"
 HIGHLIGHT_M3U = BASE_DIR / "highlight.m3u"
+DASFOOTBALL_M3U = BASE_DIR / "dasfootball.m3u"
 TINHLAGI_M3U = BASE_DIR / "tinhlagi.m3u"
 THETHAOCOBAN_M3U = BASE_DIR / "thethaocoban.m3u"
 TZ_VN = timezone(timedelta(hours=7))
@@ -322,6 +323,10 @@ HIGHLIGHT_KEEP_PREVIOUS_ON_LOW = (
 PREVIOUS_HIGHLIGHT_M3U_URL = os.environ.get(
     "PREVIOUS_HIGHLIGHT_M3U_URL",
     "https://raw.githubusercontent.com/BuiCong1403/BuiCong1403/refs/heads/main/highlight.m3u",
+)
+DASFOOTBALL_M3U_URL = os.environ.get(
+    "DASFOOTBALL_M3U_URL",
+    "https://raw.githubusercontent.com/BuiCong1403/BuiCong1403/refs/heads/main/dasfootball.m3u",
 )
 WRITE_HIGHLIGHT_M3U = os.environ.get("WRITE_HIGHLIGHT_M3U", "1").strip().lower() not in {"0", "false", "no"}
 INCLUDE_HIGHLIGHT_IN_MAIN = os.environ.get("INCLUDE_HIGHLIGHT_IN_MAIN", "1").strip().lower() not in {"0", "false", "no"}
@@ -3166,6 +3171,69 @@ def collect_previous_highlight_playlist():
         channel["skip_event_filter"] = True
         channels.append(channel)
     return channels
+
+
+def extvlcopt_value(block, option_name):
+    prefix = f"#EXTVLCOPT:{option_name}="
+    for line in block:
+        if clean_text(line).lower().startswith(prefix.lower()):
+            return clean_text(line).split("=", 1)[1].strip()
+    return ""
+
+
+def channels_from_dasfootball_m3u_text(text, source_name):
+    _header, blocks = split_m3u_text_blocks(text)
+    allowed_dates = dasfootball_allowed_highlight_dates()
+    channels = []
+    for block in blocks:
+        title = "DasFootball Highlight"
+        logo = ""
+        stream_url = ""
+        for line in block:
+            if line.startswith("#EXTINF"):
+                title = clean_highlight_title(line.rsplit(",", 1)[-1].strip() or title)
+                logo_match = re.search(r'tvg-logo="([^"]*)"', line)
+                logo = clean_text(logo_match.group(1)) if logo_match else ""
+            elif line and not line.startswith("#"):
+                stream_url = clean_text(line)
+        if not is_valid_highlight_url(stream_url):
+            continue
+        referer = extvlcopt_value(block, "http-referrer") or DASFOOTBALL_BASE_URL.rstrip("/") + "/"
+        event_date = dasfootball_date_from_url(referer)
+        if event_date and event_date not in allowed_dates:
+            continue
+        channels.append(
+            {
+                "source": "DasFootballHighlight",
+                "name": title,
+                "group": "Highlight | DasFootball",
+                "logo": logo,
+                "stream_url": stream_url,
+                "referer": referer,
+                "user_agent": extvlcopt_value(block, "http-user-agent") or UA,
+                "event_date": event_date,
+                "skip_event_filter": True,
+            }
+        )
+    if channels:
+        log(f"[{source_name}] DasFootball cache links: {len(channels)}")
+    return channels
+
+
+def collect_previous_dasfootball_playlist():
+    channels = []
+    if DASFOOTBALL_M3U.exists():
+        try:
+            channels.extend(channels_from_dasfootball_m3u_text(DASFOOTBALL_M3U.read_text(encoding="utf-8"), "DasFootballCacheLocal"))
+        except Exception as exc:
+            log(f"[DasFootballCacheLocal] Error: {exc}")
+    if DASFOOTBALL_M3U_URL:
+        try:
+            text = fetch_text(DASFOOTBALL_M3U_URL, headers={"User-Agent": UA}, timeout=35)
+            channels.extend(channels_from_dasfootball_m3u_text(text, "DasFootballCacheRemote"))
+        except Exception as exc:
+            log(f"[DasFootballCacheRemote] Error: {exc}")
+    return dedupe_and_sort_channels(channels)
 
 
 def collect_chuoichien():
@@ -7607,7 +7675,17 @@ def ott_highlight_blocks_from_file():
 def collect_current_highlights():
     highlight_sources = []
     highlight_sources.extend(collect_source_channels("SuperSportHighlight", collect_supersport_highlights))
-    highlight_sources.extend(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
+    dasfootball_channels = collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights)
+    if dasfootball_channels:
+        write_m3u(DASFOOTBALL_M3U, dasfootball_channels)
+    if len(dasfootball_channels) < 5:
+        previous_dasfootball = collect_previous_dasfootball_playlist()
+        if previous_dasfootball:
+            dasfootball_channels = dedupe_and_sort_channels(dasfootball_channels + previous_dasfootball)
+            log(f"[DasFootballHighlight] After cache merge: {len(dasfootball_channels)}")
+            if WRITE_HIGHLIGHT_M3U:
+                write_m3u(DASFOOTBALL_M3U, dasfootball_channels)
+    highlight_sources.extend(dasfootball_channels)
     highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
     highlight_channels = dedupe_and_sort_channels(highlight_sources)
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
