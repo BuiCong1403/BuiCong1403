@@ -257,6 +257,7 @@ SUPERSPORT_VIDEO_URLS = [
         "SUPERSPORT_VIDEO_URLS",
         "https://supersport.com/live-streaming/videos,"
         "https://supersport.com/football/videos,"
+        "https://supersport.com/football/tour/c0ca5665-d9d9-42dc-ad86-a7f48a4da2c6/videos,"
         "https://supersport.com/rugby/videos,"
         "https://supersport.com/cricket/videos,"
         "https://supersport.com/tennis/videos,"
@@ -266,8 +267,8 @@ SUPERSPORT_VIDEO_URLS = [
 ]
 SUPERSPORT_HIGHLIGHT_DAYS_BACK = int(os.environ.get("SUPERSPORT_HIGHLIGHT_DAYS_BACK", "7") or "7")
 SUPERSPORT_HIGHLIGHT_LIMIT = int(os.environ.get("SUPERSPORT_HIGHLIGHT_LIMIT", "100") or "100")
-SUPERSPORT_FEED_PAGE_SIZE = int(os.environ.get("SUPERSPORT_FEED_PAGE_SIZE", "30") or "30")
-SUPERSPORT_FEED_PAGES = int(os.environ.get("SUPERSPORT_FEED_PAGES", "2") or "2")
+SUPERSPORT_FEED_PAGE_SIZE = int(os.environ.get("SUPERSPORT_FEED_PAGE_SIZE", "50") or "50")
+SUPERSPORT_FEED_PAGES = int(os.environ.get("SUPERSPORT_FEED_PAGES", "4") or "4")
 SUPERSPORT_SEED_URLS = [
     item.strip()
     for item in os.environ.get(
