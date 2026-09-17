@@ -231,12 +231,13 @@ def write_playlist(entries, scheduled_count, source_entry_count):
         "# Chỉ xuất link thật khớp lịch; trận chưa có stream sẽ không tạo mục giữ chỗ.",
         "",
     ]
+    link_numbers = {}
     for entry in entries:
         match = entry["match"]
-        group = f"FootOnSat | {match['short_league']}"
         start = match["start"].strftime("%H:%M %d/%m")
-        channel = f" | {entry['channel']}" if entry["channel"] else ""
-        title = f"{start} | {match['match']}{channel}"
+        group = f"{start} | {match['match']}"
+        link_numbers[entry["key"]] = link_numbers.get(entry["key"], 0) + 1
+        title = entry["channel"] or f"Link {link_numbers[entry['key']]}"
         attributes = []
         if entry["tvg_id"]:
             attributes.append(f'tvg-id="{safe_attribute(entry["tvg_id"])}"')
