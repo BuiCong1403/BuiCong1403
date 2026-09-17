@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-09-17 14:11 ICT
-# Total   : 258
+# Updated : 2026-09-17 21:16 ICT
+# Total   : 257
 
 #EXTINF:0,VTV1
 #EXTGRP:VTV
@@ -40,7 +40,7 @@ https://vips-livecdn.fptplay.net/live/media/vtv6/live247-hls-avc/vtv6-avc1_56000
 
 #EXTINF:0,VTV7
 #EXTGRP:VTV
-https://vips-livecdn.fptplay.net/live/media/vtv7/live247-hls-avc/vtv7-avc1_5600000=10000-mp4a_140800_vie=20000.m3u8
+https://vmttv.dpdns.org/tv360/?id=vtv7-hd
 
 #EXTINF:0,VTV8
 #EXTGRP:VTV
@@ -146,49 +146,25 @@ https://live.fptplay53.net/live/media/su-kien-04/hls_avc_v6/index.m3u8
 #EXTGRP:MyTVFPTEvents
 https://live.fptplay53.net/live/media/su-kien-06/hls_avc_v6/index.m3u8
 
-#EXTINF:0,14:00 17/09 | Việt Nam vs Hong Kong | ASIAD GAME | KaKa
+#EXTINF:0,19:15 17/09 | Shanghai Shenhua vs Tampines Rover | AFC Champions League Two | Tây Môn Khánh
+#EXTGRP:PhaoHoaTV
+https://livecdn.cdnfastter.xyz/live/livehub6/index.m3u8
+
+#EXTINF:0,19:15 17/09 | Shanghai Shenhua vs Tampines Rover | AFC Champions League Two | Văn Minh
+#EXTGRP:PhaoHoaTV
+https://luong.phaohoa.live/live/phaohoa3/index.m3u8?expire=1815505159&sign=32dbf97946c3646cdd7f664aebd7fa2a
+
+#EXTINF:0,21:00 17/09 | Bỉ vs Serbia | Vô Địch Châu Âu | KaKa
 #EXTGRP:PhaoHoaTV
 https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
 
-#EXTINF:0,14:00 17/09 | Đài Loan vs Mông Cổ | ASIAD GAME | Famy
+#EXTINF:0,21:00 17/09 | Slovakia vs Hy Lạp | Vô Địch Châu Âu | Enzo
 #EXTGRP:PhaoHoaTV
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
+https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
 
-#EXTINF:0,14:00 | Bangladesh Nữ vs Hàn Quốc Nữ | BLV
+#EXTINF:0,19:15 | Shanghai Shenhua vs CLB Tampines | BLV
 #EXTGRP:CoLaTV
-https://live05.meung.app/live/59444581_tsc.m3u8
-
-#EXTINF:0,14:00 | Thái Lan Nữ vs Đài Loan TQ Nữ | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:0,17:00 | CLB Adelaide United vs Wofoo Tai Po | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/75915087_tsc.m3u8
-
-#EXTINF:0,17:00 | Lion City vs Pathum United | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/82054853_tsc.m3u8
-
-#EXTINF:0,17:00 | Machida vs Vikingur Reykjavik Nữ | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/18812304_tsc.m3u8
-
-#EXTINF:0,17:30 | Việt Nam Nữ vs Nhật Bản Nữ | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/33982309_tsc.m3u8
-
-#EXTINF:0,17:30 | Việt Nam Nữ vs Nhật Bản Nữ | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/75748097_tsc.m3u8
-
-#EXTINF:0,19:15 | CLB Kitchee vs Gangwon | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/02456966_tsc.m3u8
-
-#EXTINF:0,19:15 | Phnom Penh Crown vs Kuching City FC | BLV
-#EXTGRP:CoLaTV
-https://live05.meung.app/live/90865415_tsc.m3u8
+https://live05.meung.app/live/87379114_tsc.m3u8
 
 #EXTINF:0,20:15 | Gazovik Orenburg vs Krasnodar | BLV
 #EXTGRP:CoLaTV
@@ -202,7 +178,7 @@ https://live05.meung.app/live/16226575_tsc.m3u8
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/59444581_tsc.m3u8
 
-#EXTINF:0,22:30 | Câu lạc bộ bóng đá Rostov vs Dynamo Moscow | BLV
+#EXTINF:0,22:30 | Rostov vs Dynamo Moscow | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/07808742_tsc.m3u8
 
@@ -220,19 +196,23 @@ https://live05.meung.app/live/33982309_tsc.m3u8
 
 #EXTINF:0,23:45 | OFI Crete vs TSG 1899 Hoffenheim | BLV
 #EXTGRP:CoLaTV
-https://live05.meung.app/live/78905744_tsc.m3u8
+https://live05.meung.app/live/99121525_tsc.m3u8
 
 #EXTINF:0,00:00 | Real Betis Balompié vs Getafe CF | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/07428422_tsc.m3u8
 
-#EXTINF:0,01:30 | Câu lạc bộ bóng đá thành phố Manchester vs Câu lạc bộ bóng đá Norwich City | BLV
+#EXTINF:0,01:30 | Manchester City vs Norwich City | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/02456966_tsc.m3u8
 
-#EXTINF:0,01:30 | Câu lạc bộ bóng đá thành phố Manchester vs Câu lạc bộ bóng đá Norwich City | BLV
+#EXTINF:0,01:30 | Manchester City vs Norwich City | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/14830711_tsc.m3u8
+
+#EXTINF:0,02:00 | Besiktas JK vs Olympique de Marseille | BLV
+#EXTGRP:CoLaTV
+https://live05.meung.app/live/14707124_tsc.m3u8
 
 #EXTINF:0,02:00 | Besiktas JK vs Olympique de Marseille | BLV
 #EXTGRP:CoLaTV
@@ -330,6 +310,10 @@ https://live05.meung.app/live/33982309_tsc.m3u8
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/78905744_tsc.m3u8
 
+#EXTINF:0,14:00 | Hàn Quốc vs Iran | BLV
+#EXTGRP:CoLaTV
+https://live05.meung.app/live/90865415_tsc.m3u8
+
 #EXTINF:0,15:00 | Câu lạc bộ bóng đá Nhật Chiếu Yuqi vs Yichun Grand Tiger | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/87547578_tsc.m3u8
@@ -346,9 +330,17 @@ https://live05.meung.app/live/59444581_tsc.m3u8
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/82054853_tsc.m3u8
 
+#EXTINF:0,17:20 | Nhật Bản vs Trung quốc | BLV
+#EXTGRP:CoLaTV
+https://live05.meung.app/live/87379114_tsc.m3u8
+
 #EXTINF:0,17:30 | Ả Rập Saudi U23 vs Qatar U23 | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/07808742_tsc.m3u8
+
+#EXTINF:0,18:00 | Quy Nhơn Bình Định vs Bà Rịa Vũng Tàu | BLV
+#EXTGRP:CoLaTV
+https://live05.meung.app/live/14707124_tsc.m3u8
 
 #EXTINF:0,18:00 | Quy Nhơn Bình Định vs Bà Rịa Vũng Tàu | BLV
 #EXTGRP:CoLaTV
@@ -588,6 +580,10 @@ https://live05.meung.app/live/33982309_tsc.m3u8
 
 #EXTINF:0,21:00 | Câu lạc bộ bóng đá Newcastle United vs CLB Hull City | BLV
 #EXTGRP:CoLaTV
+https://live05.meung.app/live/14707124_tsc.m3u8
+
+#EXTINF:0,21:00 | Câu lạc bộ bóng đá Newcastle United vs CLB Hull City | BLV
+#EXTGRP:CoLaTV
 https://live05.meung.app/live/75748097_tsc.m3u8
 
 #EXTINF:0,21:00 | Câu lạc bộ bóng đá Newcastle United vs CLB Hull City | BLV
@@ -620,7 +616,7 @@ https://live05.meung.app/live/97885009_tsc.m3u8
 
 #EXTINF:0,23:30 | Celta Vigo vs CLB Racing Santander | BLV
 #EXTGRP:CoLaTV
-https://live05.meung.app/live/59444581_tsc.m3u8
+https://live05.meung.app/live/14707124_tsc.m3u8
 
 #EXTINF:0,23:30 | Câu lạc bộ Bóng đá Nottingham Forest vs CLB Coventry City | BLV
 #EXTGRP:CoLaTV
