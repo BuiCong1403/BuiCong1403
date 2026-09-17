@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "combined_m3u_collector.py"
+      - "footonsat_collector.py"
       - ".github/workflows/update.yml"
   schedule:
     # Live sports, Asia/Bangkok: 02:00, 16:00, 18:00
@@ -71,6 +72,7 @@ jobs:
           fi
           echo "RUN_MODE=$RUN_MODE"
           RUN_MODE="$RUN_MODE" python combined_m3u_collector.py
+          python footonsat_collector.py
           rm -f sport.m3u
           rm -f tinhlagi.m3u thethaocoban.m3u
           rm -f export_reference_m3u.bat
@@ -80,7 +82,9 @@ jobs:
           test -s ott.m3u
           test -f highlight.m3u
           test -s highlight.m3u
-          ls -lh all.m3u ott.m3u highlight.m3u
+          test -f footonsat.m3u
+          test -s footonsat.m3u
+          ls -lh all.m3u ott.m3u highlight.m3u footonsat.m3u
 
       - name: Commit generated files
         run: |
