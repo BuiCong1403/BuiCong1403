@@ -1,9 +1,12 @@
 #EXTM3U
-# Updated : 2026-09-18 10:23 ICT
-# Total   : 449
+# Updated : 2026-09-18 10:41 ICT
+# Total   : 501
 
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/1.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/VTV10.png" group-title="VTV",VTV10
+https://vips-livecdn.fptplay.net/live/media/vtv10/live247-hls-avc/vtv10-avc1_5600000=10000-mp4a_131600=20000.m3u8
 
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/2.png" group-title="VTV",VTV2
 https://vips-livecdn.fptplay.net/live/media/vtv2/live247-hls-avc/vtv2-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -13,9 +16,6 @@ https://vips-livecdn.fptplay.net/live/media/vtv3/live247-hls-avc/vtv3-avc1_56000
 
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/4.png" group-title="VTV",VTV4
 https://vips-livecdn.fptplay.net/live/media/vtv4/live247-hls-avc/vtv4-avc1_5600000=10000-mp4a_131600=20000.m3u8
-
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/VietnamToday.jpg" group-title="VTV",Vietnam Today
-https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/vietnamtoday-avc1_4000000=10000-mp4a_131600=20000.m3u8
 
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/5.png" group-title="VTV",VTV5
 https://vips-livecdn.fptplay.net/live/media/vtv5/live247-hls-avc/vtv5-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -38,8 +38,8 @@ https://vips-livecdn.fptplay.net/live/media/vtv8/live-hls-avc/vtv8-avc1_4000000=
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/11.png" group-title="VTV",VTV9
 https://vips-livecdn.fptplay.net/live/media/vtv9/live247-hls-avc/vtv9-avc1_5600000=10000-mp4a_131600=20000.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/VTV10.png" group-title="VTV",VTV10
-https://vips-livecdn.fptplay.net/live/media/vtv10/live247-hls-avc/vtv10-avc1_5600000=10000-mp4a_131600=20000.m3u8
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/VietnamToday.jpg" group-title="VTV",Vietnam Today
+https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/vietnamtoday-avc1_4000000=10000-mp4a_131600=20000.m3u8
 
 #EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/03/12/slider_1773281920969.jpg", Event 1
 https://live.fptplay53.net/live/media/event-01/hls_avc_v6/index.m3u8
@@ -110,16 +110,6 @@ https://live.fptplay53.net/live/media/su-kien-04/hls_avc_v6/index.m3u8
 #EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/01/27/slider_1769494261646.jpg", Sự Kiện 6
 https://live.fptplay53.net/live/media/su-kien-06/hls_avc_v6/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1e/Logo_Italy_National_Womens_Football_Team_2023_%28no_stars%29.svg" group-title="Giờ Vàng TV",[02:05] Italia vs Slovenia | Tôm [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789617384_hd/1789617384_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1e/Logo_Italy_National_Womens_Football_Team_2023_%28no_stars%29.svg" group-title="Giờ Vàng TV",[02:05] Italia vs Slovenia | Tôm [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789617384_hd/1789617384_hd@720p.m3u8
-
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/f527c983cab3560c60e7b9d147904d7d.png" group-title="Giờ Vàng TV",[06:30] Atlanta Dream vs Connecticut Sun | Chồn [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -129,66 +119,6 @@ https://eqr2hdarxfliv.vcdn.cloud/1789617292_hd/1789617292_hd@720p.m3u8
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://eqr2hdarxfliv.vcdn.cloud/1789617292_hd/1789617292_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/0a570e6f3972fccc8370091d6ffdef5e.png" group-title="Giờ Vàng TV",[07:00] Chicago Sky vs Washington Mystics | Vịt [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789662412_hd/1789662412_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/0a570e6f3972fccc8370091d6ffdef5e.png" group-title="Giờ Vàng TV",[07:00] Chicago Sky vs Washington Mystics | Vịt [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789662412_hd/1789662412_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/17dcd412f5ecfaa1bc4b85e6e39bc0c4.png" group-title="Giờ Vàng TV",[07:00] Dallas Wings vs Los Angeles Sparks | Tôm [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789662479_hd/1789662479_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/17dcd412f5ecfaa1bc4b85e6e39bc0c4.png" group-title="Giờ Vàng TV",[07:00] Dallas Wings vs Los Angeles Sparks | Tôm [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789662479_hd/1789662479_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/t-WvhVQI8fKZliuPz7RLKQ_96x96.png" group-title="Giờ Vàng TV",[07:15] Buffalo Bills vs Detroit Lions | Riko [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789662984_hd/1789662984_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/t-WvhVQI8fKZliuPz7RLKQ_96x96.png" group-title="Giờ Vàng TV",[07:15] Buffalo Bills vs Detroit Lions | Riko [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789662984_hd/1789662984_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/flamengo.png" group-title="Giờ Vàng TV",[07:30] Flamengo vs Independiente del Valle | Ngọng [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789661966_hd/1789661966_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/flamengo.png" group-title="Giờ Vàng TV",[07:30] Flamengo vs Independiente del Valle | Ngọng [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789661966_hd/1789661966_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/montevideo-city-torque.png" group-title="Giờ Vàng TV",[07:30] Montevideo City Torque vs Cienciano | Bón [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789661998_hd/1789661998_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/montevideo-city-torque.png" group-title="Giờ Vàng TV",[07:30] Montevideo City Torque vs Cienciano | Bón [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789661998_hd/1789661998_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/80f4ac7926dcf255ec6d32d271755d1a.png" group-title="Giờ Vàng TV",[08:00] South Korea (W) vs Malaysia (W) | Cầy [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789662442_hd/1789662442_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/80f4ac7926dcf255ec6d32d271755d1a.png" group-title="Giờ Vàng TV",[08:00] South Korea (W) vs Malaysia (W) | Cầy [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1789662442_hd/1789662442_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/687f4fda7efc61afefa80ee3591a56f2.png" group-title="Giờ Vàng TV",[09:00] Portland Fire vs Phoenix Mercury | Tôm [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -340,37 +270,18 @@ https://eqr2hdarxfliv.vcdn.cloud/1789368893_hd/1789368893_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://eqr2hdarxfliv.vcdn.cloud/1789368893_hd/1789368893_hd@720p.m3u8
 
+#EXTINF:-1 tvg-logo="https://khandai2.link/media/teams/logos/Flag_of_Kazakhstan.svg.webp" group-title="PhaoHoaTV",11:00 18/09 | Kazakhstan vs Trung Quốc | ASIAD GAME | KaKa
+#EXTVLCOPT:http-referrer=https://xoiche.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
+
 #EXTINF:-1 tvg-logo="" group-title="Sao Kê TV",SaoKeTV HD
 #EXTVLCOPT:http-referrer=https://sk.mediastation.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://wtyi0525.edgemaxcdn.org/live/x31-hd-1111/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/be3ef0f7745b3b45b846fac31ca987c6.png!w80" group-title="CoLaTV",06:30 | Atlanta Dream vs Connecticut Sun | BLV
-https://live05.meung.app/live/19919577_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/70c92764e181ce7abe6176c411a93fe3.png!w80" group-title="CoLaTV",07:00 | Bucaramanga vs Medellin Independiente | BLV
-https://live05.meung.app/live/99121525_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/96c0adc8a98bb466bfa539f11ce8ae04.png!w80" group-title="CoLaTV",07:00 | Chicago Sky vs Washington Mystics | BLV
-https://live05.meung.app/live/82054853_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/f65f7ccfb6989fb3af9b9ff1a6f46c25.png!w80" group-title="CoLaTV",07:30 | Alajuelense vs Marathon | BLV
-https://live05.meung.app/live/16226575_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/f19b2f9fa5b0c72acc262bc4f0d2cd77.png!w80" group-title="CoLaTV",07:30 | CLB Flamengo vs CLB Independiente del Valle | BLV
-https://live05.meung.app/live/75748097_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/bb5004650a388d73f47cc3ca08623cc8.png!w80" group-title="CoLaTV",07:30 | Montevideo City vs Cienciano | BLV
-https://live05.meung.app/live/87547578_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/f4ca470181866aba040ea7f1ae022d1e.png!w80" group-title="CoLaTV",08:00 | Alacranes de Durango vs Cruz Azul Hidalgo | BLV
-https://live05.meung.app/live/59444581_tsc.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/43b63f097099b8178eba0e6f9388cabc.png!w80" group-title="CoLaTV",09:00 | Portland Fire vs Phoenix Mercury | BLV
 https://live05.meung.app/live/19919577_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/43b63f097099b8178eba0e6f9388cabc.png!w80" group-title="CoLaTV",09:00 | Portland Fire vs Phoenix Mercury | BLV
-https://live05.meung.app/live/90865415_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/21275a59516956d98aedc00b97faadc4.png!w80" group-title="CoLaTV",09:00 | Seattle Storm vs Las Vegas Aces | BLV
 https://live05.meung.app/live/90865415_tsc.m3u8
@@ -636,45 +547,20 @@ https://live05.meung.app/live/78905744_tsc.m3u8
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/bfdd500484330d63a723cbc396df762c.png!w80" group-title="CoLaTV",23:30 | VfB Stuttgart vs Borussia Dortmund | BLV
 https://live05.meung.app/live/75915087_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/besiktas-554" group-title="BiaomTV",[02:00-18/09] Beşiktaş vs Olympique Marseille [Europa League]
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/4519ae1d1e9015ef859c968090bbd9de.png" group-title="BiaomTV",[09:30-18/09] CD Olimpia vs Luis Angel Firpo [CONCACAF Central American Cup]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnhls.xbdbotv.live/live/MTk4NzM5MDU6aGY1ODc5dDVoeXprdGJiajd3azBucmU2Om10cjE5bzU0bzZ1dzVkbXF3ZGppbGphZQ/index.m3u8
+https://lilive1.eu.cc/live/d09ba559a0ee4a324b9f01f274c8df10/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/celtic-53" group-title="BiaomTV",[02:00-18/09] Celtic vs Ferencvárosi [Europa League]
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/53bf4a3ff30a22ad2fa00383839d5ceb.png" group-title="BiaomTV",[17:00-18/09] Karbon Cherkasy vs Oleksandriya B [Ukrainian Second League]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnhls.xbdbotv.live/live/MTk4NzM5MDA6aGd5eDdwZGEwMmRlNWExZXZhMThvNnRnOnYzd3RwbXR1dm5jMnZmand3a2V1ZnUzdw/index.m3u8
+https://lilive1.eu.cc/live/31ad26d976e046681750cde61603766a/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/crystal-palace-51" group-title="BiaomTV",[02:00-18/09] Crystal Palace vs Lech Poznań [Europa League]
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/80a660b33b2fd0f749f0ef0588ee3c2c.png" group-title="BiaomTV",[17:30-18/09] Saudi Arabia U23 vs Qatar U23 [OCA Asian Games]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnhls.xbdbotv.live/live/MTk4NzM4OTM6YThsY2E2YTk4dWpna3Q2bXcydDZwYXRxOnE5engzdzJsbDUzeTlsY241YXZxdGcxbQ/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/juventus-625" group-title="BiaomTV",[02:00-18/09] Juventus vs NEC Nijmegen [Europa League]
-#EXTVLCOPT:http-referrer=https://biaomtv15.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnhls.xbdbotv.live/live/MTk4NzM5MDM6eGF6NjVwbnRsYnVzMmFsbGFrMXk3bTdyOm1vdDlnMjdyb2lqazI2dHZ1c3NtMzd1aw/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/real-sociedad-594" group-title="BiaomTV",[02:00-18/09] Real Sociedad vs AFC Bournemouth [Europa League]
-#EXTVLCOPT:http-referrer=https://biaomtv15.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdnhls.xbdbotv.live/live/MTk4NzM5MDk6dWppY2ViaXFnN2Fmazdhendla3Q3azE3OmxlNW15c2U3NzFiNTF5a2h5M3N5eHUwbg/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/f72a0b3c57b20a12d1711b178bb2ae32.png" group-title="BiaomTV",[03:00-18/09] Vinotinto F.C. vs AD Nueve de Octubre [Ecuadorian Campeonato Serie B]
-#EXTVLCOPT:http-referrer=https://biaomtv15.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/3928f9851a82d0fe718970a0b00da297/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/87e6704bf09bd1f60a967b1d23f3cfa7.png" group-title="BiaomTV",[03:30-18/09] 22 de Julio vs Cumbaya FC [Ecuadorian Campeonato Serie B]
-#EXTVLCOPT:http-referrer=https://biaomtv15.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/e49f6597555589cc2068cde8b8ed905e/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/4bafadf0099da512fff203d30a62ddd1.png" group-title="BiaomTV",[04:00-18/09] Boca Juniors Reserves vs Atletico Rafaela Reserves [Argentine Reserve League]
-#EXTVLCOPT:http-referrer=https://biaomtv15.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/292bc9f007717ebf15af3d9c20a06cf8/playlist.m3u8
+https://lilive1.eu.cc/live/4a88e6d88bc481cd630af54aecc2cfcc/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/f18777d99ff4bb84e077d3030e26cfcc.png" group-title="BiaomTV",[17:35-18/09] Dalian K'un City vs Ningbo Professional Football Club [Chinese Football League 1]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
@@ -696,11 +582,6 @@ https://cdnhls.xbdbotv.live/live/MTk3OTQ4Nzc6bjlsaDFnc2lrZDhzZjZhZW5oZjl2cG9xOnF
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/737de145e20f86adcf527d70fd303b49/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/a82e2bf321557e0dd1ab0c09df718a53.png" group-title="BiaomTV",[18:25-18/09] Nantong Zhiyun vs Guangxi Hengchen [Chinese Football League 1]
-#EXTVLCOPT:http-referrer=https://biaomtv15.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/944b073b5daae18ecfbd4e585570b856/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/9a04295b4702ad17c612b5d0e9130933.png" group-title="BiaomTV",[18:30-18/09] FC Jurong vs Hougang United FC [Singapore Premier League]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -710,6 +591,11 @@ https://lilive1.eu.cc/live/d929f607c3188301a97fb05533eb2800/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/bd97c43a040cf9e92a1faba3f10ca724/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/a82e2bf321557e0dd1ab0c09df718a53.png" group-title="BiaomTV",[18:30-18/09] Nantong Zhiyun vs Guangxi Hengchen [Chinese Football League 1]
+#EXTVLCOPT:http-referrer=https://biaomtv15.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/944b073b5daae18ecfbd4e585570b856/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/cc1aef5e69e8d01ba3d3712f24040347.png" group-title="BiaomTV",[18:30-18/09] Zhejiang Professional FC vs Wuhan Three Towns [Chinese Football Super League]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
@@ -741,6 +627,11 @@ https://lilive1.eu.cc/live/0c428d37e793ffce82dc180fc393bcce/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdnhls.xbdbotv.live/live/MTk4MTM1MTA6aGd5eDdwZGEwMmRlNWExZXZhMThvNnRnOmNxOHFpd2czdGo1dTA2eWM2d3l6MG0yZQ/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/8f253284c9d91867a421745d00a8ef6f.png" group-title="BiaomTV",[19:00-18/09] Polissya Zhytomyr vs Kryvbas [Ukrainian Premier League]
+#EXTVLCOPT:http-referrer=https://biaomtv15.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/29ea9043b1b0b6cf38d2e68c95080219/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/50b4f0f8fd9dcf8f5251c5394e276626.png" group-title="BiaomTV",[19:00-18/09] Qarabag Khankendi vs FK MOIK Baku [Azerbaijan First Division]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -750,6 +641,16 @@ https://lilive1.eu.cc/live/1a6523ed9f9df3930cf4caee1f53e858/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/0b56d7804cd136a52f7c54b5838939fe/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/27c6501fdf7add13ddbf288df88fedec.png" group-title="BiaomTV",[19:30-18/09] Hapoel Tel Aviv vs Hapoel Petah Tikva [Israel Premier League]
+#EXTVLCOPT:http-referrer=https://biaomtv15.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/05324c6998ef0322e6bda73a0826f1ed/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/9dbbcf5ac9247c588c24a99cc0a0e8f5.png" group-title="BiaomTV",[20:00-18/09] Bandirmaspor vs Umraniyespor [Turkish First League]
+#EXTVLCOPT:http-referrer=https://biaomtv15.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/ca123c0ba8e41565fc6f05577dcfdf8a/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/spvgg-greuther-furth-3431" group-title="BiaomTV",[23:30-18/09] SpVgg Greuther Fürth vs Magdeburg [Hạng Hai Đức]
 #EXTVLCOPT:http-referrer=https://biaomtv15.com/
@@ -781,16 +682,6 @@ https://cdnhls.xbdbotv.live/live/MTk3MjIxNjI6bjlsaDFnc2lrZDhzZjZhZW5oZjl2cG9xOml
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdnhls.xbdbotv.live/live/MTk3MzI2Nzg6dWppY2ViaXFnN2Fmazdhendla3Q3azE3OmczeW41b3AzMnFnYmNpbXJqa2I1Nzk4bQ/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133533_2eb7128c.png" group-title="Bong Lau TV",[07h00] Bucaramanga vs Independiente Medellin | BLV: Chuối To [FHD]
-#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133533_2eb7128c.png" group-title="Bong Lau TV",[07h00] Bucaramanga vs Independiente Medellin | BLV: Chuối To [HD]
-#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144126_16dd618c.png" group-title="Bong Lau TV",[08h00] Durango vs Cruz Azul Hidalgo | BLV: A Ngao [FULL HD]
 #EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -801,15 +692,205 @@ https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133533_2eb7128c.png" group-title="Chuối chiên",[07h00] Bucaramanga vs Independiente Medellin | BLV: Chuối To [FHD]
-#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144823_bce84ab8.png" group-title="Bong Lau TV",[11h00] Kazakhstan W vs China W | BLV: Chuối Tây [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144823_bce84ab8.png" group-title="Bong Lau TV",[11h00] Kazakhstan W vs China W | BLV: Chuối Tây [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144421_16b1f665.png" group-title="Bong Lau TV",[13h30] Philippines U23 vs U23 Vietnam | BLV: A Ngao [FULL HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144421_16b1f665.png" group-title="Bong Lau TV",[13h30] Philippines U23 vs U23 Vietnam | BLV: A Ngao [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/20250826_164900_cfcedb98.png" group-title="Bong Lau TV",[14h00] Vietnam W vs South Korea W | BLV: Chuối Kem [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/20250826_164900_cfcedb98.png" group-title="Bong Lau TV",[14h00] Vietnam W vs South Korea W | BLV: Chuối Kem [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134615_6b83f5fd.png" group-title="Bong Lau TV",[15h30] Arema FC vs Persik Kediri | BLV: Chuối To [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133533_2eb7128c.png" group-title="Chuối chiên",[07h00] Bucaramanga vs Independiente Medellin | BLV: Chuối To [HD]
-#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134615_6b83f5fd.png" group-title="Bong Lau TV",[15h30] Arema FC vs Persik Kediri | BLV: Chuối To [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_142849_e7f6fab3.png" group-title="Bong Lau TV",[17h00] Chinese Taipei W vs Thailand W | BLV: Chuối Kem [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_142849_e7f6fab3.png" group-title="Bong Lau TV",[17h00] Chinese Taipei W vs Thailand W | BLV: Chuối Kem [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_142849_cf293075.png" group-title="Bong Lau TV",[17h20] Indonesia W vs Japan W | BLV: Chuối Tây [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_142849_cf293075.png" group-title="Bong Lau TV",[17h20] Indonesia W vs Japan W | BLV: Chuối Tây [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134339_952f6da3.png" group-title="Bong Lau TV",[17h30] Saudi Arabia U23 vs U23 Qatar | BLV: Trốc Tru [FULL HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134339_952f6da3.png" group-title="Bong Lau TV",[17h30] Saudi Arabia U23 vs U23 Qatar | BLV: Trốc Tru [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/20250912_195544_125d9f93.jpeg" group-title="Bong Lau TV",[18h00] Quy Nhơn FC vs TP. Hồ Chí Minh | BLV: A Ngao [FULL HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/20250912_195544_125d9f93.jpeg" group-title="Bong Lau TV",[18h00] Quy Nhơn FC vs TP. Hồ Chí Minh | BLV: A Ngao [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125850_46e8508f.png" group-title="Bong Lau TV",[20h00] Bandırmaspor vs Ümraniyespor | BLV: Chuối Lá [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125850_46e8508f.png" group-title="Bong Lau TV",[20h00] Bandırmaspor vs Ümraniyespor | BLV: Chuối Lá [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoila/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133914_aaa59d86.png" group-title="Bong Lau TV",[22h00] Uta Arad vs Sepsi OSK Sfantu Gheorghe | BLV: Chuối Chao [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133914_aaa59d86.png" group-title="Bong Lau TV",[22h00] Uta Arad vs Sepsi OSK Sfantu Gheorghe | BLV: Chuối Chao [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoichao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125553_b41a352d.png" group-title="Bong Lau TV",[23h30] VfL Wolfsburg vs SV Darmstadt 98 | BLV: Chuối To [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125553_b41a352d.png" group-title="Bong Lau TV",[23h30] VfL Wolfsburg vs SV Darmstadt 98 | BLV: Chuối To [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125553_909d7704.png" group-title="Bong Lau TV",[01h30] Bayern München vs Union Berlin | BLV: Chuối Nhỏ [FHD1]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125553_909d7704.png" group-title="Bong Lau TV",[01h30] Bayern München vs Union Berlin | BLV: Chuối Nhỏ [HD1]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125514_371080d3.png" group-title="Bong Lau TV",[01h45] Monaco vs Lens | BLV: Chuối Kem [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125514_371080d3.png" group-title="Bong Lau TV",[01h45] Monaco vs Lens | BLV: Chuối Kem [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125551_69278a74.png" group-title="Bong Lau TV",[02h00] Brentford vs Chelsea | BLV: Chuối Lá [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125551_69278a74.png" group-title="Bong Lau TV",[02h00] Brentford vs Chelsea | BLV: Chuối Lá [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoila/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125551_69278a74.png" group-title="Bong Lau TV",[02h00] Brentford vs Chelsea | BLV: Trốc Tru [FULL HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125551_69278a74.png" group-title="Bong Lau TV",[02h00] Brentford vs Chelsea | BLV: Trốc Tru [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125624_d0355588.png" group-title="Bong Lau TV",[02h00] Espanyol vs Elche | BLV: Chuối Chao [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125624_d0355588.png" group-title="Bong Lau TV",[02h00] Espanyol vs Elche | BLV: Chuối Chao [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoichao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132728_03e5a301.png" group-title="Bong Lau TV",[04h00] Central Cordoba de Santiago vs Defensa Y Justicia | BLV: Trốc Tru [FULL HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132728_03e5a301.png" group-title="Bong Lau TV",[04h00] Central Cordoba de Santiago vs Defensa Y Justicia | BLV: Trốc Tru [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131604_4e107f78.png" group-title="Bong Lau TV",[06h30] New York City FC vs New York Red Bulls | BLV: Chuối To [FHD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131604_4e107f78.png" group-title="Bong Lau TV",[06h30] New York City FC vs New York Red Bulls | BLV: Chuối To [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133839_09ad8cba.png" group-title="Bong Lau TV",[08h00] Puebla vs Atlante FC | BLV: Chuối Nhỏ [FHD1]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133839_09ad8cba.png" group-title="Bong Lau TV",[08h00] Puebla vs Atlante FC | BLV: Chuối Nhỏ [HD1]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133839_9be93a93.png" group-title="Bong Lau TV",[10h00] FC Juarez vs Tigres UANL | BLV: A Ngao [FULL HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133839_9be93a93.png" group-title="Bong Lau TV",[10h00] FC Juarez vs Tigres UANL | BLV: A Ngao [HD]
+#EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144126_16dd618c.png" group-title="Chuối chiên",[08h00] Durango vs Cruz Azul Hidalgo | BLV: A Ngao [FULL HD]
 #EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
@@ -817,6 +898,206 @@ https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144126_16dd618c.png" group-title="Chuối chiên",[08h00] Durango vs Cruz Azul Hidalgo | BLV: A Ngao [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144823_bce84ab8.png" group-title="Chuối chiên",[11h00] Kazakhstan W vs China W | BLV: Chuối Tây [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144823_bce84ab8.png" group-title="Chuối chiên",[11h00] Kazakhstan W vs China W | BLV: Chuối Tây [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144421_16b1f665.png" group-title="Chuối chiên",[13h30] Philippines U23 vs U23 Vietnam | BLV: A Ngao [FULL HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_144421_16b1f665.png" group-title="Chuối chiên",[13h30] Philippines U23 vs U23 Vietnam | BLV: A Ngao [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/20250826_164900_cfcedb98.png" group-title="Chuối chiên",[14h00] Vietnam W vs South Korea W | BLV: Chuối Kem [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/20250826_164900_cfcedb98.png" group-title="Chuối chiên",[14h00] Vietnam W vs South Korea W | BLV: Chuối Kem [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134615_6b83f5fd.png" group-title="Chuối chiên",[15h30] Arema FC vs Persik Kediri | BLV: Chuối To [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134615_6b83f5fd.png" group-title="Chuối chiên",[15h30] Arema FC vs Persik Kediri | BLV: Chuối To [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_142849_e7f6fab3.png" group-title="Chuối chiên",[17h00] Chinese Taipei W vs Thailand W | BLV: Chuối Kem [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_142849_e7f6fab3.png" group-title="Chuối chiên",[17h00] Chinese Taipei W vs Thailand W | BLV: Chuối Kem [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_142849_cf293075.png" group-title="Chuối chiên",[17h20] Indonesia W vs Japan W | BLV: Chuối Tây [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitayhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_142849_cf293075.png" group-title="Chuối chiên",[17h20] Indonesia W vs Japan W | BLV: Chuối Tây [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoitay/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134339_952f6da3.png" group-title="Chuối chiên",[17h30] Saudi Arabia U23 vs U23 Qatar | BLV: Trốc Tru [FULL HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134339_952f6da3.png" group-title="Chuối chiên",[17h30] Saudi Arabia U23 vs U23 Qatar | BLV: Trốc Tru [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/20250912_195544_125d9f93.jpeg" group-title="Chuối chiên",[18h00] Quy Nhơn FC vs TP. Hồ Chí Minh | BLV: A Ngao [FULL HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/20250912_195544_125d9f93.jpeg" group-title="Chuối chiên",[18h00] Quy Nhơn FC vs TP. Hồ Chí Minh | BLV: A Ngao [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125850_46e8508f.png" group-title="Chuối chiên",[20h00] Bandırmaspor vs Ümraniyespor | BLV: Chuối Lá [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125850_46e8508f.png" group-title="Chuối chiên",[20h00] Bandırmaspor vs Ümraniyespor | BLV: Chuối Lá [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoila/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133914_aaa59d86.png" group-title="Chuối chiên",[22h00] Uta Arad vs Sepsi OSK Sfantu Gheorghe | BLV: Chuối Chao [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133914_aaa59d86.png" group-title="Chuối chiên",[22h00] Uta Arad vs Sepsi OSK Sfantu Gheorghe | BLV: Chuối Chao [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoichao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125553_b41a352d.png" group-title="Chuối chiên",[23h30] VfL Wolfsburg vs SV Darmstadt 98 | BLV: Chuối To [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125553_b41a352d.png" group-title="Chuối chiên",[23h30] VfL Wolfsburg vs SV Darmstadt 98 | BLV: Chuối To [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125553_909d7704.png" group-title="Chuối chiên",[01h30] Bayern München vs Union Berlin | BLV: Chuối Nhỏ [FHD1]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125553_909d7704.png" group-title="Chuối chiên",[01h30] Bayern München vs Union Berlin | BLV: Chuối Nhỏ [HD1]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125514_371080d3.png" group-title="Chuối chiên",[01h45] Monaco vs Lens | BLV: Chuối Kem [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoikemhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125514_371080d3.png" group-title="Chuối chiên",[01h45] Monaco vs Lens | BLV: Chuối Kem [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoikem/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125551_69278a74.png" group-title="Chuối chiên",[02h00] Brentford vs Chelsea | BLV: Chuối Lá [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoilahd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125551_69278a74.png" group-title="Chuối chiên",[02h00] Brentford vs Chelsea | BLV: Chuối Lá [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoila/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125551_69278a74.png" group-title="Chuối chiên",[02h00] Brentford vs Chelsea | BLV: Trốc Tru [FULL HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125551_69278a74.png" group-title="Chuối chiên",[02h00] Brentford vs Chelsea | BLV: Trốc Tru [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125624_d0355588.png" group-title="Chuối chiên",[02h00] Espanyol vs Elche | BLV: Chuối Chao [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoichaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_125624_d0355588.png" group-title="Chuối chiên",[02h00] Espanyol vs Elche | BLV: Chuối Chao [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoichao/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132728_03e5a301.png" group-title="Chuối chiên",[04h00] Central Cordoba de Santiago vs Defensa Y Justicia | BLV: Trốc Tru [FULL HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/troctruhd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_132728_03e5a301.png" group-title="Chuối chiên",[04h00] Central Cordoba de Santiago vs Defensa Y Justicia | BLV: Trốc Tru [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/troctru/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131604_4e107f78.png" group-title="Chuối chiên",[06h30] New York City FC vs New York Red Bulls | BLV: Chuối To [FHD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoitohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_131604_4e107f78.png" group-title="Chuối chiên",[06h30] New York City FC vs New York Red Bulls | BLV: Chuối To [HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoito/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133839_09ad8cba.png" group-title="Chuối chiên",[08h00] Puebla vs Atlante FC | BLV: Chuối Nhỏ [FHD1]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoinhohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133839_09ad8cba.png" group-title="Chuối chiên",[08h00] Puebla vs Atlante FC | BLV: Chuối Nhỏ [HD1]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://gckc0525.edgemaxcdn.org/live/chuoinho/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133839_9be93a93.png" group-title="Chuối chiên",[10h00] FC Juarez vs Tigres UANL | BLV: A Ngao [FULL HD]
+#EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://stm9ee346727718.stream.hdplaylink.com/cctvlive/angaohd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_133839_9be93a93.png" group-title="Chuối chiên",[10h00] FC Juarez vs Tigres UANL | BLV: A Ngao [HD]
 #EXTVLCOPT:http-referrer=https://live.chuoichientv.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://gckc0525.edgemaxcdn.org/live/angao/playlist.m3u8
@@ -1186,130 +1467,95 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562512&exte
 #EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=641220&extension=ts&play_token=pn3nksdeU2
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Atletico Bucaramanga vs Dep.Independiente Medellin vào lúc 07:00 18/09/2026 | BLV 327159
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/atletico-bucaramanga-vs-dep-independiente-medellin-18-09-2026/?blv=327159
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1789657952-0-0-eac0a6b89e0121f5e629dea16da8588e
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Atletico Bucaramanga vs Dep.Independiente Medellin vào lúc 07:00 18/09/2026 | BLV 372746
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/atletico-bucaramanga-vs-dep-independiente-medellin-18-09-2026/?blv=372746
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1789615983-0-0-1f7ae5b08034af3e01c155b5ac51a9e2
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Atletico Bucaramanga vs Dep.Independiente Medellin vào lúc 07:00 18/09/2026 | BLV 491873
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/atletico-bucaramanga-vs-dep-independiente-medellin-18-09-2026/?blv=491873
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=6e1f03d1d6f223d92b9d4ccd9d629810&txTime=6aabb151
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Atletico Bucaramanga vs Dep.Independiente Medellin vào lúc 07:00 18/09/2026 | BLV 598119
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/atletico-bucaramanga-vs-dep-independiente-medellin-18-09-2026/?blv=598119
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912139_lhd.m3u8?txSecret=d42406f812f3dc4aacd3e6bf7827b3f9&txTime=6aabb119
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Atletico Bucaramanga vs Dep.Independiente Medellin vào lúc 07:00 18/09/2026 | BLV 607400
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/atletico-bucaramanga-vs-dep-independiente-medellin-18-09-2026/?blv=607400
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=24959055811302674d764826bb190ef3&txTime=6aac53fa
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Flamengo – RJ vs Independiente del Valle vào lúc 07:30 18/09/2026 | BLV 132343
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/flamengo-rj-vs-independiente-del-valle-18-09-2026/?blv=132343
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=bf7be6664a4f0db94554757b91861cb3&txTime=6aac49bf
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Flamengo – RJ vs Independiente del Valle vào lúc 07:30 18/09/2026 | BLV 139384
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/flamengo-rj-vs-independiente-del-valle-18-09-2026/?blv=139384
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=d6c741a016356b3cb2d6a0906b865d8a&txTime=6aabe48e
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Flamengo – RJ vs Independiente del Valle vào lúc 07:30 18/09/2026 | BLV 187579
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/flamengo-rj-vs-independiente-del-valle-18-09-2026/?blv=187579
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1789651513-0-0-08b002aa50827ffac425f9cd194ac2ef
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Flamengo – RJ vs Independiente del Valle vào lúc 07:30 18/09/2026 | BLV 283501
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/flamengo-rj-vs-independiente-del-valle-18-09-2026/?blv=283501
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=d883bfa7e644e30bd3a7bc577010fd90&txTime=6aabb1db
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Flamengo – RJ vs Independiente del Valle vào lúc 07:30 18/09/2026 | BLV 532081
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/flamengo-rj-vs-independiente-del-valle-18-09-2026/?blv=532081
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1789649645-0-0-25e8847d680e2217330a3366e29e4ee0
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Flamengo – RJ vs Independiente del Valle vào lúc 07:30 18/09/2026 | BLV 603255
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/flamengo-rj-vs-independiente-del-valle-18-09-2026/?blv=603255
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1789649476-0-0-4bae73e8a9625f18ed96aac3e27a856b
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Montevideo City Torque vs Cienciano vào lúc 07:30 18/09/2026 | BLV 485739
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/montevideo-city-torque-vs-cienciano-18-09-2026/?blv=485739
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=af502b14fd8012d6fabb23bd34ca798b&txTime=6aaba602
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Montevideo City Torque vs Cienciano vào lúc 07:30 18/09/2026 | BLV 619561
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/montevideo-city-torque-vs-cienciano-18-09-2026/?blv=619561
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1789649845-0-0-dac54c6dd55ab71b2bb071d4aad89970
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Alacranes de Durango vs Cruz Azul Hidalgo vào lúc 08:00 18/09/2026 | BLV 387694
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Alacranes de Durango vs Cruz Azul Hidalgo vào lúc 08:30 18/09/2026 | BLV 387694
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/alacranes-de-durango-vs-cruz-azul-hidalgo-18-09-2026/?blv=387694
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=11004c41b9e513446a80fe4df2017c72&txTime=6aac4946
+https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=c5661d049ec19d0bcdb64ff693a51a5d&txTime=6aad06b7
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Alacranes de Durango vs Cruz Azul Hidalgo vào lúc 08:00 18/09/2026 | BLV 434982
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/alacranes-de-durango-vs-cruz-azul-hidalgo-18-09-2026/?blv=434982
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Alacranes de Durango vs Cruz Azul Hidalgo vào lúc 08:30 18/09/2026 | BLV 536185
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/alacranes-de-durango-vs-cruz-azul-hidalgo-18-09-2026/?blv=536185
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1789675313-0-0-285e5f0cf67a7ef311cf2bc072606dd0
+https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1789706343-0-0-118f958d0952910366b98dc09a011768
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Alacranes de Durango vs Cruz Azul Hidalgo vào lúc 08:00 18/09/2026 | BLV 527383
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/alacranes-de-durango-vs-cruz-azul-hidalgo-18-09-2026/?blv=527383
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Portland Fire vs Phoenix Mercury vào lúc 09:00 18/09/2026 | BLV 122591
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/portland-fire-vs-phoenix-mercury-18-09-2026/?blv=122591
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-527383_lhd.m3u8?auth_key=1789649922-0-0-711fd5dfbbb498295548a44b606b9535
+https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1789706343-0-0-3683a18220588c5dfdaa2aad7fbb6cae
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Alacranes de Durango vs Cruz Azul Hidalgo vào lúc 08:00 18/09/2026 | BLV 621887
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/alacranes-de-durango-vs-cruz-azul-hidalgo-18-09-2026/?blv=621887
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Portland Fire vs Phoenix Mercury vào lúc 09:00 18/09/2026 | BLV 558264
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/portland-fire-vs-phoenix-mercury-18-09-2026/?blv=558264
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-621887_lhd.m3u8?txSecret=bc08b68c24e77477fd3345b909835e63&txTime=6aaba636
+https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=8a20d990cb255462878c6d7e048c9d6a&txTime=6aad06b7
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Seattle Storm vs Las Vegas Aces vào lúc 09:00 18/09/2026 | BLV 428392
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/seattle-storm-vs-las-vegas-aces-18-09-2026-2/?blv=428392
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1789706343-0-0-1f504f9157d4398b62f4da30565b6df5
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Seattle Storm vs Las Vegas Aces vào lúc 09:00 18/09/2026 | BLV 515530
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/seattle-storm-vs-las-vegas-aces-18-09-2026/?blv=515530
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1789706343-0-0-ff34a26ba8acdc6a26548f64bb4cf8aa
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",CD Olimpia vs Luis Angel Firpo vào lúc 10:15 18/09/2026 | BLV 118206
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/cd-olimpia-vs-luis-angel-firpo-18-09-2026/?blv=118206
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1789670395-0-0-9150f865e8b42f12a12ace1143ea6b43
+https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1789706343-0-0-e4dc0854cea80f9d5127e651118bafed
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",CD Olimpia vs Luis Angel Firpo vào lúc 10:15 18/09/2026 | BLV 147801
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/cd-olimpia-vs-luis-angel-firpo-18-09-2026/?blv=147801
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=99e6bd2b9fd2e5e8e3d3f198d0b145d9&txTime=6aac570b
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=afe07fe68671b51e23d0440bdad82071&txTime=6aad06b7
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",CD Olimpia vs Luis Angel Firpo vào lúc 10:15 18/09/2026 | BLV 187579
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/cd-olimpia-vs-luis-angel-firpo-18-09-2026/?blv=187579
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1789706343-0-0-b856db5255ae7bd2ea5e84c44ea35912
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",CD Olimpia vs Luis Angel Firpo vào lúc 10:15 18/09/2026 | BLV 434982
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/cd-olimpia-vs-luis-angel-firpo-18-09-2026/?blv=434982
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1789706343-0-0-e7d952105c338826c5d5f2dabd997d30
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",CD Olimpia vs Luis Angel Firpo vào lúc 10:15 18/09/2026 | BLV 494201
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/cd-olimpia-vs-luis-angel-firpo-18-09-2026/?blv=494201
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1789657875-0-0-e3987ff2016cd138e6fd3142c7ca3db7
+https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1789706343-0-0-1a024f3d77f647265d96200243d17993
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",CD Olimpia vs Luis Angel Firpo vào lúc 10:15 18/09/2026 | BLV 620661
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/cd-olimpia-vs-luis-angel-firpo-18-09-2026/?blv=620661
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912128_lhd.m3u8?auth_key=1789675269-0-0-1ae16f2d4c82ba80fa7dfffee486c8d8
+https://pull.niues.live/live/stream-9912128_lhd.m3u8?auth_key=1789706343-0-0-54f48e072ea17bf8fe891e76e57fbc41
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Vanraure Hachinohe FC vs Tegevajaro Miyazaki vào lúc 11:00 18/09/2026 | BLV 123226
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/vanraure-hachinohe-fc-vs-tegevajaro-miyazaki-18-09-2026/?blv=123226
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=17342fda579a5db949dc3dd348d52c4f&txTime=6aac491a
+https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=1c9134aeb6a7b444c83d2ca294fc6241&txTime=6aad06b7
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Vanraure Hachinohe FC vs Tegevajaro Miyazaki vào lúc 11:00 18/09/2026 | BLV 256080
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/vanraure-hachinohe-fc-vs-tegevajaro-miyazaki-18-09-2026/?blv=256080
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1789658098-0-0-57191eae7fbb53d53005b9c529ed027a
+https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1789706343-0-0-922b90ea07c43382f19e07491ec58b48
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vanraure Hachinohe FC vs Tegevajaro Miyazaki vào lúc 11:00 18/09/2026 | BLV 327159
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/vanraure-hachinohe-fc-vs-tegevajaro-miyazaki-18-09-2026/?blv=327159
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1789706343-0-0-20d69d24e43f82c75e812ec909fcefdb
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Vanraure Hachinohe FC vs Tegevajaro Miyazaki vào lúc 11:00 18/09/2026 | BLV 380460
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/vanraure-hachinohe-fc-vs-tegevajaro-miyazaki-18-09-2026/?blv=380460
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1789625460-0-0-06a763e13d7236dfdf9bd27c07259a96
+https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1789706343-0-0-0213e0f59f03ac078f5672920ca39a8d
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Vanraure Hachinohe FC vs Tegevajaro Miyazaki vào lúc 11:00 18/09/2026 | BLV 603914
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/vanraure-hachinohe-fc-vs-tegevajaro-miyazaki-18-09-2026/?blv=603914
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1789666504-0-0-3ba39a6fc7383e5c8720201f8e1f042c
+https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1789706343-0-0-bd9d6d08c293614f978cf0e03c59df61
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vanraure Hachinohe FC vs Tegevajaro Miyazaki vào lúc 11:00 18/09/2026 | BLV 607400
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/vanraure-hachinohe-fc-vs-tegevajaro-miyazaki-18-09-2026/?blv=607400
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=4a3862eb8b9ede409b8c6f0b684c7b31&txTime=6aad06b7
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Philippines U23 vs Vietnam U23 vào lúc 13:30 18/09/2026 | BLV 168740
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/philippines-u23-vs-vietnam-u23-18-09-2026/?blv=168740
@@ -1331,6 +1577,21 @@ https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=564f973ed4a9c00a3e02
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1789618886-0-0-93b735e83ad64a1f140ce0ec7a5d3067
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Changchun Xidu vs Guangdong Mingtu vào lúc 15:00 18/09/2026 | BLV 619561
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/changchun-xidu-vs-guangdong-mingtu-18-09-2026/?blv=619561
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1789702276-0-0-a2923872bb3fce51fdfcee13b0f75448
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Lanzhou Longyuan Athletic vs Wenzhou Professional vào lúc 15:00 18/09/2026 | BLV 491873
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/lanzhou-longyuan-athletic-vs-wenzhou-professional-18-09-2026/?blv=491873
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=4351b85cd70ff589dde74cc36222cb6e&txTime=6aacf155
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Lanzhou Longyuan Athletic vs Wenzhou Professional vào lúc 15:00 18/09/2026 | BLV 603255
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/lanzhou-longyuan-athletic-vs-wenzhou-professional-18-09-2026/?blv=603255
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1789702259-0-0-68f68b7712a84ff9299063a3d027d5c0
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Arema FC vs Persik Kediri vào lúc 15:30 18/09/2026 | BLV 501412
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/arema-fc-vs-persik-kediri-18-09-2026/?blv=501412
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1340,6 +1601,11 @@ https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=5dd8a04e426ab8559bc5
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/arema-fc-vs-persik-kediri-18-09-2026/?blv=527384
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1789682244-0-0-c6212b482b37ae42aae91fc16f67da10
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Arema FC vs Persik Kediri vào lúc 15:30 18/09/2026 | BLV 532081
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/arema-fc-vs-persik-kediri-18-09-2026/?blv=532081
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1789702252-0-0-a3990cb91543886e30f378094949656d
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Wuhan Three Towns B vs Haimen Codion vào lúc 16:00 18/09/2026 | BLV 620084
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/wuhan-three-towns-b-vs-haimen-codion-18-09-2026/?blv=620084
@@ -1381,10 +1647,25 @@ https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1789682032-0-0-27c5
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=7e7d5c4fde3844bbeb62dd1557d50580&txTime=6aaca013
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Roasso Kumamoto vs Matsumoto Yamaga FC vào lúc 17:00 18/09/2026 | BLV 283501
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/roasso-kumamoto-vs-matsumoto-yamaga-fc-18-09-2026/?blv=283501
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=2e3e6297c035b91a35e92d556bd7edac&txTime=6aacf6e7
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Roasso Kumamoto vs Matsumoto Yamaga FC vào lúc 17:00 18/09/2026 | BLV 344370
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/roasso-kumamoto-vs-matsumoto-yamaga-fc-18-09-2026/?blv=344370
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=ad37dd7fb2b7136c0aee577e32bde630&txTime=6aacafc8
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Yanbian Longding vs Guangdong Guangzhou Power vào lúc 17:00 18/09/2026 | BLV 235232
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/yanbian-longding-vs-guangdong-guangzhou-power-18-09-2026/?blv=235232
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1789675526-0-0-ecc857947bbc8c89cb9aee6e508b3b2f
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Yanbian Longding vs Guangdong Guangzhou Power vào lúc 17:00 18/09/2026 | BLV 485739
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/yanbian-longding-vs-guangdong-guangzhou-power-18-09-2026/?blv=485739
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=79558457895c774ee9761a099db7175c&txTime=6aacf913
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Yanbian Longding vs Guangdong Guangzhou Power vào lúc 17:00 18/09/2026 | BLV 557845
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/yanbian-longding-vs-guangdong-guangzhou-power-18-09-2026/?blv=557845
@@ -1441,6 +1722,16 @@ https://pull.niur.live/live/stream-620797_lhd.m3u8?txSecret=af859861f1afb397f60d
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1789619912-0-0-44f2eea1c96a3e4a21192a99a23bb299
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Zhejiang Professional FC vs Wuhan Three Towns vào lúc 18:35 18/09/2026 | BLV 123226
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/zhejiang-professional-fc-vs-wuhan-three-towns-18-09-2026/?blv=123226
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=3f2c7c57ff11a1476f417b28c588b63f&txTime=6aad072f
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Zhejiang Professional FC vs Wuhan Three Towns vào lúc 18:35 18/09/2026 | BLV 147801
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/zhejiang-professional-fc-vs-wuhan-three-towns-18-09-2026/?blv=147801
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=27a2f4a6c0360671a050b4b11255cf97&txTime=6aad072f
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Zhejiang Professional FC vs Wuhan Three Towns vào lúc 18:35 18/09/2026 | BLV 595335
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/zhejiang-professional-fc-vs-wuhan-three-towns-18-09-2026/?blv=595335
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1450,21 +1741,6 @@ https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1789682046-0-0-173
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/zhejiang-professional-fc-vs-wuhan-three-towns-18-09-2026/?blv=599634
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1789679959-0-0-1b3e66d6e58d081d70a674770aa8559f
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Madura United vs PSIM Yogyakarta vào lúc 19:00 18/09/2026 | BLV 235232
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/madura-united-vs-psim-yogyakarta-18-09-2026/?blv=235232
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1789675526-0-0-ecc857947bbc8c89cb9aee6e508b3b2f
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Madura United vs PSIM Yogyakarta vào lúc 19:00 18/09/2026 | BLV 304148
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/madura-united-vs-psim-yogyakarta-18-09-2026/?blv=304148
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-304148_lhd.m3u8?txSecret=03cf37e63d96642497f55c7e2cf458d3&txTime=6aaca182
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Madura United vs PSIM Yogyakarta vào lúc 19:00 18/09/2026 | BLV 459401
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/madura-united-vs-psim-yogyakarta-18-09-2026/?blv=459401
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=8e382e536f38bdcde88deca9afa8f8b0&txTime=6aac8eac
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",BET vs GET, ngày 18/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
