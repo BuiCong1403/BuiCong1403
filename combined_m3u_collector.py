@@ -37,6 +37,7 @@ HIGHLIGHT_M3U = BASE_DIR / "highlight.m3u"
 DASFOOTBALL_M3U = BASE_DIR / "dasfootball.m3u"
 TINHLAGI_M3U = BASE_DIR / "tinhlagi.m3u"
 THETHAOCOBAN_M3U = BASE_DIR / "thethaocoban.m3u"
+VMTTV_VTV_CACHE = BASE_DIR / "vmttv_vtv_cache.json"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
@@ -152,6 +153,7 @@ VMTTV_M3U_URL = os.environ.get(
     "VMTTV_M3U_URL",
     "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv",
 )
+VMTTV_VTV_MIN_GOOD_COUNT = int(os.environ.get("VMTTV_VTV_MIN_GOOD_COUNT", "10") or "10")
 MYTV_FPT_EVENTS_M3U_URL = os.environ.get(
     "MYTV_FPT_EVENTS_M3U_URL",
     "https://raw.githubusercontent.com/thaichieucm92/MyTV/9c3081488d0dccb26381819d0d1120c3110f0b2d/MyTVnew",
@@ -3744,6 +3746,69 @@ def collect_tt1_4k():
     return channels
 
 
+VMTTV_VTV_CACHE_FIELDS = (
+    "source",
+    "name",
+    "group",
+    "logo",
+    "stream_url",
+    "referer",
+    "user_agent",
+    "preserve_group_exact",
+    "skip_event_filter",
+)
+
+
+def load_vmttv_vtv_cache():
+    try:
+        payload = json.loads(VMTTV_VTV_CACHE.read_text(encoding="utf-8"))
+    except Exception as exc:
+        log(f"[VMTTV] VTV cache unavailable: {exc}")
+        return []
+    rows = payload.get("channels") if isinstance(payload, dict) else None
+    if not isinstance(rows, list):
+        return []
+    channels = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        stream_url = clean_text(row.get("stream_url"))
+        if not stream_url:
+            continue
+        channel = {field: row.get(field, "") for field in VMTTV_VTV_CACHE_FIELDS}
+        channel["source"] = "VMTTV"
+        channel["group"] = "VTV"
+        channel["stream_url"] = stream_url
+        channel["skip_event_filter"] = True
+        channels.append(channel)
+    return channels
+
+
+def save_vmttv_vtv_cache(channels):
+    rows = []
+    for channel in channels:
+        row = {field: channel.get(field, "") for field in VMTTV_VTV_CACHE_FIELDS}
+        row["source"] = "VMTTV"
+        row["group"] = "VTV"
+        row["skip_event_filter"] = True
+        rows.append(row)
+    try:
+        existing_payload = json.loads(VMTTV_VTV_CACHE.read_text(encoding="utf-8"))
+        if isinstance(existing_payload, dict) and existing_payload.get("channels") == rows:
+            return False
+    except Exception:
+        pass
+    payload = {
+        "source": VMTTV_M3U_URL,
+        "updated": now_ict(),
+        "channels": rows,
+    }
+    temporary_path = VMTTV_VTV_CACHE.with_suffix(".json.tmp")
+    temporary_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary_path.replace(VMTTV_VTV_CACHE)
+    return True
+
+
 def collect_vmttv():
     source = "VMTTV"
     channels = collect_m3u_playlist(
@@ -3761,11 +3826,29 @@ def collect_vmttv():
     event_group_keys = {"sukienvtvprime"}
     for channel in channels:
         channel_group_key = group_key(channel.get("group"))
-        if channel_group_key == sport_group_key:
+        if channel_group_key == group_key("VTV"):
+            channel["group"] = "VTV"
+            channel["skip_event_filter"] = True
+        elif channel_group_key == sport_group_key:
             channel["group"] = "THỂ THAO QUỐC TẾ"
         elif channel_group_key in event_group_keys:
             channel["group"] = "Sự kiện"
             channel["skip_event_filter"] = True
+
+    fresh_vtv = [channel for channel in channels if group_key(channel.get("group")) == group_key("VTV")]
+    other_channels = [channel for channel in channels if group_key(channel.get("group")) != group_key("VTV")]
+    if len(fresh_vtv) >= max(1, VMTTV_VTV_MIN_GOOD_COUNT):
+        cache_changed = save_vmttv_vtv_cache(fresh_vtv)
+        action = "updated" if cache_changed else "unchanged"
+        log(f"[{source}] VTV cache {action}: {len(fresh_vtv)} channels")
+    else:
+        cached_vtv = load_vmttv_vtv_cache()
+        if cached_vtv:
+            log(f"[{source}] Incomplete VTV response ({len(fresh_vtv)}); keep cache ({len(cached_vtv)})")
+            fresh_vtv = cached_vtv
+        else:
+            log(f"[{source}] Incomplete VTV response ({len(fresh_vtv)}) and no cache")
+    channels = other_channels + fresh_vtv
     return channels
 
 
