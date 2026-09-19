@@ -38,6 +38,8 @@ DASFOOTBALL_M3U = BASE_DIR / "dasfootball.m3u"
 TINHLAGI_M3U = BASE_DIR / "tinhlagi.m3u"
 THETHAOCOBAN_M3U = BASE_DIR / "thethaocoban.m3u"
 VMTTV_VTV_CACHE = BASE_DIR / "vmttv_vtv_cache.json"
+KHANDAIA_CACHE = BASE_DIR / "khandaia_cache.json"
+VSC9_CACHE = BASE_DIR / "vsc9_cache.json"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
@@ -136,8 +138,8 @@ VONGCAM_API_URL = os.environ.get("VONGCAM_API", "https://sv.bugiotv.xyz/internal
 VONGCAM_FRONTEND_URL = os.environ.get("VONGCAM_FRONTEND", BUGIO_REFERER)
 QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
-VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
-VSC9_REFERER = os.environ.get("VSC9_REFERER", "https://vsc9.top/")
+VSC9_URL = os.environ.get("VSC9_URL", "https://www.livinginterior.in/")
+VSC9_REFERER = os.environ.get("VSC9_REFERER", VSC9_URL)
 VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "0").strip().lower() not in {"0", "false", "no"}
 VSC9_TODAY_MIN_LINKS = int(os.environ.get("VSC9_TODAY_MIN_LINKS", "10") or "10")
 S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tv001.com/")
@@ -1791,6 +1793,148 @@ def collect_hoiquan1():
     )
 
 
+SOURCE_CACHE_FIELDS = (
+    "source", "name", "group", "logo", "stream_url", "referer",
+    "user_agent", "event_date", "event_datetime", "skip_event_filter",
+)
+
+
+def load_source_cache(path, source, group):
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except Exception as exc:
+        log(f"[{source}] Cache unavailable: {exc}")
+        return []
+    rows = payload.get("channels") if isinstance(payload, dict) else None
+    if not isinstance(rows, list):
+        return []
+    channels = []
+    for row in rows:
+        if not isinstance(row, dict) or not is_valid_stream_url(row.get("stream_url")):
+            continue
+        channel = {field: row.get(field, "") for field in SOURCE_CACHE_FIELDS}
+        channel["source"] = source
+        channel["group"] = group
+        channels.append(channel)
+    if channels:
+        log(f"[{source}] Use cache: {len(channels)} links")
+    return channels
+
+
+def save_source_cache(path, channels, source_url):
+    rows = []
+    seen = set()
+    for channel in channels:
+        stream_url = clean_text(channel.get("stream_url"))
+        if not is_valid_stream_url(stream_url) or stream_url in seen:
+            continue
+        seen.add(stream_url)
+        row = {field: channel.get(field, "") for field in SOURCE_CACHE_FIELDS}
+        for field in ("event_date", "event_datetime"):
+            if hasattr(row.get(field), "isoformat"):
+                row[field] = row[field].isoformat()
+        rows.append(row)
+    if not rows:
+        return False
+    payload = {"source": source_url, "updated": now_ict(), "channels": rows}
+    try:
+        current = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(current, dict) and current.get("channels") == rows:
+            return False
+    except Exception:
+        pass
+    temporary_path = path.with_suffix(path.suffix + ".tmp")
+    temporary_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary_path.replace(path)
+    return True
+
+
+def decode_nuxt_data(payload):
+    """Decode Nuxt's devalue-flattened __NUXT_DATA__ payload."""
+    if not isinstance(payload, list):
+        return payload
+    resolved = {}
+
+    def resolve(index):
+        if not isinstance(index, int) or index < 0 or index >= len(payload):
+            return index
+        if index in resolved:
+            return resolved[index]
+        value = payload[index]
+        if isinstance(value, dict):
+            result = {}
+            resolved[index] = result
+            result.update({key: resolve(item) for key, item in value.items()})
+            return result
+        if isinstance(value, list):
+            if value and value[0] in {"Reactive", "ShallowReactive", "Ref", "ShallowRef"}:
+                result = resolve(value[1]) if len(value) > 1 else None
+                resolved[index] = result
+                return result
+            result = []
+            resolved[index] = result
+            result.extend(resolve(item) for item in value)
+            return result
+        return value
+
+    return resolve(0)
+
+
+def collect_khandaia_nuxt(frontend_url):
+    source = "KhanDaiA"
+    site_url = frontend_url.rstrip("/") + "/"
+    try:
+        page = fetch_text(site_url, headers={"User-Agent": UA, "Referer": site_url}, timeout=35)
+        match = re.search(r'<script[^>]+id="__NUXT_DATA__"[^>]*>(.*?)</script>', page, re.I | re.S)
+        if not match:
+            return []
+        root = decode_nuxt_data(json.loads(html.unescape(match.group(1))))
+        matches = (((root or {}).get("data") or {}).get("home-initial-data") or {}).get("fetchedMatches") or []
+    except Exception as exc:
+        log(f"[{source}] Nuxt fallback error: {exc}")
+        return []
+
+    channels = []
+    seen = set()
+    for item in matches:
+        if not isinstance(item, dict):
+            continue
+        event_datetime = parse_iso_to_ict_datetime(item.get("start_time"))
+        time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
+        home = clean_text(item.get("home_team_name"))
+        away = clean_text(item.get("away_team_name"))
+        sport = clean_text(item.get("sport_name"))
+        base_name = clean_text(f"{time_label} {sport} {home} vs {away}")
+        logo = urljoin(site_url, clean_text(item.get("home_team_logo")))
+        stream_rows = []
+        for field in ("primary_stream_url", "backup_stream_url", "flv_stream_url"):
+            stream_rows.append((clean_text(item.get(field)), ""))
+        for commentator in item.get("commentators") or []:
+            if not isinstance(commentator, dict):
+                continue
+            label = clean_text(commentator.get("name"))
+            for field in ("stream_url", "backup_stream_url", "flv_stream_url"):
+                stream_rows.append((clean_text(commentator.get(field)), label))
+        for stream_url, label in stream_rows:
+            if not is_valid_stream_url(stream_url) or stream_url in seen:
+                continue
+            seen.add(stream_url)
+            name = f"{base_name} ({label})" if label else base_name
+            channels.append({
+                "source": source,
+                "name": name or title_from_stream_url(stream_url, "Khandai"),
+                "group": "Khandai",
+                "logo": logo,
+                "stream_url": stream_url,
+                "referer": site_url,
+                "user_agent": UA,
+                "event_date": event_datetime.date() if event_datetime else None,
+                "event_datetime": event_datetime,
+            })
+    log(f"[{source}] Nuxt fallback: {len(channels)} links")
+    return channels
+
+
 def collect_khandaia():
     source = "KhanDaiA"
     frontend_url = discover_frontend_url(KHANDAIA_FRONTEND_URL) or KHANDAIA_FRONTEND_URL
@@ -1808,15 +1952,22 @@ def collect_khandaia():
             max_pages=12,
         )
     if channels:
+        save_source_cache(KHANDAIA_CACHE, channels, frontend_url)
         return channels
 
     api_base = discover_external_api_base(source, KHANDAIA_FRONTEND_URL, KHANDAIA_KNOWN_API_BASE)
-    return collect_standard_api(
+    channels = collect_standard_api(
         source,
         f"{api_base.rstrip('/')}/fixtures/unfinished",
         KHANDAIA_FRONTEND_URL,
         "Khandai",
     )
+    if not channels:
+        channels = collect_khandaia_nuxt(frontend_url)
+    if channels:
+        save_source_cache(KHANDAIA_CACHE, channels, frontend_url)
+        return channels
+    return load_source_cache(KHANDAIA_CACHE, source, "Khandai")
 
 
 def collect_luongson():
@@ -5102,7 +5253,7 @@ VSC9_STREAM_RE = re.compile(
     r"(?:\?(?:(?!https?://)[^\s'\"<>{}\\,\]])*)?",
     re.I,
 )
-VSC9_DETAIL_RE = re.compile(r'(?:https?://vsc9\.top)?/truc-tiep/[^\s"\'<>\\]+', re.I)
+VSC9_DETAIL_RE = re.compile(r'(?:https?://[a-z0-9.-]+)?/truc-tiep/[^\s"\'<>\\]+', re.I)
 VSC9_TIME_RE = re.compile(r"(\d{1,2}:\d{2}\s+\d{1,2}/\d{1,2})")
 
 
@@ -7342,6 +7493,8 @@ def collect_vsc9():
     if not html_text:
         log(f"[{source}] Home not available")
         channels.extend(collect_vsc9_thethaocoban_fallback(seen_urls))
+        if not channels:
+            channels = load_source_cache(VSC9_CACHE, source, "Vua Sân Cỏ TV")
         log(f"[{source}] {len(channels)} raw links")
         return channels
 
@@ -7371,7 +7524,7 @@ def collect_vsc9():
                     "source": source,
                     "name": title,
                     "group": group,
-                    "logo": "https://vsc9.top/favicon.ico",
+                    "logo": urljoin(VSC9_URL, "/favicon.ico"),
                     "stream_url": stream_url,
                     "referer": VSC9_REFERER,
                     "user_agent": UA,
@@ -7383,6 +7536,11 @@ def collect_vsc9():
     if today_count < VSC9_TTCB_MIN_TODAY_LINKS:
         log(f"[{source}] Today links low ({today_count}), use TheThaoCoBan VSC fallback")
         channels.extend(collect_vsc9_thethaocoban_fallback(seen_urls))
+
+    if channels:
+        save_source_cache(VSC9_CACHE, channels, VSC9_URL)
+    else:
+        channels = load_source_cache(VSC9_CACHE, source, "Vua Sân Cỏ TV")
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
