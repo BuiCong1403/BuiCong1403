@@ -208,7 +208,7 @@ MEBONG_GROUP = os.environ.get("MEBONG_GROUP", "MebongTV")
 MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "200") or "200")
 MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
-XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacxtg.tv/")
+XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacxth.tv/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.livecarriercdn.com/")
 XOILACZ_FALLBACK_REFERERS = [
     item.strip()
@@ -219,7 +219,7 @@ XOILACZ_FALLBACK_REFERERS = [
     if item.strip()
 ]
 XOILACZ_PAGES = int(os.environ.get("XOILACZ_PAGES", "4"))
-XOILACZ_TIME_BUDGET_SECONDS = int(os.environ.get("XOILACZ_TIME_BUDGET_SECONDS", "30") or "30")
+XOILACZ_TIME_BUDGET_SECONDS = int(os.environ.get("XOILACZ_TIME_BUDGET_SECONDS", "90") or "90")
 XOILACZ_REQUEST_TIMEOUT = int(os.environ.get("XOILACZ_REQUEST_TIMEOUT", "5") or "5")
 XOILACZ_SPORTS = [
     item.strip()
@@ -354,6 +354,19 @@ TV365_ERROR_M3U_URL = os.environ.get(
 )
 TINHLAGI_SPORT_M3U_URL = os.environ.get("TINHLAGI_SPORT_M3U_URL", "https://tinhlagi.pro/s.m3u")
 THETHAOCOBAN_M3U_URL = os.environ.get("THETHAOCOBAN_M3U_URL", "https://thcoban.github.io/ththethao/ttthethao.m3u")
+VANLINH_LIST_URL = os.environ.get("VANLINH_LIST_URL", "https://vanlinh.io.vn/list/")
+VANLINH_CHANNELS_JSON_URL = os.environ.get(
+    "VANLINH_CHANNELS_JSON_URL",
+    "https://raw.githubusercontent.com/linhpy89/linh/refs/heads/linh/channels.json",
+)
+VANLINH_ALL_JSON_URL = os.environ.get(
+    "VANLINH_ALL_JSON_URL",
+    "https://raw.githubusercontent.com/huybuonvp/xembongda/refs/heads/main/tonghop.json",
+)
+VANLINH_SPORT_M3U_URL = os.environ.get(
+    "VANLINH_SPORT_M3U_URL",
+    "https://raw.githubusercontent.com/linhpy89/linh/refs/heads/linh/tv.m3u",
+)
 WRITE_RAW_REFERENCE_M3U = os.environ.get("WRITE_RAW_REFERENCE_M3U", "0").strip().lower() in {"1", "true", "yes", "on"}
 THETHAOCOBAN_SOURCE_FALLBACK = (
     os.environ.get("THETHAOCOBAN_SOURCE_FALLBACK", "1").strip().lower() not in {"0", "false", "no"}
@@ -990,6 +1003,9 @@ def channel_key(channel):
 
 def stream_dedupe_key(channel):
     url = clean_text(channel.get("stream_url"))
+    if channel.get("source") == "XoiLacZ":
+        name = re.sub(r"\s*\|\s*Link\s+\d+\s*\[[^\]]+\]\s*$", "", clean_text(channel.get("name")), flags=re.I)
+        return ("XoiLacZ", tokenless_stream_key(url), name)
     if is_highlight_source(channel.get("source")) and "videas.fr" in url.lower():
         return ("VideasHighlight", videas_highlight_family_key(url))
     if channel.get("source") == "24hHighlight":
@@ -1017,10 +1033,17 @@ def stream_dedupe_key(channel):
 
 
 def source_stream_seen_key(source, stream_url, *parts):
-    stream_value = tokenless_stream_key(stream_url) if source == "SportflowLiveZ" else clean_text(stream_url)
+    stream_value = tokenless_stream_key(stream_url) if source in {"SportflowLiveZ", "XoiLacZ"} else clean_text(stream_url)
     key = [stream_value]
     if source in MULTI_EVENT_STREAM_SOURCES:
-        key.extend(clean_text(part) for part in parts if clean_text(part))
+        normalized_parts = []
+        for part in parts:
+            value = clean_text(part)
+            if source == "XoiLacZ":
+                value = re.sub(r"\s*\|\s*Link\s+\d+\s*\[[^\]]+\]\s*$", "", value, flags=re.I)
+            if value:
+                normalized_parts.append(value)
+        key.extend(normalized_parts)
     return tuple(key)
 
 
@@ -4079,40 +4102,99 @@ def collect_mytv_fpt_events():
 
 
 def collect_thethaocoban():
-    return collect_m3u_playlist(
-        "TheThaoCoBan",
-        THETHAOCOBAN_M3U_URL,
-        "TheThaoCoBan",
-        preserve_group=True,
-        allow_non_m3u8=True,
-        timeout=60,
-        retries=3,
-        default_referer_to_playlist=False,
-        user_agent="",
-        preserve_extinf=True,
-        preserve_group_exact=True,
-    )
+    return collect_thethaocoban_reference_sources(preserve_extinf=True, preserve_group_exact=True)
 
 
 THETHAOCOBAN_REFERENCE_CACHE = None
 
 
+def discover_vanlinh_reference_urls():
+    urls = [VANLINH_CHANNELS_JSON_URL, VANLINH_ALL_JSON_URL, VANLINH_SPORT_M3U_URL]
+    try:
+        page = fetch_text(VANLINH_LIST_URL, headers={"User-Agent": UA}, timeout=25)
+        discovered = re.findall(r'https?://[^"\'<>\s]+\.(?:json|m3u)(?:\?[^"\'<>\s]*)?', page, re.I)
+        discovered = [
+            url for url in discovered
+            if any(marker in url.lower() for marker in ("channels.json", "tonghop.json", "/tv.m3u", "sports-highfly.m3u"))
+        ]
+        urls = discovered + urls
+    except Exception as exc:
+        log(f"[TheThaoCoBanReference] VanLinh discovery error: {exc}")
+    unique = []
+    seen = set()
+    for url in urls:
+        url = html.unescape(clean_text(url).replace("\\/", "/"))
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        unique.append(url)
+    return unique
+
+
+def collect_vanlinh_grouped_json(source, url):
+    data = fetch_json_no_cache(url, headers={"Accept": "application/json, */*", "Referer": VANLINH_LIST_URL})
+    channels = []
+    for group in (data.get("groups") if isinstance(data, dict) else []) or []:
+        group_name = clean_text(group.get("name")) or "TheThaoCoBan"
+        for channel in group.get("channels") or []:
+            title = clean_text(channel.get("name")) or group_name
+            logo = ((channel.get("image") or {}).get("url")) or ""
+            for stream_name, stream_url in iter_grouped_stream_links(channel):
+                if not (is_valid_xoilacz_stream_url(stream_url) or is_valid_stream_url(stream_url)):
+                    continue
+                channels.append(
+                    {
+                        "source": source,
+                        "name": f"{title} | {stream_name}",
+                        "group": group_name,
+                        "logo": logo,
+                        "stream_url": stream_url,
+                        "referer": "",
+                        "user_agent": "",
+                    }
+                )
+    return channels
+
+
+def collect_thethaocoban_reference_sources(preserve_extinf=False, preserve_group_exact=False):
+    channels = []
+    for url in discover_vanlinh_reference_urls():
+        try:
+            if urlparse(url).path.lower().endswith(".json"):
+                batch = collect_vanlinh_grouped_json("TheThaoCoBanReference", url)
+            else:
+                batch = collect_m3u_playlist(
+                    "TheThaoCoBanReference",
+                    url,
+                    "TheThaoCoBan",
+                    preserve_group=True,
+                    allow_non_m3u8=True,
+                    timeout=45,
+                    retries=2,
+                    default_referer_to_playlist=False,
+                    user_agent="",
+                    preserve_extinf=preserve_extinf,
+                    preserve_group_exact=preserve_group_exact,
+                )
+            channels.extend(batch)
+        except Exception as exc:
+            log(f"[TheThaoCoBanReference] Skip {url}: {exc}")
+    unique = []
+    seen = set()
+    for channel in channels:
+        key = (group_key(channel.get("group")), tokenless_stream_key(channel.get("stream_url")))
+        if not key[1] or key in seen:
+            continue
+        seen.add(key)
+        unique.append(channel)
+    log(f"[TheThaoCoBanReference] VanLinh current sources: {len(unique)} links")
+    return unique
+
+
 def get_thethaocoban_reference_channels():
     global THETHAOCOBAN_REFERENCE_CACHE
     if THETHAOCOBAN_REFERENCE_CACHE is None:
-        THETHAOCOBAN_REFERENCE_CACHE = collect_m3u_playlist(
-            "TheThaoCoBanReference",
-            THETHAOCOBAN_M3U_URL,
-            "TheThaoCoBan",
-            preserve_group=True,
-            allow_non_m3u8=True,
-            timeout=60,
-            retries=3,
-            default_referer_to_playlist=False,
-            user_agent="",
-            preserve_extinf=False,
-            preserve_group_exact=False,
-        )
+        THETHAOCOBAN_REFERENCE_CACHE = collect_thethaocoban_reference_sources()
     return list(THETHAOCOBAN_REFERENCE_CACHE)
 
 
@@ -4690,6 +4772,8 @@ def collect_mebongtv():
 def xoilacz_base_candidates():
     candidates = [
         XOILACZ_SITE_URL,
+        "https://xoilacxth.tv/",
+        "https://xoilacxxf.cc/",
         "https://xlz.domainkqt.cc/",
         "https://xoilacxtg.tv/",
         "https://xoilacxtv.tv/",
@@ -4719,7 +4803,7 @@ def xoilacz_headers(base_url):
     }
 
 
-def extract_xoilacz_url_stream(stream_page_url, headers, detail_url=""):
+def extract_xoilacz_url_streams(stream_page_url, headers, detail_url=""):
     candidates = [stream_page_url]
     if "/off-tvc" not in stream_page_url:
         separator = "&" if "?" in stream_page_url else "?"
@@ -4745,7 +4829,9 @@ def extract_xoilacz_url_stream(stream_page_url, headers, detail_url=""):
             continue
         match = re.search(r'(?:var|let|const)\s+urlStream\s*=\s*["\']([^"\']+)["\']', html_text)
         if match:
-            return clean_text(match.group(1).replace("\\/", "/"))
+            url_stream = clean_text(match.group(1).replace("\\/", "/"))
+            if is_valid_xoilacz_stream_url(url_stream):
+                return [url_stream]
         ad_urls = set()
         ads_match = re.search(r"var\s+adsTvc\s*=\s*(\[[\s\S]*?\]);", html_text)
         if ads_match:
@@ -4762,13 +4848,20 @@ def extract_xoilacz_url_stream(stream_page_url, headers, detail_url=""):
         ]
         real_urls = [url for url in direct_urls if url not in ad_urls]
         if real_urls:
-            return real_urls[0]
+            return list(dict.fromkeys(real_urls))
         if direct_urls:
-            return direct_urls[-1]
+            return [direct_urls[-1]]
         src_match = re.search(r'(?:source|file)\s*[:=]\s*["\'](https?://[^"\']+)["\']', html_text, re.I)
         if src_match:
-            return clean_text(src_match.group(1).replace("\\/", "/"))
-    return ""
+            source_url = clean_text(src_match.group(1).replace("\\/", "/"))
+            if is_valid_xoilacz_stream_url(source_url):
+                return [source_url]
+    return []
+
+
+def extract_xoilacz_url_stream(stream_page_url, headers, detail_url=""):
+    streams = extract_xoilacz_url_streams(stream_page_url, headers, detail_url)
+    return streams[0] if streams else ""
 
 
 def extract_xoilacz_stream_links(detail_url, headers):
@@ -4784,16 +4877,29 @@ def extract_xoilacz_stream_links(detail_url, headers):
     except Exception:
         return []
 
-    stream_urls = []
+    stream_page_urls = []
     for item in list_stream:
         if not isinstance(item, list) or not item:
             continue
-        stream_page_url = clean_text(str(item[0]).replace("\\/", "/"))
-        if not stream_page_url.startswith(("http://", "https://")):
-            continue
-        stream_url = extract_xoilacz_url_stream(stream_page_url, headers, detail_url) or stream_page_url
-        if is_valid_xoilacz_stream_url(stream_url) and stream_url not in stream_urls:
-            stream_urls.append(stream_url)
+        for value in item:
+            stream_page_url = clean_text(str(value).replace("\\/", "/"))
+            if stream_page_url.startswith(("http://", "https://")) and stream_page_url not in stream_page_urls:
+                stream_page_urls.append(stream_page_url)
+
+    stream_urls = []
+    with ThreadPoolExecutor(max_workers=min(8, max(1, len(stream_page_urls)))) as executor:
+        futures = {
+            executor.submit(extract_xoilacz_url_streams, url, headers, detail_url): url
+            for url in stream_page_urls
+        }
+        for future in as_completed(futures):
+            try:
+                resolved_urls = future.result()
+            except Exception:
+                continue
+            for stream_url in resolved_urls:
+                if is_valid_xoilacz_stream_url(stream_url) and stream_url not in stream_urls:
+                    stream_urls.append(stream_url)
     return stream_urls
 
 
@@ -4848,6 +4954,7 @@ def collect_xoilacz():
                     "felnorastreamvault.com",
                     "pro2cdnlive.com",
                     "domaincdn.cc",
+                    "zundrixmediapipeline.com",
                 ),
                 seen_urls,
             )
@@ -4966,8 +5073,8 @@ def collect_xoilacz():
                     executor.shutdown(wait=False, cancel_futures=True)
                 if len(channels) > before_base:
                     break
-        if len(channels) > before_base:
-            break
+        # Mirrors may expose different resolver types and backup servers for
+        # the same match, so continue collecting from every live domain.
 
     if len(channels) < XOILACZ_TTCB_MIN_LINKS:
         reason = f"Only {len(channels)} links after {int(time.monotonic() - started_at)}s"
