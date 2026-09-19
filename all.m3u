@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-09-19 07:29 ICT
-# Total   : 533
+# Updated : 2026-09-19 07:57 ICT
+# Total   : 534
 
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/1.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -1867,6 +1867,11 @@ https://pull.niues.live/live/stream-9912142_lhd.m3u8?auth_key=1789768716-0-0-efb
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/kawasaki-frontale-vs-kashima-antlers-19-09-2026/?blv=602153
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=063642c342f2b86519bf11fca70079a6&txTime=6aad7a2e
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Brentford - Chelsea: Thảm họa phòng ngự, choáng váng 3 bàn (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/cp_special_nha_fpt-1789766546-brentford_chelsea_720p.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",BET vs GET, ngày 18/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
