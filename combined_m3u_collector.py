@@ -1826,9 +1826,10 @@ def save_source_cache(path, channels, source_url):
     seen = set()
     for channel in channels:
         stream_url = clean_text(channel.get("stream_url"))
-        if not is_valid_stream_url(stream_url) or stream_url in seen:
+        cache_key = channel_key(channel)
+        if not is_valid_stream_url(stream_url) or cache_key in seen:
             continue
-        seen.add(stream_url)
+        seen.add(cache_key)
         row = {field: channel.get(field, "") for field in SOURCE_CACHE_FIELDS}
         for field in ("event_date", "event_datetime"):
             if hasattr(row.get(field), "isoformat"):
@@ -1938,6 +1939,20 @@ def collect_khandaia_nuxt(frontend_url):
 def collect_khandaia():
     source = "KhanDaiA"
     frontend_url = discover_frontend_url(KHANDAIA_FRONTEND_URL) or KHANDAIA_FRONTEND_URL
+    # The first-party Nuxt backend is the most complete source. Calling it
+    # directly avoids losing later matches when generic API discovery fails.
+    channels = collect_django_matches_api(
+        source,
+        frontend_url,
+        frontend_url,
+        "Khandai",
+        days=2,
+        max_pages=4,
+    )
+    if channels:
+        save_source_cache(KHANDAIA_CACHE, channels, frontend_url)
+        return channels
+
     api_base = clean_text(KHANDAIA_INTERNAL_API_BASE or frontend_url).rstrip("/")
     if not probe_phaohoa_api_base(api_base, frontend_url):
         api_base = clean_text(frontend_url).rstrip("/")
@@ -7484,8 +7499,97 @@ def collect_vsc9_thethaocoban_fallback(seen_urls):
     )
 
 
+def collect_vsc9_api():
+    source = "VSC9"
+    site_url = VSC9_URL.rstrip("/") + "/"
+    api_url = urljoin(site_url, "/api/data/lives/matches")
+    headers = {
+        "User-Agent": UA,
+        "Accept": "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        "Origin": site_url.rstrip("/"),
+        "Referer": site_url,
+    }
+    channels = []
+    seen = set()
+    today = datetime.now(TZ_VN).date()
+    for offset in range(2):
+        event_date = today + timedelta(days=offset)
+        try:
+            if requests is None:
+                continue
+            response = requests.post(
+                api_url,
+                headers=headers,
+                json={"date": event_date.isoformat(), "page": 1, "pageSize": 500},
+                timeout=60,
+            )
+            if response.status_code != 200:
+                log(f"[{source}] Schedule API {event_date}: HTTP {response.status_code}")
+                continue
+            payload = response.json()
+            result = payload.get("result") if isinstance(payload, dict) else {}
+            matches = result.get("data") if isinstance(result, dict) else []
+        except Exception as exc:
+            log(f"[{source}] Schedule API {event_date} error: {exc}")
+            continue
+        if not isinstance(matches, list):
+            continue
+        date_count = 0
+        for item in matches:
+            if not isinstance(item, dict):
+                continue
+            event_datetime = parse_epoch_to_ict_datetime(item.get("matchTime"))
+            if not event_datetime:
+                event_datetime = parse_iso_to_ict_datetime(
+                    clean_text(f"{item.get('date', '')}T{item.get('time', '')}:00+07:00")
+                )
+            home = item.get("home") or {}
+            away = item.get("away") or {}
+            league = item.get("league") or {}
+            home_name = clean_text(home.get("name")) or "Home"
+            away_name = clean_text(away.get("name")) or "Away"
+            time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
+            for live in item.get("lives") or []:
+                if not isinstance(live, dict):
+                    continue
+                stream_url = clean_text(live.get("link")).rstrip(".,);]")
+                if not (is_hls_url(stream_url) or is_flv_url(stream_url)):
+                    continue
+                commentator = clean_text(live.get("commentator"))
+                name = clean_text(f"{time_label} {home_name} vs {away_name}")
+                if commentator:
+                    name += f" ({commentator})"
+                seen_key = (stream_url, name, source)
+                if seen_key in seen:
+                    continue
+                seen.add(seen_key)
+                channels.append(
+                    {
+                        "source": source,
+                        "name": name,
+                        "group": "Vua Sân Cỏ TV",
+                        "logo": clean_text(home.get("logo") or away.get("logo") or league.get("logo")),
+                        "stream_url": stream_url,
+                        "referer": site_url,
+                        "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                        "event_date": event_datetime.date() if event_datetime else event_date,
+                        "event_datetime": event_datetime,
+                    }
+                )
+                date_count += 1
+        log(f"[{source}] Schedule API {event_date}: {date_count} links")
+    return channels
+
+
 def collect_vsc9():
     source = "VSC9"
+    channels = collect_vsc9_api()
+    if channels:
+        save_source_cache(VSC9_CACHE, channels, VSC9_URL)
+        log(f"[{source}] {len(channels)} raw links")
+        return channels
+
     log(f"[{source}] Fetch home")
     html_text = fetch_vsc9_html()
     channels = []
