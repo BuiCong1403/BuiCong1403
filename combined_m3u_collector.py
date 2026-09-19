@@ -1171,6 +1171,14 @@ def h24_stream_quality_label(url):
     return ""
 
 
+def h24_stream_part_label(url):
+    filename = unquote(urlparse(clean_text(url)).path).rsplit("/", 1)[-1].lower()
+    match = re.search(r"(?:^|[-_])(?:h|hiep|hiệp|part|phan|phần)[-_]?([12])(?:[-_.]|$)", filename)
+    if match:
+        return f"Hiệp {match.group(1)}"
+    return ""
+
+
 def h24_variant_family_key(url):
     parsed = urlparse(clean_text(url))
     path = unquote(parsed.path).lower()
@@ -7015,8 +7023,9 @@ def collect_24h_highlights():
         for index, (stream_url, event_date) in enumerate(valid_streams, start=1):
             item_title = title
             if H24_TAKE_ALL_M3U8 and len(valid_streams) > 1:
+                part = h24_stream_part_label(stream_url)
                 quality = h24_stream_quality_label(stream_url)
-                suffix = quality or f"link {index}"
+                suffix = " | ".join(value for value in (part, quality) if value) or f"link {index}"
                 item_title = f"{title} [{suffix}]"
             results.append(
                 {
