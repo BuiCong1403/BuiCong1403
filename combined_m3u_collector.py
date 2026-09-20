@@ -1981,7 +1981,24 @@ def collect_khandaia():
         days=2,
         max_pages=4,
     )
-    if channels:
+    channels.extend(collect_khandaia_nuxt(frontend_url))
+    channels.extend(load_source_cache(KHANDAIA_CACHE, source, "Khandai"))
+
+    merged = []
+    seen = set()
+    for channel in channels:
+        key = source_stream_seen_key(
+            source,
+            channel.get("stream_url"),
+            str(channel_event_datetime(channel) or ""),
+            extract_match_title(channel),
+        )
+        if not key[0] or key in seen:
+            continue
+        seen.add(key)
+        merged.append(channel)
+    channels = merged
+    if len(channels) >= KHANDAIA_TTCB_MIN_LINKS:
         save_source_cache(KHANDAIA_CACHE, channels, frontend_url)
         return channels
 
@@ -2716,6 +2733,7 @@ def collect_phaohoa():
             # schedule exposes the same phaohoa.live channels earlier; refresh
             # this fallback on every live run because assignments change often.
             scheduled = collect_khandaia_nuxt(KHANDAIA_FRONTEND_URL)
+            scheduled.extend(load_source_cache(KHANDAIA_CACHE, "KhanDaiA", "Khandai"))
             seen = {
                 (str(channel_event_datetime(item) or ""), tokenless_stream_key(item.get("stream_url")))
                 for item in channels
