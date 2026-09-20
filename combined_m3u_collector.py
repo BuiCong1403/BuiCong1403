@@ -63,6 +63,14 @@ BONG_LAU_API_URL = os.environ.get(
     "https://api-v2.chuoichientv.net/v2/matches?page=1&limit=200&sport=&type=blv",
 )
 KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://khandai3.link")
+KHANDAIA_FRONTEND_CANDIDATES = [
+    value.strip().rstrip("/")
+    for value in os.environ.get(
+        "KHANDAIA_FRONTEND_CANDIDATES",
+        "https://khandai1.link,https://khandai2.link,https://khandai3.link",
+    ).split(",")
+    if value.strip()
+]
 KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.xyz/api/v1/external")
 KHANDAIA_INTERNAL_API_BASE = os.environ.get("KHANDAIA_INTERNAL_API", KHANDAIA_FRONTEND_URL).rstrip("/")
 COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
@@ -1970,18 +1978,29 @@ def collect_khandaia_nuxt(frontend_url):
 
 def collect_khandaia():
     source = "KhanDaiA"
-    frontend_url = discover_frontend_url(KHANDAIA_FRONTEND_URL) or KHANDAIA_FRONTEND_URL
+    frontend_candidates = [KHANDAIA_FRONTEND_URL] + KHANDAIA_FRONTEND_CANDIDATES
+    frontend_urls = []
+    for candidate in frontend_candidates:
+        frontend_url = discover_frontend_url(candidate) or candidate
+        frontend_url = clean_text(frontend_url).rstrip("/")
+        if frontend_url and frontend_url not in frontend_urls:
+            frontend_urls.append(frontend_url)
+    frontend_url = frontend_urls[0] if frontend_urls else KHANDAIA_FRONTEND_URL
     # The first-party Nuxt backend is the most complete source. Calling it
     # directly avoids losing later matches when generic API discovery fails.
-    channels = collect_django_matches_api(
-        source,
-        frontend_url,
-        frontend_url,
-        "Khandai",
-        days=2,
-        max_pages=4,
-    )
-    channels.extend(collect_khandaia_nuxt(frontend_url))
+    channels = []
+    for candidate in frontend_urls:
+        channels.extend(
+            collect_django_matches_api(
+                source,
+                candidate,
+                candidate,
+                "Khandai",
+                days=2,
+                max_pages=4,
+            )
+        )
+        channels.extend(collect_khandaia_nuxt(candidate))
     channels.extend(load_source_cache(KHANDAIA_CACHE, source, "Khandai"))
 
     merged = []
@@ -7013,6 +7032,11 @@ def collect_24h_highlights():
     base_url = H24_BASE_URL.rstrip("/") + "/"
     allowed_dates = h24_allowed_highlight_dates()
     page_urls = [
+        urljoin(base_url, "video-highlight-c953.html"),
+        urljoin(base_url, "video-highlight-ngoai-hang-anh-c149e5903.html"),
+        urljoin(base_url, "video-bong-da-c297.html"),
+        urljoin(base_url, "video-ban-thang-c297.html"),
+        urljoin(base_url, "video-bong-da-hot-c508.html"),
         urljoin(base_url, "bong-da-c48.html"),
         urljoin(base_url, "bong-da-ngoai-hang-anh-c149.html"),
         urljoin(base_url, "bong-da-tay-ban-nha-c151.html"),
@@ -7022,11 +7046,6 @@ def collect_24h_highlights():
         urljoin(base_url, "bong-da-viet-nam-c182.html"),
         urljoin(base_url, "cac-giai-bong-da-khac-c315.html"),
         urljoin(base_url, "cup-c1-champions-league-c153.html"),
-        urljoin(base_url, "video-bong-da-c297.html"),
-        urljoin(base_url, "video-ban-thang-c297.html"),
-        urljoin(base_url, "video-bong-da-hot-c508.html"),
-        urljoin(base_url, "video-highlight-c953.html"),
-        urljoin(base_url, "video-highlight-ngoai-hang-anh-c149e5903.html"),
         urljoin(base_url, "clip-1-phut-bong-da-c946.html"),
         urljoin(base_url, "video-tennis-c448.html"),
         urljoin(base_url, "the-thao-c101.html"),
@@ -7047,22 +7066,6 @@ def collect_24h_highlights():
         seen_articles.add(article_url)
         article_urls.append(article_url)
         return True
-
-    for sitemap_url in (
-        urljoin(base_url, "sitemap-article-daily.xml"),
-        urljoin(base_url, "sitemap-news.xml"),
-    ):
-        if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
-            break
-        log(f"[{source}] Fetch article sitemap {sitemap_url}")
-        try:
-            sitemap_text = fetch_text(sitemap_url, headers=h24_headers(base_url), timeout=30)
-        except Exception:
-            continue
-        for article_url in extract_h24_sitemap_article_urls(sitemap_text):
-            add_article_url(article_url)
-            if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
-                break
 
     page_index = 0
     while page_index < len(page_urls) and page_index < max(1, H24_CATEGORY_LIMIT):
@@ -7107,6 +7110,25 @@ def collect_24h_highlights():
                 seen_ajax.add(ajax_key)
                 ajax_urls.append(next_ajax_url)
         for article_url in extract_h24_article_urls(html_text, base_url):
+            add_article_url(article_url)
+            if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+                break
+
+    # Category pages contain the curated highlight list. Only after walking
+    # those pages and their AJAX pagination do we fill remaining capacity from
+    # broad news sitemaps, which otherwise crowd out the actual match videos.
+    for sitemap_url in (
+        urljoin(base_url, "sitemap-article-daily.xml"),
+        urljoin(base_url, "sitemap-news.xml"),
+    ):
+        if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
+            break
+        log(f"[{source}] Fetch article sitemap {sitemap_url}")
+        try:
+            sitemap_text = fetch_text(sitemap_url, headers=h24_headers(base_url), timeout=30)
+        except Exception:
+            continue
+        for article_url in extract_h24_sitemap_article_urls(sitemap_text):
             add_article_url(article_url)
             if len(article_urls) >= max(1, H24_HIGHLIGHT_LIMIT):
                 break
