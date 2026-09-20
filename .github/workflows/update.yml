@@ -14,6 +14,10 @@ on:
     - cron: "0 19 * * *"
     - cron: "0 9 * * *"
     - cron: "0 11 * * *"
+    # Refresh changing daytime match/stream assignments: 09:00, 12:00, 14:00 ICT
+    - cron: "0 2 * * *"
+    - cron: "0 5 * * *"
+    - cron: "0 7 * * *"
     # Highlights, Asia/Bangkok: every 30 minutes from 03:30 to 07:30
     - cron: "30 20 * * *"
     - cron: "0 21 * * *"
@@ -24,6 +28,10 @@ on:
     - cron: "30 23 * * *"
     - cron: "0 0 * * *"
     - cron: "30 0 * * *"
+    # 24h often publishes overnight highlights after 07:30 ICT.
+    - cron: "30 1 * * *"
+    - cron: "30 3 * * *"
+    - cron: "30 5 * * *"
 
 concurrency:
   group: update-m3u-main
@@ -62,7 +70,7 @@ jobs:
           fi
           if [ "${{ github.event_name }}" = "schedule" ]; then
             case "${{ github.event.schedule }}" in
-              "30 20 * * *"|"0 21 * * *"|"30 21 * * *"|"0 22 * * *"|"30 22 * * *"|"0 23 * * *"|"30 23 * * *"|"0 0 * * *"|"30 0 * * *")
+              "30 20 * * *"|"0 21 * * *"|"30 21 * * *"|"0 22 * * *"|"30 22 * * *"|"0 23 * * *"|"30 23 * * *"|"0 0 * * *"|"30 0 * * *"|"30 1 * * *"|"30 3 * * *"|"30 5 * * *")
                 RUN_MODE="highlight"
                 ;;
               *)
@@ -84,7 +92,9 @@ jobs:
           test -s highlight.m3u
           test -f footonsat.m3u
           test -s footonsat.m3u
-          ls -lh all.m3u ott.m3u highlight.m3u footonsat.m3u
+          test -f vanlinh_sport.m3u
+          test -s vanlinh_sport.m3u
+          ls -lh all.m3u ott.m3u highlight.m3u footonsat.m3u vanlinh_sport.m3u
 
       - name: Commit generated files
         run: |

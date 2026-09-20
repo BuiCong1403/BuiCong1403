@@ -35,6 +35,7 @@ ALL_M3U = BASE_DIR / "all.m3u"
 OTT_M3U = BASE_DIR / "ott.m3u"
 HIGHLIGHT_M3U = BASE_DIR / "highlight.m3u"
 DASFOOTBALL_M3U = BASE_DIR / "dasfootball.m3u"
+VANLINH_SPORT_M3U = BASE_DIR / "vanlinh_sport.m3u"
 TINHLAGI_M3U = BASE_DIR / "tinhlagi.m3u"
 THETHAOCOBAN_M3U = BASE_DIR / "thethaocoban.m3u"
 VMTTV_VTV_CACHE = BASE_DIR / "vmttv_vtv_cache.json"
@@ -2710,6 +2711,27 @@ def collect_phaohoa():
     log(f"[{source}] Fetch API")
     if "xoiche.tv" in PHAOHOA_API_BASE or "xoiche.tv" in PHAOHOA_FRONTEND_URL or "xoiche.tv" in XOICHE_BASE_URL:
         channels = collect_xoiche_phaohoa(XOICHE_BASE_URL)
+        if len(channels) < PHAOHOA_TTCB_MIN_LINKS:
+            # XoiChe publishes source URLs close to kickoff. Khandai's Nuxt
+            # schedule exposes the same phaohoa.live channels earlier.
+            scheduled = collect_khandaia_nuxt(KHANDAIA_FRONTEND_URL)
+            seen = {
+                (str(channel_event_datetime(item) or ""), tokenless_stream_key(item.get("stream_url")))
+                for item in channels
+            }
+            for item in scheduled:
+                stream_url = clean_text(item.get("stream_url"))
+                if "phaohoa.live" not in urlparse(stream_url).netloc.lower():
+                    continue
+                extra = dict(item)
+                extra.update({"source": source, "group": "PhaoHoaTV"})
+                key = (str(channel_event_datetime(extra) or ""), tokenless_stream_key(stream_url))
+                if key in seen:
+                    continue
+                seen.add(key)
+                channels.append(extra)
+            if scheduled:
+                log(f"[{source}] Added {len(channels)} total links after Khandai schedule fallback")
         if channels:
             return channels
 
@@ -4189,6 +4211,17 @@ def collect_thethaocoban_reference_sources(preserve_extinf=False, preserve_group
         unique.append(channel)
     log(f"[TheThaoCoBanReference] VanLinh current sources: {len(unique)} links")
     return unique
+
+
+def write_vanlinh_sport_reference():
+    channels = collect_thethaocoban_reference_sources(
+        preserve_extinf=True,
+        preserve_group_exact=True,
+    )
+    channels = dedupe_and_sort_channels(channels)
+    write_m3u(VANLINH_SPORT_M3U, channels)
+    log(f"[VanLinhReference] Wrote {len(channels)} links to {VANLINH_SPORT_M3U.name}")
+    return len(channels)
 
 
 def get_thethaocoban_reference_channels():
@@ -8322,6 +8355,10 @@ def main():
         log(f"[DONE] Updated ott.m3u highlight blocks: kept={ott_counts[0]} add={ott_counts[1]} total={ott_counts[2]}")
         log(f"[DONE] HIGHLIGHT M3U: {HIGHLIGHT_M3U}")
         return
+
+    # Keep a standalone snapshot of the current sports sources advertised by
+    # vanlinh.io.vn/list/ for comparison without mixing it into all.m3u.
+    write_vanlinh_sport_reference()
 
     collectors = [
         ("HoiQuan3", collect_hoiquan3),
