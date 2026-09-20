@@ -2713,7 +2713,8 @@ def collect_phaohoa():
         channels = collect_xoiche_phaohoa(XOICHE_BASE_URL)
         if len(channels) < PHAOHOA_TTCB_MIN_LINKS:
             # XoiChe publishes source URLs close to kickoff. Khandai's Nuxt
-            # schedule exposes the same phaohoa.live channels earlier.
+            # schedule exposes the same phaohoa.live channels earlier; refresh
+            # this fallback on every live run because assignments change often.
             scheduled = collect_khandaia_nuxt(KHANDAIA_FRONTEND_URL)
             seen = {
                 (str(channel_event_datetime(item) or ""), tokenless_stream_key(item.get("stream_url")))
