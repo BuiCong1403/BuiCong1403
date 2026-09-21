@@ -1,6 +1,7 @@
 #EXTM3U
-# Updated : 2026-09-21 08:22 ICT
-# Total   : 523
+<<<<<<< HEAD
+# Updated : 2026-09-21 09:04 ICT
+# Total   : 550
 
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/1.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -1843,6 +1844,11 @@ https://pull.niur.live/live/stream-620797_lhd.m3u8?txSecret=b852c21eaeb5cac571ba
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-621840_lhd.m3u8?txSecret=21df78373934bd9245ae71b19376c7f3&txTime=6ab0a0bf
 
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",AC Milan vs Lecce
+#EXTVLCOPT:http-referrer=https://dasfootball.com/ac-milan-vs-lecce-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/nvbok1.mp4?Expires=1790204571858&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=MaOxEpACv4OKp5zXuslxPTYY8ii3mK5ZuMbMqPdmfcTvvWEJuY3u7rK3MFT7PkUhLrlfuCvNsH4JxQoWLKr9HHfx4u9ByMcUMrgzpFh1VEp6bAEGg3wlGtchW9wMLkjjnwrwgSrB7j7TYBDuMrAqjksp1Oq7tUD7S8K9fzFM5U4m4IdDxLDdSSgHCfFyfL0WsKMkmWvx6jWx32oi~dHO6UKhiMpDniCRAeb07Cub1-P4Hm5E~wfYdIZCjivUZSavo1TsVuw4scqOz0nbWAiBz7XhDN1Guy9jnPfTnOrwajGkQZd2XBZBBs2p7iw0KOsKL4t~rOK-aiViNOaSND287w__
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",ATM vs RMA, ngày 21/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1857,6 +1863,26 @@ https://media.sportits.com/users/BWJxboqNegwO/XAnlIbq9xQQpPcg_1789934089.mp4
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/EAjjZXPuUOGm5Kt_1789919911.mp4
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Bayer Leverkusen vs RB Leipzig
+#EXTVLCOPT:http-referrer=https://dasfootball.com/bayer-leverkusen-vs-rb-leipzig-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/XAnlIbq9xQQpPcg_1789934089.mp4
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Deportivo La Coruna - Real Betis: Đánh rơi chiến thắng phút 87 (La Liga) [Hiệp 1 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-21/cp_special_laliga-1789929366-deportivo_betis1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Deportivo La Coruna - Real Betis: Đánh rơi chiến thắng phút 87 (La Liga) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-21/cp_special_laliga-1789929367-deportivo_betis2_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",FC Schalke 04 vs SV Elversberg
+#EXTVLCOPT:http-referrer=https://dasfootball.com/fc-schalke-04-vs-sv-elversberg-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/Lfw4v2V7w0XyX9y_1789934088.mp4
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",FIO vs NAP, ngày 21/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
@@ -1873,13 +1899,43 @@ https://cdn-cf-east.streamable.com/video/mp4/nz6g71.mp4?Expires=1790202360&Signa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/iF5dkxeDc5Mgs0N_1789928671.mp4
 
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Frosinone vs Como
+#EXTVLCOPT:http-referrer=https://dasfootball.com/frosinone-vs-como-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/nz6g71.mp4?Expires=1790185406447&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=hWRcwyDaHk85Lnlz6EuUu696jAUde4HPFHGG~fkjpaRu0Tkj-ZSbKe345TjoG9PZIYeM8VyptZGVfmJp8A-JMtGIrEDIUIZEj3KMPU-O~I1yZIEGhEgM0nwN0uzNYbZJZIdZb72EC5wFKvvEsPg57dAYwPjauFO47XB1J0OTd4Ezi05-z3XCM4SfwgHbxwiiaLl0TrdkmbFWzbK1bo617rCp0P57j8JqYh62U0RNpdpip~g9uBNvKYCtaneWKiz0GFht1gKcDgFJfoGPQe8~Xr9ewHhif3M4VAkbIOOxnma7Q0OkHWfMQwuU0-sCK3OF8PURcU5stPsVr-CAQL9B0g__
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Fulham - MU: Cay đắng phản lưới, thoát hiểm phút 89 (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-21/cp_special_nha_fpt-1789928412-fulham_mu_fpt_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Fulham vs Manchester United
+#EXTVLCOPT:http-referrer=https://dasfootball.com/fulham-vs-manchester-united-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/iF5dkxeDc5Mgs0N_1789928671.mp4
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",GET vs MAL, ngày 21/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/XeQK0sUxA3oajxh_1789922751.mp4
 
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Inter Miami - San Diego: Messi ghi bàn sút phạt, rượt đuổi kịch tính (MLS)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-21/1789953523-miami4goal_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Inter Miami - San Diego: Messi ghi bàn sút phạt, rượt đuổi kịch tính (MLS)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-21/1789955423-miamifull_720p.m3u8
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",JUV vs ATA, ngày 21/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/4b4m2UbNQeglJ1q_1789929778.mp4
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Juventus vs Atalanta
+#EXTVLCOPT:http-referrer=https://dasfootball.com/juventus-vs-atalanta-highlights-2026-09-20/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/4b4m2UbNQeglJ1q_1789929778.mp4
 
@@ -1903,15 +1959,30 @@ https://media.sportits.com/users/BWJxboqNegwO/WYthgPIAlirXVmU_1789921019.mp4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn-cf-east.streamable.com/video/mp4/nvbok1.mp4?Expires=1790204571858&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=MaOxEpACv4OKp5zXuslxPTYY8ii3mK5ZuMbMqPdmfcTvvWEJuY3u7rK3MFT7PkUhLrlfuCvNsH4JxQoWLKr9HHfx4u9ByMcUMrgzpFh1VEp6bAEGg3wlGtchW9wMLkjjnwrwgSrB7j7TYBDuMrAqjksp1Oq7tUD7S8K9fzFM5U4m4IdDxLDdSSgHCfFyfL0WsKMkmWvx6jWx32oi~dHO6UKhiMpDniCRAeb07Cub1-P4Hm5E~wfYdIZCjivUZSavo1TsVuw4scqOz0nbWAiBz7XhDN1Guy9jnPfTnOrwajGkQZd2XBZBBs2p7iw0KOsKL4t~rOK-aiViNOaSND287w__
 
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Marseille - PSG: "Kinh điển" nghẹt thở tới tận phút 90+6 (Ligue 1)
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Marseille - PSG: "Kinh điển" nghẹt thở tới tận phút 90+6 (Ligue 1) [Hiệp 1 | 720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-21/cp_special_ligue1-1789942647-marseille_psg1.m3u8
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-21/cp_special_ligue1-1789942647-marseille_psg1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Marseille - PSG: "Kinh điển" nghẹt thở tới tận phút 90+6 (Ligue 1) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-21/cp_special_ligue1-1789942647-marseille_psg2_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Marseille vs Paris Saint Germain
+#EXTVLCOPT:http-referrer=https://dasfootball.com/marseille-vs-paris-saint-germain-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/dxF6Yp2AkVsv7lm_1789943905.mp4
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",PAR vs GEM, ngày 21/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn-cf-east.streamable.com/video/mp4/f9oh31.mp4?Expires=1790202360&Signature=bTD1A2J5Hu1zwgL59JXMAf-wrp7TcK2tMXjQRuGOupi512TS3o1HED~lqt1jcyU4RS9ziKn5vFz-qdj4ZJtYy3fweypByDO-3bSIHeuRYNYLLpxmfJet-thn6t9m48bMtiExujiTRKC~Jg9klTRYnkLZCxKxhloJgjTNBM6baKbsBrA9M2nr-EBEzhZBkbeeHWv75G~ATT-5e8ioJZTDTBKgIGveMmErRnwcQgS7TZ2I~I9yfs3rvJje1ysYWhFnyz07FDXBH~nbvov41Hb5aSoUMAUV5gVqhqzmTWcz4vvTht6N8OJ68uQgCbSwyHq1LRaRrPqhY0hoEVeAuvEL1g__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",SC Paderborn 07 vs 1899 Hoffenheim
+#EXTVLCOPT:http-referrer=https://dasfootball.com/sc-paderborn-07-vs-1899-hoffenheim-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/iElJhrAdAi9EQUl_1789937980.mp4
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",VAL vs RSO, ngày 21/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
@@ -1923,6 +1994,36 @@ https://media.sportits.com/users/BWJxboqNegwO/PjKN1w9zemSOEdO_1789943904.mp4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/deDV9wS8qIGeYJ2_1789929842.mp4
 
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Valencia vs Real Sociedad
+#EXTVLCOPT:http-referrer=https://dasfootball.com/valencia-vs-real-sociedad-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/PjKN1w9zemSOEdO_1789943904.mp4
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Villarreal vs Levante
+#EXTVLCOPT:http-referrer=https://dasfootball.com/villarreal-vs-levante-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/deDV9wS8qIGeYJ2_1789929842.mp4
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Arsenal có thay đổi sau thảm bại, "tí hon" bắt nạt ông lớn NHA do ăn may? (Clip 1 phút)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/1789897465-clip1phut2009_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Atletico Madrid - Real Madrid: Thẻ đỏ bước ngoặt, sụp đổ đau đớn (La Liga) [Hiệp 1 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_laliga-1789921500-atletico_real1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Atletico Madrid - Real Madrid: Thẻ đỏ bước ngoặt, sụp đổ đau đớn (La Liga) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_laliga-1789921500-atletico_real2_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Atletico Madrid vs Real Madrid
+#EXTVLCOPT:http-referrer=https://dasfootball.com/atletico-madrid-vs-real-madrid-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/5x8b7h.mp4?Expires=1790182055235&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=E3W8sy285bNxUXUlYg1NUx~p5JdqcuwTxOUHphKzVNADHEvghpWBUGYrsOUlk-FFUAhaV-aRbAMQegnmytscfMef-qZRT5xZVWIyaSPEbINt9xfRiSRQFeWXF0n8yXrhVLcWidozNB6GnTVb0UdOXdNYqkJIHxZsjyH~fT4WnKYh8CQ9P5d67gRN6kkb2BY3Q2PnE7BIkLO~e3C2cawoTSb3GRruoAAca24~dnCoC4K41aLRM3MCfbVC8DIPpGcjt~vxVJi-E8iiYuVFL2nONhs27kkAaseE2DtTeRAi-PaDVj1ATOIuJz6IygUyRcGtzHqxxnuB~i8ckaQS4nzAYg__
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",BHA vs ARS, ngày 20/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1933,10 +2034,20 @@ https://media.sportits.com/users/BWJxboqNegwO/7IsP9B1ZFzgHePi_1789835673.mp4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/yAVjrc0don8yUWs_1789832512.mp4
 
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Barcelona nối dài mạch toàn thắng: Không thể ngăn cản nhờ Raphinha hóa "siêu nhân"
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_laliga-1789851513-3ban_720p.m3u8
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Bournemouth - Liverpool: Rực rỡ Isak, ngày về hoàn hảo của Iraola (Ngoại hạng Anh)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_nha_fpt-1789917808-bournemouth_liverpool_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Bournemouth vs Liverpool
+#EXTVLCOPT:http-referrer=https://dasfootball.com/bournemouth-vs-liverpool-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/EAjjZXPuUOGm5Kt_1789919911.mp4
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",CEL vs RAC, ngày 20/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
@@ -1948,6 +2059,26 @@ https://media.sportits.com/users/BWJxboqNegwO/oQ0vnWHKvCvABCU_1789845091.mp4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/RSdXKO0cTR27cAr_1789839937.mp4
 
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Fiorentina vs Napoli
+#EXTVLCOPT:http-referrer=https://dasfootball.com/fiorentina-vs-napoli-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/BWLyfoMJTBvaLmw_1789918571.mp4
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Leeds vs Crystal Palace
+#EXTVLCOPT:http-referrer=https://dasfootball.com/leeds-vs-crystal-palace-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/dGfKBfMLEgG7iUm_1789921112.mp4
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Man City - Sunderland: Đỉnh cao hat-trick, điên rồ 8 bàn (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_nha_fpt-1789920684-manchestercity_sunderland_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Manchester City vs Sunderland
+#EXTVLCOPT:http-referrer=https://dasfootball.com/manchester-city-vs-sunderland-highlights-2026-09-20/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://media.sportits.com/users/BWJxboqNegwO/WYthgPIAlirXVmU_1789921019.mp4
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",NEW vs HUL, ngày 20/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1957,6 +2088,11 @@ https://media.sportits.com/users/BWJxboqNegwO/ld8DoS0O5FTsXvd_1789839937.mp4
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn-cf-east.streamable.com/video/mp4/qsa5kd.mp4?Expires=1790125740&Signature=fdF2M1Ya0d0iouy0YikpMYYGGXuOSCeCUyjInssfTUeBn~UzjXF1en0Cf5OznivKaqYldnF7TwFygcgkAnxGKt9RLybEjd~Q5bKmXY7DprEClNpNUX7q-0Dx7q2wuj0PCBDUEaz4qZUzLns1WeFfsuLD2pYyfLxGeZ9humGIfaI2il8zVR2dR7hcWUZTlYFMcy-ORrB3OOkssTFB2GdXNEMVShWYmKBSG8LyGq2d~utDYzIbg-~XCj5Cqwjtxp8hyPPsZPTXq8rOvQbqCdXjTIe7nZ1qoE5mbF8fW9Ofp-J60JFhAL7BsaqWf3-BpR3PE1WnzZinN1-69Y8p~ogTHQ__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Nottingham Forest - Coventry: Chiến thắng lịch sử sau 9287 ngày (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_nha_fpt-1789848523-not_720p.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",OSA vs RSV, ngày 20/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
@@ -1973,10 +2109,35 @@ https://media.sportits.com/users/BWJxboqNegwO/dUlZChbwt3pmz5H_1789845088.mp4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/XNJNsy9gDngNJU9_1789852954.webm
 
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Sevilla - Barcelona: Raphinha lập hat-trick, ngược dòng mãn nhãn (La Liga) [Hiệp 1 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_laliga-1789851462-bar_h1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Sevilla - Barcelona: Raphinha lập hat-trick, ngược dòng mãn nhãn (La Liga) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_laliga-1789851462-bar_h2_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Stuttgart - Dortmund: Bước ngoặt phút 70, tiếp mạch toàn thắng (Bundesliga) [Hiệp 1 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_bundesliga-1789842112-dm_h1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Stuttgart - Dortmund: Bước ngoặt phút 70, tiếp mạch toàn thắng (Bundesliga) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_bundesliga-1789842112-dm_h2_720p.m3u8
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",TOT vs AVL, ngày 20/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/PlKsN644l46T809_1789827631.mp4
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Tuyển Việt Nam: Cơ hội nào cho các cầu thủ Việt kiều?
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/1789894705-vn2_720p.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",UDI vs CAG, ngày 20/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
@@ -1993,10 +2154,25 @@ https://cdn-cf-east.streamable.com/video/mp4/1a50fo.mp4?Expires=1790124780&Signa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/uO3KekTJfwVJTe8_1789853386.mp4
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",AS Roma vs Inter
-#EXTVLCOPT:http-referrer=https://dasfootball.com/as-roma-vs-inter-highlights-2026-09-19/
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Đình Bắc bị Văn Sơn giật cùi chỏ vào mặt, đối thủ nhận ngay thẻ đỏ
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/dUlZChbwt3pmz5H_1789845088.mp4
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/1789915990-dinhbac_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Đồng Nai - Công an Hà Nội: Thẻ đỏ tai hại, bùng nổ 6 phút 3 bàn (V-League) [Hiệp 1 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_v_league-1789908472-cahn_h1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Đồng Nai - Công an Hà Nội: Thẻ đỏ tai hại, bùng nổ 6 phút 3 bàn (V-League) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-20/cp_special_v_league-1789908472-cahn_h2_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Alonso & Chelsea hết "tuần trăng mật", dàn HLV cầu cứu đợt tập trung ĐTQG (Clip 1 phút)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/1789813638-clip1phut1909_720p.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",BAY vs FCU, ngày 19/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
@@ -2008,85 +2184,45 @@ https://media.sportits.com/users/BWJxboqNegwO/L6qy5DpLZKpSWyQ_1789765405.mp4
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/rhMwMFH7EJGtfNs_1789767003.mp4
 
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Bayern Munich - Union Berlin: 7 bàn mãn nhãn, rực rỡ Kane - Olise (Bundesliga)
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Bayern Munich - Union Berlin: 7 bàn mãn nhãn, rực rỡ Kane - Olise (Bundesliga) [Hiệp 1 | 720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/cp_special_bundesliga-1789766322-bay-uni-h1.m3u8
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/cp_special_bundesliga-1789766322-bay-uni-h1_720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Borussia Mönchengladbach vs FSV Mainz 05
-#EXTVLCOPT:http-referrer=https://dasfootball.com/borussia-monchengladbach-vs-fsv-mainz-05-highlights-2026-09-19/
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Bayern Munich - Union Berlin: 7 bàn mãn nhãn, rực rỡ Kane - Olise (Bundesliga) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/6eayByS1yM2UOjm_1789835352.mp4
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/cp_special_bundesliga-1789766322-bay-uni-h2_720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Brighton vs Arsenal
-#EXTVLCOPT:http-referrer=https://dasfootball.com/brighton-vs-arsenal-highlights-2026-09-19/
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Brentford - Chelsea: Thảm họa phòng ngự, choáng váng 3 bàn (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/7IsP9B1ZFzgHePi_1789835673.mp4
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/cp_special_nha_fpt-1789766546-brentford_chelsea_720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Celta Vigo vs Racing Santander
-#EXTVLCOPT:http-referrer=https://dasfootball.com/celta-vigo-vs-racing-santander-highlights-2026-09-19/
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Brighton - Arsenal: Choáng váng 3 bàn, nhấn chìm "Pháo thủ" (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/oQ0vnWHKvCvABCU_1789845091.mp4
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/cp_special_nha_fpt-1789836815-brighton_arsenal_fpt_720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Eintracht Frankfurt vs SC Freiburg
-#EXTVLCOPT:http-referrer=https://dasfootball.com/eintracht-frankfurt-vs-sc-freiburg-highlights-2026-09-19/
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Harry Kane ghi 100 bàn nhanh nhất Bundesliga, vẫn kém Ronaldo thời đỉnh cao
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/vyohrVVEWL6iL9A_1789834950.mp4
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Everton vs Ipswich
-#EXTVLCOPT:http-referrer=https://dasfootball.com/everton-vs-ipswich-highlights-2026-09-19/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/RSdXKO0cTR27cAr_1789839937.mp4
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Hamburger SV vs 1. FC Köln
-#EXTVLCOPT:http-referrer=https://dasfootball.com/hamburger-sv-vs-1-fc-koln-highlights-2026-09-19/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/cVmFyC5K7xrxd4M_1789835303.mp4
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/1789809596-kane_720p.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",MON vs SAS, ngày 19/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://media.sportits.com/users/BWJxboqNegwO/E9EUVSlDZFU7nVG_1789766523.mp4
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Newcastle vs Hull City
-#EXTVLCOPT:http-referrer=https://dasfootball.com/newcastle-vs-hull-city-highlights-2026-09-19/
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Newcastle - Hull City: Giải mã hiện tượng thành công (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/ld8DoS0O5FTsXvd_1789839937.mp4
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/cp_special_nha_fpt-1789835558-newcastle_hullcity_fpt_720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Nottingham Forest vs Coventry
-#EXTVLCOPT:http-referrer=https://dasfootball.com/nottingham-forest-vs-coventry-highlights-2026-09-19/
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Tottenham - Aston Villa: Rượt đuổi 5 bàn, Jackson - Manzambi rực rỡ (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/qsa5kd.mp4?Expires=1790106746975&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=G60KQk6AdKHd8ONqEUIqgi47fgG053tN3oZOUGW1Fuc3z20-9~IOI04gpo-hKRii2Voj7KV6tQVYisDXL28eguNFLxQ2o7KK2DL0Y6zANxqrVo5~xXTucVw74CquHZZB4M6sCMqWYWTNVu46uGgRk22JXWBeqr0yMkF22faVv~pEgsIuDvNufYWxoVKaxbHv0UorLB0OMoeX5wgU3M3m4-bItcQ~usC3J1hw9Vy0pD54NQNV8yQcQs4Ps2fecOh51LEXIWOEgt3x7OWsk95b7DqLZFO~AFtS~W-CVP~Sr1JEYNTpGvtsExZs1Gkq1dROSEMbZ7HVoNis7KUBgg6JxQ__
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Sevilla vs Barcelona
-#EXTVLCOPT:http-referrer=https://dasfootball.com/sevilla-vs-barcelona-highlights-2026-09-19/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/XNJNsy9gDngNJU9_1789852954.webm
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Tottenham vs Aston Villa
-#EXTVLCOPT:http-referrer=https://dasfootball.com/tottenham-vs-aston-villa-highlights-2026-09-19/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/PlKsN644l46T809_1789827631.mp4
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Udinese vs Cagliari
-#EXTVLCOPT:http-referrer=https://dasfootball.com/udinese-vs-cagliari-highlights-2026-09-19/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/cx9em0.mp4?Expires=1790092214218&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=cD-x0DP2zc9gkNYtHSJtKG7Ld4zZeCphpgze6Q5YdtEnlXc40uwBiTq2bUFh1qIyIZtoQqxGqzJY5Hw~S2ZhxSNAGhU2S9TofiycpEwr9H4E0wFki1yAM22yGxgo781LaXk8AyraC~e4eS6A6Goirvx3eR5sY6ZT8cRIcg6DhUGiXCDMuV1sHkVtwGeED9so3L-q7dVCnk8sUReD-t0fFXitWlbbyakyTlxE7CkT-9c3GxQmn4n87ohtVpS-6IIcuncRdxVzbi51bo--vujXii5rwpZU5kEq04N34oMpj3Eke08eed~Z5-IgaE1xJtzNu21pHiMgqCMPGLq4gGTSEg__
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Venezia vs Lazio
-#EXTVLCOPT:http-referrer=https://dasfootball.com/venezia-vs-lazio-highlights-2026-09-19/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/1a50fo.mp4?Expires=1790117340708&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=Oj1vj9tJHM-ygx8XrZp3oOtxq8OoMK2GuGjB~NjUvpYIWBaGmNq5GsaYxBC8dOjaQ4DfrJMHdWV9~mP01eXoyn9YRVscSB0X4KDJH54nLtKtamocogFuqSMHpP9xsdBqcw3ggZ9ujLDOdNBa5BJJk9BngwF85slXrApjZOeEH~BcpMd4RCyPDcfy5UKr8FZEa0Rr4947L2uIfpWsOu77Sg4qPgMd4YRL7lcrwokPI9HJG6VmaOiz~pA33ikvs7DjT7L~iTxTveCjY3qsBSlyuOwLKF7yEpB3acoLQvu56bgQ-Lzf2O8A8e5USm0-YDH6W2zld1iGvFHDnhCoZcvs4A__
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",VfB Stuttgart vs Borussia Dortmund
-#EXTVLCOPT:http-referrer=https://dasfootball.com/vfb-stuttgart-vs-borussia-dortmund-highlights-2026-09-19/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/uO3KekTJfwVJTe8_1789853386.mp4
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Werder Bremen vs FC Augsburg
-#EXTVLCOPT:http-referrer=https://dasfootball.com/werder-bremen-vs-fc-augsburg-highlights-2026-09-19/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://media.sportits.com/users/BWJxboqNegwO/ITvlUNnNWtj4Igi_1789834951.mp4
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-19/cp_special_nha_fpt-1789828165-tottenham-aston-villa_720p.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",BET vs GET, ngày 18/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
@@ -2097,6 +2233,16 @@ https://cdn.streamain.com/guests/iA53AyrKR8DkpgC_1789677836.mp4
 #EXTVLCOPT:http-referrer=https://supersport.com/football/video/dfa7bcb1-4dc4-445f-a412-7dae16f1d2d3/besiktas-v-marseille-match-highlights-uefa-europa-league
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://vod.supersport.com/2019/SOC_170926_UEL_BESVMAR_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Besiktas – Marseille: Thảm bại tại Istanbul (Europa League) [Hiệp 1 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-18/cp_special_c1_ban_quyen-1789686653-besiktas_marseille1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Besiktas – Marseille: Thảm bại tại Istanbul (Europa League) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-18/cp_special_c1_ban_quyen-1789686653-besiktas_marseille2_720p.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",CEL vs FER, ngày 18/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
@@ -2158,6 +2304,16 @@ https://vod.supersport.com/2019/SOC_170926_UEL_VPVSG_HD5_500K.mp4.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.streamain.com/users/BWJxboqNegwO/usLMlony7OwiJf9_1789683194.mp4
 
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Real Betis – Getafe: Vỡ òa phút 45, cay đắng thẻ đỏ (La Liga) [Hiệp 1 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-18/cp_special_laliga-1789676854-bes-get-h1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Real Betis – Getafe: Vỡ òa phút 45, cay đắng thẻ đỏ (La Liga) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-18/cp_special_laliga-1789676854-bes-get-h2_720p.m3u8
+
 #EXTINF:-1 tvg-logo="https://supersport.com/media/xhhge0gc/soc_170926_uel_rsovbou_hd5.png" group-title="Highlight",Sociedad v Bournemouth | Match Highlights | UEFA Europa League
 #EXTVLCOPT:http-referrer=https://supersport.com/football/video/4adc6c4c-9982-4124-b76e-9478901c4502/sociedad-v-bournemouth-match-highlights-uefa-europa-league
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2198,16 +2354,6 @@ https://cdn-cf-east.streamable.com/video/mp4/hom4q9.mp4?Expires=1789857420&Signa
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://hugh.cdn.rumble.cloud/video/fwe2/c2/s8/2/q/I/J/Y/qIJYA.haa.tar?r_file=chunklist.m3u8&r_type=application%2Fvnd.apple.mpegurl&r_range=267109376-267114611
 
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/aXpoh3_gzuw/hqdefault.jpg" group-title="Highlight",Celtic vs Ferencvarosi TC
-#EXTVLCOPT:http-referrer=https://dasfootball.com/celtic-vs-ferencvarosi-tc-highlights-2026-09-17/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.streamain.com/users/BWJxboqNegwO/jR8QSBOhNgVrfNR_1789683189.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/E1e0wQEIwxs/hqdefault.jpg" group-title="Highlight",Crystal Palace vs Lech Poznan
-#EXTVLCOPT:http-referrer=https://dasfootball.com/crystal-palace-vs-lech-poznan-highlights-2026-09-17/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.streamain.com/users/BWJxboqNegwO/bFW6OuMGSkGBFII_1789680286.mp4
-
 #EXTINF:-1 tvg-logo="" group-title="Highlight",DEP vs SEV, ngày 17/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2222,11 +2368,6 @@ https://hugh.cdn.rumble.cloud/video/fwe2/ba/s8/2/A/r/I/Y/ArIYA.haa.tar?r_file=ch
 #EXTVLCOPT:http-referrer=https://dasfootball.com/juventus-vs-nec-nijmegen-highlights-2026-09-17/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.streamain.com/users/BWJxboqNegwO/6i78CHd0TxV05rn_1789683197.mp4
-
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/rASvglNNQ6g/hqdefault.jpg" group-title="Highlight",Levski Sofia vs Red Bull Salzburg
-#EXTVLCOPT:http-referrer=https://dasfootball.com/levski-sofia-vs-red-bull-salzburg-highlights-2026-09-17/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.streamain.com/guests/RQk4lYQ07sRr4gu_1789677827.mp4
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",MUN vs BHA, ngày 17/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
@@ -2247,11 +2388,6 @@ https://hugh.cdn.rumble.cloud/video/fwe2/1b/s8/2/e/G/H/Y/eGHYA.haa.tar?r_file=ch
 #EXTVLCOPT:http-referrer=https://supersport.com/football/video/6e5de0a4-bc18-4f5b-a41f-28194470f645/omonia-v-celta-vigo-match-highlights-uefa-europa-league
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://vod.supersport.com/2019/SOC_160926_UEL_OMOVCDV_HD5_500K.mp4.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/8BiEcPsp1eo/hqdefault.jpg" group-title="Highlight",Real Sociedad vs Bournemouth
-#EXTVLCOPT:http-referrer=https://dasfootball.com/real-sociedad-vs-bournemouth-highlights-2026-09-17/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.streamain.com/users/BWJxboqNegwO/usLMlony7OwiJf9_1789683194.mp4
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",SUN vs AZ, ngày 17/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/

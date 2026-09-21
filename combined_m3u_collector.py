@@ -41,6 +41,7 @@ THETHAOCOBAN_M3U = BASE_DIR / "thethaocoban.m3u"
 VMTTV_VTV_CACHE = BASE_DIR / "vmttv_vtv_cache.json"
 KHANDAIA_CACHE = BASE_DIR / "khandaia_cache.json"
 VSC9_CACHE = BASE_DIR / "vsc9_cache.json"
+H24_HIGHLIGHT_CACHE = BASE_DIR / "h24_highlight_cache.json"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
@@ -320,11 +321,12 @@ FOOTBALLORGIN_HIGHLIGHT_LIMIT = int(os.environ.get("FOOTBALLORGIN_HIGHLIGHT_LIMI
 FOOTBALLORGIN_PAGES = int(os.environ.get("FOOTBALLORGIN_PAGES", "2") or "2")
 FOOTBALLORGIN_PAGE_SIZE = int(os.environ.get("FOOTBALLORGIN_PAGE_SIZE", "30") or "30")
 H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
-H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "2") or "2")
-H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "120") or "120")
-H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "24") or "24")
-H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "40") or "40")
-H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "4") or "4")
+H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "3") or "3")
+H24_HIGHLIGHT_RETENTION_DAYS = int(os.environ.get("H24_HIGHLIGHT_RETENTION_DAYS", "4") or "4")
+H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "260") or "260")
+H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "32") or "32")
+H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "80") or "80")
+H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "8") or "8")
 H24_SITEMAP_LIMIT = int(os.environ.get("H24_SITEMAP_LIMIT", "260") or "260")
 H24_TAKE_ALL_M3U8 = os.environ.get("H24_TAKE_ALL_M3U8", "1").strip().lower() not in {"0", "false", "no"}
 H24_INCLUDE_MP4 = os.environ.get("H24_INCLUDE_MP4", "0").strip().lower() not in {"0", "false", "no"}
@@ -1206,6 +1208,11 @@ def h24_stream_quality_label(url):
 def h24_stream_part_label(url):
     filename = unquote(urlparse(clean_text(url)).path).rsplit("/", 1)[-1].lower()
     match = re.search(r"(?:^|[-_])(?:h|hiep|hiệp|part|phan|phần)[-_]?([12])(?:[-_.]|$)", filename)
+    if match:
+        return f"Hiệp {match.group(1)}"
+    # 24h also uses compact names such as marseille_psg1.m3u8 and
+    # marseille_psg2_720p.m3u8 for the two halves.
+    match = re.search(r"(?<=[a-z])([12])(?:_(?:2160|1080|720|576|480|360)p?)?\.m3u8$", filename)
     if match:
         return f"Hiệp {match.group(1)}"
     return ""
@@ -7027,6 +7034,67 @@ def extract_h24_m3u8_urls(html_text):
     return [url for url in extract_h24_media_urls(html_text) if is_hls_url(url)]
 
 
+def load_h24_highlight_cache():
+    try:
+        payload = json.loads(H24_HIGHLIGHT_CACHE.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    rows = payload.get("channels") if isinstance(payload, dict) else None
+    if not isinstance(rows, list):
+        return []
+    today = datetime.now(TZ_VN).date()
+    channels = []
+    for row in rows:
+        if not isinstance(row, dict) or not is_valid_highlight_url(row.get("stream_url")):
+            continue
+        first_seen = parse_iso_to_ict_date(row.get("first_seen"))
+        if not first_seen:
+            continue
+        if today >= first_seen + timedelta(days=max(1, H24_HIGHLIGHT_RETENTION_DAYS)):
+            continue
+        channel = {field: row.get(field, "") for field in SOURCE_CACHE_FIELDS}
+        channel["source"] = "24hHighlight"
+        channel["group"] = "Highlight | 24h"
+        channel["first_seen"] = first_seen.isoformat()
+        channels.append(channel)
+    return channels
+
+
+def merge_and_save_h24_highlight_cache(fresh_channels):
+    today = datetime.now(TZ_VN).date()
+    cached_channels = load_h24_highlight_cache()
+    cached_by_url = {
+        h24_variant_family_key(channel.get("stream_url")): channel
+        for channel in cached_channels
+        if h24_variant_family_key(channel.get("stream_url"))
+    }
+    merged = []
+    seen = set()
+    for channel in list(fresh_channels) + cached_channels:
+        family_key = h24_variant_family_key(channel.get("stream_url"))
+        if not family_key or family_key in seen:
+            continue
+        seen.add(family_key)
+        previous = cached_by_url.get(family_key)
+        channel = dict(channel)
+        channel["first_seen"] = clean_text((previous or {}).get("first_seen")) or today.isoformat()
+        merged.append(channel)
+
+    rows = []
+    for channel in merged:
+        row = {field: channel.get(field, "") for field in SOURCE_CACHE_FIELDS}
+        for field in ("event_date", "event_datetime"):
+            if hasattr(row.get(field), "isoformat"):
+                row[field] = row[field].isoformat()
+        row["first_seen"] = channel.get("first_seen") or today.isoformat()
+        rows.append(row)
+    payload = {"updated": now_ict(), "retention_days": H24_HIGHLIGHT_RETENTION_DAYS, "channels": rows}
+    temporary_path = H24_HIGHLIGHT_CACHE.with_suffix(H24_HIGHLIGHT_CACHE.suffix + ".tmp")
+    temporary_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    temporary_path.replace(H24_HIGHLIGHT_CACHE)
+    return merged
+
+
 def collect_24h_highlights():
     source = "24hHighlight"
     base_url = H24_BASE_URL.rstrip("/") + "/"
@@ -7235,8 +7303,12 @@ def collect_24h_highlights():
                 continue
 
     deduped_channels = dedupe_h24_highlight_channels(channels)
-    log(f"[{source}] {len(channels)} raw links, {len(deduped_channels)} after highlight dedupe")
-    return deduped_channels
+    retained_channels = merge_and_save_h24_highlight_cache(deduped_channels)
+    log(
+        f"[{source}] {len(channels)} raw links, {len(deduped_channels)} fresh after dedupe, "
+        f"{len(retained_channels)} after {H24_HIGHLIGHT_RETENTION_DAYS}-day cache"
+    )
+    return retained_channels
 
 
 def bongdaplus_headers(referer=None):
