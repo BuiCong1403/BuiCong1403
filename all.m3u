@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-09-22 14:07 ICT
-# Total   : 532
+# Updated : 2026-09-22 14:37 ICT
+# Total   : 440
 
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/1.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -110,16 +110,6 @@ https://live.fptplay53.net/live/media/su-kien-04/hls_avc_v6/index.m3u8
 #EXTINF:-1 group-title="MyTVFPTEvents" tvg-logo="https://images.fptplay53.net/media/home_event/OTT/2026/01/27/slider_1769494261646.jpg", Sự Kiện 6
 https://live.fptplay53.net/live/media/su-kien-06/hls_avc_v6/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/IUYV_ZAMxDdabQPzSpTJtg_96x96.png" group-title="Giờ Vàng TV",[12:00] U23 Việt Nam vs U23 Uzbekistan | Súp [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1790016476_hd/1790016476_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/IUYV_ZAMxDdabQPzSpTJtg_96x96.png" group-title="Giờ Vàng TV",[12:00] U23 Việt Nam vs U23 Uzbekistan | Súp [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1790016476_hd/1790016476_hd@720p.m3u8
-
 #EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/vi/thumb/1/14/2026_Asian_Games_logo.png/250px-2026_Asian_Games_logo.png?utm_source=vi.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" group-title="Giờ Vàng TV",[14:00] ASIAD 2026 vs ASIAD 2026 | BLV Túi Mù [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -129,16 +119,6 @@ https://eqr2hdarxfliv.vcdn.cloud/1789838904_hd/1789838904_hd@720p.m3u8
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://eqr2hdarxfliv.vcdn.cloud/1789838904_hd/1789838904_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/80f4ac7926dcf255ec6d32d271755d1a.png" group-title="Giờ Vàng TV",[14:00] South Korea (W) vs Chinese Taipei (W) | Chồn [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1790059256_hd/1790059256_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/80f4ac7926dcf255ec6d32d271755d1a.png" group-title="Giờ Vàng TV",[14:00] South Korea (W) vs Chinese Taipei (W) | Chồn [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://eqr2hdarxfliv.vcdn.cloud/1790059256_hd/1790059256_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://ssl.gstatic.com/onebox/media/sports/logos/optimized/aEBU_ri8U6F06oTqWmKY5g_96x96.png" group-title="Giờ Vàng TV",[14:00] Thái Lan vs Hàn Quốc | Cận [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -429,221 +409,17 @@ https://wtyi0525.edgemaxcdn.org/live/x68-sd-1111/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Sao Kê TV",SaoKeTV X83 Hd 1111
 https://wtyi0525.edgemaxcdn.org/live/x83-hd-1111/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/c0feb353183dd42f3e291fa31fe14b24.png!w80" group-title="CoLaTV",16:00 | RTC FC vs FC Tsirang | BLV
-https://live05.meung.app/live/16226575_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/80aa7ed27d9b9efbe7ac8b3d6e3798ef.png!w80" group-title="CoLaTV",16:30 | Brisbane Bullets vs New Zealand Breakers | BLV
-https://live05.meung.app/live/90865415_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/6581bc34692022be4c21d98778e33df0.png!w80" group-title="CoLaTV",17:00 | Hàn Quốc U23 vs Ả Rập Saudi U23 | BLV
-https://live05.meung.app/live/59444581_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e7f496f594add2954bb58b2132e1e788.png!w80" group-title="CoLaTV",18:00 | Santa Clara U23 vs CLB U23 Portimonense | BLV
-https://live05.meung.app/live/07808742_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/fb1060fc304744d0b50e6a180fbc98c2.png!w80" group-title="CoLaTV",19:30 | Sài Gòn Heat vs Hanoi buffalo | BLV
-https://live05.meung.app/live/82054853_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/4b49d2a284ebe78ab1b7351a8266831d.png!w80" group-title="CoLaTV",21:30 | CLB ACS Dumbravita vs Scolar Resita | BLV
-https://live05.meung.app/live/14707124_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/0c59a7ee212419337f22448dca90fc6e.png!w80" group-title="CoLaTV",21:40 | Al Hamriyah vs Al Thaid | BLV
-https://live05.meung.app/live/07428422_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/3a7818eef1409f72ed0f908a61ff0e64.png!w80" group-title="CoLaTV",21:40 | CLB Al Oruba vs Câu lạc bộ thành phố | BLV
-https://live05.meung.app/live/18812304_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/1bc0fd978020f45e17121bea39c340e6.png!w80" group-title="CoLaTV",21:40 | Dibba Al Fujairah vs Al Ittifaq Dubai | BLV
-https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/db990f93b11b13eda3dda4fc992ed9b2.png!w80" group-title="CoLaTV",22:00 | Al Bidda vs Al Shamal | BLV
-https://live05.meung.app/live/82054853_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/d48bf087cac6d7c3f62fb7c8d55f89b5.png!w80" group-title="CoLaTV",23:00 | Học viện Viseu U23 vs Estoril U23 | BLV
-https://live05.meung.app/live/75915087_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/57ec3afbec462319117d3d7f90f746db.png!w80" group-title="CoLaTV",23:45 | CLB nữ Bayern Munchen vs Manchester City Nữ | BLV
-https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/ece43223dd5ca95c06190d491a8238e1.png!w80" group-title="CoLaTV",23:45 | Inter Nữ vs Hacken Nữ | BLV
-https://live05.meung.app/live/90865415_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/47851b271a18f90c37a6ef34e2bc7e80.png!w80" group-title="CoLaTV",00:15 | Al Mesaimeer vs CLB Al Wabb | BLV
-https://live05.meung.app/live/99121525_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7be6ca7a6560eec3b2f6da5c6e0a40f7.png!w80" group-title="CoLaTV",00:15 | Al Muaidar vs Al Khor | BLV
-https://live05.meung.app/live/14707124_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/b61190e348449a746ef3f802e7ebc701.png!w80" group-title="CoLaTV",02:00 | Arsenal Nữ vs Koge Nữ | BLV
-https://live05.meung.app/live/08552895_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/d7e0dd2c30416452115958332ba7c4ee.png!w80" group-title="CoLaTV",02:00 | Juventus Nữ vs CF Benfica Nữ | BLV
-https://live05.meung.app/live/97885009_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/be7fe57ffae201d4d8e1f8a8bf33232f.png!w80" group-title="CoLaTV",02:00 | Real Madrid Nữ vs Paris Saint Germain nữ | BLV
-https://live05.meung.app/live/33982309_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/6eef3985d6a6d69a6e5374e27b13b35f.png!w80" group-title="CoLaTV",06:00 | Medellin Independiente vs Jaguares de Cordoba | BLV
-https://live05.meung.app/live/07808742_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7a8bb950293508aeb3199de3c45dd418.png!w80" group-title="CoLaTV",06:30 | A. Italiano vs Colo Colo | BLV
-https://live05.meung.app/live/16226575_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/dfef59103668b52788e357e8ac07e9ef.png!w80" group-title="CoLaTV",06:30 | Cobreloa vs Coquimbo Unido | BLV
-https://live05.meung.app/live/75748097_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/f619a41699e34ed5b9c8047ecb688ca3.png!w80" group-title="CoLaTV",06:30 | Washington Mystics vs Connecticut Sun | BLV
-https://live05.meung.app/live/82054853_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/81e9f1f9d6393fd128c6c014783d9fa2.png!w80" group-title="CoLaTV",07:00 | Indiana Fever vs Minnesota Lynx | BLV
-https://live05.meung.app/live/19919577_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/3e5d2a8571f005656c62c1b0bdbaae03.png!w80" group-title="CoLaTV",08:00 | CLB Santa Fe vs CLB Deportivo Cali | BLV
-https://live05.meung.app/live/78905744_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/ce8ab1125fdb3fdbd8c09dba8c437c49.png!w80" group-title="CoLaTV",09:00 | Las Vegas Aces vs Los Angeles Sparks | BLV
-https://live05.meung.app/live/87379114_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/43b63f097099b8178eba0e6f9388cabc.png!w80" group-title="CoLaTV",09:00 | Portland Fire vs Golden State Valkyries | BLV
-https://live05.meung.app/live/90865415_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/56de534cf589f6d0ca09630db803ba00.png!w80" group-title="CoLaTV",12:30 | Iran U23 vs Triều Tiên U23 | BLV
-https://live05.meung.app/live/16226575_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e51f03da53b2f36fc922a7ce18a07476.png!w80" group-title="CoLaTV",12:30 | Trung Quốc U23 vs United Arab Emirates U23 | BLV
-https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/91008a96b5de8c75376d17057f89890e.png!w80" group-title="CoLaTV",15:00 | Gamba Osaka vs Tokushima | BLV
-https://live05.meung.app/live/02456966_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/90ca524b1b1c17911b1bf8e425c8d96d.png!w80" group-title="CoLaTV",15:00 | Kashima Antlers vs CLB Ventforet | BLV
-https://live05.meung.app/live/59444581_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/d272859d78eb8ca7a14753f4293fbf45.png!w80" group-title="CoLaTV",15:00 | Kashiwa Reysol vs Imabari | BLV
-https://live05.meung.app/live/18812304_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7d6fa50ea67cde7d66612a8189897ba5.png!w80" group-title="CoLaTV",15:00 | Kyoto Sanga vs Fujieda MYFC | BLV
-https://live05.meung.app/live/14707124_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/539c489a7bd94dd9d785308fd0f0a6b9.png!w80" group-title="CoLaTV",15:00 | Machida vs Thành phố Tochigi | BLV
-https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/d85cce27ab583e5b3cead155f02b098a.png!w80" group-title="CoLaTV",15:00 | Vissel Kobe vs Sagan Tosu | BLV
-https://live05.meung.app/live/97885009_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/2f4677e5f2089fb794a968f25c2dcb3a.png!w80" group-title="CoLaTV",16:30 | Cairns Taipans vs Tasmania JackNgười Nhảy | BLV
-https://live05.meung.app/live/82054853_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/2053816a7f21edb8c302ed31b0bafa1f.png!w80" group-title="CoLaTV",17:30 | Kyrgyzstan U23 vs Hồng Kông U23 | BLV
-https://live05.meung.app/live/33982309_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/0437356503a22e50b9e8aa76145c7f71.png!w80" group-title="CoLaTV",17:30 | Nhật Bản U23 vs Thái Lan U23 | BLV
-https://live05.meung.app/live/08552895_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/0437356503a22e50b9e8aa76145c7f71.png!w80" group-title="CoLaTV",17:30 | Nhật Bản U23 vs Thái Lan U23 | BLV
-https://live05.meung.app/live/87379114_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/25399874c890dd346ebde00e3c2bcb7b.png!w80" group-title="CoLaTV",19:00 | Thành phố Thimphu vs Vận tải United FC | BLV
-https://live05.meung.app/live/19919577_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/cc40d06ff0a16a793d066dbfa2917bab.png!w80" group-title="CoLaTV",21:30 | Iraq vs Oman | BLV
-https://live05.meung.app/live/02456966_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/cc40d06ff0a16a793d066dbfa2917bab.png!w80" group-title="CoLaTV",21:30 | Iraq vs Oman | BLV
-https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/2e9bde26cf048df24ea728613202a5ab.png!w80" group-title="CoLaTV",22:00 | Liberec Nữ vs Rosenborg Nữ | BLV
-https://live05.meung.app/live/59444581_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/c3c17ec375bc22a7138c863ee91a3858.png!w80" group-title="CoLaTV",23:00 | Birmingham vs Brooklyn FC | BLV
-https://live05.meung.app/live/87547578_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/f51b354e3da1bdfe077b6bb931b635af.png!w80" group-title="CoLaTV",23:00 | Breidablik Nữ vs Clb nữ Czarni Sosnowiec | BLV
-https://live05.meung.app/live/75748097_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/00e20bbdad428c6374ba047e0de5d8a6.png!w80" group-title="CoLaTV",23:45 | Leuven Nữ vs AS Roma Nữ | BLV
-https://live05.meung.app/live/07808742_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/be5c66e50a48d9ae3c4132aa1a3b3a32.png!w80" group-title="CoLaTV",23:45 | Servette Geneve FC Nữ vs CLB nữ Lyon | BLV
-https://live05.meung.app/live/18812304_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/03645e9c1d7fd2c48705622f52fd901e.png!w80" group-title="CoLaTV",00:00 | Wolfsburg Nữ vs Sturm Graz Nữ | BLV
-https://live05.meung.app/live/16226575_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/38df6d203692a88362c9d3d7ac2a9bb4.png!w80" group-title="CoLaTV",00:30 | Ajax Nữ vs Aktobe W | BLV
-https://live05.meung.app/live/75748097_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/cf372cbe6eae54c6a6dfb3ebbcdc3404.png!w80" group-title="CoLaTV",01:00 | Ả Rập Saudi vs Kuwait | BLV
-https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/cf372cbe6eae54c6a6dfb3ebbcdc3404.png!w80" group-title="CoLaTV",01:00 | Ả Rập Saudi vs Kuwait | BLV
-https://live05.meung.app/live/33982309_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/b65ee16a9cfe056825b1e0c15c05cf54.png!w80" group-title="CoLaTV",02:00 | Barcelona Nữ vs Paris FC Nữ | BLV
-https://live05.meung.app/live/07808742_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e9e2307866d939fc857fb0a31fa89bd7.png!w80" group-title="CoLaTV",02:00 | Chelsea Nữ vs Áo Vienna phụ nữ | BLV
-https://live05.meung.app/live/14707124_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/ecf98fe0ded24137ee350b11f20a390c.png!w80" group-title="CoLaTV",04:00 | Curico Unido vs D. Concepcion | BLV
-https://live05.meung.app/live/87547578_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/c57dd461eb278005d2f1efc2c0cb720f.png!w80" group-title="CoLaTV",06:30 | Municipal Iquique vs Antofagasta | BLV
-https://live05.meung.app/live/75748097_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/f9b2e922f6ca83c14def96049ccbfe42.png!w80" group-title="CoLaTV",06:30 | Union La Calera vs U. Catolica | BLV
-https://live05.meung.app/live/78905744_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/67cf5b4cfacab3792d2fde73e0af4ac0.png!w80" group-title="CoLaTV",07:00 | New York Liberty vs Atlanta Dream | BLV
-https://live05.meung.app/live/87379114_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/ed6ae7fa894cb5bdbccfd605d1d6ad04.png!w80" group-title="CoLaTV",07:30 | CLB America de Cali vs CLB Aguilas Doradas | BLV
-https://live05.meung.app/live/99121525_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/cef1725baaf3f3be0cb7215c5f39d162.png!w80" group-title="CoLaTV",08:30 | Seattle Sounders vs Real Salt Lake | BLV
-https://live05.meung.app/live/18812304_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/21275a59516956d98aedc00b97faadc4.png!w80" group-title="CoLaTV",09:00 | Seattle Storm vs Dallas Wings | BLV
-https://live05.meung.app/live/19919577_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/e94f441698752284a7b2f6c37ea3aee6.png!w80" group-title="CoLaTV",12:00 | Wonju Dongbu Promy vs Seoul Samsung Thunders | BLV
-https://live05.meung.app/live/82054853_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/ac3f493742d14eee1e4e4ae00f2704f6.png!w80" group-title="CoLaTV",16:00 | Lào vs Brunei | BLV
-https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/ac3f493742d14eee1e4e4ae00f2704f6.png!w80" group-title="CoLaTV",16:00 | Lào vs Brunei | BLV
-https://live05.meung.app/live/87547578_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/fb957ad093d309e8c337aeb83ebe7857.png!w80" group-title="CoLaTV",16:30 | South East Melbourne vs Melbourne Tigers | BLV
-https://live05.meung.app/live/82054853_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/b967348890e26c5ca68f7d26392f5984.png!w80" group-title="CoLaTV",18:30 | Perth Wildcats vs Adelaide 36ers | BLV
-https://live05.meung.app/live/87379114_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/7a2ca0a9a53ae410965c536014cbe3ba.png!w80" group-title="CoLaTV",19:00 | Myanmar vs Đông Timor | BLV
-https://live05.meung.app/live/75748097_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/fb1060fc304744d0b50e6a180fbc98c2.png!w80" group-title="CoLaTV",19:30 | Sài Gòn Heat vs Hanoi buffalo | BLV
-https://live05.meung.app/live/19919577_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/247c0a953f3a082b83443b3dfccedffb.png!w80" group-title="CoLaTV",20:00 | Namibia vs Congo | BLV
-https://live05.meung.app/live/99121525_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/1b141c19b8516ff9a26065d66ecd7146.png!w80" group-title="CoLaTV",22:55 | United Arab Emirates vs Yemen | BLV
-https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/1b141c19b8516ff9a26065d66ecd7146.png!w80" group-title="CoLaTV",22:55 | United Arab Emirates vs Yemen | BLV
-https://live05.meung.app/live/78905744_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/dcb11155a9184338a8b2f7c090ead5bf.png" group-title="BiaomTV",[12:00-22/09] Chongqing Youth Training U15 vs Pingyao No. 1 Middle School U15 [OCA Asian Games] [HLS]
-https://lilive1.eu.cc/live/9977eccdec00429b12ba4e3b09ab97c4/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/b6303fe60c0094702179e08d6d27a798.png" group-title="BiaomTV",[12:00-22/09] Vietnam U23 vs Uzbekistan U23 [OCA Asian Games] [HLS]
-https://lilive1.eu.cc/live/b37b5453edb0a03b45cbf32215f369fe/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/vietnam-u23-131092" group-title="BiaomTV",[12:00-22/09] Việt Nam U23 vs Uzbekistan U23 [Asiad] [HLS]
 https://cdnhls.xbdbotv.live/live/MTk4NzAyMzE6YThsY2E2YTk4dWpna3Q2bXcydDZwYXRxOmtscjR6OWl6ZGcxN3kwcXJ4ZjN4c3N5eA/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/f5f753bd4daa2a854303b9d81e6b5495.png" group-title="BiaomTV",[13:45-22/09] Qingdao West Coast U20 vs Liaoning Tieren U20 [Chinese Football Assorciation U-20 League] [HLS]
+https://lilive1.eu.cc/live/3715bd2d8cc3bb73c1d791c4e53c537a/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/8564e1f261df4938fcd36dc76778583a.png" group-title="BiaomTV",[14:00-22/09] Ningbo FC U20 vs Jiangxi Lushan U20 [Chinese Football Assorciation U-20 League] [HLS]
+https://lilive1.eu.cc/live/04fa5ed184814951508389ebe74bdc36/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/c775279e24faa6c69aef87854fd9e410.png" group-title="BiaomTV",[14:00-22/09] Qingdao Hainiu U20 vs Yunnan Yukun U20 [Chinese Football Assorciation U-20 League] [HLS]
+https://lilive1.eu.cc/live/c52fd343982b83717066d5e75743e0aa/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/d599aa3859d718fba11f6c8eed462b56.png" group-title="BiaomTV",[14:00-22/09] Wenzhou Yincai U20 vs Nantong Zhiyun U20 [Chinese Football Assorciation U-20 League] [HLS]
 https://lilive1.eu.cc/live/1a77a601dc961dabeee6fbd32b91ec40/playlist.m3u8
@@ -651,7 +427,7 @@ https://lilive1.eu.cc/live/1a77a601dc961dabeee6fbd32b91ec40/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/a1720c2c71924ee8d48baae2c9411fee.png" group-title="BiaomTV",[14:30-22/09] Lanzhou Longyuan Athletic U20 vs Shijiazhuang Gongfu U20 [Chinese Football Assorciation U-20 League] [HLS]
 https://lilive1.eu.cc/live/ca980159989b7fcd53217128c01f7601/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/c0feb353183dd42f3e291fa31fe14b24.png" group-title="BiaomTV",[15:30-22/09] RTC FC vs Tsirang FC [Bhutan Premier League] [HLS]
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/c0feb353183dd42f3e291fa31fe14b24.png" group-title="BiaomTV",[16:00-22/09] RTC FC vs Tsirang FC [Bhutan Premier League] [HLS]
 https://lilive1.eu.cc/live/e59245b4e4892a632147c297ad85050a/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/korea-republic-u23-63315" group-title="BiaomTV",[17:00-22/09] Hàn Quốc U23 vs Ả Rập Xê Út U23 [Asiad] [HLS]
@@ -674,9 +450,6 @@ https://cdnhls.xbdbotv.live/live/MTk4Nzk0ODg6YThsY2E2YTk4dWpna3Q2bXcydDZwYXRxOm5
 
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/real-madrid-w-250321" group-title="BiaomTV",[02:00-23/09] Real Madrid W vs Paris SG W [C1 Châu Âu (Nữ)] [HLS]
 https://cdnhls.xbdbotv.live/live/MTk4Nzk1NDA6aGY1ODc5dDVoeXprdGJiajd3azBucmU2OnF0dnFmZ2l1dGk4ZjJyZTh2MHZrNzBkMg/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/b0840e627bd6883501e0ef0522b10539.png" group-title="BiaomTV",Philippines U23 vs Kuwait U23 [OCA Asian Games] [HLS]
-https://lilive1.eu.cc/live/b585ecc4d64e526b39052bc3927c4eef/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://media.chuoichientv.net/media/uploads/20250623_134249_74d9edd1.png" group-title="Bong Lau TV",[14h00] South Korea vs Thailand | BLV: Chuối Kem [FHD]
 #EXTVLCOPT:http-referrer=https://lau03.bonglautv1.org/
@@ -1398,55 +1171,30 @@ http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=1562512&exte
 #EXTVLCOPT:http-header=Authorization: Bearer 020A3E839CE18C38F329B77D5B2CCD7D
 http://204.52.191.254:80/play/live.php?mac=00:1A:79:C1:AF:02&stream=641220&extension=ts&play_token=pn3nksdeU2
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Alvark vs Ryukyu vào lúc 12:00 22/09/2026 | BLV 558264
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/alvark-vs-ryukyu-22-09-2026/?blv=558264
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=1a08e9695cf64ea8606d029cea630d9a&txTime=6ab27cc3
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Philippines U23 vs Kuwait U23 vào lúc 12:00 22/09/2026 | BLV 187579
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/philippines-u23-vs-kuwait-u23-22-09-2026/?blv=187579
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1790063688-0-0-b65b81e7e9f113526686b85649b08114
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Philippines U23 vs Kuwait U23 vào lúc 12:00 22/09/2026 | BLV 595335
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/philippines-u23-vs-kuwait-u23-22-09-2026/?blv=595335
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1790063594-0-0-17cacfdf70363c58e54ced5228a7f8b3
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Batang Kankaloo vs Zamboanga Sikat vào lúc 14:00 22/09/2026 | BLV 428392
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/batang-kankaloo-vs-zamboanga-sikat-22-09-2026/?blv=428392
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1790064183-0-0-ea74218cc41d0bd2a8681127cc90e18a
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea W vs Chinese Taipei W vào lúc 14:00 22/09/2026 | BLV 168964
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/south-korea-w-vs-chinese-taipei-w-22-09-2026/?blv=168964
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1790064183-0-0-52949b79b4d460321df85489192e81d9
+https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1790065983-0-0-a2920b0b8473171adb1a58f6d0840540
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea W vs Chinese Taipei W vào lúc 14:00 22/09/2026 | BLV 515530
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/south-korea-w-vs-chinese-taipei-w-22-09-2026/?blv=515530
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1790064183-0-0-48971c2ed4754f014d8b74cd9b820e22
+https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1790065983-0-0-aa17683560d1e4dd5afae89479afad11
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Rytas vs RSSB Tigers vào lúc 14:30 22/09/2026 | BLV 356042
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/rytas-vs-rssb-tigers-22-09-2026/?blv=356042
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-356042_lhd.m3u8?txSecret=d8eb5a089da57e3c9272d818e3c4ebbd&txTime=6ab26a7d
+https://pull.niur.live/live/stream-356042_lhd.m3u8?txSecret=a0ae28a62211f6e0a0ffb88a7be8deb9&txTime=6ab2838f
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",RTC FC vs Tsirang FC vào lúc 16:00 22/09/2026 | BLV 235232
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/rtc-fc-vs-tsirang-fc-22-09-2026/?blv=235232
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1790006977-0-0-762f203e4338181dc13377c279927cff
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",RTC FC vs Tsirang FC vào lúc 16:00 22/09/2026 | BLV 304148
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/rtc-fc-vs-tsirang-fc-22-09-2026/?blv=304148
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Brisbane Bullets vs New Zealand Breakers vào lúc 16:30 22/09/2026 | BLV 168964
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/brisbane-bullets-vs-new-zealand-breakers-22-09-2026/?blv=168964
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-304148_lhd.m3u8?txSecret=a817aeb14ecda5707d65e57cca6cf47c&txTime=6ab1775c
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Brisbane Bullets vs New Zealand Breakers vào lúc 16:30 22/09/2026 | BLV 122591
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/brisbane-bullets-vs-new-zealand-breakers-22-09-2026/?blv=122591
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1790054827-0-0-f62da219aa149f4b2779d0ee83868024
+https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1790066043-0-0-f7a24cc5997e455e8b65015a4b2379b5
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea U23 vs Saudi Arabia U23 vào lúc 17:00 22/09/2026 | BLV 118206
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/south-korea-u23-vs-saudi-arabia-u23-22-09-2026/?blv=118206
@@ -1458,11 +1206,6 @@ https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1790063909-0-0-1f6
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912145_lhd.m3u8?auth_key=1790063646-0-0-2d8647eb6ed23aad6ae395c20c337d9f
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea U23 vs Saudi Arabia U23 vào lúc 17:00 22/09/2026 | BLV 360663
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/south-korea-u23-vs-saudi-arabia-u23-22-09-2026/?blv=360663
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1790064234-0-0-d07a6a0beef0b6af5fae137a153f2e23
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea U23 vs Saudi Arabia U23 vào lúc 17:00 22/09/2026 | BLV 434982
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/south-korea-u23-vs-saudi-arabia-u23-22-09-2026/?blv=434982
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1473,16 +1216,6 @@ https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1790063634-0-0-3ca
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-627718_lhd.m3u8?auth_key=1790063623-0-0-32ed29e5e76a3577ca001ad66b04dc82
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Santa Clara U23 vs Portimonense U23 vào lúc 18:00 22/09/2026 | BLV 256080
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/santa-clara-u23-vs-portimonense-u23-22-09-2026/?blv=256080
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1790048541-0-0-6e678970377bc09f675575e18551ff4d
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Santa Clara U23 vs Portimonense U23 vào lúc 18:00 22/09/2026 | BLV 501412
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/santa-clara-u23-vs-portimonense-u23-22-09-2026/?blv=501412
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=6300e1d229dc7fdc225445ec7f412525&txTime=6ab176fb
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Santa Clara U23 vs Portimonense U23 vào lúc 18:00 22/09/2026 | BLV 552832
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/santa-clara-u23-vs-portimonense-u23-22-09-2026/?blv=552832
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1492,16 +1225,6 @@ https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=24b6dc08556de6bb1ec8
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/santa-clara-u23-vs-portimonense-u23-22-09-2026/?blv=582342
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1790046731-0-0-1fe05375f18071efc570bda1d02832b2
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Saigon Heat vs Hanoi Buffaloes vào lúc 19:30 22/09/2026 | BLV 558264
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/saigon-heat-vs-hanoi-buffaloes-22-09-2026/?blv=558264
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=3560e1732fa22bdeb5bec5e65fc0c206&txTime=6ab27cee
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Mozambique U20 vs Mauritius U20 vào lúc 20:00 22/09/2026 | BLV 618950
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/mozambique-u20-vs-mauritius-u20-22-09-2026/?blv=618950
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-618950_lhd.m3u8?auth_key=1790040305-0-0-6ff46a3c9f0c85465e6f4461bbb79a68
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Mozambique U20 vs Mauritius U20 vào lúc 20:00 22/09/2026 | BLV 619672
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/mozambique-u20-vs-mauritius-u20-22-09-2026/?blv=619672
@@ -1518,11 +1241,6 @@ https://pull.niur.live/live/stream-622093_lhd.m3u8?txSecret=9a79a1e7e39713151bd9
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1790038529-0-0-5cadc943114774c712eea374353830aa
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Namibia U20 vs Seychelles U20 vào lúc 20:00 22/09/2026 | BLV 610518
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/namibia-u20-vs-seychelles-u20-22-09-2026/?blv=610518
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=9e887a0a24a7a83575c57505e8eefd84&txTime=6ab1dff3
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",ACS Dumbravita vs Scolar Resita vào lúc 21:30 22/09/2026 | BLV 291277
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/acs-dumbravita-vs-scolar-resita-22-09-2026/?blv=291277
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1532,6 +1250,11 @@ https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=47732b489ec2fba10b93
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/acs-dumbravita-vs-scolar-resita-22-09-2026/?blv=380460
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1790014772-0-0-9d8273c03e1a801dc21aecb5e22d86d8
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",ACS Dumbravita vs Scolar Resita vào lúc 21:30 22/09/2026 | BLV 501412
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/acs-dumbravita-vs-scolar-resita-22-09-2026/?blv=501412
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=6300e1d229dc7fdc225445ec7f412525&txTime=6ab176fb
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",ACS Dumbravita vs Scolar Resita vào lúc 21:30 22/09/2026 | BLV 557845
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/acs-dumbravita-vs-scolar-resita-22-09-2026/?blv=557845
@@ -1543,21 +1266,6 @@ https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1790024069-0-0-f26
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=e7c9b249e71410a6f5a4c1edc2539d81&txTime=6ab1b6f1
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Orooba(UAE) vs City Club vào lúc 21:40 22/09/2026 | BLV 327159
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-oroobauae-vs-city-club-22-09-2026/?blv=327159
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1790014574-0-0-e676e90647fc8c2799284068e7348b4b
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Orooba(UAE) vs City Club vào lúc 21:40 22/09/2026 | BLV 511367
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-oroobauae-vs-city-club-22-09-2026/?blv=511367
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1790020580-0-0-4de35bfa7d92a2e3ae52388489fc08f9
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Orooba(UAE) vs City Club vào lúc 21:40 22/09/2026 | BLV 607400
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-oroobauae-vs-city-club-22-09-2026/?blv=607400
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=61bbc82fc690a9222eb731a841cd6449&txTime=6ab0f4cb
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Hamriyah vs Al Thaid vào lúc 21:40 22/09/2026 | BLV 589848
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-hamriyah-vs-al-thaid-22-09-2026/?blv=589848
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1567,16 +1275,6 @@ https://pull.niues.live/live/stream-9912133_lhd.m3u8?auth_key=1790024485-0-0-df3
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-hamriyah-vs-al-thaid-22-09-2026/?blv=617313
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1790020286-0-0-3a9fa575f638248d56139c0f17f66454
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Hamriyah vs Al Thaid vào lúc 21:40 22/09/2026 | BLV 625920
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-hamriyah-vs-al-thaid-22-09-2026/?blv=625920
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-625920_lhd.m3u8?auth_key=1790024105-0-0-5732bd09a8d44827d2edc0dacc3c162c
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Dabba Al-Fujairah vs Al-Ittifaq Dubai vào lúc 21:40 22/09/2026 | BLV 321443
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/dabba-al-fujairah-vs-al-ittifaq-dubai-22-09-2026/?blv=321443
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-321443_lhd.m3u8?txSecret=73773197011accc5f15ada6ee1f2d0d2&txTime=6ab23bb5
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Dabba Al-Fujairah vs Al-Ittifaq Dubai vào lúc 21:40 22/09/2026 | BLV 603255
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/dabba-al-fujairah-vs-al-ittifaq-dubai-22-09-2026/?blv=603255
@@ -1593,6 +1291,11 @@ https://pull.niues.live/live/stream-620504_lhd.m3u8?auth_key=1790022526-0-0-6856
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912123_lhd.m3u8?auth_key=1790014021-0-0-50bfb47706dc1f5d78dd5e652e7a4e3a
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Bidda SC vs Al-Shamal SC vào lúc 22:00 22/09/2026 | BLV 304148
+#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-bidda-sc-vs-al-shamal-sc-22-09-2026/?blv=304148
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-304148_lhd.m3u8?txSecret=a817aeb14ecda5707d65e57cca6cf47c&txTime=6ab1775c
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Bidda SC vs Al-Shamal SC vào lúc 22:00 22/09/2026 | BLV 536185
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-bidda-sc-vs-al-shamal-sc-22-09-2026/?blv=536185
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1602,21 +1305,6 @@ https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1790022676-0-0-5c94
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-bidda-sc-vs-al-shamal-sc-22-09-2026/?blv=620661
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912128_lhd.m3u8?auth_key=1790022660-0-0-81fed8f74b82fc64254c0f8cabe711d3
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Bidda SC vs Al-Shamal SC vào lúc 22:00 22/09/2026 | BLV 621843
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/al-bidda-sc-vs-al-shamal-sc-22-09-2026/?blv=621843
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1790024040-0-0-62ad8eab4668b17f1e9e21b4159dbec8
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Academico Viseu U23 vs Estoril U23 vào lúc 23:00 22/09/2026 | BLV 344370
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/academico-viseu-u23-vs-estoril-u23-22-09-2026/?blv=344370
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=933faeb0e161ec297a2d1a3625ab847b&txTime=6ab2160b
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Academico Viseu U23 vs Estoril U23 vào lúc 23:00 22/09/2026 | BLV 400722
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/academico-viseu-u23-vs-estoril-u23-22-09-2026/?blv=400722
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912138_lhd.m3u8?auth_key=1790033418-0-0-ebe385703ef283e5251b7b08f513bf3c
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Academico Viseu U23 vs Estoril U23 vào lúc 23:00 22/09/2026 | BLV 472241
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/academico-viseu-u23-vs-estoril-u23-22-09-2026/?blv=472241
@@ -1630,11 +1318,6 @@ https://pull.niur.live/live/stream-621840_lhd.m3u8?txSecret=c9793b65398d4b446888
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Bayern Munchen Women vs Manchester City Women vào lúc 23:45 22/09/2026 | BLV 109053
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/bayern-munchen-women-vs-manchester-city-women-22-09-2026/?blv=109053
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1789957119-0-0-64e0165939b2a89d337f4bdcb74d98fc
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Bayern Munchen Women vs Manchester City Women vào lúc 23:45 22/09/2026 | BLV 250874
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/bayern-munchen-women-vs-manchester-city-women-22-09-2026/?blv=250874
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1789997274-0-0-c8cdf57190f60355873f83dfbfff7457
 
@@ -1652,11 +1335,6 @@ https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1790038839-0-0-8f3
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/bayern-munchen-women-vs-manchester-city-women-22-09-2026/?blv=620797
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-620797_lhd.m3u8?txSecret=f6a5c0d3ab2f617a03fc97d03b8efcd5&txTime=6ab27a6a
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Bayern Munchen Women vs Manchester City Women vào lúc 23:45 22/09/2026 | BLV 622240
-#EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/bayern-munchen-women-vs-manchester-city-women-22-09-2026/?blv=622240
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1790020560-0-0-6fbacab0e64506d9c84dbd79fc19d450
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Inter Milan Women vs BK Hacken Women vào lúc 23:45 22/09/2026 | BLV 622602
 #EXTVLCOPT:http-referrer=https://vebo-tv.top/truc-tiep/inter-milan-women-vs-bk-hacken-women-22-09-2026/?blv=622602
