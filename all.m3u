@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-09-22 14:37 ICT
-# Total   : 440
+# Updated : 2026-09-22 15:43 ICT
+# Total   : 442
 
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/1.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -1341,10 +1341,20 @@ https://pull.niur.live/live/stream-620797_lhd.m3u8?txSecret=f6a5c0d3ab2f617a03fc
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1790017092-0-0-427bf9d1992396dce6929561949f64df
 
+#EXTINF:-1 tvg-logo="" group-title="Highlight",HLV Trần Quốc Cường và xạ thủ Phí Thanh Thảo nói gì sau vụ bắn súng bị huỷ kết quả
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-22/1790064058-code7_720p.m3u8
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",MU tìm người thay JJ Gabriel: Thần đồng 15 tuổi xô đổ thành tích của Haaland
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-22/1790047708-gabriel_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",U23 Việt Nam - U23 Uzbekistan: Dính 2 đòn đau, khó nhọc ghi danh tứ kết (ASIAD)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-22/1790064866-u23vn_720p.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",ATM vs RMA, ngày 21/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
