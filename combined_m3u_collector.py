@@ -76,12 +76,12 @@ KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.x
 KHANDAIA_INTERNAL_API_BASE = os.environ.get("KHANDAIA_INTERNAL_API", KHANDAIA_FRONTEND_URL).rstrip("/")
 COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
 COLATV_API_URL = os.environ.get("COLATV_API", "https://api.cltvlv.com/api/matches")
-BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv15.com/")
+BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv.pro/")
 BIAOM_SITE_CANDIDATES = [
     value.strip()
     for value in os.environ.get(
         "BIAOM_SITE_CANDIDATES",
-        "https://biaomtv15.com/,https://biaomtv14.com/,https://biaomtv13.com/,https://biaomtv12.com/,https://biaomtv.pro/",
+        "https://biaomtv18.com/,https://biaomtv17.com/,https://biaomtv15.com/,https://biaomtv.pro/",
     ).split(",")
     if value.strip()
 ]
@@ -193,7 +193,11 @@ CHOANG_JSON_URL = os.environ.get(
     "https://raw.githubusercontent.com/jasminliu98/choang-stream/refs/heads/main/output.json",
 )
 CHOANG_REFERER = os.environ.get("CHOANG_REFERER", f"https://{CHOANG_DEFAULT_DOMAIN}/")
-SAOKETV_BASE_URL = os.environ.get("SAOKETV_BASE_URL", "https://vip2.saoketv40.xyz/")
+SAOKETV_BASE_URL = os.environ.get("SAOKETV_BASE_URL", "https://saoketv40.xyz/")
+SAOKETV_DISCOVERY_URL = os.environ.get(
+    "SAOKETV_DISCOVERY_URL",
+    "https://redirect-live.66887979.xyz/v2/redirect?url=saoketv",
+)
 SAOKETV_REFERER = os.environ.get("SAOKETV_REFERER", "https://sk.mediastation.live/")
 SAOKETV_STREAM_URL = os.environ.get(
     "SAOKETV_STREAM_URL",
@@ -1382,6 +1386,8 @@ OMIT_REFERRER_GROUPS = {
     "CO LA TV",
     "Highlight | S8TV",
     "MebongTV",
+    "BiaomTV",
+    "SaoKeTV",
 }
 OMIT_REFERRER_GROUP_KEYS = {compact_text_key(item) for item in OMIT_REFERRER_GROUPS}
 
@@ -1394,6 +1400,8 @@ OMIT_USER_AGENT_GROUPS = {
     "CO LA TV",
     "Highlight | S8TV",
     "MebongTV",
+    "BiaomTV",
+    "SaoKeTV",
 }
 OMIT_USER_AGENT_GROUP_KEYS = {compact_text_key(item) for item in OMIT_USER_AGENT_GROUPS}
 
@@ -3200,12 +3208,16 @@ def collect_biaom():
         }
         log(f"[{source}] Fetch home {candidate}")
         try:
-            html_text = fetch_text(candidate, headers=headers, timeout=20)
+            response = request_get(candidate, headers=headers, timeout=20)
+            if response.status_code != 200:
+                continue
+            html_text = response.text
         except Exception as exc:
             log(f"[{source}] Error {candidate}: {exc}")
             continue
         if html_text:
-            site_url = candidate
+            site_url = clean_text(getattr(response, "url", "") or candidate).rstrip("/") + "/"
+            log(f"[{source}] Active domain {site_url}")
             break
     if not html_text:
         log(f"[{source}] Home not available")
@@ -3213,7 +3225,11 @@ def collect_biaom():
 
     channels = []
     seen_urls = set()
-    for match in re.finditer(r"https?://[^\s'\"<>\\]+?\.m3u8[^\s'\"<>\\]*", html_text):
+    for match in re.finditer(
+        r"https?://[^\s'\"<>\\]+?(?:\.m3u8|\.flv)(?:\?[^\s'\"<>\\]*)?",
+        html_text,
+        re.I,
+    ):
         stream_url = clean_text(decode_json_string(match.group(0)))
         context = html_text[max(0, match.start() - 1600) : match.start()]
         league = biaom_field_from_context(context, "league_title") or biaom_nested_field_from_context(context, "league", "name")
@@ -3237,22 +3253,33 @@ def collect_biaom():
             title_parts.append(f"[{league}]")
         title = " ".join(title_parts) or title_from_stream_url(stream_url, source)
 
-        seen_key = source_stream_seen_key(source, stream_url, title, start_time)
-        if not is_valid_stream_url(stream_url) or seen_key in seen_urls:
-            continue
-        seen_urls.add(seen_key)
-
-        channels.append(
-            {
-                "source": source,
-                "name": title,
-                "group": source,
-                "logo": logo,
-                "stream_url": stream_url,
-                "referer": site_url,
-                "user_agent": UA,
-            }
+        stream_variants = [(stream_url, "FLV" if is_flv_url(stream_url) else "HLS")]
+        hls_match = re.match(
+            r"https?://cdnhls\.xbdbotv\.live/live/([^/?#]+)/index\.m3u8(?:\?[^#]*)?$",
+            stream_url,
+            re.I,
         )
+        if hls_match:
+            stream_variants.append(
+                (f"https://cdnflv.xbdbotv.live/live/{hls_match.group(1)}.flv", "FLV")
+            )
+
+        for variant_url, quality in stream_variants:
+            seen_key = source_stream_seen_key(source, variant_url, title, start_time)
+            if not (is_valid_stream_url(variant_url) or is_flv_url(variant_url)) or seen_key in seen_urls:
+                continue
+            seen_urls.add(seen_key)
+            channels.append(
+                {
+                    "source": source,
+                    "name": f"{title} [{quality}]",
+                    "group": source,
+                    "logo": logo,
+                    "stream_url": variant_url,
+                    "referer": site_url,
+                    "user_agent": FLV_OTT_USER_AGENT if quality == "FLV" else UA,
+                }
+            )
 
     log(f"[{source}] {len(channels)} raw links")
     return channels
@@ -4479,21 +4506,78 @@ def collect_cloudok_premier_league():
 
 def collect_saoketv():
     source = "SaoKeTV"
-    stream_url = clean_text(SAOKETV_STREAM_URL)
-    if not is_valid_stream_url(stream_url):
-        log(f"[{source}] 0 raw links")
-        return []
-    channel = {
-        "source": source,
-        "name": "SaoKeTV HD",
-        "group": "SaoKeTV",
-        "logo": "",
-        "stream_url": stream_url,
-        "referer": SAOKETV_REFERER,
-        "user_agent": UA,
+    home_url = ""
+    html_text = ""
+    for candidate in (SAOKETV_DISCOVERY_URL, SAOKETV_BASE_URL):
+        try:
+            response = request_get(
+                candidate,
+                headers={"Accept": "text/html,application/xhtml+xml,*/*;q=0.9"},
+                timeout=20,
+            )
+            if response.status_code != 200:
+                continue
+            html_text = response.text
+            home_url = clean_text(getattr(response, "url", "") or candidate).rstrip("/") + "/"
+            if html_text:
+                log(f"[{source}] Active domain {home_url}")
+                break
+        except Exception as exc:
+            log(f"[{source}] Discovery error {candidate}: {exc}")
+
+    urls = []
+    if html_text:
+        urls.extend(
+            decode_json_string(match.group(0))
+            for match in re.finditer(
+                r"https?://[^\s'\"<>\\]+?\.m3u8(?:\?[^\s'\"<>\\]*)?",
+                html_text,
+                re.I,
+            )
+        )
+    urls.extend(
+        [
+            SAOKETV_STREAM_URL,
+            "https://stm6dad62063600.stream.hdplaylink.com/sklive/ricky/playlist.m3u8",
+            "https://stm6dad62063600.stream.hdplaylink.com/sklive/carot/playlist.m3u8",
+        ]
+    )
+
+    channels = []
+    seen_urls = set()
+    playlist_families = {
+        re.sub(r"/(?:chunklist|playlist)\.m3u8$", "", urlparse(clean_text(url)).path, flags=re.I)
+        for url in urls
+        if "/playlist.m3u8" in clean_text(url).lower()
     }
-    log(f"[{source}] 1 raw links")
-    return [channel]
+    for stream_url in urls:
+        stream_url = clean_text(stream_url)
+        if not is_valid_stream_url(stream_url):
+            continue
+        path = urlparse(stream_url).path
+        family = re.sub(r"/(?:chunklist|playlist)\.m3u8$", "", path, flags=re.I)
+        if "/chunklist.m3u8" in path.lower() and family in playlist_families:
+            continue
+        stream_key = tokenless_stream_key(stream_url)
+        if stream_key in seen_urls:
+            continue
+        seen_urls.add(stream_key)
+        parts = [part for part in path.split("/") if part]
+        label = parts[-2] if len(parts) >= 2 else urlparse(stream_url).hostname or "HD"
+        label = re.sub(r"[-_]", " ", label).strip().title()
+        channels.append(
+            {
+                "source": source,
+                "name": f"SaoKeTV {label}",
+                "group": "SaoKeTV",
+                "logo": "",
+                "stream_url": stream_url,
+                "referer": home_url or SAOKETV_REFERER,
+                "user_agent": UA,
+            }
+        )
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
 
 
 def vebotv_headers(referer=None, accept="text/html,application/xhtml+xml,*/*"):
