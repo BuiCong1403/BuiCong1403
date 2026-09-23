@@ -148,7 +148,7 @@ VONGCAM_API_URL = os.environ.get("VONGCAM_API", "https://sv.bugiotv.xyz/internal
 VONGCAM_FRONTEND_URL = os.environ.get("VONGCAM_FRONTEND", BUGIO_REFERER)
 QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
-VSC9_URL = os.environ.get("VSC9_URL", "https://www.livinginterior.in/")
+VSC9_URL = os.environ.get("VSC9_URL", "https://www.pentatoken.io/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", VSC9_URL)
 VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "0").strip().lower() not in {"0", "false", "no"}
 VSC9_TODAY_MIN_LINKS = int(os.environ.get("VSC9_TODAY_MIN_LINKS", "10") or "10")
@@ -157,6 +157,9 @@ VEBOTV_SITE_URL = os.environ.get("VEBOTV_SITE_URL", "https://vebotv.work/")
 VEBOTV_GROUP = os.environ.get("VEBOTV_GROUP", "VeboTV")
 VEBOTV_LIMIT = int(os.environ.get("VEBOTV_LIMIT", "160") or "160")
 VEBOTV_WORKERS = int(os.environ.get("VEBOTV_WORKERS", "10") or "10")
+SUTBONG_SITE_URL = os.environ.get("SUTBONG_SITE_URL", "https://footballvn.net/").rstrip("/") + "/"
+SUTBONG_MAX_MATCHES = int(os.environ.get("SUTBONG_MAX_MATCHES", "180") or "180")
+SUTBONG_WORKERS = int(os.environ.get("SUTBONG_WORKERS", "10") or "10")
 ALL_CHANNEL_M3U_URL = os.environ.get(
     "ALL_CHANNEL_M3U_URL",
     "https://raw.githubusercontent.com/huybuonvp/xem_football/refs/heads/main/All_CHANNEL.m3u",
@@ -222,7 +225,7 @@ MEBONG_GROUP = os.environ.get("MEBONG_GROUP", "MebongTV")
 MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "200") or "200")
 MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
-XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacxth.tv/")
+XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacxbi.tv/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.livecarriercdn.com/")
 XOILACZ_FALLBACK_REFERERS = [
     item.strip()
@@ -421,6 +424,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "PhaoHoaTV",
     "KhanDaiA",
     "XoiLacZ",
+    "SutBongTV",
     "SportflowLiveZ",
     "VSC9",
     "CoLaTV",
@@ -4934,6 +4938,9 @@ def collect_mebongtv():
 def xoilacz_base_candidates():
     candidates = [
         XOILACZ_SITE_URL,
+        "https://xoilacxbi.tv/",
+        "https://90phutzac.tv/",
+        "https://xoilaczzp.cc/",
         "https://xoilacxth.tv/",
         "https://xoilacxxf.cc/",
         "https://xlz.domainkqt.cc/",
@@ -5024,6 +5031,133 @@ def extract_xoilacz_url_streams(stream_page_url, headers, detail_url=""):
 def extract_xoilacz_url_stream(stream_page_url, headers, detail_url=""):
     streams = extract_xoilacz_url_streams(stream_page_url, headers, detail_url)
     return streams[0] if streams else ""
+
+
+def collect_sutbongtv():
+    source = "SutBongTV"
+    headers = {
+        "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+        "Referer": SUTBONG_SITE_URL,
+        "User-Agent": UA,
+    }
+    try:
+        home_html = fetch_text(SUTBONG_SITE_URL, headers=headers, timeout=30)
+    except Exception as exc:
+        log(f"[{source}] homepage failed: {exc}")
+        return []
+
+    detail_urls = []
+    for href in re.findall(r'href=["\']([^"\']+/truc-tiep/[^"\']+)["\']', home_html, re.I):
+        detail_url = urljoin(SUTBONG_SITE_URL, html.unescape(href)).split("#", 1)[0].split("?", 1)[0]
+        if detail_url not in detail_urls:
+            detail_urls.append(detail_url)
+    detail_urls = detail_urls[: max(1, SUTBONG_MAX_MATCHES)]
+
+    def collect_match(detail_url):
+        try:
+            page = fetch_text(detail_url, headers=headers, timeout=20)
+        except Exception:
+            return []
+
+        title_match = re.search(r"<title[^>]*>(.*?)</title>", page, re.I | re.S)
+        title = clean_text(html.unescape(title_match.group(1))) if title_match else "Sút Bóng TV"
+        title = re.sub(r"^Link\s+Trực\s+Tiếp\s+", "", title, flags=re.I)
+        title = re.sub(r"\s+-\s+Sutbongtv(?:\.live)?\s*$", "", title, flags=re.I)
+
+        post_match = re.search(r"\bpostId\s*=\s*(\d+)", page)
+        resolver_match = re.search(r'\bresolverBase\s*=\s*["\']([^"\']+)', page)
+        if not post_match or not resolver_match:
+            return []
+        post_id = post_match.group(1)
+        resolver_url = clean_text(resolver_match.group(1).replace("\\/", "/"))
+
+        event_dt = None
+        time_match = re.search(r'\bmatch_time\s*=\s*["\']?(\d{10})', page)
+        if time_match:
+            try:
+                event_dt = datetime.fromtimestamp(int(time_match.group(1)), TZ_VN)
+            except Exception:
+                event_dt = None
+
+        anchors = []
+        stream_data_match = re.search(r"window\.streamData\s*=\s*(\{.*?\});", page, re.S)
+        if stream_data_match:
+            try:
+                stream_data = json.loads(stream_data_match.group(1))
+                anchors = stream_data.get("anchors") or []
+            except Exception:
+                anchors = []
+        if not anchors:
+            anchors = [
+                {"uid": uid, "nickName": f"BLV {uid}"}
+                for uid in dict.fromkeys(re.findall(r"[?&]blv=(\d+)", page))
+            ]
+        room_match = re.search(r'\broomID\s*=\s*["\'](\d+)', page)
+        if room_match and all(
+            str(item.get("uid") or "") != room_match.group(1)
+            for item in anchors
+            if isinstance(item, dict)
+        ):
+            anchors.append({"uid": room_match.group(1), "nickName": f"BLV {room_match.group(1)}"})
+
+        match_channels = []
+        seen_streams = set()
+        for index, anchor in enumerate(anchors, 1):
+            if not isinstance(anchor, dict):
+                continue
+            uid = clean_text(str(anchor.get("uid") or anchor.get("roomID") or ""))
+            if not uid:
+                continue
+            query_url = f"{resolver_url}?{urlencode({'post_id': post_id, 'blv': uid})}"
+            resolver_headers = {"Accept": "application/json", "Referer": detail_url, "User-Agent": UA}
+            try:
+                data = fetch_json(query_url, headers=resolver_headers, timeout=15)
+            except Exception:
+                continue
+            stream_urls = []
+            direct = data.get("stream") if isinstance(data, dict) else ""
+            if isinstance(direct, str):
+                stream_urls.append(direct)
+            nested = data.get("data") if isinstance(data, dict) else {}
+            if isinstance(nested, dict):
+                stream_value = nested.get("stream")
+                if isinstance(stream_value, dict):
+                    stream_urls.extend(str(value) for value in stream_value.values() if isinstance(value, str))
+                elif isinstance(stream_value, str):
+                    stream_urls.append(stream_value)
+            blv_name = clean_text(str(anchor.get("nickName") or anchor.get("name") or f"BLV {uid}"))
+            for stream_url in stream_urls:
+                stream_url = clean_text(stream_url.replace("\\/", "/"))
+                if not re.match(r"^https?://", stream_url) or stream_url in seen_streams:
+                    continue
+                if not (re.search(r"\.m3u8(?:[?#]|$)", stream_url, re.I) or is_flv_url(stream_url)):
+                    continue
+                seen_streams.add(stream_url)
+                quality = "FLV" if is_flv_url(stream_url) else "HLS"
+                match_channels.append(
+                    {
+                        "source": source,
+                        "name": f"{title} ({blv_name}) | Link {index} [{quality}]",
+                        "group": "Sút Bóng TV",
+                        "logo": "",
+                        "stream_url": stream_url,
+                        "referer": "",
+                        "user_agent": "",
+                        "event_datetime": event_dt,
+                    }
+                )
+        return match_channels
+
+    channels = []
+    with ThreadPoolExecutor(max_workers=max(1, min(SUTBONG_WORKERS, len(detail_urls) or 1))) as executor:
+        futures = [executor.submit(collect_match, url) for url in detail_urls]
+        for future in as_completed(futures):
+            try:
+                channels.extend(future.result())
+            except Exception:
+                continue
+    log(f"[{source}] {len(channels)} links from {len(detail_urls)} matches (all sports/BLVs)")
+    return channels
 
 
 def extract_xoilacz_stream_links(detail_url, headers):
@@ -8646,6 +8780,7 @@ def main():
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
         ("MebongTV", collect_mebongtv),
+        ("SutBongTV", collect_sutbongtv),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
         (
