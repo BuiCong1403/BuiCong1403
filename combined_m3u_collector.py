@@ -152,14 +152,25 @@ VSC9_URL = os.environ.get("VSC9_URL", "https://www.pentatoken.io/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", VSC9_URL)
 VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "0").strip().lower() not in {"0", "false", "no"}
 VSC9_TODAY_MIN_LINKS = int(os.environ.get("VSC9_TODAY_MIN_LINKS", "10") or "10")
-S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tv001.com/")
+S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tvkc.top/")
+S8TV_SITE_CANDIDATES = [
+    value.strip().rstrip("/") + "/"
+    for value in os.environ.get(
+        "S8TV_SITE_CANDIDATES",
+        "https://s8tvkc.top/,https://us8tv.com/vi-vn/,https://casinodao.io/",
+    ).split(",")
+    if value.strip()
+]
 VEBOTV_SITE_URL = os.environ.get("VEBOTV_SITE_URL", "https://vebotv.work/")
 VEBOTV_GROUP = os.environ.get("VEBOTV_GROUP", "VeboTV")
 VEBOTV_LIMIT = int(os.environ.get("VEBOTV_LIMIT", "160") or "160")
 VEBOTV_WORKERS = int(os.environ.get("VEBOTV_WORKERS", "10") or "10")
-SUTBONG_SITE_URL = os.environ.get("SUTBONG_SITE_URL", "https://footballvn.net/").rstrip("/") + "/"
+SUTBONG_SITE_URL = os.environ.get("SUTBONG_SITE_URL", "https://sutbong.net/").rstrip("/") + "/"
 SUTBONG_MAX_MATCHES = int(os.environ.get("SUTBONG_MAX_MATCHES", "180") or "180")
 SUTBONG_WORKERS = int(os.environ.get("SUTBONG_WORKERS", "10") or "10")
+PHALANG_SITE_URL = os.environ.get("PHALANG_SITE_URL", "https://phalang.live/").rstrip("/") + "/"
+PHALANG_API_BASE = os.environ.get("PHALANG_API_BASE", "https://api.plapi202624081158.com").rstrip("/")
+THTT_M3U_URL = os.environ.get("THTT_M3U_URL", "https://thtt.pages.dev/tttt.m3u")
 ALL_CHANNEL_M3U_URL = os.environ.get(
     "ALL_CHANNEL_M3U_URL",
     "https://raw.githubusercontent.com/huybuonvp/xem_football/refs/heads/main/All_CHANNEL.m3u",
@@ -425,6 +436,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "KhanDaiA",
     "XoiLacZ",
     "SutBongTV",
+    "PhaLangTV",
     "SportflowLiveZ",
     "VSC9",
     "CoLaTV",
@@ -4508,8 +4520,40 @@ def collect_cloudok_premier_league():
     )
 
 
+_THTT_GROUP_CACHE = None
+
+
+def collect_thtt_group(source, group_names, output_group):
+    global _THTT_GROUP_CACHE
+    if _THTT_GROUP_CACHE is None:
+        _THTT_GROUP_CACHE = collect_m3u_playlist(
+            "THTTReference",
+            THTT_M3U_URL,
+            "THTT",
+            preserve_group=True,
+            allow_non_m3u8=True,
+            timeout=45,
+            retries=2,
+            default_referer_to_playlist=False,
+            user_agent="",
+            preserve_extinf=False,
+            preserve_group_exact=False,
+        )
+    allowed = {text_key(value) for value in group_names}
+    channels = []
+    for item in _THTT_GROUP_CACHE or []:
+        if text_key(item.get("group")) not in allowed:
+            continue
+        channel = dict(item)
+        channel["source"] = source
+        channel["group"] = output_group
+        channels.append(channel)
+    return channels
+
+
 def collect_saoketv():
     source = "SaoKeTV"
+    schedule_channels = collect_thtt_group(source, ("Sao Kê TV", "Sao Ke TV"), "Sao Kê TV")
     home_url = ""
     html_text = ""
     for candidate in (SAOKETV_DISCOVERY_URL, SAOKETV_BASE_URL):
@@ -4547,8 +4591,8 @@ def collect_saoketv():
         ]
     )
 
-    channels = []
-    seen_urls = set()
+    channels = list(schedule_channels)
+    seen_urls = {tokenless_stream_key(item.get("stream_url")) for item in channels}
     playlist_families = {
         re.sub(r"/(?:chunklist|playlist)\.m3u8$", "", urlparse(clean_text(url)).path, flags=re.I)
         for url in urls
@@ -4573,14 +4617,14 @@ def collect_saoketv():
             {
                 "source": source,
                 "name": f"SaoKeTV {label}",
-                "group": "SaoKeTV",
+                "group": "Sao Kê TV",
                 "logo": "",
                 "stream_url": stream_url,
                 "referer": home_url or SAOKETV_REFERER,
                 "user_agent": UA,
             }
         )
-    log(f"[{source}] {len(channels)} raw links")
+    log(f"[{source}] {len(channels)} links ({len(schedule_channels)} scheduled)")
     return channels
 
 
@@ -5040,11 +5084,35 @@ def collect_sutbongtv():
         "Referer": SUTBONG_SITE_URL,
         "User-Agent": UA,
     }
+    scheduled = collect_thtt_group(source, ("Sút Bóng TV", "Sut Bong TV"), "Sút Bóng TV")
+    resolved_schedule = []
+    for channel in scheduled:
+        resolver_url = clean_text(channel.get("stream_url"))
+        if "/wp-json/soco/v1/stream/resolve?" in resolver_url:
+            try:
+                resolved = fetch_json_no_cache(
+                    resolver_url,
+                    headers={"Accept": "application/json", "Referer": SUTBONG_SITE_URL, "User-Agent": UA},
+                    timeout=15,
+                )
+                stream_url = clean_text(resolved.get("stream")) if isinstance(resolved, dict) else ""
+                if is_valid_stream_url(stream_url):
+                    channel["stream_url"] = stream_url
+                    channel["referer"] = ""
+                    channel["user_agent"] = ""
+            except Exception:
+                continue
+        stream_url = clean_text(channel.get("stream_url"))
+        if "freem3u.xyz/static/no-signal/" in stream_url.lower():
+            continue
+        if re.search(r"\.(?:m3u8|flv)(?:[?#]|$)", stream_url, re.I):
+            resolved_schedule.append(channel)
+    scheduled = resolved_schedule
     try:
         home_html = fetch_text(SUTBONG_SITE_URL, headers=headers, timeout=30)
     except Exception as exc:
-        log(f"[{source}] homepage failed: {exc}")
-        return []
+        log(f"[{source}] homepage failed: {exc}; use scheduled fallback")
+        return scheduled
 
     detail_urls = []
     for href in re.findall(r'href=["\']([^"\']+/truc-tiep/[^"\']+)["\']', home_html, re.I):
@@ -5156,8 +5224,20 @@ def collect_sutbongtv():
                 channels.extend(future.result())
             except Exception:
                 continue
-    log(f"[{source}] {len(channels)} links from {len(detail_urls)} matches (all sports/BLVs)")
-    return channels
+    merged = []
+    seen = set()
+    for channel in scheduled + channels:
+        stream_url = clean_text(channel.get("stream_url"))
+        key = stream_url if "/stream/resolve?" in stream_url else tokenless_stream_key(stream_url)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        merged.append(channel)
+    log(
+        f"[{source}] {len(merged)} links from {len(detail_urls)} matches "
+        f"({len(scheduled)} scheduled; all sports/BLVs)"
+    )
+    return merged
 
 
 def extract_xoilacz_stream_links(detail_url, headers):
@@ -7869,22 +7949,28 @@ def collect_hoadaotv():
 def collect_s8tv():
     source = "S8TV"
     site_url = S8TV_SITE_URL.rstrip("/") + "/"
-    headers = {
-        "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
-        "Referer": site_url,
-    }
-    log(f"[{source}] Fetch home")
-    try:
-        html_text = fetch_text(site_url, headers=headers, timeout=25)
-    except Exception as exc:
-        log(f"[{source}] Error: {exc}")
-        return []
+    html_text = ""
+    for candidate in dict.fromkeys([site_url, *S8TV_SITE_CANDIDATES]):
+        headers = {
+            "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
+            "Referer": candidate,
+        }
+        log(f"[{source}] Fetch {candidate}")
+        try:
+            html_text = fetch_text(candidate, headers=headers, timeout=25)
+        except Exception as exc:
+            log(f"[{source}] Error {candidate}: {exc}")
+            continue
+        if html_text:
+            site_url = candidate
+            break
     if not html_text:
         log(f"[{source}] Home not available")
-        return []
+        return collect_thtt_group(source, ("S8 TV", "S8TV"), "S8 TV")
 
-    channels = []
-    seen_urls = set()
+    schedule_channels = collect_thtt_group(source, ("S8 TV", "S8TV"), "S8 TV")
+    channels = list(schedule_channels)
+    seen_urls = {tokenless_stream_key(item.get("stream_url")) for item in channels}
     placeholder_urls = {
         clean_text(decode_json_string(match.group(1)))
         for match in S8TV_PLACEHOLDER_RE.finditer(html_text)
@@ -7893,15 +7979,16 @@ def collect_s8tv():
     for match in S8TV_TITLE_URL_RE.finditer(html_text):
         title = clean_text(decode_json_string(match.group(1)))
         stream_url = clean_text(decode_json_string(match.group(2)))
-        if not is_valid_stream_url(stream_url) or stream_url in seen_urls:
+        stream_key = tokenless_stream_key(stream_url)
+        if not is_valid_stream_url(stream_url) or stream_key in seen_urls:
             continue
-        seen_urls.add(stream_url)
+        seen_urls.add(stream_key)
         title = re.sub(r"\s+-\s+Xem lại.*$", "", title, flags=re.I).strip() or source
         channels.append(
             {
                 "source": source,
                 "name": title,
-                "group": "Highlight | S8TV",
+                "group": "S8 TV",
                 "logo": "",
                 "stream_url": stream_url,
                 "referer": site_url,
@@ -7911,16 +7998,17 @@ def collect_s8tv():
 
     for stream_url in S8TV_M3U8_RE.findall(html_text):
         stream_url = clean_text(decode_json_string(stream_url))
-        if not is_valid_stream_url(stream_url) or stream_url in seen_urls or stream_url in placeholder_urls:
+        stream_key = tokenless_stream_key(stream_url)
+        if not is_valid_stream_url(stream_url) or stream_key in seen_urls or stream_url in placeholder_urls:
             continue
         if "live-bong.s3" not in stream_url.lower():
             continue
-        seen_urls.add(stream_url)
+        seen_urls.add(stream_key)
         channels.append(
             {
                 "source": source,
                 "name": title_from_stream_url(stream_url, source),
-                "group": "Highlight | S8TV",
+                "group": "S8 TV",
                 "logo": "",
                 "stream_url": stream_url,
                 "referer": site_url,
@@ -7928,7 +8016,7 @@ def collect_s8tv():
             }
         )
 
-    log(f"[{source}] {len(channels)} raw links")
+    log(f"[{source}] {len(channels)} links ({len(schedule_channels)} scheduled)")
     return channels
 
 
@@ -8251,6 +8339,120 @@ def collect_tieulamwc():
             )
 
     log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
+def collect_phalang():
+    source = "PhaLangTV"
+    headers = {
+        "Accept": "application/json, */*",
+        "Origin": PHALANG_SITE_URL.rstrip("/"),
+        "Referer": PHALANG_SITE_URL,
+        "User-Agent": UA,
+    }
+    items = []
+    if requests is not None:
+        try:
+            response = requests.post(
+                f"{PHALANG_API_BASE}/matches/graph",
+                headers=headers,
+                json={"limit": 500, "page": 1, "order_asc": "start_date"},
+                timeout=35,
+            )
+            if response.status_code == 200:
+                payload = response.json()
+                items = payload.get("data") or [] if isinstance(payload, dict) else []
+        except Exception as exc:
+            log(f"[{source}] Schedule error: {exc}")
+
+    today = datetime.now(TZ_VN).date()
+    last_day = today + timedelta(days=1)
+    candidates = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        event_dt = None
+        raw_start = clean_text(item.get("start_date"))
+        if raw_start:
+            try:
+                parsed = datetime.fromisoformat(raw_start.replace("Z", "+00:00"))
+                if parsed.tzinfo is None:
+                    parsed = parsed.replace(tzinfo=timezone.utc)
+                event_dt = parsed.astimezone(TZ_VN)
+            except Exception:
+                event_dt = None
+        if event_dt and not (today <= event_dt.date() <= last_day):
+            continue
+        if not item.get("source_live") and not item.get("is_live") and not item.get("is_hot"):
+            continue
+        candidates.append((item, event_dt))
+
+    def collect_match(entry):
+        item, event_dt = entry
+        match_id = clean_text(item.get("id"))
+        live = {}
+        if match_id:
+            try:
+                live = fetch_json_no_cache(
+                    f"{PHALANG_API_BASE}/match/{match_id}/live",
+                    headers=headers,
+                    timeout=18,
+                )
+            except Exception:
+                live = {}
+        title = clean_text(item.get("title"))
+        if not title:
+            title = clean_text(f"{item.get('team_1') or ''} vs {item.get('team_2') or ''}").strip(" vs")
+        if event_dt:
+            title = f"{event_dt:%H:%M %d/%m} {title}"
+        blv = clean_text(item.get("blv"))
+        if blv:
+            title = f"{title} ({blv})"
+        streams = [
+            ("Nguồn", item.get("source_live")),
+            ("Nguồn", live.get("source") if isinstance(live, dict) else ""),
+            ("HD1", live.get("hd_1") if isinstance(live, dict) else ""),
+            ("HD2", live.get("hd_2") if isinstance(live, dict) else ""),
+            ("HD3", live.get("hd_3") if isinstance(live, dict) else ""),
+        ]
+        result = []
+        seen = set()
+        for quality, stream_url in streams:
+            stream_url = clean_text(stream_url)
+            key = tokenless_stream_key(stream_url)
+            if not is_valid_stream_url(stream_url) or not key or key in seen:
+                continue
+            seen.add(key)
+            result.append(
+                {
+                    "source": source,
+                    "name": f"{title} [{quality}]",
+                    "group": "Phá Làng TV",
+                    "sport": detect_sport(item.get("desc"), item.get("league"), title),
+                    "logo": clean_text(item.get("team_1_logo") or item.get("team_2_logo")),
+                    "stream_url": stream_url,
+                    "referer": PHALANG_SITE_URL,
+                    "user_agent": UA,
+                    "event_datetime": event_dt,
+                }
+            )
+        return result
+
+    api_channels = []
+    with ThreadPoolExecutor(max_workers=min(12, max(1, len(candidates)))) as executor:
+        for result in executor.map(collect_match, candidates):
+            api_channels.extend(result)
+
+    reference = collect_thtt_group(source, ("Phá Làng TV", "Pha Lang TV"), "Phá Làng TV")
+    channels = []
+    seen = set()
+    for channel in api_channels + reference:
+        key = tokenless_stream_key(channel.get("stream_url"))
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        channels.append(channel)
+    log(f"[{source}] {len(channels)} links ({len(api_channels)} API, {len(reference)} reference)")
     return channels
 
 
@@ -8776,11 +8978,13 @@ def main():
         ("MyTVFPTEvents", collect_mytv_fpt_events),
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
+        ("S8TV", collect_s8tv),
         ("VeboTV", collect_vebotv),
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
         ("MebongTV", collect_mebongtv),
         ("SutBongTV", collect_sutbongtv),
+        ("PhaLangTV", collect_phalang),
         ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
         (
