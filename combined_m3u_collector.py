@@ -165,8 +165,16 @@ VEBOTV_SITE_URL = os.environ.get("VEBOTV_SITE_URL", "https://vebotv.work/")
 VEBOTV_GROUP = os.environ.get("VEBOTV_GROUP", "VeboTV")
 VEBOTV_LIMIT = int(os.environ.get("VEBOTV_LIMIT", "160") or "160")
 VEBOTV_WORKERS = int(os.environ.get("VEBOTV_WORKERS", "10") or "10")
-SUTBONG_SITE_URL = os.environ.get("SUTBONG_SITE_URL", "https://sutbong.net/").rstrip("/") + "/"
-SUTBONG_MAX_MATCHES = int(os.environ.get("SUTBONG_MAX_MATCHES", "180") or "180")
+SUTBONG_SITE_URLS = [
+    value.strip().rstrip("/") + "/"
+    for value in os.environ.get(
+        "SUTBONG_SITE_URLS",
+        "https://footballvn.net/,https://sutbong.net/",
+    ).split(",")
+    if value.strip()
+]
+SUTBONG_SITE_URL = SUTBONG_SITE_URLS[0] if SUTBONG_SITE_URLS else "https://footballvn.net/"
+SUTBONG_MAX_MATCHES = int(os.environ.get("SUTBONG_MAX_MATCHES", "60") or "60")
 SUTBONG_WORKERS = int(os.environ.get("SUTBONG_WORKERS", "10") or "10")
 PHALANG_SITE_URL = os.environ.get("PHALANG_SITE_URL", "https://phalang.live/").rstrip("/") + "/"
 PHALANG_API_BASE = os.environ.get("PHALANG_API_BASE", "https://api.plapi202624081158.com").rstrip("/")
@@ -1716,6 +1724,19 @@ def write_m3u(path, channels):
             f.write(f'{ch.get("stream_url", "")}\n\n')
 
 
+def ott_display_text(value):
+    value = remove_icons(value)
+    value = unicodedata.normalize("NFD", value)
+    value = "".join(char for char in value if unicodedata.category(char) != "Mn")
+    return (
+        value.replace("đ", "d")
+        .replace("Đ", "D")
+        .replace("–", "-")
+        .replace("—", "-")
+        .replace("…", "...")
+    )
+
+
 def write_ott_m3u(path, channels):
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
@@ -1723,8 +1744,10 @@ def write_ott_m3u(path, channels):
         f.write(f"# Updated : {now_ict()}\n")
         f.write(f"# Total   : {len(channels)}\n\n")
         for ch in channels:
-            name = remove_icons(ch.get("name", "Unknown"))
-            group = FLV_OTT_GROUP if is_flv_url(ch.get("stream_url")) else output_group(ch)
+            name = ott_display_text(ch.get("name", "Unknown"))
+            group = ott_display_text(
+                FLV_OTT_GROUP if is_flv_url(ch.get("stream_url")) else output_group(ch)
+            )
             f.write(f"#EXTINF:0,{name}\n")
             f.write(f"#EXTGRP:{group}\n")
             f.write(f'{ch.get("stream_url", "")}\n\n')
@@ -1780,6 +1803,7 @@ def select_ott_compatible_channels(channels):
             or channel.get("source")
             in {
                 "PhaoHoaTV",
+                "PhaLangTV",
                 "24hHighlight",
                 "90PhutHighlight",
                 "DasFootballHighlight",
@@ -5079,51 +5103,35 @@ def extract_xoilacz_url_stream(stream_page_url, headers, detail_url=""):
 
 def collect_sutbongtv():
     source = "SutBongTV"
-    headers = {
-        "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
-        "Referer": SUTBONG_SITE_URL,
-        "User-Agent": UA,
-    }
-    scheduled = collect_thtt_group(source, ("Sút Bóng TV", "Sut Bong TV"), "Sút Bóng TV")
-    resolved_schedule = []
-    for channel in scheduled:
-        resolver_url = clean_text(channel.get("stream_url"))
-        if "/wp-json/soco/v1/stream/resolve?" in resolver_url:
-            try:
-                resolved = fetch_json_no_cache(
-                    resolver_url,
-                    headers={"Accept": "application/json", "Referer": SUTBONG_SITE_URL, "User-Agent": UA},
-                    timeout=15,
-                )
-                stream_url = clean_text(resolved.get("stream")) if isinstance(resolved, dict) else ""
-                if is_valid_stream_url(stream_url):
-                    channel["stream_url"] = stream_url
-                    channel["referer"] = ""
-                    channel["user_agent"] = ""
-            except Exception:
-                continue
-        stream_url = clean_text(channel.get("stream_url"))
-        if "freem3u.xyz/static/no-signal/" in stream_url.lower():
-            continue
-        if re.search(r"\.(?:m3u8|flv)(?:[?#]|$)", stream_url, re.I):
-            resolved_schedule.append(channel)
-    scheduled = resolved_schedule
-    try:
-        home_html = fetch_text(SUTBONG_SITE_URL, headers=headers, timeout=30)
-    except Exception as exc:
-        log(f"[{source}] homepage failed: {exc}; use scheduled fallback")
-        return scheduled
-
     detail_urls = []
-    for href in re.findall(r'href=["\']([^"\']+/truc-tiep/[^"\']+)["\']', home_html, re.I):
-        detail_url = urljoin(SUTBONG_SITE_URL, html.unescape(href)).split("#", 1)[0].split("?", 1)[0]
-        if detail_url not in detail_urls:
-            detail_urls.append(detail_url)
+    seen_detail_urls = set()
+    for site_url in SUTBONG_SITE_URLS:
+        headers = {
+            "Accept": "text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8",
+            "Referer": site_url,
+            "User-Agent": UA,
+        }
+        try:
+            home_html = fetch_text(site_url, headers=headers, timeout=20)
+        except Exception as exc:
+            log(f"[{source}] homepage failed {site_url}: {exc}")
+            continue
+        for href in re.findall(r'href=["\']([^"\']+/truc-tiep/[^"\']+)["\']', home_html, re.I):
+            detail_url = urljoin(site_url, html.unescape(href)).split("#", 1)[0].split("?", 1)[0]
+            if detail_url in seen_detail_urls:
+                continue
+            seen_detail_urls.add(detail_url)
+            detail_urls.append((detail_url, site_url))
     detail_urls = detail_urls[: max(1, SUTBONG_MAX_MATCHES)]
 
-    def collect_match(detail_url):
+    def collect_match(detail_item):
+        detail_url, site_url = detail_item
         try:
-            page = fetch_text(detail_url, headers=headers, timeout=20)
+            page = fetch_text(
+                detail_url,
+                headers={"Accept": "text/html,*/*", "Referer": site_url, "User-Agent": UA},
+                timeout=12,
+            )
         except Exception:
             return []
 
@@ -5179,7 +5187,7 @@ def collect_sutbongtv():
             query_url = f"{resolver_url}?{urlencode({'post_id': post_id, 'blv': uid})}"
             resolver_headers = {"Accept": "application/json", "Referer": detail_url, "User-Agent": UA}
             try:
-                data = fetch_json(query_url, headers=resolver_headers, timeout=15)
+                data = fetch_json(query_url, headers=resolver_headers, timeout=12)
             except Exception:
                 continue
             stream_urls = []
@@ -5226,7 +5234,7 @@ def collect_sutbongtv():
                 continue
     merged = []
     seen = set()
-    for channel in scheduled + channels:
+    for channel in channels:
         stream_url = clean_text(channel.get("stream_url"))
         key = stream_url if "/stream/resolve?" in stream_url else tokenless_stream_key(stream_url)
         if not key or key in seen:
@@ -5234,8 +5242,8 @@ def collect_sutbongtv():
         seen.add(key)
         merged.append(channel)
     log(
-        f"[{source}] {len(merged)} links from {len(detail_urls)} matches "
-        f"({len(scheduled)} scheduled; all sports/BLVs)"
+        f"[{source}] {len(merged)} links from {len(detail_urls)} first-party matches "
+        f"(footballvn.net/sutbong.net; all sports/BLVs)"
     )
     return merged
 
@@ -8821,7 +8829,7 @@ def ott_highlight_blocks_from_channels(channels):
         stream_url = clean_text(channel.get("stream_url"))
         if not stream_url:
             continue
-        name = remove_icons(channel.get("name", "Unknown"))
+        name = ott_display_text(channel.get("name", "Unknown"))
         blocks.append([f"#EXTINF:0,{name}", "#EXTGRP:Highlight", stream_url])
     return blocks
 
@@ -8833,7 +8841,7 @@ def ott_highlight_blocks_from_file():
         stream_url = ""
         for line in block:
             if line.startswith("#EXTINF"):
-                title = remove_icons(line.rsplit(",", 1)[-1].strip() or "Highlight")
+                title = ott_display_text(line.rsplit(",", 1)[-1].strip() or "Highlight")
             elif line and not line.startswith("#"):
                 stream_url = clean_text(line)
         if stream_url:
