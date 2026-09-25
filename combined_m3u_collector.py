@@ -42,6 +42,7 @@ VMTTV_VTV_CACHE = BASE_DIR / "vmttv_vtv_cache.json"
 KHANDAIA_CACHE = BASE_DIR / "khandaia_cache.json"
 VSC9_CACHE = BASE_DIR / "vsc9_cache.json"
 H24_HIGHLIGHT_CACHE = BASE_DIR / "h24_highlight_cache.json"
+SLOW_SOURCES_M3U = BASE_DIR / "slow_sources.m3u"
 TZ_VN = timezone(timedelta(hours=7))
 
 UA = (
@@ -244,7 +245,7 @@ MEBONG_GROUP = os.environ.get("MEBONG_GROUP", "MebongTV")
 MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "200") or "200")
 MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
-XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilacxbi.tv/")
+XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilaczzq.cc/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.livecarriercdn.com/")
 XOILACZ_FALLBACK_REFERERS = [
     item.strip()
@@ -409,6 +410,9 @@ THETHAOCOBAN_SOURCE_FALLBACK = (
     os.environ.get("THETHAOCOBAN_SOURCE_FALLBACK", "1").strip().lower() not in {"0", "false", "no"}
 )
 XOILACZ_TTCB_MIN_LINKS = int(os.environ.get("XOILACZ_TTCB_MIN_LINKS", "20") or "20")
+XOILACZ_PRIMARY_MIN_LINKS = int(os.environ.get("XOILACZ_PRIMARY_MIN_LINKS", "40") or "40")
+XOILACZ_MATCH_WORKERS = int(os.environ.get("XOILACZ_MATCH_WORKERS", "2") or "2")
+XOILACZ_STREAM_WORKERS = int(os.environ.get("XOILACZ_STREAM_WORKERS", "3") or "3")
 VSC9_TTCB_MIN_TODAY_LINKS = int(os.environ.get("VSC9_TTCB_MIN_TODAY_LINKS", "20") or "20")
 PHAOHOA_TTCB_MIN_LINKS = int(os.environ.get("PHAOHOA_TTCB_MIN_LINKS", "20") or "20")
 KHANDAIA_TTCB_MIN_LINKS = int(os.environ.get("KHANDAIA_TTCB_MIN_LINKS", "20") or "20")
@@ -5006,12 +5010,13 @@ def collect_mebongtv():
 def xoilacz_base_candidates():
     candidates = [
         XOILACZ_SITE_URL,
+        "https://xoilaczzq.cc/",
+        "https://xlz.domainkqt.cc/",
         "https://xoilacxbi.tv/",
         "https://90phutzac.tv/",
         "https://xoilaczzp.cc/",
         "https://xoilacxth.tv/",
         "https://xoilacxxf.cc/",
-        "https://xlz.domainkqt.cc/",
         "https://xoilacxtg.tv/",
         "https://xoilacxtv.tv/",
         "https://nmsba.com/",
@@ -5271,7 +5276,7 @@ def extract_xoilacz_stream_links(detail_url, headers):
                 stream_page_urls.append(stream_page_url)
 
     stream_urls = []
-    with ThreadPoolExecutor(max_workers=min(8, max(1, len(stream_page_urls)))) as executor:
+    with ThreadPoolExecutor(max_workers=min(XOILACZ_STREAM_WORKERS, max(1, len(stream_page_urls)))) as executor:
         futures = {
             executor.submit(extract_xoilacz_url_streams, url, headers, detail_url): url
             for url in stream_page_urls
@@ -5345,9 +5350,6 @@ def collect_xoilacz():
         )
 
     def collect_match(block):
-        blv_match = re.search(r"number-blv-(\d+)", block)
-        if blv_match and int(blv_match.group(1)) <= 0:
-            return []
         link_match = re.search(
             r'<a[^>]+class="[^"]*redirectPopup[^"]*"[^>]+href="([^"]+)"[^>]+title="([^"]*)"',
             block,
@@ -5402,7 +5404,8 @@ def collect_xoilacz():
                     break
 
                 blocks = extract_xoilacz_match_blocks(html_text)
-                executor = ThreadPoolExecutor(max_workers=6)
+                blocks.sort(key=lambda block: "data-hot=\"1\"" not in block)
+                executor = ThreadPoolExecutor(max_workers=XOILACZ_MATCH_WORKERS)
                 futures = [executor.submit(collect_match, block) for block in blocks]
                 try:
                     for future in as_completed(futures, timeout=remaining_timeout()):
@@ -5436,7 +5439,8 @@ def collect_xoilacz():
                 blocks = extract_xoilacz_match_blocks(html_text)
                 if not blocks:
                     continue
-                executor = ThreadPoolExecutor(max_workers=6)
+                blocks.sort(key=lambda block: "data-hot=\"1\"" not in block)
+                executor = ThreadPoolExecutor(max_workers=XOILACZ_MATCH_WORKERS)
                 futures = [executor.submit(collect_match, block) for block in blocks]
                 try:
                     for future in as_completed(futures, timeout=remaining_timeout()):
@@ -5457,8 +5461,12 @@ def collect_xoilacz():
                     executor.shutdown(wait=False, cancel_futures=True)
                 if len(channels) > before_base:
                     break
-        # Mirrors may expose different resolver types and backup servers for
-        # the same match, so continue collecting from every live domain.
+        # A working primary domain already exposes several stream variants per
+        # match. Stop here to avoid spending the whole time budget on stale
+        # mirrors; fall through only when its result is genuinely too small.
+        if len(channels) >= max(1, XOILACZ_PRIMARY_MIN_LINKS):
+            log(f"[{source}] Primary domain supplied {len(channels)} links; skip stale mirrors")
+            break
 
     if len(channels) < XOILACZ_TTCB_MIN_LINKS:
         reason = f"Only {len(channels)} links after {int(time.monotonic() - started_at)}s"
@@ -8749,6 +8757,122 @@ def collect_source_channels(source_name, collector):
     return dedupe_and_sort_channels(selected)
 
 
+SLOW_SOURCE_COLLECTORS = (
+    ("SutBongTV", "Sút Bóng TV", collect_sutbongtv),
+    ("PhaLangTV", "Phá Làng TV", collect_phalang),
+    ("XoiLacZ", "Xôi Lạc Z TV", collect_xoilacz),
+)
+
+
+def slow_source_name(group):
+    normalized = group_key(group)
+    for source, expected_group, _collector in SLOW_SOURCE_COLLECTORS:
+        if normalized == group_key(expected_group):
+            return source
+    return ""
+
+
+def collect_slow_sources():
+    channels = []
+    counts = {}
+    for source, _group, collector in SLOW_SOURCE_COLLECTORS:
+        log("")
+        selected = collect_source_channels(source, collector)
+        counts[source] = len(selected)
+        channels.extend(selected)
+    channels = dedupe_and_sort_channels(channels)
+    write_slow_sources_m3u(channels)
+    log(f"[DONE] Slow-source playlist: {len(channels)} links -> {SLOW_SOURCES_M3U}")
+    for source, count in counts.items():
+        log(f"[DONE] {source}: {count}")
+    return channels, counts
+
+
+def write_slow_sources_m3u(channels):
+    with SLOW_SOURCES_M3U.open("w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        f.write(f"# Updated : {now_ict()}\n")
+        f.write(f"# Total   : {len(channels)}\n\n")
+        for channel in channels:
+            source = clean_text(channel.get("source"))
+            group = output_group(channel)
+            name = remove_icons(channel.get("name", group or source or "Unknown"))
+            logo = clean_text(channel.get("logo"))
+            f.write(
+                f'#EXTINF:-1 tvg-id="{source}" tvg-logo="{logo}" '
+                f'group-title="{group}",{name}\n'
+            )
+            referer = clean_text(channel.get("referer"))
+            user_agent = clean_text(channel.get("user_agent"))
+            if referer and should_write_referrer(channel):
+                f.write(f"#EXTVLCOPT:http-referrer={referer}\n")
+            if user_agent and should_write_user_agent(channel):
+                f.write(f"#EXTVLCOPT:http-user-agent={user_agent}\n")
+            f.write(f'{channel.get("stream_url", "")}\n\n')
+
+
+def load_slow_sources():
+    if not SLOW_SOURCES_M3U.exists():
+        return []
+    try:
+        text = SLOW_SOURCES_M3U.read_text(encoding="utf-8")
+    except Exception as exc:
+        log(f"[SlowSources] Read error: {exc}")
+        return []
+
+    channels = []
+    current = {"title": "", "logo": "", "group": "", "raw_options": []}
+    for raw_line in text.splitlines():
+        line = raw_line.strip()
+        if not line:
+            continue
+        if line.startswith("#EXTINF"):
+            current = parse_extinf(line)
+            source_match = re.search(r'tvg-id="([^"]*)"', line)
+            current["source"] = clean_text(source_match.group(1)) if source_match else ""
+            current["raw_extinf"] = line
+            current["raw_options"] = []
+            continue
+        if line.startswith("#EXTGRP:"):
+            current["group"] = clean_text(line.split(":", 1)[1])
+            continue
+        if line.startswith(("#EXTVLCOPT", "#KODIPROP", "#EXTHTTP")):
+            current.setdefault("raw_options", []).append(line)
+            continue
+        if not line.startswith(("http://", "https://")):
+            continue
+        group = clean_text(current.get("group"))
+        source = clean_text(current.get("source")) or slow_source_name(group)
+        if not source:
+            continue
+        referer = ""
+        user_agent = ""
+        for option in current.get("raw_options") or []:
+            lowered = option.lower()
+            if lowered.startswith("#extvlcopt:http-referrer="):
+                referer = clean_text(option.split("=", 1)[1])
+            elif lowered.startswith("#extvlcopt:http-user-agent="):
+                user_agent = clean_text(option.split("=", 1)[1])
+        channels.append(
+            {
+                "source": source,
+                "name": current.get("title") or group or source,
+                "group": group,
+                "logo": current.get("logo", ""),
+                "stream_url": line,
+                "referer": referer,
+                "user_agent": user_agent,
+                "raw_extinf": current.get("raw_extinf", ""),
+                "raw_options": list(current.get("raw_options") or []),
+                "preserve_extinf": False,
+            }
+        )
+    channels = filter_current_and_future_events(channels)
+    channels = dedupe_and_sort_channels(channels)
+    log(f"[SlowSources] Loaded {len(channels)} links from {SLOW_SOURCES_M3U.name}")
+    return channels
+
+
 def split_m3u_text_blocks(text):
     header = []
     blocks = []
@@ -8884,6 +9008,10 @@ def main():
     log(f"Combined M3U collector - {now_ict()} - {mode} - run_mode={RUN_MODE}")
     log("=" * 60)
 
+    if RUN_MODE == "slow":
+        collect_slow_sources()
+        return
+
     if RUN_MODE == "highlight":
         highlight_channels = collect_current_highlights()
         if WRITE_HIGHLIGHT_M3U:
@@ -8991,9 +9119,6 @@ def main():
         ("CoTiViSports", collect_cotivi_sports),
         ("DekikiSports", collect_dekiki_sports),
         ("MebongTV", collect_mebongtv),
-        ("SutBongTV", collect_sutbongtv),
-        ("PhaLangTV", collect_phalang),
-        ("XoiLacZ", collect_xoilacz),
         ("AzabuLive", collect_azabu_live),
         (
             "TV365KidsInternational",
@@ -9027,8 +9152,14 @@ def main():
         ("QueChoa8", lambda: collect_missing_source("QueChoa8")),
     ]
 
-    all_channels = []
+    all_channels = load_slow_sources()
     per_source_counts = {}
+    for source, _group, _collector in SLOW_SOURCE_COLLECTORS:
+        per_source_counts[source] = sum(1 for channel in all_channels if channel.get("source") == source)
+    if not all_channels:
+        log("[SlowSources] Playlist unavailable; collect directly for this run")
+        all_channels, slow_counts = collect_slow_sources()
+        per_source_counts.update(slow_counts)
     for source_name, collector in collectors:
         log("")
         selected = collect_source_channels(source_name, collector)

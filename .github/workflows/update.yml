@@ -94,7 +94,9 @@ jobs:
           test -s footonsat.m3u
           test -f vanlinh_sport.m3u
           test -s vanlinh_sport.m3u
-          ls -lh all.m3u ott.m3u highlight.m3u footonsat.m3u vanlinh_sport.m3u
+          test -f slow_sources.m3u
+          test -s slow_sources.m3u
+          ls -lh all.m3u ott.m3u highlight.m3u footonsat.m3u vanlinh_sport.m3u slow_sources.m3u
 
       - name: Commit generated files
         run: |
