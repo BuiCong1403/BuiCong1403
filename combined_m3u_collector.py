@@ -351,6 +351,7 @@ H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
 H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "3") or "3")
 H24_HIGHLIGHT_RETENTION_DAYS = int(os.environ.get("H24_HIGHLIGHT_RETENTION_DAYS", "4") or "4")
 H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "260") or "260")
+HIGHLIGHT_RETENTION_DAYS = int(os.environ.get("HIGHLIGHT_RETENTION_DAYS", "10") or "10")
 H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "32") or "32")
 H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "80") or "80")
 H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "8") or "8")
@@ -1624,6 +1625,47 @@ def is_highlight_channel(channel):
     return is_highlight_source(source) or group_key(output_group(channel)) == group_key("Highlight")
 
 
+def supersport_date_from_media_url(url):
+    match = re.search(r"/SOC_(\d{2})(\d{2})(\d{2})_", clean_text(url), re.I)
+    if not match:
+        return None
+    day, month, year = match.groups()
+    try:
+        return datetime(2000 + int(year), int(month), int(day), tzinfo=TZ_VN).date()
+    except Exception:
+        return None
+
+
+def highlight_channel_date(channel):
+    event_dt = channel_event_datetime(channel)
+    if event_dt:
+        return event_dt.date()
+    event_date = channel_event_date(channel)
+    if event_date:
+        return event_date
+    url = clean_text(channel.get("stream_url"))
+    return h24_date_from_media_url(url) or supersport_date_from_media_url(url) or date_from_text(url)
+
+
+def filter_recent_highlights(channels, retention_days=None):
+    retention_days = max(1, int(retention_days or HIGHLIGHT_RETENTION_DAYS))
+    cutoff = datetime.now(TZ_VN).date() - timedelta(days=retention_days - 1)
+    kept = []
+    removed = 0
+    for channel in channels:
+        if not is_highlight_channel(channel):
+            kept.append(channel)
+            continue
+        event_date = highlight_channel_date(channel)
+        if event_date and event_date < cutoff:
+            removed += 1
+            continue
+        kept.append(channel)
+    if removed:
+        log(f"[Highlight] Removed old links older than {retention_days} days: {removed}")
+    return kept
+
+
 def highlight_time_sort_value(channel):
     event_dt = channel_event_datetime(channel)
     if event_dt:
@@ -1741,7 +1783,41 @@ def ott_display_text(value):
     )
 
 
+def ott_match_sort_title(channel):
+    title = clean_text(channel.get("name"))
+    title = re.sub(r"^\s*(?:\d{1,2}:\d{2}\s*)?(?:\d{1,2}[/-]\d{1,2}(?:[/-]\d{2,4})?)?\s*", "", title)
+    title = re.sub(r"\s*\|\s*(?:link|server|blv|hd|fhd)\s*\d*.*$", "", title, flags=re.I)
+    title = re.sub(r"\s*\[[^\]]+\]\s*$", "", title)
+    title = re.sub(r"\s*\([^)]*(?:blv|link|flv|m3u8|hd|fhd)[^)]*\)\s*$", "", title, flags=re.I)
+    title = re.sub(r"\s+", " ", title).strip()
+    return compact_text_key(title or channel.get("name"))
+
+
+def ott_channel_sort_key(channel):
+    event_dt = channel_event_datetime(channel)
+    event_date = channel_event_date(channel)
+    if event_dt:
+        time_value = int(event_dt.timestamp())
+    elif event_date:
+        time_value = int(datetime(event_date.year, event_date.month, event_date.day, tzinfo=TZ_VN).timestamp())
+    else:
+        time_value = 9_999_999_999
+    return (
+        time_value,
+        ott_match_sort_title(channel),
+        output_group(channel),
+        channel_priority(channel) * -1,
+        clean_text(channel.get("name")),
+        clean_text(channel.get("stream_url")),
+    )
+
+
+def sort_ott_channels(channels):
+    return sorted(channels, key=ott_channel_sort_key)
+
+
 def write_ott_m3u(path, channels):
+    channels = sort_ott_channels(channels)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
@@ -3509,25 +3585,24 @@ def collect_previous_highlight_playlist():
         user_agent=UA,
         preserve_extinf=False,
     )
-    allowed_dates = h24_allowed_highlight_dates()
     channels = []
     for channel in previous:
         stream_url = clean_text(channel.get("stream_url"))
         lower_url = stream_url.lower()
         if "cdn.24h.com.vn" not in lower_url and "vod.supersport.com" not in lower_url:
             continue
-        media_date = h24_date_from_media_url(stream_url)
-        if media_date and media_date not in allowed_dates:
-            continue
         channel["source"] = "SuperSportHighlight" if "vod.supersport.com" in lower_url else "24hHighlight"
         channel["group"] = "Highlight"
+        media_date = highlight_channel_date(channel)
+        if media_date:
+            channel["event_date"] = media_date
         if "vod.supersport.com" in lower_url and not clean_text(channel.get("referer")):
             channel["referer"] = SUPERSPORT_BASE_URL.rstrip("/") + "/"
         elif not clean_text(channel.get("referer")):
             channel["referer"] = H24_BASE_URL.rstrip("/") + "/"
         channel["skip_event_filter"] = True
         channels.append(channel)
-    return channels
+    return filter_recent_highlights(channels)
 
 
 def extvlcopt_value(block, option_name):
@@ -6148,6 +6223,48 @@ def dasfootball_jsonld_channels(html_text, page_url, allowed_dates, source, base
     return channels
 
 
+def dasfootball_embedded_video_channels(html_text, page_url, allowed_dates, source, base_url):
+    channels = []
+    seen = set()
+    text = html.unescape(decode_json_string(html_text or "").replace("\\/", "/").replace("\\u0026", "&"))
+    pattern = re.compile(
+        r'"name"\s*:\s*"(?P<title>(?:\\.|[^"\\])*)"'
+        r'(?:(?!"@type"\s*:\s*"VideoObject").){0,1800}?'
+        r'"url"\s*:\s*"(?P<post>https://dasfootball\.com/[^"]+)"'
+        r'(?:(?!"@type"\s*:\s*"VideoObject").){0,1800}?'
+        r'"embedUrl"\s*:\s*"(?P<stream>https?://[^"]+)"'
+        r'(?:(?!"@type"\s*:\s*"VideoObject").){0,1800}?'
+        r'"uploadDate"\s*:\s*"(?P<upload>[^"]+)"',
+        re.I | re.S,
+    )
+    for match in pattern.finditer(text):
+        stream_url = clean_text(decode_json_string(match.group("stream")).replace("\\/", "/").replace("\\u0026", "&"))
+        if not is_valid_highlight_url(stream_url) or is_hls_init_segment_url(stream_url):
+            continue
+        if stream_url in seen:
+            continue
+        post_url = clean_text(decode_json_string(match.group("post")).replace("\\/", "/")) or page_url
+        event_date = parse_iso_to_ict_date(match.group("upload")) or dasfootball_date_from_url(post_url)
+        if event_date and event_date not in allowed_dates:
+            continue
+        seen.add(stream_url)
+        title = clean_highlight_title(decode_json_string(match.group("title")) or title_from_url_slug(post_url) or "DasFootball Highlight")
+        channels.append(
+            {
+                "source": source,
+                "name": title,
+                "group": "Highlight | DasFootball",
+                "logo": "",
+                "stream_url": stream_url,
+                "referer": post_url,
+                "user_agent": UA,
+                "event_date": event_date,
+                "skip_event_filter": True,
+            }
+        )
+    return channels
+
+
 def collect_dasfootball_highlights():
     source = "DasFootballHighlight"
     base_url = DASFOOTBALL_BASE_URL.rstrip("/") + "/"
@@ -6161,6 +6278,8 @@ def collect_dasfootball_highlights():
         urljoin(base_url, "ligue-1/"),
         urljoin(base_url, "champions-league/"),
         urljoin(base_url, "europa-league/"),
+        urljoin(base_url, "world-cup/"),
+        urljoin(base_url, "uefa-nations-league/"),
     ]
 
     post_urls = []
@@ -6189,6 +6308,12 @@ def collect_dasfootball_highlights():
         except Exception:
             continue
         for channel in dasfootball_jsonld_channels(html_text, page_url, allowed_dates, source, base_url):
+            stream_key = clean_text(channel.get("stream_url"))
+            if not stream_key or stream_key in seen_jsonld_streams:
+                continue
+            seen_jsonld_streams.add(stream_key)
+            jsonld_channels.append(channel)
+        for channel in dasfootball_embedded_video_channels(html_text, page_url, allowed_dates, source, base_url):
             stream_key = clean_text(channel.get("stream_url"))
             if not stream_key or stream_key in seen_jsonld_streams:
                 continue
@@ -6621,6 +6746,9 @@ def collect_supersport_highlights():
             break
 
     def direct_seed_channel(stream_url, seed_title=""):
+        event_date = supersport_date_from_media_url(stream_url)
+        if event_date and event_date not in allowed_dates:
+            return None
         return {
             "source": source,
             "name": seed_title or title_from_stream_url(stream_url, "SuperSport Highlight"),
@@ -6629,7 +6757,7 @@ def collect_supersport_highlights():
             "stream_url": stream_url,
             "referer": base_url,
             "user_agent": UA,
-            "event_date": None,
+            "event_date": event_date,
             "skip_event_filter": True,
         }
 
@@ -6664,7 +6792,12 @@ def collect_supersport_highlights():
 
     channels = []
     channels.extend(daily_goal_channels)
-    channels.extend(direct_seed_channel(stream_url, seed_title) for stream_url, seed_title in direct_seed_urls)
+    channels.extend(
+        channel
+        for stream_url, seed_title in direct_seed_urls
+        for channel in [direct_seed_channel(stream_url, seed_title)]
+        if channel
+    )
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
         for future in as_completed(futures):
@@ -8922,6 +9055,44 @@ def m3u_block_is_highlight(block):
     return 'group-title="highlight' in joined or "#extgrp:highlight" in joined
 
 
+def m3u_block_stream_url(block):
+    for line in block:
+        line = clean_text(line)
+        if line.startswith(("http://", "https://")):
+            return line
+    return ""
+
+
+def m3u_block_highlight_date(block):
+    text = "\n".join(clean_text(line) for line in block)
+    stream_url = m3u_block_stream_url(block)
+    return (
+        h24_date_from_media_url(stream_url)
+        or supersport_date_from_media_url(stream_url)
+        or date_from_text(stream_url)
+        or date_from_text(text)
+    )
+
+
+def filter_recent_highlight_blocks(blocks, retention_days=None):
+    retention_days = max(1, int(retention_days or HIGHLIGHT_RETENTION_DAYS))
+    cutoff = datetime.now(TZ_VN).date() - timedelta(days=retention_days - 1)
+    kept = []
+    removed = 0
+    for block in blocks:
+        if not m3u_block_is_highlight(block):
+            kept.append(block)
+            continue
+        event_date = m3u_block_highlight_date(block)
+        if event_date and event_date < cutoff:
+            removed += 1
+            continue
+        kept.append(block)
+    if removed:
+        log(f"[Highlight] Removed old M3U blocks older than {retention_days} days: {removed}")
+    return kept
+
+
 def update_m3u_header(header, total):
     result = []
     wrote_total = False
@@ -8955,7 +9126,7 @@ def replace_highlight_blocks(path, highlight_blocks):
         return 0, len(highlight_blocks), len(highlight_blocks)
     header, blocks = split_m3u_text_blocks(path.read_text(encoding="utf-8"))
     kept = [block for block in blocks if not m3u_block_is_highlight(block)]
-    merged = kept + list(highlight_blocks)
+    merged = kept + filter_recent_highlight_blocks(list(highlight_blocks))
     write_m3u_text_blocks(path, header, merged)
     return len(kept), len(highlight_blocks), len(merged)
 
@@ -8964,7 +9135,7 @@ def highlight_blocks_from_file():
     if not HIGHLIGHT_M3U.exists():
         return []
     _header, blocks = split_m3u_text_blocks(HIGHLIGHT_M3U.read_text(encoding="utf-8"))
-    return [block for block in blocks if m3u_block_is_highlight(block)]
+    return filter_recent_highlight_blocks([block for block in blocks if m3u_block_is_highlight(block)])
 
 
 def ott_highlight_blocks_from_channels(channels):
@@ -8995,21 +9166,22 @@ def ott_highlight_blocks_from_file():
 
 def collect_current_highlights():
     highlight_sources = []
-    highlight_sources.extend(collect_source_channels("SuperSportHighlight", collect_supersport_highlights))
+    highlight_sources.extend(filter_recent_highlights(collect_source_channels("SuperSportHighlight", collect_supersport_highlights)))
     dasfootball_channels = collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights)
+    dasfootball_channels = filter_recent_highlights(dasfootball_channels)
     if dasfootball_channels:
         write_m3u(DASFOOTBALL_M3U, dasfootball_channels)
     if len(dasfootball_channels) < 5:
         previous_dasfootball = collect_previous_dasfootball_playlist()
         if previous_dasfootball:
-            dasfootball_channels = dedupe_and_sort_channels(dasfootball_channels + previous_dasfootball)
+            dasfootball_channels = filter_recent_highlights(dedupe_and_sort_channels(dasfootball_channels + previous_dasfootball))
             log(f"[DasFootballHighlight] After cache merge: {len(dasfootball_channels)}")
             if WRITE_HIGHLIGHT_M3U:
                 write_m3u(DASFOOTBALL_M3U, dasfootball_channels)
     highlight_sources.extend(dasfootball_channels)
-    highlight_sources.extend(collect_source_channels("MySportHighlights", collect_mysport_highlights))
-    highlight_sources.extend(collect_source_channels("24hHighlight", collect_24h_highlights))
-    highlight_channels = dedupe_and_sort_channels(highlight_sources)
+    highlight_sources.extend(filter_recent_highlights(collect_source_channels("MySportHighlights", collect_mysport_highlights)))
+    highlight_sources.extend(filter_recent_highlights(collect_source_channels("24hHighlight", collect_24h_highlights)))
+    highlight_channels = filter_recent_highlights(dedupe_and_sort_channels(highlight_sources))
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
         log(
             f"[Highlight] Low count {len(highlight_channels)} < {HIGHLIGHT_MIN_GOOD_COUNT}; "
@@ -9017,7 +9189,7 @@ def collect_current_highlights():
         )
         previous_highlights = collect_previous_highlight_playlist()
         if previous_highlights:
-            highlight_channels = dedupe_and_sort_channels(highlight_channels + previous_highlights)
+            highlight_channels = filter_recent_highlights(dedupe_and_sort_channels(highlight_channels + previous_highlights))
             log(f"[Highlight] After previous merge: {len(highlight_channels)}")
     return highlight_channels
 
