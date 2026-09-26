@@ -1,12 +1,12 @@
 #EXTM3U
-# Updated : 2026-09-26 20:40 ICT
-# Total   : 20
+# Updated : 2026-09-26 21:48 ICT
+# Total   : 40
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/3653cce234494bfbd33e077f4a028f66.png!w80" group-title="CoLaTV",01:00 | Mexico vs Colombia | Chính
+https://live05.meung.app/live/97885009_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/624b1a84ff50919f44835640108bdd42.png!w80" group-title="CoLaTV",05:00 | Busan KTF Sonicboom vs Goyang Carrot Jumpers | Chính
 https://live05.meung.app/live/19919577_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/cb76c8ffac95e7e5429aca574aab5deb.png!w80" group-title="CoLaTV",12:00 | Ceuta vs R Sociedad B | Chính
-https://live05.meung.app/live/82054853_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/3b5750171f62fd9c3cd91a41ddb1ac45.png!w80" group-title="CoLaTV",13:00 | Kenya vs Eritrea | Chính
 https://live05.meung.app/live/75915087_tsc.m3u8
@@ -19,12 +19,6 @@ https://live05.meung.app/live/75748097_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/14b75c2d38d88b747c19de8ea5509d16.png!w80" group-title="CoLaTV",13:00 | ĐTQG Việt Nam vs Philippines | Chính
 https://live05.meung.app/live/14830711_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/32a7374258cbbb6e851992f820de53d6.png!w80" group-title="CoLaTV",14:00 | Minsk FK Nữ vs Fenerbahce SK Women | Chính
-https://live05.meung.app/live/07808742_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/f8ac17559f204d139563929dc7eeedeb.png!w80" group-title="CoLaTV",14:15 | Granada vs Andorra | Chính
-https://live05.meung.app/live/97885009_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/29a83a8a9641bb860a679d7e5ba52d26.png!w80" group-title="CoLaTV",15:55 | Kuwait vs Iraq | Chính
 https://live05.meung.app/live/08552895_tsc.m3u8
@@ -53,6 +47,9 @@ https://live05.meung.app/live/87379114_tsc.m3u8
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/e2fcc738438c4e7ca4b605ef8764db73.png!w80" group-title="CoLaTV",18:45 | Slovakia vs Moldova | Chính
 https://live05.meung.app/live/14707124_tsc.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/848ef33f5e745846994a756f211e530b.png!w80" group-title="CoLaTV",18:45 | Đội tuyển QG Albania vs Belarus | Chính
+https://live05.meung.app/live/82054853_tsc.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/0ee21aceb8c7d32b06bab2f4fac42c49.png!w80" group-title="CoLaTV",19:00 | Montserrat vs Quần đảo Virgin Anh | Chính
 https://live05.meung.app/live/02456966_tsc.m3u8
 
@@ -61,4 +58,67 @@ https://live05.meung.app/live/99121525_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/872867a492989e6a9a0785cfd0a40680.png!w80" group-title="CoLaTV",23:07 | Chivas Guadalajara vs Queretaro | Chính
 https://live05.meung.app/live/78905744_tsc.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/8b8fe90668461b90ddc20516b0e6796d.png!w80" group-title="CoLaTV",23:30 | New York Red Bulls vs St. Louis City | Chính
+https://live05.meung.app/live/07808742_tsc.m3u8
+
+#EXTINF:-1 tvg-id="leaf:au" tvg-name="AU : FOX SPORTS 504 HD" tvg-logo="https://cdn.highfly.to/leaf_posters/au_UTC.webp?v=1a9a6838ee949d4d" group-title="Afl",AU : FOX SPORTS 504 HD
+https://papacito.cfd/m3u/au/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:now-55454545" tvg-name="(4K) : SKY SPORTS FOOTBALL" tvg-logo="https://cdn.highfly.to/leaf_posters/now-55454545_UTC.webp?v=7545f699ab5969e1" group-title="Football",(4K) : SKY SPORTS FOOTBALL
+https://papacito.cfd/m3u/now-55454545/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:now-sky-sports-premier-league" tvg-name="(FHD) : SKY SPORTS PREMIER LEAGUE" tvg-logo="https://cdn.highfly.to/leaf_posters/now-sky-sports-premier-league_UTC.webp?v=56011c436a38703d" group-title="Football",(FHD) : SKY SPORTS PREMIER LEAGUE
+https://papacito.cfd/m3u/now-sky-sports-premier-league/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:custom-charlton-athletic-vs-manchester-city-20722" tvg-name="Charlton Athletic vs Manchester City" tvg-logo="https://cdn.highfly.to/posters/custom-charlton-athletic-vs-manchester-city-20722_UTC.webp?v=d5e4d16d" group-title="Football",Charlton Athletic vs Manchester City
+https://papacito.cfd/m3u/2162087/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:custom-charlton-athletic-vs-manchester-city-20722" tvg-name="Charlton Athletic vs Manchester City" tvg-logo="https://cdn.highfly.to/posters/custom-charlton-athletic-vs-manchester-city-20722_UTC.webp?v=d5e4d16d" group-title="Football",Charlton Athletic vs Manchester City
+https://papacito.cfd/m3u/429938/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:slovenia-vs-scotland-2475288" tvg-name="Slovenia vs Scotland" tvg-logo="https://cdn.highfly.to/posters/slovenia-vs-scotland-2475288_UTC.webp?v=6b00cb6e" group-title="Football",Slovenia vs Scotland
+https://papacito.cfd/m3u/1562584/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:slovenia-vs-scotland-2475288" tvg-name="Slovenia vs Scotland" tvg-logo="https://cdn.highfly.to/posters/slovenia-vs-scotland-2475288_UTC.webp?v=6b00cb6e" group-title="Football",Slovenia vs Scotland
+https://papacito.cfd/m3u/1688741/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:slovenia-vs-scotland-2475288" tvg-name="Slovenia vs Scotland" tvg-logo="https://cdn.highfly.to/posters/slovenia-vs-scotland-2475288_UTC.webp?v=6b00cb6e" group-title="Football",Slovenia vs Scotland
+https://papacito.cfd/m3u/2162002/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:slovenia-vs-scotland-2475288" tvg-name="Slovenia vs Scotland" tvg-logo="https://cdn.highfly.to/posters/slovenia-vs-scotland-2475288_UTC.webp?v=6b00cb6e" group-title="Football",Slovenia vs Scotland
+https://papacito.cfd/m3u/429585/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:now434340" tvg-name="(FHD) : SKY SPORTS GOLF" tvg-logo="https://cdn.highfly.to/leaf_posters/now434340_UTC.webp?v=8d9f6d13fd90b135" group-title="Golf",(FHD) : SKY SPORTS GOLF
+https://papacito.cfd/m3u/now434340/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:us-33434" tvg-name="US : GOLF CHANNEL HD" tvg-logo="https://cdn.highfly.to/leaf_posters/us-33434_UTC.webp?v=59c2004a99fb5571" group-title="Golf",US : GOLF CHANNEL HD
+https://papacito.cfd/m3u/us-33434/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:now-34343434" tvg-name="(FHD) : SKY SPORTS F1" tvg-logo="https://cdn.highfly.to/leaf_posters/now-34343434_UTC.webp?v=119484a69cb958c4" group-title="Motor Sports",(FHD) : SKY SPORTS F1
+https://papacito.cfd/m3u/now-34343434/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:now-34343434" tvg-name="(FHD) : SKY SPORTS F1" tvg-logo="https://cdn.highfly.to/leaf_posters/now-34343434_UTC.webp?v=119484a69cb958c4" group-title="Motor Sports",(FHD) : SKY SPORTS F1
+https://papacito.cfd/m3u/vip-rerrere-4344/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:au344343443" tvg-name="AU : FOX SPORTS 502 HD" tvg-logo="https://cdn.highfly.to/leaf_posters/au344343443_UTC.webp?v=f973c30f2a963376" group-title="Rugby",AU : FOX SPORTS 502 HD
+https://papacito.cfd/m3u/au344343443/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:urc-lions-leinster-20260926" tvg-name="Lions vs Leinster" tvg-logo="https://cdn.highfly.to/posters/urc-lions-leinster-20260926_UTC.webp?v=03b3da20" group-title="Rugby",Lions vs Leinster
+https://papacito.cfd/m3u/587990/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:urc-lions-leinster-20260926" tvg-name="Lions vs Leinster" tvg-logo="https://cdn.highfly.to/posters/urc-lions-leinster-20260926_UTC.webp?v=03b3da20" group-title="Rugby",Lions vs Leinster
+https://papacito.cfd/m3u/588051/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:nz-awwqewewe" tvg-name="NZ : SKY SPORT 1" tvg-logo="https://cdn.highfly.to/leaf_posters/nz-awwqewewe_UTC.webp?v=6a82a55db1eb3882" group-title="Rugby",NZ : SKY SPORT 1
+https://papacito.cfd/m3u/nz-awwqewewe/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:us-3443434" tvg-name="US : ESPN" tvg-logo="https://cdn.highfly.to/leaf_posters/us-3443434_UTC.webp?v=501584e237ebde7c" group-title="Sports",US : ESPN
+https://papacito.cfd/m3u/us-3443434/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:now-sky-sports-tennis" tvg-name="(FHD) : SKY SPORTS TENNIS" tvg-logo="https://cdn.highfly.to/leaf_posters/now-sky-sports-tennis_UTC.webp?v=0ea453f3d9baede5" group-title="Tennis",(FHD) : SKY SPORTS TENNIS
+https://papacito.cfd/m3u/now-sky-sports-tennis/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:us-343343" tvg-name="US : TENNIS HD" tvg-logo="https://cdn.highfly.to/leaf_posters/us-343343_UTC.webp?v=8e630dabbfd4e9b6" group-title="Tennis",US : TENNIS HD
+https://papacito.cfd/m3u/us-343343/live.m3u8
 
