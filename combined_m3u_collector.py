@@ -8758,10 +8758,20 @@ def collect_source_channels(source_name, collector):
 
 
 SLOW_SOURCE_COLLECTORS = (
+    ("KhanDaiA", "Khandai", collect_khandaia),
+    ("PhaoHoaTV", "PhaoHoaTV", collect_phaohoa),
     ("SutBongTV", "Sút Bóng TV", collect_sutbongtv),
     ("PhaLangTV", "Phá Làng TV", collect_phalang),
     ("XoiLacZ", "Xôi Lạc Z TV", collect_xoilacz),
 )
+
+SLOW_SOURCE_MIN_GOOD_COUNTS = {
+    "KhanDaiA": max(1, KHANDAIA_TTCB_MIN_LINKS // 2),
+    "PhaoHoaTV": max(1, PHAOHOA_TTCB_MIN_LINKS // 2),
+    "SutBongTV": 1,
+    "PhaLangTV": 1,
+    "XoiLacZ": 1,
+}
 
 
 def slow_source_name(group):
@@ -8773,11 +8783,21 @@ def slow_source_name(group):
 
 
 def collect_slow_sources():
+    previous = load_slow_sources()
+    previous_by_source = {}
+    for channel in previous:
+        previous_by_source.setdefault(channel.get("source"), []).append(channel)
+
     channels = []
     counts = {}
     for source, _group, collector in SLOW_SOURCE_COLLECTORS:
         log("")
         selected = collect_source_channels(source, collector)
+        min_good_count = SLOW_SOURCE_MIN_GOOD_COUNTS.get(source, 1)
+        cached = previous_by_source.get(source, [])
+        if cached and len(selected) < min_good_count:
+            log(f"[{source}] Keep cached snapshot: current={len(selected)} cache={len(cached)} min={min_good_count}")
+            selected = dedupe_and_sort_channels(filter_current_and_future_events(selected + cached))
         counts[source] = len(selected)
         channels.extend(selected)
     channels = dedupe_and_sort_channels(channels)
@@ -9041,7 +9061,6 @@ def main():
                 HOIQUAN1_REFERER,
             ),
         ),
-        ("KhanDaiA", collect_khandaia),
         (
             "ThienDinh",
             lambda: collect_standard_api(
@@ -9092,7 +9111,6 @@ def main():
             ),
         ),
         ("GioVang", collect_giovang_api),
-        ("PhaoHoaTV", collect_phaohoa),
         ("SocoliveTV", collect_socolive),
         (
             "AllChannelM3U",
@@ -9156,8 +9174,16 @@ def main():
     per_source_counts = {}
     for source, _group, _collector in SLOW_SOURCE_COLLECTORS:
         per_source_counts[source] = sum(1 for channel in all_channels if channel.get("source") == source)
-    if not all_channels:
-        log("[SlowSources] Playlist unavailable; collect directly for this run")
+    missing_slow_sources = [
+        source
+        for source, _group, _collector in SLOW_SOURCE_COLLECTORS
+        if per_source_counts.get(source, 0) <= 0
+    ]
+    if not all_channels or missing_slow_sources:
+        if missing_slow_sources:
+            log(f"[SlowSources] Missing sources in snapshot: {', '.join(missing_slow_sources)}; refresh now")
+        else:
+            log("[SlowSources] Playlist unavailable; collect directly for this run")
         all_channels, slow_counts = collect_slow_sources()
         per_source_counts.update(slow_counts)
     for source_name, collector in collectors:
