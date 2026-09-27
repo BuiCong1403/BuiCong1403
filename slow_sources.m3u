@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-09-27 14:00 ICT
-# Total   : 86
+# Updated : 2026-09-27 14:50 ICT
+# Total   : 105
 
 #EXTINF:-1 tvg-id="XoiLacZ" tvg-logo="" group-title="FLV",| Link 1 [FLV]
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
@@ -41,16 +41,6 @@ https://live1.quickscoreboardz.com/live/channel15.flv?wsSecret=f33e0f7e58d80e093
 #EXTVLCOPT:http-referrer=https://xlz.livecarriercdn.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36
 https://live1.quickscoreboardz.com/live/channel6.flv?wsSecret=adb66caacae15028d874cc6a71aefc3d&wsABSTime=1790535630
-
-#EXTINF:-1 tvg-id="PhaLangTV" tvg-logo="https://img.sports-data.online/football/team/2552214027525015c3545cff636f5e03.png" group-title="Phá Làng TV",10:05 27/09 Santos Laguna - Pachuca [Nguồn]
-#EXTVLCOPT:http-referrer=https://phalang.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/82f0ea507384fb08faf8ab443d78b18c/playlist.m3u8
-
-#EXTINF:-1 tvg-id="PhaLangTV" tvg-logo="https://img.sports-data.online/football/team/a7df6424c12ac9b7a6e5ca3ff953d5b3.png" group-title="Phá Làng TV",10:10 27/09 Tigres UANL - Puebla [Nguồn]
-#EXTVLCOPT:http-referrer=https://phalang.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/e8dc160b928a534b596d358cf2516d8d/playlist.m3u8
 
 #EXTINF:-1 tvg-id="PhaLangTV" tvg-logo="https://img.sports-data.online/football/team/82a4919b33c4cd1184a36f6d48e33b91.png" group-title="Phá Làng TV",11:00 27/09 AS Harima ALBION Women - Ehime FC Women [Nguồn]
 #EXTVLCOPT:http-referrer=https://phalang.live/
@@ -151,6 +141,16 @@ https://pull.digitalcdn.net/live/98c6994cdc75464e9332c99879e3f343/index.m3u8
 #EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull1.digitalcdn.net/live/98c6994cdc75464e9332c99879e3f343/index.m3u8
+
+#EXTINF:-1 tvg-id="PhaLangTV" tvg-logo="https://img.sports-data.online/football/team/47f7dbdb73f13658f8f0cd634a34e3ff.png" group-title="Phá Làng TV",15:00 27/09 Ezhou Team - Xiangyang Team [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/3bc4b71753eb9aafc876c528608340f9/playlist.m3u8
+
+#EXTINF:-1 tvg-id="PhaLangTV" tvg-logo="https://img.sports-data.online/football/team/d8a8c5baee9a183111006b6c531e3e6e.png" group-title="Phá Làng TV",15:00 27/09 Liuzhou Longcheng - Hezhou Youth [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/42b1a6a305ba9224e881636fda6c12d7/playlist.m3u8
 
 #EXTINF:-1 tvg-id="PhaLangTV" tvg-logo="https://sta.vnres.co/file/common/20260924/d5482f76771dd1dd1e923a7639c994e2.png" group-title="Phá Làng TV",17:00 27/09 Cambodia vs Myanmar (LÝ LA LÀNG) (HD2) [geo]
 https://pull1.digitalcdn.net/live/b0a4f8748f8d4e29b6b3cc92f02db49c/index.m3u8
@@ -257,47 +257,32 @@ https://pull1.digitalcdn.net/live/6d5177502e974cdebc33690a660d03b0/index.m3u8
 #EXTINF:-1 tvg-id="PhaLangTV" tvg-logo="https://img0.aiscore.com/volleyball/team/da0f5c2d7a7ced93056baddc54135a74.png!w80" group-title="Phá Làng TV",11:00 28/09 Trung Quốc vs Philippines (LÝ LIỀU LĨNH) [geo]
 https://pull.digitalcdn.net/live/6d5177502e974cdebc33690a660d03b0/index.m3u8
 
-#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Deren FC vs Amtat FC vào lúc 12:00 27/09/2026 (BLV BÉO) | Link 3 [HLS]
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=7549f5e2cde1d073f91930e6da889df2&txTime=6ab912a0
-
-#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Deren FC vs Amtat FC vào lúc 12:00 27/09/2026 (CƠM NẾP) | Link 4 [HLS]
-https://pull.niues.live/live/stream-618950_lhd.m3u8?auth_key=1790495702-0-0-8e4309823051a94d65efc4f3cb0e3044
-
-#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Deren FC vs Amtat FC vào lúc 12:00 27/09/2026 (T REX) | Link 2 [HLS]
-https://pull.niues.live/live/stream-619672_lhd.m3u8?auth_key=1790495702-0-0-56bb2ad1a143293b8ca46aa0e60dcfe1
-
-#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Deren FC vs Amtat FC vào lúc 12:00 27/09/2026 (TRÀ ĐÁ) | Link 1 [HLS]
-https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1790495668-0-0-a2f8c78d6481e3fc0907a5da1c95085b
-
-#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Seoul Thunders vs Anyang JungKwanJang vào lúc 12:00 27/09/2026 (BLV HENRY) | Link 1 [HLS]
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1790495884-0-0-86f542bc41645dee98542ac22dbed9ca
-
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Adelaide vs Cairns Taipans vào lúc 13:00 27/09/2026 (HUNTER) | Link 1 [HLS]
-https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=c71238ca60b9db23dcf6b5d5db67f129&txTime=6ab912dc
+https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=c56619419a65784ded8977eb282aef40&txTime=6ab91e57
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Hong Kong vs Laos vào lúc 14:00 27/09/2026 (BLV ALEX) | Link 5 [HLS]
-https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1790495824-0-0-8ad462821414532f0508d6eb898ff59e
+https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1790497083-0-0-25815ee12812ef394fe64870405fe2e3
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Hong Kong vs Laos vào lúc 14:00 27/09/2026 (BLV CUỘI) | Link 2 [HLS]
-https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1790495824-0-0-d25f705d127a56f35266956cd79a847f
+https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1790497083-0-0-ee2f6d3086a26cc7a68f1e3df29b0e20
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Hong Kong vs Laos vào lúc 14:00 27/09/2026 (BLV HEHE) | Link 1 [HLS]
-https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1790495824-0-0-35eb00d4673dddeca94cba9654c70f89
+https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1790497083-0-0-aa2ed7bb507efd1c28d7ad0e400b90d6
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Hong Kong vs Laos vào lúc 14:00 27/09/2026 (BLV MESSI) | Link 4 [HLS]
-https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1790495824-0-0-97188ccb43c40286f60ecf439c870690
+https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1790497083-0-0-b1541f01828f5de6b4021449b72f4bac
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Hong Kong vs Laos vào lúc 14:00 27/09/2026 (BLV TAP) | Link 3 [HLS]
-https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=e86b183853a20b00eb5562ca32d3db9e&txTime=6ab9129f
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=329de658526c8f5b62fa01270b231289&txTime=6ab9178b
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Hong Kong vs Laos vào lúc 14:00 27/09/2026 (BLV TOMIA) | Link 6 [HLS]
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1790495824-0-0-e995d82c61cb7fc59b410f2ec0a6c285
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1790497083-0-0-6a0423d6095e16eb54c6fb84ae678933
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",FC Ulaanbaatar vs Hunters FC vào lúc 15:00 27/09/2026 (A MÂN) | Link 2 [HLS]
-https://pull.niues.live/live/stream-627718_lhd.m3u8?auth_key=1790449085-0-0-f57fc0d26e77959366eb20ff1142656c
+https://pull.niues.live/live/stream-627718_lhd.m3u8?auth_key=1790498884-0-0-838239c90f61d8aedb915346ad9b6d8d
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",FC Ulaanbaatar vs Hunters FC vào lúc 15:00 27/09/2026 (PEANUT) | Link 1 [HLS]
-https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1790308933-0-0-d771829b2309a206ad8fffcff40213ca
+https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1790498884-0-0-b9419f61b1070e8e8a79ebe29ab39891
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Persela Lamongan vs PSBS Biak Numfor vào lúc 15:30 27/09/2026 (BLV LUCAS) | Link 2 [HLS]
 https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1790459103-0-0-2768f14e5d38cff7a6c0620e5bedb9c1
@@ -308,15 +293,87 @@ https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1790438168-0-0-7aee
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Persiku Kudus vs PSIS Semarang vào lúc 15:30 27/09/2026 (BLV CÁO) | Link 1 [HLS]
 https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1790450755-0-0-c93cdd128a69c9f46aa9b30a5bd81c0a
 
-#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Persiku Kudus vs PSIS Semarang vào lúc 15:30 27/09/2026 (BÚN ĐẬU) | Link 2 [HLS]
-https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1790476875-0-0-782316b24db38495020f480548d87ab6
-
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Rans Nusantara FC vs Deltras Sidoarjo vào lúc 15:30 27/09/2026 (LOGAN) | Link 2 [HLS]
 https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=8a69f059732382776451e0748efed99b&txTime=6ab8f200
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Rans Nusantara FC vs Deltras Sidoarjo vào lúc 15:30 27/09/2026 (XUÂN TÓC ĐỎ) | Link 1 [HLS]
+https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=bd7b9019980e37ff6b3a47b9cf3a37ca&txTime=6ab83219
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",FC Ufa vs Torpedo Moscow vào lúc 16:30 27/09/2026 (BLV BẢY) | Link 2 [HLS]
 https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1790459074-0-0-d5667b5864bd1d8edfc162bb5ea812bb
 
 #EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",FC Ufa vs Torpedo Moscow vào lúc 16:30 27/09/2026 (BLV WUKONG) | Link 1 [HLS]
 https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1790479779-0-0-6f512f30ebc5ac2812e25e4b84449cb4
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Cambodia vs Myanmar vào lúc 17:00 27/09/2026 (A BỆU) | Link 3 [HLS]
+https://pull.niues.live/live/stream-9912142_lhd.m3u8?auth_key=1790459471-0-0-0c3aa55d70f97c88f9877382621d49d5
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Cambodia vs Myanmar vào lúc 17:00 27/09/2026 (SAO LA) | Link 1 [HLS]
+https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=16ae7e00b1543394a03dd071f5930b5c&txTime=6ab80dd9
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Cambodia vs Myanmar vào lúc 17:00 27/09/2026 (TẠ BIÊN GIỚI) | Link 5 [HLS]
+https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1790489264-0-0-d60ca831bf6422e0a907648d6c97c1ca
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Cambodia vs Myanmar vào lúc 17:00 27/09/2026 (ZIDANE) | Link 2 [HLS]
+https://pull.niur.live/live/stream-9912145_lhd.m3u8?txSecret=668057f9d9f28d41732a0b1f3017e414&txTime=6ab832a5
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Dong Thap vs Thai Nguyen vào lúc 17:00 27/09/2026 (BLV ENZO) | Link 2 [HLS]
+https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1790459205-0-0-44caeae7c1eadc6749bb6f92edebb947
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Dong Thap vs Thai Nguyen vào lúc 17:00 27/09/2026 (BLV PIRLO) | Link 3 [HLS]
+https://pull.niur.live/live/stream-9912127_lhd.m3u8?txSecret=3b870a73cc3058040b75a922259564ec&txTime=6ab882a9
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Dong Thap vs Thai Nguyen vào lúc 17:00 27/09/2026 (KENCHU) | Link 1 [HLS]
+https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1790448909-0-0-831293699729e086ba76f7d143bbf689
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Dong Thap vs Thai Nguyen vào lúc 17:00 27/09/2026 (QUỐC KHÁNH) | Link 4 [HLS]
+https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=14fa130f02c811b6c0c2d8f9887f5023&txTime=6ab8f2d0
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Gangwon FC vs Incheon United Club vào lúc 17:00 27/09/2026 (BLV A TÚ) | Link 4 [HLS]
+https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1790458881-0-0-8f0f407dcd33ea916a1f6c58482d99ac
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Gangwon FC vs Incheon United Club vào lúc 17:00 27/09/2026 (BLV FIREMAN) | Link 1 [HLS]
+https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1790459206-0-0-2bd9cef96855e48417df5c726ef7e7ce
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Gangwon FC vs Incheon United Club vào lúc 17:00 27/09/2026 (LÃO LÂM) | Link 3 [HLS]
+https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1790489142-0-0-205bbcd56df3fabcd878506a5f7ad1f6
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Gangwon FC vs Incheon United Club vào lúc 17:00 27/09/2026 (XUÂN SON) | Link 5 [HLS]
+https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=1e2b4cd6d2d665e56811469882d674af&txTime=6ab88357
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Barletta vs Potenza vào lúc 17:30 27/09/2026 (BLV COCA) | Link 1 [HLS]
+https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1790395090-0-0-ec2fd7e3c14d04d90031a7d172d976c9
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Barletta vs Potenza vào lúc 17:30 27/09/2026 (BÚN ĐẬU) | Link 2 [HLS]
+https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1790476875-0-0-782316b24db38495020f480548d87ab6
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",US Casertana 1908 vs Catania FC vào lúc 17:30 27/09/2026 (BLV LION) | Link 1 [HLS]
+https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1790465828-0-0-8fa56edeed3a3f0f4bc898f3bda3f814
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",US Casertana 1908 vs Catania FC vào lúc 17:30 27/09/2026 (BLV VIP) | Link 2 [HLS]
+https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=d770fb313d7a6625533c50f7b5b38cd6&txTime=6ab8f22d
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Shaanxi Union vs Dalian K'un City vào lúc 18:00 27/09/2026 (BLV RÔSI) | Link 3 [HLS]
+https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=a59a35fcdebfc20e232b8d66d141a31d&txTime=6ab8d73f
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Shaanxi Union vs Dalian K'un City vào lúc 18:00 27/09/2026 (BÒ TƯƠI) | Link 2 [HLS]
+https://pull.niur.live/live/stream-620797_lhd.m3u8?txSecret=5a1685e887ddfbcbdc4f771a708f2f83&txTime=6ab88313
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Shaanxi Union vs Dalian K'un City vào lúc 18:00 27/09/2026 (GRAP) | Link 1 [HLS]
+https://pull.niur.live/live/stream-622093_lhd.m3u8?txSecret=b6ae2d927209ac83583252b214266d8a&txTime=6ab88286
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Shaanxi Union vs Dalian K'un City vào lúc 18:00 27/09/2026 (HÀ DUY KIÊN) | Link 4 [HLS]
+https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=f22165c738c6319e3e80ea5e5df2a82b&txTime=6ab8bd0d
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",Vihren Sandanski vs Nesebar vào lúc 18:00 27/09/2026 (T REX) | Link 2 [HLS]
+https://pull.niues.live/live/stream-619672_lhd.m3u8?auth_key=1790495702-0-0-56bb2ad1a143293b8ca46aa0e60dcfe1
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",China vs New Zealand vào lúc 18:35 27/09/2026 (BLV CÒ) | Link 3 [HLS]
+https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1790468902-0-0-f8ee7d85d19c68391f3e2ea126010709
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",China vs New Zealand vào lúc 18:35 27/09/2026 (LOKA) | Link 5 [HLS]
+https://pull.niues.live/live/stream-9912133_lhd.m3u8?auth_key=1790459424-0-0-475fdf1ca36e93afb4ebe0b012ac5d3b
+
+#EXTINF:-1 tvg-id="SutBongTV" tvg-logo="" group-title="Sút Bóng TV",China vs New Zealand vào lúc 18:35 27/09/2026 (RỒNG ĐẤT) | Link 6 [HLS]
+https://pull.niues.live/live/stream-9912123_lhd.m3u8?auth_key=1790458799-0-0-b38289d0ecedef5865dd8fc936c92eb3
 
