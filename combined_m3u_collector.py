@@ -189,6 +189,14 @@ VMTTV_M3U_URL = os.environ.get(
     "VMTTV_M3U_URL",
     "https://raw.githubusercontent.com/vuminhthanh12/vuminhthanh12/refs/heads/main/vmttv",
 )
+DEKIKI_VTV_M3U_URL = os.environ.get(
+    "DEKIKI_VTV_M3U_URL",
+    "https://raw.githubusercontent.com/Bacbenny/Verceliptv/refs/heads/main/dekiki",
+)
+CUONGHEHE_VTV_M3U_URL = os.environ.get(
+    "CUONGHEHE_VTV_M3U_URL",
+    "https://raw.githubusercontent.com/cuongnh1989/iptv/refs/heads/main/cuonghehe",
+)
 VMTTV_VTV_MIN_GOOD_COUNT = int(os.environ.get("VMTTV_VTV_MIN_GOOD_COUNT", "10") or "10")
 MYTV_FPT_EVENTS_M3U_URL = os.environ.get(
     "MYTV_FPT_EVENTS_M3U_URL",
@@ -1373,7 +1381,6 @@ GROUP_CANONICAL_RULES = [
 PREFERRED_OUTPUT_GROUPS = [
     "VTV",
     "Sự kiện",
-    "MyTVFPTEvents",
     "FLV",
     "Highlight",
     "Gi\u1edd V\u00e0ng TV",
@@ -1410,7 +1417,6 @@ PREFERRED_SOURCE_PRIORITY = {
 OMIT_REFERRER_GROUPS = {
     "VTV",
     "Sự kiện",
-    "MyTVFPTEvents",
     "Socolive TV",
     "CoLaTV",
     "CO LA TV",
@@ -1424,7 +1430,6 @@ OMIT_REFERRER_GROUP_KEYS = {compact_text_key(item) for item in OMIT_REFERRER_GRO
 OMIT_USER_AGENT_GROUPS = {
     "VTV",
     "Sự kiện",
-    "MyTVFPTEvents",
     "Socolive TV",
     "CoLaTV",
     "CO LA TV",
@@ -4170,6 +4175,31 @@ VMTTV_VTV_CACHE_FIELDS = (
 )
 
 
+VTV_CHANNEL_NAME_KEYS = {
+    "vtv1",
+    "vtv2",
+    "vtv3",
+    "vtv4",
+    "vtv5",
+    "vtv6",
+    "vtv7",
+    "vtv8",
+    "vtv9",
+    "vtv10",
+    "vtv5taynambo",
+    "vtv5taynguyen",
+    "vietnamtoday",
+}
+
+
+def is_wanted_vtv_channel(channel):
+    name_key = compact_text_key(channel.get("name"))
+    stream_url = clean_text(channel.get("stream_url")).lower()
+    if stream_url.endswith(".mpd") or "#.mpd" in stream_url:
+        return False
+    return name_key in VTV_CHANNEL_NAME_KEYS
+
+
 def load_vmttv_vtv_cache():
     try:
         payload = json.loads(VMTTV_VTV_CACHE.read_text(encoding="utf-8"))
@@ -4187,7 +4217,7 @@ def load_vmttv_vtv_cache():
         if not stream_url:
             continue
         channel = {field: row.get(field, "") for field in VMTTV_VTV_CACHE_FIELDS}
-        channel["source"] = "VMTTV"
+        channel["source"] = row.get("source") or "VTV"
         channel["group"] = "VTV"
         channel["stream_url"] = stream_url
         channel["skip_event_filter"] = True
@@ -4199,7 +4229,7 @@ def save_vmttv_vtv_cache(channels):
     rows = []
     for channel in channels:
         row = {field: channel.get(field, "") for field in VMTTV_VTV_CACHE_FIELDS}
-        row["source"] = "VMTTV"
+        row["source"] = channel.get("source") or "VTV"
         row["group"] = "VTV"
         row["skip_event_filter"] = True
         rows.append(row)
@@ -4210,7 +4240,7 @@ def save_vmttv_vtv_cache(channels):
     except Exception:
         pass
     payload = {
-        "source": VMTTV_M3U_URL,
+        "source": f"{DEKIKI_VTV_M3U_URL} + {CUONGHEHE_VTV_M3U_URL}",
         "updated": now_ict(),
         "channels": rows,
     }
@@ -4218,6 +4248,65 @@ def save_vmttv_vtv_cache(channels):
     temporary_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     temporary_path.replace(VMTTV_VTV_CACHE)
     return True
+
+
+def collect_vtv_channels():
+    source = "VTV"
+    channels = []
+    seen_names = set()
+    seen_urls = set()
+
+    def append_from(source_name, playlist_url):
+        parsed = collect_m3u_playlist(
+            source_name,
+            playlist_url,
+            "VTV",
+            preserve_group=True,
+            allow_non_m3u8=True,
+            timeout=60,
+            retries=3,
+            allowed_groups=("VTV",),
+            default_referer_to_playlist=False,
+            user_agent="",
+            preserve_extinf=False,
+        )
+        added = 0
+        for channel in parsed:
+            if not is_wanted_vtv_channel(channel):
+                continue
+            name_key = compact_text_key(channel.get("name"))
+            stream_key = clean_text(channel.get("stream_url")).lower()
+            if name_key in seen_names or stream_key in seen_urls:
+                continue
+            seen_names.add(name_key)
+            seen_urls.add(stream_key)
+            channel["source"] = source
+            channel["group"] = "VTV"
+            channel["referer"] = ""
+            channel["user_agent"] = ""
+            channel["raw_options"] = []
+            channel["preserve_extinf"] = False
+            channel["skip_event_filter"] = True
+            channels.append(channel)
+            added += 1
+        log(f"[{source}] {source_name} VTV selected: {added}")
+
+    append_from("DekikiVTV", DEKIKI_VTV_M3U_URL)
+    if len(channels) < max(1, VMTTV_VTV_MIN_GOOD_COUNT):
+        append_from("CuongheheVTV", CUONGHEHE_VTV_M3U_URL)
+
+    if len(channels) >= max(1, VMTTV_VTV_MIN_GOOD_COUNT):
+        cache_changed = save_vmttv_vtv_cache(channels)
+        action = "updated" if cache_changed else "unchanged"
+        log(f"[{source}] VTV cache {action}: {len(channels)} channels")
+        return channels
+
+    cached_vtv = load_vmttv_vtv_cache()
+    if cached_vtv:
+        log(f"[{source}] Incomplete VTV response ({len(channels)}); keep cache ({len(cached_vtv)})")
+        return cached_vtv
+    log(f"[{source}] Incomplete VTV response ({len(channels)}) and no cache")
+    return channels
 
 
 def collect_vmttv():
@@ -4231,35 +4320,18 @@ def collect_vmttv():
         allow_non_m3u8=True,
         timeout=60,
         retries=3,
-        allowed_groups=("VTV", "the thao quoc te", "su kien vtvprime"),
+        allowed_groups=("the thao quoc te", "su kien vtvprime"),
     )
     sport_group_key = "thethaoquocte"
     event_group_keys = {"sukienvtvprime"}
     for channel in channels:
         channel_group_key = group_key(channel.get("group"))
-        if channel_group_key == group_key("VTV"):
-            channel["group"] = "VTV"
-            channel["skip_event_filter"] = True
-        elif channel_group_key == sport_group_key:
+        if channel_group_key == sport_group_key:
             channel["group"] = "THỂ THAO QUỐC TẾ"
         elif channel_group_key in event_group_keys:
             channel["group"] = "Sự kiện"
             channel["skip_event_filter"] = True
 
-    fresh_vtv = [channel for channel in channels if group_key(channel.get("group")) == group_key("VTV")]
-    other_channels = [channel for channel in channels if group_key(channel.get("group")) != group_key("VTV")]
-    if len(fresh_vtv) >= max(1, VMTTV_VTV_MIN_GOOD_COUNT):
-        cache_changed = save_vmttv_vtv_cache(fresh_vtv)
-        action = "updated" if cache_changed else "unchanged"
-        log(f"[{source}] VTV cache {action}: {len(fresh_vtv)} channels")
-    else:
-        cached_vtv = load_vmttv_vtv_cache()
-        if cached_vtv:
-            log(f"[{source}] Incomplete VTV response ({len(fresh_vtv)}); keep cache ({len(cached_vtv)})")
-            fresh_vtv = cached_vtv
-        else:
-            log(f"[{source}] Incomplete VTV response ({len(fresh_vtv)}) and no cache")
-    channels = other_channels + fresh_vtv
     return channels
 
 
@@ -9411,8 +9483,8 @@ def main():
                 preserve_extinf=True,
             ),
         ),
+        ("VTV", collect_vtv_channels),
         ("VMTTV", collect_vmttv),
-        ("MyTVFPTEvents", collect_mytv_fpt_events),
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
         ("S8TV", collect_s8tv),
