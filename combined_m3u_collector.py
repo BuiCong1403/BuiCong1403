@@ -5425,6 +5425,21 @@ def collect_xoilacz():
             )
         )
 
+    def append_thtt_fallback(reason):
+        log(f"[{source}] {reason}; fallback THTT XoiLac")
+        for item in collect_thtt_group("XoiLacZ", ("Xôi Lạc Z TV", "Xoi Lac Z TV", "Xoilac Z TV"), "Xôi Lạc Z TV"):
+            stream_url = clean_text(item.get("stream_url"))
+            seen_key = source_stream_seen_key(source, stream_url, item.get("name"))
+            if not stream_url or seen_key in seen_urls:
+                continue
+            seen_urls.add(seen_key)
+            item = dict(item)
+            item["source"] = source
+            item["group"] = "Xôi Lạc Z TV"
+            item["referer"] = clean_text(item.get("referer")) or xoilacz_stream_referer(stream_url)
+            item["user_agent"] = FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA
+            channels.append(item)
+
     def collect_match(block):
         link_match = re.search(
             r'<a[^>]+class="[^"]*redirectPopup[^"]*"[^>]+href="([^"]+)"[^>]+title="([^"]*)"',
@@ -5546,6 +5561,10 @@ def collect_xoilacz():
 
     if len(channels) < XOILACZ_TTCB_MIN_LINKS:
         reason = f"Only {len(channels)} links after {int(time.monotonic() - started_at)}s"
+        append_thtt_fallback(reason)
+
+    if len(channels) < XOILACZ_TTCB_MIN_LINKS:
+        reason = f"Only {len(channels)} links after THTT fallback"
         append_thethaocoban_fallback(reason)
 
     log(f"[{source}] {len(channels)} raw links")
