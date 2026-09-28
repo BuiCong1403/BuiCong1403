@@ -38,6 +38,7 @@ DASFOOTBALL_M3U = BASE_DIR / "dasfootball.m3u"
 VANLINH_SPORT_M3U = BASE_DIR / "vanlinh_sport.m3u"
 TINHLAGI_M3U = BASE_DIR / "tinhlagi.m3u"
 THETHAOCOBAN_M3U = BASE_DIR / "thethaocoban.m3u"
+SLOW_SOURCES_ARCHIVE = BASE_DIR / "slow_sources_archive.json"
 VMTTV_VTV_CACHE = BASE_DIR / "vmttv_vtv_cache.json"
 KHANDAIA_CACHE = BASE_DIR / "khandaia_cache.json"
 VSC9_CACHE = BASE_DIR / "vsc9_cache.json"
@@ -1494,7 +1495,7 @@ def should_write_user_agent(channel):
 
 def normalize_channel_group(channel):
     if is_flv_url(channel.get("stream_url")):
-        group = FLV_OTT_GROUP
+        group = clean_text(channel.get("group") or channel.get("source") or "Unknown")
         channel["user_agent"] = FLV_OTT_USER_AGENT
         if not clean_text(channel.get("referer")):
             stream_url_key = clean_text(channel.get("stream_url")).lower()
@@ -8901,9 +8902,9 @@ SLOW_SOURCE_COLLECTORS = (
 SLOW_SOURCE_MIN_GOOD_COUNTS = {
     "KhanDaiA": max(1, KHANDAIA_TTCB_MIN_LINKS // 2),
     "PhaoHoaTV": max(1, PHAOHOA_TTCB_MIN_LINKS // 2),
-    "SutBongTV": 1,
-    "PhaLangTV": 1,
-    "XoiLacZ": 1,
+    "SutBongTV": 10,
+    "PhaLangTV": 10,
+    "XoiLacZ": 10,
 }
 
 
@@ -8915,14 +8916,103 @@ def slow_source_name(group):
     return ""
 
 
+def channel_to_cache_row(channel):
+    row = {field: channel.get(field, "") for field in SOURCE_CACHE_FIELDS}
+    for field in ("event_date", "event_datetime"):
+        if hasattr(row.get(field), "isoformat"):
+            row[field] = row[field].isoformat()
+    return row
+
+
+def row_to_cached_channel(row, source=None, group=None):
+    if not isinstance(row, dict) or not is_valid_stream_url(row.get("stream_url")):
+        return None
+    channel = {field: row.get(field, "") for field in SOURCE_CACHE_FIELDS}
+    if source:
+        channel["source"] = source
+    if group:
+        channel["group"] = group
+    return channel
+
+
+def load_slow_source_archive():
+    try:
+        payload = json.loads(SLOW_SOURCES_ARCHIVE.read_text(encoding="utf-8"))
+    except Exception as exc:
+        log(f"[SlowSources] Archive unavailable: {exc}")
+        return []
+    sources = payload.get("sources") if isinstance(payload, dict) else None
+    if not isinstance(sources, dict):
+        return []
+    channels = []
+    source_groups = {source: group for source, group, _collector in SLOW_SOURCE_COLLECTORS}
+    for source, rows in sources.items():
+        if not isinstance(rows, list):
+            continue
+        group = source_groups.get(source, "")
+        for row in rows:
+            channel = row_to_cached_channel(row, source, group)
+            if channel:
+                channels.append(channel)
+    channels = dedupe_and_sort_channels(filter_current_and_future_events(channels))
+    if channels:
+        log(f"[SlowSources] Loaded archive: {len(channels)} links from {SLOW_SOURCES_ARCHIVE.name}")
+    return channels
+
+
+def save_slow_source_archive(channels_by_source):
+    existing = {}
+    try:
+        payload = json.loads(SLOW_SOURCES_ARCHIVE.read_text(encoding="utf-8"))
+        existing = payload.get("sources") if isinstance(payload, dict) and isinstance(payload.get("sources"), dict) else {}
+    except Exception:
+        existing = {}
+
+    source_groups = {source: group for source, group, _collector in SLOW_SOURCE_COLLECTORS}
+    next_sources = dict(existing)
+    for source, channels in channels_by_source.items():
+        channels = dedupe_and_sort_channels(filter_current_and_future_events(channels or []))
+        if not channels:
+            continue
+        existing_rows = existing.get(source) if isinstance(existing.get(source), list) else []
+        min_good_count = SLOW_SOURCE_MIN_GOOD_COUNTS.get(source, 1)
+        if existing_rows and len(channels) < min_good_count:
+            log(
+                f"[SlowSources] Keep archive for {source}: "
+                f"current={len(channels)} archive={len(existing_rows)} min={min_good_count}"
+            )
+            continue
+        rows = []
+        seen = set()
+        for channel in channels:
+            channel = dict(channel)
+            channel["source"] = source
+            channel["group"] = channel.get("group") or source_groups.get(source, source)
+            key = channel_key(channel)
+            if not key[0] or key in seen:
+                continue
+            seen.add(key)
+            rows.append(channel_to_cache_row(channel))
+        if rows:
+            next_sources[source] = rows
+
+    payload = {"updated": now_ict(), "sources": next_sources}
+    tmp_path = SLOW_SOURCES_ARCHIVE.with_suffix(SLOW_SOURCES_ARCHIVE.suffix + ".tmp")
+    tmp_path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp_path.replace(SLOW_SOURCES_ARCHIVE)
+
+
 def collect_slow_sources():
     previous = load_slow_sources()
+    previous.extend(load_slow_source_archive())
+    previous = dedupe_and_sort_channels(previous)
     previous_by_source = {}
     for channel in previous:
         previous_by_source.setdefault(channel.get("source"), []).append(channel)
 
     channels = []
     counts = {}
+    selected_by_source = {}
     for source, _group, collector in SLOW_SOURCE_COLLECTORS:
         log("")
         selected = collect_source_channels(source, collector)
@@ -8932,8 +9022,10 @@ def collect_slow_sources():
             log(f"[{source}] Keep cached snapshot: current={len(selected)} cache={len(cached)} min={min_good_count}")
             selected = dedupe_and_sort_channels(filter_current_and_future_events(selected + cached))
         counts[source] = len(selected)
+        selected_by_source[source] = selected
         channels.extend(selected)
     channels = dedupe_and_sort_channels(channels)
+    save_slow_source_archive(selected_by_source)
     write_slow_sources_m3u(channels)
     log(f"[DONE] Slow-source playlist: {len(channels)} links -> {SLOW_SOURCES_M3U}")
     for source, count in counts.items():

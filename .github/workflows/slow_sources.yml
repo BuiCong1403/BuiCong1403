@@ -42,13 +42,14 @@ jobs:
         run: |
           RUN_MODE=slow python combined_m3u_collector.py
           test -s slow_sources.m3u
-          ls -lh slow_sources.m3u
+          test -s slow_sources_archive.json
+          ls -lh slow_sources.m3u slow_sources_archive.json
 
       - name: Commit slow source playlist
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add slow_sources.m3u
+          git add slow_sources.m3u slow_sources_archive.json
           if git diff --cached --quiet; then
             echo "No slow-source changes to commit."
             exit 0
