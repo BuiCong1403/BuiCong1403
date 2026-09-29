@@ -1,0 +1,62 @@
+name: Refresh Highlights
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Asia/Bangkok 03:30, then every 30 minutes through 07:30.
+    - cron: "30 20 * * *"
+    - cron: "0,30 21-23 * * *"
+    - cron: "0,30 0 * * *"
+
+concurrency:
+  group: refresh-highlights
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: python -m pip install requests
+
+      - name: Refresh highlight playlist
+        timeout-minutes: 14
+        run: |
+          RUN_MODE=highlight python combined_m3u_collector.py
+          test -s highlight.m3u
+          test -s all.m3u
+          test -s ott.m3u
+          ls -lh highlight.m3u all.m3u ott.m3u
+
+      - name: Commit highlight playlist
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add highlight.m3u all.m3u ott.m3u dasfootball.m3u h24_highlight_cache.json
+          if git diff --cached --quiet; then
+            echo "No highlight changes to commit."
+            exit 0
+          fi
+          git commit -m "Refresh highlights"
+          for i in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+            git pull --rebase origin main
+          done
+          git push

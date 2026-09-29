@@ -254,7 +254,7 @@ MEBONG_GROUP = os.environ.get("MEBONG_GROUP", "MebongTV")
 MEBONG_LIMIT = int(os.environ.get("MEBONG_LIMIT", "200") or "200")
 MEBONG_WORKERS = int(os.environ.get("MEBONG_WORKERS", "6") or "6")
 MEBONG_PROXY_UA = os.environ.get("MEBONG_PROXY_UA", UA)
-XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilaczzq.cc/")
+XOILACZ_SITE_URL = os.environ.get("XOILACZ_SITE_URL", "https://xoilaczzw.cc/")
 XOILACZ_REFERER = os.environ.get("XOILACZ_REFERER", "https://xlz.livecarriercdn.com/")
 XOILACZ_FALLBACK_REFERERS = [
     item.strip()
@@ -5158,6 +5158,11 @@ def collect_mebongtv():
 def xoilacz_base_candidates():
     candidates = [
         XOILACZ_SITE_URL,
+        "https://xoilaczzw.cc/",
+        "https://xoilactv51.com/",
+        "https://xoilacwb.com/",
+        "https://xoilac-7.tv/",
+        "https://xoilactv.date/",
         "https://xoilaczzq.cc/",
         "https://xlz.domainkqt.cc/",
         "https://xoilacxbi.tv/",
@@ -5631,9 +5636,7 @@ def collect_xoilacz():
             log(f"[{source}] Primary domain supplied {len(channels)} links; skip stale mirrors")
             break
 
-    if len(channels) < XOILACZ_TTCB_MIN_LINKS:
-        reason = f"Only {len(channels)} links after {int(time.monotonic() - started_at)}s"
-        append_thtt_fallback(reason)
+    append_thtt_fallback(f"Merge reference after {len(channels)} primary links")
 
     if len(channels) < XOILACZ_TTCB_MIN_LINKS:
         reason = f"Only {len(channels)} links after THTT fallback"
