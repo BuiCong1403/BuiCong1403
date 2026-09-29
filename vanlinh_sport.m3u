@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-09-29 22:30 ICT
-# Total   : 20
+# Updated : 2026-09-29 23:42 ICT
+# Total   : 35
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/08e9fb9c257f63bc57837b42b31f8cef.png!w80" group-title="CoLaTV",00:00 | Mỹ vs Chilê | Chính
 https://live05.meung.app/live/75748097_tsc.m3u8
@@ -16,6 +16,9 @@ https://live05.meung.app/live/14830711_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/77772713a7d7e02b10ca9bd90e4f6a31.png!w80" group-title="CoLaTV",15:00 | ĐTQG U21 Iceland vs Đội tuyển U21 Thuỵ Sỹ | Chính
 https://live05.meung.app/live/16226575_tsc.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/9877c66299c5b98d81fed12827d87e4b.png!w80" group-title="CoLaTV",16:00 | Cape Verde vs Rwanda | Chính
+https://live05.meung.app/live/87547578_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/75800f73fa80f935216b8cfbedf77bfa.png!w80" group-title="CoLaTV",16:00 | Ghana vs Gambia | Chính
 https://live05.meung.app/live/90865415_tsc.m3u8
@@ -53,12 +56,54 @@ https://live05.meung.app/live/08552895_tsc.m3u8
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/3c057cb2b41f22c0e740974d7a428918.png!w80" group-title="CoLaTV",18:45 | ĐTQG Bulgaria vs Estonia | Chính
 https://live05.meung.app/live/99121525_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/c432976945dc8b1ac46792dfa97ea068.png!w80" group-title="CoLaTV",18:45 | ĐTQG Scotland vs Thụy Sĩ | Chính
-https://live05.meung.app/live/87547578_tsc.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/54803d9a444e58a28e10b6563e60fec8.png!w80" group-title="CoLaTV",21:00 | French Guiana vs Sint Maarten | Chính
 https://live05.meung.app/live/75915087_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/81e9f1f9d6393fd128c6c014783d9fa2.png!w80" group-title="CoLaTV",22:30 | Indiana Fever vs Las Vegas Aces | Chính
 https://live05.meung.app/live/87379114_tsc.m3u8
+
+#EXTINF:-1 tvg-id="streamed:football-burundi-algeria-20725" tvg-name="Burundi vs Algeria" tvg-logo="https://cdn.highfly.to/posters/football-burundi-algeria-20725_UTC.webp?v=33006d42" group-title="Football",Burundi vs Algeria
+https://papacito.cfd/m3u/1562827/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:football-burundi-algeria-20725" tvg-name="Burundi vs Algeria" tvg-logo="https://cdn.highfly.to/posters/football-burundi-algeria-20725_UTC.webp?v=33006d42" group-title="Football",Burundi vs Algeria
+https://papacito.cfd/m3u/1940123/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:football-ethiopia-senegal-20725" tvg-name="Ethiopia vs Senegal" tvg-logo="https://cdn.highfly.to/posters/football-ethiopia-senegal-20725_UTC.webp?v=dfc765c2" group-title="Football",Ethiopia vs Senegal
+https://papacito.cfd/m3u/1562826/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:football-ethiopia-senegal-20725" tvg-name="Ethiopia vs Senegal" tvg-logo="https://cdn.highfly.to/posters/football-ethiopia-senegal-20725_UTC.webp?v=dfc765c2" group-title="Football",Ethiopia vs Senegal
+https://papacito.cfd/m3u/1940131/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:football-lesotho-morocco-20725" tvg-name="Lesotho vs Morocco" tvg-logo="https://cdn.highfly.to/posters/football-lesotho-morocco-20725_UTC.webp?v=a56b7e5b" group-title="Football",Lesotho vs Morocco
+https://papacito.cfd/m3u/418118/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:football-mozambique-sudan-20725" tvg-name="Mozambique vs Sudan" tvg-logo="https://cdn.highfly.to/posters/football-mozambique-sudan-20725_UTC.webp?v=aac0e30a" group-title="Football",Mozambique vs Sudan
+https://papacito.cfd/m3u/788079/live.m3u8
+
+#EXTINF:-1 tvg-id="streamed:football-south-sudan-egypt-20725" tvg-name="South Sudan vs Egypt" tvg-logo="https://cdn.highfly.to/posters/football-south-sudan-egypt-20725_UTC.webp?v=53ccf24d" group-title="Football",South Sudan vs Egypt
+https://papacito.cfd/m3u/1562825/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:now434340" tvg-name="(FHD) : SKY SPORTS GOLF" tvg-logo="https://cdn.highfly.to/leaf_posters/now434340_UTC.webp?v=8d9f6d13fd90b135" group-title="Golf",(FHD) : SKY SPORTS GOLF
+https://papacito.cfd/m3u/now434340/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:now-545445" tvg-name="(FHD) : SKY SPORTS F1" tvg-logo="https://cdn.highfly.to/leaf_posters/now-545445_UTC.webp?v=482c84ce8748a929" group-title="Motor Sports",(FHD) : SKY SPORTS F1
+https://papacito.cfd/m3u/now-545445/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:au-fox-sports-502-hd" tvg-name="AU : FOX SPORTS 502 HD" tvg-logo="https://cdn.highfly.to/leaf_posters/au-fox-sports-502-hd_UTC.webp?v=682d978bccd40cfd" group-title="Rugby",AU : FOX SPORTS 502 HD
+https://papacito.cfd/m3u/au-fox-sports-502-hd/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:nz-s454545" tvg-name="NZ : SKY SPORT 1" tvg-logo="https://cdn.highfly.to/leaf_posters/nz-s454545_UTC.webp?v=ff38f50289ed16ac" group-title="Rugby",NZ : SKY SPORT 1
+https://papacito.cfd/m3u/nz-s454545/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:ca-tsn-1" tvg-name="CA : TSN 1" tvg-logo="https://cdn.highfly.to/leaf_posters/ca-tsn-1_UTC.webp?v=883c8d9eb3585c1c" group-title="Sports",CA : TSN 1
+https://papacito.cfd/m3u/ca-tsn-1/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:ca-tsn-5" tvg-name="CA : TSN 5" tvg-logo="https://cdn.highfly.to/leaf_posters/ca-tsn-5_UTC.webp?v=0edd62e010b1083a" group-title="Sports",CA : TSN 5
+https://papacito.cfd/m3u/ca-tsn-5/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:us-3443434" tvg-name="US : ESPN" tvg-logo="https://cdn.highfly.to/leaf_posters/us-3443434_UTC.webp?v=501584e237ebde7c" group-title="Sports",US : ESPN
+https://papacito.cfd/m3u/us-3443434/live.m3u8
+
+#EXTINF:-1 tvg-id="leaf:now-sky-sports-tennis" tvg-name="(FHD) : SKY SPORTS TENNIS" tvg-logo="https://cdn.highfly.to/leaf_posters/now-sky-sports-tennis_UTC.webp?v=0ea453f3d9baede5" group-title="Tennis",(FHD) : SKY SPORTS TENNIS
+https://papacito.cfd/m3u/now-sky-sports-tennis/live.m3u8
 
