@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-09-30 12:51 ICT
-# Total   : 503
+# Updated : 2026-09-30 14:03 ICT
+# Total   : 505
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://live.fptplay53.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -1513,6 +1513,16 @@ https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1790718042-0-0-520
 #EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/romania-u21-vs-finland-u21-30-09-2026/?blv=617313
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1790717992-0-0-7b1a8256508b36abcb0dc7de78350753
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Hy hữu 2 đội phải bốc thăm tranh vé bán kết vì... một tấm thẻ vàng
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-30/1790721904-code_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Sao Thái Lan nhảy múa “trêu ngươi” Việt Nam, Olise làm ảo thuật với trái bóng
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-30/cp_special_asian_cup_ban_quyen-1790737410-clip90-.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Trực tiếp ASIAD 30/9: Nguyễn Thị Tâm thắng lịch sử boxing, Diễm Quỳnh giành HCĐ
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
