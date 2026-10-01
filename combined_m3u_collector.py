@@ -291,6 +291,7 @@ NINETY_PHUTZI_SEED_URLS = [
 DASFOOTBALL_BASE_URL = os.environ.get("DASFOOTBALL_BASE_URL", "https://dasfootball.com/")
 DASFOOTBALL_HIGHLIGHT_DAYS_BACK = int(os.environ.get("DASFOOTBALL_HIGHLIGHT_DAYS_BACK", "7") or "7")
 DASFOOTBALL_HIGHLIGHT_LIMIT = int(os.environ.get("DASFOOTBALL_HIGHLIGHT_LIMIT", "220") or "220")
+DASFOOTBALL_ARCHIVE_PAGES = int(os.environ.get("DASFOOTBALL_ARCHIVE_PAGES", "3") or "3")
 DASFOOTBALL_SEED_URLS = [
     item.strip()
     for item in os.environ.get(
@@ -460,7 +461,6 @@ MULTI_EVENT_STREAM_SOURCES = {
     "SutBongTV",
     "PhaLangTV",
     "SportflowLiveZ",
-    "VSC9",
     "CoLaTV",
     "MebongTV",
     "BongDaPlusHighlight",
@@ -1368,7 +1368,6 @@ GROUP_CANONICAL_RULES = [
     ("Socolive TV", ("socolive", "soco live", "soco sport", "socosport")),
     ("CoLaTV", ("cola tv", "co la tv", "colatv")),
     (SPORT_INTERNATIONAL_GROUP, ("the thao quoc te", "thethaoquocte", "sport quoc te", "international sport")),
-    ("Vua S\u00e2n C\u1ecf TV", ("vua san co", "vuasanco", "vsc9")),
     ("X\u00f4i L\u1ea1c Z TV", ("xoi lac z", "xoilac z", "xoilacz", "xoi lac")),
     ("Khandai", ("khan dai", "khandaia", "khandai")),
     ("Chu\u1ed1i chi\u00ean", ("chuoi chien", "chuoichien", "chuoichientv")),
@@ -1384,7 +1383,6 @@ PREFERRED_OUTPUT_GROUPS = [
     "FLV",
     "Highlight",
     "Gi\u1edd V\u00e0ng TV",
-    "Vua S\u00e2n C\u1ecf TV",
     "PhaoHoaTV",
     "X\u00f4i L\u1ea1c Z TV",
     "Khandai",
@@ -1405,7 +1403,6 @@ PREFERRED_SOURCE_PRIORITY = {
     "SuperSportHighlight": 88,
     "FootballOrginHighlight": 86,
     "GioVang": 80,
-    "VSC9": 76,
     "XoiLacZ": 74,
     "SocoliveTV": 72,
     "CoLaTV": 68,
@@ -1528,8 +1525,6 @@ def normalize_channel_group(channel):
                 group = "Tinhlagi"
             else:
                 group = f"Tinhlagi - {group}"
-        elif "vuasanco" in compact_text_key(group):
-            group = "Vua S\u00e2n C\u1ecf TV"
     else:
         group = output_group(channel)
     channel["group"] = group
@@ -1537,6 +1532,29 @@ def normalize_channel_group(channel):
     if raw_extinf:
         channel["raw_extinf"] = set_extinf_group_title(raw_extinf, group)
     return channel
+
+
+REMOVED_CHANNEL_MARKERS = (
+    "vsc9",
+    "vuasanco",
+    "vuasancotv",
+    "vuasancỏ",
+    "ebaclofen",
+    "pentatoken",
+)
+
+
+def is_removed_channel(channel):
+    parts = [
+        channel.get("source"),
+        channel.get("group"),
+        channel.get("name"),
+        channel.get("referer"),
+        channel.get("stream_url"),
+        channel.get("raw_extinf"),
+    ]
+    key = compact_text_key(" ".join(clean_text(part) for part in parts if part))
+    return any(marker in key for marker in REMOVED_CHANNEL_MARKERS)
 
 
 def is_working_m3u8(url, referer="", user_agent=UA):
@@ -1696,6 +1714,8 @@ def dedupe_and_sort_channels(channels):
     seen_urls = {}
     for channel in channels:
         channel = normalize_channel_group(channel)
+        if is_removed_channel(channel):
+            continue
         url = channel.get("stream_url", "").strip()
         if not url:
             continue
@@ -4498,8 +4518,6 @@ def get_thethaocoban_reference_channels():
 def thethaocoban_fallback_referer(target_source, stream_url):
     if target_source == "XoiLacZ":
         return xoilacz_stream_referer(stream_url)
-    if target_source == "VSC9":
-        return VSC9_REFERER
     if target_source == "PhaoHoaTV":
         return PHAOHOA_API_BASE.rstrip("/") + "/"
     if target_source == "KhanDaiA":
@@ -4557,12 +4575,6 @@ TTCB_SUPPLEMENT_RULES = [
         "source": "GioVang",
         "group": "Gi\u1edd V\u00e0ng TV",
         "allowed_groups": ("gio vang", "giờ vàng"),
-        "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
-    },
-    {
-        "source": "VSC9",
-        "group": "Vua S\u00e2n C\u1ecf TV",
-        "allowed_groups": ("vua san co", "vua sân cỏ"),
         "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
     },
     {
@@ -6212,12 +6224,15 @@ def extract_dasfootball_highlight_urls(html_text, base_url):
     patterns = (
         r"https?://dasfootball\.com/[^\s'\"<>\\]+?highlights?-\d{4}-\d{1,2}-\d{1,2}/?",
         r"""href=["']([^"']*?highlights?-\d{4}-\d{1,2}-\d{1,2}/?[^"']*)["']""",
+        r"""href=["']([^"']*?/[a-z0-9-]*?highlights?[^"']*/?[^"']*)["']""",
     )
     for index, pattern in enumerate(patterns):
         for match in re.finditer(pattern, text, re.I):
             raw_url = match.group(1) if index else match.group(0)
             url = urljoin(base_url, html.unescape(raw_url)).split("#", 1)[0]
             url = clean_text(url).rstrip(".,);]")
+            if not re.search(r"/[^/?#]*highlights?[^/?#]*/?$", url, re.I):
+                continue
             if url and url not in seen:
                 seen.add(url)
                 urls.append(url)
@@ -6366,6 +6381,12 @@ def collect_dasfootball_highlights():
     allowed_dates = dasfootball_allowed_highlight_dates()
     page_urls = [
         base_url,
+        urljoin(base_url, "premier-league-highlights/"),
+        urljoin(base_url, "la-liga-highlights/"),
+        urljoin(base_url, "bundesliga-highlights/"),
+        urljoin(base_url, "serie-a-highlights/"),
+        urljoin(base_url, "ligue-1-highlights/"),
+        urljoin(base_url, "dfb-pokal-highlights-202526/"),
         urljoin(base_url, "premier-league/"),
         urljoin(base_url, "la-liga/"),
         urljoin(base_url, "bundesliga/"),
@@ -6376,6 +6397,12 @@ def collect_dasfootball_highlights():
         urljoin(base_url, "world-cup/"),
         urljoin(base_url, "uefa-nations-league/"),
     ]
+    archive_pages = []
+    for page_url in list(page_urls):
+        archive_pages.append(page_url)
+        for page_no in range(2, max(1, DASFOOTBALL_ARCHIVE_PAGES) + 1):
+            archive_pages.append(urljoin(page_url.rstrip("/") + "/", f"page/{page_no}/"))
+    page_urls = list(dict.fromkeys(archive_pages))
 
     post_urls = []
     seen_posts = set()
@@ -9355,15 +9382,12 @@ def collect_current_highlights():
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("SuperSportHighlight", collect_supersport_highlights)))
     dasfootball_channels = collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights)
     dasfootball_channels = filter_recent_highlights(dasfootball_channels)
-    if dasfootball_channels:
+    previous_dasfootball = collect_previous_dasfootball_playlist()
+    if previous_dasfootball:
+        dasfootball_channels = filter_recent_highlights(dedupe_and_sort_channels(dasfootball_channels + previous_dasfootball))
+        log(f"[DasFootballHighlight] After cache merge: {len(dasfootball_channels)}")
+    if dasfootball_channels and WRITE_HIGHLIGHT_M3U:
         write_m3u(DASFOOTBALL_M3U, dasfootball_channels)
-    if len(dasfootball_channels) < 5:
-        previous_dasfootball = collect_previous_dasfootball_playlist()
-        if previous_dasfootball:
-            dasfootball_channels = filter_recent_highlights(dedupe_and_sort_channels(dasfootball_channels + previous_dasfootball))
-            log(f"[DasFootballHighlight] After cache merge: {len(dasfootball_channels)}")
-            if WRITE_HIGHLIGHT_M3U:
-                write_m3u(DASFOOTBALL_M3U, dasfootball_channels)
     highlight_sources.extend(dasfootball_channels)
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("MySportHighlights", collect_mysport_highlights)))
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("24hHighlight", collect_24h_highlights)))
@@ -9524,7 +9548,6 @@ def main():
         ("HoaDaoTV", collect_hoadaotv),
         ("BongLauTV", collect_bonglau),
         ("ChuoiChienTV", collect_chuoichien),
-        ("VSC9", collect_vsc9),
         ("QueChoa8", lambda: collect_missing_source("QueChoa8")),
     ]
 
