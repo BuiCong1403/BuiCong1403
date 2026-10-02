@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-02 11:20 ICT
-# Total   : 957
+# Updated : 2026-10-02 11:29 ICT
+# Total   : 740
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://live.fptplay53.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -40,16 +40,6 @@ https://vips-livecdn.fptplay.net/live/media/vtv9/live247-hls-avc/vtv9-avc1_56000
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vietng228/m3u/main/logos/vietnamtoday.png" group-title="VTV",VietNam Today
 https://live.fptplay53.net/fnxhd1/vntoday_vhls.smil/chunklist_b5000000.m3u8
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_IH32DVNx93gl9bC16jRCszOVgU2zy2ns7uv_Kp9fg&s=10" group-title="Giờ Vàng TV",[07:15] Cleveland Browns vs Pittburgh Steelers | Riko [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://ftlh5sc02iliv.vcdn.cloud/1790874150_hd/1790874150_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_IH32DVNx93gl9bC16jRCszOVgU2zy2ns7uv_Kp9fg&s=10" group-title="Giờ Vàng TV",[07:15] Cleveland Browns vs Pittburgh Steelers | Riko [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://ftlh5sc02iliv.vcdn.cloud/1790874150_hd/1790874150_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScASzyMboTqvaXcsCvqZO4pouOAu1HBj0MKVDdJhRvOY8MuXuWxc8j6CA&s=10" group-title="Giờ Vàng TV",[09:00] tokyo Open vs 2026 | Mù [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -551,336 +541,8 @@ https://pzhgifbkllliv.vcdn.cloud/1790841222_hd/1790841222_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pzhgifbkllliv.vcdn.cloud/1790841222_hd/1790841222_hd@720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/OIP_TkTkw3i.jpg" group-title="PhaoHoaTV",11:00 02/10 Bóng chuyền Qatar vs Thái Lan (KaKa)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_646_P1KUFYE.png" group-title="PhaoHoaTV",11:00 02/10 Bóng chuyền Uzbekistan vs Philippines (Enzo)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_599.jpg" group-title="PhaoHoaTV",13:00 02/10 Bóng đá China W vs South Korea W (Tiểu Mây)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/download_sbv5hbq.png" group-title="PhaoHoaTV",14:00 02/10 | Pakistan vs Iran | Bóng chuyền | ASIAD GAME | BLV KaKa | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_480.jpg" group-title="PhaoHoaTV",15:00 02/10 Bóng đá Thái Lan vs Philippines (Lee Sin)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_479.jpg" group-title="PhaoHoaTV",15:00 02/10 Bóng đá Việt Nam vs Pakistan (Pháo Thủ)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_479.jpg" group-title="PhaoHoaTV",15:00 02/10 Bóng đá Việt Nam vs Pakistan (Tày)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/OIP_hdpF9Rm.jpg" group-title="PhaoHoaTV",17:00 02/10 | Việt Nam vs Indonesia | Bóng chuyền | ASIAD GAME | BLV Lee Sin | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/OIP_4xNC98N.jpg" group-title="PhaoHoaTV",17:20 02/10 | Nhật Bản vs Trung Quốc | Bóng chuyền | ASIAD GAME | BLV KaKa | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_31639.jpg" group-title="PhaoHoaTV",17:30 02/10 Bóng đá North Korea W vs Japan W (Kền Kền)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_639.jpg" group-title="PhaoHoaTV",18:35 02/10 | China vs Palestine | Bóng đá | Friendlies | BLV Tiểu Mây | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_686.jpg" group-title="PhaoHoaTV",21:00 02/10 | Kazakhstan vs Moldova | Bóng đá | UEFA Nations League | BLV Enzo | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/image.webp" group-title="PhaoHoaTV",22:30 02/10 | MKS Kalisz (W) vs Budowlani (W) | Bóng chuyền | TAURON LIGA | BLV KaKa | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_697.jpg" group-title="PhaoHoaTV",23:00 02/10 | Cyprus vs Armenia | Bóng đá | UEFA Nations League | BLV Kền Kền | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_694.jpg" group-title="PhaoHoaTV",23:00 02/10 | Latvia vs Montenegro | Bóng đá | UEFA Nations League | BLV Tiểu Mây | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_6.jpg" group-title="PhaoHoaTV",01:45 03/10 | Belgium vs Turkey | Bóng đá | UEFA Nations League | BLV Tày | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_685.jpg" group-title="PhaoHoaTV",01:45 03/10 | Bosnia & Herzegovina vs Sweden | Bóng đá | UEFA Nations League | BLV Enzo | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_18.jpg" group-title="PhaoHoaTV",01:45 03/10 | Poland vs Romania | Bóng đá | UEFA Nations League | BLV Lee Sin | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_12.jpg" group-title="PhaoHoaTV",01:45 03/10 | Ukraine vs Northern Ireland | Bóng đá | UEFA Nations League | BLV Pháo Thủ | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_9462.jpg" group-title="PhaoHoaTV",13:00 03/10 | China U23 vs Uzbekistan U23 | Bóng đá | Asian Games | BLV Tày | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/download_IAaCYjl.png" group-title="PhaoHoaTV",17:00 03/10 | Hong Kong vs Cambodia | Bóng đá | Fifa Asean Cup | BLV Pháo Thủ | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/images_8kF19fZ.jpg" group-title="PhaoHoaTV",17:30 03/10 | South Korea U23 vs Japan U23 | Bóng đá | Asian Games | BLV Lee Sin | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_8.jpg" group-title="PhaoHoaTV",20:00 03/10 | Finland vs Albania | Bóng đá | UEFA Nations League | BLV Kền Kền | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_687.jpg" group-title="PhaoHoaTV",23:00 03/10 | Belarus vs San Marino | Bóng đá | UEFA Nations League | BLV Kền Kền | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_688.jpg" group-title="PhaoHoaTV",23:00 03/10 | Estonia vs Luxembourg | Bóng đá | UEFA Nations League | BLV Enzo | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_704.jpg" group-title="PhaoHoaTV",23:00 03/10 | Iceland vs Bulgaria | Bóng đá | UEFA Nations League | BLV Tiểu Mây | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_11.jpg" group-title="PhaoHoaTV",01:45 04/10 | North Macedonia vs Scotland | Bóng đá | UEFA Nations League | BLV Lee Sin | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_19.jpg" group-title="PhaoHoaTV",01:45 04/10 | Spain vs Czech Republic | Bóng đá | UEFA Nations League | BLV Tày | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_738.jpg" group-title="PhaoHoaTV",02:00 04/10 | Ivory Coast vs Cameroon | Bóng đá | Friendlies | BLV Pháo Thủ | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/OIP_TkTkw3i.jpg" group-title="Khandai",11:00 02/10 Bóng chuyền Qatar vs Thái Lan (KaKa)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_646_P1KUFYE.png" group-title="Khandai",11:00 02/10 Bóng chuyền Uzbekistan vs Philippines (Enzo)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/OIP_TkTkw3i.jpg" group-title="Khandai",11:00 02/10 | Qatar vs Thái Lan | Bóng chuyền | ASIAD GAME | BLV KaKa | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_646_P1KUFYE.png" group-title="Khandai",11:00 02/10 | Uzbekistan vs Philippines | Bóng chuyền | ASIAD GAME | BLV Enzo | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_599.jpg" group-title="Khandai",13:00 02/10 Bóng đá China W vs South Korea W (Tiểu Mây)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_599.jpg" group-title="Khandai",13:00 02/10 | China W vs South Korea W | Bóng đá | Copa De La Liga - Play Offs | BLV Tiểu Mây | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/download_sbv5hbq.png" group-title="Khandai",14:00 02/10 | Pakistan vs Iran | Bóng chuyền | ASIAD GAME | BLV KaKa | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_480.jpg" group-title="Khandai",15:00 02/10 Bóng đá Thái Lan vs Philippines (Lee Sin)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_479.jpg" group-title="Khandai",15:00 02/10 Bóng đá Việt Nam vs Pakistan (Pháo Thủ)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_479.jpg" group-title="Khandai",15:00 02/10 Bóng đá Việt Nam vs Pakistan (Tày)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_480.jpg" group-title="Khandai",15:00 02/10 | Thái Lan vs Philippines | Bóng đá | Copa De La Liga - Play Offs | BLV Lee Sin | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_479.jpg" group-title="Khandai",15:00 02/10 | Việt Nam vs Pakistan | Bóng đá | Copa De La Liga - Play Offs | BLV Pháo Thủ | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_479.jpg" group-title="Khandai",15:00 02/10 | Việt Nam vs Pakistan | Bóng đá | Copa De La Liga - Play Offs | BLV Tày | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/OIP_hdpF9Rm.jpg" group-title="Khandai",17:00 02/10 | Việt Nam vs Indonesia | Bóng chuyền | ASIAD GAME | BLV Lee Sin | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/OIP_4xNC98N.jpg" group-title="Khandai",17:20 02/10 | Nhật Bản vs Trung Quốc | Bóng chuyền | ASIAD GAME | BLV KaKa | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_31639.jpg" group-title="Khandai",17:30 02/10 Bóng đá North Korea W vs Japan W (Kền Kền)
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_31639.jpg" group-title="Khandai",17:30 02/10 | North Korea W vs Japan W | Bóng đá | Copa De La Liga - Play Offs | BLV Kền Kền | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_639.jpg" group-title="Khandai",18:35 02/10 | China vs Palestine | Bóng đá | Friendlies | BLV Tiểu Mây | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_686.jpg" group-title="Khandai",21:00 02/10 | Kazakhstan vs Moldova | Bóng đá | UEFA Nations League | BLV Enzo | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/image.webp" group-title="Khandai",22:30 02/10 | MKS Kalisz (W) vs Budowlani (W) | Bóng chuyền | TAURON LIGA | BLV KaKa | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa7/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_697.jpg" group-title="Khandai",23:00 02/10 | Cyprus vs Armenia | Bóng đá | UEFA Nations League | BLV Kền Kền | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_694.jpg" group-title="Khandai",23:00 02/10 | Latvia vs Montenegro | Bóng đá | UEFA Nations League | BLV Tiểu Mây | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_6.jpg" group-title="Khandai",01:45 03/10 | Belgium vs Turkey | Bóng đá | UEFA Nations League | BLV Tày | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_685.jpg" group-title="Khandai",01:45 03/10 | Bosnia & Herzegovina vs Sweden | Bóng đá | UEFA Nations League | BLV Enzo | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_18.jpg" group-title="Khandai",01:45 03/10 | Poland vs Romania | Bóng đá | UEFA Nations League | BLV Lee Sin | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_12.jpg" group-title="Khandai",01:45 03/10 | Ukraine vs Northern Ireland | Bóng đá | UEFA Nations League | BLV Pháo Thủ | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_9462.jpg" group-title="Khandai",13:00 03/10 | China U23 vs Uzbekistan U23 | Bóng đá | Asian Games | BLV Tày | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/download_IAaCYjl.png" group-title="Khandai",17:00 03/10 | Hong Kong vs Cambodia | Bóng đá | Fifa Asean Cup | BLV Pháo Thủ | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/images_8kF19fZ.jpg" group-title="Khandai",17:30 03/10 | South Korea U23 vs Japan U23 | Bóng đá | Asian Games | BLV Lee Sin | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_8.jpg" group-title="Khandai",20:00 03/10 | Finland vs Albania | Bóng đá | UEFA Nations League | BLV Kền Kền | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_687.jpg" group-title="Khandai",23:00 03/10 | Belarus vs San Marino | Bóng đá | UEFA Nations League | BLV Kền Kền | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa6/index.m3u8?expire=1815505159&sign=16059952b038cc8982ab6d1980711dc9
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_688.jpg" group-title="Khandai",23:00 03/10 | Estonia vs Luxembourg | Bóng đá | UEFA Nations League | BLV Enzo | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa2/index.m3u8?expire=1815505159&sign=d3bfcbaa36f949863f22cc89e1cc1afa
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_704.jpg" group-title="Khandai",23:00 03/10 | Iceland vs Bulgaria | Bóng đá | UEFA Nations League | BLV Tiểu Mây | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa9/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_11.jpg" group-title="Khandai",01:45 04/10 | North Macedonia vs Scotland | Bóng đá | UEFA Nations League | BLV Lee Sin | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa10/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_19.jpg" group-title="Khandai",01:45 04/10 | Spain vs Czech Republic | Bóng đá | UEFA Nations League | BLV Tày | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa8/index.m3u8?expire=1815822079&sign=9a0c1792a57466ace2166ab62a2ea149
-
-#EXTINF:-1 tvg-logo="https://khandai3.link/media/teams/logos/team_738.jpg" group-title="Khandai",02:00 04/10 | Ivory Coast vs Cameroon | Bóng đá | Friendlies | BLV Pháo Thủ | Main
-#EXTVLCOPT:http-referrer=https://khandai3.link/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://luong.phaohoa.live/live/phaohoa4/index.m3u8?expire=1815505159&sign=faaa23580764370ed378ecd708c9f262
-
 #EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/d02726fd-b3da-4f0a-b6a4-53a95752406a" group-title="S8 TV",08:00 02/10 Internacional de Bogota vs Deportiva Once Caldas (NGƯỜI PHÁO) [hls]
 https://hls.lauthaitv.cc/live/bogota-caldas-cate/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/6cf7883c-d031-42d9-9b49-a9c1eaee52c4" group-title="S8 TV",09:00 02/10 Nicaragua vs Costa Rica (NGƯỜI NẶN) [hls]
-https://hls.lauthaitv.cc/live/nic-cos-concacaf/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/71c8f477-0dfd-450a-980c-45839d2d95ed" group-title="S8 TV",13:00 02/10 China Women vs South Korea Women (NGƯỜI BẠC) [hls]
 https://hls.lauthaitv.cc/live/chn-kor-asiadw/index.m3u8
@@ -989,498 +651,6 @@ https://stm6dad62063600.stream.hdplaylink.com/sklive/teppy/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Sao Kê TV",SaoKeTV Tit
 https://stm6dad62063600.stream.hdplaylink.com/sklive/tit/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/f743e9464e7cb53ce6846645d64fb6d4.jpeg" group-title="Socolive TV",[09:30 02/10] Panteras de Aguascalientes vs Dorados de Chihuahua | BLV: BLV HENRY [HD M3U8]
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1790918104-0-0-435d1e1239acc2b3d2fe1d86b2ebf2a1
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/f743e9464e7cb53ce6846645d64fb6d4.jpeg" group-title="Socolive TV",[09:30 02/10] Panteras de Aguascalientes vs Dorados de Chihuahua | BLV: BLV HENRY [SD M3U8]
-https://pull.niues.live/live/stream-9912112_lsd.m3u8?auth_key=1790918104-0-0-31a0661b5bd99c243054dc14f33c3cda
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: BLV COCA [HD M3U8]
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1790890855-0-0-a8944a52b9c5cbee25dbce0b93d67c9d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: BLV COCA [SD M3U8]
-https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1790890855-0-0-927e732e49cbb9d6dbda10cc914e2f88
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: BLV CUỘI [HD M3U8]
-https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1790869301-0-0-95c50a4ecea8e731aade28506dbc6dc8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: BLV CUỘI [SD M3U8]
-https://pull.niues.live/live/stream-9912146_lsd.m3u8?auth_key=1790869301-0-0-59c8362228b51c63243fe38a94e1df3c
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: BLV ĐỐM [HD M3U8]
-https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1790915709-0-0-60e6682ff8602567a5a1f323c0b99f78
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: BLV ĐỐM [SD M3U8]
-https://pull.niues.live/live/stream-9912110_lsd.m3u8?auth_key=1790915709-0-0-557278fb62d9aabf87a80b04083970b5
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: CÔNG CHẤT [HD M3U8]
-https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=99777238c1483fdc866784b2e6267c37&txTime=6abec5af
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: CÔNG CHẤT [SD M3U8]
-https://pull.niur.live/live/stream-291277_lsd.m3u8?txSecret=ba6542ad1309634ad0caa07d68444458&txTime=6abec5af
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: SAO LA [HD M3U8]
-https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=4cdd2d15ffd5d54d6c66bc387deda2fb&txTime=6abea4e2
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: SAO LA [SD M3U8]
-https://pull.niur.live/live/stream-9912140_lsd.m3u8?txSecret=6e1bbeb4c6da1e7ec008f9ec230c1fa9&txTime=6abea4e2
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: TẠ BIÊN GIỚI [HD M3U8]
-https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1790917554-0-0-0a92d7f0fcfca71f5733ad1bbf1378f9
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/57cce4b8700b046f980178987d3e6b5b.png" group-title="Socolive TV",[13:00 02/10] China Women vs South Korea Women | BLV: TẠ BIÊN GIỚI [SD M3U8]
-https://pull.niues.live/live/stream-9912144_lsd.m3u8?auth_key=1790917554-0-0-7f6b7a1673b6ec0a9a6d8a1056dcf74b
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/8c49b81c152fca2b1d116a61db3582f2.png" group-title="Socolive TV",[13:30 02/10] Tauranga Whai Women vs Southern Hoiho Women | BLV: A CHÈ [HD M3U8]
-https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1790908533-0-0-b53ff284b400e8e98a74c233700b8271
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/8c49b81c152fca2b1d116a61db3582f2.png" group-title="Socolive TV",[13:30 02/10] Tauranga Whai Women vs Southern Hoiho Women | BLV: A CHÈ [SD M3U8]
-https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1790908533-0-0-4616cbe7549a1a778bbf1d00af102636
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/8c49b81c152fca2b1d116a61db3582f2.png" group-title="Socolive TV",[13:30 02/10] Tauranga Whai Women vs Southern Hoiho Women | BLV: BRIAN [HD M3U8]
-https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1790913837-0-0-c7124a78aa8168294a8eee2aa1dab583
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/8c49b81c152fca2b1d116a61db3582f2.png" group-title="Socolive TV",[13:30 02/10] Tauranga Whai Women vs Southern Hoiho Women | BLV: BRIAN [SD M3U8]
-https://pull.niues.live/live/stream-9912106_lsd.m3u8?auth_key=1790913837-0-0-313ec8d52ffed93e7130669a4cc50b30
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/8c49b81c152fca2b1d116a61db3582f2.png" group-title="Socolive TV",[13:30 02/10] Tauranga Whai Women vs Southern Hoiho Women | BLV: CHAN SENA [HD M3U8]
-https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1790918104-0-0-57f7e08c8bb79194fc4150b1f8eef8fe
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/8c49b81c152fca2b1d116a61db3582f2.png" group-title="Socolive TV",[13:30 02/10] Tauranga Whai Women vs Southern Hoiho Women | BLV: CHAN SENA [SD M3U8]
-https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1790918104-0-0-3b9dac9effcda90d242ed90834cedcfc
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/8c49b81c152fca2b1d116a61db3582f2.png" group-title="Socolive TV",[13:30 02/10] Tauranga Whai Women vs Southern Hoiho Women | BLV: HUNTER [HD M3U8]
-https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=1dca007545e832d0d9857d131f96931c&txTime=6abf830c
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/8c49b81c152fca2b1d116a61db3582f2.png" group-title="Socolive TV",[13:30 02/10] Tauranga Whai Women vs Southern Hoiho Women | BLV: HUNTER [SD M3U8]
-https://pull.niur.live/live/stream-558264_lsd.m3u8?txSecret=4f5a3c643c780d8089f0e4e5e9c7b4dd&txTime=6abf830c
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: BLV A TÚ [HD M3U8]
-https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1790890610-0-0-948d640899212f5ed503ffa69ac943a5
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: BLV A TÚ [SD M3U8]
-https://pull.niues.live/live/stream-9912130_lsd.m3u8?auth_key=1790890610-0-0-28b6f08fe5dcdb02d1989987cc597743
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: BLV BÉO [HD M3U8]
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=d0f9635bc05ecc9641f519c2c8b1d6c5&txTime=6abf6957
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: BLV BÉO [SD M3U8]
-https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=f1126e4bca968c87b025304e56ee9a78&txTime=6abf6957
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: BLV RÔSI [HD M3U8]
-https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=69144bb792fb8be00fa06d5f0e8193c8&txTime=6abecf7e
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: BLV RÔSI [SD M3U8]
-https://pull.niur.live/live/stream-9912102_lsd.m3u8?txSecret=84819ea8dfdb6d84735e6b179faffb13&txTime=6abecf7e
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: BLV YONE [HD M3U8]
-https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1790908317-0-0-31d1f0589dd003d93ddc5a591fc1c105
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: BLV YONE [SD M3U8]
-https://pull.niues.live/live/stream-372746_lsd.m3u8?auth_key=1790908317-0-0-e2edfd63a29d7303717dff09ad08c885
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: HẢI THANH [HD M3U8]
-https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1790890849-0-0-4951cc140b7a24d4a7c59e868987ccb3
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: HẢI THANH [SD M3U8]
-https://pull.niues.live/live/stream-9912119_lsd.m3u8?auth_key=1790890849-0-0-80c8844a10c796d3daabee2258d6ffc3
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: PEANUT [HD M3U8]
-https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1790880560-0-0-870eb99242a2d3351796b51ceeb49fe0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1816de0ee379b39447803af585414c88.png" group-title="Socolive TV",[16:00 02/10] Thailand vs Philippines | BLV: PEANUT [SD M3U8]
-https://pull.niues.live/live/stream-620084_lsd.m3u8?auth_key=1790880560-0-0-d98638e72343262f40f160ffd66346d7
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: BLV Củ Cải [HD M3U8]
-https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1790915838-0-0-81a4740529bdd410b6eccdd5f2bb24ea
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: BLV Củ Cải [SD M3U8]
-https://pull.niues.live/live/stream-9912091_lsd.m3u8?auth_key=1790915838-0-0-1ede13c590428031874ecef4a2e2c3d5
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: BLV HEHE [HD M3U8]
-https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1790873774-0-0-21acb64d4e795cc1bd105cc5010799a1
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: BLV HEHE [SD M3U8]
-https://pull.niues.live/live/stream-622241_lsd.m3u8?auth_key=1790873774-0-0-afa5825fe6e816b960b8d875a0d6cd4f
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: BLV MESSI [HD M3U8]
-https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1790890746-0-0-ea28ab1c436182b60e1a959aff5d6214
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: BLV MESSI [SD M3U8]
-https://pull.niues.live/live/stream-9912141_lsd.m3u8?auth_key=1790890746-0-0-2f0b7d50a1df66fc6d6d0f010939f79c
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: BLV TAP [HD M3U8]
-https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=8614bd5b6cd4d31ba27acbcc01bd847e&txTime=6abf7aa1
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: BLV TAP [SD M3U8]
-https://pull.niur.live/live/stream-9912041_lsd.m3u8?txSecret=0c46d480516f30935e86ccca1004f624&txTime=6abf7aa1
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: CURRY [HD M3U8]
-https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1790891068-0-0-cf8339a37f3cfb3d18dd10b4c67f937e
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: CURRY [SD M3U8]
-https://pull.niues.live/live/stream-622240_lsd.m3u8?auth_key=1790891068-0-0-e3cf8014fc761a177db8a7819f0d86a1
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: LÃO LÂM [HD M3U8]
-https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1790915766-0-0-c222f10c9beae7d8e0f076194ad8dfdb
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: LÃO LÂM [SD M3U8]
-https://pull.niues.live/live/stream-527384_lsd.m3u8?auth_key=1790915766-0-0-4f255e34a9f19340467c99937b14539d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: RICKHANTER [HD M3U8]
-https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=6c8fab0027fc47f4a0290ea238a4b29f&txTime=6abf8102
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: RICKHANTER [SD M3U8]
-https://pull.niur.live/live/stream-9912122_lsd.m3u8?txSecret=a246315b80e8a5cd129c8beafdc97bda&txTime=6abf8102
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: THOMAS [HD M3U8]
-https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=1085d18896cfde4fe2ddb03e49fe4bd1&txTime=6abf816a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/534b24aefc1bdafc5e948b76839af65c.png" group-title="Socolive TV",[16:00 02/10] Vietnam vs Pakistan | BLV: THOMAS [SD M3U8]
-https://pull.niur.live/live/stream-414317_lsd.m3u8?txSecret=8e3d2cc76799d4a0664d2fa1ca23cc10&txTime=6abf816a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/454fed5079059f0c31145ebc8cb98fde.png" group-title="Socolive TV",[17:00 02/10] Daejeon Korail vs Gangneung Citizen | BLV: BLV VOI [HD M3U8]
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1790890625-0-0-2cf1260fc14a72dabbc58419fac5d86f
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/454fed5079059f0c31145ebc8cb98fde.png" group-title="Socolive TV",[17:00 02/10] Daejeon Korail vs Gangneung Citizen | BLV: BLV VOI [SD M3U8]
-https://pull.niues.live/live/stream-9912114_lsd.m3u8?auth_key=1790890625-0-0-156ef31e295eb2891f98d1e22fa08b23
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/454fed5079059f0c31145ebc8cb98fde.png" group-title="Socolive TV",[17:00 02/10] Daejeon Korail vs Gangneung Citizen | BLV: KINH VÂN [HD M3U8]
-https://pull.niues.live/live/stream-623743_lhd.m3u8?auth_key=1790871382-0-0-04c244fe404a1fd2079a09e789bbb9f5
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/454fed5079059f0c31145ebc8cb98fde.png" group-title="Socolive TV",[17:00 02/10] Daejeon Korail vs Gangneung Citizen | BLV: KINH VÂN [SD M3U8]
-https://pull.niues.live/live/stream-623743_lsd.m3u8?auth_key=1790871382-0-0-a478f2ddb3df3a04f912516e01f09f4c
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/3408a04e01343421efb242a08bd7fa48.png" group-title="Socolive TV",[17:00 02/10] Reilac Shiga FC vs Roasso Kumamoto | BLV: BLV LION [HD M3U8]
-https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1790910152-0-0-17db5863d0457440474e21e1098fbe3b
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/3408a04e01343421efb242a08bd7fa48.png" group-title="Socolive TV",[17:00 02/10] Reilac Shiga FC vs Roasso Kumamoto | BLV: BLV LION [SD M3U8]
-https://pull.niues.live/live/stream-603255_lsd.m3u8?auth_key=1790910152-0-0-759b47275c8a1139091a3eb690890338
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/3408a04e01343421efb242a08bd7fa48.png" group-title="Socolive TV",[17:00 02/10] Reilac Shiga FC vs Roasso Kumamoto | BLV: BOSS [HD M3U8]
-https://pull.niues.live/live/stream-620504_lhd.m3u8?auth_key=1790880558-0-0-8fe927b75b8f69276550cb09cba8ed49
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/3408a04e01343421efb242a08bd7fa48.png" group-title="Socolive TV",[17:00 02/10] Reilac Shiga FC vs Roasso Kumamoto | BLV: BOSS [SD M3U8]
-https://pull.niues.live/live/stream-620504_lsd.m3u8?auth_key=1790880558-0-0-ca9ad22dcc54c1f6911c11fb8dab4055
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: A PÁO [HD M3U8]
-https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1790891198-0-0-c8874d504da5504cf0bb838bd9cee55d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: A PÁO [SD M3U8]
-https://pull.niues.live/live/stream-235232_lsd.m3u8?auth_key=1790891198-0-0-2339c4d792d0d18c8019a7d72f4f4fbd
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV ALEX [HD M3U8]
-https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1790868807-0-0-84313a6cf4b19548f1f2b3b2254aaf14
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV ALEX [SD M3U8]
-https://pull.niues.live/live/stream-532081_lsd.m3u8?auth_key=1790868807-0-0-02351f4a4a25453b4ddb8f8a6143bb96
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV FIREMAN [HD M3U8]
-https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1790891179-0-0-171170b0e49cf6319a71ef3491bfd488
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV FIREMAN [SD M3U8]
-https://pull.niues.live/live/stream-991140_lsd.m3u8?auth_key=1790891179-0-0-b8f08b72e75c7ac846c3d6577fb18ee3
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV LONG [HD M3U8]
-https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=4f0e1108fa46260ef830f32837b35315&txTime=6abef1be
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV LONG [SD M3U8]
-https://pull.niur.live/live/stream-9912136_lsd.m3u8?txSecret=f9e4eed738fd13b7305d54eb0e4ffa7b&txTime=6abef1be
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV PEWPEW [HD M3U8]
-https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1790890648-0-0-6f21d4879771ab1fb205e8e17e66a6bf
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV PEWPEW [SD M3U8]
-https://pull.niues.live/live/stream-9912135_lsd.m3u8?auth_key=1790890648-0-0-9fee552aee10d1a8fb4be2695ebf231c
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV TOMIA [HD M3U8]
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1790917063-0-0-3ab513bf12d0b33f8b9ca4ae008f123e
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/ef76e6df3dbd77c6a743167570376b91.png" group-title="Socolive TV",[17:30 02/10] North Korea Women vs Japan Women | BLV: BLV TOMIA [SD M3U8]
-https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1790917063-0-0-0bfb77133a7fd4ee09b72fb893e3322b
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: A BỆU [HD M3U8]
-https://pull.niues.live/live/stream-9912142_lhd.m3u8?auth_key=1790891482-0-0-be34c776e63ba67396bb7fceca3070ef
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: A BỆU [SD M3U8]
-https://pull.niues.live/live/stream-9912142_lsd.m3u8?auth_key=1790891482-0-0-f92e4d88626170961875c2a0b39e3e95
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: A MÂN [HD M3U8]
-https://pull.niues.live/live/stream-627718_lhd.m3u8?auth_key=1790910731-0-0-f5733b02faf6c12a89647e604b7238fe
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: A MÂN [SD M3U8]
-https://pull.niues.live/live/stream-627718_lsd.m3u8?auth_key=1790910731-0-0-d1a064a526ad66f3e540150a50e195ae
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: BLV CÒ [HD M3U8]
-https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1790890562-0-0-34d2ca251441f79f52b08acbe3bc1c0a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: BLV CÒ [SD M3U8]
-https://pull.niues.live/live/stream-582342_lsd.m3u8?auth_key=1790890562-0-0-2c71411f82130c440e30037a65e05fcc
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: CR Bưởi [HD M3U8]
-https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=1f6de9d58f0a60f87609c0f33a8847a7&txTime=6abf1a00
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: CR Bưởi [SD M3U8]
-https://pull.niur.live/live/stream-387694_lsd.m3u8?txSecret=4dfa1a1b0b49384e8103d07054697a82&txTime=6abf1a00
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: QUỐC KHÁNH [HD M3U8]
-https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=99f5c41eefab57717c2631a5e0c0ad7c&txTime=6abf19bf
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/03d10ae95213b423d49a39e5cf433737.png" group-title="Socolive TV",[18:00 02/10] South Korea vs Venezuela | BLV: QUỐC KHÁNH [SD M3U8]
-https://pull.niur.live/live/stream-9912129_lsd.m3u8?txSecret=ccc59a7ebdef7a5f59f7954308e9c63f&txTime=6abf19bf
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/b374fc6f234a50308f760ba443fb6f2c.jpg" group-title="Socolive TV",[18:35 02/10] China vs Palestine | BLV: BLV ENZO [HD M3U8]
-https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1790915915-0-0-55ae8c38e2b99174eeedd858f8bfa563
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/b374fc6f234a50308f760ba443fb6f2c.jpg" group-title="Socolive TV",[18:35 02/10] China vs Palestine | BLV: BLV ENZO [SD M3U8]
-https://pull.niues.live/live/stream-380460_lsd.m3u8?auth_key=1790915915-0-0-ccb6e3714106a6a4353a6126c1f8b771
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/b374fc6f234a50308f760ba443fb6f2c.jpg" group-title="Socolive TV",[18:35 02/10] China vs Palestine | BLV: BLV LUCAS [HD M3U8]
-https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1790908504-0-0-f085da58e05790771af89c82e00e0c4d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/b374fc6f234a50308f760ba443fb6f2c.jpg" group-title="Socolive TV",[18:35 02/10] China vs Palestine | BLV: BLV LUCAS [SD M3U8]
-https://pull.niues.live/live/stream-304148_lsd.m3u8?auth_key=1790908504-0-0-221baae563b70a68a305f484548c2cf4
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/b374fc6f234a50308f760ba443fb6f2c.jpg" group-title="Socolive TV",[18:35 02/10] China vs Palestine | BLV: LOGAN [HD M3U8]
-https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=d6b29b9ce1e15beb65abc575029a3856&txTime=6abf684e
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/b374fc6f234a50308f760ba443fb6f2c.jpg" group-title="Socolive TV",[18:35 02/10] China vs Palestine | BLV: LOGAN [SD M3U8]
-https://pull.niur.live/live/stream-552832_lsd.m3u8?txSecret=fe89d694f22e171bb56faa27d3cb5796&txTime=6abf684e
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/32c04f3fd16cf9b38a65b364ed223919.png" group-title="Socolive TV",[19:00 02/10] Dejan FC vs Persipura Jayapura | BLV: THẠCH TÚ [HD M3U8]
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=a3cfd12fad9696e9e735aa8883c3a5e7&txTime=6abef4ec
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/32c04f3fd16cf9b38a65b364ed223919.png" group-title="Socolive TV",[19:00 02/10] Dejan FC vs Persipura Jayapura | BLV: THẠCH TÚ [SD M3U8]
-https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=042127ae03ef7bb466aa9d60a14346c4&txTime=6abef4ec
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BLV ANH TÀI [HD M3U8]
-https://pull.niur.live/live/stream-406865_lhd.m3u8?txSecret=957ade454905b343a116fd7f99e5943b&txTime=6abf38be
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BLV ANH TÀI [SD M3U8]
-https://pull.niur.live/live/stream-406865_lsd.m3u8?txSecret=851311bc1a2999ca1c116d219f95d2ed&txTime=6abf38be
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BLV KAN [HD M3U8]
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=3c73b588c6045ee56d84c58eb4c2e743&txTime=6abf6323
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BLV KAN [SD M3U8]
-https://pull.niur.live/live/stream-283501_lsd.m3u8?txSecret=523a37a62778c63f9e75c8eb93da8eff&txTime=6abf6323
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BLV RAMBO [HD M3U8]
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=212c35f5b3bdd3318a5d39cc273243b5&txTime=6abf6486
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BLV RAMBO [SD M3U8]
-https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=535c41eb5a7b54126a88e77e9921bb20&txTime=6abf6486
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BLV XO [HD M3U8]
-https://pull.niur.live/live/stream-9912132_lhd.m3u8?txSecret=81e633c1e05929898b5fc38528892bcc&txTime=6abf6463
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BLV XO [SD M3U8]
-https://pull.niur.live/live/stream-9912132_lsd.m3u8?txSecret=bb81a7ec37a3ee1f82c1b1fbadac5d7d&txTime=6abf6463
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BÒ TƯƠI [HD M3U8]
-https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1790890994-0-0-865df3216d817adbe64b507cf430aee3
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: BÒ TƯƠI [SD M3U8]
-https://pull.niues.live/live/stream-620797_lsd.m3u8?auth_key=1790890994-0-0-a1f2f49f0ceb8b05c71680a4ce1251a5
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: T REX [HD M3U8]
-https://pull.niues.live/live/stream-619672_lhd.m3u8?auth_key=1790877293-0-0-b47383d1d333f43b41ec6211d7c24d27
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/eadf8b604e1aa2238eae5d6fc315fe67.png" group-title="Socolive TV",[20:15 02/10] Al-Ain FC vs Ajman | BLV: T REX [SD M3U8]
-https://pull.niues.live/live/stream-619672_lsd.m3u8?auth_key=1790877293-0-0-e202687b4fb94582382fc0d02d545a37
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/144b45e780136124da301d435bbc1fc8.png" group-title="Socolive TV",[20:15 02/10] Al-Wasl SC vs Ittihad Kalba FC | BLV: BLV PIRLO [HD M3U8]
-https://pull.niur.live/live/stream-9912127_lhd.m3u8?txSecret=f15861a430dd30dcac3e461ae251ffbb&txTime=6abf1a55
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/144b45e780136124da301d435bbc1fc8.png" group-title="Socolive TV",[20:15 02/10] Al-Wasl SC vs Ittihad Kalba FC | BLV: BLV PIRLO [SD M3U8]
-https://pull.niur.live/live/stream-9912127_lsd.m3u8?txSecret=c5fbef87f951f422526f800d793ee657&txTime=6abf1a55
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/144b45e780136124da301d435bbc1fc8.png" group-title="Socolive TV",[20:15 02/10] Al-Wasl SC vs Ittihad Kalba FC | BLV: NGƯỜI CÁ [HD M3U8]
-https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1790890595-0-0-e7745508c3ac2fe1333d4fa290f1fdc2
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/144b45e780136124da301d435bbc1fc8.png" group-title="Socolive TV",[20:15 02/10] Al-Wasl SC vs Ittihad Kalba FC | BLV: NGƯỜI CÁ [SD M3U8]
-https://pull.niues.live/live/stream-9912143_lsd.m3u8?auth_key=1790890595-0-0-24c647f590b3d23f6ce05a784c5fc9a5
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1b1f88e27af6c05746064fe84d582c26.png" group-title="Socolive TV",[20:30 02/10] Persiraja Banda Aceh vs Sumsel United | BLV: XUÂN SON [HD M3U8]
-https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=b703f0e38230f77cb9e328f9e041aaf5&txTime=6abecd1e
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/1b1f88e27af6c05746064fe84d582c26.png" group-title="Socolive TV",[20:30 02/10] Persiraja Banda Aceh vs Sumsel United | BLV: XUÂN SON [SD M3U8]
-https://pull.niur.live/live/stream-501412_lsd.m3u8?txSecret=0da45c5835764f74511a3af2a740e357&txTime=6abecd1e
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/47ccf807a0829a7098e22240c213c86a.png" group-title="Socolive TV",[21:00 02/10] Kazakhstan vs Moldova | BLV: BLV BẢY [HD M3U8]
-https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1790890903-0-0-6cbdacfbaf69f007ef15a6a7f273f39f
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/47ccf807a0829a7098e22240c213c86a.png" group-title="Socolive TV",[21:00 02/10] Kazakhstan vs Moldova | BLV: BLV BẢY [SD M3U8]
-https://pull.niues.live/live/stream-621843_lsd.m3u8?auth_key=1790890903-0-0-3e419ff798d360328e33d546623665d1
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/47ccf807a0829a7098e22240c213c86a.png" group-title="Socolive TV",[21:00 02/10] Kazakhstan vs Moldova | BLV: ZIDANE [HD M3U8]
-https://pull.niues.live/live/stream-9912145_lhd.m3u8?auth_key=1790917035-0-0-5622b8ff2e6b2776b8b7b06c691e89b4
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/47ccf807a0829a7098e22240c213c86a.png" group-title="Socolive TV",[21:00 02/10] Kazakhstan vs Moldova | BLV: ZIDANE [SD M3U8]
-https://pull.niues.live/live/stream-9912145_lsd.m3u8?auth_key=1790917035-0-0-787a0951b9ce39d2d1356a03d392f620
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/23a2cc5954394c2fe9960317c24e2943.png" group-title="Socolive TV",[22:45 02/10] Khor Fakkan SSC vs Al-Jazira(UAE) | BLV: BLV WUKONG [HD M3U8]
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1790885446-0-0-aa18b24a83be936f517b706101c8757d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/23a2cc5954394c2fe9960317c24e2943.png" group-title="Socolive TV",[22:45 02/10] Khor Fakkan SSC vs Al-Jazira(UAE) | BLV: BLV WUKONG [SD M3U8]
-https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1790885446-0-0-e92d6407b836a4e3b79e9f31cafd6ad0
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/23a2cc5954394c2fe9960317c24e2943.png" group-title="Socolive TV",[22:45 02/10] Khor Fakkan SSC vs Al-Jazira(UAE) | BLV: KENCHU [HD M3U8]
-https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1790890677-0-0-369b54a2363b2a3aaa38060f3dff0a07
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/23a2cc5954394c2fe9960317c24e2943.png" group-title="Socolive TV",[22:45 02/10] Khor Fakkan SSC vs Al-Jazira(UAE) | BLV: KENCHU [SD M3U8]
-https://pull.niues.live/live/stream-9912124_lsd.m3u8?auth_key=1790890677-0-0-3c42e8e2d04be3dd35c196e2d7e12c96
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/23a2cc5954394c2fe9960317c24e2943.png" group-title="Socolive TV",[22:45 02/10] Khor Fakkan SSC vs Al-Jazira(UAE) | BLV: LOKA [HD M3U8]
-https://pull.niues.live/live/stream-9912133_lhd.m3u8?auth_key=1790884658-0-0-c317299c3ea655bc630f0796f0345af9
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/23a2cc5954394c2fe9960317c24e2943.png" group-title="Socolive TV",[22:45 02/10] Khor Fakkan SSC vs Al-Jazira(UAE) | BLV: LOKA [SD M3U8]
-https://pull.niues.live/live/stream-9912133_lsd.m3u8?auth_key=1790884658-0-0-d49070d47ecf61014ce0633831b6c980
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/753a49dd44c00c0dcfcc30669f986d45.png" group-title="Socolive TV",[22:45 02/10] Shabab Al Ahli vs Al-Nasr Dubai | BLV: BLV CÁO [HD M3U8]
-https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1790890795-0-0-46c55d1f4da318081097f3e8ff1fddd6
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/753a49dd44c00c0dcfcc30669f986d45.png" group-title="Socolive TV",[22:45 02/10] Shabab Al Ahli vs Al-Nasr Dubai | BLV: BLV CÁO [SD M3U8]
-https://pull.niues.live/live/stream-597929_lsd.m3u8?auth_key=1790890795-0-0-6b0d8c4bcf237c2cfece6e5192027ed1
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/753a49dd44c00c0dcfcc30669f986d45.png" group-title="Socolive TV",[22:45 02/10] Shabab Al Ahli vs Al-Nasr Dubai | BLV: BÚN ĐẬU [HD M3U8]
-https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1790909695-0-0-80add227f60185182cafbdfc3bc87e3d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/753a49dd44c00c0dcfcc30669f986d45.png" group-title="Socolive TV",[22:45 02/10] Shabab Al Ahli vs Al-Nasr Dubai | BLV: BÚN ĐẬU [SD M3U8]
-https://pull.niues.live/live/stream-619561_lsd.m3u8?auth_key=1790909695-0-0-98c5c35678ad54830d3a29574b903d43
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/753a49dd44c00c0dcfcc30669f986d45.png" group-title="Socolive TV",[22:45 02/10] Shabab Al Ahli vs Al-Nasr Dubai | BLV: XUÂN TÓC ĐỎ [HD M3U8]
-https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=8e56d3e8626453a77b279fdd7db3b101&txTime=6abf1a07
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/753a49dd44c00c0dcfcc30669f986d45.png" group-title="Socolive TV",[22:45 02/10] Shabab Al Ahli vs Al-Nasr Dubai | BLV: XUÂN TÓC ĐỎ [SD M3U8]
-https://pull.niur.live/live/stream-610518_lsd.m3u8?txSecret=4b1257fb6a626e46031c8e559d7cbf76&txTime=6abf1a07
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/753a49dd44c00c0dcfcc30669f986d45.png" group-title="Socolive TV",[22:45 02/10] Shabab Al Ahli vs Al-Nasr Dubai | BLV: ĐỖ TÚ TÀI [HD M3U8]
-https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1790897293-0-0-189cc746fae1a3b2b67b97be66e7db1a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/753a49dd44c00c0dcfcc30669f986d45.png" group-title="Socolive TV",[22:45 02/10] Shabab Al Ahli vs Al-Nasr Dubai | BLV: ĐỖ TÚ TÀI [SD M3U8]
-https://pull.niues.live/live/stream-607552_lsd.m3u8?auth_key=1790897293-0-0-d3bed0391e8cddf1165461bef9c17a90
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/68335237ecfab5ba1c77b9bf62073abf.png" group-title="Socolive TV",[23:00 02/10] Austria U21 vs Denmark U21 | BLV: BLV RYO [HD M3U8]
-https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1790877510-0-0-f78baf489c4073bb19ded1ef39f6a63d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/68335237ecfab5ba1c77b9bf62073abf.png" group-title="Socolive TV",[23:00 02/10] Austria U21 vs Denmark U21 | BLV: BLV RYO [SD M3U8]
-https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1790877510-0-0-a3c420c52ebd6fa3c966ca37d176d4a1
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/68335237ecfab5ba1c77b9bf62073abf.png" group-title="Socolive TV",[23:00 02/10] Austria U21 vs Denmark U21 | BLV: TUẤN CÙI [HD M3U8]
-https://pull.niues.live/live/stream-9912138_lhd.m3u8?auth_key=1790891004-0-0-14613091934cbf21aa6cbc26d7775ed8
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/68335237ecfab5ba1c77b9bf62073abf.png" group-title="Socolive TV",[23:00 02/10] Austria U21 vs Denmark U21 | BLV: TUẤN CÙI [SD M3U8]
-https://pull.niues.live/live/stream-9912138_lsd.m3u8?auth_key=1790891004-0-0-4a7a31320f414a963fddb9934b8be17f
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/68335237ecfab5ba1c77b9bf62073abf.png" group-title="Socolive TV",[23:00 02/10] Austria U21 vs Denmark U21 | BLV: VINFAST [HD M3U8]
-https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1790890784-0-0-6a3ea40dd5fb385ff519c1c29be0d813
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/68335237ecfab5ba1c77b9bf62073abf.png" group-title="Socolive TV",[23:00 02/10] Austria U21 vs Denmark U21 | BLV: VINFAST [SD M3U8]
-https://pull.niues.live/live/stream-617313_lsd.m3u8?auth_key=1790890784-0-0-207eac1644a47ed293122fd9919586f1
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/3a324b1f3cb46c5163dc0d7eab172aae.png" group-title="Socolive TV",[23:00 02/10] Cyprus vs Armenia | BLV: CACAO [HD M3U8]
-https://pull.niues.live/live/stream-9912128_lhd.m3u8?auth_key=1790897284-0-0-e816924cc132fa8e4f46337f305a041b
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/3a324b1f3cb46c5163dc0d7eab172aae.png" group-title="Socolive TV",[23:00 02/10] Cyprus vs Armenia | BLV: CACAO [SD M3U8]
-https://pull.niues.live/live/stream-9912128_lsd.m3u8?auth_key=1790897284-0-0-abcaf7224a0b99ae9b4ea625432599fe
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/3a324b1f3cb46c5163dc0d7eab172aae.png" group-title="Socolive TV",[23:00 02/10] Cyprus vs Armenia | BLV: TRÀ ĐÁ [HD M3U8]
-https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1790890907-0-0-95a4419ded814e87ae1d0d70557b68f9
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/3a324b1f3cb46c5163dc0d7eab172aae.png" group-title="Socolive TV",[23:00 02/10] Cyprus vs Armenia | BLV: TRÀ ĐÁ [SD M3U8]
-https://pull.niues.live/live/stream-603914_lsd.m3u8?auth_key=1790890907-0-0-16bf07b1ba449fbfc162cfc0d42cce62
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/6b4e82615d1d2f054053fe61429e2185.png" group-title="Socolive TV",[23:00 02/10] Czarni Slupsk vs Legia | BLV: KING [HD M3U8]
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1790908507-0-0-360295c008c3a4e73b071536e599b3ea
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260930/6b4e82615d1d2f054053fe61429e2185.png" group-title="Socolive TV",[23:00 02/10] Czarni Slupsk vs Legia | BLV: KING [SD M3U8]
-https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1790908507-0-0-21794ded6236109590d18c04309a9d59
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/16a157e52081382d566d560782f87811.png" group-title="Socolive TV",[23:00 02/10] Latvia vs Montenegro | BLV: MP3 [HD M3U8]
-https://pull.niur.live/live/stream-621840_lhd.m3u8?txSecret=9246b854de3426bff40879a73ac8e8ad&txTime=6abef4eb
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/16a157e52081382d566d560782f87811.png" group-title="Socolive TV",[23:00 02/10] Latvia vs Montenegro | BLV: MP3 [SD M3U8]
-https://pull.niur.live/live/stream-621840_lsd.m3u8?txSecret=2dc8392ef949826d65527253d4c6d110&txTime=6abef4eb
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/f9e00bc07fcce5a10aa4dbd124121e95.png" group-title="Socolive TV",[23:00 02/10] Slovenia U21 vs Netherlands U21 | BLV: BLV A WIN [HD M3U8]
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1790890814-0-0-062a9a24e987be7a888737f90dfa7ee4
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/f9e00bc07fcce5a10aa4dbd124121e95.png" group-title="Socolive TV",[23:00 02/10] Slovenia U21 vs Netherlands U21 | BLV: BLV A WIN [SD M3U8]
-https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1790890814-0-0-594c5694277c6ec74fe65714958e87b7
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/f9e00bc07fcce5a10aa4dbd124121e95.png" group-title="Socolive TV",[23:00 02/10] Slovenia U21 vs Netherlands U21 | BLV: BLV GIÓ [HD M3U8]
-https://pull.niur.live/live/stream-321443_lhd.m3u8?txSecret=a976e652781e7b4d3f12ff755ef8ab46&txTime=6abf1909
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/f9e00bc07fcce5a10aa4dbd124121e95.png" group-title="Socolive TV",[23:00 02/10] Slovenia U21 vs Netherlands U21 | BLV: BLV GIÓ [SD M3U8]
-https://pull.niur.live/live/stream-321443_lsd.m3u8?txSecret=928326b01209a488d79c89d9eb8ce0b2&txTime=6abf1909
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/64b48e72196970b5d9e6642a0bf0a4ef.png" group-title="Socolive TV",[23:00 02/10] Ukraine U21 vs Croatia U21 | BLV: SẾU ĐẦU ĐỎ [HD M3U8]
-https://pull.niues.live/live/stream-627318_lhd.m3u8?auth_key=1790890892-0-0-7decfeac3dec10816627a71a3f3b00c6
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260928/64b48e72196970b5d9e6642a0bf0a4ef.png" group-title="Socolive TV",[23:00 02/10] Ukraine U21 vs Croatia U21 | BLV: SẾU ĐẦU ĐỎ [SD M3U8]
-https://pull.niues.live/live/stream-627318_lsd.m3u8?auth_key=1790890892-0-0-3a6ba8004961e1a58d527a2638909f9f
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260929/05bdf447dd91e8aa269c5d1013df2dd9.png" group-title="Socolive TV",[05:00 03/10] Atletico FC vs Real Soacha Cundinamarca | BLV: CHAN ĐÊ [HD M3U8]
-https://pull.niur.live/live/stream-621887_lhd.m3u8?txSecret=55f5ca78b818e0ebeeca632e3feb8a9b&txTime=6abf7b53
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260929/05bdf447dd91e8aa269c5d1013df2dd9.png" group-title="Socolive TV",[05:00 03/10] Atletico FC vs Real Soacha Cundinamarca | BLV: CHAN ĐÊ [SD M3U8]
-https://pull.niur.live/live/stream-621887_lsd.m3u8?txSecret=004a5a3c24599a584b1726ffdaa8e58b&txTime=6abf7b53
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260929/05bdf447dd91e8aa269c5d1013df2dd9.png" group-title="Socolive TV",[05:00 03/10] Atletico FC vs Real Soacha Cundinamarca | BLV: HÀ DUY KIÊN [HD M3U8]
-https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=cd74fd49596affdcdb9d40501e234e05&txTime=6abf801a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260929/05bdf447dd91e8aa269c5d1013df2dd9.png" group-title="Socolive TV",[05:00 03/10] Atletico FC vs Real Soacha Cundinamarca | BLV: HÀ DUY KIÊN [SD M3U8]
-https://pull.niur.live/live/stream-607400_lsd.m3u8?txSecret=2c28b8811de5c4ca0911e212d14bbf0a&txTime=6abf801a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260929/e0989b1749300c98a7bb314f497a71f0.png" group-title="Socolive TV",[05:00 03/10] Suriname vs Guatemala | BLV: BLV A TINH [HD M3U8]
-https://pull.niur.live/live/stream-9912139_lhd.m3u8?txSecret=08998a87c39b8fd91890de87a51b518b&txTime=6abf686d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260929/e0989b1749300c98a7bb314f497a71f0.png" group-title="Socolive TV",[05:00 03/10] Suriname vs Guatemala | BLV: BLV A TINH [SD M3U8]
-https://pull.niur.live/live/stream-9912139_lsd.m3u8?txSecret=d9d4f64b9e3ade1c6d4846de416a489d&txTime=6abf686d
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260929/6e45e0a119430e18399874f81b8dff79.png" group-title="Socolive TV",[18:30 03/10] Chesterfield vs Tranmere Rovers | BLV: BLV CHIVAS [HD M3U8]
-https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=aefc9ca889b72ecbe1f48b0c9257ef47&txTime=6abf4d5a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20260929/6e45e0a119430e18399874f81b8dff79.png" group-title="Socolive TV",[18:30 03/10] Chesterfield vs Tranmere Rovers | BLV: BLV CHIVAS [SD M3U8]
-https://pull.niur.live/live/stream-485739_lsd.m3u8?txSecret=e183fe7e5cbd8cd4310542501f24a5c8&txTime=6abf4d5a
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/1211cbcd2e139083fd33c901e9de30b6.png" group-title="Socolive TV",Tường thuật: FIFA ASEAN - Indonesia vs Bangladesh | BLV: Hươu đau cổ [HD M3U8]
-https://pull.niur.live/live/stream-179093_lhd.m3u8?txSecret=9e6d3261885ad48f151ba9659a68a65b&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/1211cbcd2e139083fd33c901e9de30b6.png" group-title="Socolive TV",Tường thuật: FIFA ASEAN - Indonesia vs Bangladesh | BLV: Hươu đau cổ [SD M3U8]
-https://pull.niur.live/live/stream-179093_lsd.m3u8?txSecret=ea18d65d03f6ef39090d8b2eb6e5111b&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/2baf24c9f6eaf9a2a48554b16f4b7201.png" group-title="Socolive TV",Tường thuật: INTERF - Argentina vs Bolivia | BLV: Thỏ giang hồ [HD M3U8]
-https://pull.niur.live/live/stream-152898_lhd.m3u8?txSecret=48756f560286eed78bef2f12086a2a62&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/2baf24c9f6eaf9a2a48554b16f4b7201.png" group-title="Socolive TV",Tường thuật: INTERF - Argentina vs Bolivia | BLV: Thỏ giang hồ [SD M3U8]
-https://pull.niur.live/live/stream-152898_lsd.m3u8?txSecret=2b70a3f270f132b2bf756e84c999438d&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/a8d0969ae15b539d74630ff5734b8d8a.png" group-title="Socolive TV",Tường thuật: INTERF - Japan vs Ecuador | BLV: Gà xào sả ớt [HD M3U8]
-https://pull.niur.live/live/stream-133277_lhd.m3u8?txSecret=594a3acf5b575967bdade9aadc4ccbc3&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/a8d0969ae15b539d74630ff5734b8d8a.png" group-title="Socolive TV",Tường thuật: INTERF - Japan vs Ecuador | BLV: Gà xào sả ớt [SD M3U8]
-https://pull.niur.live/live/stream-133277_lsd.m3u8?txSecret=59345f954ba0462d3f379e9979687df4&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/fb3972689f518fd8df7167391e0a80ab.png" group-title="Socolive TV",Tường thuật: INTERF - Uzbekistan vs Syria | BLV: Rắn ở đáy sông [HD M3U8]
-https://pull.niur.live/live/stream-9912079_lhd.m3u8?txSecret=134e89a841b28f7e6da6e481308436d8&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/fb3972689f518fd8df7167391e0a80ab.png" group-title="Socolive TV",Tường thuật: INTERF - Uzbekistan vs Syria | BLV: Rắn ở đáy sông [SD M3U8]
-https://pull.niur.live/live/stream-9912079_lsd.m3u8?txSecret=60d4c2c3551ace71a96566062be29298&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/f9caffcc76a231c84d88d3607a6c17b9.png" group-title="Socolive TV",Tường thuật: UEFA NL - Denmark vs Portugal | BLV: Mèo méo meo [HD M3U8]
-https://pull.niur.live/live/stream-343500_lhd.m3u8?txSecret=98671dac70bb12b5290b0eab177756bb&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/f9caffcc76a231c84d88d3607a6c17b9.png" group-title="Socolive TV",Tường thuật: UEFA NL - Denmark vs Portugal | BLV: Mèo méo meo [SD M3U8]
-https://pull.niur.live/live/stream-343500_lsd.m3u8?txSecret=dfddde57f56a03adc7a9f630e844cf35&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/4e52620e469575c511369ec4a547ea2d.png" group-title="Socolive TV",Tường thuật: UEFA NL - Germany vs Serbia | BLV: Bò leo rào [HD M3U8]
-https://pull.niur.live/live/stream-133824_lhd.m3u8?txSecret=1bde6b999b72ce66010119106b7b3666&txTime=6abf8428
-
-#EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261002/4e52620e469575c511369ec4a547ea2d.png" group-title="Socolive TV",Tường thuật: UEFA NL - Germany vs Serbia | BLV: Bò leo rào [SD M3U8]
-https://pull.niur.live/live/stream-133824_lsd.m3u8?txSecret=5e4cf96f8cc9b8ea87c96c8ef48dd94f&txTime=6abf8428
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/fd3dd61e88396b2c01611167ed0867eb.png!w80" group-title="CoLaTV",13:00 | Trung Quốc Nữ vs Hàn Quốc Nữ | BLV
 https://live05.meung.app/live/87547578_tsc.m3u8
@@ -1691,6 +861,9 @@ https://live05.meung.app/live/02456966_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/be3ef0f7745b3b45b846fac31ca987c6.png!w80" group-title="CoLaTV",06:00 | Atlanta Dream vs New York Liberty | BLV
 https://live05.meung.app/live/87379114_tsc.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/d7284374f0dbd15edab5227f4dd34db5.png" group-title="BiaomTV",[12:30-02/10] China Women vs South Korea Women [OCA Women's Asian Games] [HLS]
+https://lilive1.eu.cc/live/0d2915478e28423d39d70dc5da3bd937/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/d4c55c5dad7e0ab17fecc33d1fe08e57.png" group-title="BiaomTV",[16:00-02/10] Thailand vs Philippines [FIFA ASEAN Cup] [HLS]
 https://lilive1.eu.cc/live/ef134c35b49711e52a67c0640f8bfdd6/playlist.m3u8
@@ -2319,11 +1492,6 @@ https://gckc0525.edgemaxcdn.org/live/chuoisay/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://stm9ee346727718.stream.hdplaylink.com/cctvlive/chuoisayhd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/9b93de34f1374626ad7c685bec61324b.png" group-title="Phá Làng TV",07:15 02/10 CA Platense - Estudiantes La Plata [Nguồn]
-#EXTVLCOPT:http-referrer=https://phalang.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/f67e6eb0d66ea055af30f2e8946ba9cd/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.sports-data.online/football/team/1a8ffd06b2866504609c32ee6091ba7c.png" group-title="Phá Làng TV",07:30 02/10 Blooming - Independiente Petrolero [Nguồn]
 #EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2344,16 +1512,6 @@ https://lilive1.eu.cc/live/e56c01721b35a0f8a0ebd2da823b0f82/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/341704829182b8a50be66bf22ceed654/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img0.aiscore.com/volleyball/team/93ff8d7f8cbb4a363bee874b30e2a263.png!w80" group-title="Phá Làng TV",11:00 02/10 NGUYỄN THỊ TÂM - WU YU (LÝ LA LÀNG) [HD1]
-#EXTVLCOPT:http-referrer=https://phalang.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.digitalcdn.net/live/c4a38bde55c148d1a075e6754f5a1ddf/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://img0.aiscore.com/volleyball/team/93ff8d7f8cbb4a363bee874b30e2a263.png!w80" group-title="Phá Làng TV",11:00 02/10 NGUYỄN THỊ TÂM - WU YU (LÝ LA LÀNG) [HD2]
-#EXTVLCOPT:http-referrer=https://phalang.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull1.digitalcdn.net/live/c4a38bde55c148d1a075e6754f5a1ddf/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://img0.aiscore.com/volleyball/team/24bea3e10580aa94c883db6647fb25ac.png!w80" group-title="Phá Làng TV",11:00 02/10 Qatar - Thái Lan (LÝ LIỀU LĨNH) [HD1]
 #EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2363,6 +1521,11 @@ https://pull.digitalcdn.net/live/503eb9850b0f4a2eac471b6305e6b183/index.m3u8
 #EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull1.digitalcdn.net/live/503eb9850b0f4a2eac471b6305e6b183/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://img0.aiscore.com/football/team/fd3dd61e88396b2c01611167ed0867eb.png!w80" group-title="Phá Làng TV",13:00 02/10 China Women - South Korea Women (LÝ LINH LỰC) [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/0d2915478e28423d39d70dc5da3bd937/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img0.aiscore.com/football/team/fd3dd61e88396b2c01611167ed0867eb.png!w80" group-title="Phá Làng TV",13:00 02/10 China Women vs South Korea Women (LÝ LINH LỰC) (HD2) [geo]
 https://pull1.digitalcdn.net/live/7045d4ff93854c14b8b37d84d64ff311/index.m3u8
@@ -2492,47 +1655,11 @@ https://pull1.digitalcdn.net/live/4e8b0bc5aa764c26b875374e994e83cf/index.m3u8
 #EXTINF:-1 tvg-logo="https://sta.vnres.co/file/common/20261001/02598ff81c211b703b81e49cf632688b.png" group-title="Phá Làng TV",17:30 03/10 South Korea U23 vs Japan U23 (LÝ LA LÀNG) [geo]
 https://pull.digitalcdn.net/live/4e8b0bc5aa764c26b875374e994e83cf/index.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Nicaragua vs Costa Rica vào lúc 09:00 02/10/2026 (BLV TOMIA) | Link 2 [HLS]
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1790916364-0-0-5572062d180564ee40166ca49f1f8036
+#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Nicaragua vs Costa Rica vào lúc 09:00 02/10/2026 (BLV 118206) | Link 3 [HLS]
+https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1790913484-0-0-15a456e6648e86f784a5b9414b539160
 
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Nicaragua vs Costa Rica vào lúc 09:00 02/10/2026 (HÀ DUY KIÊN) | Link 5 [HLS]
-https://pull.niur.live/live/stream-607400_lhd.m3u8?txSecret=c76990c76113b11f418b74967d504cc5&txTime=6abf7bf4
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Nicaragua vs Costa Rica vào lúc 09:00 02/10/2026 (RICKHANTER) | Link 1 [HLS]
-https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=cd036165f2ab6dcc01994dac374a2f13&txTime=6abf7d5c
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Nicaragua vs Costa Rica vào lúc 09:00 02/10/2026 (THOMAS) | Link 4 [HLS]
-https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=2b8b9e7ec557cbc1f17818465d6a62e9&txTime=6abf7bf4
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Nicaragua vs Costa Rica vào lúc 09:00 02/10/2026 (TẠ BIÊN GIỚI) | Link 3 [HLS]
-https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1790916364-0-0-941c562a058f16c9c83eb6a24811c77e
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Nicaragua vs Costa Rica vào lúc 09:00 02/10/2026 (ZIDANE) | Link 6 [HLS]
-https://pull.niues.live/live/stream-9912145_lhd.m3u8?auth_key=1790916364-0-0-76c306338666d5438cfe55817f2c92ed
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Santos del Potosí vs Freseros de Irapuato vào lúc 09:00 02/10/2026 (CHAN SENA) | Link 1 [HLS]
-https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1790917924-0-0-8f5aefd13c4e53311d3682e3e6867cd2
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Panteras de Aguascalientes vs Dorados de Chihuahua vào lúc 09:30 02/10/2026 (BLV HENRY) | Link 1 [HLS]
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1790917924-0-0-fef3ca1205974be49d4a923c68b27234
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Panteras de Aguascalientes vs Dorados de Chihuahua vào lúc 09:30 02/10/2026 (BRIAN) | Link 2 [HLS]
-https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1790913837-0-0-c7124a78aa8168294a8eee2aa1dab583
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 (BLV COCA) | Link 2 [HLS]
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1790890855-0-0-a8944a52b9c5cbee25dbce0b93d67c9d
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 (BLV CUỘI) | Link 4 [HLS]
-https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1790869301-0-0-95c50a4ecea8e731aade28506dbc6dc8
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 (BLV ĐỐM) | Link 1 [HLS]
-https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1790915709-0-0-60e6682ff8602567a5a1f323c0b99f78
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 (CÔNG CHẤT) | Link 6 [HLS]
-https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=99777238c1483fdc866784b2e6267c37&txTime=6abec5af
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 (SAO LA) | Link 5 [HLS]
-https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=4cdd2d15ffd5d54d6c66bc387deda2fb&txTime=6abea4e2
+#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Mineros de Zacatecas vs Abejas de León vào lúc 09:05 02/10/2026 (HUNTER) | Link 1 [HLS]
+https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=1dca007545e832d0d9857d131f96931c&txTime=6abf830c
 
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Thailand vs Philippines vào lúc 16:00 02/10/2026 (BLV A TÚ) | Link 6 [HLS]
 https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1790890610-0-0-948d640899212f5ed503ffa69ac943a5
@@ -2552,6 +1679,9 @@ https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1790890849-0-0-495
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Thailand vs Philippines vào lúc 16:00 02/10/2026 (PEANUT) | Link 4 [HLS]
 https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1790880560-0-0-870eb99242a2d3351796b51ceeb49fe0
 
+#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 (BLV CUỘI) | Link 11 [HLS]
+https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1790869301-0-0-95c50a4ecea8e731aade28506dbc6dc8
+
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 (BLV HEHE) | Link 10 [HLS]
 https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1790873774-0-0-21acb64d4e795cc1bd105cc5010799a1
 
@@ -2561,8 +1691,11 @@ https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1790890746-0-0-ea2
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 (CURRY) | Link 9 [HLS]
 https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1790891068-0-0-cf8339a37f3cfb3d18dd10b4c67f937e
 
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Daejeon Korail vs Gangneung Citizen vào lúc 17:00 02/10/2026 (BLV VOI) | Link 1 [HLS]
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1790890625-0-0-2cf1260fc14a72dabbc58419fac5d86f
+#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 (LÃO LÂM) | Link 1 [HLS]
+https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1790915766-0-0-c222f10c9beae7d8e0f076194ad8dfdb
+
+#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 (SAO LA) | Link 12 [HLS]
+https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=4cdd2d15ffd5d54d6c66bc387deda2fb&txTime=6abea4e2
 
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Daejeon Korail vs Gangneung Citizen vào lúc 17:00 02/10/2026 (KINH VÂN) | Link 2 [HLS]
 https://pull.niues.live/live/stream-623743_lhd.m3u8?auth_key=1790871382-0-0-04c244fe404a1fd2079a09e789bbb9f5
@@ -2570,77 +1703,29 @@ https://pull.niues.live/live/stream-623743_lhd.m3u8?auth_key=1790871382-0-0-04c2
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Reilac Shiga FC vs Roasso Kumamoto vào lúc 17:00 02/10/2026 (BLV LION) | Link 1 [HLS]
 https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1790910152-0-0-17db5863d0457440474e21e1098fbe3b
 
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Reilac Shiga FC vs Roasso Kumamoto vào lúc 17:00 02/10/2026 (BOSS) | Link 2 [HLS]
-https://pull.niues.live/live/stream-620504_lhd.m3u8?auth_key=1790880558-0-0-8fe927b75b8f69276550cb09cba8ed49
-
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 (A PÁO) | Link 4 [HLS]
 https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1790891198-0-0-c8874d504da5504cf0bb838bd9cee55d
 
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 (BLV ALEX) | Link 5 [HLS]
 https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1790868807-0-0-84313a6cf4b19548f1f2b3b2254aaf14
 
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 (BLV FIREMAN) | Link 2 [HLS]
-https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1790891179-0-0-171170b0e49cf6319a71ef3491bfd488
-
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 (BLV LONG) | Link 1 [HLS]
 https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=4f0e1108fa46260ef830f32837b35315&txTime=6abef1be
 
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 (BLV PEWPEW) | Link 3 [HLS]
-https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1790890648-0-0-6f21d4879771ab1fb205e8e17e66a6bf
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 (A BỆU) | Link 4 [HLS]
-https://pull.niues.live/live/stream-9912142_lhd.m3u8?auth_key=1790891482-0-0-be34c776e63ba67396bb7fceca3070ef
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 (A MÂN) | Link 1 [HLS]
-https://pull.niues.live/live/stream-627718_lhd.m3u8?auth_key=1790910731-0-0-f5733b02faf6c12a89647e604b7238fe
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 (BLV CÒ) | Link 6 [HLS]
-https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1790890562-0-0-34d2ca251441f79f52b08acbe3bc1c0a
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 (CR Bưởi) | Link 2 [HLS]
-https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=1f6de9d58f0a60f87609c0f33a8847a7&txTime=6abf1a00
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 (LÃO LÂM) | Link 3 [HLS]
-https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1790915766-0-0-c222f10c9beae7d8e0f076194ad8dfdb
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 (QUỐC KHÁNH) | Link 5 [HLS]
-https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=99f5c41eefab57717c2631a5e0c0ad7c&txTime=6abf19bf
+#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 (BLV TOMIA) | Link 6 [HLS]
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1790917063-0-0-3ab513bf12d0b33f8b9ca4ae008f123e
 
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",China vs Palestine vào lúc 18:35 02/10/2026 (BLV ENZO) | Link 6 [HLS]
 https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1790915915-0-0-55ae8c38e2b99174eeedd858f8bfa563
 
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",China vs Palestine vào lúc 18:35 02/10/2026 (BLV LUCAS) | Link 3 [HLS]
-https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1790908504-0-0-f085da58e05790771af89c82e00e0c4d
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",China vs Palestine vào lúc 18:35 02/10/2026 (LOGAN) | Link 1 [HLS]
-https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=d6b29b9ce1e15beb65abc575029a3856&txTime=6abf684e
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Dejan FC vs Persipura Jayapura vào lúc 19:00 02/10/2026 (THẠCH TÚ) | Link 1 [HLS]
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=a3cfd12fad9696e9e735aa8883c3a5e7&txTime=6abef4ec
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 (BLV ANH TÀI) | Link 1 [HLS]
-https://pull.niur.live/live/stream-406865_lhd.m3u8?txSecret=957ade454905b343a116fd7f99e5943b&txTime=6abf38be
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 (BLV KAN) | Link 5 [HLS]
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=3c73b588c6045ee56d84c58eb4c2e743&txTime=6abf6323
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 (BLV RAMBO) | Link 4 [HLS]
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=212c35f5b3bdd3318a5d39cc273243b5&txTime=6abf6486
+#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",China vs Palestine vào lúc 18:35 02/10/2026 (THOMAS) | Link 5 [HLS]
+https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=1085d18896cfde4fe2ddb03e49fe4bd1&txTime=6abf816a
 
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 (BLV XO) | Link 3 [HLS]
 https://pull.niur.live/live/stream-9912132_lhd.m3u8?txSecret=81e633c1e05929898b5fc38528892bcc&txTime=6abf6463
 
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 (BÒ TƯƠI) | Link 6 [HLS]
-https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1790890994-0-0-865df3216d817adbe64b507cf430aee3
-
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 (T REX) | Link 2 [HLS]
 https://pull.niues.live/live/stream-619672_lhd.m3u8?auth_key=1790877293-0-0-b47383d1d333f43b41ec6211d7c24d27
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:15 02/10/2026 (BLV Củ Cải) | Link 2 [HLS]
-https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1790915838-0-0-81a4740529bdd410b6eccdd5f2bb24ea
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:15 02/10/2026 (BLV PIRLO) | Link 6 [HLS]
-https://pull.niur.live/live/stream-9912127_lhd.m3u8?txSecret=f15861a430dd30dcac3e461ae251ffbb&txTime=6abf1a55
 
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:15 02/10/2026 (BLV TAP) | Link 5 [HLS]
 https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=8614bd5b6cd4d31ba27acbcc01bd847e&txTime=6abf7aa1
@@ -2648,32 +1733,11 @@ https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=8614bd5b6cd4d31ba27
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:15 02/10/2026 (NGƯỜI CÁ) | Link 4 [HLS]
 https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1790890595-0-0-e7745508c3ac2fe1333d4fa290f1fdc2
 
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Persiraja Banda Aceh vs Sumsel United vào lúc 20:30 02/10/2026 (XUÂN SON) | Link 1 [HLS]
-https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=b703f0e38230f77cb9e328f9e041aaf5&txTime=6abecd1e
+#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:15 02/10/2026 (RICKHANTER) | Link 1 [HLS]
+https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=6c8fab0027fc47f4a0290ea238a4b29f&txTime=6abf8102
 
 #EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Kazakhstan vs Moldova vào lúc 21:00 02/10/2026 (BLV BẢY) | Link 4 [HLS]
 https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1790890903-0-0-6cbdacfbaf69f007ef15a6a7f273f39f
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Khor Fakkan SSC vs Al-Jazira(UAE) vào lúc 22:45 02/10/2026 (BLV WUKONG) | Link 1 [HLS]
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1790885446-0-0-aa18b24a83be936f517b706101c8757d
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Khor Fakkan SSC vs Al-Jazira(UAE) vào lúc 22:45 02/10/2026 (KENCHU) | Link 4 [HLS]
-https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1790890677-0-0-369b54a2363b2a3aaa38060f3dff0a07
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Khor Fakkan SSC vs Al-Jazira(UAE) vào lúc 22:45 02/10/2026 (LOKA) | Link 2 [HLS]
-https://pull.niues.live/live/stream-9912133_lhd.m3u8?auth_key=1790884658-0-0-c317299c3ea655bc630f0796f0345af9
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Shabab Al Ahli vs Al-Nasr Dubai vào lúc 22:45 02/10/2026 (BLV CÁO) | Link 1 [HLS]
-https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1790890795-0-0-46c55d1f4da318081097f3e8ff1fddd6
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Shabab Al Ahli vs Al-Nasr Dubai vào lúc 22:45 02/10/2026 (BÚN ĐẬU) | Link 2 [HLS]
-https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1790909695-0-0-80add227f60185182cafbdfc3bc87e3d
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Shabab Al Ahli vs Al-Nasr Dubai vào lúc 22:45 02/10/2026 (XUÂN TÓC ĐỎ) | Link 3 [HLS]
-https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=8e56d3e8626453a77b279fdd7db3b101&txTime=6abf1a07
-
-#EXTINF:-1 tvg-logo="" group-title="Sút Bóng TV",Shabab Al Ahli vs Al-Nasr Dubai vào lúc 22:45 02/10/2026 (ĐỖ TÚ TÀI) | Link 4 [HLS]
-https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1790897293-0-0-189cc746fae1a3b2b67b97be66e7db1a
 
 #EXTINF:-1 tvg-logo="" group-title="THỂ THAO QUỐC TẾ",01
 https://k-toggle.akamaized.net/fhls/p/2082311/sp/208231100/serveFlavor/entryId/1_6ovft61t/v/11/pv/1/ev/16/flavorId/1_9ddi91j1/name/a.mp4/index.m3u8/index-v1-a1.m3u8
@@ -3002,40 +2066,215 @@ http://45.192.97.170:8880/play/1132.m3u8
 #EXTINF:-1 tvg-logo="" group-title="THỂ THAO QUỐC TẾ",足球
 http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Panteras de Aguascalientes vs Dorados de Chihuahua vào lúc 09:30 02/10/2026 | BLV 428392
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/panteras-de-aguascalientes-vs-dorados-de-chihuahua-02-10-2026-2/?blv=428392
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1790918824-0-0-746d6fce0b4a0250b8b74bed871a4916
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 | BLV 118206
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/china-women-vs-south-korea-women-02-10-2026/?blv=118206
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1790917554-0-0-0a92d7f0fcfca71f5733ad1bbf1378f9
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 | BLV 256080
 #EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/china-women-vs-south-korea-women-02-10-2026/?blv=256080
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1790869301-0-0-95c50a4ecea8e731aade28506dbc6dc8
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 | BLV 291277
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/china-women-vs-south-korea-women-02-10-2026/?blv=291277
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=99777238c1483fdc866784b2e6267c37&txTime=6abec5af
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 | BLV 327159
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/china-women-vs-south-korea-women-02-10-2026/?blv=327159
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1790890855-0-0-a8944a52b9c5cbee25dbce0b93d67c9d
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",China Women vs South Korea Women vào lúc 13:00 02/10/2026 | BLV 462413
 #EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/china-women-vs-south-korea-women-02-10-2026/?blv=462413
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=4cdd2d15ffd5d54d6c66bc387deda2fb&txTime=6abea4e2
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Thailand vs Philippines vào lúc 16:00 02/10/2026 | BLV 139384
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/thailand-vs-philippines-02-10-2026/?blv=139384
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=69144bb792fb8be00fa06d5f0e8193c8&txTime=6abecf7e
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Thailand vs Philippines vào lúc 16:00 02/10/2026 | BLV 372746
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/thailand-vs-philippines-02-10-2026/?blv=372746
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1790908317-0-0-31d1f0589dd003d93ddc5a591fc1c105
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Thailand vs Philippines vào lúc 16:00 02/10/2026 | BLV 459401
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/thailand-vs-philippines-02-10-2026/?blv=459401
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=d0f9635bc05ecc9641f519c2c8b1d6c5&txTime=6abf6957
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Thailand vs Philippines vào lúc 16:00 02/10/2026 | BLV 557845
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/thailand-vs-philippines-02-10-2026/?blv=557845
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1790890610-0-0-948d640899212f5ed503ffa69ac943a5
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Thailand vs Philippines vào lúc 16:00 02/10/2026 | BLV 599634
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/thailand-vs-philippines-02-10-2026/?blv=599634
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1790890849-0-0-4951cc140b7a24d4a7c59e868987ccb3
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Thailand vs Philippines vào lúc 16:00 02/10/2026 | BLV 620084
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/thailand-vs-philippines-02-10-2026/?blv=620084
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1790880560-0-0-870eb99242a2d3351796b51ceeb49fe0
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 | BLV 123226
 #EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/vietnam-vs-pakistan-02-10-2026/?blv=123226
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=6c8fab0027fc47f4a0290ea238a4b29f&txTime=6abf8102
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 | BLV 147801
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/vietnam-vs-pakistan-02-10-2026/?blv=147801
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=8614bd5b6cd4d31ba27acbcc01bd847e&txTime=6abf7aa1
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 | BLV 360663
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/vietnam-vs-pakistan-02-10-2026/?blv=360663
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1790915838-0-0-81a4740529bdd410b6eccdd5f2bb24ea
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 | BLV 414317
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/vietnam-vs-pakistan-02-10-2026/?blv=414317
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=1085d18896cfde4fe2ddb03e49fe4bd1&txTime=6abf816a
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 | BLV 434982
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/vietnam-vs-pakistan-02-10-2026/?blv=434982
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1790915709-0-0-60e6682ff8602567a5a1f323c0b99f78
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 | BLV 494201
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/vietnam-vs-pakistan-02-10-2026/?blv=494201
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1790890746-0-0-ea28ab1c436182b60e1a959aff5d6214
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 | BLV 527384
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/vietnam-vs-pakistan-02-10-2026/?blv=527384
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1790915766-0-0-c222f10c9beae7d8e0f076194ad8dfdb
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 | BLV 622240
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/vietnam-vs-pakistan-02-10-2026/?blv=622240
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1790891068-0-0-cf8339a37f3cfb3d18dd10b4c67f937e
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Vietnam vs Pakistan vào lúc 16:00 02/10/2026 | BLV 622241
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/vietnam-vs-pakistan-02-10-2026/?blv=622241
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1790873774-0-0-21acb64d4e795cc1bd105cc5010799a1
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Daejeon Korail vs Gangneung Citizen vào lúc 17:00 02/10/2026 | BLV 552716
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/daejeon-korail-vs-gangneung-citizen-02-10-2026/?blv=552716
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1790890625-0-0-2cf1260fc14a72dabbc58419fac5d86f
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Reilac Shiga FC vs Roasso Kumamoto vào lúc 17:00 02/10/2026 | BLV 603255
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/reilac-shiga-fc-vs-roasso-kumamoto-02-10-2026/?blv=603255
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1790910152-0-0-17db5863d0457440474e21e1098fbe3b
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Reilac Shiga FC vs Roasso Kumamoto vào lúc 17:00 02/10/2026 | BLV 620504
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/reilac-shiga-fc-vs-roasso-kumamoto-02-10-2026/?blv=620504
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-620504_lhd.m3u8?auth_key=1790880558-0-0-8fe927b75b8f69276550cb09cba8ed49
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 | BLV 109053
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/north-korea-women-vs-japan-women-02-10-2026/?blv=109053
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1790890648-0-0-6f21d4879771ab1fb205e8e17e66a6bf
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 | BLV 132343
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/north-korea-women-vs-japan-women-02-10-2026/?blv=132343
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=4f0e1108fa46260ef830f32837b35315&txTime=6abef1be
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 | BLV 187579
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/north-korea-women-vs-japan-women-02-10-2026/?blv=187579
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1790917063-0-0-3ab513bf12d0b33f8b9ca4ae008f123e
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 | BLV 235232
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/north-korea-women-vs-japan-women-02-10-2026/?blv=235232
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1790891198-0-0-c8874d504da5504cf0bb838bd9cee55d
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 | BLV 250874
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/north-korea-women-vs-japan-women-02-10-2026/?blv=250874
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1790891179-0-0-171170b0e49cf6319a71ef3491bfd488
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",North Korea Women vs Japan Women vào lúc 17:30 02/10/2026 | BLV 532081
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/north-korea-women-vs-japan-women-02-10-2026/?blv=532081
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1790868807-0-0-84313a6cf4b19548f1f2b3b2254aaf14
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 | BLV 387694
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/south-korea-vs-venezuela-02-10-2026/?blv=387694
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=1f6de9d58f0a60f87609c0f33a8847a7&txTime=6abf1a00
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 | BLV 484845
 #EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/south-korea-vs-venezuela-02-10-2026/?blv=484845
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912142_lhd.m3u8?auth_key=1790891482-0-0-be34c776e63ba67396bb7fceca3070ef
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 | BLV 527384
-#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/south-korea-vs-venezuela-02-10-2026/?blv=527384
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 | BLV 582342
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/south-korea-vs-venezuela-02-10-2026/?blv=582342
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1790915766-0-0-c222f10c9beae7d8e0f076194ad8dfdb
+https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1790890562-0-0-34d2ca251441f79f52b08acbe3bc1c0a
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 | BLV 602153
 #EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/south-korea-vs-venezuela-02-10-2026/?blv=602153
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=99f5c41eefab57717c2631a5e0c0ad7c&txTime=6abf19bf
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",South Korea vs Venezuela vào lúc 18:00 02/10/2026 | BLV 627718
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/south-korea-vs-venezuela-02-10-2026/?blv=627718
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-627718_lhd.m3u8?auth_key=1790910731-0-0-f5733b02faf6c12a89647e604b7238fe
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",China vs Palestine vào lúc 18:35 02/10/2026 | BLV 304148
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/china-vs-palestine-02-10-2026/?blv=304148
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1790908504-0-0-f085da58e05790771af89c82e00e0c4d
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",China vs Palestine vào lúc 18:35 02/10/2026 | BLV 380460
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/china-vs-palestine-02-10-2026/?blv=380460
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1790915915-0-0-55ae8c38e2b99174eeedd858f8bfa563
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",China vs Palestine vào lúc 18:35 02/10/2026 | BLV 552832
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/china-vs-palestine-02-10-2026/?blv=552832
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=d6b29b9ce1e15beb65abc575029a3856&txTime=6abf684e
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Dejan FC vs Persipura Jayapura vào lúc 19:00 02/10/2026 | BLV 344370
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/dejan-fc-vs-persipura-jayapura-02-10-2026/?blv=344370
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=a3cfd12fad9696e9e735aa8883c3a5e7&txTime=6abef4ec
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 | BLV 283501
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/al-ain-fc-vs-ajman-02-10-2026/?blv=283501
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=3c73b588c6045ee56d84c58eb4c2e743&txTime=6abf6323
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 | BLV 406865
 #EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/al-ain-fc-vs-ajman-02-10-2026/?blv=406865
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-406865_lhd.m3u8?txSecret=957ade454905b343a116fd7f99e5943b&txTime=6abf38be
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 | BLV 472241
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/al-ain-fc-vs-ajman-02-10-2026/?blv=472241
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912132_lhd.m3u8?txSecret=81e633c1e05929898b5fc38528892bcc&txTime=6abf6463
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 | BLV 534055
 #EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/al-ain-fc-vs-ajman-02-10-2026/?blv=534055
@@ -3047,45 +2286,100 @@ https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=212c35f5b3bdd3318a5d
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-619672_lhd.m3u8?auth_key=1790877293-0-0-b47383d1d333f43b41ec6211d7c24d27
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Kazakhstan vs Moldova vào lúc 21:00 02/10/2026 | BLV 622241
-#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/kazakhstan-vs-moldova-02-10-2026/?blv=622241
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Ain FC vs Ajman vào lúc 20:15 02/10/2026 | BLV 620797
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/al-ain-fc-vs-ajman-02-10-2026/?blv=620797
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1790873774-0-0-21acb64d4e795cc1bd105cc5010799a1
+https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1790890994-0-0-865df3216d817adbe64b507cf430aee3
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:15 02/10/2026 | BLV 351530
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/al-wasl-sc-vs-ittihad-kalba-fc-02-10-2026/?blv=351530
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912127_lhd.m3u8?txSecret=f15861a430dd30dcac3e461ae251ffbb&txTime=6abf1a55
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:15 02/10/2026 | BLV 595335
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/al-wasl-sc-vs-ittihad-kalba-fc-02-10-2026/?blv=595335
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1790890595-0-0-e7745508c3ac2fe1333d4fa290f1fdc2
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:15 02/10/2026 | BLV 623743
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/al-wasl-sc-vs-ittihad-kalba-fc-02-10-2026/?blv=623743
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-623743_lhd.m3u8?auth_key=1790871382-0-0-04c244fe404a1fd2079a09e789bbb9f5
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Persiraja Banda Aceh vs Sumsel United vào lúc 20:30 02/10/2026 | BLV 501412
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/persiraja-banda-aceh-vs-sumsel-united-02-10-2026/?blv=501412
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=b703f0e38230f77cb9e328f9e041aaf5&txTime=6abecd1e
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Kazakhstan vs Moldova vào lúc 21:00 02/10/2026 | BLV 168740
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/kazakhstan-vs-moldova-02-10-2026/?blv=168740
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912145_lhd.m3u8?auth_key=1790917035-0-0-5622b8ff2e6b2776b8b7b06c691e89b4
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Kazakhstan vs Moldova vào lúc 21:00 02/10/2026 | BLV 621843
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/kazakhstan-vs-moldova-02-10-2026/?blv=621843
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1790890903-0-0-6cbdacfbaf69f007ef15a6a7f273f39f
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Khor Fakkan SSC vs Al-Jazira(UAE) vào lúc 22:45 02/10/2026 | BLV 511367
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/khor-fakkan-ssc-vs-al-jazirauae-02-10-2026/?blv=511367
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1790885446-0-0-aa18b24a83be936f517b706101c8757d
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",Khor Fakkan SSC vs Al-Jazira(UAE) vào lúc 22:45 02/10/2026 | BLV 589848
 #EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/khor-fakkan-ssc-vs-al-jazirauae-02-10-2026/?blv=589848
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912133_lhd.m3u8?auth_key=1790884658-0-0-c317299c3ea655bc630f0796f0345af9
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Khor Fakkan SSC vs Al-Jazira(UAE) vào lúc 22:45 02/10/2026 | BLV 603255
-#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/khor-fakkan-ssc-vs-al-jazirauae-02-10-2026/?blv=603255
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Khor Fakkan SSC vs Al-Jazira(UAE) vào lúc 22:45 02/10/2026 | BLV 622602
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/khor-fakkan-ssc-vs-al-jazirauae-02-10-2026/?blv=622602
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1790910152-0-0-17db5863d0457440474e21e1098fbe3b
+https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1790890677-0-0-369b54a2363b2a3aaa38060f3dff0a07
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Slovenia U21 vs Netherlands U21 vào lúc 23:00 02/10/2026 | BLV 557845
-#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/slovenia-u21-vs-netherlands-u21-02-10-2026/?blv=557845
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Shabab Al Ahli vs Al-Nasr Dubai vào lúc 22:45 02/10/2026 | BLV 597929
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/shabab-al-ahli-vs-al-nasr-dubai-02-10-2026/?blv=597929
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1790890610-0-0-948d640899212f5ed503ffa69ac943a5
+https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1790890795-0-0-46c55d1f4da318081097f3e8ff1fddd6
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Slovenia U21 vs Netherlands U21 vào lúc 23:00 02/10/2026 | BLV 620084
-#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/slovenia-u21-vs-netherlands-u21-02-10-2026/?blv=620084
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Shabab Al Ahli vs Al-Nasr Dubai vào lúc 22:45 02/10/2026 | BLV 607552
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/shabab-al-ahli-vs-al-nasr-dubai-02-10-2026/?blv=607552
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1790880560-0-0-870eb99242a2d3351796b51ceeb49fe0
+https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1790897293-0-0-189cc746fae1a3b2b67b97be66e7db1a
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Azerbaijan vs Liechtenstein
-#EXTVLCOPT:http-referrer=https://dasfootball.com/azerbaijan-vs-liechtenstein-highlights-2026-10-01/
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Shabab Al Ahli vs Al-Nasr Dubai vào lúc 22:45 02/10/2026 | BLV 610518
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/shabab-al-ahli-vs-al-nasr-dubai-02-10-2026/?blv=610518
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/ixbxbq.mp4?Expires=1791154833664&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=ZPhmwNz17U6vWGgauVZTxZVG8wcYltNnQMcHgvvJ2wObpjWHqZenj6tOa3pVipMJYdN462wdFsS8vCCYK-jQ4VxOlu66gOyQcuRSAit1xoVaHjfImhKbAX87N4-xy-RJsxv4UtPhFeQX5D7jAuQRfkB4xG~Vj~PF8ENWtdRMQYjaU3Cre2KSH0stqK-0qhrCoNpQwGXNL~-F94YMJEx~XiUGY1QQMqRP5INVfDzTz4e21Ze7vcw2LBzQHVu0wvqOOHCECAbWwB2qDSjTkv6Udh0Fr84JxMPYOgf8UzKmI5QhzUk5JnM-oJRNxAtR-drip-typZVgmHQKGIgtMaC~9g__
+https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=8e56d3e8626453a77b279fdd7db3b101&txTime=6abf1a07
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Denmark vs Portugal
-#EXTVLCOPT:http-referrer=https://dasfootball.com/denmark-vs-portugal-highlights-2026-10-01/
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Austria U21 vs Denmark U21 vào lúc 23:00 02/10/2026 | BLV 400722
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/austria-u21-vs-denmark-u21-02-10-2026/?blv=400722
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/gu8kkn.mp4?Expires=1791156294679&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=JCG3Z5Ps81IEvzImzzm63ZKZ6ruSgt5Ybd~~-NjoGJOVQWNBLLQ-KW8UuC6J9YqZ5sWF~cDoFbulNVmi--ZvZjQmZOHFN3mL6nfHc4nNV4EGhi5PGl7YaHM6JQbpF6yJ~q~Un4l2r8t41dvvqbmhKrzsh1VLjhW~w0XfPMX4dsfV3WFNMgW0kat0mTN2CEz~lfSw7ldnFT1UvoRaGORHhUtsl7s0jpMXtvbVNZxwO05LXaJwzjt8i6gitNEG9Ws5drEakDzRYGObvWXiTfprYmt83Ogpfjy5XM58M5Xwr~tX0lXrhwLPxUZlFVJYn8r9QwxLIfoz0AD8gPdqW6MUvQ__
+https://pull.niues.live/live/stream-9912138_lhd.m3u8?auth_key=1790891004-0-0-14613091934cbf21aa6cbc26d7775ed8
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Germany vs Serbia
-#EXTVLCOPT:http-referrer=https://dasfootball.com/germany-vs-serbia-highlights-2026-10-01/
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Austria U21 vs Denmark U21 vào lúc 23:00 02/10/2026 | BLV 602019
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/austria-u21-vs-denmark-u21-02-10-2026/?blv=602019
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/2koke1.mp4?Expires=1791153830014&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=G9iZ3Jh8U-ngnX3aguWj-45gy9-wsBCd5~gbDNSCCFulPso26mFgeblj1-SOtpxf351uZaVowcmYH7DtdsWjDcwrpurMTmbhbmSqXxcIZbnQKh0yVILsbZwEgLdML4OpRcttO-asi5BalwCTDOwjc9r1H5Y~Q2sQfdDEve9ngIKYgQ9bexW4t8~LhgpbSeu2fskYQq2bPmkvVTY0jqEhKvFTt6UxQaFh9AcNKJfxakP6ejhH7THEGQ1MHAMjp3BkV2mDMlE42CUTdJYs3E3O8RMwOv7rEQ1ueB~DA7QoJ29HZBvTY4pdcoEyLvNeaNuzjlNaSR5EQKwFi2ddFu6wBQ__
+https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1790877510-0-0-f78baf489c4073bb19ded1ef39f6a63d
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Austria U21 vs Denmark U21 vào lúc 23:00 02/10/2026 | BLV 617313
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/austria-u21-vs-denmark-u21-02-10-2026/?blv=617313
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1790890784-0-0-6a3ea40dd5fb385ff519c1c29be0d813
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Slovenia U21 vs Netherlands U21 vào lúc 23:00 02/10/2026 | BLV 321443
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/slovenia-u21-vs-netherlands-u21-02-10-2026/?blv=321443
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-321443_lhd.m3u8?txSecret=a976e652781e7b4d3f12ff755ef8ab46&txTime=6abf1909
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Slovenia U21 vs Netherlands U21 vào lúc 23:00 02/10/2026 | BLV 536185
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/slovenia-u21-vs-netherlands-u21-02-10-2026/?blv=536185
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1790890814-0-0-062a9a24e987be7a888737f90dfa7ee4
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Ukraine U21 vs Croatia U21 vào lúc 23:00 02/10/2026 | BLV 627318
+#EXTVLCOPT:http-referrer=https://rehabglove.com/truc-tiep/ukraine-u21-vs-croatia-u21-02-10-2026/?blv=627318
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-627318_lhd.m3u8?auth_key=1790890892-0-0-7decfeac3dec10816627a71a3f3b00c6
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Hy Lạp - Hà Lan: Ông lớn hú vía (Nations League) [Hiệp 1 | 720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3097,30 +2391,10 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-02/cp_special_nation_leag
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-02/cp_special_nation_leagues-1790887760-halan_h2_720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Israel vs Kosovo
-#EXTVLCOPT:http-referrer=https://dasfootball.com/israel-vs-kosovo-highlights-2026-10-01/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/g42prv.mp4?Expires=1791154591134&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=UHPYNT-H57AuQ2XUIWi-YsrkqC7i9N28gQde4lnYIGt-jBmH1MSW~VEO~WUwdongALLShcIijd9VZ75MhSjwGM~ByFs5aZdzy~IJ~YjbbSwb9K0BXVHE3LRYSI06w-mVBGi0js-n0xblHAewZRY-xVyvIJ9kYIXdn0DHoFy6kK4FNXsLn6sXxTDKMHnOLPZDWxTjZQD~C7bapTsQJiE-C4dpVUyb9OOLIcpQyRSFxks9MoCog7M7abHOR-68mNLlrKk~OXh-UmEP17bt-GsykKEOOz~UJzM56v3-pLVrWwoDSWP5P9bUxZxhd4Gvbs3H3inIVFI1v3y6g8ix6Tu1~Q__
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Malta vs Gibraltar
-#EXTVLCOPT:http-referrer=https://dasfootball.com/malta-vs-gibraltar-highlights-2026-10-01/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/utv87s.mp4?Expires=1791154805489&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=HVKxR09mg3ZZ8AaLXb8BwEdod8ADZ8JXxX6xGkfDHezSeOqcyr88nMkp6KtimXtFsSku~4anfFzEW2cWCwQJoAwUIY0URY1~H32pApN5ucjhLxx~N1LH58iIC3TvcMweCZVobfz0206GwxKVQzY7zHlowX~2G-lCmnAcs7EHhgdHzFVRt1tj9wWBpvYbuCXuZbidmR5cOW~Rf~-cUxmUvf~70weO5PF6CfRH2vshrgk9bESVPvNvN~e51m6AySMkot0p-m4e0vkUMZi5vFDvvbQBPOlVkdZ07hafdfiTX~2r5oWsYbyk90T5oSa7hjDXzbNSQ4~j-Eyw5ZmXqTnQ0g__
-
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Ramos 2 trận liên tiếp ghi bàn, tư cách trung phong số 1 ĐT Bồ Đào Nha không phải bàn cãi
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-02/cp_special_nation_leagues-1790886512-ramos_trinhdien_720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Rep. Of Ireland vs Austria
-#EXTVLCOPT:http-referrer=https://dasfootball.com/rep-of-ireland-vs-austria-highlights-2026-10-01/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/43hch2.mp4?Expires=1791154613635&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=aGTUTahYjCAhgpWTOGnNMcvqK9ejhMy3hLnS4tgfwGbW2PljOKOKmQOevBmpRviJ96KaL5wPH-wasJ2sUm0o1-iXJPQxfXoX-oMOmZFkVcPmsDJaF73lL1wl3db8qwUwa~7xo8bWdlbyguKzmcsEfiqjKZShoM6wYC0oCDcLZTmlfkQXxyc0JVDgeJha5ci3Uctay4A7jjEBvIF2Q3ccfqI7lKGJfnfqPlbADiFVTqZ8ttzJA47DLM1GbBJFQXUNVFXLBIBIMgATl0YSA5lHLnIgcx~PWTG1NgqduYVPBHzItv-P1uMZGVxLV64BqLxu3bVzripRN0UMcPYZ-8MnYQ__
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Wales vs Norway
-#EXTVLCOPT:http-referrer=https://dasfootball.com/wales-vs-norway-highlights-2026-10-01/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/at5w9f.mp4?Expires=1791154424602&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=bIHq4oDQ~nykQh895YxBA5TgHPkQ6Ho9NbKEOn7~EXsFJ3LNN~~OrnDOsGWYggMinA6bFST6M~y3M~c4iLH08t5pM5MUU16hha4KJMhre2gsDAX-Bijv~TCM2ECTsw6dYmlxUi3VI2XZ37MUP0naNJLYniKX3OdLJufXBp6vJ2h2-sKwl6UhbQ0U8yog76SURqiCDLxJLXE3usO180hqtHjSadyhlhtdvAoHz0VdhcMB39YfbwivFXag-SQGsRgD2cGin6aDqdjOk9i4ZlkfKS9dEkhwUcguRnGx9X2g-92hE5YdZJomEA1j2bpFYuC-1cUDB17bbSP9BcR5mJrcTA__
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-02/cp_special_nation_leagues-1790886512-ramos_trinhdien.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Xứ Wales - Na Uy: Thẻ đỏ bước ngoặt, khống chế Haaland (Nations League) [Hiệp 1 | 720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3132,10 +2406,10 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-02/cp_special_nation_leag
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-02/cp_special_nation_leagues-1790888219-nauy_h2_720p.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Đan Mạch - Bồ Đào Nha: Mãn nhãn 6 bàn (Nations League) [Hiệp 1 | 720p]
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Đan Mạch - Bồ Đào Nha: Mãn nhãn 6 bàn (Nations League)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-02/cp_special_nation_leagues-1790887165-bdn_h1_720p.m3u8
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-02/cp_special_nation_leagues-1790887165-bdn_h1.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Đan Mạch - Bồ Đào Nha: Mãn nhãn 6 bàn (Nations League) [Hiệp 2 | 720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3157,25 +2431,45 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-02/cp_special_nation_leag
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/1790819933-argentina_bolivia_720p.m3u8
 
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Azerbaijan vs Liechtenstein
+#EXTVLCOPT:http-referrer=https://dasfootball.com/azerbaijan-vs-liechtenstein-highlights-2026-10-01/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/ixbxbq.mp4?Expires=1791154833664&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=ZPhmwNz17U6vWGgauVZTxZVG8wcYltNnQMcHgvvJ2wObpjWHqZenj6tOa3pVipMJYdN462wdFsS8vCCYK-jQ4VxOlu66gOyQcuRSAit1xoVaHjfImhKbAX87N4-xy-RJsxv4UtPhFeQX5D7jAuQRfkB4xG~Vj~PF8ENWtdRMQYjaU3Cre2KSH0stqK-0qhrCoNpQwGXNL~-F94YMJEx~XiUGY1QQMqRP5INVfDzTz4e21Ze7vcw2LBzQHVu0wvqOOHCECAbWwB2qDSjTkv6Udh0Fr84JxMPYOgf8UzKmI5QhzUk5JnM-oJRNxAtR-drip-typZVgmHQKGIgtMaC~9g__
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Báo Malaysia cạn lời vì trận Indonesia - Bangladesh "hô biến" bù giờ từ 2 phút lên 7 phút
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/cp_special_asian_cup_ban_quyen-1790870896-nhay_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Denmark vs Portugal
+#EXTVLCOPT:http-referrer=https://dasfootball.com/denmark-vs-portugal-highlights-2026-10-01/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/gu8kkn.mp4?Expires=1791156294679&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=JCG3Z5Ps81IEvzImzzm63ZKZ6ruSgt5Ybd~~-NjoGJOVQWNBLLQ-KW8UuC6J9YqZ5sWF~cDoFbulNVmi--ZvZjQmZOHFN3mL6nfHc4nNV4EGhi5PGl7YaHM6JQbpF6yJ~q~Un4l2r8t41dvvqbmhKrzsh1VLjhW~w0XfPMX4dsfV3WFNMgW0kat0mTN2CEz~lfSw7ldnFT1UvoRaGORHhUtsl7s0jpMXtvbVNZxwO05LXaJwzjt8i6gitNEG9Ws5drEakDzRYGObvWXiTfprYmt83Ogpfjy5XM58M5Xwr~tX0lXrhwLPxUZlFVJYn8r9QwxLIfoz0AD8gPdqW6MUvQ__
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Fan Malaysia và Indonesia bùng nổ đại chiến trên mạng xã hội (Clip tin nóng)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/cp_special_asian_cup_ban_quyen-1790871801-tinnong0110_720p.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Indonesia - Bangladesh: Kịch bản khó tin, giật vé chung kết (FIFA ASEAN Cup) [Hiệp 1 | 720p]
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Germany vs Serbia
+#EXTVLCOPT:http-referrer=https://dasfootball.com/germany-vs-serbia-highlights-2026-10-01/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/2koke1.mp4?Expires=1791153830014&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=G9iZ3Jh8U-ngnX3aguWj-45gy9-wsBCd5~gbDNSCCFulPso26mFgeblj1-SOtpxf351uZaVowcmYH7DtdsWjDcwrpurMTmbhbmSqXxcIZbnQKh0yVILsbZwEgLdML4OpRcttO-asi5BalwCTDOwjc9r1H5Y~Q2sQfdDEve9ngIKYgQ9bexW4t8~LhgpbSeu2fskYQq2bPmkvVTY0jqEhKvFTt6UxQaFh9AcNKJfxakP6ejhH7THEGQ1MHAMjp3BkV2mDMlE42CUTdJYs3E3O8RMwOv7rEQ1ueB~DA7QoJ29HZBvTY4pdcoEyLvNeaNuzjlNaSR5EQKwFi2ddFu6wBQ__
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Indonesia - Bangladesh: Kịch bản khó tin, giật vé chung kết (FIFA ASEAN Cup)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/cp_special_asian_cup_ban_quyen-1790865181-indo-bang-h1_720p.m3u8
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/cp_special_asian_cup_ban_quyen-1790865181-indo-bang-h1.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Indonesia - Bangladesh: Kịch bản khó tin, giật vé chung kết (FIFA ASEAN Cup) [Hiệp 2 | 720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/cp_special_asian_cup_ban_quyen-1790865181-indo-bang-h2_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Israel vs Kosovo
+#EXTVLCOPT:http-referrer=https://dasfootball.com/israel-vs-kosovo-highlights-2026-10-01/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/g42prv.mp4?Expires=1791154591134&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=UHPYNT-H57AuQ2XUIWi-YsrkqC7i9N28gQde4lnYIGt-jBmH1MSW~VEO~WUwdongALLShcIijd9VZ75MhSjwGM~ByFs5aZdzy~IJ~YjbbSwb9K0BXVHE3LRYSI06w-mVBGi0js-n0xblHAewZRY-xVyvIJ9kYIXdn0DHoFy6kK4FNXsLn6sXxTDKMHnOLPZDWxTjZQD~C7bapTsQJiE-C4dpVUyb9OOLIcpQyRSFxks9MoCog7M7abHOR-68mNLlrKk~OXh-UmEP17bt-GsykKEOOz~UJzM56v3-pLVrWwoDSWP5P9bUxZxhd4Gvbs3H3inIVFI1v3y6g8ix6Tu1~Q__
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Malaysia - Singapore: Đau đớn 6 bàn là chưa đủ (FIFA ASEAN Cup) [Hiệp 1 | 720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3187,15 +2481,30 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/cp_special_asian_cup_b
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/cp_special_asian_cup_ban_quyen-1790864939-malaysia_h2_720p.m3u8
 
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Malta vs Gibraltar
+#EXTVLCOPT:http-referrer=https://dasfootball.com/malta-vs-gibraltar-highlights-2026-10-01/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/utv87s.mp4?Expires=1791154805489&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=HVKxR09mg3ZZ8AaLXb8BwEdod8ADZ8JXxX6xGkfDHezSeOqcyr88nMkp6KtimXtFsSku~4anfFzEW2cWCwQJoAwUIY0URY1~H32pApN5ucjhLxx~N1LH58iIC3TvcMweCZVobfz0206GwxKVQzY7zHlowX~2G-lCmnAcs7EHhgdHzFVRt1tj9wWBpvYbuCXuZbidmR5cOW~Rf~-cUxmUvf~70weO5PF6CfRH2vshrgk9bESVPvNvN~e51m6AySMkot0p-m4e0vkUMZi5vFDvvbQBPOlVkdZ07hafdfiTX~2r5oWsYbyk90T5oSa7hjDXzbNSQ4~j-Eyw5ZmXqTnQ0g__
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Man City nguy cơ phải "giảm giá" Haaland còn 132 triệu bảng nếu xuống hạng
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/1790849170-code_720p.m3u8
 
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Rep. Of Ireland vs Austria
+#EXTVLCOPT:http-referrer=https://dasfootball.com/rep-of-ireland-vs-austria-highlights-2026-10-01/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/43hch2.mp4?Expires=1791154613635&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=aGTUTahYjCAhgpWTOGnNMcvqK9ejhMy3hLnS4tgfwGbW2PljOKOKmQOevBmpRviJ96KaL5wPH-wasJ2sUm0o1-iXJPQxfXoX-oMOmZFkVcPmsDJaF73lL1wl3db8qwUwa~7xo8bWdlbyguKzmcsEfiqjKZShoM6wYC0oCDcLZTmlfkQXxyc0JVDgeJha5ci3Uctay4A7jjEBvIF2Q3ccfqI7lKGJfnfqPlbADiFVTqZ8ttzJA47DLM1GbBJFQXUNVFXLBIBIMgATl0YSA5lHLnIgcx~PWTG1NgqduYVPBHzItv-P1uMZGVxLV64BqLxu3bVzripRN0UMcPYZ-8MnYQ__
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Ronaldo đối mặt án phạt nặng vì rời tuyển Bồ Đào Nha
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-01/1790832823-ronaldo_taluyenbdn_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Wales vs Norway
+#EXTVLCOPT:http-referrer=https://dasfootball.com/wales-vs-norway-highlights-2026-10-01/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/at5w9f.mp4?Expires=1791154424602&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=bIHq4oDQ~nykQh895YxBA5TgHPkQ6Ho9NbKEOn7~EXsFJ3LNN~~OrnDOsGWYggMinA6bFST6M~y3M~c4iLH08t5pM5MUU16hha4KJMhre2gsDAX-Bijv~TCM2ECTsw6dYmlxUi3VI2XZ37MUP0naNJLYniKX3OdLJufXBp6vJ2h2-sKwl6UhbQ0U8yog76SURqiCDLxJLXE3usO180hqtHjSadyhlhtdvAoHz0VdhcMB39YfbwivFXag-SQGsRgD2cGin6aDqdjOk9i4ZlkfKS9dEkhwUcguRnGx9X2g-92hE5YdZJomEA1j2bpFYuC-1cUDB17bbSP9BcR5mJrcTA__
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Brunei - Hong Kong (TQ): Thẻ đỏ bước ngoặt, đoạt vé chung kết (FIFA ASEAN Cup) [720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3206,16 +2515,6 @@ https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-30/cp_special_asian_cup_b
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-30/cp_special_asian_cup_ban_quyen-1790778183-hongkong_1_720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Bulgaria vs Estonia
-#EXTVLCOPT:http-referrer=https://dasfootball.com/bulgaria-vs-estonia-highlights-2026-09-29/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/nonya7.mp4?Expires=1790977800770&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=fzZnyvYibXgKQchRNvMIh0aCpWlbyJytDF~0JMZtW1LxDVZKkk-EShThLQg9f-vWJu2P9b5DQAAgxJu~XYF-Y0xdnsl4jKQowwgNEmj~RtKG4J~kEeEIcZMywSxgIU-6hDmDxGEwBLx0Hyt7oxARv1k~~P6fOilIbjrpawqkZb4skrWe1qyPpzBtl~tQMexenCtgbrojXcShBaEfesJogLcX53qI2cPLT-2BNM2U51~txW5G1ULIQm-Cxti4PARvWIqFwuCAe7f9r8kuUupHaKkYMG2LHEbNwe45EGKD5JQIWkr6N3LoMBn6y484ZMtDENjA3-rKBlMTK328CDo3LQ__
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Czechia vs England
-#EXTVLCOPT:http-referrer=https://dasfootball.com/czechia-vs-england-highlights-2026-09-29/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/yb9o9p.mp4?Expires=1790977389318&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=RH6I-N8OTxfo22ZkOUasQvZTJrvXhLBJZUlhXogeGaPAdhlZOLMrcnfx9ufFyH04cUEIoS5HSQ3XTKOibCtzGyH-74bo0y9CIEK91xx-Y2TNnM8PVKtT6~1Y2B1kyfO1KMrZoLPkE6sSA4AScSpapPj51lkpqGGNwABhSBEpbmTV7~dV4olK9hk33t3xG4yAFOZ7Ge1PTVRccbQKPDTI0ribPVX9YCAcr1MH2WnX-Gfu~AFdoXF-TDb1iqSkxslRseVhWc8guLtsBrZVH1sD3HxcN-glbtouryjGCDUaOttLr7YBzI0vTfJxgI-xcaiLBK2QG-LnBEFbwSQzllIVEg__
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Dàn sao Man City 1,43 tỷ euro nguy cơ bị xâu xé, Ronaldo - Messi làm "dậy sóng" ĐTQG (Clip 1 phút)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3241,26 +2540,6 @@ https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-30/cp_special_nation_leag
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-30/cp_special_asian_cup_ban_quyen-1790737410-clip90-_720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Scotland vs Switzerland
-#EXTVLCOPT:http-referrer=https://dasfootball.com/scotland-vs-switzerland-highlights-2026-09-29/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/aef07e.mp4?Expires=1790977721374&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=VovQHqEJ7~TMFumcz-Bvho4HiyuHuJwfo29PWu1TOB1Tlkm3DblEHMmRQq9TFuvrUCEagg2G0Ev5kDzyFmR5v6On~kVNwGEfkE2DrJ4TxK5JSJrJXF~egO30o78wHzTjulWEAasUwv~zvQwtQpk74hZ9nlnFsY2qUShMYgEzoh~OVYGQ12FadYpEW6cTc8CjUJBWjW1DNDudkhH3h~ranx6DbedcUHiiM1bb9OP6kPTF0MG6tJxi9pt2oRZfg28wpGQ96CKLlzoJ3pvmEtgu04f3qv78AJX7RdHuSroB4oHWLvHkBSdRqLvuUFZpDE7VQQk40uRw5YoAV5Dim7LEmQ__
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Slovakia vs Kazakhstan
-#EXTVLCOPT:http-referrer=https://dasfootball.com/slovakia-vs-kazakhstan-highlights-2026-09-29/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/qy2g7q.mp4?Expires=1790977769761&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=kyuNCB838ByA2X2wOFJVxRbFf9VIaEJneB0Gor96zXULyXHmUmyg496CqZNb34w3qss2o7e6gJpvrBUyENC9uYRGZnCFrcORqyhLJQFtAxhRRvUKyLqKPUxS7vV69yRxd9tCDD12IJe-m0qSuUcX9dWJ95xJanOkIWrx0OtniUlKyTBxDdfoIy3pZZh1miHKv27Xtd9Kh3cSFRu7WjVXNzVCRIGjgix9MxUQBGyRfTQU9e997FmzsLVTUCrEl8f0-CQZ31pSNkeyIkMjqTQiXWvhZvQium9gu~qVewo3PIynDEyabDdENYjq7dB1XszqGdXRPncQXtmpkoGL6yqwPQ__
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Slovenia vs FYR Macedonia
-#EXTVLCOPT:http-referrer=https://dasfootball.com/slovenia-vs-fyr-macedonia-highlights-2026-09-29/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/fjylbg.mp4?Expires=1790977698553&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=m-fi9fTqMwKLNTitf8pJiZp1nDncYtxw3p8M3HVh-Zu9qO6cBjHz5aVz9eaGLEKJg0eGLY4j6LYRGtDmDiO~XL4uj8xDG-MMkyFPfxYoFwiG4wXR31~IzfByv9wkffRwzYNSr8S2ZunZDVgdXasivpLV6-2SEC9sihSKFaA6po81BqjxMTy0uNujcmsCH6Q2eQCgeNo2OVyeFtLkX9vn753KvB8SLWCbhXBfOt8j9M2ucTkSmcBQk3vlq49naw2X1P81hiRyVbHIOoOQVviV7ZHVg7DuNJaoslPrzp9TeCp5UWyoYYLZgUExdxrvf0itzMV3QEByrWwn0BlTtmkoIg__
-
-#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Spain vs Croatia
-#EXTVLCOPT:http-referrer=https://dasfootball.com/spain-vs-croatia-highlights-2026-09-29/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn-cf-east.streamable.com/video/mp4/zh306q.mp4?Expires=1790977835732&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=kkb1JbUSJmwmJdmJdvwD3nM-7tYnNULOBunFjh5RsnU9XQg5GnI2K1j4nirK26oGdxwJ3sVNm~8-GmQ6Ay5sdS8NAqPND5iRKHG-vUo59bOjx6Sx9W-9knnbA2lqzcH9BViXe1xIX0Lj8bph4xzhz~qbQqiJLPJMUYPCvsamVtXVahLh6IpzidDtUeX7REKqQqrLVyz1ppc8US8SRWQKsdhoVrovQphEvxNNhcvgKM6NynCnHwfNQssagNd3nhggKtqTwCtCvIMBRIjuM-U~tW9f8IjBMQ4la9I-jSmfDlc~peEiiqz5F1rE4PmG50WpUQt1P~gkKDClbpP2N7O38A__
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Timor Leste - Campuchia: Hai siêu phẩm là không đủ (FIFA ASEAN Cup) [720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3322,6 +2601,11 @@ https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-29/1790684397-australia_b
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn-cf-east.streamable.com/video/mp4/qj06ud.mp4?Expires=1790896022092&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=BZ6eM23FnIQEx3oYZFGqQPPvatm1WffU6SPUxcTr4dk7c~kyM5mafjAidoC1yC2E~2W96pi15OEriy7C1nneCOJEUWgTbVWXkNwYH3kDOEQbp~RWNVTZWRbebhtK8RRE6DJ7HulRNAJocZ7rrb2ykezqRUlohsB4F-vAD5Fni7bZJroc~x7bszr5BprNNlw1-I~SxmxuzDufyq3GqgGawqHJ2MCMWip43t8Ug-YyKems0VVtoltdmO3ooZ70ey7lPR8HJll5pe13BU-RTjmFjVmNNyrmpzTE7gDegfdsmUH~-ijFW6Pw-5gh9Cs126-UXBzNItUkn~JXsGAgE1ViNg__
 
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Bulgaria vs Estonia
+#EXTVLCOPT:http-referrer=https://dasfootball.com/bulgaria-vs-estonia-highlights-2026-09-29/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/nonya7.mp4?Expires=1790977800770&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=fzZnyvYibXgKQchRNvMIh0aCpWlbyJytDF~0JMZtW1LxDVZKkk-EShThLQg9f-vWJu2P9b5DQAAgxJu~XYF-Y0xdnsl4jKQowwgNEmj~RtKG4J~kEeEIcZMywSxgIU-6hDmDxGEwBLx0Hyt7oxARv1k~~P6fOilIbjrpawqkZb4skrWe1qyPpzBtl~tQMexenCtgbrojXcShBaEfesJogLcX53qI2cPLT-2BNM2U51~txW5G1ULIQm-Cxti4PARvWIqFwuCAe7f9r8kuUupHaKkYMG2LHEbNwe45EGKD5JQIWkr6N3LoMBn6y484ZMtDENjA3-rKBlMTK328CDo3LQ__
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Bỉ - Pháp: Khoảnh khắc thiên tài (Nations League) [Hiệp 1 | 720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -3336,6 +2620,11 @@ https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-29/cp_special_nation_leag
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/3-2026/videoclip/2026-09-29/cp_special_nation_leagues-1790677685-bantin1phut260929_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Czechia vs England
+#EXTVLCOPT:http-referrer=https://dasfootball.com/czechia-vs-england-highlights-2026-09-29/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/yb9o9p.mp4?Expires=1790977389318&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=RH6I-N8OTxfo22ZkOUasQvZTJrvXhLBJZUlhXogeGaPAdhlZOLMrcnfx9ufFyH04cUEIoS5HSQ3XTKOibCtzGyH-74bo0y9CIEK91xx-Y2TNnM8PVKtT6~1Y2B1kyfO1KMrZoLPkE6sSA4AScSpapPj51lkpqGGNwABhSBEpbmTV7~dV4olK9hk33t3xG4yAFOZ7Ge1PTVRccbQKPDTI0ribPVX9YCAcr1MH2WnX-Gfu~AFdoXF-TDb1iqSkxslRseVhWc8guLtsBrZVH1sD3HxcN-glbtouryjGCDUaOttLr7YBzI0vTfJxgI-xcaiLBK2QG-LnBEFbwSQzllIVEg__
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Enzo Fernandez: Kẻ phản diện ngạo nghễ của Ngoại hạng Anh
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3396,6 +2685,26 @@ https://cdn-cf-east.streamable.com/video/mp4/iap71d.mp4?Expires=1790896020&Signa
 #EXTVLCOPT:http-referrer=https://dasfootball.com/san-marino-vs-albania-highlights-2026-09-29/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn-cf-east.streamable.com/video/mp4/n8l2t9.mp4?Expires=1790977361873&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=EHRU-qPzlrVO0zgAK2oU9quZZxH1Xu-A34wiOnP0HGVpYVT84SIdGC6zdoYTJ1ynzGQRWB21Yrmx770GfHZg4Cfh-Y5AeeHMTV25pxsl2sBePfUdSMRQ1hc46RUzvpax8HwT24EgtbHzbk6723UHT7THfroZBaGvFwPddHvJh2tNN9l0Xga3ozl1QYVfTrIszJKtnPKARLywPZf0umo0~5M~vZTPgDcVlK6~rzzvVXhbvFnzK-59TetHwdpoP9cLM~l4~ZmUxJrI9ZlPSwrr4N65WE90Uh0Os77lsWAgtXZBwBS9QTm2HIbWtTvvz7Sd4R7m4FDbyNb7tYdEtwt0Eg__
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Scotland vs Switzerland
+#EXTVLCOPT:http-referrer=https://dasfootball.com/scotland-vs-switzerland-highlights-2026-09-29/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/aef07e.mp4?Expires=1790977721374&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=VovQHqEJ7~TMFumcz-Bvho4HiyuHuJwfo29PWu1TOB1Tlkm3DblEHMmRQq9TFuvrUCEagg2G0Ev5kDzyFmR5v6On~kVNwGEfkE2DrJ4TxK5JSJrJXF~egO30o78wHzTjulWEAasUwv~zvQwtQpk74hZ9nlnFsY2qUShMYgEzoh~OVYGQ12FadYpEW6cTc8CjUJBWjW1DNDudkhH3h~ranx6DbedcUHiiM1bb9OP6kPTF0MG6tJxi9pt2oRZfg28wpGQ96CKLlzoJ3pvmEtgu04f3qv78AJX7RdHuSroB4oHWLvHkBSdRqLvuUFZpDE7VQQk40uRw5YoAV5Dim7LEmQ__
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Slovakia vs Kazakhstan
+#EXTVLCOPT:http-referrer=https://dasfootball.com/slovakia-vs-kazakhstan-highlights-2026-09-29/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/qy2g7q.mp4?Expires=1790977769761&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=kyuNCB838ByA2X2wOFJVxRbFf9VIaEJneB0Gor96zXULyXHmUmyg496CqZNb34w3qss2o7e6gJpvrBUyENC9uYRGZnCFrcORqyhLJQFtAxhRRvUKyLqKPUxS7vV69yRxd9tCDD12IJe-m0qSuUcX9dWJ95xJanOkIWrx0OtniUlKyTBxDdfoIy3pZZh1miHKv27Xtd9Kh3cSFRu7WjVXNzVCRIGjgix9MxUQBGyRfTQU9e997FmzsLVTUCrEl8f0-CQZ31pSNkeyIkMjqTQiXWvhZvQium9gu~qVewo3PIynDEyabDdENYjq7dB1XszqGdXRPncQXtmpkoGL6yqwPQ__
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Slovenia vs FYR Macedonia
+#EXTVLCOPT:http-referrer=https://dasfootball.com/slovenia-vs-fyr-macedonia-highlights-2026-09-29/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/fjylbg.mp4?Expires=1790977698553&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=m-fi9fTqMwKLNTitf8pJiZp1nDncYtxw3p8M3HVh-Zu9qO6cBjHz5aVz9eaGLEKJg0eGLY4j6LYRGtDmDiO~XL4uj8xDG-MMkyFPfxYoFwiG4wXR31~IzfByv9wkffRwzYNSr8S2ZunZDVgdXasivpLV6-2SEC9sihSKFaA6po81BqjxMTy0uNujcmsCH6Q2eQCgeNo2OVyeFtLkX9vn753KvB8SLWCbhXBfOt8j9M2ucTkSmcBQk3vlq49naw2X1P81hiRyVbHIOoOQVviV7ZHVg7DuNJaoslPrzp9TeCp5UWyoYYLZgUExdxrvf0itzMV3QEByrWwn0BlTtmkoIg__
+
+#EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Spain vs Croatia
+#EXTVLCOPT:http-referrer=https://dasfootball.com/spain-vs-croatia-highlights-2026-09-29/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn-cf-east.streamable.com/video/mp4/zh306q.mp4?Expires=1790977835732&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ&Signature=kkb1JbUSJmwmJdmJdvwD3nM-7tYnNULOBunFjh5RsnU9XQg5GnI2K1j4nirK26oGdxwJ3sVNm~8-GmQ6Ay5sdS8NAqPND5iRKHG-vUo59bOjx6Sx9W-9knnbA2lqzcH9BViXe1xIX0Lj8bph4xzhz~qbQqiJLPJMUYPCvsamVtXVahLh6IpzidDtUeX7REKqQqrLVyz1ppc8US8SRWQKsdhoVrovQphEvxNNhcvgKM6NynCnHwfNQssagNd3nhggKtqTwCtCvIMBRIjuM-U~tW9f8IjBMQ4la9I-jSmfDlc~peEiiqz5F1rE4PmG50WpUQt1P~gkKDClbpP2N7O38A__
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",TUR vs ITA, ngày 29/09
 #EXTVLCOPT:http-referrer=https://raw.githubusercontent.com/kyp126/TEST-2/
