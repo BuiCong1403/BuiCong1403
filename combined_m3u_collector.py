@@ -416,6 +416,10 @@ VANLINH_SPORT_M3U_URL = os.environ.get(
     "VANLINH_SPORT_M3U_URL",
     "https://raw.githubusercontent.com/linhpy89/linh/refs/heads/linh/tv.m3u",
 )
+FBL_LIVE_1_URL = os.environ.get(
+    "FBL_LIVE_1_URL",
+    "https://raw.githubusercontent.com/kyp126/TEST-2/refs/heads/master/FBL%20LIVE%201",
+)
 WRITE_RAW_REFERENCE_M3U = os.environ.get("WRITE_RAW_REFERENCE_M3U", "0").strip().lower() in {"1", "true", "yes", "on"}
 THETHAOCOBAN_SOURCE_FALLBACK = (
     os.environ.get("THETHAOCOBAN_SOURCE_FALLBACK", "1").strip().lower() not in {"0", "false", "no"}
@@ -4340,15 +4344,12 @@ def collect_vmttv():
         allow_non_m3u8=True,
         timeout=60,
         retries=3,
-        allowed_groups=("the thao quoc te", "su kien vtvprime"),
+        allowed_groups=("su kien vtvprime",),
     )
-    sport_group_key = "thethaoquocte"
     event_group_keys = {"sukienvtvprime"}
     for channel in channels:
         channel_group_key = group_key(channel.get("group"))
-        if channel_group_key == sport_group_key:
-            channel["group"] = "THỂ THAO QUỐC TẾ"
-        elif channel_group_key in event_group_keys:
+        if channel_group_key in event_group_keys:
             channel["group"] = "Sự kiện"
             channel["skip_event_filter"] = True
 
@@ -4996,6 +4997,94 @@ def collect_dekiki_sports():
         channel["group"] = SPORT_INTERNATIONAL_GROUP
         channel["raw_extinf"] = set_extinf_group_title(channel.get("raw_extinf", ""), SPORT_INTERNATIONAL_GROUP)
     log(f"[{source}] {len(channels)} selected links")
+    return channels
+
+
+def is_fbl_live_stream_url(url):
+    url = clean_text(url)
+    if not url.startswith(("http://", "https://")):
+        return False
+    lower = url.lower().split("?", 1)[0]
+    if lower.endswith(".mpd") or ".mpd/" in lower:
+        return False
+    return is_hls_url(url) or lower.endswith((".txt", ".m3u"))
+
+
+def fbl_live_stream_urls(value):
+    value = html.unescape(clean_text(value).replace("\\/", "/"))
+    urls = []
+    seen = set()
+    for match in re.finditer(r"https?://[^\s,]+", value):
+        url = clean_text(match.group(0)).rstrip(".,);]")
+        if "#" in url:
+            parts = [part for part in url.split("#") if part]
+        else:
+            parts = [url]
+        for part in parts:
+            part = clean_text(part).rstrip(".,);]")
+            if not is_fbl_live_stream_url(part):
+                continue
+            if part in seen:
+                continue
+            seen.add(part)
+            urls.append(part)
+    return urls
+
+
+def collect_fbl_live_sports():
+    source = "FBLInternationalSports"
+    log(f"[{source}] Fetch FBL LIVE 1")
+    try:
+        text = fetch_text(FBL_LIVE_1_URL, headers={"User-Agent": UA, "Accept": "*/*"}, timeout=60)
+    except Exception as exc:
+        log(f"[{source}] Fetch error: {exc}")
+        return []
+
+    channels = []
+    seen = set()
+    current_section = ""
+    last_title = ""
+    for raw_line in text.splitlines():
+        line = clean_text(raw_line)
+        if not line:
+            continue
+        if line.lower().endswith(",#genre#"):
+            current_section = clean_text(line.split(",", 1)[0])
+            last_title = ""
+            continue
+
+        if "," in line:
+            title_part, url_part = line.split(",", 1)
+            title = clean_text(title_part) or current_section or SPORT_INTERNATIONAL_GROUP
+            last_title = title
+        else:
+            title = last_title or current_section or SPORT_INTERNATIONAL_GROUP
+            url_part = line
+
+        stream_urls = fbl_live_stream_urls(url_part)
+        if not stream_urls:
+            continue
+        for index, stream_url in enumerate(stream_urls, start=1):
+            key = tokenless_stream_key(stream_url)
+            if not key or key in seen:
+                continue
+            seen.add(key)
+            display_name = title
+            if len(stream_urls) > 1:
+                display_name = f"{title} | Link {index}"
+            channels.append(
+                {
+                    "source": source,
+                    "name": display_name,
+                    "group": SPORT_INTERNATIONAL_GROUP,
+                    "logo": "",
+                    "stream_url": stream_url,
+                    "referer": "",
+                    "user_agent": "",
+                    "skip_event_filter": True,
+                }
+            )
+    log(f"[{source}] {len(channels)} raw links")
     return channels
 
 
@@ -9516,8 +9605,7 @@ def main():
         ("SaoKeTV", collect_saoketv),
         ("S8TV", collect_s8tv),
         ("VeboTV", collect_vebotv),
-        ("CoTiViSports", collect_cotivi_sports),
-        ("DekikiSports", collect_dekiki_sports),
+        ("FBLInternationalSports", collect_fbl_live_sports),
         ("MebongTV", collect_mebongtv),
         ("AzabuLive", collect_azabu_live),
         (
