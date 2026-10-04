@@ -291,7 +291,7 @@ NINETY_PHUTZI_SEED_URLS = [
 DASFOOTBALL_BASE_URL = os.environ.get("DASFOOTBALL_BASE_URL", "https://dasfootball.com/")
 DASFOOTBALL_HIGHLIGHT_DAYS_BACK = int(os.environ.get("DASFOOTBALL_HIGHLIGHT_DAYS_BACK", "7") or "7")
 DASFOOTBALL_HIGHLIGHT_LIMIT = int(os.environ.get("DASFOOTBALL_HIGHLIGHT_LIMIT", "220") or "220")
-DASFOOTBALL_ARCHIVE_PAGES = int(os.environ.get("DASFOOTBALL_ARCHIVE_PAGES", "3") or "3")
+DASFOOTBALL_ARCHIVE_PAGES = int(os.environ.get("DASFOOTBALL_ARCHIVE_PAGES", "4") or "4")
 DASFOOTBALL_SEED_URLS = [
     item.strip()
     for item in os.environ.get(
@@ -431,6 +431,12 @@ XOILACZ_STREAM_WORKERS = int(os.environ.get("XOILACZ_STREAM_WORKERS", "3") or "3
 VSC9_TTCB_MIN_TODAY_LINKS = int(os.environ.get("VSC9_TTCB_MIN_TODAY_LINKS", "20") or "20")
 PHAOHOA_TTCB_MIN_LINKS = int(os.environ.get("PHAOHOA_TTCB_MIN_LINKS", "20") or "20")
 KHANDAIA_TTCB_MIN_LINKS = int(os.environ.get("KHANDAIA_TTCB_MIN_LINKS", "20") or "20")
+SLOW_SOURCE_GRACE_MINUTES = int(os.environ.get("SLOW_SOURCE_GRACE_MINUTES", "2160") or "2160")
+REQUIRED_SLOW_SOURCES = {
+    item.strip()
+    for item in os.environ.get("REQUIRED_SLOW_SOURCES", "KhanDaiA,PhaoHoaTV,PhaLangTV,XoiLacZ").split(",")
+    if item.strip()
+}
 TTCB_SUPPLEMENT_MIN_LINKS = int(os.environ.get("TTCB_SUPPLEMENT_MIN_LINKS", "8") or "8")
 CLOUDOK_M3U_URL = os.environ.get(
     "CLOUDOK_M3U_URL",
@@ -1023,12 +1029,13 @@ def channel_event_date(channel):
     return date_from_text(text)
 
 
-def filter_current_and_future_events(channels):
+def filter_current_and_future_events(channels, grace_minutes=None):
     if not FILTER_PAST_EVENTS:
         return channels
     now = datetime.now(TZ_VN)
     today = now.date()
-    cutoff = now - timedelta(minutes=max(0, PAST_EVENT_GRACE_MINUTES))
+    grace_minutes = PAST_EVENT_GRACE_MINUTES if grace_minutes is None else grace_minutes
+    cutoff = now - timedelta(minutes=max(0, int(grace_minutes)))
     kept = []
     removed_by_date = 0
     removed_by_time = 0
@@ -1264,11 +1271,57 @@ def h24_stream_part_label(url):
     return ""
 
 
+def h24_stream_part_number(url):
+    label = h24_stream_part_label(url)
+    match = re.search(r"([12])", label)
+    return match.group(1) if match else ""
+
+
 def h24_variant_family_key(url):
     parsed = urlparse(clean_text(url))
     path = unquote(parsed.path).lower()
     path = re.sub(r"_(?:2160|1080|720|576|480|360)p?(?=\.m3u8$)", "", path)
     return parsed._replace(path=path, query="", fragment="").geturl()
+
+
+def h24_counterpart_urls(url):
+    """Return likely 24h companion halves for URLs such as team_a1_720p.m3u8."""
+    url = clean_text(url)
+    if not url or not is_hls_url(url):
+        return []
+    parsed = urlparse(url)
+    path = unquote(parsed.path)
+    dirname, _, filename = path.rpartition("/")
+    patterns = (
+        r"(?P<prefix>.*?)(?P<part>[12])(?P<quality>_(?:2160|1080|720|576|480|360)p?)?\.m3u8$",
+        r"(?P<prefix>.*?(?:h|hiep|hi[eệ]p|part|phan|ph[aầ]n)[-_]?)(?P<part>[12])(?P<quality>_(?:2160|1080|720|576|480|360)p?)?\.m3u8$",
+    )
+    candidates = []
+    for pattern in patterns:
+        match = re.match(pattern, filename, re.I)
+        if not match:
+            continue
+        other = "2" if match.group("part") == "1" else "1"
+        quality = match.groupdict().get("quality") or ""
+        candidate_name = f"{match.group('prefix')}{other}{quality}.m3u8"
+        candidate_path = f"{dirname}/{candidate_name}" if dirname else candidate_name
+        candidate = parsed._replace(path=candidate_path).geturl()
+        if candidate != url and candidate not in candidates:
+            candidates.append(candidate)
+    return candidates
+
+
+def expand_h24_companion_streams(valid_streams, referer):
+    expanded = list(valid_streams)
+    seen = {clean_text(url) for url, _event_date in expanded}
+    for stream_url, event_date in list(valid_streams):
+        for candidate in h24_counterpart_urls(stream_url):
+            if candidate in seen:
+                continue
+            if is_working_m3u8(candidate, referer=referer or H24_BASE_URL.rstrip("/") + "/", user_agent=UA):
+                seen.add(candidate)
+                expanded.append((candidate, h24_date_from_media_url(candidate) or event_date))
+    return expanded
 
 
 def h24_title_family_key(title):
@@ -1299,8 +1352,8 @@ def h24_channel_score(channel):
 def dedupe_h24_highlight_channels(channels):
     by_url = {}
     for channel in channels:
-        url_key = h24_variant_family_key(channel.get("stream_url"))
-        if not url_key:
+        url_key = (h24_variant_family_key(channel.get("stream_url")), h24_stream_part_number(channel.get("stream_url")))
+        if not url_key[0]:
             continue
         current = by_url.get(url_key)
         if not current or h24_channel_score(channel) > h24_channel_score(current):
@@ -1311,7 +1364,9 @@ def dedupe_h24_highlight_channels(channels):
 def best_h24_stream_variants(streams):
     by_family = {}
     for stream_url, event_date in streams:
-        family_key = h24_variant_family_key(stream_url)
+        family_key = (h24_variant_family_key(stream_url), h24_stream_part_number(stream_url))
+        if not family_key[0]:
+            continue
         current = by_family.get(family_key)
         if not current or h24_highlight_score(stream_url) > h24_highlight_score(current[0]):
             by_family[family_key] = (stream_url, event_date)
@@ -6325,6 +6380,39 @@ def extract_dasfootball_highlight_urls(html_text, base_url):
             if url and url not in seen:
                 seen.add(url)
                 urls.append(url)
+    for match in re.finditer(r"""href=["']([^"']+)["']""", text, re.I):
+        raw_url = html.unescape(match.group(1))
+        url = urljoin(base_url, raw_url).split("#", 1)[0]
+        url = clean_text(url).rstrip(".,);]")
+        if not url or url in seen:
+            continue
+        parsed = urlparse(url)
+        if "dasfootball.com" not in parsed.netloc.lower():
+            continue
+        path = parsed.path.strip("/")
+        if not path or "." in path.rsplit("/", 1)[-1]:
+            continue
+        lower_path = path.lower()
+        if any(
+            lower_path == blocked or lower_path.startswith(blocked + "/")
+            for blocked in (
+                "wp-admin",
+                "wp-content",
+                "tag",
+                "category",
+                "author",
+                "feed",
+                "privacy-policy",
+                "contact",
+                "about",
+            )
+        ):
+            continue
+        context = text[max(0, match.start() - 700) : match.end() + 700].lower()
+        if "highlight" not in context and "watch" not in context and "video" not in context:
+            continue
+        seen.add(url)
+        urls.append(url)
     return urls
 
 
@@ -6470,11 +6558,16 @@ def collect_dasfootball_highlights():
     allowed_dates = dasfootball_allowed_highlight_dates()
     page_urls = [
         base_url,
+        urljoin(base_url, "football-highlights/"),
+        urljoin(base_url, "highlights/"),
         urljoin(base_url, "premier-league-highlights/"),
         urljoin(base_url, "la-liga-highlights/"),
         urljoin(base_url, "bundesliga-highlights/"),
         urljoin(base_url, "serie-a-highlights/"),
         urljoin(base_url, "ligue-1-highlights/"),
+        urljoin(base_url, "champions-league-highlights/"),
+        urljoin(base_url, "europa-league-highlights/"),
+        urljoin(base_url, "uefa-nations-league-highlights/"),
         urljoin(base_url, "dfb-pokal-highlights-202526/"),
         urljoin(base_url, "premier-league/"),
         urljoin(base_url, "la-liga/"),
@@ -6485,10 +6578,21 @@ def collect_dasfootball_highlights():
         urljoin(base_url, "europa-league/"),
         urljoin(base_url, "world-cup/"),
         urljoin(base_url, "uefa-nations-league/"),
+        urljoin(base_url, "other-leagues/"),
     ]
     archive_pages = []
     for page_url in list(page_urls):
         archive_pages.append(page_url)
+        lower_page = page_url.lower()
+        should_walk_archive = (
+            lower_page == base_url.lower()
+            or "highlight" in lower_page
+            or "uefa-nations-league" in lower_page
+            or "champions-league" in lower_page
+            or "europa-league" in lower_page
+        )
+        if not should_walk_archive:
+            continue
         for page_no in range(2, max(1, DASFOOTBALL_ARCHIVE_PAGES) + 1):
             archive_pages.append(urljoin(page_url.rstrip("/") + "/", f"page/{page_no}/"))
     page_urls = list(dict.fromkeys(archive_pages))
@@ -7722,15 +7826,15 @@ def merge_and_save_h24_highlight_cache(fresh_channels):
     today = datetime.now(TZ_VN).date()
     cached_channels = load_h24_highlight_cache()
     cached_by_url = {
-        h24_variant_family_key(channel.get("stream_url")): channel
+        (h24_variant_family_key(channel.get("stream_url")), h24_stream_part_number(channel.get("stream_url"))): channel
         for channel in cached_channels
         if h24_variant_family_key(channel.get("stream_url"))
     }
     merged = []
     seen = set()
     for channel in list(fresh_channels) + cached_channels:
-        family_key = h24_variant_family_key(channel.get("stream_url"))
-        if not family_key or family_key in seen:
+        family_key = (h24_variant_family_key(channel.get("stream_url")), h24_stream_part_number(channel.get("stream_url")))
+        if not family_key[0] or family_key in seen:
             continue
         seen.add(family_key)
         previous = cached_by_url.get(family_key)
@@ -7883,8 +7987,8 @@ def collect_24h_highlights():
             except Exception:
                 continue
             for item in extract_h24_video_sitemap_urls(video_sitemap_text):
-                media_key = h24_variant_family_key(item.get("media_url"))
-                if media_key in seen_sitemap_media:
+                media_key = (h24_variant_family_key(item.get("media_url")), h24_stream_part_number(item.get("media_url")))
+                if not media_key[0] or media_key in seen_sitemap_media:
                     continue
                 seen_sitemap_media.add(media_key)
                 sitemap_channels.append(
@@ -7919,6 +8023,7 @@ def collect_24h_highlights():
             valid_streams.append((stream_url, event_date))
         if not valid_streams:
             return []
+        valid_streams = expand_h24_companion_streams(valid_streams, article_url)
         if not H24_TAKE_ALL_M3U8:
             stream_url = best_24h_highlight_url([url for url, _event_date in valid_streams])
             valid_streams = [(stream_url, next(event_date for url, event_date in valid_streams if url == stream_url))]
@@ -9080,7 +9185,7 @@ def collect_missing_source(name):
     return []
 
 
-def collect_source_channels(source_name, collector):
+def collect_source_channels(source_name, collector, grace_minutes=None):
     try:
         channels = collector()
     except Exception as exc:
@@ -9097,7 +9202,7 @@ def collect_source_channels(source_name, collector):
         unique.append(channel)
 
     selected = verify_live_channels(unique)
-    selected = filter_current_and_future_events(selected)
+    selected = filter_current_and_future_events(selected, grace_minutes=grace_minutes)
     return dedupe_and_sort_channels(selected)
 
 
@@ -9164,7 +9269,7 @@ def load_slow_source_archive():
             channel = row_to_cached_channel(row, source, group)
             if channel:
                 channels.append(channel)
-    channels = dedupe_and_sort_channels(filter_current_and_future_events(channels))
+    channels = dedupe_and_sort_channels(filter_current_and_future_events(channels, grace_minutes=SLOW_SOURCE_GRACE_MINUTES))
     if channels:
         log(f"[SlowSources] Loaded archive: {len(channels)} links from {SLOW_SOURCES_ARCHIVE.name}")
     return channels
@@ -9181,7 +9286,7 @@ def save_slow_source_archive(channels_by_source):
     source_groups = {source: group for source, group, _collector in SLOW_SOURCE_COLLECTORS}
     next_sources = dict(existing)
     for source, channels in channels_by_source.items():
-        channels = dedupe_and_sort_channels(filter_current_and_future_events(channels or []))
+        channels = dedupe_and_sort_channels(filter_current_and_future_events(channels or [], grace_minutes=SLOW_SOURCE_GRACE_MINUTES))
         if not channels:
             continue
         existing_rows = existing.get(source) if isinstance(existing.get(source), list) else []
@@ -9225,12 +9330,12 @@ def collect_slow_sources():
     selected_by_source = {}
     for source, _group, collector in SLOW_SOURCE_COLLECTORS:
         log("")
-        selected = collect_source_channels(source, collector)
+        selected = collect_source_channels(source, collector, grace_minutes=SLOW_SOURCE_GRACE_MINUTES)
         min_good_count = SLOW_SOURCE_MIN_GOOD_COUNTS.get(source, 1)
         cached = previous_by_source.get(source, [])
         if cached and len(selected) < min_good_count:
             log(f"[{source}] Keep cached snapshot: current={len(selected)} cache={len(cached)} min={min_good_count}")
-            selected = dedupe_and_sort_channels(filter_current_and_future_events(selected + cached))
+            selected = dedupe_and_sort_channels(filter_current_and_future_events(selected + cached, grace_minutes=SLOW_SOURCE_GRACE_MINUTES))
         counts[source] = len(selected)
         selected_by_source[source] = selected
         channels.extend(selected)
@@ -9646,7 +9751,7 @@ def main():
     missing_slow_sources = [
         source
         for source, _group, _collector in SLOW_SOURCE_COLLECTORS
-        if per_source_counts.get(source, 0) <= 0
+        if source in REQUIRED_SLOW_SOURCES and per_source_counts.get(source, 0) <= 0
     ]
     if not all_channels or missing_slow_sources:
         if missing_slow_sources:
