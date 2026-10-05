@@ -6339,10 +6339,21 @@ def dasfootball_headers(referer=None):
     base_url = DASFOOTBALL_BASE_URL.rstrip("/") + "/"
     return {
         "Accept": "text/html,application/xhtml+xml,application/json,*/*",
+        "Cache-Control": "no-cache",
         "Origin": base_url.rstrip("/"),
+        "Pragma": "no-cache",
         "Referer": referer or base_url,
         "User-Agent": UA,
     }
+
+
+def dasfootball_fetch_text(url, referer=None, timeout=30):
+    return fetch_text(
+        url,
+        headers=dasfootball_headers(referer or url),
+        params={"t": int(time.time() * 1000)},
+        timeout=timeout,
+    )
 
 
 def dasfootball_allowed_highlight_dates():
@@ -6619,7 +6630,7 @@ def collect_dasfootball_highlights():
     for page_url in page_urls:
         log(f"[{source}] Fetch {page_url}")
         try:
-            html_text = fetch_text(page_url, headers=dasfootball_headers(page_url), timeout=30)
+            html_text = dasfootball_fetch_text(page_url, page_url, timeout=30)
         except Exception:
             continue
         for channel in dasfootball_jsonld_channels(html_text, page_url, allowed_dates, source, base_url):
@@ -6649,7 +6660,7 @@ def collect_dasfootball_highlights():
 
     def collect_post(post_url):
         try:
-            html_text = fetch_text(post_url, headers=dasfootball_headers(post_url), timeout=25)
+            html_text = dasfootball_fetch_text(post_url, post_url, timeout=25)
         except Exception:
             return []
         title = clean_highlight_title(title_from_html_page(html_text, title_from_url_slug(post_url) or "DasFootball Highlight"))
