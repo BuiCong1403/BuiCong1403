@@ -70,7 +70,7 @@ KHANDAIA_FRONTEND_CANDIDATES = [
     value.strip().rstrip("/")
     for value in os.environ.get(
         "KHANDAIA_FRONTEND_CANDIDATES",
-        "https://khandai1.link,https://khandai2.link,https://khandai3.link",
+        "https://khandai3.link,https://khandai2.link",
     ).split(",")
     if value.strip()
 ]
@@ -2145,7 +2145,17 @@ def collect_khandaia_nuxt(frontend_url):
     source = "KhanDaiA"
     site_url = frontend_url.rstrip("/") + "/"
     try:
-        page = fetch_text(site_url, headers={"User-Agent": UA, "Referer": site_url}, timeout=35)
+        page = fetch_text(
+            site_url,
+            headers={
+                "User-Agent": UA,
+                "Referer": site_url,
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
+            },
+            params={"t": int(time.time() * 1000)},
+            timeout=35,
+        )
         match = re.search(r'<script[^>]+id="__NUXT_DATA__"[^>]*>(.*?)</script>', page, re.I | re.S)
         if not match:
             return []
@@ -2208,9 +2218,9 @@ def collect_khandaia():
     frontend_url = frontend_urls[0] if frontend_urls else KHANDAIA_FRONTEND_URL
     # The first-party Nuxt backend is the most complete source. Calling it
     # directly avoids losing later matches when generic API discovery fails.
-    channels = []
+    live_channels = []
     for candidate in frontend_urls:
-        channels.extend(
+        live_channels.extend(
             collect_django_matches_api(
                 source,
                 candidate,
@@ -2220,12 +2230,11 @@ def collect_khandaia():
                 max_pages=4,
             )
         )
-        channels.extend(collect_khandaia_nuxt(candidate))
-    channels.extend(load_source_cache(KHANDAIA_CACHE, source, "Khandai"))
+        live_channels.extend(collect_khandaia_nuxt(candidate))
 
     merged = []
     seen = set()
-    for channel in channels:
+    for channel in live_channels:
         key = source_stream_seen_key(
             source,
             channel.get("stream_url"),
@@ -2240,6 +2249,13 @@ def collect_khandaia():
     if len(channels) >= KHANDAIA_TTCB_MIN_LINKS:
         save_source_cache(KHANDAIA_CACHE, channels, frontend_url)
         return channels
+
+    cached_channels = load_source_cache(KHANDAIA_CACHE, source, "Khandai")
+    if cached_channels:
+        channels = dedupe_and_sort_channels(channels + cached_channels)
+        if len(channels) >= KHANDAIA_TTCB_MIN_LINKS:
+            log(f"[{source}] Use live+cache: live={len(live_channels)} total={len(channels)}")
+            return channels
 
     api_base = clean_text(KHANDAIA_INTERNAL_API_BASE or frontend_url).rstrip("/")
     if not probe_phaohoa_api_base(api_base, frontend_url):
@@ -2270,7 +2286,7 @@ def collect_khandaia():
     if channels:
         save_source_cache(KHANDAIA_CACHE, channels, frontend_url)
         return channels
-    return load_source_cache(KHANDAIA_CACHE, source, "Khandai")
+    return cached_channels
 
 
 def collect_luongson():
@@ -6590,6 +6606,8 @@ def collect_dasfootball_highlights():
         urljoin(base_url, "world-cup/"),
         urljoin(base_url, "uefa-nations-league/"),
         urljoin(base_url, "other-leagues/"),
+        urljoin(base_url, "feed.xml"),
+        urljoin(base_url, "sitemap/posts.xml"),
     ]
     archive_pages = []
     for page_url in list(page_urls):

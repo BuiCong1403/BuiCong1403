@@ -14,8 +14,8 @@ on:
     - cron: "0 19 * * *"
     - cron: "0 9 * * *"
     - cron: "0 11 * * *"
-    # Refresh changing daytime match/stream assignments: 09:00, 12:00, 14:00 ICT
-    - cron: "0 2 * * *"
+    # Refresh changing daytime match/stream assignments: 09:10, 12:00, 14:00 ICT
+    - cron: "10 2 * * *"
     - cron: "0 5 * * *"
     - cron: "0 7 * * *"
     # Highlights, Asia/Bangkok: every 30 minutes from 03:30 to 09:00
