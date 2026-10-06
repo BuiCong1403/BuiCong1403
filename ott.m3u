@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-06 12:16 ICT
-# Total   : 809
+# Updated : 2026-10-06 12:22 ICT
+# Total   : 656
 
 #EXTINF:0,VTV5 Tay Nam Bo
 #EXTGRP:VTV
@@ -38,6 +38,10 @@ https://live2.domaincdn.cc/livecdn/channel-25.flv?auth_key=3000001791262253-0-0-
 #EXTGRP:FLV
 https://live2.pro2cdnlive.com/live/channel25.flv
 
+#EXTINF:0,11:10 06/10 Linda Noskova vs Ekaterina Alexandrova (HD VIC) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001791263157-0-0-5c59f637b274fc7b752f683c6e23bb92
+
 #EXTINF:0,11:10 06/10 Linda Noskova vs Ekaterina Alexandrova (HD VIC)
 #EXTGRP:FLV
 https://live2.domaincdn.cc/livecdn/channel-32.flv?auth_key=3000001791262268-0-0-f14f9d5c0245dc910594198772cf007c
@@ -50,6 +54,10 @@ https://live2.zundrixmediapipeline.com/live/channel32.flv
 #EXTGRP:BiaomTV
 https://lilive1.eu.cc/live/97bbb8ebe1b0ffec6076b6ddf844c5b4/playlist.m3u8
 
+#EXTINF:0,13:00 06/10 Nu New Zealand U18 vs Nu Philippines U18 (HD TOMMY) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-29.flv?auth_key=3000001791263264-0-0-73bca6b20e56fe43e1bf827127ebf49f
+
 #EXTINF:0,13:00 06/10 Nu New Zealand U18 vs Nu Philippines U18 (HD TOMMY)
 #EXTGRP:FLV
 https://live2.domaincdn.cc/livecdn/channel-29.flv?auth_key=3000001791262361-0-0-5710e5065f1e263912f9c61b6cd2a1c6
@@ -58,38 +66,6 @@ https://live2.domaincdn.cc/livecdn/channel-29.flv?auth_key=3000001791262361-0-0-
 #EXTGRP:FLV
 https://live2.zundrixmediapipeline.com/live/channel29.flv
 
-#EXTINF:0,[14:00 06/10] Changchun Xidu vs Guangzhou Dandelion Alpha | BLV: BLV TAP [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=e6573dfac685eea846165a65dc9950a4&txTime=6ac4c4ad
-
-#EXTINF:0,[14:00 06/10] Changchun Xidu vs Guangzhou Dandelion Alpha | BLV: BLV TAP [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912041_lsd.m3u8?txSecret=4623e532cffc60d3e671b20aaddd7a8d&txTime=6ac4c4ad
-
-#EXTINF:0,[14:00 06/10] Changchun Xidu vs Guangzhou Dandelion Alpha | BLV: BLV TOMIA [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1791255771-0-0-2d5db29bdab8b94495775b93df0b7cdc
-
-#EXTINF:0,[14:00 06/10] Changchun Xidu vs Guangzhou Dandelion Alpha | BLV: BLV TOMIA [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912008_lsd.m3u8?auth_key=1791255771-0-0-e59879f73c860f0dff4c634236374763
-
-#EXTINF:0,[14:00 06/10] Changchun Xidu vs Guangzhou Dandelion Alpha | BLV: CACAO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912128_lhd.m3u8?auth_key=1791255548-0-0-495fdc68f70bfb1aa80c6c7aee1b0125
-
-#EXTINF:0,[14:00 06/10] Changchun Xidu vs Guangzhou Dandelion Alpha | BLV: CACAO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912128_lsd.m3u8?auth_key=1791255548-0-0-0e0988cb667ec82be6bb850af7f01c9c
-
-#EXTINF:0,[14:00 06/10] Changchun Xidu vs Guangzhou Dandelion Alpha | BLV: TA BIEN GIOI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1791262873-0-0-00bd6c686cf92a3ad1493936c50fb9ef
-
-#EXTINF:0,[14:00 06/10] Changchun Xidu vs Guangzhou Dandelion Alpha | BLV: TA BIEN GIOI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912144_lsd.m3u8?auth_key=1791262873-0-0-a6baeb9360f6cae1dec0f5656d0f3fa4
-
 #EXTINF:0,14:00 06/10 Changchun Xidu vs Guangzhou Dandelion Alpha FC (Rio) [flv] | FPT
 #EXTGRP:FLV
 https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.flv
@@ -97,6 +73,14 @@ https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.flv
 #EXTINF:0,14:00 06/10 Changchun Xidu vs Guangzhou Dandelion (BLV BI DAO) [flv] | FPT
 #EXTGRP:FLV
 https://live05.meung.app/live/99121525_tsc.flv
+
+#EXTINF:0,14:00 06/10 Changchun Xidu vs Guangzhou Dandelion FC (HD HIRO) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-14.flv?auth_key=3000001791263163-0-0-2a1936611721bb956d4bbf1e95dcec6b
+
+#EXTINF:0,14:00 06/10 HANJIN BRION vs Natus Vincere (HD MARTY) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-30.flv?auth_key=3000001791263331-0-0-360c519aa7560795211467109354d95c
 
 #EXTINF:0,14:00 | Changchun Xidu vs Guangzhou Dandelion | BLV
 #EXTGRP:CoLaTV
@@ -118,29 +102,9 @@ https://live2.domaincdn.cc/livecdn/channel-30.flv?auth_key=3000001791262399-0-0-
 #EXTGRP:FLV
 https://live2.zundrixmediapipeline.com/live/channel30.flv
 
-#EXTINF:0,[14:30 06/10] Beijing IT vs Chengdu Rongcheng B | BLV: BLV CAO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1791170741-0-0-a15e8b072b5f7d71ae05ff4bf72751c7
-
-#EXTINF:0,[14:30 06/10] Beijing IT vs Chengdu Rongcheng B | BLV: BLV CAO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-597929_lsd.m3u8?auth_key=1791170741-0-0-d506f1189e782b51158b13f73e46ca4c
-
-#EXTINF:0,[14:30 06/10] Beijing IT vs Chengdu Rongcheng B | BLV: BOSS [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-620504_lhd.m3u8?auth_key=1791226364-0-0-3be23574f94bb1ed24303a5179de4cf2
-
-#EXTINF:0,[14:30 06/10] Beijing IT vs Chengdu Rongcheng B | BLV: BOSS [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-620504_lsd.m3u8?auth_key=1791226364-0-0-4e99b301a366f140fde878f091993798
-
-#EXTINF:0,[14:30 06/10] Beijing IT vs Chengdu Rongcheng B | BLV: KINH VAN [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-623743_lhd.m3u8?auth_key=1791211137-0-0-247a1b7c124d5c67374c3480601510b7
-
-#EXTINF:0,[14:30 06/10] Beijing IT vs Chengdu Rongcheng B | BLV: KINH VAN [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-623743_lsd.m3u8?auth_key=1791211137-0-0-d74d724bd57f28b5b309349d0ee9716a
+#EXTINF:0,14:30 06/10 Beijing IT vs Chengdu Rongcheng B (HD FELIX) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-24.flv?auth_key=3000001791263205-0-0-35e411efb6959be83569193eea2a5266
 
 #EXTINF:0,14:30 06/10 Beijing Technology vs Chengdu Rongcheng B (BLV MOUNTAIN DEW) [flv] | FPT
 #EXTGRP:FLV
@@ -150,49 +114,17 @@ https://live05.meung.app/live/87547578_tsc.flv
 #EXTGRP:FLV
 https://playback.livetl002.com/live/69ef10b47146e04fbe6d4363.flv
 
-#EXTINF:0,[14:30 06/10] Qingdao Red Lions vs Wuhan Three Towns B | BLV: BLV KAN [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=983c7d5787d92ce1cd4a5aec7f25ac2e&txTime=6ac368cc
-
-#EXTINF:0,[14:30 06/10] Qingdao Red Lions vs Wuhan Three Towns B | BLV: BLV KAN [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-283501_lsd.m3u8?txSecret=6056521f8774aacb311928fb1d88447c&txTime=6ac368cc
-
-#EXTINF:0,[14:30 06/10] Qingdao Red Lions vs Wuhan Three Towns B | BLV: BLV ROSI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=a2fb5c440448c7fcf8388829f30554f2&txTime=6ac4924d
-
-#EXTINF:0,[14:30 06/10] Qingdao Red Lions vs Wuhan Three Towns B | BLV: BLV ROSI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912102_lsd.m3u8?txSecret=88dc008adc4cf78a08617a38376099a4&txTime=6ac4924d
-
-#EXTINF:0,[14:30 06/10] Qingdao Red Lions vs Wuhan Three Towns B | BLV: ZIDANE [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912145_lhd.m3u8?txSecret=bfc6d61365dc5670877db275ba6215c1&txTime=6ac41e8f
-
-#EXTINF:0,[14:30 06/10] Qingdao Red Lions vs Wuhan Three Towns B | BLV: ZIDANE [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912145_lsd.m3u8?txSecret=fb0ccaae72ac83de2d6cd9fe67e585a4&txTime=6ac41e8f
+#EXTINF:0,14:30 06/10 Nu KB Stars vs Nu Samsunglife Blueminx (HD ALAN) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-25.flv?auth_key=3000001791263271-0-0-06595597a6a71f1c69fec427383b3e8f
 
 #EXTINF:0,14:30 06/10 Qingdao Red Lions vs Wuhan Three Towns B (BLV 247) [flv] | FPT
 #EXTGRP:FLV
 https://live05.meung.app/live/90865415_tsc.flv
 
-#EXTINF:0,[14:30 06/10] Shanghai Second vs Wenzhou Professional | BLV: BLV ALEX [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1791248111-0-0-f87052d731cd101ed02014cac74b0763
-
-#EXTINF:0,[14:30 06/10] Shanghai Second vs Wenzhou Professional | BLV: BLV ALEX [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-532081_lsd.m3u8?auth_key=1791248111-0-0-ad5db2d09753ce566333725b34f48e24
-
-#EXTINF:0,[14:30 06/10] Shanghai Second vs Wenzhou Professional | BLV: LAO LAM [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1791219619-0-0-d8c64ca2c13ff4fe9066de429a6ab259
-
-#EXTINF:0,[14:30 06/10] Shanghai Second vs Wenzhou Professional | BLV: LAO LAM [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-527384_lsd.m3u8?auth_key=1791219619-0-0-8fb905397d9c3042564ee43826abe9a2
+#EXTINF:0,14:30 06/10 Qingdao RL vs Wuhan Three Towns B (HD TOM) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-4.flv?auth_key=3000001791263219-0-0-f050468c3b31773dd41b64824d8d270b
 
 #EXTINF:0,14:30 06/10 Thuong Hai Saigenda vs Yichun Grand Tiger (BLV C2) [flv] | FPT
 #EXTGRP:FLV
@@ -250,54 +182,6 @@ https://lilive1.eu.cc/live/12405a69300025f78a52d54849b237c8/playlist.m3u8
 #EXTGRP:BiaomTV
 https://lilive1.eu.cc/live/b044d861b3ddb11cafc99e151a84241b/playlist.m3u8
 
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: A BEU [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912142_lhd.m3u8?auth_key=1791236679-0-0-671025fd30142b4fbee87e7baea54678
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: A BEU [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912142_lsd.m3u8?auth_key=1791236679-0-0-5485e76f673aaad10aa6821b139cc8c8
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: BLV LION [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1791215876-0-0-2f2595cf424deee09db0c64a2eecff30
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: BLV LION [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-603255_lsd.m3u8?auth_key=1791215876-0-0-05ca23c64dcfbe5b10d2712af4e0331e
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: HAI THANH [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1791206746-0-0-1b9ab796af72a397ef27eac829ce0468
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: HAI THANH [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912119_lsd.m3u8?auth_key=1791206746-0-0-70a085c4303fe5980f1d7bf64d55f992
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: LOGAN [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-552832_lhd.m3u8?txSecret=04ebbaf12dfed94e40a75ef6adcbff8a&txTime=6ac4a9b7
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: LOGAN [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-552832_lsd.m3u8?txSecret=a358f1f1a1c2453c6297be73b3a5f8dd&txTime=6ac4a9b7
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: QUOC KHANH [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=dafe84b765f4ead760267ebea792cb82&txTime=6ac46016
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: QUOC KHANH [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912129_lsd.m3u8?txSecret=24c268d32d10b42a27cfb98d2c43936d&txTime=6ac46016
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: THOMAS [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=2dd8c82eff8d81c371eef2ffadbe8976&txTime=6ac4c605
-
-#EXTINF:0,[15:30 06/10] Lam Dong vs Song Lam Nghe An | BLV: THOMAS [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-414317_lsd.m3u8?txSecret=c1a27060cbc9aae11a78cc3301fb8f4a&txTime=6ac4c605
-
 #EXTINF:0,15:30 06/10 Lam Dong vs Song Lam Nghe An (BLV GIA LANG) [flv] | FPT
 #EXTGRP:FLV
 https://live05.meung.app/live/14830711_tsc.flv
@@ -306,9 +190,17 @@ https://live05.meung.app/live/14830711_tsc.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/306290.flv
 
+#EXTINF:0,15:30 06/10 Lam Dong vs Song Lam Nghe An (HD ROY) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-1.flv?auth_key=3000001791263228-0-0-4da7add3ff3950a3bcd40b417d973387
+
 #EXTINF:0,15:30 06/10 Lam Dong vs Song Lam Nghe An (Man Nui) [flv] | FPT
 #EXTGRP:FLV
 https://playback.livetl002.com/live/69cf6331585c5992182f4160.flv
+
+#EXTINF:0,15:30 06/10 Nu Trung Quoc U18 vs Nu Nhat Ban U18 (HD KOBE) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-27.flv?auth_key=3000001791263279-0-0-78a8135ea265b908abe407c9928eab92
 
 #EXTINF:0,15:30 06/10 Bong da Lam Dong vs Song Lam Nghe An (Tay)
 #EXTGRP:PhaoHoaTV
@@ -354,17 +246,25 @@ https://live2.zundrixmediapipeline.com/live/channel27.flv
 #EXTGRP:FLV
 https://live05.meung.app/live/75748097_tsc.flv
 
-#EXTINF:0,[16:00 06/10] Hubei Istar vs Lanzhou Longyuan Athletic | BLV: BLV VOI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1791149939-0-0-8ae263de5388d2662daa9d6c54d275be
-
-#EXTINF:0,[16:00 06/10] Hubei Istar vs Lanzhou Longyuan Athletic | BLV: BLV VOI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912114_lsd.m3u8?auth_key=1791149939-0-0-2de958a85e1dde8ad496694873aafba1
-
 #EXTINF:0,16:00 06/10 Hubei Istar vs Lanzhou Longyuan Athletics (Meomeo) [flv] | FPT
 #EXTGRP:FLV
 https://playback.livetl002.com/live/69be75e0a0a45974afb67776.flv
+
+#EXTINF:0,16:00 06/10 Hubei Istar vs Rizhao Yuqi FC (HD RAVEN) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-21.flv?auth_key=3000001791263246-0-0-56692da19ea97b80400eb7a4824b2aee
+
+#EXTINF:0,16:00 06/10 Hubei Istar vs Rizhao Yuqi FC (RAVEN) | FPT
+#EXTGRP:FLV
+https://live2.zundrixmediapipeline.com/live/channel21.flv
+
+#EXTINF:0,16:00 06/10 Nu Romania U19 vs Nu Kazakhstan U19 (HD JOHAN) | FPT
+#EXTGRP:FLV
+https://live2.domaincdn.cc/livecdn/channel-12.flv?auth_key=3000001791263240-0-0-85c27c541ed15a63011cdc67fe034165
+
+#EXTINF:0,16:00 06/10 Nu Romania U19 vs Nu Kazakhstan U19 (JOHAN) | FPT
+#EXTGRP:FLV
+https://live2.zundrixmediapipeline.com/live/channel12.flv
 
 #EXTINF:0,16:00 06/10 Carlos Alcaraz Garfia vs Jiri Lehecka (HD VIC)
 #EXTGRP:FLV
@@ -418,22 +318,6 @@ https://live05.meung.app/live/82054853_tsc.flv
 #EXTGRP:FLV
 https://playback.livetl002.com/live/69d37c3a4da3e15776b6db56.flv
 
-#EXTINF:0,[17:00 06/10] Suwon KT vs LG Sakers | BLV: BRIAN [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1791267275-0-0-02907d6eee3328db43fef66e726528ad
-
-#EXTINF:0,[17:00 06/10] Suwon KT vs LG Sakers | BLV: BRIAN [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912106_lsd.m3u8?auth_key=1791267275-0-0-bca4b3dc467c7febc2cfa9b1c28cd7b0
-
-#EXTINF:0,[17:00 06/10] Suwon KT vs LG Sakers | BLV: KING [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1791265566-0-0-1e2442871866d237b19353eb8a994692
-
-#EXTINF:0,[17:00 06/10] Suwon KT vs LG Sakers | BLV: KING [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912099_lsd.m3u8?auth_key=1791265566-0-0-504b9716fe86fb9e30296185475834ea
-
 #EXTINF:0,17:00 06/10 Uniao Leiria U23 vs Santa Clara U23 (Khang Hi) [flv] | FPT
 #EXTGRP:FLV
 https://playback.livetl002.com/live/6a7c0d8f65997681f18cacc4.flv
@@ -470,30 +354,6 @@ https://lilive1.eu.cc/live/30f0dae99b340235f1cdc54dc318bf67/playlist.m3u8
 #EXTGRP:FLV
 https://live05.meung.app/live/75915087_tsc.flv
 
-#EXTINF:0,[18:00 06/10] Changchun Yatai vs Yanbian Longding | BLV: A MAN [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-627718_lhd.m3u8?auth_key=1791206799-0-0-7bb4e368d465f4f58d64427b7fe545d8
-
-#EXTINF:0,[18:00 06/10] Changchun Yatai vs Yanbian Longding | BLV: A MAN [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-627718_lsd.m3u8?auth_key=1791206799-0-0-6a34c600e8e568ae08d3337ee77374ec
-
-#EXTINF:0,[18:00 06/10] Changchun Yatai vs Yanbian Longding | BLV: BLV COCA [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1791256398-0-0-ed80f28f00528a160fdc493b05f82d9e
-
-#EXTINF:0,[18:00 06/10] Changchun Yatai vs Yanbian Longding | BLV: BLV COCA [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-327159_lsd.m3u8?auth_key=1791256398-0-0-350d4d2734167c7274f21eeb6db1aa00
-
-#EXTINF:0,[18:00 06/10] Changchun Yatai vs Yanbian Longding | BLV: BUN DAU [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1791123552-0-0-30e8c780f76d1a852ded5c7d65f607df
-
-#EXTINF:0,[18:00 06/10] Changchun Yatai vs Yanbian Longding | BLV: BUN DAU [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-619561_lsd.m3u8?auth_key=1791123552-0-0-0443f23fe8e203ba3dee5035457b3f4f
-
 #EXTINF:0,18:00 06/10 Han Quoc vs Uzbekistan (BLV REVIVE) [flv] | FPT
 #EXTGRP:FLV
 https://live05.meung.app/live/33982309_tsc.flv
@@ -509,22 +369,6 @@ https://live2.zktsva.app/live/301238.flv
 #EXTINF:0,[18:00-06/10] PVF-CAND FC vs Huda Hue [Vietnam National Cup] [HLS]
 #EXTGRP:BiaomTV
 https://lilive1.eu.cc/live/03b73a85503faa2c7f343db175dc913e/playlist.m3u8
-
-#EXTINF:0,[18:00 06/10] PVF-CAND FC vs Hue FC | BLV: BLV BEO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=ab1983fa91113f8d8a8b9a73997f3487&txTime=6ac45f1e
-
-#EXTINF:0,[18:00 06/10] PVF-CAND FC vs Hue FC | BLV: BLV BEO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-459401_lsd.m3u8?txSecret=359aca92e0066ed5c3f65547a1277a0f&txTime=6ac45f1e
-
-#EXTINF:0,[18:00 06/10] PVF-CAND FC vs Hue FC | BLV: T REX [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-619672_lhd.m3u8?auth_key=1791201709-0-0-0c308508407ff25ead71ce802fea7d55
-
-#EXTINF:0,[18:00 06/10] PVF-CAND FC vs Hue FC | BLV: T REX [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-619672_lsd.m3u8?auth_key=1791201709-0-0-8167b2b9d12f7d58ec0f724dc7ecb9a9
 
 #EXTINF:0,18:00 06/10 PVF CAND vs Huda Hue (Doan Du) [flv] | FPT
 #EXTGRP:FLV
@@ -550,30 +394,6 @@ https://live2.zktsva.app/live/432017.flv
 #EXTGRP:FLV
 https://playback.livetl002.com/live/6a9776215126529dede9bf51.flv
 
-#EXTINF:0,[18:00 06/10] Truong Tuoi Dong Nai vs Dong Thap | BLV: BLV CUOI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1791256531-0-0-1e03a19fc9f4f7c6e55e9d75aa8f70b5
-
-#EXTINF:0,[18:00 06/10] Truong Tuoi Dong Nai vs Dong Thap | BLV: BLV CUOI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912146_lsd.m3u8?auth_key=1791256531-0-0-ef23265b9b1026ab59f78613983c4392
-
-#EXTINF:0,[18:00 06/10] Truong Tuoi Dong Nai vs Dong Thap | BLV: BLV MESSI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1791256492-0-0-43b4971e0ed8fd1f09e4367674a967ea
-
-#EXTINF:0,[18:00 06/10] Truong Tuoi Dong Nai vs Dong Thap | BLV: BLV MESSI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912141_lsd.m3u8?auth_key=1791256492-0-0-d259c6a94faf42dd9f750626748fc906
-
-#EXTINF:0,[18:00 06/10] Truong Tuoi Dong Nai vs Dong Thap | BLV: PEANUT [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1791226970-0-0-b35830d5130ae01a92544bea798682c1
-
-#EXTINF:0,[18:00 06/10] Truong Tuoi Dong Nai vs Dong Thap | BLV: PEANUT [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-620084_lsd.m3u8?auth_key=1791226970-0-0-ec1f27c7489ce123d6cd7081774c9cc0
-
 #EXTINF:0,[18:00-06/10] Truong Tuoi Dong Nai vs Dong Thap [Cup Quoc Gia Viet Nam] [FLV]
 #EXTGRP:FLV
 https://cdnflv.xbdbotv.live/live/MTk3OTQ4ODE6ZDBuMm5wczd6c2ZuaXBpZ290dzI4bDd4OmN5dnRvYTh2MDFsajJscnV4ZGJuNzBhMw.flv
@@ -593,14 +413,6 @@ https://lilive1.eu.cc/live/40102cd3ae2b26f638cbce1e790571d8/playlist.m3u8
 #EXTINF:0,18:00 06/10 Wuxi Wugou vs Suzhou Dongwu (BLV AQUA) [flv] | FPT
 #EXTGRP:FLV
 https://live05.meung.app/live/18812304_tsc.flv
-
-#EXTINF:0,[18:00 06/10] Wuxi Wugo vs Suzhou Dongwu | BLV: BLV ANH TAI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1791211114-0-0-1a14f5f83bd3b3ffff0ec1aca2203f94
-
-#EXTINF:0,[18:00 06/10] Wuxi Wugo vs Suzhou Dongwu | BLV: BLV ANH TAI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-406865_lsd.m3u8?auth_key=1791211114-0-0-a1a733d42b44d72b73ae5b1869e4faad
 
 #EXTINF:0,18:00 06/10 Wuxi Wugo vs Suzhou Dongwu (Ga Sieu Nhi) [flv] | FPT
 #EXTGRP:FLV
@@ -750,22 +562,6 @@ https://live2.pro2cdnlive.com/live/channel13.flv
 #EXTGRP:BiaomTV
 https://lilive1.eu.cc/live/0cc12281fac979885e3752c6fe78d214/playlist.m3u8
 
-#EXTINF:0,[18:30 06/10] Dingnan United vs Meizhou Hakka | BLV: BLV A TU [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1791236335-0-0-aedde07a1721a5d44f0214d8d0d5ae91
-
-#EXTINF:0,[18:30 06/10] Dingnan United vs Meizhou Hakka | BLV: BLV A TU [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912130_lsd.m3u8?auth_key=1791236335-0-0-4001af964763f907134b3a2aeb1c7c0b
-
-#EXTINF:0,[18:30 06/10] Dingnan United vs Meizhou Hakka | BLV: BLV LONG [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=a80c19b74c1a282dd0815a42af13ab26&txTime=6ac460b0
-
-#EXTINF:0,[18:30 06/10] Dingnan United vs Meizhou Hakka | BLV: BLV LONG [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912136_lsd.m3u8?txSecret=5060cdd333b4439e09225967cd6b3fb4&txTime=6ac460b0
-
 #EXTINF:0,18:30 06/10 Dingnan United vs Meizhou Hakka FC (Kayti) [flv] | FPT
 #EXTGRP:FLV
 https://playback.livetl002.com/live/69b8e6f43bcf2231c35d5144.flv
@@ -782,57 +578,9 @@ https://live05.meung.app/live/87379114_tsc.flv
 #EXTGRP:FLV
 https://playback.livetl002.com/live/69a1aaa7230584579e2d5ce1.flv
 
-#EXTINF:0,[18:30 06/10] Nantong Zhiyun vs Ningbo Professional | BLV: BLV GIO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-321443_lhd.m3u8?txSecret=036a9b785141abf01441e305959c3121&txTime=6ac36809
-
-#EXTINF:0,[18:30 06/10] Nantong Zhiyun vs Ningbo Professional | BLV: BLV GIO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-321443_lsd.m3u8?txSecret=9fa374abd871f66d145aa60a1bcc5f8a&txTime=6ac36809
-
-#EXTINF:0,[18:30 06/10] Nantong Zhiyun vs Ningbo Professional | BLV: BLV PEWPEW [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1791236330-0-0-28fb20d7f41e73826b9ed41a970951e0
-
-#EXTINF:0,[18:30 06/10] Nantong Zhiyun vs Ningbo Professional | BLV: BLV PEWPEW [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912135_lsd.m3u8?auth_key=1791236330-0-0-b081951baeb32da7c6ae86272bcd04fe
-
-#EXTINF:0,[18:30 06/10] Nantong Zhiyun vs Ningbo Professional | BLV: BLV RAMBO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=ac6cdbf8d2f18a2d6dc18098aac000ae&txTime=6ac357ea
-
-#EXTINF:0,[18:30 06/10] Nantong Zhiyun vs Ningbo Professional | BLV: BLV RAMBO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-534055_lsd.m3u8?txSecret=082b8185461772dde825110d4424c943&txTime=6ac357ea
-
 #EXTINF:0,18:30 06/10 Nantong Zhiyun vs Shanghai Jiading Huilong (BLV SAMURAI) [flv] | FPT
 #EXTGRP:FLV
 https://live05.meung.app/live/07808742_tsc.flv
-
-#EXTINF:0,[18:30 06/10] Shijiazhuang Gongfu vs Dalian K'un City | BLV: BLV VIP [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=cea679a762b9dbb4a3de4fee7e566692&txTime=6ac4ab56
-
-#EXTINF:0,[18:30 06/10] Shijiazhuang Gongfu vs Dalian K'un City | BLV: BLV VIP [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-491873_lsd.m3u8?txSecret=275ec74f3e67656fa3753886df0dc9eb&txTime=6ac4ab56
-
-#EXTINF:0,[18:30 06/10] Shijiazhuang Gongfu vs Dalian K'un City | BLV: BLV YONE [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1791255421-0-0-47254152e00ba83f1fc90b9b75a162b5
-
-#EXTINF:0,[18:30 06/10] Shijiazhuang Gongfu vs Dalian K'un City | BLV: BLV YONE [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-372746_lsd.m3u8?auth_key=1791255421-0-0-3e0f7e5bcdf37db7d6c3ee981623f7e5
-
-#EXTINF:0,[18:30 06/10] Shijiazhuang Gongfu vs Dalian K'un City | BLV: LOKA [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912133_lhd.m3u8?auth_key=1791211385-0-0-9826c6c361e969150c825771e490474b
-
-#EXTINF:0,[18:30 06/10] Shijiazhuang Gongfu vs Dalian K'un City | BLV: LOKA [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912133_lsd.m3u8?auth_key=1791211385-0-0-eb07e4bbe170ef9d6350a4f844bd2fcb
 
 #EXTINF:0,18:30 06/10 Shijiazhuang Gongfu vs Dalian K'un City (Ga Sieu Toc) [flv] | FPT
 #EXTGRP:FLV
@@ -849,30 +597,6 @@ https://live05.meung.app/live/87379114_tsc.m3u8
 #EXTINF:0,18:30 | Nantong Zhiyun vs Shanghai Jiading Huilong | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/07808742_tsc.m3u8
-
-#EXTINF:0,[18:35 06/10] China vs Tajikistan | BLV: BLV Cu Cai [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1791262554-0-0-921ca6ff822e235b5700fc862356f5bc
-
-#EXTINF:0,[18:35 06/10] China vs Tajikistan | BLV: BLV Cu Cai [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912091_lsd.m3u8?auth_key=1791262554-0-0-a1ee1ae0cb9e2f30cd402462bdb55829
-
-#EXTINF:0,[18:35 06/10] China vs Tajikistan | BLV: RICKHANTER [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912122_lhd.m3u8?auth_key=1791262602-0-0-5f1874ab4d32514370a87097094193ff
-
-#EXTINF:0,[18:35 06/10] China vs Tajikistan | BLV: RICKHANTER [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912122_lsd.m3u8?auth_key=1791262602-0-0-b75fb5c245e7d24408ab541606c5c000
-
-#EXTINF:0,[18:35 06/10] China vs Tajikistan | BLV: SAO LA [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=406b260a5462ac733e23a1bae5f8016f&txTime=6ac4136e
-
-#EXTINF:0,[18:35 06/10] China vs Tajikistan | BLV: SAO LA [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912140_lsd.m3u8?txSecret=62529948cb676f2691fbc2a7bd3ef1b9&txTime=6ac4136e
 
 #EXTINF:0,18:35 06/10 China vs Tajikistan (Ga Sieu Gay) [flv] | FPT
 #EXTGRP:FLV
@@ -902,22 +626,6 @@ https://live05.meung.app/live/02456966_tsc.m3u8
 #EXTGRP:Pha Lang TV
 https://pull1.digitalcdn.net/live/e63dcd761546466ab3830e6a8f613ef9/index.m3u8
 
-#EXTINF:0,[19:30 06/10] Enisey vs Saratov | BLV: BLV HENRY [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1791266545-0-0-96cd2c134d86666fc249ea5fc094b9a1
-
-#EXTINF:0,[19:30 06/10] Enisey vs Saratov | BLV: BLV HENRY [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912112_lsd.m3u8?auth_key=1791266545-0-0-c6d0e52c52edb35f4a76c06f65b771b6
-
-#EXTINF:0,[19:30 06/10] Enisey vs Saratov | BLV: CHAN SENA [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1791254249-0-0-4e7519f32b767dde35a0162b0f56c08a
-
-#EXTINF:0,[19:30 06/10] Enisey vs Saratov | BLV: CHAN SENA [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912115_lsd.m3u8?auth_key=1791254249-0-0-fd2b8dcfd56a01cad3a60e67adaac45d
-
 #EXTINF:0,20:00 06/10 Algeria U20 vs Egypt U20 (But Chi) [hls]
 #EXTGRP:Sao Ke TV
 https://wtyi0525.edgemaxcdn.org/live/x22-hd-1111/playlist.m3u8
@@ -925,14 +633,6 @@ https://wtyi0525.edgemaxcdn.org/live/x22-hd-1111/playlist.m3u8
 #EXTINF:0,20:00 06/10 D.R. Congo U23 vs Mauritania U23 (Kai) [hls]
 #EXTGRP:Sao Ke TV
 https://wtyi0525.edgemaxcdn.org/live/x00-hd-1111/playlist.m3u8
-
-#EXTINF:0,[20:45 06/10] Azerbaijan U21 vs Gibraltar U21 | BLV: DO TU TAI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1791236318-0-0-24d104f61c1097e764758935e4fd2b80
-
-#EXTINF:0,[20:45 06/10] Azerbaijan U21 vs Gibraltar U21 | BLV: DO TU TAI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-607552_lsd.m3u8?auth_key=1791236318-0-0-5b856a0341d331d93ebd8b4c824f5950
 
 #EXTINF:0,20:45 06/10 Azerbaijan U21 vs Gibraltar U21 (BLV POCARI) [flv] | FPT
 #EXTGRP:FLV
@@ -954,30 +654,6 @@ https://wtyi0525.edgemaxcdn.org/live/x1-hd-1111/playlist.m3u8
 #EXTGRP:FLV
 https://live05.meung.app/live/07428422_tsc.flv
 
-#EXTINF:0,[21:00 06/10] India vs Uruguay | BLV: BLV ENZO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1791256631-0-0-1dd05afd09ed84f7cc66b28997e61db4
-
-#EXTINF:0,[21:00 06/10] India vs Uruguay | BLV: BLV ENZO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-380460_lsd.m3u8?auth_key=1791256631-0-0-9870b1aac31907deb93e9397ff756713
-
-#EXTINF:0,[21:00 06/10] India vs Uruguay | BLV: BLV DOM [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1791256391-0-0-33dd53a73b7443a229c267570cef1f72
-
-#EXTINF:0,[21:00 06/10] India vs Uruguay | BLV: BLV DOM [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912110_lsd.m3u8?auth_key=1791256391-0-0-99cbea865018b72798c1f9d435b3c2d3
-
-#EXTINF:0,[21:00 06/10] India vs Uruguay | BLV: CURRY [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1791236852-0-0-e4e2dfe652d03b8f5e15ea3763be4e2b
-
-#EXTINF:0,[21:00 06/10] India vs Uruguay | BLV: CURRY [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-622240_lsd.m3u8?auth_key=1791236852-0-0-3d851722ef6a202c58aa4957d0548f1f
-
 #EXTINF:0,21:00 06/10 India vs Uruguay (Ga Sieu Quy) [flv] | FPT
 #EXTGRP:FLV
 https://live2.zktsva.app/live/304565.flv
@@ -985,22 +661,6 @@ https://live2.zktsva.app/live/304565.flv
 #EXTINF:0,21:00 06/10 India vs Uruguay (Nguoi Kien) [flv] | FPT
 #EXTGRP:FLV
 https://playback.livetl002.com/live/6a439a7fb89dded67b208b87.flv
-
-#EXTINF:0,[21:00 06/10] Kazakhstan vs Faroe Islands | BLV: BO TUOI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1791236317-0-0-c1df33104c7744d8a5ab32696949cf8c
-
-#EXTINF:0,[21:00 06/10] Kazakhstan vs Faroe Islands | BLV: BO TUOI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-620797_lsd.m3u8?auth_key=1791236317-0-0-7258dd6992a289f71b5abc182a611faf
-
-#EXTINF:0,[21:00 06/10] Kazakhstan vs Faroe Islands | BLV: CR Buoi [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=0e684d7959c41edfae34d20779f345dd&txTime=6ac4aec0
-
-#EXTINF:0,[21:00 06/10] Kazakhstan vs Faroe Islands | BLV: CR Buoi [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-387694_lsd.m3u8?txSecret=bf495b2045061888c606cce749150a65&txTime=6ac4aec0
 
 #EXTINF:0,21:00 06/10 Kazakhstan vs Faroe Islands (Cris) [flv] | FPT
 #EXTGRP:FLV
@@ -1066,65 +726,9 @@ https://wtyi0525.edgemaxcdn.org/live/x31-hd-1111/playlist.m3u8
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/18812304_tsc.m3u8
 
-#EXTINF:0,[22:00 06/10] Felgueiras U23 vs Estrela FC U23 | BLV: BLV FIREMAN [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1791236611-0-0-584587f32fabfd9e4bc5a181565bf7e7
-
-#EXTINF:0,[22:00 06/10] Felgueiras U23 vs Estrela FC U23 | BLV: BLV FIREMAN [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-991140_lsd.m3u8?auth_key=1791236611-0-0-a0c4c09b06577825ff92190ce0582fa8
-
 #EXTINF:0,22:00 06/10 Felgueiras U23 vs Estrela FC U23 (Ca Map) [flv] | FPT
 #EXTGRP:FLV
 https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.flv
-
-#EXTINF:0,[22:45 06/10] Hapoel Holon vs Cholet | BLV: A CHE [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-356042_lhd.m3u8?auth_key=1791265505-0-0-3e2ce1fae745a8f86aa37e0e7ea3cd9d
-
-#EXTINF:0,[22:45 06/10] Hapoel Holon vs Cholet | BLV: A CHE [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-356042_lsd.m3u8?auth_key=1791265505-0-0-4613ae50d71d41e688ab66ad52a301d7
-
-#EXTINF:0,[23:00 06/10] Germany U21 vs Georgia U21 | BLV: A PAO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1791232315-0-0-86212d8c03e4e636354b326d13b2b67b
-
-#EXTINF:0,[23:00 06/10] Germany U21 vs Georgia U21 | BLV: A PAO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-235232_lsd.m3u8?auth_key=1791232315-0-0-aadd387aca3fca2e88e3aa80ee51077a
-
-#EXTINF:0,[23:00 06/10] Germany U21 vs Georgia U21 | BLV: BLV LUCAS [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1791236614-0-0-bd380b2aad4047a834de9b0863440807
-
-#EXTINF:0,[23:00 06/10] Germany U21 vs Georgia U21 | BLV: BLV LUCAS [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-304148_lsd.m3u8?auth_key=1791236614-0-0-fc70ca8b1a01184b3be5492ca0ddc401
-
-#EXTINF:0,[23:00 06/10] Germany U21 vs Georgia U21 | BLV: XUAN SON [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=b4ef0045c6f0cd3d6c04f374c3ed2178&txTime=6ac4602d
-
-#EXTINF:0,[23:00 06/10] Germany U21 vs Georgia U21 | BLV: XUAN SON [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-501412_lsd.m3u8?txSecret=95d629386874f4f8139ddc6ba623dfbf&txTime=6ac4602d
-
-#EXTINF:0,[23:00 06/10] Latvia U21 vs Malta U21 | BLV: XUAN TOC DO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=31c865b4ef982ee074f22ff9284bb969&txTime=6ac42224
-
-#EXTINF:0,[23:00 06/10] Latvia U21 vs Malta U21 | BLV: XUAN TOC DO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-610518_lsd.m3u8?txSecret=fc90e04bdfc4abde27c17a3785237016&txTime=6ac42224
-
-#EXTINF:0,[23:00 06/10] Russia vs Nigeria | BLV: CONG CHAT [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=45453a37c0a87559d3c4d37e3e56095d&txTime=6ac4af07
-
-#EXTINF:0,[23:00 06/10] Russia vs Nigeria | BLV: CONG CHAT [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-291277_lsd.m3u8?txSecret=46cd11782f5a227d7bd770d1890e34bd&txTime=6ac4af07
 
 #EXTINF:0,23:00 06/10 Russia vs Nigeria (Thichduthu) [flv] | FPT
 #EXTGRP:FLV
@@ -1206,62 +810,6 @@ https://cdnflv.xbdbotv.live/live/MTkzODUzNTI6dWppY2ViaXFnN2Fmazdhendla3Q3azE3OnB
 #EXTGRP:BiaomTV
 https://cdnhls.xbdbotv.live/live/MTkzODUzNTI6dWppY2ViaXFnN2Fmazdhendla3Q3azE3OnByMHVjYWpnNmtmd250bzk3aWdqbmwwZQ/index.m3u8
 
-#EXTINF:0,[23:30 06/10] Denmark U21 vs Belgium U21 | BLV: THACH TU [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=bd468a1521081e7e02da60482352c69c&txTime=6ac45f80
-
-#EXTINF:0,[23:30 06/10] Denmark U21 vs Belgium U21 | BLV: THACH TU [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912116_lsd.m3u8?txSecret=042b6837df3224f027924a1e7edbf3a3&txTime=6ac45f80
-
-#EXTINF:0,[23:30 06/10] Peristeri vs Bamberg | BLV: HUNTER [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=d0a7d0b6890639ea7494583170448c89&txTime=6ac4d10c
-
-#EXTINF:0,[23:30 06/10] Peristeri vs Bamberg | BLV: HUNTER [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-558264_lsd.m3u8?txSecret=26ffc3649dfa8b1728d27e2c1c087795&txTime=6ac4d10c
-
-#EXTINF:0,[23:30 06/10] Portugal U21 vs Czechia Republic U21 | BLV: BLV A TINH [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912139_lhd.m3u8?txSecret=0671b42dd495bd9f4e43c6ff79e8ecb5&txTime=6ac4ab16
-
-#EXTINF:0,[23:30 06/10] Portugal U21 vs Czechia Republic U21 | BLV: BLV A TINH [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912139_lsd.m3u8?txSecret=804d7bd3942ecdee64d7627c5e4482bd&txTime=6ac4ab16
-
-#EXTINF:0,[23:30 06/10] Portugal U21 vs Czechia Republic U21 | BLV: BLV BAY [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1791236310-0-0-c0956b3ed9a20cc90d095e58c3deb2a5
-
-#EXTINF:0,[23:30 06/10] Portugal U21 vs Czechia Republic U21 | BLV: BLV BAY [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-621843_lsd.m3u8?auth_key=1791236310-0-0-e86c14c5b9046f28d125b2e04d15f95e
-
-#EXTINF:0,[23:30 06/10] Portugal U21 vs Czechia Republic U21 | BLV: NGUOI CA [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1791236510-0-0-795da0d43f313d2b4fb8f2297f709654
-
-#EXTINF:0,[23:30 06/10] Portugal U21 vs Czechia Republic U21 | BLV: NGUOI CA [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912143_lsd.m3u8?auth_key=1791236510-0-0-22e0c24af069a7186f9b015d296b8ba4
-
-#EXTINF:0,[23:30 06/10] Wales U21 vs Austria U21 | BLV: BLV XO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912132_lhd.m3u8?txSecret=c401aebfb8e18dc7005c63f9cc8e6c4a&txTime=6ac4607f
-
-#EXTINF:0,[23:30 06/10] Wales U21 vs Austria U21 | BLV: BLV XO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912132_lsd.m3u8?txSecret=e3f340ff2c85b19031a5462a58aa61f4&txTime=6ac4607f
-
-#EXTINF:0,[23:30 06/10] Wales U21 vs Austria U21 | BLV: TUAN CUI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912138_lhd.m3u8?auth_key=1791236445-0-0-c1e618897953cb0b64788f49dfd92f63
-
-#EXTINF:0,[23:30 06/10] Wales U21 vs Austria U21 | BLV: TUAN CUI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912138_lsd.m3u8?auth_key=1791236445-0-0-cec561b8613a9d1de215da4f3a4995e9
-
 #EXTINF:0,23:30 | Doi tuyen U21 Dan Mach vs Bi U21 | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/07808742_tsc.m3u8
@@ -1277,46 +825,6 @@ https://cdnflv.xbdbotv.live/live/MTkzODU0OTI6bjlsaDFnc2lrZDhzZjZhZW5oZjl2cG9xOnJ
 #EXTINF:0,[23:45-06/10] Ha Lan U21 vs Bosnia-Herzegovina U21 [U21 Chau Au] [HLS]
 #EXTGRP:BiaomTV
 https://cdnhls.xbdbotv.live/live/MTkzODU0OTI6bjlsaDFnc2lrZDhzZjZhZW5oZjl2cG9xOnJidTBiNGNkNThpd25kY3ZuN2dzd3N3Yw/index.m3u8
-
-#EXTINF:0,[23:45 06/10] Netherlands U21 vs Bosnia and Herzegovina U21 | BLV: BLV RYO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1791236500-0-0-98ca60da59eeb281c64ea8154a937d6b
-
-#EXTINF:0,[23:45 06/10] Netherlands U21 vs Bosnia and Herzegovina U21 | BLV: BLV RYO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-602019_lsd.m3u8?auth_key=1791236500-0-0-9d9c99c3543113be104ec324c01a24ea
-
-#EXTINF:0,[23:45 06/10] Netherlands U21 vs Bosnia and Herzegovina U21 | BLV: KENCHU [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1791236700-0-0-30aa66388c981703e01ae0d85271cf78
-
-#EXTINF:0,[23:45 06/10] Netherlands U21 vs Bosnia and Herzegovina U21 | BLV: KENCHU [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-9912124_lsd.m3u8?auth_key=1791236700-0-0-74eb7d892f6b1bf08121813bdfa5fa7d
-
-#EXTINF:0,[23:45 06/10] Netherlands U21 vs Bosnia and Herzegovina U21 | BLV: MP3 [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-621840_lhd.m3u8?txSecret=02211e8b4d71b1dc96f63a4af9873c5e&txTime=6ac41cad
-
-#EXTINF:0,[23:45 06/10] Netherlands U21 vs Bosnia and Herzegovina U21 | BLV: MP3 [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-621840_lsd.m3u8?txSecret=9e73257a40a139306ea6ab605ec3874f&txTime=6ac41cad
-
-#EXTINF:0,[23:45 06/10] Norway U21 vs Israel U21 | BLV: TRA DA [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1791236574-0-0-a241e073789ccfcc7ca85ace1544b2fa
-
-#EXTINF:0,[23:45 06/10] Norway U21 vs Israel U21 | BLV: TRA DA [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-603914_lsd.m3u8?auth_key=1791236574-0-0-2086329e2cc1a93a8d2f70584e1d5853
-
-#EXTINF:0,[23:45 06/10] Norway U21 vs Israel U21 | BLV: VINFAST [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1791236520-0-0-63b2c535bc5ae89905a9d094aca72654
-
-#EXTINF:0,[23:45 06/10] Norway U21 vs Israel U21 | BLV: VINFAST [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-617313_lsd.m3u8?auth_key=1791236520-0-0-2e5936c6328076246569853ccadf1846
 
 #EXTINF:0,00:00 | DTQG Algeria vs Niger | BLV
 #EXTGRP:CoLaTV
@@ -1361,22 +869,6 @@ https://cdnflv.xbdbotv.live/live/MTk2NzY2NjU6aGd5eDdwZGEwMmRlNWExZXZhMThvNnRnOm5
 #EXTINF:0,[01:45-07/10] Croatia vs Tay Ban Nha [UEFA Nations League] [HLS]
 #EXTGRP:BiaomTV
 https://cdnhls.xbdbotv.live/live/MTk2NzY2NjU6aGd5eDdwZGEwMmRlNWExZXZhMThvNnRnOm5obWZud3oxbjltMWpycTUwaG85bzhxOQ/index.m3u8
-
-#EXTINF:0,[01:45 07/10] England vs Czechia | BLV: BLV PIRLO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912127_lhd.m3u8?txSecret=44e5412fbb50542d6d196bd5d6756dd5&txTime=6ac4c59f
-
-#EXTINF:0,[01:45 07/10] England vs Czechia | BLV: BLV PIRLO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912127_lsd.m3u8?txSecret=f044027f97edaf5f757bf09fabd03251&txTime=6ac4c59f
-
-#EXTINF:0,[01:45 07/10] Estonia vs Iceland | BLV: BLV A WIN [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1791248519-0-0-e5da0bb7ded5dd15e7bb83520ab3f700
-
-#EXTINF:0,[01:45 07/10] Estonia vs Iceland | BLV: BLV A WIN [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-536185_lsd.m3u8?auth_key=1791248519-0-0-7a7879164c1ba7ceb4c7fbc3cac831c3
 
 #EXTINF:0,[01:45-07/10] Scotland vs Slovenia [UEFA Nations League] [FLV]
 #EXTGRP:FLV
@@ -1502,14 +994,6 @@ https://live05.meung.app/live/02456966_tsc.m3u8
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/87547578_tsc.m3u8
 
-#EXTINF:0,[04:00 07/10] Saint Vincent and the Grenadines vs Sint Maarten | BLV: BLV CHIVAS [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=e5523f45996d6622295c8ad80ab2574e&txTime=6ac4a9d5
-
-#EXTINF:0,[04:00 07/10] Saint Vincent and the Grenadines vs Sint Maarten | BLV: BLV CHIVAS [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-485739_lsd.m3u8?txSecret=f75f0e9ed349322e28c319cdad255b48&txTime=6ac4a9d5
-
 #EXTINF:0,04:00 07/10 Saint Vincent and the Grenadines vs Sint Maarten (NGUOI SOI) [flv]
 #EXTGRP:FLV
 https://flv.lauthaitv.cc/live/svg-sint-concacaf.flv
@@ -1521,22 +1005,6 @@ https://hls.lauthaitv.cc/live/svg-sint-concacaf/index.m3u8
 #EXTINF:0,04:00 | Thanh Vincent Grenadines vs Sint Maarten | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/99121525_tsc.m3u8
-
-#EXTINF:0,[06:00 07/10] Antigua and Barbuda vs Aruba | BLV: CHAN DE [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-621887_lhd.m3u8?auth_key=1791255252-0-0-ce2230ef6261f7cfb80ee986b56f6ff8
-
-#EXTINF:0,[06:00 07/10] Antigua and Barbuda vs Aruba | BLV: CHAN DE [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-621887_lsd.m3u8?auth_key=1791255252-0-0-981f801542ca03890ba0f9f1d3862720
-
-#EXTINF:0,[06:00 07/10] Antigua and Barbuda vs Aruba | BLV: SEU DAU DO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-627318_lhd.m3u8?auth_key=1791244358-0-0-942688d6e1133c231eb434215ffbf60c
-
-#EXTINF:0,[06:00 07/10] Antigua and Barbuda vs Aruba | BLV: SEU DAU DO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-627318_lsd.m3u8?auth_key=1791244358-0-0-d25fc6c8928d3d386481f4dbb74430b9
 
 #EXTINF:0,06:00 | Argentina vs Benin | BLV
 #EXTGRP:CoLaTV
@@ -1622,14 +1090,6 @@ https://flv.lauthaitv.cc/live/mex-chi-intfr.flv
 #EXTGRP:S8 TV
 https://hls.lauthaitv.cc/live/mex-chi-intfr/index.m3u8
 
-#EXTINF:0,[10:00 07/10] Colombia vs Peru | BLV: ASHAHI [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-626841_lhd.m3u8?auth_key=1791255104-0-0-99f74c0adea645b53235cda6a5f903d8
-
-#EXTINF:0,[10:00 07/10] Colombia vs Peru | BLV: ASHAHI [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-626841_lsd.m3u8?auth_key=1791255104-0-0-dff7464aabe4e38b2ea3f2f892c71ed0
-
 #EXTINF:0,14:00 07/10 GAM Esports vs FlyQuest (HD MARTY)
 #EXTGRP:FLV
 https://live2.pro2cdnlive.com/live/channel-30.flv
@@ -1646,14 +1106,6 @@ https://live05.meung.app/live/14830711_tsc.m3u8
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/87379114_tsc.m3u8
 
-#EXTINF:0,[16:00 07/10] Urawa Red Diamonds vs RB Omiya Ardija | BLV: BLV HEHE [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1791244513-0-0-42632dfdf1952a5ecac5014b4e527d90
-
-#EXTINF:0,[16:00 07/10] Urawa Red Diamonds vs RB Omiya Ardija | BLV: BLV HEHE [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-622241_lsd.m3u8?auth_key=1791244513-0-0-e3f25bfc921c9609046372b681d07590
-
 #EXTINF:0,16:00 07/10 GAM Esports vs Shopify Rebellion (HD MARTY)
 #EXTGRP:FLV
 https://live2.pro2cdnlive.com/live/channel-30.flv
@@ -1666,14 +1118,6 @@ https://live2.pro2cdnlive.com/live/channel30.flv
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/02456966_tsc.m3u8
 
-#EXTINF:0,[16:30 07/10] Cerezo Osaka vs Kagoshima United | BLV: BLV CO [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1791255183-0-0-75c168802255590b975bff3c2df081d3
-
-#EXTINF:0,[16:30 07/10] Cerezo Osaka vs Kagoshima United | BLV: BLV CO [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-582342_lsd.m3u8?auth_key=1791255183-0-0-f3f1d6327a85ce294bfd3a08c9ee3955
-
 #EXTINF:0,16:30 | Cerezo Osaka vs Kagoshima United | BLV
 #EXTGRP:CoLaTV
 https://live05.meung.app/live/14707124_tsc.m3u8
@@ -1685,14 +1129,6 @@ https://live05.meung.app/live/75748097_tsc.m3u8
 #EXTINF:0,16:30 07/10 Sanfrecce Hiroshima vs Iwaki FC (LY LEN LUA) [geo]
 #EXTGRP:Pha Lang TV
 https://pull1.digitalcdn.net/live/4d78e3263f4547e5a8ea6972189b0730/index.m3u8
-
-#EXTINF:0,[17:00 07/10] Gainare Tottori vs Tokyo Verdy | BLV: BLV WUKONG [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1791236442-0-0-453c6e858122ddddc4747dc3a26499b7
-
-#EXTINF:0,[17:00 07/10] Gainare Tottori vs Tokyo Verdy | BLV: BLV WUKONG [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niues.live/live/stream-511367_lsd.m3u8?auth_key=1791236442-0-0-8a8e167956281d3ba5a8bb50cd5f16a8
 
 #EXTINF:0,17:00 | CLB Tokyo vs Shonan Bellmare | BLV
 #EXTGRP:CoLaTV
@@ -2501,54 +1937,6 @@ https://hls.iill.top/api/TNT-Sports-3/index.m3u8
 #EXTINF:0,TNT Sports 4
 #EXTGRP:THE THAO QUOC TE
 https://hls.iill.top/api/TNT-Sports-4/index.m3u8
-
-#EXTINF:0,Tuong thuat: CON NL - Costa Rica vs Haiti | BLV: Bo leo rao [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-133824_lhd.m3u8?txSecret=6a2eb2a4540a2b2b7e8e8bef4b895214&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: CON NL - Costa Rica vs Haiti | BLV: Bo leo rao [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-133824_lsd.m3u8?txSecret=e47ea9248690843eac093cedf75bec68&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: FIFA ASEAN - Indonesia vs Thailand | BLV: Ran o day song [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912079_lhd.m3u8?txSecret=89f00f98014832be3a0183fc30e8dd4a&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: FIFA ASEAN - Indonesia vs Thailand | BLV: Ran o day song [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-9912079_lsd.m3u8?txSecret=c60cb7ffd9ff8fb57c68f11ea2c8f570&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: FIFA ASEAN - Malaysia vs Vietnam | BLV: Huou dau co [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-179093_lhd.m3u8?txSecret=06d10cc6f65a58e836949f72b39f158c&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: FIFA ASEAN - Malaysia vs Vietnam | BLV: Huou dau co [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-179093_lsd.m3u8?txSecret=5a08d3168f620dab03e189b549ccc39f&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: MEX WD1 - Pachuca Women vs Toluca Women | BLV: Tho giang ho [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-152898_lhd.m3u8?txSecret=759fdf9892b50e85522b7cb385f62390&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: MEX WD1 - Pachuca Women vs Toluca Women | BLV: Tho giang ho [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-152898_lsd.m3u8?txSecret=268415c8c84331a478209f7b11b142eb&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: UEFA NL - France vs Belgium | BLV: Meo meo meo [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-343500_lhd.m3u8?txSecret=4deea87962bb027c41e4b7d3466a823e&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: UEFA NL - France vs Belgium | BLV: Meo meo meo [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-343500_lsd.m3u8?txSecret=ad2b3d30c3eae49544718544c819e5dc&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: UEFA NL - Italy vs Turkiye | BLV: Ga xao sa ot [HD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-133277_lhd.m3u8?txSecret=5018760673bf58c8f92fc7a0431f2599&txTime=6ac4d838
-
-#EXTINF:0,Tuong thuat: UEFA NL - Italy vs Turkiye | BLV: Ga xao sa ot [SD M3U8]
-#EXTGRP:Socolive TV
-https://pull.niur.live/live/stream-133277_lsd.m3u8?txSecret=8801ee7a2e25d05edb64436e2c8c0831&txTime=6ac4d838
 
 #EXTINF:0,TUR-ITA
 #EXTGRP:THE THAO QUOC TE
