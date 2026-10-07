@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-07 11:31 ICT
-# Total   : 728
+# Updated : 2026-10-07 13:20 ICT
+# Total   : 731
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://live.fptplay53.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -2138,6 +2138,16 @@ http://45.192.97.170:8880/play/1132.m3u8
 #EXTINF:-1 tvg-logo="" group-title="THỂ THAO QUỐC TẾ",足球
 http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
 
+#EXTINF:-1 tvg-logo="" group-title="Highlight","Điệu Tango cuối" tuyệt đẹp của Messi & di sản vĩ đại của huyền thoại [Hiệp 1]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-07/cp_special_asian_cup_ban_quyen-1791339737-trinhdien_dronemessi1.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight","Điệu Tango cuối" tuyệt đẹp của Messi & di sản vĩ đại của huyền thoại [Hiệp 2]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-07/cp_special_asian_cup_ban_quyen-1791339737-trinhdien_dronemessi2.m3u8
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Anh - CH Séc: Harry Kane chói sáng, nối dài mạch thăng hoa (Nations League)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2187,6 +2197,11 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-07/cp_special_nation_leag
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-07/1791322481-code_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Ronaldinho, Neymar nói lời đặc biệt về Messi ngày M10 chia tay ĐT Argentina
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-07/1791335443-messi_ao_720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Albania vs San Marino
 #EXTVLCOPT:http-referrer=https://dasfootball.com/albania-vs-san-marino-highlights-2026-10-06/
