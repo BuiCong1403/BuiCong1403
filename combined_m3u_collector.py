@@ -12,6 +12,7 @@ from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import parse_qs
+from urllib.parse import quote
 from urllib.parse import urljoin
 from urllib.parse import urlparse
 from urllib.parse import unquote
@@ -1219,6 +1220,74 @@ def best_dasfootball_highlight_url(urls):
     mp4_candidates = [url for url in candidates if url.lower().split("?", 1)[0].endswith(".mp4")]
     hls_candidates = [url for url in candidates if is_hls_url(url)]
     return best_highlight_url(mp4_candidates or hls_candidates or candidates)
+
+
+def streamable_video_id(url):
+    parsed = urlparse(clean_text(url))
+    if "streamable.com" not in parsed.netloc.lower():
+        return ""
+    path_parts = [part for part in parsed.path.strip("/").split("/") if part]
+    if not path_parts:
+        return ""
+    if path_parts[0] in {"e", "o"} and len(path_parts) > 1:
+        return clean_text(path_parts[1])
+    return clean_text(path_parts[0])
+
+
+def resolve_streamable_video_url(url):
+    video_id = streamable_video_id(url)
+    if not video_id:
+        return ""
+    api_url = f"https://api.streamable.com/videos/{quote(video_id)}"
+    try:
+        data = fetch_json(
+            api_url,
+            headers={
+                "Accept": "application/json, */*",
+                "Referer": DASFOOTBALL_BASE_URL.rstrip("/") + "/",
+                "User-Agent": UA,
+            },
+            timeout=20,
+        )
+    except Exception:
+        data = {}
+    files = data.get("files") if isinstance(data, dict) else {}
+    candidates = []
+    if isinstance(files, dict):
+        for key in ("mp4", "mp4-mobile", "webm"):
+            info = files.get(key)
+            if isinstance(info, dict):
+                candidates.append(clean_text(info.get("url")))
+        for info in files.values():
+            if isinstance(info, dict):
+                candidates.append(clean_text(info.get("url")))
+    candidates = [
+        html.unescape(url).replace("\\u0026", "&").replace("\\/", "/")
+        for url in candidates
+        if is_valid_highlight_url(url)
+    ]
+    return best_dasfootball_highlight_url(candidates)
+
+
+def resolve_dasfootball_video_urls(raw_urls):
+    resolved = []
+    seen = set()
+    for raw_url in raw_urls:
+        url = html.unescape(clean_text(raw_url)).replace("\\u0026", "&").replace("\\/", "/")
+        if not url:
+            continue
+        if is_valid_highlight_url(url) and not is_hls_init_segment_url(url):
+            candidates = [url]
+        elif streamable_video_id(url):
+            candidates = [resolve_streamable_video_url(url)]
+        else:
+            candidates = []
+        for candidate in candidates:
+            candidate = clean_text(candidate)
+            if candidate and candidate not in seen:
+                seen.add(candidate)
+                resolved.append(candidate)
+    return resolved
 
 
 def best_24h_highlight_url(urls):
@@ -6457,6 +6526,11 @@ def extract_dasfootball_media_urls(html_text):
         ):
             seen.add(stream_url)
             urls.append(stream_url)
+    for match in re.finditer(r"https?://(?:www\.)?streamable\.com/(?:e/|o/)?[A-Za-z0-9_-]+", text, re.I):
+        stream_url = clean_text(match.group(0)).rstrip("\\.,);]")
+        if stream_url and stream_url not in seen:
+            seen.add(stream_url)
+            urls.append(stream_url)
     return urls
 
 
@@ -6507,11 +6581,7 @@ def dasfootball_jsonld_channels(html_text, page_url, allowed_dates, source, base
             value = video.get(key)
             if isinstance(value, str):
                 raw_urls.append(value)
-        stream_urls = [
-            urljoin(base_url, clean_text(url))
-            for url in raw_urls
-            if is_valid_highlight_url(url) and not is_hls_init_segment_url(url)
-        ]
+        stream_urls = resolve_dasfootball_video_urls(urljoin(base_url, clean_text(url)) for url in raw_urls)
         stream_url = best_dasfootball_highlight_url(stream_urls)
         if not stream_url:
             continue
@@ -6552,8 +6622,9 @@ def dasfootball_embedded_video_channels(html_text, page_url, allowed_dates, sour
         re.I | re.S,
     )
     for match in pattern.finditer(text):
-        stream_url = clean_text(decode_json_string(match.group("stream")).replace("\\/", "/").replace("\\u0026", "&"))
-        if not is_valid_highlight_url(stream_url) or is_hls_init_segment_url(stream_url):
+        stream_urls = resolve_dasfootball_video_urls([decode_json_string(match.group("stream"))])
+        stream_url = best_dasfootball_highlight_url(stream_urls)
+        if not stream_url:
             continue
         if stream_url in seen:
             continue
@@ -6688,7 +6759,7 @@ def collect_dasfootball_highlights():
             return []
         logo_match = re.search(r'property="og:image"\s+content="([^"]+)"', html_text, re.I)
         logo = logo_match.group(1) if logo_match else ""
-        stream_urls = extract_dasfootball_media_urls(html_text)
+        stream_urls = resolve_dasfootball_video_urls(extract_dasfootball_media_urls(html_text))
         stream_url = best_dasfootball_highlight_url(stream_urls)
         if not stream_url:
             return []
