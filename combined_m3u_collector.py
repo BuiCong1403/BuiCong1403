@@ -66,12 +66,12 @@ BONG_LAU_API_URL = os.environ.get(
     "BONG_LAU_API_URL",
     "https://api-v2.chuoichientv.net/v2/matches?page=1&limit=200&sport=&type=blv",
 )
-KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://khandai3.link")
+KHANDAIA_FRONTEND_URL = os.environ.get("KHANDAIA_FRONTEND", "https://xoiche.live")
 KHANDAIA_FRONTEND_CANDIDATES = [
     value.strip().rstrip("/")
     for value in os.environ.get(
         "KHANDAIA_FRONTEND_CANDIDATES",
-        "https://khandai3.link,https://khandai2.link",
+        "https://xoiche.live,https://xoiche2.live",
     ).split(",")
     if value.strip()
 ]
@@ -128,9 +128,9 @@ GIOVANG_USE_JASMIN_FALLBACK = os.environ.get("GIOVANG_USE_JASMIN_FALLBACK", "0")
     "yes",
     "on",
 }
-PHAOHOA_API_BASE = (os.environ.get("PHAOHOA_API") or "https://xoiche.tv").rstrip("/")
-PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://xoiche.tv").rstrip("/")
-XOICHE_BASE_URL = (os.environ.get("XOICHE_BASE_URL") or PHAOHOA_FRONTEND_URL or "https://xoiche.tv").rstrip("/")
+PHAOHOA_API_BASE = (os.environ.get("PHAOHOA_API") or "https://xoiche.live").rstrip("/")
+PHAOHOA_FRONTEND_URL = (os.environ.get("PHAOHOA_FRONTEND") or "https://xoiche.live").rstrip("/")
+XOICHE_BASE_URL = (os.environ.get("XOICHE_BASE_URL") or PHAOHOA_FRONTEND_URL or "https://xoiche.live").rstrip("/")
 XOICHE_SOURCE_WORKERS = int(os.environ.get("XOICHE_SOURCE_WORKERS", "8") or "8")
 XOICHE_MAX_SOURCE_MATCHES = int(os.environ.get("XOICHE_MAX_SOURCE_MATCHES", "80") or "80")
 XOICHE_SOURCE_TOTAL_TIMEOUT = int(os.environ.get("XOICHE_SOURCE_TOTAL_TIMEOUT", "35") or "35")
@@ -663,6 +663,8 @@ def phaohoa_frontend_candidates():
         PHAOHOA_FRONTEND_URL,
         KHANDAIA_INTERNAL_API_BASE,
         KHANDAIA_FRONTEND_URL,
+        "https://xoiche.live",
+        "https://xoiche2.live",
         "https://xoiche.tv",
         "https://khandai3.link",
         "https://phaohoa1.live",
@@ -2256,6 +2258,7 @@ def collect_khandaia_nuxt(frontend_url):
             for field in ("stream_url", "backup_stream_url", "flv_stream_url"):
                 stream_rows.append((clean_text(commentator.get(field)), label))
         for stream_url, label in stream_rows:
+            stream_url = urljoin(site_url, stream_url)
             if not is_valid_stream_url(stream_url) or stream_url in seen:
                 continue
             seen.add(stream_url)
@@ -2502,6 +2505,8 @@ def collect_django_matches_api(
         url_match = re.search(r"https?://\S+", stream_url)
         if url_match:
             stream_url = url_match.group(0).rstrip(".,);]")
+        else:
+            stream_url = urljoin(api_base + "/", stream_url)
         if not (is_hls_url(stream_url) or is_flv_url(stream_url)):
             return
         event_datetime = parse_iso_to_ict_datetime(match_item.get("start_time"))
@@ -3050,7 +3055,7 @@ def collect_xoiche_phaohoa(base_url=None):
 def collect_phaohoa():
     source = "PhaoHoaTV"
     log(f"[{source}] Fetch API")
-    if "xoiche.tv" in PHAOHOA_API_BASE or "xoiche.tv" in PHAOHOA_FRONTEND_URL or "xoiche.tv" in XOICHE_BASE_URL:
+    if any("xoiche" in value for value in (PHAOHOA_API_BASE, PHAOHOA_FRONTEND_URL, XOICHE_BASE_URL)):
         channels = collect_xoiche_phaohoa(XOICHE_BASE_URL)
         if len(channels) < PHAOHOA_TTCB_MIN_LINKS:
             # XoiChe publishes source URLs close to kickoff. Khandai's Nuxt
@@ -3079,7 +3084,7 @@ def collect_phaohoa():
             return channels
 
     api_base = discover_phaohoa_api_base()
-    if "xoiche.tv" in api_base:
+    if "xoiche" in api_base:
         channels = collect_xoiche_phaohoa(api_base)
         if channels:
             return channels
