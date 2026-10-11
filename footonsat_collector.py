@@ -218,17 +218,40 @@ def attach_live_streams(matches):
     return matched, len(live_entries)
 
 
-def write_playlist(entries, scheduled_count, source_entry_count):
+def build_schedule_entries(matches):
+    entries = []
+    event_number = 0
+    for match in matches:
+        channels = match.get("channels") or ["Chưa rõ kênh phát"]
+        event_number += 1
+        for index, channel_name in enumerate(channels, start=1):
+            entries.append(
+                {
+                    "key": match_key(match["match"], match["start"]) or (event_number, match["match"]),
+                    "channel": channel_name,
+                    "url": f"https://freem3u.xyz/static/no-signal/low.m3u8?event={event_number}&channel={index}",
+                    "options": [],
+                    "logo": "",
+                    "tvg_id": "",
+                    "match": match,
+                }
+            )
+    return entries
+
+
+def write_playlist(entries, scheduled_count, source_entry_count, real_stream_count=0):
     generated = datetime.now(TZ_VN).strftime("%Y-%m-%d %H:%M ICT")
     matched_games = len({entry["key"] for entry in entries})
     lines = [
         "#EXTM3U",
         f"# Updated : {generated}",
-        f"# Total links   : {len(entries)}",
-        f"# Matched games : {matched_games}/{scheduled_count}",
+        f"# Total channels: {len(entries)}",
+        f"# Total matches : {scheduled_count}",
+        f"# Real streams  : {real_stream_count}",
         f"# Source links  : {source_entry_count}",
         "# Lịch FootOnSat: giờ Việt Nam (UTC+7), hôm nay và 2 ngày kế tiếp.",
-        "# Chỉ xuất link thật khớp lịch; trận chưa có stream sẽ không tạo mục giữ chỗ.",
+        "# Mỗi trận là một group theo giờ Việt Nam; các dòng bên trong là kênh phát từ JSON FootOnSat.",
+        "# FootOnSat chỉ cung cấp lịch/kênh phát, không cung cấp luồng video trực tiếp.",
         "",
     ]
     link_numbers = {}
@@ -271,7 +294,16 @@ def main():
             print(f"[FootOnSat] {league}: lỗi {exc}")
 
     matches.sort(key=lambda item: (item["start"], item["short_league"], item["match"].casefold()))
-    entries, source_entry_count = attach_live_streams(matches)
+    entries = build_schedule_entries(matches)
+    real_entries, source_entry_count = attach_live_streams(matches)
+    real_by_key_and_channel = {
+        (entry["key"], clean_text(entry.get("channel")).casefold()): entry
+        for entry in real_entries
+    }
+    for entry in entries:
+        real_entry = real_by_key_and_channel.get((entry["key"], clean_text(entry.get("channel")).casefold()))
+        if real_entry:
+            entry.update(real_entry)
     entries.sort(
         key=lambda item: (
             item["match"]["start"],
@@ -280,10 +312,10 @@ def main():
             item["channel"].casefold(),
         )
     )
-    write_playlist(entries, len(matches), source_entry_count)
-    matched_games = len({entry["key"] for entry in entries})
+    write_playlist(entries, len(matches), source_entry_count, real_stream_count=len(real_entries))
     print(
-        f"[DONE] FootOnSat: {len(entries)} link, {matched_games}/{len(matches)} trận "
+        f"[DONE] FootOnSat: {len(entries)} kênh, {len(matches)} trận "
+        f"({len(real_entries)} link thật khớp lịch) "
         f"từ {today:%d/%m} đến {last_date:%d/%m}"
     )
     print(f"[DONE] M3U: {OUTPUT_PATH}")
