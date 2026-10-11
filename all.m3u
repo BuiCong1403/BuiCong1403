@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-12 06:50 ICT
-# Total   : 636
+# Updated : 2026-10-12 06:52 ICT
+# Total   : 640
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -2125,6 +2125,11 @@ http://45.192.97.170:8880/play/1132.m3u8
 #EXTINF:-1 tvg-logo="" group-title="THỂ THAO QUỐC TẾ",足球
 http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
 
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Crystal Palace - Nottingham Forest: Ngược dòng đẳng cấp (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-12/cp_special_nha_fpt-1791744044-crystalpalace_nottingham_fpt_720p.m3u8
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Barcelona - Getafe: Đại thắng 3 bàn (La Liga)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2174,6 +2179,21 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-11/cp_special_laliga-1791
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-11/cp_special_laliga-1791666817-thedo_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",nữ U17 Việt Nam - U17 Kyrgyzstan: Xuất sắc đoạt vé vàng (Vòng loại châu Á)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-11/1791723978-u17vn_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",đá Hà Nội FC - Bắc Ninh: Vỡ òa bàn thắng phút 78 (V-League) [Hiệp 1 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-11/cp_special_v_league-1791728627-hn-bn-h1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",đá Hà Nội FC - Bắc Ninh: Vỡ òa bàn thắng phút 78 (V-League) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-11/cp_special_v_league-1791728627-hn-bn-h2_720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",1899 Hoffenheim vs Hamburger SV
 #EXTVLCOPT:http-referrer=https://dasfootball.com/1899-hoffenheim-vs-hamburger-sv-highlights-2026-10-10/
