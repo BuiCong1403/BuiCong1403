@@ -1,5 +1,6 @@
 import html
 import base64
+import hashlib
 import json
 import os
 import re
@@ -79,6 +80,10 @@ KHANDAIA_KNOWN_API_BASE = os.environ.get("KHANDAIA_API", "https://sv.khandai-a.x
 KHANDAIA_INTERNAL_API_BASE = os.environ.get("KHANDAIA_INTERNAL_API", KHANDAIA_FRONTEND_URL).rstrip("/")
 COLATV_FRONTEND_URL = os.environ.get("COLATV_FRONTEND", "https://colatv48.live")
 COLATV_API_URL = os.environ.get("COLATV_API", "https://api.cltvlv.com/api/matches")
+BTFY_FRONTEND_URL = os.environ.get("BTFY_FRONTEND_URL", "https://btfy.io/")
+BTFY_API_URL = os.environ.get("BTFY_API_URL", "https://api.gvapi.cc/api/matches")
+BTFY_LIMIT = int(os.environ.get("BTFY_LIMIT", "260") or "260")
+BTFY_GROUP = os.environ.get("BTFY_GROUP", "Rocket50/BTFY")
 BIAOM_SITE_URL = os.environ.get("BIAOM_SITE_URL", "https://biaomtv.pro/")
 BIAOM_SITE_CANDIDATES = [
     value.strip()
@@ -362,7 +367,7 @@ H24_BASE_URL = os.environ.get("H24_BASE_URL", "https://www.24h.com.vn/")
 H24_HIGHLIGHT_DAYS_BACK = int(os.environ.get("H24_HIGHLIGHT_DAYS_BACK", "3") or "3")
 H24_HIGHLIGHT_RETENTION_DAYS = int(os.environ.get("H24_HIGHLIGHT_RETENTION_DAYS", "4") or "4")
 H24_HIGHLIGHT_LIMIT = int(os.environ.get("H24_HIGHLIGHT_LIMIT", "260") or "260")
-HIGHLIGHT_RETENTION_DAYS = int(os.environ.get("HIGHLIGHT_RETENTION_DAYS", "10") or "10")
+HIGHLIGHT_RETENTION_DAYS = int(os.environ.get("HIGHLIGHT_RETENTION_DAYS", "5") or "5")
 H24_CATEGORY_LIMIT = int(os.environ.get("H24_CATEGORY_LIMIT", "32") or "32")
 H24_AJAX_LIMIT = int(os.environ.get("H24_AJAX_LIMIT", "80") or "80")
 H24_AJAX_PAGE_LIMIT = int(os.environ.get("H24_AJAX_PAGE_LIMIT", "8") or "8")
@@ -403,6 +408,21 @@ TV365_ERROR_M3U_URL = os.environ.get(
     "https://raw.githubusercontent.com/TV365-VN/TV365-DATA/refs/heads/main/error.m3u",
 )
 TINHLAGI_SPORT_M3U_URL = os.environ.get("TINHLAGI_SPORT_M3U_URL", "https://tinhlagi.pro/s.m3u")
+TINHLAGI_APP_ACCESS_API = os.environ.get(
+    "TINHLAGI_APP_ACCESS_API",
+    "https://tinhlagi.pro/getlink/access-api.php",
+)
+TINHLAGI_APP_SOURCES_API = os.environ.get(
+    "TINHLAGI_APP_SOURCES_API",
+    "https://tinhlagi.pro/getlink/sources.php",
+)
+TINHLAGI_APP_ACTIVATION_CODE = os.environ.get("TINHLAGI_APP_ACTIVATION_CODE", "tinhlagipro")
+TINHLAGI_APP_PACKAGE = os.environ.get("TINHLAGI_APP_PACKAGE", "app.tinhlagi.pro")
+TINHLAGI_APP_ANDROID_ID = os.environ.get("TINHLAGI_APP_ANDROID_ID", "github-actions")
+TINHLAGI_APP_VERSION_CODE = int(os.environ.get("TINHLAGI_APP_VERSION_CODE", "523") or "523")
+TINHLAGI_APP_UA = os.environ.get("TINHLAGI_APP_UA", "Dalvik/2.1.0")
+TINHLAGI_APP_ENABLE = os.environ.get("TINHLAGI_APP_ENABLE", "1").strip().lower() not in {"0", "false", "no"}
+TINHLAGI_APP_HIGHLIGHT_LIMIT = int(os.environ.get("TINHLAGI_APP_HIGHLIGHT_LIMIT", "300") or "300")
 THETHAOCOBAN_M3U_URL = os.environ.get("THETHAOCOBAN_M3U_URL", "https://thcoban.github.io/ththethao/ttthethao.m3u")
 VANLINH_LIST_URL = os.environ.get("VANLINH_LIST_URL", "https://vanlinh.io.vn/list/")
 VANLINH_CHANNELS_JSON_URL = os.environ.get(
@@ -473,6 +493,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "PhaLangTV",
     "SportflowLiveZ",
     "CoLaTV",
+    "BTFY",
     "MebongTV",
     "BongDaPlusHighlight",
     "24hHighlight",
@@ -481,6 +502,7 @@ MULTI_EVENT_STREAM_SOURCES = {
     "MySportHighlights",
     "SuperSportHighlight",
     "FootballOrginHighlight",
+    "TinhlagiAppHighlight",
 }
 # Default is raw collection for GitHub Actions: keep every non-empty .m3u8 link.
 # Set VERIFY_STREAMS=1 only when you want to test whether streams respond now.
@@ -1081,6 +1103,10 @@ def stream_dedupe_key(channel):
         return ("SuperSportHighlight", url)
     if channel.get("source") == "FootballOrginHighlight":
         return ("FootballOrginHighlight", clean_text(channel.get("dailymotion_id")) or url)
+    if channel.get("source") == "TinhlagiAppHighlight":
+        parsed = urlparse(url)
+        video_id = parse_qs(parsed.query).get("v", [""])[0]
+        return ("TinhlagiAppHighlight", video_id or url)
     if channel.get("source") in {"90PhutHighlight", "DasFootballHighlight"}:
         return ("VideasHighlight", videas_highlight_family_key(url))
     if channel.get("source") == "SportflowLiveZ":
@@ -1171,7 +1197,14 @@ def is_valid_highlight_url(url):
     if not url or not url.startswith(("http://", "https://")):
         return False
     lower = url.lower().split("?", 1)[0]
-    return (is_hls_url(url) or lower.endswith((".mp4", ".webm"))) and ".mpd" not in lower
+    full_lower = url.lower()
+    query = urlparse(url).query.lower()
+    return (
+        is_hls_url(url)
+        or "ext=.m3u8" in query
+        or lower.endswith((".mp4", ".webm"))
+        or full_lower.endswith((".mp4", ".webm"))
+    ) and ".mpd" not in lower
 
 
 def is_rumble_hls_tar_url(url):
@@ -1522,6 +1555,7 @@ PREFERRED_OUTPUT_GROUPS = [
     "Sao K\u00ea TV",
     "Socolive TV",
     "CoLaTV",
+    "Rocket50/BTFY",
     "BiaomTV",
     "MebongTV",
 ]
@@ -1532,10 +1566,12 @@ PREFERRED_SOURCE_PRIORITY = {
     "MySportHighlights": 90,
     "SuperSportHighlight": 88,
     "FootballOrginHighlight": 86,
+    "TinhlagiAppHighlight": 84,
     "GioVang": 80,
     "XoiLacZ": 74,
     "SocoliveTV": 72,
     "CoLaTV": 68,
+    "BTFY": 67,
     "BiaomTV": 64,
     "MebongTV": 60,
     "TinhLaGi": 40,
@@ -1771,6 +1807,7 @@ def is_highlight_source(source):
         "MySportHighlights",
         "SuperSportHighlight",
         "FootballOrginHighlight",
+        "TinhlagiAppHighlight",
     }
 
 
@@ -3474,6 +3511,68 @@ def collect_cola():
     return channels
 
 
+def collect_btfy():
+    source = "BTFY"
+    log(f"[{source}] Fetch API")
+    data = fetch_json_no_cache(
+        BTFY_API_URL,
+        headers={
+            "Accept": "application/json, */*",
+            "Referer": BTFY_FRONTEND_URL,
+            "Origin": BTFY_FRONTEND_URL.rstrip("/"),
+            "User-Agent": UA,
+        },
+    )
+    values = (data.get("data") or {}).values() if isinstance(data.get("data"), dict) else []
+    channels = []
+    seen = set()
+
+    for item in values:
+        event_datetime = parse_epoch_to_ict_datetime(item.get("matchTime"))
+        event_date = event_datetime.date() if event_datetime else parse_epoch_to_ict_date(item.get("matchTime"))
+        dt = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
+        home_name = clean_text(item.get("homeTeamName"))
+        away_name = clean_text(item.get("awayTeamName"))
+        title = " | ".join(part for part in (dt, f"{home_name} vs {away_name}".strip(" vs")) if part)
+        logo = clean_text(item.get("homeTeamLogo"))
+
+        for anchor in item.get("anchorAppointmentVoList") or []:
+            blv = clean_text(anchor.get("nickName") or anchor.get("anchorName")) or "BLV"
+            stream_candidates = []
+            for key in ("playStreamAddress2", "playStreamAddress", "playStreamAddress1", "playStreamAddress3"):
+                stream_candidates.append(clean_text(anchor.get(key)))
+            for server_url in anchor.get("servers") or []:
+                stream_candidates.append(clean_text(server_url))
+
+            for stream_url in stream_candidates:
+                if not is_valid_stream_url(stream_url):
+                    continue
+                dedupe_key = (tokenless_stream_key(stream_url), title, blv)
+                if dedupe_key in seen:
+                    continue
+                seen.add(dedupe_key)
+                suffix = "FLV" if is_flv_url(stream_url) else "M3U8"
+                channels.append(
+                    {
+                        "source": source,
+                        "name": f"{title} | {blv} [{suffix}]",
+                        "group": BTFY_GROUP,
+                        "logo": logo,
+                        "stream_url": stream_url,
+                        "referer": BTFY_FRONTEND_URL,
+                        "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                        "event_date": event_date,
+                        "event_datetime": event_datetime,
+                    }
+                )
+                if len(channels) >= BTFY_LIMIT:
+                    log(f"[{source}] {len(channels)} raw links")
+                    return channels
+
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def biaom_field_from_context(context, field):
     matches = re.findall(rf'{re.escape(field)}\\":\\"((?:\\\\.|[^\\"])*)\\"', context)
     return clean_text(decode_json_string(matches[-1]).rstrip("\\")) if matches else ""
@@ -3743,6 +3842,181 @@ def collect_m3u_playlist(
             )
     log(f"[{source}] {len(channels)} raw links")
     return channels
+
+
+TINHLAGI_APP_CACHE = None
+
+
+def tinhlagi_app_device():
+    raw = f"{TINHLAGI_APP_PACKAGE}:{TINHLAGI_APP_ANDROID_ID}"
+    return hashlib.sha256(raw.encode("utf-8")).hexdigest()
+
+
+def tinhlagi_app_post_json(url, payload, timeout=20):
+    data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
+    headers = {
+        "Content-Type": "application/json; charset=utf-8",
+        "User-Agent": TINHLAGI_APP_UA,
+    }
+    if requests is not None:
+        response = requests.post(url, data=data, headers=headers, timeout=timeout)
+        if response.status_code != 200:
+            raise RuntimeError(f"HTTP {response.status_code}")
+        return response.json()
+    request = Request(url, data=data, headers=headers, method="POST")
+    with urlopen(request, timeout=timeout) as response:
+        return json.loads(response.read().decode("utf-8-sig", errors="replace"))
+
+
+def get_tinhlagi_app_sources():
+    global TINHLAGI_APP_CACHE
+    if TINHLAGI_APP_CACHE is not None:
+        return TINHLAGI_APP_CACHE
+    if not TINHLAGI_APP_ENABLE:
+        TINHLAGI_APP_CACHE = {}
+        return TINHLAGI_APP_CACHE
+
+    source = "TinhLaGiApp"
+    device = tinhlagi_app_device()
+    try:
+        access = tinhlagi_app_post_json(
+            TINHLAGI_APP_ACCESS_API,
+            {
+                "device": device,
+                "versionCode": TINHLAGI_APP_VERSION_CODE,
+                "action": "activate",
+                "code": TINHLAGI_APP_ACTIVATION_CODE,
+            },
+            timeout=20,
+        )
+        token = clean_text(access.get("token"))
+        if not token:
+            log(f"[{source}] No token in access response")
+            TINHLAGI_APP_CACHE = {}
+            return TINHLAGI_APP_CACHE
+        headers = {
+            "User-Agent": TINHLAGI_APP_UA,
+            "X-Device": device,
+            "X-Access-Token": token,
+        }
+        payload = fetch_json(TINHLAGI_APP_SOURCES_API, headers=headers, timeout=20)
+        sources = payload.get("sources") if isinstance(payload, dict) else []
+        source_map = {}
+        for item in sources or []:
+            if not isinstance(item, dict):
+                continue
+            source_id = clean_text(item.get("id"))
+            source_name = clean_text(item.get("name"))
+            source_url = clean_text(item.get("url"))
+            if source_url:
+                source_map[source_id or source_name.lower()] = {
+                    "id": source_id,
+                    "name": source_name,
+                    "url": source_url,
+                    "headers": headers,
+                }
+        log(f"[{source}] {len(source_map)} signed sources")
+        TINHLAGI_APP_CACHE = source_map
+        return TINHLAGI_APP_CACHE
+    except Exception as exc:
+        log(f"[{source}] access error: {exc}")
+        TINHLAGI_APP_CACHE = {}
+        return TINHLAGI_APP_CACHE
+
+
+def collect_tinhlagi_app_m3u(source_name, source_id, group_name, allowed_groups=None):
+    sources = get_tinhlagi_app_sources()
+    item = sources.get(source_id)
+    if not item:
+        log(f"[{source_name}] Tinhlagi app source not found: {source_id}")
+        return []
+    return collect_m3u_playlist(
+        source_name,
+        item["url"],
+        group_name,
+        preserve_group=True,
+        allow_non_m3u8=True,
+        timeout=60,
+        retries=2,
+        allowed_groups=allowed_groups,
+        default_referer_to_playlist=False,
+        user_agent="",
+        preserve_extinf=True,
+        preserve_group_exact=True,
+        request_headers=item.get("headers"),
+    )
+
+
+def collect_tinhlagi_app_xoilac():
+    channels = collect_tinhlagi_app_m3u(
+        "TinhlagiAppXoiLac",
+        "sport",
+        "Xôi Lạc Z TV",
+        allowed_groups=("xoi lac", "xôi lạc"),
+    )
+    result = []
+    seen = set()
+    for channel in channels:
+        stream_url = clean_text(channel.get("stream_url"))
+        if not is_valid_xoilacz_stream_url(stream_url):
+            continue
+        seen_key = source_stream_seen_key("XoiLacZ", stream_url, channel.get("name"))
+        if seen_key in seen:
+            continue
+        seen.add(seen_key)
+        item = dict(channel)
+        item.update(
+            {
+                "source": "XoiLacZ",
+                "group": "Xôi Lạc Z TV",
+                "referer": "https://xlz.domainkqt.cc/",
+                "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                "raw_extinf": "",
+                "raw_options": [],
+                "preserve_extinf": False,
+                "preserve_group_exact": False,
+            }
+        )
+        result.append(item)
+    log(f"[TinhlagiAppXoiLac] {len(result)} usable XoiLac links")
+    return result
+
+
+def collect_tinhlagi_app_highlights():
+    channels = collect_tinhlagi_app_m3u(
+        "TinhlagiAppHighlight",
+        "highlight",
+        "Highlight",
+        allowed_groups=None,
+    )
+    result = []
+    seen = set()
+    for channel in channels:
+        stream_url = clean_text(channel.get("stream_url"))
+        if not is_valid_highlight_url(stream_url):
+            continue
+        key = stream_url
+        if key in seen:
+            continue
+        seen.add(key)
+        item = dict(channel)
+        item.update(
+            {
+                "source": "TinhlagiAppHighlight",
+                "group": "Highlight | Tinhlagi",
+                "referer": "",
+                "user_agent": "",
+                "raw_extinf": "",
+                "raw_options": [],
+                "preserve_extinf": False,
+                "preserve_group_exact": False,
+            }
+        )
+        result.append(item)
+    if TINHLAGI_APP_HIGHLIGHT_LIMIT > 0:
+        result = result[:TINHLAGI_APP_HIGHLIGHT_LIMIT]
+    log(f"[TinhlagiAppHighlight] {len(result)} usable highlight links")
+    return result
 
 
 def collect_previous_highlight_playlist():
@@ -5748,6 +6022,16 @@ def collect_xoilacz():
             )
         )
 
+    def append_tinhlagi_app_fallback(reason):
+        log(f"[{source}] {reason}; fallback Tinhlagi app")
+        for item in collect_tinhlagi_app_xoilac():
+            stream_url = clean_text(item.get("stream_url"))
+            seen_key = source_stream_seen_key(source, stream_url, item.get("name"))
+            if not stream_url or seen_key in seen_urls:
+                continue
+            seen_urls.add(seen_key)
+            channels.append(item)
+
     def append_thtt_fallback(reason):
         log(f"[{source}] {reason}; fallback THTT XoiLac")
         for item in collect_thtt_group("XoiLacZ", ("Xôi Lạc Z TV", "Xoi Lac Z TV", "Xoilac Z TV"), "Xôi Lạc Z TV"):
@@ -5883,6 +6167,7 @@ def collect_xoilacz():
             break
 
     append_thtt_fallback(f"Merge reference after {len(channels)} primary links")
+    append_tinhlagi_app_fallback(f"Merge Tinhlagi app after {len(channels)} links")
 
     if len(channels) < XOILACZ_TTCB_MIN_LINKS:
         reason = f"Only {len(channels)} links after THTT fallback"
@@ -9690,6 +9975,7 @@ def collect_current_highlights():
     highlight_sources.extend(dasfootball_channels)
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("MySportHighlights", collect_mysport_highlights)))
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("24hHighlight", collect_24h_highlights)))
+    highlight_sources.extend(filter_recent_highlights(collect_source_channels("TinhlagiAppHighlight", collect_tinhlagi_app_highlights)))
     highlight_channels = filter_recent_highlights(dedupe_and_sort_channels(highlight_sources))
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
         log(
@@ -9762,6 +10048,7 @@ def main():
         ),
         ("VongCamTV", collect_vongcam),
         ("CoLaTV", collect_cola),
+        ("BTFY", collect_btfy),
         ("BiaomTV", collect_biaom),
         ("TamQuocTV", collect_tamquoc),
         ("LuongSonTV", collect_luongson),
