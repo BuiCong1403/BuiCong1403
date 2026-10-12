@@ -38,6 +38,7 @@ OTT_M3U = BASE_DIR / "ott.m3u"
 HIGHLIGHT_M3U = BASE_DIR / "highlight.m3u"
 DASFOOTBALL_M3U = BASE_DIR / "dasfootball.m3u"
 VANLINH_SPORT_M3U = BASE_DIR / "vanlinh_sport.m3u"
+TINHLAGI_HIGHLIGHT_M3U = BASE_DIR / "hl.m3u"
 TINHLAGI_M3U = BASE_DIR / "tinhlagi.m3u"
 THETHAOCOBAN_M3U = BASE_DIR / "thethaocoban.m3u"
 SLOW_SOURCES_ARCHIVE = BASE_DIR / "slow_sources_archive.json"
@@ -422,7 +423,7 @@ TINHLAGI_APP_ANDROID_ID = os.environ.get("TINHLAGI_APP_ANDROID_ID", "github-acti
 TINHLAGI_APP_VERSION_CODE = int(os.environ.get("TINHLAGI_APP_VERSION_CODE", "523") or "523")
 TINHLAGI_APP_UA = os.environ.get("TINHLAGI_APP_UA", "Dalvik/2.1.0")
 TINHLAGI_APP_ENABLE = os.environ.get("TINHLAGI_APP_ENABLE", "1").strip().lower() not in {"0", "false", "no"}
-TINHLAGI_APP_HIGHLIGHT_LIMIT = int(os.environ.get("TINHLAGI_APP_HIGHLIGHT_LIMIT", "300") or "300")
+TINHLAGI_APP_HIGHLIGHT_LIMIT = int(os.environ.get("TINHLAGI_APP_HIGHLIGHT_LIMIT", "30") or "30")
 THETHAOCOBAN_M3U_URL = os.environ.get("THETHAOCOBAN_M3U_URL", "https://thcoban.github.io/ththethao/ttthethao.m3u")
 VANLINH_LIST_URL = os.environ.get("VANLINH_LIST_URL", "https://vanlinh.io.vn/list/")
 VANLINH_CHANNELS_JSON_URL = os.environ.get(
@@ -3982,7 +3983,7 @@ def collect_tinhlagi_app_xoilac():
     return result
 
 
-def collect_tinhlagi_app_highlights():
+def collect_tinhlagi_app_highlights(limit=None):
     channels = collect_tinhlagi_app_m3u(
         "TinhlagiAppHighlight",
         "highlight",
@@ -4013,10 +4014,20 @@ def collect_tinhlagi_app_highlights():
             }
         )
         result.append(item)
-    if TINHLAGI_APP_HIGHLIGHT_LIMIT > 0:
-        result = result[:TINHLAGI_APP_HIGHLIGHT_LIMIT]
+    if limit is None:
+        limit = TINHLAGI_APP_HIGHLIGHT_LIMIT
+    if limit and limit > 0:
+        result = result[:limit]
     log(f"[TinhlagiAppHighlight] {len(result)} usable highlight links")
     return result
+
+
+def write_tinhlagi_app_highlight_reference():
+    channels = collect_tinhlagi_app_highlights(limit=0)
+    channels = dedupe_and_sort_channels(channels)
+    write_m3u(TINHLAGI_HIGHLIGHT_M3U, channels)
+    log(f"[TinhlagiAppHighlight] Wrote {len(channels)} links to {TINHLAGI_HIGHLIGHT_M3U.name}")
+    return channels
 
 
 def collect_previous_highlight_playlist():
@@ -10003,6 +10014,7 @@ def main():
         highlight_channels = collect_current_highlights()
         if WRITE_HIGHLIGHT_M3U:
             write_m3u(HIGHLIGHT_M3U, highlight_channels)
+            write_tinhlagi_app_highlight_reference()
         all_counts = replace_highlight_blocks(ALL_M3U, highlight_blocks_from_file())
         ott_counts = replace_highlight_blocks(OTT_M3U, ott_highlight_blocks_from_channels(highlight_channels))
         log("")
@@ -10011,10 +10023,6 @@ def main():
         log(f"[DONE] Updated ott.m3u highlight blocks: kept={ott_counts[0]} add={ott_counts[1]} total={ott_counts[2]}")
         log(f"[DONE] HIGHLIGHT M3U: {HIGHLIGHT_M3U}")
         return
-
-    # Keep a standalone snapshot of the current sports sources advertised by
-    # vanlinh.io.vn/list/ for comparison without mixing it into all.m3u.
-    write_vanlinh_sport_reference()
 
     collectors = [
         ("HoiQuan3", collect_hoiquan3),
@@ -10198,6 +10206,7 @@ def main():
     per_source_counts["Highlight"] = len(highlight_channels)
     if WRITE_HIGHLIGHT_M3U:
         write_m3u(HIGHLIGHT_M3U, highlight_channels)
+        write_tinhlagi_app_highlight_reference()
     if INCLUDE_HIGHLIGHT_IN_MAIN and highlight_channels:
         all_channels.extend(highlight_channels)
 
