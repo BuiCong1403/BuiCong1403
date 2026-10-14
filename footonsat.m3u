@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-14 13:26 ICT
-# Total links   : 1178
+# Updated : 2026-10-14 14:35 ICT
+# Total links   : 1187
 # Total matches : 44
 # Lịch FootOnSat: giờ Việt Nam (UTC+7), hôm nay và 2 ngày kế tiếp.
 # Dữ liệu lịch/kênh lấy từ JSON FootOnSat; link xem được map từ các M3U tham chiếu.
@@ -414,6 +414,18 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=548066&exte
 #EXTVLCOPT:http-header=Authorization: Bearer F05A40EC04D153E4EE20AB79636097BF
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911322&extension=ts&play_token=Dwu32x4Iwv
 
+#EXTINF:-1 tvg-id="911322" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="23:45 14/10 | Feyenoord vs Como 1907",┃PK┃ A SPORTS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99172D126FF4687A0809782FBF1FC6BA
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=911322&extension=ts&play_token=n4vWXBriB1
+
+#EXTINF:-1 tvg-id="911320" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="23:45 14/10 | Feyenoord vs Como 1907",┃PK┃ A SPORTS FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F05A40EC04D153E4EE20AB79636097BF
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911320&extension=ts&play_token=PfNYXS3BiR
+
 #EXTINF:-1 tvg-id="1023969" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_1.png" group-title="23:45 14/10 | LASK Linz vs Liverpool",AR - BEIN SPORTS 1 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
@@ -803,6 +815,18 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=548068&exte
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F05A40EC04D153E4EE20AB79636097BF
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911322&extension=ts&play_token=Dwu32x4Iwv
+
+#EXTINF:-1 tvg-id="911322" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="23:45 14/10 | LASK Linz vs Liverpool",┃PK┃ A SPORTS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99172D126FF4687A0809782FBF1FC6BA
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=911322&extension=ts&play_token=n4vWXBriB1
+
+#EXTINF:-1 tvg-id="911320" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="23:45 14/10 | LASK Linz vs Liverpool",┃PK┃ A SPORTS FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F05A40EC04D153E4EE20AB79636097BF
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911320&extension=ts&play_token=PfNYXS3BiR
 
 #EXTINF:-1 tvg-id="911323" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/FAST SPORTS.png" group-title="23:45 14/10 | LASK Linz vs Liverpool",┃PK┃ FAST SPORTS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -2352,6 +2376,24 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=36068&exten
 #EXTVLCOPT:http-header=Authorization: Bearer F05A40EC04D153E4EE20AB79636097BF
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=859415&extension=ts&play_token=aINgFkXKsz
 
+#EXTINF:-1 tvg-id="911322" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="02:00 15/10 | Real Betis vs FC Porto",┃PK┃ A SPORTS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F05A40EC04D153E4EE20AB79636097BF
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911322&extension=ts&play_token=Dwu32x4Iwv
+
+#EXTINF:-1 tvg-id="911322" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="02:00 15/10 | Real Betis vs FC Porto",┃PK┃ A SPORTS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99172D126FF4687A0809782FBF1FC6BA
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=911322&extension=ts&play_token=n4vWXBriB1
+
+#EXTINF:-1 tvg-id="911320" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="02:00 15/10 | Real Betis vs FC Porto",┃PK┃ A SPORTS FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F05A40EC04D153E4EE20AB79636097BF
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911320&extension=ts&play_token=PfNYXS3BiR
+
 #EXTINF:-1 tvg-id="559019" tvg-logo="http://picon.tivi-ott.net:25461/picon/SRBIJA/ARENA-SPORT-PREMIUM-1.png" group-title="02:00 15/10 | Real Betis vs FC Porto",┃RS┃ ARENA SPORT PREMIUM 4 HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
@@ -2795,6 +2837,18 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=548068&exte
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F05A40EC04D153E4EE20AB79636097BF
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911322&extension=ts&play_token=Dwu32x4Iwv
+
+#EXTINF:-1 tvg-id="911322" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="02:00 15/10 | Roma vs Real Madrid",┃PK┃ A SPORTS
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 99172D126FF4687A0809782FBF1FC6BA
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=911322&extension=ts&play_token=n4vWXBriB1
+
+#EXTINF:-1 tvg-id="911320" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="02:00 15/10 | Roma vs Real Madrid",┃PK┃ A SPORTS FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F05A40EC04D153E4EE20AB79636097BF
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911320&extension=ts&play_token=PfNYXS3BiR
 
 #EXTINF:-1 tvg-id="911323" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/FAST SPORTS.png" group-title="02:00 15/10 | Roma vs Real Madrid",┃PK┃ FAST SPORTS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
