@@ -242,6 +242,15 @@ SAOKETV_STREAM_URL = os.environ.get(
     "SAOKETV_STREAM_URL",
     "https://wtyi0525.edgemaxcdn.org/live/x31-hd-1111/playlist.m3u8",
 )
+GAVANG_SITE_CANDIDATES = [
+    value.strip().rstrip("/") + "/"
+    for value in os.environ.get(
+        "GAVANG_SITE_CANDIDATES",
+        "https://gavangtvo.com/,https://gavangtv33.net/,https://gavang33.co/,https://gavangtv.mobile/",
+    ).split(",")
+    if value.strip()
+]
+GAVANG_GROUP = os.environ.get("GAVANG_GROUP", "Gà Vàng")
 CDNLIVE_EVENTS_URL = os.environ.get(
     "CDNLIVE_EVENTS_URL",
     "https://api.cdnlivetv.tv/api/v1/events/sports/?user=cdnlivetv&plan=free",
@@ -482,8 +491,7 @@ FLV_OTT_USER_AGENT = (
 MULTI_EVENT_STREAM_SOURCES = {
     "AzabuLive",
     "BiaomTV",
-    "BongLauTV",
-    "ChuoiChienTV",
+    "GaVang",
     "GioVang",
     "S8TV",
     "SocoliveTV",
@@ -493,7 +501,6 @@ MULTI_EVENT_STREAM_SOURCES = {
     "SutBongTV",
     "PhaLangTV",
     "SportflowLiveZ",
-    "CoLaTV",
     "BTFY",
     "MebongTV",
     "BongDaPlusHighlight",
@@ -1486,7 +1493,6 @@ SPORT_SOURCES = {
     "ThienDinh",
     "XayCon",
     "VongCamTV",
-    "CoLaTV",
     "TamQuocTV",
     "LuongSonTV",
     "QueChoaTV",
@@ -1494,12 +1500,10 @@ SPORT_SOURCES = {
     "QueChoaRaw",
     "TieuLamTV",
     "HoaDaoTV",
-    "ChuoiChienTV",
     "QueChoa8",
     "S8TV",
     "TieuLamWC",
-    "GaVangTV",
-    "GaVang33TV",
+    "GaVang",
     "SaoKeTV",
 }
 
@@ -1530,13 +1534,9 @@ GROUP_CANONICAL_RULES = [
     ("Highlight", ("highlight", "hightlight")),
     ("Gi\u1edd V\u00e0ng TV", ("giovang", "gio vang", "gio vang tv")),
     ("Socolive TV", ("socolive", "soco live", "soco sport", "socosport")),
-    ("CoLaTV", ("cola tv", "co la tv", "colatv")),
-    (SPORT_INTERNATIONAL_GROUP, ("the thao quoc te", "thethaoquocte", "sport quoc te", "international sport")),
     ("X\u00f4i L\u1ea1c Z TV", ("xoi lac z", "xoilac z", "xoilacz", "xoi lac")),
     ("Khandai", ("khan dai", "khandaia", "khandai")),
-    ("Chu\u1ed1i chi\u00ean", ("chuoi chien", "chuoichien", "chuoichientv")),
-    ("G\u00e0 V\u00e0ng TV", ("ga vang tv", "gavangtv")),
-    ("G\u00e0 V\u00e0ng 33 TV", ("ga vang 33", "gavang33")),
+    ("G\u00e0 V\u00e0ng", ("ga vang", "ga vang tv", "ga vang 33", "gavang", "gavangtv", "gavang33")),
     ("S8 TV", ("s8 tv", "s8tv")),
     ("Sao K\u00ea TV", ("sao ke", "saoke", "sao ke tv", "saoketv")),
 ]
@@ -1550,12 +1550,10 @@ PREFERRED_OUTPUT_GROUPS = [
     "PhaoHoaTV",
     "X\u00f4i L\u1ea1c Z TV",
     "Khandai",
-    "G\u00e0 V\u00e0ng TV",
-    "G\u00e0 V\u00e0ng 33 TV",
+    "G\u00e0 V\u00e0ng",
     "S8 TV",
     "Sao K\u00ea TV",
     "Socolive TV",
-    "CoLaTV",
     "Rocket50/BTFY",
     "BiaomTV",
     "MebongTV",
@@ -1569,9 +1567,9 @@ PREFERRED_SOURCE_PRIORITY = {
     "FootballOrginHighlight": 86,
     "TinhlagiAppHighlight": 84,
     "GioVang": 80,
+    "GaVang": 78,
     "XoiLacZ": 74,
     "SocoliveTV": 72,
-    "CoLaTV": 68,
     "BTFY": 67,
     "BiaomTV": 64,
     "MebongTV": 60,
@@ -1582,8 +1580,6 @@ OMIT_REFERRER_GROUPS = {
     "VTV",
     "Sự kiện",
     "Socolive TV",
-    "CoLaTV",
-    "CO LA TV",
     "Highlight | S8TV",
     "MebongTV",
     "BiaomTV",
@@ -1595,8 +1591,6 @@ OMIT_USER_AGENT_GROUPS = {
     "VTV",
     "Sự kiện",
     "Socolive TV",
-    "CoLaTV",
-    "CO LA TV",
     "Highlight | S8TV",
     "MebongTV",
     "BiaomTV",
@@ -3680,6 +3674,97 @@ def collect_biaom():
     return channels
 
 
+def gavang_field_from_context(context, *fields):
+    for field in fields:
+        value = biaom_field_from_context(context, field) or biaom_nested_field_from_context(context, field, "name")
+        if value:
+            return value
+    return ""
+
+
+def collect_gavang():
+    source = "GaVang"
+    channels = []
+    seen_urls = set()
+    for site_url in GAVANG_SITE_CANDIDATES:
+        headers = {
+            "Accept": "text/html,application/xhtml+xml,*/*;q=0.9",
+            "Referer": site_url,
+            "User-Agent": UA,
+        }
+        log(f"[{source}] Fetch home {site_url}")
+        try:
+            response = request_get(site_url, headers=headers, timeout=22)
+            if response.status_code != 200:
+                continue
+            html_text = response.text
+        except Exception as exc:
+            log(f"[{source}] Error {site_url}: {exc}")
+            continue
+        active_url = clean_text(getattr(response, "url", "") or site_url).rstrip("/") + "/"
+        for match in re.finditer(
+            r"https?://[^\s'\"<>\\]+?(?:\.m3u8|\.flv)(?:\?[^\s'\"<>\\]*)?",
+            html_text,
+            re.I,
+        ):
+            stream_url = clean_text(decode_json_string(match.group(0)))
+            if not (is_valid_stream_url(stream_url) or is_flv_url(stream_url)):
+                continue
+            context = html_text[max(0, match.start() - 2200) : match.start()]
+            league = gavang_field_from_context(context, "league_title", "league", "competitionName")
+            home = gavang_field_from_context(context, "localteam_title", "homeTeamName", "home")
+            away = gavang_field_from_context(context, "visitorteam_title", "awayTeamName", "away")
+            start_time = (
+                biaom_field_from_context(context, "starting_at")
+                or biaom_field_from_context(context, "matchTime")
+                or biaom_field_from_context(context, "match_time")
+            )
+            logo = (
+                biaom_field_from_context(context, "localteam_logo")
+                or biaom_field_from_context(context, "homeTeamLogo")
+                or biaom_nested_field_from_context(context, "home", "image_url")
+                or biaom_nested_field_from_context(context, "home", "logo")
+            )
+            event_datetime = parse_iso_to_ict_datetime(start_time) or parse_epoch_to_ict_datetime(start_time)
+            event_date = event_datetime.date() if event_datetime else parse_iso_to_ict_date(start_time)
+            time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else parse_iso_to_ict(start_time, fmt="%H:%M %d/%m")
+            title_parts = []
+            if time_label:
+                title_parts.append(time_label)
+            if home and away:
+                title_parts.append(f"{home} vs {away}")
+            if league:
+                title_parts.append(f"({league})")
+            title = " | ".join(title_parts) or title_from_stream_url(stream_url, source)
+            quality = "FLV" if is_flv_url(stream_url) else "HLS"
+            seen_key = source_stream_seen_key(source, stream_url, title, start_time)
+            if seen_key in seen_urls:
+                continue
+            seen_urls.add(seen_key)
+            channels.append(
+                {
+                    "source": source,
+                    "name": f"{title} [{quality}]",
+                    "group": GAVANG_GROUP,
+                    "logo": logo,
+                    "stream_url": stream_url,
+                    "referer": active_url,
+                    "user_agent": FLV_OTT_USER_AGENT if quality == "FLV" else UA,
+                    "event_date": event_date,
+                    "event_datetime": event_datetime,
+                }
+            )
+    for channel in collect_tinhlagi_app_gavang():
+        stream_url = clean_text(channel.get("stream_url"))
+        seen_key = source_stream_seen_key(source, stream_url, channel.get("name"))
+        if not stream_url or seen_key in seen_urls:
+            continue
+        seen_urls.add(seen_key)
+        channels.append(channel)
+    log(f"[{source}] {len(channels)} raw links")
+    return channels
+
+
 def collect_tamquoc():
     source = "TamQuocTV"
     api_url = "https://sv.tamquoctv.xyz/internal/api/matches"
@@ -3980,6 +4065,47 @@ def collect_tinhlagi_app_xoilac():
         )
         result.append(item)
     log(f"[TinhlagiAppXoiLac] {len(result)} usable XoiLac links")
+    return result
+
+
+def collect_tinhlagi_app_gavang():
+    channels = collect_tinhlagi_app_m3u(
+        "TinhlagiAppGaVang",
+        "sport",
+        GAVANG_GROUP,
+        allowed_groups=("ga vang", "gà vàng", "gavangtv33", "gavang 33"),
+    )
+    result = []
+    seen = set()
+    for channel in channels:
+        stream_url = clean_text(channel.get("stream_url"))
+        if not (is_valid_stream_url(stream_url) or is_flv_url(stream_url)):
+            continue
+        referer = clean_text(channel.get("referer"))
+        if not referer:
+            for option in channel.get("raw_options") or []:
+                if option.lower().startswith("#extvlcopt:http-referrer="):
+                    referer = clean_text(option.split("=", 1)[1])
+                    break
+        seen_key = source_stream_seen_key("GaVang", stream_url, channel.get("name"))
+        if seen_key in seen:
+            continue
+        seen.add(seen_key)
+        item = dict(channel)
+        item.update(
+            {
+                "source": "GaVang",
+                "group": GAVANG_GROUP,
+                "referer": referer or "https://gavangtvo.com/",
+                "user_agent": FLV_OTT_USER_AGENT if is_flv_url(stream_url) else UA,
+                "raw_extinf": "",
+                "raw_options": [],
+                "preserve_extinf": False,
+                "preserve_group_exact": False,
+            }
+        )
+        result.append(item)
+    log(f"[TinhlagiAppGaVang] {len(result)} usable GaVang links")
     return result
 
 
@@ -4961,6 +5087,7 @@ def collect_thethaocoban_source_fallback(
     target_group,
     allowed_groups,
     host_keywords=(),
+    name_keywords=(),
     seen_urls=None,
 ):
     if not THETHAOCOBAN_SOURCE_FALLBACK:
@@ -4971,12 +5098,16 @@ def collect_thethaocoban_source_fallback(
         group = channel.get("group")
         stream_url = clean_text(channel.get("stream_url"))
         stream_key = stream_url.lower()
+        name_key = group_key(channel.get("name"))
         group_ok = group_matches_any(group, allowed_groups) if allowed_groups else True
         host_ok = any(keyword in stream_key for keyword in host_keywords) if host_keywords else True
-        if allowed_groups and host_keywords:
-            if not (group_ok or host_ok):
-                continue
-        elif not group_ok or not host_ok:
+        name_ok = any(group_key(keyword) in name_key for keyword in name_keywords) if name_keywords else True
+        has_any_filter = bool(allowed_groups or host_keywords or name_keywords)
+        if has_any_filter and not (
+            (bool(allowed_groups) and group_ok)
+            or (bool(host_keywords) and host_ok)
+            or (bool(name_keywords) and name_ok)
+        ):
             continue
         seen_key = source_stream_seen_key(target_source, stream_url, channel.get("name"))
         if seen_key in seen_urls:
@@ -5022,16 +5153,12 @@ TTCB_SUPPLEMENT_RULES = [
         "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
     },
     {
-        "source": "GaVangTV",
-        "group": "G\u00e0 V\u00e0ng TV",
-        "allowed_groups": ("ga vang tv", "gà vàng tv"),
-        "min_links": 1,
-    },
-    {
-        "source": "GaVang33TV",
-        "group": "G\u00e0 V\u00e0ng 33 TV",
-        "allowed_groups": ("ga vang 33", "gà vàng 33"),
-        "min_links": 1,
+        "source": "GaVang",
+        "group": "G\u00e0 V\u00e0ng",
+        "allowed_groups": ("ga vang", "gà vàng", "ga vang tv", "gà vàng tv", "ga vang 33", "gà vàng 33"),
+        "host_keywords": ("live2.zktsva.app",),
+        "name_keywords": ("ga sieu", "ga o long"),
+        "min_links": TTCB_SUPPLEMENT_MIN_LINKS,
     },
     {
         "source": "S8TV",
@@ -5069,6 +5196,7 @@ def supplement_from_thethaocoban_if_needed(channels, per_source_counts):
             group,
             rule.get("allowed_groups") or (),
             host_keywords=rule.get("host_keywords") or (),
+            name_keywords=rule.get("name_keywords") or (),
             seen_urls=seen_urls,
         )
         if not extra:
@@ -10055,7 +10183,6 @@ def main():
             ),
         ),
         ("VongCamTV", collect_vongcam),
-        ("CoLaTV", collect_cola),
         ("BTFY", collect_btfy),
         ("BiaomTV", collect_biaom),
         ("TamQuocTV", collect_tamquoc),
@@ -10109,8 +10236,8 @@ def main():
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
         ("S8TV", collect_s8tv),
+        ("GaVang", collect_gavang),
         ("VeboTV", collect_vebotv),
-        ("FBLInternationalSports", collect_fbl_live_sports),
         ("MebongTV", collect_mebongtv),
         ("AzabuLive", collect_azabu_live),
         (
@@ -10139,8 +10266,6 @@ def main():
             ),
         ),
         ("HoaDaoTV", collect_hoadaotv),
-        ("BongLauTV", collect_bonglau),
-        ("ChuoiChienTV", collect_chuoichien),
         ("QueChoa8", lambda: collect_missing_source("QueChoa8")),
     ]
 
