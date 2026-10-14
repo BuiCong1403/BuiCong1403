@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-14 21:27 ICT
-# Total links   : 1166
+# Updated : 2026-10-14 22:42 ICT
+# Total links   : 1167
 # Total matches : 44
 # Lịch FootOnSat: giờ Việt Nam (UTC+7), hôm nay và 2 ngày kế tiếp.
 # Dữ liệu lịch/kênh lấy từ JSON FootOnSat; link xem được map từ các M3U tham chiếu.
@@ -6611,6 +6611,12 @@ http://5ghz.xyz:80/L84NFC5BQ8TVT3T/m1m02rWyr2/220313
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C0:BD:3D; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 930611C81880A5E9157946C5A9B11281
 http://5ghz.xyz:80/L84NFC5BQ8TVT3T/m1m02rWyr2/974660
+
+#EXTINF:-1 tvg-id="3220" tvg-logo="http://picon.tivi-ott.net:25461/picon/HUNGARIA/m4sport.png" group-title="02:00 16/10 | Ferencváros vs Viktoria Plzen",┃HU┃ M4 SPORT HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 514C480D84315206D4DAC823F10AF7CF
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=3220&extension=ts&play_token=hPiM4pNKaO
 
 #EXTINF:-1 tvg-id="583455" tvg-logo="https://go4.pw/AUSTRIA/skysportsaustria.png" group-title="02:00 16/10 | Hoffenheim vs Besiktas",AU - SKY SPORT AUSTRIA 3 HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
