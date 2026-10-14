@@ -8,6 +8,8 @@ on:
     paths:
       - "combined_m3u_collector.py"
       - "footonsat_collector.py"
+      - "tinhlagi_app_export.py"
+      - "fancode_m3u_export.py"
       - ".github/workflows/update.yml"
   schedule:
     # Live sports, Asia/Bangkok: 02:00, 16:00, 18:00
@@ -83,6 +85,8 @@ jobs:
           echo "RUN_MODE=$RUN_MODE"
           RUN_MODE="$RUN_MODE" python combined_m3u_collector.py
           python footonsat_collector.py
+          python tinhlagi_app_export.py
+          python fancode_m3u_export.py
           rm -f sport.m3u
           rm -f tinhlagi.m3u thethaocoban.m3u
           rm -f export_reference_m3u.bat
@@ -94,13 +98,17 @@ jobs:
           test -s highlight.m3u
           test -f footonsat.m3u
           test -s footonsat.m3u
-          test -f vanlinh_sport.m3u
-          test -s vanlinh_sport.m3u
+          test -f tinhlagi_app.m3u
+          test -s tinhlagi_app.m3u
+          test -f fancode.m3u
+          test -s fancode.m3u
+          test -f hl.m3u
+          test -s hl.m3u
           test -f slow_sources.m3u
           test -s slow_sources.m3u
           test -f slow_sources_archive.json
           test -s slow_sources_archive.json
-          ls -lh all.m3u ott.m3u highlight.m3u footonsat.m3u vanlinh_sport.m3u slow_sources.m3u slow_sources_archive.json
+          ls -lh all.m3u ott.m3u highlight.m3u hl.m3u tinhlagi_app.m3u fancode.m3u footonsat.m3u slow_sources.m3u slow_sources_archive.json
 
       - name: Commit generated files
         run: |

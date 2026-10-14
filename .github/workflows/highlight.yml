@@ -41,15 +41,16 @@ jobs:
         run: |
           RUN_MODE=highlight python combined_m3u_collector.py
           test -s highlight.m3u
+          test -s hl.m3u
           test -s all.m3u
           test -s ott.m3u
-          ls -lh highlight.m3u all.m3u ott.m3u
+          ls -lh highlight.m3u hl.m3u all.m3u ott.m3u
 
       - name: Commit highlight playlist
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add highlight.m3u all.m3u ott.m3u dasfootball.m3u h24_highlight_cache.json
+          git add highlight.m3u hl.m3u all.m3u ott.m3u dasfootball.m3u h24_highlight_cache.json
           if git diff --cached --quiet; then
             echo "No highlight changes to commit."
             exit 0
