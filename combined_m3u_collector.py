@@ -157,7 +157,7 @@ VONGCAM_API_URL = os.environ.get("VONGCAM_API", "https://sv.bugiotv.xyz/internal
 VONGCAM_FRONTEND_URL = os.environ.get("VONGCAM_FRONTEND", BUGIO_REFERER)
 QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
-VSC9_URL = os.environ.get("VSC9_URL", "https://www.pentatoken.io/")
+VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", VSC9_URL)
 VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "0").strip().lower() not in {"0", "false", "no"}
 VSC9_TODAY_MIN_LINKS = int(os.environ.get("VSC9_TODAY_MIN_LINKS", "10") or "10")
@@ -489,6 +489,7 @@ FLV_OTT_USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
 )
 MULTI_EVENT_STREAM_SOURCES = {
+    "VSC9",
     "AzabuLive",
     "BiaomTV",
     "GaVang",
@@ -1486,6 +1487,7 @@ def best_h24_stream_variants(streams):
 
 
 SPORT_SOURCES = {
+    "VSC9",
     "HoiQuan1",
     "HoiQuan2",
     "HoiQuan3",
@@ -1577,6 +1579,7 @@ PREFERRED_SOURCE_PRIORITY = {
 }
 
 OMIT_REFERRER_GROUPS = {
+    "Vua Sân Cỏ TV",
     "VTV",
     "Sự kiện",
     "Socolive TV",
@@ -1588,6 +1591,7 @@ OMIT_REFERRER_GROUPS = {
 OMIT_REFERRER_GROUP_KEYS = {compact_text_key(item) for item in OMIT_REFERRER_GROUPS}
 
 OMIT_USER_AGENT_GROUPS = {
+    "Vua Sân Cỏ TV",
     "VTV",
     "Sự kiện",
     "Socolive TV",
@@ -1695,14 +1699,7 @@ def normalize_channel_group(channel):
     return channel
 
 
-REMOVED_CHANNEL_MARKERS = (
-    "vsc9",
-    "vuasanco",
-    "vuasancotv",
-    "vuasancỏ",
-    "ebaclofen",
-    "pentatoken",
-)
+REMOVED_CHANNEL_MARKERS = ()
 
 
 def is_removed_channel(channel):
@@ -9153,6 +9150,30 @@ def collect_vsc9_api():
 
 def collect_vsc9():
     source = "VSC9"
+    channels = []
+    for site_url in dict.fromkeys((VSC9_URL, "https://www.vsc9.top/", "https://vsc9.top/")):
+        for attempt in range(2):
+            try:
+                response = request_get(site_url, timeout=15)
+                if response.status_code != 200:
+                    continue
+                page_html = response.text
+                for stream_url in extract_vsc9_m3u8_urls(page_html):
+                    title, time_label = vsc9_title_from_context(page_html, stream_url)
+                    if " vs " not in title.lower():
+                        continue
+                    channels.append({
+                        "source": source, "group": "Vua Sân Cỏ TV",
+                        "name": title, "stream_url": stream_url,
+                        "logo": urljoin(site_url, "favicon.ico"),
+                        "referer": "", "user_agent": "",
+                    })
+                if channels:
+                    channels = dedupe_and_sort_channels(channels)
+                    log(f"[{source}] Website embedded streams: {len(channels)}")
+                    return channels
+            except Exception as exc:
+                log(f"[{source}] Website attempt {attempt + 1}: {exc}")
     channels = collect_vsc9_api()
     if channels:
         save_source_cache(VSC9_CACHE, channels, VSC9_URL)
@@ -10244,6 +10265,7 @@ def main():
         ("SaoKeTV", collect_saoketv),
         ("S8TV", collect_s8tv),
         ("GaVang", collect_gavang),
+        ("VSC9", collect_vsc9),
         ("VeboTV", collect_vebotv),
         ("MebongTV", collect_mebongtv),
         ("AzabuLive", collect_azabu_live),
