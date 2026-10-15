@@ -9,7 +9,7 @@ from urllib.request import Request, urlopen
 
 
 BASE_DIR = Path(__file__).resolve().parent
-OUTPUT_M3U = BASE_DIR / os.environ.get("TINHLAGI_APP_OUTPUT", "tinhlagi_app.m3u")
+OUTPUT_M3U = BASE_DIR / os.environ.get("TINHLAGI_APP_OUTPUT", "tlgapp.m3u")
 ACCESS_API = os.environ.get("TINHLAGI_APP_ACCESS_API", "https://tinhlagi.pro/getlink/access-api.php")
 SOURCES_API = os.environ.get("TINHLAGI_APP_SOURCES_API", "https://tinhlagi.pro/getlink/sources.php")
 ACTIVATION_CODE = os.environ.get("TINHLAGI_APP_ACTIVATION_CODE", "tinhlagipro")
@@ -19,7 +19,7 @@ VERSION_CODE = int(os.environ.get("TINHLAGI_APP_VERSION_CODE", "523") or "523")
 USER_AGENT = os.environ.get("TINHLAGI_APP_UA", "Dalvik/2.1.0")
 EXCLUDE_IDS = {
     item.strip().lower()
-    for item in os.environ.get("TINHLAGI_APP_EXCLUDE_IDS", "tv").split(",")
+    for item in os.environ.get("TINHLAGI_APP_EXCLUDE_IDS", "tv,movie,film,phim").split(",")
     if item.strip()
 }
 TIMEOUT = int(os.environ.get("TINHLAGI_APP_TIMEOUT", "35") or "35")
@@ -113,10 +113,15 @@ def main():
     for source in get_sources():
         source_id = clean_text(source.get("id")).lower()
         source_name = clean_text(source.get("name")) or source_id or "Tinhlagi"
-        if source_id in EXCLUDE_IDS or source_name.lower() in EXCLUDE_IDS:
+        if source_id in EXCLUDE_IDS or source_name.lower() in EXCLUDE_IDS or re.search(r"movie|film|phim", source_id + " " + source_name, re.I):
             continue
         text = strip_extm3u(fetch_text(source["url"]))
         if not text:
+            raise RuntimeError(f"Empty playlist: {source_name}")
+        if "highlight" in (source_id + " " + source_name).lower():
+            highlight_output = BASE_DIR / "hl.m3u"
+            highlight_output.write_text("#EXTM3U\n" + text + "\n", encoding="utf-8")
+            print(f"[DONE] hl.m3u: {text.count('#EXTINF')} links")
             continue
         count = text.count("#EXTINF")
         counts[source_name] = count
@@ -127,7 +132,7 @@ def main():
         "#EXTM3U",
         f"# Updated : {now_ict()}",
         f"# Total   : {total}",
-        "# Exclude : tv",
+        "# Exclude : tv, films, highlights (see hl.m3u)",
         "",
     ]
     output.extend(blocks)

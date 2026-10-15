@@ -98,8 +98,9 @@ jobs:
           test -s highlight.m3u
           test -f footonsat.m3u
           test -s footonsat.m3u
-          test -f tinhlagi_app.m3u
-          test -s tinhlagi_app.m3u
+          rm -f tinhlagi_app.m3u
+          test -f tlgapp.m3u
+          test -s tlgapp.m3u
           test -f fancode.m3u
           test -s fancode.m3u
           test -f hl.m3u
@@ -108,7 +109,7 @@ jobs:
           test -s slow_sources.m3u
           test -f slow_sources_archive.json
           test -s slow_sources_archive.json
-          ls -lh all.m3u ott.m3u highlight.m3u hl.m3u tinhlagi_app.m3u fancode.m3u footonsat.m3u slow_sources.m3u slow_sources_archive.json
+          ls -lh all.m3u ott.m3u highlight.m3u hl.m3u tlgapp.m3u fancode.m3u footonsat.m3u slow_sources.m3u slow_sources_archive.json
 
       - name: Commit generated files
         run: |

@@ -7145,11 +7145,18 @@ def collect_dasfootball_highlights():
             post_urls.append(seed_url)
             last_seed_title = clean_highlight_title(title_from_url_slug(seed_url) or "")
 
-    for page_url in page_urls:
-        log(f"[{source}] Fetch {page_url}")
+    def fetch_archive(page_url):
         try:
-            html_text = dasfootball_fetch_text(page_url, page_url, timeout=30)
-        except Exception:
+            return dasfootball_fetch_text(page_url, page_url, timeout=20)
+        except Exception as exc:
+            log(f"[{source}] Archive failed {page_url}: {exc}")
+            return ""
+
+    with ThreadPoolExecutor(max_workers=8) as archive_executor:
+        archive_html = list(archive_executor.map(fetch_archive, page_urls))
+    for page_url, html_text in zip(page_urls, archive_html):
+        log(f"[{source}] Fetch {page_url}")
+        if not html_text:
             continue
         for channel in dasfootball_jsonld_channels(html_text, page_url, allowed_dates, source, base_url):
             stream_key = clean_text(channel.get("stream_url"))
