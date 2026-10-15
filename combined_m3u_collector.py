@@ -9068,7 +9068,6 @@ def collect_vsc9_thethaocoban_fallback(seen_urls):
 def collect_vsc9_api():
     source = "VSC9"
     site_url = VSC9_URL.rstrip("/") + "/"
-    api_url = urljoin(site_url, "/api/data/lives/matches")
     headers = {
         "User-Agent": UA,
         "Accept": "application/json, text/plain, */*",
@@ -9079,23 +9078,39 @@ def collect_vsc9_api():
     channels = []
     seen = set()
     today = datetime.now(TZ_VN).date()
+
+    def fetch_schedule_page(event_date, page):
+        last_error = None
+        for base in dict.fromkeys((site_url, "https://www.vsc9.top/", "https://vsc9.top/")):
+            for attempt in range(2):
+                try:
+                    response = requests.post(
+                        urljoin(base, "/api/proxy/data/lives/matches"), headers=headers,
+                        json={"date": event_date.isoformat(), "page": page, "pageSize": 100, "timezone": "Asia/Ho_Chi_Minh"},
+                        timeout=15,
+                    )
+                    response.raise_for_status()
+                    payload = response.json()
+                    if isinstance(payload.get("result"), dict):
+                        return payload["result"]
+                    raise ValueError("Missing schedule result")
+                except Exception as exc:
+                    last_error = exc
+        raise RuntimeError(str(last_error))
+
     for offset in range(2):
         event_date = today + timedelta(days=offset)
         try:
             if requests is None:
                 continue
-            response = requests.post(
-                api_url,
-                headers=headers,
-                json={"date": event_date.isoformat(), "page": 1, "pageSize": 500},
-                timeout=60,
-            )
-            if response.status_code != 200:
-                log(f"[{source}] Schedule API {event_date}: HTTP {response.status_code}")
-                continue
-            payload = response.json()
-            result = payload.get("result") if isinstance(payload, dict) else {}
+            result = fetch_schedule_page(event_date, 1)
             matches = result.get("data") if isinstance(result, dict) else []
+            matches = list(matches or [])
+            for page in range(2, int(result.get("totalPages") or 1) + 1):
+                try:
+                    matches.extend(fetch_schedule_page(event_date, page).get("data") or [])
+                except Exception as exc:
+                    log(f"[{source}] Keep fetched schedule; page {page} failed: {exc}")
         except Exception as exc:
             log(f"[{source}] Schedule API {event_date} error: {exc}")
             continue
@@ -9150,7 +9165,13 @@ def collect_vsc9_api():
 
 def collect_vsc9():
     source = "VSC9"
-    channels = []
+    channels = collect_vsc9_api()
+    if channels:
+        for channel in channels:
+            channel["referer"] = ""
+            channel["user_agent"] = ""
+        log(f"[{source}] Today and tomorrow API streams: {len(channels)}")
+        return dedupe_and_sort_channels(channels)
     for site_url in dict.fromkeys((VSC9_URL, "https://www.vsc9.top/", "https://vsc9.top/")):
         for attempt in range(2):
             try:
