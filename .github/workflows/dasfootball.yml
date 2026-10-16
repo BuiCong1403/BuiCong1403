@@ -1,0 +1,53 @@
+name: Refresh DasFootball
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Vietnam 06:00-12:30, every 30 minutes.
+    - cron: "0,30 23,0-5 * * *"
+
+concurrency:
+  group: refresh-dasfootball
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: python -m pip install requests
+      - name: Collect and merge DasFootball
+        run: RUN_MODE=dasfootball python combined_m3u_collector.py
+      - name: Publish playlists
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dasfootball.m3u highlight.m3u all.m3u ott.m3u
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh DasFootball highlights"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git fetch origin main
+            git rebase origin/main || {
+              for path in $(git diff --name-only --diff-filter=U); do
+                case "$path" in
+                  dasfootball.m3u) git checkout --theirs -- "$path" ;;
+                  all.m3u|ott.m3u|highlight.m3u) git checkout --ours -- "$path" ;;
+                  *) git rebase --abort; exit 1 ;;
+                esac
+              done
+              RUN_MODE=merge_dasfootball python combined_m3u_collector.py
+              git add dasfootball.m3u highlight.m3u all.m3u ott.m3u
+              GIT_EDITOR=true git rebase --continue
+            }
+          done
+          exit 1

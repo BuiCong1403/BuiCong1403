@@ -520,6 +520,8 @@ MAX_VERIFY_WORKERS = int(os.environ.get("MAX_VERIFY_WORKERS", "20"))
 FILTER_PAST_EVENTS = os.environ.get("FILTER_PAST_EVENTS", "1").strip().lower() not in {"0", "false", "no"}
 PAST_EVENT_GRACE_MINUTES = int(os.environ.get("PAST_EVENT_GRACE_MINUTES", "480") or "480")
 RUN_MODE = os.environ.get("RUN_MODE", "all").strip().lower()
+INCLUDE_MYSPORT_HIGHLIGHTS = os.environ.get("INCLUDE_MYSPORT_HIGHLIGHTS", "0") == "1"
+INCLUDE_TINHLAGI_HIGHLIGHTS = os.environ.get("INCLUDE_TINHLAGI_HIGHLIGHTS", "0") == "1"
 PHAOHOA_SEED_STREAMS = [
     item.strip()
     for item in os.environ.get(
@@ -9106,11 +9108,14 @@ def collect_vsc9_api():
             result = fetch_schedule_page(event_date, 1)
             matches = result.get("data") if isinstance(result, dict) else []
             matches = list(matches or [])
-            for page in range(2, int(result.get("totalPages") or 1) + 1):
-                try:
-                    matches.extend(fetch_schedule_page(event_date, page).get("data") or [])
-                except Exception as exc:
-                    log(f"[{source}] Keep fetched schedule; page {page} failed: {exc}")
+            with ThreadPoolExecutor(max_workers=6) as executor:
+                pages = {executor.submit(fetch_schedule_page, event_date, page): page
+                         for page in range(2, int(result.get("totalPages") or 1) + 1)}
+                for future in as_completed(pages):
+                    try:
+                        matches.extend(future.result().get("data") or [])
+                    except Exception as exc:
+                        log(f"[{source}] Keep fetched schedule; page {pages[future]} failed: {exc}")
         except Exception as exc:
             log(f"[{source}] Schedule API {event_date} error: {exc}")
             continue
@@ -9170,6 +9175,9 @@ def collect_vsc9():
         for channel in channels:
             channel["referer"] = ""
             channel["user_agent"] = ""
+        cached = filter_current_and_future_events(load_source_cache(VSC9_CACHE, source, "Vua Sân Cỏ TV"))
+        channels = dedupe_and_sort_channels(channels + cached)
+        save_source_cache(VSC9_CACHE, channels, VSC9_URL)
         log(f"[{source}] Today and tomorrow API streams: {len(channels)}")
         return dedupe_and_sort_channels(channels)
     for site_url in dict.fromkeys((VSC9_URL, "https://www.vsc9.top/", "https://vsc9.top/")):
@@ -9195,7 +9203,7 @@ def collect_vsc9():
                     return channels
             except Exception as exc:
                 log(f"[{source}] Website attempt {attempt + 1}: {exc}")
-    channels = collect_vsc9_api()
+    channels = filter_current_and_future_events(load_source_cache(VSC9_CACHE, source, "Vua Sân Cỏ TV"))
     if channels:
         save_source_cache(VSC9_CACHE, channels, VSC9_URL)
         log(f"[{source}] {len(channels)} raw links")
@@ -10152,18 +10160,18 @@ def ott_highlight_blocks_from_file():
 def collect_current_highlights():
     highlight_sources = []
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("SuperSportHighlight", collect_supersport_highlights)))
-    dasfootball_channels = collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights)
+    dasfootball_channels = []
     dasfootball_channels = filter_recent_highlights(dasfootball_channels)
     previous_dasfootball = collect_previous_dasfootball_playlist()
     if previous_dasfootball:
         dasfootball_channels = filter_recent_highlights(dedupe_and_sort_channels(dasfootball_channels + previous_dasfootball))
         log(f"[DasFootballHighlight] After cache merge: {len(dasfootball_channels)}")
-    if dasfootball_channels and WRITE_HIGHLIGHT_M3U:
-        write_m3u(DASFOOTBALL_M3U, dasfootball_channels)
     highlight_sources.extend(dasfootball_channels)
-    highlight_sources.extend(filter_recent_highlights(collect_source_channels("MySportHighlights", collect_mysport_highlights)))
+    if INCLUDE_MYSPORT_HIGHLIGHTS:
+        highlight_sources.extend(filter_recent_highlights(collect_source_channels("MySportHighlights", collect_mysport_highlights)))
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("24hHighlight", collect_24h_highlights)))
-    highlight_sources.extend(filter_recent_highlights(collect_source_channels("TinhlagiAppHighlight", collect_tinhlagi_app_highlights)))
+    if INCLUDE_TINHLAGI_HIGHLIGHTS:
+        highlight_sources.extend(filter_recent_highlights(collect_source_channels("TinhlagiAppHighlight", collect_tinhlagi_app_highlights)))
     highlight_channels = filter_recent_highlights(dedupe_and_sort_channels(highlight_sources))
     if HIGHLIGHT_KEEP_PREVIOUS_ON_LOW and len(highlight_channels) < max(1, HIGHLIGHT_MIN_GOOD_COUNT):
         log(
@@ -10185,6 +10193,21 @@ def main():
 
     if RUN_MODE == "slow":
         collect_slow_sources()
+        return
+
+    if RUN_MODE in {"dasfootball", "merge_dasfootball"}:
+        fresh = (filter_recent_highlights(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
+                 if RUN_MODE == "dasfootball" else [])
+        previous = collect_previous_dasfootball_playlist()
+        channels = filter_recent_highlights(dedupe_and_sort_channels(fresh + previous))
+        if RUN_MODE == "dasfootball" and not fresh:
+            raise RuntimeError("DasFootball returned no fresh videos; preserving previous files")
+        write_m3u(DASFOOTBALL_M3U, channels)
+        other = collect_previous_highlight_playlist()
+        merged = filter_recent_highlights(dedupe_and_sort_channels(channels + other))
+        write_m3u(HIGHLIGHT_M3U, merged)
+        replace_highlight_blocks(ALL_M3U, highlight_blocks_from_file())
+        replace_highlight_blocks(OTT_M3U, ott_highlight_blocks_from_channels(merged))
         return
 
     if RUN_MODE == "highlight":
