@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-16 07:34 ICT
-# Total   : 982
+# Updated : 2026-10-16 08:00 ICT
+# Total   : 984
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -3735,6 +3735,16 @@ https://cdn-global.ebaclofen.org/vsc/jonhny5/index.m3u8
 #EXTVLCOPT:http-referrer=https://supersport.com/football/video/4ca1e7e8-3531-444c-b966-0a43a3eb8078/atalanta-v-pafos-match-highlights-uefa-europa-conference-league
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://vod.supersport.com/2019/SOC_151026_UELC_ATAVPFS_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Benfica - Celtic: Thảm họa phòng ngự (Europa League) [Hiệp 1]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-16/cp_special_c1_ban_quyen-1792098336-benfica_h1.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Benfica - Celtic: Thảm họa phòng ngự (Europa League) [Hiệp 2]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-16/cp_special_c1_ban_quyen-1792098336-benfica_h2.m3u8
 
 #EXTINF:-1 tvg-logo="https://supersport.com/media/0u4n0hcc/soc_151026_uel_benvcel_hd5.png" group-title="Highlight",Benfica v Celtic | Match Highlights | UEFA Europa League
 #EXTVLCOPT:http-referrer=https://supersport.com/football/video/fc029aee-9659-4f57-8b99-516c7b1cd08e/benfica-v-celtic-match-highlights-uefa-europa-league
