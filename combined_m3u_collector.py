@@ -1822,11 +1822,29 @@ def supersport_date_from_media_url(url):
 
 
 def highlight_channel_date(channel):
+    url = clean_text(channel.get("stream_url"))
+    media_day = h24_date_from_media_url(url) or supersport_date_from_media_url(url)
+    if media_day:
+        return media_day
+    if "vod.supersport.com" in url:
+        summary_day = re.search(r"oftheday(\d{2})(\d{2})(\d{2})", url, re.I)
+        if summary_day:
+            day, month, year = summary_day.groups()
+            try:
+                return datetime(2000 + int(year), int(month), int(day)).date()
+            except ValueError:
+                pass
+        title_day = re.search(r"\b(\d{1,2}/\d{1,2}/\d{4})\b", clean_text(channel.get("name")))
+        if title_day:
+            try:
+                return datetime.strptime(title_day.group(1), "%m/%d/%Y").date()
+            except ValueError:
+                pass
     event_dt = channel_event_datetime(channel)
-    if event_dt:
+    if event_dt and event_dt.date() <= datetime.now(TZ_VN).date() + timedelta(days=1):
         return event_dt.date()
     event_date = channel_event_date(channel)
-    if event_date:
+    if event_date and event_date <= datetime.now(TZ_VN).date() + timedelta(days=1):
         return event_date
     url = clean_text(channel.get("stream_url"))
     return h24_date_from_media_url(url) or supersport_date_from_media_url(url) or date_from_text(url)
@@ -1870,6 +1888,59 @@ def channel_time_sort_value(channel):
     return 9_999_999_999
 
 
+def highlight_team_key(team):
+    team = unicodedata.normalize("NFKD", clean_text(team).lower().replace("ø", "o"))
+    team = "".join(ch for ch in team if not unicodedata.combining(ch))
+    team = re.sub(r"\b(?:fc|afc|fk|as|cf|cp|kv)\b", " ", team)
+    key = compact_text_key(team)
+    aliases = {
+        "mu": "manchesterunited", "manutd": "manchesterunited",
+        "mancity": "manchestercity", "psg": "parissaintgermain",
+        "roma": "roma", "dortmund": "borussiadortmund",
+        "bayernmunich": "bayernmunchen", "intermilan": "inter",
+        "redbullsalzburg": "salzburg", "saltzburg": "salzburg",
+        "lasklinz": "lask", "olympiquelyon": "lyon",
+        "unionsg": "unionstgilloise", "unionsaintgilloise": "unionstgilloise",
+        "torrense": "torreense", "celtavigo": "celta",
+    }
+    return aliases.get(key, key)
+
+
+def highlight_fixture_key(channel):
+    title = remove_icons(clean_text(channel.get("name")))
+    title = re.sub(r"^(?:video bong da|video bóng đá|highlights?)\s*[:| -]*", "", title, flags=re.I)
+    title = re.split(r"[:|\[]", title, maxsplit=1)[0].strip()
+    teams = re.split(r"\s+(?:vs?\.?|[-–—])\s+", title, maxsplit=1, flags=re.I)
+    if len(teams) != 2:
+        day = highlight_channel_date(channel)
+        return "clip:" + compact_text_key(title) + (":" + day.isoformat() if day else "")
+    return "match:" + "|".join(sorted(highlight_team_key(team) for team in teams))
+
+
+def prepare_highlight_sort_keys(channels):
+    fixtures = {}
+    for channel in channels:
+        if is_highlight_channel(channel):
+            fixtures.setdefault(highlight_fixture_key(channel), []).append(channel)
+    for fixture, members in fixtures.items():
+        clusters = []
+        for channel in sorted(members, key=lambda ch: highlight_channel_date(ch) or datetime.min.date()):
+            day = highlight_channel_date(channel)
+            if not clusters or (day and clusters[-1][0] and (day - clusters[-1][0]).days > 2):
+                clusters.append((day, []))
+            clusters[-1][1].append(channel)
+        for day, cluster in clusters:
+            newest = max((highlight_channel_date(ch) or datetime.min.date() for ch in cluster))
+            for channel in cluster:
+                url = clean_text(channel.get("stream_url"))
+                source = channel.get("source", "")
+                rank = (0 if source == "24hHighlight" or "cdn.24h.com.vn" in url
+                        else 2 if source == "SuperSportHighlight" or "vod.supersport.com" in url else 1)
+                part = int(h24_stream_part_number(url) or 0) if rank == 0 else 0
+                channel["_highlight_sort"] = (-newest.toordinal(), fixture, rank, part or 0,
+                                              clean_text(channel.get("name")), url)
+
+
 def dedupe_and_sort_channels(channels):
     deduped = []
     seen_urls = {}
@@ -1901,11 +1972,12 @@ def dedupe_and_sort_channels(channels):
             continue
         seen_urls[dedupe_key] = len(deduped)
         deduped.append(channel)
+    prepare_highlight_sort_keys(deduped)
     deduped.sort(
         key=lambda channel: (
             group_sort_rank(channel),
             output_group(channel),
-            channel_time_sort_value(channel),
+            channel.get("_highlight_sort", (channel_time_sort_value(channel),)),
             clean_text(channel.get("name")),
             channel.get("stream_url", ""),
         )
@@ -1981,6 +2053,8 @@ def ott_match_sort_title(channel):
 
 
 def ott_channel_sort_key(channel):
+    if is_highlight_channel(channel) and "_highlight_sort" in channel:
+        return (9_999_999_999, "Highlight", channel["_highlight_sort"])
     event_dt = channel_event_datetime(channel)
     event_date = channel_event_date(channel)
     if event_dt:
@@ -2000,6 +2074,7 @@ def ott_channel_sort_key(channel):
 
 
 def sort_ott_channels(channels):
+    prepare_highlight_sort_keys(channels)
     return sorted(channels, key=ott_channel_sort_key)
 
 
@@ -10057,13 +10132,14 @@ def m3u_block_stream_url(block):
 
 
 def m3u_block_highlight_date(block):
-    text = "\n".join(clean_text(line) for line in block)
     stream_url = m3u_block_stream_url(block)
+    title = next((parse_extinf(line)["title"] for line in block if line.startswith("#EXTINF")), "")
+    referer = extvlcopt_value(block, "http-referrer")
     return (
         h24_date_from_media_url(stream_url)
         or supersport_date_from_media_url(stream_url)
-        or date_from_text(stream_url)
-        or date_from_text(text)
+        or dasfootball_date_from_url(referer)
+        or date_from_text(title)
     )
 
 
