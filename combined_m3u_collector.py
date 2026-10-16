@@ -1918,6 +1918,10 @@ def highlight_fixture_key(channel):
 
 
 def prepare_highlight_sort_keys(channels):
+    try:
+        reference = json.loads((BASE_DIR / "dasfootball_order.json").read_text(encoding="utf-8")).get("fixtures", {})
+    except (OSError, ValueError):
+        reference = {}
     fixtures = {}
     for channel in channels:
         if is_highlight_channel(channel):
@@ -1930,14 +1934,22 @@ def prepare_highlight_sort_keys(channels):
                 clusters.append((day, []))
             clusters[-1][1].append(channel)
         for day, cluster in clusters:
-            newest = max((highlight_channel_date(ch) or datetime.min.date() for ch in cluster))
+            das_members = [ch for ch in cluster if ch.get("source") == "DasFootballHighlight"]
+            newest = max((highlight_channel_date(ch) or datetime.min.date() for ch in (das_members or cluster)))
+            entry = reference.get(fixture, {})
+            if entry.get("date"):
+                ref_day = datetime.strptime(entry["date"], "%Y-%m-%d").date()
+                if abs((ref_day - newest).days) <= 2:
+                    newest = ref_day
+                else:
+                    entry = {}
             for channel in cluster:
                 url = clean_text(channel.get("stream_url"))
                 source = channel.get("source", "")
                 rank = (0 if source == "24hHighlight" or "cdn.24h.com.vn" in url
                         else 2 if source == "SuperSportHighlight" or "vod.supersport.com" in url else 1)
                 part = int(h24_stream_part_number(url) or 0) if rank == 0 else 0
-                channel["_highlight_sort"] = (-newest.toordinal(), fixture, rank, part or 0,
+                channel["_highlight_sort"] = (-newest.toordinal(), entry.get("order", 99999), fixture, rank, part or 0,
                                               clean_text(channel.get("name")), url)
 
 
@@ -10233,7 +10245,74 @@ def ott_highlight_blocks_from_file():
     return blocks
 
 
+def refresh_dasfootball_order():
+    try:
+        page = dasfootball_fetch_text(DASFOOTBALL_BASE_URL, timeout=20)
+        fixtures = {}
+        for index, url in enumerate(extract_dasfootball_highlight_urls(page, DASFOOTBALL_BASE_URL)):
+            day = dasfootball_date_from_url(url)
+            title = re.sub(r"\s+highlights?.*$", "", title_from_url_slug(url), flags=re.I)
+            key = highlight_fixture_key({"name": title})
+            if day and key.startswith("match:"):
+                fixtures.setdefault(key, {"date": day.isoformat(), "order": index})
+        if fixtures:
+            (BASE_DIR / "dasfootball_order.json").write_text(
+                json.dumps({"updated": now_ict(), "fixtures": fixtures}, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
+            log(f"[Highlight] DasFootball reference order: {len(fixtures)} fixtures")
+    except Exception as exc:
+        log(f"[Highlight] Keep previous DasFootball order: {exc}")
+
+
+def repair_h24_missing_halves(channels):
+    halves = {}
+    for channel in channels:
+        if "cdn.24h.com.vn" in clean_text(channel.get("stream_url")):
+            part = h24_stream_part_number(channel.get("stream_url"))
+            if part:
+                halves.setdefault(highlight_fixture_key(channel), set()).add(part)
+    missing = {key for key, parts in halves.items() if parts != {"1", "2"}}
+    if not missing:
+        return channels
+    try:
+        listing = fetch_text(urljoin(H24_BASE_URL, "video-highlight-c953.html"), headers=h24_headers(), timeout=20)
+        articles = extract_h24_article_urls(listing, H24_BASE_URL)
+    except Exception as exc:
+        log(f"[24hHighlight] Half repair listing failed: {exc}")
+        return channels
+
+    def repair_article(url):
+        try:
+            page = fetch_text(url, headers=h24_headers(url), timeout=15)
+            title = clean_highlight_title(title_from_html_page(page, ""))
+            key = highlight_fixture_key({"name": title})
+            if key not in missing:
+                return []
+            result = []
+            for stream, day in best_h24_stream_variants([(u, h24_date_from_media_url(u)) for u in extract_h24_media_urls(page)]):
+                part = h24_stream_part_label(stream)
+                if not part or not day or day not in h24_allowed_highlight_dates():
+                    continue
+                if not is_working_m3u8(stream, referer=H24_BASE_URL, user_agent=UA):
+                    continue
+                result.append({"source": "24hHighlight", "group": "Highlight", "name": f"{title} [{part}]",
+                               "stream_url": stream, "logo": "", "referer": H24_BASE_URL,
+                               "user_agent": UA, "event_date": day, "skip_event_filter": True})
+            return result
+        except Exception:
+            return []
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        repaired = [ch for result in executor.map(repair_article, articles[:80]) for ch in result]
+    if repaired:
+        log(f"[24hHighlight] Re-read articles: {len(repaired)} half links")
+        channels = dedupe_and_sort_channels(channels + repaired)
+        merge_and_save_h24_highlight_cache([ch for ch in channels if ch.get("source") == "24hHighlight"])
+    return channels
+
+
 def collect_current_highlights():
+    refresh_dasfootball_order()
     highlight_sources = []
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("SuperSportHighlight", collect_supersport_highlights)))
     dasfootball_channels = []
@@ -10258,7 +10337,7 @@ def collect_current_highlights():
         if previous_highlights:
             highlight_channels = filter_recent_highlights(dedupe_and_sort_channels(highlight_channels + previous_highlights))
             log(f"[Highlight] After previous merge: {len(highlight_channels)}")
-    return highlight_channels
+    return dedupe_and_sort_channels(repair_h24_missing_halves(highlight_channels))
 
 
 def main():
@@ -10272,6 +10351,7 @@ def main():
         return
 
     if RUN_MODE in {"dasfootball", "merge_dasfootball"}:
+        refresh_dasfootball_order()
         fresh = (filter_recent_highlights(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
                  if RUN_MODE == "dasfootball" else [])
         previous = collect_previous_dasfootball_playlist()
@@ -10280,7 +10360,7 @@ def main():
             raise RuntimeError("DasFootball returned no fresh videos; preserving previous files")
         write_m3u(DASFOOTBALL_M3U, channels)
         other = collect_previous_highlight_playlist()
-        merged = filter_recent_highlights(dedupe_and_sort_channels(channels + other))
+        merged = filter_recent_highlights(dedupe_and_sort_channels(repair_h24_missing_halves(channels + other)))
         write_m3u(HIGHLIGHT_M3U, merged)
         replace_highlight_blocks(ALL_M3U, highlight_blocks_from_file())
         replace_highlight_blocks(OTT_M3U, ott_highlight_blocks_from_channels(merged))

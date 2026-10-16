@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dasfootball.m3u highlight.m3u all.m3u ott.m3u
+          git add dasfootball.m3u dasfootball_order.json h24_highlight_cache.json highlight.m3u all.m3u ott.m3u
           git diff --cached --quiet && exit 0
           git commit -m "Refresh DasFootball highlights"
           for attempt in 1 2 3; do
@@ -40,13 +40,13 @@ jobs:
             git rebase origin/main || {
               for path in $(git diff --name-only --diff-filter=U); do
                 case "$path" in
-                  dasfootball.m3u) git checkout --theirs -- "$path" ;;
+                  dasfootball.m3u|dasfootball_order.json|h24_highlight_cache.json) git checkout --theirs -- "$path" ;;
                   all.m3u|ott.m3u|highlight.m3u) git checkout --ours -- "$path" ;;
                   *) git rebase --abort; exit 1 ;;
                 esac
               done
               RUN_MODE=merge_dasfootball python combined_m3u_collector.py
-              git add dasfootball.m3u highlight.m3u all.m3u ott.m3u
+              git add dasfootball.m3u dasfootball_order.json h24_highlight_cache.json highlight.m3u all.m3u ott.m3u
               GIT_EDITOR=true git rebase --continue
             }
           done
