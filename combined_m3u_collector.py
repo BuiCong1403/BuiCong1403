@@ -462,7 +462,7 @@ XOILACZ_STREAM_WORKERS = int(os.environ.get("XOILACZ_STREAM_WORKERS", "3") or "3
 VSC9_TTCB_MIN_TODAY_LINKS = int(os.environ.get("VSC9_TTCB_MIN_TODAY_LINKS", "20") or "20")
 PHAOHOA_TTCB_MIN_LINKS = int(os.environ.get("PHAOHOA_TTCB_MIN_LINKS", "20") or "20")
 KHANDAIA_TTCB_MIN_LINKS = int(os.environ.get("KHANDAIA_TTCB_MIN_LINKS", "20") or "20")
-SLOW_SOURCE_GRACE_MINUTES = int(os.environ.get("SLOW_SOURCE_GRACE_MINUTES", "2160") or "2160")
+SLOW_SOURCE_GRACE_MINUTES = int(os.environ.get("SLOW_SOURCE_GRACE_MINUTES", "480") or "480")
 REQUIRED_SLOW_SOURCES = {
     item.strip()
     for item in os.environ.get("REQUIRED_SLOW_SOURCES", "KhanDaiA,PhaoHoaTV,PhaLangTV,XoiLacZ").split(",")
@@ -10427,6 +10427,41 @@ def main():
     log(f"Combined M3U collector - {now_ict()} - {mode} - run_mode={RUN_MODE}")
     log("=" * 60)
 
+    if RUN_MODE == "vsc9":
+        channels = filter_current_and_future_events(collect_vsc9_api())
+        if not channels:
+            raise RuntimeError("VSC9 returned no current streams; preserving previous outputs")
+        for channel in channels:
+            channel["referer"] = ""
+            channel["user_agent"] = ""
+        save_source_cache(VSC9_CACHE, channels, VSC9_URL)
+        snapshot = BASE_DIR / "vsc9.m3u"
+        write_m3u(snapshot, channels)
+        for target, ott in ((ALL_M3U, False), (OTT_M3U, True)):
+            if not target.exists():
+                continue
+            header, blocks = split_m3u_text_blocks(target.read_text(encoding="utf-8-sig"))
+            kept = []
+            for block in blocks:
+                label = " ".join(block[:2])
+                if "Vua Sân Cỏ" in label or "Vua San Co" in label:
+                    continue
+                title = block[0].split(",", 1)[-1]
+                if not m3u_block_is_highlight(block) and not filter_current_and_future_events([{"name": title}]):
+                    continue
+                kept.append(block)
+            temporary = BASE_DIR / "vsc9_merge.tmp.m3u"
+            try:
+                if ott:
+                    write_ott_m3u(temporary, select_ott_compatible_channels(channels))
+                else:
+                    write_m3u(temporary, channels)
+                _, additions = split_m3u_text_blocks(temporary.read_text(encoding="utf-8-sig"))
+                write_m3u_text_blocks(target, header, kept + additions)
+            finally:
+                temporary.unlink(missing_ok=True)
+        return
+
     if RUN_MODE == "slow":
         collect_slow_sources()
         return
@@ -10592,6 +10627,8 @@ def main():
     if missing_flv_channels:
         all_channels.extend(missing_flv_channels)
 
+    # Reference supplements and cached sources must obey the same expiry rule.
+    all_channels = filter_current_and_future_events(all_channels)
     base_deduped_with_ott = dedupe_and_sort_channels(all_channels)
     base_deduped, _base_flv_channels = split_ott_channels(base_deduped_with_ott)
     base_ott_deduped = select_ott_compatible_channels(base_deduped_with_ott)

@@ -1,0 +1,40 @@
+name: Refresh Vua San Co
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 */2 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: update-m3u-main
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - run: python -m pip install requests
+      - run: RUN_MODE=vsc9 python combined_m3u_collector.py
+      - name: Publish current streams
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for attempt in 1 2 3; do
+            git add vsc9.m3u vsc9_cache.json all.m3u ott.m3u
+            git diff --cached --quiet && exit 0
+            git commit -m "Refresh Vua San Co streams"
+            git push && exit 0
+            git fetch origin main
+            git reset --soft HEAD~1
+            git restore --staged vsc9.m3u vsc9_cache.json all.m3u ott.m3u
+            git restore vsc9_cache.json all.m3u ott.m3u
+            git rebase origin/main
+            RUN_MODE=vsc9 python combined_m3u_collector.py
+          done
+          exit 1
