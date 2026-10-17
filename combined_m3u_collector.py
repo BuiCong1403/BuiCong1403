@@ -431,7 +431,7 @@ TINHLAGI_APP_PACKAGE = os.environ.get("TINHLAGI_APP_PACKAGE", "app.tinhlagi.pro"
 TINHLAGI_APP_ANDROID_ID = os.environ.get("TINHLAGI_APP_ANDROID_ID", "github-actions")
 TINHLAGI_APP_VERSION_CODE = int(os.environ.get("TINHLAGI_APP_VERSION_CODE", "523") or "523")
 TINHLAGI_APP_UA = os.environ.get("TINHLAGI_APP_UA", "Dalvik/2.1.0")
-TINHLAGI_APP_ENABLE = os.environ.get("TINHLAGI_APP_ENABLE", "1").strip().lower() not in {"0", "false", "no"}
+TINHLAGI_APP_ENABLE = os.environ.get("TINHLAGI_APP_ENABLE", "0").strip().lower() not in {"0", "false", "no"}
 TINHLAGI_APP_HIGHLIGHT_LIMIT = int(os.environ.get("TINHLAGI_APP_HIGHLIGHT_LIMIT", "30") or "30")
 THETHAOCOBAN_M3U_URL = os.environ.get("THETHAOCOBAN_M3U_URL", "https://thcoban.github.io/ththethao/ttthethao.m3u")
 VANLINH_LIST_URL = os.environ.get("VANLINH_LIST_URL", "https://vanlinh.io.vn/list/")
@@ -3768,9 +3768,86 @@ def gavang_field_from_context(context, *fields):
     return ""
 
 
+def collect_gavang33_api():
+    channels = []
+    config = fetch_json("https://gvabc.cc/websocket", timeout=12)
+    if not isinstance(config, dict) or not config.get("api_url"):
+        config = fetch_json("https://gavang33.ag/config.json", timeout=12)
+    base = clean_text(config.get("api_url") or config.get("apiUrl")) if isinstance(config, dict) else ""
+    if not base:
+        return channels
+    payload = fetch_json(base.rstrip("/") + "/api/v1/matches?webType=gavang", timeout=20)
+    rows = payload.get("data") if isinstance(payload, dict) else None
+    rows = rows.values() if isinstance(rows, dict) else rows or []
+    for match in rows:
+        if not isinstance(match, dict):
+            continue
+        home, away = match.get("homeTeam") or {}, match.get("awayTeam") or {}
+        event = parse_epoch_to_ict_datetime(match.get("matchTime"))
+        title = f"{home.get('name', '')} vs {away.get('name', '')}"
+        if event:
+            title = event.strftime("%H:%M %d/%m ") + title
+        for anchor in match.get("anchorAppointmentVoList") or []:
+            for stream in anchor.get("streamUrls") or []:
+                if not isinstance(stream, str) or not (is_hls_url(stream) or is_flv_url(stream)):
+                    continue
+                channels.append({
+                    "source": "GaVang", "group": GAVANG_GROUP,
+                    "name": f"{title} ({clean_text(anchor.get('nickName'))}) [{'FLV' if is_flv_url(stream) else 'HLS'}]",
+                    "logo": home.get("logo", ""), "stream_url": stream,
+                    "referer": "https://gavang33.ag/", "user_agent": UA,
+                    "event_datetime": event, "event_date": event.date() if event else None,
+                })
+    log(f"[GaVang] Direct GaVang33 API: {len(channels)} links")
+    return channels
+
+
+def collect_gavang_match_pages(page_html, site_url):
+    urls = []
+    for raw in re.findall(r'''href=["']([^"']+)["']''', page_html, re.I):
+        url = urljoin(site_url, html.unescape(raw))
+        if "/truc-tiep/" in url and url not in urls:
+            urls.append(url)
+
+    def resolve(url):
+        try:
+            response = request_get(url, timeout=12)
+            if response.status_code != 200:
+                return []
+            text = response.text
+            start = re.search(r'"uploadDate"\s*:\s*"([^"\s]+)"', text)
+            event = parse_iso_to_ict_datetime(start.group(1)) if start else None
+            title = re.sub(r"\s+ngay\s+\d.*$", "", title_from_url_slug(url), flags=re.I)
+            if event:
+                title = event.strftime("%H:%M %d/%m ") + title
+            streams = set()
+            for raw in re.findall(r'''data-stream-url(?:-flv)?=["']([^"']+)["']''', text, re.I):
+                streams.add(html.unescape(raw))
+            for raw in re.findall(r'''(?:src|data-embed)=["']([^"']+)["']''', text, re.I):
+                query = parse_qs(urlparse(html.unescape(raw)).query)
+                for field in ("hls", "flv"):
+                    streams.update(query.get(field, []))
+            return [{"source": "GaVang", "group": GAVANG_GROUP,
+                     "name": f"{title} [{'FLV' if is_flv_url(stream) else 'HLS'}]",
+                     "stream_url": stream, "logo": urljoin(site_url, "favicon.ico"),
+                     "referer": site_url, "user_agent": UA,
+                     "event_datetime": event, "event_date": event.date() if event else None}
+                    for stream in streams if is_hls_url(stream) or is_flv_url(stream)]
+        except Exception:
+            return []
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        channels = [ch for result in executor.map(resolve, urls[:100]) for ch in result]
+    log(f"[GaVang] Direct match pages: {len(urls)} pages, {len(channels)} links")
+    return channels
+
+
 def collect_gavang():
     source = "GaVang"
     channels = []
+    try:
+        channels.extend(collect_gavang33_api())
+    except Exception as exc:
+        log(f"[GaVang] Direct API unavailable: {exc}")
     seen_urls = set()
     for site_url in GAVANG_SITE_CANDIDATES:
         headers = {
@@ -3788,6 +3865,8 @@ def collect_gavang():
             log(f"[{source}] Error {site_url}: {exc}")
             continue
         active_url = clean_text(getattr(response, "url", "") or site_url).rstrip("/") + "/"
+        if "ba-theme" in html_text:
+            channels.extend(collect_gavang_match_pages(html_text, active_url))
         for match in re.finditer(
             r"https?://[^\s'\"<>\\]+?(?:\.m3u8|\.flv)(?:\?[^\s'\"<>\\]*)?",
             html_text,
@@ -3840,7 +3919,7 @@ def collect_gavang():
                     "event_datetime": event_datetime,
                 }
             )
-    for channel in collect_tinhlagi_app_gavang():
+    for channel in (collect_tinhlagi_app_gavang() if TINHLAGI_APP_ENABLE else []):
         stream_url = clean_text(channel.get("stream_url"))
         seen_key = source_stream_seen_key(source, stream_url, channel.get("name"))
         if not stream_url or seen_key in seen_urls:
@@ -6248,6 +6327,8 @@ def collect_xoilacz():
         )
 
     def append_tinhlagi_app_fallback(reason):
+        if not TINHLAGI_APP_ENABLE:
+            return
         log(f"[{source}] {reason}; fallback Tinhlagi app")
         for item in collect_tinhlagi_app_xoilac():
             stream_url = clean_text(item.get("stream_url"))
@@ -10370,7 +10451,6 @@ def main():
         highlight_channels = collect_current_highlights()
         if WRITE_HIGHLIGHT_M3U:
             write_m3u(HIGHLIGHT_M3U, highlight_channels)
-            write_tinhlagi_app_highlight_reference()
         all_counts = replace_highlight_blocks(ALL_M3U, highlight_blocks_from_file())
         ott_counts = replace_highlight_blocks(OTT_M3U, ott_highlight_blocks_from_channels(highlight_channels))
         log("")
@@ -10423,22 +10503,6 @@ def main():
                 "https://apithethao1.vercel.app/quechoatv",
                 "Que Choa TV",
                 QUECHOA_HOME_URL,
-            ),
-        ),
-        (
-            "TinhLaGi",
-            lambda: collect_m3u_playlist(
-                "TinhLaGi",
-                TINHLAGI_SPORT_M3U_URL,
-                "Tinh La Gi",
-                preserve_group=True,
-                allow_non_m3u8=True,
-                timeout=60,
-                retries=3,
-                default_referer_to_playlist=False,
-                user_agent="",
-                preserve_extinf=True,
-                preserve_group_exact=True,
             ),
         ),
         ("GioVang", collect_giovang_api),
@@ -10560,7 +10624,6 @@ def main():
     per_source_counts["Highlight"] = len(highlight_channels)
     if WRITE_HIGHLIGHT_M3U:
         write_m3u(HIGHLIGHT_M3U, highlight_channels)
-        write_tinhlagi_app_highlight_reference()
     if INCLUDE_HIGHLIGHT_IN_MAIN and highlight_channels:
         all_channels.extend(highlight_channels)
 

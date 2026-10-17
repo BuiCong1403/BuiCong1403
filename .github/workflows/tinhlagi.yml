@@ -1,0 +1,45 @@
+name: Refresh Tinhlagi Reference
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tinhlagi_app_export.py"
+      - ".github/workflows/tinhlagi.yml"
+  schedule:
+    # Vietnam 06:15, 12:15, 18:15. Independent of sports collection.
+    - cron: "15 23,5,11 * * *"
+
+concurrency:
+  group: tinhlagi-reference
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  reference:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Export reference playlists
+        run: python tinhlagi_app_export.py
+      - name: Publish reference playlists
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add --ignore-errors tlgapp.m3u hl.m3u
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh Tinhlagi reference playlists"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git pull --rebase origin main
+          done
+          exit 1

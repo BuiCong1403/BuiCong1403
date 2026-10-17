@@ -110,18 +110,24 @@ def strip_extm3u(text):
 def main():
     blocks = []
     counts = {}
+    failures = []
+    highlight_text = None
     for source in get_sources():
         source_id = clean_text(source.get("id")).lower()
         source_name = clean_text(source.get("name")) or source_id or "Tinhlagi"
         if source_id in EXCLUDE_IDS or source_name.lower() in EXCLUDE_IDS or re.search(r"movie|film|phim", source_id + " " + source_name, re.I):
             continue
-        text = strip_extm3u(fetch_text(source["url"]))
-        if not text:
-            raise RuntimeError(f"Empty playlist: {source_name}")
+        try:
+            raw_text = fetch_text(source["url"])
+            text = strip_extm3u(raw_text)
+            if not raw_text.lstrip().startswith("#EXTM3U") or "#EXTINF" not in text:
+                raise RuntimeError("Invalid or empty M3U response")
+        except Exception as exc:
+            failures.append(source_name)
+            print(f"[WARN] Keep previous {source_name}: {exc}", file=sys.stderr)
+            continue
         if "highlight" in (source_id + " " + source_name).lower():
-            highlight_output = BASE_DIR / "hl.m3u"
-            highlight_output.write_text("#EXTM3U\n" + text + "\n", encoding="utf-8")
-            print(f"[DONE] hl.m3u: {text.count('#EXTINF')} links")
+            highlight_text = text
             continue
         count = text.count("#EXTINF")
         counts[source_name] = count
@@ -136,8 +142,19 @@ def main():
         "",
     ]
     output.extend(blocks)
-    OUTPUT_M3U.write_text("\n\n".join(output).rstrip() + "\n", encoding="utf-8")
-    print(f"[DONE] {OUTPUT_M3U.name}: {total} links")
+    if blocks and not any("highlight" not in name.lower() for name in failures):
+        temporary = OUTPUT_M3U.with_suffix(".m3u.tmp")
+        temporary.write_text("\n\n".join(output).rstrip() + "\n", encoding="utf-8")
+        temporary.replace(OUTPUT_M3U)
+        print(f"[DONE] {OUTPUT_M3U.name}: {total} links")
+    if highlight_text is not None:
+        highlight_output = BASE_DIR / "hl.m3u"
+        temporary = highlight_output.with_suffix(".m3u.tmp")
+        temporary.write_text("#EXTM3U\n" + highlight_text + "\n", encoding="utf-8")
+        temporary.replace(highlight_output)
+        print(f"[DONE] hl.m3u: {highlight_text.count('#EXTINF')} links")
+    if not blocks and highlight_text is None:
+        raise RuntimeError("No valid Tinhlagi playlists; all previous files preserved")
     for name, count in counts.items():
         print(f"[DONE] {name}: {count}")
 
