@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-18 07:38 ICT
-# Total   : 865
+# Updated : 2026-10-18 07:56 ICT
+# Total   : 909
 
 #EXTINF:0,VTV5 Tay Nam Bo
 #EXTGRP:VTV
@@ -105,10 +105,6 @@ https://live05.zhwpg.app/live/02456966_tsc.flv
 #EXTINF:0,15:30 16/10 PSIM Yogyakarta vs PSM Makassar (HD MAX) | FPT
 #EXTGRP:FLV
 https://live2.pro2cdnlive.com/live/channel-6.flv
-
-#EXTINF:0,15:30 16/10 PSIM Yogyakarta vs PSM Makassar (Khang Hi) [flv] | FPT
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a7c0d8f65997681f18cacc4.flv
 
 #EXTINF:0,15:30 16/10 PSIM Yogyakarta vs PSM Makassar (MAX) | FPT
 #EXTGRP:FLV
@@ -218,10 +214,6 @@ https://cdnflv.xbdbotv.live/live/MTk4MTM1MDQ6aGY1ODc5dDVoeXprdGJiajd3azBucmU2Oml
 #EXTGRP:FLV
 https://live05.zhwpg.app/live/16226575_tsc.flv
 
-#EXTINF:0,20:00 16/10 Kelantan Red Warrior vs Imigresen FC (Ca Map) [flv] | FPT
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.flv
-
 #EXTINF:0,20:00 16/10 Kelantan Red Warrior vs Star City FC (NGUOI PHAO) [flv] | FPT
 #EXTGRP:FLV
 https://flv.lauthaitv.cc/live/kelan-starcity-massup.flv
@@ -241,10 +233,6 @@ https://live05.zhwpg.app/live/08552895_tsc.flv
 #EXTINF:0,21:30 16/10 Al Ahli vs Al-Wakrah SC (NGUOI CAO) [flv] | FPT
 #EXTGRP:FLV
 https://flv.lauthaitv.cc/live/ahli-wakrah-qatstars.flv
-
-#EXTINF:0,22:00 16/10 FC Otelul Galati vs FK Csikszereda Miercurea Ciuc (Rio) [flv] | FPT
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.flv
 
 #EXTINF:0,23:00 16/10 KS Wieczysta Krakow vs Rakow Czestochowa (NGUOI DE) [flv] | FPT
 #EXTGRP:FLV
@@ -974,14 +962,6 @@ https://live.khoga.space/live/livehub10.flv
 #EXTGRP:PhaoHoaTV
 https://live.khoga.space/live/livehub10/index.m3u8
 
-#EXTINF:0,03:00 18/10 Malaga vs Real Sociedad (NGUOI CAT) [flv]
-#EXTGRP:FLV
-https://flv.lauthaitv.cc/live/malaga-socie-laliga.flv
-
-#EXTINF:0,03:00 18/10 Malaga vs Real Sociedad (NGUOI CAT) [hls]
-#EXTGRP:S8 TV
-https://hls.lauthaitv.cc/live/malaga-socie-laliga/index.m3u8
-
 #EXTINF:0,04:00 18/10 Botafogo - RJ vs Chapecoense - SC (Nha Dai)
 #EXTGRP:Vua San Co TV
 https://station1-global.ebaclofen.org/live/dcac3d31fa5d9e19066cecb4c00f496e/playlist.m3u8
@@ -1032,11 +1012,11 @@ https://live2.zktsva.app/live/432017.flv
 
 #EXTINF:0,06:07 18/10 Guadalajara vs Tigres UANL (NGUOI CAT) [flv]
 #EXTGRP:FLV
-https://flv.lauthaitv.cc/live/guada-tigres-mexliga.flv
+https://flv.lauthaitv.cc/live/guada-tigres-mexliga2.flv
 
 #EXTINF:0,06:07 18/10 Guadalajara vs Tigres UANL (NGUOI CAT) [hls]
 #EXTGRP:S8 TV
-https://hls.lauthaitv.cc/live/guada-tigres-mexliga/index.m3u8
+https://hls.lauthaitv.cc/live/guada-tigres-mexliga2/index.m3u8
 
 #EXTINF:0,06:30 18/10 Atlanta United vs Inter Miami CF (But Chi) [hls]
 #EXTGRP:Sao Ke TV
@@ -1044,19 +1024,11 @@ https://wtyi0525.edgemaxcdn.org/live/x22-hd-1111/playlist.m3u8
 
 #EXTINF:0,06:30 18/10 Atlanta United vs Inter Miami CF (NGUOI NAN) [flv]
 #EXTGRP:FLV
-https://flv.lauthaitv.cc/live/atlanta-miami-mls.flv
+https://flv.lauthaitv.cc/live/atlanta-miami-mls2.flv
 
 #EXTINF:0,06:30 18/10 Atlanta United vs Inter Miami CF (NGUOI NAN) [hls]
 #EXTGRP:S8 TV
-https://hls.lauthaitv.cc/live/atlanta-miami-mls/index.m3u8
-
-#EXTINF:0,06:30 18/10 Atlanta United Vs Inter Miami Cf [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a2a59b347bbddd62a8dc4e4.flv
-
-#EXTINF:0,06:30 18/10 Atlanta United Vs Inter Miami Cf [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a2a59b347bbddd62a8dc4e4.flv
+https://hls.lauthaitv.cc/live/atlanta-miami-mls2/index.m3u8
 
 #EXTINF:0,06:30 18/10 Atlanta United vs Inter Miami CF (LY LA LANG) (HD2) [geo]
 #EXTGRP:Pha Lang TV
@@ -1082,41 +1054,29 @@ https://xoiche.live/live/livehub3/index.m3u8
 #EXTGRP:PhaoHoaTV
 https://live.khoga.space/live/livehub3/index.m3u8
 
-#EXTINF:0,06:30 18/10 Atlanta Utd vs Inter Miami CF (Ga Sieu To) [FLV]
-#EXTGRP:FLV
-https://live2.zktsva.app/live/796315.flv
-
 #EXTINF:0,06:30 18/10 New England Revolution vs Chicago Fire (Doanh Chinh)
 #EXTGRP:Vua San Co TV
 https://cdn-global.ebaclofen.org/vsc/vsc-te-tuong-alien/index.m3u8
 
-#EXTINF:0,06:30 18/10 New York City Football Club vs Los Angeles FC (Ga Sieu Toc) [FLV]
+#EXTINF:0,06:40 18/10 Atlanta Utd vs Inter Miami CF (Ga Sieu To) [FLV]
+#EXTGRP:FLV
+https://live2.zktsva.app/live/796315.flv
+
+#EXTINF:0,06:40 18/10 New York City Football Club vs Los Angeles FC (Ga Sieu Toc) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/307240.flv
 
-#EXTINF:0,07:00 18/10 Sao Paulo Sp Vs Vasco Da Gama Saf Rj [FLV]
+#EXTINF:0,07:00 18/10 Sao Paulo vs Vasco de Gama (NGUOI SOI) [flv]
 #EXTGRP:FLV
-https://playback.livetl002.com/live/69a1aaa7230584579e2d5ce1.flv
+https://flv.lauthaitv.cc/live/saopaulo-vasco-brasa2.flv
 
-#EXTINF:0,07:00 18/10 Sao Paulo Sp Vs Vasco Da Gama Saf Rj [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/69a1aaa7230584579e2d5ce1.flv
+#EXTINF:0,07:00 18/10 Sao Paulo vs Vasco de Gama (NGUOI SOI) [hls]
+#EXTGRP:S8 TV
+https://hls.lauthaitv.cc/live/saopaulo-vasco-brasa2/index.m3u8
 
 #EXTINF:0,07:00 18/10 Sao Paulo - SP vs Vasco da Gama Saf - RJ (Trieu Hang)
 #EXTGRP:Vua San Co TV
 https://cdn1-global.ebaclofen.org/live/pro1/index.m3u8
-
-#EXTINF:0,07:00 18/10 Sao Paulo vs Vasco de Gama (NGUOI SOI) [flv]
-#EXTGRP:FLV
-https://flv.lauthaitv.cc/live/saopaulo-vasco-brasa.flv
-
-#EXTINF:0,07:00 18/10 Sao Paulo vs Vasco de Gama (NGUOI SOI) [hls]
-#EXTGRP:S8 TV
-https://hls.lauthaitv.cc/live/saopaulo-vasco-brasa/index.m3u8
-
-#EXTINF:0,07:30 18/10 Austin FC vs Vancouver Whitecaps (Ga Sieu Gay) [FLV]
-#EXTGRP:FLV
-https://live2.zktsva.app/live/294335.flv
 
 #EXTINF:0,07:30 18/10 Austin FC vs Vancouver Whitecaps (Pho Nghi)
 #EXTGRP:Vua San Co TV
@@ -1126,6 +1086,14 @@ https://cdn1-global.ebaclofen.org/live/pro2/index.m3u8
 #EXTGRP:Vua San Co TV
 https://cdn1-global.ebaclofen.org/live/pro3/index.m3u8
 
+#EXTINF:0,07:40 18/10 Austin FC vs Vancouver Whitecaps (Ga Sieu Gay) [FLV]
+#EXTGRP:FLV
+https://live2.zktsva.app/live/294335.flv
+
+#EXTINF:0,08:00 18/10 Leon vs CF America (Nep Cam) [hls]
+#EXTGRP:Sao Ke TV
+https://wtyi0525.edgemaxcdn.org/live/x4-hd-1111/playlist.m3u8
+
 #EXTINF:0,08:00 18/10 Club Leon Vs Club America [FLV]
 #EXTGRP:FLV
 https://playback.livetl002.com/live/69be75e0a0a45974afb67776.flv
@@ -1133,10 +1101,6 @@ https://playback.livetl002.com/live/69be75e0a0a45974afb67776.flv
 #EXTINF:0,08:00 18/10 Club Leon Vs Club America [FLV]
 #EXTGRP:FLV
 https://playback.livetl004.com/live/69be75e0a0a45974afb67776.flv
-
-#EXTINF:0,08:00 18/10 Leon vs CF America (Nep Cam) [hls]
-#EXTGRP:Sao Ke TV
-https://wtyi0525.edgemaxcdn.org/live/x4-hd-1111/playlist.m3u8
 
 #EXTINF:0,09:00 18/10 Nu Sydney Uni vs Nu Adelaide Lightning (HD ALAN)
 #EXTGRP:FLV
@@ -1180,11 +1144,11 @@ https://live2.zktsva.app/live/289650.flv
 
 #EXTINF:0,09:30 18/10 Los Angeles Galaxy vs San Diego (NGUOI NAN) [flv]
 #EXTGRP:FLV
-https://flv.lauthaitv.cc/live/lagalaxy-sandieago-mls.flv
+https://flv.lauthaitv.cc/live/lagalaxy-sandieago-mls2.flv
 
 #EXTINF:0,09:30 18/10 Los Angeles Galaxy vs San Diego (NGUOI NAN) [hls]
 #EXTGRP:S8 TV
-https://hls.lauthaitv.cc/live/lagalaxy-sandieago-mls/index.m3u8
+https://hls.lauthaitv.cc/live/lagalaxy-sandieago-mls2/index.m3u8
 
 #EXTINF:0,09:30 18/10 San Jose Earthquakes vs Nashville SC (Nguyen Dam)
 #EXTGRP:Vua San Co TV
@@ -1200,11 +1164,11 @@ https://playback.livetl004.com/live/69a1aaa7230584579e2d5ce1.flv
 
 #EXTINF:0,10:10 18/10 Cruz Azul vs FC Juarez (NGUOI SOI) [flv]
 #EXTGRP:FLV
-https://flv.lauthaitv.cc/live/cruz-juarez-mexliga.flv
+https://flv.lauthaitv.cc/live/cruz-juarez-mexliga2.flv
 
 #EXTINF:0,10:10 18/10 Cruz Azul vs FC Juarez (NGUOI SOI) [hls]
 #EXTGRP:S8 TV
-https://hls.lauthaitv.cc/live/cruz-juarez-mexliga/index.m3u8
+https://hls.lauthaitv.cc/live/cruz-juarez-mexliga2/index.m3u8
 
 #EXTINF:0,10:10 18/10 | Cruz Azul vs Juarez | Bong da | Liga MX | BLV BLV Tam Mao | Backup
 #EXTGRP:PhaoHoaTV
@@ -1225,14 +1189,6 @@ https://live2.pro2cdnlive.com/live/channel29.flv
 #EXTINF:0,11:05 18/10 JT Marvelous W vs Okayama Seagulls W (Teppy) [hls]
 #EXTGRP:Sao Ke TV
 https://wtyi0525.edgemaxcdn.org/live/x31-hd-1111/playlist.m3u8
-
-#EXTINF:0,11:55 18/10 Fagiano Okayama Vs Vissel Kobe [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a2a59b347bbddd62a8dc4e4.flv
-
-#EXTINF:0,11:55 18/10 Fagiano Okayama Vs Vissel Kobe [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a2a59b347bbddd62a8dc4e4.flv
 
 #EXTINF:0,11:55 18/10 Fagiano Okayama vs Vissel Kobe (Ga Sieu Phe + Ga Sieu Quy) [FLV]
 #EXTGRP:FLV
@@ -1462,6 +1418,14 @@ https://cdnflv.xbdbotv.live/live/MTk3MTM1NDk6aGd5eDdwZGEwMmRlNWExZXZhMThvNnRnOmV
 #EXTGRP:BiaomTV
 https://cdnhls.xbdbotv.live/live/MTk3MTM1NDk6aGd5eDdwZGEwMmRlNWExZXZhMThvNnRnOmVrc2c0OHR0eDF0aDc4YWNscnZ2b2cyYQ/index.m3u8
 
+#EXTINF:0,17:30 18/10 Udinese Vs Lecce [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.flv
+
+#EXTINF:0,17:30 18/10 Udinese Vs Lecce [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a01a2511e8555d7a3685f5c.flv
+
 #EXTINF:0,17:30 18/10 | Udinese vs Lecce | Bong da | Serie A | BLV BLV Kho Mat | FLV
 #EXTGRP:FLV
 https://live.khoga.space/live/livehub13.flv
@@ -1578,6 +1542,14 @@ https://cdnhls.xbdbotv.live/live/MTk3MzI2NTY6bjlsaDFnc2lrZDhzZjZhZW5oZjl2cG9xOmw
 #EXTGRP:Vua San Co TV
 https://cdn-global.ebaclofen.org/vsc/vsc-thai-tu-lion/index.m3u8
 
+#EXTINF:0,19:00 18/10 Ca Osasuna Vs Racing Santander [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a7c0d8f65997681f18cacc4.flv
+
+#EXTINF:0,19:00 18/10 Ca Osasuna Vs Racing Santander [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a7c0d8f65997681f18cacc4.flv
+
 #EXTINF:0,19:00 18/10 CA Osasuna vs Racing Santander (Ga O Long) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/432017.flv
@@ -1682,6 +1654,14 @@ https://cdnflv.xbdbotv.live/live/MTk3MjIxNDE6dWppY2ViaXFnN2Fmazdhendla3Q3azE3Om9
 #EXTGRP:BiaomTV
 https://cdnhls.xbdbotv.live/live/MTk3MjIxNDE6dWppY2ViaXFnN2Fmazdhendla3Q3azE3Om95cXozbmpod2xjc2FyNnNwbGF6Y3hkOQ/index.m3u8
 
+#EXTINF:0,20:00 18/10 Angers Sco Vs Marseille [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.flv
+
+#EXTINF:0,20:00 18/10 Angers Sco Vs Marseille [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a0c7c4b1ae4d6db02433c48.flv
+
 #EXTINF:0,20:00 18/10 Angers SCO vs Marseille (Ga Sieu Kieu) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/741294.flv
@@ -1693,6 +1673,22 @@ https://cdn-global.ebaclofen.org/vsc/vsc-hiep-si-tan/index.m3u8
 #EXTINF:0,20:00 18/10 Angers SCO vs Marseille (Nha Dai)
 #EXTGRP:Vua San Co TV
 https://station1-global.ebaclofen.org/live/c9bf6e2bdb91ee5837cdc61e1f8b22ec/playlist.m3u8
+
+#EXTINF:0,20:00 18/10 Bournemouth Afc Vs Sunderland [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a439a7fb89dded67b208b87.flv
+
+#EXTINF:0,20:00 18/10 Bournemouth Afc Vs Sunderland [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a704ad865997681f18c2160.flv
+
+#EXTINF:0,20:00 18/10 Bournemouth Afc Vs Sunderland [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a439a7fb89dded67b208b87.flv
+
+#EXTINF:0,20:00 18/10 Bournemouth Afc Vs Sunderland [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a704ad865997681f18c2160.flv
 
 #EXTINF:0,20:00 18/10 Bournemouth AFC vs Sunderland (Ga Sieu Son) [FLV]
 #EXTGRP:FLV
@@ -1729,6 +1725,22 @@ https://xoiche.live/live/livehub5/index.m3u8
 #EXTINF:0,20:00 18/10 | Bournemouth vs Sunderland | Bong da | Premier League | BLV BLV Kho Che | Main
 #EXTGRP:PhaoHoaTV
 https://live.khoga.space/live/livehub5/index.m3u8
+
+#EXTINF:0,20:00 18/10 Brighton Hove Albion Vs Crystal Palace [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.flv
+
+#EXTINF:0,20:00 18/10 Brighton Hove Albion Vs Crystal Palace [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.flv
+
+#EXTINF:0,20:00 18/10 Brighton Hove Albion Vs Crystal Palace [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a01a2511e8555d7a3685f5c.flv
+
+#EXTINF:0,20:00 18/10 Brighton Hove Albion Vs Crystal Palace [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a5df755b89dded67b39b8bc.flv
 
 #EXTINF:0,20:00 18/10 Brighton Hove Albion vs Crystal Palace (Ga Sieu Ngo) [FLV]
 #EXTGRP:FLV
@@ -1786,6 +1798,14 @@ https://station1-global.ebaclofen.org/live/14aefd79e89cc710fbc744ecafd3bd92/play
 #EXTGRP:Vua San Co TV
 https://station1-global.ebaclofen.org/live/13ced497a4ef1dd0e93c3cd84e98f89e/playlist.m3u8
 
+#EXTINF:0,20:00 18/10 Fiorentina Vs Como [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69f42e961f739deff81510c0.flv
+
+#EXTINF:0,20:00 18/10 Fiorentina Vs Como [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69f42e961f739deff81510c0.flv
+
 #EXTINF:0,20:00 18/10 Fiorentina vs Como (Ga Sieu Mom) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/300523.flv
@@ -1809,6 +1829,30 @@ https://live2.pro2cdnlive.com/live/channel-33.flv
 #EXTINF:0,20:00 18/10 Kedzierzyn-Kozle vs Politechnika Lublin (TYSON)
 #EXTGRP:FLV
 https://live2.pro2cdnlive.com/live/channel33.flv
+
+#EXTINF:0,20:00 18/10 Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69a1aaa7230584579e2d5ce1.flv
+
+#EXTINF:0,20:00 18/10 Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.flv
+
+#EXTINF:0,20:00 18/10 Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.flv
+
+#EXTINF:0,20:00 18/10 Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69a1aaa7230584579e2d5ce1.flv
+
+#EXTINF:0,20:00 18/10 Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69aa9525f5ec459ae275b43f.flv
+
+#EXTINF:0,20:00 18/10 Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a5b13ceb36a14387baeddaa.flv
 
 #EXTINF:0,20:00 18/10 Leeds United vs Manchester United (18+)
 #EXTGRP:Vua San Co TV
@@ -1874,6 +1918,14 @@ https://live.khoga.space/live/livehub6.flv
 #EXTGRP:PhaoHoaTV
 https://live.khoga.space/live/livehub6/index.m3u8
 
+#EXTINF:0,20:30 18/10 Bayer 04 Leverkusen Vs Sc Freiburg [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69be75e0a0a45974afb67776.flv
+
+#EXTINF:0,20:30 18/10 Bayer 04 Leverkusen Vs Sc Freiburg [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69be75e0a0a45974afb67776.flv
+
 #EXTINF:0,20:30 18/10 Bayer 04 Leverkusen vs SC Freiburg (Ga Sieu Nhi) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/301263.flv
@@ -1910,6 +1962,14 @@ https://cdnhls.xbdbotv.live/live/MTk3MzI2NjE6YThsY2E2YTk4dWpna3Q2bXcydDZwYXRxOm8
 #EXTGRP:Vua San Co TV
 https://cdn1-global.ebaclofen.org/live/pro5/index.m3u8
 
+#EXTINF:0,21:15 18/10 Rc Celta Vs Deportivo Alaves [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69ef10b47146e04fbe6d4363.flv
+
+#EXTINF:0,21:15 18/10 Rc Celta Vs Deportivo Alaves [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69ef10b47146e04fbe6d4363.flv
+
 #EXTINF:0,21:15 18/10 RC Celta vs Deportivo Alaves (Ga Sieu Peo) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/303098.flv
@@ -1930,9 +1990,25 @@ https://pull1.digitalcdn.net/live/ad9e24bf66874cc082e59eab4a73fe79/index.m3u8
 #EXTGRP:Pha Lang TV
 https://pull.digitalcdn.net/live/ad9e24bf66874cc082e59eab4a73fe79/index.m3u8
 
+#EXTINF:0,22:15 18/10 Havre Athletic Club Vs Aj Auxerre [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a9a5525864ea536c2577392.flv
+
+#EXTINF:0,22:15 18/10 Havre Athletic Club Vs Aj Auxerre [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a9a5525864ea536c2577392.flv
+
 #EXTINF:0,22:15 18/10 Havre Athletic Club vs AJ Auxerre (Luu Triet)
 #EXTGRP:Vua San Co TV
 https://cdn-global.ebaclofen.org/vsc/vsc-thai-tu-lion/index.m3u8
+
+#EXTINF:0,22:15 18/10 Lorient Vs As Monaco [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.flv
+
+#EXTINF:0,22:15 18/10 Lorient Vs As Monaco [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a0c7c4b1ae4d6db02433c48.flv
 
 #EXTINF:0,22:15 18/10 Lorient vs AS Monaco (Huyen Diep)
 #EXTGRP:Vua San Co TV
@@ -1962,6 +2038,14 @@ https://xoiche.live/live/livehub9/index.m3u8
 #EXTGRP:PhaoHoaTV
 https://live.khoga.space/live/livehub9/index.m3u8
 
+#EXTINF:0,22:15 18/10 Paris Fc Vs Stade Rennais Fc [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a9776215126529dede9bf51.flv
+
+#EXTINF:0,22:15 18/10 Paris Fc Vs Stade Rennais Fc [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a9776215126529dede9bf51.flv
+
 #EXTINF:0,22:15 18/10 Paris FC vs Stade Rennais FC (Ga Sieu Mom) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/300523.flv
@@ -1986,6 +2070,14 @@ https://xoiche.live/live/livehub5/index.m3u8
 #EXTGRP:PhaoHoaTV
 https://live.khoga.space/live/livehub5/index.m3u8
 
+#EXTINF:0,22:30 18/10 Borussia Monchengladbach Vs Tsg Hoffenheim [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.flv
+
+#EXTINF:0,22:30 18/10 Borussia Monchengladbach Vs Tsg Hoffenheim [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a5df755b89dded67b39b8bc.flv
+
 #EXTINF:0,22:30 18/10 Borussia Monchengladbach vs TSG Hoffenheim (Ga Sieu Toc) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/307240.flv
@@ -1993,6 +2085,30 @@ https://live2.zktsva.app/live/307240.flv
 #EXTINF:0,22:30 18/10 Borussia Monchengladbach vs TSG Hoffenheim (Tran Canh)
 #EXTGRP:Vua San Co TV
 https://cdn1-global.ebaclofen.org/live/pro2/index.m3u8
+
+#EXTINF:0,22:30 18/10 Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.flv
+
+#EXTINF:0,22:30 18/10 Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69f42e961f739deff81510c0.flv
+
+#EXTINF:0,22:30 18/10 Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.flv
+
+#EXTINF:0,22:30 18/10 Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69aa9525f5ec459ae275b43f.flv
+
+#EXTINF:0,22:30 18/10 Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69f42e961f739deff81510c0.flv
+
+#EXTINF:0,22:30 18/10 Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a5b13ceb36a14387baeddaa.flv
 
 #EXTINF:0,22:30 18/10 Nottingham Forest vs Arsenal (Ga Sieu Ngo) [FLV]
 #EXTGRP:FLV
@@ -2025,6 +2141,14 @@ https://cdnflv.xbdbotv.live/live/MTk3MTM1NTM6eGF6NjVwbnRsYnVzMmFsbGFrMXk3bTdyOm1
 #EXTINF:0,[23:00-18/10] Milan vs Atalanta [VDQG Y] [HLS]
 #EXTGRP:BiaomTV
 https://cdnhls.xbdbotv.live/live/MTk3MTM1NTM6eGF6NjVwbnRsYnVzMmFsbGFrMXk3bTdyOm16cjEwYTJraGltNHhtb295ODA2NXEwag/index.m3u8
+
+#EXTINF:0,23:00 18/10 Ac Milan Vs Atalanta [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.flv
+
+#EXTINF:0,23:00 18/10 Ac Milan Vs Atalanta [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a01a2511e8555d7a3685f5c.flv
 
 #EXTINF:0,23:00 18/10 AC Milan vs Atalanta (Ga O Long) [FLV]
 #EXTGRP:FLV
@@ -2069,6 +2193,14 @@ https://cdnhls.xbdbotv.live/live/MTk3MzI2NTc6bjlsaDFnc2lrZDhzZjZhZW5oZjl2cG9xOm4
 #EXTINF:0,23:30 18/10 Girona FC vs Andorra CF (Tao Due)
 #EXTGRP:Vua San Co TV
 https://cdn-global.ebaclofen.org/vsc/jonhny5/index.m3u8
+
+#EXTINF:0,23:30 18/10 Malaga Vs Real Sociedad [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69a1aaa7230584579e2d5ce1.flv
+
+#EXTINF:0,23:30 18/10 Malaga Vs Real Sociedad [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69a1aaa7230584579e2d5ce1.flv
 
 #EXTINF:0,23:30 18/10 Malaga vs Real Sociedad (Ga Sieu Kieu) [FLV]
 #EXTGRP:FLV
@@ -2670,6 +2802,14 @@ https://live2.zktsva.app/live/300523.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/304565.flv
 
+#EXTINF:0,Ac Milan Vs Atalanta [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.flv
+
+#EXTINF:0,Ac Milan Vs Atalanta [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a01a2511e8555d7a3685f5c.flv
+
 #EXTINF:0,AC Milan vs Atalanta | (Italian Serie A) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/432017.flv
@@ -2686,25 +2826,17 @@ https://live2.zktsva.app/live/289650.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/306290.flv
 
+#EXTINF:0,Angers Sco Vs Marseille [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.flv
+
+#EXTINF:0,Angers Sco Vs Marseille [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a0c7c4b1ae4d6db02433c48.flv
+
 #EXTINF:0,Angers SCO vs Marseille | (French Ligue 1) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/741294.flv
-
-#EXTINF:0,Athletico Paranaense Pr Vs Palmeiras Sp [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/69be75e0a0a45974afb67776.flv
-
-#EXTINF:0,Athletico Paranaense Pr Vs Palmeiras Sp [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/69be75e0a0a45974afb67776.flv
-
-#EXTINF:0,Atlanta United Vs Inter Miami Cf [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a2a59b347bbddd62a8dc4e4.flv
-
-#EXTINF:0,Atlanta United Vs Inter Miami Cf [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a2a59b347bbddd62a8dc4e4.flv
 
 #EXTINF:0,Atlanta Utd vs Inter Miami CF | (United States Major League Soccer) [FLV]
 #EXTGRP:FLV
@@ -2722,6 +2854,14 @@ https://live2.zktsva.app/live/294335.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/301263.flv
 
+#EXTINF:0,Bayer 04 Leverkusen Vs Sc Freiburg [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69be75e0a0a45974afb67776.flv
+
+#EXTINF:0,Bayer 04 Leverkusen Vs Sc Freiburg [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69be75e0a0a45974afb67776.flv
+
 #EXTINF:0,Bayer 04 Leverkusen vs SC Freiburg | (Bundesliga) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/301263.flv
@@ -2734,57 +2874,65 @@ https://live2.zktsva.app/live/303098.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/741294.flv
 
+#EXTINF:0,Borussia Monchengladbach Vs Tsg Hoffenheim [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.flv
+
+#EXTINF:0,Borussia Monchengladbach Vs Tsg Hoffenheim [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a5df755b89dded67b39b8bc.flv
+
 #EXTINF:0,Borussia Monchengladbach vs TSG Hoffenheim | (Bundesliga) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/307240.flv
 
-#EXTINF:0,Botafogo Rj Vs Chapecoense Sc [FLV]
+#EXTINF:0,Bournemouth Afc Vs Sunderland [FLV]
 #EXTGRP:FLV
-https://playback.livetl002.com/live/69a1aaa7230584579e2d5ce1.flv
+https://playback.livetl002.com/live/6a439a7fb89dded67b208b87.flv
 
-#EXTINF:0,Botafogo Rj Vs Chapecoense Sc [FLV]
+#EXTINF:0,Bournemouth Afc Vs Sunderland [FLV]
 #EXTGRP:FLV
-https://playback.livetl004.com/live/69a1aaa7230584579e2d5ce1.flv
+https://playback.livetl002.com/live/6a704ad865997681f18c2160.flv
+
+#EXTINF:0,Bournemouth Afc Vs Sunderland [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a439a7fb89dded67b208b87.flv
+
+#EXTINF:0,Bournemouth Afc Vs Sunderland [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a704ad865997681f18c2160.flv
 
 #EXTINF:0,Bournemouth AFC vs Sunderland | (English Premier League) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/306290.flv
 
-#EXTINF:0,Boyaca Chico Vs Atletico Nacional Medellin [FLV]
+#EXTINF:0,Brighton Hove Albion Vs Crystal Palace [FLV]
 #EXTGRP:FLV
-https://playback.livetl002.com/live/69be75e0a0a45974afb67776.flv
+https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.flv
 
-#EXTINF:0,Boyaca Chico Vs Atletico Nacional Medellin [FLV]
+#EXTINF:0,Brighton Hove Albion Vs Crystal Palace [FLV]
 #EXTGRP:FLV
-https://playback.livetl004.com/live/69be75e0a0a45974afb67776.flv
+https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.flv
 
-#EXTINF:0,Brentford Vs Liverpool [FLV]
+#EXTINF:0,Brighton Hove Albion Vs Crystal Palace [FLV]
 #EXTGRP:FLV
-https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.flv
+https://playback.livetl004.com/live/6a01a2511e8555d7a3685f5c.flv
 
-#EXTINF:0,Brentford Vs Liverpool [FLV]
+#EXTINF:0,Brighton Hove Albion Vs Crystal Palace [FLV]
 #EXTGRP:FLV
-https://playback.livetl002.com/live/6a439a7fb89dded67b208b87.flv
-
-#EXTINF:0,Brentford Vs Liverpool [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a704ad865997681f18c2160.flv
-
-#EXTINF:0,Brentford Vs Liverpool [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/69aa9525f5ec459ae275b43f.flv
-
-#EXTINF:0,Brentford Vs Liverpool [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a439a7fb89dded67b208b87.flv
-
-#EXTINF:0,Brentford Vs Liverpool [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a704ad865997681f18c2160.flv
+https://playback.livetl004.com/live/6a5df755b89dded67b39b8bc.flv
 
 #EXTINF:0,Brighton Hove Albion vs Crystal Palace | (English Premier League) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/301238.flv
+
+#EXTINF:0,Ca Osasuna Vs Racing Santander [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a7c0d8f65997681f18cacc4.flv
+
+#EXTINF:0,Ca Osasuna Vs Racing Santander [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a7c0d8f65997681f18cacc4.flv
 
 #EXTINF:0,CA Osasuna vs Racing Santander | (Spanish La Liga) [FLV]
 #EXTGRP:FLV
@@ -2830,14 +2978,6 @@ https://live2.zktsva.app/live/796315.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/300523.flv
 
-#EXTINF:0,Fagiano Okayama Vs Vissel Kobe [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a2a59b347bbddd62a8dc4e4.flv
-
-#EXTINF:0,Fagiano Okayama Vs Vissel Kobe [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a2a59b347bbddd62a8dc4e4.flv
-
 #EXTINF:0,Fagiano Okayama vs Vissel Kobe | (Japanese J1 League) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/304565.flv
@@ -2854,6 +2994,14 @@ https://live2.zktsva.app/live/289650.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/289650.flv
 
+#EXTINF:0,Fiorentina Vs Como [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69f42e961f739deff81510c0.flv
+
+#EXTINF:0,Fiorentina Vs Como [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69f42e961f739deff81510c0.flv
+
 #EXTINF:0,Fiorentina vs Como | (Italian Serie A) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/300523.flv
@@ -2862,25 +3010,17 @@ https://live2.zktsva.app/live/300523.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/432017.flv
 
-#EXTINF:0,Fulham Vs Hull City [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a9776215126529dede9bf51.flv
-
-#EXTINF:0,Fulham Vs Hull City [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a9a5525864ea536c2577392.flv
-
-#EXTINF:0,Fulham Vs Hull City [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a9776215126529dede9bf51.flv
-
-#EXTINF:0,Fulham Vs Hull City [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a9a5525864ea536c2577392.flv
-
 #EXTINF:0,Gremio - RS vs Cruzeiro - MG | (Brazilian Serie A) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/289650.flv
+
+#EXTINF:0,Havre Athletic Club Vs Aj Auxerre [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a9a5525864ea536c2577392.flv
+
+#EXTINF:0,Havre Athletic Club Vs Aj Auxerre [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a9a5525864ea536c2577392.flv
 
 #EXTINF:0,Juventus vs Lazio | (Italian Serie A) [FLV]
 #EXTGRP:FLV
@@ -2890,6 +3030,30 @@ https://live2.zktsva.app/live/294335.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/307240.flv
 
+#EXTINF:0,Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69a1aaa7230584579e2d5ce1.flv
+
+#EXTINF:0,Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.flv
+
+#EXTINF:0,Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.flv
+
+#EXTINF:0,Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69a1aaa7230584579e2d5ce1.flv
+
+#EXTINF:0,Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69aa9525f5ec459ae275b43f.flv
+
+#EXTINF:0,Leeds United Vs Manchester United [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a5b13ceb36a14387baeddaa.flv
+
 #EXTINF:0,Leeds United vs Manchester United | (English Premier League) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/294335.flv
@@ -2897,6 +3061,14 @@ https://live2.zktsva.app/live/294335.flv
 #EXTINF:0,Leeds United vs Manchester United | (English Premier League) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/304565.flv
+
+#EXTINF:0,Lorient Vs As Monaco [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.flv
+
+#EXTINF:0,Lorient Vs As Monaco [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a0c7c4b1ae4d6db02433c48.flv
 
 #EXTINF:0,Los Angeles Galaxy vs San Diego FC | (United States Major League Soccer) [FLV]
 #EXTGRP:FLV
@@ -2910,33 +3082,17 @@ https://live2.zktsva.app/live/301238.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/306290.flv
 
+#EXTINF:0,Malaga Vs Real Sociedad [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69a1aaa7230584579e2d5ce1.flv
+
+#EXTINF:0,Malaga Vs Real Sociedad [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69a1aaa7230584579e2d5ce1.flv
+
 #EXTINF:0,Malaga vs Real Sociedad | (Spanish La Liga) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/741294.flv
-
-#EXTINF:0,Manchester City Vs Ipswich Town [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/69f42e961f739deff81510c0.flv
-
-#EXTINF:0,Manchester City Vs Ipswich Town [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.flv
-
-#EXTINF:0,Manchester City Vs Ipswich Town [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.flv
-
-#EXTINF:0,Manchester City Vs Ipswich Town [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/69f42e961f739deff81510c0.flv
-
-#EXTINF:0,Manchester City Vs Ipswich Town [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a5b13ceb36a14387baeddaa.flv
-
-#EXTINF:0,Manchester City Vs Ipswich Town [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a5df755b89dded67b39b8bc.flv
 
 #EXTINF:0,Manisa Futbol Kulubu vs Muglaspor | (Turkish First League) [FLV]
 #EXTGRP:FLV
@@ -2946,30 +3102,6 @@ https://live2.zktsva.app/live/303098.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/432017.flv
 
-#EXTINF:0,Newcastle United Vs Aston Villa [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.flv
-
-#EXTINF:0,Newcastle United Vs Aston Villa [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a439a7fb89dded67b208b87.flv
-
-#EXTINF:0,Newcastle United Vs Aston Villa [FLV]
-#EXTGRP:FLV
-https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.flv
-
-#EXTINF:0,Newcastle United Vs Aston Villa [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/69aa9525f5ec459ae275b43f.flv
-
-#EXTINF:0,Newcastle United Vs Aston Villa [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a439a7fb89dded67b208b87.flv
-
-#EXTINF:0,Newcastle United Vs Aston Villa [FLV]
-#EXTGRP:FLV
-https://playback.livetl004.com/live/6a5b13ceb36a14387baeddaa.flv
-
 #EXTINF:0,New York City Football Club vs Los Angeles FC | (United States Major League Soccer) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/307240.flv
@@ -2978,9 +3110,41 @@ https://live2.zktsva.app/live/307240.flv
 #EXTGRP:FLV
 https://live2.zktsva.app/live/307240.flv
 
+#EXTINF:0,Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.flv
+
+#EXTINF:0,Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69f42e961f739deff81510c0.flv
+
+#EXTINF:0,Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.flv
+
+#EXTINF:0,Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69aa9525f5ec459ae275b43f.flv
+
+#EXTINF:0,Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69f42e961f739deff81510c0.flv
+
+#EXTINF:0,Nottingham Forest Vs Arsenal [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a5b13ceb36a14387baeddaa.flv
+
 #EXTINF:0,Nottingham Forest vs Arsenal | (English Premier League) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/301238.flv
+
+#EXTINF:0,Paris Fc Vs Stade Rennais Fc [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a9776215126529dede9bf51.flv
+
+#EXTINF:0,Paris Fc Vs Stade Rennais Fc [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a9776215126529dede9bf51.flv
 
 #EXTINF:0,Paris FC vs Stade Rennais FC | (French Ligue 1) [FLV]
 #EXTGRP:FLV
@@ -2997,6 +3161,14 @@ https://live2.zktsva.app/live/303098.flv
 #EXTINF:0,Rayados de Monterrey vs Pachuca | (Mexico Liga MX) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/307240.flv
+
+#EXTINF:0,Rc Celta Vs Deportivo Alaves [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/69ef10b47146e04fbe6d4363.flv
+
+#EXTINF:0,Rc Celta Vs Deportivo Alaves [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/69ef10b47146e04fbe6d4363.flv
 
 #EXTINF:0,RC Celta vs Deportivo Alaves | (Spanish La Liga) [FLV]
 #EXTGRP:FLV
@@ -3034,6 +3206,14 @@ https://playback.livetl002.com/live/69a1aaa7230584579e2d5ce1.flv
 #EXTGRP:FLV
 https://playback.livetl004.com/live/69a1aaa7230584579e2d5ce1.flv
 
+#EXTINF:0,Udinese Vs Lecce [FLV]
+#EXTGRP:FLV
+https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.flv
+
+#EXTINF:0,Udinese Vs Lecce [FLV]
+#EXTGRP:FLV
+https://playback.livetl004.com/live/6a01a2511e8555d7a3685f5c.flv
+
 #EXTINF:0,Udinese vs Lecce | (Italian Serie A) [FLV]
 #EXTGRP:FLV
 https://live2.zktsva.app/live/300523.flv
@@ -3070,11 +3250,11 @@ https://playback.livetl002.com/live/6a2a59b347bbddd62a8dc4e4.flv
 #EXTGRP:FLV
 https://playback.livetl004.com/live/6a2a59b347bbddd62a8dc4e4.flv
 
-#EXTINF:0,Barcelona but pha tren dinh La Liga, tao suc ep len Real Madrid
+#EXTINF:0,tao suc ep len Real Madrid
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-18/cp_special_laliga-1792264047-barcelona_5goalbetis.m3u8
 
-#EXTINF:0,Yamal lap sieu pham de doi roi suyt nhan the do, HLV Flick voi can thiep
+#EXTINF:0,HLV Flick voi can thiep
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-18/cp_special_laliga-1792264103-yamal_betis.m3u8
 
@@ -3114,11 +3294,11 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-17/cp_special_nha_fpt-179
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-17/cp_special_nha_fpt-1792245942-everton_chelsea_fpt_720p.m3u8
 
-#EXTINF:0,Salah ghi tuyet tac tu goc rat hep, Onana cuu thua penalty sau khi mac loi
+#EXTINF:0,Onana cuu thua penalty sau khi mac loi
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-16/cp_special_c1_ban_quyen-1792091708-salah_onana.m3u8
 
-#EXTINF:0,Thien tai Yamal khong can HLV chi bao, vien canh Ronaldo dan dat doi Messi (Clip tin nong)
+#EXTINF:0,vien canh Ronaldo dan dat doi Messi (Clip tin nong)
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-16/cp_special_video_ban_quyen_khac-1792165959-tinnong1610.m3u8
 
@@ -3222,43 +3402,43 @@ https://cdn-cf-east.streamable.com/video/mp4/x6gp43.mp4?Expires=1792352868464&Ke
 #EXTGRP:Highlight
 https://vod.supersport.com/2019/SOC_151026_UEL_USGVRSO_HD5_500K.mp4.m3u8
 
-#EXTINF:0,Cuu “thuyen truong” DT Anh noi khong voi MU, Raphinha tro lai som (Clip Tin nong)
+#EXTINF:0,Raphinha tro lai som (Clip Tin nong)
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/cp_special_c1_ban_quyen-1792073971-tinnong1510.m3u8
 
-#EXTINF:0,Haaland 2 lan pha luoi PSG o Cup C1 lap ky tich moi, vuot Messi va Aguero
+#EXTINF:0,vuot Messi va Aguero
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/cp_special_c1_ban_quyen-1792011377-2ban.m3u8
 
-#EXTINF:0,Libero tre nhat bong chuyen nu VN bi ngoai binh dap bong trung mat, khoc nuc no tuong lech ca ham
+#EXTINF:0,khoc nuc no tuong lech ca ham
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/1792075420-zalo123_720p.m3u8
 
-#EXTINF:0,Man City hoa "vua ao lang" o Cup C1, Real lam moi lo truoc Sieu kinh dien (Clip 1 phut)
+#EXTINF:0,Real lam moi lo truoc Sieu kinh dien (Clip 1 phut)
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/1792054306-clip1phut1510_720p.m3u8
 
-#EXTINF:0,Mbappe pha ky luc cua Messi, lot top 5 chan sut vi dai nhat lich su Cup C1
+#EXTINF:0,lot top 5 chan sut vi dai nhat lich su Cup C1
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/cp_special_c1_ban_quyen-1792011974-banmbappe.m3u8
 
-#EXTINF:0,Mourinho dung binh nhu than, keo Real Madrid "tro ve tu coi chet"
+#EXTINF:0,keo Real Madrid "tro ve tu coi chet"
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/cp_special_c1_ban_quyen-1792011885-7bancuatran.m3u8
 
-#EXTINF:0,Nguoi dep bong chuyen Thai Lan buon ruoi ruoi, gia tri tien ty bi lang phi tren ghe du bi
+#EXTINF:0,gia tri tien ty bi lang phi tren ghe du bi
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/1792079722-video9x16-to_720p.m3u8
 
-#EXTINF:0,PSG nhan chim Man City, gieo rac noi khiep so cho Ngoai hang Anh (Clip tin nong)
+#EXTINF:0,gieo rac noi khiep so cho Ngoai hang Anh (Clip tin nong)
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/cp_special_c1_ban_quyen-1792014353-tinnong1410.m3u8
 
-#EXTINF:0,Real Madrid nguoc dong nho "ban thang vang", "Hum xam" Bayern suyt bi ty hon Viking "be nanh"
+#EXTINF:0,"Hum xam" Bayern suyt bi ty hon Viking "be nanh"
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/1792058768-clip90_1510_720p.m3u8
 
-#EXTINF:0,Real nguoc dong kho tin nhat lich su Cup C1, bong da Tay Ban Nha don ky luc
+#EXTINF:0,bong da Tay Ban Nha don ky luc
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/cp_special_c1_ban_quyen-1792011943-4banreal.m3u8
 
@@ -3298,7 +3478,7 @@ https://cdn-cf-east.streamable.com/video/mp4/56m7z6.mp4?Expires=1792375380&Signa
 #EXTGRP:Highlight
 https://cdn-cf-east.streamable.com/video/mp4/qmi56d.mp4?Expires=1792375020&Signature=QDUEEFh6cSfBo-Aqnt~5s3bO-ijHVSeALVWj725jc3Y2Wk~ZuCS9xARzaRG4mkiWaAlJhVcIJTHymZVpvYpCelNLAV-0Lro11QsfN75ozd3MnMLUkORDplNsm7MlzneCR1SzZm8YMO23~z0z8WiGU2ZPpRxfM7lKP2Pu97j7h-Z4Djhw3P8vyGfqYiQmgwrARIvYcXDqTBZe2bKtiCMwpMreeKPt-b-TZEBj~aHRuo08cCAbi8LiapWixtvP7aZoeLUZc8DSKeH3-ZJeNR2Py2PlLTHJSCnwnensZ3HJZ6O7fOoBWKe4ZdrO1sUZaRycuTQImDufcKVhfg33a54BlA__&Key-Pair-Id=APKAIEYUVEN4EVB2OKEQ
 
-#EXTINF:0,Inter Miami - New York City: Messi kien tao, phoi hop man nhan (MLS)
+#EXTINF:0,phoi hop man nhan (MLS)
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-15/1792031660-miaminey_720p.m3u8
 
@@ -3314,7 +3494,7 @@ https://vod.supersport.com/2019/SOC_151026_UEL_MARVOLY_HD5_500K.mp4.m3u8
 #EXTGRP:Highlight
 https://vod.supersport.com/2019/All_Goals_oftheDay141026_UCLE_500K.mp4.m3u8
 
-#EXTINF:0,Dan sao MU "hu" vi duoc Carrick cung chieu, Barca & La Liga lay lai uy danh o Cup C1 (Clip 1 phut)
+#EXTINF:0,Barca & La Liga lay lai uy danh o Cup C1 (Clip 1 phut)
 #EXTGRP:Highlight
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-14/cp_special_c1_ban_quyen-1791967119-bantin1phut261014.m3u8
 
@@ -3449,10 +3629,6 @@ https://fi-enc-0.vidsonic.net/2425/DmsluD7M5Y7e/original.mp4
 #EXTINF:0,Roma v Real Madrid | Match Highlights | UEFA Champions League
 #EXTGRP:Highlight
 https://vod.supersport.com/2019/SOC_141026_UEFA_ASRVRMA_HD5_500K.mp4.m3u8
-
-#EXTINF:0,Sabah v Slavia Prague | Match Highlights | UEFA Champions League
-#EXTGRP:Highlight
-https://vod.supersport.com/2019/Sabah_v_SPrague_MatchH_UCL_500K.mp4.m3u8
 
 #EXTINF:0,Slovan Bratislava vs VfB Stuttgart
 #EXTGRP:Highlight
