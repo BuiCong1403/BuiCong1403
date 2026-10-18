@@ -7290,22 +7290,8 @@ def collect_dasfootball_highlights():
         urljoin(base_url, "feed.xml"),
         urljoin(base_url, "sitemap/posts.xml"),
     ]
-    archive_pages = []
-    for page_url in list(page_urls):
-        archive_pages.append(page_url)
-        lower_page = page_url.lower()
-        should_walk_archive = (
-            lower_page == base_url.lower()
-            or "highlight" in lower_page
-            or "uefa-nations-league" in lower_page
-            or "champions-league" in lower_page
-            or "europa-league" in lower_page
-        )
-        if not should_walk_archive:
-            continue
-        for page_no in range(2, max(1, DASFOOTBALL_ARCHIVE_PAGES) + 1):
-            archive_pages.append(urljoin(page_url.rstrip("/") + "/", f"page/{page_no}/"))
-    page_urls = list(dict.fromkeys(archive_pages))
+    # The current site no longer exposes WordPress /page/N archives.
+    page_urls = list(dict.fromkeys(page_urls))
 
     post_urls = []
     seen_posts = set()
@@ -7367,7 +7353,8 @@ def collect_dasfootball_highlights():
     def collect_post(post_url):
         try:
             html_text = dasfootball_fetch_text(post_url, post_url, timeout=25)
-        except Exception:
+        except Exception as exc:
+            log(f"[{source}] Match page failed {post_url}: {exc}")
             return []
         title = clean_highlight_title(title_from_html_page(html_text, title_from_url_slug(post_url) or "DasFootball Highlight"))
         title = re.sub(r"\s+(?:Highlights?|Full Match Replay).*$", "", title, flags=re.I).strip(" -|,") or title
@@ -7396,6 +7383,7 @@ def collect_dasfootball_highlights():
 
     channels = []
     channels.extend(jsonld_channels)
+    log(f"[{source}] Discovered {len(post_urls)} recent match pages; embedded videos: {len(jsonld_channels)}")
     with ThreadPoolExecutor(max_workers=8) as executor:
         futures = [executor.submit(collect_post, post_url) for post_url in post_urls]
         for future in as_completed(futures):
