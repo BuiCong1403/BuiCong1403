@@ -26,7 +26,13 @@ jobs:
           python-version: "3.x"
       - run: python -m pip install requests
       - name: Collect and merge DasFootball
-        run: RUN_MODE=dasfootball python combined_m3u_collector.py
+        run: |
+          for attempt in 1 2 3; do
+            RUN_MODE=dasfootball python -u combined_m3u_collector.py && exit 0
+            echo "::warning::DasFootball attempt $attempt failed; previous playlists are preserved."
+            if [ "$attempt" -lt 3 ]; then sleep 30; fi
+          done
+          exit 1
       - name: Publish playlists
         run: |
           git config user.name "github-actions[bot]"

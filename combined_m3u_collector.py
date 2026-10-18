@@ -7029,12 +7029,26 @@ def dasfootball_headers(referer=None):
 
 
 def dasfootball_fetch_text(url, referer=None, timeout=30):
-    return fetch_text(
-        url,
-        headers=dasfootball_headers(referer or url),
-        params={"t": int(time.time() * 1000)},
-        timeout=timeout,
-    )
+    last_error = None
+    for attempt in range(2):
+        try:
+            response = request_get(
+                url, headers=dasfootball_headers(referer or url),
+                params={"t": int(time.time() * 1000)} if attempt == 0 else None,
+                timeout=timeout,
+            )
+            response.raise_for_status()
+            text = response.text
+            if len(text) < 200 or any(marker in text.lower() for marker in (
+                "<title>just a moment", "<title>access denied", "<title>403 forbidden",
+            )):
+                raise ValueError("Empty or challenge response, not a video page")
+            return text
+        except Exception as exc:
+            last_error = exc
+            if attempt == 0:
+                time.sleep(1)
+    raise RuntimeError(f"DasFootball fetch failed for {url}: {last_error}")
 
 
 def dasfootball_allowed_highlight_dates():
@@ -9254,11 +9268,19 @@ def collect_vsc9_api():
         for base in dict.fromkeys((site_url, "https://www.vsc9.top/", "https://vsc9.top/")):
             for attempt in range(2):
                 try:
-                    response = requests.post(
-                        urljoin(base, "/api/proxy/data/lives/matches"), headers=headers,
-                        json={"date": event_date.isoformat(), "page": page, "pageSize": 100, "timezone": "Asia/Ho_Chi_Minh"},
-                        timeout=15,
-                    )
+                    endpoint = urljoin(base, "/api/proxy/data/lives/matches")
+                    for redirect in range(4):
+                        response = requests.post(
+                            endpoint, headers=headers,
+                            json={"date": event_date.isoformat(), "page": page, "pageSize": 100, "timezone": "Asia/Ho_Chi_Minh"},
+                            timeout=15, allow_redirects=False,
+                        )
+                        if response.status_code not in (301, 302, 303, 307, 308):
+                            break
+                        target = urljoin(endpoint, response.headers.get("Location", ""))
+                        if urlparse(target).hostname not in {"vsc9.top", "www.vsc9.top", urlparse(site_url).hostname}:
+                            raise ValueError("Unexpected API redirect host")
+                        endpoint = target
                     response.raise_for_status()
                     payload = response.json()
                     if isinstance(payload.get("result"), dict):
@@ -10428,7 +10450,7 @@ def main():
     log("=" * 60)
 
     if RUN_MODE == "vsc9":
-        channels = filter_current_and_future_events(collect_vsc9_api())
+        channels = filter_current_and_future_events(collect_vsc9())
         if not channels:
             raise RuntimeError("VSC9 returned no current streams; preserving previous outputs")
         for channel in channels:

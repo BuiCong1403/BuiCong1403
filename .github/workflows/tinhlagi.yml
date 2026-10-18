@@ -30,6 +30,8 @@ jobs:
         with:
           python-version: "3.x"
       - name: Export reference playlists
+        env:
+          TINHLAGI_APP_ACTIVATION_CODE: ${{ secrets.TINHLAGI_APP_ACTIVATION_CODE || 'tinhlagipro' }}
         run: python tinhlagi_app_export.py
       - name: Publish reference playlists
         run: |

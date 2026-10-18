@@ -9,7 +9,7 @@ import combined_m3u_collector as collector
 class VscRefreshTests(unittest.TestCase):
     def test_empty_response_preserves_outputs(self):
         with patch.object(collector, "RUN_MODE", "vsc9"), patch.object(
-            collector, "collect_vsc9_api", return_value=[]
+            collector, "collect_vsc9", return_value=[]
         ), patch.object(collector, "save_source_cache") as save:
             with self.assertRaises(RuntimeError):
                 collector.main()
@@ -24,7 +24,7 @@ class VscRefreshTests(unittest.TestCase):
             main.write_text(text, encoding="utf-8")
             ott.write_text(text, encoding="utf-8")
             channel = {"source": "VSC9", "group": "Vua Sân Cỏ TV", "name": "Team A vs Team B", "stream_url": "https://example.org/match.m3u8"}
-            with patch.multiple(collector, RUN_MODE="vsc9", BASE_DIR=root, ALL_M3U=main, OTT_M3U=ott, VSC9_CACHE=root / "cache.json"), patch.object(collector, "collect_vsc9_api", return_value=[channel]):
+            with patch.multiple(collector, RUN_MODE="vsc9", BASE_DIR=root, ALL_M3U=main, OTT_M3U=ott, VSC9_CACHE=root / "cache.json"), patch.object(collector, "collect_vsc9", return_value=[channel]):
                 collector.main()
             for path in (main, ott):
                 result = path.read_text(encoding="utf-8")

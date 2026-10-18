@@ -89,7 +89,7 @@ def get_sources():
         or (auth.get("data") or {}).get("accessToken")
     )
     if not token:
-        raise RuntimeError(f"Activation failed: {auth}")
+        raise RuntimeError("Tinhlagi activation rejected: " + str(auth.get("message") or auth.get("accessStatus") or "No access token"))
     request = Request(
         SOURCES_API,
         headers={
@@ -164,4 +164,4 @@ if __name__ == "__main__":
         main()
     except Exception as exc:
         print(f"[ERROR] {exc}", file=sys.stderr)
-        raise
+        sys.exit(1)
