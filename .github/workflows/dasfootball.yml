@@ -20,7 +20,8 @@ permissions:
 
 jobs:
   refresh:
-    runs-on: ubuntu-latest
+    # Set this repository variable to a private runner label when available.
+    runs-on: ${{ vars.DASFOOTBALL_RUNNER || 'ubuntu-latest' }}
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
@@ -30,6 +31,29 @@ jobs:
         with:
           python-version: "3.x"
       - run: python -m pip install requests
+      - name: Verify DasFootball access before collection
+        shell: python
+        run: |
+          import os
+          import requests
+          from pathlib import Path
+          url = "https://dasfootball.com/"
+          response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
+          if response.status_code == 403:
+              message = (
+                  "DasFootball refused this GitHub runner with HTTP 403. "
+                  "Retries and longer timeouts cannot refresh videos while access is refused. "
+                  "Existing playlists were not modified. Use an authorized private/cloud runner "
+                  "and set the DASFOOTBALL_RUNNER repository variable to its label, "
+                  "or ask the website to allow GitHub Actions traffic."
+              )
+              summary = os.environ.get("GITHUB_STEP_SUMMARY")
+              if summary:
+                  with Path(summary).open("a", encoding="utf-8") as output:
+                      output.write("## DasFootball access blocked\n\n" + message + "\n")
+              print("::error::" + message)
+              raise SystemExit(1)
+          response.raise_for_status()
       - name: Collect and merge DasFootball
         run: |
           for attempt in 1 2 3; do
