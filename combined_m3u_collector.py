@@ -10477,14 +10477,15 @@ def main():
         return
 
     if RUN_MODE in {"dasfootball", "dasfootball_snapshot", "merge_dasfootball"}:
-        if RUN_MODE != "merge_dasfootball":
-            refresh_dasfootball_order()
         fresh = (filter_recent_highlights(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
                  if RUN_MODE in {"dasfootball", "dasfootball_snapshot"} else [])
         previous = collect_previous_dasfootball_playlist()
         channels = filter_recent_highlights(dedupe_and_sort_channels(fresh + previous))
         if RUN_MODE in {"dasfootball", "dasfootball_snapshot"} and not fresh:
             raise RuntimeError("DasFootball returned no fresh videos; preserving previous files")
+        if RUN_MODE != "merge_dasfootball":
+            refresh_dasfootball_order()
+            channels = dedupe_and_sort_channels(channels)
         write_m3u(DASFOOTBALL_M3U, channels)
         if RUN_MODE == "dasfootball_snapshot":
             return
