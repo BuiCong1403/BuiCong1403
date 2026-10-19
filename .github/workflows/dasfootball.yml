@@ -1,15 +1,13 @@
-name: Refresh DasFootball
+name: Merge DasFootball Local Snapshot
 
 on:
   workflow_dispatch:
   push:
     branches: [main]
     paths:
-      - "combined_m3u_collector.py"
+      - "dasfootball.m3u"
+      - "dasfootball_order.json"
       - ".github/workflows/dasfootball.yml"
-  schedule:
-    # Vietnam 06:00-12:30, every 30 minutes.
-    - cron: "0,30 23,0-5 * * *"
 
 concurrency:
   group: refresh-dasfootball
@@ -20,8 +18,7 @@ permissions:
 
 jobs:
   refresh:
-    # Set this repository variable to a private runner label when available.
-    runs-on: ${{ vars.DASFOOTBALL_RUNNER || 'ubuntu-latest' }}
+    runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
@@ -31,37 +28,8 @@ jobs:
         with:
           python-version: "3.x"
       - run: python -m pip install requests
-      - name: Verify DasFootball access before collection
-        shell: python
-        run: |
-          import os
-          import requests
-          from pathlib import Path
-          url = "https://dasfootball.com/"
-          response = requests.get(url, headers={"User-Agent": "Mozilla/5.0"}, timeout=30)
-          if response.status_code == 403:
-              message = (
-                  "DasFootball refused this GitHub runner with HTTP 403. "
-                  "Retries and longer timeouts cannot refresh videos while access is refused. "
-                  "Existing playlists were not modified. Use an authorized private/cloud runner "
-                  "and set the DASFOOTBALL_RUNNER repository variable to its label, "
-                  "or ask the website to allow GitHub Actions traffic."
-              )
-              summary = os.environ.get("GITHUB_STEP_SUMMARY")
-              if summary:
-                  with Path(summary).open("a", encoding="utf-8") as output:
-                      output.write("## DasFootball access blocked\n\n" + message + "\n")
-              print("::error::" + message)
-              raise SystemExit(1)
-          response.raise_for_status()
-      - name: Collect and merge DasFootball
-        run: |
-          for attempt in 1 2 3; do
-            RUN_MODE=dasfootball python -u combined_m3u_collector.py && exit 0
-            echo "::warning::DasFootball attempt $attempt failed; previous playlists are preserved."
-            if [ "$attempt" -lt 3 ]; then sleep 30; fi
-          done
-          exit 1
+      - name: Merge uploaded DasFootball snapshot
+        run: RUN_MODE=merge_dasfootball python -u combined_m3u_collector.py
       - name: Publish playlists
         run: |
           git config user.name "github-actions[bot]"

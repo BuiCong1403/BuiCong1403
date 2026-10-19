@@ -10476,15 +10476,18 @@ def main():
         collect_slow_sources()
         return
 
-    if RUN_MODE in {"dasfootball", "merge_dasfootball"}:
-        refresh_dasfootball_order()
+    if RUN_MODE in {"dasfootball", "dasfootball_snapshot", "merge_dasfootball"}:
+        if RUN_MODE != "merge_dasfootball":
+            refresh_dasfootball_order()
         fresh = (filter_recent_highlights(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
-                 if RUN_MODE == "dasfootball" else [])
+                 if RUN_MODE in {"dasfootball", "dasfootball_snapshot"} else [])
         previous = collect_previous_dasfootball_playlist()
         channels = filter_recent_highlights(dedupe_and_sort_channels(fresh + previous))
-        if RUN_MODE == "dasfootball" and not fresh:
+        if RUN_MODE in {"dasfootball", "dasfootball_snapshot"} and not fresh:
             raise RuntimeError("DasFootball returned no fresh videos; preserving previous files")
         write_m3u(DASFOOTBALL_M3U, channels)
+        if RUN_MODE == "dasfootball_snapshot":
+            return
         other = collect_previous_highlight_playlist()
         merged = filter_recent_highlights(dedupe_and_sort_channels(repair_h24_missing_halves(channels + other)))
         write_m3u(HIGHLIGHT_M3U, merged)
