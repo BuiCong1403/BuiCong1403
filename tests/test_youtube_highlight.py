@@ -32,6 +32,14 @@ class YoutubeHighlightTests(unittest.TestCase):
         result = source.channel_page_items("var ytInitialData = " + json.dumps(data) + ";", "Test")
         self.assertEqual(result[0]["id"], "abc")
 
+    def test_modern_channel_lockup(self):
+        import json
+        video = {"lockupViewModel": {"contentId": "xyz", "metadata": {"lockupMetadataViewModel": {
+            "title": {"content": "New Match"}, "metadata": {"contentMetadataViewModel": {"metadataRows": [
+                {"metadataParts": [{"accessibilityLabel": "3 hours ago"}]}]}}}}}}
+        data = {"contents": {"twoColumnBrowseResultsRenderer": {"tabs": [{"tabRenderer": {"selected": True, "content": video}}]}}}
+        self.assertEqual(source.channel_page_items("var ytInitialData = " + json.dumps(data), "Test")[0]["id"], "xyz")
+
 
 if __name__ == "__main__":
     unittest.main()

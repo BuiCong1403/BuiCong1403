@@ -64,6 +64,16 @@ def channel_page_items(text, channel):
     def walk(node):
         if isinstance(node, dict):
             video = node.get("videoRenderer")
+            lockup = node.get("lockupViewModel")
+            if isinstance(lockup, dict):
+                metadata = (lockup.get("metadata") or {}).get("lockupMetadataViewModel") or {}
+                rows = ((metadata.get("metadata") or {}).get("contentMetadataViewModel") or {}).get("metadataRows", [])
+                labels = []
+                for row in rows:
+                    for part in row.get("metadataParts", []):
+                        labels.append(part.get("accessibilityLabel") or (part.get("text") or {}).get("content", ""))
+                video = {"videoId": lockup.get("contentId"), "title": {"simpleText": (metadata.get("title") or {}).get("content", "")},
+                         "publishedTimeText": {"simpleText": " ".join(labels)}}
             if isinstance(video, dict):
                 label = (video.get("publishedTimeText") or {}).get("simpleText", "")
                 age = re.search(r'(\d+)\s+(minute|hour|day|week)s?\s+ago', label, re.I)
@@ -155,6 +165,8 @@ def main():
                 print(f"[WARN] {channel} page fallback: {fallback_error}", flush=True)
     if not feeds_ok:
         raise RuntimeError("All YouTube feeds failed; previous snapshot preserved")
+    if not candidates:
+        raise RuntimeError("No recent videos discovered; previous snapshot preserved, not marked refreshed")
     with ThreadPoolExecutor(max_workers=4) as pool:
         checked = list(pool.map(check_item, candidates))
     valid = [item for item in checked if item]
