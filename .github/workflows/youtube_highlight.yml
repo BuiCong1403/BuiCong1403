@@ -1,0 +1,56 @@
+name: Refresh YouTube Sports Highlights
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "youtube_highlight_collector.py"
+      - ".github/workflows/youtube_highlight.yml"
+  schedule:
+    # 08:15 Vietnam time, independent of Tinhlagi and the local PC.
+    - cron: "15 1 * * *"
+permissions:
+  contents: write
+concurrency:
+  group: refresh-youtube-sports
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install requests
+      - name: Discover and validate new sports videos
+        run: python -u youtube_highlight_collector.py
+      - name: Merge into highlight and main playlists
+        run: RUN_MODE=merge_youtube python -u combined_m3u_collector.py
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add youtube_highlight_cache.json highlight.m3u all.m3u ott.m3u
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh YouTube sports highlights"
+          for attempt in 1 2 3; do
+            git push && exit 0
+            git fetch origin main
+            git rebase origin/main || {
+              for path in $(git diff --name-only --diff-filter=U); do
+                case "$path" in
+                  youtube_highlight_cache.json) git checkout --theirs -- "$path" ;;
+                  all.m3u|ott.m3u|highlight.m3u) git checkout --ours -- "$path" ;;
+                  *) git rebase --abort; exit 1 ;;
+                esac
+              done
+              RUN_MODE=merge_youtube python combined_m3u_collector.py
+              git add youtube_highlight_cache.json highlight.m3u all.m3u ott.m3u
+              GIT_EDITOR=true git rebase --continue
+            }
+          done
+          exit 1

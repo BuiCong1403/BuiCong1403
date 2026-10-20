@@ -10405,6 +10405,8 @@ def repair_h24_missing_halves(channels):
 def collect_current_highlights():
     refresh_dasfootball_order()
     highlight_sources = []
+    from youtube_highlight_collector import load_channels
+    highlight_sources.extend(load_channels())
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("SuperSportHighlight", collect_supersport_highlights)))
     dasfootball_channels = []
     dasfootball_channels = filter_recent_highlights(dasfootball_channels)
@@ -10436,6 +10438,15 @@ def main():
     mode = "verify live links" if VERIFY_STREAMS else "raw m3u8 collection"
     log(f"Combined M3U collector - {now_ict()} - {mode} - run_mode={RUN_MODE}")
     log("=" * 60)
+
+    if RUN_MODE == "merge_youtube":
+        from youtube_highlight_collector import load_channels
+        channels = filter_recent_highlights(dedupe_and_sort_channels(
+            load_channels() + collect_previous_highlight_playlist()))
+        write_m3u(HIGHLIGHT_M3U, channels)
+        replace_highlight_blocks(ALL_M3U, highlight_blocks_from_file())
+        replace_highlight_blocks(OTT_M3U, ott_highlight_blocks_from_channels(channels))
+        return
 
     if RUN_MODE == "vsc9":
         channels = filter_current_and_future_events(collect_vsc9())
