@@ -1,4 +1,5 @@
 import json
+import re
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -50,6 +51,41 @@ def feed_items(text, channel):
             result.append({"id": video_id, "channel": channel,
                            "title": entry.findtext("a:title", namespaces=NS) or video_id,
                            "published": entry.findtext("a:published", namespaces=NS) or ""})
+    return recent(result)
+
+
+def channel_page_items(text, channel):
+    marker = re.search(r'(?:var\s+ytInitialData|window\["ytInitialData"\])\s*=\s*', text)
+    if not marker:
+        raise ValueError("YouTube channel response has no video data")
+    data = json.JSONDecoder().raw_decode(text[marker.end():])[0]
+    result = []
+
+    def walk(node):
+        if isinstance(node, dict):
+            video = node.get("videoRenderer")
+            if isinstance(video, dict):
+                label = (video.get("publishedTimeText") or {}).get("simpleText", "")
+                age = re.search(r'(\d+)\s+(minute|hour|day|week)s?\s+ago', label, re.I)
+                video_id = video.get("videoId")
+                if age and video_id:
+                    seconds = int(age.group(1)) * {"minute": 60, "hour": 3600, "day": 86400, "week": 604800}[age.group(2).lower()]
+                    title = video.get("title") or {}
+                    result.append({"id": video_id, "channel": channel,
+                                   "title": title.get("simpleText") or "".join(x.get("text", "") for x in title.get("runs", [])),
+                                   "published": (datetime.now(TZ) - timedelta(seconds=seconds)).isoformat()})
+                return
+            for value in node.values():
+                walk(value)
+        elif isinstance(node, list):
+            for value in node:
+                walk(value)
+
+    tabs = (data.get("contents", {}).get("twoColumnBrowseResultsRenderer", {}).get("tabs") or [])
+    for tab in tabs:
+        content = tab.get("tabRenderer") or {}
+        if content.get("selected"):
+            walk(content.get("content", {}))
     return recent(result)
 
 
@@ -107,6 +143,16 @@ def main():
             print(f"[YouTube] {channel}: {len(items)} recent videos", flush=True)
         except (requests.RequestException, ET.ParseError) as exc:
             print(f"[WARN] {channel}: {exc}", flush=True)
+            try:
+                response = requests.get(f"https://www.youtube.com/channel/{channel_id}/videos",
+                                        params={"hl": "en"}, headers={"User-Agent": "Mozilla/5.0"}, timeout=25)
+                response.raise_for_status()
+                items = channel_page_items(response.text, channel)
+                candidates.extend(items)
+                feeds_ok += 1
+                print(f"[YouTube page] {channel}: {len(items)} recent videos", flush=True)
+            except (requests.RequestException, ValueError) as fallback_error:
+                print(f"[WARN] {channel} page fallback: {fallback_error}", flush=True)
     if not feeds_ok:
         raise RuntimeError("All YouTube feeds failed; previous snapshot preserved")
     with ThreadPoolExecutor(max_workers=4) as pool:
@@ -117,10 +163,8 @@ def main():
     merged = {item["id"]: item for item in previous}
     for item in valid:
         merged[item["id"]] = item
-    # A checked failure must not remain labelled as playable from an old cache.
-    for item, result in zip(candidates, checked):
-        if not result:
-            merged.pop(item["id"], None)
+    # Transient network failures do not discard previously validated videos;
+    # publication time still expires them after five days.
     videos = recent(list(merged.values()))
     temporary = CACHE.with_suffix(".tmp")
     temporary.write_text(json.dumps({"updated": datetime.now(TZ).isoformat(), "videos": videos}, ensure_ascii=False, indent=2), encoding="utf-8")

@@ -25,6 +25,13 @@ class YoutubeHighlightTests(unittest.TestCase):
     def test_invalid_publication_date_is_excluded(self):
         self.assertEqual(source.recent([{"published": "unknown"}]), [])
 
+    def test_channel_fallback_uses_selected_video_tab(self):
+        import json
+        video = {"videoRenderer": {"videoId": "abc", "title": {"runs": [{"text": "Match"}]}, "publishedTimeText": {"simpleText": "2 hours ago"}}}
+        data = {"contents": {"twoColumnBrowseResultsRenderer": {"tabs": [{"tabRenderer": {"selected": True, "content": video}}]}}}
+        result = source.channel_page_items("var ytInitialData = " + json.dumps(data) + ";", "Test")
+        self.assertEqual(result[0]["id"], "abc")
+
 
 if __name__ == "__main__":
     unittest.main()
