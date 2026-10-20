@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-20 16:48 ICT
-# Total   : 771
+# Updated : 2026-10-20 17:17 ICT
+# Total   : 773
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -3185,6 +3185,11 @@ https://cdn-global.ebaclofen.org/vsc/vsc-thai-tu-lion/index.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Vua Sân Cỏ TV",23:45 20/10 Sabah Baku vs Borussia Dortmund (Nguyễn Đảm) | FPT
 https://cdn-global.ebaclofen.org/vsc/vsc-vuong-tu-neil/index.m3u8
 
+#EXTINF:-1 tvg-logo="" group-title="Highlight",HLV Park Hang-seo nổi giận, cảnh sát Thái Lan phải hộ tống trọng tài vào đường hầm
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-20/1792467189-park_720p.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/0MQyn7JJZEU/hqdefault.jpg" group-title="Highlight",Nhận định, dự đoán | Liverpool vs Villarreal | League phase UEFA Champions League 2026/27 | WEBTHETHAO | 20/10
 https://caodanh.io.vn/highlight/iptv_hls.php?v=0MQyn7JJZEU&ext=.m3u8
 
@@ -3222,6 +3227,11 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_laliga-1792
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_laliga-1792400487-phut90cong261019.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",PSG giải mã "cỗ máy chiến thắng" Barcelona, MU gặp "mồi ngon" ở Cúp C1 (Clip 1 phút)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_c1_ban_quyen-1792404524-bantin1phut261019.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Real công phá bảng xếp hạng La Liga, bám đuổi Barca trước Siêu kinh điển
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3355,15 +3365,15 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-18/cp_special_laliga-1792
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-18/cp_special_tennis_no_us-1792322225-fokina_jodar.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Highlight",HLV Enrique cảnh báo Barcelona, tiết lộ kế hoạch khóa chặt Yamal
-#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-18/cp_special_laliga-1792264103-yamal_betis.m3u8
-
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Man City sắp "lộ bài" vì Haaland chấn thương, Barca nâng tầm Yamal hay ngược lại (Clip 1 phút)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-18/1792316068-clip1phut1810_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Yamal bước vào "bài test vàng" trước PSG ở Cúp C1
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-18/cp_special_laliga-1792264103-yamal_betis.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Atlanta United - Inter Miami: Messi tỏa sáng rực rỡ (MLS)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
