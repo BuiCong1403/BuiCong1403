@@ -9313,20 +9313,22 @@ def collect_vsc9_api():
         "Referer": site_url,
     }
     channels = collect_vsc9_miwam()
+    legacy_attempts = 1 if channels else 2
+    legacy_timeout = 7 if channels else 15
     seen = set()
     today = datetime.now(TZ_VN).date()
 
     def fetch_schedule_page(event_date, page):
         last_error = None
         for base in dict.fromkeys((site_url, "https://www.vsc9.top/", "https://vsc9.top/")):
-            for attempt in range(2):
+            for attempt in range(legacy_attempts):
                 try:
                     endpoint = urljoin(base, "/api/proxy/data/lives/matches")
                     for redirect in range(4):
                         response = requests.post(
                             endpoint, headers=headers,
                             json={"date": event_date.isoformat(), "page": page, "pageSize": 100, "timezone": "Asia/Ho_Chi_Minh"},
-                            timeout=15, allow_redirects=False,
+                            timeout=legacy_timeout, allow_redirects=False,
                         )
                         if response.status_code not in (301, 302, 303, 307, 308):
                             break
