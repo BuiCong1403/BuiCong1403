@@ -17,7 +17,7 @@ class HttpRecoveryTests(unittest.TestCase):
         redirect = Mock(status_code=301, headers={"Location": "https://www.vsc9.top/api/proxy/data/lives/matches"})
         good = Mock(status_code=200)
         good.json.return_value = {"result": {"data": [], "totalPages": 1}}
-        with patch.object(collector.requests, "post", side_effect=[redirect, good, good]) as post:
+        with patch.object(collector, "collect_vsc9_miwam", return_value=[]), patch.object(collector.requests, "post", side_effect=[redirect, good, good]) as post:
             self.assertEqual(collector.collect_vsc9_api(), [])
         self.assertEqual(post.call_args_list[1].args[0], redirect.headers["Location"])
         for call in post.call_args_list:

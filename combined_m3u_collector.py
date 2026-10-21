@@ -159,6 +159,7 @@ QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
 VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", VSC9_URL)
+VSC9_MIWAM_URL = os.environ.get("VSC9_MIWAM_URL", "https://live.miwam.io/")
 VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "0").strip().lower() not in {"0", "false", "no"}
 VSC9_TODAY_MIN_LINKS = int(os.environ.get("VSC9_TODAY_MIN_LINKS", "10") or "10")
 S8TV_SITE_URL = os.environ.get("S8TV_SITE_URL", "https://s8tvkc.top/")
@@ -9237,6 +9238,70 @@ def collect_vsc9_thethaocoban_fallback(seen_urls):
     )
 
 
+def parse_miwam_schedule(data):
+    relation = data.get("relation") or {}
+    teams = {str(team.get("id")): team for team in relation.get("teams", [])}
+    channels = []
+    for match in data.get("matches") or []:
+        info = match.get("info") or {}
+        event = parse_iso_to_ict_datetime(info.get("matchTime")) or parse_epoch_to_ict_datetime(info.get("matchTime"))
+        if not event:
+            continue
+        home = teams.get(str(info.get("homeTeamId"))) or info.get("homeTeam") or {}
+        away = teams.get(str(info.get("awayTeamId"))) or info.get("awayTeam") or {}
+        if not home.get("name") or not away.get("name"):
+            continue
+        for live in (match.get("livestreams") or {}).get("links") or []:
+            urls = (live.get("url") or live.get("urlSecure"), live.get("streamUrl") or live.get("streamUrlSecure"))
+            for url in dict.fromkeys(clean_text(value) for value in urls if value):
+                if not (is_hls_url(url) or is_flv_url(url)):
+                    continue
+                commentator = clean_text(live.get("commentator"))
+                name = f"{event:%H:%M %d/%m} {home['name']} vs {away['name']}"
+                if commentator:
+                    name += f" ({commentator})"
+                channels.append({"source": "VSC9", "group": "Vua Sân Cỏ TV", "name": name,
+                                 "logo": home.get("logo") or away.get("logo") or "",
+                                 "stream_url": url, "referer": "", "user_agent": "",
+                                 "event_datetime": event, "event_date": event.date()})
+    return channels
+
+
+def collect_vsc9_miwam():
+    today = datetime.now(TZ_VN).date()
+    endpoint = urljoin(VSC9_MIWAM_URL, "api/matches/")
+    params = {"fromDate": f"{today.isoformat()}T00:00:00+07:00",
+              "toDate": f"{(today + timedelta(days=1)).isoformat()}T23:59:59+07:00",
+              "returnList": ["info", "livestreams"], "isIncludedRelation": "true",
+              "statuses": ["LIVE", "UPCOMING"], "lang": "vi", "sortMatchTime": "asc", "limit": 50}
+
+    def fetch(page):
+        response = request_get(endpoint, params=dict(params, page=page), timeout=25)
+        response.raise_for_status()
+        payload = response.json()
+        if payload.get("success") is not True or not isinstance(payload.get("data"), dict):
+            raise ValueError("Invalid Miwam schedule response")
+        return payload["data"]
+
+    try:
+        first = fetch(1)
+    except Exception as exc:
+        log(f"[VSC9] Miwam schedule unavailable: {exc}")
+        return []
+    channels = parse_miwam_schedule(first)
+    total_pages = (int(first.get("total") or 0) + 49) // 50
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {executor.submit(fetch, page): page for page in range(2, total_pages + 1)}
+        for future in as_completed(futures):
+            try:
+                channels.extend(parse_miwam_schedule(future.result()))
+            except Exception as exc:
+                log(f"[VSC9] Miwam page {futures[future]} failed; keeping other pages: {exc}")
+    channels = filter_current_and_future_events(channels)
+    log(f"[VSC9] Miwam today/tomorrow: {len(channels)} links across {max(1, total_pages)} pages")
+    return channels
+
+
 def collect_vsc9_api():
     source = "VSC9"
     site_url = VSC9_URL.rstrip("/") + "/"
@@ -9247,7 +9312,7 @@ def collect_vsc9_api():
         "Origin": site_url.rstrip("/"),
         "Referer": site_url,
     }
-    channels = []
+    channels = collect_vsc9_miwam()
     seen = set()
     today = datetime.now(TZ_VN).date()
 
