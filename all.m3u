@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-22 11:52 ICT
-# Total   : 936
+# Updated : 2026-10-22 11:56 ICT
+# Total   : 967
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -43,16 +43,6 @@ https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://vtvprime.vn/sideLogoBig.png" group-title="Sự kiện",VTVPrime 188
 https://qipmgzougxliv.vcdn.cloud/app/stream/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/935e553f4435030c604a4948c1e4d243.png" group-title="Giờ Vàng TV",[09:00] Los Angeles Lakers vs Golden State Warriors | Tôm [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://ftlh5sc02iliv.vcdn.cloud/1792629307_hd/1792629307_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/935e553f4435030c604a4948c1e4d243.png" group-title="Giờ Vàng TV",[09:00] Los Angeles Lakers vs Golden State Warriors | Tôm [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://ftlh5sc02iliv.vcdn.cloud/1792629307_hd/1792629307_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/d96dfd2dedd39877ed1f06ea31270a46.png" group-title="Giờ Vàng TV",[09:30] Los Angeles Clippers vs Sacramento Kings | Vịt [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -2029,6 +2019,16 @@ https://xoiche.live/live/livehub8/live/livehub8/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://khogalive.b-cdn.net/bcdn_token=FK4zR2467DvcA9Fn4dCuA9l8E2pj4aXUFkktxkc6_GM&expires=1855579061&token_path=%2Flive%2Flivehub8/live/livehub8/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://gavangzz.tv/favicon.ico" group-title="Gà Vàng",10:10 22/10 Santos Laguna Vs Pumas U N A M [HLS]
+#EXTVLCOPT:http-referrer=https://gavangzz.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl002.com/live/6a2a59b347bbddd62a8dc4e4.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangzz.tv/favicon.ico" group-title="Gà Vàng",10:10 22/10 Santos Laguna Vs Pumas U N A M [HLS]
+#EXTVLCOPT:http-referrer=https://gavangzz.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl004.com/live/6a2a59b347bbddd62a8dc4e4.m3u8
+
 #EXTINF:-1 tvg-logo="https://gavangzz.tv/favicon.ico" group-title="Gà Vàng",15:30 22/10 Persatuan Sepak Bola Indonesia Kediri Vs Pss Sleman [HLS]
 #EXTVLCOPT:http-referrer=https://gavangzz.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2083,6 +2083,16 @@ https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.m3u8
 #EXTVLCOPT:http-referrer=https://gavangzz.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://playback.livetl004.com/live/6a5df755b89dded67b39b8bc.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangzz.tv/favicon.ico" group-title="Gà Vàng",19:00 22/10 Madura United Vs Persib Bandung [HLS]
+#EXTVLCOPT:http-referrer=https://gavangzz.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl002.com/live/6a7c0d8f65997681f18cacc4.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangzz.tv/favicon.ico" group-title="Gà Vàng",19:00 22/10 Madura United Vs Persib Bandung [HLS]
+#EXTVLCOPT:http-referrer=https://gavangzz.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl004.com/live/6a7c0d8f65997681f18cacc4.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/football/team/320ff18ba51acdf34c92311dec8186a7.png" group-title="Gà Vàng",19:00 22/10 Madura United vs Persib Bandung (Gà Siêu Tồ) [HLS]
 #EXTVLCOPT:http-referrer=https://gavang33.ag/
@@ -2686,16 +2696,6 @@ https://stm6dad62063600.stream.hdplaylink.com/sklive/carot/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Sao Kê TV",SaoKeTV Ricky
 https://stm6dad62063600.stream.hdplaylink.com/sklive/ricky/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/fa6f985041ec3f9729172380ae9cebf8.png!w80" group-title="Rocket50/BTFY",09:00 22/10 | Los Angeles Lakers vs Golden State Warrior | BLV POCARI [M3U8]
-#EXTVLCOPT:http-referrer=https://btfy.io/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.miekgo.app/live/19919577_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/fa6f985041ec3f9729172380ae9cebf8.png!w80" group-title="Rocket50/BTFY",09:00 22/10 | Los Angeles Lakers vs Golden State Warrior | BLV POCARI [M3U8]
-#EXTVLCOPT:http-referrer=https://btfy.io/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.qioetj.app/live/19919577_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.gvapi.cc/basketball/team/848b21021b2a1db7bde95ea52a1e021b.png!w80" group-title="Rocket50/BTFY",09:30 22/10 | Los Angeles Clippers vs Sacramento King | BLV Cozy [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
@@ -3479,7 +3479,7 @@ https://lilive1.eu.cc/live/1971c9407220fbc0e8a1e6c027f840ad/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/3aa9a8aff2872eec1a20d2839c31d51d.png" group-title="BiaomTV",[14:30-22/10] Tenigao FF vs Real Bengaluru [Indian Bangalore Super Division] [HLS]
 https://lilive1.eu.cc/live/15c5c245f701980dc755ff64123b36e6/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/4cf0b7b63d0f8cbeb79a7b344f83ad5c.png" group-title="BiaomTV",[15:00-22/10] Obolon Brovar Kiev U19 vs Polissya Zhytomyr U19 [Ukrainian U19 Liga] [HLS]
+#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/4cf0b7b63d0f8cbeb79a7b344f83ad5c.png" group-title="BiaomTV",[15:30-22/10] Obolon Brovar Kiev U19 vs Polissya Zhytomyr U19 [Ukrainian U19 Liga] [HLS]
 https://lilive1.eu.cc/live/0798122125ab709e2c489d8d9a9ae434/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/psm-2461" group-title="BiaomTV",[15:30-22/10] PSM vs Persebaya Surabaya [VĐQG Indonesia] [HLS]
@@ -3578,105 +3578,260 @@ https://pull1.digitalcdn.net/live/31829b62e9094954b9cbde3fb1e65c68/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hlx8orz84/image/small" group-title="Phá Làng TV",20:40 22/10 Al Hazem vs Al Fayha (LÝ LINH LỰC) [geo]
 https://pull.digitalcdn.net/live/31829b62e9094954b9cbde3fb1e65c68/index.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Miami Heat vs Minnesota Timberwolves vào lúc 06:30 22/10/2026 | BLV 122591
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/miami-heat-vs-minnesota-timberwolves-22-10-2026-2/?blv=122591
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Pachuca vs Cruz Azul vào lúc 10:10 22/10/2026 | BLV 147801
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/pachuca-vs-cruz-azul-22-10-2026/?blv=147801
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912106_lhd.m3u8?auth_key=1792636146-0-0-b674061c5a159aa048f27344b8092252
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=6b655c50b4ac96b0dd6fce0978c968ae&txTime=6ad9eb8a
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Toronto Raptors vs Chicago Bulls vào lúc 06:30 22/10/2026 | BLV 428392
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/toronto-raptors-vs-chicago-bulls-22-10-2026-2/?blv=428392
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Pachuca vs Cruz Azul vào lúc 10:10 22/10/2026 | BLV 414317
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/pachuca-vs-cruz-azul-22-10-2026/?blv=414317
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1792636146-0-0-ff9e533e42dfa3db065dafde207df08f
+https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=492d415398829532d5b18076d05cb7a5&txTime=6ad9eb8a
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Atlanta Dream W vs Golden State Valkyries W vào lúc 07:00 22/10/2026 | BLV 558264
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/atlanta-dream-w-vs-golden-state-valkyries-w-22-10-2026/?blv=558264
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Pachuca vs Cruz Azul vào lúc 10:10 22/10/2026 | BLV 494201
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/pachuca-vs-cruz-azul-22-10-2026/?blv=494201
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-558264_lhd.m3u8?txSecret=d8a6c48aef49b4deae876bbf6be28a61&txTime=6ad9bb42
+https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1792648506-0-0-be607e8902d19bfaa7061c9ef352409d
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Columbus Crew vs St. Louis City SC vào lúc 07:00 22/10/2026 | BLV 459401
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/columbus-crew-vs-st-louis-city-sc-22-10-2026/?blv=459401
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Pachuca vs Cruz Azul vào lúc 10:10 22/10/2026 | BLV 623743
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/pachuca-vs-cruz-azul-22-10-2026/?blv=623743
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1792636146-0-0-edd3418e1de081b1797c86011a246d59
+https://pull.niues.live/live/stream-623743_lhd.m3u8?auth_key=1792648506-0-0-530580aee8b0932533ca8747a4959ff8
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Columbus Crew vs St. Louis City SC vào lúc 07:00 22/10/2026 | BLV 619561
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/columbus-crew-vs-st-louis-city-sc-22-10-2026/?blv=619561
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Santos Laguna vs Pumas U.N.A.M. vào lúc 10:10 22/10/2026 | BLV 109053
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/santos-laguna-vs-pumas-u-n-a-m-22-10-2026/?blv=109053
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=46ae0d266352f5bed1a36fdb54ebc5b1&txTime=6ad9bb42
+https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1792648506-0-0-2203d3175d043a4c3ae8c4288cc055da
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Palmeiras – SP vs Fluminense – RJ vào lúc 07:30 22/10/2026 | BLV 372746
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/palmeiras-sp-vs-fluminense-rj-22-10-2026/?blv=372746
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Santos Laguna vs Pumas U.N.A.M. vào lúc 10:10 22/10/2026 | BLV 118206
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/santos-laguna-vs-pumas-u-n-a-m-22-10-2026/?blv=118206
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1792640380-0-0-2dffeac4afd5d1986123deb0ffa16a4f
+https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1792648506-0-0-36f37f79e9cf964d0811bf2968c9d0e6
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Palmeiras – SP vs Fluminense – RJ vào lúc 07:30 22/10/2026 | BLV 532081
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/palmeiras-sp-vs-fluminense-rj-22-10-2026/?blv=532081
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Santos Laguna vs Pumas U.N.A.M. vào lúc 10:10 22/10/2026 | BLV 170430
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/santos-laguna-vs-pumas-u-n-a-m-22-10-2026/?blv=170430
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912009_lhd.m3u8?auth_key=1792648506-0-0-377fb66c1759f00b7ddcfadc0d3ea539
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Santos Laguna vs Pumas U.N.A.M. vào lúc 10:10 22/10/2026 | BLV 360663
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/santos-laguna-vs-pumas-u-n-a-m-22-10-2026/?blv=360663
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1792648506-0-0-2865faad3a2174295bb83b41c31ffca8
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Santos Laguna vs Pumas U.N.A.M. vào lúc 10:10 22/10/2026 | BLV 603255
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/santos-laguna-vs-pumas-u-n-a-m-22-10-2026/?blv=603255
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-627718_lhd.m3u8?auth_key=1792648506-0-0-f1862fb24665ab56a1f4aaa60ce7397a
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Persatuan Sepakbola Makassar vs Persebaya Surabaya vào lúc 15:30 22/10/2026 | BLV 123226
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/persatuan-sepakbola-makassar-vs-persebaya-surabaya-22-10-2026/?blv=123226
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=bb9b6731c44420ca1e16bc1de2037004&txTime=6ad9eb8a
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Persatuan Sepakbola Makassar vs Persebaya Surabaya vào lúc 15:30 22/10/2026 | BLV 139384
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/persatuan-sepakbola-makassar-vs-persebaya-surabaya-22-10-2026/?blv=139384
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=2f9e4bfabc255f9482d3197a86ec0117&txTime=6ad9224f
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Persatuan Sepakbola Makassar vs Persebaya Surabaya vào lúc 15:30 22/10/2026 | BLV 327159
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/persatuan-sepakbola-makassar-vs-persebaya-surabaya-22-10-2026/?blv=327159
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1792635206-0-0-7a6bfe61f66b2214b1a328d932423380
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Persik Kediri vs PSS Sleman vào lúc 15:30 22/10/2026 | BLV 168740
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/persik-kediri-vs-pss-sleman-22-10-2026/?blv=168740
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=62532f8634b137ec9ef0526c1155ba41&txTime=6ad97b7e
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Persik Kediri vs PSS Sleman vào lúc 15:30 22/10/2026 | BLV 462413
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/persik-kediri-vs-pss-sleman-22-10-2026/?blv=462413
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912145_lhd.m3u8?auth_key=1792587680-0-0-8f45ef535940afcb64f786390c0face4
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Persik Kediri vs PSS Sleman vào lúc 15:30 22/10/2026 | BLV 484845
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/persik-kediri-vs-pss-sleman-22-10-2026/?blv=484845
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912142_lhd.m3u8?auth_key=1792620032-0-0-2d9bc6de7992f43b437c36f9080b7909
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Queensland Lions SC vs Preston Lions vào lúc 15:30 22/10/2026 | BLV 256080
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/queensland-lions-sc-vs-preston-lions-22-10-2026/?blv=256080
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912146_lhd.m3u8?auth_key=1792621344-0-0-698cc1e8a0cde83914da64f4d580cec1
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Van Hien University vs Binh Minh Sai Gon vào lúc 17:00 22/10/2026 | BLV 534055
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/van-hien-university-vs-binh-minh-sai-gon-22-10-2026/?blv=534055
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=832d881dc4785f6ae2c49c2dc5804c3a&txTime=6ad8a917
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Van Hien University vs Binh Minh Sai Gon vào lúc 17:00 22/10/2026 | BLV 620084
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/van-hien-university-vs-binh-minh-sai-gon-22-10-2026/?blv=620084
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1792587535-0-0-59fdd73c3b5cf6a7246bc2f315f84d9a
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Xuan Thien Phu Tho vs PVF-CAND FC vào lúc 18:00 22/10/2026 | BLV 597929
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/xuan-thien-phu-tho-vs-pvf-cand-fc-22-10-2026/?blv=597929
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1792589498-0-0-1ac2d4184fe805e3b04fca73dc5bbf85
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Xuan Thien Phu Tho vs PVF-CAND FC vào lúc 18:00 22/10/2026 | BLV 617313
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/xuan-thien-phu-tho-vs-pvf-cand-fc-22-10-2026/?blv=617313
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1792589501-0-0-88f5cdae33af2b5a635c4b80b687a3c1
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Madura United vs Persib Bandung vào lúc 19:00 22/10/2026 | BLV 434982
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/madura-united-vs-persib-bandung-22-10-2026/?blv=434982
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1792620017-0-0-49dbc588f33e6aae7c19184c1efb3311
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Cong An Ha Noi FC vs Thanh Hoa vào lúc 19:15 22/10/2026 | BLV 599634
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/cong-an-ha-noi-fc-vs-thanh-hoa-22-10-2026/?blv=599634
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1792587619-0-0-e21220615413b35b0e5b14d7b95c26a2
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Cong An Ha Noi FC vs Thanh Hoa vào lúc 19:15 22/10/2026 | BLV 602153
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/cong-an-ha-noi-fc-vs-thanh-hoa-22-10-2026/?blv=602153
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=558919be0b0e0a816be5102d13002071&txTime=6ad97b45
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Jazira(UAE) vs Ajman vào lúc 20:00 22/10/2026 | BLV 603914
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-jazirauae-vs-ajman-22-10-2026/?blv=603914
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1792619769-0-0-4a84ce8cafb3af85123153b8eaae7d70
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Jazira(UAE) vs Ajman vào lúc 20:00 22/10/2026 | BLV 619672
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-jazirauae-vs-ajman-22-10-2026/?blv=619672
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-619672_lhd.m3u8?txSecret=33901ac0dfea561c0282b3d1c3d07009&txTime=6ad9b6e4
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:00 22/10/2026 | BLV 511367
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-wasl-sc-vs-ittihad-kalba-fc-22-10-2026/?blv=511367
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1792600789-0-0-d0fda6c7ab19748212e71c35eb029ae1
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al-Wasl SC vs Ittihad Kalba FC vào lúc 20:00 22/10/2026 | BLV 552716
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-wasl-sc-vs-ittihad-kalba-fc-22-10-2026/?blv=552716
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1792605206-0-0-7df31efc0b680c88aaaa7ea558f8502e
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Bunyodkor vs Mashal Muborak vào lúc 20:30 22/10/2026 | BLV 620504
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/bunyodkor-vs-mashal-muborak-22-10-2026/?blv=620504
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-620504_lhd.m3u8?auth_key=1792594935-0-0-57d65397f301b2c9415b93b59c5ffbf0
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Hazem vs Al Fayha vào lúc 20:40 22/10/2026 | BLV 351530
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-hazem-vs-al-fayha-22-10-2026/?blv=351530
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912127_lhd.m3u8?txSecret=33b53d9dabc0460098361b199bc027cb&txTime=6ad97b02
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Hazem vs Al Fayha vào lúc 20:40 22/10/2026 | BLV 380460
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-hazem-vs-al-fayha-22-10-2026/?blv=380460
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1792641838-0-0-1aa458adfe8d2ca2fae0dcd3e13fbf28
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Hazem vs Al Fayha vào lúc 20:40 22/10/2026 | BLV 459401
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-hazem-vs-al-fayha-22-10-2026/?blv=459401
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=48ad524b7903776aa68fda32216d91ee&txTime=6ad9d0f0
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Hazem vs Al Fayha vào lúc 20:40 22/10/2026 | BLV 607552
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-hazem-vs-al-fayha-22-10-2026/?blv=607552
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1792601656-0-0-10d69a54c7dbb2cb4a9b61e05f333efb
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Shahaniya vs Al-Sadd vào lúc 21:30 22/10/2026 | BLV 250874
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-shahaniya-vs-al-sadd-22-10-2026/?blv=250874
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1792620102-0-0-10e3b6b2702da86955bc315ffffd62fd
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Shahaniya vs Al-Sadd vào lúc 21:30 22/10/2026 | BLV 387694
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-shahaniya-vs-al-sadd-22-10-2026/?blv=387694
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=450996632f5e5f05def95ae8ceb7a9e6&txTime=6ad97b74
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Shahaniya vs Al-Sadd vào lúc 21:30 22/10/2026 | BLV 532081
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-shahaniya-vs-al-sadd-22-10-2026/?blv=532081
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1792640456-0-0-0da5a8520ac142178f81ef4ec9f87d01
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Palmeiras – SP vs Fluminense – RJ vào lúc 07:30 22/10/2026 | BLV 621887
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/palmeiras-sp-vs-fluminense-rj-22-10-2026/?blv=621887
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",FC Kairat Almaty vs Panathinaikos vào lúc 21:30 22/10/2026 | BLV 552832
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/fc-kairat-almaty-vs-panathinaikos-22-10-2026/?blv=552832
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-621887_lhd.m3u8?auth_key=1792636146-0-0-65f39edec7fc2fdef4febb737c90a2d0
+https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1792641568-0-0-4840b94d93d40dc585364071bf5f96ff
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Palmeiras – SP vs Fluminense – RJ vào lúc 07:30 22/10/2026 | BLV 626841
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/palmeiras-sp-vs-fluminense-rj-22-10-2026/?blv=626841
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Fateh vs Al Shabab vào lúc 21:45 22/10/2026 | BLV 235232
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-fateh-vs-al-shabab-22-10-2026/?blv=235232
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-626841_lhd.m3u8?auth_key=1792636146-0-0-b5abdae3e618b5fd012becf988c9efd6
+https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1792619821-0-0-78962142b65bba1dce952de6c0456145
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Atlas vs Club America vào lúc 08:00 22/10/2026 | BLV 344370
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/atlas-vs-club-america-22-10-2026/?blv=344370
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Al Fateh vs Al Shabab vào lúc 21:45 22/10/2026 | BLV 283501
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/al-fateh-vs-al-shabab-22-10-2026/?blv=283501
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=48bc24ed82104715a1a3e6dc990caa79&txTime=6ad9bb42
+https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=01f4298246861c1b843c858ae4c56249&txTime=6ad9b717
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Atlas vs Club America vào lúc 08:00 22/10/2026 | BLV 380460
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/atlas-vs-club-america-22-10-2026/?blv=380460
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Ararat-Armenia FC vs AZ Alkmaar vào lúc 23:45 22/10/2026 | BLV 501412
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/ararat-armenia-fc-vs-az-alkmaar-22-10-2026/?blv=501412
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1792636146-0-0-b15459439c167c3dac497808864bede2
+https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=e9ebc5cffb8650590f823355b43c02e2&txTime=6ad97d02
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Atlas vs Club America vào lúc 08:00 22/10/2026 | BLV 552832
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/atlas-vs-club-america-22-10-2026/?blv=552832
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Ararat-Armenia FC vs AZ Alkmaar vào lúc 23:45 22/10/2026 | BLV 619561
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/ararat-armenia-fc-vs-az-alkmaar-22-10-2026/?blv=619561
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1792636146-0-0-2dee2d67f485a696161af08661e909df
+https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1792641742-0-0-5b11762597c394aa66634944b3866ae7
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Puebla vs Rayados de Monterrey vào lúc 08:00 22/10/2026 | BLV 118206
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/puebla-vs-rayados-de-monterrey-22-10-2026/?blv=118206
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",FK Jablonec vs Brighton Hove Albion vào lúc 23:45 22/10/2026 | BLV 170430
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/fk-jablonec-vs-brighton-hove-albion-22-10-2026/?blv=170430
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912009_lhd.m3u8?auth_key=1792648566-0-0-ac88f44e9d59c35390e63dfc02f95190
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",FK Jablonec vs Brighton Hove Albion vào lúc 23:45 22/10/2026 | BLV 291277
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/fk-jablonec-vs-brighton-hove-albion-22-10-2026/?blv=291277
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=b01b7dcb58519ec163fcaa91dbe8a828&txTime=6ad9d29c
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Puebla vs Rayados de Monterrey vào lúc 08:00 22/10/2026 | BLV 187579
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/puebla-vs-rayados-de-monterrey-22-10-2026/?blv=187579
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",FK Jablonec vs Brighton Hove Albion vào lúc 23:45 22/10/2026 | BLV 344370
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/fk-jablonec-vs-brighton-hove-albion-22-10-2026/?blv=344370
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1792636146-0-0-f2d3b9b71d04e0027a25eec84d82ff7e
+https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=2ec0c0440b0f74b3e5eae3a6ab745e1b&txTime=6ad9d075
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Puebla vs Rayados de Monterrey vào lúc 08:00 22/10/2026 | BLV 291277
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/puebla-vs-rayados-de-monterrey-22-10-2026/?blv=291277
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",FK Jablonec vs Brighton Hove Albion vào lúc 23:45 22/10/2026 | BLV 622240
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/fk-jablonec-vs-brighton-hove-albion-22-10-2026/?blv=622240
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=a08ad96dc58864980452bbeb0f61c7f7&txTime=6ad9bb42
+https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1792620110-0-0-65f2e9bdf8419776b096c84f641d1a95
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Puebla vs Rayados de Monterrey vào lúc 08:00 22/10/2026 | BLV 491873
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/puebla-vs-rayados-de-monterrey-22-10-2026/?blv=491873
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Getafe vs Lugano vào lúc 23:45 22/10/2026 | BLV 472241
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/getafe-vs-lugano-22-10-2026/?blv=472241
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=d931ee4edb0d5a8bea3edc55f1bcaa3d&txTime=6ad9bb42
+https://pull.niur.live/live/stream-9912132_lhd.m3u8?txSecret=61a2f2a9956b715c8cb8c2c5405a38f1&txTime=6ad97c62
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Toluca vs Club Tijuana vào lúc 08:00 22/10/2026 | BLV 123226
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/toluca-vs-club-tijuana-22-10-2026/?blv=123226
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Getafe vs Lugano vào lúc 23:45 22/10/2026 | BLV 582342
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/getafe-vs-lugano-22-10-2026/?blv=582342
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=5224e5ccf1482486a8a233e37b46fff9&txTime=6ad9bb42
+https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1792594421-0-0-66f76f8114a118d9a6251c51b2c7268e
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Toluca vs Club Tijuana vào lúc 08:00 22/10/2026 | BLV 623653
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/toluca-vs-club-tijuana-22-10-2026/?blv=623653
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Juventus vs Stade Rennais FC vào lúc 23:45 22/10/2026 | BLV 109053
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/juventus-vs-stade-rennais-fc-22-10-2026/?blv=109053
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-623653_lhd.m3u8?auth_key=1792641823-0-0-7ec204e08ca97d0f9e0ed2b0c8683371
+https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1792648566-0-0-414a0f2d5158d4f22c87f35dcca20584
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Toluca vs Club Tijuana vào lúc 08:00 22/10/2026 | BLV 627318
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/toluca-vs-club-tijuana-22-10-2026/?blv=627318
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Juventus vs Stade Rennais FC vào lúc 23:45 22/10/2026 | BLV 304148
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/juventus-vs-stade-rennais-fc-22-10-2026/?blv=304148
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-627318_lhd.m3u8?auth_key=1792636146-0-0-f2f675e63a00130c27cfdb68286c5dc4
+https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1792619916-0-0-13e2964b835a0305ff51b4ce30bea85b
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",Independiente Santa Fe vs Jaguares de Cordoba vào lúc 08:20 22/10/2026 | BLV 485739
-#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/independiente-santa-fe-vs-jaguares-de-cordoba-22-10-2026/?blv=485739
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Juventus vs Stade Rennais FC vào lúc 23:45 22/10/2026 | BLV 620661
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/juventus-vs-stade-rennais-fc-22-10-2026/?blv=620661
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912139_lhd.m3u8?txSecret=f759a4a6822da494a50469f73fc66c13&txTime=6ad9bb42
+https://pull.niues.live/live/stream-9912128_lhd.m3u8?auth_key=1792587749-0-0-33f89ca9e571e795dd9f5491962498ad
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Trabzonspor vs Heart of Midlothian F.C. vào lúc 23:45 22/10/2026 | BLV 536185
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/trabzonspor-vs-heart-of-midlothian-f-c-22-10-2026/?blv=536185
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1792619573-0-0-1b4d74ee945324363f65f280cb206a40
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",Trabzonspor vs Heart of Midlothian F.C. vào lúc 23:45 22/10/2026 | BLV 557845
+#EXTVLCOPT:http-referrer=https://www.horizonleaguenetwork.tv/truc-tiep/trabzonspor-vs-heart-of-midlothian-f-c-22-10-2026/?blv=557845
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1792641857-0-0-98d77755a5a648e33464496ac5c18276
 
 #EXTINF:-1 tvg-logo="https://thesport-api.cdnx.tech/assets/img/football/team/b1e4482ea9e93d26e643d61a17e488b1.png?size=xs" group-title="Vua Sân Cỏ TV",04:00 22/10 Colo Colo (nữ) vs Caracas (nữ) (Nhà Đài)
 https://station1-global.ebaclofen.org/live/d1b47a20eb157e9b51b5aff9694c0d50/playlist.m3u8
