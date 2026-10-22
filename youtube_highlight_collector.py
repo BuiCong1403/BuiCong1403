@@ -1,5 +1,6 @@
 import json
 import re
+import socket
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -76,10 +77,11 @@ def channel_page_items(text, channel):
                          "publishedTimeText": {"simpleText": " ".join(labels)}}
             if isinstance(video, dict):
                 label = (video.get("publishedTimeText") or {}).get("simpleText", "")
-                age = re.search(r'(\d+)\s+(minute|hour|day|week)s?\s+ago', label, re.I)
+                label = label.replace("\u00a0", " ")
+                age = re.search(r'(\d+)\s*(minute|hour|day|week|min|hr|m|h|d|w)s?\s+ago', label, re.I)
                 video_id = video.get("videoId")
                 if age and video_id:
-                    seconds = int(age.group(1)) * {"minute": 60, "hour": 3600, "day": 86400, "week": 604800}[age.group(2).lower()]
+                    seconds = int(age.group(1)) * {"minute": 60, "min": 60, "m": 60, "hour": 3600, "hr": 3600, "h": 3600, "day": 86400, "d": 86400, "week": 604800, "w": 604800}[age.group(2).lower()]
                     title = video.get("title") or {}
                     result.append({"id": video_id, "channel": channel,
                                    "title": title.get("simpleText") or "".join(x.get("text", "") for x in title.get("runs", [])),
@@ -140,6 +142,10 @@ def load_channels():
 
 def main():
     previous = read_cache()
+    try:
+        socket.getaddrinfo("caodanh.io.vn", 443)
+    except OSError as exc:
+        raise RuntimeError("CaoDanh DNS lookup failed; video availability cannot be checked. Previous snapshot preserved.") from exc
     candidates = []
     feeds_ok = 0
     for channel, channel_id in CHANNELS.items():
@@ -153,23 +159,33 @@ def main():
             print(f"[YouTube] {channel}: {len(items)} recent videos", flush=True)
         except (requests.RequestException, ET.ParseError) as exc:
             print(f"[WARN] {channel}: {exc}", flush=True)
-            try:
-                response = requests.get(f"https://www.youtube.com/channel/{channel_id}/videos",
-                                        params={"hl": "en"}, headers={"User-Agent": "Mozilla/5.0"}, timeout=25)
-                response.raise_for_status()
-                items = channel_page_items(response.text, channel)
-                candidates.extend(items)
-                feeds_ok += 1
-                print(f"[YouTube page] {channel}: {len(items)} recent videos", flush=True)
-            except (requests.RequestException, ValueError) as fallback_error:
-                print(f"[WARN] {channel} page fallback: {fallback_error}", flush=True)
+        # RSS only exposes 15 uploads, frequently crowded by Shorts. Always
+        # inspect the public Videos tab as an independent discovery path.
+        try:
+            response = requests.get(f"https://www.youtube.com/channel/{channel_id}/videos",
+                                    params={"hl": "en", "gl": "US"}, headers={"User-Agent": "Mozilla/5.0", "Accept-Language": "en-US,en;q=0.9"}, timeout=25)
+            response.raise_for_status()
+            items = channel_page_items(response.text, channel)
+            candidates.extend(items)
+            feeds_ok += 1
+            print(f"[YouTube page] {channel}: {len(items)} recent videos", flush=True)
+        except (requests.RequestException, ValueError) as fallback_error:
+            print(f"[WARN] {channel} page fallback: {fallback_error}", flush=True)
     if not feeds_ok:
         raise RuntimeError("All YouTube feeds failed; previous snapshot preserved")
     if not candidates:
         raise RuntimeError("No recent videos discovered; previous snapshot preserved, not marked refreshed")
+    unique = {}
+    for item in candidates:
+        unique.setdefault(item["id"], item)
+    candidates = list(unique.values())
     with ThreadPoolExecutor(max_workers=4) as pool:
         checked = list(pool.map(check_item, candidates))
     valid = [item for item in checked if item]
+    for channel in CHANNELS:
+        found = sum(item["channel"] == channel for item in candidates)
+        playable = sum(item["channel"] == channel for item in valid)
+        print(f"[CHECK] {channel}: {playable}/{found} playable", flush=True)
     if candidates and not valid:
         raise RuntimeError("No playable CaoDanh videos; previous snapshot preserved")
     merged = {item["id"]: item for item in previous}

@@ -4354,7 +4354,18 @@ def collect_previous_highlight_playlist():
             channel["referer"] = H24_BASE_URL.rstrip("/") + "/"
         channel["skip_event_filter"] = True
         channels.append(channel)
-    return filter_recent_highlights(channels)
+    # Every merge must retain all independent source snapshots, not just the
+    # 24h/SuperSport URLs recognised in the previous combined playlist.
+    from youtube_highlight_collector import load_channels
+    channels.extend(load_channels())
+    channels.extend(load_h24_highlight_cache())
+    if DASFOOTBALL_M3U.exists():
+        try:
+            channels.extend(channels_from_dasfootball_m3u_text(
+                DASFOOTBALL_M3U.read_text(encoding="utf-8-sig"), "DasFootballCacheLocal"))
+        except (OSError, ValueError) as exc:
+            log(f"[PreviousHighlight] DasFootball snapshot unavailable: {exc}")
+    return filter_recent_highlights(dedupe_and_sort_channels(channels))
 
 
 def extvlcopt_value(block, option_name):
@@ -10508,8 +10519,8 @@ def main():
 
     if RUN_MODE == "merge_youtube":
         from youtube_highlight_collector import load_channels
-        channels = filter_recent_highlights(dedupe_and_sort_channels(
-            load_channels() + collect_previous_highlight_playlist()))
+        channels = filter_recent_highlights(dedupe_and_sort_channels(repair_h24_missing_halves(
+            load_channels() + collect_previous_highlight_playlist())))
         write_m3u(HIGHLIGHT_M3U, channels)
         replace_highlight_blocks(ALL_M3U, highlight_blocks_from_file())
         replace_highlight_blocks(OTT_M3U, ott_highlight_blocks_from_channels(channels))

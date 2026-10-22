@@ -7,8 +7,8 @@ on:
       - "youtube_highlight_collector.py"
       - ".github/workflows/youtube_highlight.yml"
   schedule:
-    # 08:15 Vietnam time, independent of Tinhlagi and the local PC.
-    - cron: "15 1 * * *"
+    # Morning refresh and a catch-up for videos published later: 08:15, 10:15 ICT.
+    - cron: "15 1,3 * * *"
 permissions:
   contents: write
 concurrency:
@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add youtube_highlight_cache.json highlight.m3u all.m3u ott.m3u
+          git add youtube_highlight_cache.json h24_highlight_cache.json highlight.m3u all.m3u ott.m3u
           git diff --cached --quiet && exit 0
           git commit -m "Refresh YouTube sports highlights"
           for attempt in 1 2 3; do
@@ -43,13 +43,13 @@ jobs:
             git rebase origin/main || {
               for path in $(git diff --name-only --diff-filter=U); do
                 case "$path" in
-                  youtube_highlight_cache.json) git checkout --theirs -- "$path" ;;
+                  youtube_highlight_cache.json|h24_highlight_cache.json) git checkout --theirs -- "$path" ;;
                   all.m3u|ott.m3u|highlight.m3u) git checkout --ours -- "$path" ;;
                   *) git rebase --abort; exit 1 ;;
                 esac
               done
               RUN_MODE=merge_youtube python combined_m3u_collector.py
-              git add youtube_highlight_cache.json highlight.m3u all.m3u ott.m3u
+              git add youtube_highlight_cache.json h24_highlight_cache.json highlight.m3u all.m3u ott.m3u
               GIT_EDITOR=true git rebase --continue
             }
           done
