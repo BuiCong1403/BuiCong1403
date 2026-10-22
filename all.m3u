@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-23 05:08 ICT
-# Total   : 814
+# Updated : 2026-10-23 06:31 ICT
+# Total   : 821
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -3378,7 +3378,17 @@ https://cdn1-global.ebaclofen.org/live/pro2/index.m3u8
 #EXTINF:-1 tvg-logo="https://thesport-api.cdnx.tech/assets/img/football/team/a0a227a6100628d3213e1fc321acd4f2.png?size=xs" group-title="Vua Sân Cỏ TV",01:00 24/10 Al Ahli SC vs Al Khaleej (Phổ Nghi)
 https://cdn1-global.ebaclofen.org/live/pro1/index.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Fan MU đòi sa thải Carrick ngay lập tức, Nagelsmann sẵn sàng thay thế
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Juventus - Rennes: Rượt đuổi 4 bàn cực hấp dẫn (Europa League) [Hiệp 1]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-23/cp_special_c1_ban_quyen-1792694836-juventus_h1.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Juventus - Rennes: Rượt đuổi 4 bàn cực hấp dẫn (Europa League) [Hiệp 2]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-23/cp_special_c1_ban_quyen-1792694836-juventus_h2.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",HLV Carrick đã mắc sai lầm gì khiến MU thua thảm "tý hon" Como?
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-22/cp_special_c1_ban_quyen-1792608087-5bancuatrandau.m3u8
@@ -3403,6 +3413,51 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-22/1792620869-cliptinnong
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-22/cp_special_c1_ban_quyen1792645770-3ban_720p.m3u8
 
+#EXTINF:-1 tvg-logo="https://supersport.com/media/ov5cigfo/soc_221026_uel_bouvacm_hd5.png" group-title="Highlight",AFC Bournemouth v AC Milan | Match Highlights | UEFA Europa League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/9670e168-dadd-4ce6-b712-1978b5b66fe1/afc-bournemouth-v-ac-milan-match-highlights-uefa-europa-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UEL_BOUVACM_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/umij1xzj/soc_221026_uelc_ajaxvata_hd5.png" group-title="Highlight",Ajax v Atalanta | Match Highlights | UEFA Europa Conference League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/c8d9cfbd-e60f-4be4-a905-65a9a16bb933/ajax-v-atalanta-match-highlights-uefa-europa-conference-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UELC_AJAXVATA_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/5hfdydos/soc_221026_uel_omovben_hd5.png" group-title="Highlight",Omonia FC v Benfica | Match Highlights | UEFA Europa League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/f02b1806-cea3-4963-94c7-15a691ec8537/omonia-fc-v-benfica-match-highlights-uefa-europa-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UEL_OMOVBEN_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/xzwli2sa/soc_221026_uel_besvcrp_hd5.png" group-title="Highlight",Besiktas v Crystal Palace | Match Highlights | UEFA Europa League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/9c543a40-c4d0-43c2-b671-6b27ebab87b4/besiktas-v-crystal-palace-match-highlights-uefa-europa-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UEL_BESVCRP_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/lp0lhmbb/soc_221026_uel_celvcdv_hd5.png" group-title="Highlight",Celtic v Celta Vigo | Match Highlights | UEFA Europa League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/57a813d7-b739-40bc-8684-892dca8f7e63/celtic-v-celta-vigo-match-highlights-uefa-europa-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UEL_CELVCDV_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/apvm4ts1/soc_221026_uelc_czvcpn_hd5.png" group-title="Highlight",Zvezda v Copenhagen | Match Highlights | UEFA Conference League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/f00d56e3-c784-4f70-a976-ea91e50d6fb5/zvezda-v-copenhagen-match-highlights-uefa-conference-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UELC_CZVCPN_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/ewgjisgm/soc_221026_uel_usgvhbs_hd5.png" group-title="Highlight",Union SG v Hapoel Beer-Shev | Match Highlights | UEFA Europa League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/5809c3de-f84a-4689-9f06-2c982ab04020/union-sg-v-hapoel-beer-shev-match-highlights-uefa-europa-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UEL_USGVHBS_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/m4ohmsh2/soc_221026_uel_hfmvol_hd5.png" group-title="Highlight",Hoffenheim v Lyon | Match Highlights | UEFA Europa League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/73639059-8a13-4892-88da-a26c0d248197/hoffenheim-v-lyon-match-highlights-uefa-europa-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UEL_HFMVOL_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/yzaly4ho/soc_221026_uel_juvvren_hd5.png" group-title="Highlight",Juventus v Stade Rennais | Match Highlights | UEFA Europa League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/e72c34d4-e4db-4043-a995-3adefd47f466/juventus-v-stade-rennais-match-highlights-uefa-europa-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UEL_JUVVREN_HD5_500K.mp4.m3u8
+
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Real Madrid - Leipzig: Mbappe - Diomande rực rỡ (Cúp C1)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -3412,6 +3467,16 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-22/cp_special_c1_ban_quye
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-22/cp_special_c1_ban_quyen-1792616166-real_h2_720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/13gnhnj4/soc_221026_uel_sgvmar_hd5.png" group-title="Highlight",Sturm Graz v Marseille | Match Highlights | UEFA Europa League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/18954348-e043-4356-a5de-4855163d8aaa/sturm-graz-v-marseille-match-highlights-uefa-europa-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UEL_SGVMAR_HD5_500K.mp4.m3u8
+
+#EXTINF:-1 tvg-logo="https://supersport.com/media/wu5jm3w2/soc_221026_uel_lpvsnd_hd5.png" group-title="Highlight",Poznan v Sunderland | Match Highlights | UEFA Europa League
+#EXTVLCOPT:http-referrer=https://supersport.com/football/video/bd03a177-5cb6-42d9-8238-0fcc5542236b/poznan-v-sunderland-match-highlights-uefa-europa-league
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://vod.supersport.com/2019/SOC_221026_UEL_LPVSND_HD5_500K.mp4.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Como - MU: Thảm bại trước "tí hon" (Cúp C1) [Hiệp 1]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3755,20 +3820,10 @@ https://vod.supersport.com/2019/SOC_201026_UEFA_ASRVSB_500K.mp4.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/1792427522-video9x16-1080.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Diomande thành cặp bài trùng mới với Mbappe, Vinicius bị treo giò 4 trận lại hóa hay
-#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_laliga-1792357201-4ban.m3u8
-
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Đỗ Hoàng Hên tiết lộ lý do ăn chay, ấp ủ kế hoạch lớn cùng bạn gái xinh đẹp
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/1792414814-2aobor6nkychkvn7lieipocfykyhjdvkuoljtaqm--1-_720p.m3u8
-
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Guler vung cùi chỏ vẫn thoát thẻ đỏ, Real Madrid bị tố được trọng tài thiên vị
-#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_laliga-1792371879-dauvl.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Man City tái lập kỷ lục 129 năm, Chelsea chấm dứt chuỗi 23 trận thủng lưới
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3780,11 +3835,6 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_laliga-1792
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_c1_ban_quyen-1792404524-bantin1phut261019.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Real công phá bảng xếp hạng La Liga, bám đuổi Barca trước Siêu kinh điển
-#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_laliga-1792357187-5ban.m3u8
-
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Ronaldo bỏ xa Messi ở cuộc đua QBV hay nhất lịch sử, MU cấm cầu thủ phỏng vấn (Clip tin nóng)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -3795,6 +3845,9 @@ https://caodanh.io.vn/highlight/iptv_hls.php?v=kGOeHHpkyds&ext=.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/IWefJQVUVPQ/hqdefault.jpg" group-title="Highlight",Highlights ANGERS vs MARSEILLE | Đại tiệc 7 bàn, thi nhau bắn phá | Ligue 1 26/27 | VTVcab C1 | 19/10
 https://caodanh.io.vn/highlight/iptv_hls.php?v=IWefJQVUVPQ&ext=.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/DtIuP3y6iTg/hqdefault.jpg" group-title="Highlight",HIGHLIGHTS: BOURNEMOUTH - SUNDERLAND | LỢI THẾ QUÂN SỐ, CHIẾN QUẢ XỨNG ĐÁNG | NGOẠI HẠNG ANH 26/27 | FPT Bong Da | 19/10
+https://caodanh.io.vn/highlight/iptv_hls.php?v=DtIuP3y6iTg&ext=.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Highlight",Công an TP HCM - Thể Công Viettel: Kịch tính đến giây cuối cùng (V-League) [Hiệp 1 | 720p]
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
@@ -3813,21 +3866,3 @@ https://cdn-cf-east.streamable.com/video/mp4/nbr0ze.mp4?Expires=1792887540&Signa
 
 #EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/DBxBBrJeXuA/hqdefault.jpg" group-title="Highlight",FULL TRẬN BRIGHTON VS KAUNO ZALGIRIS: HỦY DIỆT ĐỘI KHÁCH, BỮA TIỆC BÀN THẮNG| CONFERENCE LEAGUE | WEBTHETHAO | 19/10
 https://caodanh.io.vn/highlight/iptv_hls.php?v=DBxBBrJeXuA&ext=.m3u8
-
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Nottingham Forest - Arsenal: "Kép phụ" tỏa sáng (Ngoại hạng Anh)
-#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_nha_fpt-1792348544-phao_720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/DtIuP3y6iTg/hqdefault.jpg" group-title="Highlight",HIGHLIGHTS: BOURNEMOUTH - SUNDERLAND | LỢI THẾ QUÂN SỐ, CHIẾN QUẢ XỨNG ĐÁNG | NGOẠI HẠNG ANH 26/27 | FPT Bong Da | 19/10
-https://caodanh.io.vn/highlight/iptv_hls.php?v=DtIuP3y6iTg&ext=.m3u8
-
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Real Madrid - Sevilla: Thị uy trước Siêu kinh điển (La Liga) [Hiệp 1]
-#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_laliga-1792357356-real_h1.m3u8
-
-#EXTINF:-1 tvg-logo="" group-title="Highlight",Real Madrid - Sevilla: Thị uy trước Siêu kinh điển (La Liga) [Hiệp 2]
-#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-19/cp_special_laliga-1792357356-real_h2.m3u8
