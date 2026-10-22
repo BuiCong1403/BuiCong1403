@@ -1,7 +1,7 @@
 #EXTM3U
-# Updated : 2026-10-22 21:30 ICT
-# Total links   : 1614
-# Total matches : 57
+# Updated : 2026-10-22 22:49 ICT
+# Total links   : 1629
+# Total matches : 56
 # Lịch FootOnSat: giờ Việt Nam (UTC+7), hôm nay và 2 ngày kế tiếp.
 # Dữ liệu lịch/kênh lấy từ JSON FootOnSat; link xem được map từ các M3U tham chiếu.
 # Không sinh link no-signal; kênh không match được link thật sẽ bị bỏ qua.
@@ -990,6 +990,12 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/763975
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/942697
 
+#EXTINF:-1 tvg-id="974660" tvg-logo="https://go4.pw/EUROPE/PORTUGAL/SPORTTV-1.png" group-title="23:45 22/10 | Red Star Belgrade vs FC Copenhagen",PT - SPORT TV 7 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/974660
+
 #EXTINF:-1 tvg-id="1059785" tvg-logo="https://go4.pw/EXYU/SPORTKLUB.png" group-title="23:45 22/10 | Red Star Belgrade vs FC Copenhagen",SI - SPORTKLUB 1 HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
@@ -1049,6 +1055,18 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=559144&exte
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90D86A14841D1FC92122A4FCD4C00BB0
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=559144&extension=ts&play_token=FDuriEfg5c
+
+#EXTINF:-1 tvg-id="959364" tvg-logo="http://picon.tivi-ott.net:25461/picon/PORTUGALIA/SPORT TV/SPORT TV 7.png" group-title="23:45 22/10 | Red Star Belgrade vs FC Copenhagen",┃PT┃ SPORT TV 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F41265CD3901EF97B30ED873CF46FB1C
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=959364&extension=ts&play_token=8LI2rx0KWA
+
+#EXTINF:-1 tvg-id="959364" tvg-logo="http://picon.tivi-ott.net:25461/picon/PORTUGALIA/SPORT TV/SPORT TV 7.png" group-title="23:45 22/10 | Red Star Belgrade vs FC Copenhagen",┃PT┃ SPORT TV 7
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 90D86A14841D1FC92122A4FCD4C00BB0
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=959364&extension=ts&play_token=rLwq0EFqu5
 
 #EXTINF:-1 tvg-id="1441958" tvg-logo="https://go4.pw/BEIN4K.png" group-title="23:45 22/10 | Trabzonspor vs Hearts",AR - BEIN SPORTS 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -1589,6 +1607,24 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1405371
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer F41265CD3901EF97B30ED873CF46FB1C
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1101422&extension=ts&play_token=3GSrmuWxcj
+
+#EXTINF:-1 tvg-id="3220" tvg-logo="http://picon.tivi-ott.net:25461/picon/HUNGARIA/m4sport.png" group-title="23:45 22/10 | Ferencváros vs Torreense",┃HU┃ M4 SPORT HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F41265CD3901EF97B30ED873CF46FB1C
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=3220&extension=ts&play_token=0swIVl9ZFy
+
+#EXTINF:-1 tvg-id="3220" tvg-logo="http://picon.tivi-ott.net:25461/picon/HUNGARIA/m4sport.png" group-title="23:45 22/10 | Ferencváros vs Torreense",┃HU┃ M4 SPORT HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 90D86A14841D1FC92122A4FCD4C00BB0
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=3220&extension=ts&play_token=lFL7NxYKfH
+
+#EXTINF:-1 tvg-id="3220" tvg-logo="http://picon.tivi-ott.net:25461/picon/HUNGARIA/m4sport.png" group-title="23:45 22/10 | Ferencváros vs Torreense",┃HU┃ M4 SPORT HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 505BE0692EDCAB87322018717845AF6F
+http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=3220&extension=ts&play_token=Vr5HSq8hsM
 
 #EXTINF:-1 tvg-id="901296" tvg-logo="http://picon.tivi-ott.net:25461/picon/ASIA/PHILIPPINE/PREMIER SPORTS HD.png" group-title="23:45 22/10 | Ferencváros vs Torreense",┃PH┃ PREMIER SPORTS HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -2184,6 +2220,18 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1019737
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/324968
 
+#EXTINF:-1 tvg-id="45188" tvg-logo="https://go4.pw/EUROPE/CZECH/SPORT2.png" group-title="23:45 22/10 | Lech Poznan vs Sunderland",HU - SPORT 2 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/45188
+
+#EXTINF:-1 tvg-id="63971" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT.png" group-title="23:45 22/10 | Lech Poznan vs Sunderland",IL - SPORT 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63971
+
 #EXTINF:-1 tvg-id="63970" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT.png" group-title="23:45 22/10 | Lech Poznan vs Sunderland",IL - SPORT 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
@@ -2195,6 +2243,24 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63970
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63969
+
+#EXTINF:-1 tvg-id="63968" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT5STARTS.png" group-title="23:45 22/10 | Lech Poznan vs Sunderland",IL - SPORT 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63968
+
+#EXTINF:-1 tvg-id="63966" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT5STARTS.png" group-title="23:45 22/10 | Lech Poznan vs Sunderland",IL - SPORT 5  LIVE HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63966
+
+#EXTINF:-1 tvg-id="63965" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT5STARTS.png" group-title="23:45 22/10 | Lech Poznan vs Sunderland",IL - SPORT 5 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63965
 
 #EXTINF:-1 tvg-id="1052581" tvg-logo="https://go4.pw/EUROPE/UK/PREMIERSPORT-1.png" group-title="23:45 22/10 | Lech Poznan vs Sunderland",MY - PREMIER SPORTS HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -2778,6 +2844,12 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/543256
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1030798
 
+#EXTINF:-1 tvg-id="68422" tvg-logo="https://go4.pw/EUROPE/PORTUGAL/SPORTTV-1.png" group-title="23:45 22/10 | Sturm Graz vs Marseille",PT - SPORT TV 3 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/68422
+
 #EXTINF:-1 tvg-id="974660" tvg-logo="https://go4.pw/EUROPE/PORTUGAL/SPORTTV-1.png" group-title="23:45 22/10 | Sturm Graz vs Marseille",PT - SPORT TV 7 HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
@@ -2915,6 +2987,24 @@ http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1729174&e
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 505BE0692EDCAB87322018717845AF6F
 http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1729174&extension=ts&play_token=hbQO7fznzk
+
+#EXTINF:-1 tvg-id="988053" tvg-logo="https://go4.pw/ALBANIA/rtshsp.png" group-title="02:00 23/10 | AGF Aarhus vs Egnatia",ALB - RTSH SPORT FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/988053
+
+#EXTINF:-1 tvg-id="53742" tvg-logo="https://go4.pw/ALBANIA/rtshsp.png" group-title="02:00 23/10 | AGF Aarhus vs Egnatia",ALB - RTSH SPORT HD ◉
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/53742
+
+#EXTINF:-1 tvg-id="891019" tvg-logo="https://go4.pw/ALBANIA/rtshsp.png" group-title="02:00 23/10 | AGF Aarhus vs Egnatia",ALB - RTSH SPORT HEVC
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/891019
 
 #EXTINF:-1 tvg-id="220313" tvg-logo="https://go4.pw/EUROPE/CZECH/Sport1.png" group-title="02:00 23/10 | AGF Aarhus vs Egnatia",CZ - SPORT 1 HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -3102,6 +3192,12 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/942697
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/68421
 
+#EXTINF:-1 tvg-id="764066" tvg-logo="https://go4.pw/EUROPE/PORTUGAL/SPORTTV-1.png" group-title="02:00 23/10 | Ajax vs Atalanta",PT - SPORT TV 6 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/764066
+
 #EXTINF:-1 tvg-id="1059852" tvg-logo="https://go4.pw/EXYU/a.8.png" group-title="02:00 23/10 | Ajax vs Atalanta",RS - ARENA SPORT 8 HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
@@ -3281,6 +3377,18 @@ http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=1729180&e
 #EXTVLCOPT:http-cookie=mac=00:1A:79:B5:9D:76; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 505BE0692EDCAB87322018717845AF6F
 http://main.light-ott.net:80/play/live.php?mac=00:1A:79:B5:9D:76&stream=1729180&extension=ts&play_token=LFIYNVdcgr
+
+#EXTINF:-1 tvg-id="959361" tvg-logo="http://picon.tivi-ott.net:25461/picon/PORTUGALIA/SPORT TV/SPORT TV 6.png" group-title="02:00 23/10 | Ajax vs Atalanta",┃PT┃ SPORT TV 6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer F41265CD3901EF97B30ED873CF46FB1C
+http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=959361&extension=ts&play_token=m9B5LHajrp
+
+#EXTINF:-1 tvg-id="959361" tvg-logo="http://picon.tivi-ott.net:25461/picon/PORTUGALIA/SPORT TV/SPORT TV 6.png" group-title="02:00 23/10 | Ajax vs Atalanta",┃PT┃ SPORT TV 6
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 90D86A14841D1FC92122A4FCD4C00BB0
+http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=959361&extension=ts&play_token=qTuwPRA1uJ
 
 #EXTINF:-1 tvg-id="907015" tvg-logo="https://go4.pw/EUROPE/EXYU/EXYO/arena_sport_rs_1-1.png" group-title="02:00 23/10 | Borac Banja Luka vs KuPS Kuopio",CZ - ARENA SPORT 1 HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -4002,6 +4110,18 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/324969
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/906808
 
+#EXTINF:-1 tvg-id="45188" tvg-logo="https://go4.pw/EUROPE/CZECH/SPORT2.png" group-title="02:00 23/10 | Besiktas vs Crystal Palace",HU - SPORT 2 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/45188
+
+#EXTINF:-1 tvg-id="63971" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT.png" group-title="02:00 23/10 | Besiktas vs Crystal Palace",IL - SPORT 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63971
+
 #EXTINF:-1 tvg-id="63970" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT.png" group-title="02:00 23/10 | Besiktas vs Crystal Palace",IL - SPORT 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
@@ -4499,6 +4619,12 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/763971
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/942695
+
+#EXTINF:-1 tvg-id="68422" tvg-logo="https://go4.pw/EUROPE/PORTUGAL/SPORTTV-1.png" group-title="02:00 23/10 | Bournemouth vs AC Milan",PT - SPORT TV 3 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/68422
 
 #EXTINF:-1 tvg-id="68421" tvg-logo="https://go4.pw/EUROPE/PORTUGAL/SPORTTV-1.png" group-title="02:00 23/10 | Bournemouth vs AC Milan",PT - SPORT TV 4 FHD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -5178,6 +5304,12 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1059876
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/673514
 
+#EXTINF:-1 tvg-id="220313" tvg-logo="https://go4.pw/EUROPE/CZECH/Sport1.png" group-title="02:00 23/10 | Hoffenheim vs Lyon",CZ - SPORT 1 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/220313
+
 #EXTINF:-1 tvg-id="220314" tvg-logo="https://go4.pw/EUROPE/CZECH/SPORT2.png" group-title="02:00 23/10 | Hoffenheim vs Lyon",CZ - SPORT 2 HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
@@ -5225,6 +5357,18 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/497990
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/310970
+
+#EXTINF:-1 tvg-id="33452" tvg-logo="https://go4.pw/germany/SPORT1.png" group-title="02:00 23/10 | Hoffenheim vs Lyon",DE - SPORT 1  HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/33452
+
+#EXTINF:-1 tvg-id="1030369" tvg-logo="https://go4.pw/germany/SPORT1.png" group-title="02:00 23/10 | Hoffenheim vs Lyon",DE - SPORT 1 4K
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1030369
 
 #EXTINF:-1 tvg-id="273119" tvg-logo="https://go4.pw/EXYU/arena-sport-1-premium.png" group-title="02:00 23/10 | Hoffenheim vs Lyon",EXYU - ARENA PREMIUM 2 FHD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -5789,6 +5933,24 @@ http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1019739
 #EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
 http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63969
+
+#EXTINF:-1 tvg-id="63968" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT5STARTS.png" group-title="02:00 23/10 | Omonia Nicosia vs Benfica",IL - SPORT 5
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63968
+
+#EXTINF:-1 tvg-id="63966" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT5STARTS.png" group-title="02:00 23/10 | Omonia Nicosia vs Benfica",IL - SPORT 5  LIVE HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63966
+
+#EXTINF:-1 tvg-id="63965" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT5STARTS.png" group-title="02:00 23/10 | Omonia Nicosia vs Benfica",IL - SPORT 5 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
+http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63965
 
 #EXTINF:-1 tvg-id="325582" tvg-logo="https://go4.pw/UK/tntsports.png" group-title="02:00 23/10 | Omonia Nicosia vs Benfica",LAT - TNT SPORT HD
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -8711,78 +8873,6 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=559019&exte
 #EXTVLCOPT:http-cookie=mac=00:1A:79:C8:7B:30; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer 90D86A14841D1FC92122A4FCD4C00BB0
 http://line.ciao-ott.net:80/play/live.php?mac=00:1A:79:C8:7B:30&stream=559019&extension=ts&play_token=Yf7ECwSueW
-
-#EXTINF:-1 tvg-id="1441958" tvg-logo="https://go4.pw/BEIN4K.png" group-title="22:15 24/10 | Toulouse vs Troyes",AR - BEIN SPORTS 4K
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1441958
-
-#EXTINF:-1 tvg-id="1059875" tvg-logo="https://go4.pw/EXYU/ARENA4.png" group-title="22:15 24/10 | Toulouse vs Troyes",BA - ARENA SPORT 4 FHD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1059875
-
-#EXTINF:-1 tvg-id="1059876" tvg-logo="https://go4.pw/EXYU/ARENA5.png" group-title="22:15 24/10 | Toulouse vs Troyes",BA - ARENA SPORT 5 FHD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1059876
-
-#EXTINF:-1 tvg-id="1059877" tvg-logo="https://go4.pw/EXYU/a-6.png" group-title="22:15 24/10 | Toulouse vs Troyes",BA - ARENA SPORT 6 FHD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1059877
-
-#EXTINF:-1 tvg-id="673514" tvg-logo="https://go4.pw/ARABE/BEIN_SPORTS_GLOBAL.png" group-title="22:15 24/10 | Toulouse vs Troyes",CA -  BEIN SPORTS HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/673514
-
-#EXTINF:-1 tvg-id="63969" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT.png" group-title="22:15 24/10 | Toulouse vs Troyes",IL - SPORT 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63969
-
-#EXTINF:-1 tvg-id="63968" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT5STARTS.png" group-title="22:15 24/10 | Toulouse vs Troyes",IL - SPORT 5
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63968
-
-#EXTINF:-1 tvg-id="63966" tvg-logo="https://go4.pw/EUROPE/HEBREW/YESSPORT5STARTS.png" group-title="22:15 24/10 | Toulouse vs Troyes",IL - SPORT 5  LIVE HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/63966
-
-#EXTINF:-1 tvg-id="1052432" tvg-logo="https://go4.pw/ARABE/BEIN SPORTS 1.png" group-title="22:15 24/10 | Toulouse vs Troyes",MY - BEIN SPORTS HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1052432
-
-#EXTINF:-1 tvg-id="1030801" tvg-logo="https://go4.pw/EUROPE/PORTUGAL/SPORTTV-1.png" group-title="22:15 24/10 | Toulouse vs Troyes",PT -  SPORT TV 4 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1030801
-
-#EXTINF:-1 tvg-id="764066" tvg-logo="https://go4.pw/EUROPE/PORTUGAL/SPORTTV-1.png" group-title="22:15 24/10 | Toulouse vs Troyes",PT - SPORT TV 6 FHD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/764066
-
-#EXTINF:-1 tvg-id="1059850" tvg-logo="https://go4.pw/EXYU/a-6.png" group-title="22:15 24/10 | Toulouse vs Troyes",RS - ARENA SPORT 6 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
-#EXTVLCOPT:http-cookie=mac=00:1A:79:79:1D:53; stb_lang=en; timezone=GMT
-#EXTVLCOPT:http-header=Authorization: Bearer FF2F269BF4A697070AAADD359FA96835
-http://5ghz.xyz:80/027316900437051/7IzgJSUMkm/1059850
 
 #EXTINF:-1 tvg-id="1274757" tvg-logo="https://go4.pw/champ/champions.png" group-title="23:00 24/10 | Napoli vs Roma",ALB - NO MATCH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
