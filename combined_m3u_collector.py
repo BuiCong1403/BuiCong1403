@@ -490,6 +490,7 @@ FLV_OTT_USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Mobile Safari/537.36"
 )
 MULTI_EVENT_STREAM_SOURCES = {
+    "KhoGa",
     "VSC9",
     "AzabuLive",
     "BiaomTV",
@@ -2100,12 +2101,17 @@ def write_ott_m3u(path, channels):
         f.write(f"# Total   : {len(channels)}\n\n")
         for ch in channels:
             name = ott_display_text(ch.get("name", "Unknown"))
-            group = ott_display_text(
-                FLV_OTT_GROUP if is_flv_url(ch.get("stream_url")) else output_group(ch)
-            )
+            group = ott_display_text(ott_output_group(ch))
             f.write(f"#EXTINF:0,{name}\n")
             f.write(f"#EXTGRP:{group}\n")
             f.write(f'{ch.get("stream_url", "")}\n\n')
+
+
+def ott_output_group(channel):
+    if not is_flv_url(channel.get("stream_url")):
+        return output_group(channel)
+    identity = compact_text_key(str(channel.get("source", "")) + " " + output_group(channel))
+    return "XL-FLV" if "xoilac" in identity or "xlflv" in identity else FLV_OTT_GROUP
 
 
 def write_raw_playlist(path, source_name, playlist_url):
@@ -5993,6 +5999,7 @@ def collect_mebongtv():
 
 def xoilacz_base_candidates():
     candidates = [
+        "https://xoilaczzzp.cc/",
         XOILACZ_SITE_URL,
         "https://xoilaczzw.cc/",
         "https://xoilactv51.com/",
@@ -6299,6 +6306,62 @@ def extract_xoilacz_match_blocks(html_text):
     return fallback_blocks
 
 
+def collect_khoga():
+    page = fetch_text("https://khoga1.live/", timeout=25)
+    match = re.search(r'<script[^>]+id="__NUXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
+    if not match:
+        raise ValueError("KhoGa: missing Nuxt schedule payload")
+    table = json.loads(match.group(1))
+
+    def value(ref):
+        return table[ref] if isinstance(ref, int) and 0 <= ref < len(table) else None
+
+    def field(obj, name):
+        return value(obj.get(name)) if isinstance(obj, dict) else None
+
+    channels = []
+    for item in table:
+        if not isinstance(item, dict) or "start_time" not in item or "home_team_name" not in item:
+            continue
+        try:
+            event_dt = datetime.fromisoformat(field(item, "start_time")).astimezone(TZ_VN)
+        except (TypeError, ValueError):
+            continue
+        title = f'{field(item, "home_team_name")} vs {field(item, "away_team_name")}'
+        variants = [(item, "")]
+        for name in ("commentator_streams", "commentators"):
+            for ref in field(item, name) or []:
+                stream = value(ref)
+                if isinstance(stream, dict):
+                    commentator = field(stream, "commentator")
+                    variants.append((stream, field(commentator or stream, "name") or ""))
+                    if isinstance(commentator, dict):
+                        variants.append((commentator, field(commentator, "name") or ""))
+        seen = set()
+        for variant, label in variants:
+            for name in ("primary_stream_url", "stream_url", "backup_stream_url", "flv_stream_url"):
+                url = field(variant, name)
+                if not isinstance(url, str) or not re.match(r"^https?://", url):
+                    continue
+                if not re.search(r"\.(?:m3u8|flv)(?:[?#]|$)", url, re.I) or url in seen:
+                    continue
+                seen.add(url)
+                channels.append({
+                    "source": "KhoGa",
+                    "group": "Khô Gà",
+                    "name": f'{event_dt:%H:%M %d/%m} {title}' + (f' ({label})' if label else ''),
+                    "stream_url": url,
+                    "event_datetime": event_dt,
+                    "referer": "https://khoga1.live/",
+                    "logo": "",
+                    "user_agent": UA,
+                })
+    if not channels:
+        raise ValueError("KhoGa: schedule contains no public HLS/FLV links")
+    log(f"[KhoGa] {len(channels)} public HLS/FLV links")
+    return channels
+
+
 def collect_xoilacz():
     source = "XoiLacZ"
     channels = []
@@ -6386,11 +6449,16 @@ def collect_xoilacz():
         title = clean_text(html.unescape(link_match.group(2)))
         detail_url = urljoin(base_url, href)
         match_channels = []
+        runtime = re.search(r'data-runtime="(\d{10})"', block)
+        event_dt = datetime.fromtimestamp(int(runtime.group(1)), TZ_VN) if runtime else None
+        sport_match = re.search(r'data-sport="([^"]+)"', block)
         for idx, stream_url in enumerate(extract_xoilacz_stream_links(detail_url, headers), 1):
             quality = "FLV" if is_flv_url(stream_url) else "HLS"
             match_channels.append(
                 {
                     "source": source,
+                        "event_datetime": event_dt,
+                        "sport": sport_match.group(1) if sport_match else "",
                         "name": f"{title} | Link {idx} [{quality}]",
                         "group": "Xôi Lạc Z TV",
                         "logo": "",
@@ -6406,15 +6474,22 @@ def collect_xoilacz():
             break
         headers = xoilacz_headers(base_url)
         before_base = len(channels)
+        overall_deadline = deadline
         for sport in XOILACZ_SPORTS:
-            if timed_out():
+            if time.monotonic() >= overall_deadline:
                 break
+            # Reserve time for every sport, even when football has many pages.
+            deadline = min(overall_deadline, time.monotonic() + max(8, XOILACZ_TIME_BUDGET_SECONDS / max(1, len(XOILACZ_SPORTS))))
             for page in range(max(1, XOILACZ_PAGES)):
                 if timed_out():
                     break
                 url = f"{base_url.rstrip('/')}/sport/{sport}/load-more/home/page/{page}/per/20?t={int(time.time())}"
                 log(f"[{source}] Fetch {base_url} {sport} page {page}")
-                data = fetch_json(url, headers=headers, timeout=remaining_timeout())
+                try:
+                    data = fetch_json(url, headers=headers, timeout=remaining_timeout())
+                except Exception as exc:
+                    log(f"[{source}] {sport} page {page} failed: {exc}")
+                    break
                 html_text = ((data.get("data") or {}).get("html") or "") if isinstance(data, dict) else ""
                 if not html_text:
                     break
@@ -6441,6 +6516,7 @@ def collect_xoilacz():
                 finally:
                     executor.shutdown(wait=False, cancel_futures=True)
                 time.sleep(0.5)
+        deadline = overall_deadline
         if len(channels) == before_base:
             for path in ("", "truc-tiep/"):
                 if timed_out():
@@ -10049,6 +10125,7 @@ def collect_source_channels(source_name, collector, grace_minutes=None):
 
 
 SLOW_SOURCE_COLLECTORS = (
+    ("KhoGa", "Khô Gà", collect_khoga),
     ("KhanDaiA", "Khandai", collect_khandaia),
     ("PhaoHoaTV", "PhaoHoaTV", collect_phaohoa),
     ("SutBongTV", "Sút Bóng TV", collect_sutbongtv),
@@ -10175,7 +10252,7 @@ def collect_slow_sources():
         selected = collect_source_channels(source, collector, grace_minutes=SLOW_SOURCE_GRACE_MINUTES)
         min_good_count = SLOW_SOURCE_MIN_GOOD_COUNTS.get(source, 1)
         cached = previous_by_source.get(source, [])
-        if cached and len(selected) < min_good_count:
+        if cached and (len(selected) < min_good_count or source == "XoiLacZ"):
             log(f"[{source}] Keep cached snapshot: current={len(selected)} cache={len(cached)} min={min_good_count}")
             selected = dedupe_and_sort_channels(filter_current_and_future_events(selected + cached, grace_minutes=SLOW_SOURCE_GRACE_MINUTES))
         counts[source] = len(selected)
