@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-24 12:15 ICT
-# Total   : 1037
+# Updated : 2026-10-24 12:38 ICT
+# Total   : 1038
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -4068,6 +4068,11 @@ https://cdn1-global.ebaclofen.org/live/pro3/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://thesport-api.cdnx.tech/assets/img/football/team/2947fe2f42551a5b7eccca7fc948f879.png?size=xs" group-title="Vua Sân Cỏ TV",23:15 25/10 Toulouse FC vs Troyes (Trần Hoàng)
 https://cdn-global.ebaclofen.org/vsc/vsc-vuong-tu-neil/index.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="Highlight",Ipswich Town - Nottingham Forest: Sai lầm & tranh cãi VAR (Ngoại hạng Anh)
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-10-24/cp_special_nha_fpt-1792798085-notinghamclt_720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://dasfootball.com/wp-content/uploads/2025/01/Dasfootball-Social.webp" group-title="Highlight",Ipswich vs Nottingham Forest
 #EXTVLCOPT:http-referrer=https://dasfootball.com/ipswich-vs-nottingham-forest-highlights-2026-10-23/
