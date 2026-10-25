@@ -21,12 +21,15 @@ try {
     if ($dirty) { throw "Tracked files have local changes. Skipping without overwriting them." }
     Invoke-Git pull --rebase origin main
     $oldMode = $env:RUN_MODE
+    $collectionTimer = [System.Diagnostics.Stopwatch]::StartNew()
     try {
         $env:RUN_MODE = "dasfootball_snapshot"
         & $Python -u combined_m3u_collector.py
         if ($LASTEXITCODE -ne 0) { throw "DasFootball collection failed; no playlist published." }
     } finally { $env:RUN_MODE = $oldMode }
-    Invoke-Git add -- dasfootball.m3u dasfootball_order.json
+    $collectionTimer.Stop()
+    Write-Host ("Standalone snapshot collected in {0:N1} seconds. Publishing without merging other sources." -f $collectionTimer.Elapsed.TotalSeconds)
+    Invoke-Git add -- dasfootball.m3u
     & $Git diff --cached --quiet
     if ($LASTEXITCODE -eq 0) { exit 0 }
     if ($LASTEXITCODE -ne 1) { throw "Cannot inspect staged snapshot" }

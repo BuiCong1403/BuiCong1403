@@ -4461,14 +4461,14 @@ def channels_from_dasfootball_m3u_text(text, source_name):
     return channels
 
 
-def collect_previous_dasfootball_playlist():
+def collect_previous_dasfootball_playlist(local_only=False):
     channels = []
     if DASFOOTBALL_M3U.exists():
         try:
             channels.extend(channels_from_dasfootball_m3u_text(DASFOOTBALL_M3U.read_text(encoding="utf-8"), "DasFootballCacheLocal"))
         except Exception as exc:
             log(f"[DasFootballCacheLocal] Error: {exc}")
-    if DASFOOTBALL_M3U_URL:
+    if DASFOOTBALL_M3U_URL and not local_only:
         try:
             text = fetch_text(DASFOOTBALL_M3U_URL, headers={"User-Agent": UA}, timeout=35)
             channels.extend(channels_from_dasfootball_m3u_text(text, "DasFootballCacheRemote"))
@@ -10657,11 +10657,47 @@ def collect_current_highlights():
     return dedupe_and_sort_channels(repair_h24_missing_halves(highlight_channels))
 
 
+def merge_local_dasfootball_playlists():
+    """Merge committed playlists only: never fetch sources or probe streams."""
+    if not DASFOOTBALL_M3U.exists():
+        raise RuntimeError("Missing dasfootball.m3u; preserving combined playlists")
+    channels = collect_previous_dasfootball_playlist(local_only=True)
+    if not channels:
+        raise RuntimeError("DasFootball snapshot is empty; preserving combined playlists")
+    if HIGHLIGHT_M3U.exists():
+        _, blocks = split_m3u_text_blocks(HIGHLIGHT_M3U.read_text(encoding="utf-8-sig"))
+        for block in blocks:
+            url = m3u_block_stream_url(block)
+            referer = extvlcopt_value(block, "http-referrer")
+            if "dasfootball.com" in referer.lower():
+                continue
+            info = next((parse_extinf(line) for line in block if line.startswith("#EXTINF")), None)
+            if not info or not url:
+                continue
+            source = ("24hHighlight" if "cdn.24h.com.vn" in url else
+                      "SuperSportHighlight" if "vod.supersport.com" in url else "PreviousHighlight")
+            channels.append({"source": source, "group": "Highlight", "name": info["title"],
+                             "stream_url": url, "logo": info["logo"], "referer": referer,
+                             "user_agent": extvlcopt_value(block, "http-user-agent"),
+                             "event_date": m3u_block_highlight_date(block), "skip_event_filter": True})
+    for channel in channels:
+        channel["group"] = "Highlight"
+    channels = filter_recent_highlights(dedupe_and_sort_channels(channels))
+    write_m3u(HIGHLIGHT_M3U, channels)
+    replace_highlight_blocks(ALL_M3U, highlight_blocks_from_file())
+    replace_highlight_blocks(OTT_M3U, ott_highlight_blocks_from_channels(channels))
+    log(f"[MergeOnly] {len(channels)} highlights merged from local M3U files; no network requests")
+
+
 def main():
     log("=" * 60)
     mode = "verify live links" if VERIFY_STREAMS else "raw m3u8 collection"
     log(f"Combined M3U collector - {now_ict()} - {mode} - run_mode={RUN_MODE}")
     log("=" * 60)
+
+    if RUN_MODE == "merge_dasfootball":
+        merge_local_dasfootball_playlists()
+        return
 
     if RUN_MODE == "merge_youtube":
         from youtube_highlight_collector import load_channels
@@ -10714,10 +10750,14 @@ def main():
     if RUN_MODE in {"dasfootball", "dasfootball_snapshot", "merge_dasfootball"}:
         fresh = (filter_recent_highlights(collect_source_channels("DasFootballHighlight", collect_dasfootball_highlights))
                  if RUN_MODE in {"dasfootball", "dasfootball_snapshot"} else [])
-        previous = collect_previous_dasfootball_playlist()
+        previous = collect_previous_dasfootball_playlist(local_only=RUN_MODE == "dasfootball_snapshot")
         channels = filter_recent_highlights(dedupe_and_sort_channels(fresh + previous))
         if RUN_MODE in {"dasfootball", "dasfootball_snapshot"} and not fresh:
             raise RuntimeError("DasFootball returned no fresh videos; preserving previous files")
+        if RUN_MODE == "dasfootball_snapshot":
+            write_m3u(DASFOOTBALL_M3U, channels)
+            log("[DasFootball] Standalone snapshot ready; combined playlists are unchanged")
+            return
         if RUN_MODE != "merge_dasfootball":
             refresh_dasfootball_order()
             channels = dedupe_and_sort_channels(channels)
