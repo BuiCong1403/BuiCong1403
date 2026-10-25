@@ -1001,7 +1001,9 @@ def datetime_from_text(value):
             except Exception:
                 pass
         return candidate
-    return None
+    # Schedules also use "Match luc 18:30 ngay 25/10/2026" or date-first labels.
+    day = date_from_text(text)
+    return combine_date_and_time(day, text) if day else None
 
 
 def combine_date_and_time(event_date, time_text):
@@ -1665,6 +1667,7 @@ def should_write_user_agent(channel):
 
 
 def normalize_channel_group(channel):
+    channel = normalize_match_schedule(channel)
     if is_flv_url(channel.get("stream_url")):
         group = clean_text(channel.get("group") or channel.get("source") or "Unknown")
         channel["user_agent"] = FLV_OTT_USER_AGENT
@@ -1999,7 +2002,43 @@ def dedupe_and_sort_channels(channels):
     return deduped
 
 
+def normalize_match_schedule(channel):
+    if is_highlight_channel(channel):
+        return channel
+    event_dt = channel_event_datetime(channel)
+    if not event_dt:
+        return channel
+    channel = dict(channel)
+    title = clean_text(channel.get("name"))
+    old_title = title
+    date_pattern = r"(?:20\d{2}[-/.]\d{1,2}[-/.]\d{1,2}|\d{1,2}[/.-]\d{1,2}(?:[/.-]20\d{2})?)"
+    clock_pattern = r"\d{1,2}:\d{2}(?::\d{2})?"
+    title = re.sub(rf"(?<!\d)(?:(?:lúc|luc)\s*)?{clock_pattern}(?!\d)", " ", title, flags=re.I)
+    title = re.sub(rf"(?<!\d)(?:(?:ngày|ngay)\s*)?{date_pattern}(?!\d)", " ", title, flags=re.I)
+    title = re.sub(r"\(\s*\)|\[\s*\]", " ", title)
+    title = re.sub(r"\s+", " ", title).strip(" |,-;")
+    channel["name"] = f"{event_dt:%H:%M %d/%m} {title}".strip()
+    channel["event_datetime"] = event_dt
+    raw = channel.get("raw_extinf", "")
+    if raw and old_title != channel["name"] and "," in raw:
+        attrs = raw.split(",", 1)[0]
+        attrs = re.sub(r'tvg-name="[^"]*"', lambda _: 'tvg-name="' + channel["name"].replace('"', "'") + '"', attrs)
+        channel["raw_extinf"] = attrs + "," + channel["name"]
+    return channel
+
+
+def scheduled_output_channels(channels):
+    channels = [normalize_match_schedule(ch) for ch in channels]
+    prepare_highlight_sort_keys(channels)
+    return sorted(channels, key=lambda ch: (
+        group_sort_rank(ch), output_group(ch),
+        ch.get("_highlight_sort", (channel_time_sort_value(ch),)),
+        clean_text(ch.get("name")), clean_text(ch.get("stream_url")),
+    ))
+
+
 def write_m3u(path, channels):
+    channels = scheduled_output_channels(channels)
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
@@ -2088,6 +2127,7 @@ def ott_channel_sort_key(channel):
 
 
 def sort_ott_channels(channels):
+    channels = [normalize_match_schedule(ch) for ch in channels]
     prepare_highlight_sort_keys(channels)
     return sorted(channels, key=ott_channel_sort_key)
 
@@ -10268,6 +10308,7 @@ def collect_slow_sources():
 
 
 def write_slow_sources_m3u(channels):
+    channels = scheduled_output_channels(channels)
     with SLOW_SOURCES_M3U.open("w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         f.write(f"# Updated : {now_ict()}\n")
@@ -10441,11 +10482,39 @@ def update_m3u_header(header, total):
 
 
 def write_m3u_text_blocks(path, header, blocks):
+    blocks = normalize_scheduled_playlist_blocks(blocks, ott=path.name.lower() == "ott.m3u")
     header = update_m3u_header(header[:4], len(blocks))
     output = "\n".join(header).rstrip() + "\n\n"
     if blocks:
         output += "\n\n".join("\n".join(block).rstrip() for block in blocks).rstrip() + "\n"
     path.write_text(output, encoding="utf-8")
+
+
+def normalize_scheduled_playlist_blocks(blocks, ott=False):
+    rows = []
+    group_order = {}
+    for index, original in enumerate(blocks):
+        block = list(original)
+        inf_index = next((i for i, line in enumerate(block) if line.startswith("#EXTINF")), None)
+        if inf_index is None:
+            rows.append(((len(group_order), 9_999_999_999, index), block))
+            continue
+        info = parse_extinf(block[inf_index])
+        group = next((line.split(":", 1)[1] for line in block if line.startswith("#EXTGRP:")), info["group"])
+        group_order.setdefault(group, len(group_order))
+        ch = {"name": info["title"], "group": group, "raw_extinf": block[inf_index],
+              "stream_url": m3u_block_stream_url(block)}
+        highlight = m3u_block_is_highlight(block)
+        if not highlight:
+            ch = normalize_match_schedule(ch)
+            block[inf_index] = ch["raw_extinf"]
+        time_value = channel_time_sort_value(ch) if not highlight else 9_999_999_999
+        if ott:
+            key = (1 if highlight else 0, time_value, index if highlight else ott_match_sort_title(ch), index)
+        else:
+            key = (group_order[group], time_value, index)
+        rows.append((key, block))
+    return [block for _, block in sorted(rows, key=lambda row: row[0])]
 
 
 def replace_highlight_blocks(path, highlight_blocks):
