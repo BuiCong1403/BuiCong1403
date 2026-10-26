@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-26 12:05 ICT
-# Total   : 700
+# Updated : 2026-10-26 12:08 ICT
+# Total   : 702
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -38,9 +38,6 @@ https://vips-livecdn.fptplay.net/live/media/vtv8/live-hls-avc/vtv8-avc1_4000000=
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/d3/35/5e/e2/26/62/d35e2-pvtv9hd-channel-unkn.png" group-title="VTV",VTV9
 https://vips-livecdn.fptplay.net/live/media/vtv9/live247-hls-avc/vtv9-avc1_5600000=10000-mp4a_140800_vie=20000.m3u8
 
-#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vietng228/m3u/main/logos/vietnamtoday.png" group-title="VTV",VietNam Today
-https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/index.m3u8
-
 #EXTINF:-1 tvg-id="vtvgo-fast-ca-nhac" tvg-name="VTVgo - Ca nhạc" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/ed4d3183-73e6-4bc3-89fa-ef4a25ae3e8b-VTVgo-Ca-Nhac150x90.png" group-title="VTV",VTVgo - Ca nhạc
 https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-ca-nhac/master.m3u8
 
@@ -61,6 +58,9 @@ https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels
 
 #EXTINF:-1 tvg-id="vtvgo-fast-tai-lieu" tvg-name="VTVgo - Tài liệu" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/083b12e1-ce64-4528-8933-725937595083-VTVgo-Phim-Tai-Lieu150x90.png" group-title="VTV",VTVgo - Tài liệu
 https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-phim-tai-lieu/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vietng228/m3u/main/logos/vietnamtoday.png" group-title="VTV",VietNam Today
+https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://vtvprime.vn/sideLogoBig.png" group-title="Sự kiện",VTVPrime 188
 https://qipmgzougxliv.vcdn.cloud/app/stream/master.m3u8
@@ -194,6 +194,16 @@ https://ftlh5sc02iliv.vcdn.cloud/1792913172_hd/1792913172_hd@720p.m3u8
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://ftlh5sc02iliv.vcdn.cloud/1792913172_hd/1792913172_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/flamengo.png" group-title="Giờ Vàng TV",06:00 27/10 Flamengo vs Atletico Mineiro | Hứa [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://ftlh5sc02iliv.vcdn.cloud/1792990366_hd/1792990366_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/flamengo.png" group-title="Giờ Vàng TV",06:00 27/10 Flamengo vs Atletico Mineiro | Hứa [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://ftlh5sc02iliv.vcdn.cloud/1792990366_hd/1792990366_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/ef37e5c1c853e5b689b6791b00e8bc58.png" group-title="Giờ Vàng TV",06:30 27/10 Boston Celtics vs Chicago Bulls | Mickey [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -2535,8 +2545,8 @@ https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1792993266-0-0-357
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1792989111-0-0-358ab8e81a36141019e4802737e6ec55
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:05 26/10 Altiri Chiba vs Gunma vào | BLV 356042
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/altiri-chiba-vs-gunma-26-10-2026/?blv=356042
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:05 26/10 Altiri Chiba vs Gunma vào | BLV 558264
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/altiri-chiba-vs-gunma-26-10-2026/?blv=558264
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-356042_lhd.m3u8?txSecret=e5e9ffb284214b323041f48e8b0336a8&txTime=6ade0aad
 
@@ -2670,8 +2680,8 @@ https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=0c8372f86065321025fe
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=dce7ec6184fe60b505c7fb36d86e3faf&txTime=6adeac32
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Al Ahli SC vs Al-Gharafa SC vào | BLV 532081
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-ahli-sc-vs-al-gharafa-sc-26-10-2026/?blv=532081
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Al Ahli SC vs Al-Gharafa SC vào | BLV 527384
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-ahli-sc-vs-al-gharafa-sc-26-10-2026/?blv=527384
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1792959783-0-0-ef3bb4f4ab313d4313ad318a79e76ee1
 
@@ -2690,8 +2700,8 @@ https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1792956088-0-0-8f9f
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1792965174-0-0-a7d5e0a9b0a3942276bda66882b532f4
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Besiktas JK vs Başakşehir Futbol Kulübü vào | BLV 132343
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/besiktas-jk-vs-basaksehir-futbol-kulubu-26-10-2026/?blv=132343
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Besiktas JK vs Başakşehir Futbol Kulübü vào | BLV 501412
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/besiktas-jk-vs-basaksehir-futbol-kulubu-26-10-2026/?blv=501412
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=2107e7752b646f38a4b04d408b7647f8&txTime=6adecb91
 
@@ -2740,8 +2750,8 @@ https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1792969408-0-0-961
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912128_lhd.m3u8?auth_key=1792943796-0-0-9c8bec965ec4d6aa86f22a381a304bfe
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",01:45 27/10 Santa Clara vs Benfica vào | BLV 607552
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/santa-clara-vs-benfica-27-10-2026/?blv=607552
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",01:45 27/10 Santa Clara vs Benfica vào | BLV 617313
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/santa-clara-vs-benfica-27-10-2026/?blv=617313
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1792967805-0-0-48957f443df1365b4020c320f4e122de
 
