@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-26 11:42 ICT
-# Total   : 693
+# Updated : 2026-10-26 12:05 ICT
+# Total   : 700
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -40,6 +40,27 @@ https://vips-livecdn.fptplay.net/live/media/vtv9/live247-hls-avc/vtv9-avc1_56000
 
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/vietng228/m3u/main/logos/vietnamtoday.png" group-title="VTV",VietNam Today
 https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/index.m3u8
+
+#EXTINF:-1 tvg-id="vtvgo-fast-ca-nhac" tvg-name="VTVgo - Ca nhạc" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/ed4d3183-73e6-4bc3-89fa-ef4a25ae3e8b-VTVgo-Ca-Nhac150x90.png" group-title="VTV",VTVgo - Ca nhạc
+https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-ca-nhac/master.m3u8
+
+#EXTINF:-1 tvg-id="vtvgo-fast-du-lich" tvg-name="VTVgo - Du Lịch" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/4e47748f-603e-45d4-bc71-dad990260d72-VTVgo-Du-Lich150x90.png" group-title="VTV",VTVgo - Du Lịch
+https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-du-lich-kham-pha/master.m3u8
+
+#EXTINF:-1 tvg-id="vtvgo-fast-game-show" tvg-name="VTVgo - Game show" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/3f9b4d58-6f86-4039-8584-98692e58fbc2-VTVgo-Gameshow.png" group-title="VTV",VTVgo - Game show
+https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-game-show/master.m3u8
+
+#EXTINF:-1 tvg-id="vtvgo-fast-phim-truyen" tvg-name="VTVgo - Phim truyện" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/fda07157-8a3c-40b1-9dd7-4af2b3f3b2bc-VTVgo-Phim-VFC150x90.png" group-title="VTV",VTVgo - Phim truyện
+https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-phim-truyen/master.m3u8
+
+#EXTINF:-1 tvg-id="vtvgo-fast-suc-khoe-nguoi-gia" tvg-name="VTVgo - Sức Khỏe" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/93767f11-7633-4ca8-aa46-83a99688e141-VTVgo-Suc-Khoe150x90.png" group-title="VTV",VTVgo - Sức Khỏe
+https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-suc-khoe-nguoi-gia/master.m3u8
+
+#EXTINF:-1 tvg-id="vtvgo-fast-thieu-nhi" tvg-name="VTVgo - Thiếu nhi" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/af4a5db5-15f7-4c91-92db-025d79003d06-VTVgo-Thieu-Nhi-150x90.png" group-title="VTV",VTVgo - Thiếu nhi
+https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-thieu-nhi/master.m3u8
+
+#EXTINF:-1 tvg-id="vtvgo-fast-tai-lieu" tvg-name="VTVgo - Tài liệu" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/083b12e1-ce64-4528-8933-725937595083-VTVgo-Phim-Tai-Lieu150x90.png" group-title="VTV",VTVgo - Tài liệu
+https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-phim-tai-lieu/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://vtvprime.vn/sideLogoBig.png" group-title="Sự kiện",VTVPrime 188
 https://qipmgzougxliv.vcdn.cloud/app/stream/master.m3u8

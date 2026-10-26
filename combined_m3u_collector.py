@@ -5053,6 +5053,32 @@ def save_vmttv_vtv_cache(channels):
     return True
 
 
+def collect_vtvgo_fast():
+    base = "https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/"
+    logos = "https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/"
+    entries = (
+        ("thieu-nhi", "Thiếu nhi", "auto-thieu-nhi", "af4a5db5-15f7-4c91-92db-025d79003d06-VTVgo-Thieu-Nhi-150x90.png"),
+        ("phim-truyen", "Phim truyện", "auto-phim-truyen", "fda07157-8a3c-40b1-9dd7-4af2b3f3b2bc-VTVgo-Phim-VFC150x90.png"),
+        ("game-show", "Game show", "auto-game-show", "3f9b4d58-6f86-4039-8584-98692e58fbc2-VTVgo-Gameshow.png"),
+        ("tai-lieu", "Tài liệu", "auto-phim-tai-lieu", "083b12e1-ce64-4528-8933-725937595083-VTVgo-Phim-Tai-Lieu150x90.png"),
+        ("ca-nhac", "Ca nhạc", "auto-ca-nhac", "ed4d3183-73e6-4bc3-89fa-ef4a25ae3e8b-VTVgo-Ca-Nhac150x90.png"),
+        ("du-lich", "Du Lịch", "auto-du-lich-kham-pha", "4e47748f-603e-45d4-bc71-dad990260d72-VTVgo-Du-Lich150x90.png"),
+        ("suc-khoe-nguoi-gia", "Sức Khỏe", "auto-suc-khoe-nguoi-gia", "93767f11-7633-4ca8-aa46-83a99688e141-VTVgo-Suc-Khoe150x90.png"),
+    )
+    channels = []
+    for channel_id, label, slug, logo in entries:
+        name = f"VTVgo - {label}"
+        image = logos + logo
+        channels.append({
+            "source": "VTVgo", "group": "VTV", "name": name,
+            "stream_url": base + slug + "/master.m3u8", "logo": image,
+            "referer": "", "user_agent": "", "skip_event_filter": True,
+            "preserve_extinf": True,
+            "raw_extinf": f'#EXTINF:-1 tvg-id="vtvgo-fast-{channel_id}" tvg-name="{name}" tvg-logo="{image}" group-title="VTV",{name}',
+        })
+    return channels
+
+
 def collect_vtv_channels():
     source = "VTV"
     channels = []
@@ -10848,6 +10874,7 @@ def main():
             ),
         ),
         ("VTV", collect_vtv_channels),
+        ("VTVgo", collect_vtvgo_fast),
         ("VMTTV", collect_vmttv),
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
