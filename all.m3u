@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-26 14:34 ICT
-# Total   : 875
+# Updated : 2026-10-26 14:47 ICT
+# Total   : 866
 
 #EXTINF:-1 tvg-logo="https://s7774.cdn.mytvnet.vn/vimages/09/99/9f/f7/7a/ab/099f7-pvtv1hd-channel-unkn.png" group-title="VTV",VTV1
 https://vips-livecdn.fptplay.net/live/media/vtv1/live247-hls-avc/vtv1-avc1_5600000=10000-mp4a_131600=20000.m3u8
@@ -2758,11 +2758,24 @@ https://live05.miekgo.app/live/14707124_tsc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/14707124_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/6c2cb8d5b9c236f4200b466be1eaa33c.png" group-title="BiaomTV",12:30 26/10 [ - ] Oktepa vs Nasaf Qarshi B [Uzbekistan First League] [HLS]
-https://lilive1.eu.cc/live/3ab136dfbda7a1e9574065de48ee437c/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/fde877e452f79f75955ad4e4f326c654.png!w80" group-title="Rocket50/BTFY",22:05 28/10 Al Najma vs Al Zulfi | BLV MOUNTAIN DEW [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.miekgo.app/live/87547578_tsc.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/fde877e452f79f75955ad4e4f326c654.png!w80" group-title="Rocket50/BTFY",22:05 28/10 Al Najma vs Al Zulfi | BLV MOUNTAIN DEW [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.yefpwmc.app/live/87547578_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/39b7e4362d2046a9fd140e613c4c00ed.png" group-title="BiaomTV",13:00 26/10 [ - ] Dalian Football School Women vs Tianjin Shengde Women [CFA Women's League One] [HLS]
 https://lilive1.eu.cc/live/532722112216f0cce878a683b63ca9ef/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/6c2cb8d5b9c236f4200b466be1eaa33c.png" group-title="BiaomTV",13:00 26/10 [ - ] Oktepa vs Nasaf Qarshi B [Uzbekistan First League] [HLS]
+https://lilive1.eu.cc/live/3ab136dfbda7a1e9574065de48ee437c/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/b1a78064a75015a25f216657f860392f.png" group-title="BiaomTV",13:00 26/10 [ - ] Shandong Taishan B vs Jiangxi Lushan [Chinese Football League 2] [HLS]
+https://lilive1.eu.cc/live/ed02256d8db73a11f7267d19b4918225/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/e3518b6a4362880719b486e411a918ff.png" group-title="BiaomTV",13:00 26/10 [ - ] Shanxi Xihua Women vs Shandong Jinghua Women B [CFA Women's League One] [HLS]
 https://lilive1.eu.cc/live/80a2c2cef717e9ba65bfb793d350e141/playlist.m3u8
@@ -2770,8 +2783,8 @@ https://lilive1.eu.cc/live/80a2c2cef717e9ba65bfb793d350e141/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/66647534ecd71478704b2f002958d1d2.png" group-title="BiaomTV",13:00 26/10 [ - ] Zhanjiang Yuezhan Women vs Zhejiang Hangzhou Women B [CFA Women's League One] [HLS]
 https://lilive1.eu.cc/live/28dd184c31e2bf87299a95fabb32d9b3/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/b1a78064a75015a25f216657f860392f.png" group-title="BiaomTV",14:30 26/10 [ - ] Shandong Taishan B vs Jiangxi Lushan [Chinese Football League 2] [HLS]
-https://lilive1.eu.cc/live/ed02256d8db73a11f7267d19b4918225/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/f095da84e978af1db93c39ad1756a7cf.png" group-title="BiaomTV",14:30 26/10 [ - ] Wuhan Three Towns U20 vs Shandong Taishan U20 [Chinese Football Assorciation U-20 League] [HLS]
+https://lilive1.eu.cc/live/abc38eeb9d05b502d41c68c63853e1c5/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/65c03c5fa9d46a3874fa1bdc2388cf9c.png" group-title="BiaomTV",17:00 26/10 [ - ] ASC vs MEG [Indian Bangalore Super Division] [HLS]
 https://lilive1.eu.cc/live/defac6ef8b4a4a57b08b035f0b12064d/playlist.m3u8
@@ -2811,9 +2824,6 @@ https://cdnhls.xbdbotv.live/live/MTk3MzY3Nzk6YThsY2E2YTk4dWpna3Q2bXcydDZwYXRxOmd
 
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/sevilla-676" group-title="BiaomTV",03:00 27/10 [ - ] Sevilla vs Osasuna [VĐQG Tây Ban Nha] [HLS]
 https://cdnhls.xbdbotv.live/live/MTk3MzI2NDQ6aGd5eDdwZGEwMmRlNWExZXZhMThvNnRnOnZzMjIzbG02NGs0Y3ZkMzl3Yno4dGczaQ/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/f45e63cabf4413baea299663cb836c7e.png" group-title="BiaomTV",SC Bengaluru vs Rebels FC [Indian Bangalore Super Division] [HLS]
-https://lilive1.eu.cc/live/4355cb220cbf6150c8808f22e008660d/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="Khô Gà",19:00 26/10 Persebaya vs Madura United (BLV Tam Mao)
 #EXTVLCOPT:http-referrer=https://khoga1.live/
@@ -3042,100 +3052,50 @@ https://pull1.digitalcdn.net/live/11c3e474f0544e6db6a601af28403d62/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/dn1m1gh4zojmoep/image/small" group-title="Phá Làng TV",21:45 27/10 Al Shabab vs Neom SC (Unknown) [geo]
 https://pull1.digitalcdn.net/live/eeb8036a7cb04e5ea2da79d19a2db03c/index.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",10:10 26/10 Club Tijuana vs Santos Laguna vào | BLV 118206
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/club-tijuana-vs-santos-laguna-26-10-2026/?blv=118206
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1792992666-0-0-278766dd93e61b530d357b15374e9d84
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",10:10 26/10 Club Tijuana vs Santos Laguna vào | BLV 123226
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/club-tijuana-vs-santos-laguna-26-10-2026/?blv=123226
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=934100a13a886a33e88eaf34c5a1e320&txTime=6adf2e42
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",10:10 26/10 Club Tijuana vs Santos Laguna vào | BLV 147801
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/club-tijuana-vs-santos-laguna-26-10-2026/?blv=147801
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=59ca575647b4b1c9af42816e940ba091&txTime=6adf2e42
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",10:10 26/10 Club Tijuana vs Santos Laguna vào | BLV 256080
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/club-tijuana-vs-santos-laguna-26-10-2026/?blv=256080
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1792993266-0-0-e9e27c67dda02e8464837ba90a49e941
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",10:10 26/10 Club Tijuana vs Santos Laguna vào | BLV 291277
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/club-tijuana-vs-santos-laguna-26-10-2026/?blv=291277
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=595bb43a38828538194a8fb0bb7288dd&txTime=6adf2e42
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",10:10 26/10 Club Tijuana vs Santos Laguna vào | BLV 360663
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/club-tijuana-vs-santos-laguna-26-10-2026/?blv=360663
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1792993266-0-0-357291461dc6c1a800aefb5b3fc9b336
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 26/10 Goyang Sono vs LG Sakers vào | BLV 122591
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/goyang-sono-vs-lg-sakers-26-10-2026/?blv=122591
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912099_lhd.m3u8?auth_key=1792989111-0-0-358ab8e81a36141019e4802737e6ec55
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:05 26/10 Altiri Chiba vs Gunma vào | BLV 558264
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/altiri-chiba-vs-gunma-26-10-2026/?blv=558264
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-356042_lhd.m3u8?txSecret=e5e9ffb284214b323041f48e8b0336a8&txTime=6ade0aad
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",18:30 26/10 Geylang United FC vs Hougang United FC vào | BLV 406865
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/geylang-united-fc-vs-hougang-united-fc-26-10-2026/?blv=406865
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1792947225-0-0-67e1201b20ddee824cc115f4dc50ba60
+https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1792977335-0-0-67105d149259eda82c3603ef687c1942
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",18:30 26/10 Geylang United FC vs Hougang United FC vào | BLV 557845
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/geylang-united-fc-vs-hougang-united-fc-26-10-2026/?blv=557845
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1792977335-0-0-67105d149259eda82c3603ef687c1942
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",18:35 26/10 Shanghai vs Guangdong vào | BLV 428392
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/shanghai-vs-guangdong-26-10-2026/?blv=428392
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912112_lhd.m3u8?auth_key=1792985526-0-0-5a28057b08ec89f20b5a99adc9cca478
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",18:35 26/10 Shanghai vs Guangdong vào | BLV 515530
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/shanghai-vs-guangdong-26-10-2026/?blv=515530
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912115_lhd.m3u8?auth_key=1792989324-0-0-7e8d7dde7741a6b595738d5c61ed87f8
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Bhayangkara Presisi Indonesia FC vs Persatuan Sepakbola Makassar vào | BLV 327159
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/bhayangkara-presisi-indonesia-fc-vs-persatuan-sepakbola-makassar-26-10-2026/?blv=327159
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-327159_lhd.m3u8?auth_key=1792980077-0-0-040fbb5bc24c21dfcaf0a9aa06f400f4
+https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1792947225-0-0-67e1201b20ddee824cc115f4dc50ba60
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Bhayangkara Presisi Indonesia FC vs Persatuan Sepakbola Makassar vào | BLV 344370
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/bhayangkara-presisi-indonesia-fc-vs-persatuan-sepakbola-makassar-26-10-2026/?blv=344370
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1792939979-0-0-2f8fa33d8e9993ac6c2f270587f406b7
+https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=3b4abb61657e38d33a73f51ab54eaac9&txTime=6adea65a
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Bhayangkara Presisi Indonesia FC vs Persatuan Sepakbola Makassar vào | BLV 380460
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/bhayangkara-presisi-indonesia-fc-vs-persatuan-sepakbola-makassar-26-10-2026/?blv=380460
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1792956088-0-0-8f9ff38285f5b23cf4e23f3bd22eb921
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Bhayangkara Presisi Indonesia FC vs Persatuan Sepakbola Makassar vào | BLV 621843
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/bhayangkara-presisi-indonesia-fc-vs-persatuan-sepakbola-makassar-26-10-2026/?blv=621843
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=3b4abb61657e38d33a73f51ab54eaac9&txTime=6adea65a
+https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1792939979-0-0-2f8fa33d8e9993ac6c2f270587f406b7
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Persebaya Surabaya vs Madura United vào | BLV 168740
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/persebaya-surabaya-vs-madura-united-26-10-2026/?blv=168740
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912145_lhd.m3u8?auth_key=1792938861-0-0-e7405291fe6637b08d53dba71377ad95
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Persebaya Surabaya vs Madura United vào | BLV 170430
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/persebaya-surabaya-vs-madura-united-26-10-2026/?blv=170430
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912009_lhd.m3u8?auth_key=1792987596-0-0-a4595f1117b25af4382944043ceb2ace
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Persebaya Surabaya vs Madura United vào | BLV 552716
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/persebaya-surabaya-vs-madura-united-26-10-2026/?blv=552716
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1792945317-0-0-7ff2ce95204c51ef37d32413a7fc5114
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Persebaya Surabaya vs Madura United vào | BLV 623743
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/persebaya-surabaya-vs-madura-united-26-10-2026/?blv=623743
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Persija Jakarta vs Persik Kediri vào | BLV 147801
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/persija-jakarta-vs-persik-kediri-26-10-2026/?blv=147801
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-623743_lhd.m3u8?auth_key=1792953830-0-0-5ced86fb444b5678f9c647c30ae7cfdf
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Persija Jakarta vs Persik Kediri vào | BLV 187579
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/persija-jakarta-vs-persik-kediri-26-10-2026/?blv=187579
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912008_lhd.m3u8?auth_key=1792958594-0-0-da50ebb60ec919179cfb7bd72a3d9676
+https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=02e1b4a9d4bd7975f4ba6df611e81030&txTime=6adf3713
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 26/10 Persija Jakarta vs Persik Kediri vào | BLV 235232
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/persija-jakarta-vs-persik-kediri-26-10-2026/?blv=235232
@@ -3170,12 +3130,12 @@ https://pull.niur.live/live/stream-9912127_lhd.m3u8?txSecret=634210a4868b8bd0543
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",20:45 26/10 Neftchi Fergana vs Al Ittihad vào | BLV 434982
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/neftchi-fergana-vs-al-ittihad-26-10-2026/?blv=434982
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1792956576-0-0-b865f777e5fb24c94687ea90dec6fb27
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",20:45 26/10 Neftchi Fergana vs Al Ittihad vào | BLV 462413
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/neftchi-fergana-vs-al-ittihad-26-10-2026/?blv=462413
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=d19a842184bdf958077730a5d7bc0cc1&txTime=6ade9de4
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",20:45 26/10 Neftchi Fergana vs Al Ittihad vào | BLV 602153
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/neftchi-fergana-vs-al-ittihad-26-10-2026/?blv=602153
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=228924c0c6aba64724d6ccf19d73e742&txTime=6ade7bfc
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",20:45 26/10 Neftchi Fergana vs Al Ittihad vào | BLV 622241
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/neftchi-fergana-vs-al-ittihad-26-10-2026/?blv=622241
@@ -3207,33 +3167,28 @@ https://pull.niues.live/live/stream-620084_lhd.m3u8?auth_key=1792987226-0-0-39a8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=0c8372f86065321025fef52ed7e0244e&txTime=6aded3e9
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Al Ahli SC vs Al-Gharafa SC vào | BLV 459401
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-ahli-sc-vs-al-gharafa-sc-26-10-2026/?blv=459401
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=dce7ec6184fe60b505c7fb36d86e3faf&txTime=6adeac32
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Al Ahli SC vs Al-Gharafa SC vào | BLV 527384
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-ahli-sc-vs-al-gharafa-sc-26-10-2026/?blv=527384
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1793004366-0-0-2f499f0c3f187464ce76c69e3091f048
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Al Ahli SC vs Al-Gharafa SC vào | BLV 532081
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-ahli-sc-vs-al-gharafa-sc-26-10-2026/?blv=532081
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1792959783-0-0-ef3bb4f4ab313d4313ad318a79e76ee1
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Al Ahli SC vs Al-Gharafa SC vào | BLV 595335
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-ahli-sc-vs-al-gharafa-sc-26-10-2026/?blv=595335
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-527384_lhd.m3u8?auth_key=1792993326-0-0-de955dc6c466bfd63af3a1457b07130e
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Al-Ain FC vs Tractor S.C. vào | BLV 380460
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-ain-fc-vs-tractor-s-c-26-10-2026/?blv=380460
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1792956088-0-0-8f9ff38285f5b23cf4e23f3bd22eb921
+https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1792951725-0-0-4c1a54c4c7b106b36b0cd8efa3422d6e
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Al-Ain FC vs Tractor S.C. vào | BLV 617313
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-ain-fc-vs-tractor-s-c-26-10-2026/?blv=617313
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1792965174-0-0-a7d5e0a9b0a3942276bda66882b532f4
+https://pull.niues.live/live/stream-617313_lhd.m3u8?auth_key=1792980050-0-0-aff73455264777ebd5323f6641dabb5f
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Besiktas JK vs Başakşehir Futbol Kulübü vào | BLV 501412
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/besiktas-jk-vs-basaksehir-futbol-kulubu-26-10-2026/?blv=501412
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Besiktas JK vs Başakşehir Futbol Kulübü vào | BLV 132343
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/besiktas-jk-vs-basaksehir-futbol-kulubu-26-10-2026/?blv=132343
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=2107e7752b646f38a4b04d408b7647f8&txTime=6adecb91
 
@@ -3247,10 +3202,10 @@ https://pull.niues.live/live/stream-9912133_lhd.m3u8?auth_key=1792960143-0-0-63e
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=04d5201d7c44620f84f197553cb21611&txTime=6adeb4c0
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Caykur Rizespor vs Trabzonspor vào | BLV 511367
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/caykur-rizespor-vs-trabzonspor-26-10-2026/?blv=511367
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Caykur Rizespor vs Trabzonspor vào | BLV 304148
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/caykur-rizespor-vs-trabzonspor-26-10-2026/?blv=304148
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1792955840-0-0-a6d5c140f21f1178fe550ff164e212e4
+https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1792987255-0-0-c31a1c4d57dc5c558014c2f395bde848
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",23:00 26/10 Caykur Rizespor vs Trabzonspor vào | BLV 602019
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/caykur-rizespor-vs-trabzonspor-26-10-2026/?blv=602019
@@ -3265,7 +3220,12 @@ https://pull.niur.live/live/stream-621840_lhd.m3u8?txSecret=53220b509350b0ce8d98
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",00:30 27/10 CSKA Sofia vs Ludogorets Razgrad vào | BLV 400722
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/cska-sofia-vs-ludogorets-razgrad-27-10-2026/?blv=400722
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912132_lhd.m3u8?txSecret=cb886b6bf1eddcd4c27d0d6a9a4aabfb&txTime=6adecae6
+https://pull.niues.live/live/stream-9912138_lhd.m3u8?auth_key=1792947500-0-0-4a119ea00f8603be559267abc72a8efd
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",01:15 27/10 Al Qadsiah vs Al-Sadd vào | BLV 622602
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-qadsiah-vs-al-sadd-27-10-2026/?blv=622602
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912124_lhd.m3u8?auth_key=1792967853-0-0-dda3638807a643ede775d5903a858c52
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",01:15 27/10 Al Quwa Al Jawiya vs Pakhtakor vào | BLV 250874
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/al-quwa-al-jawiya-vs-pakhtakor-27-10-2026/?blv=250874
@@ -3282,6 +3242,11 @@ https://pull.niues.live/live/stream-9912119_lhd.m3u8?auth_key=1792969408-0-0-961
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912128_lhd.m3u8?auth_key=1792943796-0-0-9c8bec965ec4d6aa86f22a381a304bfe
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",01:45 27/10 Santa Clara vs Benfica vào | BLV 511367
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/santa-clara-vs-benfica-27-10-2026/?blv=511367
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-511367_lhd.m3u8?auth_key=1792955840-0-0-a6d5c140f21f1178fe550ff164e212e4
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",01:45 27/10 Santa Clara vs Benfica vào | BLV 607552
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/santa-clara-vs-benfica-27-10-2026/?blv=607552
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -3292,25 +3257,15 @@ https://pull.niues.live/live/stream-607552_lhd.m3u8?auth_key=1792967805-0-0-4895
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-552832_lhd.m3u8?auth_key=1792958488-0-0-cae2bf646d093bb2ae6b4c27d9fc8cab
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",02:30 27/10 Paris Saint Germain vs Lyon vào | BLV 595335
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/paris-saint-germain-vs-lyon-27-10-2026/?blv=595335
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1792951725-0-0-4c1a54c4c7b106b36b0cd8efa3422d6e
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",02:30 27/10 Paris Saint Germain vs Lyon vào | BLV 620797
 #EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/paris-saint-germain-vs-lyon-27-10-2026/?blv=620797
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1792959833-0-0-da9097f8942c35ec580c6fc4c0744386
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",03:00 27/10 Sevilla FC vs CA Osasuna vào | BLV 400722
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/sevilla-fc-vs-ca-osasuna-27-10-2026/?blv=400722
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",03:00 27/10 Sevilla FC vs CA Osasuna vào | BLV 472241
+#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/sevilla-fc-vs-ca-osasuna-27-10-2026/?blv=472241
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912138_lhd.m3u8?auth_key=1792947500-0-0-4a119ea00f8603be559267abc72a8efd
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",03:00 27/10 Sevilla FC vs CA Osasuna vào | BLV 536185
-#EXTVLCOPT:http-referrer=https://vebotv.work/truc-tiep/sevilla-fc-vs-ca-osasuna-27-10-2026/?blv=536185
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1792967811-0-0-d4cf917a1ef217f2856ec086e5610a28
+https://pull.niur.live/live/stream-9912132_lhd.m3u8?txSecret=cb886b6bf1eddcd4c27d0d6a9a4aabfb&txTime=6adecae6
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/f45e63cabf4413baea299663cb836c7e.png" group-title="Vua Sân Cỏ TV",12:30 26/10 SC Bengaluru vs Rebels FC (Nhà Đài)
 https://broadcaster-station.ebaclofen.org/live/4355cb220cbf6150c8808f22e008660d/playlist.m3u8?token=AbYkHgeeaePqxjjKEOFoPQ&time=1793002766
