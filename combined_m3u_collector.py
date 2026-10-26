@@ -157,7 +157,7 @@ VONGCAM_API_URL = os.environ.get("VONGCAM_API", "https://sv.bugiotv.xyz/internal
 VONGCAM_FRONTEND_URL = os.environ.get("VONGCAM_FRONTEND", BUGIO_REFERER)
 QUECHOA_SITE_URL = os.environ.get("QUECHOA_SITE_URL", "https://quechoa11.live")
 QUECHOA_HOME_URL = os.environ.get("QUECHOA_HOME_URL", "https://quechoa11.live/")
-VSC9_URL = os.environ.get("VSC9_URL", "https://vsc9.top/")
+VSC9_URL = os.environ.get("VSC9_URL", "https://www.livinginterior.in/")
 VSC9_REFERER = os.environ.get("VSC9_REFERER", VSC9_URL)
 VSC9_MIWAM_URL = os.environ.get("VSC9_MIWAM_URL", "https://live.miwam.io/")
 VSC9_TINHLAGI_FALLBACK = os.environ.get("VSC9_TINHLAGI_FALLBACK", "0").strip().lower() not in {"0", "false", "no"}
@@ -1107,6 +1107,8 @@ def channel_key(channel):
 
 def stream_dedupe_key(channel):
     url = clean_text(channel.get("stream_url"))
+    if channel.get("source") == "VSC9":
+        return ("VSC9", tokenless_stream_key(url), clean_text(channel.get("name")), str(channel_event_datetime(channel) or ""))
     if channel.get("source") == "XoiLacZ":
         name = re.sub(r"\s*\|\s*Link\s+\d+\s*\[[^\]]+\]\s*$", "", clean_text(channel.get("name")), flags=re.I)
         return ("XoiLacZ", tokenless_stream_key(url), name)
@@ -2205,6 +2207,7 @@ def select_ott_compatible_channels(channels):
             in {
                 "PhaoHoaTV",
                 "PhaLangTV",
+                "VSC9",
                 "24hHighlight",
                 "90PhutHighlight",
                 "DasFootballHighlight",
@@ -9473,20 +9476,20 @@ def collect_vsc9_api():
 
     def fetch_schedule_page(event_date, page):
         last_error = None
-        for base in dict.fromkeys((site_url, "https://www.vsc9.top/", "https://vsc9.top/")):
+        for base in dict.fromkeys((site_url, "https://www.livinginterior.in/", "https://www.vsc9.top/", "https://vsc9.top/")):
             for attempt in range(legacy_attempts):
                 try:
                     endpoint = urljoin(base, "/api/proxy/data/lives/matches")
                     for redirect in range(4):
                         response = requests.post(
-                            endpoint, headers=headers,
+                            endpoint, headers={**headers, "Origin": base.rstrip("/"), "Referer": base},
                             json={"date": event_date.isoformat(), "page": page, "pageSize": 100, "timezone": "Asia/Ho_Chi_Minh"},
                             timeout=legacy_timeout, allow_redirects=False,
                         )
                         if response.status_code not in (301, 302, 303, 307, 308):
                             break
                         target = urljoin(endpoint, response.headers.get("Location", ""))
-                        if urlparse(target).hostname not in {"vsc9.top", "www.vsc9.top", urlparse(site_url).hostname}:
+                        if urlparse(target).hostname not in {"vsc9.top", "www.vsc9.top", "livinginterior.in", "www.livinginterior.in", urlparse(site_url).hostname}:
                             raise ValueError("Unexpected API redirect host")
                         endpoint = target
                     response.raise_for_status()
@@ -9534,7 +9537,14 @@ def collect_vsc9_api():
             home_name = clean_text(home.get("name")) or "Home"
             away_name = clean_text(away.get("name")) or "Away"
             time_label = event_datetime.strftime("%H:%M %d/%m") if event_datetime else ""
-            for live in item.get("lives") or []:
+            variants = []
+            for original in item.get("lives") or []:
+                if not isinstance(original, dict):
+                    continue
+                for field in ("linkHls", "link", "linkFlv"):
+                    if original.get(field):
+                        variants.append({**original, "link": original[field]})
+            for live in variants:
                 if not isinstance(live, dict):
                     continue
                 stream_url = clean_text(live.get("link")).rstrip(".,);]")
