@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-10-28 15:03 ICT
-# Total   : 830
+# Updated : 2026-10-28 15:29 ICT
+# Total   : 874
 
 #EXTINF:-1 tvg-logo="https://r2.epg.io.vn/2026-09-17/1.png" group-title="VTV",VTV1
 https://freem3u.xyz/api/live/play.m3u8?vid=2
@@ -103,16 +103,6 @@ https://dekki.bacbenny95.workers.dev/film4k/stream/channel/9951
 
 #EXTINF:-1 tvg-logo="https://vtvprime.vn/sideLogoBig.png" group-title="Sự kiện",VTVPrime 188
 https://qipmgzougxliv.vcdn.cloud/app/stream/master.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/935e553f4435030c604a4948c1e4d243.png" group-title="Giờ Vàng TV",10:00 28/10 Los Angeles Lakers vs Portland Trail Blazers | Vịt [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://ftlh5sc02iliv.vcdn.cloud/1793106749_hd/1793106749_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/935e553f4435030c604a4948c1e4d243.png" group-title="Giờ Vàng TV",10:00 28/10 Los Angeles Lakers vs Portland Trail Blazers | Vịt [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://ftlh5sc02iliv.vcdn.cloud/1793106749_hd/1793106749_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/a322b3f45e8fc272b36c48003e467f20.png" group-title="Giờ Vàng TV",17:00 28/10 Daegu KoGas Pegasus vs Wonju Dongbu Promy | Vịt [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -904,6 +894,11 @@ https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
 
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/411_gamba-osaka.jpg" group-title="Khandai",17:00 28/10 Bóng đá Gamba Osaka vs Buriram
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM2E-bfUL2cfww643kT_KZYDbKiUUT4C8ng8o&expires=1852800615
+
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5053_kashima-antlers.jpg" group-title="Khandai",17:00 28/10 Bóng đá Kashima Antlers vs Pohang
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1184,6 +1179,16 @@ https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://playback.livetl004.com/live/6a5df755b89dded67b39b8bc.m3u8
 
+#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",19:15 28/10 Persib Bandung Vs Melbourne Victory [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl002.com/live/69f42e961f739deff81510c0.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",19:15 28/10 Persib Bandung Vs Melbourne Victory [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl004.com/live/69f42e961f739deff81510c0.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/b2004093bf25a5a8d1768970d6e49d71.png" group-title="Gà Vàng",19:15 28/10 Persib Bandung vs Melbourne Victory (Gà Siêu Tồ) [HLS]
 #EXTVLCOPT:http-referrer=https://gavang33.ag/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1294,55 +1299,15 @@ https://playback.livetl004.com/live/69b8e6f43bcf2231c35d5144.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live2.zktsva.app/live/741294.m3u8
 
-#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",22:15 28/10 Fk Rostov Vs Akron Togliatti [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.m3u8
-
-#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",22:15 28/10 Fk Rostov Vs Akron Togliatti [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl004.com/live/6a5df755b89dded67b39b8bc.m3u8
-
-#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",22:30 28/10 Panathinaikos Vs Aris Thessaloniki [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.m3u8
-
-#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",22:30 28/10 Panathinaikos Vs Aris Thessaloniki [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl004.com/live/6a01a2511e8555d7a3685f5c.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/348fa7d49029584354427690fe88f874.png" group-title="Gà Vàng",23:00 28/10 AC Oulu vs Vaasa VPS (Gà Siêu Tồ) [HLS]
 #EXTVLCOPT:http-referrer=https://gavang33.ag/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live2.zktsva.app/live/796315.m3u8
 
-#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",23:00 28/10 Al Jazirauae Vs Al Muharraq [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl002.com/live/6a9a5525864ea536c2577392.m3u8
-
-#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",23:00 28/10 Al Jazirauae Vs Al Muharraq [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl004.com/live/6a9a5525864ea536c2577392.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/39af905c31d621f47d12b2fad242cdbd.png" group-title="Gà Vàng",23:00 28/10 Al Nahda SC vs Al-Rayyan Sports Club (Gà Siêu Mõm) [HLS]
 #EXTVLCOPT:http-referrer=https://gavang33.ag/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live2.zktsva.app/live/300523.m3u8
-
-#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",23:00 28/10 Al Nahda Sc Vs Al Rayyan Sports Club [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl002.com/live/69cf6331585c5992182f4160.m3u8
-
-#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",23:00 28/10 Al Nahda Sc Vs Al Rayyan Sports Club [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv1.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl004.com/live/69cf6331585c5992182f4160.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/9352b8e0b9515b84abf716a32c42777e.png" group-title="Gà Vàng",23:00 28/10 Al-Jazira(UAE) vs Al-Muharraq (Gà Siêu Quỷ) [HLS]
 #EXTVLCOPT:http-referrer=https://gavang33.ag/
@@ -1369,6 +1334,26 @@ https://live2.zktsva.app/live/301238.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live2.zktsva.app/live/741294.m3u8
 
+#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",00:30 29/10 Ac Milan Vs Bologna [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",00:30 29/10 Ac Milan Vs Bologna [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl004.com/live/69aa9525f5ec459ae275b43f.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",00:30 29/10 Venezia Vs Inter Milan [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl002.com/live/69f42e961f739deff81510c0.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",00:30 29/10 Venezia Vs Inter Milan [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl004.com/live/69f42e961f739deff81510c0.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/3e724dc0e6fffd01a630b65af348fab6.png" group-title="Gà Vàng",00:30 29/10 Venezia vs Inter Milan (Gà Ô Long) [HLS]
 #EXTVLCOPT:http-referrer=https://gavang33.ag/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1393,6 +1378,16 @@ https://live2.zktsva.app/live/300523.m3u8
 #EXTVLCOPT:http-referrer=https://gavang33.ag/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live2.zktsva.app/live/289650.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",02:45 29/10 Genoa Vs Juventus [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl002.com/live/6a7c0d8f65997681f18cacc4.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangtv1.org/favicon.ico" group-title="Gà Vàng",02:45 29/10 Genoa Vs Juventus [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv1.org/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl004.com/live/6a7c0d8f65997681f18cacc4.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/51474fb68c7da46b9c20ebddccec7766.png" group-title="Gà Vàng",02:45 29/10 Genoa vs Juventus (Gà Siêu Nhí) [HLS]
 #EXTVLCOPT:http-referrer=https://gavang33.ag/
@@ -1499,25 +1494,15 @@ https://live2.zktsva.app/live/303098.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live2.zktsva.app/live/294335.m3u8
 
-#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Al Jazirauae Vs Al Muharraq [HLS]
+#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Ac Milan Vs Bologna [HLS]
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl002.com/live/6a9a5525864ea536c2577392.m3u8
+https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8
 
-#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Al Jazirauae Vs Al Muharraq [HLS]
+#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Ac Milan Vs Bologna [HLS]
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl004.com/live/6a9a5525864ea536c2577392.m3u8
-
-#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Al Nahda Sc Vs Al Rayyan Sports Club [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv.mobile/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl002.com/live/69cf6331585c5992182f4160.m3u8
-
-#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Al Nahda Sc Vs Al Rayyan Sports Club [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv.mobile/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl004.com/live/69cf6331585c5992182f4160.m3u8
+https://playback.livetl004.com/live/69aa9525f5ec459ae275b43f.m3u8
 
 #EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Bank El Ahly Vs Al Masry [HLS]
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
@@ -1559,16 +1544,6 @@ https://playback.livetl002.com/live/6a7c0d8f65997681f18cacc4.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://playback.livetl004.com/live/6a7c0d8f65997681f18cacc4.m3u8
 
-#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Fk Rostov Vs Akron Togliatti [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv.mobile/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl002.com/live/6a5df755b89dded67b39b8bc.m3u8
-
-#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Fk Rostov Vs Akron Togliatti [HLS]
-#EXTVLCOPT:http-referrer=https://gavangtv.mobile/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl004.com/live/6a5df755b89dded67b39b8bc.m3u8
-
 #EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Gamba Osaka Vs Buriram United [HLS]
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1578,6 +1553,16 @@ https://playback.livetl002.com/live/6a9a5525864ea536c2577392.m3u8
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://playback.livetl004.com/live/6a9a5525864ea536c2577392.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Genoa Vs Juventus [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv.mobile/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl002.com/live/6a7c0d8f65997681f18cacc4.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Genoa Vs Juventus [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv.mobile/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl004.com/live/6a7c0d8f65997681f18cacc4.m3u8
 
 #EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Gol Gohar Fc Vs Arkadag Fk [HLS]
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
@@ -1659,15 +1644,15 @@ https://playback.livetl002.com/live/69cf6331585c5992182f4160.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://playback.livetl004.com/live/69cf6331585c5992182f4160.m3u8
 
-#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Panathinaikos Vs Aris Thessaloniki [HLS]
+#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Persib Bandung Vs Melbourne Victory [HLS]
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl002.com/live/6a01a2511e8555d7a3685f5c.m3u8
+https://playback.livetl002.com/live/69f42e961f739deff81510c0.m3u8
 
-#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Panathinaikos Vs Aris Thessaloniki [HLS]
+#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Persib Bandung Vs Melbourne Victory [HLS]
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://playback.livetl004.com/live/6a01a2511e8555d7a3685f5c.m3u8
+https://playback.livetl004.com/live/69f42e961f739deff81510c0.m3u8
 
 #EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Sagan Tosu Vs Kawasaki Frontale [HLS]
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
@@ -1689,6 +1674,16 @@ https://playback.livetl002.com/live/69ef10b47146e04fbe6d4363.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://playback.livetl004.com/live/69ef10b47146e04fbe6d4363.m3u8
 
+#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Venezia Vs Inter Milan [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv.mobile/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl002.com/live/69f42e961f739deff81510c0.m3u8
+
+#EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Venezia Vs Inter Milan [HLS]
+#EXTVLCOPT:http-referrer=https://gavangtv.mobile/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://playback.livetl004.com/live/69f42e961f739deff81510c0.m3u8
+
 #EXTINF:-1 tvg-logo="https://gavangtv.mobile/favicon.ico" group-title="Gà Vàng",Yokohama F Marinos Vs Sanfrecce Hiroshima [HLS]
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1698,6 +1693,9 @@ https://playback.livetl002.com/live/6acdcf4a1ba0f2f86b254fe9.m3u8
 #EXTVLCOPT:http-referrer=https://gavangtv.mobile/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://playback.livetl004.com/live/6acdcf4a1ba0f2f86b254fe9.m3u8
+
+#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/be72eeaa-8f46-4802-b269-a5f8fe9d5ad6" group-title="S8 TV",15:00 28/10 Khaan Khuns-Erchim FC vs Ulaagom City (NGƯỜI CÁO) [hls]
+https://hls.lauthaitv.cc/live/khaan-ulaacity-mglprem/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/9a6b14cf-13f6-4ad7-a81b-52cbba4955e5" group-title="S8 TV",15:30 28/10 Long An vs Thai Nguyen (NGƯỜI NHỆN) [hls]
 https://hls.lauthaitv.cc/live/longan-thainguyen-vleague2/index.m3u8
@@ -1789,16 +1787,6 @@ https://stm6dad62063600.stream.hdplaylink.com/sklive/carot/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Sao Kê TV",SaoKeTV Ricky
 https://stm6dad62063600.stream.hdplaylink.com/sklive/ricky/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/fa6f985041ec3f9729172380ae9cebf8.png!w80" group-title="Rocket50/BTFY",10:00 28/10 Los Angeles Lakers vs Portland Trail Blazer | BLV Cozy [M3U8]
-#EXTVLCOPT:http-referrer=https://btfy.io/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.miekgo.app/live/87379114.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/fa6f985041ec3f9729172380ae9cebf8.png!w80" group-title="Rocket50/BTFY",10:00 28/10 Los Angeles Lakers vs Portland Trail Blazer | BLV Cozy [M3U8]
-#EXTVLCOPT:http-referrer=https://btfy.io/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/347d428c24e85dbda67f7817e7d80ebf.png!w80" group-title="Rocket50/BTFY",15:30 28/10 Đồng Tâm Long An vs Thai Nguyen | BLV SAMURAI [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1859,15 +1847,15 @@ https://live05.miekgo.app/live/59444581.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/59444581_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/0d7b400b61ad77a72d5d6d7db03077e7.png!w80" group-title="Rocket50/BTFY",17:00 28/10 Sagan Tosu vs Kawasaki Frontale | BLV SAMURAI [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/0d7b400b61ad77a72d5d6d7db03077e7.png!w80" group-title="Rocket50/BTFY",17:00 28/10 Sagan Tosu vs Kawasaki Frontale | BLV REVIVE [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.miekgo.app/live/07808742.m3u8
+https://live05.miekgo.app/live/33982309.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/0d7b400b61ad77a72d5d6d7db03077e7.png!w80" group-title="Rocket50/BTFY",17:00 28/10 Sagan Tosu vs Kawasaki Frontale | BLV SAMURAI [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/0d7b400b61ad77a72d5d6d7db03077e7.png!w80" group-title="Rocket50/BTFY",17:00 28/10 Sagan Tosu vs Kawasaki Frontale | BLV REVIVE [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.yefpwmc.app/live/07808742_tsc.m3u8
+https://live05.yefpwmc.app/live/33982309_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/78ddaaa79d9502f5e2df0fbb6261f937.png!w80" group-title="Rocket50/BTFY",17:00 28/10 Yokohama F. Marinos vs Sanfrecce Hiroshima | BLV REDBULL [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
@@ -1889,6 +1877,16 @@ https://live05.miekgo.app/live/82054853.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/82054853_tsc.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/838f9656561a3aab05c59b77850e24d4.png!w80" group-title="Rocket50/BTFY",18:00 28/10 Hung Yen vs Huế | BLV FANTA [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.miekgo.app/live/16226575.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/838f9656561a3aab05c59b77850e24d4.png!w80" group-title="Rocket50/BTFY",18:00 28/10 Hung Yen vs Huế | BLV FANTA [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.yefpwmc.app/live/16226575_tsc.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/fb44eee02df789207dee98898982cc16.png!w80" group-title="Rocket50/BTFY",18:35 28/10 Shenzhen vs Shanxi Fenjiu | BLV Cozy [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1898,6 +1896,16 @@ https://live05.miekgo.app/live/87379114.m3u8
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/b2004093bf25a5a8d1768970d6e49d71.png!w80" group-title="Rocket50/BTFY",19:15 28/10 CLB Persib Bandung vs Melbourne Victory | BLV 7UP [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.miekgo.app/live/78905744.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/b2004093bf25a5a8d1768970d6e49d71.png!w80" group-title="Rocket50/BTFY",19:15 28/10 CLB Persib Bandung vs Melbourne Victory | BLV 7UP [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.yefpwmc.app/live/78905744_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/840e2d7165cf2a34ec6c65a1fd9b58a9.png!w80" group-title="Rocket50/BTFY",19:15 28/10 Thể Công - Viettel vs CLB Seoul | BLV GIÀ LÀNG [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
@@ -1949,12 +1957,12 @@ https://live05.miekgo.app/live/49572724.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/49572724_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/69625f17e031ad1fcb33823338b74d95.png!w80" group-title="Rocket50/BTFY",20:45 28/10 Gol Gohar vs FC bạn bè | BLV REVIVE [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/69625f17e031ad1fcb33823338b74d95.png!w80" group-title="Rocket50/BTFY",20:45 28/10 Gol Gohar vs Arkadag | BLV REVIVE [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.miekgo.app/live/33982309.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/69625f17e031ad1fcb33823338b74d95.png!w80" group-title="Rocket50/BTFY",20:45 28/10 Gol Gohar vs FC bạn bè | BLV REVIVE [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/69625f17e031ad1fcb33823338b74d95.png!w80" group-title="Rocket50/BTFY",20:45 28/10 Gol Gohar vs Arkadag | BLV REVIVE [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/33982309_tsc.m3u8
@@ -1969,15 +1977,15 @@ https://live05.miekgo.app/live/75748097.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/75748097_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/31f3149a6e207008059cd6bb40a4a423.png!w80" group-title="Rocket50/BTFY",21:00 28/10 NBE SC vs El Masry | BLV LIPTON [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/31f3149a6e207008059cd6bb40a4a423.png!w80" group-title="Rocket50/BTFY",21:00 28/10 NBE SC vs El Masry | BLV SAMURAI [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.miekgo.app/live/89756030.m3u8
+https://live05.miekgo.app/live/07808742.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/31f3149a6e207008059cd6bb40a4a423.png!w80" group-title="Rocket50/BTFY",21:00 28/10 NBE SC vs El Masry | BLV LIPTON [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/31f3149a6e207008059cd6bb40a4a423.png!w80" group-title="Rocket50/BTFY",21:00 28/10 NBE SC vs El Masry | BLV SAMURAI [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.yefpwmc.app/live/89756030_tsc.m3u8
+https://live05.yefpwmc.app/live/07808742_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/ff21a5b966039a14fa4cd721d29b40ee.png!w80" group-title="Rocket50/BTFY",22:05 28/10 Al Jabalain vs Al-Raed | BLV Cozy [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
@@ -2279,15 +2287,15 @@ https://live05.miekgo.app/live/82054853.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/82054853_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="Rocket50/BTFY",06:00 29/10 Indiana Pacers vs Philadelphia 76er | BLV Cozy [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="Rocket50/BTFY",06:00 29/10 Indiana Pacers vs Philadelphia 76er | BLV PORSCHE [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.miekgo.app/live/87379114.m3u8
+https://live05.miekgo.app/live/56998120.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="Rocket50/BTFY",06:00 29/10 Indiana Pacers vs Philadelphia 76er | BLV Cozy [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/6f313b682482799762cf60dbc30dbfae.png!w80" group-title="Rocket50/BTFY",06:00 29/10 Indiana Pacers vs Philadelphia 76er | BLV PORSCHE [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.yefpwmc.app/live/87379114_tsc.m3u8
+https://live05.yefpwmc.app/live/56998120_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/976fe1d29c112f4baeb844cdda2f04cb.png!w80" group-title="Rocket50/BTFY",06:30 29/10 Inter Miami vs CLB Cincinnati | BLV SPRITE [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
@@ -2629,6 +2637,16 @@ https://live05.miekgo.app/live/08552895.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/08552895_tsc.m3u8
 
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/0d9975f7e846a1ecb099f4cd62d1b8f7.png!w80" group-title="Rocket50/BTFY",01:00 30/10 Al-Nassr vs Al Kholood | BLV GIÀ LÀNG [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.miekgo.app/live/14830711.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/0d9975f7e846a1ecb099f4cd62d1b8f7.png!w80" group-title="Rocket50/BTFY",01:00 30/10 Al-Nassr vs Al Kholood | BLV GIÀ LÀNG [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.yefpwmc.app/live/14830711_tsc.m3u8
+
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/aa2d8e24a68822387257f31d692c4297.png!w80" group-title="Rocket50/BTFY",01:00 30/10 Al-Riyadh vs Al Qadisiya | BLV REVIVE [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2719,16 +2737,6 @@ https://live05.miekgo.app/live/87547578.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/87547578_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="Rocket50/BTFY",06:00 30/10 Atlanta Hawks vs Cleveland Cavalier | BLV 247 [M3U8]
-#EXTVLCOPT:http-referrer=https://btfy.io/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.miekgo.app/live/90865415.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="Rocket50/BTFY",06:00 30/10 Atlanta Hawks vs Cleveland Cavalier | BLV 247 [M3U8]
-#EXTVLCOPT:http-referrer=https://btfy.io/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.yefpwmc.app/live/90865415_tsc.m3u8
-
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/ed6ae7fa894cb5bdbccfd605d1d6ad04.png!w80" group-title="Rocket50/BTFY",06:15 30/10 CLB America de Cali vs Fortaleza CEIF | BLV LIPTON [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2738,6 +2746,16 @@ https://live05.miekgo.app/live/89756030.m3u8
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/89756030_tsc.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="Rocket50/BTFY",07:00 30/10 Atlanta Hawks vs Cleveland Cavalier | BLV 247 [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.miekgo.app/live/90865415.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/4e67b14905a05af9e1bd04406bf8690f.png!w80" group-title="Rocket50/BTFY",07:00 30/10 Atlanta Hawks vs Cleveland Cavalier | BLV 247 [M3U8]
+#EXTVLCOPT:http-referrer=https://btfy.io/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live05.yefpwmc.app/live/90865415_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/2602b893bb3f8d381a5b0d978fad74e1.png!w80" group-title="Rocket50/BTFY",07:00 30/10 New Orleans Pelicans vs Sacramento King | BLV POCARI [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
@@ -2769,15 +2787,15 @@ https://live05.miekgo.app/live/56998120.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/56998120_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/f65f7ccfb6989fb3af9b9ff1a6f46c25.png!w80" group-title="Rocket50/BTFY",09:00 30/10 Alajuelense vs Motagua | BLV POCARI [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/f65f7ccfb6989fb3af9b9ff1a6f46c25.png!w80" group-title="Rocket50/BTFY",09:00 30/10 Alajuelense vs Motagua | BLV GIÀ LÀNG [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.miekgo.app/live/19919577.m3u8
+https://live05.miekgo.app/live/14830711.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/f65f7ccfb6989fb3af9b9ff1a6f46c25.png!w80" group-title="Rocket50/BTFY",09:00 30/10 Alajuelense vs Motagua | BLV POCARI [M3U8]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/f65f7ccfb6989fb3af9b9ff1a6f46c25.png!w80" group-title="Rocket50/BTFY",09:00 30/10 Alajuelense vs Motagua | BLV GIÀ LÀNG [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.yefpwmc.app/live/19919577_tsc.m3u8
+https://live05.yefpwmc.app/live/14830711_tsc.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.cltvap.cc/basketball/team/4512175b1415f69816e816160093bcc0.png!w80" group-title="Rocket50/BTFY",09:00 30/10 Portland Trail Blazers vs Memphis Grizzlie | BLV LIPTON [M3U8]
 #EXTVLCOPT:http-referrer=https://btfy.io/
@@ -2799,21 +2817,11 @@ https://live05.miekgo.app/live/82054853.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live05.yefpwmc.app/live/82054853_tsc.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/25dae24c4bfc4a6fdd53d090a39821dd.png!w80" group-title="Rocket50/BTFY",15:00 30/10 DPMM vs Negeri Sembilan | BLV PEPSI [M3U8]
-#EXTVLCOPT:http-referrer=https://btfy.io/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.miekgo.app/live/59444581.m3u8
+#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/b5ff99432df36b5f50aab41f1fef1d66.png" group-title="BiaomTV",14:55 28/10 [ - ] Guangdong Wuchuan Youth vs Wuhan Lianzhen [CFA Member Champions League] [HLS]
+https://lilive1.eu.cc/live/0f7d5f10fc0ae5f4871ef816cb8e04cf/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/25dae24c4bfc4a6fdd53d090a39821dd.png!w80" group-title="Rocket50/BTFY",15:00 30/10 DPMM vs Negeri Sembilan | BLV PEPSI [M3U8]
-#EXTVLCOPT:http-referrer=https://btfy.io/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live05.yefpwmc.app/live/59444581_tsc.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/a812559c6be7a54bd172038ff1ccebec.png" group-title="BiaomTV",11:40 28/10 [ - ] Amtat FC vs Khovd Broncos [Mongolia Premier League] [HLS]
-https://lilive1.eu.cc/live/305aac5847d0834c996fb808a54ec1c0/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/c8883c8cf4c8e8afda5ebf7b33302161.png" group-title="BiaomTV",12:00 28/10 [ - ] Bengaluru B vs Stride [Indian Bangalore Super Division] [HLS]
-https://lilive1.eu.cc/live/ba34044694a1aaee55af96dea694ce71/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/c8188e3985db5cee9be1f4ea436f2fc2.png" group-title="BiaomTV",15:00 28/10 [ - ] Khaan Khuns-Erchim FC vs Ulaangom City [Mongolia Premier League] [HLS]
+https://lilive1.eu.cc/live/1dcb636b0abcfbd2b20c77f0a7fc8c85/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/d70895a7fed9c3a5038522fb44c85812.png" group-title="BiaomTV",17:00 28/10 [ - ] FC Shakhtar Donetsk U19 vs FC Livyi Bereh U19 [Ukrainian U19 Liga] [HLS]
 https://lilive1.eu.cc/live/5fe0c5e7e0d16c0554c4ff5b8e1e1b05/playlist.m3u8
@@ -3030,59 +3038,230 @@ https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/vi/c/c3/Logo_Th%E1%BB%83_C%C3%B4ng_T%C3%A2n_C%E1%BA%A3ng.png" group-title="Phá Làng TV",12:00 28/10 Thể Công Tân Cảng vs LP Bank Ninh Bình (LÝ LIỀU LĨNH) [geo]
-https://pull1.digitalcdn.net/live/29d94ba5c19249b2b43f7d882bcb3e88/index.m3u8
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",14:45 29/10 Adelaide United vs Lion City
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/vi/7/73/Logo_Sanest_Kh%C3%A1nh_H%C3%B2a_%28b%C3%B3ng_chuy%E1%BB%81n%29.png" group-title="Phá Làng TV",14:30 28/10 Sanest Khánh Hoà vs Hà Nội (LÝ LÊN LỬA) [geo]
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",17:00 29/10 Gangwon vs Kuching City FC
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
+
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",21:35 29/10 Al Khaleej vs Al Hazem
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM2E-bfUL2cfww643kT_KZYDbKiUUT4C8ng8o&expires=1852800615
+
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",23:00 29/10 Inter Turku vs HJK
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66hkp9vqo9j/image/small" group-title="Phá Làng TV",10:30 28/10 Chhaygaon FC - Godavari [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/29817b3b3b089ae24bccb4df6092b1f9/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h4z78q86p/image/small" group-title="Phá Làng TV",10:30 28/10 Garhwal FC - Sher E Punjab [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/356e7acf74f17c4a9807fd917624ac33/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h4z78q86p/image/small" group-title="Phá Làng TV",10:30 28/10 Garhwal FC - Sher-E-Punjab [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/916ffc11c7f75890609ea8370d7c102b/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jh1vx1qwzv/image/small" group-title="Phá Làng TV",12:00 28/10 Amtat FC - Khovd [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/305aac5847d0834c996fb808a54ec1c0/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h2v51q0j6/image/small" group-title="Phá Làng TV",12:30 28/10 Bengaluru B - Stride [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/ba34044694a1aaee55af96dea694ce71/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/pxwrxlhve71ryk0/image/small" group-title="Phá Làng TV",13:00 28/10 Fencibles United W - Nữ Eastern Suburbs [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/c6c8653d562171006da20e23ddd64a40/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phpnx8m2wd/image/small" group-title="Phá Làng TV",13:00 28/10 OKMK Semurg Angren - AKFA [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/fb9354f81adf6706ad3cdad57654be4b/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/vi/d/da/Logo_LP_Bank_Ninh_B%C3%ACnh.png" group-title="Phá Làng TV",14:30 28/10 Ninh Bình – Đà Nẵng (LÝ LÊN LỬA) [HD1]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.digitalcdn.net/live/9f8e37db7fa64751bac445560ea0e027/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/vi/d/da/Logo_LP_Bank_Ninh_B%C3%ACnh.png" group-title="Phá Làng TV",14:30 28/10 Ninh Bình – Đà Nẵng (LÝ LÊN LỬA) [HD2]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull1.digitalcdn.net/live/9f8e37db7fa64751bac445560ea0e027/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h8wo6q86p/image/small" group-title="Phá Làng TV",15:30 28/10 Đồng Tâm Long An vs Thai Nguyen (Unknown) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h8wo6q86p/image/small" group-title="Phá Làng TV",15:30 28/10 Đồng Tâm Long An - Thai Nguyen [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/c9ea0b26b7feee4d08c04e06e80a5581/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h8wo6q86p/image/small" group-title="Phá Làng TV",15:30 28/10 Đồng Tâm Long An vs Thai Nguyen (Unknown) (HD2) [geo]
 https://pull1.digitalcdn.net/live/31996ab5380d4ca58e7e1f34dd15e10c/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/330px-Flag_of_Vietnam.svg.png" group-title="Phá Làng TV",15:45 28/10 U15 VIỆT NAM vs U15 RWANDA (LÝ LÀNG LÁ) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h8wo6q86p/image/small" group-title="Phá Làng TV",15:30 28/10 Đồng Tâm Long An vs Thai Nguyen (Unknown) [geo]
+https://pull.digitalcdn.net/live/31996ab5380d4ca58e7e1f34dd15e10c/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/330px-Flag_of_Vietnam.svg.png" group-title="Phá Làng TV",15:45 28/10 U15 VIỆT NAM vs U15 RWANDA (LÝ LÀNG LÁ) (HD2) [geo]
 https://pull1.digitalcdn.net/live/3a9515b504b94d9d8e28038944e8a2dd/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/vi/7/7c/Logo_B%C4%90BPVN.png" group-title="Phá Làng TV",17:00 28/10 Biên Phòng MB vs Đà Nẵng (LÃM LÀNG) [geo]
-https://pull1.digitalcdn.net/live/d6a42b66bb3d478da8c7d3cbaed7ae59/index.m3u8
+#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/330px-Flag_of_Vietnam.svg.png" group-title="Phá Làng TV",15:45 28/10 U15 VIỆT NAM vs U15 RWANDA (LÝ LÀNG LÁ) [geo]
+https://pull.digitalcdn.net/live/3a9515b504b94d9d8e28038944e8a2dd/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwxnryk0/image/small" group-title="Phá Làng TV",17:00 28/10 Gamba Osaka vs Buriram United (LÝ LÊN LỬA) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hne4orz84/image/small" group-title="Phá Làng TV",16:55 28/10 Nữ Gyeongju - Nữ Seoul Amazones [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/06c5c895c04b8409e8532d8c42b9dc7a/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh3lwgql07/image/small" group-title="Phá Làng TV",16:55 28/10 Nữ Hyundai SteelRed - Nữ Changnyeong [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/3f8ce08eed65b6f0b3953fc2c549ad53/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh3d4oql07/image/small" group-title="Phá Làng TV",16:55 28/10 Nữ Suwon FMC - Nữ Boeun Sangmu [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/cdd7d1b8b70915005d2aa84d6a4873dd/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/vi/7/7c/Logo_B%C4%90BPVN.png" group-title="Phá Làng TV",17:00 28/10 Biên Phòng MB vs TP.HCM (LÃM LÀNG) (HD2) [geo]
+https://pull1.digitalcdn.net/live/a37fa64f5ad846b8bfa9a0006be35c15/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/vi/7/7c/Logo_B%C4%90BPVN.png" group-title="Phá Làng TV",17:00 28/10 Biên Phòng MB vs TP.HCM (LÃM LÀNG) [geo]
+https://pull.digitalcdn.net/live/a37fa64f5ad846b8bfa9a0006be35c15/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/y39mp1hjk42mojx/image/small" group-title="Phá Làng TV",17:00 28/10 Bà Rịa Vũng Tàu - Bình Định [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/963909962421f35e54e19a09162eaacb/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnhewxnm7vx/image/small" group-title="Phá Làng TV",17:00 28/10 FC Kharkiv U19 - Veres Rivne U19 [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/08b17eddd18195b8b39c8b4ffbd76ae9/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwxnryk0/image/small" group-title="Phá Làng TV",17:00 28/10 Gamba Osaka vs Buriram United (LÝ LÊN LỬA) (HD2) [geo]
 https://pull1.digitalcdn.net/live/fae8ecaa24474e12b3aa549cb39f5013/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h9k60q86p/image/small" group-title="Phá Làng TV",18:00 28/10 Hung Yen vs Huda Huế (LÝ LONG) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwxnryk0/image/small" group-title="Phá Làng TV",17:00 28/10 Gamba Osaka vs Buriram United (LÝ LÊN LỬA) [geo]
+https://pull.digitalcdn.net/live/fae8ecaa24474e12b3aa549cb39f5013/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhwxnryk0/image/small" group-title="Phá Làng TV",17:00 28/10 Gamba Osaka vs Buriram United (Nhà đài)
+https://lilive1.eu.cc/live/38fd561a94a4a4ad82b97559f0fc06a7/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/k82rekh93v0repz/image/small" group-title="Phá Làng TV",17:00 28/10 Shakhtar Donetsk U19 - FC Livyi Bereh U19 [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/5fe0c5e7e0d16c0554c4ff5b8e1e1b05/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nhz4gzmd7o/image/small" group-title="Phá Làng TV",17:00 28/10 İmişli FK - Qaradag Lokbatan [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/2292250f79badb2eb97986987db732df/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h9k60q86p/image/small" group-title="Phá Làng TV",18:00 28/10 Hung Yen vs Huda Huế (LÝ LONG) (HD2) [geo]
 https://pull1.digitalcdn.net/live/1fb5316754044757b4f4a314c136ca17/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohy553q1zp/image/small" group-title="Phá Làng TV",19:15 28/10 Thể Công Viettel vs Seoul FC (LÝ LA LÀNG) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h9k60q86p/image/small" group-title="Phá Làng TV",18:00 28/10 Hung Yen vs Huda Huế (LÝ LONG) [geo]
+https://pull.digitalcdn.net/live/1fb5316754044757b4f4a314c136ca17/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4h9k60q86p/image/small" group-title="Phá Làng TV",18:00 28/10 Hung Yen vs Huda Huế (Nhà đài)
+https://lilive1.eu.cc/live/c90c39bc06f70ca3e174b512752c69d2/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohy553q1zp/image/small" group-title="Phá Làng TV",19:15 28/10 Thể Công Viettel vs Seoul FC (LÝ LA LÀNG) (HD2) [geo]
 https://pull1.digitalcdn.net/live/c6c94aec7446485297aaefb895f4c90d/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/vi/thumb/1/12/Bi%E1%BB%83u_tr%C6%B0ng_c%E1%BB%A7a_TP_HCM.svg/500px-Bi%E1%BB%83u_tr%C6%B0ng_c%E1%BB%A7a_TP_HCM.svg.png" group-title="Phá Làng TV",20:00 28/10 TP. Hồ Chí Minh vs Công An TP.HCM (LÝ LIỀU LĨNH) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohy553q1zp/image/small" group-title="Phá Làng TV",19:15 28/10 Thể Công Viettel vs Seoul FC (LÝ LA LÀNG) [geo]
+https://pull.digitalcdn.net/live/c6c94aec7446485297aaefb895f4c90d/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohy553q1zp/image/small" group-title="Phá Làng TV",19:15 28/10 Thể Công Viettel vs Seoul FC (Nhà đài)
+https://lilive1.eu.cc/live/f04da5aee5d5e77084bf46a33121ed26/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/vi/7/73/Logo_Sanest_Kh%C3%A1nh_H%C3%B2a_%28b%C3%B3ng_chuy%E1%BB%81n%29.png" group-title="Phá Làng TV",20:00 28/10 Sanest Khánh Hòa vs Công an TP.HCM (LÝ LIỀU LĨNH) (HD2) [geo]
 https://pull1.digitalcdn.net/live/79db1d8e0c144f358decc009d2ee80ed/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phl2gm2wd/image/small" group-title="Phá Làng TV",20:45 28/10 Nasaf Qarshi vs Al Kuwait SC (LÝ LÀNG LÁ) [geo]
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/vi/7/73/Logo_Sanest_Kh%C3%A1nh_H%C3%B2a_%28b%C3%B3ng_chuy%E1%BB%81n%29.png" group-title="Phá Làng TV",20:00 28/10 Sanest Khánh Hòa vs Công an TP.HCM (LÝ LIỀU LĨNH) [geo]
+https://pull.digitalcdn.net/live/79db1d8e0c144f358decc009d2ee80ed/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phl2gm2wd/image/small" group-title="Phá Làng TV",20:45 28/10 Nasaf Qarshi vs Al Kuwait SC (LÝ LÀNG LÁ) (HD2) [geo]
 https://pull1.digitalcdn.net/live/63081187617543df8d10120e4fd6746e/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhlejwqwzv/image/small" group-title="Phá Làng TV",21:30 28/10 Erbil vs Al-Ettifaq (LÝ LINH LỰC) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phl2gm2wd/image/small" group-title="Phá Làng TV",20:45 28/10 Nasaf Qarshi vs Al Kuwait SC (LÝ LÀNG LÁ) [geo]
+https://pull.digitalcdn.net/live/63081187617543df8d10120e4fd6746e/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phl2gm2wd/image/small" group-title="Phá Làng TV",20:45 28/10 Nasaf Qarshi vs Al Kuwait SC (Nhà đài)
+https://lilive1.eu.cc/live/7e7f517ceac83fe09b26598edd8ff74c/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhlejwqwzv/image/small" group-title="Phá Làng TV",21:30 28/10 Erbil vs Al-Ettifaq (LÝ LINH LỰC) (HD2) [geo]
 https://pull1.digitalcdn.net/live/60e9bc6906744017b8d11131989ca220/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkh3403qg8n/image/small" group-title="Phá Làng TV",23:00 28/10 Al Nahda vs Al-Rayyan SC (LÃM LÀNG) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/y0or5jhlejwqwzv/image/small" group-title="Phá Làng TV",21:30 28/10 Erbil vs Al-Ettifaq (LÝ LINH LỰC) [geo]
+https://pull.digitalcdn.net/live/60e9bc6906744017b8d11131989ca220/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkh3403qg8n/image/small" group-title="Phá Làng TV",23:00 28/10 Al Nahda vs Al-Rayyan SC (LÃM LÀNG) (HD2) [geo]
 https://pull1.digitalcdn.net/live/809e4de38e3f4d3d9f0d1374dbfec19e/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergph63er8k0/image/small" group-title="Phá Làng TV",00:30 29/10 Milan vs Bologna (LÝ LINH LỰC) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkh3403qg8n/image/small" group-title="Phá Làng TV",23:00 28/10 Al Nahda vs Al-Rayyan SC (LÃM LÀNG) [geo]
+https://pull.digitalcdn.net/live/809e4de38e3f4d3d9f0d1374dbfec19e/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergph63er8k0/image/small" group-title="Phá Làng TV",00:30 29/10 Milan vs Bologna (LÝ LINH LỰC) (HD2) [geo]
 https://pull1.digitalcdn.net/live/f8670fdf9ce949fab6699e127e50ff0b/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhjjymd7o/image/small" group-title="Phá Làng TV",00:30 29/10 Venezia vs Inter (LÝ LIỀU LĨNH) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergph63er8k0/image/small" group-title="Phá Làng TV",00:30 29/10 Milan vs Bologna (LÝ LINH LỰC) [geo]
+https://pull.digitalcdn.net/live/f8670fdf9ce949fab6699e127e50ff0b/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhjjymd7o/image/small" group-title="Phá Làng TV",00:30 29/10 Venezia vs Inter (LÝ LIỀU LĨNH) (HD2) [geo]
 https://pull1.digitalcdn.net/live/7a6ca4b81b72409aa544429b24816a79/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small" group-title="Phá Làng TV",02:30 29/10 Man City vs Brighton (LÝ LONG) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhjjymd7o/image/small" group-title="Phá Làng TV",00:30 29/10 Venezia vs Inter (LÝ LIỀU LĨNH) [geo]
+https://pull.digitalcdn.net/live/7a6ca4b81b72409aa544429b24816a79/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small" group-title="Phá Làng TV",02:30 29/10 Man City vs Brighton (LÝ LONG) (HD2) [geo]
 https://pull1.digitalcdn.net/live/0218308db3274075ad0502da530b92c1/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/9dn1m1ghdlpmoep/image/small" group-title="Phá Làng TV",02:45 29/10 AFC Bournemouth vs Aston Villa (LÝ LÀNG LÁ) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/p4jwq2ghd57m0ve/image/small" group-title="Phá Làng TV",02:30 29/10 Man City vs Brighton (LÝ LONG) [geo]
+https://pull.digitalcdn.net/live/0218308db3274075ad0502da530b92c1/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/9dn1m1ghdlpmoep/image/small" group-title="Phá Làng TV",02:45 29/10 AFC Bournemouth vs Aston Villa (LÝ LÀNG LÁ) (HD2) [geo]
 https://pull1.digitalcdn.net/live/f8efda81b2dc408691b987a56fed5d0a/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergphjy2r8k0/image/small" group-title="Phá Làng TV",02:45 29/10 Bayern Munich vs FC Magdeburg (LÃM LÀNG) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/9dn1m1ghdlpmoep/image/small" group-title="Phá Làng TV",02:45 29/10 AFC Bournemouth vs Aston Villa (LÝ LÀNG LÁ) [geo]
+https://pull.digitalcdn.net/live/f8efda81b2dc408691b987a56fed5d0a/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergphjy2r8k0/image/small" group-title="Phá Làng TV",02:45 29/10 Bayern Munich vs FC Magdeburg (LÃM LÀNG) (HD2) [geo]
 https://pull1.digitalcdn.net/live/702975fcff9e4e6fba966a737800da06/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhkkzqwzv/image/small" group-title="Phá Làng TV",02:45 29/10 Genoa vs Juventus (LÝ LÊN LỬA) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergphjy2r8k0/image/small" group-title="Phá Làng TV",02:45 29/10 Bayern Munich vs FC Magdeburg (LÃM LÀNG) [geo]
+https://pull.digitalcdn.net/live/702975fcff9e4e6fba966a737800da06/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhkkzqwzv/image/small" group-title="Phá Làng TV",02:45 29/10 Genoa vs Juventus (LÝ LÊN LỬA) (HD2) [geo]
 https://pull1.digitalcdn.net/live/e08e2d7a32a340c4a026efdda37b5cd9/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gy0or5jhkkzqwzv/image/small" group-title="Phá Làng TV",02:45 29/10 Genoa vs Juventus (LÝ LÊN LỬA) [geo]
+https://pull.digitalcdn.net/live/e08e2d7a32a340c4a026efdda37b5cd9/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhw8gryk0/image/small" group-title="Phá Làng TV",03:00 29/10 Liverpool vs Chelsea (LÝ LA LÀNG) (HD2) [geo]
+https://pull1.digitalcdn.net/live/ad2cb55862ed4bb49abf02f584ac5964/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gpxwrxlhw8gryk0/image/small" group-title="Phá Làng TV",03:00 29/10 Liverpool vs Chelsea (LÝ LA LÀNG) [geo]
+https://pull.digitalcdn.net/live/ad2cb55862ed4bb49abf02f584ac5964/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghjyd1r6od/image/small" group-title="Phá Làng TV",06:30 29/10 Inter Miami vs FC Cincinnati (LÝ LA LÀNG) (HD2) [geo]
+https://pull1.digitalcdn.net/live/3b8b79c4421e47ef8d9f76a04c56c7a9/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghjyd1r6od/image/small" group-title="Phá Làng TV",06:30 29/10 Inter Miami vs FC Cincinnati (LÝ LA LÀNG) [geo]
+https://pull.digitalcdn.net/live/3b8b79c4421e47ef8d9f76a04c56c7a9/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/13/13/1776063223569/462daff06d9d_480_270.png" group-title="Sự Kiện TV360",360 Anime
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10013
@@ -3099,14 +3278,8 @@ https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10015
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/15/23/1776269965595/9f150757c9e3_480_270.png" group-title="Sự Kiện TV360",360 C3 Châu Âu
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10016
 
-#EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/10/13/09/1791859374603/b55409354603_480_270.png" group-title="Sự Kiện TV360",360 Châu Tinh Trì
-https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10067
-
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/15/23/1776269172914/ceaa765c5dbe_480_270.png" group-title="Sự Kiện TV360",360 Công Thức 1
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10018
-
-#EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/10/13/09/1791859203131/6878ad4f88c0_480_270.png" group-title="Sự Kiện TV360",360 Doraemon
-https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10065
 
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/16/14/1776326073777/e6e315b781fb_480_270.png" group-title="Sự Kiện TV360",360 Golf
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10020
@@ -3123,23 +3296,11 @@ https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10009
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/09/21/1775744591740/79928f9b003f_480_270.png" group-title="Sự Kiện TV360",360 K-Drama
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10010
 
-#EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/10/13/09/1791858821345/520250e785d1_480_270.png" group-title="Sự Kiện TV360",360 Mr. Bean
-https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10064
-
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/13/13/1776063200976/6ced2ef539a4_480_270.png" group-title="Sự Kiện TV360",360 Phim Kinh điển
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10012
 
-#EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/10/13/09/1791859801499/e3bcb47a3b1b_480_270.png" group-title="Sự Kiện TV360",360 Sống khỏe
-https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10068
-
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/16/15/177632805669/a8c9881d6b08_480_270.png" group-title="Sự Kiện TV360",360 Tennis
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10021
-
-#EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/06/18/13/1781765362332/737c1501b0c5_480_270.png" group-title="Sự Kiện TV360",360 Thiếu Nhi
-https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10045
-
-#EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/10/13/09/1791859301551/c840fcf1e3e0_480_270.png" group-title="Sự Kiện TV360",360 Thám tử Conan
-https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10066
 
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/16/00/1776274695415/4b2703dbb4c4_480_270.png" group-title="Sự Kiện TV360",360 Thể Thao Châu Á
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10017
@@ -3168,40 +3329,35 @@ https://dekki.bacbenny95.workers.dev/film4k/stream/channel/9887
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",15:30 28/10 Dong Tam Long An vs Thai Nguyen vào | BLV 168740
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/dong-tam-long-an-vs-thai-nguyen-28-10-2026/?blv=168740
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912145_lhd.m3u8?auth_key=1793160247-0-0-ae4ff9709402eb48cf2b98555c291ec2
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",15:30 28/10 Dong Tam Long An vs Thai Nguyen vào | BLV 582342
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/dong-tam-long-an-vs-thai-nguyen-28-10-2026/?blv=582342
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1793152389-0-0-03102d5de044f6c5b01b1a8458d18fbd
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",15:30 28/10 Dong Tam Long An vs Thai Nguyen vào | BLV 597929
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/dong-tam-long-an-vs-thai-nguyen-28-10-2026/?blv=597929
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1793149244-0-0-bbf6c74516f40c7925b18499ccfb4ede
+https://pull.niues.live/live/stream-597929_lhd.m3u8?auth_key=1793179566-0-0-0aa8b95bff59242874353e0fa5a102d7
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Gamba Osaka vs Buriram United vào | BLV 123226
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/gamba-osaka-vs-buriram-united-28-10-2026/?blv=123226
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=cbb52f2bad5ca8b0c254310c6608f793&txTime=6ae1bb2e
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Gamba Osaka vs Buriram United vào | BLV 387694
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/gamba-osaka-vs-buriram-united-28-10-2026/?blv=387694
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Gamba Osaka vs Buriram United vào | BLV 256080
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/gamba-osaka-vs-buriram-united-28-10-2026/?blv=256080
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-387694_lhd.m3u8?txSecret=833a54a968c5ad00dae2d0247c3f0013&txTime=6ae13ab4
+https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=f44272c9939da555d001f84d558fadc5&txTime=6ae1523a
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Gamba Osaka vs Buriram United vào | BLV 494201
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/gamba-osaka-vs-buriram-united-28-10-2026/?blv=494201
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912141_lhd.m3u8?auth_key=1793164115-0-0-12fb355aaf06d8599837b631885a1795
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Gamba Osaka vs Buriram United vào | BLV 602153
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/gamba-osaka-vs-buriram-united-28-10-2026/?blv=602153
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Gamba Osaka vs Buriram United vào | BLV 622241
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/gamba-osaka-vs-buriram-united-28-10-2026/?blv=622241
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912129_lhd.m3u8?txSecret=f44272c9939da555d001f84d558fadc5&txTime=6ae1523a
+https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1793133103-0-0-5a784cd33296109ab61d57b766c5f877
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Ho Chi Minh City vs Quy Nhon United vào | BLV 623653
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/ho-chi-minh-city-vs-quy-nhon-united-28-10-2026/?blv=623653
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-623653_lhd.m3u8?auth_key=1793152485-0-0-a5a66616aff0a53054ff3b95f7709e7e
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Ho Chi Minh City vs Quy Nhon United vào | BLV 627318
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/ho-chi-minh-city-vs-quy-nhon-united-28-10-2026/?blv=627318
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-627318_lhd.m3u8?auth_key=1793140692-0-0-26b006d1b398c13f80b80abdd4b7b88e
 
@@ -3215,20 +3371,30 @@ https://pull.niues.live/live/stream-9912009_lhd.m3u8?auth_key=1793163607-0-0-db2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912127_lhd.m3u8?txSecret=cc0071c1acaae82e7c80b8b0053af685&txTime=6ae175b7
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Kashima Antlers vs Pohang Steelers vào | BLV 414317
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/kashima-antlers-vs-pohang-steelers-28-10-2026/?blv=414317
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Kashima Antlers vs Pohang Steelers vào | BLV 380460
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/kashima-antlers-vs-pohang-steelers-28-10-2026/?blv=380460
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=e19147a489d817ac50a6a35c097ad3e0&txTime=6ae1bc19
+https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1793160212-0-0-c9bd04154cc95a5ad102c3cc1e3991e3
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Kashima Antlers vs Pohang Steelers vào | BLV 462413
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/kashima-antlers-vs-pohang-steelers-28-10-2026/?blv=462413
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=9322c24cd1d2a2226cbbfa9286063016&txTime=6ae0e6e5
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Kashima Antlers vs Pohang Steelers vào | BLV 622240
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/kashima-antlers-vs-pohang-steelers-28-10-2026/?blv=622240
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-622240_lhd.m3u8?auth_key=1793160503-0-0-026d2215b177e53ff09de60400118d30
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Mito Hollyhock vs Cerezo Osaka vào | BLV 372746
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/mito-hollyhock-vs-cerezo-osaka-28-10-2026/?blv=372746
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-372746_lhd.m3u8?auth_key=1793149207-0-0-09b7ee938fc6114f3c105fdce902264d
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Mito Hollyhock vs Cerezo Osaka vào | BLV 491873
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/mito-hollyhock-vs-cerezo-osaka-28-10-2026/?blv=491873
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=61146909eb88883b3c88e2806b85a4ab&txTime=6ae193ad
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Mito Hollyhock vs Cerezo Osaka vào | BLV 626841
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/mito-hollyhock-vs-cerezo-osaka-28-10-2026/?blv=626841
@@ -3245,11 +3411,6 @@ https://pull.niues.live/live/stream-627718_lhd.m3u8?auth_key=1793106053-0-0-05ad
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=8c1aecda38953700cdbf7d972159eb62&txTime=6ae17001
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Nagoya Grampus vs Urawa Red Diamonds vào | BLV 552716
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/nagoya-grampus-vs-urawa-red-diamonds-28-10-2026/?blv=552716
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912114_lhd.m3u8?auth_key=1793121966-0-0-91f42f634e6a165cf9d8f95a323ecd39
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Nagoya Grampus vs Urawa Red Diamonds vào | BLV 598119
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/nagoya-grampus-vs-urawa-red-diamonds-28-10-2026/?blv=598119
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -3258,17 +3419,12 @@ https://pull.niur.live/live/stream-9912139_lhd.m3u8?txSecret=d8b1d43501026c879cb
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Sagan Tosu vs Kawasaki Frontale vào | BLV 557845
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/sagan-tosu-vs-kawasaki-frontale-28-10-2026/?blv=557845
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1793109407-0-0-2ba039c687a241f3743e7850302797fd
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Sagan Tosu vs Kawasaki Frontale vào | BLV 603255
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/sagan-tosu-vs-kawasaki-frontale-28-10-2026/?blv=603255
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-603255_lhd.m3u8?auth_key=1793152820-0-0-36464b2eb7b25a875251168d9fd276bb
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Yokohama F. Marinos vs Sanfrecce Hiroshima vào | BLV 132343
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/yokohama-f-marinos-vs-sanfrecce-hiroshima-28-10-2026/?blv=132343
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=fd254b9e252cc24ed19cf8cf4ab3850f&txTime=6ae0d13e
+https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=903c1457cf17ba6fc008771ce391f470&txTime=6ae15ac5
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 28/10 Yokohama F. Marinos vs Sanfrecce Hiroshima vào | BLV 187579
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/yokohama-f-marinos-vs-sanfrecce-hiroshima-28-10-2026/?blv=187579
@@ -3285,28 +3441,33 @@ https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=a77a5707469336a1184
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-501412_lhd.m3u8?txSecret=cdcddb1fed6b611d6d3d0c72e59444a6&txTime=6ae1704a
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",18:00 28/10 FC Belshina Babruisk vs Dinamo Minsk vào | BLV 623743
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/fc-belshina-babruisk-vs-dinamo-minsk-28-10-2026/?blv=623743
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-623743_lhd.m3u8?auth_key=1793125485-0-0-31fec31b671f9e6e061fe1c9fc42531d
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",18:00 28/10 Hung Yen vs Hue FC vào | BLV 406865
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/hung-yen-vs-hue-fc-28-10-2026/?blv=406865
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-406865_lhd.m3u8?auth_key=1793131427-0-0-3b02f8d61692897021472f6eccae8667
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",18:00 28/10 Hung Yen vs Hue FC vào | BLV 619672
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/hung-yen-vs-hue-fc-28-10-2026/?blv=619672
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:15 28/10 Persib Bandung vs Melbourne Victory vào | BLV 387694
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/persib-bandung-vs-melbourne-victory-28-10-2026/?blv=387694
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-619672_lhd.m3u8?auth_key=1793152926-0-0-73ac454a8c86b5fabe35d9a108f3a2c4
+https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1793179626-0-0-64ac9ab310cc00c612967c8dc7430cea
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 28/10 FK Isloch Minsk vs Maxline Vitebsk vào | BLV 139384
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/fk-isloch-minsk-vs-maxline-vitebsk-28-10-2026/?blv=139384
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:15 28/10 Persib Bandung vs Melbourne Victory vào | BLV 414317
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/persib-bandung-vs-melbourne-victory-28-10-2026/?blv=414317
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=d8475843e311bbac9325889f7b1b6f42&txTime=6ae134d6
+https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=e19147a489d817ac50a6a35c097ad3e0&txTime=6ae1bc19
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",19:15 28/10 The Cong-Viettel vs FC Seoul vào | BLV 147801
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/the-cong-viettel-vs-fc-seoul-28-10-2026/?blv=147801
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912041_lhd.m3u8?txSecret=fff683d77f15fd641b5107f58488c998&txTime=6ae1c768
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:15 28/10 The Cong-Viettel vs FC Seoul vào | BLV 360663
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/the-cong-viettel-vs-fc-seoul-28-10-2026/?blv=360663
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:15 28/10 The Cong-Viettel vs FC Seoul vào | BLV 256080
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/the-cong-viettel-vs-fc-seoul-28-10-2026/?blv=256080
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1793163755-0-0-7750bf39123a3874b6b07f1645673232
 
@@ -3340,11 +3501,6 @@ https://pull.niues.live/live/stream-9912135_lhd.m3u8?auth_key=1793130864-0-0-e25
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-235232_lhd.m3u8?auth_key=1793131315-0-0-ebce1ed3c566fb8877b6b35d9315ea52
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",20:00 28/10 FC Orenburg vs Rodina Moscow vào | BLV 304148
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/fc-orenburg-vs-rodina-moscow-28-10-2026/?blv=304148
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1793115604-0-0-8ff93c58b51895bd6f8adf1fdbbd54d2
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",20:00 28/10 FC Orenburg vs Rodina Moscow vào | BLV 534055
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/fc-orenburg-vs-rodina-moscow-28-10-2026/?blv=534055
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -3355,10 +3511,20 @@ https://pull.niur.live/live/stream-534055_lhd.m3u8?txSecret=e934e3d1d030b4b85ae9
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-321443_lhd.m3u8?txSecret=d5b397e3bd8e6f638c9fc94ba6ffe06f&txTime=6ae16f88
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",20:00 28/10 Marko vs Olympiacos Piraeus vào | BLV 602019
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/marko-vs-olympiacos-piraeus-28-10-2026/?blv=602019
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",20:00 28/10 FC Vysočina Jihlava vs FC Viktoria Plzeň vào | BLV 485739
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/fc-vysocina-jihlava-vs-fc-viktoria-plzen-28-10-2026/?blv=485739
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-602019_lhd.m3u8?auth_key=1793119615-0-0-ed2e783bb2b70b827a6028b14700e776
+https://pull.niur.live/live/stream-485739_lhd.m3u8?txSecret=33c6ec7fee6ffa1734cf336bcbbcf035&txTime=6ae17081
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",20:00 28/10 Marko vs Olympiacos Piraeus vào | BLV 557845
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/marko-vs-olympiacos-piraeus-28-10-2026/?blv=557845
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912130_lhd.m3u8?auth_key=1793109407-0-0-2ba039c687a241f3743e7850302797fd
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",20:45 28/10 Gol Gohar FC vs Arkadag FK vào | BLV 250874
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/gol-gohar-fc-vs-arkadag-fk-28-10-2026/?blv=250874
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1793141081-0-0-2f5051a9e852f6f69fcad9f76331f9a9
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",20:45 28/10 Gol Gohar FC vs Arkadag FK vào | BLV 459401
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/gol-gohar-fc-vs-arkadag-fk-28-10-2026/?blv=459401
@@ -3370,25 +3536,45 @@ https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=de1f89437c19f3493a7c
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1793115341-0-0-b0fd3593be6f3ace8d3d507e5e1ebd5c
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",20:45 28/10 Nasaf Qarshi vs Al Kuwait SC vào | BLV 622241
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/nasaf-qarshi-vs-al-kuwait-sc-28-10-2026/?blv=622241
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",20:45 28/10 Nasaf Qarshi vs Al Kuwait SC vào | BLV 595335
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/nasaf-qarshi-vs-al-kuwait-sc-28-10-2026/?blv=595335
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-622241_lhd.m3u8?auth_key=1793133103-0-0-5a784cd33296109ab61d57b766c5f877
-
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",21:00 28/10 Bank El Ahly vs Al Masry vào | BLV 132343
-#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/bank-el-ahly-vs-al-masry-28-10-2026/?blv=132343
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=903c1457cf17ba6fc008771ce391f470&txTime=6ae15ac5
+https://pull.niues.live/live/stream-9912143_lhd.m3u8?auth_key=1793132935-0-0-c1795482ae2e94776f3e30d755f4a52e
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",21:00 28/10 Bank El Ahly vs Al Masry vào | BLV 532081
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/bank-el-ahly-vs-al-masry-28-10-2026/?blv=532081
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-532081_lhd.m3u8?auth_key=1793131010-0-0-b44ef1ddea2459bc36c955f5ea5daa2f
 
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",21:00 28/10 Bank El Ahly vs Al Masry vào | BLV 552716
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/bank-el-ahly-vs-al-masry-28-10-2026/?blv=552716
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-603914_lhd.m3u8?auth_key=1793140758-0-0-62151ef7f5906407ed9b3a908832af41
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",21:00 28/10 FC Goa vs SC Delhi vào | BLV 283501
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/fc-goa-vs-sc-delhi-28-10-2026/?blv=283501
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=fd254b9e252cc24ed19cf8cf4ab3850f&txTime=6ae0d13e
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",21:00 28/10 FC Goa vs SC Delhi vào | BLV 610518
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/fc-goa-vs-sc-delhi-28-10-2026/?blv=610518
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=b1089c434d43fc7114b2be21828af24d&txTime=6ae16d9d
+
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",21:00 28/10 FC Goa vs SC Delhi vào | BLV 620797
 #EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/fc-goa-vs-sc-delhi-28-10-2026/?blv=620797
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-620797_lhd.m3u8?auth_key=1793142820-0-0-a9a5f5561e6de5ff94813c55ea9c3811
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",22:05 28/10 Al-Jabalain vs Al-Raed SFC vào | BLV 139384
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/al-jabalain-vs-al-raed-sfc-28-10-2026/?blv=139384
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-9912102_lhd.m3u8?txSecret=d8475843e311bbac9325889f7b1b6f42&txTime=6ae134d6
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",22:05 28/10 Al-Jabalain vs Al-Raed SFC vào | BLV 621840
+#EXTVLCOPT:http-referrer=https://www.basketmouth.tv/truc-tiep/al-jabalain-vs-al-raed-sfc-28-10-2026/?blv=621840
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niur.live/live/stream-621840_lhd.m3u8?txSecret=6d5a3090a7763257fcbebffbe5acca71&txTime=6ae16eb0
 
 #EXTINF:-1 tvg-logo="" group-title="Vua Sân Cỏ TV",15:30 28/10 Dong Tam Long An vs Thai Nguyen (Doanh Chính) | FPT
 https://cdn1-global.ebaclofen.org/live/pro1/index.m3u8
