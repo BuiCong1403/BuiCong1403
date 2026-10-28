@@ -1540,6 +1540,7 @@ def compact_text_key(value):
 
 
 GROUP_CANONICAL_RULES = [
+    ("Sự Kiện TV360", ("su kien tv360",)),
     ("Sự kiện", ("su kien", "suu kien")),
     ("Highlight", ("highlight", "hightlight")),
     ("Gi\u1edd V\u00e0ng TV", ("giovang", "gio vang", "gio vang tv")),
@@ -5001,9 +5002,9 @@ VTV_CHANNEL_NAME_KEYS = {
 def is_wanted_vtv_channel(channel):
     name_key = compact_text_key(channel.get("name"))
     stream_url = clean_text(channel.get("stream_url")).lower()
-    if stream_url.endswith(".mpd") or "#.mpd" in stream_url:
+    if ".mpd" in stream_url:
         return False
-    return name_key in VTV_CHANNEL_NAME_KEYS
+    return name_key in VTV_CHANNEL_NAME_KEYS or name_key == "vietnamtodayhd"
 
 
 def load_vmttv_vtv_cache():
@@ -5046,7 +5047,7 @@ def save_vmttv_vtv_cache(channels):
     except Exception:
         pass
     payload = {
-        "source": f"{DEKIKI_VTV_M3U_URL} + {CUONGHEHE_VTV_M3U_URL}",
+        "source": f"{VMTTV_M3U_URL} + {BACBENNY_FILM4K_URL}",
         "updated": now_ict(),
         "channels": rows,
     }
@@ -5082,13 +5083,47 @@ def collect_vtvgo_fast():
     return channels
 
 
+BACBENNY_FILM4K_URL = "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/film4k.m3u"
+
+
+def tv_playlist_is_hls(channel):
+    url = channel.get("stream_url", "")
+    if ".mpd" in url.lower():
+        return False
+    try:
+        with requests.get(url, timeout=15, stream=True) as response:
+            response.raise_for_status()
+            prefix = next(response.iter_content(4096), b"")
+            return b"#EXTM3U" in prefix and ".mpd" not in response.url.lower()
+    except Exception as exc:
+        log(f"[TV360] Skip unverified {channel.get('name')}: {exc}")
+        return False
+
+
+def collect_tv360_events():
+    channels = collect_m3u_playlist(
+        "BacbennyTV360", BACBENNY_FILM4K_URL, "Sự Kiện TV360",
+        preserve_group=True, allow_non_m3u8=True,
+        allowed_groups=("su kien tv360",), default_referer_to_playlist=False,
+        user_agent="", preserve_extinf=False,
+    )
+    result = []
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for channel, is_hls in zip(channels, pool.map(tv_playlist_is_hls, channels)):
+            if is_hls:
+                channel.update(group="Sự Kiện TV360", skip_event_filter=True,
+                               preserve_group_exact=True)
+                result.append(channel)
+    return result
+
+
 def collect_vtv_channels():
     source = "VTV"
     channels = []
     seen_names = set()
     seen_urls = set()
 
-    def append_from(source_name, playlist_url):
+    def append_from(source_name, playlist_url, suffix=""):
         parsed = collect_m3u_playlist(
             source_name,
             playlist_url,
@@ -5106,6 +5141,9 @@ def collect_vtv_channels():
         for channel in parsed:
             if not is_wanted_vtv_channel(channel):
                 continue
+            if compact_text_key(channel.get("name")) == "vietnamtodayhd":
+                channel["name"] = "Vietnam Today"
+            channel["name"] = clean_text(channel["name"]) + suffix
             name_key = compact_text_key(channel.get("name"))
             stream_key = clean_text(channel.get("stream_url")).lower()
             if name_key in seen_names or stream_key in seen_urls:
@@ -5123,9 +5161,8 @@ def collect_vtv_channels():
             added += 1
         log(f"[{source}] {source_name} VTV selected: {added}")
 
-    append_from("DekikiVTV", DEKIKI_VTV_M3U_URL)
-    if len(channels) < max(1, VMTTV_VTV_MIN_GOOD_COUNT):
-        append_from("CuongheheVTV", CUONGHEHE_VTV_M3U_URL)
+    append_from("VmttvVTV", VMTTV_M3U_URL)
+    append_from("BacbennyVTV", BACBENNY_FILM4K_URL, "-1")
 
     if len(channels) >= max(1, VMTTV_VTV_MIN_GOOD_COUNT):
         cache_changed = save_vmttv_vtv_cache(channels)
@@ -5133,7 +5170,10 @@ def collect_vtv_channels():
         log(f"[{source}] VTV cache {action}: {len(channels)} channels")
         return channels
 
-    cached_vtv = load_vmttv_vtv_cache()
+    cached_vtv = [c for c in load_vmttv_vtv_cache()
+                  if ".mpd" not in c.get("stream_url", "").lower()
+                  and any(host in c.get("stream_url", "") for host in
+                          ("vmttv.", "freem3u.xyz", "dekki.bacbenny95.workers.dev/film4k/"))]
     if cached_vtv:
         log(f"[{source}] Incomplete VTV response ({len(channels)}); keep cache ({len(cached_vtv)})")
         return cached_vtv
@@ -10886,6 +10926,7 @@ def main():
         ("VTV", collect_vtv_channels),
         ("VTVgo", collect_vtvgo_fast),
         ("VMTTV", collect_vmttv),
+        ("BacbennyTV360", collect_tv360_events),
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
         ("S8TV", collect_s8tv),
