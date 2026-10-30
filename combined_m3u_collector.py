@@ -5047,7 +5047,7 @@ def save_vmttv_vtv_cache(channels):
     except Exception:
         pass
     payload = {
-        "source": f"{VMTTV_M3U_URL} + {BACBENNY_FILM4K_URL}",
+        "source": f"{VIETNG_VTV_M3U_URL} + {BACBENNY_FILM4K_URL}",
         "updated": now_ict(),
         "channels": rows,
     }
@@ -5084,6 +5084,7 @@ def collect_vtvgo_fast():
 
 
 BACBENNY_FILM4K_URL = "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/film4k.m3u"
+VIETNG_VTV_M3U_URL = "https://raw.githubusercontent.com/vietng228/m3u/refs/heads/main/new.m3u"
 
 
 def tv_playlist_is_hls(channel):
@@ -5132,7 +5133,7 @@ def collect_vtv_channels():
             allow_non_m3u8=True,
             timeout=60,
             retries=3,
-            allowed_groups=("VTV",),
+            allowed_groups=None,
             default_referer_to_playlist=False,
             user_agent="",
             preserve_extinf=False,
@@ -5161,7 +5162,7 @@ def collect_vtv_channels():
             added += 1
         log(f"[{source}] {source_name} VTV selected: {added}")
 
-    append_from("VmttvVTV", VMTTV_M3U_URL)
+    append_from("VietngVTV", VIETNG_VTV_M3U_URL)
     append_from("BacbennyVTV", BACBENNY_FILM4K_URL, "-1")
 
     if len(channels) >= max(1, VMTTV_VTV_MIN_GOOD_COUNT):
@@ -5173,7 +5174,8 @@ def collect_vtv_channels():
     cached_vtv = [c for c in load_vmttv_vtv_cache()
                   if ".mpd" not in c.get("stream_url", "").lower()
                   and any(host in c.get("stream_url", "") for host in
-                          ("vmttv.", "freem3u.xyz", "dekki.bacbenny95.workers.dev/film4k/"))]
+                          (".vtvdigital.vn/", "vips-livecdn.fptplay.net/", "live.fptplay53.net/",
+                           "dekki.bacbenny95.workers.dev/film4k/"))]
     if cached_vtv:
         log(f"[{source}] Incomplete VTV response ({len(channels)}); keep cache ({len(cached_vtv)})")
         return cached_vtv

@@ -22,7 +22,7 @@ class VtvSourcesTest(unittest.TestCase):
              patch.object(c, "save_vmttv_vtv_cache"):
             rows = c.collect_vtv_channels()
         self.assertEqual([r["name"] for r in rows], ["VTV1", "VTV1-1"])
-        self.assertTrue(rows[0]["stream_url"].startswith(c.VMTTV_M3U_URL))
+        self.assertTrue(rows[0]["stream_url"].startswith(c.VIETNG_VTV_M3U_URL))
 
     def test_tv360_excludes_dash_query(self):
         with patch.object(c, "collect_m3u_playlist", return_value=[
