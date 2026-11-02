@@ -5595,6 +5595,20 @@ def collect_thtt_group(source, group_names, output_group):
 def collect_saoketv():
     source = "SaoKeTV"
     schedule_channels = collect_thtt_group(source, ("Sao Kê TV", "Sao Ke TV"), "Sao Kê TV")
+    reference = collect_m3u_playlist(
+        source, "https://raw.githubusercontent.com/emptynguyenvnm-gif/iptv-playlist/main/playlist.m3u",
+        "Sao Kê TV", preserve_group=True, allowed_groups=("sao ke tv",),
+        default_referer_to_playlist=False, timeout=10, retries=1,
+    )
+    def scheduled_key(channel):
+        return tokenless_stream_key(channel.get("stream_url")), channel_event_datetime(channel)
+
+    seen_schedule = {scheduled_key(channel) for channel in schedule_channels}
+    for channel in filter_current_and_future_events(reference):
+        key = scheduled_key(channel)
+        if key not in seen_schedule:
+            schedule_channels.append(channel)
+            seen_schedule.add(key)
     home_url = ""
     html_text = ""
     for candidate in (SAOKETV_DISCOVERY_URL, SAOKETV_BASE_URL):
@@ -6110,6 +6124,8 @@ def collect_mebongtv():
 
 def xoilacz_base_candidates():
     candidates = [
+        "https://thegardenofthegroves.com/",
+        "https://xoilacxcp.tv/",
         "https://xoilaczzzp.cc/",
         XOILACZ_SITE_URL,
         "https://xoilaczzw.cc/",
