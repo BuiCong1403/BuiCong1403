@@ -5,6 +5,15 @@ import combined_m3u_collector as collector
 
 
 class HttpRecoveryTests(unittest.TestCase):
+    def test_vsc_snapshot_does_not_claim_cache_is_fresh(self):
+        with patch.object(collector, "RUN_MODE", "vsc9"), \
+             patch.object(collector, "collect_vsc9_api", return_value=[]), \
+             patch.object(collector, "request_get", return_value=Mock(status_code=503)), \
+             patch.object(collector, "save_source_cache") as save:
+            with self.assertRaisesRegex(RuntimeError, "preserving snapshots"):
+                collector.collect_vsc9()
+        save.assert_not_called()
+
     def test_vsc_reads_signed_hls_and_flv_variants(self):
         good = Mock(status_code=200)
         good.json.return_value = {"result": {"totalPages": 1, "data": [{

@@ -9509,6 +9509,8 @@ def collect_vsc9_api():
         "Content-Type": "application/json",
         "Origin": site_url.rstrip("/"),
         "Referer": site_url,
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
     }
     channels = collect_vsc9_miwam()
     legacy_attempts = 1 if channels else 2
@@ -9614,7 +9616,8 @@ def collect_vsc9_api():
                     }
                 )
                 date_count += 1
-        log(f"[{source}] Schedule API {event_date}: {date_count} links")
+        log(f"[{source}] Schedule API {event_date}: {len(matches)} matches across "
+            f"{result.get('totalPages', 1)} pages; {date_count} HLS/FLV links")
     return channels
 
 
@@ -9653,10 +9656,11 @@ def collect_vsc9():
                     return channels
             except Exception as exc:
                 log(f"[{source}] Website attempt {attempt + 1}: {exc}")
+    if RUN_MODE == "vsc9":
+        raise RuntimeError("VSC9 fresh API and website requests failed; preserving snapshots without marking cache as refreshed")
     channels = filter_current_and_future_events(load_source_cache(VSC9_CACHE, source, "Vua Sân Cỏ TV"))
     if channels:
-        save_source_cache(VSC9_CACHE, channels, VSC9_URL)
-        log(f"[{source}] {len(channels)} raw links")
+        log(f"[{source}] Cached fallback only (not refreshed): {len(channels)} links")
         return channels
 
     log(f"[{source}] Fetch home")
