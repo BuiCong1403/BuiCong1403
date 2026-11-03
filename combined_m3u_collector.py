@@ -2151,6 +2151,8 @@ def write_ott_m3u(path, channels):
 
 
 def ott_output_group(channel):
+    if output_group(channel) == "XL-Sports":
+        return "XL-Sports"
     if not is_flv_url(channel.get("stream_url")):
         return output_group(channel)
     identity = compact_text_key(str(channel.get("source", "")) + " " + output_group(channel))
@@ -6126,6 +6128,8 @@ def xoilacz_base_candidates():
     candidates = [
         "https://thegardenofthegroves.com/",
         "https://xoilacxcp.tv/",
+        "https://xoilacz.ca/",
+        "https://xoilacz.live/",
         "https://xoilaczzzp.cc/",
         XOILACZ_SITE_URL,
         "https://xoilaczzw.cc/",
@@ -6489,6 +6493,33 @@ def collect_khoga():
     return channels
 
 
+XL_OTHER_SPORTS = {"basketball", "esports", "tennis", "badminton", "volleyball"}
+
+
+def collect_xoilacz_sport_playlist():
+    rows = collect_m3u_playlist(
+        "XoiLacZ", "https://raw.githubusercontent.com/csev7n/xoilacz-iptv/refs/heads/main/playlist.m3u",
+        "", preserve_group=True, allow_non_m3u8=True, default_referer_to_playlist=False,
+        timeout=12, retries=1,
+    )
+    selected = []
+    for row in rows:
+        sport = clean_text(row['group']).lower()
+        if sport not in XL_OTHER_SPORTS | {'football'} or not (is_hls_url(row['stream_url']) or is_flv_url(row['stream_url'])):
+            continue
+        row.update(sport=sport, group='XL-Sports' if sport in XL_OTHER_SPORTS else 'Xôi Lạc Z TV')
+        for option in row.get('raw_options', []):
+            if option.startswith('#EXTHTTP:'):
+                try:
+                    headers = json.loads(option.partition(':')[2])
+                    row['referer'] = clean_text(headers.get('Referer'))
+                    row['user_agent'] = clean_text(headers.get('User-Agent')) or UA
+                except (ValueError, AttributeError):
+                    pass
+        selected.append(row)
+    return filter_current_and_future_events(selected)
+
+
 def collect_xoilacz():
     source = "XoiLacZ"
     channels = []
@@ -6587,7 +6618,7 @@ def collect_xoilacz():
                         "event_datetime": event_dt,
                         "sport": sport_match.group(1) if sport_match else "",
                         "name": f"{title} | Link {idx} [{quality}]",
-                        "group": "Xôi Lạc Z TV",
+                        "group": "XL-Sports" if sport_match and sport_match.group(1).lower() in XL_OTHER_SPORTS else "Xôi Lạc Z TV",
                         "logo": "",
                         "stream_url": stream_url,
                         "referer": xoilacz_stream_referer(stream_url),
@@ -6688,6 +6719,7 @@ def collect_xoilacz():
             break
 
     append_thtt_fallback(f"Merge reference after {len(channels)} primary links")
+    channels = collect_xoilacz_sport_playlist() + channels
     append_tinhlagi_app_fallback(f"Merge Tinhlagi app after {len(channels)} links")
 
     if len(channels) < XOILACZ_TTCB_MIN_LINKS:
