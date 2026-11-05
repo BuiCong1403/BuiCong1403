@@ -1910,6 +1910,7 @@ def highlight_team_key(team):
         "lasklinz": "lask", "olympiquelyon": "lyon",
         "unionsg": "unionstgilloise", "unionsaintgilloise": "unionstgilloise",
         "torrense": "torreense", "celtavigo": "celta",
+        "slaviaprague": "slaviapraha",
     }
     return aliases.get(key, key)
 
@@ -1978,7 +1979,7 @@ def dedupe_and_sort_channels(channels):
             current_index = seen_urls[dedupe_key]
             current = deduped[current_index]
             if channel.get("source") == "24hHighlight" and current.get("source") == "24hHighlight":
-                if h24_highlight_score(channel.get("stream_url")) > h24_highlight_score(current.get("stream_url")):
+                if h24_channel_score(channel) > h24_channel_score(current):
                     deduped[current_index] = channel
                 continue
             current_header_score = bool(clean_text(current.get("referer"))) + bool(clean_text(current.get("user_agent")))
@@ -10712,11 +10713,13 @@ def refresh_dasfootball_order():
 
 def repair_h24_missing_halves(channels):
     halves = {}
+    media_fixtures = {}
     for channel in channels:
         if "cdn.24h.com.vn" in clean_text(channel.get("stream_url")):
             part = h24_stream_part_number(channel.get("stream_url"))
             if part:
                 halves.setdefault(highlight_fixture_key(channel), set()).add(part)
+                media_fixtures[h24_variant_family_key(channel.get("stream_url"))] = highlight_fixture_key(channel)
     missing = {key for key, parts in halves.items() if parts != {"1", "2"}}
     if not missing:
         return channels
@@ -10732,10 +10735,15 @@ def repair_h24_missing_halves(channels):
             page = fetch_text(url, headers=h24_headers(url), timeout=15)
             title = clean_highlight_title(title_from_html_page(page, ""))
             key = highlight_fixture_key({"name": title})
-            if key not in missing:
+            media = extract_h24_media_urls(page)
+            related = {media_fixtures.get(h24_variant_family_key(u)) for u in media}
+            if key not in missing and not (related & missing):
+                return []
+            # Prefer the match article over opinion articles reusing its video.
+            if not key.startswith("match:"):
                 return []
             result = []
-            for stream, day in best_h24_stream_variants([(u, h24_date_from_media_url(u)) for u in extract_h24_media_urls(page)]):
+            for stream, day in best_h24_stream_variants([(u, h24_date_from_media_url(u)) for u in media]):
                 part = h24_stream_part_label(stream)
                 if not part or not day or day not in h24_allowed_highlight_dates():
                     continue
