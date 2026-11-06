@@ -5089,6 +5089,7 @@ def collect_vtvgo_fast():
 
 BACBENNY_FILM4K_URL = "https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/film4k.m3u"
 VIETNG_VTV_M3U_URL = "https://raw.githubusercontent.com/vietng228/m3u/refs/heads/main/new.m3u"
+TLCAB_VTV_M3U_URL = "https://raw.githubusercontent.com/cuncon150413-cmd/tl-ottiptv/refs/heads/main/vipTLCAB.m3u"
 
 
 def tv_playlist_is_hls(channel):
@@ -5128,7 +5129,7 @@ def collect_vtv_channels():
     seen_names = set()
     seen_urls = set()
 
-    def append_from(source_name, playlist_url, suffix=""):
+    def append_from(source_name, playlist_url, suffix="", whole_vtv_group=False):
         parsed = collect_m3u_playlist(
             source_name,
             playlist_url,
@@ -5144,14 +5145,17 @@ def collect_vtv_channels():
         )
         added = 0
         for channel in parsed:
-            if not is_wanted_vtv_channel(channel):
+            if whole_vtv_group:
+                if group_key(channel.get("group")) != "vtv" or ".mpd" in channel.get("stream_url", "").lower():
+                    continue
+            elif not is_wanted_vtv_channel(channel):
                 continue
             if compact_text_key(channel.get("name")) == "vietnamtodayhd":
                 channel["name"] = "Vietnam Today"
             channel["name"] = clean_text(channel["name"]) + suffix
             name_key = compact_text_key(channel.get("name"))
             stream_key = clean_text(channel.get("stream_url")).lower()
-            if name_key in seen_names or stream_key in seen_urls:
+            if name_key in seen_names or (not whole_vtv_group and stream_key in seen_urls):
                 continue
             seen_names.add(name_key)
             seen_urls.add(stream_key)
@@ -5167,7 +5171,7 @@ def collect_vtv_channels():
         log(f"[{source}] {source_name} VTV selected: {added}")
 
     append_from("VietngVTV", VIETNG_VTV_M3U_URL)
-    append_from("BacbennyVTV", BACBENNY_FILM4K_URL, "-1")
+    append_from("TLCabVTV", TLCAB_VTV_M3U_URL, "-1", whole_vtv_group=True)
 
     if len(channels) >= max(1, VMTTV_VTV_MIN_GOOD_COUNT):
         cache_changed = save_vmttv_vtv_cache(channels)
@@ -5179,7 +5183,7 @@ def collect_vtv_channels():
                   if ".mpd" not in c.get("stream_url", "").lower()
                   and any(host in c.get("stream_url", "") for host in
                           (".vtvdigital.vn/", "vips-livecdn.fptplay.net/", "live.fptplay53.net/",
-                           "dekki.bacbenny95.workers.dev/film4k/"))]
+                           "ctrl.laotv.la/"))]
     if cached_vtv:
         log(f"[{source}] Incomplete VTV response ({len(channels)}); keep cache ({len(cached_vtv)})")
         return cached_vtv
