@@ -1911,6 +1911,7 @@ def highlight_team_key(team):
         "unionsg": "unionstgilloise", "unionsaintgilloise": "unionstgilloise",
         "torrense": "torreense", "celtavigo": "celta",
         "slaviaprague": "slaviapraha",
+        "ferencvarositc": "ferencvaros", "ferencvarosi": "ferencvaros",
     }
     return aliases.get(key, key)
 
@@ -7207,6 +7208,10 @@ def collect_azabu_highlights():
             post_url = match.group(0)
             if "/page/" not in post_url and post_url not in post_urls:
                 post_urls.append(post_url)
+
+    # Archive feeds can spell the same match URL with and without a slash.
+    post_urls = list(dict.fromkeys(url.split("?", 1)[0].rstrip("/") + "/" for url in post_urls))
+    post_urls.sort(key=lambda url: dasfootball_date_from_url(url) or datetime.min.date(), reverse=True)
 
     def collect_post(post_url):
         try:

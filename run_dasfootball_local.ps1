@@ -18,8 +18,20 @@ function Invoke-Git {
 try {
     $dirty = & $Git status --porcelain --untracked-files=no
     if ($LASTEXITCODE -ne 0) { throw "Cannot inspect repository" }
-    if ($dirty) { throw "Tracked files have local changes. Skipping without overwriting them." }
+    if ($dirty) {
+        $changed = @(& $Git diff HEAD --name-only)
+        if ($changed.Count -eq 1 -and $changed[0] -eq "dasfootball.m3u") {
+            $snapshot = Get-Content -LiteralPath "dasfootball.m3u" -Raw
+            if (-not $snapshot.StartsWith("#EXTM3U") -or $snapshot -notmatch '(?m)^#EXTINF:') {
+                throw "Unfinished snapshot is invalid; preserving it for inspection."
+            }
+            Invoke-Git add -- dasfootball.m3u
+            Invoke-Git commit -m "Recover unpublished local DasFootball snapshot"
+        } else { throw "Tracked files have local changes. Skipping without overwriting them." }
+    }
     Invoke-Git pull --rebase origin main
+    # Publish a recovered commit before another potentially slow collection.
+    Invoke-Git push origin main
     $oldMode = $env:RUN_MODE
     $collectionTimer = [System.Diagnostics.Stopwatch]::StartNew()
     try {

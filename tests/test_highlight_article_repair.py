@@ -5,6 +5,10 @@ import combined_m3u_collector as c
 
 
 class ArticleRepairTests(unittest.TestCase):
+    def test_ferencvaros_same_fixture(self):
+        self.assertEqual(c.highlight_fixture_key({'name': 'AC Milan - Ferencvaros: Highlights'}),
+                         c.highlight_fixture_key({'name': 'AC Milan vs Ferencvarosi TC'}))
+
     def test_prague_praha_same_fixture(self):
         self.assertEqual(c.highlight_fixture_key({'name': 'Slavia Prague - Arsenal: Highlights'}),
                          c.highlight_fixture_key({'name': 'Slavia Praha vs Arsenal'}))
