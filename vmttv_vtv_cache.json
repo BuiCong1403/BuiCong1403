@@ -1,6 +1,6 @@
 {
   "source": "https://raw.githubusercontent.com/vietng228/m3u/refs/heads/main/new.m3u + https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/film4k.m3u",
-  "updated": "2026-11-06 14:47 ICT",
+  "updated": "2026-11-06 19:40 ICT",
   "channels": [
     {
       "source": "VTV",
@@ -294,6 +294,17 @@
       "group": "VTV",
       "logo": "https://static.wikia.nocookie.net/logos/images/8/8c/VTVgo_logo.png/revision/latest?cb=20220627071056&path-prefix=vi",
       "stream_url": "https://fast-channel-stg.vtvdigital.vn/playout/channels/auto-hoat-hinh/master.m3u8",
+      "referer": "",
+      "user_agent": "",
+      "preserve_group_exact": false,
+      "skip_event_filter": true
+    },
+    {
+      "source": "VTV",
+      "name": "VTVGo Event 4-1",
+      "group": "VTV",
+      "logo": "https://static.wikia.nocookie.net/logos/images/8/8c/VTVgo_logo.png/revision/latest?cb=20220627071056&path-prefix=vi",
+      "stream_url": "https://events.vtvdigital.vn/livestream/wildlife-manifest.m3u8",
       "referer": "",
       "user_agent": "",
       "preserve_group_exact": false,
