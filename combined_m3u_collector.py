@@ -1614,6 +1614,8 @@ OMIT_USER_AGENT_GROUP_KEYS = {compact_text_key(item) for item in OMIT_USER_AGENT
 
 def canonical_group_title(group):
     group = clean_text(group)
+    if compact_text_key(group) == "sukienfptplay":
+        return "Sự kiện FPT Play"
     if not group:
         return group
     key = compact_text_key(group)
@@ -5104,6 +5106,24 @@ def tv_playlist_is_hls(channel):
     except Exception as exc:
         log(f"[TV360] Skip unverified {channel.get('name')}: {exc}")
         return False
+
+
+def collect_tlcab_extras():
+    rows = collect_m3u_playlist("TLCabExtras", TLCAB_VTV_M3U_URL, "TLCab",
+                                preserve_group=True, allow_non_m3u8=True,
+                                default_referer_to_playlist=False, user_agent="")
+    result = []
+    for row in rows:
+        group = compact_text_key(row.get("group"))
+        if group == "fptplayudp":
+            row["group"] = "Sự kiện FPT Play"
+        elif group == "vtvcab" and compact_text_key(row["name"]) in {"onfootball", "onsportsnews"}:
+            row["group"] = "VTV"
+        else:
+            continue
+        row.update(skip_event_filter=True, preserve_extinf=False, preserve_group_exact=True)
+        result.append(row)
+    return result
 
 
 def collect_tv360_events():
@@ -11003,6 +11023,7 @@ def main():
         ("VTV", collect_vtv_channels),
         ("VTVgo", collect_vtvgo_fast),
         ("BacbennyTV360", collect_tv360_events),
+        ("TLCabExtras", collect_tlcab_extras),
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
         ("S8TV", collect_s8tv),

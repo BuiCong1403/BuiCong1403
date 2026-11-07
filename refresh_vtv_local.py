@@ -9,6 +9,10 @@ def main():
     if not channels:
         raise RuntimeError('No VTV channels; preserving playlists')
     channels += c.collect_vtvgo_fast()
+    extras = c.collect_tlcab_extras()
+    if not extras:
+        raise RuntimeError('No TLCab extras; preserving playlists')
+    channels += extras
     with TemporaryDirectory() as folder:
         for target, writer in ((c.ALL_M3U, c.write_m3u), (c.OTT_M3U, c.write_ott_m3u)):
             generated = Path(folder) / target.name
@@ -19,7 +23,7 @@ def main():
             for block in blocks:
                 info = next((c.parse_extinf(line) for line in block if line.startswith('#EXTINF')), {})
                 group = next((line.split(':', 1)[1].strip() for line in block if line.startswith('#EXTGRP:')), info.get('group', ''))
-                if c.group_key(group) != 'vtv':
+                if c.compact_text_key(group) not in {'vtv', 'sukienfptplay'}:
                     kept.append(block)
             c.write_m3u_text_blocks(target, header, new_blocks + kept)
     print(f'VTV refreshed: {len(channels)} entries including existing FAST channels')
