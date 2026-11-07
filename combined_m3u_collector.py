@@ -6132,6 +6132,7 @@ def collect_mebongtv():
 
 def xoilacz_base_candidates():
     candidates = [
+        "https://multicastmedia.com/",
         "https://thegardenofthegroves.com/",
         "https://xoilacxcp.tv/",
         "https://xoilacz.ca/",
@@ -10996,7 +10997,6 @@ def main():
         ),
         ("VTV", collect_vtv_channels),
         ("VTVgo", collect_vtvgo_fast),
-        ("VMTTV", collect_vmttv),
         ("BacbennyTV360", collect_tv360_events),
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
