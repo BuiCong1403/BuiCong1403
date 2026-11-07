@@ -5572,6 +5572,23 @@ def collect_cloudok_premier_league():
 _THTT_GROUP_CACHE = None
 
 
+_empty_reference = None
+
+
+def collect_empty_reference(group_names, source, output_group):
+    global _empty_reference
+    if _empty_reference is None:
+        _empty_reference = collect_m3u_playlist(
+            "SportsReference", "https://raw.githubusercontent.com/emptynguyenvnm-gif/iptv-playlist/main/playlist.m3u",
+            "Reference", preserve_group=True, allow_non_m3u8=True, timeout=12, retries=1,
+            default_referer_to_playlist=False, user_agent="")
+    allowed = {text_key(group) for group in group_names}
+    return filter_current_and_future_events([
+        dict(row, source=source, group=output_group) for row in _empty_reference or []
+        if text_key(row.get("group")) in allowed
+        and (is_hls_url(row["stream_url"]) or is_flv_url(row["stream_url"]))])
+
+
 def collect_thtt_group(source, group_names, output_group):
     global _THTT_GROUP_CACHE
     if _THTT_GROUP_CACHE is None:
@@ -5597,26 +5614,12 @@ def collect_thtt_group(source, group_names, output_group):
         channel["source"] = source
         channel["group"] = output_group
         channels.append(channel)
-    return channels
+    return dedupe_and_sort_channels(channels + collect_empty_reference(group_names, source, output_group))
 
 
 def collect_saoketv():
     source = "SaoKeTV"
     schedule_channels = collect_thtt_group(source, ("Sao Kê TV", "Sao Ke TV"), "Sao Kê TV")
-    reference = collect_m3u_playlist(
-        source, "https://raw.githubusercontent.com/emptynguyenvnm-gif/iptv-playlist/main/playlist.m3u",
-        "Sao Kê TV", preserve_group=True, allowed_groups=("sao ke tv",),
-        default_referer_to_playlist=False, timeout=10, retries=1,
-    )
-    def scheduled_key(channel):
-        return tokenless_stream_key(channel.get("stream_url")), channel_event_datetime(channel)
-
-    seen_schedule = {scheduled_key(channel) for channel in schedule_channels}
-    for channel in filter_current_and_future_events(reference):
-        key = scheduled_key(channel)
-        if key not in seen_schedule:
-            schedule_channels.append(channel)
-            seen_schedule.add(key)
     home_url = ""
     html_text = ""
     for candidate in (SAOKETV_DISCOVERY_URL, SAOKETV_BASE_URL):
@@ -9682,7 +9685,10 @@ def collect_vsc9_api():
 
 def collect_vsc9():
     source = "VSC9"
-    channels = collect_vsc9_api()
+    channels = filter_current_and_future_events(collect_vsc9_api())
+    reference = collect_empty_reference(("Vua Sân Cỏ TV",), source, "Vua Sân Cỏ TV")
+    log(f"[VSC9] Current direct links: {len(channels)}; reference candidates: {len(reference)}")
+    channels = dedupe_and_sort_channels(channels + reference)
     if channels:
         for channel in channels:
             channel["referer"] = ""
@@ -10963,7 +10969,6 @@ def main():
             ),
         ),
         ("VongCamTV", collect_vongcam),
-        ("BTFY", collect_btfy),
         ("BiaomTV", collect_biaom),
         ("TamQuocTV", collect_tamquoc),
         ("LuongSonTV", collect_luongson),
