@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-08 22:54 ICT
-# Total links   : 1170
+# Updated : 2026-11-08 23:54 ICT
+# Total links   : 1188
 # Total matches : 24
 # Lịch FootOnSat: giờ Việt Nam (UTC+7), hôm nay và 2 ngày kế tiếp.
 # Dữ liệu lịch/kênh lấy từ JSON FootOnSat; link xem được map từ các M3U tham chiếu.
@@ -755,6 +755,24 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312729&ext
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer CE5C91952690B0F00EAC5B1623398AA6
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1312717&extension=ts&play_token=g0XHdejW4n
+
+#EXTINF:-1 tvg-id="194766" tvg-logo="https://go4.pw/AFRICA/CANAL+/Canal+Sport2.png" group-title="21:00 08/11 | Rennes vs Lille",AF - CANAL+ SPORT 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/194766
+
+#EXTINF:-1 tvg-id="1027760" tvg-logo="https://go4.pw/AFRICA/CANAL+ SPORT.png" group-title="21:00 08/11 | Rennes vs Lille",AF - CANAL+ SPORT 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1027760
+
+#EXTINF:-1 tvg-id="194766" tvg-logo="https://go4.pw/AFRICA/CANAL+/Canal+Sport2.png" group-title="21:00 08/11 | Rennes vs Lille",AF - CANAL+ SPORT 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7A86B9F0AB8771EB1DD787620B160B37
+http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/194766
 
 #EXTINF:-1 tvg-id="1441958" tvg-logo="https://go4.pw/BEIN4K.png" group-title="21:00 08/11 | Rennes vs Lille",AR - BEIN SPORTS 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -3546,6 +3564,24 @@ http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1225736
 #EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
 http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1281078
 
+#EXTINF:-1 tvg-id="194766" tvg-logo="https://go4.pw/AFRICA/CANAL+/Canal+Sport2.png" group-title="23:15 08/11 | Brest vs Lyon",AF - CANAL+ SPORT 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/194766
+
+#EXTINF:-1 tvg-id="1027760" tvg-logo="https://go4.pw/AFRICA/CANAL+ SPORT.png" group-title="23:15 08/11 | Brest vs Lyon",AF - CANAL+ SPORT 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1027760
+
+#EXTINF:-1 tvg-id="194766" tvg-logo="https://go4.pw/AFRICA/CANAL+/Canal+Sport2.png" group-title="23:15 08/11 | Brest vs Lyon",AF - CANAL+ SPORT 2
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7A86B9F0AB8771EB1DD787620B160B37
+http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/194766
+
 #EXTINF:-1 tvg-id="1441958" tvg-logo="https://go4.pw/BEIN4K.png" group-title="23:15 08/11 | Brest vs Lyon",AR - BEIN SPORTS 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -4619,6 +4655,24 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1893648&ext
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer CE5C91952690B0F00EAC5B1623398AA6
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1893656&extension=ts&play_token=X6LFeQDi46
+
+#EXTINF:-1 tvg-id="53752" tvg-logo="https://go4.pw/ALBANIA/K1.png" group-title="00:00 09/11 | Inter Milan vs Como 1907",ALB - K SPORT 1 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/53752
+
+#EXTINF:-1 tvg-id="53752" tvg-logo="https://go4.pw/ALBANIA/K1.png" group-title="00:00 09/11 | Inter Milan vs Como 1907",ALB - K SPORT 1 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7A86B9F0AB8771EB1DD787620B160B37
+http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/53752
+
+#EXTINF:-1 tvg-id="53752" tvg-logo="https://go4.pw/ALBANIA/K1.png" group-title="00:00 09/11 | Inter Milan vs Como 1907",ALB - K SPORT 1 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BC1BC9EA2CA63A29556BA929A7B236F0
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/53752
 
 #EXTINF:-1 tvg-id="1274757" tvg-logo="https://go4.pw/champ/champions.png" group-title="00:00 09/11 | Inter Milan vs Como 1907",ALB - NO MATCH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
@@ -5940,6 +5994,24 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911320&exte
 #EXTVLCOPT:http-header=Authorization: Bearer CE5C91952690B0F00EAC5B1623398AA6
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911321&extension=ts&play_token=A7chAHuUTQ
 
+#EXTINF:-1 tvg-id="194767" tvg-logo="https://go4.pw/AFRICA/CANAL+/canal+sport1.png" group-title="02:45 09/11 | Lens vs Marseille",AF - CANAL+ SPORT 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/194767
+
+#EXTINF:-1 tvg-id="1027759" tvg-logo="https://go4.pw/AFRICA/CANAL+ SPORT.png" group-title="02:45 09/11 | Lens vs Marseille",AF - CANAL+ SPORT 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1027759
+
+#EXTINF:-1 tvg-id="194767" tvg-logo="https://go4.pw/AFRICA/CANAL+/canal+sport1.png" group-title="02:45 09/11 | Lens vs Marseille",AF - CANAL+ SPORT 1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7A86B9F0AB8771EB1DD787620B160B37
+http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/194767
+
 #EXTINF:-1 tvg-id="1441958" tvg-logo="https://go4.pw/BEIN4K.png" group-title="02:45 09/11 | Lens vs Marseille",AR - BEIN SPORTS 4K
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
@@ -6138,6 +6210,24 @@ http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1030813
 #EXTVLCOPT:http-header=Authorization: Bearer BC1BC9EA2CA63A29556BA929A7B236F0
 http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1030813
 
+#EXTINF:-1 tvg-id="1346383" tvg-logo="https://go4.pw/EXYU/Setanta_Sport_1.png" group-title="02:45 09/11 | Lens vs Marseille",UKR - SETANTA SPORTS 1 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/1346383
+
+#EXTINF:-1 tvg-id="1346383" tvg-logo="https://go4.pw/EXYU/Setanta_Sport_1.png" group-title="02:45 09/11 | Lens vs Marseille",UKR - SETANTA SPORTS 1 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7A86B9F0AB8771EB1DD787620B160B37
+http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/1346383
+
+#EXTINF:-1 tvg-id="1346383" tvg-logo="https://go4.pw/EXYU/Setanta_Sport_1.png" group-title="02:45 09/11 | Lens vs Marseille",UKR - SETANTA SPORTS 1 FHD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BC1BC9EA2CA63A29556BA929A7B236F0
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/1346383
+
 #EXTINF:-1 tvg-id="911322" tvg-logo="http://picon.tivi-ott.net:25461/picon/PAKISTAN/SPORTS/A SPORTS.png" group-title="02:45 09/11 | Lens vs Marseille",┃PK┃ A SPORTS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
@@ -6167,6 +6257,24 @@ http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=911323&exte
 #EXTVLCOPT:http-cookie=mac=00:1B:79:39:03:73; stb_lang=en; timezone=GMT
 #EXTVLCOPT:http-header=Authorization: Bearer CE5C91952690B0F00EAC5B1623398AA6
 http://line.mag7070.eu:80/play/live.php?mac=00:1B:79:39:03:73&stream=1729203&extension=ts&play_token=b3JqeWeLR2
+
+#EXTINF:-1 tvg-id="53752" tvg-logo="https://go4.pw/ALBANIA/K1.png" group-title="02:45 09/11 | Fiorentina vs Juventus",ALB - K SPORT 1 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:6D:64:87; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer E984FA463C0ACDD2F1244879858A3364
+http://ktkguru.com:80/06DD463C8236519/f2ypvVoSFB/53752
+
+#EXTINF:-1 tvg-id="53752" tvg-logo="https://go4.pw/ALBANIA/K1.png" group-title="02:45 09/11 | Fiorentina vs Juventus",ALB - K SPORT 1 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:C2:69:CF; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer 7A86B9F0AB8771EB1DD787620B160B37
+http://8k26.site:80/MAG7MCZPZQ/MAGR24TJUW/53752
+
+#EXTINF:-1 tvg-id="53752" tvg-logo="https://go4.pw/ALBANIA/K1.png" group-title="02:45 09/11 | Fiorentina vs Juventus",ALB - K SPORT 1 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
+#EXTVLCOPT:http-cookie=mac=00:1A:79:8E:4F:9D; stb_lang=en; timezone=GMT
+#EXTVLCOPT:http-header=Authorization: Bearer BC1BC9EA2CA63A29556BA929A7B236F0
+http://2016goldenen.com:80/F27552F52337C9C/wtmfDAiY6s/53752
 
 #EXTINF:-1 tvg-id="1274757" tvg-logo="https://go4.pw/champ/champions.png" group-title="02:45 09/11 | Fiorentina vs Juventus",ALB - NO MATCH
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (QtEmbedded; U; Linux; C) AppleWebKit/533.3 (KHTML, like Gecko) MAG200 stbapp ver: 2 rev: 250 Safari/533.3
