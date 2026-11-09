@@ -1658,6 +1658,9 @@ def extract_match_title(channel):
 
 def output_group(channel):
     group = clean_text(channel.get("group"))
+    if channel.get("source") == "24hHighlight" or (group.lower().startswith("highlight") and
+            urlparse(channel.get("stream_url") or "").hostname == "cdn.24h.com.vn"):
+        return "HL24h"
     return canonical_group_title(group or channel.get("source") or "Unknown")
 
 
@@ -1817,7 +1820,7 @@ def is_highlight_source(source):
 
 def is_highlight_channel(channel):
     source = clean_text(channel.get("source"))
-    return is_highlight_source(source) or group_key(output_group(channel)) == group_key("Highlight")
+    return is_highlight_source(source) or group_key(output_group(channel)) in {"highlight", "hl24h"}
 
 
 def supersport_date_from_media_url(url):
@@ -10581,7 +10584,8 @@ def split_m3u_text_blocks(text):
 
 def m3u_block_is_highlight(block):
     joined = "\n".join(block).lower()
-    return 'group-title="highlight' in joined or "#extgrp:highlight" in joined
+    return any(tag in joined for tag in ('group-title="highlight', '#extgrp:highlight',
+                                         'group-title="hl24h"', '#extgrp:hl24h'))
 
 
 def m3u_block_stream_url(block):
@@ -10703,7 +10707,8 @@ def ott_highlight_blocks_from_channels(channels):
         if not stream_url:
             continue
         name = ott_display_text(channel.get("name", "Unknown"))
-        blocks.append([f"#EXTINF:0,{name}", "#EXTGRP:Highlight", stream_url])
+        group = "HL24h" if output_group(channel) == "HL24h" else "Highlight"
+        blocks.append([f"#EXTINF:0,{name}", f"#EXTGRP:{group}", stream_url])
     return blocks
 
 
@@ -10718,7 +10723,8 @@ def ott_highlight_blocks_from_file():
             elif line and not line.startswith("#"):
                 stream_url = clean_text(line)
         if stream_url:
-            blocks.append([f"#EXTINF:0,{title}", "#EXTGRP:Highlight", stream_url])
+            group = "HL24h" if urlparse(stream_url).hostname == "cdn.24h.com.vn" else "Highlight"
+            blocks.append([f"#EXTINF:0,{title}", f"#EXTGRP:{group}", stream_url])
     return blocks
 
 
