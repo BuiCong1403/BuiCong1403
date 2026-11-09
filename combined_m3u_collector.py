@@ -6227,10 +6227,7 @@ def extract_xoilacz_url_streams(stream_page_url, headers, detail_url=""):
         except Exception:
             continue
         match = re.search(r'(?:var|let|const)\s+urlStream\s*=\s*["\']([^"\']+)["\']', html_text)
-        if match:
-            url_stream = clean_text(match.group(1).replace("\\/", "/"))
-            if is_valid_xoilacz_stream_url(url_stream):
-                return [url_stream]
+        primary = clean_text(match.group(1).replace("\\/", "/")) if match else ""
         ad_urls = set()
         ads_match = re.search(r"var\s+adsTvc\s*=\s*(\[[\s\S]*?\]);", html_text)
         if ads_match:
@@ -6241,19 +6238,17 @@ def extract_xoilacz_url_streams(stream_page_url, headers, detail_url=""):
                         ad_urls.add(clean_text(str(ad.get("file")).replace("\\/", "/")))
             except Exception:
                 pass
-        direct_urls = [
-            clean_text(match.group(0).replace("\\/", "/"))
-            for match in re.finditer(r'https?://[^"\']+\.(?:m3u8|flv)(?:\?[^"\']*)?', html_text)
-        ]
-        real_urls = [url for url in direct_urls if url not in ad_urls]
+        # Only quoted media URLs: do not cross markup or join adjacent JS expressions.
+        media = re.findall(r"""["'](https?://[^\s"'<>\\]+?\.(?:m3u8|flv)(?:\?[^\s"'<>\\]*)?)["']""",
+                           html.unescape(html_text.replace("\\/", "/")), re.I)
+        real_urls = [url for url in [primary, *media] if url and url not in ad_urls
+                     and is_valid_xoilacz_stream_url(url)]
         if real_urls:
             return list(dict.fromkeys(real_urls))
-        if direct_urls:
-            return [direct_urls[-1]]
         src_match = re.search(r'(?:source|file)\s*[:=]\s*["\'](https?://[^"\']+)["\']', html_text, re.I)
         if src_match:
             source_url = clean_text(src_match.group(1).replace("\\/", "/"))
-            if is_valid_xoilacz_stream_url(source_url):
+            if source_url not in ad_urls and is_valid_xoilacz_stream_url(source_url):
                 return [source_url]
     return []
 
