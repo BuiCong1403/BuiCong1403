@@ -10801,9 +10801,41 @@ def repair_h24_missing_halves(channels):
     return channels
 
 
+def collect_vsc_highlights():
+    site = VSC9_URL.rstrip("/")
+    today = datetime.now(TZ_VN).date()
+    cutoff = today - timedelta(days=max(1, HIGHLIGHT_RETENTION_DAYS) - 1)
+    rows = {}
+    for page in range(1, 41):
+        try:
+            response = request_get(site + "/api/proxy/data/lives/highlights",
+                                   params=dict(page=page, pageSize=100, timezone="Asia/Ho_Chi_Minh"),
+                                   headers={"Referer": site + "/highlight"}, timeout=12)
+            response.raise_for_status()
+            result = response.json()["result"]
+            items = result["data"]
+        except Exception as exc:
+            log(f"[VSCHighlight] Page {page} unavailable: {exc}")
+            break
+        for item in items:
+            dt = parse_epoch_to_ict_datetime(item.get("matchTimeEpoch"))
+            url = clean_text(item.get("urlM3u8") or item.get("url"))
+            title = clean_text(item.get("title"))
+            if not (dt and cutoff <= dt.date() <= today and title and is_hls_url(url)):
+                continue
+            rows.setdefault(url, dict(source="VSCHighlight", group="Highlight",
+                                      name=f"{title} [{dt.date().isoformat()}]", logo=item.get("thumbnail") or "",
+                                      stream_url=url, event_date=dt.date(), skip_event_filter=True))
+        if not items or page >= int(result.get("totalPages") or 1):
+            break
+    log(f"[VSCHighlight] {len(rows)} distinct recent HLS links")
+    return list(rows.values())
+
+
 def collect_current_highlights():
     refresh_dasfootball_order()
     highlight_sources = []
+    highlight_sources.extend(collect_vsc_highlights())
     from youtube_highlight_collector import load_channels
     highlight_sources.extend(load_channels())
     highlight_sources.extend(filter_recent_highlights(collect_source_channels("SuperSportHighlight", collect_supersport_highlights)))
