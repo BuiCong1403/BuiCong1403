@@ -4383,7 +4383,7 @@ def write_tinhlagi_app_highlight_reference():
 
 def collect_previous_highlight_playlist():
     if not PREVIOUS_HIGHLIGHT_M3U_URL:
-        return []
+        return previous_vsc_highlights()
     previous = collect_m3u_playlist(
         "PreviousHighlight",
         PREVIOUS_HIGHLIGHT_M3U_URL,
@@ -4396,7 +4396,7 @@ def collect_previous_highlight_playlist():
         user_agent=UA,
         preserve_extinf=False,
     )
-    channels = []
+    channels = previous_vsc_highlights()
     for channel in previous:
         stream_url = clean_text(channel.get("stream_url"))
         lower_url = stream_url.lower()
@@ -10801,12 +10801,32 @@ def repair_h24_missing_halves(channels):
     return channels
 
 
+def previous_vsc_highlights():
+    if not HIGHLIGHT_M3U.exists():
+        return []
+    today = datetime.now(TZ_VN).date()
+    cutoff = today - timedelta(days=4)
+    rows = []
+    _, blocks = split_m3u_text_blocks(HIGHLIGHT_M3U.read_text(encoding="utf-8-sig"))
+    for block in blocks:
+        url = m3u_block_stream_url(block)
+        if urlparse(url).hostname != "storage-api.sports-data.online":
+            continue
+        info = next((parse_extinf(line) for line in block if line.startswith("#EXTINF")), {})
+        day = date_from_text(info.get("title", ""))
+        if day and cutoff <= day <= today:
+            rows.append(dict(source="VSCHighlight", group="Highlight", stream_url=url,
+                             name=info["title"], logo=info.get("logo", ""), event_date=day,
+                             skip_event_filter=True))
+    return rows
+
+
 def collect_vsc_highlights():
     site = VSC9_URL.rstrip("/")
     today = datetime.now(TZ_VN).date()
-    cutoff = today - timedelta(days=max(1, HIGHLIGHT_RETENTION_DAYS) - 1)
+    cutoff = today - timedelta(days=4)
     rows = {}
-    for page in range(1, 41):
+    for page in range(1, 6):
         try:
             response = request_get(site + "/api/proxy/data/lives/highlights",
                                    params=dict(page=page, pageSize=100, timezone="Asia/Ho_Chi_Minh"),
@@ -10829,6 +10849,8 @@ def collect_vsc_highlights():
         if not items or page >= int(result.get("totalPages") or 1):
             break
     log(f"[VSCHighlight] {len(rows)} distinct recent HLS links")
+    for cached in previous_vsc_highlights():
+        rows.setdefault(cached["stream_url"], cached)
     return list(rows.values())
 
 

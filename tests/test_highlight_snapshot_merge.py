@@ -17,8 +17,9 @@ class SnapshotMergeTests(unittest.TestCase):
         h24 = channel("24hHighlight", "24h")
         das = channel("DasFootballHighlight", "das")
         with patch.object(collector, "PREVIOUS_HIGHLIGHT_M3U_URL", "https://example.org/list.m3u"), patch.object(collector, "collect_m3u_playlist", return_value=[]), patch.object(youtube, "load_channels", return_value=[yt]), patch.object(collector, "load_h24_highlight_cache", return_value=[h24]), patch.object(collector, "DASFOOTBALL_M3U", Mock()), patch.object(collector, "channels_from_dasfootball_m3u_text", return_value=[das]):
-            result = collector.collect_previous_highlight_playlist()
-        self.assertEqual({item["source"] for item in result}, {"YouTubeHighlight", "24hHighlight", "DasFootballHighlight"})
+            with patch.object(collector, "previous_vsc_highlights", return_value=[channel("VSCHighlight", "vsc")]):
+                result = collector.collect_previous_highlight_playlist()
+        self.assertEqual({item["source"] for item in result}, {"YouTubeHighlight", "24hHighlight", "DasFootballHighlight", "VSCHighlight"})
 
     def test_second_half_can_have_a_different_timestamp(self):
         today = datetime.now(collector.TZ_VN).date()
