@@ -1,6 +1,6 @@
 {
   "source": "https://raw.githubusercontent.com/vietng228/m3u/refs/heads/main/new.m3u + https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/film4k.m3u",
-  "updated": "2026-11-06 19:40 ICT",
+  "updated": "2026-11-10 23:53 ICT",
   "channels": [
     {
       "source": "VTV",
@@ -312,10 +312,21 @@
     },
     {
       "source": "VTV",
+      "name": "VTVGo Vui Vẻ-1",
+      "group": "VTV",
+      "logo": "https://thumb.vtvdigital.org/transform?url=https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261106/2026110609/43f9e686-937a-4367-a8de-aece483e03ad-THUMBNAIL-KENH-VTVgo-Fast-Channel-500x281.png&width=320",
+      "stream_url": "https://fast-channel-stg.vtvdigital.vn/playout/releases/go-20261013/channels/auto-vui-ve/master.m3u8",
+      "referer": "",
+      "user_agent": "",
+      "preserve_group_exact": false,
+      "skip_event_filter": true
+    },
+    {
+      "source": "VTV",
       "name": "VTVGo Phim Truyện VFC-1",
       "group": "VTV",
       "logo": "https://thumb.vtvdigital.org/transform?url=https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261013/2026101304/8353f62f-c4de-40c6-9e8e-b482d8e9d0af-VTVgo-Phim-VFC-THUMBNAIL-KENH-VTVgo-500x281.png&width=320",
-      "stream_url": "https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-phim-truyen/source/index.m3u8",
+      "stream_url": "https://fast-channel-stg.vtvdigital.vn/playout/releases/go-20261013/channels/auto-phim-truyen/master.m3u8",
       "referer": "",
       "user_agent": "",
       "preserve_group_exact": false,

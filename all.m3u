@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-10 22:23 ICT
-# Total   : 550
+# Updated : 2026-11-10 23:53 ICT
+# Total   : 574
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/ac/ON_Football_logo_2022.png/revision/latest/scale-to-width-down/1000?cb=20220311023748&path-prefix=vi" group-title="VTV",ON FootBall
 https://live.tvon.vn/g1/vtvcab16/master.m3u8
@@ -99,7 +99,7 @@ https://events.vtvdigital.vn/livestream/wildlife-manifest.m3u8
 https://fast-channel-stg.vtvdigital.vn/playout/channels/auto-game-show/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://thumb.vtvdigital.org/transform?url=https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261013/2026101304/8353f62f-c4de-40c6-9e8e-b482d8e9d0af-VTVgo-Phim-VFC-THUMBNAIL-KENH-VTVgo-500x281.png&width=320" group-title="VTV",VTVGo Phim Truyện VFC-1
-https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-phim-truyen/source/index.m3u8
+https://fast-channel-stg.vtvdigital.vn/playout/releases/go-20261013/channels/auto-phim-truyen/master.m3u8
 
 #EXTINF:-1 tvg-logo="https://thumb.vtvdigital.org/transform?url=https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261013/2026101304/b630a0a6-3ef5-49ce-9cbd-de17a42f019a-VTVgo-Phim-Tai-Lieu-THUMBNAIL-KENH-VTVgo-500x281.png&width=320" group-title="VTV",VTVGo Phim Tài Liệu-1
 https://fast-channel-stg.vtvdigital.vn/playout/channels/auto-phim-tai-lieu/master.m3u8
@@ -109,6 +109,9 @@ https://fast-channel-stg.vtvdigital.vn/playout/channels/auto-suc-khoe-nguoi-gia/
 
 #EXTINF:-1 tvg-logo="https://thumb.vtvdigital.org/transform?url=https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261013/2026101304/fb907222-beef-4ca7-9d28-5cb9ecd91828-VTVgo-Thieu-Nhi-THUMBNAIL-KENH-VTVgo-500x281.png&width=320" group-title="VTV",VTVGo Thiếu Nhi-1
 https://fast-channel-stg.vtvdigital.vn/playout/channels/auto-thieu-nhi/master.m3u8
+
+#EXTINF:-1 tvg-logo="https://thumb.vtvdigital.org/transform?url=https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261106/2026110609/43f9e686-937a-4367-a8de-aece483e03ad-THUMBNAIL-KENH-VTVgo-Fast-Channel-500x281.png&width=320" group-title="VTV",VTVGo Vui Vẻ-1
+https://fast-channel-stg.vtvdigital.vn/playout/releases/go-20261013/channels/auto-vui-ve/master.m3u8
 
 #EXTINF:-1 tvg-id="vtvgo-fast-ca-nhac" tvg-name="VTVgo - Ca nhạc" tvg-logo="https://vtvgo-next-assets.vtvdigital.vn/prod/images/channel/20261022/2026102204/ed4d3183-73e6-4bc3-89fa-ef4a25ae3e8b-VTVgo-Ca-Nhac150x90.png" group-title="VTV",VTVgo - Ca nhạc
 https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels/auto-ca-nhac/master.m3u8
@@ -133,16 +136,6 @@ https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels
 
 #EXTINF:-1 tvg-logo="https://vnepg.site/logos/176.png" group-title="VTV",VietNam Today
 https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShhKOQTxFJYg8-58nrWTz--1sdmKiSnkqyLdERxYmwmQ&s=10" group-title="Giờ Vàng TV",18:30 10/11 Barangay Ginebra San Miguel vs San Miguel Beermen | Chồn [HD]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pzhgifbkllliv.vcdn.cloud/1794294504_hd/1794294504_hd@720p.m3u8
-
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShhKOQTxFJYg8-58nrWTz--1sdmKiSnkqyLdERxYmwmQ&s=10" group-title="Giờ Vàng TV",18:30 10/11 Barangay Ginebra San Miguel vs San Miguel Beermen | Chồn [Mobile]
-#EXTVLCOPT:http-referrer=https://giovang.city/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pzhgifbkllliv.vcdn.cloud/1794294504_hd/1794294504_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-oByM_l-CzkV4iHU3wzFB1aC4eTt0gc_sLzNCMXgkvA&s=10" group-title="Giờ Vàng TV",20:30 10/11 Ziraat Bankasi vs Alanya Bld | Sún [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -174,15 +167,15 @@ https://pzhgifbkllliv.vcdn.cloud/1794165162_hd/1794165162_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pzhgifbkllliv.vcdn.cloud/1794165162_hd/1794165162_hd@720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/hxdMgrGG-Wz6bfhxO.png" group-title="Giờ Vàng TV",01:00 11/11 Feyenoord vs Wolfsburg | Súp [HD]
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/hxdMgrGG-Wz6bfhxO.png" group-title="Giờ Vàng TV",01:00 11/11 Feyenoord vs Wolfsburg | Dory [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pzhgifbkllliv.vcdn.cloud/1794165177_hd/1794165177_hd@720p.m3u8
+https://pzhgifbkllliv.vcdn.cloud/1794325500_hd/1794325500_hd@720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/hxdMgrGG-Wz6bfhxO.png" group-title="Giờ Vàng TV",01:00 11/11 Feyenoord vs Wolfsburg | Súp [Mobile]
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/hxdMgrGG-Wz6bfhxO.png" group-title="Giờ Vàng TV",01:00 11/11 Feyenoord vs Wolfsburg | Dory [Mobile]
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pzhgifbkllliv.vcdn.cloud/1794165177_hd/1794165177_hd@720p.m3u8
+https://pzhgifbkllliv.vcdn.cloud/1794325500_hd/1794325500_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/inter-milan-w.png" group-title="Giờ Vàng TV",03:00 11/11 Nữ Inter Milan vs Nữ Manchester City | Mù [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -234,6 +227,36 @@ https://pzhgifbkllliv.vcdn.cloud/1794236347_hd/1794236347_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pzhgifbkllliv.vcdn.cloud/1794236347_hd/1794236347_hd@720p.m3u8
 
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR54VjgYF0wf5gt8HWOH-nlZPrWe5veMtnRZeLnw7o4lg&s=10" group-title="Giờ Vàng TV",15:00 11/11 Opening Round - Group B vs BLAST Rivals 2026 Season 2 | Mickey [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324808_hd/1794324808_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR54VjgYF0wf5gt8HWOH-nlZPrWe5veMtnRZeLnw7o4lg&s=10" group-title="Giờ Vàng TV",15:00 11/11 Opening Round - Group B vs BLAST Rivals 2026 Season 2 | Mickey [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324808_hd/1794324808_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEPvX3567QSBgGrVOAjujMN_GzhX5pssXG0Q&s" group-title="Giờ Vàng TV",15:30 11/11 South East Melbourne vs Illawarra Hawks | Điếc [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324216_hd/1794324216_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEPvX3567QSBgGrVOAjujMN_GzhX5pssXG0Q&s" group-title="Giờ Vàng TV",15:30 11/11 South East Melbourne vs Illawarra Hawks | Điếc [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324216_hd/1794324216_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://volleybox.net/media/upload/players/1759324442D5qgx.png" group-title="Giờ Vàng TV",17:00 11/11 Hyundai E&C Hillstate Nữ vs GS Caltex Nữ | Sún [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324686_hd/1794324686_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://volleybox.net/media/upload/players/1759324442D5qgx.png" group-title="Giờ Vàng TV",17:00 11/11 Hyundai E&C Hillstate Nữ vs GS Caltex Nữ | Sún [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324686_hd/1794324686_hd@720p.m3u8
+
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/netherlands-u17.png" group-title="Giờ Vàng TV",17:00 11/11 Hà Lan U17 vs Norway U17 | Dory [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -243,6 +266,56 @@ https://pzhgifbkllliv.vcdn.cloud/1794323749_hd/1794323749_hd@720p.m3u8
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pzhgifbkllliv.vcdn.cloud/1794323749_hd/1794323749_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/M5dauNCa-2el3ggr9.png" group-title="Giờ Vàng TV",17:00 11/11 LG Sakers vs Seoul Knights | Vịt [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324286_hd/1794324286_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/M5dauNCa-2el3ggr9.png" group-title="Giờ Vàng TV",17:00 11/11 LG Sakers vs Seoul Knights | Vịt [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324286_hd/1794324286_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYiMapDwRKSyX4TjtTJhzCLCuJAWRYIsq4P2G0uya5nw&s=10" group-title="Giờ Vàng TV",17:05 11/11 Brave Thunder vs Shimane | Cầy [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324340_hd/1794324340_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYiMapDwRKSyX4TjtTJhzCLCuJAWRYIsq4P2G0uya5nw&s=10" group-title="Giờ Vàng TV",17:05 11/11 Brave Thunder vs Shimane | Cầy [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324340_hd/1794324340_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKu_ZXTY0w-8Pox3yLu47ZCxlwbwKsWbxD_cB8hAqgng&s" group-title="Giờ Vàng TV",17:05 11/11 Hiroshima D vs Sendai | Chồn [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324404_hd/1794324404_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKu_ZXTY0w-8Pox3yLu47ZCxlwbwKsWbxD_cB8hAqgng&s" group-title="Giờ Vàng TV",17:05 11/11 Hiroshima D vs Sendai | Chồn [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324404_hd/1794324404_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_pHAJp1Yomh-vWnGgMcjg_ui0gKjuJ882dRmgRBD3CQ&s=10" group-title="Giờ Vàng TV",17:05 11/11 KCC Egis vs Fubon Braves | Cận [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324503_hd/1794324503_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_pHAJp1Yomh-vWnGgMcjg_ui0gKjuJ882dRmgRBD3CQ&s=10" group-title="Giờ Vàng TV",17:05 11/11 KCC Egis vs Fubon Braves | Cận [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324503_hd/1794324503_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/50c55a722740c471fa456f9c42a1ae6c.png" group-title="Giờ Vàng TV",17:30 11/11 Binan Tatak Gel vs Quezon Huskers | Điếc [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324604_hd/1794324604_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/50c55a722740c471fa456f9c42a1ae6c.png" group-title="Giờ Vàng TV",17:30 11/11 Binan Tatak Gel vs Quezon Huskers | Điếc [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324604_hd/1794324604_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/croatia-u19.png" group-title="Giờ Vàng TV",18:00 11/11 Croatia U19 vs U19 Hungary | Mason [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -274,15 +347,55 @@ https://pzhgifbkllliv.vcdn.cloud/1794323969_hd/1794323969_hd@720p.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pzhgifbkllliv.vcdn.cloud/1794323969_hd/1794323969_hd@720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREjZpMcNlBFtY3fqUDM9nejlXRPXPvVF6Rn-bis51nDw&s=10" group-title="Giờ Vàng TV",22:00 11/11 Galatasaray vs Gebze | Trĩ [HD]
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/vietnam.png" group-title="Giờ Vàng TV",19:00 11/11 Việt Nam vs Đài Loan TQ | Trĩ [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pzhgifbkllliv.vcdn.cloud/1794294814_hd/1794294814_hd@720p.m3u8
+https://pzhgifbkllliv.vcdn.cloud/1794324003_hd/1794324003_hd@720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREjZpMcNlBFtY3fqUDM9nejlXRPXPvVF6Rn-bis51nDw&s=10" group-title="Giờ Vàng TV",22:00 11/11 Galatasaray vs Gebze | Trĩ [Mobile]
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/vietnam.png" group-title="Giờ Vàng TV",19:00 11/11 Việt Nam vs Đài Loan TQ | Trĩ [Mobile]
 #EXTVLCOPT:http-referrer=https://giovang.city/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pzhgifbkllliv.vcdn.cloud/1794294814_hd/1794294814_hd@720p.m3u8
+https://pzhgifbkllliv.vcdn.cloud/1794324003_hd/1794324003_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/czech-republic-u19.png" group-title="Giờ Vàng TV",20:00 11/11 U19 Séc vs Hà Lan U19 | Hấu [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324073_hd/1794324073_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/czech-republic-u19.png" group-title="Giờ Vàng TV",20:00 11/11 U19 Séc vs Hà Lan U19 | Hấu [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324073_hd/1794324073_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/germany-u19.png" group-title="Giờ Vàng TV",20:00 11/11 Đức U19 vs U19 Thụy Điển | Bee [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324112_hd/1794324112_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/germany-u19.png" group-title="Giờ Vàng TV",20:00 11/11 Đức U19 vs U19 Thụy Điển | Bee [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324112_hd/1794324112_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/montenegro-u17.png" group-title="Giờ Vàng TV",21:00 11/11 Montenegro U17 vs Anh U17 | Dory [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324152_hd/1794324152_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/montenegro-u17.png" group-title="Giờ Vàng TV",21:00 11/11 Montenegro U17 vs Anh U17 | Dory [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794324152_hd/1794324152_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ030AwJnowiv6Dq8YG7phO46ElUlBPoYL32j8Iz1sy_A&s=10" group-title="Giờ Vàng TV",22:00 11/11 Halkbank vs Fenerbahce | Điếc [HD]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794294751_hd/1794294751_hd@720p.m3u8
+
+#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ030AwJnowiv6Dq8YG7phO46ElUlBPoYL32j8Iz1sy_A&s=10" group-title="Giờ Vàng TV",22:00 11/11 Halkbank vs Fenerbahce | Điếc [Mobile]
+#EXTVLCOPT:http-referrer=https://giovang.city/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pzhgifbkllliv.vcdn.cloud/1794294751_hd/1794294751_hd@720p.m3u8
 
 #EXTINF:-1 tvg-logo="https://images.keovip88.net/images/teams/bhayangkara-solo-fc.png" group-title="Giờ Vàng TV",23:00 11/11 Czarni Sosnowiec vs Brann | Mason [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/
@@ -724,7 +837,7 @@ https://live2.zktsva.app/live/307240.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live2.zktsva.app/live/741294.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/f40723ed94042ea9ea36bfb5ad4157b2.png" group-title="Gà Vàng",18:15 11/11 Belgium U19 vs Kosovo U19 (Gà Siêu Tồ) [HLS]
+#EXTINF:-1 tvg-logo="https://img.cltvap.cc/football/team/f40723ed94042ea9ea36bfb5ad4157b2.png" group-title="Gà Vàng",18:00 11/11 Belgium U19 vs Kosovo U19 (Gà Siêu Tồ) [HLS]
 #EXTVLCOPT:http-referrer=https://gavang33.ag/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live2.zktsva.app/live/796315.m3u8
@@ -809,20 +922,14 @@ https://playback.livetl004.com/live/69aa9525f5ec459ae275b43f.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://playback.livetl004.com/live/69f42e961f739deff81510c0.m3u8
 
-#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/523525d9-d3a8-4761-8d2c-072e17d634e8" group-title="S8 TV",15:00 10/11 Qatar U23 vs Singapore U23 (NGƯỜI BẠC) [hls]
-https://hls.lauthaitv.cc/live/qat-sin-intfru23/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/1f36ee22-6155-46d4-9fd0-22ccba968214" group-title="S8 TV",19:00 10/11 Santa Clara U23 vs Torreense U23 (NGƯỜI THỎ) [hls]
-https://hls.lauthaitv.cc/live/santa-torre-poru23/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/5694d348-15e5-4e5a-bd11-bc3ca0bea19a" group-title="S8 TV",19:00 10/11 Vietnam U23 vs Thailand U23 (NGƯỜI RÂM) [hls]
-https://hls.lauthaitv.cc/live/vie-tha-intfru23/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/a81cd5c5-fb20-4b2e-ac54-00c9ba9909cb" group-title="S8 TV",22:00 10/11 El Mokawloon El Arab vs Telecom Egypt (NGƯỜI SÓI) [hls]
 https://hls.lauthaitv.cc/live/mokaw-telecom-egycup/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/a81cd5c5-fb20-4b2e-ac54-00c9ba9909cb" group-title="S8 TV",22:00 10/11 El Mokawloon El Arab vs Telecom Egypt (NGƯỜI SÓI) [hls]
-https://hls.lauthaitv.cc/live/mokaw-telecom-egycup/index.m3u8
+#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/d4bdccc8-8791-4a3c-b7c8-bbd094d5f65c" group-title="S8 TV",00:45 11/11 Hacken Women vs Chelsea Women (NGƯỜI CÁO) [hls]
+https://hls.lauthaitv.cc/live/hackenw-chew-c1w/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/aa8e2eac-2eed-4db3-ba40-88a4c964f6d4" group-title="S8 TV",00:45 11/11 Real Madrid Women vs Paris FC Women (NGƯỜI CAT) [hls]
+https://hls.lauthaitv.cc/live/realw-parisw-c1w/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://s8tvkc.top/wp-json/s8-image/d4bdccc8-8791-4a3c-b7c8-bbd094d5f65c" group-title="S8 TV",00:45 11/11 Hacken Women vs Chelsea Women (NGƯỜI CÁO) [hls]
 https://hls.lauthaitv.cc/live/hackenw-chew-c1w/index.m3u8
@@ -848,9 +955,6 @@ https://hls.lauthaitv.cc/live/caldas-anmedel-colcopa/index.m3u8
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/4x6HFG7k-SWYiaUwN.png" group-title="Sao Kê TV",22:00 10/11 Arab Contractors vs WE SC (Tít) [hls]
 https://wtyi0525.edgemaxcdn.org/live/x2-hd-1111/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/1533792.png" group-title="Sao Kê TV",22:00 10/11 Sporting Lagos vs Rivers United FC (Bút Chì) [hls]
-https://wtyi0525.edgemaxcdn.org/live/x22-hd-1111/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/181464.png" group-title="Sao Kê TV",00:45 11/11 BK Häcken (W) vs Chelsea (W) (Kai) [hls]
 https://wtyi0525.edgemaxcdn.org/live/x00-hd-1111/playlist.m3u8
 
@@ -863,6 +967,9 @@ https://wtyi0525.edgemaxcdn.org/live/x83-hd-1111/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/294858.png" group-title="Sao Kê TV",03:00 11/11 Paris Saint Germain (W) vs Bayern München (W) (Long Ruồi) [hls]
 https://wtyi0525.edgemaxcdn.org/live/x1-hd-1111/playlist.m3u8
 
+#EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/47240.png" group-title="Sao Kê TV",06:30 11/11 Internacional de Bogotá vs América de Cali (Bút Chì) [hls]
+https://wtyi0525.edgemaxcdn.org/live/x22-hd-1111/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://images.fotmob.com/image_resources/logo/teamlogo/6024.png" group-title="Sao Kê TV",08:30 11/11 Once Caldas vs Atlético Nacional (Nếp Cẩm) [hls]
 https://wtyi0525.edgemaxcdn.org/live/x4-hd-1111/playlist.m3u8
 
@@ -872,11 +979,11 @@ https://stm6dad62063600.stream.hdplaylink.com/sklive/carot/playlist.m3u8
 #EXTINF:-1 tvg-logo="" group-title="Sao Kê TV",SaoKeTV Ricky
 https://stm6dad62063600.stream.hdplaylink.com/sklive/ricky/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/d2ba8945533ebbda0bcccf6cf21a4bd4.png" group-title="BiaomTV",21:00 10/11 [ - ] El Mokawloon El Arab vs Telecom Egypt [Egyptian Scores Cup] [HLS]
-https://lilive1.eu.cc/live/b6390a7834fd887beebc3fd6f300414e/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/al-mokawloon-623" group-title="BiaomTV",22:00 10/11 [ - ] Al Mokawloon vs Telekom Egypt [Cúp Quốc Gia Ai Cập] [HLS]
 https://cdnhls.xbdbotv.live/live/MTk5MDI0NTc6YThsY2E2YTk4dWpna3Q2bXcydDZwYXRxOmc4ODFybWRid2JybDM4Y3BoamQwZ2xxaQ/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/d2ba8945533ebbda0bcccf6cf21a4bd4.png" group-title="BiaomTV",22:00 10/11 [ - ] El Mokawloon El Arab vs Telecom Egypt [Egyptian Scores Cup] [HLS]
+https://lilive1.eu.cc/live/b6390a7834fd887beebc3fd6f300414e/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/hacken-w-253910" group-title="BiaomTV",00:45 11/11 [ - ] BK Häcken W vs Chelsea W [C1 Châu Âu (Nữ)] [HLS]
 https://cdnhls.xbdbotv.live/live/MTk4Nzk1MTc6ZjloaXUzaDRjanBxdHhoeGFvY3I1OGZkOmRkbWIzaHZvMHloMDNmOHJoYnVwenluNw/index.m3u8
@@ -910,11 +1017,6 @@ https://cdnhls.xbdbotv.live/live/MTk4Nzk1MTM6dWppY2ViaXFnN2Fmazdhendla3Q3azE3OmF
 
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/valencia-214" group-title="BiaomTV",03:00 11/11 [ - ] Tavernes vs Valencia [Cúp nhà vua Tây Ban Nha] [HLS]
 https://cdnhls.xbdbotv.live/live/MTk4OTMzNTY6YThsY2E2YTk4dWpna3Q2bXcydDZwYXRxOmxyZzNwMGtsM2ozYTZ3dnJwc3NwYXI5Mw/index.m3u8
-
-#EXTINF:-1 tvg-logo="" group-title="Khô Gà",15:00 10/11 Qatar U23 vs Singapore U23 (BLV Khô Cay)
-#EXTVLCOPT:http-referrer=https://khoga1.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 
 #EXTINF:-1 tvg-logo="" group-title="Khô Gà",19:00 10/11 U23 Việt Nam vs Thailand U23 (BLV Khô Cóc)
 #EXTVLCOPT:http-referrer=https://khoga1.live/
@@ -986,48 +1088,6 @@ https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh98vq82w/image/small" group-title="Phá Làng TV",15:00 10/11 Qatar U23 vs Singapore U23 (LÝ LÀNG LÁ) (HD2) [geo]
-https://pull1.digitalcdn.net/live/8ae2e1d0649843ada4203fcbf41ec8c2/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh98vq82w/image/small" group-title="Phá Làng TV",15:00 10/11 Qatar U23 vs Singapore U23 (LÝ LÀNG LÁ) [geo]
-https://pull.digitalcdn.net/live/8ae2e1d0649843ada4203fcbf41ec8c2/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4zp5rzgh98vq82w/image/small" group-title="Phá Làng TV",15:00 10/11 Qatar U23 vs Singapore U23 (Nhà đài)
-https://lilive1.eu.cc/live/37928511185b9d4cbbecb7ae76706dc5/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://img0.aiscore.com/volleyball/team/890cd7399f4d00edc1f37cae88054b38.png!w80" group-title="Phá Làng TV",17:00 10/11 AI Peppers Women vs IBK Women (LÃM LÀNG) (HD2) [geo]
-https://pull1.digitalcdn.net/live/6ab7813111e64605858dab0e7259b8e6/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://img0.aiscore.com/volleyball/team/890cd7399f4d00edc1f37cae88054b38.png!w80" group-title="Phá Làng TV",17:00 10/11 AI Peppers Women vs IBK Women (LÃM LÀNG) [geo]
-https://pull.digitalcdn.net/live/6ab7813111e64605858dab0e7259b8e6/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09h12gyrz84/image/small" group-title="Phá Làng TV",18:38 10/11 Shaoyang Team - Xiangtan Team [Nguồn]
-#EXTVLCOPT:http-referrer=https://phalang.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/637a9fc2339ad379bed0b528332a70a1/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hz7enqdyj/image/small" group-title="Phá Làng TV",19:00 10/11 Santa Clara U23 - Torreense U23 [Nguồn]
-#EXTVLCOPT:http-referrer=https://phalang.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/4151ed56199be601e0533e09837bf34b/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phkplym2wd/image/small" group-title="Phá Làng TV",19:00 10/11 Việt Nam U23 - Thái Lan U23 (LÝ LA LÀNG) [Nguồn]
-#EXTVLCOPT:http-referrer=https://phalang.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://lilive1.eu.cc/live/c1514767d5270f2847d1f104153f5906/playlist.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phkplym2wd/image/small" group-title="Phá Làng TV",19:00 10/11 Việt Nam U23 vs Thái Lan U23 (LÝ LA LÀNG) (HD2) [geo]
-https://pull1.digitalcdn.net/live/6613838023c6447184654af147f85295/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phkplym2wd/image/small" group-title="Phá Làng TV",19:00 10/11 Việt Nam U23 vs Thái Lan U23 (LÝ LA LÀNG) [geo]
-https://pull.digitalcdn.net/live/6613838023c6447184654af147f85295/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phkplym2wd/image/small" group-title="Phá Làng TV",19:00 10/11 Việt Nam U23 vs Thái Lan U23 (LÝ LONG) (HD2) [geo]
-https://pull1.digitalcdn.net/live/807fa827de5044529ee76d8ede29ce87/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/x7lm7phkplym2wd/image/small" group-title="Phá Làng TV",19:00 10/11 Việt Nam U23 vs Thái Lan U23 (LÝ LONG) [geo]
-https://pull.digitalcdn.net/live/807fa827de5044529ee76d8ede29ce87/index.m3u8
-
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8gh44zor6od/image/small" group-title="Phá Làng TV",22:00 10/11 Arab Contractors - Telecom Egypt (LÝ LẠNH LÙNG) [HD1]
 #EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1043,17 +1103,15 @@ https://pull1.digitalcdn.net/live/192540a1f4bb4b53b2b74060f03cefca/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/b6390a7834fd887beebc3fd6f300414e/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img0.aiscore.com/volleyball/team/509aa9190a2b64dac9ffa248906a94d9.png!w80" group-title="Phá Làng TV",22:00 10/11 Ziraat Bankasi vs Alanya Bld (LÝ LIỀU LĨNH) (HD2) [geo]
-https://pull1.digitalcdn.net/live/ce1ff944585e4129b55cc66a86d205c2/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://img0.aiscore.com/volleyball/team/509aa9190a2b64dac9ffa248906a94d9.png!w80" group-title="Phá Làng TV",22:00 10/11 Ziraat Bankasi vs Alanya Bld (LÝ LIỀU LĨNH) [geo]
-https://pull.digitalcdn.net/live/ce1ff944585e4129b55cc66a86d205c2/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hw56oqdyj/image/small" group-title="Phá Làng TV",23:30 10/11 Slovenia Indoor Soccer vs Belgium Indoor Soccer (LÝ LÊN LỬA) (HD2) [geo]
-https://pull1.digitalcdn.net/live/a6b92378e9ff496a96f00d791cc394cf/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hw56oqdyj/image/small" group-title="Phá Làng TV",23:30 10/11 Slovenia Indoor Soccer vs Belgium Indoor Soccer (LÝ LÊN LỬA) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hw56oqdyj/image/small" group-title="Phá Làng TV",23:30 10/11 Slovenia Indoor Soccer - Belgium Indoor Soccer (LÝ LÊN LỬA) [HD1]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.digitalcdn.net/live/a6b92378e9ff496a96f00d791cc394cf/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/3glrw7hw56oqdyj/image/small" group-title="Phá Làng TV",23:30 10/11 Slovenia Indoor Soccer - Belgium Indoor Soccer (LÝ LÊN LỬA) [HD2]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull1.digitalcdn.net/live/a6b92378e9ff496a96f00d791cc394cf/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/l7oqdeh0d1gr510/image/small" group-title="Phá Làng TV",00:45 11/11 Nữ BK Hacken - Nữ Chelsea [Nguồn]
 #EXTVLCOPT:http-referrer=https://phalang.live/
@@ -1066,14 +1124,21 @@ https://pull1.digitalcdn.net/live/b7ecbe1ecd85495b9f45323225a41811/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/318q66h0pxxqo9j/image/small" group-title="Phá Làng TV",00:45 11/11 Nữ Real Madrid vs Nữ Paris FC (LÝ LÀNG LÁ) [geo]
 https://pull.digitalcdn.net/live/b7ecbe1ecd85495b9f45323225a41811/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghj4e3r6od/image/small" group-title="Phá Làng TV",01:00 11/11 Anaitasuna - Alavés (LÝ LONG) [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/0d44946cc53b23fc8c7cda5a9f9c4b64/playlist.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghj4e3r6od/image/small" group-title="Phá Làng TV",01:00 11/11 Anaitasuna vs Alavés (LÝ LONG) (HD2) [geo]
 https://pull1.digitalcdn.net/live/b4ad0f211cb54fb8b7c09a16cfd4b478/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghj4e3r6od/image/small" group-title="Phá Làng TV",01:00 11/11 Anaitasuna vs Alavés (LÝ LONG) [geo]
 https://pull.digitalcdn.net/live/b4ad0f211cb54fb8b7c09a16cfd4b478/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghj4e3r6od/image/small" group-title="Phá Làng TV",01:00 11/11 Anaitasuna vs Alavés (Nhà đài)
-https://lilive1.eu.cc/live/0d44946cc53b23fc8c7cda5a9f9c4b64/playlist.m3u8
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohy27pq1zp/image/small" group-title="Phá Làng TV",01:00 11/11 Pamplona - Eibar [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/289ef672eb992d1cfe5094b326b837b2/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/z8yomo4hjonq0j6/image/small" group-title="Phá Làng TV",02:00 11/11 Leicester vs Walsall (Nhà đài)
 https://lilive1.eu.cc/live/5522984c8b16f7710e43fd033ea9d04f/playlist.m3u8
@@ -1083,6 +1148,16 @@ https://pull1.digitalcdn.net/live/c3a4586abb6245dbb4036bdb206cfd08/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/z8yomo4hjonq0j6/image/small" group-title="Phá Làng TV",02:00 11/11 Leicester vs Walsall (Unknown) [geo]
 https://pull.digitalcdn.net/live/c3a4586abb6245dbb4036bdb206cfd08/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv70rz84/image/small" group-title="Phá Làng TV",02:00 11/11 Mansfield Town - Chesterfield [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/64d23f934aba26eaf6a55cace631bb60/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehkd8r510/image/small" group-title="Phá Làng TV",02:00 11/11 Oxford United - Cheltenham Town [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/f86b2523c45fdd06697769353f9fcc9b/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4wyrn4hv905q86p/image/small" group-title="Phá Làng TV",15:30 11/11 Philippines U17 vs Indonesia U17 (LÝ LẠNH LÙNG) (HD2) [geo]
 https://pull1.digitalcdn.net/live/86e5d7c9cd3c493f96ac79121ec1d4af/index.m3u8
@@ -1126,16 +1201,16 @@ https://pull1.digitalcdn.net/live/3a0671a0ab2e495190c49993af2b5d0b/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh7x32r1ge/image/small" group-title="Phá Làng TV",21:00 11/11 Bồ Đào Nha U17 vs Andorra U17 (LÝ LIỀU LĨNH) [geo]
 https://pull.digitalcdn.net/live/3a0671a0ab2e495190c49993af2b5d0b/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkw9xryox/image/small" group-title="Phá Làng TV",22:00 11/11 Tây Ban Nha U19 vs Iceland U19 (LÝ LẠNH LÙNG) (HD2) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkw9xryox/image/small" group-title="Phá Làng TV",22:00 11/11 Tây Ban Nha U19 vs Iceland U19 (Unknown) (HD2) [geo]
 https://pull1.digitalcdn.net/live/32358c793afe457aa357d5ae39473120/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkw9xryox/image/small" group-title="Phá Làng TV",22:00 11/11 Tây Ban Nha U19 vs Iceland U19 (LÝ LẠNH LÙNG) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkw9xryox/image/small" group-title="Phá Làng TV",22:00 11/11 Tây Ban Nha U19 vs Iceland U19 (Unknown) [geo]
 https://pull.digitalcdn.net/live/32358c793afe457aa357d5ae39473120/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghpp0xr6od/image/small" group-title="Phá Làng TV",22:20 11/11 Bhutan U17 vs UAE U17 (LÝ LÊN LỬA) (HD2) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghpp0xr6od/image/small" group-title="Phá Làng TV",22:20 11/11 Bhutan U17 vs UAE U17 (LÝ LẠNH LÙNG) (HD2) [geo]
 https://pull1.digitalcdn.net/live/f7bed03b652e4ed8a374f9eb0008d660/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghpp0xr6od/image/small" group-title="Phá Làng TV",22:20 11/11 Bhutan U17 vs UAE U17 (LÝ LÊN LỬA) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghpp0xr6od/image/small" group-title="Phá Làng TV",22:20 11/11 Bhutan U17 vs UAE U17 (LÝ LẠNH LÙNG) [geo]
 https://pull.digitalcdn.net/live/f7bed03b652e4ed8a374f9eb0008d660/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkh308oqg8n/image/small" group-title="Phá Làng TV",23:00 11/11 Brunei Darussalam U17 vs Bahrain U17 (LÝ LINH LỰC) (HD2) [geo]
@@ -1155,6 +1230,18 @@ https://pull1.digitalcdn.net/live/c09eed8fa7264c65852f08ab4e43c2be/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyh7p3gr1ge/image/small" group-title="Phá Làng TV",02:00 12/11 Nữ Liverpool vs Nữ Aston Villa (LÝ LÊN LỬA) [geo]
 https://pull.digitalcdn.net/live/c09eed8fa7264c65852f08ab4e43c2be/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkk88ryox/image/small" group-title="Phá Làng TV",13:00 12/11 New Zealand vs Ấn Độ (LÝ LẠNH LÙNG) (HD2) [geo]
+https://pull1.digitalcdn.net/live/f1400ccd968e4ee1bf2b481d90264aa1/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkk88ryox/image/small" group-title="Phá Làng TV",13:00 12/11 New Zealand vs Ấn Độ (LÝ LẠNH LÙNG) [geo]
+https://pull.digitalcdn.net/live/f1400ccd968e4ee1bf2b481d90264aa1/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohk4jvq1zp/image/small" group-title="Phá Làng TV",15:00 12/11 Thái Lan U23 vs Qatar U23 (LÝ LÀNG LÁ) (HD2) [geo]
+https://pull1.digitalcdn.net/live/f8126bfdaca64c4fa2f089e9f1d5f536/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohk4jvq1zp/image/small" group-title="Phá Làng TV",15:00 12/11 Thái Lan U23 vs Qatar U23 (LÝ LÀNG LÁ) [geo]
+https://pull.digitalcdn.net/live/f8126bfdaca64c4fa2f089e9f1d5f536/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/13/13/1776063223569/462daff06d9d_480_270.png" group-title="Sự Kiện TV360",360 Anime
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10013
@@ -1207,9 +1294,6 @@ https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10011
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/08/10/1775617851169/1f38a5af77c1_480_270.png" group-title="Sự Kiện TV360",360 Hành động Châu Á
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10009
 
-#EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/09/21/1775744591740/79928f9b003f_480_270.png" group-title="Sự Kiện TV360",360 K-Drama
-https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10010
-
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/10/13/09/1791858575882/443f73b6662b_480_270.png" group-title="Sự Kiện TV360",360 Karaoke Bolero
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10063
 
@@ -1237,12 +1321,6 @@ https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10045
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/10/13/09/1791859301551/c840fcf1e3e0_480_270.png" group-title="Sự Kiện TV360",360 Thám tử Conan
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10066
 
-#EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/16/00/1776274695415/4b2703dbb4c4_480_270.png" group-title="Sự Kiện TV360",360 Thể Thao Châu Á
-https://dekki.bacbenny95.workers.dev/film4k/stream/channel/10017
-
-#EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/16/00/1776274695415/4b2703dbb4c4_480_270.png" group-title="Sự Kiện TV360",360 Thể Thao Châu Á
-https://dekki.bacbenny95.workers.dev/film4k/stream/event/10017
-
 #EXTINF:-1 tvg-logo="https://img-evg1.tv360.vn/image1/2026/04/15/22/1776267558745/5fc303f5ba08_480_270.png" group-title="Sự Kiện TV360",TV360+ 11
 https://dekki.bacbenny95.workers.dev/film4k/stream/channel/9958
 
@@ -1253,6 +1331,9 @@ https://dekki.bacbenny95.workers.dev/film4k/stream/channel/9887
 http://tv.close.vn:8122/udp/225.1.1.2:30120
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/af/Logo_FPT_Play_from_2017.png/revision/latest/scale-to-width-down/1256?cb=20231112070725&path-prefix=vi" group-title="Sự kiện FPT Play",FPT Play 2
+https://livecdn.fptplay.net/event/ttlogin/chunklist.m3u8
+
+#EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/af/Logo_FPT_Play_from_2017.png/revision/latest/scale-to-width-down/1256?cb=20231112070725&path-prefix=vi" group-title="Sự kiện FPT Play",FPT Play 3
 http://tv.close.vn:8122/udp/225.1.4.199:30120
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/af/Logo_FPT_Play_from_2017.png/revision/latest/scale-to-width-down/1256?cb=20231112070725&path-prefix=vi" group-title="Sự kiện FPT Play",FPT Play Multiview VTV1 VTV1-VTV2-VTV4
@@ -1409,8 +1490,8 @@ https://pull.niues.live/live/stream-380460_lhd.m3u8?auth_key=1794320047-0-0-65a3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niur.live/live/stream-9912140_lhd.m3u8?txSecret=40c6e3445d172c4b21042645a7e1898a&txTime=6af36cc3
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 10/11 Vietnam U23 vs Thailand U23 vào | BLV 147801
-#EXTVLCOPT:http-referrer=https://vebotvtv.club/truc-tiep/vietnam-u23-vs-thailand-u23-10-11-2026/?blv=147801
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",19:00 10/11 Vietnam U23 vs Thailand U23 vào | BLV 118206
+#EXTVLCOPT:http-referrer=https://vebotvtv.club/truc-tiep/vietnam-u23-vs-thailand-u23-10-11-2026/?blv=118206
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1794320047-0-0-1787c1aa84a8f7d0d74ac1dd15552835
 
@@ -1454,11 +1535,6 @@ https://pull.niur.live/live/stream-283501_lhd.m3u8?txSecret=860329b0dac71318d762
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1794320047-0-0-515a3563cd8f9678d4696c325e4c3950
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",22:00 10/11 El Mokawloon El Arab vs Telecom Egypt vào | BLV 602153
-#EXTVLCOPT:http-referrer=https://vebotvtv.club/truc-tiep/el-mokawloon-el-arab-vs-telecom-egypt-10-11-2026/?blv=602153
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://pull.niues.live/live/stream-9912129_lhd.m3u8?auth_key=1794257600-0-0-b5946ba8f0b633778bf935a87a4ead75
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",00:30 11/11 AFC Metalul Buzau vs CSA Steaua Bucuresti vào | BLV 304148
 #EXTVLCOPT:http-referrer=https://vebotvtv.club/truc-tiep/afc-metalul-buzau-vs-csa-steaua-bucuresti-11-11-2026/?blv=304148
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -1484,8 +1560,8 @@ https://pull.niues.live/live/stream-9912142_lhd.m3u8?auth_key=1794263446-0-0-978
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-582342_lhd.m3u8?auth_key=1794257615-0-0-aa706604188255f84b868cb8d3193603
 
-#EXTINF:-1 tvg-logo="" group-title="VeboTV",00:45 11/11 Real Madrid Women vs Paris FC Women vào | BLV 273736
-#EXTVLCOPT:http-referrer=https://vebotvtv.club/truc-tiep/real-madrid-women-vs-paris-fc-women-11-11-2026/?blv=273736
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",00:45 11/11 Real Madrid Women vs Paris FC Women vào | BLV 627318
+#EXTVLCOPT:http-referrer=https://vebotvtv.club/truc-tiep/real-madrid-women-vs-paris-fc-women-11-11-2026/?blv=627318
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-627318_lhd.m3u8?auth_key=1794265595-0-0-b82c7a276ef4930a6d6c51f90a56e9b7
 
@@ -1513,6 +1589,11 @@ https://pull.niur.live/live/stream-602019_lhd.m3u8?txSecret=0ff6f93d928d387ce294
 #EXTVLCOPT:http-referrer=https://vebotvtv.club/truc-tiep/cf-trival-valderas-vs-cd-leganes-11-11-2026/?blv=400722
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-9912138_lhd.m3u8?auth_key=1794263408-0-0-dbab3a75830d20788c781b1e06fe39f5
+
+#EXTINF:-1 tvg-logo="" group-title="VeboTV",02:00 11/11 CF Trival Valderas vs CD Leganes vào | BLV 602153
+#EXTVLCOPT:http-referrer=https://vebotvtv.club/truc-tiep/cf-trival-valderas-vs-cd-leganes-11-11-2026/?blv=602153
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://pull.niues.live/live/stream-9912129_lhd.m3u8?auth_key=1794257600-0-0-b5946ba8f0b633778bf935a87a4ead75
 
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",03:00 11/11 AS Roma Women vs Servette Women vào | BLV 321443
 #EXTVLCOPT:http-referrer=https://vebotvtv.club/truc-tiep/as-roma-women-vs-servette-women-11-11-2026/?blv=321443
@@ -1659,17 +1740,56 @@ https://pull.niur.live/live/stream-491873_lhd.m3u8?txSecret=8a6951145c36d0dbbe70
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.niues.live/live/stream-619561_lhd.m3u8?auth_key=1794297266-0-0-8cd7f060f3ac5691fa6e5023755499a1
 
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/7303a103c93fea0445384d6ff3f3d1b9.png" group-title="Vua Sân Cỏ TV",15:00 10/11 Qatar U23 vs Singapore U23 (Nguyễn Ánh)
-https://wncdnhls-global.losartang.org/live/vsc-channel-11.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/14b75c2d38d88b747c19de8ea5509d16.png" group-title="Vua Sân Cỏ TV",19:00 10/11 Vietnam U23 vs Thailand U23 (Lưu Bang)
-https://wncdnhls-global.losartang.org/live/vsc-channel-7.m3u8
-
-#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/c0f3a9cc8c0672341632498cdfb3fff9.png" group-title="Vua Sân Cỏ TV",20:00 10/11 Algeria U17 vs Morocco U17 (Huyền Diệp)
-https://wncdnhls-global.losartang.org/live/vsc-channel-4.m3u8
-
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/d2ba8945533ebbda0bcccf6cf21a4bd4.png" group-title="Vua Sân Cỏ TV",22:00 10/11 El Mokawloon El Arab vs Telecom Egypt (Lê Hoàn)
 https://wncdnhls-global.losartang.org/live/vsc-channel-5.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/e121cced31de682c590d3305327061df.png" group-title="Vua Sân Cỏ TV",00:45 11/11 BK Hacken Women vs Chelsea FC Women (Trần Hoàng)
+https://wncdnhls-global.losartang.org/live/vsc-channel-19.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/be7fe57ffae201d4d8e1f8a8bf33232f.png" group-title="Vua Sân Cỏ TV",00:45 11/11 Real Madrid Women vs Paris FC Women (Ngô Quyền)
+https://wncdnhls-global.losartang.org/live/vsc-channel-10.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/9b531be11cb41d4f7999fc91a943c75f.png" group-title="Vua Sân Cỏ TV",03:00 11/11 Paris Saint Germain Women vs Bayern Munchen Women (Lê Lợi)
+https://wncdnhls-global.losartang.org/live/vsc-channel-6.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/bd9f3363073f1bd8222d3ff41fec6246.png" group-title="Vua Sân Cỏ TV",03:00 11/11 UE Tavernes vs Valencia CF (Trần Cảnh)
+https://wncdnhls-global.losartang.org/live/vsc-channel-18.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/e7083a9eae16cbc27fa133d41212e4c8.png" group-title="Vua Sân Cỏ TV",16:30 11/11 India vs Maldives (Ngô Quyền)
+https://wncdnhls-global.losartang.org/live/vsc-channel-10.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/d85cce27ab583e5b3cead155f02b098a.png" group-title="Vua Sân Cỏ TV",17:00 11/11 Vissel Kobe vs Machida Zelvia (Dương Kiên)
+https://wncdnhls-global.losartang.org/live/vsc-channel-3.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/78ddaaa79d9502f5e2df0fbb6261f937.png" group-title="Vua Sân Cỏ TV",17:00 11/11 Yokohama F. Marinos vs Kashima Antlers (Nguyễn Ánh)
+https://wncdnhls-global.losartang.org/live/vsc-channel-11.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/ca15e36551392e8c99b53b5b2f8531d3.png" group-title="Vua Sân Cỏ TV",17:30 11/11 Urawa Red Diamonds vs Cerezo Osaka (Huyền Diệp)
+https://wncdnhls-global.losartang.org/live/vsc-channel-4.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/367ba92bc85435312f1074132e9e2ce8.png" group-title="Vua Sân Cỏ TV",18:35 11/11 China U19 vs Vietnam U19 (Trần Cảnh)
+https://wncdnhls-global.losartang.org/live/vsc-channel-18.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/e4ba31fba036a999321d5460f7f2d1d1.png" group-title="Vua Sân Cỏ TV",19:00 11/11 Slovenia U19 vs England U19 (Trần Hoàng)
+https://wncdnhls-global.losartang.org/live/vsc-channel-19.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/14b75c2d38d88b747c19de8ea5509d16.png" group-title="Vua Sân Cỏ TV",19:00 11/11 Vietnam vs Chinese Taipei (Lưu Bang)
+https://wncdnhls-global.losartang.org/live/vsc-channel-7.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/5856c2f4a854359864b18f9aed3f8874.png" group-title="Vua Sân Cỏ TV",20:00 11/11 Germany U19 vs Sweden U19 (Triệu Hằng)
+https://wncdnhls-global.losartang.org/live/vsc-channel-20.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/70d5c573c693c4053f908d9d9314ce87.png" group-title="Vua Sân Cỏ TV",20:00 11/11 South Sudan U23 vs Senegal U23 (Trần Hoàng)
+https://wncdnhls-global.losartang.org/live/vsc-channel-19.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/d92d7ec47187a662aacda2d4b4c7628e.png" group-title="Vua Sân Cỏ TV",21:00 11/11 Portugal U17 vs Andorra U17 (Ngô Quyền)
+https://wncdnhls-global.losartang.org/live/vsc-channel-10.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/775bc655c77d679c193f1982dac04668.png" group-title="Vua Sân Cỏ TV",21:30 11/11 Italy U19 vs Romania U19 (Tào Duệ)
+https://wncdnhls-global.losartang.org/live/vsc-channel-15.m3u8
+
+#EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/e5858bd2ddb51631a85b1af22f5a1a6a.png" group-title="Vua Sân Cỏ TV",22:00 11/11 Spain U19 vs Iceland U19 (Trần Hoàng)
+https://wncdnhls-global.losartang.org/live/vsc-channel-19.m3u8
 
 #EXTINF:-1 tvg-logo="https://media1-global.cdnx.tech/stream/images/b0bd770e9c8a48489a49662c369d3f46.jpg" group-title="Highlight",RC Celta vs Levante [2026-11-09]
 https://storage-api.sports-data.online/sport-data-storage/highlights/local/celta-0-0-levante-ud-resumen-laliga-ea-sports-ugnrr6ozkuo/index.m3u8
