@@ -1614,6 +1614,8 @@ OMIT_USER_AGENT_GROUP_KEYS = {compact_text_key(item) for item in OMIT_USER_AGENT
 
 def canonical_group_title(group):
     group = clean_text(group)
+    if compact_text_key(group) in {"xlsport", "xlsports", "xlflv"}:
+        return "XL-FLV"
     if compact_text_key(group) == "sukienfptplay":
         return "Sự kiện FPT Play"
     if not group:
@@ -2158,8 +2160,8 @@ def write_ott_m3u(path, channels):
 
 
 def ott_output_group(channel):
-    if output_group(channel) == "XL-Sports":
-        return "XL-Sports"
+    if output_group(channel) == "XL-FLV":
+        return "XL-FLV"
     if not is_flv_url(channel.get("stream_url")):
         return output_group(channel)
     identity = compact_text_key(str(channel.get("source", "")) + " " + output_group(channel))
@@ -6535,7 +6537,7 @@ def collect_xoilacz_sport_playlist():
         sport = clean_text(row['group']).lower()
         if sport not in XL_OTHER_SPORTS | {'football'} or not (is_hls_url(row['stream_url']) or is_flv_url(row['stream_url'])):
             continue
-        row.update(sport=sport, group='XL-Sports' if sport in XL_OTHER_SPORTS else 'Xôi Lạc Z TV')
+        row.update(sport=sport, group='XL-FLV' if sport in XL_OTHER_SPORTS else 'Xôi Lạc Z TV')
         for option in row.get('raw_options', []):
             if option.startswith('#EXTHTTP:'):
                 try:
@@ -6646,7 +6648,7 @@ def collect_xoilacz():
                         "event_datetime": event_dt,
                         "sport": sport_match.group(1) if sport_match else "",
                         "name": f"{title} | Link {idx} [{quality}]",
-                        "group": "XL-Sports" if sport_match and sport_match.group(1).lower() in XL_OTHER_SPORTS else "Xôi Lạc Z TV",
+                        "group": "XL-FLV" if sport_match and sport_match.group(1).lower() in XL_OTHER_SPORTS else "Xôi Lạc Z TV",
                         "logo": "",
                         "stream_url": stream_url,
                         "referer": xoilacz_stream_referer(stream_url),
