@@ -10,38 +10,16 @@ on:
       - "footonsat_collector.py"
       - "fancode_m3u_export.py"
       - ".github/workflows/update.yml"
+      - "scripts/publish_playlists.py"
   schedule:
-    # Live sports, Asia/Bangkok: 02:00, 16:00, 18:00
-    - cron: "0 19 * * *"
-    - cron: "0 9 * * *"
-    - cron: "0 11 * * *"
-    # Refresh live sources in the morning, not only highlights.
-    - cron: "10 23 * * *"
-    - cron: "10 0 * * *"
-    # Refresh changing daytime match/stream assignments: 09:10, 12:00, 14:00 ICT
-    - cron: "10 2 * * *"
-    - cron: "0 5 * * *"
-    - cron: "0 7 * * *"
-    # Highlights, Asia/Bangkok: every 30 minutes from 03:30 to 09:00
-    - cron: "30 20 * * *"
-    - cron: "0 21 * * *"
-    - cron: "30 21 * * *"
-    - cron: "0 22 * * *"
-    - cron: "30 22 * * *"
-    - cron: "0 23 * * *"
-    - cron: "30 23 * * *"
-    - cron: "0 0 * * *"
-    - cron: "30 0 * * *"
-    - cron: "0 1 * * *"
-    # 24h often publishes overnight highlights after 07:30 ICT.
-    - cron: "30 1 * * *"
-    - cron: "0 2 * * *"
-    - cron: "30 3 * * *"
-    - cron: "30 5 * * *"
+    # ICT 02:17, 06:17, 07:17, 09:17, 12:17, 14:17, 16:17, 18:17.
+    # Highlight scraping belongs exclusively to highlight.yml.
+    - cron: "17 19,23,0,2,5,7,9,11 * * *"
 
 concurrency:
-  group: update-m3u-main
+  group: playlist-main
   cancel-in-progress: false
+  queue: max
 
 permissions:
   contents: write
@@ -55,7 +33,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main
+          fetch-depth: 50
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -70,22 +49,7 @@ jobs:
       - name: Generate M3U files
         timeout-minutes: 30
         run: |
-          RUN_MODE="all"
-          if [ "${{ github.event_name }}" = "push" ]; then
-            RUN_MODE="live"
-          fi
-          if [ "${{ github.event_name }}" = "schedule" ]; then
-            case "${{ github.event.schedule }}" in
-              "30 20 * * *"|"0 21 * * *"|"30 21 * * *"|"0 22 * * *"|"30 22 * * *"|"0 23 * * *"|"30 23 * * *"|"0 0 * * *"|"30 0 * * *"|"0 1 * * *"|"30 1 * * *"|"0 2 * * *"|"30 3 * * *"|"30 5 * * *")
-                RUN_MODE="highlight"
-                ;;
-              *)
-                RUN_MODE="live"
-                ;;
-            esac
-          fi
-          echo "RUN_MODE=$RUN_MODE"
-          RUN_MODE="$RUN_MODE" python combined_m3u_collector.py
+          RUN_MODE=live python combined_m3u_collector.py
           python footonsat_collector.py
           python fancode_m3u_export.py
           rm -f sport.m3u
@@ -108,22 +72,18 @@ jobs:
           test -s slow_sources_archive.json
           ls -lh all.m3u ott.m3u highlight.m3u fancode.m3u footonsat.m3u slow_sources.m3u slow_sources_archive.json
 
-      - name: Commit generated files
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -- all.m3u ott.m3u highlight.m3u footonsat.m3u fancode.m3u slow_sources.m3u slow_sources_archive.json dasfootball_order.json
-          git add -- '*_cache.json'
-          if git diff --cached --quiet; then
-            echo "No generated changes to commit."
-          else
-            git commit -m "Update m3u files"
-            for i in 1 2 3; do
-              if git push; then
-                exit 0
-              fi
-              echo "Push failed, rebasing on latest origin/main and retrying..."
-              git pull --rebase origin main
-            done
-            git push
-          fi
+      - name: Publish generated files
+        run: python scripts/publish_playlists.py --message "Refresh update playlists" all.m3u ott.m3u highlight.m3u footonsat.m3u fancode.m3u slow_sources.m3u slow_sources_archive.json dasfootball_order.json "*_cache.json"
+
+      - name: Preserve results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-publication-update-${{ github.run_id }}
+          retention-days: 7
+          path: |
+            *.m3u
+            *_cache.json
+            slow_sources_archive.json
+            dasfootball_order.json
+            publish-failed.patch

@@ -6,8 +6,9 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: update-m3u-main
+  group: playlist-main
   cancel-in-progress: false
+  queue: max
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -15,7 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main
+          fetch-depth: 50
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -28,20 +30,18 @@ jobs:
             if [ "$attempt" -lt 3 ]; then sleep 30; fi
           done
           exit 1
-      - name: Publish current streams
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          for attempt in 1 2 3; do
-            git add vsc9.m3u vsc9_cache.json all.m3u ott.m3u
-            git diff --cached --quiet && exit 0
-            git commit -m "Refresh Vua San Co streams"
-            git push && exit 0
-            git fetch origin main
-            git reset --soft HEAD~1
-            git restore --staged vsc9.m3u vsc9_cache.json all.m3u ott.m3u
-            git restore vsc9_cache.json all.m3u ott.m3u
-            git rebase origin/main
-            RUN_MODE=vsc9 python combined_m3u_collector.py
-          done
-          exit 1
+      - name: Publish generated files
+        run: python scripts/publish_playlists.py --message "Refresh vsc9 playlists" vsc9.m3u vsc9_cache.json all.m3u ott.m3u
+
+      - name: Preserve results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-publication-vsc9-${{ github.run_id }}
+          retention-days: 7
+          path: |
+            *.m3u
+            *_cache.json
+            slow_sources_archive.json
+            dasfootball_order.json
+            publish-failed.patch

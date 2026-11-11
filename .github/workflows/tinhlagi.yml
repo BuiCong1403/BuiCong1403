@@ -12,8 +12,9 @@ on:
     - cron: "15 23,5,11 * * *"
 
 concurrency:
-  group: tinhlagi-reference
+  group: playlist-main
   cancel-in-progress: false
+  queue: max
 
 permissions:
   contents: write
@@ -25,7 +26,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main
+          fetch-depth: 50
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
@@ -33,15 +35,18 @@ jobs:
         env:
           TINHLAGI_APP_ACTIVATION_CODE: ${{ secrets.TINHLAGI_APP_ACTIVATION_CODE || 'tinhlagipro' }}
         run: python tinhlagi_app_export.py
-      - name: Publish reference playlists
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add --ignore-errors tlgapp.m3u hl.m3u
-          git diff --cached --quiet && exit 0
-          git commit -m "Refresh Tinhlagi reference playlists"
-          for attempt in 1 2 3; do
-            git push && exit 0
-            git pull --rebase origin main
-          done
-          exit 1
+      - name: Publish generated files
+        run: python scripts/publish_playlists.py --message "Refresh tinhlagi playlists" tlgapp.m3u hl.m3u
+
+      - name: Preserve results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-publication-tinhlagi-${{ github.run_id }}
+          retention-days: 7
+          path: |
+            *.m3u
+            *_cache.json
+            slow_sources_archive.json
+            dasfootball_order.json
+            publish-failed.patch

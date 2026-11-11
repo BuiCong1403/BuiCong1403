@@ -3,17 +3,18 @@ name: Refresh Slow Sports Sources
 on:
   workflow_dispatch:
   schedule:
-    # Asia/Bangkok: run 30 minutes before the main live-playlist updates.
-    - cron: "30 18 * * *"
-    - cron: "30 1 * * *"
-    - cron: "30 4 * * *"
-    - cron: "30 6 * * *"
-    - cron: "30 8 * * *"
-    - cron: "30 10 * * *"
+    # ICT 01:43, 08:43, 11:43, 13:43, 15:43, 17:43.
+    - cron: "43 18 * * *"
+    - cron: "43 1 * * *"
+    - cron: "43 4 * * *"
+    - cron: "43 6 * * *"
+    - cron: "43 8 * * *"
+    - cron: "43 10 * * *"
 
 concurrency:
-  group: refresh-slow-sports-sources
+  group: playlist-main
   cancel-in-progress: false
+  queue: max
 
 permissions:
   contents: write
@@ -27,7 +28,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main
+          fetch-depth: 50
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -45,20 +47,18 @@ jobs:
           test -s slow_sources_archive.json
           ls -lh slow_sources.m3u slow_sources_archive.json
 
-      - name: Commit slow source playlist
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add slow_sources.m3u slow_sources_archive.json
-          if git diff --cached --quiet; then
-            echo "No slow-source changes to commit."
-            exit 0
-          fi
-          git commit -m "Refresh slow sports sources"
-          for i in 1 2 3; do
-            if git push; then
-              exit 0
-            fi
-            git pull --rebase origin main
-          done
-          git push
+      - name: Publish generated files
+        run: python scripts/publish_playlists.py --message "Refresh slow_sources playlists" slow_sources.m3u slow_sources_archive.json khandaia_cache.json
+
+      - name: Preserve results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-publication-slow_sources-${{ github.run_id }}
+          retention-days: 7
+          path: |
+            *.m3u
+            *_cache.json
+            slow_sources_archive.json
+            dasfootball_order.json
+            publish-failed.patch

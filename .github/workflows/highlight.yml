@@ -3,16 +3,17 @@ name: Refresh Highlights
 on:
   workflow_dispatch:
   schedule:
-    # Asia/Bangkok 03:30, then every 30 minutes through 09:00.
-    - cron: "30 20 * * *"
-    - cron: "0,30 21-23 * * *"
-    - cron: "0,30 0 * * *"
-    - cron: "0,30 1 * * *"
-    - cron: "0 2 * * *"
+    # ICT 03:37 through 09:07, every 30 minutes.
+    - cron: "37 20 * * *"
+    - cron: "7,37 21-23,0,1 * * *"
+    - cron: "7 2 * * *"
+    # Catch-up at 10:37 and 12:37 ICT, moved out of update.yml.
+    - cron: "37 3,5 * * *"
 
 concurrency:
-  group: refresh-highlights
+  group: playlist-main
   cancel-in-progress: false
+  queue: max
 
 permissions:
   contents: write
@@ -26,7 +27,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main
+          fetch-depth: 50
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -45,20 +47,18 @@ jobs:
           test -s ott.m3u
           ls -lh highlight.m3u all.m3u ott.m3u
 
-      - name: Commit highlight playlist
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add highlight.m3u all.m3u ott.m3u dasfootball.m3u dasfootball_order.json h24_highlight_cache.json
-          if git diff --cached --quiet; then
-            echo "No highlight changes to commit."
-            exit 0
-          fi
-          git commit -m "Refresh highlights"
-          for i in 1 2 3; do
-            if git push; then
-              exit 0
-            fi
-            git pull --rebase origin main
-          done
-          git push
+      - name: Publish generated files
+        run: python scripts/publish_playlists.py --message "Refresh highlight playlists" highlight.m3u all.m3u ott.m3u dasfootball.m3u dasfootball_order.json h24_highlight_cache.json
+
+      - name: Preserve results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-publication-highlight-${{ github.run_id }}
+          retention-days: 7
+          path: |
+            *.m3u
+            *_cache.json
+            slow_sources_archive.json
+            dasfootball_order.json
+            publish-failed.patch

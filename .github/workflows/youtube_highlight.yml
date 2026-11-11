@@ -12,8 +12,9 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: refresh-youtube-sports
+  group: playlist-main
   cancel-in-progress: false
+  queue: max
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -21,7 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main
+          fetch-depth: 50
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -30,27 +32,18 @@ jobs:
         run: python -u youtube_highlight_collector.py
       - name: Merge into highlight and main playlists
         run: RUN_MODE=merge_youtube python -u combined_m3u_collector.py
-      - name: Publish
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add youtube_highlight_cache.json h24_highlight_cache.json highlight.m3u all.m3u ott.m3u
-          git diff --cached --quiet && exit 0
-          git commit -m "Refresh YouTube sports highlights"
-          for attempt in 1 2 3; do
-            git push && exit 0
-            git fetch origin main
-            git rebase origin/main || {
-              for path in $(git diff --name-only --diff-filter=U); do
-                case "$path" in
-                  youtube_highlight_cache.json|h24_highlight_cache.json) git checkout --theirs -- "$path" ;;
-                  all.m3u|ott.m3u|highlight.m3u) git checkout --ours -- "$path" ;;
-                  *) git rebase --abort; exit 1 ;;
-                esac
-              done
-              RUN_MODE=merge_youtube python combined_m3u_collector.py
-              git add youtube_highlight_cache.json h24_highlight_cache.json highlight.m3u all.m3u ott.m3u
-              GIT_EDITOR=true git rebase --continue
-            }
-          done
-          exit 1
+      - name: Publish generated files
+        run: python scripts/publish_playlists.py --message "Refresh youtube_highlight playlists" youtube_highlight_cache.json h24_highlight_cache.json highlight.m3u all.m3u ott.m3u
+
+      - name: Preserve results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-publication-youtube_highlight-${{ github.run_id }}
+          retention-days: 7
+          path: |
+            *.m3u
+            *_cache.json
+            slow_sources_archive.json
+            dasfootball_order.json
+            publish-failed.patch

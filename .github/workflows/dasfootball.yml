@@ -10,8 +10,9 @@ on:
       - ".github/workflows/dasfootball.yml"
 
 concurrency:
-  group: refresh-dasfootball
+  group: playlist-main
   cancel-in-progress: false
+  queue: max
 
 permissions:
   contents: write
@@ -23,32 +24,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: main
+          fetch-depth: 50
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
       - name: Merge uploaded DasFootball snapshot
         run: RUN_MODE=merge_dasfootball python -u combined_m3u_collector.py
-      - name: Publish playlists
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add highlight.m3u all.m3u ott.m3u
-          git diff --cached --quiet && exit 0
-          git commit -m "Refresh DasFootball highlights"
-          for attempt in 1 2 3; do
-            git push && exit 0
-            git fetch origin main
-            git rebase origin/main || {
-              for path in $(git diff --name-only --diff-filter=U); do
-                case "$path" in
-                  all.m3u|ott.m3u|highlight.m3u) git checkout --ours -- "$path" ;;
-                  *) git rebase --abort; exit 1 ;;
-                esac
-              done
-              RUN_MODE=merge_dasfootball python combined_m3u_collector.py
-              git add highlight.m3u all.m3u ott.m3u
-              GIT_EDITOR=true git rebase --continue
-            }
-          done
-          exit 1
+      - name: Publish generated files
+        run: python scripts/publish_playlists.py --message "Refresh dasfootball playlists" highlight.m3u all.m3u ott.m3u
+
+      - name: Preserve results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: failed-publication-dasfootball-${{ github.run_id }}
+          retention-days: 7
+          path: |
+            *.m3u
+            *_cache.json
+            slow_sources_archive.json
+            dasfootball_order.json
+            publish-failed.patch
