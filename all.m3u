@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-12 16:58 ICT
-# Total   : 629
+# Updated : 2026-11-12 18:47 ICT
+# Total   : 632
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/ac/ON_Football_logo_2022.png/revision/latest/scale-to-width-down/1000?cb=20220311023748&path-prefix=vi" group-title="VTV",ON FootBall
 https://live.tvon.vn/g1/vtvcab16/master.m3u8
@@ -2458,6 +2458,21 @@ https://storage-api.sports-data.online/sport-data-storage/highlights/local/roma-
 
 #EXTINF:-1 tvg-logo="https://media1-global.cdnx.tech/stream/images/6cf58e9a444744fd93d241acc61b52f9.jpg" group-title="Highlight",VfB Stuttgart vs SV Werder Bremen [2026-11-08]
 https://storage-api.sports-data.online/sport-data-storage/highlights/local/stuttgart-stops-f-llkrug-vfb-stuttgart-werder-bremen-highlights-matchday-9-bundesliga-v5o3vc-qfwa/index.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="HL24h",Xem lại 2 trận đấu 'đậm mùi' dàn xếp tỷ số của cầu thủ Long An
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-12/1794443402-video9x16-1080.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="HL24h",U23 Thái Lan - U23 Qatar: Nhập cuộc thảm họa, nghiệt ngã "Voi chiến" [Hiệp 1]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-12/cp_special_video_ban_quyen_khac-1794477274-u23thailan_h1.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="HL24h",U23 Thái Lan - U23 Qatar: Nhập cuộc thảm họa, nghiệt ngã "Voi chiến" [Hiệp 2]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-12/cp_special_video_ban_quyen_khac-1794477274-u23thailan_h2.m3u8
 
 #EXTINF:-1 tvg-logo="" group-title="HL24h",Điều gì giúp U23 Việt Nam thắng dễ U23 Thái Lan?
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
