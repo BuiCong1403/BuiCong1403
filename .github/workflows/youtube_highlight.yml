@@ -1,14 +1,7 @@
 name: Refresh YouTube Sports Highlights
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "youtube_highlight_collector.py"
-      - ".github/workflows/youtube_highlight.yml"
-  schedule:
-    # Morning refresh and a catch-up for videos published later: 08:15, 10:15 ICT.
-    - cron: "15 1,3 * * *"
+  # Manual only: CaoDanh currently returns no playable streams.
 permissions:
   contents: write
 concurrency:

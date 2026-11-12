@@ -2,14 +2,7 @@ name: Refresh Tinhlagi Reference
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - "tinhlagi_app_export.py"
-      - ".github/workflows/tinhlagi.yml"
-  schedule:
-    # Vietnam 06:15, 12:15, 18:15. Independent of sports collection.
-    - cron: "15 23,5,11 * * *"
+  # Manual only: upstream DNS is unavailable. Do not queue automatic retries.
 
 concurrency:
   group: playlist-main

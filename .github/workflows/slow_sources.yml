@@ -48,7 +48,7 @@ jobs:
           ls -lh slow_sources.m3u slow_sources_archive.json
 
       - name: Publish generated files
-        run: python scripts/publish_playlists.py --message "Refresh slow_sources playlists" slow_sources.m3u slow_sources_archive.json khandaia_cache.json
+        run: python scripts/publish_playlists.py --message "Refresh slow_sources and merged playlists" slow_sources.m3u slow_sources_archive.json khandaia_cache.json all.m3u ott.m3u
 
       - name: Preserve results on failure
         if: failure()

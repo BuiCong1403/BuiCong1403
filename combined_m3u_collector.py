@@ -10584,6 +10584,42 @@ def split_m3u_text_blocks(text):
     return header, blocks
 
 
+def merge_slow_source_playlists(channels, previous=()):
+    """Publish collected snapshots without fetching any other source."""
+    if not channels:
+        log("[SlowSources] Empty snapshot; keep combined playlists unchanged")
+        return
+    sources = {ch.get("source") for ch in channels}
+    groups = {group_key(group) for source, group, _ in SLOW_SOURCE_COLLECTORS if source in sources}
+    if "XoiLacZ" in sources:
+        groups.update({group_key("XL-FLV"), group_key("XL-Sports")})
+    urls = {ch.get("stream_url") for ch in list(previous) + list(channels)
+            if ch.get("source") in sources}
+    for target, ott in ((ALL_M3U, False), (OTT_M3U, True)):
+        if not target.exists():
+            raise RuntimeError(f"Missing {target.name}; cannot merge sports snapshot")
+        header, blocks = split_m3u_text_blocks(target.read_text(encoding="utf-8-sig"))
+        kept = []
+        for block in blocks:
+            info = parse_extinf(block[0])
+            group = next((line.split(":", 1)[1] for line in block if line.startswith("#EXTGRP:")), info["group"])
+            if group_key(group) in groups or m3u_block_stream_url(block) in urls:
+                continue
+            kept.append(block)
+        temporary = target.with_suffix(".merge-slow.tmp.m3u")
+        try:
+            if ott:
+                write_ott_m3u(temporary, select_ott_compatible_channels(channels))
+            else:
+                main_channels, _flv = split_ott_channels(channels)
+                write_m3u(temporary, main_channels)
+            _, additions = split_m3u_text_blocks(temporary.read_text(encoding="utf-8-sig"))
+            write_m3u_text_blocks(target, header, kept + additions)
+        finally:
+            temporary.unlink(missing_ok=True)
+        log(f"[SlowSources] Merged {len(additions)} entries into {target.name}")
+
+
 def m3u_block_is_highlight(block):
     joined = "\n".join(block).lower()
     return any(tag in joined for tag in ('group-title="highlight', '#extgrp:highlight',
@@ -10975,7 +11011,13 @@ def main():
         return
 
     if RUN_MODE == "slow":
-        collect_slow_sources()
+        previous = load_slow_sources()
+        channels, _counts = collect_slow_sources()
+        merge_slow_source_playlists(channels, previous)
+        return
+
+    if RUN_MODE == "merge_slow":
+        merge_slow_source_playlists(load_slow_sources())
         return
 
     if RUN_MODE in {"dasfootball", "dasfootball_snapshot", "merge_dasfootball"}:
