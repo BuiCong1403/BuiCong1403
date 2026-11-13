@@ -78,6 +78,36 @@ class PublisherTests(unittest.TestCase):
             publisher.publish("refresh", ["all.m3u"])
         self.assertEqual(self.run_git(self.remote, "show", "main:all.m3u"), "old")
 
+    def seed_playlist(self):
+        text = '#EXTM3U\n# Updated : yesterday\n#EXTINF:-1,Channel\nhttps://example.com/live.m3u8\n'
+        Path('all.m3u').write_text(text, encoding='utf-8')
+        publisher.publish('seed playlist', ['all.m3u'])
+        return text
+
+    def test_timestamp_only_does_not_commit(self):
+        text = self.seed_playlist()
+        head = self.run_git(self.work, 'rev-parse', 'HEAD')
+        Path('all.m3u').write_text(text.replace('yesterday', 'today'), encoding='utf-8')
+        publisher.publish('timestamp only', ['all.m3u'])
+        self.assertEqual(head, self.run_git(self.work, 'rev-parse', 'HEAD'))
+        self.assertEqual(Path('all.m3u').read_text(encoding='utf-8'), text)
+        self.assertEqual(self.run_git(self.work, 'status', '--porcelain'), '')
+
+    def test_empty_result_cannot_replace_good_playlist(self):
+        text = self.seed_playlist()
+        Path('all.m3u').write_text('#EXTM3U\n# Total: 0\n', encoding='utf-8')
+        with self.assertRaisesRegex(RuntimeError, 'empty/invalid'):
+            publisher.publish('empty scrape', ['all.m3u'])
+        self.assertEqual(self.run_git(self.remote, 'show', 'main:all.m3u'), text.strip())
+        self.assertEqual(self.run_git(self.work, 'diff', '--cached', '--name-only'), '')
+
+    def test_changed_url_is_published(self):
+        text = self.seed_playlist()
+        updated = text.replace('live.m3u8', 'new.m3u8').replace('yesterday', 'today')
+        Path('all.m3u').write_text(updated, encoding='utf-8')
+        publisher.publish('new stream', ['all.m3u'])
+        self.assertEqual(self.run_git(self.remote, 'show', 'main:all.m3u'), updated.strip())
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,3 +1,10 @@
 __pycache__/
 *.py[cod]
 *.log
+.env
+.env.*
+!.env.example
+*.local.json
+tmp_probe_*.html
+*_current.m3u
+phalang_bundle.js

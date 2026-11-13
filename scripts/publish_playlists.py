@@ -4,10 +4,38 @@ from pathlib import Path
 import subprocess
 import sys
 import time
+import re
 
 
 def git(*args, check=True):
-    return subprocess.run(["git", *args], check=check, capture_output=True, text=True)
+    return subprocess.run(["git", *args], check=check, capture_output=True, text=True, encoding="utf-8")
+
+
+def playlist_content(text):
+    # Keep the last content-change time when only the generated header changed.
+    return "\n".join(line for line in text.splitlines()
+                     if not re.match(r"^#\s*Updated\s*:", line, re.I))
+
+
+def validate_staged_playlists():
+    paths = git("diff", "--cached", "--name-only", "-z").stdout.split("\0")
+    unchanged = []
+    for name in filter(None, paths):
+        if Path(name).suffix.lower() != ".m3u" or not Path(name).exists():
+            continue
+        before = git("show", f"HEAD:{name}", check=False)
+        if before.returncode or not before.stdout.lstrip("\ufeff\r\n ").startswith("#EXTM3U"):
+            continue
+        after = Path(name).read_text(encoding="utf-8-sig")
+        if not after.lstrip().startswith("#EXTM3U") or (
+                "#EXTINF" in before.stdout and "#EXTINF" not in after):
+            git("restore", "--staged", "--", *filter(None, paths))
+            raise RuntimeError(f"Refusing empty/invalid playlist {name}; previous remote output preserved")
+        if playlist_content(before.stdout) == playlist_content(after):
+            unchanged.append(name)
+    for name in unchanged:
+        git("restore", "--source=HEAD", "--staged", "--worktree", "--", name)
+        print(f"Unchanged channel data: {name}; retaining previous update time.")
 
 
 def publish(message, paths):
@@ -19,6 +47,7 @@ def publish(message, paths):
     if git("diff", "--cached", "--name-only").stdout.strip():
         raise RuntimeError("Unexpected staged changes; refusing to publish")
     git("add", "--", *paths)
+    validate_staged_playlists()
     changed = git("diff", "--cached", "--quiet", check=False)
     if changed.returncode == 0:
         print("No generated changes.")
