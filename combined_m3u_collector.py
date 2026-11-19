@@ -2304,14 +2304,18 @@ def collect_hoiquan1():
     )
 
 
+def in_next_24_hours(kickoff, now=None):
+    now = now or datetime.now(TZ_VN)
+    return bool(kickoff and now <= kickoff <= now + timedelta(hours=24))
+
+
 def parse_tradatv_matches(matches):
     channels = []
-    today = datetime.now(TZ_VN).date()
     for match in matches:
         if not isinstance(match, dict) or match.get("status") in {"finished", "cancelled", "postponed"}:
             continue
         kickoff = parse_iso_to_ict_datetime(match.get("startTime"))
-        if not kickoff or not today <= kickoff.date() <= today + timedelta(days=1):
+        if not in_next_24_hours(kickoff):
             continue
         home, away = match.get("home") or {}, match.get("away") or {}
         title = clean_text(match.get("title")) or f'{home.get("name", "")} vs {away.get("name", "")}'
@@ -2339,6 +2343,18 @@ def collect_tradatv():
         matches = fetch_json_no_cache(api + "/matches", timeout=20)
         if not isinstance(matches, list):
             raise ValueError("TraDaTV schedule must be a match array")
+        def refresh_match(match):
+            if not isinstance(match, dict) or match.get("streams") or not match.get("slug"):
+                return match
+            if not in_next_24_hours(parse_iso_to_ict_datetime(match.get("startTime"))):
+                return match
+            try:
+                detail = fetch_json_no_cache(api + "/matches/by-slug/" + quote(match["slug"], safe=""), timeout=8)
+                return detail if isinstance(detail, dict) and detail.get("id") == match.get("id") else match
+            except Exception:
+                return match
+        with ThreadPoolExecutor(max_workers=4) as executor:
+            matches = list(executor.map(refresh_match, matches))
         channels = parse_tradatv_matches(matches)
         save_source_cache(cache, channels, api)
         log(f"[TraDaTV] {len(matches)} scheduled matches; {len(channels)} current HLS/FLV links")
@@ -2346,6 +2362,49 @@ def collect_tradatv():
     except Exception as exc:
         log(f"[TraDaTV] Request failed: {exc}; using unexpired cache only")
         return filter_current_and_future_events(load_source_cache(cache, "TraDaTV", "Trà Đá TV"))
+
+
+def collect_nembientv():
+    base = os.environ.get("NEMBIENTV_URL", "https://nembientv.com").rstrip("/")
+    cache = BASE_DIR / "nembientv_cache.json"
+    try:
+        payload = fetch_json_no_cache(base + "/cms-schedule.json", timeout=20)
+        matches = payload.get("response") if isinstance(payload, dict) else None
+        if not isinstance(matches, list):
+            raise ValueError("NemBienTV schedule missing response array")
+    except Exception as exc:
+        log(f"[NemBienTV] Schedule unavailable: {exc}")
+        return filter_current_and_future_events(load_source_cache(cache, "NemBienTV", "Ném Biên TV"))
+
+    def resolve(match):
+        kickoff = parse_epoch_to_ict_datetime(match.get("timestamp"))
+        if not in_next_24_hours(kickoff) or not match.get("matchId"):
+            return []
+        page = base + "/truc-tiep/" + quote(str(match["matchId"]), safe="")
+        try:
+            # hasLiveSource in the schedule can be false while this endpoint is live.
+            data = fetch_json_no_cache(page + "?kd_source=1", timeout=8)
+            url = clean_text(data.get("streamUrl")) if isinstance(data, dict) else ""
+            if not (is_hls_url(url) or is_flv_url(url)):
+                return []
+            if any(token in url.lower() for token in ("_wait_hls", "_reconnect_", "no-signal")):
+                return []
+            return [dict(source="NemBienTV", group="Ném Biên TV",
+                         name=f'{kickoff:%H:%M %d/%m} {clean_text(match.get("home"))} vs {clean_text(match.get("away"))}',
+                         stream_url=url, logo=match.get("homeLogo", ""),
+                         sport=match.get("sport", ""), event_datetime=kickoff,
+                         event_date=kickoff.date(), referer="", user_agent="")]
+        except Exception as exc:
+            log(f'[NemBienTV] Match {match.get("matchId")}: {exc}')
+            return []
+
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        batches = executor.map(resolve, [m for m in matches if isinstance(m, dict)])
+        channels = [row for batch in batches for row in batch]
+    channels = filter_current_and_future_events(channels)
+    save_source_cache(cache, channels, base)
+    log(f"[NemBienTV] {len(matches)} scheduled matches; {len(channels)} current HLS/FLV links")
+    return channels
 
 
 SOURCE_CACHE_FIELDS = (
@@ -10635,6 +10694,8 @@ def merge_slow_source_playlists(channels, previous=()):
         return
     sources = {ch.get("source") for ch in channels}
     groups = {group_key(group) for source, group, _ in SLOW_SOURCE_COLLECTORS if source in sources}
+    groups.update(group_key(ch.get("group", "")) for ch in channels
+                  if ch.get("source") in {"TraDaTV", "NemBienTV"})
     if "XoiLacZ" in sources:
         groups.update({group_key("XL-FLV"), group_key("XL-Sports")})
     urls = {ch.get("stream_url") for ch in list(previous) + list(channels)
@@ -11170,6 +11231,7 @@ def main():
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
         ("TraDaTV", collect_tradatv),
+        ("NemBienTV", collect_nembientv),
         ("S8TV", collect_s8tv),
         ("GaVang", collect_gavang),
         ("VSC9", collect_vsc9),
