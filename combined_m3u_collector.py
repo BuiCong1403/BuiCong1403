@@ -2304,6 +2304,50 @@ def collect_hoiquan1():
     )
 
 
+def parse_tradatv_matches(matches):
+    channels = []
+    today = datetime.now(TZ_VN).date()
+    for match in matches:
+        if not isinstance(match, dict) or match.get("status") in {"finished", "cancelled", "postponed"}:
+            continue
+        kickoff = parse_iso_to_ict_datetime(match.get("startTime"))
+        if not kickoff or not today <= kickoff.date() <= today + timedelta(days=1):
+            continue
+        home, away = match.get("home") or {}, match.get("away") or {}
+        title = clean_text(match.get("title")) or f'{home.get("name", "")} vs {away.get("name", "")}'
+        seen = set()
+        for stream in match.get("streams") or []:
+            if not isinstance(stream, dict):
+                continue
+            url = clean_text(stream.get("url"))
+            if not (is_hls_url(url) or is_flv_url(url)) or url in seen:
+                continue
+            seen.add(url)
+            label = clean_text(stream.get("label"))
+            channels.append(dict(
+                source="TraDaTV", group="Trà Đá TV",
+                name=f'{kickoff:%H:%M %d/%m} {title}' + (f' ({label})' if label else ''),
+                stream_url=url, logo=home.get("logoUrl", ""), sport=match.get("sport", ""),
+                event_datetime=kickoff, event_date=kickoff.date(), referer="", user_agent=""))
+    return filter_current_and_future_events(channels)
+
+
+def collect_tradatv():
+    api = os.environ.get("TRADATV_API_URL", "https://htdk.httdtvnb.xyz").rstrip("/")
+    cache = BASE_DIR / "tradatv_cache.json"
+    try:
+        matches = fetch_json_no_cache(api + "/matches", timeout=20)
+        if not isinstance(matches, list):
+            raise ValueError("TraDaTV schedule must be a match array")
+        channels = parse_tradatv_matches(matches)
+        save_source_cache(cache, channels, api)
+        log(f"[TraDaTV] {len(matches)} scheduled matches; {len(channels)} current HLS/FLV links")
+        return channels
+    except Exception as exc:
+        log(f"[TraDaTV] Request failed: {exc}; using unexpired cache only")
+        return filter_current_and_future_events(load_source_cache(cache, "TraDaTV", "Trà Đá TV"))
+
+
 SOURCE_CACHE_FIELDS = (
     "source", "name", "group", "logo", "stream_url", "referer",
     "user_agent", "event_date", "event_datetime", "skip_event_filter",
@@ -11125,6 +11169,7 @@ def main():
         ("TLCabExtras", collect_tlcab_extras),
         ("CloudOKPremierLeague", collect_cloudok_premier_league),
         ("SaoKeTV", collect_saoketv),
+        ("TraDaTV", collect_tradatv),
         ("S8TV", collect_s8tv),
         ("GaVang", collect_gavang),
         ("VSC9", collect_vsc9),
