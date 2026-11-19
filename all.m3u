@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-20 00:43 ICT
-# Total   : 600
+# Updated : 2026-11-20 02:12 ICT
+# Total   : 608
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/ac/ON_Football_logo_2022.png/revision/latest/scale-to-width-down/1000?cb=20220311023748&path-prefix=vi" group-title="VTV",ON FootBall
 https://live.tvon.vn/g1/vtvcab16/master.m3u8
@@ -1472,9 +1472,6 @@ https://cdnhls.xbdbotv.live/live/MTk3MjA0NzA6dWppY2ViaXFnN2Fmazdhendla3Q3azE3Omt
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/austria-wien-w-264551" group-title="BiaomTV",00:45 20/11 [ - ] Austria Wien W vs Bayern Munich W [C1 Châu Âu (Nữ)] [HLS]
 https://cdnhls.xbdbotv.live/live/MTk4Nzk1MDQ6ZDBuMm5wczd6c2ZuaXBpZ290dzI4bDd4OnF3M2J5eG9zcndsZDQweXN1YmtwZ2tvNg/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/fabc3fa7f297e32d91291693eb8c1404.png" group-title="BiaomTV",00:45 20/11 [ - ] Paris FC Women vs HB Koge 's Women [UEFA Women's Champions League] [HLS]
-https://lilive1.eu.cc/live/808f7b2c872c2c8fc53a8564f27d58f7/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/paris-w-230767" group-title="BiaomTV",00:45 20/11 [ - ] Paris W vs Køge [C1 Châu Âu (Nữ)] [HLS]
 https://cdnhls.xbdbotv.live/live/MTk4Nzk1MDM6ZjloaXUzaDRjanBxdHhoeGFvY3I1OGZkOnRrbjI1b3l6Mjk1eTY3bmNjb29mcmltdQ/index.m3u8
 
@@ -2363,6 +2360,11 @@ https://livecdn321.cdnfastter.xyz/live/live_22ba35ebaa/index.m3u8?token=rnGiAKd7
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_a7657aeb05/index.m3u8?token=JhV-r8e3ccnFy-WcOqY4LotVZyi-effj_AKbg9uCVjU&expires=1852800615
 
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/11085_arsenal-fc-w.jpg" group-title="Khandai",03:00 20/11 Bóng đá Arsenal W vs OL Lyonnes W (BLV Khô Cóc)
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_22ba35ebaa/index.m3u8?token=rnGiAKd7Ef-B1Q39PpqAGJSIrNI8dj2Sz-3IRtLMfUs
+
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/25_barcelona-w.jpg" group-title="Khandai",03:00 20/11 Bóng đá Barcelona Women vs Servette Geneve FC W (BLV Khô Chè)
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2578,6 +2580,11 @@ https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
 
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",19:30 21/11 Manchester City vs Fulham (BLV Khô Cóc)
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_22ba35ebaa/index.m3u8?token=rnGiAKd7Ef-B1Q39PpqAGJSIrNI8dj2Sz-3IRtLMfUs
+
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/1l4rjnh63vem7vx/image/small" group-title="Phá Làng TV",00:00 20/11 Nữ Orebro - Nữ Rosengard [Nguồn]
 #EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2592,6 +2599,31 @@ https://pull.digitalcdn.net/live/463b785495fb4ca7a8a877056eaf11b5/index.m3u8
 #EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/029158a1db80bb48e061fcc8c4bb88f4/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/8yomo4h27n8q0j6/image/small" group-title="Phá Làng TV",00:45 20/11 Nữ Paris FC - Nữ HB Koge [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/808f7b2c872c2c8fc53a8564f27d58f7/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/yl5ergph6wkr8k0/image/small" group-title="Phá Làng TV",01:00 20/11 Fredericia - Hillerod Fodbold [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/7b83df2b89ebea9cf7d857a5ff03df30/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/965mkyhegepr1ge/image/small" group-title="Phá Làng TV",01:00 20/11 Nữ Ferro Carril - Nữ River Plate [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/b877d6f394c370c7f4b045656afdabb5/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghp2pvq82w/image/small" group-title="Phá Làng TV",01:00 20/11 ZED FC - Smouha SC [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/36b344e5085bfd32f15ce78a91c8cfb8/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh0l3xmd7o/image/small" group-title="Phá Làng TV",03:00 20/11 Nữ Benfica - Nữ AS Roma [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/4a9cb490d888a179b66591537aebeffc/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hoxvrz84/image/small" group-title="Phá Làng TV",07:30 20/11 Orlando City vs FC Cincinnati (LÝ LẠNH LÙNG) [geo]
 https://pull.digitalcdn.net/live/8a860de8645b4e41bbd5eff33ca459d1/index.m3u8
@@ -2631,3 +2663,9 @@ https://pull.digitalcdn.net/live/9025b068755146bbb17205a597299ad3/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/dj2ryohkw4oq1zp/image/small" group-title="Phá Làng TV",20:30 20/11 Mali U17 vs New Zealand U17 (LÝ LIỀU LĨNH) [geo]
 https://pull.digitalcdn.net/live/e0c9842568394dc5a38ecb4bf9804cc9/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4jwq2gh4elvm0ve/image/small" group-title="Phá Làng TV",21:00 20/11 Tây Ban Nha U17 vs Trung Quốc U17 (LÃM LÀNG) [geo]
+https://pull.digitalcdn.net/live/36648d9ff977457ea6168c4dcccee846/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/l5ergphonwjr8k0/image/small" group-title="Phá Làng TV",22:00 20/11 Italy U17 vs Jamaica U17 (LÝ LONG) [geo]
+https://pull.digitalcdn.net/live/4104eea972ed47a182e140edb359a1c1/index.m3u8
