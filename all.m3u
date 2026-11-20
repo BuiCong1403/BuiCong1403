@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-20 22:50 ICT
-# Total   : 677
+# Updated : 2026-11-21 00:14 ICT
+# Total   : 676
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/ac/ON_Football_logo_2022.png/revision/latest/scale-to-width-down/1000?cb=20220311023748&path-prefix=vi" group-title="VTV",ON FootBall
 https://live.tvon.vn/g1/vtvcab16/master.m3u8
@@ -2025,12 +2025,6 @@ http://tv.close.vn:8122/udp/225.1.1.32:30120
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/af/Logo_FPT_Play_from_2017.png/revision/latest/scale-to-width-down/1256?cb=20231112070725&path-prefix=vi" group-title="Sự kiện FPT Play",FPT Play Sự Kiện 9
 http://tv.close.vn:8122/udp/225.1.1.33:30120
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/a/a8/Beijing_Guoan_F.C.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" group-title="Trà Đá TV",18:35 20/11 Beijing Guoan vs Shanghai Port (BLV LÒ A PÁO)
-https://tradatv-s2.b-cdn.net/live/loapao_s2e1963d01.m3u8
-
-#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/vi/thumb/d/d1/Viettel_FC_2021.svg/3840px-Viettel_FC_2021.svg.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="Trà Đá TV",19:15 20/11 Viettel vs Sông Lam Nghệ An (BLV LÒ A TÔN)
-https://tradatv-s2.b-cdn.net/live/loaton_s2619d22b3.m3u8
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",17:00 20/11 Kashima Antlers vs Shimizu S-Pulse vào | BLV 527384
 #EXTVLCOPT:http-referrer=https://vebo-tv.work/truc-tiep/kashima-antlers-vs-shimizu-s-pulse-20-11-2026/?blv=527384
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2998,3 +2992,6 @@ https://pull.digitalcdn.net/live/842723ce97c7412aa394d2b8199d018f/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/6wWfI3zB-jm1g2SD5.png" group-title="Phá Làng TV",18:00 21/11 Eczacibasi Women vs Kuzey Boru Genclik Women (LÃM LÀNG) [geo]
 https://pull.digitalcdn.net/live/4715d3e6cdd247f4b025b2c8fe2e2f40/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/4/45/Al_Ahli_Saudi_FC_logo.svg/1280px-Al_Ahli_Saudi_FC_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="Trà Đá TV",00:30 21/11 Al Ahli vs Al Nassr (BLV LÒ A LỬNG)
+https://tradatv-s2.b-cdn.net/live/loalung_s2c4a3885b.m3u8
