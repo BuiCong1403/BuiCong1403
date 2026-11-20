@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-21 04:50 ICT
-# Total   : 577
+# Updated : 2026-11-21 06:20 ICT
+# Total   : 576
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/ac/ON_Football_logo_2022.png/revision/latest/scale-to-width-down/1000?cb=20220311023748&path-prefix=vi" group-title="VTV",ON FootBall
 https://live.tvon.vn/g1/vtvcab16/master.m3u8
@@ -2052,12 +2052,6 @@ http://tv.close.vn:8122/udp/225.1.1.32:30120
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/af/Logo_FPT_Play_from_2017.png/revision/latest/scale-to-width-down/1256?cb=20231112070725&path-prefix=vi" group-title="Sự kiện FPT Play",FPT Play Sự Kiện 9
 http://tv.close.vn:8122/udp/225.1.1.33:30120
 
-#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/4/45/Al_Ahli_Saudi_FC_logo.svg/1280px-Al_Ahli_Saudi_FC_logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="Trà Đá TV",00:30 21/11 Al Ahli vs Al Nassr (BLV LÒ A LỬNG)
-https://tradatv-s2.b-cdn.net/live/loalung_s2c4a3885b.m3u8
-
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8d/FC_Bayern_M%C3%BCnchen_logo_%282024%29.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" group-title="Trà Đá TV",02:30 21/11 Munich vs FC Cologne (BLV LÒ A TÔN)
-https://tradatv-s2.b-cdn.net/live/loaton_s2619d22b3.m3u8
-
 #EXTINF:-1 tvg-logo="" group-title="VeboTV",00:00 21/11 Piast Gliwice vs Korona Kielce vào | BLV 511367
 #EXTVLCOPT:http-referrer=https://vebo-tv.work/truc-tiep/piast-gliwice-vs-korona-kielce-21-11-2026/?blv=511367
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2434,3 +2428,6 @@ https://wncdnhls-global.losartang.org/live/vsc-channel-20.m3u8
 
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/ff8991853f7aabce7cb66f09cda0c58e.png" group-title="Vua Sân Cỏ TV",23:15 21/11 OGC Nice vs Paris Saint Germain (Trần Cảnh)
 https://wncdnhls-global.losartang.org/live/vsc-channel-18.m3u8
+
+#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/en/thumb/f/f1/FC_Porto.svg/960px-FC_Porto.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="Trà Đá TV",03:45 21/11 FC Porto vs Paredes (BLV LÒ A LONG)
+https://tradatv-s2.b-cdn.net/live/loalong_s29809fd2b.m3u8
