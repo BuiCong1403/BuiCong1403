@@ -2306,7 +2306,8 @@ def collect_hoiquan1():
 
 def in_next_24_hours(kickoff, now=None):
     now = now or datetime.now(TZ_VN)
-    return bool(kickoff and now <= kickoff <= now + timedelta(hours=24))
+    # Streams commonly appear only after kickoff; retain a bounded live window.
+    return bool(kickoff and now - timedelta(hours=3) <= kickoff <= now + timedelta(hours=24))
 
 
 def parse_tradatv_matches(matches):

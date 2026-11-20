@@ -27,7 +27,9 @@ class NemBienTests(unittest.TestCase):
         self.assertTrue(c.in_next_24_hours(now, now))
         self.assertTrue(c.in_next_24_hours(now + timedelta(hours=24), now))
         self.assertFalse(c.in_next_24_hours(now + timedelta(hours=24, seconds=1), now))
-        self.assertFalse(c.in_next_24_hours(now - timedelta(seconds=1), now))
+        self.assertTrue(c.in_next_24_hours(now - timedelta(hours=2), now))
+        self.assertTrue(c.in_next_24_hours(now - timedelta(hours=3), now))
+        self.assertFalse(c.in_next_24_hours(now - timedelta(hours=3, seconds=1), now))
 
 
 if __name__ == '__main__':
