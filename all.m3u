@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-23 19:19 ICT
-# Total   : 587
+# Updated : 2026-11-23 20:36 ICT
+# Total   : 589
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/a/ac/ON_Football_logo_2022.png/revision/latest/scale-to-width-down/1000?cb=20220311023748&path-prefix=vi" group-title="VTV",ON FootBall
 https://live.tvon.vn/g1/vtvcab16/master.m3u8
@@ -2235,6 +2235,12 @@ https://wncdnhls-global.losartang.org/live/vsc-channel-19.m3u8
 #EXTINF:-1 tvg-logo="https://global-cdn.cdnx.tech/football/team/bf2316e90a47ed6d1181458350b0714b.png" group-title="Vua Sân Cỏ TV",23:00 23/11 Tractor S.C. vs Al-Wasl SC (Trần Cảnh)
 https://wncdnhls-global.losartang.org/live/vsc-channel-18.m3u8
 
+#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/tIhF3vZA-KlKhSYan.png" group-title="Ném Biên TV",19:30 23/11 Tajikistan U17 vs Croatia U17 [BLV Thor]
+https://ivsplay.saigon999.live/live/live05.m3u8
+
+#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/960px-Flag_of_Spain.svg.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="Trà Đá TV",19:30 23/11 Spain U17 vs Fiji U17 (BLV LÒ A PÁO)
+https://tradatv-s2.b-cdn.net/live/loapao_s2e1963d01.m3u8
+
 #EXTINF:-1 tvg-logo="https://i.ytimg.com/vi/YxsFVuJQNag/maxresdefault.jpg" group-title="Highlight",Eintracht Frankfurt vs 1899 Hoffenheim
 #EXTVLCOPT:http-referrer=https://dasfootball.com/eintracht-frankfurt-vs-1899-hoffenheim-highlights-2026-11-21/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2450,6 +2456,16 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-22/cp_special_laliga-1795
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-22/cp_special_nha_fpt-1795285716-chelsea_leeds_fpt_720p.m3u8
 
+#EXTINF:-1 tvg-logo="" group-title="HL24h",Đồng Nai - Hà Nội: Ngược dòng ngoạn mục (V-League) [Hiệp 1 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-21/cp_special_v_league-1795265944-hanoi_h1_720p.m3u8
+
+#EXTINF:-1 tvg-logo="" group-title="HL24h",Đồng Nai - Hà Nội: Ngược dòng ngoạn mục (V-League) [Hiệp 2 | 720p]
+#EXTVLCOPT:http-referrer=https://www.24h.com.vn/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-21/cp_special_v_league-1795265944-hanoi_h2_720p.m3u8
+
 #EXTINF:-1 tvg-logo="" group-title="HL24h",Man City - Fulham: Siêu phẩm vô lê là chưa đủ (Ngoại hạng Anh)
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2574,9 +2590,3 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-19/cp_special_video_ban_q
 #EXTVLCOPT:http-referrer=https://www.24h.com.vn/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-19/cp_special_video_ban_quyen_khac-1795107417-u17saudiarabia_uruguay2.m3u8
-
-#EXTINF:-1 tvg-logo="https://static.flashscore.com/res/image/data/tIhF3vZA-KlKhSYan.png" group-title="Ném Biên TV",19:30 23/11 Tajikistan U17 vs Croatia U17 [BLV Thor]
-https://ivsplay.saigon999.live/live/live05.m3u8
-
-#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/960px-Flag_of_Spain.svg.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail" group-title="Trà Đá TV",19:30 23/11 Spain U17 vs Fiji U17 (BLV LÒ A PÁO)
-https://tradatv-s2.b-cdn.net/live/loapao_s2e1963d01.m3u8
