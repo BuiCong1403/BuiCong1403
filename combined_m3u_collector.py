@@ -2390,8 +2390,12 @@ def collect_nembientv():
                 return []
             if any(token in url.lower() for token in ("_wait_hls", "_reconnect_", "no-signal")):
                 return []
+            commentators = list(dict.fromkeys(
+                clean_text(item.get("name")) for item in (match.get("commentators") or [])
+                if isinstance(item, dict) and clean_text(item.get("name"))))
+            suffix = " [" + ", ".join(commentators) + "]" if commentators else ""
             return [dict(source="NemBienTV", group="Ném Biên TV",
-                         name=f'{kickoff:%H:%M %d/%m} {clean_text(match.get("home"))} vs {clean_text(match.get("away"))}',
+                         name=f'{kickoff:%H:%M %d/%m} {clean_text(match.get("home"))} vs {clean_text(match.get("away"))}' + suffix,
                          stream_url=url, logo=match.get("homeLogo", ""),
                          sport=match.get("sport", ""), event_datetime=kickoff,
                          event_date=kickoff.date(), referer="", user_agent="")]
@@ -2403,6 +2407,7 @@ def collect_nembientv():
         batches = executor.map(resolve, [m for m in matches if isinstance(m, dict)])
         channels = [row for batch in batches for row in batch]
     channels = filter_current_and_future_events(channels)
+    channels.sort(key=lambda row: (row["event_datetime"], row["name"], row["stream_url"]))
     save_source_cache(cache, channels, base)
     log(f"[NemBienTV] {len(matches)} scheduled matches; {len(channels)} current HLS/FLV links")
     return channels

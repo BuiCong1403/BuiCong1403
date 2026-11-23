@@ -7,7 +7,8 @@ import combined_m3u_collector as c
 class NemBienTests(unittest.TestCase):
     def collect(self, url):
         match = dict(matchId='sample', timestamp=int((datetime.now(c.TZ_VN) + timedelta(minutes=5)).timestamp()),
-                     home='Home', away='Away', sport='volleyball', hasLiveSource=False)
+                     home='Home', away='Away', sport='volleyball', hasLiveSource=False,
+                     commentators=[{'name': 'BLV Test'}, {'name': 'BLV Test'}, None])
         with patch.object(c, 'fetch_json_no_cache', side_effect=[{'response': [match]}, {'streamUrl': url}]), \
              patch.object(c, 'save_source_cache'):
             return c.collect_nembientv()
@@ -16,6 +17,7 @@ class NemBienTests(unittest.TestCase):
         rows = self.collect('https://example.com/live/index.m3u8')
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]['sport'], 'volleyball')
+        self.assertTrue(rows[0]['name'].endswith('[BLV Test]'))
         self.assertEqual(len(c.select_ott_compatible_channels(rows)), 1)
 
     def test_waiting_and_empty_not_exported(self):
