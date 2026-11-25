@@ -2365,6 +2365,21 @@ def collect_tradatv():
         return filter_current_and_future_events(load_source_cache(cache, "TraDaTV", "Trà Đá TV"))
 
 
+def nembien_page_stream(page):
+    # GetOut's NemBien module uses the page's actual player assignment.
+    text = fetch_text(page, headers={"Referer": page, "User-Agent": UA}, timeout=8)
+    match = re.search(r'''\b(?:const|let|var)\s+hlsStreamUrl\s*=\s*("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*')''', text)
+    if not match:
+        return ""
+    value = match.group(1)
+    if value.startswith('"'):
+        try:
+            return json.loads(value)
+        except ValueError:
+            return ""
+    return value[1:-1].replace("\\/", "/")
+
+
 def collect_nembientv():
     base = os.environ.get("NEMBIENTV_URL", "https://nembientv.com").rstrip("/")
     cache = BASE_DIR / "nembientv_cache.json"
@@ -2384,8 +2399,13 @@ def collect_nembientv():
         page = base + "/truc-tiep/" + quote(str(match["matchId"]), safe="")
         try:
             # hasLiveSource in the schedule can be false while this endpoint is live.
-            data = fetch_json_no_cache(page + "?kd_source=1", timeout=8)
+            try:
+                data = fetch_json_no_cache(page + "?kd_source=1", timeout=8)
+            except Exception:
+                data = {}
             url = clean_text(data.get("streamUrl")) if isinstance(data, dict) else ""
+            if not (is_hls_url(url) or is_flv_url(url)):
+                url = nembien_page_stream(page)
             if not (is_hls_url(url) or is_flv_url(url)):
                 return []
             if any(token in url.lower() for token in ("_wait_hls", "_reconnect_", "no-signal")):

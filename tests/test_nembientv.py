@@ -10,7 +10,7 @@ class NemBienTests(unittest.TestCase):
                      home='Home', away='Away', sport='volleyball', hasLiveSource=False,
                      commentators=[{'name': 'BLV Test'}, {'name': 'BLV Test'}, None])
         with patch.object(c, 'fetch_json_no_cache', side_effect=[{'response': [match]}, {'streamUrl': url}]), \
-             patch.object(c, 'save_source_cache'):
+             patch.object(c, 'save_source_cache'), patch.object(c, 'fetch_text', return_value=''):
             return c.collect_nembientv()
 
     def test_false_flag_does_not_hide_real_stream(self):
@@ -32,6 +32,19 @@ class NemBienTests(unittest.TestCase):
         self.assertTrue(c.in_next_24_hours(now - timedelta(hours=2), now))
         self.assertTrue(c.in_next_24_hours(now - timedelta(hours=3), now))
         self.assertFalse(c.in_next_24_hours(now - timedelta(hours=3, seconds=1), now))
+
+    def test_page_player_assignment(self):
+        with patch.object(c, 'fetch_text', return_value='const hlsStreamUrl = "https://example.com/live.m3u8?a=1&b=2";'):
+            self.assertEqual(c.nembien_page_stream('https://example.com/match'), 'https://example.com/live.m3u8?a=1&b=2')
+        with patch.object(c, 'fetch_text', return_value='const hlsStreamUrl = "";'):
+            self.assertEqual(c.nembien_page_stream('https://example.com/match'), '')
+
+    def test_api_failure_uses_page(self):
+        match = dict(matchId='test', timestamp=int((datetime.now(c.TZ_VN) + timedelta(minutes=5)).timestamp()), home='A', away='B')
+        with patch.object(c, 'fetch_json_no_cache', side_effect=[{'response': [match]}, TimeoutError()]), \
+             patch.object(c, 'fetch_text', return_value='const hlsStreamUrl = "https://example.com/real.m3u8";'), \
+             patch.object(c, 'save_source_cache'):
+            self.assertEqual(c.collect_nembientv()[0]['stream_url'], 'https://example.com/real.m3u8')
 
 
 if __name__ == '__main__':
