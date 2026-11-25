@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-26 00:48 ICT
-# Total   : 604
+# Updated : 2026-11-26 01:59 ICT
+# Total   : 606
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/3/31/VTV1_logo_%282026-nay%29.png/revision/latest/scale-to-width-down/1000?cb=20260907124651&path-prefix=vi" group-title="VTV",VTV1 HD
 https://pop1-ec3-ateme.tv360.vn/live/eds/154/HLS_Clean_MHL_2s/index.m3u8
@@ -2595,6 +2595,11 @@ https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-j
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
 
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",10:00 28/11 Real Salt Lake vs Vancouver Whitecaps (BLV Khô Cá)
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
+
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkhddk0qg8n/image/small" group-title="Phá Làng TV",00:45 26/11 Sabah FK vs Barcelona (LÝ LẦY LỘI) [geo]
 https://pull.digitalcdn.net/live/b451536763c6426aa57c7409ae316706/index.m3u8
 
@@ -2663,3 +2668,6 @@ https://pull.digitalcdn.net/live/4b05c39194ac440a80e5c8a98f008c7a/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllh0k8qvy9/image/small" group-title="Phá Làng TV",21:00 26/11 Uzbekistan U17 vs Italy U17 (LÝ LONG) [geo]
 https://pull.digitalcdn.net/live/d29556cc48ff4fa0b00d459460a7032e/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4jwq2gh4kj4m0ve/image/small" group-title="Phá Làng TV",22:00 26/11 Trung Quốc U17 vs Fiji U17 (LÝ LẠNH LÙNG) [geo]
+https://pull.digitalcdn.net/live/130612dc734945ecb53ccadfaf173605/index.m3u8
