@@ -5145,7 +5145,7 @@ def load_vmttv_vtv_cache():
             continue
         channel = {field: row.get(field, "") for field in VMTTV_VTV_CACHE_FIELDS}
         channel["source"] = row.get("source") or "VTV"
-        channel["group"] = "VTV"
+        channel["group"] = row.get("group") or "VTV"
         channel["stream_url"] = stream_url
         channel["skip_event_filter"] = True
         channels.append(channel)
@@ -5157,7 +5157,7 @@ def save_vmttv_vtv_cache(channels):
     for channel in channels:
         row = {field: channel.get(field, "") for field in VMTTV_VTV_CACHE_FIELDS}
         row["source"] = channel.get("source") or "VTV"
-        row["group"] = "VTV"
+        row["group"] = channel.get("group") or "VTV"
         row["skip_event_filter"] = True
         rows.append(row)
     try:
@@ -5232,7 +5232,7 @@ def collect_tlcab_extras():
         if group == "fptplayudp":
             row["group"] = "Sự kiện FPT Play"
         elif group == "vtvcab" and compact_text_key(row["name"]) in {"onfootball", "onsportsnews"}:
-            row["group"] = "VTV"
+            row["group"] = "VTV backup"
         else:
             continue
         row.update(skip_event_filter=True, preserve_extinf=False, preserve_group_exact=True)
@@ -5255,6 +5255,19 @@ def collect_tv360_events():
                                preserve_group_exact=True)
                 result.append(channel)
     return result
+
+
+def assign_vtv_role(channel):
+    name = clean_text(channel.get("name"))
+    if re.match(r"^VTV\s*(?:10|[1-9])\b", name, re.I):
+        if name.endswith("-1"):
+            channel["name"] = name[:-2].rstrip()
+            channel["group"] = "VTV"
+        else:
+            channel["group"] = "VTV backup"
+    elif compact_text_key(name) in {"onfootball", "onsports", "onsportsnews"}:
+        channel["group"] = "VTV backup"
+    return channel
 
 
 def collect_vtv_channels():
@@ -5306,6 +5319,9 @@ def collect_vtv_channels():
 
     append_from("VietngVTV", VIETNG_VTV_M3U_URL)
     append_from("TLCabVTV", TLCAB_VTV_M3U_URL, "-1", whole_vtv_group=True)
+
+    for channel in channels:
+        assign_vtv_role(channel)
 
     if len(channels) >= max(1, VMTTV_VTV_MIN_GOOD_COUNT):
         cache_changed = save_vmttv_vtv_cache(channels)
