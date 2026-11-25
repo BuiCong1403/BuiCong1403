@@ -2365,6 +2365,59 @@ def collect_tradatv():
         return filter_current_and_future_events(load_source_cache(cache, "TraDaTV", "Trà Đá TV"))
 
 
+def parse_antlive_streams(payload):
+    data = payload.get("data", {}) if isinstance(payload, dict) else {}
+    rooms = data.get("ongoingLivestreams", []) if isinstance(data, dict) else []
+    result, seen = [], set()
+    for room in rooms:
+        if not isinstance(room, dict):
+            continue
+        for field in ("playStreamAddress", "playStreamAddress2", "playStreamAddress3"):
+            url = clean_text(room.get(field))
+            if not (is_flv_url(url) or is_hls_url(url)) or url in seen:
+                continue
+            seen.add(url)
+            title = clean_text(room.get("houseName") or room.get("houseNameEn"))
+            blv = clean_text(room.get("nickName"))
+            kind = "FLV" if is_flv_url(url) else "HLS"
+            result.append(dict(source="AntLive", group="AntLive", name=f"{title or 'AntLive'} ({blv or room.get('houseId', '')}) [{kind}]",
+                               stream_url=url, logo=room.get("houseImage", ""), referer="", user_agent=""))
+    return result
+
+
+def collect_antlive():
+    base = os.environ.get("ANTLIVE_URL", "https://www.antlive116.com").rstrip("/")
+    try:
+        config = fetch_json_no_cache(base + "/config.json", timeout=10)
+        api = base if config.get("same-origin") else clean_text(config.get("api-endpoint")).rstrip("/")
+        if urlparse(api).scheme != "https" or not urlparse(api).hostname:
+            raise ValueError("Invalid AntLive API endpoint")
+        payload = fetch_json_no_cache(api + "/api/c5/business/livehouse/index?lang=vie", timeout=15)
+        if not isinstance(payload, dict) or not payload.get("success"):
+            raise ValueError("AntLive schedule request failed")
+        candidates = parse_antlive_streams(payload)
+        def playable(row):
+            try:
+                with requests.get(row["stream_url"], stream=True, timeout=(5, 5)) as response:
+                    if response.status_code != 200:
+                        return False
+                    if is_flv_url(row["stream_url"]):
+                        return response.raw.read(3) == b"FLV"
+                    text = response.raw.read(65536, decode_content=True).decode("utf-8-sig", errors="replace")
+                    return text.lstrip().startswith("#EXTM3U") and any(
+                        line.strip() and not line.lstrip().startswith("#") for line in text.splitlines())
+            except requests.RequestException:
+                return False
+        with ThreadPoolExecutor(max_workers=6) as pool:
+            rows = [row for row, valid in zip(candidates, pool.map(playable, candidates)) if valid]
+        save_source_cache(BASE_DIR / "antlive_cache.json", rows, base, allow_flv=True)
+        log(f"[AntLive] {len(candidates)} FLV/HLS candidates; {len(rows)} verified streams")
+        return rows
+    except Exception as exc:
+        log(f"[AntLive] Unable to refresh: {exc}")
+        return []
+
+
 def nembien_page_stream(page):
     # GetOut's NemBien module uses the page's actual player assignment.
     text = fetch_text(page, headers={"Referer": page, "User-Agent": UA}, timeout=8)
@@ -2439,7 +2492,7 @@ SOURCE_CACHE_FIELDS = (
 )
 
 
-def load_source_cache(path, source, group):
+def load_source_cache(path, source, group, allow_flv=False):
     try:
         payload = json.loads(path.read_text(encoding="utf-8"))
     except Exception as exc:
@@ -2450,7 +2503,8 @@ def load_source_cache(path, source, group):
         return []
     channels = []
     for row in rows:
-        if not isinstance(row, dict) or not is_valid_stream_url(row.get("stream_url")):
+        if not isinstance(row, dict) or not (is_valid_stream_url(row.get("stream_url")) or
+                                            (allow_flv and is_flv_url(row.get("stream_url")))):
             continue
         channel = {field: row.get(field, "") for field in SOURCE_CACHE_FIELDS}
         channel["source"] = source
@@ -2461,13 +2515,13 @@ def load_source_cache(path, source, group):
     return channels
 
 
-def save_source_cache(path, channels, source_url):
+def save_source_cache(path, channels, source_url, allow_flv=False):
     rows = []
     seen = set()
     for channel in channels:
         stream_url = clean_text(channel.get("stream_url"))
         cache_key = channel_key(channel)
-        if not is_valid_stream_url(stream_url) or cache_key in seen:
+        if not (is_valid_stream_url(stream_url) or (allow_flv and is_flv_url(stream_url))) or cache_key in seen:
             continue
         seen.add(cache_key)
         row = {field: channel.get(field, "") for field in SOURCE_CACHE_FIELDS}
@@ -10737,7 +10791,7 @@ def merge_slow_source_playlists(channels, previous=()):
     sources = {ch.get("source") for ch in channels}
     groups = {group_key(group) for source, group, _ in SLOW_SOURCE_COLLECTORS if source in sources}
     groups.update(group_key(ch.get("group", "")) for ch in channels
-                  if ch.get("source") in {"TraDaTV", "NemBienTV"})
+                  if ch.get("source") in {"TraDaTV", "NemBienTV", "AntLive"})
     if "XoiLacZ" in sources:
         groups.update({group_key("XL-FLV"), group_key("XL-Sports")})
     urls = {ch.get("stream_url") for ch in list(previous) + list(channels)
@@ -11274,6 +11328,7 @@ def main():
         ("SaoKeTV", collect_saoketv),
         ("TraDaTV", collect_tradatv),
         ("NemBienTV", collect_nembientv),
+        ("AntLive", collect_antlive),
         ("S8TV", collect_s8tv),
         ("GaVang", collect_gavang),
         ("VSC9", collect_vsc9),
