@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-26 01:59 ICT
-# Total   : 606
+# Updated : 2026-11-26 03:19 ICT
+# Total   : 623
 
 #EXTINF:-1 tvg-logo="https://static.wikia.nocookie.net/logos/images/3/31/VTV1_logo_%282026-nay%29.png/revision/latest/scale-to-width-down/1000?cb=20260907124651&path-prefix=vi" group-title="VTV",VTV1 HD
 https://pop1-ec3-ateme.tv360.vn/live/eds/154/HLS_Clean_MHL_2s/index.m3u8
@@ -1516,9 +1516,6 @@ https://lilive1.eu.cc/live/00997dda17adbf0e005411aa833dd769/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/987b18be72d918583f9dd5b1a17f130e.png" group-title="BiaomTV",23:00 25/11 [ - ] SKA Khabarovsk vs FC Leningradets [AFC Champions League Two] [HLS]
 https://lilive1.eu.cc/live/ddf3fdc05e1302a10bd1995857ab7d77/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://img.thesports.com/football/team/2080ede2c5d09638a7188913c81075ef.png" group-title="BiaomTV",00:45 26/11 [ - ] SK Slavia Praha vs Villarreal CF [Spanish Segunda División RFEF] [HLS]
-https://lilive1.eu.cc/live/b8b3f12f92dba2e0d2ead7301772bcef/playlist.m3u8
-
 #EXTINF:-1 tvg-logo="https://d1c0s7hi3ugzoc.cloudfront.net/teams/sabah-138649" group-title="BiaomTV",00:45 26/11 [ - ] Sabah vs FC Barcelona [C1 Châu Âu] [HLS]
 https://cdnhls.xbdbotv.live/live/MTk4NzI2MDY6dGljMHIwY2xmNjhsaWxyajl3eDMyeXd6Om12dTYyczdwcHY3dGc1OWxqenoyeTlzZA/index.m3u8
 
@@ -2230,22 +2227,12 @@ https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-21/cp_special_v_league-17
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://cdn.24h.com.vn/upload/4-2026/videoclip/2026-11-21/cp_special_v_league-1795268309-namdinh_h2_720p.m3u8
 
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1305_sabah.jpg" group-title="PhaoHoaTV",00:45 26/11 Sabah Baku vs Barcelona | Bóng đá | UEFA Champions League | BLV BLV Tam Mao | Main
-#EXTVLCOPT:http-referrer=https://xoiche.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
-
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/104_slavia-praha.jpg" group-title="PhaoHoaTV",00:45 26/11 Slavia Prague vs Villarreal | Bóng đá | UEFA Champions League | BLV BLV Xôi Xoài | Main
-#EXTVLCOPT:http-referrer=https://xoiche.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM2E-bfUL2cfww643kT_KZYDbKiUUT4C8ng8o&expires=1852800615
-
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/73_atletico-de-madrid.jpg" group-title="PhaoHoaTV",03:00 26/11 Atl. Madrid vs Viking | Bóng đá | UEFA Champions League | BLV BLV Khô Cá | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
 
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/94_club-brugge.jpg" group-title="PhaoHoaTV",03:00 26/11 Club Brugge KV vs Liverpool | Bóng đá | UEFA Champions League | BLV Khầy Lương Khô | Main
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/94_club-brugge.jpg" group-title="PhaoHoaTV",03:00 26/11 Club Brugge KV vs Liverpool | Bóng đá | UEFA Champions League | BLV Khầy Lương Khô Fan Lữ Đoàn Đỏ | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_f64016ed85/index.m3u8?token=2zFHBLZ7ZQ-fbhTLWfwNITX5zZlxj49JwHBeBRcyALM&expires=1852800615
@@ -2275,6 +2262,11 @@ https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_22ba35ebaa/index.m3u8?token=rnGiAKd7Ef-B1Q39PpqAGJSIrNI8dj2Sz-3IRtLMfUs
 
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5347_toluca.jpg" group-title="PhaoHoaTV",08:00 26/11 Toluca vs Atlas | Bóng đá | Liga MX | BLV BLV Tam Mao | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/308_monterrey.jpg" group-title="PhaoHoaTV",10:10 26/11 Monterrey vs Club America | Bóng đá | Liga MX | BLV BLV Khô Mật | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2300,10 +2292,25 @@ https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAq
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/30543_morocco-u17.jpg" group-title="PhaoHoaTV",22:00 26/11 Morocco U17 vs Spain U17 | Bóng đá | FIFA U17 World Cup | BLV BLV Khô Mật | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
+
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/6332_abha.jpg" group-title="PhaoHoaTV",22:05 26/11 Abha vs Al Shabab | Bóng đá | Saudi League | BLV BLV Khô Cá | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/187_beikta.jpg" group-title="PhaoHoaTV",00:45 27/11 Besiktas vs H. Beer Sheva | Bóng đá | UEFA Europa League | BLV BLV Tam Mao | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3079_brighton--hove-albion.jpg" group-title="PhaoHoaTV",00:45 27/11 Brighton vs Univ. Craiova | Bóng đá | UEFA Conference League | BLV BLV Khô Mật | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
 
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/121_dinamo-zagreb.jpg" group-title="PhaoHoaTV",00:45 27/11 Din. Zagreb vs Bayer Leverkusen | Bóng đá | UEFA Europa League | BLV BLV Khô Cay | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
@@ -2325,6 +2332,16 @@ https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
 
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1053_macarthur-fc.jpg" group-title="PhaoHoaTV",15:40 27/11 Macarthur FC vs Melbourne City | Bóng đá | A-League Men | BLV BLV Tam Mao | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/30792_honduras-u17.jpg" group-title="PhaoHoaTV",20:00 27/11 Honduras U17 vs Japan U17 | Bóng đá | FIFA U17 World Cup | BLV BLV Tam Mao | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8590_lusail-city.jpg" group-title="PhaoHoaTV",22:30 27/11 Lusail vs Al Arabi | Bóng đá | Stars League | BLV BLV Khô Cá | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2345,26 +2362,6 @@ https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-j
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
 
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1305_sabah.jpg" group-title="Khandai",00:45 26/11 Bóng đá Sabah Baku vs Barcelona (BLV Tam Mao)
-#EXTVLCOPT:http-referrer=https://xoiche.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
-
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/104_slavia-praha.jpg" group-title="Khandai",00:45 26/11 Bóng đá Slavia Prague vs Villarreal (BLV Xôi Xoài)
-#EXTVLCOPT:http-referrer=https://xoiche.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM2E-bfUL2cfww643kT_KZYDbKiUUT4C8ng8o&expires=1852800615
-
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1305_sabah.jpg" group-title="Khandai",00:45 26/11 Sabah Baku vs Barcelona | Bóng đá | UEFA Champions League | BLV BLV Tam Mao | Main
-#EXTVLCOPT:http-referrer=https://xoiche.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
-
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/104_slavia-praha.jpg" group-title="Khandai",00:45 26/11 Slavia Prague vs Villarreal | Bóng đá | UEFA Champions League | BLV BLV Xôi Xoài | Main
-#EXTVLCOPT:http-referrer=https://xoiche.live/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM2E-bfUL2cfww643kT_KZYDbKiUUT4C8ng8o&expires=1852800615
-
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/73_atletico-de-madrid.jpg" group-title="Khandai",03:00 26/11 Atl. Madrid vs Viking | Bóng đá | UEFA Champions League | BLV BLV Khô Cá | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2375,7 +2372,7 @@ https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-j
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
 
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/94_club-brugge.jpg" group-title="Khandai",03:00 26/11 Bóng đá Club Brugge KV vs Liverpool (Khầy Lương Khô)
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/94_club-brugge.jpg" group-title="Khandai",03:00 26/11 Bóng đá Club Brugge KV vs Liverpool (Khầy Lương Khô Fan Lữ Đoàn Đỏ)
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_f64016ed85/index.m3u8?token=2zFHBLZ7ZQ-fbhTLWfwNITX5zZlxj49JwHBeBRcyALM&expires=1852800615
@@ -2395,12 +2392,17 @@ https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJ
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
 
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/78_shakhtar-donetsk.jpg" group-title="Khandai",03:00 26/11 Bóng đá Shakhtar Donetsk vs Fenerbahce (BLV Xôi Xoài)
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM2E-bfUL2cfww643kT_KZYDbKiUUT4C8ng8o&expires=1852800615
+
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/177_sporting-cp.jpg" group-title="Khandai",03:00 26/11 Bóng đá Sporting CP vs Manchester Utd (BLV Khô Cóc)
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_22ba35ebaa/index.m3u8?token=rnGiAKd7Ef-B1Q39PpqAGJSIrNI8dj2Sz-3IRtLMfUs
 
-#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/94_club-brugge.jpg" group-title="Khandai",03:00 26/11 Club Brugge KV vs Liverpool | Bóng đá | UEFA Champions League | BLV Khầy Lương Khô | Main
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/94_club-brugge.jpg" group-title="Khandai",03:00 26/11 Club Brugge KV vs Liverpool | Bóng đá | UEFA Champions League | BLV Khầy Lương Khô Fan Lữ Đoàn Đỏ | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_f64016ed85/index.m3u8?token=2zFHBLZ7ZQ-fbhTLWfwNITX5zZlxj49JwHBeBRcyALM&expires=1852800615
@@ -2429,6 +2431,16 @@ https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_22ba35ebaa/index.m3u8?token=rnGiAKd7Ef-B1Q39PpqAGJSIrNI8dj2Sz-3IRtLMfUs
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5347_toluca.jpg" group-title="Khandai",08:00 26/11 Bóng đá Toluca vs Atlas (BLV Tam Mao)
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/5347_toluca.jpg" group-title="Khandai",08:00 26/11 Toluca vs Atlas | Bóng đá | Liga MX | BLV BLV Tam Mao | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
 
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/308_monterrey.jpg" group-title="Khandai",10:10 26/11 Monterrey vs Club America | Bóng đá | Liga MX | BLV BLV Khô Mật | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
@@ -2460,10 +2472,25 @@ https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAq
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/30543_morocco-u17.jpg" group-title="Khandai",22:00 26/11 Morocco U17 vs Spain U17 | Bóng đá | FIFA U17 World Cup | BLV BLV Khô Mật | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
+
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/6332_abha.jpg" group-title="Khandai",22:05 26/11 Abha vs Al Shabab | Bóng đá | Saudi League | BLV BLV Khô Cá | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/187_beikta.jpg" group-title="Khandai",00:45 27/11 Besiktas vs H. Beer Sheva | Bóng đá | UEFA Europa League | BLV BLV Tam Mao | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/3079_brighton--hove-albion.jpg" group-title="Khandai",00:45 27/11 Brighton vs Univ. Craiova | Bóng đá | UEFA Conference League | BLV BLV Khô Mật | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
 
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/121_dinamo-zagreb.jpg" group-title="Khandai",00:45 27/11 Din. Zagreb vs Bayer Leverkusen | Bóng đá | UEFA Europa League | BLV BLV Khô Cay | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
@@ -2485,6 +2512,16 @@ https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXA
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
 
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/1053_macarthur-fc.jpg" group-title="Khandai",15:40 27/11 Macarthur FC vs Melbourne City | Bóng đá | A-League Men | BLV BLV Tam Mao | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
+#EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/30792_honduras-u17.jpg" group-title="Khandai",20:00 27/11 Honduras U17 vs Japan U17 | Bóng đá | FIFA U17 World Cup | BLV BLV Tam Mao | Main
+#EXTVLCOPT:http-referrer=https://xoiche.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
 #EXTINF:-1 tvg-logo="https://apiv3.apifootball.com/badges/8590_lusail-city.jpg" group-title="Khandai",22:30 27/11 Lusail vs Al Arabi | Bóng đá | Stars League | BLV BLV Khô Cá | Main
 #EXTVLCOPT:http-referrer=https://xoiche.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2505,7 +2542,7 @@ https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
 
-#EXTINF:-1 tvg-logo="" group-title="Khô Gà",03:00 26/11 Club Brugge KV vs Liverpool (Khầy Lương Khô)
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",03:00 26/11 Club Brugge KV vs Liverpool (Khầy Lương Khô Fan Lữ Đoàn Đỏ)
 #EXTVLCOPT:http-referrer=https://khoga1.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_f64016ed85/index.m3u8?token=2zFHBLZ7ZQ-fbhTLWfwNITX5zZlxj49JwHBeBRcyALM&expires=1852800615
@@ -2535,6 +2572,11 @@ https://livecdn321.cdnfastter.xyz/live/live_09982ecf49/index.m3u8?token=5VclvTpM
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_22ba35ebaa/index.m3u8?token=rnGiAKd7Ef-B1Q39PpqAGJSIrNI8dj2Sz-3IRtLMfUs
 
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",08:00 26/11 Toluca vs Atlas (BLV Tam Mao)
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
 #EXTINF:-1 tvg-logo="" group-title="Khô Gà",10:10 26/11 Monterrey vs Club America (BLV Khô Mật)
 #EXTVLCOPT:http-referrer=https://khoga1.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
@@ -2560,10 +2602,25 @@ https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAq
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",22:00 26/11 Morocco U17 vs Spain U17 (BLV Khô Mật)
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
+
 #EXTINF:-1 tvg-logo="" group-title="Khô Gà",22:05 26/11 Abha vs Al Shabab (BLV Khô Cá)
 #EXTVLCOPT:http-referrer=https://khoga1.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
+
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",00:45 27/11 Besiktas vs H. Beer Sheva (BLV Tam Mao)
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_65629930db/index.m3u8?token=daKfQOAqMEgkhrfCGDxiHdGWXsymB2dcncgmNkMoACY&expires=1852800615
+
+#EXTINF:-1 tvg-logo="" group-title="Khô Gà",00:45 27/11 Brighton vs Univ. Craiova (BLV Khô Mật)
+#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://livecdn321.cdnfastter.xyz/live/live_b30ba5315c/index.m3u8?token=ZNaU8SPI--3-JASIZXv-JImAVGukJOEv6T9_GMWMfU0&expires=1852800615
 
 #EXTINF:-1 tvg-logo="" group-title="Khô Gà",00:45 27/11 Din. Zagreb vs Bayer Leverkusen (BLV Khô Cay)
 #EXTVLCOPT:http-referrer=https://khoga1.live/
@@ -2580,36 +2637,59 @@ https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-j
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://livecdn321.cdnfastter.xyz/live/live_753c90457f/index.m3u8?token=2DSSWeXAxyGpTCzUauOg-F4WPR6MfTkyCr51jCWcnQ0&expires=1852800615
 
-#EXTINF:-1 tvg-logo="" group-title="Khô Gà",03:00 27/11 Lyon vs Lillestrom (BLV Xôi Gấc)
-#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/jw2r09hn59drz84/image/small" group-title="Phá Làng TV",00:00 26/11 NK Bravo - Odranci [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_5e3f2549e4/index.m3u8?token=pCk_XLBJTDboKaC3LME17XPjU4pgaPXEOkc_CroCj0U&expires=1852800615
+https://lilive1.eu.cc/live/bd8f634a84816da7e7e666b83d090fbf/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Khô Gà",22:30 27/11 Lusail vs Al Arabi (BLV Khô Cá)
-#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/j1l4rjnh7npm7vx/image/small" group-title="Phá Làng TV",00:00 26/11 Qatar SC - Al Nasr [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
+https://lilive1.eu.cc/live/5b0f9e8d1573b3a976b99cbfee584ec7/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Khô Gà",00:30 28/11 Heidenheim vs Nurnberg (BLV Khô Cá)
-#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/d23xmvkhj6dqg8n/image/small" group-title="Phá Làng TV",00:30 26/11 Lokomotiv Moscow - FK Rostov [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
+https://lilive1.eu.cc/live/d5e066680fd14ef33810aa0853f35de7/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="" group-title="Khô Gà",10:00 28/11 Real Salt Lake vs Vancouver Whitecaps (BLV Khô Cá)
-#EXTVLCOPT:http-referrer=https://khoga1.live/
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/gx7lm7phd24m2wd/image/small" group-title="Phá Làng TV",00:30 26/11 Rubin Kazan - Rodina [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://livecdn321.cdnfastter.xyz/live/live_062e5de010/index.m3u8?token=M6vDly-jvMUtRrO3xVQUwWJozWVPDQ0yVqDBWtZUbgM&expires=1852800615
+https://lilive1.eu.cc/live/757c8c29964f7abfd4c82aaa03993cfd/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkhddk0qg8n/image/small" group-title="Phá Làng TV",00:45 26/11 Sabah FK vs Barcelona (LÝ LẦY LỘI) [geo]
-https://pull.digitalcdn.net/live/b451536763c6426aa57c7409ae316706/index.m3u8
-
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkhddk0qg8n/image/small" group-title="Phá Làng TV",00:45 26/11 Sabah FK vs Barcelona (Nhà đài)
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/23xmvkhddk0qg8n/image/small" group-title="Phá Làng TV",00:45 26/11 Sabah FK - Barcelona (LÝ LẦY LỘI) [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/203681779969f40beba15092eb5a2e2a/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghj93nq82w/image/small" group-title="Phá Làng TV",01:15 26/11 Al Taawoun vs Al Nahda (LÝ LẮC) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehk56r510/image/small" group-title="Phá Làng TV",00:45 26/11 Slavia - Villarreal [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/b8b3f12f92dba2e0d2ead7301772bcef/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/56ypq3nhx17md7o/image/small" group-title="Phá Làng TV",01:00 26/11 Cremonese - Avellino [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/faa24bf6d47ef6dfd64867252169403e/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/ednm9whkojlryox/image/small" group-title="Phá Làng TV",01:00 26/11 Enppi - Ceramica Cleopatra [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/b8a71d9671e518d0485272ad30364a20/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vl7oqdehvw5r510/image/small" group-title="Phá Làng TV",01:00 26/11 Ghazl El Mahallah - Petrojet [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://lilive1.eu.cc/live/103eefc20dc681df8d8ecbc7f9526e33/playlist.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghj93nq82w/image/small" group-title="Phá Làng TV",01:15 26/11 Al Taawoun - Al Nahda (LÝ LẮC) [HD1]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://pull.digitalcdn.net/live/97daae306fb0480e8f892998fb82292c/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghj93nq82w/image/small" group-title="Phá Làng TV",01:15 26/11 Al Taawoun vs Al Nahda (Nhà đài)
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/zp5rzghj93nq82w/image/small" group-title="Phá Làng TV",01:15 26/11 Al Taawoun - Al Nahda (LÝ LẮC) [Nguồn]
+#EXTVLCOPT:http-referrer=https://phalang.live/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://lilive1.eu.cc/live/3ba0b696a412b1bf4988529e487de628/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/9vjxm8ghowor6od/image/small" group-title="Phá Làng TV",03:00 26/11 Club Brugge vs Liverpool (LÝ LÀNG LÁ) [geo]
@@ -2636,10 +2716,10 @@ https://pull.digitalcdn.net/live/971e369ef80248b9ba3ad2e8edc608cb/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/kjw2r09hv44rz84/image/small" group-title="Phá Làng TV",03:00 26/11 PSG vs AS Roma (Nhà đài)
 https://lilive1.eu.cc/live/ee2e8f66e73af4649a8e86f31b7d6d61/playlist.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhyydqvy9/image/small" group-title="Phá Làng TV",03:00 26/11 SCP vs Man Utd (LÝ LA LÀNG) [geo]
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhyydqvy9/image/small" group-title="Phá Làng TV",03:00 26/11 Sporting CP vs Manchester United (LÝ LA LÀNG) [geo]
 https://pull.digitalcdn.net/live/c77a54173734481f9ca20b2f937b8dc9/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhyydqvy9/image/small" group-title="Phá Làng TV",03:00 26/11 SCP vs Man Utd (Nhà đài)
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllhyydqvy9/image/small" group-title="Phá Làng TV",03:00 26/11 Sporting CP vs Manchester United (Nhà đài)
 https://lilive1.eu.cc/live/c58c36879e06984a1557151f7be9e1b2/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/vjxm8ghg2jlr6od/image/small" group-title="Phá Làng TV",15:30 26/11 Borneo FC vs Persita (LÝ LẦY LỘI) [geo]
@@ -2669,5 +2749,14 @@ https://pull.digitalcdn.net/live/4b05c39194ac440a80e5c8a98f008c7a/index.m3u8
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/kn54qllh0k8qvy9/image/small" group-title="Phá Làng TV",21:00 26/11 Uzbekistan U17 vs Italy U17 (LÝ LONG) [geo]
 https://pull.digitalcdn.net/live/d29556cc48ff4fa0b00d459460a7032e/index.m3u8
 
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/6ypq3nh5z5kmd7o/image/small" group-title="Phá Làng TV",22:00 26/11 Ma Rốc U17 vs Tây Ban Nha U17 (LÝ LÀNG LÁ) [geo]
+https://pull.digitalcdn.net/live/3ab426f29d964883a4b582791f899d85/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/4jwq2gh4kj4m0ve/image/small" group-title="Phá Làng TV",22:00 26/11 Trung Quốc U17 vs Fiji U17 (LÝ LẠNH LÙNG) [geo]
 https://pull.digitalcdn.net/live/130612dc734945ecb53ccadfaf173605/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/2y8m4zh3jo9ql07/image/small" group-title="Phá Làng TV",23:00 26/11 Croatia U17 vs Cuba U17 (LÝ LIỀU LĨNH) [geo]
+https://pull.digitalcdn.net/live/c17a9fefe39e43a9a7dd6fa8808919c3/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://imgts.sportpulseapiz.com/football/team/v2y8m4zh90gql07/image/small" group-title="Phá Làng TV",00:45 27/11 Celta vs AFC Bournemouth (LÝ LONG) [geo]
+https://pull.digitalcdn.net/live/00eb4e521de245c0a8c70df4bd8221dc/index.m3u8
