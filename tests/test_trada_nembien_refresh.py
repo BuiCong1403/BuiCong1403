@@ -10,11 +10,13 @@ class RefreshTests(unittest.TestCase):
         with patch.object(c, 'load_source_cache', return_value=[]) as cache, \
              patch.object(c, 'collect_tradatv', return_value=[{'source': 'TraDaTV'}]) as trada, \
              patch.object(c, 'collect_nembientv', return_value=[{'source': 'NemBienTV'}]) as nembien, \
+             patch.object(c, 'collect_antlive', return_value=[]) as ant, \
              patch.object(c, 'merge_slow_source_playlists') as merge:
             refresh.main()
         trada.assert_called_once_with()
         nembien.assert_called_once_with()
-        self.assertEqual(cache.call_count, 2)
+        ant.assert_called_once_with()
+        self.assertEqual(cache.call_count, 3)
         merge.assert_called_once_with([{'source': 'TraDaTV'}, {'source': 'NemBienTV'}], [])
 
 

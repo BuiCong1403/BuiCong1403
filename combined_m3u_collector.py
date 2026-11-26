@@ -1971,6 +1971,14 @@ def prepare_highlight_sort_keys(channels):
 
 
 def dedupe_and_sort_channels(channels):
+    channels = list(channels)
+    das = [(highlight_fixture_key(ch), highlight_channel_date(ch)) for ch in channels
+           if ch.get("source") == "DasFootballHighlight"]
+    channels = [ch for ch in channels if not (
+        (ch.get("source") == "VSCHighlight" or urlparse(ch.get("stream_url", "")).hostname == "storage-api.sports-data.online")
+        and any(key.startswith("match:") and key == highlight_fixture_key(ch)
+                and day and highlight_channel_date(ch)
+                and abs((day - highlight_channel_date(ch)).days) <= 1 for key, day in das))]
     deduped = []
     seen_urls = {}
     for channel in channels:

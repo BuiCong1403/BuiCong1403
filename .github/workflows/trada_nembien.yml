@@ -34,7 +34,7 @@ jobs:
         timeout-minutes: 8
         run: python refresh_trada_nembien.py
       - name: Publish generated files
-        run: python scripts/publish_playlists.py --message "Refresh Tra Da and Nem Bien streams" all.m3u ott.m3u tradatv_cache.json nembientv_cache.json
+        run: python scripts/publish_playlists.py --message "Refresh Tra Da, Nem Bien and AntLive streams" all.m3u ott.m3u tradatv_cache.json nembientv_cache.json antlive_cache.json
       - name: Preserve results on failure
         if: failure()
         uses: actions/upload-artifact@v4
