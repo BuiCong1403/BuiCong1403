@@ -2168,6 +2168,8 @@ def write_ott_m3u(path, channels):
 
 
 def ott_output_group(channel):
+    if channel.get("source") == "AntLive" or output_group(channel) == "AntLive":
+        return "AntLive"
     if output_group(channel) == "XL-FLV":
         return "XL-FLV"
     if not is_flv_url(channel.get("stream_url")):
@@ -2393,6 +2395,19 @@ def parse_antlive_streams(payload):
     return result
 
 
+def recent_antlive_cache():
+    path = BASE_DIR / "antlive_cache.json"
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        updated = datetime.strptime(payload["updated"], "%Y-%m-%d %H:%M ICT").replace(tzinfo=TZ_VN)
+        age = datetime.now(TZ_VN) - updated
+        if not timedelta(0) <= age <= timedelta(hours=3):
+            return []
+    except (OSError, ValueError, KeyError, TypeError):
+        return []
+    return load_source_cache(path, "AntLive", "AntLive", allow_flv=True)
+
+
 def collect_antlive():
     base = os.environ.get("ANTLIVE_URL", "https://www.antlive116.com").rstrip("/")
     try:
@@ -2418,12 +2433,16 @@ def collect_antlive():
                 return False
         with ThreadPoolExecutor(max_workers=6) as pool:
             rows = [row for row, valid in zip(candidates, pool.map(playable, candidates)) if valid]
+        if not rows:
+            cached = recent_antlive_cache()
+            log(f"[AntLive] Empty verification result; retaining {len(cached)} cached links (maximum age 3h)")
+            return cached
         save_source_cache(BASE_DIR / "antlive_cache.json", rows, base, allow_flv=True)
         log(f"[AntLive] {len(candidates)} FLV/HLS candidates; {len(rows)} verified streams")
         return rows
     except Exception as exc:
         log(f"[AntLive] Unable to refresh: {exc}")
-        return []
+        return recent_antlive_cache()
 
 
 def nembien_page_stream(page):
