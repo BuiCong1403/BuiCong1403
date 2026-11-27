@@ -8,6 +8,21 @@ import combined_m3u_collector as c
 
 
 class AntLiveTests(unittest.TestCase):
+    def test_schedule_uses_published_room_url_and_24h_window(self):
+        now = c.datetime.now(c.TZ_VN)
+        def match(hours, room):
+            return dict(matchTime=int((now+timedelta(hours=hours)).timestamp()),
+                        result={'match': {'homeTeam': {'name': 'A'}, 'awayTeam': {'name': 'B'}}},
+                        reservedAnchors=[{'houseId': room, 'nickName': 'BLV'}])
+        payload = {'data': {'ongoingLivestreams': [
+            {'houseId': '1', 'playStreamAddress': 'https://example.com/real.flv'},
+            {'houseId': '2', 'playStreamAddress': 'https://example.com/late.flv'}],
+            'matchLivestreams': [match(2, '1'), match(4, '1'), match(25, '2'), match(3, 'missing')]}}
+        rows = c.antlive_scheduled_streams(payload, now)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]['stream_url'], 'https://example.com/real.flv')
+        self.assertIn('[Cho phat]', rows[0]['name'])
+
     def test_actual_streams_and_deduplicate(self):
         room = dict(houseName='A vs B', nickName='BLV', houseId='123',
                     playStreamAddress='https://example.com/a.flv',

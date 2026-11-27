@@ -2395,6 +2395,37 @@ def parse_antlive_streams(payload):
     return result
 
 
+def antlive_scheduled_streams(payload, now=None):
+    now = now or datetime.now(TZ_VN)
+    data = payload.get("data", {})
+    rooms = {str(room.get("houseId")): room for room in data.get("ongoingLivestreams", []) if isinstance(room, dict)}
+    rows, seen = [], set()
+    matches = sorted(data.get("matchLivestreams", []), key=lambda item: item.get("matchTime") or 0)
+    for item in matches:
+        kickoff = parse_epoch_to_ict_datetime(item.get("matchTime"))
+        if not kickoff or not now <= kickoff <= now + timedelta(hours=24):
+            continue
+        match = (item.get("result") or {}).get("match") or {}
+        home = clean_text((match.get("homeTeam") or {}).get("name"))
+        away = clean_text((match.get("awayTeam") or {}).get("name"))
+        if not home or not away:
+            continue
+        for anchor in item.get("reservedAnchors") or []:
+            room = rooms.get(str(anchor.get("houseId")), {})
+            for field in ("playStreamAddress", "playStreamAddress2", "playStreamAddress3"):
+                url = clean_text(anchor.get(field) or room.get(field))
+                if not (is_flv_url(url) or is_hls_url(url)) or url in seen:
+                    continue
+                # One room can cover several fixtures; show its next assigned match.
+                seen.add(url)
+                kind = "FLV" if is_flv_url(url) else "HLS"
+                rows.append(dict(source="AntLive", group="AntLive", stream_url=url,
+                                 name=f"{kickoff:%H:%M %d/%m} {home} vs {away} ({clean_text(anchor.get('nickName'))}) [{kind}] [Cho phat]",
+                                 event_datetime=kickoff, event_date=kickoff.date(),
+                                 logo=anchor.get("userImage", ""), referer="", user_agent=""))
+    return rows
+
+
 def recent_antlive_cache():
     path = BASE_DIR / "antlive_cache.json"
     try:
@@ -2433,12 +2464,17 @@ def collect_antlive():
                 return False
         with ThreadPoolExecutor(max_workers=6) as pool:
             rows = [row for row, valid in zip(candidates, pool.map(playable, candidates)) if valid]
+        scheduled = antlive_scheduled_streams(payload)
+        active_urls = {row["stream_url"] for row in rows}
+        scheduled = [row for row in scheduled if row["stream_url"] not in active_urls]
+        verified_count = len(rows)
+        rows.extend(scheduled)
         if not rows:
             cached = recent_antlive_cache()
             log(f"[AntLive] Empty verification result; retaining {len(cached)} cached links (maximum age 3h)")
             return cached
         save_source_cache(BASE_DIR / "antlive_cache.json", rows, base, allow_flv=True)
-        log(f"[AntLive] {len(candidates)} FLV/HLS candidates; {len(rows)} verified streams")
+        log(f"[AntLive] {verified_count} verified live links; {len(scheduled)} scheduled links in next 24h")
         return rows
     except Exception as exc:
         log(f"[AntLive] Unable to refresh: {exc}")
