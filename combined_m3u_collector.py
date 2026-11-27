@@ -1554,6 +1554,7 @@ GROUP_CANONICAL_RULES = [
 
 PREFERRED_OUTPUT_GROUPS = [
     "VTV",
+    "VTV backup",
     "Sự kiện",
     "FLV",
     "Highlight",
@@ -2126,6 +2127,8 @@ def ott_match_sort_title(channel):
 
 
 def ott_channel_sort_key(channel):
+    if output_group(channel) in {"VTV", "VTV backup"}:
+        return (-1, output_group(channel), clean_text(channel.get("name")), clean_text(channel.get("stream_url")))
     if is_highlight_channel(channel) and "_highlight_sort" in channel:
         return (9_999_999_999, "Highlight", channel["_highlight_sort"])
     event_dt = channel_event_datetime(channel)
@@ -5399,6 +5402,23 @@ def assign_vtv_role(channel):
     if channel.get("group") == "VTV backup" or re.match(r"^VTV\s*(?:10|[1-9])\b", name, re.I) or compact_text_key(name) in {"onfootball", "onsports", "onsportsnews"}:
         channel["group"] = "VTV"
     return channel
+
+
+def collect_vtv_backup():
+    url = "https://raw.githubusercontent.com/minhtienth15/mynote/dfb3bfff35977f2f4bf0bd4126e099398607b283/a1x.m3u"
+    cache = BASE_DIR / "vtv_backup_cache.json"
+    rows = collect_m3u_playlist(
+        "VTVBackup", url, "VTV backup", preserve_group=True,
+        allowed_groups=["VTV"], default_referer_to_playlist=False,
+        user_agent="", timeout=30, retries=2,
+    )
+    rows = [row for row in rows if group_key(row.get("group")) == "vtv" and is_hls_url(row.get("stream_url", ""))]
+    for row in rows:
+        row.update(group="VTV backup", skip_event_filter=True)
+    if rows:
+        save_source_cache(cache, rows, url)
+        return rows
+    return load_source_cache(cache, "VTVBackup", "VTV backup")
 
 
 def collect_vtv_channels():
@@ -11380,6 +11400,7 @@ def main():
             ),
         ),
         ("VTV", collect_vtv_channels),
+        ("VTVBackup", collect_vtv_backup),
         ("VTVgo", collect_vtvgo_fast),
         ("BacbennyTV360", collect_tv360_events),
         ("TLCabExtras", collect_tlcab_extras),

@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-27 12:09 ICT
-# Total   : 600
+# Updated : 2026-11-27 13:19 ICT
+# Total   : 612
 
 #EXTINF:-1 tvg-logo="https://i.imgur.com/nfkmvAY.png" group-title="VTV",VTV1
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv1/master.m3u8
@@ -94,6 +94,42 @@ https://fast-origin-stg.next.vtvdigital.vn/playout/releases/go-20261013/channels
 
 #EXTINF:-1 tvg-logo="https://vnepg.site/logos/176.png" group-title="VTV",VietNam Today
 https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/nfkmvAY.png" group-title="VTV backup",VTV1
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv1__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/n1VZWPh.png" group-title="VTV backup",VTV10
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv10__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/BVwi3K3.png" group-title="VTV backup",VTV2
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv2__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/7rLCvgS.png" group-title="VTV backup",VTV3
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv3__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/9zVTtsA.png" group-title="VTV backup",VTV4
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv4__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/7qPKNFU.png" group-title="VTV backup",VTV5
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv5__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/7qPKNFU.png" group-title="VTV backup",VTV5 Tây Nam Bộ
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv5tnb__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/7qPKNFU.png" group-title="VTV backup",VTV5 Tây Nguyên
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv5tn__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/WYu3c0U.png" group-title="VTV backup",VTV6
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv6__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/AgamSNe.png" group-title="VTV backup",VTV7
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv7__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/lpcltL9.png" group-title="VTV backup",VTV8
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv8__vtv360p-h264/index.m3u8
+
+#EXTINF:-1 tvg-logo="https://i.imgur.com/Ex1VkGQ.png" group-title="VTV backup",VTV9
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv9__vtv360p-h264/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://cdn.keobongvip.digital/images/basketball-teams/a4b3bf9470a9dc6bd70093549652a13c.png" group-title="Giờ Vàng TV",12:00 27/11 Malaysia vs Fiji | Ngu [HD]
 #EXTVLCOPT:http-referrer=https://giovang.city/

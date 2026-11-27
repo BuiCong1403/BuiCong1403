@@ -1,6 +1,6 @@
 #EXTM3U
-# Updated : 2026-11-27 12:09 ICT
-# Total   : 788
+# Updated : 2026-11-27 13:19 ICT
+# Total   : 800
 
 #EXTINF:0,05:00 27/11 CA INDEPENDIENTE (R) VS GIMNASIA MENDOZA (R) - HD 1
 #EXTGRP:XL-FLV
@@ -2638,45 +2638,93 @@ https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/index.m3u8
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv1/master.m3u8
 
+#EXTINF:0,VTV1
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv1__vtv360p-h264/index.m3u8
+
 #EXTINF:0,VTV10
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv6/master.m3u8
+
+#EXTINF:0,VTV10
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv10__vtv360p-h264/index.m3u8
 
 #EXTINF:0,VTV2
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv2/master.m3u8
 
+#EXTINF:0,VTV2
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv2__vtv360p-h264/index.m3u8
+
 #EXTINF:0,VTV3
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv3/master.m3u8
+
+#EXTINF:0,VTV3
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv3__vtv360p-h264/index.m3u8
 
 #EXTINF:0,VTV4
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv4/master.m3u8
 
+#EXTINF:0,VTV4
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv4__vtv360p-h264/index.m3u8
+
 #EXTINF:0,VTV5
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv5/master.m3u8
+
+#EXTINF:0,VTV5
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv5__vtv360p-h264/index.m3u8
 
 #EXTINF:0,VTV5 Tay Nam Bo
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv5tnb/master.m3u8
 
+#EXTINF:0,VTV5 Tay Nam Bo
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv5tnb__vtv360p-h264/index.m3u8
+
+#EXTINF:0,VTV5 Tay Nguyen
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv5tn__vtv360p-h264/index.m3u8
+
 #EXTINF:0,VTV6
 #EXTGRP:VTV
 https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv6__vtv720p-h264/index.m3u8
+
+#EXTINF:0,VTV6
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv6__vtv360p-h264/index.m3u8
 
 #EXTINF:0,VTV7
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv7/master.m3u8
 
+#EXTINF:0,VTV7
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv7__vtv360p-h264/index.m3u8
+
 #EXTINF:0,VTV8
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv8/master.m3u8
 
+#EXTINF:0,VTV8
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv8__vtv360p-h264/index.m3u8
+
 #EXTINF:0,VTV9
 #EXTGRP:VTV
 https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv9/master.m3u8
+
+#EXTINF:0,VTV9
+#EXTGRP:VTV backup
+https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv9__vtv360p-h264/index.m3u8
 
 #EXTINF:0,VTVgo - Ca nhac
 #EXTGRP:VTV
