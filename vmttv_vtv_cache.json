@@ -1,11 +1,11 @@
 {
   "source": "https://raw.githubusercontent.com/vietng228/m3u/refs/heads/main/new.m3u + https://raw.githubusercontent.com/Bacbenny/dekiki/refs/heads/main/film4k.m3u",
-  "updated": "2026-11-27 03:14 ICT",
+  "updated": "2026-11-27 10:58 ICT",
   "channels": [
     {
       "source": "VTV",
       "name": "VTV1",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/nfkmvAY.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv1/master.m3u8",
       "referer": "",
@@ -16,7 +16,7 @@
     {
       "source": "VTV",
       "name": "VTV2",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/BVwi3K3.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv2/master.m3u8",
       "referer": "",
@@ -27,7 +27,7 @@
     {
       "source": "VTV",
       "name": "VTV3",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/7rLCvgS.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv3/master.m3u8",
       "referer": "",
@@ -38,7 +38,7 @@
     {
       "source": "VTV",
       "name": "VTV4",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/9zVTtsA.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv4/master.m3u8",
       "referer": "",
@@ -49,7 +49,7 @@
     {
       "source": "VTV",
       "name": "VTV5",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/7qPKNFU.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv5/master.m3u8",
       "referer": "",
@@ -60,7 +60,7 @@
     {
       "source": "VTV",
       "name": "VTV5 Tây Nam Bộ",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/mIUWkDx.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv5tnb/master.m3u8",
       "referer": "",
@@ -71,7 +71,7 @@
     {
       "source": "VTV",
       "name": "VTV6",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/VTV6_logo_2026_final.svg/960px-VTV6_logo_2026_final.svg.png",
       "stream_url": "https://vtvgolivepre-vtv02.vtvdigital.vn/hls/vtv/live/vtv6__vtv720p-h264/index.m3u8",
       "referer": "",
@@ -82,7 +82,7 @@
     {
       "source": "VTV",
       "name": "VTV7",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/AgamSNe.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv7/master.m3u8",
       "referer": "",
@@ -93,7 +93,7 @@
     {
       "source": "VTV",
       "name": "VTV8",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/lpcltL9.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv8/master.m3u8",
       "referer": "",
@@ -104,7 +104,7 @@
     {
       "source": "VTV",
       "name": "VTV9",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/Ex1VkGQ.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv9/master.m3u8",
       "referer": "",
@@ -115,7 +115,7 @@
     {
       "source": "VTV",
       "name": "VTV10",
-      "group": "VTV backup",
+      "group": "VTV",
       "logo": "https://i.imgur.com/HCpqatZ.png",
       "stream_url": "https://vtvgolive-sctvdrm.vtvdigital.vn/manifest/vtv6/master.m3u8",
       "referer": "",
@@ -129,138 +129,6 @@
       "group": "VTV",
       "logo": "https://vnepg.site/logos/176.png",
       "stream_url": "https://vips-livecdn.fptplay.net/live/media/vietnamtoday/live-hls-avc/index.m3u8",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV1 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/3/31/VTV1_logo_%282026-nay%29.png/revision/latest/scale-to-width-down/1000?cb=20260907124651&path-prefix=vi",
-      "stream_url": "https://ctrl.laotv.la/tokenlive/Vnews/index.m3u8?va=4926710162&token=b3f11e2b2a4b95a753e2",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV2 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/d/db/VTV2_logo_%282026-nay%29.png/revision/latest?cb=20260907124810&path-prefix=vi",
-      "stream_url": "https://ctrl.laotv.la/tokenlive/K+Sport2/index.m3u8?va=4926710211&token=3322319a6a724f95edae",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV3 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/c/cb/VTV3_logo_%282026-nay%29.png/revision/latest?cb=20260907124850&path-prefix=vi",
-      "stream_url": "https://ctrl.laotv.la/tokenlive/VTV3/index.m3u8?va=4926711725&token=77a3f28cbc4df2b3a391",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV4 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/2/2c/VTV4_logo_%282026-nay%29.png/revision/latest?cb=20260907125330&path-prefix=vi",
-      "stream_url": "https://ctrl.laotv.la/tokenlive/VTV4/index.m3u8?va=4926708102&token=0c5fc93b2446f0906217",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV5 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/9/9b/VTV5_logo_%282026-nay%29.png/revision/latest?cb=20261001010040&path-prefix=vi",
-      "stream_url": "https://vtvgoliveapp1-aws-plus-tn.vtvdigital.vn/aws/vtv5_paid/playlist.m3u8",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV5 Tây Nam Bộ",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/2/20/VTV5_T%C3%A2y_Nam_B%E1%BB%99_logo_2026.png/revision/latest?cb=20261001010142&path-prefix=vi",
-      "stream_url": "https://vtvgoliveapp1-aws-plus-tn.vtvdigital.vn/aws/vtv5tnb_paid/playlist.m3u8",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV5 Tây Nguyên",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/4/4c/VTV5_T%C3%A2y_Nguy%C3%AAn_logo_2026.png/revision/latest?cb=20261001010536&path-prefix=vi",
-      "stream_url": "https://vtvgoliveapp1-aws-plus-tn.vtvdigital.vn/aws/vtv5tn_paid/playlist.m3u8",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV6 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/e/e6/VTV6_logo_%282026-nay%29.png/revision/latest?cb=20260927071720&path-prefix=vi",
-      "stream_url": "https://vtvgoliveapp1-aws-plus-tn.vtvdigital.vn/aws/vtv6_paid/playlist.m3u8",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV7 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/e/e1/VTV7_logo_%282026-nay%29.png/revision/latest/scale-to-width-down/1000?cb=20260907134313&path-prefix=vi",
-      "stream_url": "https://vtvgoliveapp1-aws-plus-tn.vtvdigital.vn/aws/vtv7_paid/playlist.m3u8",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV8 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/7/7b/VTV8_logo_%282026-nay%29.png/revision/latest/scale-to-width-down/1000?cb=20260910150403&path-prefix=vi",
-      "stream_url": "https://vtvgoliveapp1-aws-plus-tn.vtvdigital.vn/aws/vtv8_paid/playlist.m3u8",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV9 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/f/f9/VTV9_logo_%282026-nay%29.png/revision/latest/scale-to-width-down/1000?cb=20260907134410&path-prefix=vi",
-      "stream_url": "https://vtvgoliveapp1-aws-plus-tn.vtvdigital.vn/aws/vtv9_paid/playlist.m3u8",
-      "referer": "",
-      "user_agent": "",
-      "preserve_group_exact": false,
-      "skip_event_filter": true
-    },
-    {
-      "source": "VTV",
-      "name": "VTV10 HD",
-      "group": "VTV",
-      "logo": "https://static.wikia.nocookie.net/logos/images/b/b6/VTV10_logo_%282026-nay%29.png/revision/latest?cb=20260907125554&path-prefix=vi",
-      "stream_url": "https://vtvgoliveapp1-aws-plus-tn.vtvdigital.vn/aws/vtv10_paid/playlist.m3u8",
       "referer": "",
       "user_agent": "",
       "preserve_group_exact": false,

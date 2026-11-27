@@ -5369,7 +5369,7 @@ def collect_tlcab_extras():
         if group == "fptplayudp":
             row["group"] = "Sự kiện FPT Play"
         elif group == "vtvcab" and compact_text_key(row["name"]) in {"onfootball", "onsportsnews"}:
-            row["group"] = "VTV backup"
+            row["group"] = "VTV"
         else:
             continue
         row.update(skip_event_filter=True, preserve_extinf=False, preserve_group_exact=True)
@@ -5396,14 +5396,8 @@ def collect_tv360_events():
 
 def assign_vtv_role(channel):
     name = clean_text(channel.get("name"))
-    if re.match(r"^VTV\s*(?:10|[1-9])\b", name, re.I):
-        if name.endswith("-1"):
-            channel["name"] = name[:-2].rstrip()
-            channel["group"] = "VTV"
-        else:
-            channel["group"] = "VTV backup"
-    elif compact_text_key(name) in {"onfootball", "onsports", "onsportsnews"}:
-        channel["group"] = "VTV backup"
+    if channel.get("group") == "VTV backup" or re.match(r"^VTV\s*(?:10|[1-9])\b", name, re.I) or compact_text_key(name) in {"onfootball", "onsports", "onsportsnews"}:
+        channel["group"] = "VTV"
     return channel
 
 
@@ -5431,6 +5425,8 @@ def collect_vtv_channels():
         for channel in parsed:
             if whole_vtv_group:
                 if group_key(channel.get("group")) != "vtv" or ".mpd" in channel.get("stream_url", "").lower():
+                    continue
+                if re.match(r"^VTV\s*(?:10|[1-9])\b", clean_text(channel.get("name")), re.I):
                     continue
             elif not is_wanted_vtv_channel(channel):
                 continue
